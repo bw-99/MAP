@@ -2,8 +2,8 @@
 
 ### Docker Prep
 1. cd to workspace
-2. `docker pull onepiece:main` or `docker build -t onepiece:{tag_name} .`
-3. `docker run -dit --name con --shm-size=20g -v .:/workspace onepiece:main`
+2. `docker pull onepiece:main` (✨recommended✨) or `docker build -t bb1702/onepiece:{tag_name} .`
+3. `docker run -dit --name con --shm-size=20g -v .:/workspace bb1702/onepiece:main`
 
 ### Run GraphRAG
 1. Enter the container via `docker attach con`
