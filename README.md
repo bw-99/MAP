@@ -1,4 +1,4 @@
-## GraphRAG Developemnts
+## GraphRAG Developments
 
 ### Docker Prep
 1. cd to workspace
@@ -9,6 +9,9 @@
 1. Enter the container via `docker attach con`
 2. `python3 -m graphrag ${command}` [command](https://microsoft.github.io/graphrag/get_started/)
    1. ex) `python3 -m graphrag init --root ./ragtest`
+
+### Dev dependency
+1. Install pre-commit on your dev environment (not docker, terminal you choose to use `git commit`) via `pip install pre-commit`
 
 
 ## Data Preperations
