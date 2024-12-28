@@ -9,7 +9,7 @@ encoding_model: cl100k_base # this needs to be matched to your model!
 llm:
   api_key: ${GRAPHRAG_API_KEY} # set this in the generated .env file
   type: openai_chat # or azure_openai_chat
-  model: gpt-4-turbo-preview
+  model: gpt-4o-mini
   model_supports_json: true # recommended if this is available for your model.
   # audience: "https://cognitiveservices.azure.com/.default"
   # api_base: https://<instance>.openai.azure.com
@@ -25,7 +25,7 @@ async_mode: threaded # or asyncio
 
 embeddings:
   async_mode: threaded # or asyncio
-  vector_store:
+  vector_store: 
     type: lancedb
     db_uri: 'output/lancedb'
     container_name: default
