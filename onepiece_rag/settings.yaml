@@ -10,6 +10,9 @@ llm:
   api_key: ${GRAPHRAG_API_KEY} # set this in the generated .env file
   type: openai_chat # or azure_openai_chat
   model: gpt-4o-mini
+  max_retries: 20
+  tokens_per_minute: 100000
+  requests_per_minute: 250
   model_supports_json: true # recommended if this is available for your model.
   # audience: "https://cognitiveservices.azure.com/.default"
   # api_base: https://<instance>.openai.azure.com
@@ -19,21 +22,25 @@ llm:
 
 parallelization:
   stagger: 0.3
-  # num_threads: 50
+  num_threads: 2
 
-async_mode: threaded # or asyncio
+async_mode: asyncio # or asyncio
 
 embeddings:
-  async_mode: threaded # or asyncio
-  vector_store: 
+  async_mode: asyncio # or asyncio
+  vector_store:
     type: lancedb
     db_uri: 'output/lancedb'
     container_name: default
     overwrite: true
+  target: required
   llm:
     api_key: ${GRAPHRAG_API_KEY}
     type: openai_embedding # or azure_openai_embedding
     model: text-embedding-3-small
+    max_retries: 20
+    tokens_per_minute: 500000
+    requests_per_minute: 1500
     # api_base: https://<instance>.openai.azure.com
     # api_version: 2024-02-15-preview
     # audience: "https://cognitiveservices.azure.com/.default"
@@ -82,7 +89,7 @@ skip_workflows: []
 
 entity_extraction:
   prompt: "prompts/entity_extraction.txt"
-  entity_types: [organization,person,geo,event]
+  entity_types: [organization, concept, event]
   max_gleanings: 1
 
 summarize_descriptions:
