@@ -4,6 +4,7 @@
 1. cd to workspace
 2. `docker pull bb1702/onepiece:main`
 3. `docker run -dit --name con --shm-size=20g -v .:/workspace bb1702/onepiece:main`
+4. `docker attach con`
 
 ### Run GraphRAG
 1. Enter the container via `docker attach con`
