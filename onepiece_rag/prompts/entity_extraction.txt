@@ -1,121 +1,522 @@
 
 -Goal-
-Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
- 
+Given a text document that is potentially relevant to this activity, first identify all entities needed from the text in order to capture the information and ideas in the text.
+Next, report all relationships among the identified entities.
+
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
 - entity_name: Name of the entity, capitalized
-- entity_type: One of the following types: [{entity_types}]
+- entity_type: Suggest several labels or categories for the entity. The categories should not be specific, but should be as general as possible.
 - entity_description: Comprehensive description of the entity's attributes and activities
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
- 
+
 2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
 For each pair of related entities, extract the following information:
 - source_entity: name of the source entity, as identified in step 1
 - target_entity: name of the target entity, as identified in step 1
 - relationship_description: explanation as to why you think the source entity and the target entity are related to each other
 - relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity
- Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
- 
-3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
- 
-4. When finished, output {completion_delimiter}
- 
-######################
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in The primary language of the provided text is **English**. as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. If you have to translate into The primary language of the provided text is **English**., just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
 -Examples-
 ######################
+
 Example 1:
-Entity_types: ORGANIZATION,PERSON
-Text:
-The Verdantis's Central Institution is scheduled to meet on Monday and Thursday, with the institution planning to release its latest policy decision on Thursday at 1:30 p.m. PDT, followed by a press conference where Central Institution Chair Martin Smith will take questions. Investors expect the Market Strategy Committee to hold its benchmark interest rate steady in a range of 3.5%-3.75%.
-######################
-Output:
-("entity"{tuple_delimiter}CENTRAL INSTITUTION{tuple_delimiter}ORGANIZATION{tuple_delimiter}The Central Institution is the Federal Reserve of Verdantis, which is setting interest rates on Monday and Thursday)
-{record_delimiter}
-("entity"{tuple_delimiter}MARTIN SMITH{tuple_delimiter}PERSON{tuple_delimiter}Martin Smith is the chair of the Central Institution)
-{record_delimiter}
-("entity"{tuple_delimiter}MARKET STRATEGY COMMITTEE{tuple_delimiter}ORGANIZATION{tuple_delimiter}The Central Institution committee makes key decisions about interest rates and the growth of Verdantis's money supply)
-{record_delimiter}
-("relationship"{tuple_delimiter}MARTIN SMITH{tuple_delimiter}CENTRAL INSTITUTION{tuple_delimiter}Martin Smith is the Chair of the Central Institution and will answer questions at a press conference{tuple_delimiter}9)
-{completion_delimiter}
 
-######################
+text:
+ µ k b Σ k b + e k h k * z pi N K K
+Figure 1: sc-OTGM represented as a generative graphical model.
+We define the complete generative model for sc-OTGM as illustrated in Figure 1. Let X proj denote the gene expression matrix, with rows representing individual cells and columns representing features in a reduced-dimensional space. The gene expression profile of cell i is X proj, i . π represents the cluster probabilities. Each π k , where k specifies a particular cell state, indicates the prior probability of the k-th component in the mixture, subject to k π k = 1. The latent variable z i ∈ R K determining the component generating each data point x proj, i , is one-hot encoded and follows a categorical distribution parameterized by π. For each Gaussian component in the mixture model, µ k b ∈ R m and Σ k b ∈ R m×m define the mean and covariance matrix for unperturbed cells of a specific cell type, respectively. We specify perturbations and heterogeneous cellular responses as multivariate Gaussiandistributed variables e ∼ N (µ ke , Σ ke ) and h ∼ N (µ km , Σ km ), respectively. We model perturbation as a dynamic system, where the cell outputs an impulse response function h, when presented with a brief perturbation signal e. The convolution of these variables represents the combined effect on the latent state z pi , which is also distributed as a multivariate Gaussian:
+z pi = (e k * h k )(z) = +∞ -∞ e k (τ )h k (z-τ )dτ ∼ N (µ ke +µ km , Σ ke +Σ km ) ∼ N (µ kp , Σ kp ),(1)
+In the proposed generative mixture model, the joint probability distribution for observed data X, and latent variables Z i , E, and H conditioned on π, µ, Σ is formulated as:
+p(X, Z i , E, H | π, µ, Σ) = N i=1 p(z i |π)p(x proj,i |z i , µ, Σ) N i=1 e * h (2) = N i=1 K k=1 π z ik k N (w bi ; µ k b , Σ k b ) z ik N (w pi ; µ kp , Σ kp ) ,(3)
+where Z ∈ {0, 1} N ×K denotes latent class indicators for N cells across K cell states, E ∈ R N ×m captures perturbation effects, and H ∈ R N ×m represents the cellular responses to these perturbations. Each datum w bi , w pi ∈ R m is drawn independently and identically distributed (i.i.d.) from their respective marginal PDFs. To prevent numerical instability due to arithmetic underflow or overflow during likelihood calculations in the E-step of the Expectation-Maximization (EM) algorithm, we use the log-sum-exp trick. This method transforms the product of Gaussian probabilities into a sum, ensuring more stable computations. Let L denote p(X,
+Z i , E, H | π, µ, Σ): log L = N i=1 K k=1 z ik log π k + z ik log N (w bi ; µ k b , Σ k b ) + log N (w pi ; µ kp , Σ kp )(4)
+The Maximum-a-Posteriori (MAP) parameter updates for the GMM via the EM algorithm are detailed in Algorithm 3. To address numerical instability in Σ's inversion due to its near singularity or nonpositive semi-definiteness, Tikhonov regularization is applied Alberti et al. (2021). See Appendix A.6 for additional details. </p><h2>publication_ref</h2> <p>['b26', 'b30', 'b1'] </p><h2>figure_ref</h2> <p>[] </p><h2>table_ref</h2> <p>['tab_1'] </p><h2>heading</h2> <p>PLANNING OPTIMAL TRANSPORT VIA HIT-AND-RUN MARKOV CHAIN SAMPLER </p><h2>text</h2> <p>OT problems, central to measuring the cost of optimally transporting mass from one distribution to another, are traditionally solved via the Monge (1781) and Kantorovich (1942) formulations, which, however, scale poorly for large datasets due to their reliance on linear programming (LP) Bunne et al. (2023). A breakthrough by Cuturi (2013) introduces entropic regularization into OT, resulting in the Sinkhorn algorithm, which significantly reduces computational complexity, enabling efficient largescale applications. This methodological advancement, detailed in Section A.2.3, represents a pivotal shift towards practical OT computation in machine learning. While OT is conventionally represented by a scalar value indicating the minimum cost required for such transport under specific constraints, sc-OTGM conceptualizes OT as a distribution to focus on the distribution of transportation costs and paths rather than summarizing these costs into a single scalar. A distribution-based approach encapsulates more information about the transport process, such as the variance of transport costs, providing not just the minimum cost but also how costs are distributed across different transport paths. Additionally, it provides a more robust measure of similarity between distributions, as it does not collapse the transport problem into a single metric but rather considers the entire cost landscape, potentially mitigating the influence of outliers.
+We model the latent states of unperturbed and perturbed cells as Gaussian distributions, with unperturbed cells described by X = N (µ k b , Σ k b ) and perturbed cells by Y = N (µ ky , Σ ky ). MAP estimates for µ k b , Σ k b , µ ky , Σ ky were derived using the EM Algorithm within a GMM framework.
+To quantify the perturbation effect, we introduce a distribution, Z = N (µ kp , Σ kp ), resulting from the linear displacement between X and Y . Specifically, Z is characterized by
+µ kp = µ ky -µ k b and Σ kp = Σ k b + Σ ky -2Σ cross .
+Z captures the OT cost distribution required to transition between these states. The coupling (joint distribution) of X and Y is unknown, therefore we approximate Σ cross via Hit-and-Run Markov Chain Monte Carlo (MCMC). This generates a Markov chain that, in its stable state, converges to the uniform distribution over a convex polytope van Valkenhoef & Tervonen (2015), and under certain regularity conditions, converges in distribution to the target distribution Smith (1996). The steps to compute Σ cross are elaborated in Algorithm 1. For recursive updates of Σ cross we use follow-the-leader (FTL) strategy which is prominently used in online density estimation and active learning Azoury & Warmuth (2001); Dasgupta & Hsu (2007). Details on the implementation and synthetic data experiments are provided in the Appendix A.8.
+sc-OTGM samples transportation paths (vectors) directly from the OT landscape, rooted in the perturbation distribution Z, within a dimensionally reduced subspace: x path ∼ N (µ kp , Σ kp ), which effectively captures the essence of gene expression dynamics under perturbation. The high-dimensional gene expression profiles corresponding to these paths are reconstructed via inverse PCA, expressed as:
+x ′′ path = x path V T m
+, where V m represents the matrix comprising the top m eigenvectors derived from the covariance matrix of the pre-processed gene expression data. See Appendix A.4 and A.5 for more details. For each gene expression profile within the OT landscape, we derive a parametric representation, as follows:
+µ gene,i = the i th element of (µ kp V T m ) and σ 2 gene,i = the i th diagonal entry of (V m Σ kp V T m ),
+where µ gene,i denotes the degree of change in a gene's expression in response to perturbation, indicating potential activation or suppression of the gene. σ gene,i quantifies the confidence in these expression changes, providing insights into the variability of our computations. While biological systems are often complex and nonlinear, under specific conditions or within certain ranges, linear approximations can provide valuable insights and simplify modeling efforts. van Someren et al. (2000) presents a methodology for modeling genetic networks that employs clustering to tackle the dimensionality problem and a linear model to infer the regulatory interactions. By analyzing the covariance matrix Σ kp of the perturbation distribution, we can explore the interconnected behavior between genes, examining how they co-vary or influence each other. Consider the scenario where the expression level of gene i changes, denoted as ∆X i . The covariance matrix Σ kp , upon transformation via V m , becomes
+Σ ′′ kp = V m Σ kp V T m .
+The expected change in gene j's expression level, ∆X j , resulting from a change in gene i, is linearly approximated as follows:
+∆X j = Σ ′′ kp,ij Σ ′′ kp,ii ∆X i (5)
+Algorithm 1 Estimation of Cross-Covariance Matrix via Hit-and-Run Markov Chain Monte Carlo 1: Input: Domains D X and D Y with non-zero density for X and Y , number of iterations N , mean vectors µ X , µ Y
+------------------------
+output:
+("entity"{tuple_delimiter}SC-OTGM{tuple_delimiter}MODEL{tuple_delimiter}sc-OTGM is a generative graphical model that represents the relationship between gene expression profiles and perturbations in cellular responses.)
+{record_delimiter}
+("entity"{tuple_delimiter}GENE EXPRESSION MATRIX{tuple_delimiter}DATA STRUCTURE{tuple_delimiter}The gene expression matrix, denoted as X proj, contains rows for individual cells and columns for features in a reduced-dimensional space.)
+{record_delimiter}
+("entity"{tuple_delimiter}LATENT VARIABLE{tuple_delimiter}VARIABLE{tuple_delimiter}The latent variable z i determines the component generating each data point in the mixture model and is one-hot encoded.)
+{record_delimiter}
+("entity"{tuple_delimiter}GAUSSIAN COMPONENT{tuple_delimiter}STATISTICAL DISTRIBUTION{tuple_delimiter}Each Gaussian component in the mixture model is characterized by a mean µ k b and a covariance matrix Σ k b for unperturbed cells of a specific cell type.)
+{record_delimiter}
+("entity"{tuple_delimiter}PERTURBATION{tuple_delimiter}VARIABLE{tuple_delimiter}Perturbation is modeled as a dynamic system where the cell outputs an impulse response function h when presented with a perturbation signal e.)
+{record_delimiter}
+("entity"{tuple_delimiter}EM ALGORITHM{tuple_delimiter}ALGORITHM{tuple_delimiter}The Expectation-Maximization (EM) algorithm is used for parameter updates in the Gaussian Mixture Model (GMM) framework.)
+{record_delimiter}
+("entity"{tuple_delimiter}SINKHORN ALGORITHM{tuple_delimiter}ALGORITHM{tuple_delimiter}The Sinkhorn algorithm introduces entropic regularization into optimal transport problems, significantly reducing computational complexity.)
+{record_delimiter}
+("entity"{tuple_delimiter}OPTIMAL TRANSPORT{tuple_delimiter}CONCEPT{tuple_delimiter}Optimal transport (OT) problems measure the cost of transporting mass from one distribution to another and are traditionally solved via linear programming.)
+{record_delimiter}
+("entity"{tuple_delimiter}CROSS-COVARIANCE MATRIX{tuple_delimiter}MATRIX{tuple_delimiter}The cross-covariance matrix Σ cross is approximated via Hit-and-Run Markov Chain Monte Carlo to explore the interconnected behavior between genes.)
+{record_delimiter}
+("entity"{tuple_delimiter}GENE EXPRESSION DYNAMICS{tuple_delimiter}CONCEPT{tuple_delimiter}Gene expression dynamics refer to the changes in gene expression profiles in response to perturbations, modeled within the OT landscape.)
+{record_delimiter}
+("entity"{tuple_delimiter}COVARIANCE MATRIX{tuple_delimiter}MATRIX{tuple_delimiter}The covariance matrix Σ kp captures the variability of gene expression changes and is used to analyze the influence of genes on each other.)
+{record_delimiter}
+("relationship"{tuple_delimiter}SC-OTGM{tuple_delimiter}GENE EXPRESSION MATRIX{tuple_delimiter}sc-OTGM utilizes the gene expression matrix to model the relationship between gene expression and perturbations{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}LATENT VARIABLE{tuple_delimiter}SC-OTGM{tuple_delimiter}The latent variable z i is a component of the sc-OTGM that determines the generation of data points{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}GAUSSIAN COMPONENT{tuple_delimiter}SC-OTGM{tuple_delimiter}The Gaussian components defined by means and covariances are integral to the sc-OTGM framework{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}PERTURBATION{tuple_delimiter}SC-OTGM{tuple_delimiter}Perturbation is modeled within the sc-OTGM to understand its effects on gene expression dynamics{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}EM ALGORITHM{tuple_delimiter}SC-OTGM{tuple_delimiter}The EM algorithm is employed in the sc-OTGM for parameter estimation and updates{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}SINKHORN ALGORITHM{tuple_delimiter}OPTIMAL TRANSPORT{tuple_delimiter}The Sinkhorn algorithm is a methodological advancement in solving optimal transport problems, enhancing computational efficiency{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}CROSS-COVARIANCE MATRIX{tuple_delimiter}SC-OTGM{tuple_delimiter}The cross-covariance matrix is used in the sc-OTGM to analyze gene interactions and perturbation effects{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}GENE EXPRESSION DYNAMICS{tuple_delimiter}SC-OTGM{tuple_delimiter}Gene expression dynamics are modeled within the sc-OTGM framework to capture responses to perturbations{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}COVARIANCE MATRIX{tuple_delimiter}GENE EXPRESSION DYNAMICS{tuple_delimiter}The covariance matrix is analyzed to understand the variability in gene expression changes and their interdependencies{tuple_delimiter}8)
+{completion_delimiter}
+#############################
+
+
 Example 2:
-Entity_types: ORGANIZATION
-Text:
-TechGlobal's (TG) stock skyrocketed in its opening day on the Global Exchange Thursday. But IPO experts warn that the semiconductor corporation's debut on the public markets isn't indicative of how other newly listed companies may perform.
 
-TechGlobal, a formerly public company, was taken private by Vision Holdings in 2014. The well-established chip designer says it powers 85% of premium smartphones.
-######################
-Output:
-("entity"{tuple_delimiter}TECHGLOBAL{tuple_delimiter}ORGANIZATION{tuple_delimiter}TechGlobal is a stock now listed on the Global Exchange which powers 85% of premium smartphones)
+text:
+T )) -c N i=1 ϕ(R i (T )),(3) </p><h2>formula_coordinates</h2> <p>[3.0, 63.0, 144.76, 238.02, 30.32] </p><h2>formula_id</h2> <p>formula_7 </p><h2>formula_text</h2> <p>ϕ(x) -ϕ(y) ≤ ϕ ′ (y)(x -y)(4) </p><h2>formula_coordinates</h2> <p>[3.0, 373.83, 198.89, 176.34, 18.44] </p><h2>formula_id</h2> <p>formula_8 </p><h2>formula_text</h2> <p>ϕ(R * i (T )) -β 1-α ϕ(R i (T )) (a) = ϕ(R * i (T )) -ϕ(βR i (T )) (b) ≤ ϕ ′ (βR i (T ))[R * i (T ) -βR i (T )] (c) ≤ β -α ϕ ′ (R i (T )) T t=1 r i (t)[x ct * ,i -βx ct i (t)],(5) </p><h2>formula_coordinates</h2> <p>[3.0, 342.46, 264.31, 207.7, 90.94] </p><h2>formula_id</h2> <p>formula_9 </p><h2>formula_text</h2> <p>Regret T (β 1-α ) ≤ β -α T t=1 i∈[N ] ϕ ′ (R i (T ))r i (t)[x ct * ,i -βx ct i (t)].(6) </p><h2>formula_coordinates</h2> <p>[3.0, 327.58, 467.72, 222.59, 48.39] </p><h2>formula_id</h2> <p>formula_10 </p><h2>formula_text</h2> <p>Surrogate Regret T = max x * T t=1 i∈[N ] ϕ ′ (R i (t -1))r i (t)[x ct * ,i -x ct i (t)] (7) </p><h2>formula_coordinates</h2> <p>[4.0, 73.03, 129.49, 225.14, 46.98] </p><h2>formula_id</h2> <p>formula_11 </p><h2>formula_text</h2> <p>ϕ ′ (R(t - 1)) ≡ (ϕ ′ (R 1 (t -1)), ..., ϕ ′ (R N (t -1))). Upon setting β ≡ (1 -α) -1 </p><h2>formula_coordinates</h2> <p>[4.0, 62.5, 220.38, 234.5, 41.85] </p><h2>formula_id</h2> <p>formula_12 </p><h2>formula_text</h2> <p>Regret T (c α ) ≤ (1 -α) α Surrogate Regret T + c α N (8) </p><h2>formula_coordinates</h2> <p>[4.0, 72.43, 301.66, 225.73, 23.32] </p><h2>formula_id</h2> <p>formula_13 </p><h2>formula_text</h2> <p>c α = (1 -α) -(1-α) ≤ e 1/e < 1.445. </p><h2>formula_coordinates</h2> <p>[4.0, 90.48, 334.72, 152.2, 17.94] </p><h2>formula_id</h2> <p>formula_14 </p><h2>formula_text</h2> <p>Surrogate Regret T =      O(N 3 M T 1/2-α ), if 0 < α < 1 2 O(N 3 M √ log T ), if α = 1 2 O(1), if 1 2 < α < 1. (9) </p><h2>formula_coordinates</h2> <p>[4.0, 63.0, 687.19, 243.56, 54.7] </p><h2>formula_id</h2> <p>formula_15 </p><h2>formula_text</h2> <p>Regret T (c α ) = (1 -α) α      O(N 3 M T 1/2-α ), if 0 < α < 1 O(N 3 M √ log T ), if α = 1 2 O(1), if 1 2 < α < 1. </p><h2>formula_coordinates</h2> <p>[4.0, 315.0, 207.92, 242.04, 43.32] </p><h2>formula_id</h2> <p>formula_16 </p><h2>formula_text</h2> <p>c α = (1 -α) -(1-α) < 1.445. </p><h2>formula_coordinates</h2> <p>[4.0, 342.48, 263.05, 121.95, 17.94] </p><h2>formula_id</h2> <p>formula_17 </p><h2>formula_text</h2> <p>R i (0) ← 1, S j ← 0, x j ← 1 N , ∀i, j. </p><h2>formula_coordinates</h2> <p>[4.0, 365.71, 397.43, 149.5, 23.14] </p><h2>formula_id</h2> <p>formula_18 </p><h2>formula_text</h2> <p>g i = r i (t ′ ) R α i ∀i ∈ [N ] </p><h2>formula_coordinates</h2> <p>[4.0, 394.75, 531.36, 91.43, 26.08] </p><h2>formula_id</h2> <p>formula_19 </p><h2>formula_text</h2> <p>S ct ← S ct + ∥g∥ 2 2 12: </p><h2>formula_coordinates</h2> <p>[4.0, 315.18, 586.95, 162.21, 32.53] </p><h2>formula_id</h2> <p>formula_20 </p><h2>formula_text</h2> <p>x ct ← Π ∆ N x ct + D 2S ct g 13: </p><h2>formula_coordinates</h2> <p>[4.0, 315.18, 633.87, 182.27, 46.84] </p><h2>formula_id</h2> <p>formula_21 </p><h2>formula_text</h2> <p>Update R i (t) ← R i (t -1) + x ct i (t)r i (t) </p><h2>formula_coordinates</h2> <p>[4.0, 341.89, 705.64, 167.5, 18.76] </p><h2>formula_id</h2> <p>formula_22 </p><h2>formula_text</h2> <p>R i (t) = R i (t -1) + X ct i (t)r i (t), R i (0) = 1.(10) </p><h2>formula_coordinates</h2> <p>[5.0, 79.13, 362.59, 219.04, 18.76] </p><h2>formula_id</h2> <p>formula_23 </p><h2>formula_text</h2> <p>P[X ct i (t) = 1] = x ct i (t). (11 </p><h2>formula_coordinates</h2> <p>[5.0, 130.96, 442.98, 162.78, 13.32] </p><h2>formula_id</h2> <p>formula_24 </p><h2>formula_text</h2> <p>) </p
+------------------------
+output:
+("entity"{tuple_delimiter}FORMULA 7{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula represents a mathematical relationship involving the function ϕ and its variables, indicating a constraint between ϕ(x) and ϕ(y).)
 {record_delimiter}
-("entity"{tuple_delimiter}VISION HOLDINGS{tuple_delimiter}ORGANIZATION{tuple_delimiter}Vision Holdings is a firm that previously owned TechGlobal)
+("entity"{tuple_delimiter}FORMULA 8{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula describes a relationship involving the function ϕ and its derivatives, showing how different variables interact under certain conditions.)
 {record_delimiter}
-("relationship"{tuple_delimiter}TECHGLOBAL{tuple_delimiter}VISION HOLDINGS{tuple_delimiter}Vision Holdings formerly owned TechGlobal from 2014 until present{tuple_delimiter}5)
+("entity"{tuple_delimiter}FORMULA 9{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula outlines a condition for Regret T, involving the function ϕ and its derivatives, and summing over a set of variables.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 10{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula defines Surrogate Regret T, which is a maximum value derived from the function ϕ and its derivatives over a set of variables.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 11{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula specifies the derivative of the function ϕ at a previous time step, indicating a relationship between the function's values at different times.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 12{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula provides a condition for Regret T in terms of Surrogate Regret T and a constant c α, showing how they are related.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 13{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula defines the constant c α in relation to the parameter α, indicating a specific bound.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 14{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula describes the behavior of Surrogate Regret T under different conditions of α, providing bounds for its growth.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 15{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula outlines the relationship between Regret T and Surrogate Regret T, showing how they are influenced by the parameter α.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 16{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula reiterates the definition of the constant c α, providing a specific numerical bound.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 17{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula initializes variables R i and S j, indicating their starting values in a mathematical model.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 18{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula defines a relationship for the variable g i in terms of r i and R α, indicating how they are calculated.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 19{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula updates the variable S ct based on the norm of g, indicating a mathematical operation in the model.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 20{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula updates the variable x ct based on previous values and the variable S ct, indicating a transformation in the model.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 21{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula updates the variable R i based on its previous value and the variable x ct, indicating a recursive relationship.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 22{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula provides a specific update rule for R i, indicating how it evolves over time.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORMULA 23{tuple_delimiter}MATHEMATICAL EXPRESSION{tuple_delimiter}This formula defines the probability of a specific event related to x ct, indicating a probabilistic relationship.)
+{record_delimiter}
+("relationship"{tuple_delimiter}FORMULA 7{tuple_delimiter}FORMULA 8{tuple_delimiter}Formula 7 and Formula 8 are related as they both involve the function ϕ and its derivatives, indicating constraints and relationships between variables.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}FORMULA 8{tuple_delimiter}FORMULA 9{tuple_delimiter}Formula 8 and Formula 9 are related as they both describe conditions involving the function ϕ and its derivatives, focusing on regret.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}FORMULA 9{tuple_delimiter}FORMULA 10{tuple_delimiter}Formula 9 and Formula 10 are related as they both deal with regret and surrogate regret, indicating how they are calculated.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}FORMULA 10{tuple_delimiter}FORMULA 12{tuple_delimiter}Formula 10 and Formula 12 are related as they both involve surrogate regret and provide conditions for regret.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}FORMULA 11{tuple_delimiter}FORMULA 12{tuple_delimiter}Formula 11 and Formula 12 are related as they both involve the function ϕ and its derivatives, indicating their roles in regret calculations.{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}FORMULA 12{tuple_delimiter}FORMULA 15{tuple_delimiter}Formula 12 and Formula 15 are related as they both describe conditions for regret in terms of surrogate regret.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}FORMULA 14{tuple_delimiter}FORMULA 15{tuple_delimiter}Formula 14 and Formula 15 are related as they both provide bounds for regret and surrogate regret under different conditions.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}FORMULA 17{tuple_delimiter}FORMULA 21{tuple_delimiter}Formula 17 and Formula 21 are related as they both involve updates to variables in the model, indicating their initialization and evolution.{tuple_delimiter}5)
+{record_delimiter}
+("relationship"{tuple_delimiter}FORMULA 18{tuple_delimiter}FORMULA 19{tuple_delimiter}Formula 18 and Formula 19 are related as they both involve updates to variables based on previous values, indicating their roles in the model.{tuple_delimiter}5)
+{record_delimiter}
+("relationship"{tuple_delimiter}FORMULA 20{tuple_delimiter}FORMULA 21{tuple_delimiter}Formula 20 and Formula 21 are related as they both describe updates to variables in the model, indicating their interdependence.{tuple_delimiter}6)
 {completion_delimiter}
+#############################
 
-######################
+
 Example 3:
-Entity_types: ORGANIZATION,GEO,PERSON
-Text:
-Five Aurelians jailed for 8 years in Firuzabad and widely regarded as hostages are on their way home to Aurelia.
 
-The swap orchestrated by Quintara was finalized when $8bn of Firuzi funds were transferred to financial institutions in Krohaara, the capital of Quintara.
+text:
+in Wen; Tongliang Liu; Dacheng Tao </p><h2>ref_id</h2> <p>b23 </p><h2>title</h2> <p>Certified robust models with slack control and large Lipschitz constants </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2023 </p><h2>authors</h2> <p>Max Losch; David Stutz; Bernt Schiele; Mario Fritz </p><h2>ref_id</h2> <p>b24 </p><h2>title</h2> <p>A dynamical system perspective for Lipschitz neural networks </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2022 </p><h2>authors</h2> <p>Laurent Meunier; J Blaise; Alexandre Delattre; Alexandre Araujo;  Allauzen </p><h2>ref_id</h2> <p>b25 </p><h2>title</h2> <p>Spectral normalization for generative adversarial networks </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2018 </p><h2>authors</h2> <p>Takeru Miyato; Toshiki Kataoka; Masanori Koyama; Yuichi Yoshida </p><h2>ref_id</h2> <p>b26 </p><h2>title</h2> <p>Pytorch: An imperative style, high-performance deep learning library </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2019 </p><h2>authors</h2> <p>Adam Paszke; Sam Gross; Francisco Massa; Adam Lerer; James Bradbury; Gregory Chanan; Trevor Killeen; Zeming Lin; Natalia Gimelshein; Luca Antiga; Alban Desmaison; Andreas Kopf; Edward Yang; Zachary Devito; Martin Raison; Alykhan Tejani; Sasank Chilamkurthy; Benoit Steiner; Lu Fang; Junjie Bai; Soumith Chintala </p><h2>ref_id</h2> <p>b27 </p><h2>title</h2> <p>Almost-orthogonal layers for efficient general-purpose Lipschitz networks </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2022 </p><h2>authors</h2> <p>Bernd Prach; Christoph H Lampert </p><h2>ref_id</h2> <p>b28 </p><h2>title</h2> <p>Fantastic four: Differentiable bounds on singular values of convolution layers </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2021 </p><h2>authors</h2> <p>S Singla;  Feizi </p><h2>ref_id</h2> <p>b29 </p><h2>title</h2> <p>Skew orthogonal convolutions </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2021 </p><h2>authors</h2> <p>Sahil Singla; Soheil Feizi </p><h2>ref_id</h2> <p>b30 </p><h2>title</h2> <p>Improved techniques for de-terministic l2 robustness </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2022 </p><h2>authors</h2> <p>Sahil Singla; Soheil Feizi </p><h2>ref_id</h2> <p>b31 </p><h2>title</h2> <p>Super-convergence: Very fast training of neural networks using large learning rates </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2019 </p><h2>authors</h2> <p>N Leslie; Nicholay Smith;  Topin </p><h2>ref_id</h2> <p>b32 </p><h2>title</h2> <p>Intriguing properties of neural networks </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2014 </p><h2>authors</h2> <p>Christian Szegedy; Wojciech Zaremba; Ilya Sutskever; Joan Bruna; Dumitru Erhan; Ian Goodfellow; Rob Fergus </p><h2>ref_id</h2> <p>b33 </p><h2>title</h2> <p>Orthogonalizing convolutional layers with the Cayley transform </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2021 </p><h2>authors</h2> <p>Asher Trockman; J Zico; Kolter  </p><h2>ref_id</h2> <p>b34 </p><h2>title</h2> <p>Lipschitz-margin training: Scalable certification of perturbation invariance for deep neural networks </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2018 </p><h2>authors</h2> <p>Yusuke Tsuzuku; Issei Sato; Masashi Sugiyama </p><h2>ref_id</h2> <p>b35 </p><h2>title</h2> <p>Direct parameterization of Lipschitz-bounded deep networks </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2023 </p><h2>authors</h2> <p>Ruigang Wang; Ian Manchester </p><h2>ref_id</h2> <p>b36 </p><h2>title</h2> <p>Towards fast computation of certified robustness for relu networks </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2018 </p><h2>authors</h2> <p>Lily Weng; Huan Zhang; Hongge Chen; Zhao Song; Cho-Jui Hsieh; Luca Daniel; Duane Boning; Inderjit Dhillon </p><h2>ref_id</h2> <p>b37 </p><h2>title</h2> <p>Provable defenses against adversarial examples via the convex outer adversarial polytope </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2018 </p><h2>authors</h2> <p>Eric Wong; Zico Kolter </p><h2>ref_id</h2> <p>b38 </p><h2>title</h2> <p>Dynamical isometry and a mean field theory of CNNs: How to train 10,000-layer vanilla convolutional neural networks </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2018 </p><h2>authors</h2> <p>Lechao Xiao; Yasaman Bahri; Jascha Sohl-Dickstein; Samuel Schoenholz; Jeffrey Pennington </p><h2>ref_id</h2> <p>b39 </p><h2>title</h2> <p>Lot: Layer-wise orthogonal training on improving l2 certified robustness </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2022 </p><h2>authors</h2> <p>Xiaojun Xu; Linyi Li; Bo Li </p><h2>ref_id</h2> <p>b40 </p><h2>title</h2> <p>Constructing orthogonal convolutions in an explicit manner </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2021 </p><h2>authors</h2> <p>Tan Yu; Jun Li; Yunfeng Cai; Ping Li </p><h1>figures</h1><h2>figure_label</h2> <p>1 </p><h2>figure_type</h2> <p>figure </p><h2>figure_id</h2> <p>fig_0 </p><
+------------------------
+output:
+("entity"{tuple_delimiter}WEN{tuple_delimiter}GEO{tuple_delimiter}Wen is a location mentioned in the context of research papers related to machine learning and neural networks)
+{record_delimiter}
+("entity"{tuple_delimiter}TONGLIANG LIU{tuple_delimiter}PERSON{tuple_delimiter}Tongliang Liu is an author associated with research in machine learning and neural networks)
+{record_delimiter}
+("entity"{tuple_delimiter}DACHENG TAO{tuple_delimiter}PERSON{tuple_delimiter}Dacheng Tao is an author known for contributions to machine learning and neural networks)
+{record_delimiter}
+("entity"{tuple_delimiter}MAX LOSCH{tuple_delimiter}PERSON{tuple_delimiter}Max Losch is an author of a paper titled 'Certified robust models with slack control and large Lipschitz constants')
+{record_delimiter}
+("entity"{tuple_delimiter}DAVID STUTZ{tuple_delimiter}PERSON{tuple_delimiter}David Stutz is an author of a paper titled 'Certified robust models with slack control and large Lipschitz constants')
+{record_delimiter}
+("entity"{tuple_delimiter}BERNT SCHIELE{tuple_delimiter}PERSON{tuple_delimiter}Bernt Schiele is an author of a paper titled 'Certified robust models with slack control and large Lipschitz constants')
+{record_delimiter}
+("entity"{tuple_delimiter}MARIO FRITZ{tuple_delimiter}PERSON{tuple_delimiter}Mario Fritz is an author of a paper titled 'Certified robust models with slack control and large Lipschitz constants')
+{record_delimiter}
+("entity"{tuple_delimiter}LAURENT MEUNIER{tuple_delimiter}PERSON{tuple_delimiter}Laurent Meunier is an author of a paper titled 'A dynamical system perspective for Lipschitz neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}J BLAISE{tuple_delimiter}PERSON{tuple_delimiter}J Blaise is an author of a paper titled 'A dynamical system perspective for Lipschitz neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}ALEXANDRE DELATTRE{tuple_delimiter}PERSON{tuple_delimiter}Alexandre Delattre is an author of a paper titled 'A dynamical system perspective for Lipschitz neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}ALEXANDRE ARAUJO{tuple_delimiter}PERSON{tuple_delimiter}Alexandre Araujo is an author of a paper titled 'A dynamical system perspective for Lipschitz neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}ALLAUZEN{tuple_delimiter}PERSON{tuple_delimiter}Allauzen is an author of a paper titled 'A dynamical system perspective for Lipschitz neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}TAKERU MIYATO{tuple_delimiter}PERSON{tuple_delimiter}Takeru Miyato is an author of a paper titled 'Spectral normalization for generative adversarial networks')
+{record_delimiter}
+("entity"{tuple_delimiter}TOSHIKI KATAOKA{tuple_delimiter}PERSON{tuple_delimiter}Toshiki Kataoka is an author of a paper titled 'Spectral normalization for generative adversarial networks')
+{record_delimiter}
+("entity"{tuple_delimiter}MASANORI KOYAMA{tuple_delimiter}PERSON{tuple_delimiter}Masanori Koyama is an author of a paper titled 'Spectral normalization for generative adversarial networks')
+{record_delimiter}
+("entity"{tuple_delimiter}YUICHI YOSHIDA{tuple_delimiter}PERSON{tuple_delimiter}Yuichi Yoshida is an author of a paper titled 'Spectral normalization for generative adversarial networks')
+{record_delimiter}
+("entity"{tuple_delimiter}ADAM PASZKE{tuple_delimiter}PERSON{tuple_delimiter}Adam Paszke is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}SAM GROSS{tuple_delimiter}PERSON{tuple_delimiter}Sam Gross is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}FRANCISCO MASSA{tuple_delimiter}PERSON{tuple_delimiter}Francisco Massa is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}ADAM LERER{tuple_delimiter}PERSON{tuple_delimiter}Adam Lerer is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}JAMES BRADBURY{tuple_delimiter}PERSON{tuple_delimiter}James Bradbury is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}GREGORY CHANAN{tuple_delimiter}PERSON{tuple_delimiter}Gregory Chanan is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}TREVOR KILLEEN{tuple_delimiter}PERSON{tuple_delimiter}Trevor Killeen is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}ZEMING LIN{tuple_delimiter}PERSON{tuple_delimiter}Zeming Lin is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}NATALIA GIMELSHEIN{tuple_delimiter}PERSON{tuple_delimiter}Natalia Gimelshein is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}LUCA ANTIGA{tuple_delimiter}PERSON{tuple_delimiter}Luca Antiga is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}ALBAN DESMAISON{tuple_delimiter}PERSON{tuple_delimiter}Alban Desmaison is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}ANDREAS KOPF{tuple_delimiter}PERSON{tuple_delimiter}Andreas Kopf is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}EDWARD YANG{tuple_delimiter}PERSON{tuple_delimiter}Edward Yang is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}ZACHARY DEVITO{tuple_delimiter}PERSON{tuple_delimiter}Zachary Devito is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}MARTIN RAISON{tuple_delimiter}PERSON{tuple_delimiter}Martin Raison is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}ALYKHAN TEJANI{tuple_delimiter}PERSON{tuple_delimiter}Alykhan Tejani is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}SASANK CHILAMKURTHY{tuple_delimiter}PERSON{tuple_delimiter}Sasank Chilamkurthy is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}BENOIT STEINER{tuple_delimiter}PERSON{tuple_delimiter}Benoit Steiner is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}LU FANG{tuple_delimiter}PERSON{tuple_delimiter}Lu Fang is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}JUNJIE BAI{tuple_delimiter}PERSON{tuple_delimiter}Junjie Bai is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}SOUMITH CHINTALA{tuple_delimiter}PERSON{tuple_delimiter}Soumith Chintala is an author of a paper titled 'Pytorch: An imperative style, high-performance deep learning library')
+{record_delimiter}
+("entity"{tuple_delimiter}BERND PRACH{tuple_delimiter}PERSON{tuple_delimiter}Bernd Prach is an author of a paper titled 'Almost-orthogonal layers for efficient general-purpose Lipschitz networks')
+{record_delimiter}
+("entity"{tuple_delimiter}CHRISTOPH H LAMPERT{tuple_delimiter}PERSON{tuple_delimiter}Christoph H Lampert is an author of a paper titled 'Almost-orthogonal layers for efficient general-purpose Lipschitz networks')
+{record_delimiter}
+("entity"{tuple_delimiter}S SINGLA{tuple_delimiter}PERSON{tuple_delimiter}S Singla is an author of a paper titled 'Fantastic four: Differentiable bounds on singular values of convolution layers')
+{record_delimiter}
+("entity"{tuple_delimiter}FEIZI{tuple_delimiter}PERSON{tuple_delimiter}Feizi is an author of a paper titled 'Fantastic four: Differentiable bounds on singular values of convolution layers')
+{record_delimiter}
+("entity"{tuple_delimiter}SAHIL SINGLA{tuple_delimiter}PERSON{tuple_delimiter}Sahil Singla is an author of a paper titled 'Skew orthogonal convolutions')
+{record_delimiter}
+("entity"{tuple_delimiter}SOHEIL FEIZI{tuple_delimiter}PERSON{tuple_delimiter}Soheil Feizi is an author of a paper titled 'Skew orthogonal convolutions')
+{record_delimiter}
+("entity"{tuple_delimiter}N LESLIE{tuple_delimiter}PERSON{tuple_delimiter}N Leslie is an author of a paper titled 'Super-convergence: Very fast training of neural networks using large learning rates')
+{record_delimiter}
+("entity"{tuple_delimiter}NICHOLAY SMITH{tuple_delimiter}PERSON{tuple_delimiter}Nicholay Smith is an author of a paper titled 'Super-convergence: Very fast training of neural networks using large learning rates')
+{record_delimiter}
+("entity"{tuple_delimiter}TOPIN{tuple_delimiter}PERSON{tuple_delimiter}Topin is an author of a paper titled 'Super-convergence: Very fast training of neural networks using large learning rates')
+{record_delimiter}
+("entity"{tuple_delimiter}CHRISTIAN SZEGEDY{tuple_delimiter}PERSON{tuple_delimiter}Christian Szegedy is an author of a paper titled 'Intriguing properties of neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}WOJCIECH ZAREMBA{tuple_delimiter}PERSON{tuple_delimiter}Wojciech Zaremba is an author of a paper titled 'Intriguing properties of neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}ILYA SUTSKEVER{tuple_delimiter}PERSON{tuple_delimiter}Ilya Sutskever is an author of a paper titled 'Intriguing properties of neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}JOAN BRUNA{tuple_delimiter}PERSON{tuple_delimiter}Joan Bruna is an author of a paper titled 'Intriguing properties of neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}DUMITRU ERHAN{tuple_delimiter}PERSON{tuple_delimiter}Dumitru Erhan is an author of a paper titled 'Intriguing properties of neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}IAN GOODFELLOW{tuple_delimiter}PERSON{tuple_delimiter}Ian Goodfellow is an author of a paper titled 'Intriguing properties of neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}ROB FERGUS{tuple_delimiter}PERSON{tuple_delimiter}Rob Fergus is an author of a paper titled 'Intriguing properties of neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}ASHER TROCKMAN{tuple_delimiter}PERSON{tuple_delimiter}Asher Trockman is an author of a paper titled 'Orthogonalizing convolutional layers with the Cayley transform')
+{record_delimiter}
+("entity"{tuple_delimiter}J ZICO{tuple_delimiter}PERSON{tuple_delimiter}J Zico is an author of a paper titled 'Orthogonalizing convolutional layers with the Cayley transform')
+{record_delimiter}
+("entity"{tuple_delimiter}KOLTER{tuple_delimiter}PERSON{tuple_delimiter}Kolter is an author of a paper titled 'Orthogonalizing convolutional layers with the Cayley transform')
+{record_delimiter}
+("entity"{tuple_delimiter}YUSUKE TSUZUKU{tuple_delimiter}PERSON{tuple_delimiter}Yusuke Tsuzuku is an author of a paper titled 'Lipschitz-margin training: Scalable certification of perturbation invariance for deep neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}ISSEI SATO{tuple_delimiter}PERSON{tuple_delimiter}Issei Sato is an author of a paper titled 'Lipschitz-margin training: Scalable certification of perturbation invariance for deep neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}MASASHI SUGIYAMA{tuple_delimiter}PERSON{tuple_delimiter}Masashi Sugiyama is an author of a paper titled 'Lipschitz-margin training: Scalable certification of perturbation invariance for deep neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}RUIGANG WANG{tuple_delimiter}PERSON{tuple_delimiter}Ruigang Wang is an author of a paper titled 'Direct parameterization of Lipschitz-bounded deep networks')
+{record_delimiter}
+("entity"{tuple_delimiter}IAN MANCHESTER{tuple_delimiter}PERSON{tuple_delimiter}Ian Manchester is an author of a paper titled 'Direct parameterization of Lipschitz-bounded deep networks')
+{record_delimiter}
+("entity"{tuple_delimiter}LILY WENG{tuple_delimiter}PERSON{tuple_delimiter}Lily Weng is an author of a paper titled 'Towards fast computation of certified robustness for relu networks')
+{record_delimiter}
+("entity"{tuple_delimiter}HUAN ZHANG{tuple_delimiter}PERSON{tuple_delimiter}Huan Zhang is an author of a paper titled 'Towards fast computation of certified robustness for relu networks')
+{record_delimiter}
+("entity"{tuple_delimiter}HONGGE CHEN{tuple_delimiter}PERSON{tuple_delimiter}Hongge Chen is an author of a paper titled 'Towards fast computation of certified robustness for relu networks')
+{record_delimiter}
+("entity"{tuple_delimiter}ZHAO SONG{tuple_delimiter}PERSON{tuple_delimiter}Zhao Song is an author of a paper titled 'Towards fast computation of certified robustness for relu networks')
+{record_delimiter}
+("entity"{tuple_delimiter}CHO-JUI HSIEH{tuple_delimiter}PERSON{tuple_delimiter}Cho-Jui Hsieh is an author of a paper titled 'Towards fast computation of certified robustness for relu networks')
+{record_delimiter}
+("entity"{tuple_delimiter}LUCA DANIEL{tuple_delimiter}PERSON{tuple_delimiter}Luca Daniel is an author of a paper titled 'Towards fast computation of certified robustness for relu networks')
+{record_delimiter}
+("entity"{tuple_delimiter}DUANE BONING{tuple_delimiter}PERSON{tuple_delimiter}Duane Boning is an author of a paper titled 'Towards fast computation of certified robustness for relu networks')
+{record_delimiter}
+("entity"{tuple_delimiter}INDERJIT DHILLON{tuple_delimiter}PERSON{tuple_delimiter}Inderjit Dhillon is an author of a paper titled 'Towards fast computation of certified robustness for relu networks')
+{record_delimiter}
+("entity"{tuple_delimiter}ERIC WONG{tuple_delimiter}PERSON{tuple_delimiter}Eric Wong is an author of a paper titled 'Provable defenses against adversarial examples via the convex outer adversarial polytope')
+{record_delimiter}
+("entity"{tuple_delimiter}ZICO KOLTER{tuple_delimiter}PERSON{tuple_delimiter}Zico Kolter is an author of a paper titled 'Provable defenses against adversarial examples via the convex outer adversarial polytope')
+{record_delimiter}
+("entity"{tuple_delimiter}LECHAO XIAO{tuple_delimiter}PERSON{tuple_delimiter}Lechao Xiao is an author of a paper titled 'Dynamical isometry and a mean field theory of CNNs: How to train 10,000-layer vanilla convolutional neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}YASAMAN BAHRI{tuple_delimiter}PERSON{tuple_delimiter}Yasaman Bahri is an author of a paper titled 'Dynamical isometry and a mean field theory of CNNs: How to train 10,000-layer vanilla convolutional neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}JASCHA SOHL-DICKSTEIN{tuple_delimiter}PERSON{tuple_delimiter}Jascha Sohl-Dickstein is an author of a paper titled 'Dynamical isometry and a mean field theory of CNNs: How to train 10,000-layer vanilla convolutional neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}SAMUEL SCHOENHOLZ{tuple_delimiter}PERSON{tuple_delimiter}Samuel Schoenholz is an author of a paper titled 'Dynamical isometry and a mean field theory of CNNs: How to train 10,000-layer vanilla convolutional neural networks')
+{record_delimiter}
+("entity"{tuple_delimiter}JEFFREY PEN
+#############################
 
-The exchange initiated in Firuzabad's capital, Tiruzia, led to the four men and one woman, who are also Firuzi nationals, boarding a chartered flight to Krohaara.
 
-They were welcomed by senior Aurelian officials and are now on their way to Aurelia's capital, Cashion.
+Example 4:
 
-The Aurelians include 39-year-old businessman Samuel Namara, who has been held in Tiruzia's Alhamia Prison, as well as journalist Durke Bataglani, 59, and environmentalist Meggie Tazbah, 53, who also holds Bratinas nationality.
-######################
-Output:
-("entity"{tuple_delimiter}FIRUZABAD{tuple_delimiter}GEO{tuple_delimiter}Firuzabad held Aurelians as hostages)
+text:
+ the class. </p><h2>publication_ref</h2> <p>['b58', 'b61'] </p><h2>figure_ref</h2> <p>[] </p><h2>table_ref</h2> <p>[] </p><h2>heading</h2> <p>Questionnaires </p><h2>text</h2> <p>Various questionnaires inspired by the perception of AI questions in [14] and [34] were given to students during the learning intervention. On the first day, students recorded their interactions with Alexa, impressions of the CA, and demographics information. At the start of the second day, students completed a questionnaire assessing their initial feeling towards and understanding of Alexa, AI and conversational AI. The questions were divided into two sets, which we refer to as the Persona and Conception questions.
+The Persona questions assessed students' sentiments about Alexa on a 7-point Likert scale. The questions stated, "Alexa is..." followed by "intelligent", "friendly", "alive", "safe", "trustworthy", "human-like", and "smarter than me". The final Persona question asked how close students felt to Alexa using the Inclusion of the Other in the Self scale [18]. The Conception questions assessed students' understanding of AI and conversational AI through asking, "Describe in your own words what AI is" and "Describe in your own words what conversational AI is (e.g., chatbots, like Alexa or Google home, use conversational AI)". At the end of the final day, students completed the Persona and Conception questions again. Additional questionnaires were given at the end of the second, third, and fourth days to assess specific AI literacy competencies, as discussed and analyzed in [59]. </p><h2>publication_ref</h2> <p>['b13', 'b33', 'b17', 'b58'] </p><h2>figure_ref</h2> <p>[] </p><h2>table_ref</h2> <p>[] </p><h2>heading</h2> <p>Data Analysis </p><h2>text</h2> <p>This study builds on the study presented in [59]. Thus, certain data analyzed in this study (e.g., demographics) is necessarily the same; however, this study focuses on data not analyzed in [59], including the questionnaire responses to the Persona questions and students' reported interactions with Alexa. The responses to the Conception questions were analyzed in both studies, however using different methods and through different lenses. This study investigates students' conceptions of AI through a word frequency analysis as well as analyses of changes in number of tags (as described below). The study in [59] assessed students' AI literacy before and after the learning intervention.
+To investigate the responses to qualitative questions, a reflexive, open-coding approach to thematic analysis [7] was performed by three researchers. The three researchers independently completed familiarization and code-generation stages. After several discussions, the three researchers came to a consensus on codes for the questionnaire responses. Codes and respective representative quotations can be found in [58]. Researchers generally constructed codes inductively or with respect to ideas from literature, including the Big AI Ideas [56]. It is important to note that responses often involved multiple ideas and were thus tagged with more than one code.
+For the quantitative questions (e.g., Likert scale Persona questions) asked on both pre-and postquestionnaires, the Wilcoxon Signed-Rank Test was employed to measure changes. Additionally, we used the Kendall Tau method to create pairwise correlation matrices. We analyzed the correlation coefficients using Cohen (2013)'s definition for correlation effect strength for behavioral and education psychology [8]. To test the validity of the strength of the coefficients, we compared Kendall Tau p-values to an alpha of 0.05. For the word frequency analysis, we used the NLTK library [33] to remove stop-words, tokenize and lemmatize qualitative responses. Additionally, to better visualize non-obvious concepts, we filtered out words directly from the questions, including 'AI', 'artificial', 'intelligence', and 'conversational'. Word clouds were generated using [39]. </p><h2>publication_ref</h2> <p>['b58', 'b58', 'b58', 'b6', 'b57', 'b55', 'b7', 'b32', 'b38'] </p><h2>figure_ref</h2> <p>[] </p><h2>table_ref</h2> <p>[] </p><h2>heading</h2> <p>RESULTS </p><h2>text</h2> <p> </p><h2>publication_ref</h2> <p>[] </p><h2>figure_ref</h2> <p>[] </p><h2>table_ref</h2> <p>[] </p><h2>heading</h2> <p>Student interactions with Alexa </p><h2>text</h2> <p>To understand the types of interactions students had with Alexa prior to the intervention, we coded the phrases they reported saying to Alexa during the interaction activity. We found most of the phrases fell into one of five categories listed in Tab. 1. The Information Updates category involved real-time events; the Action Commands category involved built-in Alexa applications; the Personal Questions category involved questions about Alexa; the Jokes category involved asking Alexa to say a joke; and the Other category involved questions and phrases that were often humorous (e.g., "Are dragons real?") or impossible to fully answer (e.g., "What are all the numbers of pi?"), or generally fell outside of the other categories (e.g., "Hello"). Note that prior to the activity, we asked Alexa to tell us a joke, which may have contributed to a large number of students also asking Alexa for jokes. </p><h2>publication_ref</h2> <p>[] </p><h2>figure_ref</h2> <p>[] </p><h2>table_ref</h2> <p>[] </p><h2>heading</h2> <p>Perceptions of Alexa pre-and post-workshop </p><h2>text</h2> <p>By comparing pre-and post-survey answers to the Persona questions (see Fig. 2), we found significant differences in how students felt about Alexa's intelligence and how close they felt they were to Alexa. After the intervention, students felt Alexa was more intelligent ( x = 6.0, 𝑀𝑜 = 6, |𝑍 | = 2.78, 𝑝 = 0.003) and felt closer to Alexa ( x = 3.5, 𝑀𝑜 = 4, |𝑍 | = 2.75, 𝑝 = 0.003). We did not find any evidence of significant differences in how students felt about Alexa being friendly, alive, safe, trustworthy, human-like or smarter than themselves before and after the intervention.
+Prior to the intervention, students generally reported Alexa as being highly intelligent ( x = 5.6, 𝑀𝑜 = 6), highly friendly ( x = 6.0, 𝑀𝑜 = 7), not very alive ( x = 2.9, 𝑀𝑜 = 1), highly safe ( x = 5.4, 𝑀𝑜 = 6), moderately to highly trustworthy ( x = 5.3, 𝑀𝑜 = 4, 5), and moderately human-like ( x = 4.2, 𝑀𝑜 = 5). They also reported feeling Alexa was much smarter than themselves ( x = 6.1, 𝑀𝑜 = 7), and feeling not particularly close to Alexa ( x = 3.0, 𝑀𝑜 = 2). The results were similar after the intervention (other than the changes in intelligence and closeness described above). </p><h2>publication_ref</h2> <p>[] </p><h2>figure_ref</h2> <p>['fig_0'] </p><h2>table_ref</h2> <p>[] </p><h2>heading</h2> <p>Correlations between perceptions of Alexa </p><h2>text</h2> <p>We found strong (𝑟 ≥ 0.5 [8]) correlations between student reports of Alexa's safeness and trustworthiness on both the pre-and post-test, as well as between Alexa's friendliness and trustworthiness on the post-test. There was also a strong correlation between trustworthiness reported on the pre-test and safeness reported on the post-test. Student reports of Alexa's friendliness and trustworthiness on the pre-test and between the pre-and post-tests were moderately (𝑟 ≥ 0.3 [8]) correlated.
+Other moderate correlations included student reports of Alexa's intelligence and trustworthiness, friendliness and safeness, trustworthiness and feelings of closeness, human-likeness and aliveness, human-likeness and feelings of closeness, as well as aliveness and feelings of closeness. In the post-test, student reports of Alexa's intelligence and feeling Alexa was smarter than them, as well as Alexa's trustworthiness and feeling Alexa was smarter than them were moderately correlated. Additionally, there was a moderate correlation between students with more experience
+------------------------
+output:
+("entity"{tuple_delimiter}ALEXA{tuple_delimiter}TECHNOLOGY{tuple_delimiter}Alexa is a conversational AI developed by Amazon, capable of understanding and responding to voice commands and questions from users.)
 {record_delimiter}
-("entity"{tuple_delimiter}AURELIA{tuple_delimiter}GEO{tuple_delimiter}Country seeking to release hostages)
+("entity"{tuple_delimiter}STUDENTS{tuple_delimiter}GROUP{tuple_delimiter}Students are individuals participating in a learning intervention to assess their perceptions and interactions with Alexa and AI.)
 {record_delimiter}
-("entity"{tuple_delimiter}QUINTARA{tuple_delimiter}GEO{tuple_delimiter}Country that negotiated a swap of money in exchange for hostages)
+("entity"{tuple_delimiter}QUESTIONNAIRES{tuple_delimiter}DOCUMENT{tuple_delimiter>Questionnaires are tools used to gather data on students' perceptions and understanding of AI and Alexa through various questions.)
 {record_delimiter}
+("entity"{tuple_delimiter}PERSONA QUESTIONS{tuple_delimiter}DOCUMENT{tuple_delimiter}Persona questions assess students' sentiments about Alexa using a 7-point Likert scale.)
 {record_delimiter}
-("entity"{tuple_delimiter}TIRUZIA{tuple_delimiter}GEO{tuple_delimiter}Capital of Firuzabad where the Aurelians were being held)
+("entity"{tuple_delimiter}CONCEPTION QUESTIONS{tuple_delimiter}DOCUMENT{tuple_delimiter}Conception questions evaluate students' understanding of AI and conversational AI by asking them to describe these concepts in their own words.)
 {record_delimiter}
-("entity"{tuple_delimiter}KROHAARA{tuple_delimiter}GEO{tuple_delimiter}Capital city in Quintara)
+("entity"{tuple_delimiter}DATA ANALYSIS{tuple_delimiter}PROCESS{tuple_delimiter}Data analysis involves examining the responses from questionnaires to understand students' perceptions and interactions with Alexa.)
 {record_delimiter}
-("entity"{tuple_delimiter}CASHION{tuple_delimiter}GEO{tuple_delimiter}Capital city in Aurelia)
+("entity"{tuple_delimiter}WORD FREQUENCY ANALYSIS{tuple_delimiter}PROCESS{tuple_delimiter}Word frequency analysis is a method used to analyze qualitative responses by counting the frequency of words used by students.)
 {record_delimiter}
-("entity"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}PERSON{tuple_delimiter}Aurelian who spent time in Tiruzia's Alhamia Prison)
+("entity"{tuple_delimiter}KENDALL TAU METHOD{tuple_delimiter}METHOD{tuple_delimiter}The Kendall Tau method is a statistical technique used to measure the correlation between two variables.)
 {record_delimiter}
-("entity"{tuple_delimiter}ALHAMIA PRISON{tuple_delimiter}GEO{tuple_delimiter}Prison in Tiruzia)
+("entity"{tuple_delimiter}WILCOXON SIGNED-RANK TEST{tuple_delimiter}METHOD{tuple_delimiter}The Wilcoxon Signed-Rank Test is a non-parametric statistical test used to compare two related samples.)
 {record_delimiter}
-("entity"{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}PERSON{tuple_delimiter}Aurelian journalist who was held hostage)
+("relationship"{tuple_delimiter}STUDENTS{tuple_delimiter}ALEXA{tuple_delimiter}Students interacted with Alexa during the learning intervention to assess their perceptions and understanding of AI.{tuple_delimiter}8)
 {record_delimiter}
-("entity"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}PERSON{tuple_delimiter}Bratinas national and environmentalist who was held hostage)
+("relationship"{tuple_delimiter}STUDENTS{tuple_delimiter}QUESTIONNAIRES{tuple_delimiter}Students completed questionnaires to provide data on their perceptions and interactions with Alexa.{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}FIRUZABAD{tuple_delimiter}AURELIA{tuple_delimiter}Firuzabad negotiated a hostage exchange with Aurelia{tuple_delimiter}2)
+("relationship"{tuple_delimiter}QUESTIONNAIRES{tuple_delimiter}PERSONA QUESTIONS{tuple_delimiter}The questionnaires included Persona questions to assess students' sentiments about Alexa.{tuple_delimiter}6)
 {record_delimiter}
-("relationship"{tuple_delimiter}QUINTARA{tuple_delimiter}AURELIA{tuple_delimiter}Quintara brokered the hostage exchange between Firuzabad and Aurelia{tuple_delimiter}2)
+("relationship"{tuple_delimiter}QUESTIONNAIRES{tuple_delimiter}CONCEPTION QUESTIONS{tuple_delimiter}The questionnaires also included Conception questions to evaluate students' understanding of AI and conversational AI.{tuple_delimiter}6)
 {record_delimiter}
-("relationship"{tuple_delimiter}QUINTARA{tuple_delimiter}FIRUZABAD{tuple_delimiter}Quintara brokered the hostage exchange between Firuzabad and Aurelia{tuple_delimiter}2)
+("relationship"{tuple_delimiter}DATA ANALYSIS{tuple_delimiter}QUESTIONNAIRES{tuple_delimiter}Data analysis was performed on the responses collected from the questionnaires to understand students' perceptions.{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}ALHAMIA PRISON{tuple_delimiter}Samuel Namara was a prisoner at Alhamia prison{tuple_delimiter}8)
+("relationship"{tuple_delimiter}WORD FREQUENCY ANALYSIS{tuple_delimiter}DATA ANALYSIS{tuple_delimiter}Word frequency analysis was part of the data analysis process to examine qualitative responses from students.{tuple_delimiter}5)
 {record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}Samuel Namara and Meggie Tazbah were exchanged in the same hostage release{tuple_delimiter}2)
+("relationship"{tuple_delimiter}KENDALL TAU METHOD{tuple_delimiter}DATA ANALYSIS{tuple_delimiter}The Kendall Tau method was used in the data analysis to measure correlations between variables.{tuple_delimiter}5)
 {record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}Samuel Namara and Durke Bataglani were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}Meggie Tazbah and Durke Bataglani were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}FIRUZABAD{tuple_delimiter}Samuel Namara was a hostage in Firuzabad{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}FIRUZABAD{tuple_delimiter}Meggie Tazbah was a hostage in Firuzabad{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}FIRUZABAD{tuple_delimiter}Durke Bataglani was a hostage in Firuzabad{tuple_delimiter}2)
+("relationship"{tuple_delimiter}WILCOXON SIGNED-RANK TEST{tuple_delimiter}DATA ANALYSIS{tuple_delimiter}The Wilcoxon Signed-Rank Test was employed in the data analysis to compare pre-and post-questionnaire responses.{tuple_delimiter}5)
 {completion_delimiter}
+#############################
 
-######################
+
+Example 5:
+
+text:
+ik He; Robert A Narayanan; Roni Giaquinto; Linda Evans; Svetlana Hanson;  Yarosh </p><h2>ref_id</h2> <p>b70 </p><h2>title</h2> <p>Be Grateful You Don't Have a Real Disease": Understanding Rare Disease Relationships </p><h2>journal</h2> <p>Association for Computing Machinery </p><h2>year</h2> <p>2017 </p><h2>authors</h2> <p>Haley Macleod; Grace Bastin; Leslie S Liu; Katie Siek; Kay Connelly </p><h2>ref_id</h2> <p>b71 </p><h2>title</h2> <p>Computer-mediated infertility support groups: An exploratory study of online experiences </p><h2>journal</h2> <p>Patient Education and Counseling </p><h2>year</h2> <p>2008-10 </p><h2>authors</h2> <p>H Sumaira; Neil S Malik;  Coulson </p><h2>ref_id</h2> <p>b72 </p><h2>title</h2> <p>Data Structures for Statistical Computing in Python </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2010 </p><h2>authors</h2> <p>Wes Mckinney </p><h2>ref_id</h2> <p>b73 </p><h2>title</h2> <p>There's somebody like me": perspectives of a peer-to-peer gynecologic cancer mentorship program </p><h2>journal</h2> <p>Support Care Cancer </p><h2>year</h2> <p>2021-12 </p><h2>authors</h2> <p>Hannah Kang Moran; Joanna Veazey Brooks; Lori Spoozak </p><h2>ref_id</h2> <p>b74 </p><h2>title</h2> <p>Woman to Woman: a hospital-based support program for women with gynecologic cancer and their families </p><h2>journal</h2> <p>Routledge </p><h2>year</h2> <p>2016 </p><h2>authors</h2> <p>Arden Moulton </p><h2>ref_id</h2> <p>b75 </p><h2>title</h2> <p>Woman to Woman: A Peer to Peer Support Program for Women With Gynecologic Cancer </p><h2>journal</h2> <p>Social Work in Health Care </p><h2>year</h2> <p>2013-11 </p><h2>authors</h2> <p>Arden Moulton; Amy Balbierz; Stephanie Eisenman; Elizabeth Neustein; Virginia Walther; Irwin Epstein </p><h2>ref_id</h2> <p>b76 </p><h2>title</h2> <p>A Park or A Highway: Overcoming Tensions in Designing for Socioemotional and Informational Needs in Online Health Communities </p><h2>journal</h2> <p>ACM </p><h2>year</h2> <p>2017 </p><h2>authors</h2> <p>Drashko Nakikj; Lena Mamykina </p><h2>ref_id</h2> <p>b77 </p><h2>title</h2> <p>Lost in Migration: Information Management and Community Building in an Online Health Community </p><h2>journal</h2> <p>Association for Computing Machinery </p><h2>year</h2> <p>2018 </p><h2>authors</h2> <p>Drashko Nakikj; Lena Mamykina </p><h2>ref_id</h2> <p>b78 </p><h2>title</h2> <p>Deep Learning Recommendation Model for Personalization and Recommendation Systems </p><h2>journal</h2> <p> </p><h2>year</h2> <p>2019-05 </p><h2>authors</h2> <p>Maxim Naumov; Dheevatsa Mudigere; Michael Hao-Jun; Jianyu Shi; Narayanan Huang; Jongsoo Sundaraman; Xiaodong Park; Udit Wang; Carole-Jean Gupta; Alisson G Wu; Dmytro Azzolini; Andrey Dzhulgakov; Ilia Mallevich; Yinghai Cherniavskii; Raghuraman Lu; Ansha Krishnamoorthi; Volodymyr Yu; Stephanie Kondratenko; Xianjie Pereira; Wenlin Chen; Vijay Chen; Bill Rao; Liang Jia; Misha Xiong;  Smelyanskiy </p><h2>ref_id</h2> <p>b79 </p><h2>title</h2> <p>Choice of Implicit Signal Matters: Accounting for User Aspirations in Podcast Recommendations </p><h2>journal</h2> <p>Association for Computing Machinery </p><h2>year</h2> <p>2022 </p><h2>authors</h2> <p>Zahra Nazari; Praveen Chandar; Ghazal Fazelnia; Catherine M Edwards; Benjamin Carterette; Mounia Lalmas </p><h2>ref_id</h2> <p>b80 </p><h2>title</h2> <p>It's Not That I Don'T Have Problems, I'M Just Not Putting Them on Facebook: Challenges and Opportunities in Using Online Social Networks for Health </p><h2>journal</h2> <p>ACM </p><h2>year</h2> <p>2011 </p><h2>authors</h2> <p>Mark W Newman; Debra Lauterbach; Sean A Munson; Paul Resnick; Margaret E Morris </p><h2>ref_id</h2> <p>b81 </p><h2>title</h2> <p>Design Opportunities for Mental Health Peer Support Technologies </p><h2>journal</h2> <p>ACM </p><h2>year</h2> <p>2017 </p><h2>authors</h2> <p>O' Kathleen; Arpita Leary; Sean A Bhattacharya; Jacob O Munson; Wanda Wobbrock;  Pratt </p><h2>ref_id</h2> <p>b82 </p><h2>title</h2> <p>Reciprocal Recommender Systems: Analysis of state-of-art literature, challenges and opportunities towards social recommendation </p><h2>journal</h2> <p>Information Fusion </p><h2>year</h2> <p>2021-05 </p><h2>authors</h2> <p>Iván Palomares; James Neve; Carlos Porcel; Luiz Pizzato; Ido Guy; Enrique Herrera-Viedma </p><h2>ref_id</h2> <p>b83 </p><h2>title</h2> <p>PyTorch: An Imperative Style, High-Performance Deep Learning Library </p><h2>journal</h2> <p>Curran Associates, Inc </p><h2>year</h2> <p>2019 </p><h2>authors</h2> <p>Adam Paszke; Sam Gross; Francisco Massa; Adam Lerer; James Bradbury; Gregory Chanan; Trevor Killeen; Zeming Lin; Natalia Gimelshein; Luca Antiga; Alban Desmaison; Andreas Kopf; Edward Yang; Zachary Devito; Martin Raison; Alykhan Tejani; Sasank Chilamkurthy; Benoit Steiner; Lu Fang; Junjie Bai; Soumith Chintala </p><h2>ref_id</h2> <p>b84 </p><h2>title</h2> <p>Scikit-learn: Machine Learning in Python </p><h2>journal</h2> <p>Journal of Machine Learning Research </p><h2>year</h2> <p>2011 </p><h2>authors</h2> <p>F Pedregosa; G Varoquaux; A Gramfort; V Michel; B Thirion; O Grisel; M Blondel; P Prettenhofer; R Weiss; V Dubourg; J Vanderplas; A Passos; D Cournapeau; M Brucher; M Perrot; E Duchesnay </p><h2>ref_id</h2> <p>b85 </p><h2>title</h2> <p>Exploring the Effects of Technological Writing Assistance for Support Providers
+------------------------
+output:
+("entity"{tuple_delimiter}HALEY MACLEOD{tuple_delimiter}PERSON{tuple_delimiter}Haley Macleod is one of the authors of the paper titled 'Be Grateful You Don't Have a Real Disease': Understanding Rare Disease Relationships)
+{record_delimiter}
+("entity"{tuple_delimiter}GRACE BASTIN{tuple_delimiter}PERSON{tuple_delimiter}Grace Bastin is one of the authors of the paper titled 'Be Grateful You Don't Have a Real Disease': Understanding Rare Disease Relationships)
+{record_delimiter}
+("entity"{tuple_delimiter}LESLIE S LIU{tuple_delimiter}PERSON{tuple_delimiter}Leslie S Liu is one of the authors of the paper titled 'Be Grateful You Don't Have a Real Disease': Understanding Rare Disease Relationships)
+{record_delimiter}
+("entity"{tuple_delimiter}KATIE SIEK{tuple_delimiter}PERSON{tuple_delimiter}Katie Siek is one of the authors of the paper titled 'Be Grateful You Don't Have a Real Disease': Understanding Rare Disease Relationships)
+{record_delimiter}
+("entity"{tuple_delimiter}KAY CONNELLY{tuple_delimiter}PERSON{tuple_delimiter}Kay Connelly is one of the authors of the paper titled 'Be Grateful You Don't Have a Real Disease': Understanding Rare Disease Relationships)
+{record_delimiter}
+("entity"{tuple_delimiter}H SUMAIRA{tuple_delimiter}PERSON{tuple_delimiter}H Sumaira is one of the authors of the paper titled 'Computer-mediated infertility support groups: An exploratory study of online experiences')
+{record_delimiter}
+("entity"{tuple_delimiter}NEIL S MALIK{tuple_delimiter}PERSON{tuple_delimiter}Neil S Malik is one of the authors of the paper titled 'Computer-mediated infertility support groups: An exploratory study of online experiences')
+{record_delimiter}
+("entity"{tuple_delimiter}COULSON{tuple_delimiter}PERSON{tuple_delimiter}Coulson is one of the authors of the paper titled 'Computer-mediated infertility support groups: An exploratory study of online experiences')
+{record_delimiter}
+("entity"{tuple_delimiter}WES MCKINNEY{tuple_delimiter}PERSON{tuple_delimiter}Wes McKinney is the author of the paper titled 'Data Structures for Statistical Computing in Python')
+{record_delimiter}
+("entity"{tuple_delimiter}HANNAH KANG MORAN{tuple_delimiter}PERSON{tuple_delimiter}Hannah Kang Moran is one of the authors of the paper titled 'There's somebody like me': perspectives of a peer-to-peer gynecologic cancer mentorship program)
+{record_delimiter}
+("entity"{tuple_delimiter}JOANNA VEAZEY BROOKS{tuple_delimiter}PERSON{tuple_delimiter}Joanna Veazey Brooks is one of the authors of the paper titled 'There's somebody like me': perspectives of a peer-to-peer gynecologic cancer mentorship program)
+{record_delimiter}
+("entity"{tuple_delimiter}LORI SPOOZAK{tuple_delimiter}PERSON{tuple_delimiter}Lori Spoozak is one of the authors of the paper titled 'There's somebody like me': perspectives of a peer-to-peer gynecologic cancer mentorship program)
+{record_delimiter}
+("entity"{tuple_delimiter}ARDEN MOULTON{tuple_delimiter}PERSON{tuple_delimiter}Arden Moulton is the author of the paper titled 'Woman to Woman: a hospital-based support program for women with gynecologic cancer and their families')
+{record_delimiter}
+("entity"{tuple_delimiter}AMY BALBIERZ{tuple_delimiter}PERSON{tuple_delimiter}Amy Balbierz is one of the authors of the paper titled 'Woman to Woman: A Peer to Peer Support Program for Women With Gynecologic Cancer')
+{record_delimiter}
+("entity"{tuple_delimiter}STEPHANIE EISENMAN{tuple_delimiter}PERSON{tuple_delimiter}Stephanie Eisenman is one of the authors of the paper titled 'Woman to Woman: A Peer to Peer Support Program for Women With Gynecologic Cancer')
+{record_delimiter}
+("entity"{tuple_delimiter}ELIZABETH NEUSTEIN{tuple_delimiter}PERSON{tuple_delimiter}Elizabeth Neustein is one of the authors of the paper titled 'Woman to Woman: A Peer to Peer Support Program for Women With Gynecologic Cancer')
+{record_delimiter}
+("entity"{tuple_delimiter}VIRGINIA WALTHER{tuple_delimiter}PERSON{tuple_delimiter}Virginia Walther is one of the authors of the paper titled 'Woman to Woman: A Peer to Peer Support Program for Women With Gynecologic Cancer')
+{record_delimiter}
+("entity"{tuple_delimiter}IRWIN EPSTEIN{tuple_delimiter}PERSON{tuple_delimiter}Irwin Epstein is one of the authors of the paper titled 'Woman to Woman: A Peer to Peer Support Program for Women With Gynecologic Cancer')
+{record_delimiter}
+("entity"{tuple_delimiter}DRASHKO NAKIKJ{tuple_delimiter}PERSON{tuple_delimiter}Drashko Nakikj is one of the authors of the paper titled 'A Park or A Highway: Overcoming Tensions in Designing for Socioemotional and Informational Needs in Online Health Communities')
+{record_delimiter}
+("entity"{tuple_delimiter}LENA MAMYKINA{tuple_delimiter}PERSON{tuple_delimiter}Lena Mamykina is one of the authors of the paper titled 'A Park or A Highway: Overcoming Tensions in Designing for Socioemotional and Informational Needs in Online Health Communities')
+{record_delimiter}
+("entity"{tuple_delimiter}MAXIM NAUMOV{tuple_delimiter}PERSON{tuple_delimiter}Maxim Naumov is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}DHEEVATSA MUDIGERE{tuple_delimiter}PERSON{tuple_delimiter}Dheevatsa Mudigere is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}MICHAEL HAO-JUN{tuple_delimiter}PERSON{tuple_delimiter}Michael Hao-Jun is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}JIANYU SHI{tuple_delimiter}PERSON{tuple_delimiter}Jianyu Shi is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}NARAYAN HUANG{tuple_delimiter}PERSON{tuple_delimiter}Narayanan Huang is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}JONGSOO SUNDARAMAN{tuple_delimiter}PERSON{tuple_delimiter}Jongsoo Sundaraman is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}XIAODONG PARK{tuple_delimiter}PERSON{tuple_delimiter}Xiaodong Park is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}UDIT WANG{tuple_delimiter}PERSON{tuple_delimiter}Udit Wang is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}CAROLE-JEAN GUPTA{tuple_delimiter}PERSON{tuple_delimiter}Carole-Jean Gupta is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}ALISSON G WU{tuple_delimiter}PERSON{tuple_delimiter}Alisson G Wu is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}DMYTRO AZZOLINI{tuple_delimiter}PERSON{tuple_delimiter}Dmytro Azzolini is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}ANDREY DZHULGAKOV{tuple_delimiter}PERSON{tuple_delimiter}Andrey Dzhulgakov is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}ILIA MALLEVICH{tuple_delimiter}PERSON{tuple_delimiter}Ilia Mallevich is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}YINGHAI CHERNIAVSKII{tuple_delimiter}PERSON{tuple_delimiter}Yinghai Cherniavskii is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}RAGHURAMAN LU{tuple_delimiter}PERSON{tuple_delimiter}Raghuraman Lu is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}ANSHA KRISHNAMOORTHI{tuple_delimiter}PERSON{tuple_delimiter}Ansha Krishnamoorthi is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}VOLODYMYR YU{tuple_delimiter}PERSON{tuple_delimiter}Volodymyr Yu is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}STEPHANIE KONDRATENKO{tuple_delimiter}PERSON{tuple_delimiter}Stephanie Kondratenko is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}XIANJIE PEREIRA{tuple_delimiter}PERSON{tuple_delimiter}Xianjie Pereira is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}WENLIN CHEN{tuple_delimiter}PERSON{tuple_delimiter}Wenlin Chen is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}VIJAY CHEN{tuple_delimiter}PERSON{tuple_delimiter}Vijay Chen is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}BILL RAO{tuple_delimiter}PERSON{tuple_delimiter}Bill Rao is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}LIANG JIA{tuple_delimiter}PERSON{tuple_delimiter}Liang Jia is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}MISHA XIONG{tuple_delimiter}PERSON{tuple_delimiter}Misha Xiong is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}SMELYANSKIY{tuple_delimiter}PERSON{tuple_delimiter}Smelyanskiy is one of the authors of the paper titled 'Deep Learning Recommendation Model for Personalization and Recommendation Systems')
+{record_delimiter}
+("entity"{tuple_delimiter}ZAHRA NAZARI{tuple_delimiter}PERSON{tuple_delimiter}Zahra Nazari is one of the authors of the paper titled 'Choice of Implicit Signal Matters: Accounting for User Aspirations in Podcast Recommendations')
+{record_delimiter}
+("entity"{tuple_delimiter}PRAVEEN CHANDAR{tuple_delimiter}PERSON{tuple_delimiter}Praveen Chandar is one of the authors of the paper titled 'Choice of Implicit Signal Matters: Accounting for User Aspirations in Podcast Recommendations')
+{record_delimiter}
+("entity"{tuple_delimiter}GHAZAL FAZELNIA{tuple_delimiter}PERSON{tuple_delimiter}Ghazal Fazelnia is one of the authors of the paper titled 'Choice of Implicit Signal Matters: Accounting for User Aspirations in Podcast Recommendations')
+{record_delimiter}
+("entity"{tuple_delimiter}CATHERINE M EDWARDS{tuple_delimiter}PERSON{tuple_delimiter}Catherine M Edwards is one of the authors of the paper titled 'Choice of Implicit Signal Matters: Accounting for User Aspirations in Podcast Recommendations')
+{record_delimiter}
+("entity"{tuple_delimiter}BENJAMIN CARTERETTE{tuple_delimiter}PERSON{tuple_delimiter}Benjamin Carterette is one of the authors of the paper titled 'Choice of Implicit Signal Matters: Accounting for User Aspirations in Podcast Recommendations')
+{record_delimiter}
+("entity"{tuple_delimiter}MOUNIA LALMAS{tuple_delimiter}PERSON{tuple_delimiter}Mounia Lalmas is one of the authors of the paper titled 'Choice of Implicit Signal Matters: Accounting for User Aspirations in Podcast Recommendations')
+{record_delimiter}
+("entity"{tuple_delimiter}MARK W NEWMAN{tuple_delimiter}PERSON{tuple_delimiter}Mark W Newman is one of the authors of the paper titled 'It's Not That I Don'T Have Problems, I'M Just Not Putting Them on Facebook: Challenges and Opportunities in Using Online Social Networks for Health')
+{record_delimiter}
+("entity"{tuple_delimiter}DEBRA LAUTERBACH{tuple_delimiter}PERSON{tuple_delimiter}Debra Lauterbach is one of the authors of the paper titled 'It's Not That I Don'T Have Problems, I'M Just Not Putting Them on Facebook: Challenges and Opportunities in Using Online Social Networks for Health')
+{record_delimiter}
+("entity"{tuple_delimiter}SEAN A MUNSON{tuple_delimiter}PERSON{tuple_delimiter}Sean A Munson is one of the authors of the paper titled 'It's Not That I Don'T Have Problems, I'M Just Not Putting Them on Facebook: Challenges and Opportunities in Using Online Social Networks for Health')
+{record_delimiter}
+("entity"{tuple_delimiter}PAUL RESNICK{tuple_delimiter}PERSON{tuple_delimiter}Paul Resnick is one of the authors of the paper titled 'It's Not That I Don'T Have Problems, I'M Just Not Putting Them on Facebook: Challenges and Opportunities in Using Online Social Networks for Health')
+{record_delimiter}
+("entity"{tuple_delimiter}MARGARET E MORRIS{tuple_delimiter}PERSON{tuple_delimiter}Margaret E Morris is one of the authors of the paper titled 'It's Not That I Don'T Have Problems, I'M Just Not Putting Them on Facebook: Challenges and Opportunities in Using Online Social Networks for Health')
+{record_delimiter}
+("entity"{tuple_delimiter}O' KATHLEEN{tuple_delimiter}PERSON{tuple_delimiter}O' Kathleen is one of the authors of the paper titled 'Design Opportunities for Mental Health Peer Support Technologies')
+{record_delimiter}
+("entity"{tuple_delimiter}ARPITA LEARY{tuple_delimiter}PERSON{tuple_delimiter}Arpita Leary is one of the authors of the paper titled 'Design Opportunities for Mental Health Peer Support Technologies')
+{record_delimiter}
+("entity"{tuple_delimiter}SEAN A BHATTACHARYA{tuple_delimiter}PERSON{tuple_delimiter}Sean A Bhattacharya is one of the authors of the paper titled 'Design Opportunities for Mental Health Peer Support Technologies')
+{record_delimiter}
+("entity"{tuple_delimiter}JACOB O MUNSON{tuple_delimiter}PERSON{tuple_delimiter}Jacob O Munson is one of the authors of the paper titled 'Design Opportunities for Mental Health Peer Support Technologies')
+{record_delimiter}
+("entity"{tuple_delimiter}WANDA WOBBROCK{tuple_delimiter}PERSON{tuple_delimiter}Wanda Wobbrock is one of the authors of the paper titled 'Design Opportunities for Mental Health Peer Support Technologies')
+{record_delimiter}
+("entity"{tuple_delimiter}IVÁN PALOMARES{tuple_delimiter}PERSON{tuple_delimiter}Iván Palomares is one of the authors of the paper titled 'Reciprocal Recommender Systems: Analysis of state-of-art literature, challenges and opportunities towards social recommendation')
+{record_delimiter}
+("entity"{tuple_delimiter}JAMES NEVE{tuple_delimiter}PERSON{tuple_delimiter}James Neve is one of the authors of the paper titled 'Reciprocal Recommender Systems: Analysis of state-of-art literature, challenges and opportunities towards social recommendation')
+{record_delimiter}
+("entity"{tuple_delimiter}CARLOS PORCEL{tuple_delimiter}PERSON{tuple_delimiter}Carlos Porcel is one of the authors of the paper titled 'Reciprocal Recommender Systems: Analysis of state-of-art literature, challenges and opportunities towards social recommendation')
+{record_delimiter}
+("entity"{tuple_delimiter}LUIZ PIZATO{tuple_delimiter}PERSON{tuple_delimiter}Luiz Pizzato is one of the authors of the paper titled 'Reciprocal Recommender Systems: Analysis of state-of-art literature, challenges and opportunities towards social recommendation')
+{record_delimiter}
+("entity"{tuple_delimiter}IDO GUY{tuple_delimiter}PERSON{tuple_delimiter}Ido Guy is one of the authors of the paper titled 'Reciprocal Recommender Systems: Analysis of state-of-art literature, challenges and opportunities towards social recommendation')
+{record_delimiter}
+("entity"{tuple_delimiter}ENRIQUE HERRERA-VIEDMA{tuple_delimiter}PERSON{tuple_delimiter}Enrique Herrera-Viedma is one of the authors of the paper titled 'Reciprocal Recommender Systems: Analysis of state-of-art literature, challenges and opportunities towards social recommendation')
+{record_delimiter}
+("entity"{tuple_delimiter}ADAM PASZKE{tuple_delimiter}PERSON{tuple_delimiter}Adam Paszke is one of the authors of the paper titled 'PyTorch: An Imperative Style, High-Performance Deep Learning Library')
+{record_delimiter}
+("entity"{tuple_delimiter
+#############################
+
+
+
 -Real Data-
 ######################
-Entity_types: {entity_types}
-Text: {input_text}
+text: {input_text}
 ######################
-Output:
+output:
