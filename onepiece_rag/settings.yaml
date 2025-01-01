@@ -11,8 +11,8 @@ llm:
   type: openai_chat # or azure_openai_chat
   model: gpt-4o-mini
   max_retries: 20
-  tokens_per_minute: 100000
-  requests_per_minute: 250
+  tokens_per_minute: 200000
+  requests_per_minute: 500
   model_supports_json: true # recommended if this is available for your model.
   # audience: "https://cognitiveservices.azure.com/.default"
   # api_base: https://<instance>.openai.azure.com
@@ -22,7 +22,7 @@ llm:
 
 parallelization:
   stagger: 0.3
-  num_threads: 2
+  num_threads: 4
 
 async_mode: asyncio # or asyncio
 
@@ -39,8 +39,8 @@ embeddings:
     type: openai_embedding # or azure_openai_embedding
     model: text-embedding-3-small
     max_retries: 20
-    tokens_per_minute: 500000
-    requests_per_minute: 1500
+    tokens_per_minute: 1000000
+    requests_per_minute: 3000
     # api_base: https://<instance>.openai.azure.com
     # api_version: 2024-02-15-preview
     # audience: "https://cognitiveservices.azure.com/.default"
