@@ -89,7 +89,7 @@ skip_workflows: []
 
 entity_extraction:
   prompt: "prompts/entity_extraction.txt"
-  entity_types: [organization, concept, event]
+  entity_types: [people, concept]
   max_gleanings: 1
 
 summarize_descriptions:
