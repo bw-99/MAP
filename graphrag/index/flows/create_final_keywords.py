@@ -13,7 +13,7 @@ from datashaper import (
 )
 
 from graphrag.cache.pipeline_cache import PipelineCache
-from graphrag.index.operations.summarize_communities import summarize_keywords
+from graphrag.index.operations.summarize_communities.summarize_keywords import summarize_keywords
 from graphrag.index.operations.summarize_communities.community_reports_extractor import schemas
 from graphrag.query.llm.text_utils import num_tokens
 
@@ -55,7 +55,7 @@ def _prep_keywords(
     max_tokens: int = 16_000,
 ):
     """Prep communities for report generation."""
-    context_columns = [schemas.TITLE, schemas.SUMMARY, schemas.FINDINGS, schemas.RATING, schemas.EXPLANATION]
+    context_columns = [schemas.TITLE, schemas.SUMMARY, schemas.FINDINGS]
     input = final_community_reports
     meta_contexts = []
     for idx, row in progress_iterable(input.iterrows(), callbacks.progress, len(input)):
@@ -66,7 +66,7 @@ def _prep_keywords(
             )
         meta_contexts.append("\n\n".join(contexts))
     input[schemas.REPORT_CONTEXT] = meta_contexts
-    input[schemas.REPORT_CONTEXT_SIZE] = meta_contexts.loc[:, schemas.REPORT_CONTEXT].map(num_tokens)
+    input[schemas.REPORT_CONTEXT_SIZE] = input.loc[:, schemas.REPORT_CONTEXT].map(num_tokens)
     input[schemas.REPORT_CONTEXT_EXCEED_FLAG] =  (
         input[schemas.REPORT_CONTEXT_SIZE] > max_tokens
     )

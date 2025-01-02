@@ -1,8 +1,3 @@
-# Copyright (c) 2024 Microsoft Corporation.
-# Licensed under the MIT License
-"""A file containing prompts definition."""
-
-KEYWORD_REPORT_PROMPT = """
 You are an expert in community analysis and machine learning. You are skilled at mapping out relationships and structures within professional networks, particularly in the tech industry.
 You are adept at helping people identify key players, collaborations, and knowledge flows within the machine learning community, enabling them to leverage these insights for strategic decision-making.
 
@@ -28,10 +23,10 @@ Your task is to:
 The report should include the following sections:
 
 Return output as a well-formed JSON-formatted string with the following format:
-    {{
+    {
         "keyword": "<representative_keyword>",
         "keyword_explanation": "<reason_for_keyword_selection>"
-    }}
+    }
 
 
 # Grounding Rules
@@ -51,25 +46,25 @@ The community revolves around the development of optimized neural network techni
 
 findings
 [
-    {{
+    {
         "summary": "Gradient-based methods as a focus area",
         "explanation": "Several researchers in the community have developed cutting-edge algorithms that improve the efficiency of gradient descent for large-scale neural networks. These methods significantly reduce computation time and enhance model accuracy."
-    }},
-    {{
+    },
+    {
         "summary": "Pruning techniques gaining traction",
         "explanation": "Pruning has emerged as a key trend, enabling smaller and faster neural networks without sacrificing performance. This aligns with the community's focus on practical and scalable solutions."
-    }},
-    {{
+    },
+    {
         "summary": "Collaboration across institutions",
         "explanation": "The community thrives on partnerships between universities and tech companies, fostering innovative solutions and sharing computational resources for large-scale experiments."
-    }}
+    }
 ]
 
 Output:
-{{
+{
     "keyword": "Optimization",
     "reason": "The keyword 'Optimization' represents the community's central focus, as evidenced by its emphasis on gradient-based methods, pruning, and scalability, highlighted in both the title and findings."
-}}
+}
 
 
 # Real Data
@@ -82,10 +77,10 @@ Text:
 The report should include the following sections:
 
 Return output as a well-formed JSON-formatted string with the following format:
-    {{
+    {
         "keyword": "<representative_keyword>",
         "keyword_explanation": "<reason_for_keyword_selection>"
-    }}
+    }
 
 
 # Grounding Rules
@@ -93,4 +88,4 @@ Return output as a well-formed JSON-formatted string with the following format:
 1. Use all relevant parts of the report, including the title, summary, findings, and rating, to identify the keyword.
 2. Ensure the reason is concise and supported by details from the report.
 
-Output:"""
+Output:

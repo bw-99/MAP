@@ -16,7 +16,7 @@ from datashaper.table_store.types import VerbResult, create_verb_result
 
 from graphrag.cache.pipeline_cache import PipelineCache
 from graphrag.index.config.workflow import PipelineWorkflowConfig, PipelineWorkflowStep
-from graphrag.index.flows import create_final_keywords
+from graphrag.index.flows.create_final_keywords import create_final_keywords
 from graphrag.index.flows.create_final_community_reports import (
     create_final_community_reports,
 )
@@ -43,7 +43,7 @@ def build_steps(
     num_threads = create_keywords_config.get("num_threads")
 
     input = {
-        "community_reports": "workflow:create_final_community_reports",
+        "source": "workflow:create_final_community_reports",
     }
 
     return [
@@ -70,9 +70,7 @@ async def workflow(
     **_kwargs: dict,
 ) -> VerbResult:
     """All the steps transforming community reports to keywords."""
-    final_community_reports = cast(
-        "pd.DataFrame", get_required_input_table(input, "community_reports").table
-    )
+    final_community_reports = cast("pd.DataFrame", input.get_input())
 
     output = await create_final_keywords(
         final_community_reports,

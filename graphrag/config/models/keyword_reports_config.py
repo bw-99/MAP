@@ -12,13 +12,13 @@ from graphrag.config.models.llm_config import LLMConfig
 
 
 class KeywordReportsConfig(LLMConfig):
-    """Configuration section for community reports."""
+    """Configuration section for keyword reports."""
 
     prompt: str | None = Field(
-        description="The community report extraction prompt to use.", default=None
+        description="The keyword report extraction prompt to use.", default=None
     )
     max_length: int = Field(
-        description="The community report maximum length in tokens.",
+        description="The keyword report maximum length in tokens.",
         default=defs.COMMUNITY_REPORT_MAX_LENGTH,
     )
     max_input_length: int = Field(

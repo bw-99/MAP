@@ -41,6 +41,7 @@ from graphrag.config.models.entity_extraction_config import EntityExtractionConf
 from graphrag.config.models.global_search_config import GlobalSearchConfig
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.config.models.input_config import InputConfig
+from graphrag.config.models.keyword_reports_config import KeywordReportsConfig
 from graphrag.config.models.llm_parameters import LLMParameters
 from graphrag.config.models.local_search_config import LocalSearchConfig
 from graphrag.config.models.parallelization_parameters import ParallelizationParameters
@@ -505,6 +506,24 @@ def create_graphrag_config(
                 or defs.COMMUNITY_REPORT_MAX_INPUT_LENGTH,
             )
 
+        keyword_report_config = values.get("keyword_reports") or {}
+        with (
+            reader.envvar_prefix(Section.keyword_reports),
+            reader.use(keyword_report_config),
+        ):
+            keyword_reports_model = KeywordReportsConfig(
+                llm=hydrate_llm_params(keyword_report_config, llm_model),
+                parallelization=hydrate_parallelization_params(
+                    keyword_report_config, llm_parallelization_model
+                ),
+                async_mode=hydrate_async_type(keyword_report_config, async_mode),
+                prompt=reader.str("prompt", Fragment.prompt_file),
+                max_length=reader.int(Fragment.max_length)
+                or defs.KEYWORD_REPORT_MAX_LENGTH,
+                max_input_length=reader.int("max_input_length")
+                or defs.KEYWORD_REPORT_MAX_INPUT_LENGTH,
+            )
+
         summarize_description_config = values.get("summarize_descriptions") or {}
         with (
             reader.envvar_prefix(Section.summarize_descriptions),
@@ -644,6 +663,7 @@ def create_graphrag_config(
         entity_extraction=entity_extraction_model,
         claim_extraction=claim_extraction_model,
         community_reports=community_reports_model,
+        keyword_reports=keyword_reports_model,
         summarize_descriptions=summarize_descriptions_model,
         umap=umap_model,
         cluster_graph=cluster_graph_model,
@@ -705,6 +725,7 @@ class Section(str, Enum):
     chunk = "CHUNK"
     claim_extraction = "CLAIM_EXTRACTION"
     community_reports = "COMMUNITY_REPORTS"
+    keyword_reports = "KEYWORD_REPORTS"
     embedding = "EMBEDDING"
     entity_extraction = "ENTITY_EXTRACTION"
     graphrag = "GRAPHRAG"
