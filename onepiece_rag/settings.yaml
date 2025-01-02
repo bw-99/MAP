@@ -85,6 +85,7 @@ update_index_storage:
 
 ### Workflow settings ###
 
+# skip_workflows: [create_final_documents, document_attribute_columns, create_base_text_units,create_final_text_units,extract_graph,compute_communities,create_final_entities,create_final_relationships,create_final_nodes,create_final_communities,create_final_community_reports]
 skip_workflows: []
 
 entity_extraction:
@@ -104,6 +105,10 @@ claim_extraction:
 
 community_reports:
   prompt: "prompts/community_report.txt"
+  max_length: 2000
+  max_input_length: 8000
+
+create_keyword_reports:
   max_length: 2000
   max_input_length: 8000
 

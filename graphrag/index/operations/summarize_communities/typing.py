@@ -39,6 +39,26 @@ class CommunityReport(TypedDict):
     rank_explanation: str
     findings: list[Finding]
 
+class KeywordReport(TypedDict):
+    """Keyword report class definition."""
+
+    community: str | int
+    keyword: str
+    keyword_explanation: str
+
+
+KeywordReportsStrategy = Callable[
+    [
+        str | int,
+        str,
+        int,
+        VerbCallbacks,
+        PipelineCache,
+        StrategyConfig,
+    ],
+    Awaitable[CommunityReport | None],
+]
+
 
 CommunityReportsStrategy = Callable[
     [
@@ -51,6 +71,16 @@ CommunityReportsStrategy = Callable[
     ],
     Awaitable[CommunityReport | None],
 ]
+
+
+class CreateKeywordReportsStrategyType(str, Enum):
+    """CreateKeywordReportsStrategyType class definition."""
+
+    graph_intelligence = "graph_intelligence"
+
+    def __repr__(self):
+        """Get a string representation."""
+        return f'"{self.value}"'
 
 
 class CreateCommunityReportsStrategyType(str, Enum):

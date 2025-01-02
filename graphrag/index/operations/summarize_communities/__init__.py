@@ -13,11 +13,12 @@ from graphrag.index.operations.summarize_communities.summarize_communities impor
     summarize_communities,
 )
 from graphrag.index.operations.summarize_communities.typing import (
-    CreateCommunityReportsStrategyType,
+    CreateCommunityReportsStrategyType, CreateKeywordReportsStrategyType
 )
 
 __all__ = [
     "CreateCommunityReportsStrategyType",
+    "CreateKeywordReportsStrategyType",
     "prepare_community_reports",
     "restore_community_hierarchy",
     "summarize_communities",

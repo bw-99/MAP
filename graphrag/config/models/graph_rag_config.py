@@ -12,6 +12,7 @@ from graphrag.config.models.chunking_config import ChunkingConfig
 from graphrag.config.models.claim_extraction_config import ClaimExtractionConfig
 from graphrag.config.models.cluster_graph_config import ClusterGraphConfig
 from graphrag.config.models.community_reports_config import CommunityReportsConfig
+from graphrag.config.models.keyword_reports_config import KeywordReportsConfig
 from graphrag.config.models.drift_search_config import DRIFTSearchConfig
 from graphrag.config.models.embed_graph_config import EmbedGraphConfig
 from graphrag.config.models.entity_extraction_config import EntityExtractionConfig
@@ -111,6 +112,12 @@ class GraphRagConfig(LLMConfig):
         default=CommunityReportsConfig(),
     )
     """The community reports configuration to use."""
+
+    keyword_reports: KeywordReportsConfig = Field(
+        description="The keyword reports configuration to use.",
+        default=KeywordReportsConfig(),
+    )
+    """The keyword reports configuration to use."""
 
     claim_extraction: ClaimExtractionConfig = Field(
         description="The claim extraction configuration to use.",

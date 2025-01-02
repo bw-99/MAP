@@ -28,6 +28,12 @@ from graphrag.index.workflows.v1.create_final_community_reports import (
 from graphrag.index.workflows.v1.create_final_community_reports import (
     workflow_name as create_final_community_reports,
 )
+from graphrag.index.workflows.v1.create_final_keywords import (
+    build_steps as build_create_final_keywords_steps,
+)
+from graphrag.index.workflows.v1.create_final_keywords import (
+    workflow_name as create_final_keywords,
+)
 from graphrag.index.workflows.v1.create_final_covariates import (
     build_steps as build_create_final_covariates_steps,
 )
@@ -83,6 +89,7 @@ default_workflows: WorkflowDefinitions = {
     create_base_text_units: build_create_base_text_units_steps,
     create_final_text_units: build_create_final_text_units,
     create_final_community_reports: build_create_final_community_reports_steps,
+    create_final_keywords: build_create_final_keywords_steps,
     create_final_nodes: build_create_final_nodes_steps,
     create_final_relationships: build_create_final_relationships_steps,
     create_final_documents: build_create_final_documents_steps,

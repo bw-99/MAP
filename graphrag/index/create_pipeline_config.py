@@ -58,6 +58,7 @@ from graphrag.index.workflows.default_workflows import (
     create_base_text_units,
     create_final_communities,
     create_final_community_reports,
+    create_final_keywords,
     create_final_covariates,
     create_final_documents,
     create_final_entities,
@@ -120,6 +121,10 @@ def create_pipeline_config(settings: GraphRagConfig, verbose=False) -> PipelineC
     # Remove any workflows that were specified to be skipped
     log.info("skipping workflows %s", ",".join(skip_workflows))
     result.workflows = [w for w in result.workflows if w.name not in skip_workflows]
+    print("??")
+    log.info("??")
+    workflows_to_rub = [w.name for w in result.workflows]
+    log.info("workflows %s", ",".join(workflows_to_rub))
     return result
 
 
@@ -283,7 +288,19 @@ def _community_workflows(
                     "strategy": settings.community_reports.resolved_strategy(
                         settings.root_dir
                     ),
-                },
+                }
+            },
+        ),
+        PipelineWorkflowReference(
+            name=create_final_keywords,
+            config={
+                "create_keyword_reports": {
+                    **settings.keyword_reports.parallelization.model_dump(),
+                    "async_mode": settings.keyword_reports.async_mode,
+                    "strategy": settings.keyword_reports.resolved_strategy(
+                        settings.root_dir
+                    ),
+                }
             },
         ),
     ]
