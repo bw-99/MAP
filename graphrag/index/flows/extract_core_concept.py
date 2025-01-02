@@ -13,14 +13,14 @@ from datashaper import (
 )
 
 from graphrag.cache.pipeline_cache import PipelineCache
-from graphrag.index.operations.summarize_communities.summarize_keywords import summarize_keywords
-from graphrag.index.operations.summarize_communities.community_reports_extractor import schemas
+from graphrag.index.operations.summarize_communities.extract_concepts import extract_concepts
+from graphrag.index.operations.summarize_communities import schemas
 from graphrag.query.llm.text_utils import num_tokens
 
 log = logging.getLogger(__name__)
 
 
-async def create_final_keywords(
+async def extract_core_concept(
     final_community_reports: pd.DataFrame | None,
     callbacks: VerbCallbacks,
     cache: PipelineCache,
@@ -30,14 +30,14 @@ async def create_final_keywords(
 ) -> None:
     """All the steps to generate all embeddings."""
 
-    community_contexts = _prep_keywords(
+    community_contexts = _prep_report(
         final_community_reports,
         callbacks,
         summarization_strategy.get("max_input_length", 16_000),
     )
 
-    log.info("Creating keywords")
-    keyword_reports = await summarize_keywords(
+    log.info("Creating core concept")
+    core_concept_reports = await extract_concepts(
         community_contexts,
         callbacks,
         cache,
@@ -46,10 +46,10 @@ async def create_final_keywords(
         num_threads=num_threads,
     )
 
-    return keyword_reports
+    return core_concept_reports
 
 
-def _prep_keywords(
+def _prep_report(
     final_community_reports: pd.DataFrame,
     callbacks: VerbCallbacks,
     max_tokens: int = 16_000,
@@ -77,6 +77,5 @@ def _prep_keywords(
     valid_context_df = input.loc[
         ~input.loc[:, schemas.REPORT_CONTEXT_EXCEED_FLAG]
     ]
-
 
     return valid_context_df

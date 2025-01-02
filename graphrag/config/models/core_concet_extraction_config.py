@@ -11,14 +11,14 @@ import graphrag.config.defaults as defs
 from graphrag.config.models.llm_config import LLMConfig
 
 
-class KeywordReportsConfig(LLMConfig):
-    """Configuration section for keyword reports."""
+class CoreConceptExtractionConfig(LLMConfig):
+    """Configuration section for core concept reports."""
 
     prompt: str | None = Field(
-        description="The keyword report extraction prompt to use.", default=None
+        description="The core concept report extraction prompt to use.", default=None
     )
     max_length: int = Field(
-        description="The keyword report maximum length in tokens.",
+        description="The core concept report maximum length in tokens.",
         default=defs.COMMUNITY_REPORT_MAX_LENGTH,
     )
     max_input_length: int = Field(
@@ -32,11 +32,11 @@ class KeywordReportsConfig(LLMConfig):
     def resolved_strategy(self, root_dir) -> dict:
         """Get the resolved community report extraction strategy."""
         from graphrag.index.operations.summarize_communities import (
-            CreateKeywordReportsStrategyType,
+            CoreConceptExtractionStrategyType,
         )
 
         return self.strategy or {
-            "type": CreateKeywordReportsStrategyType.graph_intelligence,
+            "type": CoreConceptExtractionStrategyType.graph_intelligence,
             "llm": self.llm.model_dump(),
             **self.parallelization.model_dump(),
             "extraction_prompt": (Path(root_dir) / self.prompt)

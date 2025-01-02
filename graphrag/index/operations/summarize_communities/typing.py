@@ -39,15 +39,15 @@ class CommunityReport(TypedDict):
     rank_explanation: str
     findings: list[Finding]
 
-class KeywordReport(TypedDict):
-    """Keyword report class definition."""
+class CoreConceptExtraction(TypedDict):
+    """Core Concpet report class definition."""
 
     community: str | int
-    keyword: str
-    keyword_explanation: str
+    core_concept: str
+    core_concept_explanation: str
 
 
-KeywordReportsStrategy = Callable[
+CoreConceptExtractionStrategy = Callable[
     [
         str | int,
         str,
@@ -73,8 +73,8 @@ CommunityReportsStrategy = Callable[
 ]
 
 
-class CreateKeywordReportsStrategyType(str, Enum):
-    """CreateKeywordReportsStrategyType class definition."""
+class CoreConceptExtractionStrategyType(str, Enum):
+    """CoreConceptExtractionStrategyType class definition."""
 
     graph_intelligence = "graph_intelligence"
 

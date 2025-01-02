@@ -58,7 +58,7 @@ from graphrag.index.workflows.default_workflows import (
     create_base_text_units,
     create_final_communities,
     create_final_community_reports,
-    create_final_keywords,
+    extract_core_concept,
     create_final_covariates,
     create_final_documents,
     create_final_entities,
@@ -288,12 +288,12 @@ def _community_workflows(
             },
         ),
         PipelineWorkflowReference(
-            name=create_final_keywords,
+            name=extract_core_concept,
             config={
-                "create_keyword_reports": {
-                    **settings.keyword_reports.parallelization.model_dump(),
-                    "async_mode": settings.keyword_reports.async_mode,
-                    "strategy": settings.keyword_reports.resolved_strategy(
+                "core_concept_extract": {
+                    **settings.core_concept_extraction.parallelization.model_dump(),
+                    "async_mode": settings.core_concept_extraction.async_mode,
+                    "strategy": settings.core_concept_extraction.resolved_strategy(
                         settings.root_dir
                     ),
                 }

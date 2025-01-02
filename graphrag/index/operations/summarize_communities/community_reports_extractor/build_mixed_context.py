@@ -4,7 +4,7 @@
 
 import pandas as pd
 
-import graphrag.index.operations.summarize_communities.community_reports_extractor.schemas as schemas
+import graphrag.index.operations.summarize_communities.schemas as schemas
 from graphrag.index.operations.summarize_communities.community_reports_extractor.sort_context import (
     sort_context,
 )

@@ -16,31 +16,27 @@ from datashaper.table_store.types import VerbResult, create_verb_result
 
 from graphrag.cache.pipeline_cache import PipelineCache
 from graphrag.index.config.workflow import PipelineWorkflowConfig, PipelineWorkflowStep
-from graphrag.index.flows.create_final_keywords import create_final_keywords
-from graphrag.index.flows.create_final_community_reports import (
-    create_final_community_reports,
-)
-from graphrag.index.utils.ds_util import get_named_input_table, get_required_input_table
+from graphrag.index.flows.extract_core_concept import extract_core_concept
 
 if TYPE_CHECKING:
     import pandas as pd
 
-workflow_name = "create_final_keywords"
+workflow_name = "extract_core_concept"
 
 
 def build_steps(
     config: PipelineWorkflowConfig,
 ) -> list[PipelineWorkflowStep]:
     """
-    Create the final community reports table with well-represented keywords.
+    Create the final community reports table with well-represented Core concepts.
 
     ## Dependencies
     * `workflow:create_final_community_reports`
     """
-    create_keywords_config = config.get("create_keyword_reports", {})
-    summarization_strategy = create_keywords_config.get("strategy")
-    async_mode = create_keywords_config.get("async_mode")
-    num_threads = create_keywords_config.get("num_threads")
+    core_concept_extract_config = config.get("core_concept_extract", {})
+    summarization_strategy = core_concept_extract_config.get("strategy")
+    async_mode = core_concept_extract_config.get("async_mode")
+    num_threads = core_concept_extract_config.get("num_threads")
 
     input = {
         "source": "workflow:create_final_community_reports",
@@ -69,10 +65,10 @@ async def workflow(
     num_threads: int = 4,
     **_kwargs: dict,
 ) -> VerbResult:
-    """All the steps transforming community reports to keywords."""
+    """All the steps transforming community reports to Core concept."""
     final_community_reports = cast("pd.DataFrame", input.get_input())
 
-    output = await create_final_keywords(
+    output = await extract_core_concept(
         final_community_reports,
         callbacks,
         cache,

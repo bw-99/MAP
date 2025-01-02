@@ -15,18 +15,18 @@ from datashaper import (
 )
 
 import graphrag.config.defaults as defaults
-import graphrag.index.operations.summarize_communities.community_reports_extractor.schemas as schemas
+import graphrag.index.operations.summarize_communities.schemas as schemas
 from graphrag.cache.pipeline_cache import PipelineCache
 from graphrag.index.operations.summarize_communities.typing import (
-    KeywordReportsStrategy,
-    CreateKeywordReportsStrategyType,
-    KeywordReport
+    CoreConceptExtractionStrategy,
+    CoreConceptExtractionStrategyType,
+    CoreConceptExtraction
 )
 
 log = logging.getLogger(__name__)
 
 
-async def summarize_keywords(
+async def extract_concepts(
     local_contexts,
     callbacks: VerbCallbacks,
     cache: PipelineCache,
@@ -35,7 +35,7 @@ async def summarize_keywords(
     num_threads: int = 4,
 ):
     """Generate community keywrod."""
-    reports: list[KeywordReport | None] = []
+    reports: list[CoreConceptExtraction | None] = []
     tick = progress_ticker(callbacks.progress, len(local_contexts))
     runner = load_strategy(strategy["type"])
 
@@ -64,13 +64,13 @@ async def summarize_keywords(
 
 
 async def _generate_report(
-    runner: KeywordReportsStrategy,
+    runner: CoreConceptExtractionStrategy,
     callbacks: VerbCallbacks,
     cache: PipelineCache,
     strategy: dict,
     community_id: int,
     report_context: str,
-) -> KeywordReport | None:
+) -> CoreConceptExtraction | None:
     """Generate a report for a single community."""
     return await runner(
         community_id, report_context, callbacks, cache, strategy
@@ -78,12 +78,12 @@ async def _generate_report(
 
 
 def load_strategy(
-    strategy: CreateKeywordReportsStrategyType,
-) -> KeywordReportsStrategy:
+    strategy: CoreConceptExtractionStrategyType,
+) -> CoreConceptExtractionStrategy:
     """Load strategy method definition."""
     match strategy:
-        case CreateKeywordReportsStrategyType.graph_intelligence:
-            from graphrag.index.operations.summarize_communities.strategy_keyword import (
+        case CoreConceptExtractionStrategyType.graph_intelligence:
+            from graphrag.index.operations.summarize_communities.strategy_concept import (
                 run_graph_intelligence,
             )
 

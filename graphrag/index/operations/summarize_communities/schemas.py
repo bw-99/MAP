@@ -51,14 +51,14 @@ EXPLANATION = "rating_explanation"
 FULL_CONTENT = "full_content"
 FULL_CONTENT_JSON = "full_content_json"
 
-# KEYWORD CONTEXT TABLE SCHEMA
+# CORE CONCEPT CONTEXT TABLE SCHEMA
 REPORT_CONTEXT = "report_context"
 REPORT_CONTEXT_SIZE = "report_context_size"
 REPORT_CONTEXT_EXCEED_FLAG = "report_context_exceed_flag"
 
-# KEYWORD REPORT TABLE SCHEMA
-KEYWORD_ID = "keyword_id"
+# CORE CONCEPT REPORT TABLE SCHEMA
+CORE_CONCEPT_ID = "CORE_CONCEPT_id"
 COMMUNITY_ID = "community"
 COMMUNITY_LEVEL = "level"
-KEYWORD = "keyword"
-KEYWORD_EXPLANATION = "keyword_explanation"
+CORE_CONCEPT = "core_concept"
+CORE_CONCEPT_EXPLANATION = "core_concept_explanation"

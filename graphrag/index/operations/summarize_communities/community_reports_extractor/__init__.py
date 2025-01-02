@@ -3,7 +3,6 @@
 
 """The Indexing Engine community reports package root."""
 
-import graphrag.index.operations.summarize_communities.community_reports_extractor.schemas as schemas
 from graphrag.index.operations.summarize_communities.community_reports_extractor.build_mixed_context import (
     build_mixed_context,
 )
@@ -21,6 +20,5 @@ __all__ = [
     "CommunityReportsExtractor",
     "build_mixed_context",
     "prep_community_report_context",
-    "schemas",
     "sort_context",
 ]

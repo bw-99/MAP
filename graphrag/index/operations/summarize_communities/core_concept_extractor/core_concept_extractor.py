@@ -12,16 +12,16 @@ from fnllm import ChatLLM
 from pydantic import BaseModel, Field
 
 from graphrag.index.typing import ErrorHandlerFn
-from graphrag.prompts.index.keyword_report import KEYWORD_REPORT_PROMPT
+from graphrag.prompts.index.core_concept_extraction import CORE_CONCEPT_EXTRACT_PROMPT
 
 log = logging.getLogger(__name__)
 
 
-class KeywordReportResponse(BaseModel):
+class CoreConceptExtractionResponse(BaseModel):
     """A model for the expected LLM response shape."""
 
-    keyword: str = Field(description="The core keyword of the community.")
-    keyword_explanation: str = Field(description="An explanation of the keyword.")
+    core_concept: str = Field(description="The core_concept of the community.")
+    core_concept_explanation: str = Field(description="An explanation of the core_concept.")
 
     extra_attributes: dict[str, Any] = Field(
         default_factory=dict, description="Extra attributes."
@@ -29,15 +29,15 @@ class KeywordReportResponse(BaseModel):
 
 
 @dataclass
-class KeywordReportsResult:
-    """Keyword reports result class definition."""
+class CoreConceptExtractionResult:
+    """Core concept reports result class definition."""
 
     output: str
-    structured_output: KeywordReportResponse | None
+    structured_output: CoreConceptExtractionResponse | None
 
 
-class KeywordReportsExtractor:
-    """Keyword reports extractor class definition."""
+class CoreConceptExtractionExtractor:
+    """Core concept reports extractor class definition."""
 
     _llm: ChatLLM
     _input_text_key: str
@@ -57,7 +57,7 @@ class KeywordReportsExtractor:
         """Init method definition."""
         self._llm = llm_invoker
         self._input_text_key = input_text_key or "input_text"
-        self._extraction_prompt = extraction_prompt or KEYWORD_REPORT_PROMPT
+        self._extraction_prompt = extraction_prompt or CORE_CONCEPT_EXTRACT_PROMPT
         self._on_error = on_error or (lambda _e, _s, _d: None)
         self._max_report_length = max_report_length or 1500
 
@@ -72,8 +72,8 @@ class KeywordReportsExtractor:
             response = await self._llm(
                 prompt,
                 json=True,
-                name="create_keyword_reports",
-                json_model=KeywordReportResponse,
+                name="extract_core_concept",
+                json_model=CoreConceptExtractionResponse,
                 model_parameters={"max_tokens": self._max_report_length},
             )
             output = response.parsed_json
@@ -82,10 +82,10 @@ class KeywordReportsExtractor:
             self._on_error(e, traceback.format_exc(), None)
 
         text_output = self._get_text_output(output) if output else ""
-        return KeywordReportsResult(
+        return CoreConceptExtractionResult(
             structured_output=output,
             output=text_output,
         )
 
-    def _get_text_output(self, report: KeywordReportResponse) -> str:
-        return f"# {report.keyword}\n\n{report.keyword_explanation}"
+    def _get_text_output(self, report: CoreConceptExtractionResponse) -> str:
+        return f"# {report.core_concept}\n\n{report.core_concept_explanation}"

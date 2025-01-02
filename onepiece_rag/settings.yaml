@@ -108,8 +108,8 @@ community_reports:
   max_length: 2000
   max_input_length: 8000
 
-keyword_reports:
-  prompt: "prompts/keyword_report.txt"
+core_concept_extraction:
+  prompt: "prompts/core_concept_extraction.txt"
   max_length: 2000
   max_input_length: 8000
 
