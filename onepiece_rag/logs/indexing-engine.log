@@ -1,1038 +1,6 @@
-10:58:33,253 graphrag.cli.index INFO Logging enabled at /workspace/onepiece_rag/logs/indexing-engine.log
-10:58:33,258 graphrag.cli.index INFO Starting pipeline run for: 20250101-105833, dry_run=False
-10:58:33,260 graphrag.cli.index INFO Using default configuration: {
-    "llm": {
-        "api_key": "==== REDACTED ====",
-        "type": "openai_chat",
-        "encoding_model": "cl100k_base",
-        "model": "gpt-4o-mini",
-        "max_tokens": 4000,
-        "temperature": 0.0,
-        "top_p": 1.0,
-        "n": 1,
-        "frequency_penalty": 0.0,
-        "presence_penalty": 0.0,
-        "request_timeout": 180.0,
-        "api_base": null,
-        "api_version": null,
-        "proxy": null,
-        "audience": null,
-        "deployment_name": null,
-        "model_supports_json": true,
-        "tokens_per_minute": 200000,
-        "requests_per_minute": 500,
-        "max_retries": 20,
-        "max_retry_wait": 10.0,
-        "sleep_on_rate_limit_recommendation": true,
-        "concurrent_requests": 25,
-        "responses": null
-    },
-    "parallelization": {
-        "stagger": 0.3,
-        "num_threads": 4
-    },
-    "async_mode": "asyncio",
-    "root_dir": "/workspace/onepiece_rag",
-    "reporting": {
-        "type": "file",
-        "base_dir": "/workspace/onepiece_rag/logs",
-        "storage_account_blob_url": null
-    },
-    "storage": {
-        "type": "file",
-        "base_dir": "/workspace/onepiece_rag/output",
-        "storage_account_blob_url": null,
-        "cosmosdb_account_url": null
-    },
-    "update_index_storage": null,
-    "cache": {
-        "type": "file",
-        "base_dir": "cache",
-        "storage_account_blob_url": null,
-        "cosmosdb_account_url": null
-    },
-    "input": {
-        "type": "file",
-        "file_type": "text",
-        "base_dir": "input",
-        "storage_account_blob_url": null,
-        "encoding": "utf-8",
-        "file_pattern": ".*\\.txt$",
-        "file_filter": null,
-        "source_column": null,
-        "timestamp_column": null,
-        "timestamp_format": null,
-        "text_column": "text",
-        "title_column": null,
-        "document_attribute_columns": []
-    },
-    "embed_graph": {
-        "enabled": false,
-        "num_walks": 10,
-        "walk_length": 40,
-        "window_size": 2,
-        "iterations": 3,
-        "random_seed": 597832,
-        "strategy": null
-    },
-    "embeddings": {
-        "llm": {
-            "api_key": "==== REDACTED ====",
-            "type": "openai_embedding",
-            "encoding_model": "cl100k_base",
-            "model": "text-embedding-3-small",
-            "max_tokens": 4000,
-            "temperature": 0,
-            "top_p": 1,
-            "n": 1,
-            "frequency_penalty": 0.0,
-            "presence_penalty": 0.0,
-            "request_timeout": 180.0,
-            "api_base": null,
-            "api_version": null,
-            "proxy": null,
-            "audience": null,
-            "deployment_name": null,
-            "model_supports_json": null,
-            "tokens_per_minute": 1000000,
-            "requests_per_minute": 3000,
-            "max_retries": 20,
-            "max_retry_wait": 10.0,
-            "sleep_on_rate_limit_recommendation": true,
-            "concurrent_requests": 25,
-            "responses": null
-        },
-        "parallelization": {
-            "stagger": 0.3,
-            "num_threads": 4
-        },
-        "async_mode": "asyncio",
-        "batch_size": 16,
-        "batch_max_tokens": 8191,
-        "target": "required",
-        "skip": [],
-        "vector_store": {
-            "type": "lancedb",
-            "db_uri": "/workspace/onepiece_rag/output/lancedb",
-            "container_name": "==== REDACTED ====",
-            "overwrite": true
-        },
-        "strategy": null
-    },
-    "chunks": {
-        "size": 1200,
-        "overlap": 100,
-        "group_by_columns": [
-            "id"
-        ],
-        "strategy": null,
-        "encoding_model": "cl100k_base"
-    },
-    "snapshots": {
-        "embeddings": false,
-        "graphml": false,
-        "transient": false
-    },
-    "entity_extraction": {
-        "llm": {
-            "api_key": "==== REDACTED ====",
-            "type": "openai_chat",
-            "encoding_model": "cl100k_base",
-            "model": "gpt-4o-mini",
-            "max_tokens": 4000,
-            "temperature": 0.0,
-            "top_p": 1.0,
-            "n": 1,
-            "frequency_penalty": 0.0,
-            "presence_penalty": 0.0,
-            "request_timeout": 180.0,
-            "api_base": null,
-            "api_version": null,
-            "proxy": null,
-            "audience": null,
-            "deployment_name": null,
-            "model_supports_json": true,
-            "tokens_per_minute": 200000,
-            "requests_per_minute": 500,
-            "max_retries": 20,
-            "max_retry_wait": 10.0,
-            "sleep_on_rate_limit_recommendation": true,
-            "concurrent_requests": 25,
-            "responses": null
-        },
-        "parallelization": {
-            "stagger": 0.3,
-            "num_threads": 4
-        },
-        "async_mode": "asyncio",
-        "prompt": "prompts/entity_extraction.txt",
-        "entity_types": [
-            "organization",
-            "publication",
-            "concept"
-        ],
-        "max_gleanings": 1,
-        "strategy": null,
-        "encoding_model": "cl100k_base"
-    },
-    "summarize_descriptions": {
-        "llm": {
-            "api_key": "==== REDACTED ====",
-            "type": "openai_chat",
-            "encoding_model": "cl100k_base",
-            "model": "gpt-4o-mini",
-            "max_tokens": 4000,
-            "temperature": 0.0,
-            "top_p": 1.0,
-            "n": 1,
-            "frequency_penalty": 0.0,
-            "presence_penalty": 0.0,
-            "request_timeout": 180.0,
-            "api_base": null,
-            "api_version": null,
-            "proxy": null,
-            "audience": null,
-            "deployment_name": null,
-            "model_supports_json": true,
-            "tokens_per_minute": 200000,
-            "requests_per_minute": 500,
-            "max_retries": 20,
-            "max_retry_wait": 10.0,
-            "sleep_on_rate_limit_recommendation": true,
-            "concurrent_requests": 25,
-            "responses": null
-        },
-        "parallelization": {
-            "stagger": 0.3,
-            "num_threads": 4
-        },
-        "async_mode": "asyncio",
-        "prompt": "prompts/summarize_descriptions.txt",
-        "max_length": 500,
-        "strategy": null
-    },
-    "community_reports": {
-        "llm": {
-            "api_key": "==== REDACTED ====",
-            "type": "openai_chat",
-            "encoding_model": "cl100k_base",
-            "model": "gpt-4o-mini",
-            "max_tokens": 4000,
-            "temperature": 0.0,
-            "top_p": 1.0,
-            "n": 1,
-            "frequency_penalty": 0.0,
-            "presence_penalty": 0.0,
-            "request_timeout": 180.0,
-            "api_base": null,
-            "api_version": null,
-            "proxy": null,
-            "audience": null,
-            "deployment_name": null,
-            "model_supports_json": true,
-            "tokens_per_minute": 200000,
-            "requests_per_minute": 500,
-            "max_retries": 20,
-            "max_retry_wait": 10.0,
-            "sleep_on_rate_limit_recommendation": true,
-            "concurrent_requests": 25,
-            "responses": null
-        },
-        "parallelization": {
-            "stagger": 0.3,
-            "num_threads": 4
-        },
-        "async_mode": "asyncio",
-        "prompt": "prompts/community_report.txt",
-        "max_length": 2000,
-        "max_input_length": 8000,
-        "strategy": null
-    },
-    "claim_extraction": {
-        "llm": {
-            "api_key": "==== REDACTED ====",
-            "type": "openai_chat",
-            "encoding_model": "cl100k_base",
-            "model": "gpt-4o-mini",
-            "max_tokens": 4000,
-            "temperature": 0.0,
-            "top_p": 1.0,
-            "n": 1,
-            "frequency_penalty": 0.0,
-            "presence_penalty": 0.0,
-            "request_timeout": 180.0,
-            "api_base": null,
-            "api_version": null,
-            "proxy": null,
-            "audience": null,
-            "deployment_name": null,
-            "model_supports_json": true,
-            "tokens_per_minute": 200000,
-            "requests_per_minute": 500,
-            "max_retries": 20,
-            "max_retry_wait": 10.0,
-            "sleep_on_rate_limit_recommendation": true,
-            "concurrent_requests": 25,
-            "responses": null
-        },
-        "parallelization": {
-            "stagger": 0.3,
-            "num_threads": 4
-        },
-        "async_mode": "asyncio",
-        "enabled": false,
-        "prompt": "prompts/claim_extraction.txt",
-        "description": "Any claims or facts that could be relevant to information discovery.",
-        "max_gleanings": 1,
-        "strategy": null,
-        "encoding_model": "cl100k_base"
-    },
-    "cluster_graph": {
-        "max_cluster_size": 10,
-        "strategy": null
-    },
-    "umap": {
-        "enabled": false
-    },
-    "local_search": {
-        "prompt": "prompts/local_search_system_prompt.txt",
-        "text_unit_prop": 0.5,
-        "community_prop": 0.1,
-        "conversation_history_max_turns": 5,
-        "top_k_entities": 10,
-        "top_k_relationships": 10,
-        "temperature": 0.0,
-        "top_p": 1.0,
-        "n": 1,
-        "max_tokens": 12000,
-        "llm_max_tokens": 2000
-    },
-    "global_search": {
-        "map_prompt": "prompts/global_search_map_system_prompt.txt",
-        "reduce_prompt": "prompts/global_search_reduce_system_prompt.txt",
-        "knowledge_prompt": "prompts/global_search_knowledge_system_prompt.txt",
-        "temperature": 0.0,
-        "top_p": 1.0,
-        "n": 1,
-        "max_tokens": 12000,
-        "data_max_tokens": 12000,
-        "map_max_tokens": 1000,
-        "reduce_max_tokens": 2000,
-        "concurrency": 32,
-        "dynamic_search_llm": "gpt-4o-mini",
-        "dynamic_search_threshold": 1,
-        "dynamic_search_keep_parent": false,
-        "dynamic_search_num_repeats": 1,
-        "dynamic_search_use_summary": false,
-        "dynamic_search_concurrent_coroutines": 16,
-        "dynamic_search_max_level": 2
-    },
-    "drift_search": {
-        "prompt": "prompts/drift_search_system_prompt.txt",
-        "temperature": 0.0,
-        "top_p": 1.0,
-        "n": 3,
-        "max_tokens": 12000,
-        "data_max_tokens": 12000,
-        "concurrency": 32,
-        "drift_k_followups": 20,
-        "primer_folds": 5,
-        "primer_llm_max_tokens": 12000,
-        "n_depth": 3,
-        "local_search_text_unit_prop": 0.9,
-        "local_search_community_prop": 0.1,
-        "local_search_top_k_mapped_entities": 10,
-        "local_search_top_k_relationships": 10,
-        "local_search_max_data_tokens": 12000,
-        "local_search_temperature": 0.0,
-        "local_search_top_p": 1.0,
-        "local_search_n": 1,
-        "local_search_llm_max_gen_tokens": 2000
-    },
-    "encoding_model": "cl100k_base",
-    "skip_workflows": []
-}
-10:58:33,308 graphrag.index.create_pipeline_config INFO skipping workflows 
-10:58:33,310 graphrag.index.run.run INFO Running pipeline
-10:58:33,311 graphrag.storage.file_pipeline_storage INFO Creating file storage at /workspace/onepiece_rag/output
-10:58:33,313 graphrag.index.input.factory INFO loading input from root_dir=input
-10:58:33,314 graphrag.index.input.factory INFO using file storage for input
-10:58:33,317 graphrag.storage.file_pipeline_storage INFO search /workspace/onepiece_rag/input for files matching .*\.txt$
-10:59:11,711 graphrag.cli.index INFO Logging enabled at /workspace/onepiece_rag/logs/indexing-engine.log
-10:59:11,715 graphrag.cli.index INFO Starting pipeline run for: 20250101-105911, dry_run=False
-10:59:11,716 graphrag.cli.index INFO Using default configuration: {
-    "llm": {
-        "api_key": "==== REDACTED ====",
-        "type": "openai_chat",
-        "encoding_model": "cl100k_base",
-        "model": "gpt-4o-mini",
-        "max_tokens": 4000,
-        "temperature": 0.0,
-        "top_p": 1.0,
-        "n": 1,
-        "frequency_penalty": 0.0,
-        "presence_penalty": 0.0,
-        "request_timeout": 180.0,
-        "api_base": null,
-        "api_version": null,
-        "proxy": null,
-        "audience": null,
-        "deployment_name": null,
-        "model_supports_json": true,
-        "tokens_per_minute": 200000,
-        "requests_per_minute": 500,
-        "max_retries": 20,
-        "max_retry_wait": 10.0,
-        "sleep_on_rate_limit_recommendation": true,
-        "concurrent_requests": 25,
-        "responses": null
-    },
-    "parallelization": {
-        "stagger": 0.3,
-        "num_threads": 4
-    },
-    "async_mode": "asyncio",
-    "root_dir": "/workspace/onepiece_rag",
-    "reporting": {
-        "type": "file",
-        "base_dir": "/workspace/onepiece_rag/logs",
-        "storage_account_blob_url": null
-    },
-    "storage": {
-        "type": "file",
-        "base_dir": "/workspace/onepiece_rag/output",
-        "storage_account_blob_url": null,
-        "cosmosdb_account_url": null
-    },
-    "update_index_storage": null,
-    "cache": {
-        "type": "file",
-        "base_dir": "cache",
-        "storage_account_blob_url": null,
-        "cosmosdb_account_url": null
-    },
-    "input": {
-        "type": "file",
-        "file_type": "text",
-        "base_dir": "input",
-        "storage_account_blob_url": null,
-        "encoding": "utf-8",
-        "file_pattern": ".*\\.txt$",
-        "file_filter": null,
-        "source_column": null,
-        "timestamp_column": null,
-        "timestamp_format": null,
-        "text_column": "text",
-        "title_column": null,
-        "document_attribute_columns": []
-    },
-    "embed_graph": {
-        "enabled": false,
-        "num_walks": 10,
-        "walk_length": 40,
-        "window_size": 2,
-        "iterations": 3,
-        "random_seed": 597832,
-        "strategy": null
-    },
-    "embeddings": {
-        "llm": {
-            "api_key": "==== REDACTED ====",
-            "type": "openai_embedding",
-            "encoding_model": "cl100k_base",
-            "model": "text-embedding-3-small",
-            "max_tokens": 4000,
-            "temperature": 0,
-            "top_p": 1,
-            "n": 1,
-            "frequency_penalty": 0.0,
-            "presence_penalty": 0.0,
-            "request_timeout": 180.0,
-            "api_base": null,
-            "api_version": null,
-            "proxy": null,
-            "audience": null,
-            "deployment_name": null,
-            "model_supports_json": null,
-            "tokens_per_minute": 1000000,
-            "requests_per_minute": 3000,
-            "max_retries": 20,
-            "max_retry_wait": 10.0,
-            "sleep_on_rate_limit_recommendation": true,
-            "concurrent_requests": 25,
-            "responses": null
-        },
-        "parallelization": {
-            "stagger": 0.3,
-            "num_threads": 4
-        },
-        "async_mode": "asyncio",
-        "batch_size": 16,
-        "batch_max_tokens": 8191,
-        "target": "required",
-        "skip": [],
-        "vector_store": {
-            "type": "lancedb",
-            "db_uri": "/workspace/onepiece_rag/output/lancedb",
-            "container_name": "==== REDACTED ====",
-            "overwrite": true
-        },
-        "strategy": null
-    },
-    "chunks": {
-        "size": 1200,
-        "overlap": 100,
-        "group_by_columns": [
-            "id"
-        ],
-        "strategy": null,
-        "encoding_model": "cl100k_base"
-    },
-    "snapshots": {
-        "embeddings": false,
-        "graphml": false,
-        "transient": false
-    },
-    "entity_extraction": {
-        "llm": {
-            "api_key": "==== REDACTED ====",
-            "type": "openai_chat",
-            "encoding_model": "cl100k_base",
-            "model": "gpt-4o-mini",
-            "max_tokens": 4000,
-            "temperature": 0.0,
-            "top_p": 1.0,
-            "n": 1,
-            "frequency_penalty": 0.0,
-            "presence_penalty": 0.0,
-            "request_timeout": 180.0,
-            "api_base": null,
-            "api_version": null,
-            "proxy": null,
-            "audience": null,
-            "deployment_name": null,
-            "model_supports_json": true,
-            "tokens_per_minute": 200000,
-            "requests_per_minute": 500,
-            "max_retries": 20,
-            "max_retry_wait": 10.0,
-            "sleep_on_rate_limit_recommendation": true,
-            "concurrent_requests": 25,
-            "responses": null
-        },
-        "parallelization": {
-            "stagger": 0.3,
-            "num_threads": 4
-        },
-        "async_mode": "asyncio",
-        "prompt": "prompts/entity_extraction.txt",
-        "entity_types": [
-            "organization",
-            "publication",
-            "concept"
-        ],
-        "max_gleanings": 1,
-        "strategy": null,
-        "encoding_model": "cl100k_base"
-    },
-    "summarize_descriptions": {
-        "llm": {
-            "api_key": "==== REDACTED ====",
-            "type": "openai_chat",
-            "encoding_model": "cl100k_base",
-            "model": "gpt-4o-mini",
-            "max_tokens": 4000,
-            "temperature": 0.0,
-            "top_p": 1.0,
-            "n": 1,
-            "frequency_penalty": 0.0,
-            "presence_penalty": 0.0,
-            "request_timeout": 180.0,
-            "api_base": null,
-            "api_version": null,
-            "proxy": null,
-            "audience": null,
-            "deployment_name": null,
-            "model_supports_json": true,
-            "tokens_per_minute": 200000,
-            "requests_per_minute": 500,
-            "max_retries": 20,
-            "max_retry_wait": 10.0,
-            "sleep_on_rate_limit_recommendation": true,
-            "concurrent_requests": 25,
-            "responses": null
-        },
-        "parallelization": {
-            "stagger": 0.3,
-            "num_threads": 4
-        },
-        "async_mode": "asyncio",
-        "prompt": "prompts/summarize_descriptions.txt",
-        "max_length": 500,
-        "strategy": null
-    },
-    "community_reports": {
-        "llm": {
-            "api_key": "==== REDACTED ====",
-            "type": "openai_chat",
-            "encoding_model": "cl100k_base",
-            "model": "gpt-4o-mini",
-            "max_tokens": 4000,
-            "temperature": 0.0,
-            "top_p": 1.0,
-            "n": 1,
-            "frequency_penalty": 0.0,
-            "presence_penalty": 0.0,
-            "request_timeout": 180.0,
-            "api_base": null,
-            "api_version": null,
-            "proxy": null,
-            "audience": null,
-            "deployment_name": null,
-            "model_supports_json": true,
-            "tokens_per_minute": 200000,
-            "requests_per_minute": 500,
-            "max_retries": 20,
-            "max_retry_wait": 10.0,
-            "sleep_on_rate_limit_recommendation": true,
-            "concurrent_requests": 25,
-            "responses": null
-        },
-        "parallelization": {
-            "stagger": 0.3,
-            "num_threads": 4
-        },
-        "async_mode": "asyncio",
-        "prompt": "prompts/community_report.txt",
-        "max_length": 2000,
-        "max_input_length": 8000,
-        "strategy": null
-    },
-    "claim_extraction": {
-        "llm": {
-            "api_key": "==== REDACTED ====",
-            "type": "openai_chat",
-            "encoding_model": "cl100k_base",
-            "model": "gpt-4o-mini",
-            "max_tokens": 4000,
-            "temperature": 0.0,
-            "top_p": 1.0,
-            "n": 1,
-            "frequency_penalty": 0.0,
-            "presence_penalty": 0.0,
-            "request_timeout": 180.0,
-            "api_base": null,
-            "api_version": null,
-            "proxy": null,
-            "audience": null,
-            "deployment_name": null,
-            "model_supports_json": true,
-            "tokens_per_minute": 200000,
-            "requests_per_minute": 500,
-            "max_retries": 20,
-            "max_retry_wait": 10.0,
-            "sleep_on_rate_limit_recommendation": true,
-            "concurrent_requests": 25,
-            "responses": null
-        },
-        "parallelization": {
-            "stagger": 0.3,
-            "num_threads": 4
-        },
-        "async_mode": "asyncio",
-        "enabled": false,
-        "prompt": "prompts/claim_extraction.txt",
-        "description": "Any claims or facts that could be relevant to information discovery.",
-        "max_gleanings": 1,
-        "strategy": null,
-        "encoding_model": "cl100k_base"
-    },
-    "cluster_graph": {
-        "max_cluster_size": 10,
-        "strategy": null
-    },
-    "umap": {
-        "enabled": false
-    },
-    "local_search": {
-        "prompt": "prompts/local_search_system_prompt.txt",
-        "text_unit_prop": 0.5,
-        "community_prop": 0.1,
-        "conversation_history_max_turns": 5,
-        "top_k_entities": 10,
-        "top_k_relationships": 10,
-        "temperature": 0.0,
-        "top_p": 1.0,
-        "n": 1,
-        "max_tokens": 12000,
-        "llm_max_tokens": 2000
-    },
-    "global_search": {
-        "map_prompt": "prompts/global_search_map_system_prompt.txt",
-        "reduce_prompt": "prompts/global_search_reduce_system_prompt.txt",
-        "knowledge_prompt": "prompts/global_search_knowledge_system_prompt.txt",
-        "temperature": 0.0,
-        "top_p": 1.0,
-        "n": 1,
-        "max_tokens": 12000,
-        "data_max_tokens": 12000,
-        "map_max_tokens": 1000,
-        "reduce_max_tokens": 2000,
-        "concurrency": 32,
-        "dynamic_search_llm": "gpt-4o-mini",
-        "dynamic_search_threshold": 1,
-        "dynamic_search_keep_parent": false,
-        "dynamic_search_num_repeats": 1,
-        "dynamic_search_use_summary": false,
-        "dynamic_search_concurrent_coroutines": 16,
-        "dynamic_search_max_level": 2
-    },
-    "drift_search": {
-        "prompt": "prompts/drift_search_system_prompt.txt",
-        "temperature": 0.0,
-        "top_p": 1.0,
-        "n": 3,
-        "max_tokens": 12000,
-        "data_max_tokens": 12000,
-        "concurrency": 32,
-        "drift_k_followups": 20,
-        "primer_folds": 5,
-        "primer_llm_max_tokens": 12000,
-        "n_depth": 3,
-        "local_search_text_unit_prop": 0.9,
-        "local_search_community_prop": 0.1,
-        "local_search_top_k_mapped_entities": 10,
-        "local_search_top_k_relationships": 10,
-        "local_search_max_data_tokens": 12000,
-        "local_search_temperature": 0.0,
-        "local_search_top_p": 1.0,
-        "local_search_n": 1,
-        "local_search_llm_max_gen_tokens": 2000
-    },
-    "encoding_model": "cl100k_base",
-    "skip_workflows": []
-}
-10:59:11,735 graphrag.index.create_pipeline_config INFO skipping workflows 
-10:59:11,738 graphrag.index.run.run INFO Running pipeline
-10:59:11,738 graphrag.storage.file_pipeline_storage INFO Creating file storage at /workspace/onepiece_rag/output
-10:59:11,742 graphrag.index.input.factory INFO loading input from root_dir=input
-10:59:11,742 graphrag.index.input.factory INFO using file storage for input
-10:59:11,744 graphrag.storage.file_pipeline_storage INFO search /workspace/onepiece_rag/input for files matching .*\.txt$
-10:59:11,751 graphrag.index.input.text INFO found text files from input, found [('a05OLUVtYmVkOiBMb2NhbGx5IFNtb290aGVkIEVtYmVkZGluZyBNaXh0dXJlcyBGb3IgTXVsdGktaW50ZXJlc3QgQ2FuZGlkYXRlIFJldHJpZXZhbA==.json.txt', {}), ('a0hHQ046IFRyZWUtbGlrZW5lc3MgTW9kZWxpbmcgdmlhIENvbnRpbnVvdXMgYW5kIERpc2NyZXRlIEN1cnZhdHVyZSBMZWFybmluZw==.json.txt', {}), ('aS1SYXpvcjogQSBEaWZmZXJlbnRpYWJsZSBOZXVyYWwgSW5wdXQgUmF6b3IgZm9yIEZlYXR1cmUgU2VsZWN0aW9uIGFuZCBEaW1lbnNpb24gU2VhcmNoIGluIEROTi1CYXNlZCBSZWNvbW1lbmRlciBTeXN0ZW1z.json.txt', {}), ('aU1BUlM6IEFuIEluLU1lbW9yeS1Db21wdXRpbmcgQXJjaGl0ZWN0dXJlIGZvciBSZWNvbW1lbmRhdGlvbiBTeXN0ZW1z.json.txt', {}), ('aUhBUzogSW5zdGFuY2Utd2lzZSBIaWVyYXJjaGljYWwgQXJjaGl0ZWN0dXJlIFNlYXJjaCBmb3IgRGVlcCBMZWFybmluZyBSZWNvbW1lbmRhdGlvbiBNb2RlbHM=.json.txt', {}), ('aURyaXZlU2Vuc2U6IER5bmFtaWMgUm91dGUgUGxhbm5pbmcgSW52b2x2aW5nIFJvYWRzIFF1YWxpdHkgSW5mb3JtYXRpb24=.json.txt', {}), ('aUZpeFI6IEJ1ZyBSZXBvcnQgZHJpdmVuIFByb2dyYW0gUmVwYWly.json.txt', {}), ('aVFVQU5UOiBJbnRlcmFjdGl2ZSBRdWFudGl0YXRpdmUgSW52ZXN0bWVudCBVc2luZyBTcGFyc2UgUmVncmVzc2lvbiBGYWN0b3Jz.json.txt', {}), ('aVRyYWNlOiBBbiBJbXBsaWNpdCBUcnVzdCBJbmZlcmVuY2UgTWV0aG9kIGZvciBUcnVzdC1hd2FyZSBDb2xsYWJvcmF0aXZlIEZpbHRlcmluZw==.json.txt', {}), ('ay1Db25uZWN0aXZpdHkgaW4gUmFuZG9tIEtleSBHcmFwaHMgd2l0aCBVbnJlbGlhYmxlIExpbmtz.json.txt', {})]
-10:59:11,928 graphrag.index.input.text INFO Found 10 files, loading 10
-10:59:11,931 graphrag.index.workflows.load INFO Workflow Run Order: ['create_base_text_units', 'create_final_documents', 'extract_graph', 'compute_communities', 'create_final_entities', 'create_final_relationships', 'create_final_communities', 'create_final_nodes', 'create_final_text_units', 'create_final_community_reports', 'generate_text_embeddings']
-10:59:11,931 graphrag.index.run.run INFO Final # of rows loaded: 10
-10:59:12,13 graphrag.index.run.workflow INFO dependencies for create_base_text_units: []
-10:59:12,19 datashaper.workflow.workflow INFO executing verb create_base_text_units
-10:59:13,419 graphrag.index.run.workflow INFO dependencies for create_final_documents: ['create_base_text_units']
-10:59:13,421 graphrag.index.run.workflow WARNING Dependency table create_base_text_units not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
-10:59:13,439 datashaper.workflow.workflow INFO executing verb create_final_documents
-10:59:13,467 graphrag.index.exporter INFO exporting parquet table create_final_documents.parquet
-10:59:13,665 graphrag.index.run.workflow INFO dependencies for extract_graph: ['create_base_text_units']
-10:59:13,667 graphrag.index.run.workflow WARNING Dependency table create_base_text_units not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
-10:59:13,680 datashaper.workflow.workflow INFO executing verb extract_graph
-10:59:25,390 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:26,876 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:26,940 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:27,635 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:33,705 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:35,510 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:35,981 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:37,925 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:41,429 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:41,778 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:44,729 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:46,525 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:47,463 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:48,450 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:50,708 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:52,33 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:54,832 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:59:59,429 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:02,156 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:02,485 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:03,190 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:14,732 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:15,471 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:17,303 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:21,680 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:24,665 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:26,120 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:30,213 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:31,224 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:33,704 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:35,594 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:42,788 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:43,838 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:47,968 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:51,13 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:51,666 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:52,243 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:52,916 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:00:59,266 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:00,623 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:04,857 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:05,221 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:07,235 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:09,908 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:13,149 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:16,808 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:21,444 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:27,163 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:30,354 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:31,921 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:32,301 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:37,618 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:39,330 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:40,306 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:41,105 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:47,572 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:48,992 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:50,506 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:51,719 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:57,85 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:57,882 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:01:59,510 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:00,921 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:01,723 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:04,365 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:08,174 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:08,423 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:10,212 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:13,766 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:14,273 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:16,460 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:16,491 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:24,938 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:25,991 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:30,42 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:30,766 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:33,234 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:34,733 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:47,669 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:50,819 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:52,299 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:02:55,887 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:01,457 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:01,956 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:08,229 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:13,30 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:15,831 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:18,540 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:20,868 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:23,383 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:25,136 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:29,418 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:32,29 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:34,95 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:35,185 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:40,115 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:40,642 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:48,802 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:48,968 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:49,338 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:50,290 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:57,410 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:58,884 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:03:58,925 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:01,492 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:05,957 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:06,418 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:06,851 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:11,537 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:16,447 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:20,931 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:21,649 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:21,694 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:22,563 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:29,619 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:30,616 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:30,954 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:38,646 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:39,353 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:39,455 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:47,748 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:47,849 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:50,8 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:55,26 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:56,146 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:04:59,393 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:03,52 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:05,218 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:06,232 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:07,892 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:12,75 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:14,169 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:15,13 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:19,160 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:21,794 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:24,945 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:25,611 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:29,255 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:33,786 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:35,993 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:38,954 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:42,682 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:44,955 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:45,468 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:47,959 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:50,301 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:51,174 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:05:55,318 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:03,167 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:04,193 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:05,348 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:11,200 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:11,671 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:13,623 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:15,572 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:19,709 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:25,266 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:26,138 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:29,412 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:29,960 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:32,711 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:35,830 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:39,962 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:41,217 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:42,146 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:46,804 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:50,117 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:50,631 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:53,5 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:57,659 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:58,620 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:06:59,999 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:00,251 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:05,218 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:08,55 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:08,298 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:10,980 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:14,808 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:14,898 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:18,507 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:21,223 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:22,507 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:26,421 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:29,525 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:31,350 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:36,848 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:37,932 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:38,562 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:40,77 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:44,288 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:46,556 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:46,907 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:47,548 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:51,874 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:56,162 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:07:58,332 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:00,271 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:00,751 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:07,122 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:08,145 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:10,648 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:16,977 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:17,992 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:21,336 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:24,847 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:25,389 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:27,421 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:31,493 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:32,685 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:34,170 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:37,686 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:39,464 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:39,669 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:44,929 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:48,537 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:48,801 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:49,588 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:53,91 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:56,204 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:57,270 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:08:58,73 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:01,629 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:03,130 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:03,737 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:05,632 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:08,968 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:09,652 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:10,836 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:16,207 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:20,62 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:23,911 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:28,523 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:28,629 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:31,270 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:31,798 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:39,86 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:39,653 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:46,26 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:50,553 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:54,16 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:09:54,101 datashaper.workflow.workflow ERROR Error executing verb "extract_graph" in extract_graph: "Column(s) ['description', 'source_id', 'weight'] do not exist"
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/datashaper/workflow/workflow.py", line 415, in _execute_verb
-    result = await result
-  File "/workspace/graphrag/index/workflows/v1/extract_graph.py", line 92, in workflow
-    base_entity_nodes, base_relationship_edges = await extract_graph(
-  File "/workspace/graphrag/index/flows/extract_graph.py", line 35, in extract_graph
-    entities, relationships = await extract_entities(
-  File "/workspace/graphrag/index/operations/extract_entities/extract_entities.py", line 142, in extract_entities
-    relationships = _merge_relationships(relationship_dfs)
-  File "/workspace/graphrag/index/operations/extract_entities/extract_entities.py", line 182, in _merge_relationships
-    all_relationships.groupby(["source", "target"], sort=False)
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/groupby/generic.py", line 1432, in aggregate
-    result = op.agg()
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/apply.py", line 190, in agg
-    return self.agg_dict_like()
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/apply.py", line 423, in agg_dict_like
-    return self.agg_or_apply_dict_like(op_name="agg")
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/apply.py", line 1608, in agg_or_apply_dict_like
-    result_index, result_data = self.compute_dict_like(
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/apply.py", line 462, in compute_dict_like
-    func = self.normalize_dictlike_arg(op_name, selected_obj, func)
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/apply.py", line 663, in normalize_dictlike_arg
-    raise KeyError(f"Column(s) {list(cols)} do not exist")
-KeyError: "Column(s) ['description', 'source_id', 'weight'] do not exist"
-11:09:54,129 graphrag.callbacks.file_workflow_callbacks INFO Error executing verb "extract_graph" in extract_graph: "Column(s) ['description', 'source_id', 'weight'] do not exist" details=None
-11:09:54,130 graphrag.index.run.run ERROR error running workflow extract_graph
-Traceback (most recent call last):
-  File "/workspace/graphrag/index/run/run.py", line 262, in run_pipeline
-    result = await _process_workflow(
-  File "/workspace/graphrag/index/run/workflow.py", line 107, in _process_workflow
-    result = await workflow.run(context, callbacks)
-  File "/usr/local/lib/python3.10/dist-packages/datashaper/workflow/workflow.py", line 369, in run
-    timing = await self._execute_verb(node, context, callbacks)
-  File "/usr/local/lib/python3.10/dist-packages/datashaper/workflow/workflow.py", line 415, in _execute_verb
-    result = await result
-  File "/workspace/graphrag/index/workflows/v1/extract_graph.py", line 92, in workflow
-    base_entity_nodes, base_relationship_edges = await extract_graph(
-  File "/workspace/graphrag/index/flows/extract_graph.py", line 35, in extract_graph
-    entities, relationships = await extract_entities(
-  File "/workspace/graphrag/index/operations/extract_entities/extract_entities.py", line 142, in extract_entities
-    relationships = _merge_relationships(relationship_dfs)
-  File "/workspace/graphrag/index/operations/extract_entities/extract_entities.py", line 182, in _merge_relationships
-    all_relationships.groupby(["source", "target"], sort=False)
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/groupby/generic.py", line 1432, in aggregate
-    result = op.agg()
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/apply.py", line 190, in agg
-    return self.agg_dict_like()
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/apply.py", line 423, in agg_dict_like
-    return self.agg_or_apply_dict_like(op_name="agg")
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/apply.py", line 1608, in agg_or_apply_dict_like
-    result_index, result_data = self.compute_dict_like(
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/apply.py", line 462, in compute_dict_like
-    func = self.normalize_dictlike_arg(op_name, selected_obj, func)
-  File "/usr/local/lib/python3.10/dist-packages/pandas/core/apply.py", line 663, in normalize_dictlike_arg
-    raise KeyError(f"Column(s) {list(cols)} do not exist")
-KeyError: "Column(s) ['description', 'source_id', 'weight'] do not exist"
-11:09:54,154 graphrag.callbacks.file_workflow_callbacks INFO Error running pipeline! details=None
-11:09:54,170 graphrag.cli.index ERROR Errors occurred during the pipeline run, see logs for more details.
-11:23:17,856 graphrag.cli.index INFO Logging enabled at /workspace/onepiece_rag/logs/indexing-engine.log
-11:23:17,861 graphrag.cli.index INFO Starting pipeline run for: 20250101-112317, dry_run=False
-11:23:17,862 graphrag.cli.index INFO Using default configuration: {
+16:10:00,603 graphrag.cli.index INFO Logging enabled at /workspace/onepiece_rag/logs/indexing-engine.log
+16:10:00,607 graphrag.cli.index INFO Starting pipeline run for: 20250102-161000, dry_run=False
+16:10:00,608 graphrag.cli.index INFO Using default configuration: {
     "llm": {
         "api_key": "==== REDACTED ====",
         "type": "openai_chat",
@@ -1279,6 +247,43 @@ KeyError: "Column(s) ['description', 'source_id', 'weight'] do not exist"
         "max_input_length": 8000,
         "strategy": null
     },
+    "core_concept_extraction": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "gpt-4o-mini",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 200000,
+            "requests_per_minute": 500,
+            "max_retries": 20,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 4
+        },
+        "async_mode": "asyncio",
+        "prompt": "prompts/core_concept_extraction.txt",
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
     "claim_extraction": {
         "llm": {
             "api_key": "==== REDACTED ====",
@@ -1383,43 +388,601 @@ KeyError: "Column(s) ['description', 'source_id', 'weight'] do not exist"
     "encoding_model": "cl100k_base",
     "skip_workflows": []
 }
-11:23:17,872 graphrag.index.create_pipeline_config INFO skipping workflows 
-11:23:17,876 graphrag.index.run.run INFO Running pipeline
-11:23:17,876 graphrag.storage.file_pipeline_storage INFO Creating file storage at /workspace/onepiece_rag/output
-11:23:17,879 graphrag.index.input.factory INFO loading input from root_dir=input
-11:23:17,879 graphrag.index.input.factory INFO using file storage for input
-11:23:17,882 graphrag.storage.file_pipeline_storage INFO search /workspace/onepiece_rag/input for files matching .*\.txt$
-11:23:17,891 graphrag.index.input.text INFO found text files from input, found [('a05OLUVtYmVkOiBMb2NhbGx5IFNtb290aGVkIEVtYmVkZGluZyBNaXh0dXJlcyBGb3IgTXVsdGktaW50ZXJlc3QgQ2FuZGlkYXRlIFJldHJpZXZhbA==.json.txt', {}), ('a0hHQ046IFRyZWUtbGlrZW5lc3MgTW9kZWxpbmcgdmlhIENvbnRpbnVvdXMgYW5kIERpc2NyZXRlIEN1cnZhdHVyZSBMZWFybmluZw==.json.txt', {}), ('aS1SYXpvcjogQSBEaWZmZXJlbnRpYWJsZSBOZXVyYWwgSW5wdXQgUmF6b3IgZm9yIEZlYXR1cmUgU2VsZWN0aW9uIGFuZCBEaW1lbnNpb24gU2VhcmNoIGluIEROTi1CYXNlZCBSZWNvbW1lbmRlciBTeXN0ZW1z.json.txt', {}), ('aU1BUlM6IEFuIEluLU1lbW9yeS1Db21wdXRpbmcgQXJjaGl0ZWN0dXJlIGZvciBSZWNvbW1lbmRhdGlvbiBTeXN0ZW1z.json.txt', {}), ('aUhBUzogSW5zdGFuY2Utd2lzZSBIaWVyYXJjaGljYWwgQXJjaGl0ZWN0dXJlIFNlYXJjaCBmb3IgRGVlcCBMZWFybmluZyBSZWNvbW1lbmRhdGlvbiBNb2RlbHM=.json.txt', {}), ('aURyaXZlU2Vuc2U6IER5bmFtaWMgUm91dGUgUGxhbm5pbmcgSW52b2x2aW5nIFJvYWRzIFF1YWxpdHkgSW5mb3JtYXRpb24=.json.txt', {}), ('aUZpeFI6IEJ1ZyBSZXBvcnQgZHJpdmVuIFByb2dyYW0gUmVwYWly.json.txt', {}), ('aVFVQU5UOiBJbnRlcmFjdGl2ZSBRdWFudGl0YXRpdmUgSW52ZXN0bWVudCBVc2luZyBTcGFyc2UgUmVncmVzc2lvbiBGYWN0b3Jz.json.txt', {}), ('aVRyYWNlOiBBbiBJbXBsaWNpdCBUcnVzdCBJbmZlcmVuY2UgTWV0aG9kIGZvciBUcnVzdC1hd2FyZSBDb2xsYWJvcmF0aXZlIEZpbHRlcmluZw==.json.txt', {}), ('ay1Db25uZWN0aXZpdHkgaW4gUmFuZG9tIEtleSBHcmFwaHMgd2l0aCBVbnJlbGlhYmxlIExpbmtz.json.txt', {})]
-11:23:17,955 graphrag.index.input.text INFO Found 10 files, loading 10
-11:23:17,957 graphrag.index.workflows.load INFO Workflow Run Order: ['create_base_text_units', 'create_final_documents', 'extract_graph', 'compute_communities', 'create_final_entities', 'create_final_relationships', 'create_final_communities', 'create_final_nodes', 'create_final_text_units', 'create_final_community_reports', 'generate_text_embeddings']
-11:23:17,958 graphrag.index.run.run INFO Final # of rows loaded: 10
-11:23:18,44 graphrag.index.run.workflow INFO dependencies for create_base_text_units: []
-11:23:18,51 datashaper.workflow.workflow INFO executing verb create_base_text_units
-11:23:20,26 graphrag.index.run.workflow INFO dependencies for create_final_documents: ['create_base_text_units']
-11:23:20,30 graphrag.index.run.workflow WARNING Dependency table create_base_text_units not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
-11:23:20,54 datashaper.workflow.workflow INFO executing verb create_final_documents
-11:23:20,146 graphrag.index.exporter INFO exporting parquet table create_final_documents.parquet
-11:23:20,478 graphrag.index.run.workflow INFO dependencies for extract_graph: ['create_base_text_units']
-11:23:20,481 graphrag.index.run.workflow WARNING Dependency table create_base_text_units not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
-11:23:20,498 datashaper.workflow.workflow INFO executing verb extract_graph
-11:23:30,296 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:31,577 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:32,305 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:36,337 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:39,67 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:39,448 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:43,240 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:46,4 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:48,848 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:51,293 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:52,446 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:56,610 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:58,487 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:23:58,630 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:24:00,60 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:24:02,713 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:24:05,695 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:24:10,940 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:24:17,452 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:24:18,47 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-11:24:20,464 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:00,618 graphrag.index.create_pipeline_config INFO skipping workflows 
+16:10:00,620 graphrag.index.run.run INFO Running pipeline
+16:10:00,620 graphrag.storage.file_pipeline_storage INFO Creating file storage at /workspace/onepiece_rag/output
+16:10:00,622 graphrag.index.input.factory INFO loading input from root_dir=input
+16:10:00,623 graphrag.index.input.factory INFO using file storage for input
+16:10:00,627 graphrag.storage.file_pipeline_storage INFO search /workspace/onepiece_rag/input for files matching .*\.txt$
+16:10:00,636 graphrag.index.input.text INFO found text files from input, found [('a05OLUVtYmVkOiBMb2NhbGx5IFNtb290aGVkIEVtYmVkZGluZyBNaXh0dXJlcyBGb3IgTXVsdGktaW50ZXJlc3QgQ2FuZGlkYXRlIFJldHJpZXZhbA==.json.txt', {})]
+16:10:00,644 graphrag.index.input.text INFO Found 1 files, loading 1
+16:10:00,646 graphrag.index.workflows.load INFO Workflow Run Order: ['create_base_text_units', 'create_final_documents', 'extract_graph', 'compute_communities', 'create_final_entities', 'create_final_relationships', 'create_final_communities', 'create_final_nodes', 'create_final_text_units', 'create_final_community_reports', 'extract_core_concept', 'generate_text_embeddings']
+16:10:00,647 graphrag.index.run.run INFO Final # of rows loaded: 1
+16:10:00,743 graphrag.index.run.workflow INFO dependencies for create_base_text_units: []
+16:10:00,751 datashaper.workflow.workflow INFO executing verb create_base_text_units
+16:10:01,944 graphrag.index.run.workflow INFO dependencies for create_final_documents: ['create_base_text_units']
+16:10:01,946 graphrag.index.run.workflow WARNING Dependency table create_base_text_units not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:10:01,955 datashaper.workflow.workflow INFO executing verb create_final_documents
+16:10:01,972 graphrag.index.exporter INFO exporting parquet table create_final_documents.parquet
+16:10:02,101 graphrag.index.run.workflow INFO dependencies for extract_graph: ['create_base_text_units']
+16:10:02,103 graphrag.index.run.workflow WARNING Dependency table create_base_text_units not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:10:02,112 datashaper.workflow.workflow INFO executing verb extract_graph
+16:10:12,484 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:12,852 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:13,574 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:14,791 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:18,31 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:18,122 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:20,967 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:22,378 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:28,771 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:28,932 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:31,361 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:34,209 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:36,302 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:38,859 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:41,297 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:41,407 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:41,581 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:42,26 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:42,867 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:43,566 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:44,408 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:44,618 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:46,447 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:10:46,584 graphrag.index.run.workflow INFO dependencies for compute_communities: ['extract_graph']
+16:10:46,587 graphrag.index.run.workflow WARNING Dependency table extract_graph not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:10:46,603 datashaper.workflow.workflow INFO executing verb compute_communities
+16:10:53,246 graphrag.index.run.workflow INFO dependencies for create_final_entities: ['extract_graph']
+16:10:53,248 graphrag.index.run.workflow WARNING Dependency table extract_graph not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:10:53,264 datashaper.workflow.workflow INFO executing verb create_final_entities
+16:10:53,271 graphrag.index.exporter INFO exporting parquet table create_final_entities.parquet
+16:10:53,474 graphrag.index.run.workflow INFO dependencies for create_final_relationships: ['extract_graph']
+16:10:53,476 graphrag.index.run.workflow WARNING Dependency table extract_graph not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:10:53,491 datashaper.workflow.workflow INFO executing verb create_final_relationships
+16:10:53,506 graphrag.index.exporter INFO exporting parquet table create_final_relationships.parquet
+16:10:53,801 graphrag.index.run.workflow INFO dependencies for create_final_communities: ['extract_graph']
+16:10:53,803 graphrag.index.run.workflow WARNING Dependency table extract_graph not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:10:53,822 datashaper.workflow.workflow INFO executing verb create_final_communities
+16:10:53,872 graphrag.index.exporter INFO exporting parquet table create_final_communities.parquet
+16:10:54,110 graphrag.index.run.workflow INFO dependencies for create_final_nodes: ['extract_graph', 'compute_communities']
+16:10:54,114 graphrag.index.run.workflow WARNING Dependency table extract_graph not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:10:54,116 graphrag.index.run.workflow WARNING Dependency table compute_communities not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:10:54,133 datashaper.workflow.workflow INFO executing verb create_final_nodes
+16:10:54,170 graphrag.index.exporter INFO exporting parquet table create_final_nodes.parquet
+16:10:54,406 graphrag.index.run.workflow INFO dependencies for create_final_text_units: ['create_final_entities', 'create_final_relationships', 'create_base_text_units']
+16:10:54,408 graphrag.utils.storage INFO reading table from storage: create_final_entities.parquet
+16:10:54,435 graphrag.utils.storage INFO reading table from storage: create_final_relationships.parquet
+16:10:54,451 graphrag.index.run.workflow WARNING Dependency table create_base_text_units not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:10:54,468 datashaper.workflow.workflow INFO executing verb create_final_text_units
+16:10:54,492 graphrag.index.exporter INFO exporting parquet table create_final_text_units.parquet
+16:10:54,708 graphrag.index.run.workflow INFO dependencies for create_final_community_reports: ['create_final_entities', 'create_final_relationships', 'create_final_communities', 'create_final_nodes']
+16:10:54,711 graphrag.utils.storage INFO reading table from storage: create_final_entities.parquet
+16:10:54,724 graphrag.utils.storage INFO reading table from storage: create_final_relationships.parquet
+16:10:54,735 graphrag.utils.storage INFO reading table from storage: create_final_communities.parquet
+16:10:54,745 graphrag.utils.storage INFO reading table from storage: create_final_nodes.parquet
+16:10:54,771 datashaper.workflow.workflow INFO executing verb create_final_community_reports
+16:10:54,804 graphrag.index.operations.summarize_communities.prepare_community_reports INFO Number of nodes at level=0 => 47
+16:11:08,859 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:11:09,978 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:11:10,692 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:11:15,395 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:11:19,364 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:11:21,222 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:11:24,744 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:11:24,776 graphrag.index.exporter INFO exporting parquet table create_final_community_reports.parquet
+16:11:25,47 graphrag.index.run.workflow INFO dependencies for extract_core_concept: ['create_final_community_reports']
+16:11:25,50 graphrag.utils.storage INFO reading table from storage: create_final_community_reports.parquet
+16:11:25,83 datashaper.workflow.workflow INFO executing verb extract_core_concept
+16:11:25,91 graphrag.index.flows.extract_core_concept INFO Creating keywords
+16:11:25,94 datashaper.workflow.workflow ERROR Error executing verb "extract_core_concept" in extract_core_concept: No module named 'graphrag.index.operations.summarize_communities.strategy_keyword'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/datashaper/workflow/workflow.py", line 415, in _execute_verb
+    result = await result
+  File "/workspace/graphrag/index/workflows/v1/extract_core_concept.py", line 71, in workflow
+    output = await extract_core_concept(
+  File "/workspace/graphrag/index/flows/extract_core_concept.py", line 40, in extract_core_concept
+    keyword_reports = await extract_concepts(
+  File "/workspace/graphrag/index/operations/summarize_communities/extract_concepts.py", line 40, in extract_concepts
+    runner = load_strategy(strategy["type"])
+  File "/workspace/graphrag/index/operations/summarize_communities/extract_concepts.py", line 86, in load_strategy
+    from graphrag.index.operations.summarize_communities.strategy_keyword import (
+ModuleNotFoundError: No module named 'graphrag.index.operations.summarize_communities.strategy_keyword'
+16:11:25,118 graphrag.callbacks.file_workflow_callbacks INFO Error executing verb "extract_core_concept" in extract_core_concept: No module named 'graphrag.index.operations.summarize_communities.strategy_keyword' details=None
+16:11:25,119 graphrag.index.run.run ERROR error running workflow extract_core_concept
+Traceback (most recent call last):
+  File "/workspace/graphrag/index/run/run.py", line 262, in run_pipeline
+    result = await _process_workflow(
+  File "/workspace/graphrag/index/run/workflow.py", line 107, in _process_workflow
+    result = await workflow.run(context, callbacks)
+  File "/usr/local/lib/python3.10/dist-packages/datashaper/workflow/workflow.py", line 369, in run
+    timing = await self._execute_verb(node, context, callbacks)
+  File "/usr/local/lib/python3.10/dist-packages/datashaper/workflow/workflow.py", line 415, in _execute_verb
+    result = await result
+  File "/workspace/graphrag/index/workflows/v1/extract_core_concept.py", line 71, in workflow
+    output = await extract_core_concept(
+  File "/workspace/graphrag/index/flows/extract_core_concept.py", line 40, in extract_core_concept
+    keyword_reports = await extract_concepts(
+  File "/workspace/graphrag/index/operations/summarize_communities/extract_concepts.py", line 40, in extract_concepts
+    runner = load_strategy(strategy["type"])
+  File "/workspace/graphrag/index/operations/summarize_communities/extract_concepts.py", line 86, in load_strategy
+    from graphrag.index.operations.summarize_communities.strategy_keyword import (
+ModuleNotFoundError: No module named 'graphrag.index.operations.summarize_communities.strategy_keyword'
+16:11:25,147 graphrag.callbacks.file_workflow_callbacks INFO Error running pipeline! details=None
+16:11:25,192 graphrag.cli.index ERROR Errors occurred during the pipeline run, see logs for more details.
+16:16:06,129 graphrag.cli.index INFO Logging enabled at /workspace/onepiece_rag/logs/indexing-engine.log
+16:16:06,134 graphrag.cli.index INFO Starting pipeline run for: 20250102-161606, dry_run=False
+16:16:06,136 graphrag.cli.index INFO Using default configuration: {
+    "llm": {
+        "api_key": "==== REDACTED ====",
+        "type": "openai_chat",
+        "encoding_model": "cl100k_base",
+        "model": "gpt-4o-mini",
+        "max_tokens": 4000,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 1,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0,
+        "request_timeout": 180.0,
+        "api_base": null,
+        "api_version": null,
+        "proxy": null,
+        "audience": null,
+        "deployment_name": null,
+        "model_supports_json": true,
+        "tokens_per_minute": 200000,
+        "requests_per_minute": 500,
+        "max_retries": 20,
+        "max_retry_wait": 10.0,
+        "sleep_on_rate_limit_recommendation": true,
+        "concurrent_requests": 25,
+        "responses": null
+    },
+    "parallelization": {
+        "stagger": 0.3,
+        "num_threads": 4
+    },
+    "async_mode": "asyncio",
+    "root_dir": "/workspace/onepiece_rag",
+    "reporting": {
+        "type": "file",
+        "base_dir": "/workspace/onepiece_rag/logs",
+        "storage_account_blob_url": null
+    },
+    "storage": {
+        "type": "file",
+        "base_dir": "/workspace/onepiece_rag/output",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "update_index_storage": null,
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "source_column": null,
+        "timestamp_column": null,
+        "timestamp_format": null,
+        "text_column": "text",
+        "title_column": null,
+        "document_attribute_columns": []
+    },
+    "embed_graph": {
+        "enabled": false,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "strategy": null
+    },
+    "embeddings": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_embedding",
+            "encoding_model": "cl100k_base",
+            "model": "text-embedding-3-small",
+            "max_tokens": 4000,
+            "temperature": 0,
+            "top_p": 1,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": null,
+            "tokens_per_minute": 1000000,
+            "requests_per_minute": 3000,
+            "max_retries": 20,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 4
+        },
+        "async_mode": "asyncio",
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "skip": [],
+        "vector_store": {
+            "type": "lancedb",
+            "db_uri": "/workspace/onepiece_rag/output/lancedb",
+            "container_name": "==== REDACTED ====",
+            "overwrite": true
+        },
+        "strategy": null
+    },
+    "chunks": {
+        "size": 1200,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": null,
+        "encoding_model": "cl100k_base"
+    },
+    "snapshots": {
+        "embeddings": false,
+        "graphml": false,
+        "transient": false
+    },
+    "entity_extraction": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "gpt-4o-mini",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 200000,
+            "requests_per_minute": 500,
+            "max_retries": 20,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 4
+        },
+        "async_mode": "asyncio",
+        "prompt": "prompts/entity_extraction.txt",
+        "entity_types": [
+            "people",
+            "concept"
+        ],
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": "cl100k_base"
+    },
+    "summarize_descriptions": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "gpt-4o-mini",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 200000,
+            "requests_per_minute": 500,
+            "max_retries": 20,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 4
+        },
+        "async_mode": "asyncio",
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null
+    },
+    "community_reports": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "gpt-4o-mini",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 200000,
+            "requests_per_minute": 500,
+            "max_retries": 20,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 4
+        },
+        "async_mode": "asyncio",
+        "prompt": "prompts/community_report.txt",
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
+    "core_concept_extraction": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "gpt-4o-mini",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 200000,
+            "requests_per_minute": 500,
+            "max_retries": 20,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 4
+        },
+        "async_mode": "asyncio",
+        "prompt": "prompts/core_concept_extraction.txt",
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
+    "claim_extraction": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "gpt-4o-mini",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 200000,
+            "requests_per_minute": 500,
+            "max_retries": 20,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 4
+        },
+        "async_mode": "asyncio",
+        "enabled": false,
+        "prompt": "prompts/claim_extraction.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": "cl100k_base"
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "strategy": null
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "prompt": "prompts/local_search_system_prompt.txt",
+        "text_unit_prop": 0.5,
+        "community_prop": 0.1,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 1,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "map_prompt": "prompts/global_search_map_system_prompt.txt",
+        "reduce_prompt": "prompts/global_search_reduce_system_prompt.txt",
+        "knowledge_prompt": "prompts/global_search_knowledge_system_prompt.txt",
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 1,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32,
+        "dynamic_search_llm": "gpt-4o-mini",
+        "dynamic_search_threshold": 1,
+        "dynamic_search_keep_parent": false,
+        "dynamic_search_num_repeats": 1,
+        "dynamic_search_use_summary": false,
+        "dynamic_search_concurrent_coroutines": 16,
+        "dynamic_search_max_level": 2
+    },
+    "drift_search": {
+        "prompt": "prompts/drift_search_system_prompt.txt",
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 3,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "concurrency": 32,
+        "drift_k_followups": 20,
+        "primer_folds": 5,
+        "primer_llm_max_tokens": 12000,
+        "n_depth": 3,
+        "local_search_text_unit_prop": 0.9,
+        "local_search_community_prop": 0.1,
+        "local_search_top_k_mapped_entities": 10,
+        "local_search_top_k_relationships": 10,
+        "local_search_max_data_tokens": 12000,
+        "local_search_temperature": 0.0,
+        "local_search_top_p": 1.0,
+        "local_search_n": 1,
+        "local_search_llm_max_gen_tokens": 2000
+    },
+    "encoding_model": "cl100k_base",
+    "skip_workflows": []
+}
+16:16:06,151 graphrag.index.create_pipeline_config INFO skipping workflows 
+16:16:06,154 graphrag.index.run.run INFO Running pipeline
+16:16:06,154 graphrag.storage.file_pipeline_storage INFO Creating file storage at /workspace/onepiece_rag/output
+16:16:06,160 graphrag.index.input.factory INFO loading input from root_dir=input
+16:16:06,160 graphrag.index.input.factory INFO using file storage for input
+16:16:06,166 graphrag.storage.file_pipeline_storage INFO search /workspace/onepiece_rag/input for files matching .*\.txt$
+16:16:06,177 graphrag.index.input.text INFO found text files from input, found [('a05OLUVtYmVkOiBMb2NhbGx5IFNtb290aGVkIEVtYmVkZGluZyBNaXh0dXJlcyBGb3IgTXVsdGktaW50ZXJlc3QgQ2FuZGlkYXRlIFJldHJpZXZhbA==.json.txt', {})]
+16:16:06,187 graphrag.index.input.text INFO Found 1 files, loading 1
+16:16:06,190 graphrag.index.workflows.load INFO Workflow Run Order: ['create_base_text_units', 'create_final_documents', 'extract_graph', 'compute_communities', 'create_final_entities', 'create_final_relationships', 'create_final_communities', 'create_final_nodes', 'create_final_text_units', 'create_final_community_reports', 'extract_core_concept', 'generate_text_embeddings']
+16:16:06,190 graphrag.index.run.run INFO Final # of rows loaded: 1
+16:16:06,291 graphrag.index.run.workflow INFO dependencies for create_base_text_units: []
+16:16:06,299 datashaper.workflow.workflow INFO executing verb create_base_text_units
+16:16:07,476 graphrag.index.run.workflow INFO dependencies for create_final_documents: ['create_base_text_units']
+16:16:07,479 graphrag.index.run.workflow WARNING Dependency table create_base_text_units not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:16:07,487 datashaper.workflow.workflow INFO executing verb create_final_documents
+16:16:07,506 graphrag.index.exporter INFO exporting parquet table create_final_documents.parquet
+16:16:07,631 graphrag.index.run.workflow INFO dependencies for extract_graph: ['create_base_text_units']
+16:16:07,633 graphrag.index.run.workflow WARNING Dependency table create_base_text_units not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:16:07,642 datashaper.workflow.workflow INFO executing verb extract_graph
+16:16:08,150 graphrag.index.run.workflow INFO dependencies for compute_communities: ['extract_graph']
+16:16:08,152 graphrag.index.run.workflow WARNING Dependency table extract_graph not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:16:08,162 datashaper.workflow.workflow INFO executing verb compute_communities
+16:16:14,720 graphrag.index.run.workflow INFO dependencies for create_final_entities: ['extract_graph']
+16:16:14,722 graphrag.index.run.workflow WARNING Dependency table extract_graph not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:16:14,739 datashaper.workflow.workflow INFO executing verb create_final_entities
+16:16:14,745 graphrag.index.exporter INFO exporting parquet table create_final_entities.parquet
+16:16:14,948 graphrag.index.run.workflow INFO dependencies for create_final_relationships: ['extract_graph']
+16:16:14,951 graphrag.index.run.workflow WARNING Dependency table extract_graph not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:16:14,965 datashaper.workflow.workflow INFO executing verb create_final_relationships
+16:16:14,977 graphrag.index.exporter INFO exporting parquet table create_final_relationships.parquet
+16:16:15,221 graphrag.index.run.workflow INFO dependencies for create_final_communities: ['extract_graph']
+16:16:15,223 graphrag.index.run.workflow WARNING Dependency table extract_graph not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:16:15,241 datashaper.workflow.workflow INFO executing verb create_final_communities
+16:16:15,285 graphrag.index.exporter INFO exporting parquet table create_final_communities.parquet
+16:16:15,503 graphrag.index.run.workflow INFO dependencies for create_final_nodes: ['extract_graph', 'compute_communities']
+16:16:15,505 graphrag.index.run.workflow WARNING Dependency table extract_graph not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:16:15,506 graphrag.index.run.workflow WARNING Dependency table compute_communities not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:16:15,522 datashaper.workflow.workflow INFO executing verb create_final_nodes
+16:16:15,551 graphrag.index.exporter INFO exporting parquet table create_final_nodes.parquet
+16:16:15,754 graphrag.index.run.workflow INFO dependencies for create_final_text_units: ['create_final_relationships', 'create_base_text_units', 'create_final_entities']
+16:16:15,756 graphrag.utils.storage INFO reading table from storage: create_final_relationships.parquet
+16:16:15,784 graphrag.index.run.workflow WARNING Dependency table create_base_text_units not found in storage: it may be a runtime-only in-memory table. If you see further errors, this may be an actual problem.
+16:16:15,786 graphrag.utils.storage INFO reading table from storage: create_final_entities.parquet
+16:16:15,811 datashaper.workflow.workflow INFO executing verb create_final_text_units
+16:16:15,848 graphrag.index.exporter INFO exporting parquet table create_final_text_units.parquet
+16:16:16,83 graphrag.index.run.workflow INFO dependencies for create_final_community_reports: ['create_final_relationships', 'create_final_nodes', 'create_final_communities', 'create_final_entities']
+16:16:16,85 graphrag.utils.storage INFO reading table from storage: create_final_relationships.parquet
+16:16:16,96 graphrag.utils.storage INFO reading table from storage: create_final_nodes.parquet
+16:16:16,107 graphrag.utils.storage INFO reading table from storage: create_final_communities.parquet
+16:16:16,120 graphrag.utils.storage INFO reading table from storage: create_final_entities.parquet
+16:16:16,149 datashaper.workflow.workflow INFO executing verb create_final_community_reports
+16:16:16,187 graphrag.index.operations.summarize_communities.prepare_community_reports INFO Number of nodes at level=0 => 47
+16:16:16,476 graphrag.index.exporter INFO exporting parquet table create_final_community_reports.parquet
+16:16:16,713 graphrag.index.run.workflow INFO dependencies for extract_core_concept: ['create_final_community_reports']
+16:16:16,715 graphrag.utils.storage INFO reading table from storage: create_final_community_reports.parquet
+16:16:16,746 datashaper.workflow.workflow INFO executing verb extract_core_concept
+16:16:16,754 graphrag.index.flows.extract_core_concept INFO Creating core concept
+16:16:18,901 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:16:18,995 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:16:19,156 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:16:19,491 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:16:20,846 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:16:21,152 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:16:21,839 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:16:21,870 graphrag.index.exporter INFO exporting parquet table extract_core_concept.parquet
+16:16:22,187 graphrag.index.run.workflow INFO dependencies for generate_text_embeddings: ['create_final_community_reports', 'create_final_documents', 'create_final_entities', 'create_final_relationships', 'create_final_text_units']
+16:16:22,190 graphrag.utils.storage INFO reading table from storage: create_final_community_reports.parquet
+16:16:22,205 graphrag.utils.storage INFO reading table from storage: create_final_documents.parquet
+16:16:22,216 graphrag.utils.storage INFO reading table from storage: create_final_entities.parquet
+16:16:22,226 graphrag.utils.storage INFO reading table from storage: create_final_relationships.parquet
+16:16:22,236 graphrag.utils.storage INFO reading table from storage: create_final_text_units.parquet
+16:16:22,266 datashaper.workflow.workflow INFO executing verb generate_text_embeddings
+16:16:22,273 graphrag.index.flows.generate_text_embeddings INFO Creating embeddings
+16:16:22,274 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding entity.description: default-entity-description
+16:16:22,379 graphrag.index.operations.embed_text.strategies.openai INFO embedding 61 inputs via 61 snippets using 4 batches. max_batch_size=16, max_tokens=8191
+16:16:22,929 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+16:16:23,18 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+16:16:23,20 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+16:16:23,188 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+16:16:23,788 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding community.full_content: default-community-full_content
+16:16:23,808 graphrag.index.operations.embed_text.strategies.openai INFO embedding 7 inputs via 7 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+16:16:24,288 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+16:16:24,751 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding text_unit.text: default-text_unit-text
+16:16:24,770 graphrag.index.operations.embed_text.strategies.openai INFO embedding 7 inputs via 7 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+16:16:25,172 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+16:16:25,676 graphrag.cli.index INFO All workflows completed successfully.
