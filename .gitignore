@@ -1,6 +1,6 @@
 .env
 *.ipynb
-data
+data_full
 __pycache__
 .github
 example
