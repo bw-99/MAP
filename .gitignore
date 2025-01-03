@@ -1,0 +1,8 @@
+.env
+*.ipynb
+data_full
+__pycache__
+.github
+example
+*.zip
+onepiece_rag
