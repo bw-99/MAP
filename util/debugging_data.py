@@ -14,7 +14,7 @@ ROOT = args.root
 NUM_EXAMPLE = args.num_example
 
 os.makedirs(f"{ROOT}/input", exist_ok=True)
-json_flst = glob.glob("data_full/parsed/*.json")
+json_flst = glob.glob("data/parsed/*.json")
 json_flst = json_flst[:NUM_EXAMPLE]
 
 keys_to_extract = {'abstract', 'sections'}
