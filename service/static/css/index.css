@@ -1,0 +1,22 @@
+svg {
+    background-color: #f0f0f0;
+  }
+
+  /* Circles */
+  circle {
+    fill: steelblue;
+    cursor: pointer;
+    transition: fill 0.3s;
+  }
+
+  circle:hover {
+    fill: orange;
+  }
+
+  /* Labels */
+  text.label {
+    font-family: sans-serif;
+    font-size: 14px;
+    fill: black;
+    pointer-events: none; /* So text doesn't block circle clicks */
+  }
