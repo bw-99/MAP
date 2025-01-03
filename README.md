@@ -1,9 +1,14 @@
+## How to Run
+1. cd to workspace
+2. `docker pull bb1702/onepiece:main`
+3. `docker run --name con_exec --shm-size=20g -v .:/workspace bb1702/onepiece:main`
+
 ## GraphRAG Developments
 
 ### Docker Prep
 1. cd to workspace
 2. `docker pull bb1702/onepiece:main`
-3. `docker run -dit --name con --shm-size=20g -v .:/workspace bb1702/onepiece:main`
+3. `docker run -dit --name con --shm-size=20g -v .:/workspace bb1702/onepiece:main /bin/bash`
 
 ### Run GraphRAG
 1. Enter the container via `docker attach con`
