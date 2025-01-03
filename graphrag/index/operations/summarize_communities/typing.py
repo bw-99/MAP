@@ -39,6 +39,26 @@ class CommunityReport(TypedDict):
     rank_explanation: str
     findings: list[Finding]
 
+class CoreConceptExtraction(TypedDict):
+    """Core Concpet report class definition."""
+
+    community: str | int
+    core_concept: str
+    core_concept_explanation: str
+
+
+CoreConceptExtractionStrategy = Callable[
+    [
+        str | int,
+        str,
+        int,
+        VerbCallbacks,
+        PipelineCache,
+        StrategyConfig,
+    ],
+    Awaitable[CommunityReport | None],
+]
+
 
 CommunityReportsStrategy = Callable[
     [
@@ -51,6 +71,16 @@ CommunityReportsStrategy = Callable[
     ],
     Awaitable[CommunityReport | None],
 ]
+
+
+class CoreConceptExtractionStrategyType(str, Enum):
+    """CoreConceptExtractionStrategyType class definition."""
+
+    graph_intelligence = "graph_intelligence"
+
+    def __repr__(self):
+        """Get a string representation."""
+        return f'"{self.value}"'
 
 
 class CreateCommunityReportsStrategyType(str, Enum):

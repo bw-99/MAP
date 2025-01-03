@@ -32,14 +32,13 @@ def parse_pdf(pdf_path, Hashed):
 
 if __name__=="__main__":
     warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
-    
+
     df = pd.read_csv(CSV_PATH)
     df = df.iloc[df.notna()["PDF Link"].values]
-    
+
     for idx, row in tqdm.tqdm(df.iterrows(), total=df.shape[0]):
         Hashed, url = row["Hashed"], row["PDF Link"]
         if os.path.exists(f"{PARSED_PATH}/{Hashed}.json"):
             continue
         pdf_path = download_pdf(url=url, Hashed=Hashed)
         parse_pdf(pdf_path=pdf_path, Hashed=Hashed)
-        

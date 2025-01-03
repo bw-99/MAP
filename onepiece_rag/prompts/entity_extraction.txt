@@ -5,7 +5,7 @@ Given a text document that is potentially relevant to this activity and a list o
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
 - entity_name: Name of the entity, capitalized
-- entity_type: One of the following types: [{entity_types}]
+- entity_type: One of the following types: [people, concept]
 - entity_description: Comprehensive description of the entity's attributes and activities
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
 
@@ -14,108 +14,180 @@ For each pair of related entities, extract the following information:
 - source_entity: name of the source entity, as identified in step 1
 - target_entity: name of the target entity, as identified in step 1
 - relationship_description: explanation as to why you think the source entity and the target entity are related to each other
-- relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity
- Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
 
 3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
 
-4. When finished, output {completion_delimiter}
+4. If you have to translate into English, just translate the descriptions, nothing else!
 
-######################
+5. When finished, output {completion_delimiter}.
+
 -Examples-
 ######################
+
 Example 1:
-Entity_types: ORGANIZATION,PERSON
-Text:
-The Verdantis's Central Institution is scheduled to meet on Monday and Thursday, with the institution planning to release its latest policy decision on Thursday at 1:30 p.m. PDT, followed by a press conference where Central Institution Chair Martin Smith will take questions. Investors expect the Market Strategy Committee to hold its benchmark interest rate steady in a range of 3.5%-3.75%.
-######################
-Output:
-("entity"{tuple_delimiter}CENTRAL INSTITUTION{tuple_delimiter}ORGANIZATION{tuple_delimiter}The Central Institution is the Federal Reserve of Verdantis, which is setting interest rates on Monday and Thursday)
-{record_delimiter}
-("entity"{tuple_delimiter}MARTIN SMITH{tuple_delimiter}PERSON{tuple_delimiter}Martin Smith is the chair of the Central Institution)
-{record_delimiter}
-("entity"{tuple_delimiter}MARKET STRATEGY COMMITTEE{tuple_delimiter}ORGANIZATION{tuple_delimiter}The Central Institution committee makes key decisions about interest rates and the growth of Verdantis's money supply)
-{record_delimiter}
-("relationship"{tuple_delimiter}MARTIN SMITH{tuple_delimiter}CENTRAL INSTITUTION{tuple_delimiter}Martin Smith is the Chair of the Central Institution and will answer questions at a press conference{tuple_delimiter}9)
-{completion_delimiter}
 
-######################
+entity_types: [people, concept]
+text:
+ or a plausible patch. Priority information about the bug report is collected from the issue tracking systems, while the root cause is inferred by analyzing the bug reports and fixes. Overall, we note that 9 out of the 13 bugs have been marked as Major issues. 12 different bug types (i.e., root causes) are addressed. In contrast, R2Fix [43] only focused on 3 simple bug types. </p><h2>publication_ref</h2> <p>['b42'] </p><h2>figure_ref</h2> <p>[] </p><h2>table_ref</h2> <p>['tab_14'] </p><h2>heading</h2> <p>DISCUSSION </p><h2>text</h2> <p>This study presents the conclusions of our investigation into the feasibility of generating patches automatically from bug reports. We set strong constraints on the absence of test cases,
+------------------------
+output:
+("entity"{tuple_delimiter}BUG REPORT{tuple_delimiter}CONCEPT{tuple_delimiter}A bug report is a document that describes an issue or problem in software, providing details necessary for developers to understand and address the issue.)
+{record_delimiter}
+("entity"{tuple_delimiter}R2FIX{tuple_delimiter}CONCEPT{tuple_delimiter}R2Fix is a tool that focuses on generating fixes for software bugs, but it only addresses a limited number of bug types compared to other approaches.)
+{record_delimiter}
+("entity"{tuple_delimiter}MAJOR ISSUES{tuple_delimiter}CONCEPT{tuple_delimiter}Major issues refer to significant bugs that have a considerable impact on software functionality and require urgent attention.)
+{record_delimiter}
+("entity"{tuple_delimiter}BUG TYPES{tuple_delimiter}CONCEPT{tuple_delimiter}Bug types are classifications of software bugs based on their root causes, which help in understanding and addressing the issues effectively.)
+{record_delimiter}
+("relationship"{tuple_delimiter}BUG REPORT{tuple_delimiter}MAJOR ISSUES{tuple_delimiter}Bug reports often highlight major issues that need to be prioritized for fixing in software development{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}R2FIX{tuple_delimiter}BUG TYPES{tuple_delimiter}R2Fix addresses a limited number of bug types compared to the broader range of bug types identified in the study{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}BUG REPORT{tuple_delimiter}BUG TYPES{tuple_delimiter}Bug reports are categorized into different bug types based on their root causes, which aids in the analysis and fixing process{tuple_delimiter}7)
+{completion_delimiter}
+#############################
+
+
 Example 2:
-Entity_types: ORGANIZATION
-Text:
-TechGlobal's (TG) stock skyrocketed in its opening day on the Global Exchange Thursday. But IPO experts warn that the semiconductor corporation's debut on the public markets isn't indicative of how other newly listed companies may perform.
 
-TechGlobal, a formerly public company, was taken private by Vision Holdings in 2014. The well-established chip designer says it powers 85% of premium smartphones.
-######################
-Output:
-("entity"{tuple_delimiter}TECHGLOBAL{tuple_delimiter}ORGANIZATION{tuple_delimiter}TechGlobal is a stock now listed on the Global Exchange which powers 85% of premium smartphones)
+entity_types: [people, concept]
+text:
+ 𝑖 , 𝑣 𝑗 in 𝑉 satisfying
+∑︁ 𝑣 𝑖 ∈𝑉 𝜋 𝑖,𝑗 (𝑣 𝑖 , 𝑣 𝑗 ) = 𝑚 1 ; ∑︁ 𝑣 𝑗 ∈𝑉 𝜋 𝑖,𝑗 (𝑣 𝑖 , 𝑣 𝑗 ) = 𝑚 2 . (3
+)
+𝑇 ℎ ′ ℍ 𝑑 ′ ,𝐾 ℍ 𝑑,𝐾 x 𝐻 ∈ ℝ 𝑛×𝑑 h 𝐻 ∈ ℝ 𝑛×𝑑 ′ ℍ 𝑑 ′ ,𝐾 x 𝐸 ∈ ℝ 𝑛×𝑑 𝒛 ∈ 𝐻 �
+------------------------
+output:
+("entity"{tuple_delimiter}𝑣 𝑗{tuple_delimiter}CONCEPT{tuple_delimiter}𝑣 𝑗 is a variable in the context of the mathematical expressions provided, representing elements in a set V.)
 {record_delimiter}
-("entity"{tuple_delimiter}VISION HOLDINGS{tuple_delimiter}ORGANIZATION{tuple_delimiter}Vision Holdings is a firm that previously owned TechGlobal)
+("entity"{tuple_delimiter}𝑣 𝑖{tuple_delimiter}CONCEPT{tuple_delimiter}𝑣 𝑖 is a variable in the context of the mathematical expressions provided, representing elements in a set V.)
 {record_delimiter}
-("relationship"{tuple_delimiter}TECHGLOBAL{tuple_delimiter}VISION HOLDINGS{tuple_delimiter}Vision Holdings formerly owned TechGlobal from 2014 until present{tuple_delimiter}5)
+("entity"{tuple_delimiter}𝜋 𝑖,𝑗{tuple_delimiter}CONCEPT{tuple_delimiter}𝜋 𝑖,𝑗 is a function or relation defined between the variables 𝑣 𝑖 and 𝑣 𝑗, likely representing a mapping or connection in the context of the equations.)
+{record_delimiter}
+("entity"{tuple_delimiter}𝑚 1{tuple_delimiter}CONCEPT{tuple_delimiter}𝑚 1 is a constant or parameter in the equations, representing a specific value related to the variables 𝑣 𝑖 and 𝑣 𝑗.)
+{record_delimiter}
+("entity"{tuple_delimiter}𝑚 2{tuple_delimiter}CONCEPT{tuple_delimiter}𝑚 2 is a constant or parameter in the equations, representing a specific value related to the variables 𝑣 𝑖 and 𝑣 𝑗.)
+{record_delimiter}
+("entity"{tuple_delimiter}𝑇 ℎ′{tuple_delimiter}CONCEPT{tuple_delimiter}𝑇 ℎ′ is a matrix or tensor in the context of the mathematical expressions, likely representing a transformation or operation on the variables.)
+{record_delimiter}
+("entity"{tuple_delimiter}𝐻{tuple_delimiter}CONCEPT{tuple_delimiter}𝐻 is a matrix or tensor in the context of the mathematical expressions, likely representing a set of features or parameters.)
+{record_delimiter}
+("entity"{tuple_delimiter}𝐾{tuple_delimiter}CONCEPT{tuple_delimiter}𝐾 is a matrix or tensor in the context of the mathematical expressions, likely representing a set of weights or connections.)
+{record_delimiter}
+("entity"{tuple_delimiter}𝒛{tuple_delimiter}CONCEPT{tuple_delimiter}𝒛 is a variable in the context of the mathematical expressions, representing an output or result derived from the other variables and matrices.)
+{record_delimiter}
+("relationship"{tuple_delimiter}𝑣 𝑖{tuple_delimiter}𝑣 𝑗{tuple_delimiter}The variables 𝑣 𝑖 and 𝑣 𝑗 are related through the function 𝜋 𝑖,𝑗, which defines a relationship between them in the equations.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}𝜋 𝑖,𝑗{tuple_delimiter}𝑚 1{tuple_delimiter}The function 𝜋 𝑖,𝑗 is used in the equation that sums to the constant 𝑚 1, indicating a direct relationship.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}𝜋 𝑖,𝑗{tuple_delimiter}𝑚 2{tuple_delimiter}The function 𝜋 𝑖,𝑗 is used in the equation that sums to the constant 𝑚 2, indicating a direct relationship.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}𝑇 ℎ′{tuple_delimiter}𝐻{tuple_delimiter}The matrix 𝑇 ℎ′ is likely transformed or operated on by the matrix 𝐻, indicating a mathematical relationship.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}𝐻{tuple_delimiter}𝐾{tuple_delimiter}The matrix 𝐻 interacts with the matrix 𝐾 in the context of the equations, suggesting a relationship in the operations performed.{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}𝑣 𝑖{tuple_delimiter}𝒛{tuple_delimiter}The variable 𝒛 is derived from the variables 𝑣 𝑖 and 𝑣 𝑗 through the function 𝜋 𝑖,𝑗, indicating a relationship.{tuple_delimiter}8)
 {completion_delimiter}
+#############################
 
-######################
+
 Example 3:
-Entity_types: ORGANIZATION,GEO,PERSON
-Text:
-Five Aurelians jailed for 8 years in Firuzabad and widely regarded as hostages are on their way home to Aurelia.
 
-The swap orchestrated by Quintara was finalized when $8bn of Firuzi funds were transferred to financial institutions in Krohaara, the capital of Quintara.
-
-The exchange initiated in Firuzabad's capital, Tiruzia, led to the four men and one woman, who are also Firuzi nationals, boarding a chartered flight to Krohaara.
-
-They were welcomed by senior Aurelian officials and are now on their way to Aurelia's capital, Cashion.
-
-The Aurelians include 39-year-old businessman Samuel Namara, who has been held in Tiruzia's Alhamia Prison, as well as journalist Durke Bataglani, 59, and environmentalist Meggie Tazbah, 53, who also holds Bratinas nationality.
-######################
-Output:
-("entity"{tuple_delimiter}FIRUZABAD{tuple_delimiter}GEO{tuple_delimiter}Firuzabad held Aurelians as hostages)
+entity_types: [people, concept]
+text:
+ relative importance of different embedding regions of each feature. Furthermore, a flexible pruning algorithm is proposed to achieve feature filtering and dimension derivation simultaneously. Extensive experiments on two large-scale public datasets in the Click-Through-Rate (CTR) prediction task demonstrate the efficacy and superiority of i-Razor in balancing model complexity and performance. </p><h1>sections</h1><h2>heading</h2> <p>INTRODUCTION </p><h2>text</h2> <p>I N this era of information overload, recommender systems powered by information technology and deep learning have become an effective way to retrieve potentially useful information for users from a huge range of options [1], [2], [3]. Deep learning recommender systems enhance recommendation performance by capturing complex correlations between features [4]. Experts resort to feature engineering, generating categorical, numerical, statistical, and cross features, to better understand the user's interests. However, due to the universal approximation property [5] of
+------------------------
+output:
+("entity"{tuple_delimiter}I-RAZOR{tuple_delimiter}CONCEPT{tuple_delimiter}i-Razor is a proposed flexible pruning algorithm aimed at feature filtering and dimension derivation in machine learning models, particularly in Click-Through-Rate (CTR) prediction tasks.)
 {record_delimiter}
-("entity"{tuple_delimiter}AURELIA{tuple_delimiter}GEO{tuple_delimiter}Country seeking to release hostages)
+("entity"{tuple_delimiter}RECOMMENDER SYSTEMS{tuple_delimiter}CONCEPT{tuple_delimiter}Recommender systems are systems powered by information technology and deep learning that help retrieve useful information for users from a vast array of options.)
 {record_delimiter}
-("entity"{tuple_delimiter}QUINTARA{tuple_delimiter}GEO{tuple_delimiter}Country that negotiated a swap of money in exchange for hostages)
+("entity"{tuple_delimiter}DEEP LEARNING{tuple_delimiter}CONCEPT{tuple_delimiter}Deep learning is a subset of machine learning that enhances recommendation performance by capturing complex correlations between features.)
 {record_delimiter}
+("entity"{tuple_delimiter}FEATURE ENGINEERING{tuple_delimiter}CONCEPT{tuple_delimiter}Feature engineering involves generating categorical, numerical, statistical, and cross features to better understand user interests in machine learning applications.)
 {record_delimiter}
-("entity"{tuple_delimiter}TIRUZIA{tuple_delimiter}GEO{tuple_delimiter}Capital of Firuzabad where the Aurelians were being held)
+("relationship"{tuple_delimiter}I-RAZOR{tuple_delimiter}RECOMMENDER SYSTEMS{tuple_delimiter}i-Razor is used within the context of recommender systems to improve feature filtering and model performance in CTR prediction tasks.{tuple_delimiter}7)
 {record_delimiter}
-("entity"{tuple_delimiter}KROHAARA{tuple_delimiter}GEO{tuple_delimiter}Capital city in Quintara)
+("relationship"{tuple_delimiter}RECOMMENDER SYSTEMS{tuple_delimiter}DEEP LEARNING{tuple_delimiter}Recommender systems utilize deep learning techniques to enhance their performance by capturing complex correlations between features.{tuple_delimiter}8)
 {record_delimiter}
-("entity"{tuple_delimiter}CASHION{tuple_delimiter}GEO{tuple_delimiter}Capital city in Aurelia)
-{record_delimiter}
-("entity"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}PERSON{tuple_delimiter}Aurelian who spent time in Tiruzia's Alhamia Prison)
-{record_delimiter}
-("entity"{tuple_delimiter}ALHAMIA PRISON{tuple_delimiter}GEO{tuple_delimiter}Prison in Tiruzia)
-{record_delimiter}
-("entity"{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}PERSON{tuple_delimiter}Aurelian journalist who was held hostage)
-{record_delimiter}
-("entity"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}PERSON{tuple_delimiter}Bratinas national and environmentalist who was held hostage)
-{record_delimiter}
-("relationship"{tuple_delimiter}FIRUZABAD{tuple_delimiter}AURELIA{tuple_delimiter}Firuzabad negotiated a hostage exchange with Aurelia{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}QUINTARA{tuple_delimiter}AURELIA{tuple_delimiter}Quintara brokered the hostage exchange between Firuzabad and Aurelia{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}QUINTARA{tuple_delimiter}FIRUZABAD{tuple_delimiter}Quintara brokered the hostage exchange between Firuzabad and Aurelia{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}ALHAMIA PRISON{tuple_delimiter}Samuel Namara was a prisoner at Alhamia prison{tuple_delimiter}8)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}Samuel Namara and Meggie Tazbah were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}Samuel Namara and Durke Bataglani were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}Meggie Tazbah and Durke Bataglani were exchanged in the same hostage release{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}SAMUEL NAMARA{tuple_delimiter}FIRUZABAD{tuple_delimiter}Samuel Namara was a hostage in Firuzabad{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}MEGGIE TAZBAH{tuple_delimiter}FIRUZABAD{tuple_delimiter}Meggie Tazbah was a hostage in Firuzabad{tuple_delimiter}2)
-{record_delimiter}
-("relationship"{tuple_delimiter}DURKE BATAGLANI{tuple_delimiter}FIRUZABAD{tuple_delimiter}Durke Bataglani was a hostage in Firuzabad{tuple_delimiter}2)
+("relationship"{tuple_delimiter}DEEP LEARNING{tuple_delimiter}FEATURE ENGINEERING{tuple_delimiter}Deep learning relies on effective feature engineering to generate relevant features that improve the understanding of user interests.{tuple_delimiter}6)
 {completion_delimiter}
+#############################
 
-######################
+
+Example 4:
+
+entity_types: [people, concept]
+text:
+) of Theorem 1.
+Lemma 11 ( [37, Lemma 10.2] via the argument of [36,Lemma 7.4.5,pp. 124]). For each r = 2, . . . , n, we have
+Lemma 11 is used in proving the one-law (12) of Theorem 1.
+Lemma 12. With J defined in (131) for some ǫ, λ and µ in (0, ≤ min e -pe(1+ǫ/2) , e -peλr + e
+for all n sufficiently large and for each r = 2, 3, . . . , n.
+Lemma 12 helps in proving the one-law (12) of Theorem 1. </p><h2>publication_ref</h2> <p>['b11', 'b10', 'b10', 'b35'] </p><h2>figure_ref
+------------------------
+output:
+("entity"{tuple_delimiter}THEOREM 1{tuple_delimiter}CONCEPT{tuple_delimiter}Theorem 1 is a mathematical statement that is being referenced in the context of Lemmas 11 and 12.)
+{record_delimiter}
+("entity"{tuple_delimiter}LEMMA 11{tuple_delimiter}CONCEPT{tuple_delimiter}Lemma 11 is a mathematical lemma used in the proof of Theorem 1, specifically in relation to the one-law (12).)
+{record_delimiter}
+("entity"{tuple_delimiter}LEMMA 12{tuple_delimiter}CONCEPT{tuple_delimiter}Lemma 12 is a mathematical lemma that assists in proving the one-law (12) of Theorem 1.)
+{record_delimiter}
+("relationship"{tuple_delimiter}LEMMA 11{tuple_delimiter}THEOREM 1{tuple_delimiter}Lemma 11 is used in proving the one-law (12) of Theorem 1{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}LEMMA 12{tuple_delimiter}THEOREM 1{tuple_delimiter}Lemma 12 helps in proving the one-law (12) of Theorem 1{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}LEMMA 12{tuple_delimiter}LEMMA 11{tuple_delimiter}Both Lemma 11 and Lemma 12 are used in the context of proving aspects of Theorem 1{tuple_delimiter}6)
+{completion_delimiter}
+#############################
+
+
+Example 5:
+
+entity_types: [people, concept]
+text:
+ xy = K xy ∪ Kn u=1 X u .(69)
+From (69) and the fact that the events K xy , X 1 , X 2 , . . . , X Kn are mutually disjoint, we obtain
+P A h ∩ E xy = P A h ∩ K xy + Kn u=1 P [A h ∩ X u ] .(70)
+Substituting (70) into (65), we get
+P D x,ℓ ∩ D y,ℓ ∩ E xy = ℓ h=0 P A h ∩ K xy + ℓ h=0 Kn u=1 P [A h ∩ X u ] .(71)
+Proposition 1 will follow from the next two results.
+Proposition 1.1. Let ℓ be a non-negative integer constant. If p s = o(1), p e = ln n+(k-1) ln ln n+
+------------------------
+output:
+("entity"{tuple_delimiter}K XY{tuple_delimiter}CONCEPT{tuple_delimiter}K XY is a mathematical notation representing a union of events or sets in probability theory.)
+{record_delimiter}
+("entity"{tuple_delimiter}K N{tuple_delimiter}CONCEPT{tuple_delimiter}K N refers to a set of mutually disjoint events in probability theory, indexed by u from 1 to N.)
+{record_delimiter}
+("entity"{tuple_delimiter}P A H{tuple_delimiter}CONCEPT{tuple_delimiter}P A H represents a probability measure related to event A in the context of the given mathematical framework.)
+{record_delimiter}
+("entity"{tuple_delimiter}E XY{tuple_delimiter}CONCEPT{tuple_delimiter}E XY denotes an event in the probability space that is being analyzed in the equations.)
+{record_delimiter}
+("entity"{tuple_delimiter}D X,ℓ{tuple_delimiter}CONCEPT{tuple_delimiter}D X,ℓ is a notation used to represent a specific probability distribution or event related to variable X and index ℓ.)
+{record_delimiter}
+("entity"{tuple_delimiter}D Y,ℓ{tuple_delimiter}CONCEPT{tuple_delimiter}D Y,ℓ is a notation used to represent a specific probability distribution or event related to variable Y and index ℓ.)
+{record_delimiter}
+("entity"{tuple_delimiter}N{tuple_delimiter}CONCEPT{tuple_delimiter}N is a variable representing a non-negative integer constant in the context of the mathematical propositions.)
+{record_delimiter}
+("entity"{tuple_delimiter}P{tuple_delimiter}CONCEPT{tuple_delimiter}P is a general notation for probability in the context of the equations presented.)
+{record_delimiter}
+("relationship"{tuple_delimiter}K XY{tuple_delimiter}K N{tuple_delimiter}K XY is defined as a union of the mutually disjoint events represented by K N{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}P A H{tuple_delimiter}E XY{tuple_delimiter}P A H is involved in the intersection with event E XY in the probability equations{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}D X,ℓ{tuple_delimiter}D Y,ℓ{tuple_delimiter}D X,ℓ and D Y,ℓ are both probability distributions being analyzed in the same context of the propositions{tuple_delimiter}5)
+{record_delimiter}
+("relationship"{tuple_delimiter}P A H{tuple_delimiter}D X,ℓ{tuple_delimiter}P A H is related to the probability distribution D X,ℓ in the context of the equations{tuple_delimiter}5)
+{completion_delimiter}
+#############################
+
+
+
 -Real Data-
 ######################
-Entity_types: {entity_types}
-Text: {input_text}
+entity_types: [people, concept]
+text: {input_text}
 ######################
-Output:
+output:

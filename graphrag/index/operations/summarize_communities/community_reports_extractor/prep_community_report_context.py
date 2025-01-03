@@ -8,7 +8,7 @@ from typing import cast
 
 import pandas as pd
 
-import graphrag.index.operations.summarize_communities.community_reports_extractor.schemas as schemas
+import graphrag.index.operations.summarize_communities.schemas as schemas
 from graphrag.index.operations.summarize_communities.community_reports_extractor.build_mixed_context import (
     build_mixed_context,
 )

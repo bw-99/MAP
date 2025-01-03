@@ -17,7 +17,7 @@ from graphrag.index.operations.summarize_communities import (
     restore_community_hierarchy,
     summarize_communities,
 )
-from graphrag.index.operations.summarize_communities.community_reports_extractor.schemas import (
+from graphrag.index.operations.summarize_communities.schemas import (
     CLAIM_DESCRIPTION,
     CLAIM_DETAILS,
     CLAIM_ID,

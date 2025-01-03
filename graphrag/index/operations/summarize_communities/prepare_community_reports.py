@@ -11,7 +11,7 @@ from datashaper import (
     progress_iterable,
 )
 
-import graphrag.index.operations.summarize_communities.community_reports_extractor.schemas as schemas
+import graphrag.index.operations.summarize_communities.schemas as schemas
 from graphrag.index.operations.summarize_communities.community_reports_extractor.sort_context import (
     parallel_sort_context_batch,
 )

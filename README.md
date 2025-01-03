@@ -24,6 +24,6 @@
 2. python -m spacy download en_core_web_sm
 
 ### Scripts
-1. Run `python util/arxiv.py` to fetch relavant research papers and corresponding meta-data from arxiv.org
-2. Run `python util/parse.py` to download the whole paper and parse the paper
-
+1. Run `python3 util/arxiv.py` to fetch relavant research papers and corresponding meta-data from arxiv.org
+2. Run `python3 util/parse.py` to download the whole paper and parse the paper
+3. Run `python3 util/debugging_data.py --root onepiece_rag --num_example 1` to generate the data for debugging

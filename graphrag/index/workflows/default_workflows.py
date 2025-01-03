@@ -28,6 +28,18 @@ from graphrag.index.workflows.v1.create_final_community_reports import (
 from graphrag.index.workflows.v1.create_final_community_reports import (
     workflow_name as create_final_community_reports,
 )
+from graphrag.index.workflows.v1.extract_core_concept import (
+    build_steps as build_extract_concept_steps,
+)
+from graphrag.index.workflows.v1.extract_core_concept import (
+    workflow_name as extract_core_concept,
+)
+from graphrag.index.workflows.v1.create_final_viztree import (
+    build_steps as build_create_final_viztree_steps,
+)
+from graphrag.index.workflows.v1.create_final_viztree import (
+    workflow_name as create_final_viztree,
+)
 from graphrag.index.workflows.v1.create_final_covariates import (
     build_steps as build_create_final_covariates_steps,
 )
@@ -83,11 +95,13 @@ default_workflows: WorkflowDefinitions = {
     create_base_text_units: build_create_base_text_units_steps,
     create_final_text_units: build_create_final_text_units,
     create_final_community_reports: build_create_final_community_reports_steps,
+    extract_core_concept: build_extract_concept_steps,
     create_final_nodes: build_create_final_nodes_steps,
     create_final_relationships: build_create_final_relationships_steps,
     create_final_documents: build_create_final_documents_steps,
     create_final_covariates: build_create_final_covariates_steps,
     create_final_entities: build_create_final_entities_steps,
     create_final_communities: build_create_final_communities_steps,
+    create_final_viztree: build_create_final_viztree_steps,
     generate_text_embeddings: build_generate_text_embeddings_steps,
 }

@@ -119,7 +119,7 @@ async def generate_indexing_prompts(
         llm, domain=domain, persona=persona, docs=doc_list
     )
 
-    entity_types = None
+    entity_types = config.entity_extraction.entity_types
     if discover_entity_types:
         logger.info("Generating entity types...")
         entity_types = await generate_entity_types(

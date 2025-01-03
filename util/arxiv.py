@@ -22,7 +22,7 @@ def extract_paper_info(soup):
                 doi = link['href']
             if link.text.strip().lower() == 'pdf':  # Look for the link labeled 'pdf'
                 pdf_link = link['href']
-        
+
         extracted_data.append({
             'Title': title,
             'DOI': doi,
@@ -39,24 +39,24 @@ def scraping_arxiv():
         url = base_url.format(start)
         response = requests.get(url)
         soup = BeautifulSoup(response.text, 'html.parser')
-        
+
         # Check if "Sorry, your query for" message appears on the page
         if soup.find(string=re.compile("Sorry, your query for")):
             print(f"No more results at start={start}.")
             break
-        
+
         # Extract paper information from the current page
         extracted_data = extract_paper_info(soup)
-        
+
         # Save extracted data immediately to CSV
         if extracted_data:
             df = pd.DataFrame(extracted_data)
             # Append to CSV file (create file if it does not exist)
             df.to_csv(CSV_PATH, mode='a', index=False, header=not pd.io.common.file_exists(CSV_PATH))
-            
+
         # Move to the next page by incrementing 'start'
         start += 200
-        
+
         # Wait to avoid being blocked
         time.sleep(2)
 

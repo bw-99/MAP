@@ -15,7 +15,7 @@ from datashaper import (
 )
 
 import graphrag.config.defaults as defaults
-import graphrag.index.operations.summarize_communities.community_reports_extractor.schemas as schemas
+import graphrag.index.operations.summarize_communities.schemas as schemas
 from graphrag.cache.pipeline_cache import PipelineCache
 from graphrag.index.operations.summarize_communities.community_reports_extractor import (
     prep_community_report_context,
@@ -105,7 +105,7 @@ def load_strategy(
     """Load strategy method definition."""
     match strategy:
         case CreateCommunityReportsStrategyType.graph_intelligence:
-            from graphrag.index.operations.summarize_communities.strategies import (
+            from graphrag.index.operations.summarize_communities.strategy_report import (
                 run_graph_intelligence,
             )
 

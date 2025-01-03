@@ -58,6 +58,7 @@ from graphrag.index.workflows.default_workflows import (
     create_base_text_units,
     create_final_communities,
     create_final_community_reports,
+    extract_core_concept,
     create_final_covariates,
     create_final_documents,
     create_final_entities,
@@ -65,6 +66,7 @@ from graphrag.index.workflows.default_workflows import (
     create_final_relationships,
     create_final_text_units,
     extract_graph,
+    create_final_viztree,
     generate_text_embeddings,
 )
 
@@ -283,9 +285,22 @@ def _community_workflows(
                     "strategy": settings.community_reports.resolved_strategy(
                         settings.root_dir
                     ),
-                },
+                }
             },
         ),
+        PipelineWorkflowReference(
+            name=extract_core_concept,
+            config={
+                "core_concept_extract": {
+                    **settings.core_concept_extraction.parallelization.model_dump(),
+                    "async_mode": settings.core_concept_extraction.async_mode,
+                    "strategy": settings.core_concept_extraction.resolved_strategy(
+                        settings.root_dir
+                    ),
+                }
+            },
+        ),
+        PipelineWorkflowReference(name=create_final_viztree),
     ]
 
 

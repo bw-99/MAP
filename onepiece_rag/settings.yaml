@@ -9,7 +9,10 @@ encoding_model: cl100k_base # this needs to be matched to your model!
 llm:
   api_key: ${GRAPHRAG_API_KEY} # set this in the generated .env file
   type: openai_chat # or azure_openai_chat
-  model: gpt-4-turbo-preview
+  model: gpt-4o-mini
+  max_retries: 20
+  tokens_per_minute: 200000
+  requests_per_minute: 500
   model_supports_json: true # recommended if this is available for your model.
   # audience: "https://cognitiveservices.azure.com/.default"
   # api_base: https://<instance>.openai.azure.com
@@ -19,21 +22,25 @@ llm:
 
 parallelization:
   stagger: 0.3
-  # num_threads: 50
+  num_threads: 4
 
-async_mode: threaded # or asyncio
+async_mode: asyncio # or asyncio
 
 embeddings:
-  async_mode: threaded # or asyncio
+  async_mode: asyncio # or asyncio
   vector_store:
     type: lancedb
-    db_uri: 'output/lancedb'
+    db_uri: output/lancedb
     container_name: default
     overwrite: true
+  target: required
   llm:
     api_key: ${GRAPHRAG_API_KEY}
     type: openai_embedding # or azure_openai_embedding
     model: text-embedding-3-small
+    max_retries: 20
+    tokens_per_minute: 1000000
+    requests_per_minute: 3000
     # api_base: https://<instance>.openai.azure.com
     # api_version: 2024-02-15-preview
     # audience: "https://cognitiveservices.azure.com/.default"
@@ -78,11 +85,12 @@ update_index_storage:
 
 ### Workflow settings ###
 
+# skip_workflows: [extract_graph, compute_communities, create_final_entities, create_final_relationships, create_final_nodes, create_final_community_reports, create_final_text_units]
 skip_workflows: []
 
 entity_extraction:
   prompt: "prompts/entity_extraction.txt"
-  entity_types: [organization,person,geo,event]
+  entity_types: [people, concept]
   max_gleanings: 1
 
 summarize_descriptions:
@@ -97,6 +105,11 @@ claim_extraction:
 
 community_reports:
   prompt: "prompts/community_report.txt"
+  max_length: 2000
+  max_input_length: 8000
+
+core_concept_extraction:
+  prompt: "prompts/core_concept_extraction.txt"
   max_length: 2000
   max_input_length: 8000
 
