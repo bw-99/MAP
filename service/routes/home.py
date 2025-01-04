@@ -12,8 +12,12 @@ def home():
     return render_template('index.html')
 
 
-@home_route.route('/viztree', methods=['GET'])
-def read_viztree():
+@home_route.route('/viztree/parent', methods=['GET'])
+def read_viztree_parent():
     parent_id = request.args.get("parent", default="-1")
     return_data = viztree_df[viztree_df["parent"] == parent_id].to_dict(orient="records")
     return jsonify(return_data)
+
+@home_route.route('/viztree', methods=['GET'])
+def read_viztree_all():
+    return jsonify(viztree_df.to_dict(orient="records"))

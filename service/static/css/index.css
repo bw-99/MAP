@@ -1,22 +1,84 @@
-svg {
-    background-color: #f0f0f0;
-  }
-
-  /* Circles */
-  circle {
-    fill: steelblue;
-    cursor: pointer;
-    transition: fill 0.3s;
-  }
-
-  circle:hover {
-    fill: orange;
-  }
-
-  /* Labels */
-  text.label {
-    font-family: sans-serif;
-    font-size: 14px;
-    fill: black;
-    pointer-events: none; /* So text doesn't block circle clicks */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 16px;
+	z-index: 100;
+}
+nav .up {
+	font: bold 14px/1 sans-serif;
+	color: white;
+	width: 92px;
+	padding: 8px;
+	background-color: rgba(230, 26, 60, .8);
+	float: left;
+	cursor: pointer;
+}
+nav .up:hover {
+	background-color: rgba(184, 20, 48, .8);
+}
+.feature {
+	position: relative;
+	width: calc(100% - 0 * 2 * 1px);
+	height: calc(100% - 0 * 2 * 1px);
+	margin: 0px;
+	overflow: hidden;
+}
+.node {
+	position: absolute;
+	background: transparent url('') no-repeat 50% / cover;
+	overflow: hidden;
+	opacity: 0.8;
+	transition: opacity 0.8s;
+	cursor: pointer;
+}
+.node .label {
+	display: inline;
+	font-family: sans-serif;
+	color: rgba(255, 255, 255, .6);
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	transition: color 0.4s, opacity 0.8s, filter 0.8s;
+}
+.node.hide {
+	opacity: 0;
+	pointer-events: none;
+}
+.node.hide .label {
+	filter: blur(10px);
+}
+.node:hover .label {
+	color: rgba(255, 255, 255, 1);
+}
+.node.level-0 {
+	z-index: 4;
+	font-size: 15vmin;
+	display: none;
+}
+.node.level-1 {
+	z-index: 3;
+	font-size: 10vmin;
+}
+.node.level-2 {
+	z-index: 2;
+	font-size: 5vmin;
+}
+.node.level-3 {
+	z-index: 1;
+	font-size: 2.5vmin;
+}
+.hide {
+	display: none;
   }

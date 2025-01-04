@@ -9,4 +9,4 @@ app.register_blueprint(home_route)
 app.register_blueprint(paper_route)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
