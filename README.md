@@ -1,8 +1,3 @@
-## How to Run
-1. cd to workspace
-2. `docker pull bb1702/onepiece:main`
-3. `docker run --name con_exec --shm-size=20g -v .:/workspace bb1702/onepiece:main`
-
 ## GraphRAG Developments
 
 ### Docker Prep
@@ -32,3 +27,8 @@
 1. Run `python3 util/arxiv.py` to fetch relavant research papers and corresponding meta-data from arxiv.org
 2. Run `python3 util/parse.py` to download the whole paper and parse the paper
 3. Run `python3 util/debugging_data.py --root onepiece_rag --num_example 1` to generate the data for debugging
+
+## How to Run (use deploy version)
+1. cd to workspace
+2. `docker pull bb1702/onepiece:main`
+3. `docker run --name con_exec --shm-size=20g -v .:/workspace bb1702/onepiece:main`
