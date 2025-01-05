@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hierarchical Graph Visualization</title>
+    <style>
+        #depth-indicator {
+            position: absolute;
+            top: 10px;
+            left: 820px;  /* SVG 우측 상단에 딱 붙여서 표시 */
+            background-color: #f0f0f0;
+            padding: 8px 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+            border: 1px solid #ccc;
+        }
+      </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="up">&larr; UP</div>
+    </nav>
+    <div class="feature" id="chart"></div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="module" src="{{ url_for('static', filename='js/zoomable_treemap.js') }}"></script>
+</body>
+</html>

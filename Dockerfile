@@ -9,5 +9,6 @@ WORKDIR /workspace
 COPY requirements.txt /workspace/
 
 RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install flask
 
 ENTRYPOINT [ "/bin/bash" ]
