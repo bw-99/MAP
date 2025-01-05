@@ -53,7 +53,12 @@ function initializeTreemap(data) {
     .attr("class", "label")
     .text(function(d) { return d.data.name ? d.data.name : "---"; });
 
-  // 부모 노드로 이동 버튼
+  // 클릭된 노드 이후 3단계 깊이 노드 숨기기 (초기화)
+  cells
+    .filter(function(d) { return d.depth >= 3; })
+    .classed("hide", true);
+
+    // 부모 노드로 이동 버튼
   var parent = d3.select(".up")
     .datum(nodes)
     .on("click", zoom);
@@ -91,6 +96,11 @@ function initializeTreemap(data) {
     cells
       .filter(function(d) { return d.depth > currentDepth; })
       .classed("hide", false);
+
+    // 클릭된 노드 이후 3단계 깊이 노드 숨기기
+    cells
+      .filter(function(d) { return d.depth >= currentDepth + 3; })
+      .classed("hide", true);
   }
 }
 
