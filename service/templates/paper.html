@@ -1,17 +1,43 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greeting</title>
+    <title>PDF Viewer with Chat</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 <body>
-    <h1>Hello, {{ name }}!</h1>
-    <nav>
-        <a href="/">Home</a> |
-        <a href="/about">About</a> |
-        <a href="/greet/John">Greet</a>
-    </nav>
-    <p>We're glad to see you here!</p>
+    <div class="container">
+        <!-- PDF Viewer -->
+        <div class="pdf-viewer">
+            <iframe src="{{ pdf_url }}" width="100%" height="600px"></iframe>
+        </div>
+
+        <!-- Chatbox -->
+        <div class="chatbox">
+            <h2>Chat with AI</h2>
+            <div id="messages"></div>
+            <input id="message_input" type="text" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"></script>
+    <script>
+        var socket = io();
+
+        socket.on('message', function(msg) {
+            var messages = document.getElementById('messages');
+            var newMessage = document.createElement('div');
+            newMessage.textContent = msg;
+            messages.appendChild(newMessage);
+        });
+
+        function sendMessage() {
+            var input = document.getElementById('message_input');
+            var message = input.value;
+            socket.send(message);
+            input.value = '';
+        }
+    </script>
 </body>
 </html>
