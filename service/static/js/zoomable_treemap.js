@@ -63,6 +63,45 @@ function initializeTreemap(data) {
     .datum(nodes)
     .on("click", zoom);
 
+// 툴팁 요소 생성
+var tooltip = d3.select("body")
+  .append("div")
+  .attr("class", "tooltip")
+  .style("position", "absolute")
+  .style("visibility", "hidden")
+  .style("background-color", "#fff")
+  .style("border", "1px solid #ccc")
+  .style("padding", "5px")
+  .style("border-radius", "5px")
+  .style("box-shadow", "0px 0px 10px rgba(0,0,0,0.1)")
+  .style("z-index", "1000");
+
+
+  // 노드 hover 이벤트 추가
+  cells
+  .on("mouseover", function(d) {
+    console.log(d);
+    console.log(d.x0);
+
+
+    if (d.data.type === "doc") {
+      tooltip
+        .style("visibility", "visible")
+        .style("left", function(_) { return (x(d.x0) + x(d.x1))/2 + "%"; })
+        .style("top", function(_) { return (y(d.y0)+y(d.y1))/2 + "%"; })
+        .html(`<a href="/paper?arg=${d.data.link}" target="_blank">논문 바로가기</a>`);
+    }
+  })
+  .on("mousemove", function(d) {
+    tooltip
+    .style("left", function(_) { return (x(d.x0) + x(d.x1))/2 + "%"; })
+    .style("top", function(_) { return (y(d.y0)+y(d.y1))/2 + "%"; })
+  })
+  .on("mouseout", function() {
+    tooltip.style("visibility", "hidden");
+  });
+
+
   // 4️⃣ Zoom 함수 정의 (줌 기능 구현)
   function zoom(d) {
     console.log('clicked: ' + d.data.name + ', depth: ' + d.depth);
@@ -110,7 +149,7 @@ function buildTree(data, parentId) {
   data.forEach(item => {
     if (item.parent === parentId) {
       const children = buildTree(data, item.id); // 재귀적으로 하위 노드 찾기
-      const node = { name: item.explain, value: item.explain };
+      const node = { name: item.explain, value: item.explain, type: item.type, link: item.link ?  item.link : "https://arxiv.org/pdf/1706.03762" };
       if (children.length > 0) {
         node.children = children; // 하위 노드 연결
       }
