@@ -3,6 +3,7 @@
 
 """All the steps to transform community reports."""
 
+import base64
 from uuid import uuid4
 
 import pandas as pd
@@ -38,6 +39,7 @@ async def create_final_viztree(
 
     # 4. Create viz_doc_df for document visualization
     viz_doc_df = _prep_viz_doc(entity_tunit_df, doc_df)
+    viz_doc_df["explain"] = viz_doc_df["explain"].apply(lambda x: base64.b64decode(x).decode("utf-8"))
 
     # 5. Create viz_entity_df for entity visualization
     viz_entity_df = _prep_viz_entity(entity_tunit_df)
