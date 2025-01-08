@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PDF Viewer with Chat</title>
-    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 </head>
 <body>
     <div class="container">
@@ -17,27 +17,11 @@
             <h2>Chat with AI</h2>
             <div id="messages"></div>
             <input id="message_input" type="text" placeholder="Type a message...">
-            <button onclick="sendMessage()">Send</button>
+            <button id="send_button">Send</button>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"></script>
-    <script>
-        var socket = io();
-
-        socket.on('message', function(msg) {
-            var messages = document.getElementById('messages');
-            var newMessage = document.createElement('div');
-            newMessage.textContent = msg;
-            messages.appendChild(newMessage);
-        });
-
-        function sendMessage() {
-            var input = document.getElementById('message_input');
-            var message = input.value;
-            socket.send(message);
-            input.value = '';
-        }
-    </script>
+    <script type="module" src="{{ url_for('static', filename='js/paper.js') }}"></script>
 </body>
 </html>
