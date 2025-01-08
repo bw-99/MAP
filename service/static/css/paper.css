@@ -86,3 +86,18 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+#reply_button {
+    display: none;
+    position: absolute;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reply_button:hover {
+    background-color: #0056b3;
+}
