@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>PDF Viewer with Chat</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/paper.css') }}">
 </head>
 <body>
     <div class="container">
         <!-- PDF Viewer -->
         <div class="pdf-viewer">
-            <iframe src="{{ pdf_url }}" width="100%" height="600px"></iframe>
+            <iframe src="{{ pdf_url }}" width="100%" height="100%"></iframe>
         </div>
 
         <!-- Chatbox -->
         <div class="chatbox">
             <h2>Chat with AI</h2>
             <div id="messages"></div>
-            <input id="message_input" type="text" placeholder="Type a message...">
-            <button id="send_button">Send</button>
+            <div class="input-container">
+                <input id="message_input" type="text" placeholder="Type a message...">
+                <button id="send_button">Send</button>
+            </div>
         </div>
     </div>
 

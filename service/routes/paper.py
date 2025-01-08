@@ -34,9 +34,10 @@ def handle_message():
 def handle_socket_message(msg):
     print("Received message:", msg)
 
-    response, _ = _query_cli(
-        method=SearchType.LOCAL,
-        query=msg,
-        root=Path("onepiece_rag"),
-    )
+    # response, _ = _query_cli(
+    #     method=SearchType.LOCAL,
+    #     query=msg,
+    #     root=Path("onepiece_rag"),
+    # )
+    response="Understanding Transformers and Attention Mechanisms ### What is a Transformer? A transformer is a type of neural network architecture that has revolutionized the field of natural language processing (NLP) and beyond."
     send(response, broadcast=True)
