@@ -1,6 +1,6 @@
 from flask import Flask
-from routes import home_route, paper_route, chat_bp
-from socketio_instance import socketio  # Import socketio from the new module
+from service.routes import home_route, paper_route, chat_bp
+from service.socketio_instance import socketio  # Import socketio from the new module
 
 # Flask 인스턴스 생성
 app = Flask(__name__)

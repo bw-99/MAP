@@ -1,6 +1,9 @@
+from flask import Flask, render_template, request
 from flask import Blueprint, render_template, request, jsonify
 from flask_socketio import send
-from socketio_instance import socketio  # Import socketio from the new module
+from service.socketio_instance import socketio  # Import socketio from the new module
+from graphrag.cli.main import _query_cli, SearchType
+from pathlib import Path
 
 # Blueprint 생성
 paper_route = Blueprint('paper', __name__)
@@ -30,4 +33,10 @@ def handle_message():
 @socketio.on('message')
 def handle_socket_message(msg):
     print("Received message:", msg)
-    send(msg, broadcast=True)
+
+    response, _ = _query_cli(
+        method=SearchType.LOCAL,
+        query=msg,
+        root=Path("onepiece_rag"),
+    )
+    send(response, broadcast=True)
