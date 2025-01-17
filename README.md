@@ -13,6 +13,13 @@
 ### Dev dependency
 1. Install pre-commit on your dev environment (not docker, terminal you choose to use `git commit`) via `pip install pre-commit`
 
+### Tutorial
+0. 프로젝트 폴더에 example 폴더 생성
+1. (플젝 초기화) `python3 -m graphrag init --root ./example`
+2. (환경설정 가져오기) onepiece_rag 폴더 안에 prompts, setting.yml, .env를 example 안에 같은 파일/폴더 덮어씌우기
+4. (디버깅용 데이터 준비하기) `python3 util/debugging_data.py --root example --num_example 1`
+5. (인덱싱) `python3 -m graphrag index --root ./example`
+6. (결과) example/output/create_final_viztree 파일 pandas로 열기
 
 ## Data Preperations
 
