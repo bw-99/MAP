@@ -1,9 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, Response
 from flask import Blueprint, render_template, request, jsonify
 from flask_socketio import send
 from service.socketio_instance import socketio  # Import socketio from the new module
 from graphrag.cli.main import _query_cli, SearchType
 from pathlib import Path
+import requests
 
 # Blueprint 생성
 paper_route = Blueprint('paper', __name__)
@@ -34,10 +35,9 @@ def handle_message():
 def handle_socket_message(msg):
     print("Received message:", msg)
 
-    # response, _ = _query_cli(
-    #     method=SearchType.LOCAL,
-    #     query=msg,
-    #     root=Path("onepiece_rag"),
-    # )
-    response="Understanding Transformers and Attention Mechanisms ### What is a Transformer? A transformer is a type of neural network architecture that has revolutionized the field of natural language processing (NLP) and beyond."
+    response, _ = _query_cli(
+        method=SearchType.LOCAL,
+        query=msg,
+        root=Path("onepiece_rag"),
+    )
     send(response, broadcast=True)

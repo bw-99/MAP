@@ -1,9 +1,10 @@
 from flask import Flask
 from service.routes import home_route, paper_route, chat_bp
 from service.socketio_instance import socketio  # Import socketio from the new module
-
+from flask_cors import CORS
 # Flask 인스턴스 생성
 app = Flask(__name__)
+CORS(app)
 socketio.init_app(app)  # Initialize socketio with the Flask app
 
 # Blueprint 등록
