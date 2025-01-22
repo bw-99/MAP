@@ -1,0 +1,31 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-code:
+    runs-on: ubuntu-latest
+    steps:
+      # 리포지토리 코드 가져오기
+      - uses: actions/checkout@v2
+
+      # Docker 이미지 가져오기
+      - name: Pull Docker Image
+        run: docker pull bb1702/onepiece:main
+
+      # Docker 컨테이너 실행
+      - name: Run Docker Container
+        run: |
+          docker run -dit --name con --shm-size=20g -v ${{ github.workspace }}:/workspace bb1702/onepiece:main
+
+      # pytest 실행
+      - name: Run Tests
+        run: docker exec con bash -c "cd /workspace/onepiece_rag && pytest test/test_file.py"
+
+      # Docker 컨테이너 정리
+      - name: Cleanup Docker Container
+        if: always()
+        run: docker rm -f con
