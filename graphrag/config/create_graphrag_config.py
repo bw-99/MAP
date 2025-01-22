@@ -581,6 +581,7 @@ def create_graphrag_config(
                 map_prompt=reader.str("map_prompt") or None,
                 reduce_prompt=reader.str("reduce_prompt") or None,
                 knowledge_prompt=reader.str("knowledge_prompt") or None,
+                evaluate_prompt=reader.str("evaluate_prompt") or None,
                 temperature=reader.float("llm_temperature")
                 or defs.GLOBAL_SEARCH_LLM_TEMPERATURE,
                 top_p=reader.float("llm_top_p") or defs.GLOBAL_SEARCH_LLM_TOP_P,

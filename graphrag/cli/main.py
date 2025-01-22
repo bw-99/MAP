@@ -459,3 +459,68 @@ def _query_cli(
             )
         case _:
             raise ValueError(INVALID_METHOD_ERROR)
+
+@app.command("evaluate")
+def _evaluate_cli(
+    config: Annotated[
+        Path | None,
+        typer.Option(
+            help="The configuration to use.",
+            exists=True,
+            file_okay=True,
+            readable=True,
+            autocompletion=path_autocomplete(
+                file_okay=True, dir_okay=False, match_wildcard="*"
+            ),
+        ),
+    ] = None,
+    data: Annotated[
+        Path | None,
+        typer.Option(
+            help="Indexing pipeline output directory (i.e. contains the parquet files).",
+            exists=True,
+            dir_okay=True,
+            readable=True,
+            resolve_path=True,
+            autocompletion=path_autocomplete(
+                file_okay=False, dir_okay=True, match_wildcard="*"
+            ),
+        ),
+    ] = None,
+    root: Annotated[
+        Path,
+        typer.Option(
+            help="The project root directory.",
+            exists=True,
+            dir_okay=True,
+            writable=True,
+            resolve_path=True,
+            autocompletion=path_autocomplete(
+                file_okay=False, dir_okay=True, match_wildcard="*"
+            ),
+        ),
+    ] = Path(),  # set default to current directory
+    response_type: Annotated[
+        str,
+        typer.Option(
+            help="Free form text describing the response type and format, can be anything, e.g. Multiple Paragraphs, Single Paragraph, Single Sentence, List of 3-7 Points, Single Page, Multi-Page Report. Default: Multiple Paragraphs"
+        ),
+    ] = "Multiple Paragraphs",
+    dry_run: Annotated[
+        bool,
+        typer.Option(
+            help="Run the indexing pipeline without executing any steps to inspect and validate the configuration."
+        ),
+    ] = False,
+):
+    # print("Evaluation is not supported yet.")
+    """Evaluate a knowledge graph index."""
+    from graphrag.cli.evaluate import evaluate_cli
+
+    evaluate_cli(
+        config_filepath=config,
+        data_dir=data,
+        root_dir=root,
+        response_type=response_type,
+        dry_run=dry_run,
+    )
