@@ -89,8 +89,8 @@ update_index_storage:
 skip_workflows: []
 
 entity_extraction:
-  prompt: "prompts/entity_extraction_with_researchpaper.txt"
-  entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+  prompt: "prompts/entity_extraction.txt"
+  entity_types: [RESEARCH PAPER, CONCEPT]
   max_gleanings: 1
 
 summarize_descriptions:
