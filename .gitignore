@@ -6,5 +6,7 @@ __pycache__
 example
 *.zip
 .venv
-onepiece_rag
+!onepiece_rag/
+onepiece_rag/*
 !onepiece_rag/settings.yaml
+!onepiece_rag/prompts
