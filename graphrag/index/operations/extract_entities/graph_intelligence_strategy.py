@@ -59,7 +59,7 @@ async def run_extract_entities(
     extraction_prompt = args.get("extraction_prompt", None)
     encoding_model = args.get("encoding_name", None)
     max_gleanings = args.get("max_gleanings", defs.ENTITY_EXTRACTION_MAX_GLEANINGS)
-
+    use_doc_id = args.get("use_doc_id", False)
     # note: We're not using UnipartiteGraphChain.from_params
     # because we want to pass "timeout" to the llm_kwargs
     text_splitter = _create_text_splitter(
@@ -76,6 +76,7 @@ async def run_extract_entities(
         ),
     )
     text_list = [doc.text.strip() for doc in docs]
+    doc_id_list = [str(doc.human_readable_id) for doc in docs]
 
     # If it's not pre-chunked, then re-chunk the input
     if not prechunked:
@@ -83,6 +84,7 @@ async def run_extract_entities(
 
     results = await extractor(
         list(text_list),
+        list(doc_id_list) if use_doc_id else None,
         {
             "entity_types": entity_types,
             "tuple_delimiter": tuple_delimiter,

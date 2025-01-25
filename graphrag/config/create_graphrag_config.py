@@ -461,6 +461,7 @@ def create_graphrag_config(
                 prompt=reader.str("prompt", Fragment.prompt_file),
                 strategy=entity_extraction_config.get("strategy"),
                 encoding_model=encoding_model,
+                use_doc_id=entity_extraction_config.get("use_doc_id", False),
             )
 
         claim_extraction_config = values.get("claim_extraction") or {}

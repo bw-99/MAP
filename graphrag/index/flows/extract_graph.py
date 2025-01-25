@@ -38,11 +38,20 @@ async def extract_graph(
         cache,
         text_column="text",
         id_column="id",
+        human_readable_id_column="human_readable_id",
         strategy=extraction_strategy,
         async_mode=extraction_async_mode,
         entity_types=entity_types,
         num_threads=extraction_num_threads,
     )
+
+    # filter out improperly extracted research paper entities and responsive relationships
+    research_paper_entity_df = entities[entities["type"] == "RESEARCH PAPER"]
+    anomaly_flag = ~research_paper_entity_df["title"].str.contains(r'\d+:B\d+')
+    anomaly_df = research_paper_entity_df[anomaly_flag]
+    
+    entities = research_paper_entity_df[~anomaly_flag]
+    relationships = relationships[~relationships['source'].isin(anomaly_df['title']) & ~relationships['target'].isin(anomaly_df['title'])]
 
     if not _validate_data(entities):
         error_msg = "Entity Extraction failed. No entities detected during extraction."
