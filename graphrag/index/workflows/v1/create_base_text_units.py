@@ -86,6 +86,6 @@ async def workflow(
     return create_verb_result(
         cast(
             "Table",
-            pd.DataFrame(),
+            output,
         )
     )
