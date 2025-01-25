@@ -1,0 +1,280 @@
+
+-Goal-
+Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+
+-Steps-
+
+1. Identify all entities. For each identified entity, extract the following information:
+
+   - entity_type: One of the following types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+   - entity_name: The specific name of the entity.
+     - If the entity_type is 'RESEARCH PAPER,' format the name exactly as {{bx}}, where x is the number within square brackets (e.g., [28] becomes {{b28}}, [15] becomes {{b15}}). For the current study, use {{b0}}.
+       **This naming rule for research papers is critical and must be followed without exception to ensure consistency and accuracy. Do not deviate from this rule under any circumstances.**
+     - If the entity_type is 'CONCEPT,' 'ORGANIZATION,' or 'GEO,' use the name as it appears in the text.
+   - entity_description: Comprehensive description of the entity's attributes and activities
+     Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
+   For each pair of related entities, extract the following information:
+
+   - source_entity: name of the source entity, as identified in step 1
+   - target_entity: name of the target entity, as identified in step 1
+   - relationship_description: explanation as to why you think the source entity and the target entity are related to each other
+   - relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+     Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. If you have to translate into English, just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
+-Examples-
+######################
+
+Example 1:
+
+entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+text: For embedding-based recommender systems [28], large-scale dense similarity search has been applied for retrieval
+ Some approaches proposed utilize hashing-based techniques such as mapping input and targets to discrete partitions and selecting targets from the same partitions as inputs [26]
+ With the advent of fast approximate nearest-neighbor search [21,13], dense nearest neighbor has been applied by recommender systems for candidate retrieval [5]
+------------------------
+output:
+("entity"{tuple_delimiter}embedding-based recommender systems{tuple_delimiter}CONCEPT{tuple_delimiter}A specialized type of recommender system that uses learned vector embeddings for retrieval tasks)
+{record_delimiter} 
+("entity"{tuple_delimiter}recommender systems{tuple_delimiter}CONCEPT{tuple_delimiter}Systems designed to suggest relevant items to users, often in large-scale online environments)
+{record_delimiter} 
+("entity"{tuple_delimiter}large-scale dense similarity search{tuple_delimiter}CONCEPT{tuple_delimiter}A technique that finds similar items in high-dimensional spaces, used to improve retrieval efficiency and accuracy)
+{record_delimiter} 
+("entity"{tuple_delimiter}hashing-based techniques{tuple_delimiter}CONCEPT{tuple_delimiter}Approaches that map high-dimensional inputs into discrete partitions or buckets for faster retrieval)
+{record_delimiter} 
+("entity"{tuple_delimiter}fast approximate nearest-neighbor search{tuple_delimiter}CONCEPT{tuple_delimiter}Methods that rapidly find approximate nearest neighbors in large, high-dimensional datasets)
+{record_delimiter} 
+("entity"{tuple_delimiter}dense nearest neighbor{tuple_delimiter}CONCEPT{tuple_delimiter}A method applying nearest-neighbor principles on dense vector representations to identify closely related items)
+{record_delimiter} 
+("entity"{tuple_delimiter}candidate retrieval{tuple_delimiter}CONCEPT{tuple_delimiter}The process of filtering or selecting a manageable subset of items from a large collection for subsequent ranking)
+{record_delimiter} 
+("entity"{tuple_delimiter}{{b28}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A referenced paper discussing or introducing the concept of embedding-based recommender systems)
+{record_delimiter} 
+("entity"{tuple_delimiter}{{b26}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A referenced paper describing hashing-based techniques for partition-based retrieval approaches)
+{record_delimiter} 
+("entity"{tuple_delimiter}{{b21}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A referenced paper detailing fast approximate nearest-neighbor methods for large-scale search)
+{record_delimiter} 
+("entity"{tuple_delimiter}{{b13}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Another referenced paper focusing on fast approximate nearest-neighbor search approaches)
+{record_delimiter} 
+("entity"{tuple_delimiter}{{b5}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A referenced paper illustrating the application of dense nearest neighbor in recommender systems for candidate retrieval)
+{record_delimiter} 
+("relationship"{tuple_delimiter}embedding-based recommender systems{tuple_delimiter}{{b28}}{tuple_delimiter}Paper {{b28}} is cited for or closely associated with embedding-based recommender systems{tuple_delimiter}8)
+{record_delimiter} 
+("relationship"{tuple_delimiter}embedding-based recommender systems{tuple_delimiter}large-scale dense similarity search{tuple_delimiter}Large-scale dense similarity search is employed by embedding-based recommender systems for retrieval{tuple_delimiter}7)
+{record_delimiter} 
+("relationship"{tuple_delimiter}hashing-based techniques{tuple_delimiter}{{b26}}{tuple_delimiter}Paper {{b26}} discusses or proposes hashing-based approaches for partitioning inputs and targets{tuple_delimiter}7)
+{record_delimiter} 
+("relationship"{tuple_delimiter}fast approximate nearest-neighbor search{tuple_delimiter}{{b21}}{tuple_delimiter}Paper {{b21}} addresses fast approximate nearest-neighbor algorithms for high-dimensional data{tuple_delimiter}7)
+{record_delimiter} 
+("relationship"{tuple_delimiter}fast approximate nearest-neighbor search{tuple_delimiter}{{b13}}{tuple_delimiter}Paper {{b13}} also examines fast approximate nearest-neighbor search methods{tuple_delimiter}7)
+{record_delimiter} 
+("relationship"{tuple_delimiter}dense nearest neighbor{tuple_delimiter}{{b5}}{tuple_delimiter}Paper {{b5}} covers the use of dense nearest neighbor in retrieval settings{tuple_delimiter}7)
+{record_delimiter} 
+("relationship"{tuple_delimiter}recommender systems{tuple_delimiter}dense nearest neighbor{tuple_delimiter}Dense nearest neighbor is applied within recommender systems to identify similar items{tuple_delimiter}7)
+{record_delimiter} 
+("relationship"{tuple_delimiter}recommender systems{tuple_delimiter}candidate retrieval{tuple_delimiter}Recommender systems rely on candidate retrieval to produce a shortlist of relevant items{tuple_delimiter}6)
+{record_delimiter} 
+{completion_delimiter}
+#############################
+
+
+Example 2:
+
+entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+text: Mainly, smart transportation and traffic management are highly needed as one can say they broadly influence almost every aspect of the smart cities operation on daily bases [4]. 
+In particular, trip route planning receives great interest particularly in big and crowded cities [4,5]. 
+Principally, trip planning applications and service providers afford route recommendations based on relatively shorter paths, traffic congestion and even with up to date construction works [6].
+Consequently, some of the route planning key players as Google have adopted online dynamic routing driven by live traffic network information. 
+For example, Google maps provide an online suggestion for vehicle re-routing when roads are experiencing instantaneous traffic congestion based on many factors such as untraditional mobility behavior or accidents. 
+On the other hand, corwdsensed based trip planning application Waze [7] relies on lively sensed traffic situations which shared with the users' intervention. 
+APOLO [8] system was introduced to overcome the network overload introduced in many of the traffic management systems because of information exchange between vehicles and servers. 
+This system proposed a centralized traffic monitoring system that works on both online and offline bases. 
+In the offline stage, mobility patterns are conducted by historical data processing while in the online stage vehicles are re-routed away from the congested routes. 
+The results showed travel time reduction of 17 % along with a speed increase of 6% compared to present approaches.\n
+In addition, various efforts in the literature provided suggestions to enable shorter and faster routing for land vehicles. In [9], an adaptive routing approach was introduced and dealt with route planning as a probabilistic dynamic problem. 
+In their algorithms, they aimed to reduce the predicted en route trip time while considering broadcasted traffic information, onboard based traffic state measurement, and historical traffic patterns. 
+------------------------
+output:
+("entity"{tuple_delimiter}smart transportation{tuple_delimiter}CONCEPT{tuple_delimiter}Advanced, technology-driven solutions aimed at improving transport efficiency, safety, and sustainability in urban environments)
+{record_delimiter}
+("entity"{tuple_delimiter}traffic management{tuple_delimiter}CONCEPT{tuple_delimiter}Planning, monitoring, and controlling traffic flow to minimize congestion and enhance road safety)
+{record_delimiter}
+("entity"{tuple_delimiter}smart cities{tuple_delimiter}CONCEPT{tuple_delimiter}Urban areas integrating technology and data-driven approaches to enhance citizens’ quality of life and resource efficiency)
+{record_delimiter}
+("entity"{tuple_delimiter}trip route planning{tuple_delimiter}CONCEPT{tuple_delimiter}The process of determining optimal travel paths based on factors like traffic, distance, and time)
+{record_delimiter}
+("entity"{tuple_delimiter}Google{tuple_delimiter}ORGANIZATION{tuple_delimiter}A global technology corporation offering various services, including navigation solutions)
+{record_delimiter}
+("entity"{tuple_delimiter}Waze{tuple_delimiter}ORGANIZATION{tuple_delimiter}A crowdsourced navigation platform relying on user-provided real-time traffic data for route updates)
+{record_delimiter}
+("entity"{tuple_delimiter}APOLO{tuple_delimiter}CONCEPT{tuple_delimiter}A system designed to reduce network overload in traffic management by centralizing monitoring in both online and offline modes)
+{record_delimiter}
+("entity"{tuple_delimiter}online dynamic routing{tuple_delimiter}CONCEPT{tuple_delimiter}A real-time approach to adjusting travel routes based on live traffic data)
+{record_delimiter}
+("entity"{tuple_delimiter}Google maps{tuple_delimiter}CONCEPT{tuple_delimiter}A web-based mapping service by Google offering live traffic updates and route suggestions)
+{record_delimiter}
+("entity"{tuple_delimiter}crowdsensed based trip planning{tuple_delimiter}CONCEPT{tuple_delimiter}A method leveraging user-shared data for real-time traffic insights and route optimization)
+{record_delimiter}
+("entity"{tuple_delimiter}adaptive routing approach{tuple_delimiter}CONCEPT{tuple_delimiter}A probabilistic dynamic strategy for route planning that combines real-time traffic information and historical patterns)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b4}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper highlighting the significance of smart transportation and traffic management in smart cities)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b5}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper emphasizing the growing interest in trip route planning for crowded urban areas)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b6}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper discussing route recommendations based on shorter paths, congestion levels, and construction updates)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b7}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper describing Waze as a crowdsensed trip planning application)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b8}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper introducing the APOLO system to address network overload in traffic management)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b9}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper proposing an adaptive routing approach using probabilistic dynamic modeling for route planning)
+{record_delimiter}
+("relationship"{tuple_delimiter}smart transportation{tuple_delimiter}{{b4}}{tuple_delimiter}Paper {{b4}} covers the importance of smart transportation in modern city operations{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}traffic management{tuple_delimiter}{{b4}}{tuple_delimiter}Paper {{b4}} also addresses traffic management as a critical component of smart cities{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}trip route planning{tuple_delimiter}{{b4}}{tuple_delimiter}Paper {{b4}} references the significance of trip route planning in urban environments{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}trip route planning{tuple_delimiter}{{b5}}{tuple_delimiter}Paper {{b5}} highlights the growing interest in trip route planning for crowded cities{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}trip route planning{tuple_delimiter}{{b6}}{tuple_delimiter}Paper {{b6}} discusses strategies for route planning with an emphasis on shorter paths and construction considerations{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}Waze{tuple_delimiter}{{b7}}{tuple_delimiter}Paper {{b7}} focuses on the Waze application’s crowdsensing approach to traffic{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}APOLO{tuple_delimiter}{{b8}}{tuple_delimiter}Paper {{b8}} introduces the APOLO system for mitigating network overload in traffic management{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}APOLO{tuple_delimiter}traffic management{tuple_delimiter}APOLO directly addresses traffic management challenges by centralizing monitoring to reduce congestion{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}adaptive routing approach{tuple_delimiter}{{b9}}{tuple_delimiter}Paper {{b9}} proposes an adaptive, probabilistic method to tackle dynamic route planning{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}Google{tuple_delimiter}online dynamic routing{tuple_delimiter}Google employs online dynamic routing driven by real-time traffic network data{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}Google maps{tuple_delimiter}online dynamic routing{tuple_delimiter}Google maps provides live route suggestions that incorporate online dynamic routing{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}Waze{tuple_delimiter}crowdsensed based trip planning{tuple_delimiter}Waze exemplifies crowdsensed based trip planning by gathering user input for real-time routing{tuple_delimiter}7)
+{completion_delimiter}
+
+
+#############################
+
+
+Example 3:
+
+entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+text: Graph curvature, resembling curvature in continuous geometry, includes Gaussian curvature, Ricci curvature, and average curvature.
+ Each of these elements serves a distinct purpose: Gaussian curvature measures local curvature at vertices, Ricci curvature assigns curvature to edges, and average curvature offers a global measure for the entire graph.
+ Applications of graph curvatures span various domains in network alignment, congestion and vulnerability detection, community detection, and robustness analysis [32,54,55].\nThe recent work of curvature graph neural network (CurvGN) [93] introduced the notion of Ricci curvature into the field of graph learning.
+ The study in [74] showed that edges with negative curvature can contribute to the over-squashing problem in graph embeddings.
+ Coinciding with the announcement of the accepted papers for WWW 2023, we noted a parallel work by Fu et al.
+ [22] that introduces the idea of class-aware Ricci curvature for addressing hierarchy-imbalance in node classification, while in our work, we aim to explore the integration of more generalized ricci curvature with hyperbolic graph convolution and curvature-based filtering mechanism to enhance the performance of HGCN for a more range of tasks, including node classification and link prediction.
+------------------------
+output:
+("entity"{tuple_delimiter}Graph curvature{tuple_delimiter}CONCEPT{tuple_delimiter}A measure in discrete settings analogous to curvature in continuous geometry, encompassing Gaussian, Ricci, and average curvature)
+{record_delimiter}
+("entity"{tuple_delimiter}Gaussian curvature{tuple_delimiter}CONCEPT{tuple_delimiter}A curvature metric focusing on localized measures at graph vertices)
+{record_delimiter}
+("entity"{tuple_delimiter}Ricci curvature{tuple_delimiter}CONCEPT{tuple_delimiter}A curvature metric assigned to edges in a graph, influential in graph embeddings and over-squashing)
+{record_delimiter}
+("entity"{tuple_delimiter}average curvature{tuple_delimiter}CONCEPT{tuple_delimiter}A global measure assessing the overall curvature of an entire graph)
+{record_delimiter}
+("entity"{tuple_delimiter}network alignment{tuple_delimiter}CONCEPT{tuple_delimiter}A domain where graph curvature helps in matching similar structures across different networks)
+{record_delimiter}
+("entity"{tuple_delimiter}congestion and vulnerability detection{tuple_delimiter}CONCEPT{tuple_delimiter}An application field using curvature to locate bottlenecks and weak points within networks)
+{record_delimiter}
+("entity"{tuple_delimiter}community detection{tuple_delimiter}CONCEPT{tuple_delimiter}A technique to identify clusters of closely related nodes in a graph, supported by curvature insights)
+{record_delimiter}
+("entity"{tuple_delimiter}robustness analysis{tuple_delimiter}CONCEPT{tuple_delimiter}An area where curvature metrics are used to evaluate and enhance network resilience)
+{record_delimiter}
+("entity"{tuple_delimiter}CurvGN{tuple_delimiter}CONCEPT{tuple_delimiter}A curvature-based graph neural network framework incorporating Ricci curvature into graph learning)
+{record_delimiter}
+("entity"{tuple_delimiter}graph learning{tuple_delimiter}CONCEPT{tuple_delimiter}A field uniting graph theory and machine learning to derive meaningful representations and insights from graphs)
+{record_delimiter}
+("entity"{tuple_delimiter}over-squashing problem{tuple_delimiter}CONCEPT{tuple_delimiter}A phenomenon in which distant signals in a graph become compressed and lose information as they propagate)
+{record_delimiter}
+("entity"{tuple_delimiter}graph embeddings{tuple_delimiter}CONCEPT{tuple_delimiter}Transformations of graph data into vector spaces to facilitate machine learning tasks)
+{record_delimiter}
+("entity"{tuple_delimiter}class-aware Ricci curvature{tuple_delimiter}CONCEPT{tuple_delimiter}A curvature formulation designed to handle hierarchy-imbalance in node classification scenarios)
+{record_delimiter}
+("entity"{tuple_delimiter}hierarchy-imbalance{tuple_delimiter}CONCEPT{tuple_delimiter}A challenge occurring when classes or levels in a hierarchical structure are unevenly represented)
+{record_delimiter}
+("entity"{tuple_delimiter}node classification{tuple_delimiter}CONCEPT{tuple_delimiter}A supervised learning approach that predicts labels for nodes within a graph)
+{record_delimiter}
+("entity"{tuple_delimiter}hyperbolic graph convolution{tuple_delimiter}CONCEPT{tuple_delimiter}A convolution technique operating in hyperbolic space to capture complex hierarchical relationships)
+{record_delimiter}
+("entity"{tuple_delimiter}curvature-based filtering mechanism{tuple_delimiter}CONCEPT{tuple_delimiter}A strategy using curvature metrics to filter or refine graph structures and edges)
+{record_delimiter}
+("entity"{tuple_delimiter}HGCN{tuple_delimiter}CONCEPT{tuple_delimiter}Hyperbolic Graph Convolutional Network leveraging hyperbolic geometry for enhanced graph representation)
+{record_delimiter}
+("entity"{tuple_delimiter}link prediction{tuple_delimiter}CONCEPT{tuple_delimiter}A task aiming to foresee the existence or formation of connections between graph nodes)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b32}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper that discusses applications of graph curvature in various network-related domains)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b54}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A work further examining the utility of graph curvature for tasks like congestion and community detection)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b55}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A study applying graph curvature concepts to robustness analysis and other network problems)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b93}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A recent work introducing CurvGN, integrating Ricci curvature in the context of graph neural networks)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b74}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper demonstrating that negative curvature edges can exacerbate the over-squashing issue in graph embeddings)
+{record_delimiter}
+("entity"{tuple_delimiter}{{b22}}{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A publication presenting class-aware Ricci curvature for addressing hierarchy-imbalance in node classification)
+{record_delimiter}
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}Gaussian curvature{tuple_delimiter}Gaussian curvature is a localized manifestation of graph curvature at each vertex{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}Ricci curvature{tuple_delimiter}Ricci curvature is the edge-centric aspect of graph curvature{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}average curvature{tuple_delimiter}Average curvature offers a holistic perspective on a graph’s overall curvature{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}network alignment{tuple_delimiter}Graph curvature can assist in aligning or matching corresponding structures in multiple networks{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}congestion and vulnerability detection{tuple_delimiter}Graph curvature provides insights for pinpointing high-risk or bottleneck regions in networks{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}community detection{tuple_delimiter}Graph curvature facilitates uncovering node clusters or communities{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}robustness analysis{tuple_delimiter}Graph curvature aids in evaluating a network’s structural resilience{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}{{b32}}{tuple_delimiter}Paper {{b32}} explores the role of graph curvature across various domains{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}{{b54}}{tuple_delimiter}Paper {{b54}} addresses additional use cases of graph curvature in network tasks{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}{{b55}}{tuple_delimiter}Paper {{b55}} focuses on leveraging curvature for community detection and robustness{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}CurvGN{tuple_delimiter}{{b93}}{tuple_delimiter}Paper {{b93}} introduces CurvGN to incorporate Ricci curvature into graph neural networks{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}CurvGN{tuple_delimiter}Ricci curvature{tuple_delimiter}CurvGN integrates Ricci curvature to enhance graph representation learning{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}CurvGN{tuple_delimiter}graph learning{tuple_delimiter}CurvGN is positioned within the broader field of graph learning{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}{{b74}}{tuple_delimiter}over-squashing problem{tuple_delimiter}Paper {{b74}} reveals how negative curvature edges contribute to over-squashing{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}{{b74}}{tuple_delimiter}graph embeddings{tuple_delimiter}Paper {{b74}} emphasizes the link between edge curvature and embedding quality{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}{{b22}}{tuple_delimiter}class-aware Ricci curvature{tuple_delimiter}Paper {{b22}} proposes class-aware Ricci curvature to address hierarchy-imbalance{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}class-aware Ricci curvature{tuple_delimiter}hierarchy-imbalance{tuple_delimiter}This specialized curvature helps mitigate uneven data distribution in hierarchical graphs{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}class-aware Ricci curvature{tuple_delimiter}node classification{tuple_delimiter}This curvature method supports balanced label assignment in node classification{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}Ricci curvature{tuple_delimiter}hyperbolic graph convolution{tuple_delimiter}Combining Ricci curvature with hyperbolic convolutions can enhance graph representation{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}hyperbolic graph convolution{tuple_delimiter}curvature-based filtering mechanism{tuple_delimiter}These integrated techniques refine graph signals and reduce noise{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}HGCN{tuple_delimiter}node classification{tuple_delimiter}HGCN provides a hyperbolic space framework for classifying nodes with improved accuracy{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}HGCN{tuple_delimiter}link prediction{tuple_delimiter}HGCN is utilized to predict possible connections between nodes in hyperbolic space{tuple_delimiter}6)
+{completion_delimiter}
+#############################
+
+
+-Real Data-
+######################
+entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+text: {input_text}
+######################
+output:
