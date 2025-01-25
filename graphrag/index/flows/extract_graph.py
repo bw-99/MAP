@@ -50,7 +50,7 @@ async def extract_graph(
     anomaly_flag = ~research_paper_entity_df["title"].str.contains(r'\d+:B\d+')
     anomaly_df = research_paper_entity_df[anomaly_flag]
     
-    entities = research_paper_entity_df[~anomaly_flag]
+    entities = pd.concat([entities[entities["type"] != "RESEARCH PAPER"], research_paper_entity_df[~anomaly_flag]])
     relationships = relationships[~relationships['source'].isin(anomaly_df['title']) & ~relationships['target'].isin(anomaly_df['title'])]
 
     if not _validate_data(entities):
