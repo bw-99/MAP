@@ -6,3 +6,4 @@ __pycache__
 example
 *.zip
 onepiece_rag
+.venv
