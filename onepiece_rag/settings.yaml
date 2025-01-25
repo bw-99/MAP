@@ -92,6 +92,7 @@ entity_extraction:
   prompt: "prompts/entity_extraction_with_researchpaper.txt"
   entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
   max_gleanings: 1
+  use_doc_id: true
 
 summarize_descriptions:
   prompt: "prompts/summarize_descriptions.txt"

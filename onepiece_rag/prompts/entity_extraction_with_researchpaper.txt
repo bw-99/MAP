@@ -4,30 +4,38 @@ Given a text document that is potentially relevant to this activity and a list o
 
 -Steps-
 
-1. Identify all entities. For each identified entity, extract the following information:
+Identify all entities. For each identified entity, extract the following information:
 
-   - entity_type: One of the following types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
-   - entity_name: The specific name of the entity.
-     - If the entity_type is 'RESEARCH PAPER,' format the name exactly as [bx], where x is the number within square brackets (e.g., [28] becomes [b28], [15] becomes [b15]). For the current study, use [b0].
-       **This naming rule for research papers is critical and must be followed without exception to ensure consistency and accuracy. Do not deviate from this rule under any circumstances.**
-     - If the entity_type is 'CONCEPT,' 'ORGANIZATION,' or 'GEO,' use the name as it appears in the text.
-   - entity_description: Comprehensive description of the entity's attributes and activities
-     Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+entity_type: One of the following types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
 
-2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
-   For each pair of related entities, extract the following information:
+entity_name: The specific name of the entity.
 
-   - source_entity: name of the source entity, as identified in step 1
-   - target_entity: name of the target entity, as identified in step 1
-   - relationship_description: explanation as to why you think the source entity and the target entity are related to each other
-   - relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
-     Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+If the entity_type is 'RESEARCH PAPER,' format the name exactly as [doc_id:bx], where doc_id is the provided document identifier and x is the number within square brackets (e.g., [28] becomes [1:b28] for doc_id=1, [15] becomes [3:b15] for doc_id=3). For the current study, use [doc_id:b0] (e.g., [2:b0] for doc_id=2).
+This naming rule for research papers is critical and must be followed without exception to ensure consistency and accuracy. Do not deviate from this rule under any circumstances.
 
-3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+If the entity_type is 'CONCEPT,' 'ORGANIZATION,' or 'GEO,' use the name as it appears in the text.
 
-4. If you have to translate into English, just translate the descriptions, nothing else!
+entity_description: Comprehensive description of the entity's attributes and activities
+Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
 
-5. When finished, output {completion_delimiter}.
+From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are clearly related to each other.
+For each pair of related entities, extract the following information:
+
+source_entity: name of the source entity, as identified in step 1
+
+target_entity: name of the target entity, as identified in step 1
+
+relationship_description: explanation as to why you think the source entity and the target entity are related to each other
+
+relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use {record_delimiter} as the list delimiter.
+
+If you have to translate into English, just translate the descriptions, nothing else!
+
+When finished, output {completion_delimiter}.
+
 
 -Examples-
 ######################
@@ -35,58 +43,42 @@ Given a text document that is potentially relevant to this activity and a list o
 Example 1:
 
 entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+doc_id: 3
 text: For embedding-based recommender systems [28], large-scale dense similarity search has been applied for retrieval
  Some approaches proposed utilize hashing-based techniques such as mapping input and targets to discrete partitions and selecting targets from the same partitions as inputs [26]
  With the advent of fast approximate nearest-neighbor search [21,13], dense nearest neighbor has been applied by recommender systems for candidate retrieval [5]
 ------------------------
 output:
-("entity"{tuple_delimiter}embedding-based recommender systems{tuple_delimiter}CONCEPT{tuple_delimiter}A specialized type of recommender system that uses learned vector embeddings for retrieval tasks)
-{record_delimiter} 
-("entity"{tuple_delimiter}recommender systems{tuple_delimiter}CONCEPT{tuple_delimiter}Systems designed to suggest relevant items to users, often in large-scale online environments)
-{record_delimiter} 
-("entity"{tuple_delimiter}large-scale dense similarity search{tuple_delimiter}CONCEPT{tuple_delimiter}A technique that finds similar items in high-dimensional spaces, used to improve retrieval efficiency and accuracy)
-{record_delimiter} 
-("entity"{tuple_delimiter}hashing-based techniques{tuple_delimiter}CONCEPT{tuple_delimiter}Approaches that map high-dimensional inputs into discrete partitions or buckets for faster retrieval)
-{record_delimiter} 
-("entity"{tuple_delimiter}fast approximate nearest-neighbor search{tuple_delimiter}CONCEPT{tuple_delimiter}Methods that rapidly find approximate nearest neighbors in large, high-dimensional datasets)
-{record_delimiter} 
-("entity"{tuple_delimiter}dense nearest neighbor{tuple_delimiter}CONCEPT{tuple_delimiter}A method applying nearest-neighbor principles on dense vector representations to identify closely related items)
-{record_delimiter} 
-("entity"{tuple_delimiter}candidate retrieval{tuple_delimiter}CONCEPT{tuple_delimiter}The process of filtering or selecting a manageable subset of items from a large collection for subsequent ranking)
-{record_delimiter} 
-("entity"{tuple_delimiter}[b28]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A referenced paper discussing or introducing the concept of embedding-based recommender systems)
-{record_delimiter} 
-("entity"{tuple_delimiter}[b26]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A referenced paper describing hashing-based techniques for partition-based retrieval approaches)
-{record_delimiter} 
-("entity"{tuple_delimiter}[b21]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A referenced paper detailing fast approximate nearest-neighbor methods for large-scale search)
-{record_delimiter} 
-("entity"{tuple_delimiter}[b13]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Another referenced paper focusing on fast approximate nearest-neighbor search approaches)
-{record_delimiter} 
-("entity"{tuple_delimiter}[b5]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A referenced paper illustrating the application of dense nearest neighbor in recommender systems for candidate retrieval)
-{record_delimiter} 
-("relationship"{tuple_delimiter}embedding-based recommender systems{tuple_delimiter}[b28]{tuple_delimiter}Paper [b28] is cited for or closely associated with embedding-based recommender systems{tuple_delimiter}8)
-{record_delimiter} 
-("relationship"{tuple_delimiter}embedding-based recommender systems{tuple_delimiter}large-scale dense similarity search{tuple_delimiter}Large-scale dense similarity search is employed by embedding-based recommender systems for retrieval{tuple_delimiter}7)
-{record_delimiter} 
-("relationship"{tuple_delimiter}hashing-based techniques{tuple_delimiter}[b26]{tuple_delimiter}Paper [b26] discusses or proposes hashing-based approaches for partitioning inputs and targets{tuple_delimiter}7)
-{record_delimiter} 
-("relationship"{tuple_delimiter}fast approximate nearest-neighbor search{tuple_delimiter}[b21]{tuple_delimiter}Paper [b21] addresses fast approximate nearest-neighbor algorithms for high-dimensional data{tuple_delimiter}7)
-{record_delimiter} 
-("relationship"{tuple_delimiter}fast approximate nearest-neighbor search{tuple_delimiter}[b13]{tuple_delimiter}Paper [b13] also examines fast approximate nearest-neighbor search methods{tuple_delimiter}7)
-{record_delimiter} 
-("relationship"{tuple_delimiter}dense nearest neighbor{tuple_delimiter}[b5]{tuple_delimiter}Paper [b5] covers the use of dense nearest neighbor in retrieval settings{tuple_delimiter}7)
-{record_delimiter} 
-("relationship"{tuple_delimiter}recommender systems{tuple_delimiter}dense nearest neighbor{tuple_delimiter}Dense nearest neighbor is applied within recommender systems to identify similar items{tuple_delimiter}7)
-{record_delimiter} 
-("relationship"{tuple_delimiter}recommender systems{tuple_delimiter}candidate retrieval{tuple_delimiter}Recommender systems rely on candidate retrieval to produce a shortlist of relevant items{tuple_delimiter}6)
-{record_delimiter} 
+("entity"{tuple_delimiter}[3:b0]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Describes embedding-based recommender systems using large-scale dense similarity search for retrieval.)
+{record_delimiter}
+("entity"{tuple_delimiter}[3:b28]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A study introducing the application of large-scale dense similarity search in embedding-based recommender systems.)
+{record_delimiter}
+("entity"{tuple_delimiter}[3:b26]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Explores hashing-based techniques such as mapping input and targets to discrete partitions for retrieval efficiency.)
+{record_delimiter}
+("entity"{tuple_delimiter}[3:b21]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Discusses the advancements in fast approximate nearest-neighbor search.)
+{record_delimiter}
+("entity"{tuple_delimiter}[3:b13]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Focuses on developments in approximate nearest-neighbor search methodologies.)
+{record_delimiter}
+("entity"{tuple_delimiter}[3:b5]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Examines the application of dense nearest neighbor techniques by recommender systems for candidate retrieval.)
+{record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}[3:b28]{tuple_delimiter}[3:b28] focuses on a similar topic, specifically the use of large-scale dense similarity search, which forms the foundation discussed in [3:b0].{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}[3:b26]{tuple_delimiter}[3:b26] introduces hashing-based techniques, which are potential methods complementing the embedding-based retrieval methods in [3:b0].{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}[3:b21]{tuple_delimiter}The advancements in approximate nearest-neighbor search, as discussed in [3:b21], contribute to the fast retrieval techniques outlined in [3:b0].{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}[3:b13]{tuple_delimiter}The methods in approximate nearest-neighbor search in [3:b13] directly support the dense retrieval techniques highlighted in [3:b0].{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}[3:b5]{tuple_delimiter}[3:b5] applies dense nearest neighbor techniques, closely aligned with the dense similarity retrieval focus in [3:b0].{tuple_delimiter}8)
 {completion_delimiter}
+
 #############################
 
 
 Example 2:
 
 entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+doc_id: 104
 text: Mainly, smart transportation and traffic management are highly needed as one can say they broadly influence almost every aspect of the smart cities operation on daily bases [4]. 
 In particular, trip route planning receives great interest particularly in big and crowded cities [4,5]. 
 Principally, trip planning applications and service providers afford route recommendations based on relatively shorter paths, traffic congestion and even with up to date construction works [6].
@@ -123,35 +115,35 @@ output:
 {record_delimiter}
 ("entity"{tuple_delimiter}adaptive routing approach{tuple_delimiter}CONCEPT{tuple_delimiter}A probabilistic dynamic strategy for route planning that combines real-time traffic information and historical patterns)
 {record_delimiter}
-("entity"{tuple_delimiter}[b4]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper highlighting the significance of smart transportation and traffic management in smart cities)
+("entity"{tuple_delimiter}[104:b4]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper highlighting the significance of smart transportation and traffic management in smart cities)
 {record_delimiter}
-("entity"{tuple_delimiter}[b5]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper emphasizing the growing interest in trip route planning for crowded urban areas)
+("entity"{tuple_delimiter}[104:b5]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper emphasizing the growing interest in trip route planning for crowded urban areas)
 {record_delimiter}
-("entity"{tuple_delimiter}[b6]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper discussing route recommendations based on shorter paths, congestion levels, and construction updates)
+("entity"{tuple_delimiter}[104:b6]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper discussing route recommendations based on shorter paths, congestion levels, and construction updates)
 {record_delimiter}
-("entity"{tuple_delimiter}[b7]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper describing Waze as a crowdsensed trip planning application)
+("entity"{tuple_delimiter}[104:b7]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper describing Waze as a crowdsensed trip planning application)
 {record_delimiter}
-("entity"{tuple_delimiter}[b8]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper introducing the APOLO system to address network overload in traffic management)
+("entity"{tuple_delimiter}[104:b8]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper introducing the APOLO system to address network overload in traffic management)
 {record_delimiter}
-("entity"{tuple_delimiter}[b9]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper proposing an adaptive routing approach using probabilistic dynamic modeling for route planning)
+("entity"{tuple_delimiter}[104:b9]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper proposing an adaptive routing approach using probabilistic dynamic modeling for route planning)
 {record_delimiter}
-("relationship"{tuple_delimiter}smart transportation{tuple_delimiter}[b4]{tuple_delimiter}Paper [b4] covers the importance of smart transportation in modern city operations{tuple_delimiter}7)
+("relationship"{tuple_delimiter}smart transportation{tuple_delimiter}[104:b4]{tuple_delimiter}Paper [104:b4] covers the importance of smart transportation in modern city operations{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}traffic management{tuple_delimiter}[b4]{tuple_delimiter}Paper [b4] also addresses traffic management as a critical component of smart cities{tuple_delimiter}7)
+("relationship"{tuple_delimiter}traffic management{tuple_delimiter}[104:b4]{tuple_delimiter}Paper [104:b4] also addresses traffic management as a critical component of smart cities{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}trip route planning{tuple_delimiter}[b4]{tuple_delimiter}Paper [b4] references the significance of trip route planning in urban environments{tuple_delimiter}7)
+("relationship"{tuple_delimiter}trip route planning{tuple_delimiter}[104:b4]{tuple_delimiter}Paper [104:b4] references the significance of trip route planning in urban environments{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}trip route planning{tuple_delimiter}[b5]{tuple_delimiter}Paper [b5] highlights the growing interest in trip route planning for crowded cities{tuple_delimiter}7)
+("relationship"{tuple_delimiter}trip route planning{tuple_delimiter}[104:b5]{tuple_delimiter}Paper [104:b5] highlights the growing interest in trip route planning for crowded cities{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}trip route planning{tuple_delimiter}[b6]{tuple_delimiter}Paper [b6] discusses strategies for route planning with an emphasis on shorter paths and construction considerations{tuple_delimiter}7)
+("relationship"{tuple_delimiter}trip route planning{tuple_delimiter}[104:b6]{tuple_delimiter}Paper [104:b6] discusses strategies for route planning with an emphasis on shorter paths and construction considerations{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}Waze{tuple_delimiter}[b7]{tuple_delimiter}Paper [b7] focuses on the Waze application’s crowdsensing approach to traffic{tuple_delimiter}7)
+("relationship"{tuple_delimiter}Waze{tuple_delimiter}[104:b7]{tuple_delimiter}Paper [104:b7] focuses on the Waze application’s crowdsensing approach to traffic{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}APOLO{tuple_delimiter}[b8]{tuple_delimiter}Paper [b8] introduces the APOLO system for mitigating network overload in traffic management{tuple_delimiter}7)
+("relationship"{tuple_delimiter}APOLO{tuple_delimiter}[104:b8]{tuple_delimiter}Paper [104:b8] introduces the APOLO system for mitigating network overload in traffic management{tuple_delimiter}7)
 {record_delimiter}
 ("relationship"{tuple_delimiter}APOLO{tuple_delimiter}traffic management{tuple_delimiter}APOLO directly addresses traffic management challenges by centralizing monitoring to reduce congestion{tuple_delimiter}8)
 {record_delimiter}
-("relationship"{tuple_delimiter}adaptive routing approach{tuple_delimiter}[b9]{tuple_delimiter}Paper [b9] proposes an adaptive, probabilistic method to tackle dynamic route planning{tuple_delimiter}7)
+("relationship"{tuple_delimiter}adaptive routing approach{tuple_delimiter}[104:b9]{tuple_delimiter}Paper [104:b9] proposes an adaptive, probabilistic method to tackle dynamic route planning{tuple_delimiter}7)
 {record_delimiter}
 ("relationship"{tuple_delimiter}Google{tuple_delimiter}online dynamic routing{tuple_delimiter}Google employs online dynamic routing driven by real-time traffic network data{tuple_delimiter}6)
 {record_delimiter}
@@ -160,13 +152,13 @@ output:
 ("relationship"{tuple_delimiter}Waze{tuple_delimiter}crowdsensed based trip planning{tuple_delimiter}Waze exemplifies crowdsensed based trip planning by gathering user input for real-time routing{tuple_delimiter}7)
 {completion_delimiter}
 
-
 #############################
 
 
 Example 3:
 
 entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+doc_id: 3917
 text: Graph curvature, resembling curvature in continuous geometry, includes Gaussian curvature, Ricci curvature, and average curvature.
  Each of these elements serves a distinct purpose: Gaussian curvature measures local curvature at vertices, Ricci curvature assigns curvature to edges, and average curvature offers a global measure for the entire graph.
  Applications of graph curvatures span various domains in network alignment, congestion and vulnerability detection, community detection, and robustness analysis [32,54,55].\nThe recent work of curvature graph neural network (CurvGN) [93] introduced the notion of Ricci curvature into the field of graph learning.
@@ -213,17 +205,17 @@ output:
 {record_delimiter}
 ("entity"{tuple_delimiter}link prediction{tuple_delimiter}CONCEPT{tuple_delimiter}A task aiming to foresee the existence or formation of connections between graph nodes)
 {record_delimiter}
-("entity"{tuple_delimiter}[b32]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper that discusses applications of graph curvature in various network-related domains)
+("entity"{tuple_delimiter}[3917:b32]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper that discusses applications of graph curvature in various network-related domains)
 {record_delimiter}
-("entity"{tuple_delimiter}[b54]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A work further examining the utility of graph curvature for tasks like congestion and community detection)
+("entity"{tuple_delimiter}[3917:b54]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A work further examining the utility of graph curvature for tasks like congestion and community detection)
 {record_delimiter}
-("entity"{tuple_delimiter}[b55]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A study applying graph curvature concepts to robustness analysis and other network problems)
+("entity"{tuple_delimiter}[3917:b55]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A study applying graph curvature concepts to robustness analysis and other network problems)
 {record_delimiter}
-("entity"{tuple_delimiter}[b93]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A recent work introducing CurvGN, integrating Ricci curvature in the context of graph neural networks)
+("entity"{tuple_delimiter}[3917:b93]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A recent work introducing CurvGN, integrating Ricci curvature in the context of graph neural networks)
 {record_delimiter}
-("entity"{tuple_delimiter}[b74]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper demonstrating that negative curvature edges can exacerbate the over-squashing issue in graph embeddings)
+("entity"{tuple_delimiter}[3917:b74]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A paper demonstrating that negative curvature edges can exacerbate the over-squashing issue in graph embeddings)
 {record_delimiter}
-("entity"{tuple_delimiter}[b22]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A publication presenting class-aware Ricci curvature for addressing hierarchy-imbalance in node classification)
+("entity"{tuple_delimiter}[3917:b22]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}A publication presenting class-aware Ricci curvature for addressing hierarchy-imbalance in node classification)
 {record_delimiter}
 ("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}Gaussian curvature{tuple_delimiter}Gaussian curvature is a localized manifestation of graph curvature at each vertex{tuple_delimiter}7)
 {record_delimiter}
@@ -239,23 +231,23 @@ output:
 {record_delimiter}
 ("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}robustness analysis{tuple_delimiter}Graph curvature aids in evaluating a network’s structural resilience{tuple_delimiter}6)
 {record_delimiter}
-("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}[b32]{tuple_delimiter}Paper [b32] explores the role of graph curvature across various domains{tuple_delimiter}6)
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}[3917:b32]{tuple_delimiter}Paper [3917:b32] explores the role of graph curvature across various domains{tuple_delimiter}6)
 {record_delimiter}
-("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}[b54]{tuple_delimiter}Paper [b54] addresses additional use cases of graph curvature in network tasks{tuple_delimiter}6)
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}[3917:b54]{tuple_delimiter}Paper [3917:b54] addresses additional use cases of graph curvature in network tasks{tuple_delimiter}6)
 {record_delimiter}
-("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}[b55]{tuple_delimiter}Paper [b55] focuses on leveraging curvature for community detection and robustness{tuple_delimiter}6)
+("relationship"{tuple_delimiter}Graph curvature{tuple_delimiter}[3917:b55]{tuple_delimiter}Paper [3917:b55] focuses on leveraging curvature for community detection and robustness{tuple_delimiter}6)
 {record_delimiter}
-("relationship"{tuple_delimiter}CurvGN{tuple_delimiter}[b93]{tuple_delimiter}Paper [b93] introduces CurvGN to incorporate Ricci curvature into graph neural networks{tuple_delimiter}7)
+("relationship"{tuple_delimiter}CurvGN{tuple_delimiter}[3917:b93]{tuple_delimiter}Paper [3917:b93] introduces CurvGN to incorporate Ricci curvature into graph neural networks{tuple_delimiter}7)
 {record_delimiter}
 ("relationship"{tuple_delimiter}CurvGN{tuple_delimiter}Ricci curvature{tuple_delimiter}CurvGN integrates Ricci curvature to enhance graph representation learning{tuple_delimiter}7)
 {record_delimiter}
 ("relationship"{tuple_delimiter}CurvGN{tuple_delimiter}graph learning{tuple_delimiter}CurvGN is positioned within the broader field of graph learning{tuple_delimiter}6)
 {record_delimiter}
-("relationship"{tuple_delimiter}[b74]{tuple_delimiter}over-squashing problem{tuple_delimiter}Paper [b74] reveals how negative curvature edges contribute to over-squashing{tuple_delimiter}7)
+("relationship"{tuple_delimiter}[3917:b74]{tuple_delimiter}over-squashing problem{tuple_delimiter}Paper [3917:b74] reveals how negative curvature edges contribute to over-squashing{tuple_delimiter}7)
 {record_delimiter}
-("relationship"{tuple_delimiter}[b74]{tuple_delimiter}graph embeddings{tuple_delimiter}Paper [b74] emphasizes the link between edge curvature and embedding quality{tuple_delimiter}6)
+("relationship"{tuple_delimiter}[3917:b74]{tuple_delimiter}graph embeddings{tuple_delimiter}Paper [3917:b74] emphasizes the link between edge curvature and embedding quality{tuple_delimiter}6)
 {record_delimiter}
-("relationship"{tuple_delimiter}[b22]{tuple_delimiter}class-aware Ricci curvature{tuple_delimiter}Paper [b22] proposes class-aware Ricci curvature to address hierarchy-imbalance{tuple_delimiter}7)
+("relationship"{tuple_delimiter}[3917:b22]{tuple_delimiter}class-aware Ricci curvature{tuple_delimiter}Paper [3917:b22] proposes class-aware Ricci curvature to address hierarchy-imbalance{tuple_delimiter}7)
 {record_delimiter}
 ("relationship"{tuple_delimiter}class-aware Ricci curvature{tuple_delimiter}hierarchy-imbalance{tuple_delimiter}This specialized curvature helps mitigate uneven data distribution in hierarchical graphs{tuple_delimiter}6)
 {record_delimiter}
@@ -276,5 +268,6 @@ output:
 ######################
 entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
 text: {input_text}
+doc_id: {doc_id}
 ######################
 output:
