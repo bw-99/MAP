@@ -37,7 +37,8 @@ for idx, fname in tqdm.tqdm(enumerate(json_flst), total=len(json_flst)):
         else:
             cleaned_text = str(tmp_data).replace("{", "").replace("}", "")
             corpus += " <p>"+cleaned_text+" </p>"
-    with open(f"{ROOT}/input/{fname[16:]}.txt", "w") as f:
+    fname = fname.split("/")[-1].split(".json")[0]
+    with open(f"{ROOT}/input/{fname}.txt", "w") as f:
         f.write(corpus)
 
 print(len(glob.glob(f"{ROOT}/input/*.txt")))
