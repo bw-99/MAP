@@ -41,7 +41,8 @@ def build_steps(
         "source": "workflow:extract_core_concept",
         "report_df": "workflow:create_final_community_reports",
         "doc_df": "workflow:create_final_documents",
-        "entity_df": "workflow:create_final_nodes",
+        "entity_df": "workflow:create_final_entities",
+        "node_df": "workflow:create_final_nodes",
         "text_unit_df": "workflow:create_final_text_units",
     }
 
@@ -68,13 +69,15 @@ async def workflow(
     report_df = cast("pd.DataFrame", get_required_input_table(input, "report_df").table)
     doc_df = cast("pd.DataFrame", get_required_input_table(input, "doc_df").table)
     entity_df = cast("pd.DataFrame", get_required_input_table(input, "entity_df").table)
+    node_df = cast("pd.DataFrame", get_required_input_table(input, "node_df").table)
+    node_df = node_df.merge(entity_df[["id", "type"]], how="left", on="id")
     text_unit_df = cast("pd.DataFrame", get_required_input_table(input, "text_unit_df").table)
 
     output = await create_final_viztree(
         concept_df=concept_df,
         report_df=report_df,
         doc_df=doc_df,
-        entity_df=entity_df,
+        node_df=node_df,
         text_unit_df=text_unit_df,
         callbacks=callbacks,
         cache=cache,

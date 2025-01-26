@@ -64,6 +64,14 @@ async def extract_graph(
     source_map = research_paper_entity_df.set_index('title_x')['title']
     relationships['source'] = relationships['source'].apply(lambda x: source_map[x] if x in source_map else x)
     relationships['target'] = relationships['target'].apply(lambda x: source_map[x] if x in source_map else x)
+    
+    # 5. drop entities that do not have any relationships
+    used_tokens = set(relationships['source']).union(set(relationships['target']))
+    entities = entities[entities['title'].isin(used_tokens)].reset_index(drop=True)
+
+    # 6. drop relationships having entity that does not exist in entities dataframe
+    used_entities = set(entities['title'])
+    relationships = relationships[(relationships['source'].isin(used_entities)) & (relationships['target'].isin(used_entities))].reset_index(drop=True)
 
     if not _validate_data(entities):
         error_msg = "Entity Extraction failed. No entities detected during extraction."
