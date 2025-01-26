@@ -52,6 +52,12 @@ from graphrag.index.workflows.v1.create_final_documents import (
 from graphrag.index.workflows.v1.create_final_documents import (
     workflow_name as create_final_documents,
 )
+from graphrag.index.workflows.v1.create_final_token2document import (
+    build_steps as build_create_final_token2document_steps,
+)
+from graphrag.index.workflows.v1.create_final_token2document import (
+    workflow_name as create_final_token2document,
+)
 from graphrag.index.workflows.v1.create_final_entities import (
     build_steps as build_create_final_entities_steps,
 )
@@ -99,6 +105,7 @@ default_workflows: WorkflowDefinitions = {
     create_final_nodes: build_create_final_nodes_steps,
     create_final_relationships: build_create_final_relationships_steps,
     create_final_documents: build_create_final_documents_steps,
+    create_final_token2document: build_create_final_token2document_steps,
     create_final_covariates: build_create_final_covariates_steps,
     create_final_entities: build_create_final_entities_steps,
     create_final_communities: build_create_final_communities_steps,
