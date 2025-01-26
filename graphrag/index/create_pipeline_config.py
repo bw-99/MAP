@@ -304,7 +304,12 @@ def _community_workflows(
                 }
             },
         ),
-        PipelineWorkflowReference(name=create_final_viztree),
+        PipelineWorkflowReference(
+            name=create_final_viztree,
+            config={
+                "include_concept": settings.viztree.include_concept
+            }
+        ),
     ]
 
 

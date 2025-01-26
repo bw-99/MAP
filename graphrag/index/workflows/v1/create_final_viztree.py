@@ -28,7 +28,7 @@ workflow_name = "create_final_viztree"
 
 
 def build_steps(
-    _config: PipelineWorkflowConfig,
+    config: PipelineWorkflowConfig,
 ) -> list[PipelineWorkflowStep]:
     """
     Create the final visualizable tree table.
@@ -36,6 +36,8 @@ def build_steps(
     ## Dependencies
     * `workflow:extract_core_concept`
     """
+
+    include_concept = config.get("include_concept", False)
 
     input = {
         "source": "workflow:extract_core_concept",
@@ -49,6 +51,9 @@ def build_steps(
     return [
         {
             "verb": workflow_name,
+            "args": {
+                "include_concept": include_concept
+            },
             "input": input,
         },
     ]
@@ -59,6 +64,7 @@ async def workflow(
     input: VerbInput,
     callbacks: VerbCallbacks,
     cache: PipelineCache,
+    include_concept: bool,
     async_mode: AsyncType = AsyncType.AsyncIO,
     num_threads: int = 4,
     **_kwargs: dict,
@@ -79,6 +85,7 @@ async def workflow(
         doc_df=doc_df,
         node_df=node_df,
         text_unit_df=text_unit_df,
+        include_concept=include_concept,
         callbacks=callbacks,
         cache=cache,
         async_mode=async_mode,

@@ -20,6 +20,7 @@ async def create_final_viztree(
     doc_df: pd.DataFrame,
     node_df: pd.DataFrame,
     text_unit_df: pd.DataFrame,
+    include_concept: bool,
     callbacks: VerbCallbacks,
     cache: PipelineCache,
     async_mode: AsyncType = AsyncType.AsyncIO,
@@ -33,7 +34,9 @@ async def create_final_viztree(
     node_df = node_df[node_df["community"] != -1].reset_index(drop=True)
     
     # 3. Add research paper entities into graph as a leaf node
-    papers_node_df = node_df[node_df["type"]=="RESEARCH PAPER"]
+    papers_node_df = node_df
+    if not include_concept:
+        papers_node_df = node_df[node_df["type"]=="RESEARCH PAPER"]
     papers_node_df = (
         papers_node_df
         .rename(columns={
