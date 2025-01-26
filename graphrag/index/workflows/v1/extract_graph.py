@@ -55,6 +55,7 @@ def build_steps(
     input = {
         "source": "workflow:create_base_text_units",
         "documents": "workflow:create_final_documents",
+        "token2doc": "workflow:create_final_token2document"
     }
 
     return [
@@ -100,6 +101,9 @@ async def workflow(
 
     # augment text_units with human_readable_id to use as a distinct identifier for each doc reference
     doc_units = cast("pd.DataFrame", get_required_input_table(input, "documents").table)
+    # doc token to doc title mapping
+    token2doc_df = cast("pd.DataFrame", get_required_input_table(input, "token2doc").table)
+
     columns_to_use = list(text_units.columns) + ["human_readable_id"]
     text_units = (
         text_units.explode("document_ids")
@@ -111,6 +115,7 @@ async def workflow(
 
     base_entity_nodes, base_relationship_edges = await extract_graph(
         text_units,
+        token2doc_df,
         callbacks,
         cache,
         extraction_strategy=extraction_strategy,
