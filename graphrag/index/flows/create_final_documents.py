@@ -74,5 +74,4 @@ def create_final_documents(
         final_columns.append("attributes")
 
     rejoined = rejoined.loc[:, final_columns]
-    rejoined["title"] = rejoined["title"].apply(lambda x: x.split(".")[0])
     return rejoined
