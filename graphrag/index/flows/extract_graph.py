@@ -65,11 +65,19 @@ async def extract_graph(
     relationships['source'] = relationships['source'].apply(lambda x: source_map[x] if x in source_map else x)
     relationships['target'] = relationships['target'].apply(lambda x: source_map[x] if x in source_map else x)
     
-    # 5. drop entities that do not have any relationships
+    # 5. drop NAN nodes
+    entities = entities[~entities["title"].isna()]
+    entities["title"] = entities["title"].astype(str)
+
+    relationships = relationships[(~relationships["source"].isna()) & (~relationships["target"].isna())]
+    relationships["source"] = relationships["source"].astype(str)
+    relationships["target"] = relationships["target"].astype(str)
+
+    # 6. drop entities that do not have any relationships
     used_tokens = set(relationships['source']).union(set(relationships['target']))
     entities = entities[entities['title'].isin(used_tokens)].reset_index(drop=True)
 
-    # 6. drop relationships having entity that does not exist in entities dataframe
+    # 7. drop relationships having entity that does not exist in entities dataframe
     used_entities = set(entities['title'])
     relationships = relationships[(relationships['source'].isin(used_entities)) & (relationships['target'].isin(used_entities))].reset_index(drop=True)
 

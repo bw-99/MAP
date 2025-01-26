@@ -53,8 +53,8 @@ async def create_final_viztree(
         papers_node_df
     ]).reset_index(drop=True)
 
-    viztree_df["parent"] = viztree_df["parent"].astype(str)
-    viztree_df["id"] = viztree_df["id"].astype(str)
+    viztree_df["parent"] = viztree_df["parent"].apply(lambda x: int(x) if isinstance(x, float) else x).astype(str)
+    viztree_df["id"] = viztree_df["id"].apply(lambda x: int(x) if isinstance(x, float) else x).astype(str)
 
     return viztree_df
 
