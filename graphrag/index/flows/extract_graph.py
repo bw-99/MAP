@@ -67,11 +67,11 @@ async def extract_graph(
     
     # 5. drop NAN nodes
     entities = entities[~entities["title"].isna()]
-    entities["title"] = entities["title"].astype(str)
+    entities["title"] = entities["title"].astype(str).str.upper()
 
     relationships = relationships[(~relationships["source"].isna()) & (~relationships["target"].isna())]
-    relationships["source"] = relationships["source"].astype(str)
-    relationships["target"] = relationships["target"].astype(str)
+    relationships["source"] = relationships["source"].astype(str).str.upper()
+    relationships["target"] = relationships["target"].astype(str).str.upper()
 
     # 6. drop entities that do not have any relationships
     used_tokens = set(relationships['source']).union(set(relationships['target']))
