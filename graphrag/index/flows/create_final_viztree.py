@@ -43,7 +43,7 @@ async def create_final_viztree(
             "community":"parent",
             "title": "explain",
         })
-        .assign(type="documnet")
+        .assign(type="RESEARCH PAPER")
         [["parent", "explain", "id", "type"]]
     )
 
