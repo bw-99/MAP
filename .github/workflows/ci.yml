@@ -20,6 +20,9 @@ jobs:
       - name: Run Docker Container
         run: |
           docker run -dit --name con --shm-size=20g -v ${{ github.workspace }}:/workspace bb1702/onepiece:main
+      
+      - name: Install pytest
+        run: docker exec con bash -c "pip install pytest"
 
       # pytest 실행
       - name: Run Tests
