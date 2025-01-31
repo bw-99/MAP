@@ -31,8 +31,6 @@ def evaluate_cli(
     """Run the pipeline with the given config."""
     root = root_dir.resolve()
     config = load_config(root, config_filepath)
-    # print(config)
-    # exit()
     _run_evaluate(
         config=config,
         data_dir=data_dir,

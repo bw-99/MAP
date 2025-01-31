@@ -27,7 +27,7 @@ from pydantic import validate_call
 
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.logger.print_progress import PrintProgressLogger
-from graphrag.query.factory import get_evaluate_search_engine
+from graphrag.evaluate.factory import get_evaluate_search_engine
 
 from graphrag.query.indexer_adapters import (
     read_indexer_communities,
@@ -100,75 +100,6 @@ async def evaluate_responses(
         general_knowledge_inclusion_prompt=knowledge_prompt,
     )
     result: SearchResult = await search_engine.asearch(query=evaluate_prompt)
-    response = result.response
-    context_data = _reformat_context_data(result.context_data)  # type: ignore
-    return response, context_data
-
-@validate_call(config={"arbitrary_types_allowed": True})
-async def global_search(
-    config: GraphRagConfig,
-    nodes: pd.DataFrame,
-    entities: pd.DataFrame,
-    communities: pd.DataFrame,
-    community_reports: pd.DataFrame,
-    community_level: int | None,
-    dynamic_community_selection: bool,
-    response_type: str,
-    query: str,
-) -> tuple[
-    str | dict[str, Any] | list[dict[str, Any]],
-    str | list[pd.DataFrame] | dict[str, pd.DataFrame],
-]:
-    """Perform a global search and return the context data and response.
-
-    Parameters
-    ----------
-    - config (GraphRagConfig): A graphrag configuration (from settings.yaml)
-    - nodes (pd.DataFrame): A DataFrame containing the final nodes (from create_final_nodes.parquet)
-    - entities (pd.DataFrame): A DataFrame containing the final entities (from create_final_entities.parquet)
-    - communities (pd.DataFrame): A DataFrame containing the final communities (from create_final_communities.parquet)
-    - community_reports (pd.DataFrame): A DataFrame containing the final community reports (from create_final_community_reports.parquet)
-    - community_level (int): The community level to search at.
-    - dynamic_community_selection (bool): Enable dynamic community selection instead of using all community reports at a fixed level. Note that you can still provide community_level cap the maximum level to search.
-    - response_type (str): The type of response to return.
-    - query (str): The user query to search for.
-
-    Returns
-    -------
-    TODO: Document the search response type and format.
-
-    Raises
-    ------
-    TODO: Document any exceptions to expect.
-    """
-    communities_ = read_indexer_communities(communities, nodes, community_reports)
-    reports = read_indexer_reports(
-        community_reports,
-        nodes,
-        community_level=community_level,
-        dynamic_community_selection=dynamic_community_selection,
-    )
-    entities_ = read_indexer_entities(nodes, entities, community_level=community_level)
-    map_prompt = _load_search_prompt(config.root_dir, config.global_search.map_prompt)
-    reduce_prompt = _load_search_prompt(
-        config.root_dir, config.global_search.reduce_prompt
-    )
-    knowledge_prompt = _load_search_prompt(
-        config.root_dir, config.global_search.knowledge_prompt
-    )
-
-    search_engine = get_global_search_engine(
-        config,
-        reports=reports,
-        entities=entities_,
-        communities=communities_,
-        response_type=response_type,
-        dynamic_community_selection=dynamic_community_selection,
-        map_system_prompt=map_prompt,
-        reduce_system_prompt=reduce_prompt,
-        general_knowledge_inclusion_prompt=knowledge_prompt,
-    )
-    result: SearchResult = await search_engine.asearch(query=query)
     response = result.response
     context_data = _reformat_context_data(result.context_data)  # type: ignore
     return response, context_data

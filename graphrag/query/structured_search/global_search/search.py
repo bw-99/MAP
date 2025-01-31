@@ -219,9 +219,6 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
         start_time = time.time()
         search_prompt = ""
         try:
-            # print('='*50)
-            # print("context_data", context_data)
-            # print('='*50)
             search_prompt = self.map_system_prompt.format(context_data=context_data)
             search_messages = [
                 {"role": "system", "content": search_prompt},
@@ -235,7 +232,6 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
             try:
                 # parse search response json
                 processed_response = self.parse_search_response(search_response)
-                # print(processed_response)
             except ValueError:
                 log.warning(
                     "Warning: Error parsing search response json - skipping this batch"
