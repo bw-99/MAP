@@ -77,7 +77,6 @@ def index_cli(
 ):
     """Run the pipeline with the given config."""
     config = load_config(root_dir, config_filepath)
-    print("#"*100, config.viztree)
 
     _run_index(
         config=config,
