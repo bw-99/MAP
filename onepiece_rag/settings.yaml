@@ -90,7 +90,7 @@ skip_workflows: []
 
 entity_extraction:
   prompt: "prompts/entity_extraction_with_researchpaper.txt"
-  entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+  entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
   max_gleanings: 1
   use_doc_id: true
 

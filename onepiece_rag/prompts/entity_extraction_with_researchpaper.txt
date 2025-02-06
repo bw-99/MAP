@@ -6,14 +6,14 @@ Given a text document that is potentially relevant to this activity and a list o
 
 Identify all entities. For each identified entity, extract the following information:
 
-entity_type: One of the following types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+entity_type: One of the following types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
 
 entity_name: The specific name of the entity.
 
 If the entity_type is 'RESEARCH PAPER,' format the name exactly as [doc_id:bx], where doc_id is the provided document identifier and x is the number within square brackets (e.g., [28] becomes [1:b28] for doc_id=1, [15] becomes [3:b15] for doc_id=3). For the current study, use [doc_id:b0] (e.g., [2:b0] for doc_id=2).
 This naming rule for research papers is critical and must be followed without exception to ensure consistency and accuracy. Do not deviate from this rule under any circumstances.
 
-If the entity_type is 'CONCEPT,' 'ORGANIZATION,' or 'GEO,' use the name as it appears in the text.
+If the entity_type is 'CONCEPT' or 'ORGANIZATION' use the name as it appears in the text.
 
 entity_description: Comprehensive description of the entity's attributes and activities
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
@@ -42,7 +42,7 @@ When finished, output {completion_delimiter}.
 
 Example 1:
 
-entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
 doc_id: 3
 text: For embedding-based recommender systems [28], large-scale dense similarity search has been applied for retrieval
  Some approaches proposed utilize hashing-based techniques such as mapping input and targets to discrete partitions and selecting targets from the same partitions as inputs [26]
@@ -77,7 +77,7 @@ output:
 
 Example 2:
 
-entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
 doc_id: 104
 text: Mainly, smart transportation and traffic management are highly needed as one can say they broadly influence almost every aspect of the smart cities operation on daily bases [4]. 
 In particular, trip route planning receives great interest particularly in big and crowded cities [4,5]. 
@@ -157,7 +157,7 @@ output:
 
 Example 3:
 
-entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
 doc_id: 3917
 text: Graph curvature, resembling curvature in continuous geometry, includes Gaussian curvature, Ricci curvature, and average curvature.
  Each of these elements serves a distinct purpose: Gaussian curvature measures local curvature at vertices, Ricci curvature assigns curvature to edges, and average curvature offers a global measure for the entire graph.
@@ -266,7 +266,7 @@ output:
 
 -Real Data-
 ######################
-entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION, GEO]
+entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
 text: {input_text}
 doc_id: {doc_id}
 ######################
