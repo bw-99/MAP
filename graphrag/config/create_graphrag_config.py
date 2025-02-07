@@ -42,6 +42,7 @@ from graphrag.config.models.global_search_config import GlobalSearchConfig
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.config.models.input_config import InputConfig
 from graphrag.config.models.core_concet_extraction_config import CoreConceptExtractionConfig
+from graphrag.config.models.viztree_config import VizTreeConfig
 from graphrag.config.models.llm_parameters import LLMParameters
 from graphrag.config.models.local_search_config import LocalSearchConfig
 from graphrag.config.models.parallelization_parameters import ParallelizationParameters
@@ -461,6 +462,7 @@ def create_graphrag_config(
                 prompt=reader.str("prompt", Fragment.prompt_file),
                 strategy=entity_extraction_config.get("strategy"),
                 encoding_model=encoding_model,
+                use_doc_id=entity_extraction_config.get("use_doc_id", False),
             )
 
         claim_extraction_config = values.get("claim_extraction") or {}
@@ -522,6 +524,15 @@ def create_graphrag_config(
                 or defs.CORE_CONCEPT_MAX_LENGTH,
                 max_input_length=reader.int("max_input_length")
                 or defs.CORE_CONCEPT_MAX_INPUT_LENGTH,
+            )
+
+        viztree_config = values.get("viztree") or {}
+        with (
+            reader.envvar_prefix(Section.viztree),
+            reader.use(viztree_config),
+        ):
+            viztree_model = VizTreeConfig(
+                include_concept=viztree_config.get("include_concept", False)
             )
 
         summarize_description_config = values.get("summarize_descriptions") or {}
@@ -664,6 +675,7 @@ def create_graphrag_config(
         claim_extraction=claim_extraction_model,
         community_reports=community_reports_model,
         core_concept_extraction=core_concept_extractions_model,
+        viztree=viztree_model,
         summarize_descriptions=summarize_descriptions_model,
         umap=umap_model,
         cluster_graph=cluster_graph_model,
@@ -726,6 +738,7 @@ class Section(str, Enum):
     claim_extraction = "CLAIM_EXTRACTION"
     community_reports = "COMMUNITY_REPORTS"
     core_concept_extraction = "CORE_CONCEPT_EXTRACTION"
+    viztree = "VIZTREE"
     embedding = "EMBEDDING"
     entity_extraction = "ENTITY_EXTRACTION"
     graphrag = "GRAPHRAG"

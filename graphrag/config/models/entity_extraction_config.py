@@ -31,13 +31,16 @@ class EntityExtractionConfig(LLMConfig):
     encoding_model: str | None = Field(
         default=None, description="The encoding model to use."
     )
+    use_doc_id: bool = Field(
+        default=False, description="Whether to use the document ID."
+    )
 
     def resolved_strategy(self, root_dir: str, encoding_model: str | None) -> dict:
         """Get the resolved entity extraction strategy."""
         from graphrag.index.operations.extract_entities import (
             ExtractEntityStrategyType,
         )
-
+        
         return self.strategy or {
             "type": ExtractEntityStrategyType.graph_intelligence,
             "llm": self.llm.model_dump(),
@@ -51,4 +54,5 @@ class EntityExtractionConfig(LLMConfig):
             # It's prechunked in create_base_text_units
             "encoding_name": encoding_model or self.encoding_model,
             "prechunked": True,
+            "use_doc_id": self.use_doc_id,
         }

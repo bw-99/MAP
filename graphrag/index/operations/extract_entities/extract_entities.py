@@ -33,6 +33,7 @@ async def extract_entities(
     cache: PipelineCache,
     text_column: str,
     id_column: str,
+    human_readable_id_column: str,
     strategy: dict[str, Any] | None,
     async_mode: AsyncType = AsyncType.AsyncIO,
     entity_types=DEFAULT_ENTITY_TYPES,
@@ -46,6 +47,7 @@ async def extract_entities(
     args:
         column: the_document_text_column_to_extract_entities_from
         id_column: the_column_with_the_unique_id_for_each_row
+        human_readable_id_column: the_column_with_the_human_readable_id_for_each_row
         to: the_column_to_output_the_entities_to
         strategy: <strategy_config>, see strategies section below
         summarize_descriptions: true | false /* Optional: This will summarize the descriptions of the entities and relationships, default: true */
@@ -113,8 +115,9 @@ async def extract_entities(
         nonlocal num_started
         text = row[text_column]
         id = row[id_column]
+        human_readable_id = row[human_readable_id_column]
         result = await strategy_exec(
-            [Document(text=text, id=id)],
+            [Document(text=text, id=id, human_readable_id=human_readable_id)],
             entity_types,
             callbacks,
             cache,

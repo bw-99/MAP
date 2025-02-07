@@ -73,4 +73,6 @@ def create_final_documents(
     if document_attribute_columns:
         final_columns.append("attributes")
 
-    return rejoined.loc[:, final_columns]
+    rejoined = rejoined.loc[:, final_columns]
+    rejoined["title"] = rejoined["title"].apply(lambda x: x.split(".txt")[0])
+    return rejoined

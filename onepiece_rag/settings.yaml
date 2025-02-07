@@ -89,9 +89,10 @@ update_index_storage:
 skip_workflows: []
 
 entity_extraction:
-  prompt: "prompts/entity_extraction.txt"
-  entity_types: [RESEARCH PAPER, CONCEPT]
+  prompt: "prompts/entity_extraction_with_researchpaper.txt"
+  entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
   max_gleanings: 1
+  use_doc_id: true
 
 summarize_descriptions:
   prompt: "prompts/summarize_descriptions.txt"
@@ -107,6 +108,9 @@ community_reports:
   prompt: "prompts/community_report.txt"
   max_length: 2000
   max_input_length: 8000
+
+viztree:
+  include_concept: false
 
 core_concept_extraction:
   prompt: "prompts/core_concept_extraction.txt"
