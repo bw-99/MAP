@@ -21,6 +21,7 @@ from graphrag.index.operations.summarize_descriptions import (
 
 async def extract_graph(
     text_units: pd.DataFrame,
+    token2doc_df: pd.DataFrame,
     callbacks: VerbCallbacks,
     cache: PipelineCache,
     extraction_strategy: dict[str, Any] | None = None,
@@ -38,11 +39,47 @@ async def extract_graph(
         cache,
         text_column="text",
         id_column="id",
+        human_readable_id_column="human_readable_id",
         strategy=extraction_strategy,
         async_mode=extraction_async_mode,
         entity_types=entity_types,
         num_threads=extraction_num_threads,
     )
+
+    # 1. filter out improperly extracted research paper entities and responsive relationships
+    research_paper_entity_df = entities[entities["type"] == "RESEARCH PAPER"]
+    anomaly_flag = ~research_paper_entity_df["title"].str.contains(r'\d+:B\d+')
+    anomaly_df = research_paper_entity_df[anomaly_flag]
+    research_paper_entity_df = research_paper_entity_df[~anomaly_flag]
+
+    # 2. transform the doc token to doc title mapping
+    research_paper_entity_df = research_paper_entity_df.merge(token2doc_df, left_on="title", right_on="doc_token", how="left")
+    research_paper_entity_df.rename(columns={"title_y": "title"}, inplace=True)
+    
+    # 3. merge the research paper entities back to the entities dataframe
+    entities = pd.concat([entities[entities["type"] != "RESEARCH PAPER"], research_paper_entity_df[entities.columns]], ignore_index=True)
+    relationships = relationships[~relationships['source'].isin(anomaly_df['title']) & ~relationships['target'].isin(anomaly_df['title'])]
+    
+    # 4. update the source and target columns to be doc title from the doc token in the relationships dataframe
+    source_map = research_paper_entity_df.set_index('title_x')['title']
+    relationships['source'] = relationships['source'].apply(lambda x: source_map[x] if x in source_map else x)
+    relationships['target'] = relationships['target'].apply(lambda x: source_map[x] if x in source_map else x)
+    
+    # 5. drop NAN nodes
+    entities = entities[~entities["title"].isna()]
+    entities["title"] = entities["title"].astype(str).str.upper()
+
+    relationships = relationships[(~relationships["source"].isna()) & (~relationships["target"].isna())]
+    relationships["source"] = relationships["source"].astype(str).str.upper()
+    relationships["target"] = relationships["target"].astype(str).str.upper()
+
+    # 6. drop entities that do not have any relationships
+    used_tokens = set(relationships['source']).union(set(relationships['target']))
+    entities = entities[entities['title'].isin(used_tokens)].reset_index(drop=True)
+
+    # 7. drop relationships having entity that does not exist in entities dataframe
+    used_entities = set(entities['title'])
+    relationships = relationships[(relationships['source'].isin(used_entities)) & (relationships['target'].isin(used_entities))].reset_index(drop=True)
 
     if not _validate_data(entities):
         error_msg = "Entity Extraction failed. No entities detected during extraction."

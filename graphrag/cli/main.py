@@ -428,7 +428,7 @@ def _query_cli(
 
     match method:
         case SearchType.LOCAL:
-            run_local_search(
+            response, context = run_local_search(
                 config_filepath=config,
                 data_dir=data,
                 root_dir=root,
@@ -438,7 +438,7 @@ def _query_cli(
                 query=query,
             )
         case SearchType.GLOBAL:
-            run_global_search(
+            response, context = run_global_search(
                 config_filepath=config,
                 data_dir=data,
                 root_dir=root,
@@ -449,7 +449,7 @@ def _query_cli(
                 query=query,
             )
         case SearchType.DRIFT:
-            run_drift_search(
+            response, context = run_drift_search(
                 config_filepath=config,
                 data_dir=data,
                 root_dir=root,
@@ -459,6 +459,8 @@ def _query_cli(
             )
         case _:
             raise ValueError(INVALID_METHOD_ERROR)
+    
+    return response, context
 
 @app.command("evaluate")
 def _evaluate_cli(
