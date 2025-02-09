@@ -1,9 +1,13 @@
 import pytest
 import pandas as pd
+import os
 
 def load_parquet_file():
     """Load the parquet file for testing."""
     file_path = "output/create_final_viztree.parquet"  # 데이터 파일 경로
+    if not os.path.exists(file_path):
+        pytest.fail(f"Parquet file not found: {file_path}")
+
     try:
         df = pd.read_parquet(file_path)
     except Exception as e:
