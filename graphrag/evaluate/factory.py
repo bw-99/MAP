@@ -31,11 +31,13 @@ def get_evaluate_search_engine(
     gs_config = config.global_search
 
     dynamic_community_selection_kwargs = {}
+    
+    llm = get_llm(config) # call the llm just once
     if dynamic_community_selection:
         # TODO: Allow for another llm definition only for Global Search to leverage -mini models
 
         dynamic_community_selection_kwargs.update({
-            "llm": get_llm(config),
+            "llm": llm,
             "token_encoder": tiktoken.encoding_for_model(config.llm.model),
             "keep_parent": gs_config.dynamic_search_keep_parent,
             "num_repeats": gs_config.dynamic_search_num_repeats,
@@ -46,7 +48,7 @@ def get_evaluate_search_engine(
         })
 
     return GlobalSearch(
-        llm=get_llm(config),
+        llm=llm,
         map_system_prompt=map_system_prompt,
         reduce_system_prompt=reduce_system_prompt,
         general_knowledge_inclusion_prompt=general_knowledge_inclusion_prompt,
