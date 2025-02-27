@@ -17,7 +17,7 @@ os.makedirs(f"{ROOT}/input", exist_ok=True)
 json_flst = glob.glob("data/parsed/*.json")
 json_flst = json_flst[:NUM_EXAMPLE]
 
-keys_to_extract = {'abstract', 'sections'}
+keys_to_extract = {'abstract', 'sections'} # formulas
 
 for idx, fname in tqdm.tqdm(enumerate(json_flst), total=len(json_flst)):
     corpus = ""
