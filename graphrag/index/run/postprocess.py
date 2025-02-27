@@ -36,15 +36,29 @@ async def _run_post_process_steps(
     Returns:
         - output - The dataset after running the post process steps
     """
+    
     if post_process:
         input_workflow = create_workflow(
             "Input Post Process",
             post_process,
         )
         input_workflow.add_table(DEFAULT_INPUT_NAME, dataset)
+
+        # 수식과 텍스트 분리 전처리 추가
+        dataset["text"], dataset["equations"] = zip(*dataset["raw_text"].apply(split_text_and_equations))
+
         await input_workflow.run(
             context=context,
             callbacks=callbacks,
         )
         dataset = cast("pd.DataFrame", input_workflow.output())
     return dataset
+
+
+# 수식 분리 함수 
+def split_text_and_equations(text):
+    """수식과 일반 텍스트를 분리하는 함수"""
+    import re
+    equations = re.findall(r'\$\$(.*?)\$\$', text)  # $$...$$ 수식 추출
+    clean_text = re.sub(r'\$\$(.*?)\$\$', "[EQUATION]", text)  # 수식 자리에 태그 추가
+    return clean_text, equations

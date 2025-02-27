@@ -57,6 +57,15 @@ async def build_index(
         raise ValueError(msg)
 
     pipeline_config = create_pipeline_config(config)
+    
+    # (1) 수식 변환 및 설명 추가
+    dataset = load_dataset(pipeline_config.input)  # 기존 데이터 로드
+    dataset["equation_explanations"] = dataset["text"].apply(convert_equations_to_text)
+
+    # (2) 엔터티 추출 개선 (수식 변환 결과 포함)
+    dataset["extracted_entities"] = dataset.apply(extract_entities_with_equation, axis=1)
+
+    
     pipeline_cache = (
         NoopPipelineCache() if config.cache.type == CacheType.none is None else None
     )
