@@ -16,6 +16,7 @@ from graphrag.api.query import (
     local_search,
     local_search_streaming,
 )
+from graphrag.api.evaluate import evaluate_responses
 from graphrag.prompt_tune.types import DocSelectionType
 
 __all__ = [  # noqa: RUF022
@@ -30,4 +31,6 @@ __all__ = [  # noqa: RUF022
     # prompt tuning API
     "DocSelectionType",
     "generate_indexing_prompts",
+    # evaluation API
+    "evaluate_responses",
 ]
