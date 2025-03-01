@@ -60,7 +60,7 @@ from graphrag.index.workflows.default_workflows import (
     create_final_community_reports,
     extract_core_concept,
     create_final_covariates,
-    create_final_documents,
+    create_base_documents,
     create_final_token2document,
     create_final_entities,
     create_final_nodes,
@@ -160,7 +160,7 @@ def _document_workflows(
 ) -> list[PipelineWorkflowReference]:
     return [
         PipelineWorkflowReference(
-            name=create_final_documents,
+            name=create_base_documents,
             config={
                 "document_attribute_columns": list(
                     {*(settings.input.document_attribute_columns)}
