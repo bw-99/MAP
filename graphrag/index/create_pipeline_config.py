@@ -192,6 +192,8 @@ def _text_unit_workflows(
                         settings.encoding_model
                     )
                 },
+                "sentence_reconstruction": settings.sentence_reconstruction.sentence_reconstruction,
+                **settings.sentence_reconstruction.parallelization.model_dump(),
             },
         ),
         PipelineWorkflowReference(
