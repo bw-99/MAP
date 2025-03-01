@@ -30,19 +30,16 @@ def build_steps(
     config: PipelineWorkflowConfig,
 ) -> list[PipelineWorkflowStep]:
     """
-    Create the final documents table.
+    Create the final token2document look-up table.
 
     ## Dependencies
-    * `workflow:create_base_text_units`
+    * `workflow:create_base_documents`
     """
-    document_attribute_columns = config.get("document_attribute_columns", None)
     return [
         {
             "verb": workflow_name,
-            "args": {"document_attribute_columns": document_attribute_columns},
             "input": {
-                "source": DEFAULT_INPUT_NAME,
-                "text_units": "workflow:create_base_text_units",
+                "source": "workflow:create_base_documents",
             },
         },
     ]
@@ -54,14 +51,11 @@ def build_steps(
 )
 async def workflow(
     input: VerbInput,
-    runtime_storage: PipelineStorage,
-    document_attribute_columns: list[str] | None = None,
     **_kwargs: dict,
 ) -> VerbResult:
-    """All the steps to transform final documents."""
-    source = cast("pd.DataFrame", input.get_input())
-    text_units = await runtime_storage.get("base_text_units")
+    """All the steps to create document token to document look-up table."""
+    doc_df = cast("pd.DataFrame", input.get_input())
 
-    output = create_final_documents(source, text_units, document_attribute_columns)
+    output = create_final_documents(doc_df)
 
     return create_verb_result(cast("Table", output))

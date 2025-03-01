@@ -1,0 +1,110 @@
+Task: Transform Sentence Structures for Referenced Papers and the Current Paper
+
+Context:  
+You are given a passage containing references to prior research papers (shown as [numbers]) and references to the current paper (e.g., “our paper,” “we,” or “this study”). Your goal is to restructure each relevant sentence to make these references the subjects where it makes logical sense, but without forcing unnatural constructions.
+
+Entities to Modify  
+1. Referenced Papers  
+   - Any citation in the form [X] (e.g., [14], [7]) refers to a previous study.  
+   - Where it fits naturally, transform the citation into the subject of the sentence by replacing “[X]” with TOKEN_bX.  
+   - Do not rewrite the sentence in an awkward way just to make the citation a subject.
+
+2. Current Paper  
+   - Any phrase referring to the present paper (e.g., “our paper,” “we,” “this study”) is replaced with TOKEN_b0.  
+   - Treat TOKEN_b0 as a possible subject in the sentence if it flows logically.
+
+---
+
+Transformation Rules  
+
+1. Natural Incorporation of Referenced Papers  
+   - Preserve the original meaning while transforming sentences so that references become natural subjects wherever possible.  
+   - Avoid forcing citations to the front of the sentence if it creates awkward phrasing. Use verbs like “stated that,” “proposed,” “introduced,” or “demonstrated that” to connect citations properly.
+
+2. Current Paper as a Subject  
+   - Replace the original references to the current paper with TOKEN_b0.  
+   - If it naturally makes sense for TOKEN_b0 to be the subject, reorganize the sentence accordingly.
+
+3. Multiple References  
+   - If a sentence cites more than one paper, combine them appropriately as joint subjects (e.g., “TOKEN_b3 and TOKEN_b7 stated that...”) or separate them if that’s clearer.
+
+4. Logical Consistency  
+   - Keep the sentence’s original intention and context intact. If restructuring creates confusion or awkwardness, leave the citation where it is.
+
+5. Valid Citation Numbers Only  
+   - Only use TOKEN_bX for citations that explicitly appear in the text.  
+   - Do not introduce or modify citation numbers beyond what is given.
+
+6. Preserve Sentence Count and Order  
+   - If the original passage has N sentences, your output must also have N sentences in the same order.  
+   - For each sentence in the input, either transform it (if needed) or leave it unchanged, but do not merge or split sentences.  
+   - This ensures the output’s sentence count and sequence remain identical to the input.
+
+-Examples-
+######################
+Example 1:
+
+Original:
+<h1>abstract</h1> <p>Candidate retrieval is the first stage in recommendation systems, where a light-weight system is used to retrieve potentially relevant items for an input user
+ These candidate items are then ranked and pruned in later stages of recommender systems using a more complex ranking model
+ As the top of the recommendation funnel, it is important to retrieve a high-recall candidate set to feed into downstream ranking models
+ A common approach is to leverage approximate nearest neighbor (ANN) search from a single dense query embedding; however, this approach this can yield a low-diversity result set with many near duplicates
+ As users often have multiple interests, candidate retrieval should ideally return a diverse set of candidates reflective of the user's multiple interests
+ To this end, we introduce kNN-Embed, a general approach to improving diversity in dense ANN-based retrieval
+ kNN-Embed represents each user as a smoothed mixture over learned item clusters that represent distinct "interests" of the user
+ By querying each of a user's mixture component in proportion to their mixture weights, we retrieve a high-diversity set of candidates reflecting elements from each of a user's interests
+ We experimentally compare kNN-Embed to standard ANN candidate retrieval, and show significant improvements in overall recall and improved diversity across three datasets
+ Accompanying this work, we open source a large Twitter follow-graph dataset1, to spur further research in graph-mining and representation learning for recommender systems
+------------------------
+output:
+<h1>abstract</h1> <p> Candidate retrieval is the first stage in recommendation systems, where a light‐weight system is used to retrieve potentially relevant items for an input user. These candidate items are then ranked and pruned in later stages of recommender systems using a more complex ranking model. As the top of the recommendation funnel, it is important to retrieve a high‐recall candidate set to feed into downstream ranking models. A common approach is to leverage approximate nearest neighbor (ANN) search from a single dense query embedding; however, this approach can yield a low‐diversity result set with many near duplicates. As users often have multiple interests, candidate retrieval should ideally return a diverse set of candidates reflective of the user's multiple interests. To this end, TOKEN_b0 introduce kNN-Embed, a general approach to improving diversity in dense ANN-based retrieval. kNN-Embed represents each user as a smoothed mixture over learned item clusters that represent distinct "interests" of the user. By querying each of a user's mixture component in proportion to their mixture weights, TOKEN_b0 retrieve a high-diversity set of candidates reflecting elements from each of a user's interests. TOKEN_b0 experimentally compare kNN-Embed to standard ANN candidate retrieval, and show significant improvements in overall recall and improved diversity across three datasets. Accompanying this work, TOKEN_b0 open source a large Twitter follow-graph dataset1, to spur further research in graph-mining and representation learning for recommender systems.{completion_delimiter}
+
+######################
+Example 2:
+
+Original:
+<p>Introduction </p><h2>text</h2> <p>Recommendation systems for online services such as e-commerce or social networks present users with suggestions in the form of ranked lists of items [5]
+ </p><h2>publication_ref</h2> <p>['b4'] </p><h2>figure_ref</h2> <p>[] </p><h2>table_ref</h2> <p>[] </p><h2>heading</h2> <p>Related Works </p><h2>text</h2> <p>Traditionally, techniques for candidate retrieval rely on fast, scalable approaches to search large collections for similar sparse vectors [3,1]
+ Approaches apply indexing and optimization strategies to scale sparse similarity search
+ One such strategy builds a static clustering of the entire collection of items; clusters are retrieved based on how well their centroids match the query [25,20]
+ These methods either (1) match the query against clusters of items and rank clusters based on similarity to query or (2) utilize clusters as a form of item smoothing
+------------------------
+output:
+<p>Introduction</p> <h2>text</h2> <p> TOKEN_b5 showed that recommendation systems for online services such as e-commerce or social networks present users with suggestions in the form of ranked lists of items. </p> <h2>publication_ref</h2> <p>['b4']</p> <h2>figure_ref</h2> <p>[]</p> <h2>table_ref</h2> <p>[]</p> <h2>heading</h2> <p>Related Works</p> <h2>text</h2> <p> TOKEN_b3 and TOKEN_b1 demonstrated that techniques for candidate retrieval rely on fast, scalable approaches to search large collections for similar sparse vectors. Approaches apply indexing and optimization strategies to scale sparse similarity search. TOKEN_b25 and TOKEN_b20 proposed a strategy that builds a static clustering of the entire collection of items, retrieving clusters based on how well their centroids match the query. These methods either (1) match the query against clusters of items and rank clusters based on similarity to query or (2) utilize clusters as a form of item smoothing{completion_delimiter}
+
+######################
+Example 3:
+
+Original:
+For embedding-based recommender systems [28], large-scale dense similarity search has been applied for retrieval
+ Some approaches proposed utilize hashing-based techniques such as mapping input and targets to discrete partitions and selecting targets from the same partitions as inputs [26]
+ With the advent of fast approximate nearest-neighbor search [21,13], dense nearest neighbor has been applied by recommender systems for candidate retrieval
+------------------------
+output:
+TOKEN_b28 demonstrated that for embedding-based recommender systems, large-scale dense similarity search has been applied for retrieval. TOKEN_b26 proposed utilizing hashing-based techniques such as mapping input and targets to discrete partitions and selecting targets from the same partitions as inputs. TOKEN_b21 and TOKEN_b13 demonstrated that with the advent of fast approximate nearest-neighbor search, recommender systems have applied dense nearest neighbor for candidate retrieval{completion_delimiter}
+
+######################
+Example 4:
+
+Original:
+When utilizing graph-based embeddings for recommender systems [8], some methods transform single-mode embeddings to multiple modes by clustering user actions.
+ Our method extends upon this idea by incorporating nearest neighbor smoothing to address the sparsity problem of generating mixtures of embeddings for users with few engagements
+------------------------
+output:
+When utilizing graph-based embeddings for recommender systems, TOKEN_b8 demonstrated that some methods transform single-mode embeddings to multiple modes by clustering user actions. TOKEN_b0 extends upon this idea by incorporating nearest neighbor smoothing to address the sparsity problem of generating mixtures of embeddings for users with few engagements.{completion_delimiter}
+
+######################
+Example 5:
+
+Original:
+Smoothing via k-nearest-neighbor search has been applied for better language modeling [16] and machine translation [15]
+ We smooth low-engagement user representations by leveraging engagements from similar users
+------------------------
+output:
+TOKEN_b16 and TOKEN_b15 demonstrated that smoothing via k-nearest-neighbor search has been applied for better language modeling and machine translation. TOKEN_b0 smooth low-engagement user representations by leveraging engagements from similar users.{completion_delimiter}
+
+-Real Data-
+######################
+Original: {text_chunk}
+######################
+output:
