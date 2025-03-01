@@ -1,7 +1,7 @@
 # Copyright (c) 2024 Microsoft Corporation.
 # Licensed under the MIT License
 
-"""All the steps to create document token to document look-up table."""
+"""All the steps to create final processed documents."""
 
 import pandas as pd
 import json
@@ -13,11 +13,11 @@ def create_final_documents(
     
     # Get title to doc_token mapping
     token2doc = create_final_token2doc(doc_df)
-    doc_df["doc_token"] = doc_df["title"].map(token2doc["doc_token"])
 
     # Maybe add more processing here
+    # doc_df = ...
     
-    return doc_df
+    return doc_df, token2doc
 
 
 def create_final_token2doc(
@@ -32,5 +32,5 @@ def create_final_token2doc(
     ]
     doc_refs = pd.concat(doc_refs)
     doc_refs["doc_token"] = "["+doc_refs["doc_id"].astype(str) + ":" + doc_refs["ref_id"] + "]"
-    token2doc = doc_refs[["doc_token", "title"]].set_index("title")
+    token2doc = doc_refs[["doc_token", "title"]].set_index("doc_token")
     return token2doc
