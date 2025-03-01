@@ -57,15 +57,6 @@ async def build_index(
         raise ValueError(msg)
 
     pipeline_config = create_pipeline_config(config)
-    
-    # (1) 수식 변환 및 설명 추가
-    dataset = load_dataset(pipeline_config.input)  # 기존 데이터 로드
-    dataset["equation_explanations"] = dataset["text"].apply(convert_equations_to_text)
-
-    # (2) 엔터티 추출 개선 (수식 변환 결과 포함)
-    dataset["extracted_entities"] = dataset.apply(extract_entities_with_equation, axis=1)
-
-    
     pipeline_cache = (
         NoopPipelineCache() if config.cache.type == CacheType.none is None else None
     )
@@ -83,8 +74,8 @@ async def build_index(
         logger=progress_logger,
         is_resume_run=is_resume_run,
         is_update_run=is_update_run,
-    ):
-        outputs.append(output)
+    ):  
+        outputs.append(output)     
         if progress_logger:
             if output.errors and len(output.errors) > 0:
                 progress_logger.error(output.workflow)

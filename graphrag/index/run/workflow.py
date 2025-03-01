@@ -105,10 +105,6 @@ async def _process_workflow(
 
     workflow_start_time = time.time()
     
-    
-    # LLM을 활용한 수식 변환 작업 추가
-    dataset["equation_explanations"] = dataset["equations"].apply(generate_equation_description)
-
     result = await workflow.run(context, callbacks)
     await _write_workflow_stats(
         workflow,
@@ -123,24 +119,6 @@ async def _process_workflow(
     output = await _export_workflow_output(workflow, exporter)
     workflow.dispose()
     return PipelineRunResult(workflow_name, output, None)
-
-
-def generate_equation_description(equations):
-    """LLM을 사용하여 수식을 자연어 설명으로 변환하는 함수"""
-    from openai import OpenAI  # OpenAI API 예시
-
-    descriptions = []
-    for eq in equations:
-        response = OpenAI.ChatCompletion.create(
-            model="gpt-4o-mini",
-            messages=[
-                {"role": "system", "content": "You are an expert in mathematical equations."},
-                {"role": "user", "content": f"Explain the following equation in simple terms: {eq}"}
-            ]
-        )
-        descriptions.append(response["choices"][0]["message"]["content"])
-    
-    return descriptions
 
 
 def _find_workflow_config(
