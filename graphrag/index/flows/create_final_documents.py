@@ -13,9 +13,9 @@ def create_final_documents(
     
     # Get title to doc_token mapping
     token2doc = create_final_token2doc(doc_df)
-
-    # Add doc_token mapping
     doc_df["doc_token"] = doc_df["title"].map(token2doc["doc_token"])
+
+    # Maybe add more processing here
     
     return doc_df
 
