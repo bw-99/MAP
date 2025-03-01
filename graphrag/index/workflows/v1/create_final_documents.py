@@ -61,7 +61,5 @@ async def workflow(
     """All the steps to transform final documents."""
     source = cast("pd.DataFrame", input.get_input())
     text_units = await runtime_storage.get("base_text_units")
-
     output = create_final_documents(source, text_units, document_attribute_columns)
-
     return create_verb_result(cast("Table", output))
