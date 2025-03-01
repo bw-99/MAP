@@ -3,7 +3,6 @@
 
 """All the steps to transform final documents."""
 import pandas as pd
-
 def create_final_documents(
     documents: pd.DataFrame,
     text_units: pd.DataFrame,

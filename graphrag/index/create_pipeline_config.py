@@ -193,11 +193,14 @@ def _text_unit_workflows(
                 "equation_interpretation": {
                     "enabled": settings.equation_interpretation.enabled,
                     "strategy": settings.equation_interpretation.resolved_strategy(
+
                         settings.root_dir
                     ),
                     "async_mode": settings.async_mode,
                     **settings.equation_interpretation.parallelization.model_dump(),
                 },
+
+
             },
         ),
         PipelineWorkflowReference(
