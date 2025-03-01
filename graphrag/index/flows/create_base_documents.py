@@ -6,7 +6,7 @@
 import pandas as pd
 
 
-def create_final_documents(
+def create_base_documents(
     documents: pd.DataFrame,
     text_units: pd.DataFrame,
     document_attribute_columns: list[str] | None = None,

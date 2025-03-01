@@ -33,13 +33,13 @@ def build_steps(
     Create the final token2document look-up table.
 
     ## Dependencies
-    * `workflow:create_final_documents`
+    * `workflow:create_base_documents`
     """
     return [
         {
             "verb": workflow_name,
             "input": {
-                "source": "workflow:create_final_documents",
+                "source": "workflow:create_base_documents",
             },
         },
     ]
