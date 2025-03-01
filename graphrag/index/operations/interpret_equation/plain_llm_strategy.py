@@ -49,7 +49,6 @@ async def run_interpret_equation(
             "Equation Interpretation Error", e, stack
         ),
     )
-
     try:
         await rate_limiter.acquire()
         interpreted_equation= await interpretor(tunit.text)
