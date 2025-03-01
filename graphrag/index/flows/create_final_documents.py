@@ -12,27 +12,6 @@ import json
 nest_asyncio.apply()
 
 
-async def process_with_llm(rejoined):
-    """ Asynchronous function to call LLM and add equation explanations to the text."""
-
-    tasks = []
-    for index, row in rejoined.iterrows():
-        text = row["text"]
-        tasks.append(extract_and_explain_latex_with_llm(text))  # Create a list of asynchronous tasks
-
-    results = await asyncio.gather(*tasks)  
-
-    for index, result in enumerate(results):
-        if result.get("equations"):
-            equations = result["equations"]
-            explanations = result["explanations"]
-
-            # Append equation explanations to the text
-            explanation_text = "\n\n".join([f"{eq}:\n{explanations.get(eq, 'No explanation available')}" for eq in equations])
-            rejoined.at[index, "text"] += f"\n\n###  LLM-based Explanation ###\n{explanation_text}"
-
-    return rejoined
-
 def create_final_documents(
     documents: pd.DataFrame,
     text_units: pd.DataFrame,
@@ -88,9 +67,6 @@ def create_final_documents(
         # Drop the original attribute columns after collapsing them
         rejoined.drop(columns=document_attribute_columns, inplace=True)
         
-    loop = asyncio.get_event_loop()
-    rejoined = loop.run_until_complete(process_with_llm(rejoined)) 
-
     # set the final column order, but adjust for attributes
     core_columns = [
         "id",

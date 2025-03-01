@@ -68,6 +68,7 @@ async def extract_and_explain_latex_with_llm(text: str) -> dict:
         )
 
         result = response.choices[0].message.content
+          
 
         if not result.strip():  # Handle empty response
             return {"equations": [], "explanations": {}, "error": "LLM returned an empty response."}
@@ -75,6 +76,7 @@ async def extract_and_explain_latex_with_llm(text: str) -> dict:
 
         # Ensure JSON formatting by removing extraneous text
         result = result.strip()
+        print(f" LLM Response:\n{result[:500]}")
 
 
         if result.startswith("```json"):
