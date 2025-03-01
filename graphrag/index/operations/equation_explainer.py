@@ -9,7 +9,7 @@ load_dotenv(dotenv_path="./example/.env")
 
 API_KEY = os.getenv("GRAPHRAG_API_KEY")
 if not API_KEY:
-    raise ValueError("❌ API_KEY is missing. Please check your .env file.")
+    raise ValueError(" API_KEY is missing. Please check your .env file.")
 
 
 client = AsyncOpenAI(api_key=API_KEY)
@@ -76,7 +76,7 @@ async def extract_and_explain_latex_with_llm(text: str) -> dict:
 
         # Ensure JSON formatting by removing extraneous text
         result = result.strip()
-        print(f" LLM Response:\n{result[:500]}")
+    
 
 
         if result.startswith("```json"):
