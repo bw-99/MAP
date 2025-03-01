@@ -101,8 +101,7 @@ async def workflow(
     # augment text_units with human_readable_id to use as a distinct identifier for each doc reference
     doc_units = cast("pd.DataFrame", get_required_input_table(input, "documents").table)
     # doc token to doc title mapping
-    # TODO: get token2doc from final documents
-    token2doc_df = cast("pd.DataFrame", get_required_input_table(input, "token2doc").table)
+    token2doc_df = doc_units[["title", "doc_token"]]
 
     columns_to_use = list(text_units.columns) + ["human_readable_id"]
     text_units = (
