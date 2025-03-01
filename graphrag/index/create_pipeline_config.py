@@ -170,6 +170,9 @@ def _document_workflows(
         ),
         PipelineWorkflowReference(
             name=create_final_documents,
+            config={
+                "snapshot_token2doc": settings.snapshots.token2doc,
+            }
         ),
     ]
 
