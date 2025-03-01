@@ -61,7 +61,7 @@ from graphrag.index.workflows.default_workflows import (
     extract_core_concept,
     create_final_covariates,
     create_base_documents,
-    create_final_token2document,
+    create_final_documents,
     create_final_entities,
     create_final_nodes,
     create_final_relationships,
@@ -169,7 +169,7 @@ def _document_workflows(
             },
         ),
         PipelineWorkflowReference(
-            name=create_final_token2document,
+            name=create_final_documents,
         ),
     ]
 
