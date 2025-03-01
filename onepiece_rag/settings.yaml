@@ -142,6 +142,7 @@ global_search:
   map_prompt: "prompts/global_search_map_system_prompt.txt"
   reduce_prompt: "prompts/global_search_reduce_system_prompt.txt"
   knowledge_prompt: "prompts/global_search_knowledge_system_prompt.txt"
-
+  evaluate_prompt: "prompts/evaluate_response.txt"
+  
 drift_search:
   prompt: "prompts/drift_search_system_prompt.txt"
