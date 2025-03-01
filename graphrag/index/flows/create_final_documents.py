@@ -6,7 +6,7 @@
 import pandas as pd
 import json
 
-def create_final_token2document(
+def create_final_documents(
     doc_df: pd.DataFrame,
 ) -> pd.DataFrame:
     """All the steps to create document token to document look-up table."""

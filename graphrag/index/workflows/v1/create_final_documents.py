@@ -14,8 +14,8 @@ from datashaper import (
 from datashaper.table_store.types import VerbResult, create_verb_result
 
 from graphrag.index.config.workflow import PipelineWorkflowConfig, PipelineWorkflowStep
-from graphrag.index.flows.create_final_token2document import (
-    create_final_token2document,
+from graphrag.index.flows.create_final_documents import (
+    create_final_documents,
 )
 from graphrag.storage.pipeline_storage import PipelineStorage
 
@@ -23,7 +23,7 @@ if TYPE_CHECKING:
     import pandas as pd
 
 
-workflow_name = "create_final_token2document"
+workflow_name = "create_final_documents"
 
 
 def build_steps(
@@ -56,6 +56,6 @@ async def workflow(
     """All the steps to create document token to document look-up table."""
     doc_df = cast("pd.DataFrame", input.get_input())
 
-    output = create_final_token2document(doc_df)
+    output = create_final_documents(doc_df)
 
     return create_verb_result(cast("Table", output))
