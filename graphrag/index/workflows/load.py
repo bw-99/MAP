@@ -155,6 +155,8 @@ def _get_steps_for_workflow(
 ) -> list[PipelineWorkflowStep]:
     """Get the steps for the given workflow config."""
     if config is not None and "steps" in config:
+        # print step
+        print(config["steps"])
         return config["steps"]
 
     if workflows is None:
