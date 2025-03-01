@@ -130,6 +130,7 @@ snapshots:
   graphml: false
   embeddings: false
   transient: false
+  token2doc: true
 
 ### Query settings ###
 ## The prompt locations are required here, but each search method has a number of optional knobs that can be tuned.

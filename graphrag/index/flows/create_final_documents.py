@@ -1,78 +1,36 @@
 # Copyright (c) 2024 Microsoft Corporation.
 # Licensed under the MIT License
 
-"""All the steps to transform final documents."""
+"""All the steps to create final processed documents."""
 
 import pandas as pd
-
+import json
 
 def create_final_documents(
-    documents: pd.DataFrame,
-    text_units: pd.DataFrame,
-    document_attribute_columns: list[str] | None = None,
+    doc_df: pd.DataFrame,
 ) -> pd.DataFrame:
-    """All the steps to transform final documents."""
-    exploded = (
-        text_units.explode("document_ids")
-        .loc[:, ["id", "document_ids", "text"]]
-        .rename(
-            columns={
-                "document_ids": "chunk_doc_id",
-                "id": "chunk_id",
-                "text": "chunk_text",
-            }
-        )
-    )
+    """All the steps to create final processed documents."""
+    
+    # Get title to doc_token mapping
+    token2doc = create_final_token2doc(doc_df)
 
-    joined = exploded.merge(
-        documents,
-        left_on="chunk_doc_id",
-        right_on="id",
-        how="inner",
-        copy=False,
-    )
+    # Maybe add more processing here
+    # doc_df = ...
+    
+    return doc_df, token2doc
 
-    docs_with_text_units = joined.groupby("id", sort=False).agg(
-        text_unit_ids=("chunk_id", list)
-    )
 
-    rejoined = docs_with_text_units.merge(
-        documents,
-        on="id",
-        how="right",
-        copy=False,
-    ).reset_index(drop=True)
-
-    rejoined["id"] = rejoined["id"].astype(str)
-    rejoined["human_readable_id"] = rejoined.index + 1
-
-    # Convert attribute columns to strings and collapse them into a JSON object
-    if document_attribute_columns:
-        # Convert all specified columns to string at once
-        rejoined[document_attribute_columns] = rejoined[
-            document_attribute_columns
-        ].astype(str)
-
-        # Collapse the document_attribute_columns into a single JSON object column
-        rejoined["attributes"] = rejoined[document_attribute_columns].to_dict(
-            orient="records"
-        )
-
-        # Drop the original attribute columns after collapsing them
-        rejoined.drop(columns=document_attribute_columns, inplace=True)
-
-    # set the final column order, but adjust for attributes
-    core_columns = [
-        "id",
-        "human_readable_id",
-        "title",
-        "text",
-        "text_unit_ids",
+def create_final_token2doc(
+    doc_df: pd.DataFrame,
+) -> pd.DataFrame:
+    doc_refs = [
+    pd.DataFrame(
+            json.load(open(f"data/parsed/{fname}.json"))["references"]
+        ).assign(doc_id=doc_id)
+        .assign(ref_id=lambda x: x["ref_id"].str.upper())
+        [["ref_id", "title", "doc_id"]] for fname, doc_id in zip(doc_df["title"], doc_df["human_readable_id"])
     ]
-    final_columns = [column for column in core_columns if column in rejoined.columns]
-    if document_attribute_columns:
-        final_columns.append("attributes")
-
-    rejoined = rejoined.loc[:, final_columns]
-    rejoined["title"] = rejoined["title"].apply(lambda x: x.split(".txt")[0])
-    return rejoined
+    doc_refs = pd.concat(doc_refs)
+    doc_refs["doc_token"] = "["+doc_refs["doc_id"].astype(str) + ":" + doc_refs["ref_id"] + "]"
+    token2doc = doc_refs[["doc_token", "title"]].set_index("doc_token")
+    return token2doc

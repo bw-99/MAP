@@ -12,3 +12,4 @@ class SnapshotsConfigInput(TypedDict):
     embeddings: NotRequired[bool | str | None]
     graphml: NotRequired[bool | str | None]
     transient: NotRequired[bool | str | None]
+    token2doc: NotRequired[bool | str | None]

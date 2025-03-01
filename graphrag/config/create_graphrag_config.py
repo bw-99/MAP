@@ -429,6 +429,7 @@ def create_graphrag_config(
                 graphml=reader.bool("graphml") or defs.SNAPSHOTS_GRAPHML,
                 embeddings=reader.bool("embeddings") or defs.SNAPSHOTS_EMBEDDINGS,
                 transient=reader.bool("transient") or defs.SNAPSHOTS_TRANSIENT,
+                token2doc=reader.bool("token2doc") or defs.SNAPSHOTS_TOKEN2DOC,
             )
         with reader.envvar_prefix(Section.umap), reader.use(values.get("umap")):
             umap_model = UmapConfig(

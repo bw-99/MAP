@@ -23,3 +23,7 @@ class SnapshotsConfig(BaseModel):
         description="A flag indicating whether to take snapshots of transient tables.",
         default=defs.SNAPSHOTS_TRANSIENT,
     )
+    token2doc: bool = Field(
+        description="A flag indicating whether to take snapshots of token2doc tables.",
+        default=defs.SNAPSHOTS_TOKEN2DOC,
+    )
