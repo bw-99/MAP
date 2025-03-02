@@ -21,7 +21,7 @@ jobs:
         run: |
           docker run -dit --name con --shm-size=20g -v ${{ github.workspace }}:/workspace bb1702/onepiece:main
 
-      # pytest 실행 (root_path 수정)
+      # pytest 실행
       - name: Run Tests
         run: docker exec con bash -c "cd /workspace && pytest util/test_file.py --root_path=onepiece_rag"
 
