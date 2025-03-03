@@ -192,8 +192,16 @@ def _text_unit_workflows(
                         settings.encoding_model
                     )
                 },
-                "sentence_reconstruction": settings.sentence_reconstruction.sentence_reconstruction,
-                **settings.sentence_reconstruction.parallelization.model_dump(),
+                "sentence_reconstruction": {
+                    "enabled": settings.sentence_reconstruction.enabled,
+                    "strategy": settings.sentence_reconstruction.resolved_strategy(
+                        settings.root_dir
+                    ),
+                    "async_mode": settings.async_mode,
+                    **settings.sentence_reconstruction.parallelization.model_dump(),
+                }
+
+                
             },
         ),
         PipelineWorkflowReference(
