@@ -23,35 +23,40 @@ logger = PrintProgressLogger("")
 
 def evaluate_cli(
     config_filepath: Path | None,
-    data_dir: Path | None,
-    root_dir: Path,
+    root_dir1: Path,
+    root_dir2: Path,
     response_type: str,
     dry_run: bool,
 ):
     """Run the pipeline with the given config."""
-    root = root_dir.resolve()
-    config = load_config(root, config_filepath)
+    root = root_dir1.resolve()
+    config1 = load_config(root, config_filepath)
+    
+    root = root_dir2.resolve()
+    config2 = load_config(root, config_filepath)
     _run_evaluate(
-        config=config,
-        data_dir=data_dir,
+        config1=config1,
+        config2=config2,
         dry_run=dry_run,
         response_type=response_type,
     )
 
 def _run_evaluate(
-    config,
-    data_dir,
+    config1,
+    config2,
     dry_run,
     response_type,
 ):
     """Perform the actual pipeline to evaluate LLM responses.
     
     Loads index files required for evaluation and runs the evaluation pipeline."""
-    config.storage.base_dir = str(data_dir) if data_dir else config.storage.base_dir
-    resolve_paths(config)
     
-    dataframe_dict = _resolve_output_files(
-        config=config,
+    # config.storage.base_dir = str(data_dir) if data_dir else config.storage.base_dir
+    resolve_paths(config1)
+    resolve_paths(config2)
+    
+    dataframe_dict1 = _resolve_output_files(
+        config=config1,
         output_list=[
             "create_final_nodes.parquet",
             "create_final_entities.parquet",
@@ -60,24 +65,41 @@ def _run_evaluate(
         ],
         optional_list=[],
     )
-    final_nodes: pd.DataFrame = dataframe_dict["create_final_nodes"]
-    final_entities: pd.DataFrame = dataframe_dict["create_final_entities"]
-    final_communities: pd.DataFrame = dataframe_dict["create_final_communities"]
-    final_community_reports: pd.DataFrame = dataframe_dict[
+    final_nodes1: pd.DataFrame = dataframe_dict1["create_final_nodes"]
+    final_entities1: pd.DataFrame = dataframe_dict1["create_final_entities"]
+    final_communities1: pd.DataFrame = dataframe_dict1["create_final_communities"]
+    final_community_reports1: pd.DataFrame = dataframe_dict1[
         "create_final_community_reports"
     ]
 
+    dataframe_dict2 = _resolve_output_files(
+        config=config2,
+        output_list=[
+            "create_final_nodes.parquet",
+            "create_final_entities.parquet",
+            "create_final_communities.parquet",
+            "create_final_community_reports.parquet",
+        ],
+        optional_list=[],
+    )
+    final_nodes2: pd.DataFrame = dataframe_dict2["create_final_nodes"]
+    final_entities2: pd.DataFrame = dataframe_dict2["create_final_entities"]
+    final_communities2: pd.DataFrame = dataframe_dict2["create_final_communities"]
+    final_community_reports2: pd.DataFrame = dataframe_dict2[
+        "create_final_community_reports"
+    ]
+    
     if dry_run:
         logger.success("Dry run complete, exiting...")
         sys.exit(0)
 
     response, context_data = asyncio.run(
-        api.evaluate_responses(
-            config=config,
-            nodes=final_nodes,
-            entities=final_entities,
-            communities=final_communities,
-            community_reports=final_community_reports,
+        api.evaluate_graph(
+            config=(config1, config2),
+            nodes=(final_nodes1, final_nodes2),
+            entities=(final_entities1, final_entities2),
+            communities=(final_communities1, final_communities2),
+            community_reports=(final_community_reports1, final_community_reports2),
             response_type=response_type,
         )
     )
