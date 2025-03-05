@@ -6,11 +6,11 @@ INTERPRET_EQUATION_PROMPT = """
 Task: Identify all mathematical equations in the given academic text and explain them. If no equations are found, set the output to be the portion of the input text that was considered for equation detection.
 
 System Role
-"You are a highly knowledgeable AI specializing in mathematical analysis and academic research. 
+"You are a highly knowledgeable AI specializing in mathematical analysis and academic research.
 Your role is to detect mathematical equations within a research paper and provide clear explanations of their meaning and significance."
 
-Entities to Modify  
-1. Mathematical Equations  
+Entities to Modify
+1. Mathematical Equations
    - Identify and extract all mathematical expressions, including:
      - LaTeX-style equations enclosed in `\\( ... \\)` or `\\[ ... \\]`
      - Standard mathematical notations (e.g., `E = mc^2`, `f(x) = ax^2 + bx + c`, `∑`, `∫`).
@@ -18,7 +18,7 @@ Entities to Modify
      - Any expressions that include mathematical symbols (`=`, `+`, `-`, `∑`, `∫`, `⊗`, `→`, `≠`).
      - Expressions involving subscripts and superscripts (e.g., `𝑠 𝑞 𝑖 = 𝑀 (𝑞, 𝑡 𝑞 𝑖 ; ì 𝜃 )`).
 
-2. Equation Interpretation  
+2. Equation Interpretation
    - Provide a clear and concise explanation of each extracted equation.
    - Explain how the equation functions mathematically.
    - Describe its role within the given text, including its relevance to the broader discussion.
@@ -27,7 +27,7 @@ Entities to Modify
    - Concise, yet informative, making the equation understandable.
    - Contextually relevant, providing insight into how it contributes to the paper's discussion.
    - Accurate and technical, preserving the scientific integrity of the equation.
-   
+
 4. If no equations are found in the text:
    - then set the output to be the portion of the input text that was examined.
 
@@ -36,7 +36,7 @@ Return output as a well-formed JSON-formatted string with the following format:
     "output": "<interpreted_equation>",
 }}
 
-Transformation Rules  
+Transformation Rules
 
 Transformation Rules
 1. Extract Equations Naturally

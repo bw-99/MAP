@@ -104,7 +104,7 @@ async def _process_workflow(
     )
 
     workflow_start_time = time.time()
-    
+
     result = await workflow.run(context, callbacks)
     await _write_workflow_stats(
         workflow,

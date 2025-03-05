@@ -96,13 +96,13 @@ class GraphRagConfig(LLMConfig):
         default=SnapshotsConfig(),
     )
     """The snapshots configuration to use."""
-    
+
     equation_interpretation: EquationInterpretationConfig = Field(
         description="The equation interpretation configuration to use.",
         default=EquationInterpretationConfig(),
     )
     """The equation interpretation configuration to use."""
-    
+
     entity_extraction: EntityExtractionConfig = Field(
         description="The entity extraction configuration to use.",
         default=EntityExtractionConfig(),

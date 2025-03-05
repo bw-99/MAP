@@ -58,7 +58,7 @@ def create_final_documents(
 
         # Drop the original attribute columns after collapsing them
         rejoined.drop(columns=document_attribute_columns, inplace=True)
-        
+
     # set the final column order, but adjust for attributes
     core_columns = [
         "id",

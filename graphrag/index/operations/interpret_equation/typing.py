@@ -22,7 +22,7 @@ class BaseTextUnit:
     text: str
     document_ids: list[str]
     n_tokens: int
-    
+
 
 class EquationInterpretationResult(TypedDict):
     """Sentence Interpretation result class definition."""

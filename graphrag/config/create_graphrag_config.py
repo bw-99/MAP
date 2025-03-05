@@ -465,7 +465,7 @@ def create_graphrag_config(
                 encoding_model=encoding_model,
                 use_doc_id=entity_extraction_config.get("use_doc_id", False),
             )
-            
+
         equation_interpretation_config = values.get("equation_interpretation") or {}
         with (
             reader.envvar_prefix(Section.equation_interpretation),
