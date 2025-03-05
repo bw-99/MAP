@@ -50,7 +50,7 @@ async def run_interpret_equation(
         )
         tick()
         return result
-    
+
     interpretated_equations = await derive_from_rows(
         base_text_units,
         run_generate,

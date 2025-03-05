@@ -47,7 +47,7 @@ def build_steps(
     interpretation_strategy = equation_interpretation_config.get("strategy", {})
     interpretation_async_mode = equation_interpretation_config.get("async_mode")
     interpretation_num_threads = equation_interpretation_config.get("num_threads")
-    
+
     return [
         {
             "verb": workflow_name,
@@ -90,7 +90,7 @@ async def workflow(
         chunk_by_columns,
         chunk_strategy=chunk_strategy,
     )
-    
+
     if interpretation_enabled:
         log.info("Sentence reconstruction is enabled")
         output = await interpret_equation(
@@ -101,7 +101,7 @@ async def workflow(
             interpretation_async_mode,
             interpretation_num_threads,
         )
-        
+
     await runtime_storage.set("base_text_units", output)
 
     if snapshot_transient_enabled:

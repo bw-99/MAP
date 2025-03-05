@@ -19,5 +19,5 @@ def create_final_token2document(
     ]
     doc_refs = pd.concat(doc_refs)
     doc_refs["doc_token"] = "["+doc_refs["doc_id"].astype(str) + ":" + doc_refs["ref_id"] + "]"
-    
+
     return doc_refs.loc[:, ["title", "doc_token"]]

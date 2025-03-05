@@ -189,7 +189,7 @@ def _text_unit_workflows(
                         settings.encoding_model
                     )
                 },
-              
+
                 "equation_interpretation": {
                     "enabled": settings.equation_interpretation.enabled,
                     "strategy": settings.equation_interpretation.resolved_strategy(

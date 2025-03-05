@@ -9,5 +9,3 @@ from graphrag.index.operations.interpret_equation.interpret_equation import (
 )
 
 __all__ = ["EquationInterpretationStrategyType", "run_interpret_equation"]
-
-

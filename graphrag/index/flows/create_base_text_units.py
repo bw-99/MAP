@@ -69,7 +69,7 @@ def create_base_text_units(
     )
     # rename for downstream consumption
     chunked.rename(columns={"chunk": "text"}, inplace=True)
-    
+
 
 
     return cast("pd.DataFrame", chunked[chunked["text"].notna()].reset_index(drop=True))

@@ -74,8 +74,8 @@ async def build_index(
         logger=progress_logger,
         is_resume_run=is_resume_run,
         is_update_run=is_update_run,
-    ):  
-        outputs.append(output)     
+    ):
+        outputs.append(output)
         if progress_logger:
             if output.errors and len(output.errors) > 0:
                 progress_logger.error(output.workflow)
