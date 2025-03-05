@@ -37,8 +37,6 @@ Return output as a well-formed JSON-formatted string with the following format:
 }}
 
 Transformation Rules
-
-Transformation Rules
 1. Extract Equations Naturally
    - Identify all equations from the input text and list them explicitly.
    - Keep the equations exactly as they appear without modifications.
