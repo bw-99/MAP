@@ -23,6 +23,7 @@ from graphrag.config.models.local_search_config import LocalSearchConfig
 from graphrag.config.models.reporting_config import ReportingConfig
 from graphrag.config.models.snapshots_config import SnapshotsConfig
 from graphrag.config.models.storage_config import StorageConfig
+from graphrag.config.models.equation_interpretation_config import EquationInterpretationConfig
 from graphrag.config.models.viztree_config import VizTreeConfig
 from graphrag.config.models.summarize_descriptions_config import (
     SummarizeDescriptionsConfig,
@@ -95,7 +96,13 @@ class GraphRagConfig(LLMConfig):
         default=SnapshotsConfig(),
     )
     """The snapshots configuration to use."""
-
+    
+    equation_interpretation: EquationInterpretationConfig = Field(
+        description="The equation interpretation configuration to use.",
+        default=EquationInterpretationConfig(),
+    )
+    """The equation interpretation configuration to use."""
+    
     entity_extraction: EntityExtractionConfig = Field(
         description="The entity extraction configuration to use.",
         default=EntityExtractionConfig(),

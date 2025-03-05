@@ -16,30 +16,6 @@ from datashaper import (
 
 from graphrag.index.operations.chunk_text import chunk_text
 from graphrag.index.utils.hashing import gen_sha512_hash
-from graphrag.index.operations.equation_explainer import extract_and_explain_latex_with_llm 
-import nest_asyncio 
-import asyncio
-
-nest_asyncio.apply()
-
-
-async def process_with_llm(chunks: pd.DataFrame) -> pd.DataFrame:
-    """
-    Calls LLM asynchronously to extract and explain mathematical equations
-    from each text chunk.
-    """
-    chunks = chunks.reset_index(drop=True)
-    tasks = [extract_and_explain_latex_with_llm(row["text"]) for _, row in chunks.iterrows()]
-    results = await asyncio.gather(*tasks)
-
-    for index, result in enumerate(results):
-        if result.get("equations"):
-            equations = result["equations"]
-            explanations = result["explanations"]
-            explanation_text = "\n\n".join([f"{eq}:\n{explanations.get(eq, 'No explanation available')}" for eq in equations])
-            chunks.iloc[index, chunks.columns.get_loc("text")] += f"\n\n### LLM-based Explanation ###\n{explanation_text}"
-
-    return chunks
 
 
 def create_base_text_units(
@@ -94,9 +70,7 @@ def create_base_text_units(
     # rename for downstream consumption
     chunked.rename(columns={"chunk": "text"}, inplace=True)
     
-    # **Call LLM to add equation explanations**
-    loop = asyncio.get_event_loop()
-    chunked = loop.run_until_complete(process_with_llm(chunked))
+
 
     return cast("pd.DataFrame", chunked[chunked["text"].notna()].reset_index(drop=True))
 
