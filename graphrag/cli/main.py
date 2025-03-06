@@ -89,6 +89,7 @@ class SearchType(Enum):
     LOCAL = "local"
     GLOBAL = "global"
     DRIFT = "drift"
+    HYBRID = "hybrid"
 
     def __str__(self):
         """Return the string representation of the enum value."""
@@ -426,25 +427,6 @@ def _query_cli(
     """Query a knowledge graph index."""
     from graphrag.cli.query import run_drift_search, run_global_search, run_local_search
     
-    try:
-        search_results = hybrid_search(query, top_k=3) 
-    except Exception as e:
-        typer.echo(f"\n Error occurred during hybrid search: {e}")
-        search_results = []  
-
-    if search_results:
-        typer.echo("\n Related Results:")
-        for result in search_results:
-            typer.echo(f"- {result}")
-        return search_results 
-    
-    typer.echo(f"\n No results found for '{query}'. Running a web search...")
-    try:
-        search_online(query) 
-    except Exception as e:
-        typer.echo(f"\nError occurred during web search: {e}") 
-
-
     match method:
         case SearchType.LOCAL:
             response, context = run_local_search(
@@ -476,6 +458,24 @@ def _query_cli(
                 streaming=False,  # Drift search does not support streaming (yet)
                 query=query,
             )
+        case SearchType.HYBRID:
+            try:
+                search_results = hybrid_search(query, top_k=3)
+                if search_results:
+                    typer.echo("\n Hybrid Search Results:")
+                    for result in search_results:
+                        typer.echo(f"- {result}")
+                    return search_results  
+            except Exception as e:
+                typer.echo(f"\n Error occurred during hybrid search: {e}")
+            
+            typer.echo(f"\n No results found for '{query}'. Running a web search...")
+            try:
+                search_online(query)
+            except Exception as e:
+                typer.echo(f"\n Error occurred during web search: {e}")
+            return
+        
         case _:
             raise ValueError(INVALID_METHOD_ERROR)
     

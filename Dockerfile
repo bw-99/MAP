@@ -13,6 +13,5 @@ RUN pip3 install flask
 RUN pip3 install flask_socketio
 RUN pip3 install pytest
 RUN pip3 install faiss-cpu
-RUN pip3 install sentence-transformers
 
 ENTRYPOINT [ "/bin/bash" ]
