@@ -14,40 +14,35 @@ from datashaper import (
 from datashaper.table_store.types import VerbResult, create_verb_result
 
 from graphrag.index.config.workflow import PipelineWorkflowConfig, PipelineWorkflowStep
-from graphrag.index.flows.create_final_documents import (
-    create_final_documents,
+from graphrag.index.flows.create_base_documents import (
+    create_base_documents,
 )
 from graphrag.storage.pipeline_storage import PipelineStorage
-from graphrag.index.operations.snapshot import snapshot
 
 if TYPE_CHECKING:
     import pandas as pd
 
 
-workflow_name = "create_final_documents"
+workflow_name = "create_base_documents"
 
 
 def build_steps(
     config: PipelineWorkflowConfig,
 ) -> list[PipelineWorkflowStep]:
     """
-    Create the final token2document look-up table.
-    
+    Create the final documents table.
 
     ## Dependencies
-    * `workflow:create_base_documents`
+    * `workflow:create_base_text_units`
     """
-
-    snapshot_token2doc = config.get("snapshot_token2doc", True)
-
+    document_attribute_columns = config.get("document_attribute_columns", None)
     return [
         {
             "verb": workflow_name,
-            "args": {
-                "snapshot_token2doc": snapshot_token2doc,
-            },
+            "args": {"document_attribute_columns": document_attribute_columns},
             "input": {
-                "source": "workflow:create_base_documents",
+                "source": DEFAULT_INPUT_NAME,
+                "text_units": "workflow:create_base_text_units",
             },
         },
     ]
@@ -60,18 +55,13 @@ def build_steps(
 async def workflow(
     input: VerbInput,
     runtime_storage: PipelineStorage,
-    storage: PipelineStorage,
-    snapshot_token2doc: bool,
+    document_attribute_columns: list[str] | None = None,
     **_kwargs: dict,
 ) -> VerbResult:
-    """All the steps to create document token to document look-up table."""
-    doc_df = cast("pd.DataFrame", input.get_input())
+    """All the steps to transform final documents."""
+    source = cast("pd.DataFrame", input.get_input())
+    text_units = await runtime_storage.get("base_text_units")
 
-    output, token2doc = create_final_documents(doc_df)
-    
-    await runtime_storage.set("token2doc", token2doc)
-    
-    if snapshot_token2doc:
-        await snapshot(token2doc, name="token2doc", storage=storage,formats=["parquet"])
+    output = create_base_documents(source, text_units, document_attribute_columns)
 
     return create_verb_result(cast("Table", output))

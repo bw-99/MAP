@@ -151,7 +151,6 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
         """
         # Step 1: Generate answers for each batch of community short summaries
         llm_calls, prompt_tokens, output_tokens = {}, {}, {}
-
         start_time = time.time()
         context_result = await self.context_builder.build_context(
             query=query,
@@ -161,7 +160,6 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
         llm_calls["build_context"] = context_result.llm_calls
         prompt_tokens["build_context"] = context_result.prompt_tokens
         output_tokens["build_context"] = context_result.output_tokens
-
         if self.callbacks:
             for callback in self.callbacks:
                 callback.on_map_response_start(context_result.context_chunks)  # type: ignore
@@ -177,7 +175,6 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
         llm_calls["map"] = sum(response.llm_calls for response in map_responses)
         prompt_tokens["map"] = sum(response.prompt_tokens for response in map_responses)
         output_tokens["map"] = sum(response.output_tokens for response in map_responses)
-
         # Step 2: Combine the intermediate answers from step 2 to generate the final answer
         reduce_response = await self._reduce_response(
             map_responses=map_responses,
@@ -187,7 +184,6 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
         llm_calls["reduce"] = reduce_response.llm_calls
         prompt_tokens["reduce"] = reduce_response.prompt_tokens
         output_tokens["reduce"] = reduce_response.output_tokens
-
         return GlobalSearchResult(
             response=reduce_response.response,
             context_data=context_result.context_records,

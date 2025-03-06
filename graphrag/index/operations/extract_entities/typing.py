@@ -25,6 +25,7 @@ class Document:
 
     text: str
     id: str
+    human_readable_id: str
 
 
 @dataclass
