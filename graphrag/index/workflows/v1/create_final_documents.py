@@ -32,7 +32,7 @@ def build_steps(
 ) -> list[PipelineWorkflowStep]:
     """
     Create the final token2document look-up table.
-    
+
 
     ## Dependencies
     * `workflow:create_base_documents`
@@ -68,9 +68,9 @@ async def workflow(
     doc_df = cast("pd.DataFrame", input.get_input())
 
     output, token2doc = create_final_documents(doc_df)
-    
+
     await runtime_storage.set("token2doc", token2doc)
-    
+
     if snapshot_token2doc:
         await snapshot(token2doc, name="token2doc", storage=storage,formats=["parquet"])
 

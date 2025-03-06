@@ -54,11 +54,11 @@ async def extract_graph(
 
     # 2. transform the doc token to doc title mapping
     research_paper_entity_df["title"] = research_paper_entity_df["title"].map(token2doc_dict)
-    
+
     # 3. merge the research paper entities back to the entities dataframe
     entities = pd.concat([entities[entities["type"] != "RESEARCH PAPER"], research_paper_entity_df[entities.columns]], ignore_index=True)
     relationships = relationships[~relationships['source'].isin(anomaly_df['title']) & ~relationships['target'].isin(anomaly_df['title'])]
-    
+
     # 4. update the source and target columns to be doc title from the doc token in the relationships dataframe
     relationships['source'] = relationships['source'].apply(lambda x: token2doc_dict.get(x, x))
     relationships['target'] = relationships['target'].apply(lambda x: token2doc_dict.get(x, x))

@@ -87,6 +87,10 @@ update_index_storage:
 
 skip_workflows: []
 
+
+equation_interpretation:
+  enabled: True # if true, will interpret equation in input sentences
+  prompt: "prompts/equation_interpretation_prompt.txt"
 sentence_reconstruction:
   enabled: true # if true, will reconstruct input sentences
   prompt: "prompts/sentence_reconstruction_prompt.txt"
@@ -147,7 +151,7 @@ global_search:
   map_prompt: "prompts/global_search_map_system_prompt.txt"
   reduce_prompt: "prompts/global_search_reduce_system_prompt.txt"
   knowledge_prompt: "prompts/global_search_knowledge_system_prompt.txt"
-  evaluate_prompt: "prompts/evaluate_response.txt"
+  evaluate_prompt: "prompts/evaluate_graph.txt"
   
 drift_search:
   prompt: "prompts/drift_search_system_prompt.txt"

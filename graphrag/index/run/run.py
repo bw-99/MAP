@@ -244,7 +244,6 @@ async def run_pipeline(
     dataset = await _run_post_process_steps(
         input_post_process_steps, dataset, context, callback_chain
     )
-
     # ensure the incoming data is valid
     _validate_dataset(dataset)
 
