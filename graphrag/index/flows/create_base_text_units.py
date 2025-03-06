@@ -70,8 +70,9 @@ def create_base_text_units(
     # rename for downstream consumption
     chunked.rename(columns={"chunk": "text"}, inplace=True)
 
-    return cast("pd.DataFrame", chunked[chunked["text"].notna()].reset_index(drop=True))
 
+
+    return cast("pd.DataFrame", chunked[chunked["text"].notna()].reset_index(drop=True))
 
 # TODO: would be nice to inline this completely in the main method with pandas
 def _aggregate_df(

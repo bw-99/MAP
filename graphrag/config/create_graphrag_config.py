@@ -42,6 +42,7 @@ from graphrag.config.models.global_search_config import GlobalSearchConfig
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.config.models.input_config import InputConfig
 from graphrag.config.models.core_concet_extraction_config import CoreConceptExtractionConfig
+from graphrag.config.models.equation_interpretation_config import EquationInterpretationConfig
 from graphrag.config.models.sentence_reconstruction_config import SentenceReconstructionConfig
 from graphrag.config.models.viztree_config import VizTreeConfig
 from graphrag.config.models.llm_parameters import LLMParameters
@@ -466,7 +467,7 @@ def create_graphrag_config(
                 encoding_model=encoding_model,
                 use_doc_id=entity_extraction_config.get("use_doc_id", False),
             )
-        
+
         sentence_reconstruction_config = values.get("sentence_reconstruction") or {}
         with (
             reader.envvar_prefix(Section.sentence_reconstruction),
@@ -481,6 +482,22 @@ def create_graphrag_config(
                 prompt=reader.str("prompt", Fragment.prompt_file),
                 enabled=reader.str("enabled", True),
                 strategy=sentence_reconstruction_config.get("strategy"),
+            )
+
+        equation_interpretation_config = values.get("equation_interpretation") or {}
+        with (
+            reader.envvar_prefix(Section.equation_interpretation),
+            reader.use(equation_interpretation_config),
+        ):
+            equation_interpretation_model = EquationInterpretationConfig(
+                llm=hydrate_llm_params(equation_interpretation_config, llm_model),
+                parallelization=hydrate_parallelization_params(
+                    equation_interpretation_config, llm_parallelization_model
+                ),
+                async_mode=hydrate_async_type(equation_interpretation_config, async_mode),
+                prompt=reader.str("prompt", Fragment.prompt_file),
+                enabled=reader.str("enabled", default_value=True),
+                strategy=equation_interpretation_config.get("strategy"),
             )
 
         claim_extraction_config = values.get("claim_extraction") or {}
@@ -691,6 +708,7 @@ def create_graphrag_config(
         chunks=chunks_model,
         snapshots=snapshots_model,
         entity_extraction=entity_extraction_model,
+        equation_interpretation=equation_interpretation_model,
         sentence_reconstruction=sentence_reconstruction_model,
         claim_extraction=claim_extraction_model,
         community_reports=community_reports_model,
@@ -761,6 +779,7 @@ class Section(str, Enum):
     viztree = "VIZTREE"
     embedding = "EMBEDDING"
     entity_extraction = "ENTITY_EXTRACTION"
+    equation_interpretation = "EQUATION_INTERPRETATION"
     sentence_reconstruction = "SENTENCE_RECONSTRUCTION"
     graphrag = "GRAPHRAG"
     input = "INPUT"
