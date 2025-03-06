@@ -2,56 +2,38 @@ import pytest
 import pandas as pd
 from pathlib import Path
 import yaml
-import os
 
-def change_directory(root_path):
-    try:
-        os.chdir(root_path)
-        print(f"Changed working directory to: {root_path}")
-    except Exception as e:
-        pytest.fail(f"Failed to change directory: {e}")
+def load_viztree(root_path, file_name="create_final_viztree.parquet"):
+    file_path = root_path / "output" / file_name
+    assert file_path.exists(), f"Parquet file not found: {file_path}"
 
-def load_parquet_file(root_path):
-    file_path = root_path / "output/create_final_viztree.parquet"
-    if not file_path.exists():
-        pytest.fail(f"Parquet file not found: {file_path}")
-
-    try:
-        df = pd.read_parquet(file_path)
-        print("Unique types in Parquet file:", df["type"].unique()) 
-    except Exception as e:
-        pytest.fail(f"Failed to load parquet file: {e}")
+    df = pd.read_parquet(file_path)
+    print("Unique types in Parquet file:", df["type"].unique())  
     return df
 
 def load_entity_types(root_path):
     yaml_path = root_path / "settings.yaml"
-    if not yaml_path.exists():
-        pytest.fail(f"Settings file not found: {yaml_path}")
+    assert yaml_path.exists(), f"Settings file not found: {yaml_path}"
 
-    try:
-        with yaml_path.open("r", encoding="utf-8") as file:
-            config = yaml.safe_load(file)
-            entity_types = config.get("entity_extraction", {}).get("entity_types", [])
-            
-            if not entity_types:
-                pytest.fail("No entity types found in settings.yaml")
-
-            print("Loaded entity types:", entity_types)
-            return entity_types
-    except Exception as e:
-        pytest.fail(f"Failed to load settings file: {e}")
+    with yaml_path.open("r", encoding="utf-8") as file:
+        config = yaml.safe_load(file)
+        entity_types = config.get("entity_extraction", {}).get("entity_types", [])
+    
+    assert entity_types, "No entity types found in settings.yaml"
+    
+    print("Loaded entity types:", entity_types)
+    return entity_types
 
 def test_parent_no_negative_one_for_entity_types(root_path):
-    change_directory(root_path)
-    df = load_parquet_file(root_path)
+    df = load_viztree(root_path)
     entity_types = load_entity_types(root_path)
 
-    print("Filtering DataFrame with entity types:", entity_types) 
+    print("Filtering DataFrame with entity types:", entity_types)  
     
     filtered_df = df[df["type"].isin(entity_types)]
     
     print("Filtered DataFrame shape:", filtered_df.shape)  
-    
+
     if filtered_df.empty:
         print("No relevant data found after filtering. Skipping test.") 
         pytest.skip("No relevant data to test in the Parquet file.")
