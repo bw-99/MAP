@@ -10,6 +10,7 @@ from datashaper import (
     AsyncType,
     Table,
     VerbCallbacks,
+    VerbInput,
     verb,
 )
 from datashaper.table_store.types import VerbResult, create_verb_result
@@ -24,6 +25,8 @@ from graphrag.index.operations.snapshot import snapshot
 from graphrag.index.operations.snapshot_graphml import snapshot_graphml
 from graphrag.storage.pipeline_storage import PipelineStorage
 
+from graphrag.index.utils.ds_util import get_named_input_table, get_required_input_table
+
 workflow_name = "extract_graph"
 
 
@@ -35,6 +38,7 @@ def build_steps(
 
     ## Dependencies
     * `workflow:create_base_text_units`
+    * `workflow:create_final_documents`
     """
     entity_extraction_config = config.get("entity_extract", {})
     async_mode = entity_extraction_config.get("async_mode", AsyncType.AsyncIO)
@@ -49,6 +53,11 @@ def build_steps(
     snapshot_graphml = config.get("snapshot_graphml", False) or False
     snapshot_transient = config.get("snapshot_transient", False) or False
 
+    input = {
+        "source": "workflow:create_base_text_units",
+        "documents": "workflow:create_final_documents",
+    }
+
     return [
         {
             "verb": workflow_name,
@@ -62,7 +71,7 @@ def build_steps(
                 "snapshot_graphml_enabled": snapshot_graphml,
                 "snapshot_transient_enabled": snapshot_transient,
             },
-            "input": ({"source": "workflow:create_base_text_units"}),
+            "input": input,
         },
     ]
 
@@ -72,6 +81,7 @@ def build_steps(
     treats_input_tables_as_immutable=True,
 )
 async def workflow(
+    input: VerbInput,
     callbacks: VerbCallbacks,
     cache: PipelineCache,
     storage: PipelineStorage,
@@ -88,9 +98,26 @@ async def workflow(
 ) -> VerbResult:
     """All the steps to create the base entity graph."""
     text_units = await runtime_storage.get("base_text_units")
+    
+    # doc token to doc title mapping
+    token2doc_df = await runtime_storage.get("token2doc")
+    token2doc_dict = token2doc_df["title"].to_dict()
+
+    # augment text_units with human_readable_id to use as a distinct identifier for each doc reference
+    doc_units = cast("pd.DataFrame", get_required_input_table(input, "documents").table)
+
+    columns_to_use = list(text_units.columns) + ["human_readable_id"]
+    text_units = (
+        text_units.explode("document_ids")
+        .merge(doc_units[["id", "human_readable_id"]], left_on="document_ids", right_on="id")
+        .rename(columns={"id_x": "id"})
+        .groupby("id").agg({"document_ids": list, "text": " ".join, "human_readable_id": "first", "n_tokens": "first"}).reset_index()
+    )
+    text_units = text_units[columns_to_use]
 
     base_entity_nodes, base_relationship_edges = await extract_graph(
         text_units,
+        token2doc_dict,
         callbacks,
         cache,
         extraction_strategy=extraction_strategy,

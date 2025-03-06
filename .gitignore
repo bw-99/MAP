@@ -5,4 +5,8 @@ __pycache__
 .github
 example
 *.zip
-onepiece_rag
+.venv
+!onepiece_rag/
+onepiece_rag/*
+!onepiece_rag/settings.yaml
+!onepiece_rag/prompts

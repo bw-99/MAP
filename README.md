@@ -8,7 +8,6 @@
 ### Run GraphRAG
 1. Enter the container via `docker attach con`
 2. `python3 -m graphrag ${command}` [command](https://microsoft.github.io/graphrag/get_started/)
-   1. ex) `python3 -m graphrag init --root ./ragtest`
 
 ### Dev dependency
 1. Install pre-commit on your dev environment (not docker, terminal you choose to use `git commit`) via `pip install pre-commit`
@@ -16,7 +15,8 @@
 ### Tutorial
 0. 프로젝트 폴더에 example 폴더 생성
 1. (플젝 초기화) `python3 -m graphrag init --root ./example`
-2. (환경설정 가져오기) onepiece_rag 폴더 안에 prompts, setting.yml, .env를 example 안에 같은 파일/폴더 덮어씌우기
+2. (환경설정 가져오기) onepiece_rag 폴더 안에 prompts, setting.yml을 example 안에 같은 파일/폴더 덮어씌우기
+3. (API key) example 폴더 아래에 .env 생성 & 개인적으로 전달받은 내용 작성
 4. (디버깅용 데이터 준비하기) `python3 util/debugging_data.py --root example --num_example 1`
 5. (인덱싱) `python3 -m graphrag index --root ./example`
 6. (결과) example/output/create_final_viztree 파일 pandas로 열기
@@ -31,9 +31,9 @@
 2. python -m spacy download en_core_web_sm
 
 ### Scripts
-1. Run `python3 util/arxiv.py` to fetch relavant research papers and corresponding meta-data from arxiv.org
-2. Run `python3 util/parse.py` to download the whole paper and parse the paper
-3. Run `python3 util/debugging_data.py --root onepiece_rag --num_example 1` to generate the data for debugging
+1. Run `python3 -m util.arxiv` to fetch relavant research papers and corresponding meta-data from arxiv.org
+2. Run `python3 -m util.parse` to download the whole paper and parse the paper
+3. Run `python3 -m util.debugging_data --root onepiece_rag --num_example 1` to generate the data for debugging
 
 ## How to Run (use deploy version)
 1. cd to workspace

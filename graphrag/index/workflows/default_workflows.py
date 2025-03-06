@@ -46,6 +46,12 @@ from graphrag.index.workflows.v1.create_final_covariates import (
 from graphrag.index.workflows.v1.create_final_covariates import (
     workflow_name as create_final_covariates,
 )
+from graphrag.index.workflows.v1.create_base_documents import (
+    build_steps as build_create_base_documents_steps,
+)
+from graphrag.index.workflows.v1.create_base_documents import (
+    workflow_name as create_base_documents,
+)
 from graphrag.index.workflows.v1.create_final_documents import (
     build_steps as build_create_final_documents_steps,
 )
@@ -98,6 +104,7 @@ default_workflows: WorkflowDefinitions = {
     extract_core_concept: build_extract_concept_steps,
     create_final_nodes: build_create_final_nodes_steps,
     create_final_relationships: build_create_final_relationships_steps,
+    create_base_documents: build_create_base_documents_steps,
     create_final_documents: build_create_final_documents_steps,
     create_final_covariates: build_create_final_covariates_steps,
     create_final_entities: build_create_final_entities_steps,

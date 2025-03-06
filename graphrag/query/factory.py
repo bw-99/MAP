@@ -161,7 +161,6 @@ def get_global_search_engine(
         response_type=response_type,
     )
 
-
 def get_drift_search_engine(
     config: GraphRagConfig,
     reports: list[CommunityReport],

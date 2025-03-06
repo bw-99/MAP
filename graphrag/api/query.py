@@ -124,7 +124,6 @@ async def global_search(
     context_data = _reformat_context_data(result.context_data)  # type: ignore
     return response, context_data
 
-
 @validate_call(config={"arbitrary_types_allowed": True})
 async def global_search_streaming(
     config: GraphRagConfig,
