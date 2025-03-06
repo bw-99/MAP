@@ -36,12 +36,14 @@ async def _run_post_process_steps(
     Returns:
         - output - The dataset after running the post process steps
     """
+
     if post_process:
         input_workflow = create_workflow(
             "Input Post Process",
             post_process,
         )
         input_workflow.add_table(DEFAULT_INPUT_NAME, dataset)
+
         await input_workflow.run(
             context=context,
             callbacks=callbacks,
