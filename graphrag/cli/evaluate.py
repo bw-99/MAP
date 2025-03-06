@@ -23,27 +23,27 @@ logger = PrintProgressLogger("")
 
 def evaluate_cli(
     config_filepath: Path | None,
-    root_dir1: Path,
-    root_dir2: Path,
+    root_exp: Path,
+    root_ctl: Path,
     response_type: str,
     dry_run: bool,
 ):
     """Run the pipeline with the given config."""
-    root = root_dir1.resolve()
-    config1 = load_config(root, config_filepath)
+    root = root_exp.resolve()
+    config_exp = load_config(root, config_filepath)
     
-    root = root_dir2.resolve()
-    config2 = load_config(root, config_filepath)
+    root = root_ctl.resolve()
+    config_ctl = load_config(root, config_filepath)
     _run_evaluate(
-        config1=config1,
-        config2=config2,
+        config_exp=config_exp,
+        config_ctl=config_ctl,
         dry_run=dry_run,
         response_type=response_type,
     )
 
 def _run_evaluate(
-    config1,
-    config2,
+    config_exp,
+    config_ctl,
     dry_run,
     response_type,
 ):
@@ -52,11 +52,11 @@ def _run_evaluate(
     Loads index files required for evaluation and runs the evaluation pipeline."""
     
     # config.storage.base_dir = str(data_dir) if data_dir else config.storage.base_dir
-    resolve_paths(config1)
-    resolve_paths(config2)
+    resolve_paths(config_exp)
+    resolve_paths(config_ctl)
     
-    dataframe_dict1 = _resolve_output_files(
-        config=config1,
+    dataframe_dict_exp = _resolve_output_files(
+        config=config_exp,
         output_list=[
             "create_final_nodes.parquet",
             "create_final_entities.parquet",
@@ -65,15 +65,15 @@ def _run_evaluate(
         ],
         optional_list=[],
     )
-    final_nodes1: pd.DataFrame = dataframe_dict1["create_final_nodes"]
-    final_entities1: pd.DataFrame = dataframe_dict1["create_final_entities"]
-    final_communities1: pd.DataFrame = dataframe_dict1["create_final_communities"]
-    final_community_reports1: pd.DataFrame = dataframe_dict1[
+    final_nodes_exp: pd.DataFrame = dataframe_dict_exp["create_final_nodes"]
+    final_entities_exp: pd.DataFrame = dataframe_dict_exp["create_final_entities"]
+    final_communities_exp: pd.DataFrame = dataframe_dict_exp["create_final_communities"]
+    final_community_reports_exp: pd.DataFrame = dataframe_dict_exp[
         "create_final_community_reports"
     ]
 
-    dataframe_dict2 = _resolve_output_files(
-        config=config2,
+    dataframe_dict_ctl = _resolve_output_files(
+        config=config_ctl,
         output_list=[
             "create_final_nodes.parquet",
             "create_final_entities.parquet",
@@ -82,10 +82,10 @@ def _run_evaluate(
         ],
         optional_list=[],
     )
-    final_nodes2: pd.DataFrame = dataframe_dict2["create_final_nodes"]
-    final_entities2: pd.DataFrame = dataframe_dict2["create_final_entities"]
-    final_communities2: pd.DataFrame = dataframe_dict2["create_final_communities"]
-    final_community_reports2: pd.DataFrame = dataframe_dict2[
+    final_nodes_ctl: pd.DataFrame = dataframe_dict_ctl["create_final_nodes"]
+    final_entities_ctl: pd.DataFrame = dataframe_dict_ctl["create_final_entities"]
+    final_communities_ctl: pd.DataFrame = dataframe_dict_ctl["create_final_communities"]
+    final_community_reports_ctl: pd.DataFrame = dataframe_dict_ctl[
         "create_final_community_reports"
     ]
     
@@ -95,11 +95,11 @@ def _run_evaluate(
 
     response, context_data = asyncio.run(
         api.evaluate_graph(
-            config=(config1, config2),
-            nodes=(final_nodes1, final_nodes2),
-            entities=(final_entities1, final_entities2),
-            communities=(final_communities1, final_communities2),
-            community_reports=(final_community_reports1, final_community_reports2),
+            config=(config_exp, config_ctl),
+            nodes=(final_nodes_exp, final_nodes_ctl),
+            entities=(final_entities_exp, final_entities_ctl),
+            communities=(final_communities_exp, final_communities_ctl),
+            community_reports=(final_community_reports_exp, final_community_reports_ctl),
             response_type=response_type,
         )
     )
