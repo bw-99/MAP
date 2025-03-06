@@ -43,6 +43,7 @@ from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.config.models.input_config import InputConfig
 from graphrag.config.models.core_concet_extraction_config import CoreConceptExtractionConfig
 from graphrag.config.models.equation_interpretation_config import EquationInterpretationConfig
+from graphrag.config.models.sentence_reconstruction_config import SentenceReconstructionConfig
 from graphrag.config.models.viztree_config import VizTreeConfig
 from graphrag.config.models.llm_parameters import LLMParameters
 from graphrag.config.models.local_search_config import LocalSearchConfig
@@ -430,6 +431,7 @@ def create_graphrag_config(
                 graphml=reader.bool("graphml") or defs.SNAPSHOTS_GRAPHML,
                 embeddings=reader.bool("embeddings") or defs.SNAPSHOTS_EMBEDDINGS,
                 transient=reader.bool("transient") or defs.SNAPSHOTS_TRANSIENT,
+                token2doc=reader.bool("token2doc") or defs.SNAPSHOTS_TOKEN2DOC,
             )
         with reader.envvar_prefix(Section.umap), reader.use(values.get("umap")):
             umap_model = UmapConfig(
@@ -464,6 +466,22 @@ def create_graphrag_config(
                 strategy=entity_extraction_config.get("strategy"),
                 encoding_model=encoding_model,
                 use_doc_id=entity_extraction_config.get("use_doc_id", False),
+            )
+
+        sentence_reconstruction_config = values.get("sentence_reconstruction") or {}
+        with (
+            reader.envvar_prefix(Section.sentence_reconstruction),
+            reader.use(sentence_reconstruction_config),
+        ):
+            sentence_reconstruction_model = SentenceReconstructionConfig(
+                llm=hydrate_llm_params(sentence_reconstruction_config, llm_model),
+                parallelization=hydrate_parallelization_params(
+                    sentence_reconstruction_config, llm_parallelization_model
+                ),
+                async_mode=hydrate_async_type(sentence_reconstruction_config, async_mode),
+                prompt=reader.str("prompt", Fragment.prompt_file),
+                enabled=reader.str("enabled", True),
+                strategy=sentence_reconstruction_config.get("strategy"),
             )
 
         equation_interpretation_config = values.get("equation_interpretation") or {}
@@ -609,6 +627,7 @@ def create_graphrag_config(
                 map_prompt=reader.str("map_prompt") or None,
                 reduce_prompt=reader.str("reduce_prompt") or None,
                 knowledge_prompt=reader.str("knowledge_prompt") or None,
+                evaluate_prompt=reader.str("evaluate_prompt") or None,
                 temperature=reader.float("llm_temperature")
                 or defs.GLOBAL_SEARCH_LLM_TEMPERATURE,
                 top_p=reader.float("llm_top_p") or defs.GLOBAL_SEARCH_LLM_TOP_P,
@@ -690,6 +709,7 @@ def create_graphrag_config(
         snapshots=snapshots_model,
         entity_extraction=entity_extraction_model,
         equation_interpretation=equation_interpretation_model,
+        sentence_reconstruction=sentence_reconstruction_model,
         claim_extraction=claim_extraction_model,
         community_reports=community_reports_model,
         core_concept_extraction=core_concept_extractions_model,
@@ -760,6 +780,7 @@ class Section(str, Enum):
     embedding = "EMBEDDING"
     entity_extraction = "ENTITY_EXTRACTION"
     equation_interpretation = "EQUATION_INTERPRETATION"
+    sentence_reconstruction = "SENTENCE_RECONSTRUCTION"
     graphrag = "GRAPHRAG"
     input = "INPUT"
     llm = "LLM"
