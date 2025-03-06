@@ -20,6 +20,7 @@ from graphrag.prompt_tune.defaults import (
     K,
 )
 from graphrag.prompt_tune.types import DocSelectionType
+from graphrag.query.query_handler import (hybrid_search, search_online)
 
 INVALID_METHOD_ERROR = "Invalid method"
 
@@ -359,8 +360,7 @@ def _prompt_tune_cli(
             min_examples_required=min_examples_required,
         )
     )
-
-
+    
 @app.command("query")
 def _query_cli(
     method: Annotated[SearchType, typer.Option(help="The query algorithm to use.")],
@@ -425,6 +425,15 @@ def _query_cli(
 ):
     """Query a knowledge graph index."""
     from graphrag.cli.query import run_drift_search, run_global_search, run_local_search
+    search_results = hybrid_search(query, top_k=3)
+    
+    if search_results:
+        typer.echo("\n🔎 Related Results:")
+        for result in search_results:
+            typer.echo(f"- {result}")
+        return search_results 
+    typer.echo(f"\n❌ No results found for '{query}'. Running a web search...")
+    search_online(query)
 
     match method:
         case SearchType.LOCAL:
