@@ -67,24 +67,25 @@ async def evaluate_graph(
     Returns
     -------
     """
-    communities_1 = read_indexer_communities(communities[0], nodes[0], community_reports[0])
-    communities_2 = read_indexer_communities(communities[1], nodes[1], community_reports[1])
+    # Make sure your data be placed in the right order (exp, ctl)
+    communities_exp = read_indexer_communities(communities[0], nodes[0], community_reports[0])
+    communities_ctl = read_indexer_communities(communities[1], nodes[1], community_reports[1])
     
-    reports_1 = read_indexer_reports(
+    reports_exp = read_indexer_reports(
         community_reports[0],
         nodes[0],
         community_level=None,
         dynamic_community_selection=False,
     )
-    reports_2 = read_indexer_reports(
+    reports_ctl = read_indexer_reports(
         community_reports[1],
         nodes[1],
         community_level=None,
         dynamic_community_selection=False,
     )
     
-    entities_1 = read_indexer_entities(nodes[0], entities[0], community_level=None)
-    entities_2 = read_indexer_entities(nodes[1], entities[1], community_level=None)
+    entities_exp = read_indexer_entities(nodes[0], entities[0], community_level=None)
+    entities_ctl = read_indexer_entities(nodes[1], entities[1], community_level=None)
     
     # default setting is on the first config
     map_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.map_prompt) 
@@ -100,9 +101,9 @@ async def evaluate_graph(
     
     if True:
         # combine the two dataframes
-        communities_ = communities_1 + communities_2
-        reports_ = reports_1 + reports_2
-        entities_ = entities_1 + entities_2
+        communities_ = communities_exp + communities_ctl
+        reports_ = reports_exp + reports_ctl
+        entities_ = entities_exp + entities_ctl
     else:
         raise NotImplementedError("Not implemented yet")
     
