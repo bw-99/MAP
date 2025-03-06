@@ -1,27 +1,15 @@
 # Copyright (c) 2024 Microsoft Corporation.
 # Licensed under the MIT License
 
-"""All the steps to transform final documents."""
+"""All the steps to create document token to document look-up table."""
+
 import pandas as pd
 import json
 
-def create_final_documents(
+def create_final_token2document(
     doc_df: pd.DataFrame,
 ) -> pd.DataFrame:
-    """All the steps to create final processed documents."""
-
-    # Get title to doc_token mapping
-    token2doc = create_final_token2doc(doc_df)
-
-    # Maybe add more processing here
-    # doc_df = ...
-
-    return doc_df, token2doc
-
-
-def create_final_token2doc(
-    doc_df: pd.DataFrame,
-) -> pd.DataFrame:
+    """All the steps to create document token to document look-up table."""
     doc_refs = [
     pd.DataFrame(
             json.load(open(f"data/parsed/{fname}.json"))["references"]
@@ -31,5 +19,5 @@ def create_final_token2doc(
     ]
     doc_refs = pd.concat(doc_refs)
     doc_refs["doc_token"] = "["+doc_refs["doc_id"].astype(str) + ":" + doc_refs["ref_id"] + "]"
-    token2doc = doc_refs[["doc_token", "title"]].set_index("doc_token")
-    return token2doc
+
+    return doc_refs.loc[:, ["title", "doc_token"]]

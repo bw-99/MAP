@@ -40,7 +40,7 @@ class EntityExtractionConfig(LLMConfig):
         from graphrag.index.operations.extract_entities import (
             ExtractEntityStrategyType,
         )
-        
+
         return self.strategy or {
             "type": ExtractEntityStrategyType.graph_intelligence,
             "llm": self.llm.model_dump(),

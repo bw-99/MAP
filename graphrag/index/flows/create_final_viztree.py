@@ -32,7 +32,7 @@ async def create_final_viztree(
 
     # 2. Remove orphan entities
     node_df = node_df[node_df["community"] != -1].reset_index(drop=True)
-    
+
     # 3. Add research paper entities into graph as a leaf node
     papers_node_df = node_df
     if not include_concept:

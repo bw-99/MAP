@@ -41,19 +41,19 @@ if TYPE_CHECKING:
 logger = PrintProgressLogger("")
 
 @validate_call(config={"arbitrary_types_allowed": True})
-async def evaluate_responses(
-    config: GraphRagConfig,
-    nodes: pd.DataFrame,
-    entities: pd.DataFrame,
-    communities: pd.DataFrame,
-    community_reports: pd.DataFrame,
+async def evaluate_graph(
+    config: tuple[GraphRagConfig, GraphRagConfig],
+    nodes: tuple[pd.DataFrame, pd.DataFrame],
+    entities: tuple[pd.DataFrame, pd.DataFrame],
+    communities: tuple[pd.DataFrame, pd.DataFrame],
+    community_reports: tuple[pd.DataFrame, pd.DataFrame],
     response_type: str,
 ) -> tuple[
     str | dict[str, Any] | list[dict[str, Any]],
     str | list[pd.DataFrame] | dict[str, pd.DataFrame],
 ]:
 
-    """Evaluate responses.
+    """Evaluate two graphs.
 
     Parameters
     ----------
@@ -67,30 +67,49 @@ async def evaluate_responses(
     Returns
     -------
     """
-    communities_ = read_indexer_communities(communities, nodes, community_reports)
-    reports = read_indexer_reports(
-        community_reports,
-        nodes,
+    # Make sure your data be placed in the right order (exp, ctl)
+    communities_exp = read_indexer_communities(communities[0], nodes[0], community_reports[0])
+    communities_ctl = read_indexer_communities(communities[1], nodes[1], community_reports[1])
+    
+    reports_exp = read_indexer_reports(
+        community_reports[0],
+        nodes[0],
         community_level=None,
         dynamic_community_selection=False,
     )
-    entities_ = read_indexer_entities(nodes, entities, community_level=None)
-    map_prompt = _load_search_prompt(config.root_dir, config.global_search.map_prompt)
-    reduce_prompt = _load_search_prompt(
-        config.root_dir, config.global_search.reduce_prompt
-    )
-    knowledge_prompt = _load_search_prompt(
-        config.root_dir, config.global_search.knowledge_prompt
+    reports_ctl = read_indexer_reports(
+        community_reports[1],
+        nodes[1],
+        community_level=None,
+        dynamic_community_selection=False,
     )
     
-    # Get evaluating prompt
-    ################################################################################################
-    evaluate_prompt = _load_search_prompt(
-        config.root_dir, config.global_search.evaluate_prompt
+    entities_exp = read_indexer_entities(nodes[0], entities[0], community_level=None)
+    entities_ctl = read_indexer_entities(nodes[1], entities[1], community_level=None)
+    
+    # default setting is on the first config
+    map_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.map_prompt) 
+    reduce_prompt = _load_search_prompt(
+        config[0].root_dir, config[0].global_search.reduce_prompt
     )
+    knowledge_prompt = _load_search_prompt(
+        config[0].root_dir, config[0].global_search.knowledge_prompt
+    )
+    evaluate_prompt = _load_search_prompt(
+        config[0].root_dir, config[0].global_search.evaluate_prompt
+    )
+    
+    if True:
+        # combine the two dataframes
+        communities_ = communities_exp + communities_ctl
+        reports_ = reports_exp + reports_ctl
+        entities_ = entities_exp + entities_ctl
+    else:
+        raise NotImplementedError("Not implemented yet")
+    
     search_engine = get_evaluate_search_engine(
-        config,
-        reports=reports,
+        config[0],
+        reports=reports_,
         entities=entities_,
         communities=communities_,
         response_type=response_type,

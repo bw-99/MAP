@@ -163,6 +163,7 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
         if self.callbacks:
             for callback in self.callbacks:
                 callback.on_map_response_start(context_result.context_chunks)  # type: ignore
+                
         map_responses = await asyncio.gather(*[
             self._map_response_single_batch(
                 context_data=data, query=query, **self.map_llm_params
