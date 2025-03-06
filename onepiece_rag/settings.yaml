@@ -85,11 +85,15 @@ update_index_storage:
 
 ### Workflow settings ###
 
-# skip_workflows: [extract_graph, compute_communities, create_final_entities, create_final_relationships, create_final_nodes, create_final_community_reports, create_final_text_units]
 skip_workflows: []
 
+sentence_reconstruction:
+  enabled: true # if true, will reconstruct input sentences
+  prompt: "prompts/sentence_reconstruction_prompt.txt"
+
 entity_extraction:
-  prompt: "prompts/entity_extraction_with_researchpaper.txt"
+  # sentence reconstruction이 활성화되어 있지 않을 경우, entity_extraction_with_researchpaper.txt를 사용해야 함
+  prompt: "prompts/entity_extraction_with_reconstructed_sentence.txt"
   entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
   max_gleanings: 1
   use_doc_id: true
@@ -143,6 +147,7 @@ global_search:
   map_prompt: "prompts/global_search_map_system_prompt.txt"
   reduce_prompt: "prompts/global_search_reduce_system_prompt.txt"
   knowledge_prompt: "prompts/global_search_knowledge_system_prompt.txt"
-
+  evaluate_prompt: "prompts/evaluate_response.txt"
+  
 drift_search:
   prompt: "prompts/drift_search_system_prompt.txt"
