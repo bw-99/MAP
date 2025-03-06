@@ -79,18 +79,18 @@ Example 2:
 
 entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
 doc_id: 104
-text: Mainly, smart transportation and traffic management are highly needed as one can say they broadly influence almost every aspect of the smart cities operation on daily bases [4]. 
-In particular, trip route planning receives great interest particularly in big and crowded cities [4,5]. 
+text: Mainly, smart transportation and traffic management are highly needed as one can say they broadly influence almost every aspect of the smart cities operation on daily bases [4].
+In particular, trip route planning receives great interest particularly in big and crowded cities [4,5].
 Principally, trip planning applications and service providers afford route recommendations based on relatively shorter paths, traffic congestion and even with up to date construction works [6].
-Consequently, some of the route planning key players as Google have adopted online dynamic routing driven by live traffic network information. 
-For example, Google maps provide an online suggestion for vehicle re-routing when roads are experiencing instantaneous traffic congestion based on many factors such as untraditional mobility behavior or accidents. 
-On the other hand, corwdsensed based trip planning application Waze [7] relies on lively sensed traffic situations which shared with the users' intervention. 
-APOLO [8] system was introduced to overcome the network overload introduced in many of the traffic management systems because of information exchange between vehicles and servers. 
-This system proposed a centralized traffic monitoring system that works on both online and offline bases. 
-In the offline stage, mobility patterns are conducted by historical data processing while in the online stage vehicles are re-routed away from the congested routes. 
+Consequently, some of the route planning key players as Google have adopted online dynamic routing driven by live traffic network information.
+For example, Google maps provide an online suggestion for vehicle re-routing when roads are experiencing instantaneous traffic congestion based on many factors such as untraditional mobility behavior or accidents.
+On the other hand, corwdsensed based trip planning application Waze [7] relies on lively sensed traffic situations which shared with the users' intervention.
+APOLO [8] system was introduced to overcome the network overload introduced in many of the traffic management systems because of information exchange between vehicles and servers.
+This system proposed a centralized traffic monitoring system that works on both online and offline bases.
+In the offline stage, mobility patterns are conducted by historical data processing while in the online stage vehicles are re-routed away from the congested routes.
 The results showed travel time reduction of 17 % along with a speed increase of 6% compared to present approaches.\n
-In addition, various efforts in the literature provided suggestions to enable shorter and faster routing for land vehicles. In [9], an adaptive routing approach was introduced and dealt with route planning as a probabilistic dynamic problem. 
-In their algorithms, they aimed to reduce the predicted en route trip time while considering broadcasted traffic information, onboard based traffic state measurement, and historical traffic patterns. 
+In addition, various efforts in the literature provided suggestions to enable shorter and faster routing for land vehicles. In [9], an adaptive routing approach was introduced and dealt with route planning as a probabilistic dynamic problem.
+In their algorithms, they aimed to reduce the predicted en route trip time while considering broadcasted traffic information, onboard based traffic state measurement, and historical traffic patterns.
 ------------------------
 output:
 ("entity"{tuple_delimiter}smart transportation{tuple_delimiter}CONCEPT{tuple_delimiter}Advanced, technology-driven solutions aimed at improving transport efficiency, safety, and sustainability in urban environments)

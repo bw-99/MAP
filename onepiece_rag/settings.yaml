@@ -85,11 +85,19 @@ update_index_storage:
 
 ### Workflow settings ###
 
-# skip_workflows: [extract_graph, compute_communities, create_final_entities, create_final_relationships, create_final_nodes, create_final_community_reports, create_final_text_units]
 skip_workflows: []
 
+
+equation_interpretation:
+  enabled: True # if true, will interpret equation in input sentences
+  prompt: "prompts/equation_interpretation_prompt.txt"
+sentence_reconstruction:
+  enabled: true # if true, will reconstruct input sentences
+  prompt: "prompts/sentence_reconstruction_prompt.txt"
+
 entity_extraction:
-  prompt: "prompts/entity_extraction_with_researchpaper.txt"
+  # sentence reconstruction이 활성화되어 있지 않을 경우, entity_extraction_with_researchpaper.txt를 사용해야 함
+  prompt: "prompts/entity_extraction_with_reconstructed_sentence.txt"
   entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
   max_gleanings: 1
   use_doc_id: true
@@ -130,6 +138,7 @@ snapshots:
   graphml: false
   embeddings: false
   transient: false
+  token2doc: true
 
 ### Query settings ###
 ## The prompt locations are required here, but each search method has a number of optional knobs that can be tuned.
