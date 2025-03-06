@@ -428,11 +428,11 @@ def _query_cli(
     search_results = hybrid_search(query, top_k=3)
     
     if search_results:
-        typer.echo("\n🔎 Related Results:")
+        typer.echo("\n Related Results:")
         for result in search_results:
             typer.echo(f"- {result}")
         return search_results 
-    typer.echo(f"\n❌ No results found for '{query}'. Running a web search...")
+    typer.echo(f"\n No results found for '{query}'. Running a web search...")
     search_online(query)
 
     match method:
