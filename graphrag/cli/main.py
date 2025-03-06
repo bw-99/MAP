@@ -476,23 +476,23 @@ def _evaluate_cli(
             ),
         ),
     ] = None,
-    data: Annotated[
-        Path | None,
+    root1: Annotated[
+        Path,
         typer.Option(
-            help="Indexing pipeline output directory (i.e. contains the parquet files).",
+            help="The project root directory.",
             exists=True,
             dir_okay=True,
-            readable=True,
+            writable=True,
             resolve_path=True,
             autocompletion=path_autocomplete(
                 file_okay=False, dir_okay=True, match_wildcard="*"
             ),
         ),
-    ] = None,
-    root: Annotated[
+    ] = Path(),  # set default to current directory
+    root2: Annotated[
         Path,
         typer.Option(
-            help="The project root directory.",
+            help="The second project root directory.",
             exists=True,
             dir_okay=True,
             writable=True,
@@ -521,8 +521,8 @@ def _evaluate_cli(
 
     evaluate_cli(
         config_filepath=config,
-        data_dir=data,
-        root_dir=root,
+        root_dir1=root1,
+        root_dir2=root2,
         response_type=response_type,
         dry_run=dry_run,
     )
