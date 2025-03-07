@@ -20,6 +20,7 @@ from graphrag.prompt_tune.defaults import (
     K,
 )
 from graphrag.prompt_tune.types import DocSelectionType
+from graphrag.query.query_handler import (hybrid_search, search_online)
 
 INVALID_METHOD_ERROR = "Invalid method"
 
@@ -88,6 +89,7 @@ class SearchType(Enum):
     LOCAL = "local"
     GLOBAL = "global"
     DRIFT = "drift"
+    HYBRID = "hybrid"
 
     def __str__(self):
         """Return the string representation of the enum value."""
@@ -359,8 +361,7 @@ def _prompt_tune_cli(
             min_examples_required=min_examples_required,
         )
     )
-
-
+    
 @app.command("query")
 def _query_cli(
     method: Annotated[SearchType, typer.Option(help="The query algorithm to use.")],
@@ -425,7 +426,7 @@ def _query_cli(
 ):
     """Query a knowledge graph index."""
     from graphrag.cli.query import run_drift_search, run_global_search, run_local_search
-
+    
     match method:
         case SearchType.LOCAL:
             response, context = run_local_search(
@@ -457,6 +458,24 @@ def _query_cli(
                 streaming=False,  # Drift search does not support streaming (yet)
                 query=query,
             )
+        case SearchType.HYBRID:
+            try:
+                search_results = hybrid_search(query, top_k=3)
+                if search_results:
+                    typer.echo("\n Hybrid Search Results:")
+                    for result in search_results:
+                        typer.echo(f"- {result}")
+                    return search_results  
+            except Exception as e:
+                typer.echo(f"\n Error occurred during hybrid search: {e}")
+            
+            typer.echo(f"\n No results found for '{query}'. Running a web search...")
+            try:
+                search_online(query)
+            except Exception as e:
+                typer.echo(f"\n Error occurred during web search: {e}")
+            return
+        
         case _:
             raise ValueError(INVALID_METHOD_ERROR)
     
