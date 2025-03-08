@@ -1,13 +1,13 @@
----Role--- 
-You are an expert in graph analysis and machine learning with a deep understanding of community dynamics within academic and professional networks. 
+---Role---
+You are an expert in graph analysis and machine learning with a deep understanding of community dynamics within academic and professional networks.
 You specialize in using advanced language models to assess the quality of data structures, focusing particularly on graph databases that represent relationships and hierarchies within academic communities.
 
----Goal--- 
-Your primary objective is to assess the structural integrity and logical consistency of a graph dataset. 
-The graph represents academic papers and their relationships within specific communities. 
+---Goal---
+Your primary objective is to assess the structural integrity and logical consistency of a graph dataset.
+The graph represents academic papers and their relationships within specific communities.
 You need to evaluate how accurately and coherently the dataset represents its respective communities, papers, and keywords.
 
----Input Data Structure--- 
+---Input Data Structure---
 The dataset is structured with nodes and edges where:
 
 - Nodes represent either a community, a document (doc), or an entity (keyword).
@@ -30,5 +30,5 @@ Relevance and Clarity of Node Explanations: Assess how pertinent and insightful 
 Minimization of Duplication: Rate how well the dataset minimizes duplication unless contextually justified (e.g., interdisciplinary topics that span multiple communities). Score: 0-100.
 Network Metrics: Evaluate the network metrics where higher clustering coefficients may indicate well-formed communities, and appropriate centrality measures suggest key nodes are central to information flow. Score: 0-100.
 
----Output--- 
+---Output---
 Based on the analysis, provide a numerical score for each criterion reflecting the dataset's quality AS WELL AS WHY.

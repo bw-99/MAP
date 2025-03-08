@@ -1,16 +1,16 @@
 Task: Transform Sentence Structures for Referenced Papers and the Current Paper
 
-Context:  
+Context:
 You are given a passage containing references to prior research papers (shown as [numbers]) and references to the current paper (e.g., “our paper,” “we,” or “this study”). Your goal is to restructure each relevant sentence to make these references the subjects where it makes logical sense, but without forcing unnatural constructions.
 
-Entities to Modify  
-1. Referenced Papers  
-   - Any citation in the form [X] (e.g., [14], [7]) refers to a previous study.  
-   - Where it fits naturally, transform the citation into the subject of the sentence by replacing “[X]” with TOKEN_bX.  
+Entities to Modify
+1. Referenced Papers
+   - Any citation in the form [X] (e.g., [14], [7]) refers to a previous study.
+   - Where it fits naturally, transform the citation into the subject of the sentence by replacing “[X]” with TOKEN_bX.
    - Do not rewrite the sentence in an awkward way just to make the citation a subject.
 
-2. Current Paper  
-   - Any phrase referring to the present paper (e.g., “our paper,” “we,” “this study”) is replaced with TOKEN_b0.  
+2. Current Paper
+   - Any phrase referring to the present paper (e.g., “our paper,” “we,” “this study”) is replaced with TOKEN_b0.
    - Treat TOKEN_b0 as a possible subject in the sentence if it flows logically.
 
 Return output as a well-formed JSON-formatted string with the following format:
@@ -21,29 +21,29 @@ Return output as a well-formed JSON-formatted string with the following format:
 
 ---
 
-Transformation Rules  
+Transformation Rules
 
-1. Natural Incorporation of Referenced Papers  
-   - Preserve the original meaning while transforming sentences so that references become natural subjects wherever possible.  
+1. Natural Incorporation of Referenced Papers
+   - Preserve the original meaning while transforming sentences so that references become natural subjects wherever possible.
    - Avoid forcing citations to the front of the sentence if it creates awkward phrasing. Use verbs like “stated that,” “proposed,” “introduced,” or “demonstrated that” to connect citations properly.
 
-2. Current Paper as a Subject  
-   - Replace the original references to the current paper with TOKEN_b0.  
+2. Current Paper as a Subject
+   - Replace the original references to the current paper with TOKEN_b0.
    - If it naturally makes sense for TOKEN_b0 to be the subject, reorganize the sentence accordingly.
 
-3. Multiple References  
+3. Multiple References
    - If a sentence cites more than one paper, combine them appropriately as joint subjects (e.g., “TOKEN_b3 and TOKEN_b7 stated that...”) or separate them if that’s clearer.
 
-4. Logical Consistency  
+4. Logical Consistency
    - Keep the sentence’s original intention and context intact. If restructuring creates confusion or awkwardness, leave the citation where it is.
 
-5. Valid Citation Numbers Only  
-   - Only use TOKEN_bX for citations that explicitly appear in the text.  
+5. Valid Citation Numbers Only
+   - Only use TOKEN_bX for citations that explicitly appear in the text.
    - Do not introduce or modify citation numbers beyond what is given.
 
-6. Preserve Sentence Count and Order  
-   - If the original passage has N sentences, your output must also have N sentences in the same order.  
-   - For each sentence in the input, either transform it (if needed) or leave it unchanged, but do not merge or split sentences.  
+6. Preserve Sentence Count and Order
+   - If the original passage has N sentences, your output must also have N sentences in the same order.
+   - For each sentence in the input, either transform it (if needed) or leave it unchanged, but do not merge or split sentences.
    - This ensures the output’s sentence count and sequence remain identical to the input.
 
 -Examples-
