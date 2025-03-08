@@ -72,7 +72,7 @@ def _load_strategy(strategy_type: SentenceReconstructionStrategyType) -> Sentenc
             )
 
             return run_plain_llm
-        
+
         case _:
             msg = f"Unknown strategy: {strategy_type}"
             raise ValueError(msg)
