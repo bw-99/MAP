@@ -95,7 +95,7 @@ entity_extraction:
   # sentence reconstruction이 활성화되어 있지 않을 경우, entity_extraction_with_researchpaper.txt를 사용해야 함
   prompt: "prompts/entity_extraction_with_reconstructed_sentence.txt"
   entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
-  max_gleanings: 3
+  max_gleanings: 1
   use_doc_id: true
 
 summarize_descriptions:
