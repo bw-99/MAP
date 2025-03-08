@@ -31,7 +31,7 @@ def evaluate_cli(
     """Run the pipeline with the given config."""
     root = root_exp.resolve()
     config_exp = load_config(root, config_filepath)
-    
+
     root = root_ctl.resolve()
     config_ctl = load_config(root, config_filepath)
     _run_evaluate(
@@ -48,13 +48,13 @@ def _run_evaluate(
     response_type,
 ):
     """Perform the actual pipeline to evaluate LLM responses.
-    
+
     Loads index files required for evaluation and runs the evaluation pipeline."""
-    
+
     # config.storage.base_dir = str(data_dir) if data_dir else config.storage.base_dir
     resolve_paths(config_exp)
     resolve_paths(config_ctl)
-    
+
     dataframe_dict_exp = _resolve_output_files(
         config=config_exp,
         output_list=[
@@ -88,7 +88,7 @@ def _run_evaluate(
     final_community_reports_ctl: pd.DataFrame = dataframe_dict_ctl[
         "create_final_community_reports"
     ]
-    
+
     if dry_run:
         logger.success("Dry run complete, exiting...")
         sys.exit(0)
@@ -103,7 +103,7 @@ def _run_evaluate(
             response_type=response_type,
         )
     )
-    
+
     logger.success(f"Evaluate Response: \n{response}")
     return response, context_data
 

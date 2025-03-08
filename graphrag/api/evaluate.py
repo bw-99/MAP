@@ -63,14 +63,14 @@ async def evaluate_graph(
     - communities (pd.DataFrame): A DataFrame containing the final communities (from create_final_communities.parquet)
     - community_reports (pd.DataFrame): A DataFrame containing the final community reports (from create_final_community_reports.parquet)
     - response_type (str): The type of response to return.
-    
+
     Returns
     -------
     """
     # Make sure your data be placed in the right order (exp, ctl)
     communities_exp = read_indexer_communities(communities[0], nodes[0], community_reports[0])
     communities_ctl = read_indexer_communities(communities[1], nodes[1], community_reports[1])
-    
+
     reports_exp = read_indexer_reports(
         community_reports[0],
         nodes[0],
@@ -83,12 +83,12 @@ async def evaluate_graph(
         community_level=None,
         dynamic_community_selection=False,
     )
-    
+
     entities_exp = read_indexer_entities(nodes[0], entities[0], community_level=None)
     entities_ctl = read_indexer_entities(nodes[1], entities[1], community_level=None)
-    
+
     # default setting is on the first config
-    map_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.map_prompt) 
+    map_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.map_prompt)
     reduce_prompt = _load_search_prompt(
         config[0].root_dir, config[0].global_search.reduce_prompt
     )
@@ -98,7 +98,7 @@ async def evaluate_graph(
     evaluate_prompt = _load_search_prompt(
         config[0].root_dir, config[0].global_search.evaluate_prompt
     )
-    
+
     if True:
         # combine the two dataframes
         communities_ = communities_exp + communities_ctl
@@ -106,7 +106,7 @@ async def evaluate_graph(
         entities_ = entities_exp + entities_ctl
     else:
         raise NotImplementedError("Not implemented yet")
-    
+
     search_engine = get_evaluate_search_engine(
         config[0],
         reports=reports_,

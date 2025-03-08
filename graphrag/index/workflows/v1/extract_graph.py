@@ -98,7 +98,7 @@ async def workflow(
 ) -> VerbResult:
     """All the steps to create the base entity graph."""
     text_units = await runtime_storage.get("base_text_units")
-    
+
     # doc token to doc title mapping
     token2doc_df = await runtime_storage.get("token2doc")
     token2doc_dict = token2doc_df["title"].to_dict()
