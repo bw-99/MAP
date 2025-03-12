@@ -31,7 +31,7 @@ def get_evaluate_search_engine(
     gs_config = config.global_search
 
     dynamic_community_selection_kwargs = {}
-    
+
     llm = get_llm(config) # call the llm just once
     if dynamic_community_selection:
         # TODO: Allow for another llm definition only for Global Search to leverage -mini models

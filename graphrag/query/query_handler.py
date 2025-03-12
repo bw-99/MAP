@@ -12,7 +12,7 @@ from graphrag.callbacks.llm_callbacks import BaseLLMCallback
 
 EMBEDDING_DIM = 1536
 index = faiss.IndexFlatL2(EMBEDDING_DIM)
-document_list = []  
+document_list = []
 
 callbacks = BaseLLMCallback()
 cache = InMemoryCache()
@@ -33,8 +33,8 @@ def add_documents_to_index(documents: list):
 
         embeddings = asyncio.run(embed_text(
             input=data,
-            callbacks=callbacks, 
-            cache=cache,          
+            callbacks=callbacks,
+            cache=cache,
             embed_column="text",
             strategy=strategy,
             embedding_name="text-embedding-3-small",
@@ -55,7 +55,7 @@ def hybrid_search(query: str, top_k: int = 5) -> list:
     try:
         if not document_list:
             typer.echo("Warning: No documents found in index. Adding default documents...")
-            
+
             default_documents = [
                 "Neural networks are fundamental to AI research.",
                 "Transformers have revolutionized NLP.",
@@ -63,7 +63,7 @@ def hybrid_search(query: str, top_k: int = 5) -> list:
                 "Diffusion models are advancing image generation.",
                 "Self-supervised learning improves data efficiency."
             ]
-            
+
             add_documents_to_index(default_documents)
 
             if not document_list:
@@ -84,8 +84,8 @@ def hybrid_search(query: str, top_k: int = 5) -> list:
 
         query_embedding = asyncio.run(embed_text(
             input=data,
-            callbacks=callbacks,  
-            cache=cache,         
+            callbacks=callbacks,
+            cache=cache,
             embed_column="text",
             strategy=strategy,
             embedding_name="text-embedding-3-small",
@@ -93,7 +93,7 @@ def hybrid_search(query: str, top_k: int = 5) -> list:
 
         if query_embedding is None or len(query_embedding) == 0:
             typer.echo("Warning: OpenAI API returned empty query embedding. Skipping FAISS search.")
-            return keyword_results  
+            return keyword_results
 
         query_vector = np.array([query_embedding[0]], dtype=np.float32)
 

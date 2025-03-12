@@ -23,13 +23,13 @@ class SentenceReconstructionConfig(LLMConfig):
     strategy: dict | None = Field(
         description="Override the default entity extraction strategy", default=None
     )
-    
+
     def resolved_strategy(self, root_dir: str) -> dict:
         """Get the resolved entity extraction strategy."""
         from graphrag.index.operations.reconstruct_sentence import (
             SentenceReconstructionStrategyType,
         )
-        
+
         return self.strategy or {
             "type": SentenceReconstructionStrategyType.plain_llm,
             "llm": self.llm.model_dump(),
