@@ -10,10 +10,3 @@ example
 onepiece_rag/*
 !onepiece_rag/settings.yaml
 !onepiece_rag/prompts
-
-baseline/
-baseline_chunk600/
-baseline_gleaning3/
-srec/
-srec_chunk600/
-srec_gleaning3/
