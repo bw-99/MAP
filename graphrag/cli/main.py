@@ -495,7 +495,7 @@ def _query_cli(
 
 @app.command("evaluate")
 def _evaluate_cli(
-    method: Annotated[SearchType, typer.Option(help="The evaluation algorithm to use.")],
+    method: Annotated[EvalType, typer.Option(help="The evaluation algorithm to use.")],
     config: Annotated[
         Path | None,
         typer.Option(
