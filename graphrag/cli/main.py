@@ -96,6 +96,18 @@ class SearchType(Enum):
         return self.value
 
 
+class EvalType(Enum):
+    """The type of evaluation to run."""
+
+    INDEX = "index"
+    QUERY = "query"
+    BOTH = "both"
+
+    def __str__(self):
+        """Return the string representation of the enum value."""
+        return self.value
+
+
 @app.command("init")
 def _initialize_cli(
     root: Annotated[
@@ -483,6 +495,7 @@ def _query_cli(
 
 @app.command("evaluate")
 def _evaluate_cli(
+    method: Annotated[EvalType, typer.Option(help="The evaluation algorithm to use.")],
     config: Annotated[
         Path | None,
         typer.Option(
@@ -495,7 +508,7 @@ def _evaluate_cli(
             ),
         ),
     ] = None,
-    root1: Annotated[
+    root_exp: Annotated[
         Path,
         typer.Option(
             help="The project root directory.",
@@ -508,7 +521,7 @@ def _evaluate_cli(
             ),
         ),
     ] = Path(),  # set default to current directory
-    root2: Annotated[
+    root_ctl: Annotated[
         Path,
         typer.Option(
             help="The second project root directory.",
@@ -534,14 +547,36 @@ def _evaluate_cli(
         ),
     ] = False,
 ):
-    # print("Evaluation is not supported yet.")
     """Evaluate a knowledge graph index."""
-    from graphrag.cli.evaluate import evaluate_cli
+    from graphrag.cli.evaluate import evaluate_index, evaluate_query
 
-    evaluate_cli(
-        config_filepath=config,
-        root_dir1=root1,
-        root_dir2=root2,
-        response_type=response_type,
-        dry_run=dry_run,
-    )
+    match method:
+        case EvalType.INDEX:
+            evaluate_index(
+                config_filepath=config,
+                root_exp=root_exp,
+                root_ctl=root_ctl,
+                response_type=response_type,
+                dry_run=dry_run,
+            )
+        case EvalType.QUERY:
+            evaluate_query(
+                config_filepath=config,
+                root_exp=root_exp,
+                response_type=response_type,
+                dry_run=dry_run,
+            )
+        case EvalType.BOTH:
+            evaluate_index(
+                config_filepath=config,
+                root_exp=root_exp,
+                root_ctl=root_ctl,
+                response_type=response_type,
+                dry_run=dry_run,
+            )
+            evaluate_query(
+                config_filepath=config,
+                root_exp=root_exp,
+                response_type=response_type,
+                dry_run=dry_run,
+            )
