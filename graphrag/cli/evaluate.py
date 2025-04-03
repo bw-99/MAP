@@ -15,11 +15,13 @@ from graphrag.config.load_config import load_config
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.config.resolve_path import resolve_paths
 from graphrag.evaluate.load_graph import read_graph
+from graphrag.evaluate.synthetic_test import generate_synthetic_data
 from graphrag.index.create_pipeline_config import create_pipeline_config
 from graphrag.logger.print_progress import PrintProgressLogger
 from graphrag.storage.factory import StorageFactory
+from graphrag.utils.names import SYNTHETIC_TEST_SET
 from graphrag.utils.storage import load_table_from_storage
-from graphrag.utils.cli import _resolve_output_files
+from graphrag.utils.cli import _resolve_output_files, load_cache_df
 
 logger = PrintProgressLogger("")
 
@@ -68,6 +70,16 @@ def evaluate_query(
 ):
     """Run the pipeline with the given config."""
     root = root_exp.resolve()
-    config_exp = load_config(root, config_filepath)
+    config = load_config(root, config_filepath)
+
+    # read docs and get synthetic data for testing
+    doc_df: pd.DataFrame = _resolve_output_files(
+        config=config,
+        output_list=["create_final_documents.parquet"],
+        optional_list=[],
+    )["create_final_documents"]
+    synthetic_data = load_cache_df(root_exp / SYNTHETIC_TEST_SET, generate_synthetic_data, doc_df)
+
+    # evaluate
 
     assert False, "Not implemented yet"

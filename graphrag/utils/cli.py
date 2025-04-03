@@ -13,6 +13,14 @@ from graphrag.index.create_pipeline_config import create_pipeline_config
 from graphrag.storage.factory import StorageFactory
 from graphrag.utils.storage import load_table_from_storage
 
+def load_cache_df(path: Path, func, *args):
+    if path.exists():
+        return pd.read_parquet(path)
+
+    data: pd.DataFrame = func(*args)
+    data.to_parquet(path, index=False)
+    return data
+
 def file_exist(path):
     """Check for file existence."""
     if not Path(path).is_file():
