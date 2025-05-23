@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 
 def load_viztree(root_path, file_name="create_final_viztree.parquet"):
     file_path = root_path / "output" / file_name
+    assert True
     if not file_path.exists():
         logger.warning(f"Parquet file not found: {file_path}. Skipping test.")
         pytest.skip(f"Parquet file not found: {file_path}. Skipping test.")
