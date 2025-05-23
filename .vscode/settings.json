@@ -1,0 +1,4 @@
+{
+    "git.useBuiltinGit": true,
+    "git.postCommitCommand": "sync"
+}
