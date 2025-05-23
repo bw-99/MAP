@@ -12,6 +12,6 @@ repos:
     hooks:
     -   id: pytest
         name: pytest
-        entry: pytest
+        entry: bash -c "source .venv/bin/activate && pytest"
         language: system
         types: [python]
