@@ -2,7 +2,7 @@
 *.ipynb
 data_full
 __pycache__
-.github
+!.github
 example
 *.zip
 .venv
@@ -10,3 +10,5 @@ example
 onepiece_rag/*
 !onepiece_rag/settings.yaml
 !onepiece_rag/prompts
+
+results/*
