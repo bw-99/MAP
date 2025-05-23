@@ -18,7 +18,7 @@ def load_viztree(root_path, file_name="create_final_viztree.parquet"):
         return
 
     df = pd.read_parquet(file_path)
-    print("Unique types in Parquet file:", df["type"].unique())
+    logger.info("Unique types in Parquet file:", df["type"].unique())
     return df
 
 def load_entity_types(root_path):
