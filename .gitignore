@@ -10,4 +10,6 @@ example
 onepiece_rag/*
 !onepiece_rag/settings.yaml
 !onepiece_rag/prompts
+
+
 results/*
