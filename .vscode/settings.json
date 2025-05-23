@@ -1,4 +1,5 @@
 {
     "git.useBuiltinGit": true,
-    "git.postCommitCommand": "sync"
+    "git.postCommitCommand": "sync",
+    "git.enableSmartCommit": false
 }
