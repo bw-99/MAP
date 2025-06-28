@@ -1,0 +1,198 @@
+Explainable CTR Prediction via LLM Reasoning
+SimCEN: Simple Contrast-enhanced Network for CTR Prediction
+Singleton CTR Prediction: Towards Single-User Modeling Paradigm with Large Language Models
+CTRL: Connect Collaborative and Language Model for CTR Prediction
+Balancing Efficiency and Effectiveness: An LLM-Infused Approach for Optimized CTR Prediction
+Discrete Semantic Tokenization for Deep CTR Prediction
+PRECTR: A Synergistic Framework for Integrating Personalized Search Relevance Matching and CTR Prediction
+MLoRA: Multi-Domain Low-Rank Adaptive Network for CTR Prediction
+AIE: Auction Information Enhanced Framework for CTR Prediction in Online Advertising
+UIPN: User Intent Profiling Network for Multi Behavior Modeling in CTR Prediction
+FINAL: Factorized Interaction Layer for CTR Prediction
+Helen: Optimizing CTR Prediction Models with Frequency-wise Hessian Eigenvalue Regularization
+Confidence Ranking for CTR Prediction
+Enhancing CTR Prediction through Sequential Recommendation Pre-training: Introducing the SRP4CTR framework
+Improving CTR Prediction with Graph-Enhanced Interest Networks for Sparse Behavior Sequences
+DFFM: Domain Facilitated Feature Modeling for CTR Prediction
+Calibration-compatible Listwise Distillation of Privileged Features for CTR Prediction
+PRINT: Personalized Relevance Incentive Network for CTR Prediction in Sponsored Search
+Loss Harmonizing for Multi-Scenario CTR Prediction
+Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations
+Exploring Multi-Scenario Multi-Modal CTR Prediction with a Large Scale Dataset
+Warming Up Cold-Start CTR Prediction by Learning Item-Specific Feature Interactions
+FLIP: Fine-grained Alignment between ID-based Models and Pretrained Language Models for CTR Prediction
+Towards Deeper, Lighter and Interpretable Cross Network for CTR Prediction
+CL4CTR: A Contrastive Learning Framework for CTR Prediction
+Breaking the Length Barrier: LLM-Enhanced CTR Prediction in Long Textual User Behaviors
+Context-Aware Modeling via Simulated Exposure Page for CTR Prediction
+Multi-granularity Interest Retrieval and Refinement Network for Long-Term User Behavior Modeling in CTR Prediction
+A Unified Framework for Multi-Domain CTR Prediction via Large Language Models
+ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction
+Reformulating CTR Prediction: Learning Invariant Feature Interactions for Recommendation
+Gradient Matching for Categorical Data Distillation in CTR Prediction
+EASE: Learning Lightweight Semantic Feature Adapters from Large Language Models for CTR Prediction
+EulerNet: Adaptive Feature Interaction Learning via Euler's Formula for CTR Prediction
+Directed Acyclic Graph Factorization Machines for CTR Prediction via Knowledge Distillation
+Scene-wise Adaptive Network for Dynamic Cold-start Scenes Optimization in CTR Prediction
+Always Strengthen Your Strengths: A Drift-Aware Incremental Learning Framework for CTR Prediction
+Deep Evolutional Instant Interest Network for CTR Prediction in Trigger-Induced Recommendation
+ADL: Adaptive Distribution Learning Framework for Multi-Scenario CTR Prediction
+TWIN V2: Scaling Ultra-Long User Behavior Sequence Modeling for Enhanced CTR Prediction at Kuaishou
+Rec4Ad: A Free Lunch to Mitigate Sample Selection Bias for Ads CTR Prediction in Taobao
+CSPM: A Contrastive Spatiotemporal Preference Model for CTR Prediction in On-Demand Food Delivery Services
+Prior-Guided Accuracy-Bias Tradeoff Learning for CTR Prediction in Multimedia Recommendation
+RESUS: Warm-up Cold Users via Meta-learning Residual User Preferences in CTR Prediction
+TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou
+A Knowledge Enhanced Hierarchical Fusion Network for CTR Prediction under Account Search Scenario in WeChat
+BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction
+FiBiNet++: Reducing Model Size by Low Rank Feature Interaction Layer for CTR Prediction
+MemoNet: Memorizing All Cross Features' Representations Efficiently via Multi-Hash Codebook Network for CTR Prediction
+ORIC: Feature Interaction Detection through Online Random Interaction Chains for Click-Through Rate Prediction
+AdaGIN: Adaptive Graph Interaction Network for Click-Through Rate Prediction
+CETN: Contrast-enhanced Through Network for Click-Through Rate Prediction
+Unified Low-rank Compression Framework for Click-through Rate Prediction
+Recall-Augmented Ranking: Enhancing Click-Through Rate Prediction Accuracy with Cross-Stage Data
+Understanding the Ranking Loss for Recommendation with Sparse User Feedback
+FedUD: Exploiting Unaligned Data for Cross-Platform Federated Click-Through Rate Prediction
+Continual Transfer Learning for Cross-Domain Click-Through Rate Prediction at Taobao
+Dynamic Attention-Based Click-Through Rate Prediction Model
+MAP: A Model-agnostic Pretraining Framework for Click-through Rate Prediction
+Dynamic Group Parameter Modeling for Click-Through-Rate Prediction
+RAT: Retrieval-Augmented Transformer for Click-Through Rate Prediction
+Deep Context Interest Network for Click-Through Rate Prediction
+Understanding and Counteracting Feature-Level Bias in Click-Through Rate Prediction
+Enhancing Cross-Domain Click-Through Rate Prediction via Explicit Feature Augmentation
+Deep Pattern Network for Click-Through Rate Prediction
+HierRec: Scenario-Aware Hierarchical Modeling for Multi-scenario Recommendations
+Nudging Neural Click Prediction Models to Pay Attention to Position
+DAE: Distribution-Aware Embedding for Numerical Features in Click-Through Rate Prediction
+Predictive Relevance Uncertainty for Recommendation Systems
+Combating Ad Fatigue via Frequency-Recency Features in Online Advertising Systems
+IUI: Intent-Enhanced User Interest Modeling for Click-Through Rate Prediction
+AutoOpt: Automatic Hyperparameter Scheduling and Optimization for Deep Click-through Rate Prediction
+Click-through rate prediction based on contextual information
+Click-Through Rate Prediction Models based on Interest Modeling
+JobFormer: Skill-Aware Job Recommendation with Semantic-Enhanced Transformer
+Retrieval-Oriented Knowledge for Click-Through Rate Prediction
+On the Practice of Deep Hierarchical Ensemble Network for Ad Conversion Rate Prediction
+Unleash the Power of Context: Enhancing Large-Scale Recommender Systems with Context-Based Prediction Models
+Deep Intention-Aware Network for Click-Through Rate Prediction
+DMBIN: A Dual Multi-behavior Interest Network for Click-Through Rate Prediction via Contrastive Learning
+De-Anchor: Mitigating Attention Polarization for Lifelong User Behavior Modeling in Click-Through Rate Prediction
+Non-Recursive Cluster-Scale Graph Interacted Model for Click-Through Rate Prediction
+A Collaborative Transfer Learning Framework for Cross-domain Recommendation
+Satisfaction-Aware User Interest Network for Click-Through Rate Prediction
+PPM : A Pre-trained Plug-in Model for Click-through Rate Prediction
+Enhanced Feature Importance Learning for the Click-Through Rate Prediction
+Deep Situation-Aware Interaction Network for Click-Through Rate Prediction
+Fusion Matters: Learning Fusion in Deep Click-through Rate Prediction Models
+Practice on Effectively Extracting NLP Features for Click-Through Rate Prediction
+ReChorus2.0: A Modular and Task-Flexible Recommendation Library
+Online Advertising Click-Through Rate Prediction Based On Enhanced DeepFM Model With Feature Selection
+Beyond Binary Preference: Leveraging Bayesian Approaches for Joint Optimization of Ranking and Calibration
+Scenario-Adaptive Feature Interaction for Click-Through Rate Prediction
+Towards Automated Model Design on Recommender Systems
+Cognitive Evolutionary Search to Select Feature Interactions for Click-Through Rate Prediction
+LiRank: Industrial Large Scale Ranking Models at LinkedIn
+Improved DeepFM-Based Model with LSTM on Click-Through-Rate
+LARR: Large Language Model Aided Real-time Scene Recommendation with Semantic Understanding
+MetaSplit: Meta-Split Network for Limited-Stock Product Recommendation
+ReFer: Retrieval-Enhanced Vertical Federated Recommendation for Full Set User Benefit
+Finding What Users Look for by Attribute-Aware Personalized Item Comparison in Relevant Recommendation
+NASRec: Weight Sharing Neural Architecture Search for Recommender Systems
+Data-free Knowledge Distillation for Reusing Recommendation Models
+CT4Rec: Simple yet Effective Consistency Training for Sequential Recommendation
+Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model
+Lightweight Boosting Models for User Response Prediction Using Adversarial Validation
+BKD: A Bridge-based Knowledge Distillation Method for Click-Through Rate Prediction
+Optimizing Feature Set for Click-Through Rate Prediction
+CTR -Driven Advertising Image Generation with Multimodal Large Language Models
+News Popularity Beyond the Click-Through-Rate for Personalized Recommendations
+Enhancing Interpretability and Effectiveness in Recommendation with Numerical Features via Learning to Contrast the Counterfactual samples
+Image-Based Fashion Recommendation with Attention to Users' Interests
+Cross-domain Recommendation via Dual Adversarial Adaptation
+An Incremental Update Framework for Online Recommenders with Data-Driven Prior
+HAMUR: Hyper Adapter for Multi-Domain Recommendation
+Tapping the Potential of Large Language Models as Recommender Systems: A Comprehensive Framework and Empirical Analysis
+MvFS: Multi-view Feature Selection for Recommender System
+Cross-Domain LifeLong Sequential Modeling for Online Click-Through Rate Prediction
+Enhancing Click-through Rate Prediction in Recommendation Domain with Search Query Representation
+Non-Uniform Adversarial Perturbations for Discrete Tabular Datasets
+Fragment and Integrate Network (FIN): A Novel Spatial-Temporal Modeling Based on Long Sequential Behavior for Online Food Ordering Click-Through Rate Prediction
+Utilizing Non-click Samples via Semi-supervised Learning for Conversion Rate Prediction
+Fusing Predictive and Large Language Models for Actionable Recommendations In Creative Marketing
+A Deep Behavior Path Matching Network for Click-Through Rate Prediction
+LOVF: Layered Organic View Fusion for Click-through Rate Prediction in Online Advertising
+Dense Representation Learning and Retrieval for Tabular Data Prediction
+A Simple and Robust Ensemble For Click-Through Rate Prediction
+Masked Multi-Domain Network: Multi-Type and Multi-Scenario Conversion Rate Prediction with a Single Model
+Macro Graph Neural Networks for Online Billion-Scale Recommender Systems
+A Model-Agnostic Popularity Debias Training Framework for Click-Through Rate Prediction in Recommender System
+Task Adaptive Multi-learner Network for Joint CTR and CVR Estimation
+Conditional Cross-Platform User Engagement Prediction
+Deep Learning in Predicting Consumer Purchase Intentions
+Contextualized Knowledge Graph Embedding for Explainable Talent Training Course Recommendation
+A Thorough Performance Benchmarking on Lightweight Embedding-based Recommender Systems
+Mitigating Redundancy in Deep Recommender Systems: A Field Importance Distribution Perspective
+EGRec: Leveraging Generative Rich Intents for Enhanced Recommendation with Large Language Models
+On-device Content-based Recommendation with Single-shot Embedding Pruning: A Cooperative Game Perspective
+Enhancing News Recommendation Systems Using Multitask Learning
+ADSNet: Cross-Domain LTV Prediction with an Adaptive Siamese Network in Advertising
+Power Loss Function in Neural Networks for Predicting Click-Through Rate
+Unbiased Delayed Feedback Label Correction for Conversion Rate Prediction
+Time Interest Network for Click-Through Rate Prediction
+Bridging Expertise: Doctor Recommendations for Cross-Disciplinary Collaborations in Online Medical Consultations
+Skewness-aware Boosting Regression Trees for Customer Contribution Prediction in Financial Precision Marketing
+Enhancing Taobao Display Advertising with Multimodal Representations: Challenges, Approaches and Insights
+LLM4MSR: An LLM-Enhanced Paradigm for Multi-Scenario Recommendation
+Against Opacity: Explainable AI and Large Language Models for Effective Digital Advertising
+ReLLa: Retrieval-enhanced Large Language Models for Lifelong Sequential Behavior Comprehension in Recommendation
+A Simple yet Strong Approach for Installation Prediction in ShareChat Ads
+Enhancing News Recommendation with Real-Time Feedback and Generative Sequence Modeling
+Entire Space Cascade Delayed Feedback Modeling for Effective Conversion Rate Prediction
+GraphHash: Graph Clustering Enables Parameter Efficiency in Recommender Systems
+Learned Ranking Function: From Short-term Behavior Predictions to Long-term User Satisfaction
+CADCN: A click-through rate prediction model based on feature importance
+Learning Category Trees for ID-Based Recommendation: Exploring the Power of Differentiable Vector Quantization
+Large Memory Network for Recommendation
+MultiLoRA: Multi-Directional Low Rank Adaptation for Multi-Domain Recommendation
+Temporal Interest Network for User Response Prediction
+A Self-boosted Framework for Calibrated Ranking
+Task-Adversarial Adaptation for Multi-modal Recommendation
+Efficient and Deployable Knowledge Infusion for Open-World Recommendations via Large Language Models
+Click-Conversion Multi-Task Model with Position Bias Mitigation for Sponsored Search in eCommerce
+LiMAML: Personalization of Deep Recommender Models via Meta Learning
+ELCoRec: Enhance Language Understanding with Co-Propagation of Numerical and Categorical Features for Recommendation
+Entity-Aware Collections Ranking: A Joint Scoring Approach
+Disentangling Scenario-wise Interest Network for Multi-scenario Recommendation
+Enriching Recommendation Models with Logic Conditions
+Team up GBDTs and DNNs: Advancing Efficient and Effective Tabular Prediction with Tree-hybrid MLPs
+From Second to First: Mixed Censored Multi-Task Learning for Winning Price Prediction
+Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models
+Learning to Retrieve User Behaviors for Click-through Rate Estimation
+PS-SA: An Efficient Self-Attention via Progressive Sampling for User Behavior Sequence Modeling
+A User-State Based Interest Transfer Network for Cross-Domain Recommendation
+Multi-Granularity Modeling in Recommendation: from the Multi-Scenario Perspective
+ReLoop2: Building Self-Adaptive Recommendation Models via Responsive Error Compensation Loop
+AutoDPQ: Automated Differentiable Product Quantization for Embedding Compression
+Low Rank Field-Weighted Factorization Machines for Low Latency Item Recommendation
+An Unified Search and Recommendation Foundation Model for Cold-Start Scenario
+DSFNet: Learning Disentangled Scenario Factorization for Multi-Scenario Route Ranking
+HyperFormer: Learning Expressive Sparse Feature Representations via Hypergraph Transformer
+RTBAgent: A LLM-based Agent System for Real-Time Bidding
+Dual Graph Denoising Model for Social Recommendation
+External Large Foundation Model: How to Efficiently Serve Trillions of Parameters for Online Ads Recommendation
+Truthful Bandit Mechanisms for Repeated Two-stage Ad Auctions
+Diff-MSR: A Diffusion Model Enhanced Paradigm for Cold-Start Multi-Scenario Recommendation
+DPAN: Dynamic Preference-based and Attribute-aware Network for Relevant Recommendations
+ECRT: Flexible Sequence Enhancement Framework for Cross-Domain Information Reuse in Recommendation
+Causal Inference in Recommender Systems: A Survey and Future Directions
+Adaptive Learning on User Segmentation: Universal to Specific Representation via Bipartite Neural Interaction
+Put Your Voice on Stage: Personalized Headline Generation for News Articles
+Large Language Models Enhanced Collaborative Filtering
+A New Creative Generation Pipeline for Click-Through Rate with Stable Diffusion Model
+PLATE: A Prompt-Enhanced Paradigm for Multi-Scenario Recommendations
+Pre-Trained Models for Search and Recommendation: Introduction to the Special Issue - Part 2
+OpenSiteRec: An Open Dataset for Site Recommendation
+Could Small Language Models Serve as Recommenders? Towards Data-centric Cold-start Recommendation
+Collaborative Cross-modal Fusion with Large Language Model for Recommendation

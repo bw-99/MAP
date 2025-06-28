@@ -117,7 +117,7 @@ def simulate_in_browser(driver: webdriver.Chrome) -> None:
 # ==== Main Pipeline Functions ====
 
 def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
-    if TITLE_LIST.exists() and not use_cache:
+    if TITLE_LIST.exists() and use_cache:
         logger.info(f"[ACM] Titles already fetched, loading from {TITLE_LIST}")
         TITLE_LIST.read_text(encoding='utf-8').splitlines() if TITLE_LIST.exists() else []
 
@@ -156,7 +156,7 @@ def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
 
 
 def fetch_arxiv_links(titles: list[str], use_cache=True) -> pd.DataFrame:
-    if PDF_LINK_CSV.exists() and not use_cache:
+    if PDF_LINK_CSV.exists() and use_cache:
         logger.info(f"[ArXiv] Links already fetched, loading from {PDF_LINK_CSV}")
         return pd.read_csv(PDF_LINK_CSV)
 
@@ -213,7 +213,7 @@ if __name__ == '__main__':
 
     if args.fetch_links:
         titles = fetch_acm_titles(max_pages=50, use_cache=True)
-        df_links = fetch_arxiv_links(titles)
+        df_links = fetch_arxiv_links(titles, use_cache=False)
 
     if args.download_pdfs:
         titles = fetch_acm_titles(max_pages=50, use_cache=True)
