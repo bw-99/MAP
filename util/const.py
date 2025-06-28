@@ -1,8 +1,9 @@
-import os
+from pathlib import Path
 
-data_dir = 'data'
-os.makedirs(data_dir, exist_ok=True)
-os.makedirs(f"{data_dir}/parsed", exist_ok=True)
-
-CSV_PATH = 'data/arxiv_conference_papers.csv'
-PARSED_PATH = 'data/parsed'
+# ==== Configuration & Paths ====
+DATA_DIR = Path("./data")
+DATA_DIR.mkdir(exist_ok=True)
+TITLE_LIST = DATA_DIR / "acm_titles.txt"
+PDF_LINK_CSV = DATA_DIR / "arxiv_papers.csv"
+PARSED_DIR = DATA_DIR / "parsed"
+PARSED_DIR.mkdir(exist_ok=True)
