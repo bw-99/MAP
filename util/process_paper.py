@@ -18,7 +18,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from difflib import SequenceMatcher
-from util.const import TITLE_LIST, PDF_LINK_CSV, PARSED_DIR
+from util.const import PDF_DIR, TITLE_LIST, PDF_LINK_CSV, PARSED_DIR
 import logging
 
 logging.basicConfig(
@@ -222,7 +222,7 @@ if __name__ == '__main__':
         titles = fetch_acm_titles(max_pages=50, use_cache=True)
         df_links = fetch_arxiv_links(titles, use_cache=True)
         for _, row in tqdm.tqdm(df_links.dropna(subset=['PDF_Link']).iterrows(), total=len(df_links)):
-            download_pdf(PARSED_DIR / f"{row['Hashed']}.pdf", row['PDF_Link'])
+            download_pdf(PDF_DIR / f"{row['Hashed']}.pdf", row['PDF_Link'])
 
     if args.parse_pdfs:
         titles = fetch_acm_titles(max_pages=50, use_cache=True)

@@ -1,9 +1,9 @@
 Explainable CTR Prediction via LLM Reasoning
 SimCEN: Simple Contrast-enhanced Network for CTR Prediction
-Singleton CTR Prediction: Towards Single-User Modeling Paradigm with Large Language Models
+Singleton CTR Prediction : Towards Single-User Modeling Paradigm with Large Language Models
 CTRL: Connect Collaborative and Language Model for CTR Prediction
-Balancing Efficiency and Effectiveness: An LLM-Infused Approach for Optimized CTR Prediction
 Discrete Semantic Tokenization for Deep CTR Prediction
+Balancing Efficiency and Effectiveness: An LLM-Infused Approach for Optimized CTR Prediction
 PRECTR: A Synergistic Framework for Integrating Personalized Search Relevance Matching and CTR Prediction
 MLoRA: Multi-Domain Low-Rank Adaptive Network for CTR Prediction
 AIE: Auction Information Enhanced Framework for CTR Prediction in Online Advertising
@@ -12,12 +12,12 @@ FINAL: Factorized Interaction Layer for CTR Prediction
 Helen: Optimizing CTR Prediction Models with Frequency-wise Hessian Eigenvalue Regularization
 Confidence Ranking for CTR Prediction
 Enhancing CTR Prediction through Sequential Recommendation Pre-training: Introducing the SRP4CTR framework
-Improving CTR Prediction with Graph-Enhanced Interest Networks for Sparse Behavior Sequences
 DFFM: Domain Facilitated Feature Modeling for CTR Prediction
+Improving CTR Prediction with Graph-Enhanced Interest Networks for Sparse Behavior Sequences
 Calibration-compatible Listwise Distillation of Privileged Features for CTR Prediction
 PRINT: Personalized Relevance Incentive Network for CTR Prediction in Sponsored Search
 Loss Harmonizing for Multi-Scenario CTR Prediction
-Elevating CTR Prediction: Field Interaction, Global Context Integration, and High-Order Representations
+Elevating CTR Prediction : Field Interaction, Global Context Integration, and High-Order Representations
 Exploring Multi-Scenario Multi-Modal CTR Prediction with a Large Scale Dataset
 Warming Up Cold-Start CTR Prediction by Learning Item-Specific Feature Interactions
 FLIP: Fine-grained Alignment between ID-based Models and Pretrained Language Models for CTR Prediction
@@ -28,7 +28,7 @@ Context-Aware Modeling via Simulated Exposure Page for CTR Prediction
 Multi-granularity Interest Retrieval and Refinement Network for Long-Term User Behavior Modeling in CTR Prediction
 A Unified Framework for Multi-Domain CTR Prediction via Large Language Models
 ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction
-Reformulating CTR Prediction: Learning Invariant Feature Interactions for Recommendation
+Reformulating CTR Prediction : Learning Invariant Feature Interactions for Recommendation
 Gradient Matching for Categorical Data Distillation in CTR Prediction
 EASE: Learning Lightweight Semantic Feature Adapters from Large Language Models for CTR Prediction
 EulerNet: Adaptive Feature Interaction Learning via Euler's Formula for CTR Prediction
@@ -68,8 +68,8 @@ Nudging Neural Click Prediction Models to Pay Attention to Position
 DAE: Distribution-Aware Embedding for Numerical Features in Click-Through Rate Prediction
 Predictive Relevance Uncertainty for Recommendation Systems
 Combating Ad Fatigue via Frequency-Recency Features in Online Advertising Systems
-IUI: Intent-Enhanced User Interest Modeling for Click-Through Rate Prediction
 AutoOpt: Automatic Hyperparameter Scheduling and Optimization for Deep Click-through Rate Prediction
+IUI: Intent-Enhanced User Interest Modeling for Click-Through Rate Prediction
 Click-through rate prediction based on contextual information
 Click-Through Rate Prediction Models based on Interest Modeling
 JobFormer: Skill-Aware Job Recommendation with Semantic-Enhanced Transformer
@@ -84,8 +84,8 @@ A Collaborative Transfer Learning Framework for Cross-domain Recommendation
 Satisfaction-Aware User Interest Network for Click-Through Rate Prediction
 PPM : A Pre-trained Plug-in Model for Click-through Rate Prediction
 Enhanced Feature Importance Learning for the Click-Through Rate Prediction
-Deep Situation-Aware Interaction Network for Click-Through Rate Prediction
 Fusion Matters: Learning Fusion in Deep Click-through Rate Prediction Models
+Deep Situation-Aware Interaction Network for Click-Through Rate Prediction
 Practice on Effectively Extracting NLP Features for Click-Through Rate Prediction
 ReChorus2.0: A Modular and Task-Flexible Recommendation Library
 Online Advertising Click-Through Rate Prediction Based On Enhanced DeepFM Model With Feature Selection
@@ -100,12 +100,12 @@ MetaSplit: Meta-Split Network for Limited-Stock Product Recommendation
 ReFer: Retrieval-Enhanced Vertical Federated Recommendation for Full Set User Benefit
 Finding What Users Look for by Attribute-Aware Personalized Item Comparison in Relevant Recommendation
 NASRec: Weight Sharing Neural Architecture Search for Recommender Systems
-Data-free Knowledge Distillation for Reusing Recommendation Models
 CT4Rec: Simple yet Effective Consistency Training for Sequential Recommendation
+Data-free Knowledge Distillation for Reusing Recommendation Models
 Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model
 Lightweight Boosting Models for User Response Prediction Using Adversarial Validation
-BKD: A Bridge-based Knowledge Distillation Method for Click-Through Rate Prediction
 Optimizing Feature Set for Click-Through Rate Prediction
+BKD: A Bridge-based Knowledge Distillation Method for Click-Through Rate Prediction
 CTR -Driven Advertising Image Generation with Multimodal Large Language Models
 News Popularity Beyond the Click-Through-Rate for Personalized Recommendations
 Enhancing Interpretability and Effectiveness in Recommendation with Numerical Features via Learning to Contrast the Counterfactual samples
@@ -142,9 +142,9 @@ Power Loss Function in Neural Networks for Predicting Click-Through Rate
 Unbiased Delayed Feedback Label Correction for Conversion Rate Prediction
 Time Interest Network for Click-Through Rate Prediction
 Bridging Expertise: Doctor Recommendations for Cross-Disciplinary Collaborations in Online Medical Consultations
+LLM4MSR: An LLM-Enhanced Paradigm for Multi-Scenario Recommendation
 Skewness-aware Boosting Regression Trees for Customer Contribution Prediction in Financial Precision Marketing
 Enhancing Taobao Display Advertising with Multimodal Representations: Challenges, Approaches and Insights
-LLM4MSR: An LLM-Enhanced Paradigm for Multi-Scenario Recommendation
 Against Opacity: Explainable AI and Large Language Models for Effective Digital Advertising
 ReLLa: Retrieval-enhanced Large Language Models for Lifelong Sequential Behavior Comprehension in Recommendation
 A Simple yet Strong Approach for Installation Prediction in ShareChat Ads
@@ -157,13 +157,13 @@ Learning Category Trees for ID-Based Recommendation: Exploring the Power of Diff
 Large Memory Network for Recommendation
 MultiLoRA: Multi-Directional Low Rank Adaptation for Multi-Domain Recommendation
 Temporal Interest Network for User Response Prediction
-A Self-boosted Framework for Calibrated Ranking
 Task-Adversarial Adaptation for Multi-modal Recommendation
+A Self-boosted Framework for Calibrated Ranking
 Efficient and Deployable Knowledge Infusion for Open-World Recommendations via Large Language Models
 Click-Conversion Multi-Task Model with Position Bias Mitigation for Sponsored Search in eCommerce
-LiMAML: Personalization of Deep Recommender Models via Meta Learning
-ELCoRec: Enhance Language Understanding with Co-Propagation of Numerical and Categorical Features for Recommendation
 Entity-Aware Collections Ranking: A Joint Scoring Approach
+ELCoRec: Enhance Language Understanding with Co-Propagation of Numerical and Categorical Features for Recommendation
+LiMAML: Personalization of Deep Recommender Models via Meta Learning
 Disentangling Scenario-wise Interest Network for Multi-scenario Recommendation
 Enriching Recommendation Models with Logic Conditions
 Team up GBDTs and DNNs: Advancing Efficient and Effective Tabular Prediction with Tree-hybrid MLPs
@@ -187,12 +187,667 @@ Diff-MSR: A Diffusion Model Enhanced Paradigm for Cold-Start Multi-Scenario Reco
 DPAN: Dynamic Preference-based and Attribute-aware Network for Relevant Recommendations
 ECRT: Flexible Sequence Enhancement Framework for Cross-Domain Information Reuse in Recommendation
 Causal Inference in Recommender Systems: A Survey and Future Directions
-Adaptive Learning on User Segmentation: Universal to Specific Representation via Bipartite Neural Interaction
 Put Your Voice on Stage: Personalized Headline Generation for News Articles
+Adaptive Learning on User Segmentation: Universal to Specific Representation via Bipartite Neural Interaction
 Large Language Models Enhanced Collaborative Filtering
 A New Creative Generation Pipeline for Click-Through Rate with Stable Diffusion Model
 PLATE: A Prompt-Enhanced Paradigm for Multi-Scenario Recommendations
-Pre-Trained Models for Search and Recommendation: Introduction to the Special Issue - Part 2
 OpenSiteRec: An Open Dataset for Site Recommendation
+Pre-Trained Models for Search and Recommendation: Introduction to the Special Issue - Part 2
 Could Small Language Models Serve as Recommenders? Towards Data-centric Cold-start Recommendation
 Collaborative Cross-modal Fusion with Large Language Model for Recommendation
+Rotative Factorization Machines
+Multi-gate Mixture-of-Contrastive-Experts with Graph-based Gating Mechanism for TV Recommendation
+DisenPOI: Disentangling Sequential and Geographical Influence for Point-of-Interest Recommendation
+Deep Automated Mechanism Design for Integrating Ad Auction and Allocation in Feed
+Transfer Learning Model for Target Segment Generation on Sequential Behavior and Advertisement Interaction History
+SiGeo: Sub-One-Shot NAS via Geometry of Loss Landscape
+Effective Utilization of Large-scale Unobserved Data in Recommendation Systems
+ERASE: Benchmarking Feature Selection Methods for Deep Recommender Systems
+MERIT: A Merchant Incentive Ranking Model for Hotel Search & Ranking
+Evaluating the Robustness of Click Models to Policy Distributional Shift
+EmbSum: Leveraging the Summarization Capabilities of Large Language Models for Content-Based Recommendations
+Distributed Recommendation Systems: Survey and Research Directions
+A Contrastive Pretrain Model with Prompt Tuning for Multi-center Medication Recommendation
+Confidence-Aware Multi-Field Model Calibration
+DisCo: Towards Harmonious Disentanglement and Collaboration between Tabular and Semantic Space for Recommendation
+Edge-cloud Collaborative Learning with Federated and Centralized Features
+HyperGate: Hierarchical Perceptive Gating Network for Multi-domain Multi-task Recommendation
+Graph Convolution Network and User Interest Modeling for Enhanced Recommendation Systems
+Knowledge Enhanced Multi-intent Transformer Network for Recommendation
+C²DR: Robust Cross-Domain Recommendation based on Causal Disentanglement
+Joint Modeling in Deep Recommender Systems
+SoCraft: Advertiser-level Predictive Scoring for Creative Performance on Meta
+AutoTransfer: Instance Transfer for Cross-Domain Recommendations
+MUNE: A Multi-Level User-News Embedding Model for Personalised News Recommendations
+Mixed-Curvature Manifolds Interaction Learning for Knowledge Graph-aware Recommendation
+Semantic Codebook Learning for Dynamic Recommendation Models
+Attacking Click-through Rate Predictors via Generating Realistic Fake Samples
+LLP-Bench: A Large Scale Tabular Benchmark for Learning from Label Proportions
+Data-efficient Fine-tuning for LLM-based Recommendation
+LiGNN: Graph Neural Networks at LinkedIn
+RALLRec: Improving Retrieval Augmented Large Language Model Recommendation with Representation Learning
+Multi-Task Recommendation with Task Information Decoupling
+Optimizing Smartphone App Usage Prediction : A Click-Through Rate Ranking Approach
+Adaptive RiskAware Bidding with Budget Constraint in Display Advertising
+A Survey on Bid Optimization in Real-Time Bidding Display Advertising
+PEPNet: Parameter and Embedding Personalized Network for Infusing with Personalized Prior Information
+Scaling User Modeling: Large-scale Online User Representations for Ads Personalization in Meta
+Learning Fine-grained User Interests for Micro-video Recommendation
+DDCDR: A Disentangle-based Distillation Framework for Cross-Domain Recommendation
+CAMUS: Attribute-Aware Counterfactual Augmentation for Minority Users in Recommendation
+DIIT: A Domain-Invariant Information Transfer Method for Industrial Cross-Domain Recommendation
+User Response Modeling in Reinforcement Learning for Ads Allocation
+MUSENET: Multi-Scenario Learning for Repeat-Aware Personalized Recommendation
+Application of Machine Learning in Digital Marketing and its Optimization Modeling in Precision Advertising Delivery—Dynamic optimization based on K-Means clustering algorithm and Q-Learning algorithm
+Dual-level Intents Modeling for Knowledge-aware Recommendation
+Personalized Point-of-Interest Recommendation with Relation-Enhanced Graph Convolutional Network
+CAFE+: Towards Compact, Adaptive, and Fast Embedding for Large-scale Online Recommendation Models
+Query-dominant User Interest Network for Large-Scale Search Ranking
+A Model-Agnostic Framework for Recommendation via Interest-aware Item Embeddings
+Towards Trustworthy AI-Empowered Real-Time Bidding for Online Advertisement Auctioning
+Disentangled Interest importance aware Knowledge Graph Neural Network for Fund Recommendation
+Unified Visual Preference Learning for User Intent Understanding
+Interest Clock: Time Perception in Real-Time Streaming Recommendation System
+TransAct: Transformer-based Realtime User Action Model for Recommendation at Pinterest
+MODEM: Decoupling User Behavior for Shared-Account Video Recommendations on Large Screen Devices
+Debiased Recommendation via Wasserstein Causal Balancing
+Progressive Tasks Guided Multi-Source Network for Customer Lifetime Value Prediction in Online Advertising
+Ads Recommendation in a Collapsed and Entangled World
+AutoDenoise: Automatic Data Instance Denoising for Recommendations
+3MN: Three Meta Networks for Multi-Scenario and Multi-Task Learning in Online Advertising Recommender Systems
+Reweighting Clicks with Dwell Time in Recommendation
+Rankitect: Ranking Architecture Search Battling World-class Engineers at Meta Scale
+Context-based Fast Recommendation Strategy for Long User Behavior Sequence in Meituan Waimai
+BBE-LSWCM: A Bootstrapped Ensemble of Long and Short Window Clickstream Models
+Database Native Model Selection: Harnessing Deep Neural Networks in Database Systems
+FedGTP: Exploiting Inter-Client Spatial Dependency in Federated Graph-based Traffic Prediction
+Benchmarking News Recommendation in the Era of Green AI
+Multi-task Conditional Attention Network for Conversion Prediction in Logistics Advertising
+A Unified Search and Recommendation Framework Based on Multi-Scenario Learning for Ranking in E-commerce
+Retrieval Augmented Fraud Detection
+NLGR: Utilizing Neighbor Lists for Generative Rerank in Personalized Recommendation Systems
+ECAT: A Entire space Continual and Adaptive Transfer Learning Framework for Cross-Domain Recommendation
+Decoupled Progressive Distillation for Sequential Prediction with Interaction Dynamics
+Deep Interest Network Based Book Recommends-A Case Study of College Reader
+Memory-Efficient Deep Recommender Systems using Approximate Rotary Compositional Embedding
+Knowledge Graph Enhanced Contextualized Attention-Based Network for Responsible User-Specific Recommendation
+AdSEE: Investigating the Impact of Image Style Editing on Advertisement Attractiveness
+Multi-Scenario and Multi-Task Aware Feature Interaction for Recommendation System
+iHAS: Instance-wise Hierarchical Architecture Search for Deep Learning Recommendation Models
+Adversarial-Enhanced Causal Multi-Task Framework for Debiasing Post-Click Conversion Rate Estimation
+BOSS: A Bilateral Occupational-Suitability-Aware Recommender System for Online Recruitment
+Towards a Flexible and High-Fidelity Approach to Distributed DNN Training Emulation
+RecAI: Leveraging Large Language Models for Next-Generation Recommender Systems
+Enhancing Dynamic Image Advertising with Vision-Language Pre-training
+Diversity-aware Deep Ranking Network for Recommendation
+FATA-Trans: Field And Time-Aware Transformer for Sequential Tabular Data
+Report on the Workshop on Learning and Evaluating Recommendations with Impressions (LERI) at RecSys 2023
+Embedding Compression in Recommender Systems: A Survey
+Hierarchical Projection Enhanced Multi-behavior Recommendation
+Large Scale CVR Prediction through Hierarchical History Modeling
+An Industrial Framework for Personalized Serendipitous Recommendation in E-commerce
+NEON: Living Needs Prediction System in Meituan
+Integrating Explicit and Implicit Feature Interactions for Online Ad Installation Forecasting
+Contrastive Learning for Conversion Rate Prediction
+Semi-supervised Curriculum Ensemble Learning for Financial Precision Marketing
+Pre-train and Fine-tune: Recommenders as Large Models
+Determinantal Point Processes Guided Crowd-wise Mixture-of-Experts for Recommendation in Alipay
+RLTP: Reinforcement Learning to Pace for Delayed Impression Modeling in Preloaded Ads
+Determinantal Point Processes Guided Crowd-wise Mixture-of-Experts for Recommendation in Alipay
+Deep Ensemble Shape Calibration: Multi-Field Post-hoc Calibration in Online Advertising
+CPFD: Confidence-aware Privileged Feature Distillation for Short Video Classification
+SampleLLM: Optimizing Tabular Data Synthesis in Recommendations
+Full Index Deep Retrieval: End-to-End User and Item Structures for Cold-start and Long-tail Item Recommendation
+Large Language Model Simulator for Cold-Start Recommendation
+MCNet: Monotonic Calibration Networks for Expressive Uncertainty Calibration in Online Advertising
+Performance-Based Pricing for Federated Learning via Auction
+Model-based Unbiased Learning to Rank
+Movie Ticket, Popcorn, and Another Movie Next Weekend: Time-Aware Service Sequential Recommendation for User Retention
+SINKT: A Structure-Aware Inductive Knowledge Tracing Model with Large Language Model
+EmbedX: A Versatile, Efficient and Scalable Platform to Embed Both Graphs and High-Dimensional Sparse Data
+Follow the Will of the Market: A Context-Informed Drift-Aware Method for Stock Prediction
+UpDLRM: Accelerating Personalized Recommendation using Real-World PIM Architecture
+Breaking the Barrier: Utilizing Large Language Models for Industrial Recommendation Systems through an Inferential Knowledge Graph
+Interactive Recommendation System for Meituan Waimai
+Meta-Generator Enhanced Multi-Domain Recommendation
+Aligned Side Information Fusion Method for Sequential Recommendation
+FairRec: Fairness Testing for Deep Recommender Systems
+Improving Scientific Document Retrieval with Concept Coverage-based Query Set Generation
+Regularized Pairwise Relationship based Analytics for Structured Data
+A Concept Knowledge Graph for User Next Intent Prediction at Alipay
+Attentive Implicit Relation Embedding for Event Recommendation in Event-based Social Network
+Auctions with LLM Summaries
+Two-stage Auction Design in Online Advertising
+AutoML for Deep Recommender Systems: A Survey
+TCM Intelligent Recommendation Based on Multimodal Knowledge Graph Attention Network
+Assessing Explainable Recommendations from Knowledge Graph-based in an International Streaming Platform
+Bayesian Personalized Ranking based on Knowledge Graph
+LightCS: Selecting Quadratic Feature Crosses in Linear Complexity
+Learnable Item Tokenization for Generative Recommendation
+Widespread Flaws in Offline Evaluation of Recommender Systems
+Bidirectional Knowledge-Aware Attention Network over Knowledge Graph for Explainable Recommendation
+Data Processing with FPGAs on Modern Architectures
+Collaborative Alignment for Recommendation
+A Feature-Based Coalition Game Framework with Privileged Knowledge Transfer for User-tag Profile Modeling
+Content-Based Collaborative Generation for Recommender Systems
+Preventing Strategic Behaviors in Collaborative Inference for Vertical Federated Learning
+MMLRec: A Unified Multi-Task and Multi-Scenario Learning Benchmark for Recommendation
+AutoPooling: Automated Pooling Search for Multi-valued Features in Recommendations
+Prompt Tuning for Item Cold-start Recommendation
+PIER: Permutation-Level Interest-Based End-to-End Re-ranking Framework in E-commerce
+Deep Journey Hierarchical Attention Networks for Conversion Predictions in Digital Marketing
+Multi-Behavior Collaborative Filtering with Partial Order Graph Convolutional Networks
+Linear-Time Graph Neural Networks for Scalable Recommendations
+Modeling User Fatigue for Sequential Recommendation
+Accelerating Communication in Deep Learning Recommendation Model Training with Dual-Level Adaptive Lossy Compression
+FeatureLTE: Learning to Estimate Feature Importance
+FeatureLTE: Learning to Estimate Feature Importance
+Personalized Category Frequency prediction for Buy It Again recommendations
+A Generalized Propensity Learning Framework for Unbiased Post-Click Conversion Rate Estimation
+Towards A Platform and Benchmark Suite for Model Training on Dynamic Datasets
+DIGMN: Dynamic Intent Guided Meta Network for Differentiated User Engagement Forecasting in Online Professional Social Platforms
+GraphPro: Graph Pre-training and Prompt Learning for Recommendation
+Demeter: Resource-Efficient Distributed Stream Processing under Dynamic Loads with Multi-Configuration Optimization
+Quad-Tier Entity Fusion Contrastive Representation Learning for Knowledge Aware Recommendation System
+Automatic Feature Selection By One-Shot Neural Architecture Search In Recommendation Systems
+Multi-Scenario Ranking with Adaptive Feature Learning
+Unleashing the Power of Knowledge Graph for Recommendation via Invariant Learning
+Specify Robust Causal Representation from Mixed Observations
+Single-User Injection for Invisible Shilling Attack against Recommender Systems
+Hybrid Contrastive Constraints for Multi-Scenario Ad Ranking
+Stability-aware Preference Modeling for Sequential Recommendation
+What We Evaluate When We Evaluate Recommender Systems: Understanding Recommender Systems’ Performance using Item Response Theory
+CAME: Competitively Learning a Mixture-of-Experts Model for First-stage Retrieval
+Extreme Multi-Label Classification for Ad Targeting using Factorization Machines
+Can Small Language Models be Good Reasoners for Sequential Recommendation?
+Exploring the Landscape of Recommender Systems Evaluation: Practices and Perspectives
+Feature Missing-aware Routing-and-Fusion Network for Customer Lifetime Value Prediction in Advertising
+SAMD: An Industrial Framework for Heterogeneous Multi-Scenario Recommendation
+M2GNN: Metapath and Multi-interest Aggregated Graph Neural Network for Tag-based Cross-domain Recommendation
+Multi-Task Recommendations with Reinforcement Learning
+Empowering General-purpose User Representation with Full-life Cycle Behavior Modeling
+DPGN: Denoising Periodic Graph Network for Life Service Recommendation
+Aligning Distillation For Cold-start Item Recommendation
+Eligibility Mechanisms: Auctions Meet Information Retrieval
+Graph-Based Model-Agnostic Data Subsampling for Recommendation Systems
+Meta Graph Learning for Long-tail Recommendation
+RecStudio: Towards a Highly-Modularized Recommender System
+Action Attention GRU: A Data-Driven Approach for Enhancing Purchase Predictions in Digital Marketing
+Single-shot Feature Selection for Multi-task Recommendations
+Boosting Advertising Space: Designing Ad Auctions for Augment Advertising
+M2EU: Meta Learning for Cold-start Recommendation via Enhancing User Preference Estimation
+Doubly Robust Estimation for Correcting Position Bias in Click Feedback for Unbiased Learning to Rank
+RecDCL: Dual Contrastive Learning for Recommendation
+Software-Hardware Co-design of Heterogeneous SmartNIC System for Recommendation Models Inference and Training
+Daedalus: Self-Adaptive Horizontal Autoscaling for Resource Efficiency of Distributed Stream Processing Systems
+Reinforced Explainable Knowledge Concept Recommendation in MOOCs
+Search-based Time-aware Graph-enhanced Recommendation with Sequential Behavior Data
+CMLCompiler: A Unified Compiler for Classical Machine Learning
+Multi-level Attention-based Domain Disentanglement for BCDR
+Collaborative Sequential Recommendations via Multi-view GNN-transformers
+Graph and Sequential Neural Networks in Session-based Recommendation: A Survey
+CAFE: Towards Compact, Adaptive, and Fast Embedding for Large-scale Recommendation Models
+Causal Deconfounding via Confounder Disentanglement for Dual-Target Cross-Domain Recommendation
+Impression-Aware Recommender Systems
+Bagpipe: Accelerating Deep Recommendation Model Training
+Contrastive Graph Prompt-tuning for Cross-domain Recommendation
+Multifaceted Relation-aware Meta-learning with Dual Customization for User Cold-start Recommendation
+Relieving Popularity Bias in Interactive Recommendation: A Diversity-Novelty-Aware Reinforcement Learning Approach
+GoldMiner: Elastic Scaling of Training Data Pre-Processing Pipelines for Deep Learning
+Bounding System-Induced Biases in Recommender Systems with a Randomized Dataset
+Debiased Representation Learning in Recommendation via Information Bottleneck
+A New Sparse Data Clustering Method Based On Frequent Items
+RECom: A Compiler Approach to Accelerating Recommendation Model Inference with Massive Embedding Columns
+Contrastive Self-supervised Learning in Recommender Systems: A Survey
+A Survey on Trustworthy Recommender Systems
+Pathfinder: High-Resolution Control-Flow Attacks Exploiting the Conditional Branch Predictor
+Dense Text Retrieval Based on Pretrained Language Models: A Survey
+Self-supervision for Tabular Data by Learning to Predict Additive Homoskedastic Gaussian Noise as Pretext
+Modeling Orders of User Behaviors via Differentiable Sorting: A Multi-task Framework to Predicting User Post-click Conversion
+An Unbiased Entire-Space Causal Framework for Click-Through Rate Estimation in Pre-Ranking
+Deep Disease Label-guided Graph Convolutional Network for Medical Report Generation
+Privacy Preserving Conversion Modeling in Data Clean Room
+SEED: Speculative Security Metadata Updates for Low-Latency Secure Memory
+Towards Personalized Federated Multi-Scenario Multi-Task Recommendation
+Are Copywriters the Best Humans for the Job? The Case of Health-Related Ads
+Out of the Box Thinking: Improving Customer Lifetime Value Modelling via Expert Routing and Game Whale Detection
+Deep Multifaceted Highlight Network for Multi-objective Ranking in Trigger-Induced Recommendation
+Contextual Generative Auction with Permutation-level Externalities for Online Advertising
+AutoML for Large Capacity Modeling of Meta's Ranking Systems
+Modeling User Intent Beyond Trigger: Incorporating Uncertainty for Trigger-Induced Recommendation
+Treatment Effect Estimation for User Interest Exploration on Recommender Systems
+MPKGAC: Multimodal Product Attribute Completion in E-commerce
+Exploiting Duality in Open Information Extraction with Predicate Prompt
+LLMGR: Large Language Model-based Generative Retrieval in Alipay Search
+LLM-Ensemble: Optimal Large Language Model Ensemble Method for E-commerce Product Attribute Value Extraction
+ReLand: Integrating Large Language Models' Insights into Industrial Recommenders via a Controllable Reasoning Pool
+What Image do You Need? A Two-stage Framework for Image Selection in E-commerce
+Research on Negative Transfer Problem Caused by Cascading Auxiliary Tasks in Ad Ranking
+Joint Mixing Data Augmentation for Skeleton-Based Action Recognition
+TIM: Temporal Interaction Model in Notification System
+COPR: Consistency-Oriented Pre-Ranking for Online Advertising
+Unified Dual-Intent Translation for Joint Modeling of Search and Recommendation
+Interpretable User Retention Modeling in Recommendation
+Task Aware Feature Extraction Framework for Sequential Dependence Multi-Task Learning
+Retentive Decision Transformer with Adaptive Masking for Reinforcement Learning-Based Recommendation Systems
+A Hybrid Deep Ranking Weighted Multi-Hashing Recommender System
+Improving Scene Text Retrieval via Stylized Middle Modality
+ICDFGF: Identification of potential circRNA-disease associations based on feature graph factorization
+Conscious Task Recommendation via Cognitive Reasoning Computing in Mobile Crowd Sensing
+Communicative MARL-based Relevance Discerning Network for Repetition-Aware Recommendation
+Learning-Based Ad Auction Design with Externalities: The Framework and A Matching-Based Approach
+Optimizing Revenue through User Coupon Recommendations in Truthful Online Ad Auctions
+Addressing Confounding Feature Issue for Causal Recommendation
+DHFM: Diversity-Enhanced Hypergraph Factorization Machines for Feature Interaction Modeling
+Online Incentive Protocol Design for Reposting Service in Online Social Networks
+STGIN: Spatial-Temporal Graph Interaction Network for Large-scale POI Recommendation
+Content-Aware Selective Encryption for H.265/HEVC Using Deep Hashing Network and Steganography
+Beyond Accurate Answers: Evaluating Open-Domain Question Answering in Enterprise Search
+Integrated Ranking for News Feed with Reinforcement Learning
+Unbiased Learning to Rank Meets Reality: Lessons from Baidu's Large-Scale Search Dataset
+OmniSearchSage: Multi-Task Multi-Entity Embeddings for Pinterest Search
+Hydrus: Improving Personalized Quality of Experience in Short-form Video Services
+TrendSpotter: Forecasting E-commerce Product Trends
+Know in AdVance: Linear-Complexity Forecasting of Ad Campaign Performance with Evolving User Interest
+The Not-So-Silent Type: Vulnerabilities in Chinese IME Keyboards' Network Security Protocols
+QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search
+A Survey on Intent-aware Recommender Systems
+MCAP: Low-Pass GNNs with Matrix Completion for Academic Recommendations
+Explaining GNN-Based Recommendations in Logic
+User Behavior Simulation for Search Result Re-ranking
+Towards the development of personalized and generalized interfaces for brain signals across different styles of meditation
+Graph Regularized Encoder Training for Extreme Classification
+Cost-Effective Active Learning for Bid Exploration in Online Advertising
+STAN: Stage-Adaptive Network for Multi-Task Recommendation by Learning User Lifecycle-Based Representation
+Crossroads of AI and Tourism: Enhancing Destination Management and Traveler Engagement
+Counteracting Duration Bias in Video Recommendation via Counterfactual Watch Time
+Pacer and Runner: Cooperative Learning Framework between Single- and Cross-Domain Sequential Recommendation
+An Offline Metric for the Debiasedness of Click Models
+Neural Optimization with Adaptive Heuristics for Intelligent Marketing System
+Understanding or Manipulation: Rethinking Online Performance Gains of Modern Recommender Systems
+Controllable Multi-Behavior Recommendation for In-Game Skins with Large Sequential Model
+Counterfactual Situation Testing: Uncovering Discrimination under Fairness given the Difference
+M-scan: A Multi-Scenario Causal-driven Adaptive Network for Recommendation
+Utility-Oriented Reranking with Counterfactual Context
+Touch the Core: Exploring Task Dependence Among Hybrid Targets for Recommendation
+AutoPoster: A Highly Automatic and Content-aware Design System for Advertising Poster Generation
+Fresh Content Needs More Attention: Multi-funnel Fresh Content Recommendation
+Transferable and Forecastable User Targeting Foundation Model
+Research on Drug Recommendation Based on Feature Interaction and Graph Convolution
+OutRank: Speeding up AutoML-based Model Search for Large Sparse Data sets with Cardinality-aware Feature Ranking
+DCBT: A Simple But Effective Way for Unified Warm and Cold Recommendation
+Users Meet Clarifying Questions: Toward a Better Understanding of User Interactions for Search Clarification
+Pessimistic Decision-Making for Recommender Systems
+M3REC: A Meta-based Multi-scenario Multi-task Recommendation Framework
+A Bi-Step Grounding Paradigm for Large Language Models in Recommendation Systems
+Adapting Constrained Markov Decision Process for OCPC Bidding with Delayed Conversions
+FoC: Figure out the Cryptographic Functions in Stripped Binaries with LLMs
+Coarse-Grained Task Parallelization by Dynamic Profiling for Heterogeneous SoC-Based Embedded System
+Research on Recommendation Algorithm Based on Knowledge Graph
+A Review of Modern Fashion Recommender Systems
+CenterLPS: Segment Instances by Centers for LiDAR Panoptic Segmentation
+Sequential Recommendation for Optimizing Both Immediate Feedback and Long-term Retention
+Detecting Both Seen and Unseen Anomalies in Time Series
+RL-MPCA: A Reinforcement Learning Based Multi-Phase Computation Allocation Approach for Recommender Systems
+Multi-auxiliary Augmented Collaborative Variational Auto-encoder for Tag Recommendation
+An E-Commerce Dataset Revealing Variations during Sales
+Individual Welfare Guarantees in the Autobidding World with Machine-learned Advice
+A Module-Level Configuration Methodology for Programmable Camouflaged Logic
+Multimodal Analysis and Assessment of Therapist Empathy in Motivational Interviews
+MP-Rec: Hardware-Software Co-design to Enable Multi-path Recommendation
+Multi-Task Learning with Sequential Dependence Toward Industrial Applications: A Systematic Formulation
+Intrinsic and Extrinsic Factor Disentanglement for Recommendation in Various Context Scenarios
+Causal Time-aware News Recommendations with Large Language Models
+An Enhanced Batch Query Architecture in Real-time Recommendation
+Powering In-Database Dynamic Model Slicing for Structured Data Analytics
+Scaling Law of Large Sequential Recommendation Models
+Multi-view Intent Learning and Alignment with Large Language Models for Session-based Recommendation
+SOEX: Explainable AI for Competitor Communications Analytics
+Transferring Causal Mechanism over Meta-representations for Target-Unknown Cross-domain Recommendation
+Entire Chain Uplift Modeling with Context-Enhanced Learning for Intelligent Marketing
+Optimizing E-commerce Search: Toward a Generalizable and Rank-Consistent Pre-Ranking Model
+Minimizing Live Experiments in Recommender Systems: User Simulation to Evaluate Preference Elicitation Policies
+Creating an Intelligent Social Media Campaign Decision-Support Method
+UniDEC : Unified Dual Encoder and Classifier Training for Extreme Multi-Label Classification
+BAT: Benchmark for Auto-bidding Task
+Unified Memory Protection with Multi-granular MAC and Integrity Tree for Heterogeneous Processors
+MIT: A Multi-Tower Information Transfer Framework Based on Hierarchical Task Relationship Modeling
+Counterfactual Situation Testing
+Multi-Modality Co-Learning for Efficient Skeleton-based Action Recognition
+Explainable Deep Learning Methods in Medical Image Classification: A Survey
+Intelligent Agents with LLM-based Process Automation
+D-VSync: Decoupled Rendering and Displaying for Smartphone Graphics
+To Explore or Exploit? A Gradient-informed Framework to Address the Feedback Loop for Graph based Recommendation
+A Hybrid Cross-Stage Coordination Pre-ranking Model for Online Recommendation Systems
+Optimized Cost Per Click in Online Advertising: A Theoretical Analysis
+2M-AF: A Strong Multi-Modality Framework For Human Action Quality Assessment with Self-supervised Representation Learning
+RUEL: Retrieval-Augmented User Representation with Edge Browser Logs for Sequential Recommendation
+Research on the Application of Intelligent Recommendation System in English Reading Teaching
+Ranking-Aware Unbiased Post-Click Conversion Rate Estimation via AUC Optimization on Entire Exposure Space
+Occluded Skeleton-Based Human Action Recognition with Dual Inhibition Training
+Capturing Performance and Privacy by Assembling Avengers of Online Advertising
+Research on Vehicle Detection Algorithm Based on Improved YOLOv5 and Kalman filter
+RevGNN: Negative Sampling Enhanced Contrastive Graph Learning for Academic Reviewer Recommendation
+Fairness in Online Ad Delivery
+Analyzing User Preferences and Quality Improvement on Bing's WebPage Recommendation Experience with Large Language Models
+Residual Multi-Task Learner for Applied Ranking
+Research on E-commerce Personalized Visual Marketing Algorithms Based on Generative Adversarial Network (GAN) Model
+Calibration for Long-tailed Scene Graph Generation
+Alleviating Video-length Effect for Micro-video Recommendation
+Kale: Elastic GPU Scheduling for Online DL Model Training
+Advancing Re-Ranking with Multimodal Fusion and Target-Oriented Auxiliary Tasks in E-Commerce Search
+LTP-MMF: Toward Long-Term Provider Max-Min Fairness under Recommendation Feedback Loops
+AURO: Reinforcement Learning for Adaptive User Retention Optimization in Recommender Systems
+EBaReT: Expert-guided Bag Reward Transformer for Auto Bidding
+Legommenders: A Comprehensive Content-Based Recommendation Library with LLM Support
+BayProNet: Advancing Few-Shot Learning with Bayesian Prototype Network
+Staying in the Cat-and-Mouse Game: Towards Black-box Adversarial Example Detection
+On the Security of Selectively Encrypted HEVC Video Bitstreams
+A Survey of Trustworthy Representation Learning Across Domains
+The Bitcoin Backbone Protocol: Analysis and Applications
+Hierarchical Sequence ID Representation of Large Language Models for Large-scale Recommendation Systems
+On the Analysis of Two-Stage Stochastic Bandit
+Recent Advances of Foundation Language Models-based Continual Learning: A Survey
+Adversarially Trained Environment Models Are Effective Policy Evaluators and Improvers - An Application to Information Retrieval
+Online and Offline Evaluation in Search Clarification
+Specification and Verification of Strong Timing Isolation of Hardware Enclaves
+JDivPS: A Diversified Product Search Dataset
+A Cold-start Recommendation System at Kuaishou Designed from the Short-video Perspective
+SCM4SR: Structural Causal Model-based Data Augmentation for Robust Session-based Recommendation
+Unleashing the Potential of Multi-Channel Fusion in Retrieval for Personalized Recommendations
+CM: A Cross and Mixture unit for multitask recommendation
+Real-Time Activity Recognition for Surveillance Applications on Edge Devices
+Efficient Multi-task Prompt Tuning for Recommendation
+Authors’ Biography/Index
+Bridging the Gap: Unpacking the Hidden Challenges in Knowledge Distillation for Online Ranking Systems
+TD3: Tucker Decomposition Based Dataset Distillation Method for Sequential Recommendation
+An Empirical Study of Selection Bias in Pinterest Ads Retrieval
+How Can Recommender Systems Benefit from Large Language Models: A Survey
+Measuring Item Global Residual Value for Fair Recommendation
+REST: Debiased Social Recommendation via Reconstructing Exposure Strategies
+Data Pricing for Graph Neural Networks without Pre-purchased Inspection
+Towards Video-based Activated Muscle Group Estimation in the Wild
+On Practical Diversified Recommendation with Controllable Category Diversity Framework
+Maximum-Entropy Regularized Decision Transformer with Reward Relabelling for Dynamic Recommendation
+Middleman Bias in Advertising: Aligning Relevance of Keyphrase Recommendations with Search
+Graph-Aware Language Model Pre-Training on a Large Graph Corpus Can Help Multiple Graph Applications
+Ads Supply Personalization via Doubly Robust Learning
+MEMER - Multimodal Encoder for Multi-signal Early-stage Recommendations
+Computational Technologies for Fashion Recommendation: A Survey
+DiffuRetrieval: A Chain-of-Thought Enhanced Diffusion Retrieval in Sponsored Search
+3D Convolutional Network based micro-gesture recognition
+MTKDN: Multi-Task Knowledge Disentanglement Network for Recommendation
+DivNet: Diversity-Aware Self-Correcting Sequential Recommendation Networks
+Personalization At Doordash: From Conversion Modeling To Multi-objective Long-term Value Optimization
+Good Intentions: Adaptive Parameter Management via Intent Signaling
+UniEmbedding: Learning Universal Multi-Modal Multi-Domain Item Embeddings via User-View Contrastive Learning
+Enhancing Climate Information Accessibility: the Influence of Gaze Cues
+Smart Notifications – An ML-based Framework to Boost User Engagement
+An Adaptive Aggregation Method for Federated Learning via Meta Controller
+X-Phishing-Writer: A Framework for Cross-lingual Phishing E-mail Generation
+COUPA: An Industrial Recommender System for Online to Offline Service Platforms
+Multi-channel Integrated Recommendation with Exposure Constraints
+DeepPvisit: A Deep Survival Model for Notification Management
+Scaling Vison-Language Foundation Model to 12 Billion Parameters in Baidu Dynamic Image Advertising
+TrivialSpy: Identifying Software Triviality via Fine-grained and Dataflow-based Value Profiling
+The Journey of Action Recognition
+An Interactive Fusion Recommendation Model based on Deep Neural Network
+Efficient Multi-Task Learning via Generalist Recommender
+Leveraging Generative Models for Covert Messaging: Challenges and Tradeoffs for "Dead-Drop" Deployments
+Fairness-aware Guaranteed Display Advertising Allocation under Traffic Cost Constraint
+CaLa: Complementary Association Learning for Augmenting Comoposed Image Retrieval
+Creator-Side Recommender System: Challenges, Designs, and Applications
+Frequency Guidance Matters: Skeletal Action Recognition by Frequency-Aware Mixed Transformer
+A Data-Centric Multi-Objective Learning Framework for Responsible Recommendation Systems
+Self-Relational Graph Convolution Network for Skeleton-Based Action Recognition
+SeCor: Aligning Semantic and Collaborative Representations by Large Language Models for Next-Point-of-Interest Recommendations
+Explainable LLM-driven Multi-dimensional Distillation for E-Commerce Relevance Learning
+Intent-Satisfaction Modeling: From Music to Video Streaming
+Visual Explanation for Advertising Creative Workflow
+A Behavior-aware Cause Identification Framework for Order Cancellation in Logistics Service
+Language Knowledge-Assisted in Topology Construction for Skeleton-Based Action Recognition
+EWM-TOPSIS and BP Neural Network for Typhoon Disaster Risk Assessment and Mitigation Capacity Enhancement in Southeast Coastal Economic Zone
+Self-Auxiliary Distillation for Sample Efficient Learning in Google-Scale Recommenders
+FLAG: Finding Line Anomalies (in RTL code) with Generative AI
+Continual Learning of Large Language Models: A Comprehensive Survey
+Multi-objective Learning to Rank by Model Distillation
+VIER: Visual Imagination Enhanced Retrieval in Sponsored Search
+Commonsense Knowledge Graph towards Super APP and Its Applications in Alipay
+Do We Run How We Say We Run? Formalization and Practice of Governance in OSS Communities
+Text Matching Indexers in Taobao Search
+MODRL-TA: A Multi-Objective Deep Reinforcement Learning Framework for Traffic Allocation in E-Commerce Search
+Triple Sequence Learning for Cross-domain Recommendation
+Optimal Real-Time Bidding Strategy for Position Auctions in Online Advertising
+Survey on Recommender Systems for Biomedical Items in Life and Health Sciences
+Combining Deep Learning And Medical Knowledge to Detect Cadiomegaly and Pleural Effusion in Chest X-rays Diagnosis
+Unleashing the Potential of Two-Tower Models: Diffusion-Based Cross-Interaction for Large-Scale Matching
+Leave No One Behind: Online Self-Supervised Self-Distillation for Sequential Recommendation
+Catalyzing Intelligent Logistics System Simulation with Data-Driven Decision Strategies
+Product Query Recommendation for Enriching Suggested Q&As
+Research on Interactive Advertising Strategies Using Machine Learning Algorithms for User Behavior Analysis
+Enhancing Sequential Recommendation via LLM-based Semantic Embedding Learning
+Negative Results of Image Processing for Identifying Duplicate Questions on Stack Overflow
+On Causally Disentangled State Representation Learning for Reinforcement Learning based Recommender Systems
+TCCM: Time and Content-Aware Causal Model for Unbiased News Recommendation
+Explainable Medical Image Captioning
+Evaluation of IR Systems
+Pareto Front Approximation for Multi-Objective Session-Based Recommender Systems
+Multi-Granularity Attention Model for Group Recommendation
+Using Assistance Rewards Without Introducing Bias: Overcoming Sparse Rewards in Multi-Agent Reinforcement Learning
+Properties of Group Fairness Measures for Rankings
+CAViaR: Context Aware Video Recommendations
+Automated Query-Product Relevance Labeling using Large Language Models for E-commerce Search
+Applications of Text Generation in Digital Marketing: a review
+Hidden Barcode in Sub-Images with Invisible Locating Marker
+IncMSR: An Incremental Learning Approach for Multi-Scenario Recommendation
+TDXdown: Single-Stepping and Instruction Counting Attacks against Intel TDX
+Temporal and Joint Topology-Refined Hypergraph Convolution Networks for Skeletal Action Recognition
+Slate-Aware Ranking for Recommendation
+Personalized News Recommendation: Methods and Challenges
+Uncovering User Interest from Biased and Noised Watch Time in Video Recommendation
+JDRec: Practical Actor-Critic Framework for Online Combinatorial Recommender System
+Engagement Patterns in TikTok: An Analysis of Short Video Ads
+Joint Engagement Classification using Video Augmentation Techniques for Multi-person HRI in the wild
+Promoting Tail Item Recommendations in E-Commerce
+Where to Go Next for Recommender Systems? ID- vs. Modality-based Recommender Models Revisited
+Efficiency of LLMs in Identifying Abusive Language Online: A Comparative Study of LSTM, BERT, and GPT
+A Context-Aware Framework for Integrating Ad Auctions and Recommendations
+BOMGraph: Boosting Multi-scenario E-commerce Search with a Unified Graph Neural Network
+A Survey of Controllable Text Generation Using Transformer-based Pre-trained Language Models
+Enhanced Recommendation Systems with Retrieval-Augmented Large Language Model
+Enhanced Recommendation Systems with Retrieval-Augmented Large Language Model
+GAS: Generative Auto-bidding with Post-training Search
+A Study on Color Theme Generation Using Convolutional Neural Networks
+International Workshop on Deep Learning Practice for High-Dimensional Sparse Data with RecSys 2023
+Shaping the Future of Content-based News Recommenders: Insights from Evaluating Feature-Specific Similarity Metrics
+Gradient Coordination for Quantifying and Maximizing Knowledge Transference in Multi-Task Learning
+Fundamental Capabilities and Applications of Large Language Models: A Survey
+TAML: Time-Aware Meta Learning for Cold-Start Problem in News Recommendation
+UISA: User Information Separating Architecture for Commodity Recommendation Policy with Deep Reinforcement Learning
+Optimization-Based Budget Pacing in eBay Sponsored Search
+On the Impact of Outlier Bias on User Clicks
+Recommender Systems
+MoME: Mixture-of-Masked-Experts for Efficient Multi-Task Recommendation
+Information Retrieval
+Side-Channel Analysis of Curve-25519 Based on Deep Learning
+Data-Driven Approaches for Process Simulation and Optical Proximity Correction
+Deeply Fusing Semantics and Interactions for Item Representation Learning via Topology-driven Pre-training
+Resource-aware Security Configuration for Constrained IoT Devices
+Exploring Adapter-based Transfer Learning for Recommender Systems: Empirical Studies and Practical Insights
+Fashion-VDM: Video Diffusion Model for Virtual Try-On
+Know Your Needs Better: Towards Structured Understanding of Marketer Demands with Analogical Reasoning Augmented LLMs
+Sequence-level Semantic Representation Fusion for Recommender Systems
+On the Opportunities and Challenges of Offline Reinforcement Learning for Recommender Systems
+Learning to Distinguish Multi-User Coupling Behaviors for TV Recommendation
+Duet: A Collaborative User Driven Recommendation System for Edge Devices
+Explicit and Implicit Semantic Ranking Framework
+Ad Auction Design with Coupon-Dependent Conversion Rate in the Auto-bidding World
+Mitigating Sample Selection Bias with Robust Domain Adaption in Multimedia Recommendation
+Event-Aware Adaptive Clustering Uplift Network for Insurance Creative Ranking
+Scenario-Adaptive Fine-Grained Personalization Network: Tailoring User Behavior Representation to the Scenario Context
+Causal Decision Transformer for Recommender Systems via Offline Reinforcement Learning
+CADENCE: Offline Category Constrained and Diverse Query Generation for E-commerce Autosuggest
+Multimodal Pretraining, Adaptation, and Generation for Recommendation: A Survey
+Let's Go Eevee! A Friendly and Suitable Family of AEAD Modes for IoT-to-Cloud Secure Computation
+MEBS: Multi-task End-to-end Bid Shading for Multi-slot Display Advertising
+Improving Query Correction Using Pre-train Language Model In Search Engines
+Generalized News Event Discovery via Dynamic Augmentation and Entropy Optimization
+Skeletal Spatial-Temporal Semantics Guided Homogeneous-Heterogeneous Multimodal Network for Action Recognition
+A Lightweight approach to human action recognition based on MotionBERT
+POSTER: Pattern-Aware Sparse Communication for Scalable Recommendation Model Training
+Deep Uncertainty-Based Explore for Index Construction and Retrieval in Recommendation System
+Analog In-memory Circuit Design of Polynomial Multiplication for Lattice Cipher Acceleration Application
+Scaling Sequential Recommendation Models with Transformers
+Evaluating The Effects of Calibrated Popularity Bias Mitigation: A Field Study
+A Survey of Source Code Representations for Machine Learning-Based Cybersecurity Tasks
+ESANS: Effective and Semantic-Aware Negative Sampling for Large-Scale Retrieval Systems
+Mathematics-Inspired Models: A Green and Interpretable Learning Paradigm for Multimedia Computing
+SLH-BIA: Short-Long Hawkes Process for Buy It Again Recommendations at Scale
+MV-HAN: A Hybrid Attentive Networks based Multi-View Learning Model for Large-scale Contents Recommendation
+Enhancing Pre-Ranking Performance: Tackling Intermediary Challenges in Multi-Stage Cascading Recommendation Systems
+DeCoCDR: Deployable Cloud-Device Collaboration for Cross-Domain Recommendation
+Contextual Multi-Armed Bandit for Email Layout Recommendation
+GATS: Generative Audience Targeting System for Online Advertising
+Intelligent Model Update Strategy for Sequential Recommendation
+CCMB: A Large-scale Chinese Cross-modal Benchmark
+Not Just Skipping: Understanding the Effect of Sponsored Content on Users' Decision-Making in Online Health Search
+Correlative Preference Transfer with Hierarchical Hypergraph Network for Multi-Domain Recommendation
+Federated Learning is Better with Non-Homomorphic Encryption
+CL-WSTC: Continual Learning for Weakly Supervised Text Classification on the Internet
+In-Memory Computing Accelerators for Emerging Learning Paradigms
+Deep Learning Models for Serendipity Recommendations: A Survey and New Perspectives
+A Survey on Virtual Network Functions for Media Streaming: Solutions and Future Challenges
+Towards Lifelong Learning of Large Language Models: A Survey
+Rabbitail: A Tail Latency-Aware Scheduler for Deep Learning Recommendation Systems with Hierarchical Embedding Storage
+Embedding Optimization for Training Large-scale Deep Learning Recommendation Systems with EMBark
+Helping the Helper : Supporting Peer Counselors via AI-Empowered Practice and Feedback
+WannaLaugh: A Configurable Ransomware Emulator - Learning to Mimic Malicious Storage Traces
+Dataset Regeneration for Sequential Recommendation
+Counterfactual Data Augmentation for Debiased Coupon Recommendations Based on Potential Knowledge
+A Transformer-Based Substitute Recommendation Model Incorporating Weakly Supervised Customer Behavior Data
+Differentiable Retrieval Augmentation via Generative Language Modeling for E-commerce Query Intent Classification
+Connecting Unseen Domains: Cross-Domain Invariant Learning in Recommendation
+MultiFS: Automated Multi-Scenario Feature Selection in Deep Recommender Systems
+Self-Reinforcing Memoization for Cryptography Calculations in Secure Memory Systems
+Multi-Scale Channel Attention for Chinese Scene Text Recognition
+Examining the Suitability of Stream Ciphers for Modbus-TCP Encryption on Resource Constrained Devices
+A Two-tier Shared Embedding Method for Review-based Recommender Systems
+Differentiable Edge-based OPC
+A Preference-oriented Diversity Model Based on Mutual-information in Re-ranking for E-commerce Search
+AI Enabled Cloud Service to detect Conversion Fraud in E-commerce
+Multi-Source Domain Adaptation via Latent Domain Reconstruction
+EdgeNet : Encoder-decoder generative Network for Auction Design in E-commerce Online Advertising
+On Modeling Long-Term User Engagement from Stochastic Feedback
+Forward Security with Crash Recovery for Secure Logs
+Scaling Session-Based Transformer Recommendations using Optimized Negative Sampling and Loss Functions
+Fairness in Recommender Systems: Evaluation Approaches and Assurance Strategies
+Boosting OLTP Performance with Per-Page Logging on NVDIMM
+Filtering Discomforting Recommendations with Large Language Models
+Spelling Check with Sparse Distributed Representations Learning
+Establishing Heuristics for Improving the Usability of GUI Machine Learning Tools for Novice Users
+Disentangled Representation for Diversified Recommendations
+A Bird's-eye View of Reranking: From List Level to Page Level
+PEACE: Prototype lEarning Augmented transferable framework for Cross-domain rEcommendation
+BCMIX: A Blockchain-Based Dynamic Self-Reconfigurable Mixnet
+On the Effectiveness of Sampled Softmax Loss for Item Recommendation
+Integrity and Junkiness Failure Handling for Embedding-based Retrieval: A Case Study in Social Network Search
+The Innovative Application of Big Data in Chinese Media Industry
+Intent-aware Ranking Ensemble for Personalized Recommendation
+Green Simulation Based Policy Optimization with Partial Historical Trajectory Reuse
+Large Multimodal Model Compression via Iterative Efficient Pruning and Distillation
+Visuo-haptic Crossmodal Shape Perception Model for Shape-Changing Handheld Controllers Bridged by Inertial Tensor
+Multi-factor Sequential Re-ranking with Perception-Aware Diversification
+Fair Multilingual Vandalism Detection System for Wikipedia
+How Important is Periodic Model update in Recommender System?
+Reciprocating Locks
+A Multi-Armed Bandit Recommender Algorithm Based on Conversation and KNN
+Modelling Delayed Redemption with Importance Sampling and Pre-Redemption Engagement
+MDDL: A Framework for Reinforcement Learning-based Position Allocation in Multi-Channel Feed
+Research on the Application of Energy Wisdom Based on Power Iot and Big Data
+A Survey on the Fairness of Recommender Systems
+Efficient and Joint Hyperparameter and Architecture Search for Collaborative Filtering
+Assembly Action Recognition based on Dual Stream Fusion of Skeleton and Video Data
+RL4RS: A Real-World Dataset for Reinforcement Learning based Recommender System
+Design and implementation of Marine biometrics identification and recommendation mini program based on YOLO
+Bias in Retrieval Systems
+Searching Personal Collections
+Bidder Selection Problem in Position Auctions: A Fast and Simple Algorithm via Poisson Approximation
+Unlocking the Potential of Decentralized LLM-based MAS: Privacy Preservation and Monetization in Collective Intelligence
+Privacy Matters: Vertical Federated Linear Contextual Bandits for Privacy Protected Recommendation
+Security of Electrical, Optical, and Wireless On-chip Interconnects: A Survey
+Unified Vision-Language Representation Modeling for E-Commerce Same-style Products Retrieval
+Learning Discrete Document Representations in Web Search
+Memory Network-Based Interpreter of User Preferences in Content-Aware Recommender Systems
+Graph Exploration Matters: Improving both Individual-Level and System-Level Diversity in WeChat Feed Recommendation
+Meta-CRS: A Dynamic Meta-Learning Approach for Effective Conversational Recommender System
+Online Matching: A Real-time Bandit System for Large-scale Recommendations
+Data-Driven User Experience Design
+Where Are the Values? A Systematic Literature Review on News Recommender Systems
+VAE-based anomaly detection for embedded computer electronic components
+Offline Policy Evaluation in Large Action Spaces via Outcome-Oriented Action Grouping
+Experimental Analysis of Large-Scale Learnable Vector Storage Compression
+Controllable Multi-Objective Re-ranking with Policy Hypernetworks
+NGAME: Negative Mining-aware Mini-batching for Extreme Classification
+Effects of Aromatherapy and Music on Napping-Time Quality in Young Adults: EEG Sleep Study
+GPU-based Private Information Retrieval for On-Device Machine Learning Inference
+Assessing enactment of content regulation policies: A post hoc crowd-sourced audit of election misinformation on YouTube
+Application of telemedicine technology in cardiac rehabilitation: A Bibliometric Analysis
+Two-sided Calibration for Quality-aware Responsible Recommendation
+Design of a Robust MAC Protocol for LoRa
+Online Menu by QR-Code and Behavioral Intention to adopt it on Mobile of Gen Z, research for the Food and Beverage industry in Can Tho City, Viet Nam
+Revisiting Neural Retrieval on Accelerators
+Finite-time analysis of globally nonstationary multi-armed bandits
+Optimizing CPU Performance for Recommendation Systems At-Scale
+Enhancing Exploration in Bandit Algorithms Through a Dynamically Modified Reinforcement Learning Approach
+MITRE ATT&CK: State of the Art and Way Forward
+GRACE: A Scalable Graph-Based Approach to Accelerating Recommendation Model Inference
+EVStore: Storage and Caching Capabilities for Scaling Embedding Tables in Deep Recommendation Systems
+Interpolation Normalization for Contrast Domain Generalization
+Twenty Years Later: Evaluating the Adoption of Control Flow Integrity
+Scheduling Data Processing Pipelines for Incremental Training on MLP-based Recommendation Models
+PaSTS An Operational Dataset for Domestic Solar Thermal Systems
+Reproducibility of Multi-Objective Reinforcement Learning Recommendation: Interplay between Effectiveness and Beyond-Accuracy Perspectives
+Heterogeneous Knowledge Fusion: A Novel Approach for Personalized Recommendation via LLM
+Eager Memory Cryptography in Caches
+Data Driven Environment Classification Using Wireless Signals
+Learning Disentangled Representation via Domain Adaptation for Dialogue Summarization
+PP4RNR: Popularity- and Position-Aware Contrastive Learning for Retrieval-Driven News Recommendation
+Identifying Controversial Pairs in Item-to-Item Recommendations
+Compressed and distributed least-squares regression
+Enabling Secure and Efficient Data Analytics Pipeline Evolution with Trusted Execution Environment
+Privacy Protection and Data Security for Big Data Encryption: A Review
+Magnetic Tape Storage Technology
+Community Education Knowledge Graph Based on Co-Occurrence Analysis and Log-Likelihood Ratio Algorithm
+Exploiting Multiple Similarity Spaces for Deduplication of Encrypted Container Images
+Measuring GitHub Copilot's Impact on Productivity
+ArchRepair : Block-Level Architecture-Oriented Repairing for Deep Neural Networks
+Automatic Digital Garment Initialization from Sewing Patterns
+Packet Processing Algorithm Identification using Program Embeddings
+Alleviating Matching Bias in Marketing Recommendations
+SPADE: A Flexible and Scalable Accelerator for SpMM and SDDMM
+What Matters in a Measure? A Perspective from Large-Scale Search Evaluation
+Hetero-Rec: Optimal Deployment of Embeddings for High-Speed Recommendations
+Full Stage Learning to Rank: A Unified Framework for Multi-Stage Systems
+HAPENS: Hardness-Personalized Negative Sampling for Implicit Collaborative Filtering
+Straggler-Aware Gradient Aggregation for Large-Scale Distributed Deep Learning System
+No Peer, no Cry: Network Application Fuzzing via Fault Injection
+End-to-Same-End Encryption: Modularly Augmenting an App with an Efficient, Portable, and Blind Cloud Storage
+Representation Learning with Large Language Models for Recommendation
+Robust App Fingerprinting Over the Air
+A Blueprint of IR Evaluation Integrating Task and User Characteristics
+Efficient High-Quality Clustering for Large Bipartite Graphs
+PASS: Personalized Advertiser-aware Sponsored Search
+Report on the 1st Workshop on Measuring the Quality of Explanations in Recommender Systems (QUARE 2022) at SIGIR 2022
+Ultra Efficient Acceleration for De Novo Genome Assembly via Near-Memory Computing
+Redactable Distributed Ledgers: A Survey
+Multi-Hop and Mesh for LoRa Networks: Recent Advancements, Issues, and Recommended Applications
+A New Look at Blockchain Leader Election: Simple, Efficient, Sustainable and Post-Quantum
+The Role of Transparency in Repeated First-Price Auctions with Unknown Valuations
+Deep linear networks can benignly overfit when shallow ones do
+Text-CLS-Transformer: Skeleton and Label Data-Driven Human Action Recognition Method
+Combining A/A Data and LLMs for Improved Content Evaluation
+MASR: A Modular Accelerator for Sparse RNNs
+Regret analysis of bilateral trade with a smoothed adversary
+RE-RecSys: An End-to-End system for recommending properties in Real-Estate domain
+Evaluating The Interference Potential in 6 GHz
