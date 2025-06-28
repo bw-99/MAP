@@ -9,7 +9,6 @@ import requests
 import pyautogui
 import pandas as pd
 import tqdm
-import scipdf
 from threading import Thread
 from pathlib import Path
 from bs4 import BeautifulSoup
@@ -118,8 +117,10 @@ def simulate_in_browser(driver: webdriver.Chrome) -> None:
 
 def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
     if TITLE_LIST.exists() and use_cache:
-        logger.info(f"[ACM] Titles already fetched, loading from {TITLE_LIST}")
-        TITLE_LIST.read_text(encoding='utf-8').splitlines() if TITLE_LIST.exists() else []
+        result = TITLE_LIST.read_text(encoding='utf-8').splitlines()
+        if result:
+            logger.info(f"[ACM] Titles already fetched, loading from {TITLE_LIST}")
+            return result
 
     titles = []
     Thread(target=simulate_mouse_continuous, daemon=True).start()
@@ -157,11 +158,13 @@ def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
 
 def fetch_arxiv_links(titles: list[str], use_cache=True) -> pd.DataFrame:
     if PDF_LINK_CSV.exists() and use_cache:
-        logger.info(f"[ArXiv] Links already fetched, loading from {PDF_LINK_CSV}")
-        return pd.read_csv(PDF_LINK_CSV)
+        result = pd.read_csv(PDF_LINK_CSV)
+        if not result.empty:
+            logger.info(f"[ArXiv] Links already fetched, loading from {PDF_LINK_CSV}")
+            return result
 
     records = []
-    for title in titles[:10]:
+    for title in titles:
         url = ARXIV_SEARCH_TEMPLATE.format(quote_plus(title))
         logger.info(f"[ArXiv] Searching -> {url}")
         resp = requests.get(url, headers=HEADERS)
