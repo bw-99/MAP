@@ -20,6 +20,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from difflib import SequenceMatcher
 from util.const import TITLE_LIST, PDF_LINK_CSV, PARSED_DIR
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 ACM_SEARCH_URL = "https://dl.acm.org/action/doSearch"
 ACM_QUERY = {
@@ -61,7 +68,7 @@ def download_pdf(path: Path, url: str) -> None:
         resp.raise_for_status()
         path.write_bytes(resp.content)
     except Exception as e:
-        print(f"Failed download {url}: {e}")
+        logger.info(f"Failed download {url}: {e}")
 
 
 def parse_pdf(path: Path, hashed: str) -> None:
@@ -71,7 +78,7 @@ def parse_pdf(path: Path, hashed: str) -> None:
         with open(out, 'w', encoding='utf-8') as f:
             json.dump(data, f)
     except Exception as e:
-        print(f"Parse error {path}: {e}")
+        logger.info(f"Parse error {path}: {e}")
     finally:
         if path.exists():
             path.unlink()
@@ -111,7 +118,7 @@ def simulate_in_browser(driver: webdriver.Chrome) -> None:
 
 def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
     if TITLE_LIST.exists() and not use_cache:
-        print(f"[ACM] Titles already fetched, loading from {TITLE_LIST}")
+        logger.info(f"[ACM] Titles already fetched, loading from {TITLE_LIST}")
         TITLE_LIST.read_text(encoding='utf-8').splitlines() if TITLE_LIST.exists() else []
 
     titles = []
@@ -120,7 +127,7 @@ def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
         for page in range(max_pages):
             ACM_QUERY['startPage'] = page
             url = f"{ACM_SEARCH_URL}?{urlencode(ACM_QUERY, quote_via=quote_plus)}"
-            print(f"[ACM] Page {page} -> {url}")
+            logger.info(f"[ACM] Page {page} -> {url}")
 
             driver = init_browser()
             driver.get(url)
@@ -139,32 +146,34 @@ def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
                 if tag and heading and 'proceeding' not in heading.text.lower():
                     raw = tag.get_text(' ', strip=True)
                     title = similar = re.sub(r'\s+', ' ', raw)
-                    print(f"✔ {title}")
+                    logger.info(f"✔ {title}")
                     titles.append(title)
                     f.write(title + '\n')
             time.sleep(1)
 
-    print(f"[ACM] Collected {len(titles)} titles")
+    logger.info(f"[ACM] Collected {len(titles)} titles")
     return titles
 
 
 def fetch_arxiv_links(titles: list[str], use_cache=True) -> pd.DataFrame:
     if PDF_LINK_CSV.exists() and not use_cache:
-        print(f"[ArXiv] Links already fetched, loading from {PDF_LINK_CSV}")
+        logger.info(f"[ArXiv] Links already fetched, loading from {PDF_LINK_CSV}")
         return pd.read_csv(PDF_LINK_CSV)
 
     records = []
     for title in titles[:10]:
         url = ARXIV_SEARCH_TEMPLATE.format(quote_plus(title))
-        print(f"[ArXiv] Searching -> {url}")
+        logger.info(f"[ArXiv] Searching -> {url}")
         resp = requests.get(url, headers=HEADERS)
         soup = BeautifulSoup(resp.text, 'html.parser')
         item = soup.select_one('li.arxiv-result')
         if not item:
+            logger.warning(f"[ArXiv] No results found for title: {title}")
             continue
         atitle = item.select_one('p.title')
         at = atitle.text.strip() if atitle else ''
         if similarity(title, at) < 0.9:
+            logger.warning(f"[ArXiv] Title mismatch: '{title}' vs '{at}'")
             continue
         abs_el = item.select_one('span.abstract-full')
         abstract = abs_el.text.strip() if abs_el else ''
