@@ -5,6 +5,7 @@ import logging
 import random
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
 from pathlib import Path
 from threading import Event, Thread
@@ -188,15 +189,9 @@ def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
     return titles
 
 
-def fetch_arxiv_papers(titles: list[str], use_cache=True) -> pd.DataFrame:
-    if PDF_LINK_CSV.exists() and use_cache:
-        result = pd.read_csv(PDF_LINK_CSV)
-        if not result.empty:
-            logger.info(f"[ArXiv] Links already fetched, loading from {PDF_LINK_CSV}")
-            return result
-
-    records = []
-    for title in titles:
+def fetch_single_paper(title: str) -> dict | None:
+    """단일 논문을 가져오는 함수"""
+    try:
         search = arxiv.Search(
             query = f"ti:{title}",
             max_results = 1,
@@ -205,28 +200,64 @@ def fetch_arxiv_papers(titles: list[str], use_cache=True) -> pd.DataFrame:
 
         paper = next(client.results(search), None)
 
-        # 검색 결과가 없다면 continue
+        # 검색 결과가 없다면 None 반환
         if paper is None:
             logger.warning(f"[ArXiv] No results found for title: {title}")
-            continue
+            return None
 
-        # 제목 불일치 시 continue
+        # 제목 불일치 시 None 반환
         if similarity(title, paper.title) < 0.9:
             logger.warning(f"[ArXiv] Title mismatch: '{title}' vs '{paper.title}'")
-            continue
+            return None
 
         hashed = base64.urlsafe_b64encode(paper.title.encode()).decode()
         paper.download_pdf(dirpath=PDF_DIR, filename=f"{hashed}.pdf")
-        records.append({
+
+        return {
             'Title': paper.title,
             'DOI': paper.doi,
             'PDF_Link': paper.pdf_url,
             'Abstract': paper.summary,
             'Hashed': hashed
-        })
+        }
+    except Exception as e:
+        logger.error(f"[ArXiv] Error processing title '{title}': {e}")
+        return None
+
+
+def fetch_arxiv_papers(titles: list[str], use_cache=True, max_workers=16) -> pd.DataFrame:
+    """ArXiv에서 논문들을 병렬로 가져옵니다."""
+    if PDF_LINK_CSV.exists() and use_cache:
+        result = pd.read_csv(PDF_LINK_CSV)
+        if not result.empty:
+            logger.info(f"[ArXiv] Links already fetched, loading from {PDF_LINK_CSV}")
+            return result
+
+    records = []
+
+    # ThreadPoolExecutor를 사용하여 병렬 처리
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # 모든 작업을 제출
+        future_to_title = {
+            executor.submit(fetch_single_paper, title): title
+            for title in titles
+        }
+
+        # 완료된 작업들을 처리
+        for future in tqdm.tqdm(as_completed(future_to_title), total=len(titles), desc="Fetching papers"):
+            title = future_to_title[future]
+            try:
+                result = future.result()
+                if result:
+                    records.append(result)
+                else:
+                    logger.warning(f"Failed to process: {title}")
+            except Exception as e:
+                logger.error(f"Exception for title '{title}': {e}")
 
     df = pd.DataFrame(records)
     df.to_csv(PDF_LINK_CSV, index=False)
+    logger.info(f"[ArXiv] Successfully processed {len(records)} out of {len(titles)} papers")
     return df
 
 # ==== CLI Entrypoint ====
