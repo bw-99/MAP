@@ -14,3 +14,4 @@ onepiece_rag/*
 results/*
 data/pdf/*.pdf
 data/parsed/*.json
+.cursor
