@@ -5,7 +5,6 @@ import logging
 import random
 import re
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
 from pathlib import Path
 from threading import Event, Thread
@@ -14,9 +13,9 @@ from urllib.parse import quote_plus, urlencode
 import arxiv
 import pandas as pd
 import pyautogui
+import requests
 import tqdm
 from bs4 import BeautifulSoup
-from docling.datamodel.document import DoclingDocument
 from docling.document_converter import DocumentConverter
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -65,7 +64,17 @@ def sanitize_filename(name: str) -> str:
 
 # ==== PDF Parsing & Download ====
 
-def extract_sections_with_content(parsed_data: DoclingDocument) -> dict:
+def download_pdf(path: Path, url: str) -> None:
+    if path.exists():
+        return
+    try:
+        resp = requests.get(url)
+        resp.raise_for_status()
+        path.write_bytes(resp.content)
+    except Exception as e:
+        logger.info(f"Failed download {url}: {e}")
+
+def extract_sections_with_content(parsed_data: dict) -> dict:
     sections = {}
     current_section = None
     current_content = []
@@ -96,7 +105,7 @@ def parse_pdf(path: Path, hashed: str) -> None:
     converter = DocumentConverter()
     try:
         parsed = converter.convert(PDF_DIR / f"{hashed}.pdf").document
-        section_contents = extract_sections_with_content(parsed)
+        section_contents = extract_sections_with_content(parsed.export_to_dict())
         with open(PARSED_DIR / f"{hashed}.json", 'w', encoding='utf-8') as f:
             json.dump(section_contents, f)
     except Exception as e:
@@ -188,45 +197,7 @@ def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
     logger.info(f"[ACM] Collected {len(titles)} titles")
     return titles
 
-
-def fetch_single_paper(title: str) -> dict | None:
-    """단일 논문을 가져오는 함수"""
-    try:
-        search = arxiv.Search(
-            query = f"ti:{title}",
-            max_results = 1,
-            sort_by = arxiv.SortCriterion.Relevance
-        )
-
-        paper = next(client.results(search), None)
-
-        # 검색 결과가 없다면 None 반환
-        if paper is None:
-            logger.warning(f"[ArXiv] No results found for title: {title}")
-            return None
-
-        # 제목 불일치 시 None 반환
-        if similarity(title, paper.title) < 0.9:
-            logger.warning(f"[ArXiv] Title mismatch: '{title}' vs '{paper.title}'")
-            return None
-
-        hashed = base64.urlsafe_b64encode(paper.title.encode()).decode()
-        paper.download_pdf(dirpath=PDF_DIR, filename=f"{hashed}.pdf")
-
-        return {
-            'Title': paper.title,
-            'DOI': paper.doi,
-            'PDF_Link': paper.pdf_url,
-            'Abstract': paper.summary,
-            'Hashed': hashed
-        }
-    except Exception as e:
-        logger.error(f"[ArXiv] Error processing title '{title}': {e}")
-        return None
-
-
-def fetch_arxiv_papers(titles: list[str], use_cache=True, max_workers=16) -> pd.DataFrame:
-    """ArXiv에서 논문들을 병렬로 가져옵니다."""
+def fetch_arxiv_links(titles: list[str], use_cache=True) -> pd.DataFrame:
     if PDF_LINK_CSV.exists() and use_cache:
         result = pd.read_csv(PDF_LINK_CSV)
         if not result.empty:
@@ -234,50 +205,69 @@ def fetch_arxiv_papers(titles: list[str], use_cache=True, max_workers=16) -> pd.
             return result
 
     records = []
-
-    # ThreadPoolExecutor를 사용하여 병렬 처리
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        # 모든 작업을 제출
-        future_to_title = {
-            executor.submit(fetch_single_paper, title): title
-            for title in titles
-        }
-
-        # 완료된 작업들을 처리
-        for future in tqdm.tqdm(as_completed(future_to_title), total=len(titles), desc="Fetching papers"):
-            title = future_to_title[future]
-            try:
-                result = future.result()
-                if result:
-                    records.append(result)
-                else:
-                    logger.warning(f"Failed to process: {title}")
-            except Exception as e:
-                logger.error(f"Exception for title '{title}': {e}")
-
+    for title in titles:
+        url = ARXIV_SEARCH_TEMPLATE.format(quote_plus(title))
+        logger.info(f"[ArXiv] Searching -> {url}")
+        resp = requests.get(url, headers=HEADERS)
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        item = soup.select_one('li.arxiv-result')
+        if not item:
+            logger.warning(f"[ArXiv] No results found for title: {title}")
+            continue
+        atitle = item.select_one('p.title')
+        at = atitle.text.strip() if atitle else ''
+        if similarity(title, at) < 0.9:
+            logger.warning(f"[ArXiv] Title mismatch: '{title}' vs '{at}'")
+            continue
+        abs_el = item.select_one('span.abstract-full')
+        abstract = abs_el.text.strip() if abs_el else ''
+        doi, pdf_link = None, None
+        for a in item.select('a[href]'):
+            href = a['href']
+            txt = a.text.strip().lower()
+            if 'doi.org' in href:
+                doi = href
+            if txt == 'pdf':
+                pdf_link = href
+        hashed = base64.urlsafe_b64encode(at.encode()).decode()
+        records.append({
+            'Title': at,
+            'DOI': doi,
+            'PDF_Link': pdf_link,
+            'Abstract': abstract,
+            'Hashed': hashed
+        })
+        time.sleep(1)
     df = pd.DataFrame(records)
     df.to_csv(PDF_LINK_CSV, index=False)
-    logger.info(f"[ArXiv] Successfully processed {len(records)} out of {len(titles)} papers")
     return df
+
 
 # ==== CLI Entrypoint ====
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--fetch_titles', action='store_true')
-    parser.add_argument('--fetch_papers', action='store_true')
+    parser.add_argument('--fetch_links', action='store_true')
+    parser.add_argument('--download_pdfs', action='store_true')
     parser.add_argument('--parse_pdfs', action='store_true')
     args = parser.parse_args()
 
     if args.fetch_titles:
         titles = fetch_acm_titles(max_pages=50, use_cache=False)
 
-    if args.fetch_papers:
+    if args.fetch_links:
         titles = fetch_acm_titles(max_pages=50, use_cache=True)
-        df_links = fetch_arxiv_papers(titles, use_cache=False)
+        df_links = fetch_arxiv_links(titles, use_cache=False)
+
+    if args.download_pdfs:
+        titles = fetch_acm_titles(max_pages=50, use_cache=True)
+        df_links = fetch_arxiv_links(titles, use_cache=True)
+        for _, row in tqdm.tqdm(df_links.dropna(subset=['PDF_Link']).iterrows(), total=len(df_links)):
+            download_pdf(PDF_DIR / f"{row['Hashed']}.pdf", row['PDF_Link'])
 
     if args.parse_pdfs:
         titles = fetch_acm_titles(max_pages=50, use_cache=True)
-        df_links = fetch_arxiv_papers(titles, use_cache=True)
+        df_links = fetch_arxiv_links(titles, use_cache=True)
         for _, row in tqdm.tqdm(df_links.dropna(subset=['PDF_Link']).iterrows(), total=len(df_links)):
             parse_pdf(PARSED_DIR / f"{row['Hashed']}.pdf", row['Hashed'])
