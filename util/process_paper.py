@@ -1,25 +1,26 @@
-import os
-import time
 import argparse
-import random
 import base64
 import json
+import logging
+import random
 import re
-import requests
-import pyautogui
-import pandas as pd
-import tqdm
-from threading import Thread
+import time
+from difflib import SequenceMatcher
 from pathlib import Path
+from threading import Event, Thread
+from urllib.parse import quote_plus, urlencode
+
+import arxiv
+import pandas as pd
+import pyautogui
+import tqdm
 from bs4 import BeautifulSoup
-from urllib.parse import urlencode, quote_plus
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
-from difflib import SequenceMatcher
-from util.const import PDF_DIR, TITLE_LIST, PDF_LINK_CSV, PARSED_DIR
-import logging
+from selenium.webdriver.common.by import By
+
+from util.const import PARSED_DIR, PDF_DIR, PDF_LINK_CSV, TITLE_LIST
 
 logging.basicConfig(
     level=logging.INFO,
@@ -41,6 +42,8 @@ ARXIV_SEARCH_TEMPLATE = (
 )
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
+client = arxiv.Client(page_size=1, delay_seconds=0.5, num_retries=3)
+
 # ==== Utilities ====
 
 def normalize_text(s: str) -> str:
@@ -58,16 +61,6 @@ def sanitize_filename(name: str) -> str:
     return clean.replace(" ", "_")
 
 # ==== PDF Parsing & Download ====
-
-def download_pdf(path: Path, url: str) -> None:
-    if path.exists():
-        return
-    try:
-        resp = requests.get(url)
-        resp.raise_for_status()
-        path.write_bytes(resp.content)
-    except Exception as e:
-        logger.info(f"Failed download {url}: {e}")
 
 
 def parse_pdf(path: Path, hashed: str) -> None:
@@ -94,8 +87,8 @@ def init_browser() -> webdriver.Chrome:
     return driver
 
 
-def simulate_mouse_continuous() -> None:
-    while True:
+def simulate_mouse_continuous(stop_event: Event) -> None:
+    while not stop_event.is_set():
         x = random.randint(300, 800)
         y = random.randint(200, 700)
         pyautogui.moveTo(x, y, duration=random.uniform(0.3, 0.6))
@@ -115,15 +108,7 @@ def simulate_in_browser(driver: webdriver.Chrome) -> None:
 
 # ==== Main Pipeline Functions ====
 
-def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
-    if TITLE_LIST.exists() and use_cache:
-        result = TITLE_LIST.read_text(encoding='utf-8').splitlines()
-        if result:
-            logger.info(f"[ACM] Titles already fetched, loading from {TITLE_LIST}")
-            return result
-
-    titles = []
-    Thread(target=simulate_mouse_continuous, daemon=True).start()
+def _fetch_acm_titles(max_pages: int) -> list[str]:
     with open(TITLE_LIST, "w", encoding='utf-8') as f:
         for page in range(max_pages):
             ACM_QUERY['startPage'] = page
@@ -146,17 +131,37 @@ def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
                 heading = it.select_one('div.issue-heading')
                 if tag and heading and 'proceeding' not in heading.text.lower():
                     raw = tag.get_text(' ', strip=True)
-                    title = similar = re.sub(r'\s+', ' ', raw)
+                    title = re.sub(r'\s+', ' ', raw)
                     logger.info(f"✔ {title}")
                     titles.append(title)
                     f.write(title + '\n')
-            time.sleep(1)
+
+
+def fetch_acm_titles(max_pages: int, use_cache=True) -> list[str]:
+    if TITLE_LIST.exists() and use_cache:
+        result = TITLE_LIST.read_text(encoding='utf-8').splitlines()
+        if result:
+            logger.info(f"[ACM] Titles already fetched, loading from {TITLE_LIST}")
+            return result
+
+    titles = []
+    stop_event = Event()
+    mouse_thread = Thread(target=simulate_mouse_continuous, args=(stop_event,), daemon=True)
+    mouse_thread.start()
+
+    try:
+        _fetch_acm_titles(max_pages)
+        time.sleep(1)
+    finally:
+        stop_event.set()
+        if mouse_thread.is_alive():
+            mouse_thread.join(timeout=1.0)
 
     logger.info(f"[ACM] Collected {len(titles)} titles")
     return titles
 
 
-def fetch_arxiv_links(titles: list[str], use_cache=True) -> pd.DataFrame:
+def fetch_arxiv_papers(titles: list[str], use_cache=True) -> pd.DataFrame:
     if PDF_LINK_CSV.exists() and use_cache:
         result = pd.read_csv(PDF_LINK_CSV)
         if not result.empty:
@@ -165,38 +170,34 @@ def fetch_arxiv_links(titles: list[str], use_cache=True) -> pd.DataFrame:
 
     records = []
     for title in titles:
-        url = ARXIV_SEARCH_TEMPLATE.format(quote_plus(title))
-        logger.info(f"[ArXiv] Searching -> {url}")
-        resp = requests.get(url, headers=HEADERS)
-        soup = BeautifulSoup(resp.text, 'html.parser')
-        item = soup.select_one('li.arxiv-result')
-        if not item:
+        search = arxiv.Search(
+            query = f"ti:{title}",
+            max_results = 1,
+            sort_by = arxiv.SortCriterion.Relevance
+        )
+
+        paper = next(client.results(search), None)
+
+        # 검색 결과가 없다면 continue
+        if paper is None:
             logger.warning(f"[ArXiv] No results found for title: {title}")
             continue
-        atitle = item.select_one('p.title')
-        at = atitle.text.strip() if atitle else ''
-        if similarity(title, at) < 0.9:
-            logger.warning(f"[ArXiv] Title mismatch: '{title}' vs '{at}'")
+
+        # 제목 불일치 시 continue
+        if similarity(title, paper.title) < 0.9:
+            logger.warning(f"[ArXiv] Title mismatch: '{title}' vs '{paper.title}'")
             continue
-        abs_el = item.select_one('span.abstract-full')
-        abstract = abs_el.text.strip() if abs_el else ''
-        doi, pdf_link = None, None
-        for a in item.select('a[href]'):
-            href = a['href']
-            txt = a.text.strip().lower()
-            if 'doi.org' in href:
-                doi = href
-            if txt == 'pdf':
-                pdf_link = href
-        hashed = base64.urlsafe_b64encode(at.encode()).decode()
+
+        hashed = base64.urlsafe_b64encode(paper.title.encode()).decode()
+        paper.download_pdf(dirpath=PDF_DIR, filename=f"{hashed}.pdf")
         records.append({
-            'Title': at,
-            'DOI': doi,
-            'PDF_Link': pdf_link,
-            'Abstract': abstract,
+            'Title': paper.title,
+            'DOI': paper.doi,
+            'PDF_Link': paper.pdf_url,
+            'Abstract': paper.summary,
             'Hashed': hashed
         })
-        time.sleep(1)
+
     df = pd.DataFrame(records)
     df.to_csv(PDF_LINK_CSV, index=False)
     return df
@@ -206,26 +207,19 @@ def fetch_arxiv_links(titles: list[str], use_cache=True) -> pd.DataFrame:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--fetch_titles', action='store_true')
-    parser.add_argument('--fetch_links', action='store_true')
-    parser.add_argument('--download_pdfs', action='store_true')
+    parser.add_argument('--fetch_papers', action='store_true')
     parser.add_argument('--parse_pdfs', action='store_true')
     args = parser.parse_args()
 
     if args.fetch_titles:
         titles = fetch_acm_titles(max_pages=50, use_cache=False)
 
-    if args.fetch_links:
+    if args.fetch_papers:
         titles = fetch_acm_titles(max_pages=50, use_cache=True)
-        df_links = fetch_arxiv_links(titles, use_cache=False)
-
-    if args.download_pdfs:
-        titles = fetch_acm_titles(max_pages=50, use_cache=True)
-        df_links = fetch_arxiv_links(titles, use_cache=True)
-        for _, row in tqdm.tqdm(df_links.dropna(subset=['PDF_Link']).iterrows(), total=len(df_links)):
-            download_pdf(PDF_DIR / f"{row['Hashed']}.pdf", row['PDF_Link'])
+        df_links = fetch_arxiv_papers(titles, use_cache=False)
 
     if args.parse_pdfs:
         titles = fetch_acm_titles(max_pages=50, use_cache=True)
-        df_links = fetch_arxiv_links(titles, use_cache=True)
+        df_links = fetch_arxiv_papers(titles, use_cache=True)
         for _, row in tqdm.tqdm(df_links.dropna(subset=['PDF_Link']).iterrows(), total=len(df_links)):
             parse_pdf(PARSED_DIR / f"{row['Hashed']}.pdf", row['Hashed'])
