@@ -5,7 +5,7 @@ from docling.datamodel.base_models import InputFormat
 from docling.document_converter import DocumentConverter, PdfFormatOption
 from docling.pipeline.vlm_pipeline import VlmPipeline
 import glob
-from util.process_paper.const import PARSED_DIR, PDF_DIR
+from util.process_paper.const import PARSED_DIR, PDF_DIR, TMP_DIR
 from pathlib import Path
 import json
 import logging
@@ -17,6 +17,9 @@ def _parse_keywords(converter: DocumentConverter, hashed: str) -> None:
     try:
         parsed = converter.convert(source=PDF_DIR / f"{hashed}.pdf", page_range=(1, 1)).document
         section_contents = extract_sections_with_content(parsed.export_to_dict())
+        with open(TMP_DIR / f"{hashed}.json", 'w', encoding='utf-8') as f:
+            json.dump(section_contents, f, ensure_ascii=False, indent=2)
+
         keyword_key = [key for key in section_contents.keys() if 'keyword' in key.lower()]
 
         if not keyword_key:
