@@ -12,6 +12,6 @@ onepiece_rag/*
 !onepiece_rag/prompts
 
 results/*
-data/pdf/*.pdf
+data/*
 
 .cursor
