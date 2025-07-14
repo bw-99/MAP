@@ -1,10 +1,12 @@
 import argparse
 import logging
-from util.process_paper.fetch_title import fetch_titles
-from util.process_paper.fetch_link import fetch_links
-from util.process_paper.fetch_pdf import fetch_pdfs
-from util.process_paper.parse_pdf import parse_pdfs
-from util.process_paper.parse_keyword import parse_keywords
+from util.process_paper import (
+    fetch_titles,
+    fetch_links,
+    fetch_pdfs,
+    parse_pdfs,
+    parse_keywords
+)
 
 logging.basicConfig(
     level=logging.INFO,
