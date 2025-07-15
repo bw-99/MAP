@@ -8,6 +8,7 @@ from .fetch_link import fetch_links
 from .fetch_pdf import fetch_pdfs
 from .parse_pdf import parse_pdfs
 from .parse_keyword import parse_keywords
+from .parse_references import parse_references
 
 __all__ = [
     "fetch_titles",
@@ -15,4 +16,5 @@ __all__ = [
     "fetch_pdfs",
     "parse_pdfs",
     "parse_keywords",
+    "parse_references"
 ]

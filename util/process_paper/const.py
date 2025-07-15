@@ -27,3 +27,4 @@ ARXIV_SEARCH_TEMPLATE = (
     "&abstracts=show&order=-announced_date_first&size=50"
 )
 HEADERS = {"User-Agent": "Mozilla/5.0"}
+REFERENCE_KEY = "references"
