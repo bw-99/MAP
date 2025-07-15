@@ -28,3 +28,4 @@ ARXIV_SEARCH_TEMPLATE = (
 )
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 REFERENCE_KEY = "references"
+KEYWORD_KEY = "keywords_parsed"

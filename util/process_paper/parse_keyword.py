@@ -5,7 +5,7 @@ from docling.datamodel.base_models import InputFormat
 from docling.document_converter import DocumentConverter, PdfFormatOption
 from docling.pipeline.vlm_pipeline import VlmPipeline
 import glob
-from util.process_paper.const import PARSED_DIR, PDF_DIR, TMP_DIR
+from util.process_paper.const import PARSED_DIR, PDF_DIR, TMP_DIR, KEYWORD_KEY
 from pathlib import Path
 import json
 import logging
@@ -29,7 +29,7 @@ def _parse_keywords(converter: DocumentConverter, hashed: str) -> None:
             prev_parsed_key = prev_parsed_key[0] if prev_parsed_key else None
 
             if not prev_parsed_key:
-                prev_parsed['keywords_parsed'] = ["None"]
+                prev_parsed[KEYWORD_KEY] = ["None"]
                 f.seek(0)
                 f.truncate()
                 json.dump(prev_parsed, f, ensure_ascii=False, indent=2)
@@ -51,7 +51,7 @@ def _parse_keywords(converter: DocumentConverter, hashed: str) -> None:
             keyword_lengths = [len(item) for item in keyword_candidates]
             keyword_index = keyword_lengths.index(max(keyword_lengths))
             # 조건에 부합하는 키워드가 없다면 None으로 처리한다.
-            prev_parsed['keywords_parsed'] = keyword_candidates[keyword_index] if max(keyword_lengths) > 1 else ["None"]
+            prev_parsed[KEYWORD_KEY] = keyword_candidates[keyword_index] if max(keyword_lengths) > 1 else ["None"]
             f.seek(0)
             f.truncate()
             json.dump(prev_parsed, f, ensure_ascii=False, indent=2)
