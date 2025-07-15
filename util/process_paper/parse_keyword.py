@@ -21,17 +21,40 @@ def _parse_keywords(converter: DocumentConverter, hashed: str) -> None:
             json.dump(section_contents, f, ensure_ascii=False, indent=2)
 
         keyword_key = [key for key in section_contents.keys() if 'keyword' in key.lower()]
-
-        if not keyword_key:
-            logger.warning(f"No keywords found in {hashed}")
-            return
+        keyword_key = keyword_key[0] if keyword_key else None
 
         with open(PARSED_DIR / f"{hashed}.json", 'r+', encoding='utf-8') as f:
-            data = json.load(f)
-            data['keywords_parsed'] = [item.strip() for item in section_contents[keyword_key[0]].split(',')]
+            prev_parsed = json.load(f)
+            prev_parsed_key = [key for key in prev_parsed.keys() if 'keyword' in key.lower()]
+            prev_parsed_key = prev_parsed_key[0] if prev_parsed_key else None
+
+            if not prev_parsed_key:
+                prev_parsed['keywords_parsed'] = ["None"]
+                f.seek(0)
+                f.truncate()
+                json.dump(prev_parsed, f, ensure_ascii=False, indent=2)
+                return
+
+            # 네 가지 경우가 있을 수 있는데, 이 중 split 해서 가장 긴 배열을 키워드로 인정한다.
+            # 1. 키워드가 이미 전 단계에서 뽑힌 경우
+            #   1. 콤마로 구분되는 문자열
+            #   2. 세미콜론으로 구분되는 문자열
+            # 2. VLM으로 뽑은 경우
+            #   1. 콤마로 구분되는 문자열
+            #   2. 세미콜론으로 구분되는 문자열
+            keyword_candidates = [
+                prev_parsed.get(prev_parsed_key, "").split(","),
+                prev_parsed.get(prev_parsed_key, "").split(";"),
+                [item.strip() for item in section_contents[keyword_key].split(',')],
+                [item.strip() for item in section_contents[keyword_key].split(';')],
+            ]
+            keyword_lengths = [len(item) for item in keyword_candidates]
+            keyword_index = keyword_lengths.index(max(keyword_lengths))
+            # 조건에 부합하는 키워드가 없다면 None으로 처리한다.
+            prev_parsed['keywords_parsed'] = keyword_candidates[keyword_index] if max(keyword_lengths) > 1 else ["None"]
             f.seek(0)
             f.truncate()
-            json.dump(data, f, ensure_ascii=False, indent=2)
+            json.dump(prev_parsed, f, ensure_ascii=False, indent=2)
 
     except Exception as e:
         logger.info(f"Parse error {hashed}: {e}")
