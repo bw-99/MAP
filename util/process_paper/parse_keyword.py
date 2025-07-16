@@ -1,78 +1,91 @@
-import tqdm
+from tqdm.asyncio import tqdm
 from util.process_paper.parse_pdf import parse_pdfs
-from util.process_paper.common import extract_sections_with_content
-from docling.datamodel.base_models import InputFormat
-from docling.document_converter import DocumentConverter, PdfFormatOption
-from docling.pipeline.vlm_pipeline import VlmPipeline
 import glob
-from util.process_paper.const import PARSED_DIR, PDF_DIR, TMP_DIR, KEYWORD_KEY
+from util.process_paper.const import API_RATE_GAP, API_MAX_RETRY, KEYWORD_PARSER_MODEL, KEYWORD_SYSTEM_PROMPT, PARSED_DIR, PDF_DIR, TMP_DIR, KEYWORD_KEY, MAX_CONCURRENT_REQUESTS
 from pathlib import Path
 import json
 import logging
+from pydantic import BaseModel
+from typing import List
+from openai import AsyncOpenAI
+from dotenv import load_dotenv
+import os
+import asyncio
+from PyPDF2 import PdfReader, PdfWriter
+from io import BytesIO
+import shutil
+
+class Keywords(BaseModel):
+    keywords: List[str]
 
 logger = logging.getLogger(__name__)
 
+logger.info("Loading OpenAI client")
+load_dotenv()
 
-def _parse_keywords(converter: DocumentConverter, hashed: str) -> None:
-    try:
-        parsed = converter.convert(source=PDF_DIR / f"{hashed}.pdf", page_range=(1, 1)).document
-        section_contents = extract_sections_with_content(parsed.export_to_dict())
-        with open(TMP_DIR / f"{hashed}.json", 'w', encoding='utf-8') as f:
-            json.dump(section_contents, f, ensure_ascii=False, indent=2)
+client = AsyncOpenAI(api_key=os.getenv("GRAPHRAG_API_KEY"))
+semaphore: asyncio.Semaphore = asyncio.Semaphore(1)
 
-        keyword_key = [key for key in section_contents.keys() if 'keyword' in key.lower()]
-        keyword_key = keyword_key[0] if keyword_key else None
+def _get_first_page(hashed: str) -> BytesIO:
+    with open(PDF_DIR / f"{hashed}.pdf", "rb") as f:
+        reader = PdfReader(f)
+        writer = PdfWriter()
+        writer.add_page(reader.pages[0])
+    output_path = TMP_DIR / "pdf" / f"{hashed}.pdf"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, 'wb') as f:
+        writer.write(f)
+    return output_path
 
-        with open(PARSED_DIR / f"{hashed}.json", 'r+', encoding='utf-8') as f:
-            prev_parsed = json.load(f)
-            prev_parsed_key = [key for key in prev_parsed.keys() if 'keyword' in key.lower()]
-            prev_parsed_key = prev_parsed_key[0] if prev_parsed_key else None
-
-            if not prev_parsed_key:
-                prev_parsed[KEYWORD_KEY] = ["None"]
-                f.seek(0)
-                f.truncate()
-                json.dump(prev_parsed, f, ensure_ascii=False, indent=2)
+async def _parse_keywords(hashed: str) -> None:
+    async with semaphore:
+        logger.info(f"Parsing keywords for {hashed}...")
+        await asyncio.sleep(API_RATE_GAP)
+        parsed_paper = json.load(open(PARSED_DIR / f"{hashed}.json", "r", encoding='utf-8'))
+        output_path = _get_first_page(hashed)
+        for attempt in range(1, API_MAX_RETRY + 1):
+            try:
+                file = await client.files.create(
+                    file=open(output_path, "rb"),
+                    purpose="user_data"
+                )
+                response = await client.responses.parse(
+                    model=KEYWORD_PARSER_MODEL,
+                    input=[
+                        {
+                            "role": "user",
+                            "content": [
+                                {"type": "input_file", "file_id": file.id},
+                                {"type": "input_text", "text": KEYWORD_SYSTEM_PROMPT},
+                            ],
+                        },
+                    ],
+                    text_format=Keywords
+                )
+                extracted_keywords = [keyword.strip() for keyword in response.output_parsed.keywords]
+                extracted_keywords = [keyword for keyword in extracted_keywords if keyword in str(parsed_paper)]
+                parsed_paper[KEYWORD_KEY] = extracted_keywords
+                logger.info(f"Extracted keywords: {extracted_keywords}")
+                json.dump(parsed_paper, open(PARSED_DIR / f"{hashed}.json", "w", encoding='utf-8'), ensure_ascii=False, indent=2)
                 return
 
-            # 네 가지 경우가 있을 수 있는데, 이 중 split 해서 가장 긴 배열을 키워드로 인정한다.
-            # 1. 키워드가 이미 전 단계에서 뽑힌 경우
-            #   1. 콤마로 구분되는 문자열
-            #   2. 세미콜론으로 구분되는 문자열
-            # 2. VLM으로 뽑은 경우
-            #   1. 콤마로 구분되는 문자열
-            #   2. 세미콜론으로 구분되는 문자열
-            keyword_candidates = [
-                prev_parsed.get(prev_parsed_key, "").split(","),
-                prev_parsed.get(prev_parsed_key, "").split(";"),
-                [item.strip() for item in section_contents[keyword_key].split(',')],
-                [item.strip() for item in section_contents[keyword_key].split(';')],
-            ]
-            keyword_lengths = [len(item) for item in keyword_candidates]
-            keyword_index = keyword_lengths.index(max(keyword_lengths))
-            # 조건에 부합하는 키워드가 없다면 None으로 처리한다.
-            prev_parsed[KEYWORD_KEY] = keyword_candidates[keyword_index] if max(keyword_lengths) > 1 else ["None"]
-            f.seek(0)
-            f.truncate()
-            json.dump(prev_parsed, f, ensure_ascii=False, indent=2)
+            except Exception as e:
+                logger.warning(f"Attempt {attempt} failed: {e}")
+                if attempt < API_MAX_RETRY:
+                    await asyncio.sleep(1.0 * attempt)
+                else:
+                    parsed_paper[KEYWORD_KEY] = []
+                    return
 
-    except Exception as e:
-        logger.info(f"Parse error {hashed}: {e}")
-
-def parse_keywords(use_cache: bool=False):
+async def parse_keywords(use_cache: bool=False):
     parse_pdfs(use_cache=True)
 
-    vlm_converter = DocumentConverter(
-        format_options={
-            InputFormat.PDF: PdfFormatOption(
-                pipeline_cls=VlmPipeline,
-            ),
-        }
-    )
-
     parsed_paper_paths = glob.glob(str(PARSED_DIR / '*.json'))
-    for parsed_paper_path in tqdm.tqdm(parsed_paper_paths, total=len(parsed_paper_paths)):
+    tasks = []
+    for parsed_paper_path in parsed_paper_paths:
         hashed = Path(parsed_paper_path).stem
         if use_cache and (PARSED_DIR / f"{hashed}.json").exists():
             continue
-        _parse_keywords(vlm_converter, hashed)
+        tasks.append(asyncio.create_task(_parse_keywords(hashed)))
+    await tqdm.gather(*tasks)
+    shutil.rmtree(TMP_DIR / "pdf")

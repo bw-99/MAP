@@ -5,6 +5,7 @@ MAX_CONCURRENT_REQUESTS = 16
 API_RATE_GAP = 0.3
 API_MAX_RETRY = 3
 REFERNCE_PARSER_MODEL = "gpt-4o-mini"
+KEYWORD_PARSER_MODEL = "gpt-4o-mini"
 
 DATA_DIR = Path("./data")
 DATA_DIR.mkdir(exist_ok=True)
@@ -35,7 +36,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0"}
 REFERENCE_KEY = "references_parsed"
 KEYWORD_KEY = "keywords_parsed"
 
-# Reference parsing prompt
+# LLM Prompt Templates
 REFERENCE_SYSTEM_PROMPT = """
     You are a citation parser.
     Your task is to extract structured metadata (title and ref_id) from raw citation strings.
@@ -58,4 +59,20 @@ REFERENCE_SYSTEM_PROMPT = """
             "title": "Disentangled Sequence Completion for Session-based Recommendation"
         }
     ]
+"""
+KEYWORD_SYSTEM_PROMPT = """
+You are a keyword parser.
+
+Your task is to extract **only the explicitly written keywords** from the provided text, which is extracted from the **first page of an academic paper**.
+
+⚠️ Do not generate or guess keywords on your own.
+⚠️ Do not infer topics or concepts based on the abstract or content.
+⚠️ Only extract keywords that are explicitly listed under a "Keywords", "Index Terms", or similar section.
+
+You must copy the keywords **exactly as they appear** — every character, punctuation, and word — **without any rewriting, reordering, summarization, or interpretation**.
+**Do not change even a single word or symbol.**
+
+If no keywords section is found, return an empty list.
+
+DO NOT FORGET TO FOLLOW THESE RULES.
 """
