@@ -14,6 +14,7 @@ import asyncio
 from PyPDF2 import PdfReader, PdfWriter
 from io import BytesIO
 import shutil
+from itertools import chain
 
 class Keywords(BaseModel):
     keywords: List[str]
@@ -62,7 +63,17 @@ async def _parse_keywords(hashed: str) -> None:
                     ],
                     text_format=Keywords
                 )
-                extracted_keywords = [keyword.strip() for keyword in response.output_parsed.keywords]
+
+                # 문자열 자체는 가져오지만 , 혹은 ; 로 split 하지 않고 문자열로 가져오는 경우가 있음
+                # 이를 처리하기 위해 문자열을 쪼개서 리스트로 만들고 다시 펼치는 과정을 거침
+                extracted_keywords = [
+                    keyword.split(",") if "," in keyword
+                    else keyword.split(";") if ";" in keyword
+                    else [keyword]
+                    for keyword in response.output_parsed.keywords
+                ]
+                extracted_keywords = [kw.strip() for kw in chain.from_iterable(extracted_keywords)]
+                # 만일의 환각에 대비해 추출한 단어가 논문에 그대로 들어가있어야 인정
                 extracted_keywords = [keyword for keyword in extracted_keywords if keyword in str(parsed_paper)]
                 parsed_paper[KEYWORD_KEY] = extracted_keywords
                 logger.info(f"Extracted keywords: {extracted_keywords}")
