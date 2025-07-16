@@ -55,6 +55,7 @@ async def _parse_references(hashed: str) -> None:
                 ]
 
                 json.dump(parsed_paper, open(PARSED_DIR / f"{hashed}.json", "w", encoding='utf-8'), ensure_ascii=False, indent=2)
+                return
 
             except Exception as e:
                 logger.warning(f"Attempt {attempt} failed: {e}")

@@ -24,7 +24,7 @@ logger.info("Loading OpenAI client")
 load_dotenv()
 
 client = AsyncOpenAI(api_key=os.getenv("GRAPHRAG_API_KEY"))
-semaphore: asyncio.Semaphore = asyncio.Semaphore(1)
+semaphore: asyncio.Semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
 
 def _get_first_page(hashed: str) -> BytesIO:
     with open(PDF_DIR / f"{hashed}.pdf", "rb") as f:
@@ -67,7 +67,7 @@ async def _parse_keywords(hashed: str) -> None:
                 parsed_paper[KEYWORD_KEY] = extracted_keywords
                 logger.info(f"Extracted keywords: {extracted_keywords}")
                 json.dump(parsed_paper, open(PARSED_DIR / f"{hashed}.json", "w", encoding='utf-8'), ensure_ascii=False, indent=2)
-                return
+                return extracted_keywords
 
             except Exception as e:
                 logger.warning(f"Attempt {attempt} failed: {e}")
