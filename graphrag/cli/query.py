@@ -18,6 +18,9 @@ from graphrag.logger.print_progress import PrintProgressLogger
 from graphrag.storage.factory import StorageFactory
 from graphrag.utils.storage import load_table_from_storage
 from graphrag.utils.cli import _resolve_output_files
+from graphrag.utils.router import route_query_with_llm
+from graphrag.utils.timer import with_latency_logger
+from graphrag.utils.router import SearchType
 logger = PrintProgressLogger("")
 
 
@@ -255,3 +258,102 @@ def run_drift_search(
     # External users should use the API directly to get the response and context data.
     # TODO: Map/Reduce Drift Search answer to a single response
     return response, context_data
+
+
+@with_latency_logger("auto_search_pipeline")
+def run_auto_search(
+    config_filepath: Path | None,
+    data_dir: Path | None,
+    root_dir: Path,
+    community_level: int,
+    dynamic_community_selection: bool,
+    response_type: str,
+    streaming: bool,
+    query: str,
+):
+    """
+    1) 설정·파케이 파일을 **한 번만** 로드
+    2) route_query_with_llm()으로 local / global 판단
+    3) 판단 결과에 따라 api.local_search 또는 api.global_search 호출
+    """
+    root = root_dir.resolve()
+    config = load_config(root, config_filepath)
+    config.storage.base_dir = str(data_dir) if data_dir else config.storage.base_dir
+    resolve_paths(config)
+
+    dataframe_dict = _resolve_output_files(
+        config=config,
+        output_list=[
+            "create_final_nodes.parquet",
+            "create_final_entities.parquet",
+            "create_final_communities.parquet",
+            "create_final_community_reports.parquet",
+            "create_final_text_units.parquet",
+            "create_final_relationships.parquet",
+        ],
+        optional_list=["create_final_covariates.parquet"],
+    )
+
+    nodes          = dataframe_dict["create_final_nodes"]
+    entities       = dataframe_dict["create_final_entities"]
+    communities    = dataframe_dict.get("create_final_communities")
+    comm_reports   = dataframe_dict["create_final_community_reports"]
+    text_units     = dataframe_dict.get("create_final_text_units")
+    relationships  = dataframe_dict.get("create_final_relationships")
+    covariates     = dataframe_dict.get("create_final_covariates")
+
+    route = route_query_with_llm(
+        query=query,
+        config_path=config_filepath,
+        root_dir=root,
+    )
+
+    if route is SearchType.LOCAL:
+        search_fn = (
+            api.local_search_streaming if streaming else api.local_search
+        )
+        kwargs = dict(
+            config=config,
+            nodes=nodes,
+            entities=entities,
+            community_reports=comm_reports,
+            text_units=text_units,
+            relationships=relationships,
+            covariates=covariates,
+            community_level=community_level,
+            response_type=response_type,
+            query=query,
+        )
+        
+    else:  # GLOBAL
+        search_fn = (
+            api.global_search_streaming if streaming else api.global_search
+        )
+        kwargs = dict(
+            config=config,
+            nodes=nodes,
+            entities=entities,
+            communities=communities,
+            community_reports=comm_reports,
+            community_level=community_level,
+            dynamic_community_selection=dynamic_community_selection,
+            response_type=response_type,
+            query=query,
+        )
+
+    if streaming:
+        async def _stream():
+            full, ctx, first = "", None, True
+            async for chunk in search_fn(**kwargs):
+                if first:
+                    ctx, first = chunk, False
+                else:
+                    full += chunk
+                    print(chunk, end=""); sys.stdout.flush()
+            print()
+            return full, ctx
+        return asyncio.run(_stream())
+    else:
+        response, ctx = asyncio.run(search_fn(**kwargs))
+        logger.success(f"AUTO Search Response:\n{response}")
+        return response, ctx
