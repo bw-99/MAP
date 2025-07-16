@@ -1,6 +1,11 @@
 from pathlib import Path
 
 # ==== Configuration & Paths ====
+MAX_CONCURRENT_REQUESTS = 16
+API_RATE_GAP = 0.3
+API_MAX_RETRY = 3
+REFERNCE_PARSER_MODEL = "gpt-4o-mini"
+
 DATA_DIR = Path("./data")
 DATA_DIR.mkdir(exist_ok=True)
 TITLE_LIST = DATA_DIR / "acm_titles.txt"
