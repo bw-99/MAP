@@ -24,7 +24,55 @@
   "A.3 Optimization of Deep Linear Networks": "Several papers have studied deep linear networks as a means to understand the benefit of overparameterization while optimizing nonlinear networks. Arora, Cohen, and Hazan [ACH18] argued that depth promotes a form of implicit acceleration when performing gradient descent on deep linear networks. While other papers [DH19] showed that for wide enough networks that are randomly initialized by Gaussians the loss converges at a linear rate. Other papers have analyzed the convergence rate under other initialization schemes such as orthogonal initialization [HXP20] and near-identity initialization [BHL19; ZLG20]. Rates of convergence for accelerated methods such as Polyak's heavy ball method have also been established [WLA21]. Saxe, McClelland, and Ganguli [SMG14] analyzed the effect of initialization and step-size in training deep linear networks. Kawaguchi [Kaw16] identified a number of properties of the loss landscape of deep linear networks, including the absence of suboptimal local minima; Achour, Malgouyres, and Gerchinovitz [AMG21] characterized global minima, strict saddles, and non-strict saddles for these landscapes.",
   "B Proof of Proposition 5.2": "In this appendix, we prove Proposition 5.2. Its proof uses some technical lemmas, which we derive first. It is useful to recall the definition of a /u1D6FF -good initialization from above. 28 Definition 5.1. For a large enough absolute constant /u1D450 , we say that the network enjoys a /u1D6FF -good initialization if  and  The next two lemmas shall be useful in showing that our initialization scheme leads to a /u1D6FF -good initialization. First, to bound the singular values of the weight matrices at initialization we apply the following result from Vershynin [Ver10]. LemmaB.1. There exists a constant /u1D450 such that given any /u1D6FF ∈ (0, 1) if /u1D45A ≥ /u1D450 (/u1D451 +/u1D45E +log(1//u1D6FF )) , then with probability at least 1 - /u1D6FF /2  Proof. By [Ver10, Corollary 5.35] we have that with probability at least 1 - 4/u1D452 -/u1D702 2 /2  So since /u1D45A ≥ /u1D450 (/u1D451 + /u1D45E + log(1//u1D6FF )) , where /u1D450 is a large enough constant, by picking /u1D702 = √ /u1D45A/8 we get that with probability at least 1 - /u1D6FF /2   completing the proof. glyph[squaresolid] The next lemma shows that the loss is controlled at initialization. Lemma B.2. There is a positive constant /u1D450 such that, for any /u1D6FF ∈ (0, 1) , provided that /u1D45A ≥ /u1D450 (/u1D451 + /u1D45E + log(1//u1D6FF )) , with probability at least 1 - /u1D6FF /2  Proof. The lemma directly follows by invoking [ZLG20, Proposition 3.3]. glyph[squaresolid] 29 The next lemma shows that if the weights remain close to their initial values then the loss decreases at a certain rate. LemmaB.3. If /u1D6FD ≥ 2 and there was a good initialization (see Definition 5.1), at any time /u1D461 > 0 if, for all /u1D457 ∈ [/u1D43F]  then  Proof. By the chain rule, we have that  Further, observe that  Continuing by applying [ZLG20, Lemma B.3] to the RHS of the inequality above we get that,  30 where (/u1D456 ) follows since on a good initialization for all /u1D457 ∈ [/u1D43F] , /u1D70E min (/u1D44A (0) /u1D457 ) ≥ min{/u1D6FD/2, 1} ≥ 1 and by assumption ‖/u1D44A (/u1D461 ) /u1D457 -/u1D44A (0) /u1D457 ‖ /u1D45C /u1D45D < 1/(2/u1D43F) . Inequality (/u1D456 /u1D456 ) follows since /u1D6FD ≥ 2 , and there was a good initialization (which implies that the event in Lemma B.1 occurs). glyph[squaresolid] The next lemma shows that if the weight matrices remain close throughout the path of gradient flow then the loss decreases. Lemma B.4. If /u1D6FD ≥ 2 and there was a good initialization (see Definition 5.1), given any /u1D461 > 0 if for all 0 ≤ /u1D460 < /u1D461 and for all /u1D457 ∈ [/u1D43F]  then,  Proof. Byassumption ‖/u1D44A (/u1D460 ) /u1D457 -/u1D44A (0) /u1D457 ‖ /u1D45C /u1D45D < 1/(2/u1D43F) for all 0 ≤ /u1D460 < /u1D461 . Thus, by invoking Lemma B.3 we know that for all 0 ≤ /u1D460 < /u1D461 ,  which implies  Integrating both sides we get that  We also need the lemma that controls the growth of the operator norm of /u1D44A (/u1D461 ) /u1D457 . Lemma B.5. There is a positive absolute constant /u1D450 such that if   then on a good initialization, given any /u1D461 > 0 if for all 0 ≤ /u1D460 < /u1D461  then  glyph[squaresolid] 31 Proof. Applying [ZLG20, Lemma A.1] with /u1D434 = /u1D435 = /u1D43C we have, for all /u1D460 ≥ 0 ,  By the definition of gradient flow,  which implies that,  where (/u1D456 ) follows by applying Lemma B.4. On a good initialization we have that  Plugging this into the previous inequality we find that √  So for our lemma to be satisfied it suffices if √  32 and  glyph[squaresolid] Armed with these lemmas, we are now ready to prove the main result of this appendix. Recall its statement from above. Proposition 5.2. There is a constant /u1D450 such that, given any /u1D6FF ∈ (0, 1) , if the initialization scales /u1D6FC and /u1D6FD , along with the network width /u1D45A , satisfy  /u1D6FC ≤ 1, then with probability at least 1 - /u1D6FF : 1. the initialization is /u1D6FF -good; 2. training is perpetually /u1D450 (/u1D6FC + 1//u1D43F)/u1D6FD bounded; 3. for all /u1D461 > 0 , we have that  Proof. We will first prove that Part 1 of the proposition holds with probability 1 - /u1D6FF and then prove the other two parts assuming that the initialization was good. Proof of Part 1 . By invoking Lemmas B.1 and B.2 we have that a good initialization holds with probability at least 1 - /u1D6FF . Proof of Parts 2 and 3 . Assume that the initialization was good. We claim that, for all /u1D461 > 0 , · for all /u1D457 ∈ [/u1D43F] , ‖/u1D44A (/u1D461 ) /u1D457 - /u1D44A (0) /u1D457 ‖ /u1D45C /u1D45D < 1 2/u1D43F and · L (Θ (/u1D461 ) ) < L (Θ (0) ) exp ( -/u1D6FD 2 /u1D70E 2 min (/u1D44B ) 4/u1D452 ⋅ /u1D461 ) . 33 Assume for contradiction that this does not hold. Since ‖/u1D44A (/u1D461 ) /u1D457 - /u1D44A (0) /u1D457 ‖ /u1D45C /u1D45D 1 2/u1D43F and L (Θ (/u1D461 ) ) -L (Θ (0) ) exp ( -/u1D6FD 2 /u1D70E 2 min (/u1D44B ) 4/u1D452 ⋅ /u1D461 ) are continuous functions of /u1D461 , by the Intermediate Value Theorem there is a least value /u1D461 0 > 0 such that one of these quantities equals zero. But Lemmas B.4 and B.5 contradict this. This proves the first bound on the loss in Part 3 . For the second bound on the loss, we note that on a good initialization  Finally, we show that the training is perpetually /u1D450 (/u1D6FC + 1//u1D43F)/u1D6FD bounded. Recall that this means that, for all /u1D461 ≥ 0 , for all /u1D446 ⊆ [/u1D43F] ,  This follows since on a good initialization, ‖/u1D44A (0) 1 ‖ /u1D45C /u1D45D ≤ 2/u1D6FC , ‖/u1D44A (0) /u1D43F ‖ /u1D45C /u1D45D ≤ 2/u1D6FD and for all /u1D457 ∈ {2, … , /u1D43F - 1} , ‖/u1D44A (0) /u1D457 ‖ /u1D45C /u1D45D = 1 . Further, by Lemma B.5 we know that for all /u1D461 ≥ 0 , ‖/u1D44A (/u1D461 ) /u1D457 -/u1D44A (0) /u1D457 ‖ /u1D45C /u1D45D ≤ 1/(2/u1D43F) . Putting these two facts together, proves that the process is perpetually /u1D450 (/u1D6FC + 1//u1D43F)/u1D6FD bounded. glyph[squaresolid]",
   "References": "[AMG21] El Mehdi Achour, François Malgouyres, and Sébastien Gerchinovitz. 'The loss landscape of deep linear neural networks: a second-order analysis'. In: arXiv preprint arXiv:2107.13289 (2021) (Cited on page 28). [ACH18] Sanjeev Arora, Nadav Cohen, and Elad Hazan. 'On the optimization of deep networks: implicit acceleration by overparameterization'. In: International Conference on Machine Learning (ICML) . 2018 (Cited on pages 2, 28). [Aro+19] Sanjeev Arora, Nadav Cohen, Wei Hu, and Yuping Luo. 'Implicit regularization in deep matrix factorization'. In: Advances in Neural Information Processing Systems (NeurIPS) . 2019 (Cited on pages 27, 28). [Azu+21] Shahar Azulay, Edward Moroshko, Mor Shpigel Nacson, Blake Woodworth, Nathan Srebro, Amir Globerson, and Daniel Soudry. 'On the implicit bias of initialization shape: beyond infinitesimal mirror descent'. In: International Conference on Machine Learning (ICML) . 2021 (Cited on page 2). [BHL19] Peter Bartlett, David Helmbold, and Philip Long. 'Gradient descent with identity initialization efficiently learns positive-definite linear transformations by deep residual networks'. In: Neural Computation (2019) (Cited on page 28). [BL21] Peter Bartlett and Philip Long. 'Failures of model-dependent generalization bounds for least-norm interpolation'. In: Journal of Machine Learning Research (JMLR) (2021) (Cited on page 27). 34 [Bar+20] Peter Bartlett, Philip Long, Gábor Lugosi, and Alexander Tsigler. 'Benign over- 35 [CLG22] Geoffrey Chinot, Matthias Löffler, and Sara van de Geer. 'On the robustness of 36 [JT18] Ziwei Ji and Matus Telgarsky. 'Gradient descent aligns the layers of deep lin- 37 [LS22] Tengyuan Liang and Pragya Sur. 'A precise high-dimensional asymptotic the- 38 [RC20] Noam Razin and Nadav Cohen. 'Implicit regularization in deep learning may 39 [Woo+20] Blake Woodworth, Suriya Gunasekar, Jason Lee, Edward Moroshko, Pedro Savarese, 40",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b21",
+      "title": "The loss landscape of deep linear neural networks: a second-order analysis"
+    },
+    {
+      "ref_id": "b18",
+      "title": "On the optimization of deep networks: implicit acceleration by overparameterization"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Implicit regularization in deep matrix factorization"
+    },
+    {
+      "ref_id": "b21",
+      "title": "On the implicit bias of initialization shape: beyond infinitesimal mirror descent"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Gradient descent with identity initialization efficiently learns positive-definite linear transformations by deep residual networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Failures of model-dependent generalization bounds for least-norm interpolation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Benign over-"
+    },
+    {
+      "ref_id": "b22",
+      "title": "On the robustness of"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Gradient descent aligns the layers of deep lin"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A precise high-dimensional asymptotic the"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Implicit regularization in deep learning may"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Woodworth, Suriya Gunasekar, Jason Lee, Edward Moroshko, Pedro Savarese"
+    }
   ]
 }

@@ -28,7 +28,169 @@
   "REFERENCES": "[1] MMehdi Afsar, Trafford Crump, and Behrouz Far. 2022. Reinforcement learning based recommender systems: A survey. Comput. Surveys 55, 7 (2022), 1-38. [2] Stephen Bonner and Flavian Vasile. 2018. Causal embeddings for recommendation. In Proceedings of the 12th ACM conference on recommender systems . 104-112. [3] Haokun Chen, Xinyi Dai, Han Cai, Weinan Zhang, Xuejian Wang, Ruiming Tang, Yuzhou Zhang, and Yong Yu. 2019. Large-scale interactive recommendation with tree-structured policy gradient. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 3312-3320. [4] Shi-Yong Chen, Yang Yu, Qing Da, Jun Tan, Hai-Kuan Huang, and Hai-Hong Tang. 2018. Stabilizing reinforcement learning in dynamic environment with application to online recommendation. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1187-1196. [5] Xiaocong Chen, Chaoran Huang, Lina Yao, Xianzhi Wang, Wenjie Zhang, et al. 2020. Knowledge-guided deep reinforcement learning for interactive recommendation. In 2020 International Joint Conference on Neural Networks (IJCNN) . IEEE, 1-8. [6] Xiaocong Chen, Siyu Wang, Lianyong Qi, Yong Li, and Lina Yao. 2023. Intrinsically motivated reinforcement learning based recommendation with counterfactual data augmentation. World Wide Web 26, 5 (2023), 3253-3274. [7] Xiaocong Chen, Siyu Wang, and Lina Yao. 2024. Maximum-Entropy Regularized Decision Transformer with Reward Relabelling for Dynamic Recommendation. arXiv preprint arXiv:2406.00725 (2024). [8] Xiaocong Chen, Lina Yao, Julian McAuley, Guanglin Zhou, and Xianzhi Wang. 2023. Deep reinforcement learning in recommender systems: A survey and new perspectives. Knowledge-Based Systems 264 (2023), 110335. https://doi.org/10. 1016/j.knosys.2023.110335 [9] Xiaocong Chen, Lina Yao, Aixin Sun, Xianzhi Wang, Xiwei Xu, and Liming Zhu. 2021. Generative inverse deep reinforcement learning for online recommendation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 201-210. [10] Sihao Ding, Fuli Feng, Xiangnan He, Yong Liao, Jun Shi, and Yongdong Zhang. 2022. Causal Incremental Graph Convolution for Recommender System Retraining. IEEE Transactions on Neural Networks and Learning Systems (2022), 1-11. https://doi.org/10.1109/TNNLS.2022.3156066 [11] Scott Fujimoto, Herke Hoof, and David Meger. 2018. Addressing function approximation error in actor-critic methods. In International conference on machine learning . PMLR, 1587-1596. [12] Carles Gelada, Saurabh Kumar, Jacob Buckman, Ofir Nachum, and Marc G Bellemare. 2019. Deepmdp: Learning continuous latent space models for representation learning. In International Conference on Machine Learning . PMLR, 2170-2179. [13] Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, and Sergey Levine. 2018. Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor. In International conference on machine learning . PMLR, 18611870. [14] Daocheng Hong, Yang Li, and Qiwen Dong. 2020. Nonintrusive-Sensing and Reinforcement-Learning Based Adaptive Personalized Music Recommendation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1721-1724. [15] Biwei Huang, Chaochao Lu, Liu Leqi, José Miguel Hernández-Lobato, Clark Glymour, Bernhard Schölkopf, and Kun Zhang. 2022. Action-sufficient state representation learning for control with structural constraints. In International Conference on Machine Learning . PMLR, 9260-9279. [16] Ilya Kostrikov, Kumar Krishna Agrawal, Debidatta Dwibedi, Sergey Levine, and Jonathan Tompson. 2019. Discriminator-Actor-Critic: Addressing Sample Inefficiency and Reward Bias in Adversarial Imitation Learning. In 7th International 6 https://stable-baselines3.readthedocs.io/en/master/ Conference on Learning Representations, ICLR 2019, New Orleans, LA, USA, May 6-9, 2019 . OpenReview.net. https://openreview.net/forum?id=Hk4fpoA5Km [17] Timothée Lesort, Natalia Díaz-Rodríguez, Jean-Franois Goudou, and David Filliat. 2018. State representation learning for control: An overview. Neural Networks 108 (2018), 379-392. [18] Timothy P Lillicrap, Jonathan J Hunt, Alexander Pritzel, Nicolas Heess, Tom Erez, Yuval Tassa, David Silver, and Daan Wierstra. 2015. Continuous control with deep reinforcement learning. arXiv preprint arXiv:1509.02971 (2015). [19] Dugang Liu, Pengxiang Cheng, Zhenhua Dong, Xiuqiang He, Weike Pan, and ZhongMing. 2020. A general knowledge distillation framework for counterfactual recommendation via uniform data. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 831-840. [20] Feng Liu, Ruiming Tang, Xutao Li, Weinan Zhang, Yunming Ye, Haokun Chen, Huifeng Guo, Yuzhou Zhang, and Xiuqiang He. 2020. State representation modeling for deep reinforcement learning based recommendation. Knowledge-Based Systems 205 (2020), 106170. https://doi.org/10.1016/j.knosys.2020.106170 [21] Prashan Madumal, Tim Miller, Liz Sonenberg, and Frank Vetere. 2020. Explainable reinforcement learning through a causal lens. In Proceedings of the AAAI conference on artificial intelligence , Vol. 34. 2493-2500. [22] Tariq Mahmood and Francesco Ricci. 2007. Learning and adaptivity in interactive recommender systems. In Proceedings of the ninth international conference on Electronic commerce . 75-84. [23] Atalanti A Mastakouri, Bernhard Schölkopf, and Dominik Janzing. 2021. Necessary and sufficient conditions for causal feature selection in time series with latent common causes. In International Conference on Machine Learning . PMLR, 7502-7511. [24] Judea Pearl. 2009. Causality . Cambridge university press. [25] Jonas Peters, Dominik Janzing, and Bernhard Schlkopf. 2017. Elements of Causal Inference: Foundations and Learning Algorithms . The MIT Press. [26] Jing-Cheng Shi, Yang Yu, Qing Da, Shi-Yong Chen, and An-Xiang Zeng. 2019. Virtual-taobao: Virtualizing real-world online retail environment for reinforcement learning. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 4902-4909. [27] Peter Spirtes, Clark N Glymour, and Richard Scheines. 2000. Causation, prediction, and search . MIT press. [28] Juntao Tan, Shuyuan Xu, Yingqiang Ge, Yunqi Li, Xu Chen, and Yongfeng Zhang. 2021. Counterfactual explainable recommendation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 1784-1793. [29] Siyu Wang, Xiaocong Chen, Dietmar Jannach, and Lina Yao. 2023. Causal decision transformer for recommender systems via offline reinforcement learning. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1599-1608. [30] Siyu Wang, Xiaocong Chen, Julian McAuley, Sally Cripps, and Lina Yao. 2023. Plug-and-Play Model-Agnostic Counterfactual Policy Synthesis for Deep Reinforcement Learning-Based Recommendation. IEEE Transactions on Neural Networks and Learning Systems (2023). [31] Wenjie Wang, Fuli Feng, Xiangnan He, Hanwang Zhang, and Tat-Seng Chua. 2021. Clicks can be cheating: Counterfactual recommendation for mitigating clickbait issue. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1288-1297. [32] Wenjie Wang, Xinyu Lin, Fuli Feng, Xiangnan He, Min Lin, and Tat-Seng Chua. 2022. Causal Representation Learning for Out-of-Distribution Recommendation. In Proceedings of the ACM Web Conference 2022 . 3562-3571. [33] Yu Wang. 2020. A hybrid recommendation for music based on reinforcement learning. In Advances in Knowledge Discovery and Data Mining: 24th PacificAsia Conference, PAKDD 2020, Singapore, May 11-14, 2020, Proceedings, Part I 24 . Springer, 91-103. [34] Zizhao Wang, Xuesu Xiao, Zifan Xu, Yuke Zhu, and Peter Stone. 2022. Causal Dynamics Learning for Task-Independent State Abstraction. In Proceedings of the 39th International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 162) , Kamalika Chaudhuri, Stefanie Jegelka, Le Song, Csaba Szepesvari, Gang Niu, and Sivan Sabato (Eds.). PMLR, 23151-23180. https: //proceedings.mlr.press/v162/wang22ae.html [35] Yikun Xian, Zuohui Fu, S Muthukrishnan, Gerard de Melo, and Yongfeng Zhang. 2019. Reinforcement Knowledge Graph Reasoning for Explainable Recommendation. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, 285-294. [36] Amy Zhang, Rowan Thomas McAllister, Roberto Calandra, Yarin Gal, and Sergey Levine. 2021. Learning Invariant Representations for Reinforcement Learning without Reconstruction. In International Conference on Learning Representations . https://openreview.net/forum?id=-2FCwDKRREu [37] Shengyu Zhang, Dong Yao, Zhou Zhao, Tat-Seng Chua, and Fei Wu. 2021. Causerec: Counterfactual user sequence synthesis for sequential recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 367-377. [38] Yang Zhang, Fuli Feng, Xiangnan He, Tianxin Wei, Chonggang Song, Guohui Ling, and Yongdong Zhang. 2021. Causal intervention for leveraging popularity bias in recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 11-20. CIKM'24, October 21 - 25, 2024, Boise, Idaho, USA On Causally Disentangled State Representation Learning for Reinforcement Learning based Recommender Systems [39] Yang Zhang, Chenwei Zhang, and Xiaozhong Liu. 2017. Dynamic scholarly collaborator recommendation via competitive multi-agent reinforcement learning. In Proceedings of the eleventh ACM conference on recommender systems . 331-335. [40] Xiangyu Zhao, Liang Zhang, Zhuoye Ding, Long Xia, Jiliang Tang, and Dawei Yin. 2018. Recommendations with negative feedback via pairwise deep reinforcement learning. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1040-1048.",
   "keywords_parsed": [
     "Reinforcement Learning",
-    " Recommendation",
-    " Causal state representation"
+    "Recommendation",
+    "Causal state representation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Reinforcement learning based recommender systems: A survey"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Causal embeddings for recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Large-scale interactive recommendation with tree-structured policy gradient"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Stabilizing reinforcement learning in dynamic environment with application to online recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Knowledge-guided deep reinforcement learning for interactive recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Intrinsically motivated reinforcement learning based recommendation with counterfactual data augmentation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Maximum-Entropy Regularized Decision Transformer with Reward Relabelling for Dynamic Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep reinforcement learning in recommender systems: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Generative inverse deep reinforcement learning for online recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Causal Incremental Graph Convolution for Recommender System Retraining"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Addressing function approximation error in actor-critic methods"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deepmdp: Learning continuous latent space models for representation learning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Nonintrusive-Sensing and Reinforcement-Learning Based Adaptive Personalized Music Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Action-sufficient state representation learning for control with structural constraints"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Discriminator-Actor-Critic: Addressing Sample Inefficiency and Reward Bias in Adversarial Imitation Learning"
+    },
+    {
+      "ref_id": "b17",
+      "title": "State representation learning for control: An overview"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Continuous control with deep reinforcement learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A general knowledge distillation framework for counterfactual recommendation via uniform data"
+    },
+    {
+      "ref_id": "b20",
+      "title": "State representation modeling for deep reinforcement learning based recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Explainable reinforcement learning through a causal lens"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Learning and adaptivity in interactive recommender systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Necessary and sufficient conditions for causal feature selection in time series with latent common causes"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Causality"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Elements of Causal Inference: Foundations and Learning Algorithms"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Virtual-taobao: Virtualizing real-world online retail environment for reinforcement learning"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Causation, prediction, and search"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Counterfactual explainable recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Causal decision transformer for recommender systems via offline reinforcement learning"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Plug-and-Play Model-Agnostic Counterfactual Policy Synthesis for Deep Reinforcement Learning-Based Recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Clicks can be cheating: Counterfactual recommendation for mitigating clickbait issue"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Causal Representation Learning for Out-of-Distribution Recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "A hybrid recommendation for music based on reinforcement learning"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Causal Dynamics Learning for Task-Independent State Abstraction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Reinforcement Knowledge Graph Reasoning for Explainable Recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Learning Invariant Representations for Reinforcement Learning without Reconstruction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Causerec: Counterfactual user sequence synthesis for sequential recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Causal intervention for leveraging popularity bias in recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Dynamic scholarly collaborator recommendation via competitive multi-agent reinforcement learning"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Recommendations with negative feedback via pairwise deep reinforcement learning"
+    }
   ]
 }

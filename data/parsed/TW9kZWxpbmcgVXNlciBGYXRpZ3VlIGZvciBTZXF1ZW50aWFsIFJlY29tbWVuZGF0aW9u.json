@@ -28,7 +28,189 @@
   "REFERENCES": "[1] Michal Aharon, Yohay Kaplan, Rina Levy, Oren Somekh, Ayelet Blanc, Neetai Eshel, Avi Shahar, Assaf Singer, and Alex Zlotnik. 2019. Soft frequency capping for improved ad click prediction in yahoo gemini native. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 2793-2801. [2] Bushra Alhijawi, Arafat Awajan, and Salam Fraihat. 2022. Survey on the objectives of recommender systems: Measures, solutions, evaluation methodology, and new perspectives. Comput. Surveys 55, 5 (2022), 1-38. [3] Mingxiao An, Fangzhao Wu, Chuhan Wu, Kun Zhang, Zheng Liu, and Xing Xie. 2019. Neural news recommendation with long-and short-term user representations. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics . 336-345. [4] Shaojie Bai, J Zico Kolter, and Vladlen Koltun. 2018. An empirical evaluation of generic convolutional and recurrent networks for sequence modeling. arXiv preprint arXiv:1803.01271 (2018). [5] Yukuo Cen, Jianwei Zhang, Xu Zou, Chang Zhou, Hongxia Yang, and Jie Tang. 2020. Controllable multi-interest framework for recommendation. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2942-2951. [6] Jianxin Chang, Chen Gao, Yu Zheng, Yiqun Hui, Yanan Niu, Yang Song, Depeng Jin, and Yong Li. 2021. Sequential Recommendation with Graph Neural Networks. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 378-387. [7] Yongjun Chen, Zhiwei Liu, Jia Li, Julian McAuley, and Caiming Xiong. 2022. Intent contrastive learning for sequential recommendation. In Proceedings of the ACM Web Conference 2022 . 2172-2182. [8] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [9] Kyunghyun Cho, Bart Van Merriënboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, and Yoshua Bengio. 2014. Learning phrase representations using RNN encoder-decoder for statistical machine translation. arXiv preprint arXiv:1406.1078 (2014). [10] Jingtao Ding, Yuhan Quan, Xiangnan He, Yong Li, and Depeng Jin. 2019. Reinforced Negative Sampling for Recommendation with Exposure Data.. In IJCAI . Macao, 2230-2236. [11] Jingtao Ding, Yuhan Quan, Quanming Yao, Yong Li, and Depeng Jin. 2020. Simplify and robustify negative sampling for implicit collaborative filtering. Advances in Neural Information Processing Systems 33 (2020), 1094-1105. [12] Zhe Fu, Xi Niu, and Mary Lou Maher. 2023. Deep learning models for serendipity recommendations: a survey and new perspectives. Comput. Surveys 56, 1 (2023), 1-26. [13] Chen Gao, Yu Zheng, Wenjie Wang, Fuli Feng, Xiangnan He, and Yong Li. 2024. Causal inference in recommender systems: A survey and future directions. ACM Transactions on Information Systems 42, 4 (2024), 1-32. [14] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [15] Will Hamilton, Zhitao Ying, and Jure Leskovec. 2017. Inductive representation learning on large graphs. Advances in neural information processing systems 30 (2017). [16] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [17] Sepp Hochreiter and Jürgen Schmidhuber. 1997. Long short-term memory. Neural computation 9, 8 (1997), 1735-1780. [18] Juyong Jiang, Peiyan Zhang, Yingtao Luo, Chaozhuo Li, Jae Boum Kim, Kai Zhang, Senzhang Wang, Xing Xie, and Sunghun Kim. 2023. AdaMCT: adaptive mixture of CNN-transformer for sequential recommendation. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 976-986. [19] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE International Conference on Data Mining (ICDM) . IEEE, 197-206. [20] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [21] Chao Li, Zhiyuan Liu, Mengmeng Wu, Yuchi Xu, Huan Zhao, Pipei Huang, Guoliang Kang, Qiwei Chen, Wei Li, and Dik Lun Lee. 2019. Multi-interest network with dynamic routing for recommendation at Tmall. In Proceedings of the 28th ACM international conference on information and knowledge management . 2615-2623. [22] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. 2017. Neural attentive session-based recommendation. In Proceedings of the 2017 ACM on Conference on Information and Knowledge Management . 1419-1428. [23] Jiacheng Li, Yujie Wang, and Julian McAuley. 2020. Time interval aware selfattention for sequential recommendation. In Proceedings of the 13th international conference on web search and data mining . 322-330. [24] Ming Li, Naiyin Liu, Xiaofeng Pan, Yang Huang, Ningning Li, Yingmin Su, Chengjun Mao, and Bo Cao. 2023. FAN: Fatigue-Aware Network for ClickThrough Rate Prediction in E-commerce Recommendation. In Database Systems for Advanced Applications: 28th International Conference, DASFAA 2023, Tianjin, China, April 17-20, 2023, Proceedings, Part IV . Springer, 502-514. [25] Xuewei Li, Aitong Sun, Mankun Zhao, Jian Yu, Kun Zhu, Di Jin, Mei Yu, and Ruiguo Yu. 2023. Multi-Intention Oriented Contrastive Learning for Sequential Recommendation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 411-419. [26] Jianxun Lian, Iyad Batal, Zheng Liu, Akshay Soni, Eun Yong Kang, Yajun Wang, and Xing Xie. 2021. Multi-Interest-Aware User Modeling for Large-Scale Sequential Recommendations. arXiv preprint arXiv:2102.09211 (2021). [27] Guanyu Lin, Chen Gao, Yinfeng Li, Yu Zheng, Zhiheng Li, Depeng Jin, and Yong Li. 2022. Dual contrastive network for sequential recommendation. In Proceedings of the 45th international ACM SIGIR conference on research and development in information retrieval . 2686-2691. [28] Zhouhan Lin, Minwei Feng, Cicero Nogueira dos Santos, Mo Yu, Bing Xiang, Bowen Zhou, and Yoshua Bengio. 2017. A structured self-attentive sentence embedding. arXiv preprint arXiv:1703.03130 (2017). [29] Hao Ma, Xueqing Liu, and Zhihong Shen. 2016. User fatigue in online news recommendation. In Proceedings of the 25th International Conference on World Wide Web . 1363-1372. [30] Daisuke Moriwaki, Komei Fujita, Shota Yasui, and Takahiro Hoshino. 2019. Fatigue-Aware Ad Creative Selection. arXiv preprint arXiv:1908.08936 (2019). [31] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on long sequential user behavior modeling for click-through rate prediction. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2671-2679. [32] Yuhan Quan, Jingtao Ding, Chen Gao, Nian Li, Lingling Yi, Depeng Jin, and Yong Li. 2023. Alleviating Video-length Effect for Micro-video Recommendation. ACM Transactions on Information Systems 42, 2 (2023), 1-24. [33] Yuhan Quan, Jingtao Ding, Chen Gao, Lingling Yi, Depeng Jin, and Yong Li. 2023. Robust preference-guided denoising for graph based social recommendation. In Proceedings of the ACM Web Conference 2023 . 1097-1108. [34] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1441-1450. [35] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining . 565-573. [36] Yu Tian, Jianxin Chang, Yanan Niu, Yang Song, and Chenliang Li. 2022. When multi-level meets multi-interest: A multi-grained neural model for sequential recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1632-1641. [37] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [38] Ruobing Xie, Cheng Ling, Shaoliang Zhang, Feng Xia, and Leyu Lin. 2022. Multigranularity Fatigue in Recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 4595-4599. [39] Chengfeng Xu, Pengpeng Zhao, Yanchi Liu, Jiajie Xu, Victor S Sheng S. Sheng, Zhiming Cui, Xiaofang Zhou, and Hui Xiong. 2019. Recurrent convolutional neural network for sequential recommendation. In The world wide web conference . 3398-3404. [40] An Yan, Shuo Cheng, Wang-Cheng Kang, Mengting Wan, and Julian McAuley. 2019. CosRec: 2D convolutional neural networks for sequential recommendation. In Proceedings of the 28th ACM international conference on information and knowledge management . 2173-2176. [41] Junliang Yu, Hongzhi Yin, Xin Xia, Tong Chen, Jundong Li, and Zi Huang. 2022. Self-supervised learning for recommender systems: A survey. arXiv preprint arXiv:2203.15876 (2022). [42] Zeping Yu, Jianxun Lian, Ahmad Mahmoody, Gongshen Liu, and Xing Xie. 2019. Adaptive User Modeling with Long and Short-Term Preferences for Personalized Recommendation.. In IJCAI . 4213-4219. [43] Yu Zheng, Chen Gao, Jianxin Chang, Yanan Niu, Yang Song, Depeng Jin, and Yong Li. 2022. Disentangling long and short-term interests for recommendation. In Proceedings of the ACM Web Conference 2022 . 2256-2267. [44] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [45] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1059-1068.",
   "keywords_parsed": [
     "User Fatigue",
-    " Sequential Recommendation",
-    " Long and Short-term Interests"
+    "Sequential Recommendation",
+    "Long and Short-term Interests"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Soft frequency capping for improved ad click prediction in yahoo gemini native"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Survey on the objectives of recommender systems: Measures, solutions, evaluation methodology, and new perspectives"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Neural news recommendation with long-and short-term user representations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "An empirical evaluation of generic convolutional and recurrent networks for sequence modeling"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Controllable multi-interest framework for recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Sequential Recommendation with Graph Neural Networks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Intent contrastive learning for sequential recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Learning phrase representations using RNN encoder-decoder for statistical machine translation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Reinforced Negative Sampling for Recommendation with Exposure Data"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Simplify and robustify negative sampling for implicit collaborative filtering"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep learning models for serendipity recommendations: a survey and new perspectives"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Causal inference in recommender systems: A survey and future directions"
+    },
+    {
+      "ref_id": "b14",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Long short-term memory"
+    },
+    {
+      "ref_id": "b18",
+      "title": "AdaMCT: adaptive mixture of CNN-transformer for sequential recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Multi-interest network with dynamic routing for recommendation at Tmall"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Neural attentive session-based recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Time interval aware selfattention for sequential recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "FAN: Fatigue-Aware Network for ClickThrough Rate Prediction in E-commerce Recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Multi-Intention Oriented Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Multi-Interest-Aware User Modeling for Large-Scale Sequential Recommendations"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Dual contrastive network for sequential recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "A structured self-attentive sentence embedding"
+    },
+    {
+      "ref_id": "b29",
+      "title": "User fatigue in online news recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Fatigue-Aware Ad Creative Selection"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Alleviating Video-length Effect for Micro-video Recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Robust preference-guided denoising for graph based social recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b36",
+      "title": "When multi-level meets multi-interest: A multi-grained neural model for sequential recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Multigranularity Fatigue in Recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Recurrent convolutional neural network for sequential recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "CosRec: 2D convolutional neural networks for sequential recommendation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Self-supervised learning for recommender systems: A survey"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Adaptive User Modeling with Long and Short-Term Preferences for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Disentangling long and short-term interests for recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

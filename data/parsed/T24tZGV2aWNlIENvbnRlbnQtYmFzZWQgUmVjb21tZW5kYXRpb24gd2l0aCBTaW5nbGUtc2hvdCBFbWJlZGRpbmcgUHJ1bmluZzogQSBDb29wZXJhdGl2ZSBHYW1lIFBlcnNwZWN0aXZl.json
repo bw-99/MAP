@@ -36,7 +36,311 @@
   "D Further Experimental Results": "",
   "D.1 DeepFM Backbone Experiment Results": "Table 6: Original (Uncompressed) Model Performance Table 6 provides uncompressed model performance. Table 7 and Figure 6 show the comparison results with other non-single-shot and single-shot methods of Shaver for DeepFM backbone. For DeepFM backbone, our methods achieves the best results in all settings. With the DeepFM backbone, where the original model has poor performance, our method can remove excessive parameters and improve model performance with fine-tuning. Thus, model fine-tuning has a more positive effect on the DeepFM backbone. Except for the Avazu dataset, codebook approaches outperform zero baseline slightly on Criteo, and significantly on KDD. The reason for this exception is unclear. One plausible explanation is that zero padding can act as a regularization and better prevent overfitting compared to codebook approaches. Regarding single-shot comparison, in general, the performance trend is similar to DCN, with few exceptions. First, PTQ achieves worse relative results in the Criteo dataset. Second, as mentioned above, Shaver-Zero outperforms Shaver-Codebook and other methods in Avazu settings. On-device Content-based Recommendation with Single-shot Embedding Pruning: A Cooperative Game Perspective WWW'25, April 28-May 2, 2025, Sydney, NSW, Australia. Figure 6: Comparative results with single-shot baselines for DeepFM backbone. 0 . 2 0 . 4 0 . 6 0 . 8 1 . 600 . 700 . 800 Sparsity Rate AUC Original MagPrune PTQ Taylor Shaver-Zero Shaver-Codebook (a) Criteo 0 . 2 0 . 4 0 . 6 0 . 8 1 . 500 . 600 . 700 Sparsity Rate Original MagPrune PTQ Taylor Shaver-Zero Shaver-Codebook (b) Avazu 0 . 2 0 . 4 0 . 6 0 . 8 1 . 600 . 700 . 800 Sparsity Rate Original MagPrune PTQ Taylor Shaver-Zero Shaver-Codebook (c) KDD Table 7: Comparative results with non-single-shot baselines under three sparsity rates. All methods adopt DeepFM as the CRS backbone. In each dataset, the best result is marked in bold and the second best one is underlined. Table 8: Inference efficiency benchmark results. 'Mem.' represents inference memory peak. Time is shown in seconds, while storage and memory is shown in MiB.",
   "D.2 Model Efficiency on Edge Devices": "To further demonstrate the real-world applicability of our method on edge devices, we deploy Shaver into three devices: (1) Raspberry Pi 4B, (2) a personal PC with CPU i7-13700K, (3) a Samsung Galaxy S23 with Snapdragon 8 Gen 2 CPU. We implement our algorithm using Python with PyTorch on Raspberry Pi and PC, and Java with ExecuTorch on mobile devices. To verify that the efficiency is able to support on-device deployment, on each device, we report the memory inference memory and inference time of the compressed DCN-Mix CRS backbone model. The test is performed with the largest dataset KDD. The inference memory is measured with memory profiler (for Python: https://pypi.org/project/memory-profiler/, for Java: Android Studio built-in memory profiler). Regarding the inference time, we take WWW'25, April 28-May 2, 2025, Sydney, NSW, Australia. Tran et al. the average of 10 runs with a batch size of 64. We further report the model storage requirement as it is vital for transferring bandwidth and devices with limited disk storage [19]. The sparse tensor structure is CSR. The on-device results are shown table 8. Firstly, it is worth noting that the inference time does not change dramatically between sparsity settings, it is mainly determined by the backbone CRS model's complexity. Secondly, we can observe a linear relationship between the model inference memory and the sparsity rate. Lastly, an overall conclusion is that CRS models pruned by Shaver is able to achieve a highly practical memory and inference time for when being deployed for on-device services.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "KDD Cup 2012, Track 2"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Learning Compact Compositional Embeddings via Regularized Pruning for Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Shapley value as principled metric for structured network pruning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A game-theoretic approach to recommendation systems with strategic content providers"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Once-for-all: Train one network and specialize it for efficient deployment"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Polynomial calculation of the Shapley value based on sampling"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Algorithms to estimate Shapley value feature attributions"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Learning Elastic Embeddings for Customizing On-Device Recommenders"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Clustered Embedding Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Unified Embedding: Battletested feature representations for web-scale ML systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Stochastic Amortization: A Unified Approach to Accelerate Feature and Data Attribution"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Improving kernels shap: Practical shapley value estimation via linear regression"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Understanding global feature contributions with additive importance measures"
+    },
+    {
+      "ref_id": "b13",
+      "title": "AutoShape: Automatic Design of Click-Through Rate Prediction Models Using Shapley Value"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Neuron Shapley: discovering the responsible neurons"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Real-time short video recommendation on mobile devices"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Post-training 4-bit quantization on embedding tables"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Few-shot backdoor defense using shapley estimation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Deeprec: On-device deep learning for privacy-preserving sequential recommendation in mobile commerce"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Deep Compression: Compressing Deep Neural Network with Pruning, Trained Quantization and Huffman Coding"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Display Advertising Challenge"
+    },
+    {
+      "ref_id": "b23",
+      "title": "FastSHAP: Real-time shapley value estimation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Neural Input Search for Large Scale Recommendation Models"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Learning to Embed Categorical Features without Embedding Tables for Recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Autosrh: An embedding dimensionality search framework for tabular data prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "AdaEmbed: Adaptive Embedding for Large-Scale Recommendation Models"
+    },
+    {
+      "ref_id": "b28",
+      "title": "SNIP: Single-shot network pruning based on connection sensitivity"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Adaptive Low-Precision Training for Embeddings in Clickthrough Rate Prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Embedding Compression in Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Lightweight Embeddings for Graph Collaborative Filtering"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Learnable Embedding Sizes for Recommender Systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "CAFE+: Towards Compact, Adaptive, and Fast Embedding for Large-scale Online Recommendation Models"
+    },
+    {
+      "ref_id": "b35",
+      "title": "From local explanations to global understanding with explainable AI for trees"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A unified approach to interpreting model predictions"
+    },
+    {
+      "ref_id": "b37",
+      "title": "OptEmbed: Learning Optimal Embedding Table for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Recommendation systems: An insight into current development and future research challenges"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Using Federated Learning to Improve Brave's On-Device Recommendations While Protecting Your Privacy"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Pruning Convolutional Neural Networks for Resource Efficient Inference"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Software-Hardware Co-Design for Fast and Scalable Training of Deep Learning Recommendation Models"
+    },
+    {
+      "ref_id": "b42",
+      "title": "A white paper on neural network quantization"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Learning compressed embeddings for on-device inference"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Single-shot Embedding Dimension Search in Recommender System"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Budgeted Embedding Table For Recommender Systems"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Continuous Input Embedding Size Search For Recommender Systems"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Sparser Training for On-Device Recommendation Systems"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Scalable Dynamic Embedding Size Search for Streaming Recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b50",
+      "title": "The Shapley value: essays in honor of Lloyd S. Shapley"
+    },
+    {
+      "ref_id": "b51",
+      "title": "The Shapley Value of Classifiers in Ensemble Games"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Compositional Embeddings Using Complementary Partitions for Memory Efficient Recommendation Systems"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Online advertising revenue in the United States from 2000 to 2023"
+    },
+    {
+      "ref_id": "b54",
+      "title": "The Avazu Dataset"
+    },
+    {
+      "ref_id": "b55",
+      "title": "A Thorough Performance Benchmarking on Lightweight Embedding-based Recommender Systems"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Next point-of-interest recommendation on resource-constrained mobile devices"
+    },
+    {
+      "ref_id": "b57",
+      "title": "DCN v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Dynamic Sparse Learning: A Novel Paradigm for Efficient Recommendation"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Single-shot feature selection for multi-task recommendations"
+    },
+    {
+      "ref_id": "b60",
+      "title": "On-device next-item recommendation with self-supervised knowledge distillation"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Efficient on-device session-based recommendation"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Towards communication-efficient model updating for on-device session-based recommendation"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Agile and accurate CTR prediction model training for massive-scale online advertising systems"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Learning Effective and Efficient Embedding via an Adaptively-Masked Twins-based Layer"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Mixed-precision embedding using a cache"
+    },
+    {
+      "ref_id": "b66",
+      "title": "TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models"
+    },
+    {
+      "ref_id": "b67",
+      "title": "On-Device Recommender Systems: A Tutorial on The New-Generation Recommendation Paradigm"
+    },
+    {
+      "ref_id": "b68",
+      "title": "On-Device Recommender Systems: A Comprehensive Survey"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Slimmable neural networks"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Experimental Analysis of Large-scale Learnable Vector Storage Compression"
+    },
+    {
+      "ref_id": "b71",
+      "title": "CAFE: Towards Compact, Adaptive, and Fast Embedding for Large-scale Recommendation Models"
+    },
+    {
+      "ref_id": "b72",
+      "title": "AutoDim: Field-aware Embedding Dimension Search in Recommender Systems"
+    },
+    {
+      "ref_id": "b73",
+      "title": "AutoEmb: Automated Embedding Dimensionality Search in Streaming Recommendations"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Personalized Elastic Embedding Learning for On-Device Recommendation"
+    },
+    {
+      "ref_id": "b75",
+      "title": "BARS: Towards Open Benchmarking for Recommender Systems"
+    },
+    {
+      "ref_id": "b76",
+      "title": "Open benchmarking for click-through rate prediction"
+    }
   ]
 }

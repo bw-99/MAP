@@ -24,5 +24,159 @@
     "Recommendation Systems",
     "Multi-Domain Recommendation",
     "CTR Prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Multi-task learning with deep neural networks: A survey"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Adaptive subgradient methods for online learning and stochastic optimization"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Domain-adversarial training of neural networks"
+    },
+    {
+      "ref_id": "b6",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Adversarial feature translation for multi-domain recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Analyzing the forgetting problem in pretrain-finetuning of open-domain dialogue response models"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Conet: Collaborative cross networks for cross-domain recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Semisupervised learning for cross-domain recommendation to cold-start users"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Transfer learning via contextual invariants for one-to-many cross-domain recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Fine-tuning can distort pretrained features and underperform out-of-distribution"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Multi-interest network with dynamic routing for recommendation at Tmall"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Dual Attentive Sequential Learning for Cross-Domain Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Cross-domain recommendation: An embedding and mapping approach."
+    },
+    {
+      "ref_id": "b16",
+      "title": "A decade survey of transfer learning (2010-2020)"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Minet: Mixed interest network for cross-domain click-through rate prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Protocf: Prototypical collaborative filtering for few-shot recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Graph Based Long-Term And Short-Term Interest Model for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Simple statistical gradient-following algorithms for connectionist reinforcement learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Attentional factorization machines: Learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Deep multi-interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Contrastive cross-domain recommendation in matching"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Multi-task Learning Model based on Multiple Characteristics and Multiple Interests for CTR prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Deep multi-view learning methods: A review"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Click-through rate prediction using transfer learning with fine-tuned parameters"
+    },
+    {
+      "ref_id": "b32",
+      "title": "AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b33",
+      "title": "A survey on multi-task learning"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Dtcdr: A framework for dual-target cross-domain recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Cross-domain recommendation: challenges, progress, and prospects"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Personalized transfer of user preferences for cross-domain recommendation"
+    }
   ]
 }

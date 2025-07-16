@@ -30,7 +30,141 @@
   "A.4 More Experimental Results": "Here, we present the experimental results of extra two runs with different random seeds. CT4Rec: Simple yet Effective Consistency Training for Sequential Recommendation KDD '23, August 6-10, 2023, Long Beach, CA, USA Table 9: The second run of baselines and our proposed CT4Rec on four offline datasets, where '*' refers to modifying the original binary cross-entropy loss in SASRec with the training objective in recent baselines, e.g., CLRec, CL4SRec, StackRec. Our CT4Rec is implemented on SASRec*. Improv. and Improv.* refer to the relative improvement of CT4Rec over SASRec and SASRec*, respectively. Except for the random seed, the other settings are the same as Table 2. Table 10: The third run of baselines and our proposed CT4Rec on four offline datasets, where '*' refers to modifying the original binary cross-entropy loss in SASRec with the training objective in recent baselines, e.g., CLRec, CL4SRec, StackRec. Our CT4Rec is implemented on SASRec*. Improv. and Improv.* refer to the relative improvement of CT4Rec over SASRec and SASRec*, respectively. Except for the random seed, the other settings are the same as Table 2.",
   "keywords_parsed": [
     "Recommender Systems",
-    " Sequential Recommendation",
-    " Consistency Training"
+    "Sequential Recommendation",
+    "Consistency Training"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Top-k off-policy correction for a REINFORCE recommender system"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Air: Attentional intention-aware recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Sequential recommendation with user memory networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b6",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Lighter and better: low-rank decomposed self-attention networks for next-item recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Breaking the glass ceiling for embedding-based classifiers for large output spaces"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Adversarial Feature Translation for Multi-domain Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Translation-based recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Fusing similarity models with markov chains for sparse sequential recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Long short-term memory"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Diversifying Personalized Recommendation with User-session Context"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Improving sequential recommendation with knowledge-enhanced memory networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Embedding-based retrieval in facebook search"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A survey on contrastive self-supervised learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Neural survival recommender"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Neural input search for large scale recommendation models"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Entangled Bidirectional Encoder to Autoregressive Decoder for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Make it a chorus: knowledge-and time-aware item modeling for sequential recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "StackRec: Efficient Training of Very Deep Sequential Recommender Models by Iterative Stacking"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Session-based recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Graph Contextualized Self-Attention Network for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Recurrent convolutional neural network for sequential recommendation"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Self-supervised Learning for Large-scale Item Recommendations"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Self-supervised learning for deep models in recommendations"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Sequential recommender system based"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Fraternal Dropout"
+    }
   ]
 }

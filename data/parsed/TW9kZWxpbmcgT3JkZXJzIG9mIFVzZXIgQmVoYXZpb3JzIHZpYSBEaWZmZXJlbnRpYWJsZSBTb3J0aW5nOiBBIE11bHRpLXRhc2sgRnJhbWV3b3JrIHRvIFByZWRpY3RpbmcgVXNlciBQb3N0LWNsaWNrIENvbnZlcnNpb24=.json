@@ -16,7 +16,65 @@
   "REFERENCES": "[1] Wentian Bao, Hong Wen, Sha Li, Xiao-Yang Liu, Quan Lin, and Keping Yang. 2020. Gmcm: Graph-based micro-behavior conversion model for post-click conversion rate estimation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2201-2210. [2] Chris Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole Hamilton, and Greg Hullender. 2005. Learning to rank using gradient descent. In Proceedings of the 22nd international conference on Machine learning . 89-96. [3] Zhe Cao, Tao Qin, Tie-Yan Liu, Ming-Feng Tsai, and Hang Li. 2007. Learning to rank: from pairwise approach to listwise approach. In Proceedings of the 24th international conference on Machine learning . 129-136. [4] Aditya Grover, Eric Wang, Aaron Zweig, and Stefano Ermon. 2018. Stochastic Optimization of Sorting Networks via Continuous Relaxations. In International Conference on Learning Representations . [5] Scott Linderman, Gonzalo Mena, Hal Cooper, Liam Paninski, and John Cunningham. 2018. Reparameterizing the birkhoff polytope for variational permutation inference. In International Conference on Artificial Intelligence and Statistics . PMLR, 1618-1627. [6] Tie-Yan Liu. 2011. Learning to rank for information retrieval. (2011). [7] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [8] Gonzalo Mena, David Belanger, Scott Linderman, and Jasper Snoek. 2018. Learning latent permutations with gumbel-sinkhorn networks. arXiv preprint arXiv:1802.08665 (2018). [9] Maxim Naumov, Dheevatsa Mudigere, Hao-Jun Michael Shi, Jianyu Huang, Narayanan Sundaraman, Jongsoo Park, Xiaodong Wang, Udit Gupta, CaroleJean Wu, Alisson G Azzolini, et al. 2019. Deep learning recommendation model for personalization and recommendation systems. arXiv preprint arXiv:1906.00091 (2019). [10] Wlodzimierz Ogryczak and Arie Tamir. 2003. Minimizing the sum of the k largest functions in linear time. Inform. Process. Lett. 85, 3 (2003), 117-122. [11] Przemysław Pobrotyn and Radosław Białobrzeski. 2021. NeuralNDCG: Direct Optimisation of a Ranking Metric via Differentiable Relaxation of Sorting. arXiv preprint arXiv:2102.07831 (2021). [12] Sebastian Prillo and Julian Eisenschlos. 2020. SoftSort: A continuous relaxation for the argsort operator. In International Conference on Machine Learning . PMLR, 7793-7802. [13] Hong Wen, Jing Zhang, Yuan Wang, Fuyu Lv, Wentian Bao, Quan Lin, and Keping Yang. 2020. Entire space multi-task modeling via post-click behavior decomposition for conversion rate prediction. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 2377-2386. [14] Bianca Zadrozny. 2004. Learning and evaluating classifiers under sample selection bias. In Proceedings of the twenty-first international conference on Machine learning . 114.",
   "keywords_parsed": [
     "Recommendation",
-    " multi-task learning",
-    " differentiable sorting"
+    "multi-task learning",
+    "differentiable sorting"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gmcm: Graph-based micro-behavior conversion model for post-click conversion rate estimation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Learning to rank using gradient descent"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Stochastic Optimization of Sorting Networks via Continuous Relaxations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Reparameterizing the birkhoff polytope for variational permutation inference"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Learning to rank for information retrieval"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning latent permutations with gumbel-sinkhorn networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Minimizing the sum of the k largest functions in linear time"
+    },
+    {
+      "ref_id": "b11",
+      "title": "NeuralNDCG: Direct Optimisation of a Ranking Metric via Differentiable Relaxation of Sorting"
+    },
+    {
+      "ref_id": "b12",
+      "title": "SoftSort: A continuous relaxation for the argsort operator"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Entire space multi-task modeling via post-click behavior decomposition for conversion rate prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Learning and evaluating classifiers under sample selection bias"
+    }
   ]
 }

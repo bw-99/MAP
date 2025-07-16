@@ -18,8 +18,114 @@
   "REFERENCES": "[1] Chris Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole Hamilton, and Greg Hullender. 2005. Learning to rank using gradient descent. In Proceedings of the 22nd international conference on Machine learning . 89-96. [2] Christopher JC Burges. 2010. From ranknet to lambdarank to lambdamart: An overview. Learning 11, 23-581 (2010), 81. [3] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [4] Avi Goldfarb and Catherine Tucker. 2011. Online display advertising: Targeting and obtrusiveness. Marketing Science 30, 3 (2011), 389-404. [5] Huifeng Guo, Bo Chen, Ruiming Tang, Weinan Zhang, Zhenguo Li, and Xiuqiang He. 2021. An embedding learning framework for numerical features in ctr prediction. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 2910-2918. [6] Geoffrey Hinton, Oriol Vinyals, and Jeff Dean. 2015. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531 (2015). [7] Jie Hu, Li Shen, and Gang Sun. 2018. Squeeze-and-excitation networks. In Proceedings of the IEEE conference on computer vision and pattern recognition . 7132-7141. [8] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning deep structured semantic models for web search using clickthrough data. In Proceedings of the 22nd ACM international conference on Information & Knowledge Management . 2333-2338. [9] Kalervo Järvelin and Jaana Kekäläinen. 2017. IR evaluation methods for retrieving highly relevant documents. In ACM SIGIR Forum , Vol. 51. ACM New York, NY, USA, 243-250. [10] Xiangyang Li, Bo Chen, HuiFeng Guo, Jingjie Li, Chenxu Zhu, Xiang Long, Sujian Li, Yichao Wang, Wei Guo, Longxia Mao, et al. 2022. IntTower: the Next Generation of Two-Tower Model for Pre-Ranking System. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3292-3301. [11] Xiang Li, Xiaojiang Zhou, Yao Xiao, Peihao Huang, Dayao Chen, Sheng Chen, and Yunsen Xian. 2022. AutoFAS: Automatic Feature and Architecture Selection for Pre-Ranking System. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3241-3249. [12] Bin Liu, Chenxu Zhu, Guilin Li, Weinan Zhang, Jincai Lai, Ruiming Tang, Xiuqiang He, Zhenguo Li, and Yong Yu. 2020. Autofis: Automatic feature interaction selection in factorization models for click-through rate prediction. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2636-2645. [13] Tie-Yan Liu et al. 2009. Learning to rank for information retrieval. Foundations and Trends® in Information Retrieval 3, 3 (2009), 225-331. Conference acronym 'XX, June 03-05, 2023, Woodstock, NY [14] Qiang Luo, Xiang-Rong Sheng, Jun Jiang, Chi Ma, Shuguang Wang, Haiyang He, Pengtao Yi, Guowang Zhang, Yue Song, and Guorui Zhou. 2020. Bernoulli:A Streaming System with Structured Designs. (2020). [15] Ning Ma, Mustafa Ispir, Yuan Li, Yongpeng Yang, Zhe Chen, Derek Zhiyuan Cheng, Lan Nie, and Kishor Barman. 2022. An Online Multi-Task Learning Framework for Google Feed Ads Auction Models. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3477-3485. [16] Xu Ma, Pengjie Wang, Hui Zhao, Shaoguo Liu, Chuhan Zhao, Wei Lin, KuangChih Lee, Jian Xu, and Bo Zheng. 2021. Towards a Better Tradeoff between Effectiveness and Efficiency in Pre-Ranking: A Learnable Feature Selection based Approach. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2036-2040. [17] Rama Kumar Pasumarthi, Sebastian Bruch, Xuanhui Wang, Cheng Li, Michael Bendersky, Marc Najork, Jan Pfeifer, Nadav Golbandi, Rohan Anil, and Stephan Wolf. 2019. Tf-ranking: Scalable tensorflow library for learning-to-rank. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2970-2978. [18] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. [19] Jiarui Qin, Jiachen Zhu, Bo Chen, Zhirong Liu, Weiwen Liu, Ruiming Tang, Rui Zhang, Yong Yu, and Weinan Zhang. 2022. RankFlow: Joint Optimization of MultiStage Cascade Ranking Systems as Flows. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 814-824. [20] Jiaxi Tang and Ke Wang. 2018. Ranking distillation: Learning compact ranking models with high performance for recommender system. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 2289-2298. [21] Jun Wang and Shuai Yuan. 2015. Real-time bidding: A new frontier of computational advertising research. In Proceedings of the Eighth ACM International Conference on Web Search and Data Mining . 415-416. [22] Yiqing Wang, Xiangyu Liu, Zhenzhe Zheng, Zhilin Zhang, Miao Xu, Chuan Yu, and Fan Wu. 2022. On Designing a Two-stage Auction for Online Advertising. In Proceedings of the ACM Web Conference 2022 . 90-99. [23] Zhe Wang, Liqin Zhao, Biye Jiang, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2020. Cold: Towards the next generation of pre-ranking system. arXiv preprint arXiv:2007.16122 (2020). [24] Wenjin Wu, Guojun Liu, Hui Ye, Chenshuang Zhang, Tianshu Wu, Daorui Xiao, Wei Lin, and Xiaoyu Zhu. 2018. Eenmf: An end-to-end neural matching framework for e-commerce sponsored search. arXiv preprint arXiv:1812.01190 (2018). [25] Bowen Yuan, Jui-Yang Hsia, Meng-Yuan Yang, Hong Zhu, Chih-Yao Chang, Zhenhua Dong, and Chih-Jen Lin. 2019. Improving ad click prediction by considering non-displayed events. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 329-338. [26] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068.",
   "keywords_parsed": [
     "pre-ranking",
-    " cascading architecture",
-    " consistency",
-    " online advertising"
+    "cascading architecture",
+    "consistency",
+    "online advertising"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning to rank using gradient descent"
+    },
+    {
+      "ref_id": "b2",
+      "title": "From ranknet to lambdarank to lambdamart: An overview"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Online display advertising: Targeting and obtrusiveness"
+    },
+    {
+      "ref_id": "b5",
+      "title": "An embedding learning framework for numerical features in ctr prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Squeeze-and-excitation networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b9",
+      "title": "IR evaluation methods for retrieving highly relevant documents"
+    },
+    {
+      "ref_id": "b10",
+      "title": "IntTower: the Next Generation of Two-Tower Model for Pre-Ranking System"
+    },
+    {
+      "ref_id": "b11",
+      "title": "AutoFAS: Automatic Feature and Architecture Selection for Pre-Ranking System"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Autofis: Automatic feature interaction selection in factorization models for click-through rate prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Learning to rank for information retrieval"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Bernoulli:A Streaming System with Structured Designs"
+    },
+    {
+      "ref_id": "b15",
+      "title": "An Online Multi-Task Learning Framework for Google Feed Ads Auction Models"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Towards a Better Tradeoff between Effectiveness and Efficiency in Pre-Ranking: A Learnable Feature Selection based Approach"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Tf-ranking: Scalable tensorflow library for learning-to-rank"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "RankFlow: Joint Optimization of MultiStage Cascade Ranking Systems as Flows"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Ranking distillation: Learning compact ranking models with high performance for recommender system"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Real-time bidding: A new frontier of computational advertising research"
+    },
+    {
+      "ref_id": "b22",
+      "title": "On Designing a Two-stage Auction for Online Advertising"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Cold: Towards the next generation of pre-ranking system"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Eenmf: An end-to-end neural matching framework for e-commerce sponsored search"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Improving ad click prediction by considering non-displayed events"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

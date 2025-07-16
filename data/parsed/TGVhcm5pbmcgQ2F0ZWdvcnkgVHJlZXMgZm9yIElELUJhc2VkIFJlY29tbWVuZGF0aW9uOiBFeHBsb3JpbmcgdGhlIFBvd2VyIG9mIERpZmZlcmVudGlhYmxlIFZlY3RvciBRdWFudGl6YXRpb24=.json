@@ -37,6 +37,232 @@
   "G TIME EFFICIENCY": "Here, we study the impact of integrating our CAGE module on model efficiency, especially with large-scale datasets, we report both the training time (per epoch) and inference time in various recommendation scenarios. The results indicate that our CAGE module introduces only a marginal increase in computational cost, which is generally negligible in the majority of cases.",
   "keywords_parsed": [
     "recommender system",
-    " differentiable vector quantization"
+    "differentiable vector quantization"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Additive quantization for extreme vector compression"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A genre-based item-item collaborative filtering: facing the cold-start problem"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Estimating or propagating gradients through stochastic neurons for conditional computation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Empirical analysis of predictive algorithms for collaborative filtering"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Speech coding based upon vector quantization"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Category-aware collaborative sequential recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Recsys Challenge 2018: Automatic Music Playlist Continuation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Playlist Prediction via Metric Embedding"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A Hybrid Recommender System for Improving Automatic Playlist Continuation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A comprehensive recommender system model: Improving accuracy for both warm and cold start users"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Vector quantization"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deepfm: An end-to-end wide & deep learning framework for CTR prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Consistency-Aware Recommendation for User-Generated Item List Continuation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Session-based Recommendations with Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Learning vector-quantized item representation for transferable sequential recommenders"
+    },
+    {
+      "ref_id": "b20",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Multiple stage vector quantization for speech coding"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Self-Attentive Sequential Recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "MASCOT: A Quantization Framework for Efficient Matrix Factorization in Recommender Systems"
+    },
+    {
+      "ref_id": "b25",
+      "title": "The bellkor solution to the netflix grand prize"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Slope one predictors for online rating-based collaborative filtering"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Product quantized collaborative filtering"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Boosting Deep CTR Prediction with a Plug-and-Play Pre-trainer for News Recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "FANS: Fast Non-Autoregressive Sequence Generation for Item List Continuation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "FinalMLP: an enhanced two-stream MLP model for CTR prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "The Natural Language of Playlists"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Hypergraph Models of Playlist Dialects"
+    },
+    {
+      "ref_id": "b34",
+      "title": "On the importance of news content representation in hybrid neural sessionbased recommender systems"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Click-through rate prediction with auto-quantized contrastive learning"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Recommender systems with generative retrieval"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Generating diverse high-fidelity images with vq-vae-2"
+    },
+    {
+      "ref_id": "b39",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Item-based collaborative filtering recommendation algorithms"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep collaborative filtering with multi-aspect information in heterogeneous networks"
+    },
+    {
+      "ref_id": "b42",
+      "title": "BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Personalized Top-N Sequential Recommendation via Convolutional Sequence Embedding"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Adversarial Mahalanobis Distance-Based Attentive Song Recommender for Automatic Playlist Continuation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "PQ-VAE: Efficient Recommendation Using Quantized Embeddings"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Neural discrete representation learning"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Two-Stage Model for Automatic Playlist Continuation at Scale"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Make it a chorus: knowledge-and time-aware item modeling for sequential recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Towards Deeper, Lighter and Interpretable Cross Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Masknet: Introducing feature-wise multiplication to CTR ranking models by instance-guided mask"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Mind: A large-scale dataset for news recommendation"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Vector quantization: a review"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Joint inverted indexing"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Query-Aware Quantization for Maximum Inner Product Search"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Learning over knowledge-base embeddings for recommendation"
+    }
   ]
 }

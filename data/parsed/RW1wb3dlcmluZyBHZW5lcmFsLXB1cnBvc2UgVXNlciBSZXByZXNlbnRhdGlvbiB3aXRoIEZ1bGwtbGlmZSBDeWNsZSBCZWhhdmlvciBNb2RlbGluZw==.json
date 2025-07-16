@@ -26,16 +26,143 @@
   "5 CONCLUSION": "In this work, a novel framework named LURM is proposed to model full-life cycle user behaviors with any length. With the ability to model full-life cycle user behaviors, our method shows promising results on different downstream tasks and datasets. Although our method has made some progress, there is still space for improvement. In the future research work, we will consider more types of tasks; input data in different modalities, such as images, video, and audio; more dedicated network architecture and so on.",
   "REFERENCES": "[1] Nicholas Andrews and Marcus Bishop. 2019. Learning invariant representations of social media users. arXiv preprint arXiv:1910.04979 (2019). [2] Oren Barkan and Noam Koenigstein. 2016. Item2vec: neural item embedding for collaborative filtering. In 2016 IEEE 26th International Workshop on Machine Learning for Signal Processing (MLSP) . IEEE, 1-6. [3] Yue Cao, Xiaojiang Zhou, Jiaqi Feng, Peihao Huang, Yao Xiao, Dayao Chen, and Sheng Chen. 2022. Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2974-2983. [4] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In International conference on machine learning . PMLR, 1597-1607. [5] Zihang Dai, Zhilin Yang, Yiming Yang, Jaime Carbonell, Quoc V Le, and Ruslan Salakhutdinov. 2019. Transformer-xl: Attentive language models beyond a fixedlength context. arXiv preprint arXiv:1901.02860 (2019). [6] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). KDD '23, August 6-10, 2023, Long Beach, CA, USA Bei Yang, et al. [7] Tao Ding, Warren K Bickel, and Shimei Pan. 2017. Multi-view unsupervised user feature embedding for social media-based substance use prediction. In Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing . 2275-2284. [8] Georges E Dupret and Benjamin Piwowarski. 2008. A user browsing model to predict search engine click data from past observations.. In Proceedings of the 31st annual international ACM SIGIR conference on Research and development in information retrieval . 331-338. [9] Ali Mamdouh Elkahky, Yang Song, and Xiaodong He. 2015. A multi-view deep learning approach for cross domain user modeling in recommendation systems. In Proceedings of the 24th international conference on world wide web . 278-288. [10] Li Fei-Fei and Pietro Perona. 2005. A bayesian hierarchical model for learning natural scene categories. In 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05) , Vol. 2. IEEE, 524-531. [11] Jie Gu, Feng Wang, Qinghui Sun, Zhiquan Ye, Xiaoxiao Xu, Jingmin Chen, and Jun Zhang. 2020. Exploiting Behavioral Consistence for Universal User Representation. arXiv preprint arXiv:2012.06146 (2020). [12] Zellig S Harris. 1954. Distributional structure. Word 10, 2-3 (1954), 146-162. [13] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In Proceedings of the Eighth International Workshop on Data Mining for Online Advertising . 1-9. [14] Wendi Ji, Yinglong Sun, Tingwei Chen, and Xiaoling Wang. 2020. Two-stage Sequential Recommendation via Bidirectional Attentive Behavior Embedding and Long/Short-term Integration. In 2020 IEEE International Conference on Knowledge Graph (ICKG) . IEEE, 449-457. [15] Ankit Kumar, Ozan Irsoy, Peter Ondruska, Mohit Iyyer, James Bradbury, Ishaan Gulrajani, Victor Zhong, Romain Paulus, and Richard Socher. 2016. Ask me anything: Dynamic memory networks for natural language processing. In International conference on machine learning . PMLR, 1378-1387. [16] Van Der Maaten Laurens and Geoffrey Hinton. 2008. Visualizing Data using t-SNE. Journal of Machine Learning Research 9, 2605 (2008), 2579-2605. [17] Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013. Distributed representations of words and phrases and their compositionality. arXiv preprint arXiv:1310.4546 (2013). [18] Jianmo Ni, Jiacheng Li, and Julian McAuley. 2019. Justifying recommendations using distantly-labeled reviews and fine-grained aspects. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) . 188-197. [19] Yabo Ni, Dan Ou, Shichen Liu, Xiang Li, Wenwu Ou, Anxiang Zeng, and Luo Si. 2018. Perceive your users in depth: Learning universal user representations from multiple e-commerce tasks. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 596-605. [20] Aaron van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation learning with contrastive predictive coding. arXiv preprint arXiv:1807.03748 (2018). [21] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on long sequential user behavior modeling for click-through rate prediction. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2671-2679. [22] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. [23] Kan Ren, Jiarui Qin, Yuchen Fang, Weinan Zhang, Lei Zheng, Weijie Bian, Guorui Zhou, Jian Xu, Yong Yu, Xiaoqiang Zhu, et al. 2019. Lifelong sequential modeling with personalized memorization for user response prediction. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . 565-574. [24] Stephen Robertson. 2004. Understanding inverse document frequency: on theoretical arguments for IDF. Journal of documentation (2004). [25] K. Shin, H. Kwak, S. Y. Kim, M. N. Ramstrom, J. Jeong, J. W. Ha, and K. M. Kim. 2021. Scaling Law for Recommendation Models: Towards General-purpose User Representations. (2021). [26] Q. Sun, J. Gu, B. Yang, X. X. Xu, R. Xu, S. Gao, H. Liu, and H. Xu. 2021. Interestoriented Universal User Representation via Contrastive Learning. (2021). [27] Chuhan Wu, Fangzhao Wu, Tao Qi, and Yongfeng Huang. 2022. UserBERT: Pretraining User Model with Contrastive Self-supervision. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2087-2092. [28] Chuhan Wu, Fangzhao Wu, Tao Qi, Jianxun Lian, Yongfeng Huang, and Xing Xie. 2020. PTUM: Pre-training User Model from Unlabeled User Behaviors via Self-supervision. arXiv preprint arXiv:2010.01494 (2020). [29] Zhilin Yang, Zihang Dai, Yiming Yang, Jaime Carbonell, Ruslan Salakhutdinov, and Quoc V Le. 2019. Xlnet: Generalized autoregressive pretraining for language understanding. arXiv preprint arXiv:1906.08237 (2019). [30] Jinfeng Yi, Lijun Zhang, Jun Wang, Rong Jin, and Anil Jain. 2014. A single-pass algorithm for efficiently recovering sparse cluster centers of high-dimensional data. In International Conference on Machine Learning . PMLR, 658-666. [31] Haochao Ying, Fuzhen Zhuang, Fuzheng Zhang, Yanchi Liu, Guandong Xu, Xing Xie, Hui Xiong, and Jian Wu. 2018. Sequential recommender system based on hierarchical attention network. In IJCAI International Joint Conference on Artificial Intelligence . [32] Feng Yu, Qiang Liu, Shu Wu, Liang Wang, and Tieniu Tan. 2016. A dynamic recurrent model for next basket recommendation. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval . 729-732. [33] Zeping Yu, Jianxun Lian, Ahmad Mahmoody, Gongshen Liu, and Xing Xie. 2019. Adaptive User Modeling with Long and Short-Term Preferences for Personalized Recommendation.. In IJCAI . 4213-4219.",
   "keywords_parsed": [
-    "User Modeling plays an essential role in industry. In this field",
-    " task-agnostic approaches",
-    " which generate general-purpose representation applicable to diverse downstream user cognition tasks",
-    " is a promising direction being more valuable and economical than task-specific representation learning. With the rapid development of Internet service platforms",
-    " user behaviors have been accumulated continuously. However",
-    " existing general-purpose user representation researches have little ability for full-life cycle modeling on extremely long behavior sequences since user registration. In this study",
-    " we propose a novel framework called full- Life cycle User Representation Model (LURM) to tackle this challenge. Specifically",
-    " LURM consists of two cascaded sub-models: (i) Bag-of-Interests (BoI) encodes user behaviors in any time period into a sparse vector with super-high dimension ( e . g .",
-    " 10 5 ); (ii) Self-supervised Multianchor Encoder Network (SMEN) maps sequences of BoI features to multiple low-dimensional user representations. Specially",
-    " SMEN achieves almost lossless dimensionality reduction",
-    " benefiting from a novel multi-anchor module which can learn different aspects of user interests. Experiments on several benchmark datasets show that our approach outperforms state-of-the-art general-purpose representation methods."
+    "general-purpose user embedding",
+    "extremely long sequence modeling",
+    "self-supervised learning",
+    "representation learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning invariant representations of social media users"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Item2vec: neural item embedding for collaborative filtering"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Transformer-xl: Attentive language models beyond a fixed-length context"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Multi-view unsupervised user feature embedding for social media-based substance use prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A user browsing model to predict search engine click data from past observations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A multi-view deep learning approach for cross domain user modeling in recommendation systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A bayesian hierarchical model for learning natural scene categories"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Exploiting Behavioral Consistence for Universal User Representation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Distributional structure"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Two-stage Sequential Recommendation via Bidirectional Attentive Behavior Embedding and Long/Short-term Integration"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Ask me anything: Dynamic memory networks for natural language processing"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Visualizing Data using t-SNE"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Distributed representations of words and phrases and their compositionality"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Justifying recommendations using distantly-labeled reviews and fine-grained aspects"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Perceive your users in depth: Learning universal user representations from multiple e-commerce tasks"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Lifelong sequential modeling with personalized memorization for user response prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Understanding inverse document frequency: on theoretical arguments for IDF"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Scaling Law for Recommendation Models: Towards General-purpose User Representations"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Interest-oriented Universal User Representation via Contrastive Learning"
+    },
+    {
+      "ref_id": "b27",
+      "title": "UserBERT: Pretraining User Model with Contrastive Self-supervision"
+    },
+    {
+      "ref_id": "b28",
+      "title": "PTUM: Pre-training User Model from Unlabeled User Behaviors via Self-supervision"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Xlnet: Generalized autoregressive pretraining for language understanding"
+    },
+    {
+      "ref_id": "b30",
+      "title": "A single-pass algorithm for efficiently recovering sparse cluster centers of high-dimensional data"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Sequential recommender system based on hierarchical attention network"
+    },
+    {
+      "ref_id": "b32",
+      "title": "A dynamic recurrent model for next basket recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Adaptive User Modeling with Long and Short-Term Preferences for Personalized Recommendation"
+    }
   ]
 }

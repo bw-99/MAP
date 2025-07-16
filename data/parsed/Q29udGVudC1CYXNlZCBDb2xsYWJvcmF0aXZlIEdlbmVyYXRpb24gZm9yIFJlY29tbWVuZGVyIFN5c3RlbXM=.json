@@ -32,6 +32,228 @@
   "REFERENCES": "[1] Keqin Bao, Jizhi Zhang, Wenjie Wang, Yang Zhang, Zhengyi Yang, Yancheng Luo, Fuli Feng, Xiangnaan He, and Qi Tian. 2023. A bi-step grounding paradigm for large language models in recommendation systems. arXiv preprint arXiv:2308.08434 (2023). [2] Rianne van den Berg, Thomas N Kipf, and Max Welling. 2017. Graph convolutional matrix completion. arXiv preprint arXiv:1706.02263 (2017). [3] Michele Bevilacqua, Giuseppe Ottaviano, Patrick Lewis, Scott Yih, Sebastian Riedel, and Fabio Petroni. 2022. Autoregressive search engines: Generating substrings as document identifiers. Advances in Neural Information Processing Systems 35 (2022), 31668-31683. [4] Zefeng Cai and Zerui Cai. 2022. PEVAE: A Hierarchical VAE for Personalized Explainable Recommendation. In SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 . ACM, 692-702. https://doi.org/10.1145/3477495.3532039 [5] Hanqun Cao, Cheng Tan, Zhangyang Gao, Yilun Xu, Guangyong Chen, PhengAnn Heng, and Stan Z Li. 2022. A survey on generative diffusion model. arXiv preprint arXiv:2209.02646 (2022). [6] Nicola De Cao, Gautier Izacard, Sebastian Riedel, and Fabio Petroni. 2021. Autoregressive Entity Retrieval. In 9th International Conference on Learning Representations, ICLR 2021, Virtual Event, Austria, May 3-7, 2021 . OpenReview.net. https://openreview.net/forum?id=5k8F6UU39V [7] Yupeng Chang, Xu Wang, Jindong Wang, Yuan Wu, Kaijie Zhu, Hao Chen, Linyi Yang, Xiaoyuan Yi, Cunxiang Wang, Yidong Wang, et al. 2023. A survey on evaluation of large language models. arXiv preprint arXiv:2307.03109 (2023). [8] Chong Chen, Min Zhang, Yiqun Liu, and Shaoping Ma. 2018. Neural Attentional Rating Regression with Review-level Explanations. In Proceedings of the 2018 World Wide Web Conference on World Wide Web, WWW 2018, Lyon, France, April 23-27, 2018 . ACM, 1583-1592. https://doi.org/10.1145/3178876.3186070 [9] Antonia Creswell, Tom White, Vincent Dumoulin, Kai Arulkumaran, Biswa Sengupta, and Anil A Bharath. 2018. Generative adversarial networks: An overview. IEEE signal processing magazine 35, 1 (2018), 53-65. [10] Wenqi Fan, Zihuai Zhao, Jiatong Li, Yunqing Liu, Xiaowei Mei, Yiqi Wang, Jiliang Tang, and Qing Li. 2023. Recommender systems in the era of large language models (llms). arXiv preprint arXiv:2307.02046 (2023). [11] Jingyue Gao, Yang Lin, Yasha Wang, Xiting Wang, Zhao Yang, Yuanduo He, and Xu Chu. 2020. Set-Sequence-Graph: A Multi-View Approach Towards Exploiting Reviews for Recommendation. In CIKM '20: The 29th ACM International Conference on Information and Knowledge Management, Virtual Event, Ireland, October 19-23, 2020 . ACM, 395-404. https://doi.org/10.1145/3340531.3411939 [12] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5). In RecSys '22: Sixteenth ACM Conference on Recommender Systems, Seattle, WA, USA, September 18 - 23, 2022 . ACM, 299-315. https://doi.org/10.1145/3523227.3546767 [13] Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David WardeFarley, Sherjil Ozair, Aaron C. Courville, and Yoshua Bengio. 2014. Generative Adversarial Nets. In Advances in Neural Information Processing Systems 27: Annual Conference on Neural Information Processing Systems 2014, December 8-13 2014, Montreal, Quebec, Canada . 2672-2680. https://proceedings.neurips.cc/paper/ 2014/hash/5ca3e9b122f61f8f06494c97b1afccf3-Abstract.html [14] Guibing Guo, Huan Zhou, Bowei Chen, Zhirong Liu, Xiao Xu, Xu Chen, Zhenhua Dong, and Xiuqiang He. 2022. IPGAN: Generating Informative Item Pairs by Adversarial Sampling. IEEE Trans. Neural Networks Learn. Syst. 33, 2 (2022), 694-706. https://doi.org/10.1109/TNNLS.2020.3028572 [15] Ruining He and Julian McAuley. 2016. VBPR: visual bayesian personalized ranking from implicit feedback. In Proceedings of the AAAI conference on artificial intelligence , Vol. 30. [16] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, and Meng Wang. 2020. Lightgcn: Simplifying and powering graph convolution network for recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 639-648. [17] Xiangnan He, Zhankui He, Xiaoyu Du, and Tat-Seng Chua. 2018. Adversarial Personalized Ranking for Recommendation. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval, SIGIR 2018, Ann Arbor, MI, USA, July 08-12, 2018 . ACM, 355-364. https://doi.org/10.1145/3209978. 3209981 [18] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [19] Irina Higgins, Loic Matthey, Arka Pal, Christopher Burgess, Xavier Glorot, Matthew Botvinick, Shakir Mohamed, and Alexander Lerchner. 2016. beta-vae: Learning basic visual concepts with a constrained variational framework. In International conference on learning representations . [20] Jonathan Ho, Ajay Jain, and Pieter Abbeel. 2020. Denoising Diffusion Probabilistic Models. In Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual . https://proceedings.neurips.cc/paper/2020/hash/ 4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html [21] Yujing Hu, Qing Da, Anxiang Zeng, Yang Yu, and Yinghui Xu. 2018. Reinforcement learning to rank in e-commerce search engine: Formalization, analysis, and application. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 368-377. [22] Wenyue Hua, Shuyuan Xu, Yingqiang Ge, and Yongfeng Zhang. 2023. How to Index Item IDs for Recommendation Foundation Models. In Annual International ACM SIGIR Conference on Research and Development in Information Retrieval in the Asia Pacific Region, SIGIR-AP 2023, Beijing, China, November 26-28, 2023 . ACM, 195-204. https://doi.org/10.1145/3624918.3625339 [23] Wang-Cheng Kang and Julian J. McAuley. 2018. Self-Attentive Sequential Recommendation. In IEEE International Conference on Data Mining, ICDM 2018, Singapore, November 17-20, 2018 . IEEE Computer Society, 197-206. https: //doi.org/10.1109/ICDM.2018.00035 [24] Tero Karras, Samuli Laine, and Timo Aila. 2019. A style-based generator architecture for generative adversarial networks. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 4401-4410. [25] Diederik P. Kingma and Max Welling. 2014. Auto-Encoding Variational Bayes. In 2nd International Conference on Learning Representations, ICLR 2014, Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings . http://arxiv.org/abs/ 1312.6114 [26] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix factorization techniques for recommender systems. Computer 42, 8 (2009), 30-37. [27] Jiacheng Li, Ming Wang, Jin Li, Jinmiao Fu, Xin Shen, Jingbo Shang, and Julian J. McAuley. 2023. Text Is All You Need: Learning Language Representations for Sequential Recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD 2023, Long Beach, CA, USA, August 6-10, 2023 . ACM, 1258-1267. https://doi.org/10.1145/3580305.3599519 [28] Jinming Li, Wentao Zhang, Tian Wang, Guanglei Xiong, Alan Lu, and Gerard Medioni. 2023. GPT4Rec: A generative framework for personalized recommendation and user interests interpretation. arXiv preprint arXiv:2304.03879 (2023). [29] Yongqi Li, Xinyu Lin, Wenjie Wang, Fuli Feng, Liang Pang, Wenjie Li, Liqiang Nie, Xiangnan He, and Tat-Seng Chua. 2024. A Survey of Generative Search and Recommendation in the Era of Large Language Models. arXiv preprint arXiv:2404.16924 (2024). [30] Zihao Li, Aixin Sun, and Chenliang Li. 2023. DiffuRec: A Diffusion Model for Sequential Recommendation. arXiv preprint arXiv:2304.00686 (2023). [31] Dawen Liang, Rahul G. Krishnan, Matthew D. Hoffman, and Tony Jebara. 2018. Variational Autoencoders for Collaborative Filtering. In Proceedings of the 2018 World Wide Web Conference on World Wide Web, WWW 2018, Lyon, France, April 23-27, 2018 . ACM, 689-698. https://doi.org/10.1145/3178876.3186150 [32] Jiayi Liao, Sihang Li, Zhengyi Yang, Jiancan Wu, Yancheng Yuan, Xiang Wang, and Xiangnan He. 2023. Llara: Aligning large language models with sequential recommenders. arXiv preprint arXiv:2312.02445 (2023). [33] Xinyu Lin, Wenjie Wang, Yongqi Li, Fuli Feng, See-Kiong Ng, and Tat-Seng Chua. 2023. A multi-facet paradigm to bridge large language model and recommendation. arXiv preprint arXiv:2310.06491 (2023). [34] Zihan Lin, Changxin Tian, Yupeng Hou, and Wayne Xin Zhao. 2022. Improving graph collaborative filtering with neighborhood-enriched contrastive learning. In Proceedings of the ACM Web Conference 2022 . 2320-2329. [35] Sichun Luo, Yuxuan Yao, Bowei He, Yinya Huang, Aojun Zhou, Xinyi Zhang, Yuanzhang Xiao, Mingjie Zhan, and Linqi Song. 2024. Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation. arXiv preprint arXiv:2401.13870 (2024). [36] Kelong Mao, Jieming Zhu, Jinpeng Wang, Quanyu Dai, Zhenhua Dong, Xi Xiao, and Xiuqiang He. 2021. SimpleX: A simple and strong baseline for collaborative filtering. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 1243-1252. [37] Aleksandr V. Petrov and Craig Macdonald. 2023. Generative Sequential Recommendation with GPTRec. CoRR abs/2306.11114 (2023). https://doi.org/10.48550/ ARXIV.2306.11114 arXiv:2306.11114 [38] Tao Qi, Fangzhao Wu, Chuhan Wu, Yongfeng Huang, and Xing Xie. 2020. PrivacyPreserving News Recommendation Model Learning. In EMNLP (Findings) (Findings of ACL, Vol. EMNLP 2020) . Association for Computational Linguistics, 14231432. [39] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. 2020. Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. J. Mach. Learn. Res. 21 (2020), 140:1-140:67. http://jmlr.org/papers/v21/20-074.html [40] Shashank Rajput, Nikhil Mehta, Anima Singh, Raghunandan H Keshavan, Trung Vu, Lukasz Heldt, Lichan Hong, Yi Tay, Vinh Q Tran, Jonah Samost, et al. 2023. Recommender Systems with Generative Retrieval. arXiv preprint arXiv:2305.05065 (2023). [41] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . IEEE, 995-1000. [42] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2012. BPR: Bayesian personalized ranking from implicit feedback. arXiv preprint arXiv:1205.2618 (2012). Content-Based Collaborative Generation for Recommender Systems CIKM '24, October 21-25, 2024, Boise, ID, USA [43] Ilya Shenbin, Anton Alekseev, Elena Tutubalina, Valentin Malykh, and Sergey I. Nikolenko. 2020. RecVAE: A New Variational Autoencoder for Top-N Recommendations with Implicit Feedback. In WSDM '20: The Thirteenth ACM International Conference on Web Search and Data Mining, Houston, TX, USA, February 3-7, 2020 . ACM, 528-536. https://doi.org/10.1145/3336191.3371831 [44] Zihua Si, Zhongxiang Sun, Jiale Chen, Guozhang Chen, Xiaoxue Zang, Kai Zheng, Yang Song, Xiao Zhang, and Jun Xu. 2023. Generative Retrieval with Semantic Tree-Structured Item Identifiers via Contrastive Learning. arXiv preprint arXiv:2309.13375 (2023). [45] Weiwei Sun, Lingyong Yan, Zheng Chen, Shuaiqiang Wang, Haichao Zhu, Pengjie Ren, Zhumin Chen, Dawei Yin, Maarten de Rijke, and Zhaochun Ren. 2023. Learning to Tokenize for Generative Retrieval. In Advances in Neural Information Processing Systems 36: Annual Conference on Neural Information Processing Systems 2023, NeurIPS 2023, New Orleans, LA, USA, December 10 - 16, 2023 . [46] Juntao Tan, Shuyuan Xu, Wenyue Hua, Yingqiang Ge, Zelong Li, and Yongfeng Zhang. 2024. Towards LLM-RecSys Alignment with Textual ID Learning. arXiv preprint arXiv:2403.19021 (2024). [47] Yi Tay, Vinh Tran, Mostafa Dehghani, Jianmo Ni, Dara Bahri, Harsh Mehta, Zhen Qin, Kai Hui, Zhe Zhao, Jai Gupta, et al. 2022. Transformer memory as a differentiable search index. Advances in Neural Information Processing Systems 35 (2022), 21831-21843. [48] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [49] Wenjie Wang, Xinyu Lin, Fuli Feng, Xiangnan He, and Tat-Seng Chua. 2023. Generative recommendation: Towards next-generation recommender paradigm. arXiv preprint arXiv:2304.03516 (2023). [50] Wenjie Wang, Yiyan Xu, Fuli Feng, Xinyu Lin, Xiangnan He, and Tat-Seng Chua. 2023. Diffusion Recommender Model. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2023, Taipei, Taiwan, July 23-27, 2023 . ACM, 832-841. https://doi.org/10. 1145/3539618.3591663 [51] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural graph collaborative filtering. In Proceedings of the 42nd international ACM SIGIR conference on Research and development in Information Retrieval . 165-174. [52] Yujing Wang, Yingyan Hou, Haonan Wang, Ziming Miao, Shibin Wu, Qi Chen, Yuqing Xia, Chengmin Chi, Guoshuai Zhao, Zheng Liu, Xing Xie, Hao Sun, Weiwei Deng, Qi Zhang, and Mao Yang. 2022. A Neural Corpus Indexer for Document Retrieval. In NeurIPS . http://papers.nips.cc/paper_files/paper/2022/ hash/a46156bd3579c3b268108ea6aca71d13-Abstract-Conference.html [53] Zhidan Wang, Wenwen Ye, Xu Chen, Wenqiang Zhang, Zhenlei Wang, Lixin Zou, and Weidong Liu. 2022. Generative Session-based Recommendation. In WWW '22: The ACM Web Conference 2022, Virtual Event, Lyon, France, April 25 - 29, 2022 . ACM, 2227-2235. https://doi.org/10.1145/3485447.3512095 [54] Yinwei Wei, Xiang Wang, Liqiang Nie, Xiangnan He, and Tat-Seng Chua. 2020. Graph-Refined Convolutional Network for Multimedia Recommendation with [65] Yaochen Zhu, Liang Wu, Qi Guo, Liangjie Hong, and Jundong Li. 2023. Collaborative large language model for recommender systems. arXiv preprint arXiv:2311.01343 (2023).",
   "keywords_parsed": [
     "Recommender System",
-    " Generative Recommendation"
+    "Generative Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A bi-step grounding paradigm for large language models in recommendation systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Graph convolutional matrix completion"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Autoregressive search engines: Generating substrings as document identifiers"
+    },
+    {
+      "ref_id": "b4",
+      "title": "PEVAE: A Hierarchical VAE for Personalized Explainable Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "A survey on generative diffusion model"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Autoregressive Entity Retrieval"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A survey on evaluation of large language models"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Neural Attentional Rating Regression with Review-level Explanations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Generative adversarial networks: An overview"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Recommender systems in the era of large language models (llms)"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Set-Sequence-Graph: A Multi-View Approach Towards Exploiting Reviews for Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Generative Adversarial Nets"
+    },
+    {
+      "ref_id": "b14",
+      "title": "IPGAN: Generating Informative Item Pairs by Adversarial Sampling"
+    },
+    {
+      "ref_id": "b15",
+      "title": "VBPR: visual bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Adversarial Personalized Ranking for Recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b19",
+      "title": "beta-vae: Learning basic visual concepts with a constrained variational framework"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Denoising Diffusion Probabilistic Models"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Reinforcement learning to rank in e-commerce search engine: Formalization, analysis, and application"
+    },
+    {
+      "ref_id": "b22",
+      "title": "How to Index Item IDs for Recommendation Foundation Models"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Self-Attentive Sequential Recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "A style-based generator architecture for generative adversarial networks"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Auto-Encoding Variational Bayes"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Text Is All You Need: Learning Language Representations for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "GPT4Rec: A generative framework for personalized recommendation and user interests interpretation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "A Survey of Generative Search and Recommendation in the Era of Large Language Models"
+    },
+    {
+      "ref_id": "b30",
+      "title": "DiffuRec: A Diffusion Model for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Variational Autoencoders for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Llara: Aligning large language models with sequential recommenders"
+    },
+    {
+      "ref_id": "b33",
+      "title": "A multi-facet paradigm to bridge large language model and recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Improving graph collaborative filtering with neighborhood-enriched contrastive learning"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "SimpleX: A simple and strong baseline for collaborative filtering"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Generative Sequential Recommendation with GPTRec"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Privacy-Preserving News Recommendation Model Learning"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Recommender Systems with Generative Retrieval"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b42",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b43",
+      "title": "RecVAE: A New Variational Autoencoder for Top-N Recommendations with Implicit Feedback"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Generative Retrieval with Semantic Tree-Structured Item Identifiers via Contrastive Learning"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Learning to Tokenize for Generative Retrieval"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Towards LLM-RecSys Alignment with Textual ID Learning"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Transformer memory as a differentiable search index"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Generative recommendation: Towards next-generation recommender paradigm"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Diffusion Recommender Model"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b52",
+      "title": "A Neural Corpus Indexer for Document Retrieval"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Generative Session-based Recommendation"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Graph-Refined Convolutional Network for Multimedia Recommendation"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Collaborative large language model for recommender systems"
+    }
   ]
 }

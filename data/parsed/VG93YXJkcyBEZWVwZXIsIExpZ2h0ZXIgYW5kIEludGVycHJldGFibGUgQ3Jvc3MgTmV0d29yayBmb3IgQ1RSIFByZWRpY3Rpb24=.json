@@ -37,31 +37,254 @@
   "B.4 The Compatibility of the Generalization Framework": "Table 8: The Compatibility of the Generalization Framework CIKM '23, October 21-25, 2023, Birmingham, United Kingdom. Fangye Wang et al. Based on the proposed generalization framework, most deep CTR models can receive different feature dimensions as inputs. Table 8 lists the improvement in prediction performance and model parameters before and after applying the framework. The adopted field dimension is learned by the FDO approach with 95% kept information ratio. Firstly, after applying the generalization framework, the prediction accuracy of the five base models significantly improves. For example, the FM and AFN in the Criteo dataset have an AUC boost of 0.0014 and 0.0016. Other models can also obtain a slight effect boost, with AUC boosts ranging from 0.0002 to 0.0006 and Logloss optimization ranging from 0.0003 to 0.0009. Secondly, using different feature dimensions can significantly reduce the overall parameters of the underlying CTR prediction model. For the Criteo dataset, the model parameters are reduced to 39.9% to 46.4%; for the Malware dataset, the model parameters are reduced to 26.9% to 30.6%. More importantly, the performance of these models is maintained. In summary, applying a dimensional alignment layer allows most CTR prediction models to receive embedded features of different dimensions, which reduces the overall parameters of the model while improving its predictive power.",
   "keywords_parsed": [
     "Cross Network",
-    " Information Gate",
-    " Feature Crossing",
-    " CTR Prediction ∗ Also with Shanghai Key Laboratory of Data Science",
-    " Shanghai Institute of Intelligent Electronics & Systems",
-    " China.. † Corresponding author. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CIKM '23",
-    " October 21-25",
-    " 2023",
-    " Birmingham",
-    " United Kingdom. © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0124-5/23/10...$15.00 https://doi.org/10.1145/3583780.3615089 Fangye Wang",
-    " Hansu Gu",
-    " Dongsheng Li",
-    " Tun Lu",
-    " Peng Zhang",
-    " and Ning Gu. 2023. Towards Deeper",
-    " Lighter and Interpretable Cross Network for CTR Prediction. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (CIKM '23)",
-    " October 21-25",
-    " 2023",
-    " Birmingham",
-    " United Kingdom. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 14 pages. https: //doi.org/10.1145/3583780.3615089"
+    "Information Gate",
+    "Feature Crossing",
+    "CTR Prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Idiots' Approach for Display Advertising Challenge"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Introducing TensorFlow Feature Columns"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Principal component analysis"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Frappe: Understanding the usage and perception of mobile app recommendations in-the-wild"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Higher-order factorization machines"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Xgboost: A scalable tree boosting system"
+    },
+    {
+      "ref_id": "b8",
+      "title": "DCAP: Deep Cross Attentional Product Network for User Response Prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Adaptive factorization network: Learning adaptive-order feature interactions"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Learning phrase representations using RNN encoder-decoder for statistical machine translation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "GemNN: gating-enhanced multi-task neural networks with feature interaction learning for CTR prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Convolutional sequence to sequence learning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "MovieLens Tag Dataset"
+    },
+    {
+      "ref_id": "b16",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Order-aware embedding neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Miss: Multi-interest self-supervised learning framework for click-through rate prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Long short-term memory"
+    },
+    {
+      "ref_id": "b22",
+      "title": "GateNet: Gating-Enhanced Deep Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Field-aware factorization machines for CTR prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Criteo Display Advertising Challenge"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Avazu Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Architecture and operation adaptive network for online recommendations"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Interpretable click-through rate prediction through hierarchical attention"
+    },
+    {
+      "ref_id": "b30",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Feature generation by convolutional neural network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "A Dual Input-aware Factorization Machine for CTR Prediction"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Network On Network for Tabular Data Classification in Real-world Applications"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b35",
+      "title": "FinalMLP: An Enhanced Two-Stream MLP Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A general method for automatic discovery of powerful interactions in click-through rate prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Microsoft Malware Prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Field-weighted factorization machines for click-through rate prediction in display advertising"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Pytorch: An imperative style, high-performance deep learning library"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Single-shot embedding dimension search in recommender system"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Product-based neural networks for user response prediction over multi-field categorical data"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Factorization machines with libfm"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Deep crossing: Web-scale modeling without manually crafted combinatorial features"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b48",
+      "title": "FM2: Field-matrixed factorization machines for recommender systems"
+    },
+    {
+      "ref_id": "b49",
+      "title": "A generic network compression framework for sequential recommender systems"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Directed Acyclic Graph Factorization Machines for CTR Prediction via Knowledge Distillation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b52",
+      "title": "MCRF: Enhancing CTR Prediction Models via Multi-channel Feature Refinement Framework"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Enhancing CTR prediction with context-aware feature representation learning"
+    },
+    {
+      "ref_id": "b54",
+      "title": "CL4CTR: A Contrastive Learning Framework for CTR Prediction"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b56",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b57",
+      "title": "MaskNet: Introducing Feature-Wise Multiplication to CTR Ranking Models by Instance-Guided Mask"
+    },
+    {
+      "ref_id": "b58",
+      "title": "ContextNet: A Click-Through Rate Prediction Framework Using Contextual information to Refine Feature Embedding"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Attentional factorization machines: learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b60",
+      "title": "DynInt: Dynamic Interaction Modeling for Large-scale Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Operation-aware Neural Networks for user response prediction"
+    }
   ]
 }

@@ -33,6 +33,151 @@
   "References": "[1] Josh Achiam, Steven Adler, Sandhini Agarwal, Lama Ahmad, Ilge Akkaya, Florencia Leoni Aleman, Diogo Almeida, Janko Altenschmidt, Sam Altman, Shyamal Anadkat, et al. 2023. Gpt-4 technical report. arXiv preprint arXiv:2303.08774 (2023). [2] Gediminas Adomavicius and Alexander Tuzhilin. 2005. Toward the next generation of recommender systems: A survey of the state-ofthe-art and possible extensions. IEEE transactions on knowledge and data engineering 17, 6 (2005), 734-749. [3] Jinze Bai, Shuai Bai, Yunfei Chu, Zeyu Cui, Kai Dang, Xiaodong Deng, Yang Fan, Wenbin Ge, Yu Han, Fei Huang, Binyuan Hui, Luo Ji, Mei Li, Junyang Lin, Runji Lin, Dayiheng Liu, Gao Liu, Chengqiang Lu, Keming Lu, Jianxin Ma, Rui Men, Xingzhang Ren, Xuancheng Ren, Chuanqi Tan, Sinan Tan, Jianhong Tu, Peng Wang, Shijie Wang, Wei Wang, Shengguang Wu, Benfeng Xu, Jin Xu, An Yang, Hao Yang, Jian Yang, Shusheng Yang, Yang Yao, Bowen Yu, Hongyi Yuan, Zheng Yuan, Jianwei Zhang, Xingxuan Zhang, Yichang Zhang, Zhenru Zhang, Chang Zhou, Jingren Zhou, Xiaohuan Zhou, and Tianhang Zhu. 2023. Qwen Technical Report. arXiv preprint arXiv:2309.16609 (2023). [4] Keqin Bao, Jizhi Zhang, Wenjie Wang, Yang Zhang, Zhengyi Yang, Yancheng Luo, Fuli Feng, Xiangnaan He, and Qi Tian. 2023. A bi-step grounding paradigm for large language models in recommendation systems. arXiv preprint arXiv:2308.08434 (2023). [5] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. Tallrec: An effective and efficient tuning framework to align large language model with recommendation. arXiv preprint arXiv:2305.00447 (2023). [6] Artun Boz, Wouter Zorgdrager, Zoe Kotti, Jesse Harte, Panos Louridas, Dietmar Jannach, and Marios Fragkoulis. 2024. Improving sequential recommendations with llms. arXiv preprint arXiv:2402.01339 (2024). [7] Qian Chen, Zhiqiang Guo, Jianjun Li, and Guohui Li. 2023. Knowledge-enhanced multi-view graph neural networks for session-based recommendation. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 352-361. [8] Minjin Choi, Hye-young Kim, Hyunsouk Cho, and Jongwuk Lee. 2024. Multi-intent-aware Session-based Recommendation. In Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2532-2536. [9] Zeyu Cui, Jianxin Ma, Chang Zhou, Jingren Zhou, and Hongxia Yang. 2022. M6-rec: Generative pretrained language models are open-ended recommender systems. arXiv preprint arXiv:2205.08084 (2022). [10] Sunhao Dai, Ninglu Shao, Haiyuan Zhao, Weijie Yu, Zihua Si, Chen Xu, Zhongxiang Sun, Xiao Zhang, and Jun Xu. 2023. Uncovering ChatGPT's Capabilities in Recommender Systems. arXiv preprint arXiv:2305.02182 (2023). [11] James Davidson, Benjamin Liebald, Junning Liu, Palash Nandy, Taylor Van Vleet, Ullas Gargi, Sujoy Gupta, Yu He, Mike Lambert, Blake Livingston, et al. 2010. The YouTube video recommendation system. In Proceedings of the fourth ACM conference on Recommender systems . 293-296. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2025. Multi-view Intent Learning and Alignment with Large Language Models for Session-based Recommendation · 1:23 [12] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [13] Yifan Feng, Haoxuan You, Zizhao Zhang, Rongrong Ji, and Yue Gao. 2019. Hypergraph neural networks. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 3558-3565. [14] Yunfan Gao, Tao Sheng, Youlin Xiang, Yun Xiong, Haofen Wang, and Jiawei Zhang. 2023. Chat-rec: Towards interactive and explainable llms-augmented recommender system. arXiv preprint arXiv:2303.14524 (2023). [15] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5). In Proceedings of the 16th ACM Conference on Recommender Systems . 299-315. [16] Shijie Geng, Juntao Tan, Shuchang Liu, Zuohui Fu, and Yongfeng Zhang. 2023. VIP5: Towards Multimodal Foundation Models for Recommendation. arXiv preprint arXiv:2305.14302 (2023). [17] Jesse Harte, Wouter Zorgdrager, Panos Louridas, Asterios Katsifodimos, Dietmar Jannach, and Marios Fragkoulis. 2023. Leveraging large language models for sequential recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems . 1096-1102. [18] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [19] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [20] Jun Hu, Wenwen Xia, Xiaolu Zhang, Chilin Fu, Weichang Wu, Zhaoxin Huan, Ang Li, Zuoli Tang, and Jun Zhou. 2024. Enhancing sequential recommendation via llm-based semantic embedding learning. In Companion Proceedings of the ACM on Web Conference 2024 . 103-111. [21] Wenyue Hua, Shuyuan Xu, Yingqiang Ge, and Yongfeng Zhang. 2023. How to Index Item IDs for Recommendation Foundation Models. arXiv preprint arXiv:2305.06569 (2023). [22] Chao Huang, Jiahui Chen, Lianghao Xia, Yong Xu, Peng Dai, Yanqing Chen, Liefeng Bo, Jiashu Zhao, and Jimmy Xiangji Huang. 2021. Graph-enhanced multi-task learning of multi-level transition dynamics for session-based recommendation. In Proceedings of the AAAI conference on artificial intelligence , Vol. 35. 4123-4130. [23] Erin Illman and Paul Temple. 2019. California Consumer Privacy Act. The Business Lawyer 75, 1 (2019), 1637-1646. [24] Di Jin, Luzhi Wang, Yizhen Zheng, Guojie Song, Fei Jiang, Xiang Li, Wei Lin, and Shirui Pan. 2023. Dual intent enhanced graph neural network for session-based new item recommendation. In Proceedings of the ACM Web Conference 2023 . 684-693. [25] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [26] Wang-Cheng Kang, Jianmo Ni, Nikhil Mehta, Maheswaran Sathiamoorthy, Lichan Hong, Ed Chi, and Derek Zhiyuan Cheng. 2023. Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction. arXiv preprint arXiv:2305.06474 (2023). [27] Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, et al. 2020. Retrieval-augmented generation for knowledge-intensive nlp tasks. Advances in Neural Information Processing Systems 33 (2020), 9459-9474. [28] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. 2017. Neural attentive session-based recommendation. In Proceedings of the 2017 ACM on Conference on Information and Knowledge Management . 1419-1428. [29] Jinming Li, Wentao Zhang, Tian Wang, Guanglei Xiong, Alan Lu, and Gerard Medioni. 2023. GPT4Rec: A generative framework for personalized recommendation and user interests interpretation. arXiv preprint arXiv:2304.03879 (2023). [30] Lei Li, Yongfeng Zhang, and Li Chen. 2023. Prompt distillation for efficient llm-based recommendation. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 1348-1357. [31] Xiangyang Li, Bo Chen, Lu Hou, and Ruiming Tang. 2023. CTRL: Connect Tabular and Language Model for CTR Prediction. arXiv preprint arXiv:2306.02841 (2023). [32] Xinhang Li, Chong Chen, Xiangyu Zhao, Yong Zhang, and Chunxiao Xing. 2023. E4SRec: An Elegant Effective Efficient Extensible Solution of Large Language Models for Sequential Recommendation. arXiv preprint arXiv:2312.02443 (2023). [33] Yinfeng Li, Chen Gao, Hengliang Luo, Depeng Jin, and Yong Li. 2022. Enhancing Hypergraph Neural Networks with Intent Disentanglement for Session-based Recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1997-2002. [34] Junyang Lin, Rui Men, An Yang, Chang Zhou, Yichang Zhang, Peng Wang, Jingren Zhou, Jie Tang, and Hongxia Yang. 2021. M6: Multi-modality-to-multi-modality multitask mega-transformer for unified pretraining. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3251-3261. [35] Xinyu Lin, Wenjie Wang, Yongqi Li, Shuo Yang, Fuli Feng, Yinwei Wei, and Tat-Seng Chua. 2024. Data-efficient Fine-tuning for LLM-based Recommendation. In Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval . 365-374. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2025.",
   "1:24 · Shutong Qiao et.al.": "[36] Qiao Liu, Yifu Zeng, Refuoe Mokhosi, and Haibin Zhang. 2018. STAMP: short-term attention/memory priority model for session-based recommendation. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1831-1839. [37] Jie Lu, Dianshuang Wu, Mingsong Mao, Wei Wang, and Guangquan Zhang. 2015. Recommender system application developments: a survey. Decision support systems 74 (2015), 12-32. [38] Danilo Mandic and Jonathon Chambers. 2001. Recurrent neural networks for prediction: learning algorithms, architectures and stability . Wiley. [39] Shutong Qiao, Wei Zhou, Junhao Wen, Hongyu Zhang, and Min Gao. 2023. Bi-channel Multiple Sparse Graph Attention Networks for Session-based Recommendation. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 2075-2084. [40] Steffen Rendle, Christoph Freudenthaler, and Lars Schmidt-Thieme. 2010. Factorizing personalized markov chains for next-basket recommendation. In Proceedings of the 19th international conference on World wide web . 811-820. [41] Franco Scarselli, Marco Gori, Ah Chung Tsoi, Markus Hagenbuchner, and Gabriele Monfardini. 2008. The graph neural network model. IEEE transactions on neural networks 20, 1 (2008), 61-80. [42] Zhu Sun, Hongyang Liu, Xinghua Qu, Kaidong Feng, Yan Wang, and Yew-Soon Ong. 2023. Large Language Models for Intent-Driven Session Recommendations. arXiv preprint arXiv:2312.07552 (2023). [43] Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, et al. 2023. Llama: Open and efficient foundation language models. arXiv preprint arXiv:2302.13971 (2023). [44] Chenyang Wang, Yuanqing Yu, Weizhi Ma, Min Zhang, Chong Chen, Yiqun Liu, and Shaoping Ma. 2022. Towards representation alignment and uniformity in collaborative filtering. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 1816-1825. [45] Dongjing Wang, Xin Zhang, Yuyu Yin, Dongjin Yu, Guandong Xu, and Shuiguang Deng. 2023. Multi-view enhanced graph attention network for session-based music recommendation. ACM Transactions on Information Systems 42, 1 (2023), 1-30. [46] Meirui Wang, Pengjie Ren, Lei Mei, Zhumin Chen, Jun Ma, and Maarten de Rijke. 2019. A collaborative session-based recommendation approach with parallel memory modules. In Proceedings of the 42nd international ACM SIGIR conference on research and development in information retrieval . 345-354. [47] Nan Wang, Shoujin Wang, Yan Wang, Quan Z Sheng, and Mehmet A Orgun. 2022. Exploiting intra-and inter-session dependencies for session-based recommendations. World Wide Web 25, 1 (2022), 425-443. [48] Ziyang Wang, Wei Wei, Gao Cong, Xiao-Li Li, Xian-Ling Mao, and Minghui Qiu. 2020. Global context enhanced graph neural networks for session-based recommendation. In Proceedings of the 43rd international ACM SIGIR conference on research and development in information retrieval . 169-178. [49] Wei Wei, Xubin Ren, Jiabin Tang, Qinyong Wang, Lixin Su, Suqi Cheng, Junfeng Wang, Dawei Yin, and Chao Huang. 2024. Llmrec: Large language models with graph augmentation for recommendation. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining . 806-815. [50] Shu Wu, Yuyuan Tang, Yanqiao Zhu, Liang Wang, Xing Xie, and Tieniu Tan. 2019. Session-based recommendation with graph neural networks. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 346-353. [51] Xin Xia, Hongzhi Yin, Junliang Yu, Qinyong Wang, Lizhen Cui, and Xiangliang Zhang. 2021. Self-supervised hypergraph convolutional networks for session-based recommendation. In Proceedings of the AAAI conference on artificial intelligence , Vol. 35. 4503-4511. [52] Chengfeng Xu, Pengpeng Zhao, Yanchi Liu, Victor S Sheng, Jiajie Xu, Fuzhen Zhuang, Junhua Fang, and Xiaofang Zhou. 2019. Graph contextualized self-attention network for session-based recommendation.. In IJCAI , Vol. 19. 3940-3946. [53] Feng Yu, Yanqiao Zhu, Qiang Liu, Shu Wu, Liang Wang, and Tieniu Tan. 2020. TAGNN: target attentive graph neural networks for session-based recommendation. In Proceedings of the 43rd international ACM SIGIR conference on research and development in information retrieval . 1921-1924. [54] Jiahao Yuan, Zihan Song, Mingyou Sun, Xiaoling Wang, and Wayne Xin Zhao. 2021. Dual sparse attention network for session-based recommendation. In Proceedings of the AAAI conference on artificial intelligence , Vol. 35. 4635-4643. [55] Wei Yuan, Chaoqun Yang, Liang Qu, Nguyen Quoc Viet Hung, Guanhua Ye, and Hongzhi Yin. 2024. PTF-FSR: A Parameter TransmissionFree Federated Sequential Recommender System. ACM Transactions on Information Systems (2024). [56] Wei Yuan, Chaoqun Yang, Guanhua Ye, Tong Chen, Nguyen Quoc Viet Hung, and Hongzhi Yin. 2024. FELLAS: Enhancing Federated Sequential Recommendation with LLM as External Services. ACM Transactions on Information Systems (2024). [57] Zheng Yuan, Fajie Yuan, Yu Song, Youhua Li, Junchen Fu, Fei Yang, Yunzhu Pan, and Yongxin Ni. 2023. Where to go next for recommender systems? id-vs. modality-based recommender models revisited. arXiv preprint arXiv:2303.13835 (2023). [58] Aohan Zeng, Xiao Liu, Zhengxiao Du, Zihan Wang, Hanyu Lai, Ming Ding, Zhuoyi Yang, Yifan Xu, Wendi Zheng, Xiao Xia, et al. 2022. Glm-130b: An open bilingual pre-trained model. arXiv preprint arXiv:2210.02414 (2022). [59] An Zhang, Leheng Sheng, Yuxin Chen, Hao Li, Yang Deng, Xiang Wang, and Tat-Seng Chua. 2023. On generative agents in recommendation. arXiv preprint arXiv:2310.10108 (2023). ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2025. Multi-view Intent Learning and Alignment with Large Language Models for Session-based Recommendation · 1:25 [60] Yuyue Zhao, Jiancan Wu, Xiang Wang, Wei Tang, Dingxian Wang, and Maarten de Rijke. 2024. Let Me Do It For You: Towards LLM Empowered Recommendation via Tool Learning. In Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1796-1806. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2025.",
   "keywords_parsed": [
-    "None"
+    "Recommender System",
+    "Session-based Recommendation",
+    "Large Language Models",
+    "Data Augmentation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gpt-4 technical report"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Toward the next generation of recommender systems: A survey of the state-of-the-art and possible extensions"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Qwen Technical Report"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A bi-step grounding paradigm for large language models in recommendation systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Improving sequential recommendations with llms"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Knowledge-enhanced multi-view graph neural networks for session-based recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Multi-intent-aware Session-based Recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "M6-rec: Generative pretrained language models are open-ended recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Uncovering ChatGPT's Capabilities in Recommender Systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "The YouTube video recommendation system"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Hypergraph neural networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Chat-rec: Towards interactive and explainable llms-augmented recommender system"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b16",
+      "title": "VIP5: Towards Multimodal Foundation Models for Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Leveraging large language models for sequential recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Enhancing sequential recommendation via llm-based semantic embedding learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "How to Index Item IDs for Recommendation Foundation Models"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Graph-enhanced multi-task learning of multi-level transition dynamics for session-based recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "California Consumer Privacy Act"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Dual intent enhanced graph neural network for session-based new item recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Retrieval-augmented generation for knowledge-intensive nlp tasks"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Neural attentive session-based recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "GPT4Rec: A generative framework for personalized recommendation and user interests interpretation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Prompt distillation for efficient llm-based recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "CTRL: Connect Tabular and Language Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "E4SRec: An Elegant Effective Efficient Extensible Solution of Large Language Models for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Enhancing Hypergraph Neural Networks with Intent Disentanglement for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "M6: Multi-modality-to-multi-modality multitask mega-transformer for unified pretraining"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Data-efficient Fine-tuning for LLM-based Recommendation"
+    }
   ]
 }

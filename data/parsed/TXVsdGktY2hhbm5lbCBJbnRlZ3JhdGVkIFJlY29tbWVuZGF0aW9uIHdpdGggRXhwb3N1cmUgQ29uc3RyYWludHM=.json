@@ -20,9 +20,111 @@
   "B PROOF OF COST FEASIBILITY": "Proposition 1 shows that a solution obtained using Algorithm 1 can not overspend, but may underspend. Based on the definition of subgradient ∇ 𝜇 𝑡 𝑘 , we have   Now, given that ✶ ( 𝜇 ≥ 0 ) + 𝛼 𝑘 ✶ ( 𝜇 < 0 ) ≥ 𝛼 𝑘 for any 𝜇 ∈ R and that 𝜏 𝜋 ≤ 𝑇 by definition, we have    where the second inequality comes from Proposition 2.",
   "keywords_parsed": [
     "Integrated Recommendation",
-    " Feed Recommendation",
-    " Multi-channel",
-    " Exposure constraint",
-    " Context-Aware"
+    "Feed Recommendation",
+    "Multi-channel",
+    "Exposure constraint",
+    "Context-Aware"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Bandits with knapsacks"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The best of many worlds: Dual mirror descent for online allocation problems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Seq2slate: Re-ranking and slate optimization with rnns"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Nonlinear programming"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Hierarchically constrained adaptive ad exposure in feeds"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Efficient long sequential user data modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Temporal hierarchical attention at category- and item-level for micro-video click-through prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "An online algorithm for chance constrained resource allocation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Wide&deeplearning for recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "GRN: Generative rerank network for context-wise recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A survey on solving cold start problem in recommender systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Re-ranking with constraints on diversified exposures for homepage recommender system"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Dynamic knapsack optimization towards efficient multi-channel sequential advertising"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Introduction to online convex optimization"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Personalized flight itinerary ranking at fliggy"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Sliding spectrum decomposition for diversified recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Adversarial bandits with knapsacks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "IR evaluation methods for retrieving highly relevant documents"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Pear: Personalized re-ranking with contextualized transformer for recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Cross DQN: Cross deep Q network for ads allocation in feed"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Attention over self-attention: Intention-aware re-ranking with dynamic transformer encoders for recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Feature-aware diversified re-ranking with disentangled representations for relevant recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Neural re-ranking in multi-stage recommender systems: A review"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Globally optimized mutual influence aware ranking in e-commerce search"
+    }
   ]
 }

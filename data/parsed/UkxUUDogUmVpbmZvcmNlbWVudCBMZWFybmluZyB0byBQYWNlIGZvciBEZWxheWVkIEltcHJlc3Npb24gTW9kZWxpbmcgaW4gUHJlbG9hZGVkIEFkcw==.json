@@ -31,7 +31,107 @@
   "A.2 Policy Learning": "In our offline experiments, we set the desired impression count 𝑁 target as 0.15 million for one delivery period, and 𝜖 is 10% of it. In RLTP , the user and ad features in state representations are represented using pretrained user and ad embeddings, which are not updated during agent learning. Specifically, our user and ad embeddings are produced by a graph neural network model [15], where the node set contains users and ads, and user-ad click behaviors are regarded as edges. The learned embeddings are stored in database and can be retrieved by the pacing agent. Both the value function 𝑉 Θ (·) and the advantage function 𝐴 Φ (·) are three-layered neural networks, with output sizes of [200, 100, 1] and [200, 100, 50] respectively. Each state/context feature used for state representation is represented as a 4-dim embedding, and each candidate action id 𝑎 ∈ A also uses 4-dim embedding. The base CTR in the fourth reward term is set to the averaged CTR of historial log. The discount factor 𝛾 in culumative reward formulation is set to 0.99. We train the pacing agent for around 30,000 episodes, and duplicately run 3 times to report the averaged metric in the Section 4.",
   "A.3 Computation Resource": "Both the simulator learning and the policy learning procedures are done on 8 Tesla V100 GPUs.",
   "B DETAILED COMPARISON OF DISCRETE AND CONTINUOUS ACTION SPACES": "In Section 4.2.3, we breifly introduce the advantages of RLTP (which employs discrete action space) compared to RLTP-continuous . Here we give concrete illustrations. First, we compare the training efficiency. We observe that the RLTP-continuous needs around 200,000 episodes to achieve ideal pacing policy as shown in Figure 9 (a), while RLTP only needs RLTP: Reinforcement Learning to Pace for Delayed Impression Modeling in Preloaded Ads KDD '23, August 6-10, 2023, Long Beach, CA, USA (a) Delivery completion rate during training (200,000 episodes). (b) Selection probability at all 288 steps. RLTP RLTP w/o r4 CTR of Env. RLTP-continuous RLTP-continuous 0.085 8 1 0,080 1 0.075 6 0.070 0.065 0.25 0 50 0.75 1.00 1 50 1.75 2.00 Episode Time Window Figure 9: Training efficiency and traffic value of RLTPcontinuous . around 30,000 episodes as in Figure 5. In industrial applications, training efficiency is a key factor for production system, thus we prefer RLTP for online deployment. Second, we show the delivery performance. From Table 1 we can see that CTR metric of RLTP and RLTP-continuous is similar. We further investigate the trend of selection probability. Figure 9 (b) illustrates the trend of selection probability of RLTP-continuous 's pacing agent, and we observe that the consistency between selection probability and environment's traffic CTR is not as good as RLTP shown in Figure 7 (b). The above results demonstrate that RLTP shows advantages compared to RLTP-continuous . Therefore we choose RLTP with discrete action space as the final version, and in future work we shall explore how to improve RLTP-continuous for production system.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Optimal delivery of sponsored search advertisements subject to budget constraints"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Budget pacing for targeted online advertisements at Linkedin"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Constrained Markov decision processes: stochastic modeling"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Development of the PID controller"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Online allocation of display ads with smooth delivery"
+    },
+    {
+      "ref_id": "b6",
+      "title": "SHALE: an efficient algorithm for allocation of guaranteed display advertising"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Dynamics of bid optimization in online advertisement auctions"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Modeling delayed feedback in display advertising"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Ad serving using a compact allocation plan"
+    },
+    {
+      "ref_id": "b10",
+      "title": "An Adaptive Unified Allocation Framework for Guaranteed Display Advertising"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Large-Scale Personalized Delivery for Guaranteed Display Advertising with Real-Time Pacing"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Generalizing Across Multi-Objective Reward Functions in Deep Reinforcement Learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Impression Pacing for Jobs Marketplace at LinkedIn"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Delivering Guaranteed Display Ads under Reach and Frequency Requirements"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Addressing delayed feedback for continuous training with neural networks in CTR prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Playing atari with deep reinforcement learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Proximal policy optimization algorithms"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Dueling network architectures for deep reinforcement learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Smart pacing for effective online ad campaign optimization"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Capturing delayed feedback in conversion rate prediction via elapsed-time sampling"
+    },
+    {
+      "ref_id": "b23",
+      "title": "A feedback shift correction in predicting conversion rates under delayed feedback"
+    },
+    {
+      "ref_id": "b24",
+      "title": "A Request-level Guaranteed Delivery Advertising Planning: Forecasting and Allocation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Efficient Delivery Policy to Minimize User Traffic Consumption in Guaranteed Advertising"
+    }
   ]
 }

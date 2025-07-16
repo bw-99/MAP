@@ -33,8 +33,118 @@
   "D.3 Computation Cost of the Exploration Module": "AURO requires addtional steps in action selection, computing the gradient of the Q-function and sampling among candidate actions. But apart from action selection, RL training involves interacting with the environment and updating the policy with gradient decent. These two parts will take up more time than action selection. We conduct empirical studies and exhibit in Tab. 6 the average time cost of action selection in one training step. The total time cost of one training step is also shown for comparison. According to the results, although the exploration module lead to an addtional 129% of computation cost, it only costs less than 10% more total time. Also, during deployment the exploration module is not included, so it adds no more computation cost.",
   "keywords_parsed": [
     "Reinforcement Learning",
-    " recommender systems",
-    " user retention",
-    " non-stationary environments"
+    "recommender systems",
+    "user retention",
+    "non-stationary environments"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Reinforcement Learning based Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A Model-Based Reinforcement Learning with Adversarial Training for Online Recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A Survey of Meta-Reinforcement Learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Diversified Recommendations for Agents with Adaptive Preferences"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Exploration by random network distillation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Reinforcing User Retention in a Billion Scale Short Video Recommender System"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Two-Stage Constrained Actor-Critic for Short Video Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Large-Scale Interactive Recommendation with Tree-Structured Policy Gradient"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Stabilizing Reinforcement Learning in Dynamic Environment with Application to Online Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Reinforcement Learning for Non-Stationary Markov Decision Processes: The Blessing of (More) Optimism"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Better Exploration with Optimistic Actor Critic"
+    },
+    {
+      "ref_id": "b12",
+      "title": "The Cross-Entropy Method: A Unified Approach to Combinatorial Optimization, Monte-Carlo Simulation, and Machine Learning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Hidden Parameter Markov Decision Processes: A Semiparametric Regression Approach for Discovering Latent Task Parametrizations"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Factored Adaptation for Non-Stationary Reinforcement Learning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A Minimalist Approach to Offline Reinforcement Learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Off-Policy Deep Reinforcement Learning without Exploration"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Addressing Function Approximation Error in Actor-Critic Methods"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor"
+    },
+    {
+      "ref_id": "b19",
+      "title": "RecSim: A Configurable Simulation Platform for Recommender Systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Reinforcement Learning to Optimize Lifetime Value in Cold-Start Recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Addressing cold-start problem in recommendation systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Context-aware Dynamics Model for Generalization in Model-Based Reinforcement Learning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "MetaDrive: Composing Diverse Driving Scenarios for Generalizable Reinforcement Learning"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Continuous control with deep reinforcement learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "A Deep Reinforcement Learning Approach to Proactive Content Pushing and Recommendation for Mobile Users"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Generative Flow Network for Listwise Recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Exploration and WWW'25, April 28-May 2, 2025, Sydney, NSW, Australia"
+    }
   ]
 }

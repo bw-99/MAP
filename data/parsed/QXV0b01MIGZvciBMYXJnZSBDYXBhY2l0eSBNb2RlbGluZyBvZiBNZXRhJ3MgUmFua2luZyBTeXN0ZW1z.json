@@ -21,7 +21,95 @@
   "4.2.6 End to end search results.": "To search for a better ROI model for CTR and CVR prediction, we set up a DHEN search space with 18 decisions based on the discussion in Section 4.1.1. Table 1 shows the NE gain and inference QPS improvement of the AutoML discovered DHEN models and a comparison to the manually designed DHEN model and production baseline for CTR and CVR applications. We validated that the predictor-based RL searcher, whether with moderate cost increase or large capacity modeling, can identify promising architectures at different infrastructure cost levels. For example, in Instagram CTR application, our method can improve NE gain from -0.07% (based on manual tuning) to -0.13% while maintaining on-par model efficiency (measured by inference QPS); additionally, we can discover a model that has on-par NE performance but improves inference QPS by 18.96%. In the scale-up production for both Instagram CTR and Ad CVR applications, our method can further improve NE gain to -0.09% without significant model efficiency regression (compared to manual scale-up models). Due to its high ROI, the AutoML generated Instagram CTR scalu-up model with up to -0.36% NE gain was selected for large-scale online A/B test and show statistically significant gain after 12 days' reading. All the search results presented in this work are obtained by only sampling on average one hundred models ('# samples' in Table 1), further proving the efficiency of our AutoML algorithms. 4.2.7 Predictor-based RL searcher versus Bayesian optimizer versuse Random searcher. Lastly, we conduct a searcher comparison between the proposed predictor-based RL searcher, Bayesian optimizer, and random searcher in a CVR model scale-up problem setting. We compare their search performance over the same compute budget of 150 trials. However, to have a fair comparison we reuse the first 75 trails of Figure 9: Sample efficiency comparison among different searcher in CVR model 0.00 -0.02 -0.04 -0.06 -0.08 0 20 40 60 80 100 120 140 samples number NE gain % Random Bayesian Optimizer Predictor/RL random searcher to train predictor-based RL searcher and Bayesian optimizer and then have them generate their remaining 75 candidates. Both predictor-based RL searcher and Bayesian optimizer can be executed in multiple iterations but due to limited compute and time resources in real-world production setting, we typically only perform one iteration of search for both predictor-based RL and BO searchers. We summarize the comparison results in Table 2 where we can see the proposed predictor-based RL searcher greatly improves the model NE performance compared to other searchers. Figure 9 shows the search performance for each searcher as a function of submitted number of trials.",
   "5 CONCLUSION": "In this work, we focused on advancing Automated Machine Learning (AutoML) for efficient productionization of Meta-scale ranking system with ever increasing complexity. We introduced an efficient sampling-based AutoML method that is based on a predictor-based searcher. Through innovative techniques such as low-fidelity evaluation, novel metrics for identifying promising models, enhanced generalization with ensemble modeling, and reinforcement learning sampling integration, our method has demonstrated remarkable results. It facilitates large-capacity modeling with superior Return on Investment (ROI) and effectively discovers promising model architectures across different infrastructure cost levels. This work demonstrates the efficiency and adaptability of AutoML in addressing real-world production challenges, ultimately enhancing the impact of machine learning in web-scale applications.",
   "REFERENCES": "[1] James Bergstra and Yoshua Bengio. 2012. Random Search for Hyper-Parameter Optimization. Journal of Machine Learning Research 13, 10 (2012), 281-305. http://jmlr.org/papers/v13/bergstra12a.html [2] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems (Boston, MA, USA) (DLRS 2016) . Association for Computing Machinery, New York, NY, USA, 7-10. https://doi.org/10.1145/2988450.2988454 AutoML for Large Capacity Modeling of Meta's Ranking Systems WWW'24 Companion, May 13-17, 2024, Singapore [3] Marc Claesen and Bart De Moor. 2015. Hyperparameter Search in Machine Learning. CoRR abs/1502.02127 (2015). arXiv:1502.02127 http://arxiv.org/abs/ 1502.02127 [5] Thomas Elsken, Jan Hendrik Metzen, and Frank Hutter. 2019. Neural Architecture Search: A Survey. arXiv:1808.05377 [stat.ML] [4] Thomas Elsken, Jan Hendrik Metzen, and Frank Hutter. 2019. Efficient Multi-objective Neural Architecture Search via Lamarckian Evolution. arXiv:1804.09081 [stat.ML] [6] Matthias Feurer and Frank Hutter. 2019. Hyperparameter Optimization . Springer International Publishing, Cham, 3-33. https://doi.org/10.1007/978-3-030-05318-5_1 [8] Xiangnan He and Tat-Seng Chua. 2017. Neural Factorization Machines for Sparse Predictive Analytics. CoRR abs/1708.05027 (2017). arXiv:1708.05027 http://arxiv.org/abs/1708.05027 [7] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. CoRR abs/1703.04247 (2017). arXiv:1703.04247 http://arxiv.org/abs/1703.04247 [9] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In Proceedings of the eighth international workshop on data mining for online advertising . 1-9. [11] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET. In Proceedings of the 13th ACM Conference on Recommender Systems . ACM. https://doi.org/10. 1145/3298689.3347043 [10] Xin He, Kaiyong Zhao, and Xiaowen Chu. 2021. AutoML: A survey of the stateof-the-art. Knowledge-Based Systems 212 (2021), 106622. https://doi.org/10.1016/ j.knosys.2020.106622 [12] Kirthevasan Kandasamy, Willie Neiswanger, Jeff Schneider, Barnabás Póczos, and Eric P. Xing. 2018. Neural Architecture Search with Bayesian Optimisation and Optimal Transport. CoRR abs/1802.07191 (2018). arXiv:1802.07191 http: //arxiv.org/abs/1802.07191 [14] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. XDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD '18) . Association for Computing Machinery, New York, NY, USA, 1754-1763. https://doi.org/10.1145/3219819.3220023 [13] Lang Lang, Zhenlong Zhu, Xuanye Liu, Jianxin Zhao, Jixing Xu, and Minghui Shan. 2021. Architecture and Operation Adaptive Network for Online Recommendations. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (Virtual Event, Singapore) (KDD '21) . Association for Computing Machinery, New York, NY, USA, 3139-3149. https: //doi.org/10.1145/3447548.3467133 [15] Bin Liu, Chenxu Zhu, Guilin Li, Weinan Zhang, Jincai Lai, Ruiming Tang, Xiuqiang He, Zhenguo Li, and Yong Yu. 2020. AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction. CoRR abs/2003.11235 (2020). arXiv:2003.11235 https://arxiv.org/abs/2003.11235 [17] Dheevatsa Mudigere, Yuchen Hao, Jianyu Huang, Zhihao Jia, Andrew Tulloch, Srinivas Sridharan, Xing Liu, Mustafa Ozdal, Jade Nie, Jongsoo Park, et al. 2022. Software-hardware co-design for fast and scalable training of deep learning recommendation models. In Proceedings of the 49th Annual International Symposium on Computer Architecture . 993-1011. [16] Risto Miikkulainen, Jason Liang, Elliot Meyerson, Aditya Rawal, Dan Fink, Olivier Francon, Bala Raju, Hormoz Shahrzad, Arshak Navruzyan, Nigel Duffy, and Babak Hodjat. 2017. Evolving Deep Neural Networks. arXiv:1703.00548 [cs.NE] [18] Maxim Naumov, Dheevatsa Mudigere, Hao-Jun Michael Shi, Jianyu Huang, Narayanan Sundaraman, Jongsoo Park, Xiaodong Wang, Udit Gupta, CaroleJean Wu, Alisson G Azzolini, et al. 2019. Deep learning recommendation model for personalization and recommendation systems. arXiv preprint arXiv:1906.00091 (2019). [20] Esteban Real, Sherry Moore, Andrew Selle, Saurabh Saxena, Yutaka Leon Suematsu, Jie Tan, Quoc V. Le, and Alexey Kurakin. 2017. Large-Scale Evolution of Image Classifiers. In Proceedings of the 34th International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 70) , Doina Precup and Yee Whye Teh (Eds.). PMLR, 2902-2911. https://proceedings.mlr.press/v70/ real17a.html [19] Hieu Pham, Melody Guan, Barret Zoph, Quoc Le, and Jeff Dean. 2018. Efficient Neural Architecture Search via Parameters Sharing. In Proceedings of the 35th International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 80) , Jennifer Dy and Andreas Krause (Eds.). PMLR, 4095-4104. https://proceedings.mlr.press/v80/pham18a.html [21] Pengzhen Ren, Yun Xiao, Xiaojun Chang, Po-Yao Huang, Zhihui Li, Xiaojiang Chen, and Xin Wang. 2020. A Comprehensive Survey of Neural Architecture Search: Challenges and Solutions. CoRR abs/2006.02903 (2020). arXiv:2006.02903 https://arxiv.org/abs/2006.02903 [22] Radwa El Shawi, Mohamed Maher, and Sherif Sakr. 2019. Automated Machine Learning: State-of-The-Art and Open Challenges. CoRR abs/1906.02287 (2019). arXiv:1906.02287 http://arxiv.org/abs/1906.02287",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Random Search for Hyper-Parameter Optimization"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Hyperparameter Search in Machine Learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Efficient Multi-objective Neural Architecture Search via Lamarckian Evolution"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Neural Architecture Search: A Survey"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Hyperparameter Optimization"
+    },
+    {
+      "ref_id": "b7",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Neural Factorization Machines for Sparse Predictive Analytics"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b10",
+      "title": "AutoML: A survey of the state-of-the-art"
+    },
+    {
+      "ref_id": "b11",
+      "title": "FiBiNET"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Neural Architecture Search with Bayesian Optimisation and Optimal Transport"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Architecture and Operation Adaptive Network for Online Recommendations"
+    },
+    {
+      "ref_id": "b14",
+      "title": "XDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Evolving Deep Neural Networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Software-hardware co-design for fast and scalable training of deep learning recommendation models"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Efficient Neural Architecture Search via Parameters Sharing"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Large-Scale Evolution of Image Classifiers"
+    },
+    {
+      "ref_id": "b21",
+      "title": "A Comprehensive Survey of Neural Architecture Search: Challenges and Solutions"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Automated Machine Learning: State-of-The-Art and Open Challenges"
+    }
   ]
 }

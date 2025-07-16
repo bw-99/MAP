@@ -32,10 +32,136 @@
   "Table 9: Hyperparameters used for public datasets": "",
   "keywords_parsed": [
     "information retrieval",
-    " recommender systems",
-    " candidate generation",
-    " non-MIPS retrieval",
-    " hierarchical retrieval",
-    " nearest neighbor search"
+    "recommender systems",
+    "candidate generation",
+    "non-MIPS retrieval",
+    "hierarchical retrieval",
+    "nearest neighbor search"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "TPU-KNN: K Nearest Neighbor Search at Peak FLOP/s"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A Case Study on Sampling Strategies for Evaluating Neural Sequential Item Recommendation Models"
+    },
+    {
+      "ref_id": "b5",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Pixie: A System for Recommending 3+ Billion Items to 200+ Million Users in Real-Time"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Sigmoid-Weighted Linear Units for Neural Network Function Approximation in Reinforcement Learning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning An End-to-End Structure for Retrieval in Large-Scale Recommendations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Quantization based Fast Inner Product Search"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Neural Collaborative Filtering"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Multilayer feedforward networks are universal approximators"
+    },
+    {
+      "ref_id": "b13",
+      "title": "EmbeddingBased Retrieval in Facebook Search"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adaptive Mixtures of Local Experts"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Billion-Scale Similarity Search with GPUs"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Hierarchical mixtures of experts and the EM algorithm"
+    },
+    {
+      "ref_id": "b17",
+      "title": "In-datacenter performance analysis of a tensor processing unit"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Candidate Generation with Binary Codes for Large-Scale Top-N Recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "FBGEMM: Enabling High-Performance Low-Precision Deep Learning Inference"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Efficient Retrieval of Recommendations in a Matrix Factorization Framework"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Self-Supervised Reinforcement Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Mixed Negative Sampling for Learning Two-Tower Neural Networks in Recommendations"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Breaking the Softmax Bottleneck: A High-Rank RNN Language Model"
+    },
+    {
+      "ref_id": "b47",
+      "title": "ATLAS: A Probabilistic Algorithm for High Dimensional Similarity Search"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Contrastive Learning for Debiased Candidate Generation in Large-Scale Recommender Systems"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Deep Interest Network for ClickThrough Rate Prediction"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Joint Optimization of Tree-Based Index and Deep Model for Recommender Systems"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Learning Tree-Based Deep Model for Recommender Systems"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Learning Optimal Tree Models under Beam Search"
+    }
   ]
 }

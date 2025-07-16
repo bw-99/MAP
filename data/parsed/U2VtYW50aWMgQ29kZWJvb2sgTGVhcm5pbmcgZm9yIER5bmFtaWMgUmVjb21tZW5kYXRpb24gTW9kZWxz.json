@@ -32,10 +32,271 @@
   "Table 6: Statistics of Datasets.": "A.1.2 Hyperparameters and Training Schedules. Wesummarize the hyperparameters and training schedules of the datasets used in the experiments in Table 7. Table 7: Hyperparameters and training schedules of SOLID.",
   "keywords_parsed": [
     "Semenatic Codebook",
-    " Dynamic Model",
-    " Disentangle",
-    " Sequential Recommendation",
-    " Multimodal",
-    " Personalization"
+    "Dynamic Model",
+    "Disentangle",
+    "Multimodal",
+    "Personalization"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Hyperstyle: Stylegan inversion with hypernetworks for real image editing"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Representation learning: A review and new perspectives"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Controllable multi-interest framework for recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Sequential recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Intent contrastive learning for sequential recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Learning to Reweight for Generalizable Graph Neural Network"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep transfer tensor decomposition with orthogonal constraint for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Hyperinverter: Improving stylegan inversion via hypernetwork"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Towards bridged vision and language: Learning cross-modal knowledge representation for relation extraction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DIET: Customized Slimming for Incompatible Networks in Sequential Recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "HyperNetworks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "beta-vae: Learning basic visual concepts with a constrained variational framework"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Make-an-audio: Textto-audio generation with prompt-enhanced diffusion models"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Fastdiff: A fast conditional diffusion model for high-quality speech synthesis"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Dynamic filter networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Auto-encoding variational bayes"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Trustworthy policy learning under the counterfactual no-harm criterion"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Who should be given incentives? counterfactual optimal treatment regimes learning for recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Fine-grained semantically aligned vision-language pre-training"
+    },
+    {
+      "ref_id": "b22",
+      "title": "PPGencdr: A stable and robust framework for privacy-preserving cross-domain recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Data-efficient Fine-tuning for LLM-based Recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Temporally and distributionally robust optimization for cold-start recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Learning Accurate and Bidirectional Transformation via Dynamic Embedding Transportation for Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Joint internal multi-interest exploration and external domain alignment for cross domain sequential recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Parameters Efficient Fine-Tuning for Long-Tailed Sequential Recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Intelligent model update strategy for sequential recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "DUET: A Tuning-Free Device-Cloud Collaborative Parameters Generation Framework for Efficient Device Model Generalization"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Disentangled self-supervision in sequential recommenders"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Personalized federated learning using hypernetworks"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Personalized behavior-aware transformer for multi-behavior sequential recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Enhancing hierarchy-aware graph networks with deep dual clustering for session-based recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b35",
+      "title": "ModelGPT: Unleashing LLM's Capabilities for Tailored Model Generation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "AuG-KD: Anchor-Based Mixup Generation for Out-ofDomain Knowledge Distillation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Continual learning with hypernetworks"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Graph Reasoning With Supervised Contrastive Learning for Legal Judgment Prediction"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Deconfounded Multimodal Learning for Spatio-temporal Video Grounding"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Missrec: Pretraining and transferring multi-modal interest-aware sequence representation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Disentangled representation learning"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Disentangled representation learning for recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Multimodal disentangled representation for recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Curriculum co-disentangled representation learning across multiple environments for social recommendation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Session-based recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b46",
+      "title": "HyperDynamics: Meta-Learning Object and Agent Dynamics with Hypernetworks"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Reconsidering Learning Objectives in Unbiased Recommendation: A Distribution Shift Perspective"
+    },
+    {
+      "ref_id": "b48",
+      "title": "APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Device-cloud Collaborative Recommendation via Meta Controller"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Graph HyperNetworks for Neural Architecture Search"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Mining latent structures for multimedia recommendation"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Latent structure mining with contrastive modality fusion for multimedia recommendation"
+    },
+    {
+      "ref_id": "b53",
+      "title": "HyperLLaVA: Dynamic Visual and Language Expert Tuning for Multimodal Large Language Models"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Revisiting the domain shift and sample uncertainty in multi-source active domain transfer"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Consensus graph representation learning for better grounded image captioning"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Causal intervention for leveraging popularity bias in recommendation"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Reformulating CTR Prediction: Learning Invariant Feature Interactions for Recommendation"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Content-collaborative disentanglement representation learning for enhanced recommendation"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Rethinking Multimodal Entity and Relation Extraction from a Translation Point of View"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Bridging the gap: neural collapse inspired prompt tuning for generalization under class imbalance"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Model Tailor: Mitigating Catastrophic Forgetting in Multimodal Large Language Models"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Mario: Model agnostic recipe for improving ood generalization of graph contrastive learning"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Efficient tuning and inference for large language models on textual graphs"
+    },
+    {
+      "ref_id": "b65",
+      "title": "GraphControl: Adding Conditional Control to Universal Graph Pretrained Models for Graph Domain Transfer Learning"
+    }
   ]
 }

@@ -15,7 +15,143 @@
   "6 CONCLUSION AND FUTURE WORK": "In this work, we present insightful analyses of SSM for item recommendation. Firstly, we theoretically disclose model-agnostic advantages of SSM in mitigating popularity bias, mining hard negative samples and maximizing ranking metrics. We then probe the model-specific characteristics of SSM and point out its potential shortcoming in adjusting representation magnitudes. To justify our argument, we further show that message passing based methods are capable of adjusting magnitude. We conducted extensive experiments on four benchmark datasets, demonstrating the superiority of training history- and graph-based models using SSM for both normal and long tail recommendation tasks. Webelieve the comprehending of SSM is inspirational to future developments of recommendation community. In future work, we would like to further refine and augment the capabilities of SSM. A key area of focus will be enhancing its robustness through distributionally robust optimization [48, 54]. We also plan to explore the applicability of SSM to a wider range of model architectures, such as the diffusion model [55]. Moreover, since practical recommender systems usually involve rich side information, exploring the potential of SSM for feature-based CTR models is another promising direction.",
   "ACKNOWLEDGMENTS": "This research is supported by the National Natural Science Foundation of China (9227010114, 62302321, 62372399, 62121002), the University Synergy Innovation Program of Anhui Province (GXXT-2022-040), and the advanced computing resources provided by the Supercomputing Center of Hangzhou City University.",
   "REFERENCES": "[1] Yu Bai, Sally Goldman, and Li Zhang. 2017. TAPAS: Two-pass Approximate Adaptive Sampling for Softmax. CoRR abs/1707.03073 (2017). [2] Yoshua Bengio and Jean-Sébastien Senecal. 2003. Quick Training of Probabilistic Neural Nets by Importance Sampling. In AISTATS . [3] Guy Blanc and Steffen Rendle. 2018. Adaptive Sampled Softmax with Kernel Based Sampling. In ICML . 589-598. [4] Sebastian Bruch, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2019. An Analysis of the Softmax Cross Entropy Loss for Learning-to-Rank with Binary Relevance. In ICTIR . 75-78. [5] Zhe Cao, Tao Qin, Tie-Yan Liu, Ming-Feng Tsai, and Hang Li. 2007. Learning to rank: from pairwise approach to listwise approach. In ICML . 129-136. [6] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2023. Bias and Debias in Recommender System: A Survey and Future Directions. ACM Trans. Inf. Syst. 41, 3 (2023), 67:1-67:39. [7] Lei Chen, Le Wu, Richang Hong, Kun Zhang, and Meng Wang. 2020. Revisiting Graph Based Collaborative Filtering: A Linear Residual Graph Convolutional Network Approach. In AAAI . AAAI Press, 27-34. [8] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey E. Hinton. 2020. A Simple Framework for Contrastive Learning of Visual Representations. In ICML . 1597-1607. [9] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In RecSys . 191-198. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2023. 1:24 Wu et al. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2023. On the Effectiveness of Sampled Softmax Loss for Item Recommendation 1:25 [40] Tobias Schnabel, Adith Swaminathan, Ashudeep Singh, Navin Chandak, and Thorsten Joachims. 2016. Recommendations as Treatments: Debiasing Learning and Evaluation. In ICML . 1670-1679. [41] Ying Shan, T. Ryan Hoens, Jian Jiao, Haijing Wang, Dong Yu, and J. C. Mao. 2016. Deep Crossing: Web-Scale Modeling without Manually Crafted Combinatorial Features. In SIGKDD . 255-262. [42] Hao Tang, Guoshuai Zhao, Yuxia Wu, and Xueming Qian. 2023. Multisample-Based Contrastive Loss for Top-K Recommendation. IEEE Trans. Multimedia 25 (2023), 339-351. [43] Aäron van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation Learning with Contrastive Predictive Coding. CoRR abs/1807.03748 (2018). http://arxiv.org/abs/1807.03748 [44] Qi Wan, Xiangnan He, Xiang Wang, Jiancan Wu, Wei Guo, and Ruiming Tang. 2022. Cross Pairwise Ranking for Unbiased Item Recommendation. In WWW . 2370-2378. [45] Jinpeng Wang, Jieming Zhu, and Xiuqiang He. 2021. Cross-Batch Negative Sampling for Training Two-Tower Recommenders. In SIGIR . 1632-1636. [46] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural Graph Collaborative Filtering. In SIGIR . 165-174. [47] Jason Weston, Samy Bengio, and Nicolas Usunier. 2011. WSABIE: Scaling Up to Large Vocabulary Image Annotation. In IJCAI . 2764-2770. [48] Junkang Wu, Jiawei Chen, Jiancan Wu, Wentao Shi, Xiang Wang, and Xiangnan He. 2023. Understanding contrastive learning via distributionally robust optimization. In NeurIPS . [49] Jiancan Wu, Xiangnan He, Xiang Wang, Qifan Wang, Weijian Chen, Jianxun Lian, and Xing Xie. 2022. Graph convolution machine for context-aware recommender system. Frontiers Comput. Sci. 16, 6 (2022), 166614. [50] Jiancan Wu, Xiang Wang, Fuli Feng, Xiangnan He, Liang Chen, Jianxun Lian, and Xing Xie. 2021. Self-supervised Graph Learning for Recommendation. In SIGIR . 726-735. [51] Jiancan Wu, Yi Yang, Yuchun Qian, Yongduo Sui, Xiang Wang, and Xiangnan He. 2023. GIF: A General Graph Unlearning Strategy via Influence Function. In WWW . 651-661. [52] Fen Xia, Tie-Yan Liu, Jue Wang, Wensheng Zhang, and Hang Li. 2008. Listwise approach to learning to rank: theory and algorithm. In ICML . 1192-1199. [53] Ji Yang, Xinyang Yi, Derek Zhiyuan Cheng, Lichan Hong, Yang Li, Simon Xiaoming Wang, Taibai Xu, and Ed H. Chi. 2020. Mixed Negative Sampling for Learning Two-tower Neural Networks in Recommendations. In Companion of The Web Conference . 441-447. [54] Zhengyi Yang, Xiangnan He, Jizhi Zhang, Jiancan Wu, Xin Xin, Jiawei Chen, and Xiang Wang. 2023. A Generic Learning Framework for Sequential Recommendation with Distribution Shifts. In SIGIR . 331-340. [55] Zhengyi Yang, Jiancan Wu, Zhicai Wang, Xiang Wang, Yancheng Yuan, and Xiangnan He. 2023. Generate What You Prefer: Reshaping Sequential Recommendation via Guided Diffusion. In NeurIPS . [56] Tiansheng Yao, Xinyang Yi, Derek Zhiyuan Cheng, Felix X. Yu, Ting Chen, Aditya Krishna Menon, Lichan Hong, Ed H. Chi, Steve Tjoa, Jieqi (Jay) Kang, and Evan Ettinger. 2021. Self-supervised Learning for Large-scale Item Recommendations. In CIKM . 4321-4330. [57] Xinyang Yi, Ji Yang, Lichan Hong, Derek Zhiyuan Cheng, Lukasz Heldt, Aditee Kumthekar, Zhe Zhao, Li Wei, and Ed H. Chi. 2019. Sampling-bias-corrected neural modeling for large corpus item recommendations. In RecSys . 269-277. [58] Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, William L. Hamilton, and Jure Leskovec. 2018. Graph Convolutional Neural Networks for Web-Scale Recommender Systems. In KDD . 974-983. [59] Hyokun Yun, Hsiang-Fu Yu, Cho-Jui Hsieh, S. V. N. Vishwanathan, and Inderjit Dhillon. 2014. NOMAD: Non-Locking, Stochastic Multi-Machine Algorithm for Asynchronous and Decentralized Matrix Completion. 7, 11 (2014), 975-986. [60] An Zhang, Wenchang Ma, Xiang Wang, and Tat-Seng Chua. 2022. Incorporating Bias-aware Margins into Contrastive Loss for Collaborative Filtering. In NeurIPS . [61] Weinan Zhang, Tianqi Chen, Jun Wang, and Yong Yu. 2013. Optimizing top-n collaborative filtering via dynamic negative item sampling. In SIGIR . 785-788. [62] Yang Zhang, Fuli Feng, Xiangnan He, Tianxin Wei, Chonggang Song, Guohui Ling, and Yongdong Zhang. 2021. Causal Intervention for Leveraging Popularity Bias in Recommendation. In SIGIR . 11-20. [63] Chang Zhou, Jianxin Ma, Jianwei Zhang, Jingren Zhou, and Hongxia Yang. 2021. Contrastive Learning for Debiased Candidate Generation in Large-Scale Recommender Systems. In SIGKDD . 3985-3995. [64] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization. In CIKM . 1893-1902. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2023.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "TAPAS: Two-pass Approximate Adaptive Sampling for Softmax"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Quick Training of Probabilistic Neural Nets by Importance Sampling"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Adaptive Sampled Softmax with Kernel Based Sampling"
+    },
+    {
+      "ref_id": "b4",
+      "title": "An Analysis of the Softmax Cross Entropy Loss for Learning-to-Rank with Binary Relevance"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Bias and Debias in Recommender System: A Survey and Future Directions"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Revisiting Graph Based Collaborative Filtering: A Linear Residual Graph Convolutional Network Approach"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A Simple Framework for Contrastive Learning of Visual Representations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Recommendations as Treatments: Debiasing Learning and Evaluation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep Crossing: Web-Scale Modeling without Manually Crafted Combinatorial Features"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Multisample-Based Contrastive Loss for Top-K Recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Representation Learning with Contrastive Predictive Coding"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Cross Pairwise Ranking for Unbiased Item Recommendation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Cross-Batch Negative Sampling for Training Two-Tower Recommenders"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Neural Graph Collaborative Filtering"
+    },
+    {
+      "ref_id": "b47",
+      "title": "WSABIE: Scaling Up to Large Vocabulary Image Annotation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Understanding contrastive learning via distributionally robust optimization"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Graph convolution machine for context-aware recommender system"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Self-supervised Graph Learning for Recommendation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "GIF: A General Graph Unlearning Strategy via Influence Function"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Listwise approach to learning to rank: theory and algorithm"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Mixed Negative Sampling for Learning Two-tower Neural Networks in Recommendations"
+    },
+    {
+      "ref_id": "b54",
+      "title": "A Generic Learning Framework for Sequential Recommendation with Distribution Shifts"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Generate What You Prefer: Reshaping Sequential Recommendation via Guided Diffusion"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Self-supervised Learning for Large-scale Item Recommendations"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Sampling-bias-corrected neural modeling for large corpus item recommendations"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Graph Convolutional Neural Networks for Web-Scale Recommender Systems"
+    },
+    {
+      "ref_id": "b59",
+      "title": "NOMAD: Non-Locking, Stochastic Multi-Machine Algorithm for Asynchronous and Decentralized Matrix Completion"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Incorporating Bias-aware Margins into Contrastive Loss for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Optimizing top-n collaborative filtering via dynamic negative item sampling"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Causal Intervention for Leveraging Popularity Bias in Recommendation"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Contrastive Learning for Debiased Candidate Generation in Large-Scale Recommender Systems"
+    },
+    {
+      "ref_id": "b64",
+      "title": "S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization"
+    }
   ]
 }

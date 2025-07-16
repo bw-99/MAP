@@ -45,10 +45,116 @@
   "A.10 Extensions": "A.10.1 Repeated Auctions . Weextend our model to the repeated auction setting, i.e., multiple auctions are in the game. Specifically, the timeline of the new game is as follows: (1) The platform selects a model among CPC, CPA, or OCPC. (2) Advertiser 2 determines whether to enter the auction. (3) Advertisers select their bids and, if in the out-site scenario, also decide on their reporting strategy 𝛼 𝑖 . (4) The actual values of 𝑐 𝑖 and 𝑝 𝑖 are realized, while the platform predicts ¯ 𝑐 𝑖 and ¯ 𝑝 𝑖 , and calculates 𝑒 𝑖 . (5) The platform identifies the auction winner ( 𝑤 = 𝑎𝑟𝑔𝑚𝑎𝑥 𝑖 𝑒 𝑖 ) and display its ad. (6) The winner makes payments and all parties realize payoffs. (7) The steps (3) to (6) will be repeated 𝑇 times. Compared to the original game, the new game now has 𝑇 auctions. The overall utility of the game is the sum of the utility of each auction. We show that the repeated auction setting has the same bidding strategies as the original setting. Using CPC as an example, the utility of advertiser 𝑖 is:  where another advertiser 𝑘 's equivalent bid on an impression in auction 𝑡 is 𝑒 𝑘 𝑡 , and advertiser 𝑖 bid in auction 𝑡 is 𝑏 𝑖 𝑡 . We notice that bidding 𝑏 𝑖 𝑡 = 𝜇 𝑝 𝑖 𝑚 𝑖 is the dominant strategy in each auction, regardless of how others bid ( 𝑒 𝑘 𝑡 ). As a result, we have:  where advertiser 𝑖 's utility in the repeated auctions setting is exactly 𝑇 times the original setting. Consequently, the platform's utility is also 𝑇 times as much as before. The above analysis demonstrates that the analysis applied to the original setting also applies to the repeated auctions setting, since each agent's utility is scaled up by a factor of 𝑇 . A.10.2 Multiple Advertisers . We extend our model to the multiple advertiser setting, where there are 𝑁 advertisers in the game. We show that our main insights also hold in the multiple advertiser setting: for online advertising platforms, (1) OCPC dominates CPA; (2) OCPC does not dominate CPC. We define the highest equivalent bid on an impression of other advertisers as 𝑒 -𝑖 for advertiser 𝑖 . By its definition,  In the in-site scenario, advertiser 𝑖 's utility in CPA and OCPC are respectively   and and   Similarly, in the out-site scenario, advertiser 𝑖 's utility in CPA and OCPC are respectively     Note that the utility of advertiser 𝑖 in the multiple advertiser setting can be derived by simply replacing 𝑒 𝑘 with 𝑒 -𝑖 . This is because the second-price auction format ensures that whether advertiser 𝑖 wins or loses, and how much it pays, depends only on the highest one among the others. Consequently, the proofs in the original setting also apply to the multiple advertiser setting by replacing 𝑒 𝑘 with 𝑒 -𝑖 . As a result, OCPC also dominates CPA, given its broader applicability to out-site scenarios while maintaining the same performance in in-site scenarios as CPA. To show that OCPC does not dominate CPC, we should find a counterexample where CPC leads to a higher payoff than OCPC for platforms. Obviously, by setting 𝑁 = 2, we have found such a counterexample in this paper's main body. 12",
   "keywords_parsed": [
     "online advertising",
-    " optimized cost per mille",
-    " optimized cost per click",
-    " OCPM",
-    " OCPC",
-    " pricing models"
+    "optimized cost per mille",
+    "optimized cost per click",
+    "OCPM",
+    "OCPC",
+    "pricing models"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Skewed bidding in pay-per-action auctions for online advertising"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Pricing models for online advertising: CPM vs. CPC"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Internet Advertising Revenue Report"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Second-Price Auctions with Different Participation Costs"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Online display advertising markets: A literature review and future directions"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Multipart pricing of public goods"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Incentives in teams"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Incentive problems in performance-based online advertising pricing: Cost per click vs. cost per action"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Performance-based pricing models in online advertising"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Optimizing Cost per Click for Digital Advertising Campaigns"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Second-Price Auctions with Private Entry Costs"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Outside options: Another reason to choose the first-price auction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Equilibrium in auctions with entry"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Information asymmetry and hybrid advertising"
+    },
+    {
+      "ref_id": "b16",
+      "title": "A practical framework of conversion rate prediction for online display advertising"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Optimal auction design"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Robust Reward Placement under Uncertainty"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Optimized Cost per Mille in Feeds Advertising"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Position auctions"
+    },
+    {
+      "ref_id": "b21",
+      "title": "How to build an economic model in your spare time"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Counterspeculation, auctions, and competitive sealed tenders"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Real-time bidding for online advertising: measurement and analysis"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Geodemographic influence maximization"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Optimized cost per click in taobao display advertising"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Hybrid advertising auctions"
+    }
   ]
 }

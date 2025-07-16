@@ -27,7 +27,117 @@
   "REFERENCES": "[1] Ricardo Baeza-Yates, Berthier Ribeiro-Neto, et al. 1999. Modern information retrieval . Vol. 463. ACM press New York. [2] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, XiangRong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, Xinchen Luo, Shiming Xiang, Guorui Zhou, Xiaoqiang Zhu, and Hongbo Deng. 2022. CAN: Feature CoAction Network for Click-Through Rate Prediction. In The 15th ACM International Conference on Web Search and Data Mining . 57-65. [3] Sebastian Bruch, Shuguang Han, Michael Bendersky, and Marc Najork. 2020. A stochastic treatment of learning to rank scoring functions. In Proceedings of the 13th International Conference on Web Search and Data Mining . 61-69. KDD '23, August 6-10, 2023, Long Beach, CA, USA Sheng et al. [4] Sebastian Bruch, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2019. An Analysis of the Softmax Cross Entropy Loss for Learning-to-Rank with Binary Relevance. In Proceedings of the 2019 ACM SIGIR International Conference on Theory of Information Retrieval . 75-78. [5] Christopher JC Burges. 2010. From ranknet to lambdarank to lambdamart: An overview. Learning 11, 23-581 (2010), 81. [6] Christopher J. C. Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole Hamilton, and Gregory N. Hullender. 2005. Learning to rank using gradient descent. In Proceedings of the 22nd international conference on Machine learning , Vol. 119. 89-96. [7] Zhe Cao, Tao Qin, Tie-Yan Liu, Ming-Feng Tsai, and Hang Li. 2007. Learning to rank: from pairwise approach to listwise approach. In Proceedings of the TwentyFourth International Conference , Vol. 227. 129-136. [8] Zhangming Chan, Yu Zhang, Shuguang Han, Yong Bai, Xiang-Rong Sheng, Siyuan Lou, Jiacen Hu, Baolin Liu, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Capturing Conversion Rate Fluctuation during Sales Promotions: A Novel Historical Data Reuse Approach. arXiv preprint arXiv:2305.12837 (2023). [9] Olivier Chapelle, Bernhard Schölkopf, and Alexander Zien (Eds.). 2006. SemiSupervised Learning . The MIT Press. [10] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems . ACM, 7-10. [11] Daniel Cohen, Bhaskar Mitra, Oleg Lesota, Navid Rekabsaz, and Carsten Eickhoff. 2021. Not All Relevance Scores are Equal: Efficient Uncertainty and Calibration Modeling for Deep Retrieval Models. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval, Virtual Event, Canada, July 11-15, 2021 . 654-664. [12] Martín Abadi et al. 2015. TensorFlow: Large-Scale Machine Learning on Heterogeneous Systems. https://www.tensorflow.org/ Software available from tensorflow.org. [13] Tom Fawcett. 2006. An introduction to ROC analysis. Pattern Recognit. Lett. 27, 8 (2006), 861-874. [14] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep Session Interest Network for Click-Through Rate Prediction. In Proceedings of the 28th International Joint Conference on Artificial Intelligence . 2301-2307. [15] Fredric C Gey. 1994. Inferring probability of relevance using the method of logistic regression. In Proceedings of the 17th Annual International ACM-SIGIR Conference on Research and Development in Information Retrieval. 222-231. [16] Thore Graepel, Joaquin Quinonero Candela, Thomas Borchert, and Ralf Herbrich. 2010. Web-scale bayesian click-through rate prediction for sponsored search advertising in microsoft's bing search engine. In Proceedings of the 27th International Conference on Machine Learning . Haifa, Israel., 13-20. [17] Will Grathwohl, Kuan-Chieh Wang, Jörn-Henrik Jacobsen, David Duvenaud, Mohammad Norouzi, and Kevin Swersky. 2020. Your classifier is secretly an energy based model and you should treat it like one. In Proceedings of the 8th International Conference on Learning Representations . [18] Bin Gu, Victor S. Sheng, KengYeow Tay, Walter Romano, and Shuo Li. 2015. Incremental Support Vector Learning for Ordinal Regression. IEEE Transactions on Neural networks and learning systems 26, 7 (2015), 1403-1416. [19] Siyu Gu, Xiang-Rong Sheng, Ying Fan, Guorui Zhou, and Xiaoqiang Zhu. 2021. Real Negatives Matter: Continuous Training with Real Negatives for Delayed Feedback Modeling. In Proceedings of The 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2890-2898. [20] Chuan Guo, Geoff Pleiss, Yu Sun, and Kilian Q. Weinberger. 2017. On Calibration of Modern Neural Networks. In Proceedings of the 34th International Conference on Machine Learning , Vol. 70. 1321-1330. [21] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. Deepfm: a factorization-machine based neural network for ctr prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . Melbourne, Australia., 2782-2788. [22] Trevor Hastie, Jerome H. Friedman, and Robert Tibshirani. 2001. The Elements of Statistical Learning: Data Mining, Inference, and Prediction . Springer. [23] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, and Joaquin Quiñonero Candela. 2014. Practical Lessons from Predicting Clicks on Ads at Facebook. In Proceedings of the 8th International Workshop on Data Mining for Online Advertising . ACM, 5:1-5:9. [24] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated gain-based evaluation of IR techniques. ACM Transactions on Information Systems (TOIS) 20, 4 (2002), 422-446. [25] Diederik P. Kingma, Shakir Mohamed, Danilo Jimenez Rezende, and Max Welling. 2014. Semi-supervised Learning with Deep Generative Models. In Advances in Neural Information Processing Systems 27 . 3581-3589. [26] Sofia Ira Ktena, Alykhan Tejani, Lucas Theis, Pranay Kumar Myana, Deepak Dilipkumar, Ferenc Huszár, Steven Yoo, and Wenzhe Shi. 2019. Addressing Delayed Feedback for Continuous Training with Neural Networks in CTR Prediction. In Proceedings of the 13th ACM Conference on Recommender Systems . 187-195. [48] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open Benchmarking for Click-Through Rate Prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 2759-2769.",
   "keywords_parsed": [
     "Click-Through Rate Prediction",
-    " Calibration",
-    " Hybrid Model"
+    "Calibration",
+    "Hybrid Model"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Modern information retrieval"
+    },
+    {
+      "ref_id": "b2",
+      "title": "CAN: Feature CoAction Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A stochastic treatment of learning to rank scoring functions"
+    },
+    {
+      "ref_id": "b4",
+      "title": "An Analysis of the Softmax Cross Entropy Loss for Learning-to-Rank with Binary Relevance"
+    },
+    {
+      "ref_id": "b5",
+      "title": "From ranknet to lambdarank to lambdamart: An overview"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Learning to rank using gradient descent"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Capturing Conversion Rate Fluctuation during Sales Promotions: A Novel Historical Data Reuse Approach"
+    },
+    {
+      "ref_id": "b9",
+      "title": "SemiSupervised Learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Not All Relevance Scores are Equal: Efficient Uncertainty and Calibration Modeling for Deep Retrieval Models"
+    },
+    {
+      "ref_id": "b12",
+      "title": "TensorFlow: Large-Scale Machine Learning on Heterogeneous Systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "An introduction to ROC analysis"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Deep Session Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Inferring probability of relevance using the method of logistic regression"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Web-scale bayesian click-through rate prediction for sponsored search advertising in microsoft's bing search engine"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Your classifier is secretly an energy based model and you should treat it like one"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Incremental Support Vector Learning for Ordinal Regression"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Real Negatives Matter: Continuous Training with Real Negatives for Delayed Feedback Modeling"
+    },
+    {
+      "ref_id": "b20",
+      "title": "On Calibration of Modern Neural Networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Deepfm: a factorization-machine based neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "The Elements of Statistical Learning: Data Mining, Inference, and Prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Practical Lessons from Predicting Clicks on Ads at Facebook"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Semi-supervised Learning with Deep Generative Models"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Addressing Delayed Feedback for Continuous Training with Neural Networks in CTR Prediction"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Open Benchmarking for Click-Through Rate Prediction"
+    }
   ]
 }

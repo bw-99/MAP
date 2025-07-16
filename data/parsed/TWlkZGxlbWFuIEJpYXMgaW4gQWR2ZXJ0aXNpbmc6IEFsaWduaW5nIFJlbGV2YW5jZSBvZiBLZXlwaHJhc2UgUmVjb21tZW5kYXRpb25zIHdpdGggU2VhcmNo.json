@@ -13,7 +13,93 @@
   "References": "[1] Prajjwal Bhargava, Aleksandr Drozd, and Anna Rogers. 2021. Generalization in NLI: Ways (Not) To Go Beyond Simple Heuristics. arXiv:2110.01518 [cs.CL] [2] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2023. Bias and Debias in Recommender System: A Survey and Future Directions. ACM Trans. Inf. Syst. 41, 3, Article 67 (Feb. 2023), 39 pages. doi:10.1145/3564284 [3] Leonard Dahlmann and Tomer Lancewicki. 2021. Deploying a BERT-based QueryTitle Relevance Classifier in a Production System: a View from the Trenches. arXiv:2108.10197 [cs.CL] https://arxiv.org/abs/2108.10197 [4] Deepjavalibrary. [n. d.]. Deepjavalibrary/djl: An engine-agnostic deep learning framework in Java. https://github.com/deepjavalibrary/djl [5] ONNX Runtime developers. 2021. ONNX Runtime. https://onnxruntime.ai/. Version: 1.20.1. [6] eBay Advertising. 2025. Promoted Listings Priority. https://www.ebayadvertising. com/en/ad-solutions/ad-types/promoted-listings-priority/ [7] Jingyue Gao, Shuguang Han, Han Zhu, Siran Yang, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Rec4Ad: A Free Lunch to Mitigate Sample Selection Bias for Ads CTR Prediction in Taobao. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (Birmingham, United Kingdom) (CIKM '23) . Association for Computing Machinery, New York, NY, USA, 4574-4580. doi:10.1145/3583780.3615496 [8] R. Hadsell, S. Chopra, and Y. LeCun. 2006. Dimensionality Reduction by Learning an Invariant Mapping. In 2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06) , Vol. 2. 1735-1742. doi:10.1109/CVPR. 2006.100 [9] Jin Huang, Harrie Oosterhuis, Maarten de Rijke, and Herke van Hoof. 2020. Keeping Dataset Biases out of the Simulation: A Debiased Simulator for Reinforcement Learning based Recommender Systems. In Proceedings of the 14th ACM Conference on Recommender Systems (Virtual Event, Brazil) (RecSys '20) . Association for Computing Machinery, New York, NY, USA, 190-199. doi:10.1145/3383313.3412252 [10] Gautier Izacard, Mathilde Caron, Lucas Hosseini, Sebastian Riedel, Piotr Bojanowski, Armand Joulin, and Edouard Grave. 2021. Unsupervised Dense Information Retrieval with Contrastive Learning. doi:10.48550/ARXIV.2112.09118 [11] Paul Jaccard. 1901. Étude comparative de la distribution florale dans une portion des Alpes et des Jura. Bull Soc Vaudoise Sci Nat 37 (1901), 547-579. [12] Ashirbad Mishra, Soumik Dey, Marshall Wu, Jinyu Zhao, He Yu, Kaichen Ni, Binbin Li, and Kamesh Madduri. 2024. GraphEx: A Graph-based Extraction Method for Advertiser Keyphrase Recommendation. arXiv:2409.03140 [cs.IR] https://arxiv.org/abs/2409.03140 [13] Ashirbad Mishra, Soumik Dey, Jinyu Zhao, Hansi Wu, Binbin Li, and Kamesh Madduri. 2024. Graphite: A Graph-based Extreme Multi-Label Short Text Classifier for Keyphrase Recommendation. In 27th European Conference on Artificial Intelligence, 19-24 October 2024, Santiago de Compostela, Spain - Including 13th Conference on Prestigious Applications of Intelligent Systems (PAIS 2024) (Frontiers in Artificial Intelligence and Applications, Vol. 392) . IOS Press, 4657 - 4664. https://doi.org/10.3233/FAIA241061 [14] Jiarui Qin, Jiachen Zhu, Bo Chen, Zhirong Liu, Weiwen Liu, Ruiming Tang, Rui Zhang, Yong Yu, and Weinan Zhang. 2022. RankFlow: Joint Optimization of MultiStage Cascade Ranking Systems as Flows. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (Madrid, Spain) (SIGIR '22) . Association for Computing Machinery, New York, NY, USA, 814-824. doi:10.1145/3477495.3532050 [15] Nils Reimers and Iryna Gurevych. 2019. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) , Kentaro Inui, Jing Jiang, Vincent Ng, and Xiaojun Wan (Eds.). Association for Computational Linguistics, Hong Kong, China, 3982-3992. doi:10.18653/v1/D19-1410 [16] Nils Reimers and Iryna Gurevych. 2020. Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) , Bonnie Webber, Trevor Cohn, Yulan He, and Yang Liu (Eds.). Association for Computational Linguistics, Online, 4512-4525. doi:10.18653/v1/2020.emnlp-main.365 [17] Iulia Turc, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. WellRead Students Learn Better: The Impact of Student Initialization on Knowledge Distillation. CoRR abs/1908.08962 (2019). arXiv:1908.08962 http://arxiv.org/abs/ 1908.08962 [18] Francis Vella. 1998. Estimating Models with Sample Selection Bias: A Survey. The Journal of Human Resources 33, 1 (1998), 127-169. http://www.jstor.org/ stable/146317 [19] Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi, Pierric Cistac, Tim Rault, Rémi Louf, Morgan Funtowicz, Joe Davison, Sam Shleifer, Patrick von Platen, Clara Ma, Yacine Jernite, Julien Plu, Canwen Xu, Teven Le Scao, Sylvain Gugger, Mariama Drame, Quentin Lhoest, and Alexander M. Rush. 2020. Transformers: State-of-the-Art Natural Language Processing. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations . Association for Computational Linguistics, Online, 38-45. https://www.aclweb.org/anthology/2020.emnlpdemos.6 [20] Matei Zaharia, Reynold S. Xin, Patrick Wendell, Tathagata Das, Michael Armbrust, Ankur Dave, Xiangrui Meng, Josh Rosen, Shivaram Venkataraman, Michael J. Franklin, Ali Ghodsi, Joseph Gonzalez, Scott Shenker, and Ion Stoica. 2016. Apache Spark: a unified engine for big data processing. Commun. ACM 59, 11 (Oct. 2016), 56-65. doi:10.1145/2934664 [21] Ranran Haoran Zhang, Bensu Uçar, Soumik Dey, Hansi Wu, Binbin Li, and Rui Zhang. 2025. From Lazy to Prolific: Tackling Missing Labels in Open Vocabulary Extreme Classification by Positive-Unlabeled Sequence Learning. arXiv:2408.08981 [cs.IR] https://arxiv.org/abs/2408.08981",
   "keywords_parsed": [
     "Information Retrieval",
-    " Keyphrase Recommendation",
-    " Advertisement"
+    "Keyphrase Recommendation",
+    "Advertisement"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Generalization in NLI: Ways (Not) To Go Beyond Simple Heuristics"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Bias and Debias in Recommender System: A Survey and Future Directions"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deploying a BERT-based QueryTitle Relevance Classifier in a Production System: a View from the Trenches"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Deepjavalibrary/djl: An engine-agnostic deep learning framework in Java"
+    },
+    {
+      "ref_id": "b5",
+      "title": "ONNX Runtime"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Promoted Listings Priority"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Rec4Ad: A Free Lunch to Mitigate Sample Selection Bias for Ads CTR Prediction in Taobao"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Dimensionality Reduction by Learning an Invariant Mapping"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Keeping Dataset Biases out of the Simulation: A Debiased Simulator for Reinforcement Learning based Recommender Systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Unsupervised Dense Information Retrieval with Contrastive Learning"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Étude comparative de la distribution florale dans une portion des Alpes et des Jura"
+    },
+    {
+      "ref_id": "b12",
+      "title": "GraphEx: A Graph-based Extraction Method for Advertiser Keyphrase Recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Graphite: A Graph-based Extreme Multi-Label Short Text Classifier for Keyphrase Recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "RankFlow: Joint Optimization of MultiStage Cascade Ranking Systems as Flows"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Well-Read Students Learn Better: The Impact of Student Initialization on Knowledge Distillation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Estimating Models with Sample Selection Bias: A Survey"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Transformers: State-of-the-Art Natural Language Processing"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Apache Spark: a unified engine for big data processing"
+    },
+    {
+      "ref_id": "b21",
+      "title": "From Lazy to Prolific: Tackling Missing Labels in Open Vocabulary Extreme Classification by Positive-Unlabeled Sequence Learning"
+    }
   ]
 }

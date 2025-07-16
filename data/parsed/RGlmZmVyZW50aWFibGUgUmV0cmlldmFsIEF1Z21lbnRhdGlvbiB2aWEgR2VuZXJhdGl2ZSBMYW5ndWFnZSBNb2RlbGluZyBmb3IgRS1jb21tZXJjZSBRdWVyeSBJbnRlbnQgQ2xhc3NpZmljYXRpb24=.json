@@ -25,7 +25,165 @@
   "REFERENCES": "[1] Azin Ashkan, Charles LA Clarke, Eugene Agichtein, and Qi Guo. 2009. Classifying and characterizing query intent. In European conference on information retrieval . Springer, 578-586. [2] Andrei Z Broder, Marcus Fontoura, Evgeniy Gabrilovich, Amruta Joshi, Vanja Josifovski, and Tong Zhang. 2007. Robust classification of rare queries using web knowledge. In Proceedings of the 30th annual international ACM SIGIR conference on Research and development in information retrieval . 231-238. [3] Deng Cai, Yan Wang, Wei Bi, Zhaopeng Tu, Xiaojiang Liu, and Shuming Shi. 2019. Retrieval-guided dialogue response generation via a matching-to-generation framework. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) . 1866-1875. [4] Fengyu Cai, Wanhao Zhou, Fei Mi, and Boi Faltings. 2021. SLIM: Explicit SlotIntent Mapping with BERT for Joint Multi-Intent Detection and Slot Filling. arXiv preprint arXiv:2108.11711 (2021). [5] Yuan Chang, Lei Kong, Kejia Jia, and Qinglei Meng. 2021. Chinese named entity recognition method based on BERT. In 2021 IEEE International Conference on Data Science and Computer Application (ICDSCA) . IEEE, 294-299. [6] Qian Chen, Zhu Zhuo, and Wen Wang. 2019. Bert for joint intent classification and slot filling. arXiv preprint arXiv:1902.10909 (2019). [7] Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung Won Chung, Charles Sutton, Sebastian Gehrmann, et al. 2022. Palm: Scaling language modeling with pathways. arXiv preprint arXiv:2204.02311 (2022). [8] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [9] Markus Freitag and Yaser Al-Onaizan. 2017. Beam search strategies for neural machine translation. arXiv preprint arXiv:1702.01806 (2017). [10] Alex Graves. 2013. Generating sequences with recurrent neural networks. arXiv preprint arXiv:1308.0850 (2013). [11] Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-Wei Chang. 2020. REALM: Retrieval-augmented language model pre-training. arXiv preprint arXiv:2002.08909 (2020). [12] Homa B Hashemi, Amir Asiaee, and Reiner Kraft. 2016. Query intent detection using convolutional neural networks. In International Conference on Web Search and Data Mining, Workshop on Query Understanding . [13] Ari Holtzman, Jan Buys, Li Du, Maxwell Forbes, and Yejin Choi. 2019. The curious case of neural text degeneration. arXiv preprint arXiv:1904.09751 (2019). [14] Jeremy Howard and Sebastian Ruder. 2018. Universal language model fine-tuning for text classification. arXiv preprint arXiv:1801.06146 (2018). [15] Jian Hu, Gang Wang, Fred Lochovsky, Jian-tao Sun, and Zheng Chen. 2009. Understanding user's query intent with wikipedia. In Proceedings of the 18th international conference on World wide web . 471-480. [16] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning deep structured semantic models for web search using clickthrough data. In Proceedings of the 22nd ACM international conference on Information & Knowledge Management . 2333-2338. [17] Ahmet Iscen, Mathilde Caron, Alireza Fathi, and Cordelia Schmid. 2023. RetrievalEnhanced Contrastive Vision-Text Models. arXiv preprint arXiv:2306.07196 (2023). [18] Eric Jang, Shixiang Gu, and Ben Poole. 2016. Categorical reparameterization with gumbel-softmax. arXiv preprint arXiv:1611.01144 (2016). [19] Kenton Lee, Ming-Wei Chang, and Kristina Toutanova. 2019. Latent retrieval for weakly supervised open domain question answering. arXiv preprint arXiv:1906.00300 (2019). [20] Huayang Li, Yixuan Su, Deng Cai, Yan Wang, and Lemao Liu. 2022. A Survey on Retrieval-Augmented Text Generation. arXiv preprint arXiv:2202.01110 (2022). [21] Junyang Lin, Rui Men, An Yang, Chang Zhou, Ming Ding, Yichang Zhang, Peng Wang, Ang Wang, Le Jiang, Xianyan Jia, et al. 2021. M6: A chinese multimodal pretrainer. arXiv preprint arXiv:2103.00823 (2021). CIKM '23, October 21-25, 2023, Birmingham, United Kingdom. [22] Y. Lin, L. Hong, L. Yi, X. Li, and M. W. Anwar. 2015. Biomedical Named Entity Recognition based on Deep Neutral Network. International Journal of Hybrid Information Technology 8, 8 (2015), 279-288. [23] Zhibin Lu, Pan Du, and Jian-Yun Nie. 2020. VGCN-BERT: augmenting BERT with graph embedding for text classification. In European Conference on Information Retrieval . Springer, 369-382. [24] Stephen Merity, Nitish Shirish Keskar, and Richard Socher. 2017. Regularizing and optimizing LSTM language models. arXiv preprint arXiv:1708.02182 (2017). [25] OpenAI. 2023. GPT-4 Technical Report. arXiv:2303.08774 [cs.CL] [26] Yiming Qiu, Kang Zhang, Han Zhang, Songlin Wang, Sulong Xu, Yun Xiao, Bo Long, and Wen-Yun Yang. 2021. Query Rewriting via Cycle-Consistent Translation for E-Commerce Search. In 2021 IEEE 37th International Conference on Data Engineering (ICDE) . IEEE, 2435-2446. [27] Yiming Qiu, Chenyu Zhao, Han Zhang, Jingwei Zhuo, Tianhao Li, Xiaowei Zhang, Songlin Wang, Sulong Xu, Bo Long, and Wen-Yun Yang. 2022. Pre-training Tasks for User Intent Detection and Embedding Retrieval in E-commerce Search. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 4424-4428. [28] Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever, et al. 2018. Improving language understanding by generative pre-training. (2018). [29] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J Liu. 2019. Exploring the limits of transfer learning with a unified text-to-text transformer. arXiv preprint arXiv:1910.10683 (2019). [30] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J Liu. 2020. Exploring the limits of transfer learning with a unified text-to-text transformer. The Journal of Machine Learning Research 21, 1 (2020), 5485-5551. [31] Michael Skinner and Surya Kallumadi. 2019. E-commerce Query Classification Using Product Taxonomy Mapping: A Transfer Learning Approach.. In eCOM@ SIGIR . [32] Chi Sun, Xipeng Qiu, Yige Xu, and Xuanjing Huang. 2019. How to fine-tune bert for text classification?. In China national conference on Chinese computational linguistics . Springer, 194-206. [33] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [34] Zhiguo Wang, Patrick Ng, Xiaofei Ma, Ramesh Nallapati, and Bing Xiang. 2019. Multi-passage BERT: A Globally Normalized BERT Model for Open-domain Question Answering. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) . 5878-5882. [35] Zhongyuan Wang, Kejun Zhao, Haixun Wang, Xiaofeng Meng, and Ji-Rong Wen. 2015. Query understanding through knowledge-based conceptualization. In Twenty-Fourth International Joint Conference on Artificial Intelligence . [36] Wired. 2023. OpenAI's CEO Says the Age of Giant AI Models Is Already Over. https://www.wired.com/story/openai-ceo-sam-altman-the-age-of-giantai-models-is-already-over/. [37] Wei Yang, Yuqing Xie, Aileen Lin, Xingyu Li, Luchen Tan, Kun Xiong, Ming Li, and Jimmy Lin. 2019. End-to-End Open-Domain Question Answering with BERTserini. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations) . 72-77. [38] Han Zhang, Hongwei Shen, Yiming Qiu, Yunjiang Jiang, Songlin Wang, Sulong Xu, Yun Xiao, Bo Long, and Wen-Yun Yang. 2021. Joint learning of deep retrieval model and product quantization based embedding index. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1718-1722. [39] Han Zhang, Songlin Wang, Kang Zhang, Zhiling Tang, Yunjiang Jiang, Yun Xiao, Weipeng Yan, and Wen-Yun Yang. 2020. Towards personalized and semantic retrieval: An end-to-end solution for e-commerce search via embedding learning. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2407-2416.",
   "keywords_parsed": [
     "Retrieval Augmentation",
-    " Query Intent Classification",
-    " E-commerce"
+    "Query Intent Classification",
+    "E-commerce"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Classifying and characterizing query intent"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Robust classification of rare queries using web knowledge"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Retrieval-guided dialogue response generation via a matching-to-generation framework"
+    },
+    {
+      "ref_id": "b4",
+      "title": "SLIM: Explicit Slot-Intent Mapping with BERT for Joint Multi-Intent Detection and Slot Filling"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Chinese named entity recognition method based on BERT"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Bert for joint intent classification and slot filling"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Palm: Scaling language modeling with pathways"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Beam search strategies for neural machine translation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Generating sequences with recurrent neural networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "REALM: Retrieval-augmented language model pre-training"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Query intent detection using convolutional neural networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "The curious case of neural text degeneration"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Universal language model fine-tuning for text classification"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Understanding user's query intent with wikipedia"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Retrieval-Enhanced Contrastive Vision-Text Models"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Categorical reparameterization with gumbel-softmax"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Latent retrieval for weakly supervised open domain question answering"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A Survey on Retrieval-Augmented Text Generation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "M6: A chinese multimodal pretrainer"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Biomedical Named Entity Recognition based on Deep Neutral Network"
+    },
+    {
+      "ref_id": "b23",
+      "title": "VGCN-BERT: augmenting BERT with graph embedding for text classification"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Regularizing and optimizing LSTM language models"
+    },
+    {
+      "ref_id": "b25",
+      "title": "GPT-4 Technical Report"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Query Rewriting via Cycle-Consistent Translation for E-Commerce Search"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Pre-training Tasks for User Intent Detection and Embedding Retrieval in E-commerce Search"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Improving language understanding by generative pre-training"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b31",
+      "title": "E-commerce Query Classification Using Product Taxonomy Mapping: A Transfer Learning Approach."
+    },
+    {
+      "ref_id": "b32",
+      "title": "How to fine-tune bert for text classification?"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Multi-passage BERT: A Globally Normalized BERT Model for Open-domain Question Answering"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Query understanding through knowledge-based conceptualization"
+    },
+    {
+      "ref_id": "b36",
+      "title": "OpenAI's CEO Says the Age of Giant AI Models Is Already Over"
+    },
+    {
+      "ref_id": "b37",
+      "title": "End-to-End Open-Domain Question Answering with BERTserini"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Joint learning of deep retrieval model and product quantization based embedding index"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Towards personalized and semantic retrieval: An end-to-end solution for e-commerce search via embedding learning"
+    }
   ]
 }

@@ -30,9 +30,147 @@
   "Algorithm 1 𝑈 ← 𝑈𝑛𝑖𝐴𝑡𝑡𝑒𝑛𝑡𝑖𝑜𝑛 ( 𝑋,𝑌, 𝑀𝑎𝑠𝑘 )": "",
   "keywords_parsed": [
     "Non-textual features",
-    " Multi-modal inputs",
-    " Pre-trained language model",
-    " CTR prediction",
-    " Uni-Attention"
+    "Multi-modal inputs",
+    "Pre-trained language model",
+    "CTR prediction",
+    "Uni-Attention"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Neural machine translation by jointly learning to align and translate"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "MOBIUS: towards the next generation of query-ad matching in baidu's sponsored search"
+    },
+    {
+      "ref_id": "b6",
+      "title": "An introduction to ROC analysis"
+    },
+    {
+      "ref_id": "b7",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Detext: A deep text ranking framework with bert"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Sponsored search: an overview of the concept, history, and technology"
+    },
+    {
+      "ref_id": "b12",
+      "title": "BERT2DNN: BERT Distillation with Massive Unlabeled Data for Online E-Commerce Search"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Albert: A lite bert for self-supervised learning of language representations"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Model ensemble for click prediction in bing search ads"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Multitask deep neural networks for natural language understanding"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Who was student and why do we care so much about his t-test?"
+    },
+    {
+      "ref_id": "b18",
+      "title": "TwinBERT: Distilling Knowledge to Twin-Structured Compressed BERT Models for Large-Scale Retrieval"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Ad click prediction: a view from the trenches"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Information gain"
+    },
+    {
+      "ref_id": "b21",
+      "title": "CTR-BERT: Cost-effective knowledge distillation for billion-parameter teacher models"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Warm up cold-start advertisements: Improving ctr predictions via learning to learn id embeddings"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "A survey of recommendation system: Research challenges"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Very deep convolutional networks for large-scale image recognition"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Vl-bert: Pre-training of generic visual-linguistic representations"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Videobert: A joint model for video and language representation learning"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Ernie: Enhanced representation through knowledge integration"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Learning Supplementary NLP Features for CTR Prediction in Sponsored Search"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Advertisement click-through rate prediction using multiple criteria linear programming regression model"
+    },
+    {
+      "ref_id": "b32",
+      "title": "GBDT and BERT: a Hybrid Solution for Recognizing Citation Intent"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Cross-lingual Language Model Pretraining for Retrieval"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Do language embeddings capture scales?"
+    }
   ]
 }

@@ -25,36 +25,160 @@
   "REFERENCES": "[1] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, Xinchen Luo, Shiming Xiang, Guorui Zhou, Xiaoqiang Zhu, and Hongbo Deng. 2022. CAN: Feature Co-Action Network for Click-Through Rate Prediction. In Proceedings of the 15th ACM International Conference on Web Search and Data Mining . 57-65. [2] Zhangming Chan, Yuchi Zhang, Xiuying Chen, Shen Gao, Zhiqiang Zhang, Dongyan Zhao, and Rui Yan. 2020. Selection and generation: Learning towards multi-product advertisement post generation. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) . 3818-3829. [3] Zhangming Chan, Yu Zhang, Shuguang Han, Yong Bai, Xiang-Rong Sheng, Siyuan Lou, Jiacen Hu, Baolin Liu, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Capturing Conversion Rate Fluctuation during Sales Promotions: A Novel Historical Data Reuse Approach. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3774-3784. [4] Junxuan Chen, Baigui Sun, Hao Li, Hongtao Lu, and Xian-Sheng Hua. 2016. Deep CTR Prediction in Display Advertising. In Proceedings of the 2016 ACM Conference on Multimedia Conference . 811-820. [5] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems . ACM, 7-10. [6] Haibin Cheng, Roelof van Zwol, Javad Azimi, Eren Manavoglu, Ruofei Zhang, Yang Zhou, and Vidhya Navalpakkam. 2012. Multimedia features for click prediction of new ads in display advertising. In Proceedings of the 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 777-785. [7] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems . 191-198. [8] Shereen Elsayed, Lukas Brinkmeyer, and Lars Schmidt-Thieme. 2022. End-to-End Image-Based Fashion Recommendation. CoRR abs/2205.02923 (2022). [9] Tiezheng Ge, Liqin Zhao, Guorui Zhou, Keyu Chen, Shuying Liu, Huiming Yi, Zelin Hu, Bochao Liu, Peng Sun, Haoyu Liu, Pengtao Yi, Sui Huang, Zhiqiang Zhang, Xiaoqiang Zhu, Yu Zhang, and Kun Gai. 2018. Image Matters: Visually Modeling User Behaviors Using Advanced Model Server. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . 2087-2095. [10] Siyu Gu, Xiang-Rong Sheng, Ying Fan, Guorui Zhou, and Xiaoqiang Zhu. 2021. Real Negatives Matter: Continuous Training with Real Negatives for Delayed Feedback Modeling. In Proceedings of The 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2890-2898. [11] Chuan Guo, Geoff Pleiss, Yu Sun, and Kilian Q. Weinberger. 2017. On Calibration of Modern Neural Networks. In Proceedings of the 34th International Conference on Machine Learning , Vol. 70. 1321-1330. [12] Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross B. Girshick. 2020. Momentum Contrast for Unsupervised Visual Representation Learning. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 9726-9735. [13] Ruining He and Julian J. McAuley. 2016. Ups and Downs: Modeling the Visual Evolution of Fashion Trends with One-Class Collaborative Filtering. In Proceedings of the 25th International Conference on World Wide Web . 507-517. [14] Jiacen Hu, Zhangming Chan, Yu Zhang, Shuguang Han, Siyuan Lou, Baolin Liu, Han Zhu, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. PS-SA: An Efficient Self-Attention via Progressive Sampling for User Behavior Sequence Modeling. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 4639-4645. [15] Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, and Linjun Yang. 2020. Embeddingbased Retrieval in Facebook Search. In Proceedings of The 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2553-2561. [16] Biye Jiang, Chao Deng, Huimin Yi, Zelin Hu, Guorui Zhou, Yang Zheng, Sui Huang, Xinyang Guo, Dongyue Wang, Yue Song, et al. 2019. XDL: An Industrial Deep Learning Framework for High-Dimensional Sparse Data. In Proceedings of the 1st International Workshop on Deep Learning Practice for High-Dimensional Sparse Data . 1-9. [17] Corey Lynch, Kamelia Aryafar, and Josh Attenberg. 2016. Images Don't Lie: Transferring Deep Visual Semantic Features to Large-Scale Multimodal Learning to Rank. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 541-548. [18] Kaixiang Mo, Bo Liu, Lei Xiao, Yong Li, and Jie Jiang. 2015. Image Feature Learning for Cold Start Problem in Display Advertising. In Proceedings of the Twenty-Fourth International Joint Conference on Artificial Intelligence . 3728-3734. [19] Aaron van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation learning with contrastive predictive coding. arXiv preprint arXiv:1807.03748 (2018). [20] Aditya Pal, Chantat Eksombatchai, Yitong Zhou, Bo Zhao, Charles Rosenberg, and Jure Leskovec. 2020. PinnerSage: Multi-Modal User Embedding Framework for Recommendations at Pinterest. In Proceedings of The 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2311-2320. [21] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever. 2021. Learning Transferable Visual Models From Natural Language Supervision. In Proceedings of the 38th International Conference on Machine Learning , Vol. 139. 8748-8763. [22] Andrew I. Schein, Alexandrin Popescul, Lyle H. Ungar, and David M. Pennock. 2002. Methods and metrics for cold-start recommendations. In Proceedings of the 25th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval . 253-260. [23] Florian Schroff, Dmitry Kalenichenko, and James Philbin. 2015. FaceNet: A unified embedding for face recognition and clustering. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 815-823. [24] Xiang-Rong Sheng, Jingyue Gao, Yueyao Cheng, Siran Yang, Shuguang Han, Hongbo Deng, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4813-4822. [25] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, and Xiaoqiang Zhu. 2021. One Model to Serve All: Star Topology Adaptive Recommender for MultiDomain CTR Prediction. In Proceedings of The 30th ACM International Conference on Information and Knowledge Management . 4104-4113. [26] Anima Singh, Trung Vu, Raghunandan H. Keshavan, Nikhil Mehta, Xinyang Yi, Lichan Hong, Lukasz Heldt, Li Wei, Ed H. Chi, and Maheswaran Sathiamoorthy. 2023. Better Generalization with Semantic IDs: A case study in Ranking for Recommendations. CoRR abs/2306.08121 (2023). [27] Zhe Wang, Liqin Zhao, Biye Jiang, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2020. COLD: Towards the Next Generation of Pre-Ranking System. CoRR abs/2007.16122 (2020). [28] Kailun Wu, Weijie Bian, Zhangming Chan, Lejian Ren, Shiming Xiang, ShuGuang Han, Hongbo Deng, and Bo Zheng. 2022. Adversarial gradient driven exploration for deep click-through rate prediction. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2050-2058. [29] Jia-Qi Yang, Chenglei Dai, Dan Ou, Ju Huang, De-Chuan Zhan, Qingwen Liu, Xiaoyi Zeng, and Yang Yang. 2023. COURIER: Contrastive User Intention Reconstruction for Large-Scale Pre-Train of Image Features. CoRR abs/2306.05001 (2023). [30] Zheng Yuan, Fajie Yuan, Yu Song, Youhua Li, Junchen Fu, Fei Yang, Yunzhu Pan, and Yongxin Ni. 2023. Where to Go Next for Recommender Systems? IDvs. Modality-based Recommender Models Revisited. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2639-2649. [31] Yujing Zhang, Zhangming Chan, Shuhao Xu, Weijie Bian, Shuguang Han, Hongbo Deng, and Bo Zheng. 2022. KEEP: An Industrial Pre-Training Framework for Online Recommendation via Knowledge Extraction and Plugging. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3684-3693. [32] Yuanxing Zhang, Langshi Chen, Siran Yang, Man Yuan, Huimin Yi, et al. 2022. PICASSO: Unleashing the Potential of GPU-centric Training for Wide-and-deep Recommender Systems. In 2022 IEEE 38th International Conference on Data Engineering (ICDE) . 3453-3466. [33] Zhao-Yu Zhang, Xiang-Rong Sheng, Yujing Zhang, Biye Jiang, Shuguang Han, Hongbo Deng, and Bo Zheng. 2022. Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Models. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2671-2680. [34] Zhishan Zhao, Jingyue Gao, Yu Zhang, Shuguang Han, Siyuan Lou, Xiang-Rong Sheng, Zhe Wang, Han Zhu, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. COPR: Consistency-Oriented Pre-Ranking for Online Advertising. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 4974-4980. [35] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep Interest Evolution Network for Click-Through Rate Prediction. In Proceedings of the 33rd AAAI Conference on Artificial Intelligence . Honolulu, Hawaii, USA, 5941-5948. [36] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 1059-1068. [37] Han Zhu, Junqi Jin, Chang Tan, Fei Pan, Yifan Zeng, Han Li, and Kun Gai. 2017. Optimized Cost per Click in Taobao Display Advertising. In Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 2191-2200. [38] Han Zhu, Xiang Li, Pengye Zhang, Guozheng Li, Jie He, Han Li, and Kun Gai. 2018. Learning Tree-based Deep Model for Recommender Systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . London, UK, 1079-1088.",
   "keywords_parsed": [
     "Multimodal Representations",
-    " Recommendation System ∗ Equal contribution. † Corresponding author. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CIKM '24",
-    " October 21-25",
-    " 2024",
-    " Boise",
-    " ID",
-    " USA © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0436-9/24/10...$15.00 https://doi.org/10.1145/3627673.3680068 Xiang-Rong Sheng",
-    " Feifan Yang",
-    " Litong Gong",
-    " Biao Wang",
-    " Zhangming Chan",
-    " Yujing Zhang",
-    " Yueyao Cheng",
-    " Yong-Nan Zhu",
-    " Tiezheng Ge",
-    " Han Zhu",
-    " Yuning Jiang",
-    " Jian Xu",
-    " Bo Zheng. 2024. Enhancing Taobao Display Advertising with Multimodal Representations: Challenges",
-    " Approaches and Insights. In Proceedings of the 33rd ACM International Conference on Information and Knowledge Management (CIKM '24)",
-    " October 21-25",
-    " 2024",
-    " Boise",
-    " ID",
-    " USA. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 8 pages. https://doi.org/10.1145/3627673.3680068"
+    "Recommendation System"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "CAN: Feature Co-Action Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Selection and generation: Learning towards multi-product advertisement post generation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Capturing Conversion Rate Fluctuation during Sales Promotions: A Novel Historical Data Reuse Approach"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Deep CTR Prediction in Display Advertising"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Multimedia features for click prediction of new ads in display advertising"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "End-to-End Image-Based Fashion Recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Image Matters: Visually Modeling User Behaviors Using Advanced Model Server"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Real Negatives Matter: Continuous Training with Real Negatives for Delayed Feedback Modeling"
+    },
+    {
+      "ref_id": "b11",
+      "title": "On Calibration of Modern Neural Networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Momentum Contrast for Unsupervised Visual Representation Learning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Ups and Downs: Modeling the Visual Evolution of Fashion Trends with One-Class Collaborative Filtering"
+    },
+    {
+      "ref_id": "b14",
+      "title": "PS-SA: An Efficient Self-Attention via Progressive Sampling for User Behavior Sequence Modeling"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Embeddingbased Retrieval in Facebook Search"
+    },
+    {
+      "ref_id": "b16",
+      "title": "XDL: An Industrial Deep Learning Framework for High-Dimensional Sparse Data"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Images Don't Lie: Transferring Deep Visual Semantic Features to Large-Scale Multimodal Learning to Rank"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Image Feature Learning for Cold Start Problem in Display Advertising"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b20",
+      "title": "PinnerSage: Multi-Modal User Embedding Framework for Recommendations at Pinterest"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Methods and metrics for cold-start recommendations"
+    },
+    {
+      "ref_id": "b23",
+      "title": "FaceNet: A unified embedding for face recognition and clustering"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model"
+    },
+    {
+      "ref_id": "b25",
+      "title": "One Model to Serve All: Star Topology Adaptive Recommender for MultiDomain CTR Prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Better Generalization with Semantic IDs: A case study in Ranking for Recommendations"
+    },
+    {
+      "ref_id": "b27",
+      "title": "COLD: Towards the Next Generation of Pre-Ranking System"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Adversarial gradient driven exploration for deep click-through rate prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "COURIER: Contrastive User Intention Reconstruction for Large-Scale Pre-Train of Image Features"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Where to Go Next for Recommender Systems? IDvs. Modality-based Recommender Models Revisited"
+    },
+    {
+      "ref_id": "b31",
+      "title": "KEEP: An Industrial Pre-Training Framework for Online Recommendation via Knowledge Extraction and Plugging"
+    },
+    {
+      "ref_id": "b32",
+      "title": "PICASSO: Unleashing the Potential of GPU-centric Training for Wide-and-deep Recommender Systems"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Models"
+    },
+    {
+      "ref_id": "b34",
+      "title": "COPR: Consistency-Oriented Pre-Ranking for Online Advertising"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep Interest Evolution Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Optimized Cost per Click in Taobao Display Advertising"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Learning Tree-based Deep Model for Recommender Systems"
+    }
   ]
 }

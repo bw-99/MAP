@@ -39,13 +39,218 @@
   "Table A2: Statistics of datasets": "· Amazon-Book 4 This book-rating dataset is collected from users' uploaded review and rating records on Amazon. A.4.2 Preprocess. Since the origin dataset in Table A2 is too large for training, we reduce them in frequency order. We use 10-core select on Yelp and 50-core select on Amazon-Book. 𝑁 -core means we choose users and items that appear more than 𝑁 times in the whole record history. After we select the dataset, we split the data into training, validation and test sets. We shuffle each set when we start a new evaluation task. A.4.3 Dataset sampling. Some papers studying long-tail recommendation [50] or self-supervised recommendation [38] may discuss the impact of data sparsity. We can sample the subgraph according to the popularity [16], mainly user-side and item-side, and the long-tail effect on the item-side is more severe. Thus we sample the rating matrix based on the item frequency. The more the item appears in rating records, the more likely it is reserved in the subsampled matrix.",
   "A.5 Detailed Settings of Experiments": "A.5.1 Baseline algorithms. · Random Search [1]. It is a simple method for finding hyperparameters and architectures with random choices on either continuous or categorical space. · Bayesian Optimization [32]. Bayesian Optimization (BO) is a search algorithm based on the analysis of posterior information, and it can use Gaussian Process as a surrogate model. · BOHB [9]. BOHB is a method consisting of both Bayesian Optimization (BO) and HyperBand (HB), helping modulate functions with a lower time budget. · BORE [35]. BORE is a BO method considering expected improvement as a binary classification problem. It can be combined with regressors, including Random Forest (RF), Multi-Layer Perceptron (MLP), and Gaussian Process (GP). We choose RF as a regressor in our experiments. A.5.2 Hardware Environment. Weimplement models with PyTorch 1.12 and run experiments on a 64-core Ubuntu 20.04 server with NVIDIA GeForce RTX 3090 GPU with 24 GB memories each. It takes 3.5-4 hours to search on a dataset with one million records. A.5.3 Codes. We have released our implementation code for experiments in https://github.com/overwenyan/Joint-Search 4 https://nijianmo.github.io/amazon/index.html",
   "keywords_parsed": [
-    "Automated Machine Learning (AutoML) techniques have recently been introduced to design Collaborative Filtering (CF) models in a data-specific manner. However",
-    " existing works either search architectures or hyperparameters while ignoring the fact they are intrinsically related and should be considered together. This motivates us to consider a joint hyperparameter and architecture search method to design CF models. However",
-    " this is not easy because of the large search space and high evaluation cost. To solve these challenges",
-    " we reduce the space by screening out usefulness hyperparameter choices through a comprehensive understanding of individual hyperparameters. Next",
-    " we propose a two-stage search algorithm to find proper configurations from the reduced space. In the first stage",
-    " we leverage knowledge from subsampled datasets to reduce evaluation costs; in the second stage",
-    " we efficiently fine-tune top candidate models on the whole dataset. Extensive experiments on real-world datasets show better performance can be achieved compared with both hand-designed and previous searched models. Besides",
-    " ablation and case studies demonstrate the effectiveness of our search framework."
+    "Recommendation System",
+    "Collaborative Filtering",
+    "Automated Machine Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Random search for hyper-parameter optimization"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Hyperopt: A python library for optimizing the hyperparameters of machine learning algorithms"
+    },
+    {
+      "ref_id": "b3",
+      "title": "ST-NAS: Efficient Optimization of Joint Neural Architecture and Hyperparameter"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Automated Machine Learning for Deep Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Joint Neural Collaborative Filtering for Recommender Systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Hyperparameter search in machine learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Are we really making much progress? A worrying analysis of recent neural recommendation approaches"
+    },
+    {
+      "ref_id": "b8",
+      "title": "AutoHAS: Efficient hyperparameter and architecture search"
+    },
+    {
+      "ref_id": "b9",
+      "title": "BOHB: Robust and efficient hyperparameter optimization at scale"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Auto-sklearn: efficient and robust automated machine learning"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Efficient Data-specific Model Search for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A survey of graph neural networks for recommender systems: challenges, methods, and directions"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Fast matrix factorization for online recommendation with implicit feedback"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Sequential modelbased optimization for general algorithm configuration"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Automated Machine Learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Fism: factored item similarity models for top-n recommender systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Factorization meets the neighborhood: a multifaceted collaborative filtering model"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Hyperband: Bandit-based configuration evaluation for hyperparameter optimization"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Random search and reproducibility for neural architecture search"
+    },
+    {
+      "ref_id": "b24",
+      "title": "AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Auto-deeplab: Hierarchical neural architecture search for semantic image segmentation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "DARTS: Differentiable architecture search"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Learnable Embedding Sizes for Recommender Systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Efficient Neural Architecture Search via Parameter Sharing"
+    },
+    {
+      "ref_id": "b29",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Item-based collaborative filtering recommendation algorithms"
+    },
+    {
+      "ref_id": "b31",
+      "title": "FEATHERS: Federated Architecture and Hyperparameter Search"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Practical bayesian optimization of machine learning algorithms"
+    },
+    {
+      "ref_id": "b33",
+      "title": "The evolved transformer"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Efficientnet: Rethinking model scaling for convolutional neural networks"
+    },
+    {
+      "ref_id": "b35",
+      "title": "BORE: Bayesian Optimization by Density-Ratio Estimation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Neural Graph Collaborative Filtering"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Profiling the Design Space for Graph Neural Networks based Collaborative Filtering"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Self-supervised graph learning for recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Efficient Neural Interaction Functions Search for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Taking human out of learning applications: A survey on automated machine learning"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Differentiable Neural Architecture Search via Proximal Iterations"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Graph convolutional neural networks for web-scale recommender systems"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Towards automated deep learning: Efficient joint neural architecture and hyperparameter search"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Knowledge Graph Reasoning with Relational Digraph"
+    },
+    {
+      "ref_id": "b45",
+      "title": "AutoSF: Searching Scoring Functions for Knowledge Graph Embedding"
+    },
+    {
+      "ref_id": "b46",
+      "title": "KGTuner: Efficient Hyper-parameter Search for Knowledge Graph Learning"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Autodim: Field-aware embedding dimension search in recommender systems"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Joint deep modeling of users and items using reviews for recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "AutoML for Deep Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Disentangling user interest and conformity for recommendation with causal embedding"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Neural architecture search with reinforcement learning"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Efficient and Joint Hyperparameter and Architecture Search for Collaborative Filtering"
+    }
   ]
 }

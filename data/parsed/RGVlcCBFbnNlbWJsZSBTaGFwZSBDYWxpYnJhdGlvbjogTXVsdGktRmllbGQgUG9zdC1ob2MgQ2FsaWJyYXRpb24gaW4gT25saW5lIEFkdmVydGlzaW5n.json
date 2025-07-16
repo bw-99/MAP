@@ -25,14 +25,93 @@
   "REFERENCES": "[1] Antonio Bella, Cèsar Ferri, José Hernández-Orallo, and María José RamírezQuintana. 2010. Calibration of machine learning models. In Handbook of Research on Machine Learning Applications and Trends: Algorithms, Methods, and Techniques . IGI Global, 128-146. [2] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, et al. 2022. CAN: feature co-action network for click-through rate prediction. In Proceedings of the fifteenth ACM international conference on web search and data mining . 57-65. [3] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [4] James Davidson, Benjamin Liebald, Junning Liu, Palash Nandy, Taylor Van Vleet, Ullas Gargi, Sujoy Gupta, Yu He, Mike Lambert, Blake Livingston, et al. 2010. Multi-Field Post-hoc Calibration on Online Advertising Conference acronym 'XX, June 03-05, 2018, Woodstock, NY The YouTube video recommendation system. In Proceedings of the fourth ACM conference on Recommender systems . 293-296. [5] Chao Deng, Hao Wang, Qing Tan, Jian Xu, and Kun Gai. 2021. Calibrating user response predictions in online advertising. In Machine Learning and Knowledge Discovery in Databases: Applied Data Science Track: European Conference, ECML PKDD 2020, Ghent, Belgium, September 14-18, 2020, Proceedings, Part IV . Springer, 208-223. [6] Chao Du, Zhifeng Gao, Shuo Yuan, Lining Gao, Ziyan Li, Yifan Zeng, Xiaoqiang Zhu, Jian Xu, Kun Gai, and Kuang-Chih Lee. 2021. Exploration in online advertising systems with deep uncertainty-aware learning. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 2792-2801. [7] Shai Feldman, Stephen Bates, and Yaniv Romano. 2023. Calibrated multipleoutput quantile regression with representation learning. Journal of Machine Learning Research 24, 24 (2023), 1-48. [8] Thore Graepel, Joaquin Quinonero Candela, Thomas Borchert, and Ralf Herbrich. 2010. Web-scale bayesian click-through rate prediction for sponsored search advertising in microsoft's bing search engine. Omnipress. [9] Chuan Guo, Geoff Pleiss, Yu Sun, and Kilian Q Weinberger. 2017. On calibration of modern neural networks. In International conference on machine learning . PMLR, 1321-1330. [10] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [11] Chirag Gupta, Aleksandr Podkopaev, and Aaditya Ramdas. 2020. Distributionfree binary classification: prediction sets, confidence intervals and calibration. Advances in Neural Information Processing Systems 33 (2020), 3711-3723. [12] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In Proceedings of the eighth international workshop on data mining for online advertising . 1-9. [13] Siguang Huang, Yunli Wang, Lili Mou, Huayue Zhang, Han Zhu, Chuan Yu, and Bo Zheng. 2022. MBCT: Tree-Based Feature-Aware Binning for Individual Uncertainty Calibration. In Proceedings of the ACM Web Conference 2022 . 22362246. [14] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM Conference on Recommender Systems . 169-177. [15] Xiaoqian Jiang, Melanie Osl, Jihoon Kim, and Lucila Ohno-Machado. 2011. Smooth isotonic regression: a new method to calibrate predictive models. AMIA Summits on Translational Science Proceedings 2011 (2011), 16. [16] Kevin B Korb. 1999. Calibration and the evaluation of predictive learners. In Proceedings of the Sixteenth International Joint Conference on Artificial Intelligence . Citeseer, 73-77. [17] Meelis Kull, Miquel Perello Nieto, Markus Kängsepp, Telmo Silva Filho, Hao Song, and Peter Flach. 2019. Beyond temperature scaling: Obtaining well-calibrated multi-class probabilities with dirichlet calibration. Advances in neural information processing systems 32 (2019). [18] Meelis Kull, Telmo Silva Filho, and Peter Flach. 2017. Beta calibration: a wellfounded and easily implemented improvement on logistic calibration for binary classifiers. In Artificial Intelligence and Statistics . PMLR, 623-631. [19] Ananya Kumar, Percy S Liang, and Tengyu Ma. 2019. Verified uncertainty calibration. Advances in Neural Information Processing Systems 32 (2019). [20] Wonbin Kweon, SeongKu Kang, and Hwanjo Yu. 2022. Obtaining Calibrated Probabilities with Personalized Ranking Models. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 36. 4083-4091. [35] Han Zhu, Junqi Jin, Chang Tan, Fei Pan, Yifan Zeng, Han Li, and Kun Gai. 2017. Optimized cost per click in taobao display advertising. In Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining . 2191-2200.",
   "keywords_parsed": [
     "Multi-Field Calibration",
-    " Basis Calibration Function",
-    " Field-aware Attention Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. Conference acronym 'XX",
-    " June 03-05",
-    " 2018",
-    " Woodstock",
-    " NY © 2018 Association for Computing Machinery. ACM ISBN 978-1-4503-XXXX-X/18/06...$15.00 https://doi.org/XXXXXXX.XXXXXXX"
+    "Basis Calibration Function",
+    "Field-aware Attention"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Calibration of machine learning models"
+    },
+    {
+      "ref_id": "b2",
+      "title": "CAN: feature co-action network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Multi-Field Post-hoc Calibration on Online Advertising"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Calibrating user response predictions in online advertising"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Exploration in online advertising systems with deep uncertainty-aware learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Calibrated multiple-output quantile regression with representation learning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Web-scale bayesian click-through rate prediction for sponsored search advertising in microsoft's bing search engine"
+    },
+    {
+      "ref_id": "b9",
+      "title": "On calibration of modern neural networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Distribution-free binary classification: prediction sets, confidence intervals and calibration"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b13",
+      "title": "MBCT: Tree-Based Feature-Aware Binning for Individual Uncertainty Calibration"
+    },
+    {
+      "ref_id": "b14",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Smooth isotonic regression: a new method to calibrate predictive models"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Calibration and the evaluation of predictive learners"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Beyond temperature scaling: Obtaining well-calibrated multi-class probabilities with dirichlet calibration"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Beta calibration: a well-founded and easily implemented improvement on logistic calibration for binary classifiers"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Verified uncertainty calibration"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Obtaining Calibrated Probabilities with Personalized Ranking Models"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Optimized cost per click in taobao display advertising"
+    }
   ]
 }

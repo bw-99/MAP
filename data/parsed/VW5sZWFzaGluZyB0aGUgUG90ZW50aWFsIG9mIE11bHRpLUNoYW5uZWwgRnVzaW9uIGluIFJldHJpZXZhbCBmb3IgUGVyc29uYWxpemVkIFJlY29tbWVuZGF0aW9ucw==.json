@@ -39,21 +39,218 @@
   "D.1 Retrieval Performance and Diversity": "Table 5: Evaluation of the trade-off between retrieval accuracy and diversity on Amazon_Books and Tmall. There is often a trade-off between retrieval performance and diversity, yet diversity in recommendation results is crucial for user experience [37]. Various approaches [8] have been proposed to measure the diversity of the recommended list of items. We use item coverage [16, 55], which calculates the proportion of items recommended across all users, as defined in Equation (30):  Table 5 presents the retrieval performance and diversity of several methods. Our scientifically optimized multi-channel retrieval merging strategies achieve better retrieval performance while maintaining high diversity, effectively striking a balance.",
   "E DEPLOYMENT DISCUSSION": "In this section, we share our hands-on experience implementing our multi-channel fusion strategy in Company X's recommendation scenario. As discussed in Section 6, the number of items retrieved from each channel varies. Given this variability, the current production system sets an upper limit on the number of items retrieved from each channel. This limitation prevents the direct application of our globally optimized weights from experimental results. Instead, we calculate adjustable ratios based on the results from CEM, ensuring they meet business requirements by truncating channels that exceed their limits and adjusting toward the optimized weights. As a result, the deployed version is an approximation of CEM, adapted to fit practical constraints.",
   "keywords_parsed": [
-    "Recommender systems (RS) are pivotal in managing information overload in modern digital services. A key challenge in RS is efficiently processing vast item pools to deliver highly personalized recommendations under strict latency constraints. Multi-stage cascade ranking addresses this by employing computationally efficient retrieval methods to cover diverse user interests",
-    " followed by more precise ranking models to refine the results. In the retrieval stage",
-    " multi-channel retrieval is often used to generate distinct item subsets from different candidate generators",
-    " leveraging the complementary strengths of these methods to maximize coverage. However",
-    " forwarding all retrieved items overwhelms downstream rankers",
-    " necessitating truncation. Despite advancements in individual retrieval methods",
-    " multi-channel fusion ",
-    " the process of efficiently merging multi-channel retrieval results",
-    " remains underexplored. We are the first to identify and systematically investigate multi-channel fusion in the retrieval stage. Current industry practices often rely on heuristic approaches and manual designs",
-    " which often lead to suboptimal performance. Moreover",
-    " traditional gradient-based methods like SGD are unsuitable for this task due to the non-differentiable nature of the selection process. In this paper",
-    " we explore advanced channel fusion strategies by assigning systematically optimized weights to each channel. We utilize black-box optimization techniques",
-    " including the Cross Entropy Method and Bayesian Optimization for global weight optimization",
-    " alongside policy gradient-based approaches for personalized merging. Our methods enhance both personalization and flexibility",
-    " achieving significant performance improvements across multiple datasets and yielding substantial gains in real-world deployments",
-    " offering a scalable solution for optimizing multi-channel fusion in retrieval."
+    "Recommender Systems",
+    "Retrieval",
+    "Multi-Channel Fusion"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Estimating a Dirichlet distribution"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Simulated annealing and Boltzmann machines: a stochastic approach to combinatorial optimization and neural computing"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A global search method for discrete stochastic optimization"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Item2vec: neural item embedding for collaborative filtering"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Graph convolutional matrix completion"
+    },
+    {
+      "ref_id": "b6",
+      "title": "TasteWeights: a visual interactive hybrid recommender system"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Hybrid recommender systems: A systematic literature review"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Novelty and diversity metrics for recommender systems: choice, discovery and relevance"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Controllable multi-interest framework for recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Simulated annealing: searching for an optimal temperature schedule"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Local search in combinatorial optimization"
+    },
+    {
+      "ref_id": "b13",
+      "title": "The Any System Optimization by a colony of cooperating agents"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Pixie: A system for recommending 3+ billion items to 200+ million users in real-time"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A tutorial on Bayesian optimization"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Beyond accuracy: evaluating recommender systems by coverage and serendipity"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Modern heuristic techniques for combinatorial optimization"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Optimization, and machine learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Real-time personalization using embeddings for search ranking at airbnb"
+    },
+    {
+      "ref_id": "b20",
+      "title": "node2vec: Scalable feature learning for networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "ACO algorithms with guaranteed convergence to the optimal solution"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Monte Carlo sampling methods using Markov chains and their applications"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b25",
+      "title": "On component interactions in two-stage recommender systems"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Recall-Augmented Ranking: Enhancing Click-Through Rate Prediction Accuracy with Cross-Stage Data"
+    },
+    {
+      "ref_id": "b27",
+      "title": "A Comprehensive Survey on Retrieval Methods in Recommender Systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Optimization by simulated annealing"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Multi-interest network with dynamic routing for recommendation at Tmall"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Factorization meets the item embedding: Regularizing matrix factorization with item co-occurrence"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Variational autoencoders for collaborative filtering"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Mamba4rec: Towards efficient sequential recommendation with selective state space models"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Learning disentangled representations for recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "SimpleX: A simple and strong baseline for collaborative filtering"
+    },
+    {
+      "ref_id": "b37",
+      "title": "MIC: model-agnostic integrated cross-channel recommender"
+    },
+    {
+      "ref_id": "b38",
+      "title": "A new similarity measure using Bhattacharyya coefficient for collaborative filtering in sparse data"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Deepwalk: Online learning of social representations"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Retrieval & interaction machine for tabular data prediction"
+    },
+    {
+      "ref_id": "b43",
+      "title": "RankFlow: Joint Optimization of MultiStage Cascade Ranking Systems as Flows"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b45",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Grouplens: An open architecture for collaborative filtering of netnews"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Simulated annealing for constrained global optimization"
+    },
+    {
+      "ref_id": "b48",
+      "title": "The cross-entropy method for combinatorial and continuous optimization"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Optimization of computer simulation models with rare events"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Combinatorial optimization, cross-entropy, ants and rare events"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Item-based collaborative filtering recommendation algorithms"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Taking the human out of the loop: A review of Bayesian optimization"
+    }
   ]
 }

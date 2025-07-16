@@ -18,7 +18,145 @@
   "A CASE STUDY": "We compare the query-to-image matching between our framework and previous method in Figure A1. For each query, we show the top-5 matched images. The results of our framework are more relevant to user search intent. For example, for the fourth query to search math problems, previous module includes a image of English words and some blurred images in the results, while our method retrieves clearer images about math equations. In the image matched for the third query, the previous module misidentifies the remote control as a cell phone. And our framework outperform previous one in terms of image diversity taking the second query as example, which can possibly improve image ad attractiveness when displaying several similar ads. Examining the detail of queries and images, it can be found out that our framework trained with close vision-language interaction is able to capture fine-grained information from queries and retrieve corresponding images. For instance, for the first query, the images our framework match not only contain the information about 'thigh' as previous module does, but also capture the information about 'walking'.",
   "keywords_parsed": [
     "cross-modal retrieval",
-    " search advertising",
-    " image retrieval"
+    "search advertising",
+    "image retrieval"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "VLMo: Unified Vision-Language Pre-Training with Mixture-of-Modality-Experts"
+    },
+    {
+      "ref_id": "b2",
+      "title": "UNITER: UNiversal Image-TExt Representation Learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Randaugment: Practical automated data augmentation with a reduced search space"
+    },
+    {
+      "ref_id": "b4",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"
+    },
+    {
+      "ref_id": "b6",
+      "title": "MOBIUS: Towards the Next Generation of Query-Ad Matching in Baidu's Sponsored Search"
+    },
+    {
+      "ref_id": "b7",
+      "title": "FashionBERT: Text and Image Matching with Adaptive Loss for Cross-modal Retrieval"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Wukong: A 100 Million Large-scale Chinese Cross-modal Pre-training Benchmark"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Momentum Contrast for Unsupervised Visual Representation Learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision"
+    },
+    {
+      "ref_id": "b11",
+      "title": "ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Fluency-Guided Cross-Lingual Image Captioning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "AdsGNN: BehaviorGraph Augmented Relevance Modeling in Sponsored Search"
+    },
+    {
+      "ref_id": "b15",
+      "title": "BLIP: Bootstrapping language-image pre-training for unified vision-language understanding and generation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "COCO-CN for Cross-Lingual Image Tagging, Captioning, and Retrieval"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision"
+    },
+    {
+      "ref_id": "b21",
+      "title": "ERNIE-ViL 2.0: Multi-view Contrastive Learning for Image-Text Pre-training"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Representation Learning with Contrastive Predictive Coding"
+    },
+    {
+      "ref_id": "b23",
+      "title": "SimVLM: Simple Visual Language Model Pretraining with Weak Supervision"
+    },
+    {
+      "ref_id": "b24",
+      "title": "AMCAD: Adaptive Mixed-Curvature Representation based Advertisement Retrieval System"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Chinese CLIP: Contrastive Vision-Language Pretraining in Chinese"
+    },
+    {
+      "ref_id": "b26",
+      "title": "CoCa: Contrastive Captioners are Image-Text Foundation Models"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Boost CTR Prediction for New Advertisements via Modeling Visual Content"
+    },
+    {
+      "ref_id": "b28",
+      "title": "MixBERT for Image-Ad Relevance Scoring in Advertising"
+    },
+    {
+      "ref_id": "b29",
+      "title": "TIRA in Baidu Image Advertising"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Heterogeneous Attention Network for Effective and Efficient Cross-modal Retrieval"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Uni-Retriever: Towards Learning the Unified Embedding Based Retriever in Bing Sponsored Search"
+    },
+    {
+      "ref_id": "b32",
+      "title": "TextGNN: Improving Text Encoder via Graph Neural Network in Sponsored Search"
+    },
+    {
+      "ref_id": "b33",
+      "title": "AdsCVLR: Commercial Visual-Linguistic Representation Modeling in Sponsored Search"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Kaleido-bert: Vision-language pre-training on fashion domain"
+    }
   ]
 }

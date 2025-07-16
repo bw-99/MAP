@@ -21,7 +21,207 @@
   "6.3 Subnet Sampling Details": "In Section 4, we sample 100 subnets within NASRec-Full search space on Criteo benchmark, with a more balanced and efficient setting on dimension search components: the dense output dimension can choose from {32, 64, 128, 256, 512}, and the sparse output dimension can choose from {16, 32, 64}. All subnets are trained on the Criteo benchmark with a batch size of 1024 and a learning rate of 0.12. We plot the Cumulative Distribution Function (CDF) of sampled subnets on all three benchmarks in Table 8. For the top 50% architectures evaluated on NASRec-Full supernet, we report a Kendall's 𝜏 of 0.24 for the Criteo benchmark, showing a clear improvement in ranking top-performing architectures over the random search (0.0). In future work, we propose establishing a CTR benchmark for NAS to increase the statistical significance of evaluated ranking coefficients and better facilitate the research in accurately ranking different architectures. Towards Automated Model Design on Recommender Systems , , Fig. 8. CDF of log loss on CTR benchmarks. 13 dense features 26 sparse features 0 dense features 23 sparse features 3 dense features 10 sparse features KDD Cup 2012 Avazu Criteo NASRec-Full NASRec-Small 1.0 1.0 1.0 0.8 0.8 0.8 0.6 0.6 8 8 0.4 0.2 0.2 0.0 0.0 0.442 0.444 0.446 0.448 0.383 0.384 0.385 0.386 0.156 0.157 Log Loss Log Loss Log Loss",
   "7 CONCLUSION": "In this paper, we introduce a novel paradigm for fully enabling Automated Machine Learning (AutoML) in full-stack recommender model design, leveraging Weight Sharing Neural Architecture Search (WS-NAS) under diverse data modalities and architectures. We construct a large supernet that encompasses the entire architecture search space, incorporating versatile building blocks and dense connection operators to minimize human intervention in automated architecture design for recommender systems. To address the scalability and heterogeneity challenges inherent in large-scale NASRec search spaces, we propose a series of techniques to enhance training efficiency and mitigate ranking disorders. We achieve state-of-the-art performance on three prominent recommender system benchmarks, showcasing promising prospects for a full architecture search and motivating further research towards fully automated architecture fabrication with minimal human priors. Moreover, we suggest opportunities for co-designing models and inference hardware and unlock the potential to perform ad-hoc structure pruning on AutoML-crafted models to achieve improved performance.",
   "REFERENCES": "[1] Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. 2016. Layer normalization. arXiv preprint arXiv:1607.06450 (2016). [2] Rajeev Balasubramonian, Andrew B. Kahng, Naveen Muralimanohar, Ali Shafiee, and Vaishnav Srinivas. 2017. CACTI 7: New Tools for Interconnect Exploration in Innovative Off-Chip Memories. ACM Trans. Archit. Code Optim. 14, 2 (2017), 14:1-14:25. [3] Gabriel Bender, Pieter-Jan Kindermans, Barret Zoph, Vijay Vasudevan, and Quoc Le. 2018. Understanding and simplifying one-shot architecture search. In International Conference on Machine Learning . PMLR, 550-559. [4] Gabriel Bender, Hanxiao Liu, Bo Chen, Grace Chu, Shuyang Cheng, Pieter-Jan Kindermans, and Quoc V Le. 2020. Can weight sharing outperform random architecture search? an investigation with tunas. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 14323-14332. [5] Han Cai, Chuang Gan, Tianzhe Wang, Zhekai Zhang, and Song Han. 2019. Once-for-all: Train one network and specialize it for efficient deployment. arXiv preprint arXiv:1908.09791 (2019). [6] Ben Carterette and Rosie Jones. 2007. Evaluating search engines by modeling the relationship between relevance and clicks. Advances in neural information processing systems 20 (2007). [7] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior sequence transformer for e-commerce recommendation in alibaba. In Proceedings of the 1st International Workshop on Deep Learning Practice for High-Dimensional Sparse Data . 1-4. [8] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [9] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. , , Tunhou Zhang, Dehua Cheng, Yuchen He, Zhengxing Chen, Xiaoliang Dai, Liang Xiong, Yudong Liu, Feng Cheng, Yufan Cao, Feng Yan, Hai Li, Yiran Chen, and Wei Wen [10] Wei Deng, Junwei Pan, Tian Zhou, Deguang Kong, Aaron Flores, and Guang Lin. 2021. DeepLight: Deep lightweight feature interactions for accelerating CTR predictions in ad serving. In Proceedings of the 14th ACM international conference on Web search and data mining . 922-930. [11] Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, et al. 2020. An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929 (2020). [12] Jonathan Frankle and Michael Carbin. 2018. The lottery ticket hypothesis: Finding sparse, trainable neural networks. arXiv preprint arXiv:1803.03635 (2018). [13] Chen Gao, Yinfeng Li, Quanming Yao, Depeng Jin, and Yong Li. 2021. Progressive Feature Interaction Search for Deep Sparse Network. Advances in Neural Information Processing Systems 34 (2021). [14] Luyu Gao, Zhuyun Dai, and Jamie Callan. 2020. Modularized transfomer-based ranking framework. arXiv preprint arXiv:2004.13313 (2020). [15] Guibing Guo, Jie Zhang, and Neil Yorke-Smith. 2015. Trustsvd: Collaborative filtering with both the explicit and implicit influence of user trust and of item ratings. In Proceedings of the AAAI conference on artificial intelligence , Vol. 29. [16] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [17] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In Proceedings of the eighth international workshop on data mining for online advertising . 1-9. [18] Liu Ke, Udit Gupta, Carole-Jean Wu, Benjamin Youngjae Cho, Mark Hempstead, Brandon Reagen, Xuan Zhang, David Brooks, Vikas Chandra, Utku Diril, Amin Firoozshahian, Kim Hazelwood, Bill Jia, Hsien-Hsin S. Lee, Meng Li, Bert Maher, Dheevatsa Mudigere, Maxim Naumov, Martin Schatz, Mikhail Smelyanskiy, and Xiaodong Wang. 2019. RecNMP: Accelerating Personalized Recommendation with Near-Memory Processing. arXiv:1912.12953 [cs.DC] [19] Dominik Kowald, Subhash Chandra Pujari, and Elisabeth Lex. 2017. Temporal effects on hashtag reuse in twitter: A cognitive-inspired hashtag recommendation approach. In Proceedings of the 26th International Conference on World Wide Web . 1401-1410. [20] Ravi Krishna, Aravind Kalaiah, Bichen Wu, Maxim Naumov, Dheevatsa Mudigere, Misha Smelyanskiy, and Kurt Keutzer. 2021. Differentiable NAS Framework and Application to Ads CTR Prediction. arXiv preprint arXiv:2110.14812 (2021). [21] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [22] Hanwen Liang, Shifeng Zhang, Jiacheng Sun, Xingqiu He, Weiran Huang, Kechen Zhuang, and Zhenguo Li. 2019. Darts+: Improved differentiable architecture search with early stopping. arXiv preprint arXiv:1909.06035 (2019). [23] Hanxiao Liu, Karen Simonyan, and Yiming Yang. 2018. Darts: Differentiable architecture search. arXiv preprint arXiv:1806.09055 (2018). [24] Ilya Loshchilov and Frank Hutter. 2016. Sgdr: Stochastic gradient descent with warm restarts. arXiv preprint arXiv:1608.03983 (2016). [25] Joe Mellor, Jack Turner, Amos Storkey, and Elliot J Crowley. 2021. Neural architecture search without training. In International conference on machine learning . PMLR, 7588-7598. [26] Maxim Naumov, Dheevatsa Mudigere, Hao-Jun Michael Shi, Jianyu Huang, Narayanan Sundaraman, Jongsoo Park, Xiaodong Wang, Udit Gupta, Carole-Jean Wu, Alisson G Azzolini, et al. 2019. Deep learning recommendation model for personalization and recommendation systems. arXiv preprint arXiv:1906.00091 (2019). [27] Esteban Real, Alok Aggarwal, Yanping Huang, and Quoc V Le. 2019. Regularized evolution for image classifier architecture search. In Proceedings of the aaai conference on artificial intelligence , Vol. 33. 4780-4789. [28] Steffen Rendle, Zeno Gantner, Christoph Freudenthaler, and Lars Schmidt-Thieme. 2011. Fast context-aware recommendations with factorization machines. In Proceedings of the 34th international ACM SIGIR conference on Research and development in Information Retrieval . 635-644. [29] Facebook Research. 2022. fvcore. https://github.com/facebookresearch/fvcore. [30] Matthew Richardson, Ewa Dominowska, and Robert Ragno. 2007. Predicting clicks: estimating the click-through rate for new ads. In Proceedings of the 16th international conference on World Wide Web . 521-530. [31] Ying Shan, T Ryan Hoens, Jian Jiao, Haijing Wang, Dong Yu, and JC Mao. 2016. Deep crossing: Web-scale modeling without manually crafted combinatorial features. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining . 255-262. [32] David So, Quoc Le, and Chen Liang. 2019. The evolved transformer. In International Conference on Machine Learning . PMLR, 5877-5886. [33] Qingquan Song, Dehua Cheng, Hanning Zhou, Jiyan Yang, Yuandong Tian, and Xia Hu. 2020. Towards automated neural interaction discovery for click-through rate prediction. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 945-955. [34] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via self-attentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1161-1170. [35] Hanbo Sun, Zhenhua Zhu, Chenyu Wang, Xuefei Ning, Guohao Dai, Huazhong Yang, and Yu Wang. 2023. Gibbon: An Efficient Co-Exploration Framework of NN Model and Processing-In-Memory Architecture. IEEE Trans. Comput. Aided Des. Integr. Circuits Syst. 42, 11 (2023), 4075-4089. https://doi.org/10.1109/TCAD.2023.3262201 [36] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). Towards Automated Model Design on Recommender Systems , , [37] Hanrui Wang, Zhanghao Wu, Zhijian Liu, Han Cai, Ligeng Zhu, Chuang Gan, and Song Han. 2020. Hat: Hardware-aware transformers for efficient natural language processing. arXiv preprint arXiv:2005.14187 (2020). [38] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [39] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. DCN V2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the Web Conference 2021 . 1785-1797. [40] Tianzhe Wang, Kuan Wang, Han Cai, Ji Lin, Zhijian Liu, and Song Han. 2020. APQ: Joint Search for Nerwork Architecture, Pruning and Quantization Policy. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . [41] Yitu Wang, Zhenhua Zhu, Fan Chen, Mingyuan Ma, Guohao Dai, Yu Wang, Hai Li, and Yiran Chen. 2021. Rerec: In-reram acceleration with access-aware mapping for personalized recommendation. In 2021 IEEE/ACM International Conference On Computer Aided Design (ICCAD) . IEEE, 1-9. [42] Zhiqiang Wang, Qingyun She, and Junlin Zhang. 2021. MaskNet: introducing feature-wise multiplication to CTR ranking models by instance-guided mask. arXiv preprint arXiv:2102.07619 (2021). [43] Wei Wen, Hanxiao Liu, Yiran Chen, Hai Li, Gabriel Bender, and Pieter-Jan Kindermans. 2020. Neural predictor for neural architecture search. In European Conference on Computer Vision . Springer, 660-676. [44] Yachen Yan and Liubo Li. 2023. xDeepInt: a hybrid architecture for modeling the vector-wise and bit-wise feature interactions. arXiv preprint arXiv:2301.01089 (2023). [45] Xiaoxuan Yang et al. 2022. Research progress on memristor: From synapses to computing systems. IEEE Transactions on Circuits and Systems I: Regular Papers 69, 5 (2022), 1845-1857. [46] Jiahui Yu, Pengchong Jin, Hanxiao Liu, Gabriel Bender, Pieter-Jan Kindermans, Mingxing Tan, Thomas Huang, Xiaodan Song, Ruoming Pang, and Quoc Le. 2020. Bignas: Scaling up neural architecture search with big single-stage models. In European Conference on Computer Vision . Springer, 702-717. [47] Tunhou Zhang, Dehua Cheng, Yuchen He, Zhengxing Chen, Xiaoliang Dai, Liang Xiong, Feng Yan, Hai Li, Yiran Chen, and Wei Wen. 2023. NASRec: weight sharing neural architecture search for recommender systems. In Proceedings of the ACM Web Conference 2023 . 1199-1207. [48] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [49] Zhenhua Zhu, Hanbo Sun, Kaizhong Qiu, Lixue Xia, Gokul Krishnan, Guohao Dai, Dimin Niu, Xiaoming Chen, Xiaobo Sharon Hu, Yu Cao, Yuan Xie, Yu Wang, and Huazhong Yang. 2020. MNSIM 2.0: A Behavior-Level Modeling Tool for Memristor-based Neuromorphic Computing Systems. In GLSVLSI '20: Great Lakes Symposium on VLSI 2020, Virtual Event, China, September 7-9, 2020 , Tinoosh Mohsenin, Weisheng Zhao, Yiran Chen, and Onur Mutlu (Eds.). ACM, 83-88. [50] Barret Zoph, Vijay Vasudevan, Jonathon Shlens, and Quoc V Le. 2018. Learning transferable architectures for scalable image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition . 8697-8710.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Layer normalization"
+    },
+    {
+      "ref_id": "b2",
+      "title": "CACTI 7: New Tools for Interconnect Exploration in Innovative Off-Chip Memories"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Understanding and simplifying one-shot architecture search"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Can weight sharing outperform random architecture search? an investigation with tunas"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Once-for-all: Train one network and specialize it for efficient deployment"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Evaluating search engines by modeling the relationship between relevance and clicks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepLight: Deep lightweight feature interactions for accelerating CTR predictions in ad serving"
+    },
+    {
+      "ref_id": "b11",
+      "title": "An image is worth 16x16 words: Transformers for image recognition at scale"
+    },
+    {
+      "ref_id": "b12",
+      "title": "The lottery ticket hypothesis: Finding sparse, trainable neural networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Progressive Feature Interaction Search for Deep Sparse Network"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Modularized transfomer-based ranking framework"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Trustsvd: Collaborative filtering with both the explicit and implicit influence of user trust and of item ratings"
+    },
+    {
+      "ref_id": "b16",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b18",
+      "title": "RecNMP: Accelerating Personalized Recommendation with Near-Memory Processing"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Temporal effects on hashtag reuse in twitter: A cognitive-inspired hashtag recommendation approach"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Differentiable NAS Framework and Application to Ads CTR Prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Darts+: Improved differentiable architecture search with early stopping"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Darts: Differentiable architecture search"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Sgdr: Stochastic gradient descent with warm restarts"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Neural architecture search without training"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Regularized evolution for image classifier architecture search"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Fast context-aware recommendations with factorization machines"
+    },
+    {
+      "ref_id": "b29",
+      "title": "fvcore"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Deep crossing: Web-scale modeling without manually crafted combinatorial features"
+    },
+    {
+      "ref_id": "b32",
+      "title": "The evolved transformer"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Towards automated neural interaction discovery for click-through rate prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Gibbon: An Efficient Co-Exploration Framework of NN Model and Processing-In-Memory Architecture"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Hat: Hardware-aware transformers for efficient natural language processing"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b39",
+      "title": "DCN V2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b40",
+      "title": "APQ: Joint Search for Nerwork Architecture, Pruning and Quantization Policy"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Rerec: In-reram acceleration with access-aware mapping for personalized recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "MaskNet: introducing feature-wise multiplication to CTR ranking models by instance-guided mask"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Neural predictor for neural architecture search"
+    },
+    {
+      "ref_id": "b44",
+      "title": "xDeepInt: a hybrid architecture for modeling the vector-wise and bit-wise feature interactions"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Research progress on memristor: From synapses to computing systems"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Bignas: Scaling up neural architecture search with big single-stage models"
+    },
+    {
+      "ref_id": "b47",
+      "title": "NASRec: weight sharing neural architecture search for recommender systems"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b49",
+      "title": "MNSIM 2.0: A Behavior-Level Modeling Tool for Memristor-based Neuromorphic Computing Systems"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Learning transferable architectures for scalable image recognition"
+    }
   ]
 }

@@ -37,6 +37,484 @@
   "ACKNOWLEDGMENTS": "This work is supported by the National Science and Technology Council (NSTC) of Taiwan under grants 112-2628-E-006012-MY3, 110-2221-E-006-136-MY3, and 112-2634-F-002-006. This work is also supported by the Institute of Information Science (IIS), Academia Sinica, Taiwan.",
   "REFERENCES": "[1] Nora Abdelmageed and Sirko Schindler. Jentab: Matching tabular data to knowledge graphs. In SemTab@ ISWC , pages 40-49, 2020. [2] Imtiaz Ahmed, Travis Galoppo, Xia Hu, and Yu Ding. Graph regularized autoencoder and its application in unsupervised anomaly detection. IEEE Transactions on Pattern Analysis and Machine Intelligence , 44(8):4110-4124, 2022. [3] Amr Alkhatib, Sofiane Ennadir, Henrik Bostr¨ om, and Michalis Vazirgiannis. Interpretable graph neural networks for tabular data. arXiv preprint arXiv:2308.08945 , 2023. [4] Sercan ¨ O. Arik and Tomas Pfister. Tabnet: Attentive interpretable tabular learning. In Proceedings of the AAAI Conference on Artificial Intelligence , pages 6679-6687, 2021. [5] Bart Baesens, Veronique Van Vlasselaer, and Wouter Verbeke. Fraud analytics using descriptive, predictive, and social network techniques: a guide to data science for fraud detection . John Wiley & Sons, 2015. [6] Dara Bahri, Heinrich Jiang, Yi Tay, and Donald Metzler. Scarf: Self-supervised contrastive learning using random feature corruption. In International Conference on Learning Representations , 2022. [7] Aleksandar Bojchevski, Johannes Gasteiger, Bryan Perozzi, Amol Kapoor, Martin Blais, Benedek R´ ozemberczki, Michal Lukasik, and Stephan G¨ unnemann. Scaling graph neural networks with approximate pagerank. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining , KDD'20, page 2464-2473, 2020. [8] Vadim Borisov, Tobias Leemann, Kathrin Seßler, Johannes Haug, Martin Pawelczyk, and Gjergji Kasneci. Deep neural networks and tabular data: A survey. IEEE Transactions on Neural Networks and Learning Systems , 2022. [9] Alireza Bosaghzadeh and Fadi Dornaika. Incremental and dynamic graph construction with application to image classification. Expert Systems with Applications , 144:113117, 2020. [10] Derun Cai, Chenxi Sun, Moxian Song, Baofeng Zhang, Shenda Hong, and Hongyan Li. Hypergraph contrastive learning for electronic health records. In Proceedings of the 2022 SIAM International Conference on Data Mining (SDM) , pages 127-135, 2022. [11] Kaidi Cao, Jiaxuan You, and Jure Leskovec. Relational multitask learning: Modeling relations between data and tasks. In International Conference on Learning Representations , 2022. [12] Dexiong Chen, Leslie O'Bray, and Karsten Borgwardt. Structureaware transformer for graph representation learning. In Proceedings of the 39th International Conference on Machine Learning , pages 3469-3489, 2022. [13] Dongyue Chen, Ruonan Liu, Qinghua Hu, and Steven X Ding. Interaction-aware graph neural networks for fault diagnosis of complex industrial processes. IEEE Transactions on Neural Networks and Learning Systems , 2021. [14] Katrina Chen, Xiuqin Liang, Zhibin Zhang, and Zheng Ma. Gedi: A graph-based end-to-end data imputation framework. arXiv preprint arXiv:2208.06573 , 2022. [15] Pei Chen, Soumajyoti Sarkar, Leonard Lausen, Balasubramaniam Srinivasan, Sheng Zha, Ruihong Huang, and George Karypis. Hytrel: Hypergraph-enhanced tabular data representation learning. Advances in Neural Information Processing Systems , 2023. [16] Yu Chen, Lingfei Wu, and Mohammed Zaki. Iterative deep graph learning for graph neural networks: Better and robust node embeddings. In Advances in Neural Information Processing Systems , pages 19314-19326, 2020. [17] Dawei Cheng, Fangzhou Yang, Sheng Xiang, and Jin Liu. Financial time series forecasting with multi-modality graph neural network. Pattern Recognition , 121:108218, 2022. [18] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. Wide & deep learning for recommender systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems , DLRS 2016, pages 7-10, 2016. [19] Rui Cheng and Qing Li. Subsequence-based graph routing network for capturing multiple risk propagation processes. In Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI) , pages 3810-3816, 2022. 20 via historical embeddings. In International Conference on Machine Learning , pages 3294-3304, 2021. [39] Luca Franceschi, Mathias Niepert, Massimiliano Pontil, and Xiao He. Learning discrete structures for graph neural networks. In International conference on machine learning , pages 1972-1982, 2019. [40] Chen Gao, Yu Zheng, Nian Li, Yinfeng Li, Yingrong Qin, Jinghua Piao, Yuhan Quan, Jianxin Chang, Depeng Jin, Xiangnan He, and Yong Li. A survey of graph neural networks for recommender systems: Challenges, methods, and directions. ACM Trans. Recomm. Syst. , 1(1), mar 2023. [41] Hongyang Gao and Shuiwang Ji. Graph u-nets. In Proceedings of the 36th International Conference on Machine Learning , pages 20832092, 2019. [42] Jianliang Gao, Tengfei Lyu, Fan Xiong, Jianxin Wang, Weimao Ke, and Zhao Li. Predicting the survival of cancer patients with multimodal graph neural network. IEEE/ACM Transactions on Computational Biology and Bioinformatics , 19(2):699-709, 2022. [43] Y. Gao, Y. Feng, S. Ji, and R. Ji. Hgnn+: General hypergraph neural networks. IEEE Transactions on Pattern Analysis & Machine Intelligence , 45(03):3181-3199, 2023. [44] Adam Goodge, Bryan Hooi, See Kiong Ng, and Wee Siong Ng. Lunar: Unifying local outlier detection methods via graph neural networks. In AAAI Conference on Artificial Intelligence (AAAI) , 2022. [45] Shivapratap Gopakumar, Tu Dinh Nguyen, Truyen Tran, Dinh Phung, and Svetha Venkatesh. Stabilizing sparse cox model using statistic and semantic structures in electronic medical records. In Advances in Knowledge Discovery and Data Mining: 19th Pacific-Asia Conference, PAKDD 2015, Ho Chi Minh City, Vietnam, May 19-22, 2015, Proceedings, Part II 19 , pages 331-343, 2015. [46] Yury Gorishniy, Ivan Rubachev, Valentin Khrulkov, and Artem Babenko. Revisiting deep learning models for tabular data. In Advances in Neural Information Processing Systems , pages 1893218943, 2021. [47] Leo Grinsztajn, Edouard Oyallon, and Gael Varoquaux. Why do tree-based models still outperform deep learning on typical tabular data? In Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track , 2022. [48] Yifan Gu, Xuebing Yang, Lei Tian, Hongyu Yang, Jicheng Lv, Chao Yang, Jinwei Wang, Jianing Xi, Guilan Kong, and Wensheng Zhang. Structure-aware siamese graph neural networks for encounter-level patient similarity learning. Journal of Biomedical Informatics , 127:104027, 2022. [49] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. Deepfm: A factorization-machine based neural network for ctr prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence , IJCAI'17, pages 17251731, 2017. [50] Wei Guo, Rong Su, Renhao Tan, Huifeng Guo, Yingxue Zhang, Zhirong Liu, Ruiming Tang, and Xiuqiang He. Dual graph enhanced embedding neural network for ctr prediction. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining , KDD '21, pages 496-504, 2021. [51] Xiawei Guo, Yuhan Quan, Huan Zhao, Quanming Yao, Yong Li, and Weiwei Tu. Tabgnn: Multiplex graph neural network for tabular data prediction. The 3rd Workshop on Deep Learning Practice for High-Dimensional Sparse Data with KDD (DLP-KDD) , 2021. [52] William L Hamilton, Rex Ying, and Jure Leskovec. Inductive representation learning on large graphs. In Proceedings of the 31st International Conference on Neural Information Processing Systems , pages 1025-1035, 2017. [53] Qianlong He, Feng Zhou, Linyan Gu, and Zhibin Yuan. A novel graph-based feature interaction model for click-through rate prediction. Information Sciences , 649:119615, 2023. [54] Bhagya Hettige, Yuan-Fang Li, Weiqing Wang, Suong Le, and Wray L. Buntine. Medgraph: Structural and temporal representation learning of electronic medical records. In The 24th European Conference on Artificial Intelligence (ECAI) , pages 1810-1817, 2020. [55] Cheng Hsu and Cheng-Te Li. Retagnn: Relational temporal attentive graph neural networks for holistic sequential recommendation. In Proceedings of the Web Conference 2021 , WWW'21, pages 2968-2979, 2021. [56] Yi-Ling Hsu, Yu-Che Tsai, and Cheng-Te Li. Fingat: Financial graph attention networks for recommending top-k profitable stocks. IEEE Transactions on Knowledge and Data Engineering , 2021. [57] Binbin Hu, Zhiqiang Zhang, Jun Zhou, Jingli Fang, Quanhui Jia, Yanming Fang, Quan Yu, and Yuan Qi. Loan default analysis 21 [77] Thomas N. Kipf and Max Welling. Semi-supervised classification with graph convolutional networks. In International Conference on Learning Representations , 2017. [78] Boshko Koloski, Blaˇ z ˇ Skrlj, Senja Pollak, and Nada Lavraˇ c. Latent graph powered semi-supervised learning on biomedical tabular data. arXiv preprint arXiv:2309.15757 , 2023. [79] Evgeny Krivosheev, Mattia Atzeni, Katsiaryna Mirylenka, Paolo Scotton, and Fabio Casati. Siamese graph neural networks for data integration. arXiv preprint arXiv:2001.06543 , 2020. [80] Kuan Li, Yang Liu, Xiang Ao, and Qing He. Revisiting graph adversarial attack and defense from a data distribution perspective. In The Eleventh International Conference on Learning Representations , 2023. [81] Qimai Li, Zhichao Han, and Xiao-Ming Wu. Deeper insights into graph convolutional networks for semi-supervised learning. In Proceedings of the AAAI conference on artificial intelligence , volume 32, 2018. [82] Yujia Li, Daniel Tarlow, Marc Brockschmidt, and Richard Zemel. Gated graph sequence neural networks. In International Conference on Learning Representations , 2016. [83] Zekun Li, Zeyu Cui, Shu Wu, Xiaoyu Zhang, and Liang Wang. Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management , CIKM '19, pages 539-548, 2019. [84] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. Xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining , KDD '18, pages 1754-1763, 2018. [85] Jay Chiehen Liao and Cheng-Te Li. Tabgsl: Graph structure learning for tabular data prediction. arXiv preprint arXiv:2305.15843 , 2023. [86] Can Liu, Li Sun, Xiang Ao, Jinghua Feng, Qing He, and Hao Yang. Intention-aware heterogeneous graph attention networks for fraud transactions detection. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining , KDD '21, page 3280-3288, 2021. [87] Chaoqiang Liu, Haifeng Liu, Long Zheng, Yu Huang, Xiangyu Ye, Xiaofei Liao, and Hai Jin. Fnng: A high-performance fpgabased accelerator for k-nearest neighbor graph construction. In Proceedings of the 2023 ACM/SIGDA International Symposium on Field Programmable Gate Arrays , FPGA '23, pages 67-77, 2023. [88] Weifeng Liu, Puskal P Pokharel, and Jose C Principe. Correntropy: Properties and applications in non-gaussian signal processing. IEEE Transactions on signal processing , 55(11):5286-5298, 2007. [89] Yang Liu, Xiang Ao, Zidi Qin, Jianfeng Chi, Jinghua Feng, Hao Yang, and Qing He. Pick and choose: A gnn-based imbalanced learning approach for fraud detection. In Proceedings of the Web Conference 2021 , WWW'21, pages 3168-3177, 2021. [90] Yixin Liu, Ming Jin, Shirui Pan, Chuan Zhou, Yu Zheng, Feng Xia, and Philip S. Yu. Graph self-supervised learning: A survey. IEEE Transactions on Knowledge and Data Engineering , 35(6):5879-5900, 2023. [91] Yixin Liu, Yu Zheng, Daokun Zhang, Hongxu Chen, Hao Peng, and Shirui Pan. Towards unsupervised deep graph structure learning. In Proceedings of the ACM Web Conference 2022 , WWW '22, pages 1392-1403, 2022. [92] Yuchen Liu, Chuanzhen Li, Han Xiao, and Juanjuan Cai. Gcn-int: A click-through rate prediction model based on graph convolutional network interaction. IEEE Access , 9:140022-140030, 2021. [93] Zheng Liu, Xiaohan Li, Hao Peng, Lifang He, and Philip S. Yu. Heterogeneous similarity graph neural network on electronic health records. In 2020 IEEE International Conference on Big Data (Big Data) , pages 1196-1205, 2020. [94] Jianyu Long, Rongxin Zhang, Zhe Yang, Yunwei Huang, Yu Liu, and Chuan Li. Self-adaptation graph attention network via metalearning for machinery fault diagnosis with few labeled data. IEEE Transactions on Instrumentation and Measurement , 71:1-11, 2022. [95] Haohui Lu and Shahadat Uddin. A weighted patient networkbased framework for predicting chronic diseases using graph neural networks. Scientific reports , 11(1):1-12, 2021. [96] Katja Luck, Dae-Kyum Kim, Luke Lambourne, Kerstin Spirohn, Bridget E Begg, Wenting Bian, Ruth Brignall, Tiziana Cafarelli, 22 Francisco J Campos-Laborie, Benoit Charloteaux, et al. A reference map of the human binary protein interactome. Nature , 580(7803):402-408, 2020. [97] Handong Ma, Changsheng Li, Xinchu Shi, Ye Yuan, and Guoren Wang. Deep unsupervised active learning on learnable graphs. IEEE Transactions on Neural Networks and Learning Systems , pages 1-7, 2022. [98] Xiaoxiao Ma, Jia Wu, Shan Xue, Jian Yang, Chuan Zhou, Quan Z. Sheng, Hui Xiong, and Leman Akoglu. A comprehensive survey on graph anomaly detection with deep learning. IEEE Transactions on Knowledge and Data Engineering , 35(12):12012-12038, 2023. [99] Yao Ma, Xiaorui Liu, Neil Shah, and Jiliang Tang. Is homophily a necessity for graph neural networks? In International Conference on Learning Representations , 2022. [100] Qi Mao, Li Wang, Steve Goodison, and Yijun Sun. Dimensionality reduction via graph structure learning. In Proceedings of the 21th ACMSIGKDD International Conference on Knowledge Discovery and Data Mining , KDD '15, pages 765-774, 2015. [101] Andrei Margeloiu, Nikola Simidjievski, Pietro Lio, and Mateja Jamnik. GCondnet: A novel method for improving neural networks on small high-dimensional tabular data. In NeurIPS 2023 Second Table Representation Learning Workshop , 2023. [102] Miller McPherson, Lynn Smith-Lovin, and James M Cook. Birds of a feather: Homophily in social networks. Annual review of sociology , 27(1):415-444, 2001. [103] Jaehyun Nam, Jihoon Tack, Kyungmin Lee, Hankook Lee, and Jinwoo Shin. STUNT: Few-shot tabular learning with selfgenerated tasks from unlabeled tables. In The Eleventh International Conference on Learning Representations , 2023. [104] Mark Newman. Networks . Oxford university press, 2018. [105] Wentao Ouyang, Xiuwu Zhang, Shukui Ren, Li Li, Kun Zhang, Jinmei Luo, Zhaojie Liu, and Yanlong Du. Learning graph meta embeddings for cold-start ads in click-through rate prediction. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval , SIGIR '21, pages 1157-1166, 2021. [106] Hao Peng, Jianxin Li, Zheng Wang, Renyu Yang, Mingsheng Liu, Mingming Zhang, Philip S. Yu, and Lifang He. Lifelong property price prediction: A case study for the toronto real estate market. IEEE Transactions on Knowledge and Data Engineering , 35(3):27652780, 2023. [107] Hao Peng, Ruitong Zhang, Yingtong Dou, Renyu Yang, Jingyi Zhang, and Philip S. Yu. Reinforced neighborhood selection guided multi-relational graph neural networks. ACM Trans. Inf. Syst. , 40, 2021. [108] Jiarui Qin, Weinan Zhang, Rong Su, Zhirong Liu, Weiwen Liu, Ruiming Tang, Xiuqiang He, and Yong Yu. Retrieval & interaction machine for tabular data prediction. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining , KDD '21, pages 1379-1389, 2021. [109] Ladislav Rampasek, Mikhail Galkin, Vijay Prakash Dwivedi, Anh Tuan Luu, Guy Wolf, and Dominique Beaini. Recipe for a general, powerful, scalable graph transformer. In Advances in Neural Information Processing Systems , 2022. [110] Susie Xi Rao, Shuai Zhang, Zhichao Han, Zitao Zhang, Wei Min, Zhiyao Chen, Yinan Shan, Yang Zhao, and Ce Zhang. Xfraud: Explainable fraud transaction detection. Proc. VLDB Endow. , 15(3):427-436, 2021. [111] Steffen Rendle. Factorization machines. In 2010 IEEE International conference on data mining , pages 995-1000. IEEE, 2010. [112] Emma Rocheteau, Catherine Tong, Petar Velickovic, Nicholas D. Lane, and Pietro Li` o. Predicting patient outcomes with graph representation learning. International Workshop on Deep Learning on Graphs: Method and Applications (DLG-AAAI) , 2021. [113] Ryan A Rossi, Di Jin, Sungchul Kim, Nesreen K Ahmed, Danai Koutra, and John Boaz Lee. On proximity and structural rolebased embeddings in networks: Misconceptions, techniques, and applications. ACM Transactions on Knowledge Discovery from Data (TKDD) , 14(5):1-37, 2020. [114] Camilo Ruiz, Hongyu Ren, Kexin Huang, and Jure Leskovec. High dimensional, tabular deep learning with an auxiliary knowledge graph. In Thirty-seventh Conference on Neural Information Processing Systems . [115] Michael Schlichtkrull, Thomas N. Kipf, Peter Bloem, Rianne vanden Berg, Ivan Titov, and Max Welling. Modeling relational data with graph convolutional networks. In The Semantic Web , 2018. [116] Peter Shaw, Jakob Uszkoreit, and Ashish Vaswani. Self-attention with relative position representations. In Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics , pages 464-468, 2018. [117] Fengzhao Shi, Yanan Cao, Yanmin Shang, Yuchen Zhou, Chuan Zhou, and Jia Wu. H2-fdetector: A gnn-based fraud detector with homophilic and heterophilic connections. In Proceedings of the ACM Web Conference 2022 , WWW'22, pages 1486-1494, 2022. [118] Karandeep Singh, Yu-Che Tsai, Cheng-Te Li, Meeyoug Cha, and Shou-De Lin. Graphfc: Customs fraud detection with label scarcity. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management , CIKM '23, 2023. [119] Indro Spinelli, Simone Scardapane, and Aurelio Uncini. Missing data imputation with adversarially-trained graph convolutional networks. Neural Networks , 129:249-260, 2020. [120] Chenhao Su, Sheng Gao, and Si Li. Gate: Graph-attention augmented temporal neural network for medication recommendation. IEEE Access , 8:125447-125458, 2020. [121] Zhenchao Sun, Hongzhi Yin, Hongxu Chen, Tong Chen, Lizhen Cui, and Fan Yang. Disease prediction via graph neural networks. IEEE Journal of Biomedical and Health Informatics , 25(3):818-826, 2021. [122] Ryutaro Tanno, Kai Arulkumaran, Daniel Alexander, Antonio Criminisi, and Aditya Nori. Adaptive neural trees. In Proceedings of the 36th International Conference on Machine Learning , pages 6166-6175, 2019. [123] Lev Telyatnikov and Simone Scardapane. Egg-gae: scalable graph neural networks for tabular data imputation. In Proceedings of The 26th International Conference on Artificial Intelligence and Statistics , pages 2661-2676, 2023. [124] Josephine Thomas, Alice Moallemy-Oureh, Silvia BeddarWiesing, and Clara Holzh¨ uter. Graph neural networks designed for different graph types: A survey. Transactions on Machine Learning Research , 2023. [125] Talip Ucar, Ehsan Hajiramezanali, and Lindsay Edwards. Subtab: Subsetting features of tabular data for self-supervised representation learning. In Advances in Neural Information Processing Systems , 2021. [126] Petar Veliˇ ckovi´ c, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Li` o, and Yoshua Bengio. Graph attention networks. In International Conference on Learning Representations , 2018. [127] Mario Villaiz´ an-Vallelado, Matteo Salvatori, Bel´ en Carro Martinez, and Antonio Javier Sanchez Esguevillas. Graph neural network contextual embedding for deep learning on tabular data. arXiv preprint arXiv:2303.06455 , 2023. [128] Liane Vogel, Benjamin Hilprecht, and Carsten Binnig. Towards foundation models for relational databases [vision paper]. In NeurIPS 2022 First Table Representation Workshop , 2022. [129] Alvin Wan, Lisa Dunlap, Daniel Ho, Jihan Yin, Scott Lee, Suzanne Petryk, Sarah Adel Bargal, and Joseph E. Gonzalez. { NBDT } : Neural-backed decision tree. In International Conference on Learning Representations , 2021. [130] Li Wang, Peipei Li, Kai Xiong, Jiashu Zhao, and Rui Lin. Modeling heterogeneous graph network on fraud detection: A community-based framework with attention mechanism. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management , pages 1959-1968, 2021. [131] Li Wang and Ren-cang Li. Learning low-dimensional latent graph structures: A density estimation approach. IEEE Transactions on Neural Networks and Learning Systems , 31(4):1098-1112, 2019. [132] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 , ADKDD'17, 2017. [133] Shoujin Wang, Liang Hu, Yan Wang, Xiangnan He, Quan Z. Sheng, Mehmet A. Orgun, Longbing Cao, Francesco Ricci, and Philip S. Yu. Graph learning based recommender systems: A review. In Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence, IJCAI-21 , pages 4644-4652. International Joint Conferences on Artificial Intelligence Organization, 2021. [134] Xiao Wang, Houye Ji, Chuan Shi, Bai Wang, Yanfang Ye, Peng Cui, and Philip S Yu. Heterogeneous graph attention network. In The World Wide Web Conference , WWW '19, pages 2022-2032, 2019. [135] Xin Wang, Peng Yang, Shaopeng Chen, Lin Liu, Lian Zhao, Jiacheng Guo, Mingming Sun, and Ping Li. Efficient learning 23 tional Joint Conferences on Artificial Intelligence , pages 4661-4667, 2020. [154] Rex Ying, Jiaxuan You, Christopher Morris, Xiang Ren, William L. Hamilton, and Jure Leskovec. Hierarchical graph representation learning with differentiable pooling. In Proceedings of the 32nd International Conference on Neural Information Processing Systems , NIPS'18, pages 4805-4815, 2018. [155] Zhitao Ying, Dylan Bourgeois, Jiaxuan You, Marinka Zitnik, and Jure Leskovec. Gnnexplainer: Generating explanations for graph neural networks. Advances in neural information processing systems , 32, 2019. [156] Jinsung Yoon, Yao Zhang, James Jordon, and Mihaela van der Schaar. Vime: Extending the success of self- and semi-supervised learning to tabular domain. In Advances in Neural Information Processing Systems , pages 11033-11043, 2020. [157] Jiaxuan You, Xiaobai Ma, Yi Ding, Mykel J Kochenderfer, and Jure Leskovec. Handling missing data with graph representation learning. In Advances in Neural Information Processing Systems , volume 33, pages 19075-19087, 2020. [158] Haiyang Yu, Limei Wang, Bokun Wang, Meng Liu, Tianbao Yang, and Shuiwang Ji. Graphfm: Improving large-scale gnn training via feature momentum. In International Conference on Machine Learning , pages 25684-25701, 2022. [159] Hongyuan Yu, Ting Li, Weichen Yu, Jianguo Li, Yan Huang, Liang Wang, and Alex Liu. Regularized graph structure learning with semantic knowledge for multi-variates time-series forecasting. In Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence, IJCAI-22 , pages 2362-2368, 2022. [160] Manzil Zaheer, Satwik Kottur, Siamak Ravanbakhsh, Barnabas Poczos, Russ R Salakhutdinov, and Alexander J Smola. Deep sets. Advances in neural information processing systems , 30, 2017. [161] Hanqing Zeng, Hongkuan Zhou, Ajitesh Srivastava, Rajgopal Kannan, and Viktor Prasanna. Graphsaint: Graph sampling based inductive learning method. In International Conference on Learning Representations , 2020. [162] Panyu Zhai, Yanwu Yang, and Chunjie Zhang. Causality-based ctr prediction using graph neural networks. Information Processing & Management , 60(1):103137, 2023. [163] Han Zhang, Quan Gan, David Wipf, and Weinan Zhang. Gfs: Graph-based feature synthesis for prediction over relational databases. arXiv preprint arXiv:2312.02037 , 2023. [164] Jian Zhang, Fan Yang, Kaibiao Lin, and Yongxuan Lai. Hierarchical multi-modal fusion on dynamic heterogeneous graph for health insurance fraud detection. In 2022 IEEE International Conference on Multimedia and Expo (ICME) , pages 1-6, 2022. [165] Shuai Zhang, Meng Wang, Pin-Yu Chen, Sijia Liu, Songtao Lu, and Miao Liu. Joint edge-model sparse learning is provably efficient for graph neural networks. In The Eleventh International Conference on Learning Representations , 2023. [166] Weinan Zhang, Jiarui Qin, Wei Guo, Ruiming Tang, and Xiuqiang He. Deep learning for click-through rate estimation. In Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence, IJCAI-21 , pages 4695-4703, 2021. [167] Wentao Zhang, Mingyu Yang, Zeang Sheng, Yang Li, Wen Ouyang, Yangyu Tao, Zhi Yang, and Bin Cui. Node dependent local smoothing for scalable graph learning. Advances in Neural Information Processing Systems , 34:20321-20332, 2021. [168] Ziwei Zhang, Peng Cui, and Wenwu Zhu. Deep learning on graphs: A survey. IEEE Trans. on Knowl. and Data Eng. , 34(1):249270, jan 2022. [169] Lingxiao Zhao and Leman Akoglu. Pairnorm: Tackling oversmoothing in gnns. In International Conference on Learning Representations , 2020. [170] Qinghua Zheng, Zhen Peng, Zhuohang Dang, Linchao Zhu, Ziqi Liu, Zhiqiang Zhang, and Jun Zhou. Deep tabular data modeling with dual-route structure-adaptive graph networks. IEEE Transactions on Knowledge and Data Engineering , 35(9):97159727, 2023. [171] Yu Zheng, Yongxin Yang, and Bowei Chen. Incorporating prior financial domain knowledge into neural networks for implied volatility surface prediction. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining , KDD '21, pages 3968-3975, 2021. [172] Jie Zhou, Ganqu Cui, Shengding Hu, Zhengyan Zhang, Cheng Yang, Zhiyuan Liu, Lifeng Wang, Changcheng Li, and Maosong Sun. Graph neural networks: A review of methods and applications. AI open , 1:57-81, 2020. 24 [173] Kaixiong Zhou, Zirui Liu, Rui Chen, Li Li, and Xia Hu SooHyun Choi. Table2graph: Transforming tabular data to unified weighted graph. In Proceedings of the 31st International Joint Conference on Artificial Intelligence , IJCAI '22, 2022. [174] Yanqiao Zhu, Weizhi Xu, Jinghao Zhang, Yuanqi Du, Jieyu Zhang, Qiang Liu, Carl Yang, and Shu Wu. A survey on graph structure learning: Progress and opportunities. In The 31st International Joint Conference on Artificial Intelligence (IJCAI) , 2022.",
   "keywords_parsed": [
-    "None"
+    "graph neural networks",
+    "tabular data learning",
+    "graph representation learning",
+    "graph structure learning",
+    "survey paper"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Jentab: Matching tabular data to knowledge graphs"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Graph regularized autoencoder and its application in unsupervised anomaly detection"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Interpretable graph neural networks for tabular data"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Tabnet: Attentive interpretable tabular learning"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fraud analytics using descriptive, predictive, and social network techniques: a guide to data science for fraud detection"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Scarf: Self-supervised contrastive learning using random feature corruption"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Scaling graph neural networks with approximate pagerank"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep neural networks and tabular data: A survey"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Incremental and dynamic graph construction with application to image classification"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Hypergraph contrastive learning for electronic health records"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Relational multitask learning: Modeling relations between data and tasks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Structureaware transformer for graph representation learning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Interaction-aware graph neural networks for fault diagnosis of complex industrial processes"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Gedi: A graph-based end-to-end data imputation framework"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Hytrel: Hypergraph-enhanced tabular data representation learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Iterative deep graph learning for graph neural networks: Better and robust node embeddings"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Financial time series forecasting with multi-modality graph neural network"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Subsequence-based graph routing network for capturing multiple risk propagation processes"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Learning discrete structures for graph neural networks"
+    },
+    {
+      "ref_id": "b40",
+      "title": "A survey of graph neural networks for recommender systems: Challenges, methods, and directions"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Graph u-nets"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Predicting the survival of cancer patients with multimodal graph neural network"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Hgnn+: General hypergraph neural networks"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Lunar: Unifying local outlier detection methods via graph neural networks"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Stabilizing sparse cox model using statistic and semantic structures in electronic medical records"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Revisiting deep learning models for tabular data"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Why do tree-based models still outperform deep learning on typical tabular data?"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Structure-aware siamese graph neural networks for encounter-level patient similarity learning"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Deepfm: A factorization-machine based neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Dual graph enhanced embedding neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Tabgnn: Multiplex graph neural network for tabular data prediction"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b53",
+      "title": "A novel graph-based feature interaction model for click-through rate prediction"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Medgraph: Structural and temporal representation learning of electronic medical records"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Retagnn: Relational temporal attentive graph neural networks for holistic sequential recommendation"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Fingat: Financial graph attention networks for recommending top-k profitable stocks"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Loan default analysis"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Latent graph powered semi-supervised learning on biomedical tabular data"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Siamese graph neural networks for data integration"
+    },
+    {
+      "ref_id": "b80",
+      "title": "Revisiting graph adversarial attack and defense from a data distribution perspective"
+    },
+    {
+      "ref_id": "b81",
+      "title": "Deeper insights into graph convolutional networks for semi-supervised learning"
+    },
+    {
+      "ref_id": "b82",
+      "title": "Gated graph sequence neural networks"
+    },
+    {
+      "ref_id": "b83",
+      "title": "Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction"
+    },
+    {
+      "ref_id": "b84",
+      "title": "Xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b85",
+      "title": "Tabgsl: Graph structure learning for tabular data prediction"
+    },
+    {
+      "ref_id": "b86",
+      "title": "Intention-aware heterogeneous graph attention networks for fraud transactions detection"
+    },
+    {
+      "ref_id": "b87",
+      "title": "Fnng: A high-performance fpgabased accelerator for k-nearest neighbor graph construction"
+    },
+    {
+      "ref_id": "b88",
+      "title": "Correntropy: Properties and applications in non-gaussian signal processing"
+    },
+    {
+      "ref_id": "b89",
+      "title": "Pick and choose: A gnn-based imbalanced learning approach for fraud detection"
+    },
+    {
+      "ref_id": "b90",
+      "title": "Graph self-supervised learning: A survey"
+    },
+    {
+      "ref_id": "b91",
+      "title": "Towards unsupervised deep graph structure learning"
+    },
+    {
+      "ref_id": "b92",
+      "title": "Gcn-int: A click-through rate prediction model based on graph convolutional network interaction"
+    },
+    {
+      "ref_id": "b93",
+      "title": "Heterogeneous similarity graph neural network on electronic health records"
+    },
+    {
+      "ref_id": "b94",
+      "title": "Self-adaptation graph attention network via metalearning for machinery fault diagnosis with few labeled data"
+    },
+    {
+      "ref_id": "b95",
+      "title": "A weighted patient networkbased framework for predicting chronic diseases using graph neural networks"
+    },
+    {
+      "ref_id": "b96",
+      "title": "A reference map of the human binary protein interactome"
+    },
+    {
+      "ref_id": "b97",
+      "title": "Deep unsupervised active learning on learnable graphs"
+    },
+    {
+      "ref_id": "b98",
+      "title": "A comprehensive survey on graph anomaly detection with deep learning"
+    },
+    {
+      "ref_id": "b99",
+      "title": "Is homophily a necessity for graph neural networks?"
+    },
+    {
+      "ref_id": "b100",
+      "title": "Dimensionality reduction via graph structure learning"
+    },
+    {
+      "ref_id": "b101",
+      "title": "GCondnet: A novel method for improving neural networks on small high-dimensional tabular data"
+    },
+    {
+      "ref_id": "b102",
+      "title": "Birds of a feather: Homophily in social networks"
+    },
+    {
+      "ref_id": "b103",
+      "title": "STUNT: Few-shot tabular learning with selfgenerated tasks from unlabeled tables"
+    },
+    {
+      "ref_id": "b104",
+      "title": "Networks"
+    },
+    {
+      "ref_id": "b105",
+      "title": "Learning graph meta embeddings for cold-start ads in click-through rate prediction"
+    },
+    {
+      "ref_id": "b106",
+      "title": "Lifelong property price prediction: A case study for the toronto real estate market"
+    },
+    {
+      "ref_id": "b107",
+      "title": "Reinforced neighborhood selection guided multi-relational graph neural networks"
+    },
+    {
+      "ref_id": "b108",
+      "title": "Retrieval & interaction machine for tabular data prediction"
+    },
+    {
+      "ref_id": "b109",
+      "title": "Recipe for a general, powerful, scalable graph transformer"
+    },
+    {
+      "ref_id": "b110",
+      "title": "Xfraud: Explainable fraud transaction detection"
+    },
+    {
+      "ref_id": "b111",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b112",
+      "title": "Predicting patient outcomes with graph representation learning"
+    },
+    {
+      "ref_id": "b113",
+      "title": "On proximity and structural rolebased embeddings in networks: Misconceptions, techniques, and applications"
+    },
+    {
+      "ref_id": "b114",
+      "title": "High dimensional, tabular deep learning with an auxiliary knowledge graph"
+    },
+    {
+      "ref_id": "b115",
+      "title": "Modeling relational data with graph convolutional networks"
+    },
+    {
+      "ref_id": "b116",
+      "title": "Self-attention with relative position representations"
+    },
+    {
+      "ref_id": "b117",
+      "title": "H2-fdetector: A gnn-based fraud detector with homophilic and heterophilic connections"
+    },
+    {
+      "ref_id": "b118",
+      "title": "Graphfc: Customs fraud detection with label scarcity"
+    },
+    {
+      "ref_id": "b119",
+      "title": "Missing data imputation with adversarially-trained graph convolutional networks"
+    },
+    {
+      "ref_id": "b120",
+      "title": "Gate: Graph-attention augmented temporal neural network for medication recommendation"
+    },
+    {
+      "ref_id": "b121",
+      "title": "Disease prediction via graph neural networks"
+    },
+    {
+      "ref_id": "b122",
+      "title": "Adaptive neural trees"
+    },
+    {
+      "ref_id": "b123",
+      "title": "Egg-gae: scalable graph neural networks for tabular data imputation"
+    },
+    {
+      "ref_id": "b124",
+      "title": "Graph neural networks designed for different graph types: A survey"
+    },
+    {
+      "ref_id": "b125",
+      "title": "Subtab: Subsetting features of tabular data for self-supervised representation learning"
+    },
+    {
+      "ref_id": "b126",
+      "title": "Graph attention networks"
+    },
+    {
+      "ref_id": "b127",
+      "title": "Graph neural network contextual embedding for deep learning on tabular data"
+    },
+    {
+      "ref_id": "b128",
+      "title": "Towards foundation models for relational databases [vision paper]"
+    },
+    {
+      "ref_id": "b129",
+      "title": "NBDT : Neural-backed decision tree"
+    },
+    {
+      "ref_id": "b130",
+      "title": "Modeling heterogeneous graph network on fraud detection: A community-based framework with attention mechanism"
+    },
+    {
+      "ref_id": "b131",
+      "title": "Learning low-dimensional latent graph structures: A density estimation approach"
+    },
+    {
+      "ref_id": "b132",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b133",
+      "title": "Graph learning based recommender systems: A review"
+    },
+    {
+      "ref_id": "b134",
+      "title": "Heterogeneous graph attention network"
+    },
+    {
+      "ref_id": "b135",
+      "title": "Efficient learning"
+    },
+    {
+      "ref_id": "b154",
+      "title": "Hierarchical graph representation learning with differentiable pooling"
+    },
+    {
+      "ref_id": "b155",
+      "title": "Gnnexplainer: Generating explanations for graph neural networks"
+    },
+    {
+      "ref_id": "b156",
+      "title": "Vime: Extending the success of self- and semi-supervised learning to tabular domain"
+    },
+    {
+      "ref_id": "b157",
+      "title": "Handling missing data with graph representation learning"
+    },
+    {
+      "ref_id": "b158",
+      "title": "Graphfm: Improving large-scale gnn training via feature momentum"
+    },
+    {
+      "ref_id": "b159",
+      "title": "Regularized graph structure learning with semantic knowledge for multi-variates time-series forecasting"
+    },
+    {
+      "ref_id": "b160",
+      "title": "Deep sets"
+    },
+    {
+      "ref_id": "b161",
+      "title": "Graphsaint: Graph sampling based inductive learning method"
+    },
+    {
+      "ref_id": "b162",
+      "title": "Causality-based ctr prediction using graph neural networks"
+    },
+    {
+      "ref_id": "b163",
+      "title": "Gfs: Graph-based feature synthesis for prediction over relational databases"
+    },
+    {
+      "ref_id": "b164",
+      "title": "Hierarchical multi-modal fusion on dynamic heterogeneous graph for health insurance fraud detection"
+    },
+    {
+      "ref_id": "b165",
+      "title": "Joint edge-model sparse learning is provably efficient for graph neural networks"
+    },
+    {
+      "ref_id": "b166",
+      "title": "Deep learning for click-through rate estimation"
+    },
+    {
+      "ref_id": "b167",
+      "title": "Node dependent local smoothing for scalable graph learning"
+    },
+    {
+      "ref_id": "b168",
+      "title": "Deep learning on graphs: A survey"
+    },
+    {
+      "ref_id": "b169",
+      "title": "Pairnorm: Tackling oversmoothing in gnns"
+    },
+    {
+      "ref_id": "b170",
+      "title": "Deep tabular data modeling with dual-route structure-adaptive graph networks"
+    },
+    {
+      "ref_id": "b171",
+      "title": "Incorporating prior financial domain knowledge into neural networks for implied volatility surface prediction"
+    },
+    {
+      "ref_id": "b172",
+      "title": "Graph neural networks: A review of methods and applications"
+    },
+    {
+      "ref_id": "b173",
+      "title": "Table2graph: Transforming tabular data to unified weighted graph"
+    },
+    {
+      "ref_id": "b174",
+      "title": "A survey on graph structure learning: Progress and opportunities"
+    }
   ]
 }

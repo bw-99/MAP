@@ -25,7 +25,101 @@
   "REFERENCES": "[1] Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel M. Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei. 2020. Language Models Are Few-Shot Learners. In Proceedings of the 34th International Conference on Neural Information Processing Systems (Vancouver, BC, Canada) (NIPS'20) . Curran Associates Inc., Red Hook, NY, USA, Article 159, 25 pages. [2] Ting Chen, Liangjie Hong, Yue Shi, and Yizhou Sun. 2017. Joint text embedding for personalized content-based recommendation. arXiv preprint arXiv:1706.01084 (2017). [3] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [4] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [5] Zhengxiao Du, Yujie Qian, Xiao Liu, Ming Ding, Jiezhong Qiu, Zhilin Yang, and Jie Tang. 2022. GLM: General Language Model Pretraining with Autoregressive Blank Infilling. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . 320-335. [6] Simon Haykin. 1998. Neural Networks: A Comprehensive Foundation (2nd ed.). Prentice Hall PTR, USA. [7] Edward J Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2022. LoRA: Low-Rank Adaptation of Large Language Models. In International Conference on Learning Representations . https: //openreview.net/forum?id=nZeVKeeFYf9 [8] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM Conference on Recommender Systems . 169-177. [9] Bei Hui, Lizong Zhang, Xue Zhou, Xiao Wen, and Yuhui Nian. 2022. Personalized recommendation system based on knowledge embedding and historical behavior. Applied Intelligence (2022), 1-13. [10] Thomas N. Kipf and Max Welling. 2019. Semi-supervised classification with graph convolutional networks. 5th International Conference on Learning Representations, ICLR 2017 - Conference Track Proceedings (2019), 1-14. arXiv: 1609.02907. [11] John D. Lafferty, Andrew McCallum, and Fernando C. N. Pereira. 2001. Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data. In Proceedings of the Eighteenth International Conference on Machine Learning (ICML '01) . Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 282-289. [12] Brian Lester, Rami Al-Rfou, and Noah Constant. 2021. The Power of Scale for Parameter-Efficient Prompt Tuning. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing . Association for Computational Linguistics, Online and Punta Cana, Dominican Republic, 3045-3059. https: //doi.org/10.18653/v1/2021.emnlp-main.243 [13] Jing Li, Aixin Sun, Jianglei Han, and Chenliang Li. 2022. A Survey on Deep Learning for Named Entity Recognition. IEEE Trans. on Knowl. and Data Eng. 34, 1 (jan 2022), 50-70. https://doi.org/10.1109/TKDE.2020.2981314 [14] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [15] Wei Liu, Tongge Xu, Qinghua Xu, Jiayu Song, and Yueran Zu. 2019. An Encoding Strategy Based Word-Character LSTM for Chinese NER. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers) . Association for Computational Linguistics, Minneapolis, Minnesota, 2379-2389. https://doi.org/10.18653/v1/N19-1247 [16] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [17] Aaron van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation learning with contrastive predictive coding. arXiv preprint arXiv:1807.03748 (2018). [18] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations. In RecSys 2020: Fourteenth ACM Conference on Recommender Systems, Virtual Event, Brazil, September 22-26, 2020 , Rodrygo L. T. Santos, Leandro Balby Marinho, Elizabeth M. Daly, Li Chen, Kim Falk, Noam Koenigstein, and Edleno Silva de Moura (Eds.). ACM, 269-278. https://doi.org/10.1145/3383313.3412236 [19] Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, and Guillaume Lample. 2023. LLaMA: Open and Efficient Foundation Language Models. http://arxiv.org/abs/2302.13971 cite arxiv:2302.13971. [20] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [21] Zhiqiang Wang, Qingyun She, and Junlin Zhang. 2021. MaskNet: Introducing feature-wise multiplication to CTR ranking models by instance-guided mask. (2021). [22] Aohan Zeng, Xiao Liu, Zhengxiao Du, Zihan Wang, Hanyu Lai, Ming Ding, Zhuoyi Yang, Yifan Xu, Wendi Zheng, Xiao Xia, et al. 2022. Glm-130b: An open bilingual pre-trained model. arXiv preprint arXiv:2210.02414 (2022). [23] Yue Zhang and Jie Yang. 2018. Chinese NER Using Lattice LSTM. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . Association for Computational Linguistics, Melbourne, Australia, 1554-1564. https://doi.org/10.18653/v1/P18-1144 Received 20 February 2007; revised 12 March 2009; accepted 5 June 2009",
   "keywords_parsed": [
     "Recommendation system",
-    " Large language model",
-    " Knowledge graph"
+    "Large language model",
+    "Knowledge graph"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Language Models Are Few-Shot Learners"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Joint text embedding for personalized content-based recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "GLM: General Language Model Pretraining with Autoregressive Blank Infilling"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Neural Networks: A Comprehensive Foundation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models"
+    },
+    {
+      "ref_id": "b8",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Personalized recommendation system based on knowledge embedding and historical behavior"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data"
+    },
+    {
+      "ref_id": "b12",
+      "title": "The Power of Scale for Parameter-Efficient Prompt Tuning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A Survey on Deep Learning for Named Entity Recognition"
+    },
+    {
+      "ref_id": "b14",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "An Encoding Strategy Based Word-Character LSTM for Chinese NER"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations"
+    },
+    {
+      "ref_id": "b19",
+      "title": "LLaMA: Open and Efficient Foundation Language Models"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b21",
+      "title": "MaskNet: Introducing feature-wise multiplication to CTR ranking models by instance-guided mask"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Glm-130b: An open bilingual pre-trained model"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Chinese NER Using Lattice LSTM"
+    }
   ]
 }

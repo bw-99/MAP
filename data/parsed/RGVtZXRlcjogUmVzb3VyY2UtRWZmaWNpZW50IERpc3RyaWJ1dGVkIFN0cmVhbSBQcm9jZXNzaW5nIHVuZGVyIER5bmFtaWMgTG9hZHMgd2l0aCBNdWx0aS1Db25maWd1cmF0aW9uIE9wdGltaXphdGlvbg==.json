@@ -29,11 +29,165 @@
   "REFERENCES": "[1] [n.d.]. Apache Flink - Reactive Mode. https://flink.apache.org/2021/05/06/ reactive-mode. Accessed: March 2024. [2] [n.d.]. Auto-Scaling Systems with Elastic Spark Streaming. https://databricks. com/session/auto-scaling-systems-with-elastic-spark-streaming. Accessed: March 2024. [3] Ahmed Sayed Abdelhamid, Ahmed R. Mahmood, Anas Daghistani, and Walid G. Aref. 2020. Prompt: Dynamic Data-Partitioning for Distributed Micro-batch Stream Processing Systems. Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data (2020). [4] Omid Alipourfard, Hongqiang Harry Liu, Jianshu Chen, Shivaram Venkataraman, Minlan Yu, and Ming Zhang. 2017. CherryPick: Adaptively Unearthing the Best Cloud Configurations for Big Data Analytics. In NSDI . [5] Maximilian Balandat, Brian Karrer, Daniel R. Jiang, Samuel Daulton, Benjamin Letham, Andrew Gordon Wilson, and Eytan Bakshy. 2020. BoTorch: A Framework for Efficient Monte-Carlo Bayesian Optimization. In Advances in Neural Information Processing Systems 33 . [6] Alain Biem, Eric P. Bouillet, Hanhua Feng, Anand Ranganathan, Anton Riabov, Olivier Verscheure, Haris N. Koutsopoulos, and Carlos Moran. 2010. IBM infosphere streams for scalable, real-time, intelligent transportation services. SIGMOD (2010). [7] Paris Carbone, Asterios Katsifodimos, Stephan Ewen, Volker Markl, Seif Haridi, and Kostas Tzoumas. 2015. Apache Flink: Stream and batch processing in a single engine. Bulletin of the IEEE Computer Society Technical Committee on Data Engineering 38, 4 (2015), 28-38. [8] John Daly. 2003. A Model for Predicting the Optimum Checkpoint Interval for Restart Dumps. In ICCS (LNCS, Vol. 2660) , Peter M. A. Sloot, David Abramson, Alexander V. Bogdanov, Jack J. Dongarra, Albert Y. Zomaya, and Yuri E. Gorbachev (Eds.). Springer. [9] John T. Daly. 2006. A higher order estimate of the optimum checkpoint interval for restart dumps. Future Gener. Comput. Syst. 22, 3 (2006). [10] Lorenz Fischer, Shen Gao, and Abraham Bernstein. 2015. Machines Tuning Machines: Configuring Distributed Stream Processors with Bayesian Optimization. 2015 IEEE International Conference on Cluster Computing (2015), 22-31. [11] Avrilia Floratou, Ashvin Agrawal, Bill Graham, Sriram Rao, and Karthik Ramasamy. 2017. Dhalion: Self-Regulating Stream Processing in Heron. VLDB (2017). [12] B. Gedik, S. Schneider, M. Hirzel, and K. Wu. 2014. Elastic Scaling for Data Stream Processing. IEEE TPDS (2014). [13] Morgan K. Geldenhuys, Dominik Scheinert, Odej Kao, and Lauritz Thamsen. 2022. Phoebe: QoS-Aware Distributed Stream Processing through Anticipating Dynamic Workloads. 2022 IEEE International Conference on Web Services (ICWS) (2022), 198-207. [14] Morgan K. Geldenhuys, Lauritz Thamsen, Kain Kordian Gontarska, Felix Lorenz, and Odej Kao. 2019. Effectively Testing System Configurations of Critical IoT Analytics Pipelines. 2019 IEEE International Conference on Big Data (Big Data) (2019), 4157-4162. [15] Morgan K. Geldenhuys, Lauritz Thamsen, and Odej Kao. 2020. Chiron: Optimizing Fault Tolerance in QoS-aware Distributed Stream Processing Jobs. 2020 IEEE International Conference on Big Data (Big Data) (2020), 434-440. [16] Kordian Gontarska, Morgan K. Geldenhuys, Dominik Scheinert, Philipp Wiesner, Andreas Polze, and Lauritz Thamsen. 2021. Evaluation of Load Prediction Techniques for Distributed Stream Processing. 2021 IEEE International Conference on Cloud Engineering (IC2E) (2021), 91-98. [17] Zhigang Hu, Hui Kang, and Meiguang Zheng. 2019. Stream Data Load Prediction for Resource Scaling Using Online Support Vector Regression. Algorithms (2019). [18] H. Isah, T. Abughofa, S. Mahfuz, D. Ajerla, F. Zulkernine, and S. Khan. 2019. A Survey of Distributed Data Stream Processing Frameworks. IEEE Access (2019). [19] Pooyan Jamshidi and Giuliano Casale. 2016. An Uncertainty-Aware Approach to Optimal Configuration of Stream Processing Systems. 2016 IEEE 24th International Symposium on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS) (2016), 39-48. [20] Sachini Jayasekara, Aaron Harwood, and Shanika Karunasekera. 2020. A utilization model for optimization of checkpoint intervals in distributed stream processing systems. Future Gener. Comput. Syst. 110 (2020), 68-79. [21] Vasiliki Kalavri, John Liagouris, Moritz Hoffmann, Desislava C. Dimitrova, Matthew Forshaw, and Timothy Roscoe. 2018. Three steps is all you need: fast, accurate, automatic scaling decisions for distributed streaming dataflows. In USENIX Symposium on Operating Systems Design and Implementation . [22] Jay Kreps. 2011. Kafka: a Distributed Messaging System for Log Processing. [23] Sanjeev Kulkarni, Nikunj Bhagat, Maosong Fu, Vikas Kedigehalli, Christopher Kellogg, Sailesh Mittal, Jignesh M. Patel, Karthikeyan Ramasamy, and Siddarth Taneja. 2015. Twitter Heron: Stream Processing at Scale. ACM SIGMOD (2015). [24] Jinqing Lian, Xinyi Zhang, Yingxia Shao, Zenglin Pu, Qingfeng Xiang, Yawen Li, and Bin Cui. 2023. ContTune: Continuous Tuning by Conservative Bayesian Optimization for Distributed Stream Data Processing Systems. Proc. VLDB Endow. 16 (2023), 4282-4295. [25] Hamid Nasiri, Saeedeh Nasehi, and Maziar Goudarzi. 2018. A Survey of Distributed Stream Processing Systems for Smart City Data Analytics. In SCIOT '18 . [26] Hamid Nasiri, Saeed Nasehi, and Maziar Goudarzi. 2019. Evaluation of distributed stream processing frameworks for IoT applications in Smart Cities. Big Data (2019). [27] MaxPetrov, Nikolay Butakov, Denis Nasonov, and Mikhail Melnik. 2018. Adaptive performance model for dynamic scaling Apache Spark Streaming. YSC (2018). [28] Dominik Scheinert, Philipp Wiesner, Thorsten Wittkopp, Lauritz Thamsen, Jonathan Will, and Odej Kao. 2023. Karasu: A Collaborative Approach to Efficient Cluster Configuration for Big Data Analytics. In IPCCC . IEEE. [29] Dominik Scheinert, Houkun Zhu, Lauritz Thamsen, Morgan K. Geldenhuys, Jonathan Will, Alexander Acker, and Odej Kao. 2021. Enel: Context-Aware Dynamic Scaling of Distributed Dataflow Jobs using Graph Propagation. In IPCCC . IEEE. [30] Florian Schmidt, Florian Suri-Payer, Anton Gulenko, Marcel Wallschläger, Alexander Acker, and Odej Kao. 2018. Unsupervised Anomaly Event Detection for VNF Service Monitoring Using Multivariate Online Arima. In CloudCom . IEEE Computer Society. [31] Konstantin Shvachko, Hairong Kuang, Sanjay Radia, and Robert Chansler. 2010. The Hadoop Distributed File System, Mohammed G. Khatib, Xubin He, and Michael Factor (Eds.). IEEE Computer Society. [32] Lauritz Thamsen, Ilya Verbitskiy, Florian Schmidt, Thomas Renner, and Odej Kao. 2016. Selecting resources for distributed dataflow systems according to runtime targets. IPCCC (2016). [33] Ankit Toshniwal, Siddarth Taneja, Amit Shukla, Karthikeyan Ramasamy, Jignesh M. Patel, Sanjeev Kulkarni, Jason Jackson, Krishna Gade, Maosong Fu, Jake Donham, Nikunj Bhagat, Sailesh Mittal, and Dmitriy V. Ryaboy. 2014. Storm@twitter. Proceedings of the 2014 ACM SIGMOD International Conference on Management of Data (2014). [34] Shivaram Venkataraman, Zongheng Yang, Michael J. Franklin, Benjamin Recht, and Ion Stoica. 2016. Ernest: Efficient Performance Prediction for Large-Scale Advanced Analytics. In NSDI . [35] Abhishek Verma, Luis Pedrosa, Madhukar Korupolu, David Oppenheimer, Eric Tune, and John Wilkes. 2015. Large-scale cluster management at Google with Borg. In EuroSys , Laurent Réveillère, Tim Harris, and Maurice Herlihy (Eds.). ACM. [36] J. W. Young. 1974. A first order approximation to the optimum checkpoint interval. Commun. ACM 17 (1974), 530-531. [37] Matei A. Zaharia, Reynold Xin, Patrick Wendell, Tathagata Das, Michael Armbrust, Ankur Dave, Xiangrui Meng, Josh Rosen, Shivaram Venkataraman, Michael J. Franklin, Ali Ghodsi, Joseph E. Gonzalez, Scott Shenker, and Ion Stoica. 2016. Apache Spark. Commun. ACM 59 (2016), 56 - 65. [38] Xinyi Zhang, Hong Wu, Zhuo Chang, Shuowei Jin, Jian Tan, Feifei Li, Tieying Zhang, and Bin Cui. 2021. ResTune: Resource Oriented Tuning Boosted by Meta-Learning for Cloud Databases. In SIGMOD . ACM.",
   "keywords_parsed": [
     "Distributed Stream Processing",
-    " Cluster Resource Management",
-    " Performance Profiling",
-    " Performance Modeling",
-    " Runtime Optimization",
-    " Time Series Forecasting",
-    " Cloud Computing"
+    "Cluster Resource Management",
+    "Performance Profiling",
+    "Performance Modeling",
+    "Runtime Optimization",
+    "Time Series Forecasting",
+    "Cloud Computing"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Apache Flink - Reactive Mode"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Auto-Scaling Systems with Elastic Spark Streaming"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Prompt: Dynamic Data-Partitioning for Distributed Micro-batch Stream Processing Systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "CherryPick: Adaptively Unearthing the Best Cloud Configurations for Big Data Analytics"
+    },
+    {
+      "ref_id": "b5",
+      "title": "BoTorch: A Framework for Efficient Monte-Carlo Bayesian Optimization"
+    },
+    {
+      "ref_id": "b6",
+      "title": "IBM infosphere streams for scalable, real-time, intelligent transportation services"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Apache Flink: Stream and batch processing in a single engine"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A Model for Predicting the Optimum Checkpoint Interval for Restart Dumps"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A higher order estimate of the optimum checkpoint interval for restart dumps"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Machines Tuning Machines: Configuring Distributed Stream Processors with Bayesian Optimization"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Dhalion: Self-Regulating Stream Processing in Heron"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Elastic Scaling for Data Stream Processing"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Phoebe: QoS-Aware Distributed Stream Processing through Anticipating Dynamic Workloads"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Effectively Testing System Configurations of Critical IoT Analytics Pipelines"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Chiron: Optimizing Fault Tolerance in QoS-aware Distributed Stream Processing Jobs"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Evaluation of Load Prediction Techniques for Distributed Stream Processing"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Stream Data Load Prediction for Resource Scaling Using Online Support Vector Regression"
+    },
+    {
+      "ref_id": "b18",
+      "title": "A Survey of Distributed Data Stream Processing Frameworks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "An Uncertainty-Aware Approach to Optimal Configuration of Stream Processing Systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A utilization model for optimization of checkpoint intervals in distributed stream processing systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Three steps is all you need: fast, accurate, automatic scaling decisions for distributed streaming dataflows"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Kafka: a Distributed Messaging System for Log Processing"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Twitter Heron: Stream Processing at Scale"
+    },
+    {
+      "ref_id": "b24",
+      "title": "ContTune: Continuous Tuning by Conservative Bayesian Optimization for Distributed Stream Data Processing Systems"
+    },
+    {
+      "ref_id": "b25",
+      "title": "A Survey of Distributed Stream Processing Systems for Smart City Data Analytics"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Evaluation of distributed stream processing frameworks for IoT applications in Smart Cities"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Adaptive performance model for dynamic scaling Apache Spark Streaming"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Karasu: A Collaborative Approach to Efficient Cluster Configuration for Big Data Analytics"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Enel: Context-Aware Dynamic Scaling of Distributed Dataflow Jobs using Graph Propagation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Unsupervised Anomaly Event Detection for VNF Service Monitoring Using Multivariate Online Arima"
+    },
+    {
+      "ref_id": "b31",
+      "title": "The Hadoop Distributed File System"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Selecting resources for distributed dataflow systems according to runtime targets"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Storm@twitter"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Ernest: Efficient Performance Prediction for Large-Scale Advanced Analytics"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Large-scale cluster management at Google with Borg"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A first order approximation to the optimum checkpoint interval"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Apache Spark"
+    },
+    {
+      "ref_id": "b38",
+      "title": "ResTune: Resource Oriented Tuning Boosted by Meta-Learning for Cloud Databases"
+    }
   ]
 }

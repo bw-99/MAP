@@ -42,20 +42,183 @@
   "B.2 Parameter Sensitivity Study": "This subsection explores the effect of learning rate, regularization parameter, and embedding dimension. B.2.1 The effect of learning rate and regularization parameter. We perform experiments to evaluate the sensitivity of APH to its hyperparameters. Following RGNN, the learning rate 𝛾 is varied in [ 0 . 0005 , 0 . 001 , 0 . 005 ] , and the regularization parameter 𝜆 is varied in [ 0 . 001 , 0 . 01 , 0 . 05 , 0 . 1 ] . The experiment results are demonstrated in Figure 5, which shows the impact of hyperparameters 𝛾 and 𝜆 on six datasets. We can see that APH likes a small regularization parameter and a big learning rate. It achieves the best value on most datasets while 𝛾 = 0 . 005 and 𝜆 = 0 . 001. B.2.2 The effect of embedding dimension. Weperform experiments to evaluate the sensitivity of APH to its hyperparameters. The dimension of the semantic space 𝑑 1 and the hidden space of MLP 𝑑 2, are varied in { 4 , 8 , 16 , 32 , 48 , 64 , 128 . } To reduce the computing cost, when we verify the impact of 𝑑 1, we set 𝑑 2 = 8, and that has the same setting for the verification of 𝑑 2. Figure 6 shows the MSE results on the Music dataset. We can see that APH achieves the best performance when 𝑑 1 = 8 and 𝑑 2 = 8. On the other five datasets, the MSE results show no significant difference in various dimensions settings. In APH, users and items are represented not only by their IDs' embedding but also by aggregating their aspectsentiment graphs. Thus, APH has great power to represent users (a) Music 0.70 5 0.68 reeulariration Icarning rate 0.68 (c) Toys 0.84 0.81 (1.78 regularization (b) Office 1.18 1.16 regularization learning parameter 110 (d) Games Figure 5: Sparsity analysis of learning rate 𝛾 and the regularization parameter 𝜆 on six datasets. (e) Beauty 1221 1,18 regulariration (f) Yelp 1.40 18 WSDM'25, March 10-14, 2025, Hannover, Germany Junrui Liu et al. 0.6830 0.6820 0.6810 0.6800 0.6790 0.6780 8   16   32   48 64 128 Figure 6: MSE of APH with various dimensions on Music dataset. 103 10- 100 200 300 400 500 600 10' 103 102 500 1000 1500 2000 (a) Music (c) Toys 10' 103 102 101 1000 2000 3000 4000 5000 (b) Office 105 10 103 102 2000 4000 6000 8000 10000 12000 (d) Games Figure 7: Aspect distribution in six datasets. (e) Beauty 10' 103 10- 1000 2000 3000 4000 5000 (f) Yelp 106 105 10' 103 102 10000 20000 30000 40000 and items by little dimension. For more experiments, please refer to the supplementary materials.",
   "B.3 Results of extracted aspect": "Our method aggregates explicit aspects to represent users and items and fuses them to make predictions. The aspects are extracted by an unsupervised method, discussed in section A. The number of aspects is smaller than that of items, and the number of quadruples is bigger than that of ratings. We also give the distribution of aspects in Figure 7. The aspect distributions of all datasets are long-tail distributions.",
   "keywords_parsed": [
-    "Online reviews allow consumers to provide detailed feedback on various aspects of items. Existing methods utilize these aspects to model users' fine-grained preferences for specific item features through graph neural networks. We argue that the performance of items on different aspects is important for making precise recommendations",
-    " which has not been taken into account by existing approaches",
-    " due to lack of data. In this paper",
-    " we propose an aspect performance-aware hypergraph neural network (APH) for the review-based recommendation",
-    " which learns the performance of items from the conflicting sentiment polarity of user reviews. Specifically",
-    " APH comprehensively models the relationships among users",
-    " items",
-    " aspects",
-    " and sentiment polarity by systematically constructing an aspect hypergraph based on user reviews. In addition",
-    " APHaggregates aspects representing users and items by employing an aspect performance-aware hypergraph aggregation method. It aggregates the sentiment polarities from multiple users by jointly considering user preferences and the semantics of their sentiments",
-    " determining the weights of sentiment polarities to infer the performance of items on various aspects. Such performances are then used as weights to aggregate neighboring aspects. Experiments on six real-world datasets demonstrate that APH improves MSE",
-    " Precision@5",
-    " and Recall@5 by an average of 2 . 30%",
-    " 4 . 89%",
-    " and 1 . 60% over the best baseline. The source code and data are available at https://github.com/dianziliu/APH."
+    "User review",
+    "Aspect",
+    "Hypergraph",
+    "Sentiment polarity aggregation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Spectral Networks and Locally Connected Networks on Graphs"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Review text based rating prediction approaches: preference knowledge learning, representation and utilization"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Neural Attentional Rating Regression with Review-level Explanations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Enhanced Multi-Channel Graph Convolutional Network for Aspect Sentiment Triplet Extraction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Estimating Causal Effects of Multi-Aspect Online Reviews with Multi-Modal Proxies"
+    },
+    {
+      "ref_id": "b6",
+      "title": "ANR: Aspect-based Neural Recommender"
+    },
+    {
+      "ref_id": "b7",
+      "title": "An unsupervised aspect extraction strategy for monitoring real-time reviews stream"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Hypergraph Learning: Methods and Practices"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Attentive Aspect Modeling for Review-Aware Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "TAERT: Triple-Attentional Explainable Recommendation with Temporal Convolutional Network"
+    },
+    {
+      "ref_id": "b11",
+      "title": "An Unsupervised Neural Attention Model for Aspect Extraction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Neural Collaborative Filtering"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Mining and summarizing customer reviews"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Self-Attentive Sequential Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Convolutional matrix factorization for document context-aware recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Factorization meets the neighborhood: a multifaceted collaborative filtering model"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Matrix Factorization Techniques for Recommender Systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Rating prediction based on combination of review mining and user preference analysis"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A Capsule Network for Recommendation and Explaining What You Like and Dislike"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Recommend for a Reason: Unlocking the Power of Unsupervised Aspect-Sentiment Co-Extraction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Daml: Dual attention mutual learning between ratings and reviews for item recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Toward Comprehensive User and Item Representations via Three-tier Attention Network"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Neural Unified Review Recommendation with Cross Attention"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Improving Opinion Aspect Extraction Using Semantic Similarity and Aspect Associations"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Dynamic and Static Representation Learning Network for Recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Learning hierarchical review graph representations for recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Probabilistic Matrix Factorization"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Interpretable convolutional neural networks with dual local and global attention for review rating prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Aspect Extraction Performance with POS Tag Pattern of Dependency Relation in Aspect-based Sentiment Analysis"
+    },
+    {
+      "ref_id": "b31",
+      "title": "SENGR: Sentiment-Enhanced Neural Graph Recommender"
+    },
+    {
+      "ref_id": "b32",
+      "title": "DualGCN: An Aspect-Aware Dual Graph Convolutional Network for review-based recommender"
+    },
+    {
+      "ref_id": "b33",
+      "title": "A Review-aware Graph Contrastive Learning Framework for Recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Graph Attention Networks"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Collaborative topic modeling for recommending scientific articles"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Collaborative deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Hierarchical text interaction for rating prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "A context-aware user-item representation learning for item recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A Comprehensive Survey on Graph Neural Networks"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Learning Span-Level Interactions for Aspect Sentiment Triplet Extraction"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Multi-Aspect enhanced Graph Neural Networks for recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Joint deep modeling of users and items using reviews for recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Learning with Hypergraphs: Clustering, Classification, and Embedding"
+    }
   ]
 }

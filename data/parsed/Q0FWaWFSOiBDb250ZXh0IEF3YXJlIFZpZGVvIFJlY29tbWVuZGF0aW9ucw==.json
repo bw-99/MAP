@@ -23,7 +23,81 @@
   "REFERENCES": "[1] 2009. EDBT '09: Proceedings of the 12th International Conference on Extending Database Technology: Advances in Database Technology (Saint Petersburg, Russia). Association for Computing Machinery, New York, NY, USA. [2] 2012. SIGIR '12: Proceedings of the 35th International ACM SIGIR Conference on Research and Development in Information Retrieval (Portland, Oregon, USA). Association for Computing Machinery, New York, NY, USA. [3] Jaime Carbonell and Jade Goldstein. 1998. The Use of MMR, Diversity-Based Reranking for Reordering Documents and Producing Summaries. In Proceedings of the 21st Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (Melbourne, Australia) (SIGIR '98) . Association for Computing Machinery, New York, NY, USA, 335-336. https: //doi.org/10.1145/290941.291025 [4] Charles L.A. Clarke, Maheedhar Kolla, Gordon V. Cormack, Olga Vechtomova, Azin Ashkan, Stefan Büttcher, and Ian MacKinnon. 2008. Novelty and Diversity in Information Retrieval Evaluation. In Proceedings of the 31st Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (Singapore, Singapore) (SIGIR '08) . Association for Computing Machinery, New York, NY, USA, 659-666. https://doi.org/10.1145/1390334.1390446 [5] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems (Boston, Massachusetts, USA) (RecSys '16) . Association for Computing Machinery, New York, NY, USA, 191-198. https://doi.org/10.1145/ 2959100.2959190 [6] Yoshinori Hijikata, Takuya Shimizu, and Shogo Nishida. 2009. DiscoveryOriented Collaborative Filtering for Improving User Satisfaction. In Proceedings of the 14th International Conference on Intelligent User Interfaces (Sanibel Island, Florida, USA) (IUI '09) . Association for Computing Machinery, New York, NY, USA, 67-76. https://doi.org/10.1145/1502650.1502663 [7] Neal Lathia, Stephen Hailes, Licia Capra, and Xavier Amatriain. 2010. Temporal Diversity in Recommender Systems. In Proceedings of the 33rd International ACM SIGIR Conference on Research and Development in Information Retrieval (Geneva, Switzerland) (SIGIR '10) . Association for Computing Machinery, New York, NY, USA, 210-217. https://doi.org/10.1145/1835449.1835486 [8] Sean M. McNee, John Riedl, and Joseph A. Konstan. 2006. Being Accurate is Not Enough: How Accuracy Metrics Have Hurt Recommender Systems. In CHI '06 Extended Abstracts on Human Factors in Computing Systems (Montréal, Québec, Canada) (CHI EA '06) . Association for Computing Machinery, New York, NY, USA, 1097-1101. https://doi.org/10.1145/1125451.1125659 [9] Yonathan Perez, Michael Schueppert, Matthew Lawlor, and Shaunak Kishore. 2015. Category-Driven Approach for Local Related Business Recommendations. In Proceedings of the 24th ACM International on Conference on Information and Knowledge Management (Melbourne, Australia) (CIKM '15) . Association for Computing Machinery, New York, NY, USA, 73-82. https://doi.org/10.1145/2806416. 2806495 [10] Davood Rafiei, Krishna Bharat, and Anand Shukla. 2010. Diversifying Web Search Results. In Proceedings of the 19th International Conference on World Wide Web (Raleigh, North Carolina, USA) (WWW'10) . Association for Computing Machinery, New York, NY, USA, 781-790. https://doi.org/10.1145/1772690.1772770 [11] Rodrygo L.T. Santos, Craig Macdonald, and Iadh Ounis. 2010. Exploiting Query Reformulations for Web Search Result Diversification. In Proceedings of the 19th International Conference on World Wide Web (Raleigh, North Carolina, USA) (WWW'10) . Association for Computing Machinery, New York, NY, USA, 881-890. https://doi.org/10.1145/1772690.1772780 [12] Badrul Sarwar, George Karypis, Joseph Konstan, and John Riedl. 2001. ItemBased Collaborative Filtering Recommendation Algorithms. In Proceedings of the 10th International Conference on World Wide Web (Hong Kong, Hong Kong) (WWW'01) . Association for Computing Machinery, New York, NY, USA, 285-295. https://doi.org/10.1145/371920.372071 [13] Choon Hui Teo, Houssam Nassif, Daniel Hill, Sriram Srinivasan, Mitchell Goodman, Vijai Mohan, and S.V.N. Vishwanathan. 2016. Adaptive, Personalized Diversity for Visual Discovery. In Proceedings of the 10th ACM Conference on Recommender Systems (Boston, Massachusetts, USA) (RecSys '16) . Association for Computing Machinery, New York, NY, USA, 35-38. https://doi.org/10.1145/ 2959100.2959171 [14] Sebastian Tschiatschek, Adish Singla, and Andreas Krause. 2017. Selecting Sequences of Items via Submodular Maximization. Proceedings of the AAAI Conference on Artificial Intelligence 31, 1 (Feb. 2017). https://doi.org/10.1609/aaai.v31i1. 10923 [15] Saúl Vargas, Linas Baltrunas, Alexandros Karatzoglou, and Pablo Castells. 2014. Coverage, Redundancy and Size-Awareness in Genre Diversity for Recommender Systems. In Proceedings of the 8th ACM Conference on Recommender Systems (Foster City, Silicon Valley, California, USA) (RecSys '14) . Association for Computing Machinery, New York, NY, USA, 209-216. https://doi.org/10.1145/2645710. 2645743 [16] Mark Wilhelm, Ajith Ramanathan, Alexander Bonomo, Sagar Jain, Ed H. Chi, and Jennifer Gillenwater. 2018. Practical Diversified Recommendations on YouTube with Determinantal Point Processes. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management (Torino, Italy) (CIKM '18) . Association for Computing Machinery, New York, NY, USA, 2165-2173. https://doi.org/10.1145/3269206.3272018 [17] Cheng Xiang Zhai, William W. Cohen, and John Lafferty. 2003. Beyond Independent Relevance: Methods and Evaluation Metrics for Subtopic Retrieval. In Proceedings of the 26th Annual International ACM SIGIR Conference on Research and Development in Informaion Retrieval (Toronto, Canada) (SIGIR '03) . Association for Computing Machinery, New York, NY, USA, 10-17. https: //doi.org/10.1145/860435.860440 [18] Cai-Nicolas Ziegler, Sean M. McNee, Joseph A. Konstan, and Georg Lausen. 2005. Improving Recommendation Lists through Topic Diversification. In Proceedings of the 14th International Conference on World Wide Web (Chiba, Japan) (WWW '05) . Association for Computing Machinery, New York, NY, USA, 22-32. https: //doi.org/10.1145/1060745.1060754",
   "keywords_parsed": [
     "diversity",
-    " recommendation systems",
-    " neural networks"
+    "recommendation systems",
+    "neural networks"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "EDBT '09: Proceedings of the 12th International Conference on Extending Database Technology: Advances in Database Technology"
+    },
+    {
+      "ref_id": "b2",
+      "title": "SIGIR '12: Proceedings of the 35th International ACM SIGIR Conference on Research and Development in Information Retrieval"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The Use of MMR, Diversity-Based Reranking for Reordering Documents and Producing Summaries"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Novelty and Diversity in Information Retrieval Evaluation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Discovery-Oriented Collaborative Filtering for Improving User Satisfaction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Temporal Diversity in Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Being Accurate is Not Enough: How Accuracy Metrics Have Hurt Recommender Systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Category-Driven Approach for Local Related Business Recommendations"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Diversifying Web Search Results"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Exploiting Query Reformulations for Web Search Result Diversification"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Item-Based Collaborative Filtering Recommendation Algorithms"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Adaptive, Personalized Diversity for Visual Discovery"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Selecting Sequences of Items via Submodular Maximization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Coverage, Redundancy and Size-Awareness in Genre Diversity for Recommender Systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Practical Diversified Recommendations on YouTube with Determinantal Point Processes"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Beyond Independent Relevance: Methods and Evaluation Metrics for Subtopic Retrieval"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Improving Recommendation Lists through Topic Diversification"
+    }
   ]
 }

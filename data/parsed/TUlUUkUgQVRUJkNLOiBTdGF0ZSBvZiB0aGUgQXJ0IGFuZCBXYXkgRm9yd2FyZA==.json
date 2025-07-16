@@ -26,6 +26,298 @@
   "ACKNOWLEDGEMENTS": "This publication was made possible by the awards NPRP12S-0125-190013 and GRSA7-1-0516-20061 from Qatar National Research Fund (a member of Qatar Foundation). The contents herein are solely the responsibility of the author[s].",
   "REFERENCES": "[1] MITRE, 'ATT&CK update,' https://attack.mitre.org/resources/updates/, [Online; accessed 16-October-2022]. [2] L. Kohnfelder and P. Garg, 'The threats to our products,' https://shostack.org/files/microsoft/The-Threats-To-Our-Products.docx, [Online; accessed 16-October-2022]. [3] P. Pols and J. van den Berg, 'The unified kill chain,' CSA Thesis, Hague , pp. 1-104, 2017. [4] S. Caltagirone, A. Pendergast, and C. Betz, 'The diamond model of intrusion analysis,' Center For Cyber Intelligence Analysis and Threat Research Hanover Md, Tech. Rep., 2013. [5] S. M. Milajerdi, R. Gjomemo, B. Eshete, R. Sekar, and V. Venkatakrishnan, 'Holmes: real-time apt detection through correlation of suspicious information flows,' in 2019 IEEE Symposium on Security and Privacy (SP) . IEEE, 2019, pp. 1137-1152. [6] V. Mavroeidis and S. Bromander, 'Cyber threat intelligence model: an evaluation of taxonomies, sharing standards, and ontologies within cyber threat intelligence,' in 2017 European Intelligence and Security Informatics Conference (EISIC) . IEEE, 2017, pp. 91-98. [7] G. Husari, E. Al-Shaer, M. Ahmed, B. Chu, and X. Niu, 'Ttpdrill: Automatic and accurate extraction of threat actions from unstructured text of cti sources,' in Proceedings of the 33rd annual computer security applications conference , 2017, pp. 103-115. [8] W. U. Hassan, A. Bates, and D. Marino, 'Tactical provenance analysis for endpoint detection and response systems,' in 2020 IEEE Symposium on Security and Privacy (SP) . IEEE, 2020, pp. 1172-1189. [9] R. Al-Shaer, J. M. Spring, and E. Christou, 'Learning the associations of MITRE att&ck adversarial techniques,' CoRR , vol. abs/2005.01654, 2020. [Online]. Available: https://arxiv.org/abs/2005.01654 [10] U. Noor, Z. Anwar, A. W. Malik, S. Khan, and S. Saleem, 'A machine learning framework for investigating data breaches based on semantic analysis of adversary's attack patterns in threat intelligence repositories,' Future Generation Computer Systems , vol. 95, pp. 467-487, 2019. [11] W. Xiong, E. Legrand, O. Åberg, and R. Lagerström, 'Cyber security threat modeling based on the mitre enterprise att&ck matrix,' Software and Systems Modeling , vol. 21, no. 1, pp. 157-177, 2022. [12] F. J. Stech, K. E. Heckman, and B. E. Strom, 'Integrating cyber-d&d into adversary modeling for active cyber defense,' in Cyber deception . Springer, 2016, pp. 1-22. [13] A. Applebaum, D. Miller, B. Strom, H. Foster, and C. Thomas, 'Analysis of automated adversary emulation techniques,' in Proceedings of the Summer Simulation Multi-Conference , 2017, pp. 1-12. [14] K. Oosthoek and C. Doerr, 'Sok: Att&ck techniques and trends in windows malware,' in International Conference on Security and Privacy in Communication Systems . Springer, 2019, pp. 406-425. [15] H. M. Farooq and N. M. Otaibi, 'Optimal machine learning algorithms for cyber threat detection,' in 2018 UKSim-AMSS 20th International Conference on Computer Modelling and Simulation (UKSim) . IEEE, 2018, pp. 32-37. [16] A. Georgiadou, S. Mouzakitis, and D. Askounis, 'Assessing mitre att&ck risk using a cyber-security culture framework,' Sensors , vol. 21, no. 9, p. 3267, 2021. 34 Bader Al-Sada, Alireza Sadighian, and Gabriele Oligeri [17] M. Tatam, B. Shanmugam, S. Azam, and K. Kannoorpatti, 'A review of threat modelling approaches for apt-style attacks,' Heliyon , vol. 7, no. 1, p. e05969, 2021. [18] R. Kwon, T. Ashley, J. Castleberry, P. Mckenzie, and S. N. G. Gourisetti, 'Cyber threat dictionary using mitre att&ck matrix and nist cybersecurity framework mapping,' in 2020 Resilience Week (RWS) . IEEE, 2020, pp. 106-112. [19] N. Munaiah, A. Rahman, J. Pelletier, L. Williams, and A. Meneely, 'Characterizing attacker behavior in a cybersecurity penetration testing competition,' in 2019 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM) . IEEE, 2019, pp. 1-6. [20] J. Straub, 'Modeling attack, defense and threat trees and the cyber kill chain, att&ck and stride frameworks as blackboard architecture networks,' in 2020 IEEE International Conference on Smart Cloud (SmartCloud) . IEEE, 2020, pp. 148-153. [21] S. Hacks, S. Katsikeas, E. Ling, R. Lagerström, and M. Ekstedt, 'powerlang: a probabilistic attack simulation language for the power domain,' Energy Informatics , vol. 3, no. 1, pp. 1-17, 2020. [22] A. Nisioti, G. Loukas, A. Laszka, and E. Panaousis, 'Data-driven decision support for optimizing cyber forensic investigations,' IEEE Transactions on Information Forensics and Security , vol. 16, pp. 2397-2412, 2021. [23] V. Legoy, M. Caselli, C. Seifert, and A. Peter, 'Automated retrieval of att&ck tactics and techniques for cyber threat reports,' arXiv preprint arXiv:2004.14322 , 2020. [24] G. Husari, E. Al-Shaer, B. Chu, and R. F. Rahman, 'Learning apt chains from cyber threat intelligence,' in Proceedings of the 6th Annual Symposium on Hot Topics in the Science of Security , 2019, pp. 1-2. [25] P. Zilberman, R. Puzis, S. Bruskin, S. Shwarz, and Y. Elovici, 'Sok: A survey of open-source threat emulators,' arXiv preprint arXiv:2003.01518 , 2020. [26] F. Maymí, R. Bixler, R. Jones, and S. Lathrop, 'Towards a definition of cyberspace tactics, techniques and procedures,' in 2017 IEEE International Conference on Big Data (Big Data) . IEEE, 2017, pp. 4674-4679. [27] M. Parmar and A. Domingo, 'On the use of cyber threat intelligence (cti) in support of developing the commander's understanding of the adversary,' in MILCOM 2019-2019 IEEE Military Communications Conference (MILCOM) . IEEE, 2019, pp. 1-6. [28] S. Choi, J.-H. Yun, and B.-G. Min, 'Probabilistic attack sequence generation and execution based on mitre att&ck for ics datasets,' in Cyber Security Experimentation and Test Workshop , 2021, pp. 41-48. [29] A. Berady, M. Jaume, V. V. T. Tong, and G. Guette, 'From ttp to ioc: Advanced persistent graphs for threat hunting,' IEEE Transactions on Network and Service Management , vol. 18, no. 2, pp. 1321-1333, 2021. [30] K. Hasan, S. Shetty, and S. Ullah, 'Artificial intelligence empowered cyber threat detection and protection for power utilities,' in 2019 IEEE 5th International Conference on Collaboration and Internet Computing (CIC) . IEEE, 2019, pp. 354-359. [31] A. Elitzur, R. Puzis, and P. Zilberman, 'Attack hypothesis generation,' in 2019 European Intelligence and Security Informatics Conference (EISIC) . IEEE, 2019, pp. 40-47. [32] A. Kuppa, L. Aouad, and N.-A. Le-Khac, 'Linking cve's to mitre att&ck techniques,' in The 16th International Conference on Availability, Reliability and Security , 2021, pp. 1-12. [33] S. Choi, J. Choi, J.-H. Yun, B.-G. Min, and H. Kim, 'Expansion of { ICS } testbed for security validation based on { MITRE }{ ATT&CK } techniques,' in 13th USENIX Workshop on Cyber Security Experimentation and Test (CSET 20) , 2020. [34] K. Kim, Y. Shin, J. Lee, and K. Lee, 'Automatically attributing mobile threat actors by vectorized att&ck matrix and paired indicator,' Sensors , vol. 21, no. 19, p. 6522, 2021. [35] A. P. Golushko and V. G. Zhukov, 'Application of advanced persistent threat actorstechniques aor evaluating defensive countermeasures,' in 2020 IEEE Conference of Russian Young Researchers in Electrical and Electronic Engineering (EIConRus) . IEEE, 2020, pp. 312-317. [36] P. Karuna, E. Hemberg, U.-M. O'Reilly, and N. Rutar, 'Automating cyber threat hunting using nlp, automated query generation, and genetic perturbation,' arXiv preprint arXiv:2104.11576 , 2021. [37] Y. Wu, C. Huang, X. Zhang, and H. Zhou, 'Grouptracer: automatic attacker ttp profile extraction and group cluster in internet of things,' security and communication networks , vol. 2020, 2020. [38] B. Ampel, S. Samtani, S. Ullman, and H. Chen, 'Linking common vulnerabilities and exposures to the mitre att&ck framework: A self-distillation approach,' arXiv preprint arXiv:2108.01696 , 2021. [39] Z. Jadidi and Y. Lu, 'A threat hunting framework for industrial control systems,' IEEE Access , vol. 9, pp. 164 118-164 130, 2021. [40] S. Arshad, M. Alam, S. Al-Kuwari, and M. H. A. Khan, 'Attack specification language: Domain specific language for dynamic training in cyber range,' in 2021 IEEE Global Engineering Education Conference (EDUCON) . IEEE, 2021, pp. 873-879. [41] E. Bertino and K. Brancik, 'Services for zero trust architectures-a research roadmap,' in 2021 IEEE International Conference on Web Services (ICWS) . IEEE, 2021, pp. 14-20. [42] F. S. Toker, K. O. Akpinar, and I. Özçelik, 'Mitre ics attack simulation and detection on ethercat based drinking water system,' in 2021 9th International Symposium on Digital Forensics and Security (ISDFS) . IEEE, 2021, pp. 1-6. [43] O. Mendsaikhan, H. Hasegawa, Y. Yamaguchi, and H. Shimada, 'Automatic mapping of vulnerability information to adversary techniques,' in The Fourteenth International Conference on Emerging Security Information, Systems and Technologies SECUREWARE2020 , 2020. [44] H. Manocha, A. Srivastava, C. Verma, R. Gupta, and B. Bansal, 'Security assessment rating framework for enterprises using mitre att&ck matrix,' arXiv preprint arXiv:2108.06559 , 2021. [45] W. Wang, B. Tang, C. Zhu, B. Liu, A. Li, and Z. Ding, 'Clustering using a similarity measure approach based on semantic analysis of adversary behaviors,' in 2020 IEEE Fifth International Conference on Data Science in Cyberspace (DSC) . IEEE, 2020, pp. 1-7. MITRE ATT&CK: State of the Art and Way Forward 35 [46] Y. S. Takey, S. G. Tatikayala, S. S. Samavedam, P. L. Eswari, and M. U. Patil, 'Real time early multi stage attack detection,' in 2021 7th International Conference on Advanced Computing and Communication Systems (ICACCS) , vol. 1. IEEE, 2021, pp. 283-290. [47] P. S. Charan, P. M. Anand, and S. K. Shukla, 'Dmapt: Study of data mining and machine learning techniques in advanced persistent threat attribution and detection,' in Data Mining-Concepts and Applications . IntechOpen, 2021. [48] Y. Wu, Q. Liu, X. Liao, S. Ji, P. Wang, X. Wang, C. Wu, and Z. Li, 'Price tag: Towards semi-automatically discovery tactics, techniques and procedures of e-commerce cyber threat intelligence,' IEEE Transactions on Dependable and Secure Computing , 2021. [49] Y. You, J. Jiang, Z. Jiang, P. Yang, B. Liu, H. Feng, X. Wang, and N. Li, 'Tim: threat context-enhanced ttp intelligence mining on unstructured threat data,' Cybersecurity , vol. 5, no. 1, pp. 1-17, 2022. [50] Y.-T. Huang, C. Y. Lin, Y.-R. Guo, K.-C. Lo, Y. S. Sun, and M. C. Chen, 'Open source intelligence for malicious behavior discovery and interpretation,' IEEE Transactions on Dependable and Secure Computing , vol. 19, no. 2, pp. 776-789, 2021. [51] Y. Jo, O. Choi, J. You, Y. Cha, and D. H. Lee, 'Cyberattack models for ship equipment based on the mitre att&ck framework,' Sensors , vol. 22, no. 5, p. 1860, 2022. [52] D. Mashima, 'Mitre att&ck based evaluation on in-network deception technology for modernized electrical substation systems,' Sustainability , vol. 14, no. 3, p. 1256, 2022. [53] M. Ahmed, S. Panda, C. Xenakis, and E. Panaousis, 'Mitre att&ck-driven cyber risk assessment,' in Proceedings of the 17th International Conference on Availability, Reliability and Security , 2022, pp. 1-10. [54] A. Nisioti, G. Loukas, S. Rass, and E. Panaousis, 'Game-theoretic decision support for cyber forensic investigations,' Sensors , vol. 21, no. 16, p. 5300, 2021. [55] R. Pell, S. Moschoyiannis, E. Panaousis, and R. Heartfield, 'Towards dynamic threat modelling in 5g core networks based on mitre att&ck,' arXiv preprint arXiv:2108.11206 , 2021. [56] A. A. Al-Kadhimi, M. M. Singh, and T. Jabar, 'Fingerprint for mobile-sensor apt detection framework (formap) based on tactics techniques and procedures (ttp) and mitre,' in Proceedings of the 8th International Conference on Computational Science and Technology . Springer, 2022, pp. 515-533. [57] C. Liu, J. Wang, and X. Chen, 'Threat intelligence att&ck extraction based on the attention transformer hierarchical recurrent neural network,' Applied Soft Computing , vol. 122, p. 108826, 2022. [58] V. Chierzi and F. Mercês, 'Evolution of iot linux malware: A mitre att&ck ttp based approach,' in 2021 APWG Symposium on Electronic Crime Research (eCrime) . IEEE, 2021, pp. 1-11. [59] J. Fairbanks, A. Orbe, C. Patterson, J. Layne, E. Serra, and M. Scheepers, 'Identifying att&ck tactics in android malware control flow graph through graph representation learning and interpretability,' in 2021 IEEE International Conference on Big Data (Big Data) . IEEE, 2021, pp. 5602-5608. [60] T. He and Z. Li, 'A model and method of information system security risk assessment based on mitre att&ck,' in 2021 2nd International Conference on Electronics, Communications and Information Technology (CECIT) . IEEE, 2021, pp. 81-86. [61] M. Zych and V. Mavroeidis, 'Enhancing the stix representation of mitre att&ck for group filtering and technique prioritization,' arXiv preprint arXiv:2204.11368 , 2022. [62] S. Ejaz, U. Noor, and Z. Rashid, 'Visualizing interesting patterns in cyber threat intelligence using machine learning techniques,' Cybernetics and Information Technologies , vol. 22, no. 2, pp. 96-113, 2022. [63] B. E. Strom, A. Applebaum, D. P. Miller, K. C. Nickels, A. G. Pennington, and C. B. Thomas, 'Mitre att&ck: Design and philosophy,' in Technical report . The MITRE Corporation, 2018. [64] R. Al-Shaer, J. M. Spring, and E. Christou, 'Learning the associations of mitre att & ck adversarial techniques,' in 2020 IEEE Conference on Communications and Network Security (CNS) . IEEE, 2020, pp. 1-9. [65] B. Hayes-Roth, 'A blackboard architecture for control,' Artificial intelligence , vol. 26, no. 3, pp. 251-321, 1985. [66] B. W. Kernighan and S. Lin, 'An efficient heuristic procedure for partitioning graphs,' The Bell system technical journal , vol. 49, no. 2, pp. 291-307, 1970. [67] P. Johnson, R. Lagerström, and M. Ekstedt, 'A meta language for threat modeling and attack simulations,' in Proceedings of the 13th International Conference on Availability, Reliability and Security , 2018, pp. 1-8. [68] S. Katsikeas, S. Hacks, P. Johnson, M. Ekstedt, R. Lagerström, J. Jacobsson, M. Wällstedt, and P. Eliasson, 'An attack simulation language for the it domain,' in International Workshop on Graphical Models for Security . Springer, 2020, pp. 67-86. [69] K. Zetter et al. , 'Inside the cunning, unprecedented hack of ukraine's power grid,' Wired , vol. 9, pp. 1-5, 2016. [70] E. Hemberg, J. Kelly, M. Shlapentokh-Rothman, B. Reinstadler, K. Xu, N. Rutar, and U.-M. O'Reilly, 'Bron-linking attack tactics, techniques, and patterns with defensive weaknesses, vulnerabilities and affected platform configurations,' arXiv preprint arXiv:2010.00533 , 2020. [71] H.-K. Shin, W. Lee, J.-H. Yun, and H. Kim, 'Implementation of programmable { CPS } testbed for anomaly detection,' in 12th USENIX Workshop on Cyber Security Experimentation and Test (CSET 19) , 2019. [72] D. Plohmann, M. Clauss, S. Enders, and E. Padilla, 'Malpedia: a collaborative effort to inventorize the malware landscape,' Proceedings of the Botconf , 2017. Received 20 February 2007; revised 12 March 2009; accepted 5 June 2009",
   "keywords_parsed": [
-    "None"
+    "MITRE ATT&CK Framework",
+    "Cyber-Threat Intelligence",
+    "Security Risk Analysis"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "ATT&CK update"
+    },
+    {
+      "ref_id": "b2",
+      "title": "The threats to our products"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The unified kill chain"
+    },
+    {
+      "ref_id": "b4",
+      "title": "The diamond model of intrusion analysis"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Holmes: real-time apt detection through correlation of suspicious information flows"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Cyber threat intelligence model: an evaluation of taxonomies, sharing standards, and ontologies within cyber threat intelligence"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Ttpdrill: Automatic and accurate extraction of threat actions from unstructured text of cti sources"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Tactical provenance analysis for endpoint detection and response systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Learning the associations of MITRE att&ck adversarial techniques"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A machine learning framework for investigating data breaches based on semantic analysis of adversary's attack patterns in threat intelligence repositories"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Cyber security threat modeling based on the mitre enterprise att&ck matrix"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Integrating cyber-d&d into adversary modeling for active cyber defense"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Analysis of automated adversary emulation techniques"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Sok: Att&ck techniques and trends in windows malware"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Optimal machine learning algorithms for cyber threat detection"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Assessing mitre att&ck risk using a cyber-security culture framework"
+    },
+    {
+      "ref_id": "b17",
+      "title": "A review of threat modelling approaches for apt-style attacks"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Cyber threat dictionary using mitre att&ck matrix and nist cybersecurity framework mapping"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Characterizing attacker behavior in a cybersecurity penetration testing competition"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Modeling attack, defense and threat trees and the cyber kill chain, att&ck and stride frameworks as blackboard architecture networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "powerlang: a probabilistic attack simulation language for the power domain"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Data-driven decision support for optimizing cyber forensic investigations"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Automated retrieval of att&ck tactics and techniques for cyber threat reports"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Learning apt chains from cyber threat intelligence"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Sok: A survey of open-source threat emulators"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Towards a definition of cyberspace tactics, techniques and procedures"
+    },
+    {
+      "ref_id": "b27",
+      "title": "On the use of cyber threat intelligence (cti) in support of developing the commander's understanding of the adversary"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Probabilistic attack sequence generation and execution based on mitre att&ck for ics datasets"
+    },
+    {
+      "ref_id": "b29",
+      "title": "From ttp to ioc: Advanced persistent graphs for threat hunting"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Artificial intelligence empowered cyber threat detection and protection for power utilities"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Attack hypothesis generation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Linking cve's to mitre att&ck techniques"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Expansion of { ICS } testbed for security validation based on { MITRE }{ ATT&CK } techniques"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Automatically attributing mobile threat actors by vectorized att&ck matrix and paired indicator"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Application of advanced persistent threat actorstechniques aor evaluating defensive countermeasures"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Automating cyber threat hunting using nlp, automated query generation, and genetic perturbation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Grouptracer: automatic attacker ttp profile extraction and group cluster in internet of things"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Linking common vulnerabilities and exposures to the mitre att&ck framework: A self-distillation approach"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A threat hunting framework for industrial control systems"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Attack specification language: Domain specific language for dynamic training in cyber range"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Services for zero trust architectures-a research roadmap"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Mitre ics attack simulation and detection on ethercat based drinking water system"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Automatic mapping of vulnerability information to adversary techniques"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Security assessment rating framework for enterprises using mitre att&ck matrix"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Clustering using a similarity measure approach based on semantic analysis of adversary behaviors"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Real time early multi stage attack detection"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Dmapt: Study of data mining and machine learning techniques in advanced persistent threat attribution and detection"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Price tag: Towards semi-automatically discovery tactics, techniques and procedures of e-commerce cyber threat intelligence"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Tim: threat context-enhanced ttp intelligence mining on unstructured threat data"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Open source intelligence for malicious behavior discovery and interpretation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Cyberattack models for ship equipment based on the mitre att&ck framework"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Mitre att&ck based evaluation on in-network deception technology for modernized electrical substation systems"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Mitre att&ck-driven cyber risk assessment"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Game-theoretic decision support for cyber forensic investigations"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Towards dynamic threat modelling in 5g core networks based on mitre att&ck"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Fingerprint for mobile-sensor apt detection framework (formap) based on tactics techniques and procedures (ttp) and mitre"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Threat intelligence att&ck extraction based on the attention transformer hierarchical recurrent neural network"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Evolution of iot linux malware: A mitre att&ck ttp based approach"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Identifying att&ck tactics in android malware control flow graph through graph representation learning and interpretability"
+    },
+    {
+      "ref_id": "b60",
+      "title": "A model and method of information system security risk assessment based on mitre att&ck"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Enhancing the stix representation of mitre att&ck for group filtering and technique prioritization"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Visualizing interesting patterns in cyber threat intelligence using machine learning techniques"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Mitre att&ck: Design and philosophy"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Learning the associations of mitre att & ck adversarial techniques"
+    },
+    {
+      "ref_id": "b65",
+      "title": "A blackboard architecture for control"
+    },
+    {
+      "ref_id": "b66",
+      "title": "An efficient heuristic procedure for partitioning graphs"
+    },
+    {
+      "ref_id": "b67",
+      "title": "A meta language for threat modeling and attack simulations"
+    },
+    {
+      "ref_id": "b68",
+      "title": "An attack simulation language for the it domain"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Inside the cunning, unprecedented hack of ukraine's power grid"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Bron-linking attack tactics, techniques, and patterns with defensive weaknesses, vulnerabilities and affected platform configurations"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Implementation of programmable { CPS } testbed for anomaly detection"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Malpedia: a collaborative effort to inventorize the malware landscape"
+    }
   ]
 }

@@ -18,18 +18,102 @@
   "REFERENCES": "[1] Junyang Chen, Zhiguo Gong, Yuanman Li, Huanjian Zhang, Hongyong Yu, Junzhang Zhu, Ge Fan, Xiao-Ming Wu, and Kaishun Wu. 2022. Meta-path Based Neighbors for Behavioral Target Generalization in Sequential Recommendation. IEEE Transactions on Network Science and Engineering (2022). [2] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [3] Ali Mamdouh Elkahky, Yang Song, and Xiaodong He. 2015. A multi-view deep learning approach for cross domain user modeling in recommendation systems. In Proceedings of the 24th international conference on world wide web . 278-288. [4] Ge Fan, Biao Geng, Jianrong Tao, Kai Wang, Changjie Fan, and Wei Zeng. 2022. PPPNE: Personalized proximity preserved network embedding. Neurocomputing 472 (2022), 103-112. [5] Ge Fan, Chaoyun Zhang, Junyang Chen, Baopu Li, Zenglin Xu, Yingjie Li, Luyu Peng, and Zhiguo Gong. 2022. Field-aware Variational Autoencoders for Billionscale User Representation Learning. In Proceedings of the 38th International Conference on Data Engineering . [6] Ge Fan, Chaoyun Zhang, Junyang Chen, and Kaishun Wu. 2021. Predicting ratings in multi-criteria recommender systems via a collective factor model. In DeMal@ The Web Conference . 1-6. [7] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition . 770-778. [8] Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, and Linjun Yang. 2020. Embeddingbased retrieval in facebook search. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2553-2561. [9] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning deep structured semantic models for web search using clickthrough data. In Proceedings of the 22nd ACM international conference on Information & Knowledge Management . 2333-2338. [10] Jeff Johnson, Matthijs Douze, and Hervé Jégou. 2019. Billion-scale similarity search with gpus. IEEE Transactions on Big Data 7, 3 (2019), 535-547. [11] Jianxun Lian, Fuzheng Zhang, Xing Xie, and Guangzhong Sun. 2017. CCCFNet: a content-boosted collaborative filtering neural network for cross domain recommender systems. In Proceedings of the 26th international conference on World Wide Web companion . 817-818. [12] Zinan Lin, Dugang Liu, Weike Pan, and Zhong Ming. 2021. Transfer Learning in Collaborative Recommendation for Bias Reduction. In Fifteenth ACM Conference on Recommender Systems . 736-740. [13] H Brendan McMahan, Gary Holt, David Sculley, Michael Young, Dietmar Ebner, Julian Grady, Lan Nie, Todd Phillips, Eugene Davydov, Daniel Golovin, et al. 2013. Ad click prediction: a view from the trenches. In Proceedings of the 19th ACM SIGKDD international conference on Knowledge discovery and data mining . 1222-1230. [14] Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and Jeff Dean. 2013. Distributed representations of words and phrases and their compositionality. Advances in neural information processing systems 26 (2013). [15] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1161-1170. [16] Mingze Sun, Daiyue Xue, Weipeng Wang, Qifu Hu, and Jianping Yu. 2021. GroupBased Deep Transfer Learning with Mixed Gate Control for Cross-Domain Recommendation. In 2021 International Joint Conference on Neural Networks . 1-8. [17] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [18] Ruoxi Wang, Zhe Zhao, Xinyang Yi, Ji Yang, Derek Zhiyuan Cheng, Lichan Hong, Steve Tjoa, Jieqi Kang, Evan Ettinger, and H Chi. 2019. Improving Relevance Prediction with Transfer Learning in Large-scale Retrieval Systems. In Proceedings of the 1st Adaptive & Multitask Learning Workshop . [19] Ruobing Xie, Zhijie Qiu, Jun Rao, Yi Liu, Bo Zhang, and Leyu Lin. 2020. Internal and Contextual Attention Network for Cold-start Multi-channel Matching in Recommendation. In IJCAI . 2732-2738. [20] Xinyang Yi, Ji Yang, Lichan Hong, Derek Zhiyuan Cheng, Lukasz Heldt, Aditee Kumthekar, Zhe Zhao, Li Wei, and Ed Chi. 2019. Sampling-bias-corrected neural modeling for large corpus item recommendations. In Proceedings of the 13th ACM Conference on Recommender Systems . 269-277. [21] Chaoyun Zhang, Marco Fiore, Cezary Ziemlicki, and Paul Patras. 2020. Microscope: mobile service traffic decomposition for network slicing as a service. In Proceedings of the 26th Annual International Conference on Mobile Computing and Networking . 1-14. [22] Chaoyun Zhang, Kai Wang, Hao Chen, Ge Fan, Yingjie Li, Lifang Wu, and Bingchao Zheng. 2022. QuickSkill: Novice Skill Estimation in Online Multiplayer Games. arXiv preprint arXiv:2208.07704 (2022). [23] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068.",
   "keywords_parsed": [
     "Recommender Systems",
-    " Transfer Learning",
-    " Multi-View Learning",
-    " Deep Learning ∗ This work was done when Chaoyun Zhang worked at Tencent. † Corresponding author. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. ASE '22",
-    " October 10-14",
-    " 2022",
-    " Rochester",
-    " MI",
-    " USA © 2022 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-9475-8/22/10...$15.00 https://doi.org/10.1145/3551349.3559496 Chaoyun Zhang ∗ Microsoft Research Beijing ",
-    " China chaoyun.zhang@microsoft.com Junyang Chen † Shenzhen University Shenzhen ",
-    " China junyangchen@szu.edu.cn"
+    "Transfer Learning",
+    "Multi-View Learning",
+    "Deep Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Meta-path Based Neighbors for Behavioral Target Generalization in Sequential Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A multi-view deep learning approach for cross domain user modeling in recommendation systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "PPPNE: Personalized proximity preserved network embedding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Field-aware Variational Autoencoders for Billionscale User Representation Learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Predicting ratings in multi-criteria recommender systems via a collective factor model"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Embeddingbased retrieval in facebook search"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Billion-scale similarity search with gpus"
+    },
+    {
+      "ref_id": "b11",
+      "title": "CCCFNet: a content-boosted collaborative filtering neural network for cross domain recommender systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Transfer Learning in Collaborative Recommendation for Bias Reduction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Ad click prediction: a view from the trenches"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Distributed representations of words and phrases and their compositionality"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Autoint: Automatic feature interaction learning via selfattentive neural networks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "GroupBased Deep Transfer Learning with Mixed Gate Control for Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Improving Relevance Prediction with Transfer Learning in Large-scale Retrieval Systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Internal and Contextual Attention Network for Cold-start Multi-channel Matching in Recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Sampling-bias-corrected neural modeling for large corpus item recommendations"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Microscope: mobile service traffic decomposition for network slicing as a service"
+    },
+    {
+      "ref_id": "b22",
+      "title": "QuickSkill: Novice Skill Estimation in Online Multiplayer Games"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

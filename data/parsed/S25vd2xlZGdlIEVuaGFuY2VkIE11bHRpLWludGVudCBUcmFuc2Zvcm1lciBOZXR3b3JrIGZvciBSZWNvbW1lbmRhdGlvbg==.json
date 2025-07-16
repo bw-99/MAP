@@ -28,7 +28,105 @@
   "REFERENCES": "[1] Antoine Bordes, Nicolas Usunier, Alberto Garcia-Duran, Jason Weston, and Oksana Yakhnenko. 2013. Translating embeddings for modeling multi-relational data. In Neural Information Processing Systems (NIPS) . 1-9. [2] Yixin Cao, Xiang Wang, Xiangnan He, Zikun Hu, and Tat-Seng Chua. 2019. Unifying knowledge graph learning and recommendation: Towards a better understanding of user preferences. In WWW . 151-161. [3] Yankai Chen, Yaming Yang, Yujing Wang, Jing Bai, Xiangchen Song, and Irwin King. 2022. Attentive Knowledge-aware Graph Convolutional Networks with Collaborative Guidance for Personalized Recommendation. In ICDE . 299-311. [4] Xavier Glorot and Yoshua Bengio. 2010. Understanding the difficulty of training deep feedforward neural networks. In AISTATS . 249-256. [5] William L Hamilton, Rex Ying, and Jure Leskovec. 2017. Inductive representation learning on large graphs. In NeurIPS . 1025-1035. Knowledge Enhanced Multi-intent Transformer Network for Recommendation WWW'24 Companion, May 13-17, 2024, Singapore, Singapore. [6] Binbin Hu, Chuan Shi, Wayne Xin Zhao, and Philip S Yu. 2018. Leveraging meta-path based context for top-n recommendation with a neural co-attention model. In SIGKDD . 1531-1540. [7] Jin Huang, Wayne Xin Zhao, Hongjian Dou, Ji-Rong Wen, and Edward Y Chang. 2018. Improving sequential recommendation with knowledge-enhanced memory networks. In SIGIR . 505-514. [8] Eric Jang, Shixiang Gu, and Ben Poole. 2017. Categorical reparametrization with gumble-softmax. In International Conference on Learning Representations (ICLR 2017) . OpenReview. net. [9] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [10] Yankai Lin, Zhiyuan Liu, Maosong Sun, Yang Liu, and Xuan Zhu. 2015. Learning entity and relation embeddings for knowledge graph completion. In AAAI . [11] Yanbei Liu, Xiao Wang, Shu Wu, and Zhitao Xiao. 2020. Independence promoted graph disentangled networks. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 4916-4923. [12] Ze Lyu, Yu Dong, Chengfu Huo, and Weijun Ren. 2020. Deep match to rank model for personalized click-through rate prediction. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 156-163. [13] Jianxin Ma, Peng Cui, Kun Kuang, Xin Wang, and Wenwu Zhu. 2019. Disentangled graph convolutional networks. In International conference on machine learning . PMLR, 4212-4221. [14] Xubin Ren, Lianghao Xia, Jiashu Zhao, Dawei Yin, and Chao Huang. 2023. Disentangled Contrastive Collaborative Filtering. arXiv preprint arXiv:2305.02759 (2023). [15] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2012. BPR: Bayesian personalized ranking from implicit feedback. arXiv (2012). [16] Chuan Shi, Binbin Hu, Wayne Xin Zhao, and S Yu Philip. 2018. Heterogeneous information network embedding for recommendation. IEEE Transactions on Knowledge and Data Engineering (2018), 357-370. [17] Zhu Sun, Jie Yang, Jie Zhang, Alessandro Bozzon, Long-Kai Huang, and Chi Xu. 2018. Recurrent knowledge graph embedding for effective recommendation. In RecSys . 297-305. [18] Hongwei Wang, Fuzheng Zhang, Jialin Wang, Miao Zhao, Wenjie Li, Xing Xie, and Minyi Guo. 2018. Ripplenet: Propagating user preferences on the knowledge graph for recommender systems. In CIKM . 417-426. [19] Hongwei Wang, Fuzheng Zhang, Xing Xie, and Minyi Guo. 2018. DKN: Deep knowledge-aware network for news recommendation. In WWW . 1835-1844. [20] Hongwei Wang, Fuzheng Zhang, Mengdi Zhang, Jure Leskovec, Miao Zhao, Wenjie Li, and Zhongyuan Wang. 2019. Knowledge-aware graph neural networks with label smoothness regularization for recommender systems. In SIGKDD . 968977. [21] Hongwei Wang, Miao Zhao, Xing Xie, Wenjie Li, and Minyi Guo. 2019. Knowledge graph convolutional networks for recommender systems. In WWW . 3307-3313. [22] Xiang Wang, Xiangnan He, Yixin Cao, Meng Liu, and Tat-Seng Chua. 2019. Kgat: Knowledge graph attention network for recommendation. In SIGKDD . 950-958. [23] Xiang Wang, Tinglin Huang, Dingxian Wang, Yancheng Yuan, Zhenguang Liu, Xiangnan He, and Tat-Seng Chua. 2021. Learning Intents behind Interactions with Knowledge Graph for Recommendation. In WWW . 878-887. [24] Xiang Wang, Hongye Jin, An Zhang, Xiangnan He, Tong Xu, and Tat-Seng Chua. 2020. Disentangled graph collaborative filtering. In Proceedings of the 43rd",
   "keywords_parsed": [
     "Knowledge Enhanced Recommendation",
-    " Graph Transformer",
-    " Graph Neural Networks"
+    "Graph Transformer",
+    "Graph Neural Networks"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Translating embeddings for modeling multi-relational data"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Unifying knowledge graph learning and recommendation: Towards a better understanding of user preferences"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Attentive Knowledge-aware Graph Convolutional Networks with Collaborative Guidance for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Understanding the difficulty of training deep feedforward neural networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Leveraging meta-path based context for top-n recommendation with a neural co-attention model"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Improving sequential recommendation with knowledge-enhanced memory networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Categorical reparametrization with gumble-softmax"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Learning entity and relation embeddings for knowledge graph completion"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Independence promoted graph disentangled networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep match to rank model for personalized click-through rate prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Disentangled graph convolutional networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Disentangled Contrastive Collaborative Filtering"
+    },
+    {
+      "ref_id": "b15",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Heterogeneous information network embedding for recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Recurrent knowledge graph embedding for effective recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Ripplenet: Propagating user preferences on the knowledge graph for recommender systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "DKN: Deep knowledge-aware network for news recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Knowledge-aware graph neural networks with label smoothness regularization for recommender systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Knowledge graph convolutional networks for recommender systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Kgat: Knowledge graph attention network for recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Learning Intents behind Interactions with Knowledge Graph for Recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Disentangled graph collaborative filtering"
+    }
   ]
 }

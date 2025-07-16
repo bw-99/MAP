@@ -47,6 +47,242 @@
   "ACKNOWLEDGMENT": "National Key RD Program of China (2022YFF0712100), NSFC (61906092, 62006118, 62276131), Natural Science Foundation of Jiangsu Province of China under Grant (BK20200460), Jiangsu Shuangchuang (Mass Innovation and Entrepreneurship) Talent Program. Young Elite Scientists Sponsorship Program by CAST, CAAI-Huawei MindSpore Open Fund (CAAIXSJLJJ-2021-014B), the Fundamental Research Funds for the Central Universities (NO.NJ2022028, No.30922010317)",
   "REFERENCES": "[1] The Insight Partners. (2023) Online recruitment market. [Online]. Available: https://www.theinsightpartners. com/reports/online-recruitment-market 12 [2] S. Bian, W. X. Zhao, Y. Song, T. Zhang, and J.-R. Wen, 'Domain adaptation for person-job fit with transferable deep global match network,' in Proceedings of the 2019 conference on empirical methods in natural language processing and the 9th international joint conference on natural language processing (EMNLP-IJCNLP) , 2019, pp. 4810-4820. [3] K. Yao, J. Zhang, C. Qin, P. Wang, H. Zhu, and H. Xiong, 'Knowledge enhanced person-job fit for talent recruitment,' in ICDE , Virtual, 2022, pp. 3467-3480. [4] S. Bian, X. Chen, W. X. Zhao, K. Zhou, Y. Hou, Y. Song, T. Zhang, and J.-R. Wen, 'Learning to match jobs with resumes from sparse interaction data using multi-view coteaching network,' in Proceedings of the 29th ACM International Conference on Information & Knowledge Management , 2020, pp. 65-74. [5] K. Yao, C. Qin, H. Zhu, C. Ma, J. Zhang, Y. Du, and H. Xiong, 'An interactive neural network approach to keyphrase extraction in talent recruitment,' in Proceedings of the 30th ACM International Conference on Information & Knowledge Management , 2021, pp. 2383-2393. [6] L. Wu, X. He, X. Wang, K. Zhang, and M. Wang, 'A survey on accuracy-oriented neural recommendation: From collaborative filtering to information-rich recommendation,' IEEE Transactions on Knowledge and Data Engineering , vol. 35, no. 5, pp. 4425-4445, 2022. [7] H.-T. Cheng, L. Koc, J. Harmsen, T. Shaked, T. Chandra, H. Aradhye, G. Anderson, G. Corrado, W. Chai, M. Ispir et al. , 'Wide & deep learning for recommender systems,' in Proceedings of the 1st workshop on deep learning for recommender systems , 2016, pp. 7-10. [8] H. Guo, R. Tang, Y. Ye, Z. Li, and X. He, 'Deepfm: a factorization-machine based neural network for ctr prediction,' arXiv preprint arXiv:1703.04247 , 2017. [9] X. Wang, X. He, F. Feng, L. Nie, and T.-S. Chua, 'Tem: Treeenhanced embedding model for explainable recommendation,' in Proceedings of the 2018 world wide web conference , 2018, pp. 1543-1552. [10] C. Qin, H. Zhu, T. Xu, C. Zhu, L. Jiang, E. Chen, and H. Xiong, 'Enhancing person-job fit for talent recruitment: Anability-aware neural network approach,' in SIGIR , Ann Arbor, MI, 2018, pp. 25-34. [11] C. Zhu, H. Zhu, H. Xiong, C. Ma, F. Xie, P. Ding, and P. Li, 'Person-job fit: Adapting the right talent for the right job with joint representation learning,' ACMTMIS. , vol. 9, pp. 12:1-12:17, 2018. [12] C. Wu, F. Wu, T. Qi, and Y. Huang, 'Two birds with one stone: Unified model learning for both recall and ranking in news recommendation,' arXiv preprint arXiv:2104.07404 , 2021. [13] T. Qi, F. Wu, C. Wu, Y. Huang, and X. Xie, 'Uni-fedrec: A unified privacy-preserving news recommendation framework for model training and online serving,' arXiv preprint arXiv:2109.05236 , 2021. [14] K. Kenthapadi, B. Le, and G. Venkataraman, 'Personalized job recommendation system at linkedin: Practical challenges and lessons learned,' in Proceedings of the eleventh ACM conference on recommender systems , 2017, pp. 346-347. [15] Y.-C. Chou and H.-Y. Yu, 'Based on the application of ai technology in resume analysis and job recommendation,' in 2020 IEEE International Conference on Computational Electromagnetics (ICCEM) . IEEE, 2020, pp. 291-296. [16] M. Diaby, E. Viennet, and T. Launay, 'Toward the next generation of recruitment tools: an online social networkbased job recommender system,' in Proceedings of the 2013 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining , 2013, pp. 821-828. [17] Y. Lu, S. El Helou, and D. Gillet, 'A recommender system for job seeking and recruiting website,' in Proceedings of the 22nd International Conference on World Wide Web , 2013, pp. 963-966. [18] K. V. Deshpande, S. Pan, and J. R. Foulds, 'Mitigating demographic bias in ai-based resume filtering,' in Adjunct publication of the 28th ACM conference on user modeling, adaptation and personalization , 2020, pp. 268-275. [19] X. Zhang, Y. Zhou, Y. Ma, B.-C. Chen, L. Zhang, and D. Agarwal, 'Glmix: Generalized linear mixed models for large-scale response prediction,' in Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining , 2016, pp. 363-372. [20] G. Lu, J. Gan, J. Yin, Z. Luo, B. Li, and X. Zhao, 'Multitask learning using a hybrid representation for text classification,' Neural Computing and Applications , vol. 32, pp. 6467-6480, 2020. [21] B. Tian, Y. Zhang, J. Wang, and C. Xing, 'Hierarchical interattention network for document classification with multitask learning.' in IJCAI , 2019, pp. 3569-3575. [22] Y. Xia, T. He, X. Tan, F. Tian, D. He, and T. Qin, 'Tied transformers: Neural machine translation with shared encoder and decoder,' in Proceedings of the AAAI conference on artificial intelligence , vol. 33, no. 01, 2019, pp. 5466-5473. [23] R. Weng, H. Yu, S. Huang, S. Cheng, and W. Luo, 'Acquiring knowledge from pre-trained model to neural machine translation,' in Proceedings of the AAAI conference on artificial intelligence , vol. 34, no. 05, 2020, pp. 9266-9273. [24] J. Berant, V. Srikumar, P.-C. Chen, A. Vander Linden, B. Harding, B. Huang, P. Clark, and C. D. Manning, 'Modeling biological processes for reading comprehension,' in Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP) , 2014, pp. 1499-1510. [25] K. M. Hermann, T. Kocisky, E. Grefenstette, L. Espeholt, W. Kay, M. Suleyman, and P. Blunsom, 'Teaching machines to read and comprehend,' Advances in neural information processing systems , vol. 28, 2015. [26] S. I. Wang and C. D. Manning, 'Baselines and bigrams: Simple, good sentiment and topic classification,' in Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers) , 2012, pp. 90-94. [27] M. Lan, C. L. Tan, J. Su, and Y. Lu, 'Supervised and traditional term weighting methods for automatic text categorization,' IEEE transactions on pattern analysis and machine intelligence , vol. 31, no. 4, pp. 721-735, 2008. [28] C. Cherry and C. Quirk, 'Discriminative, syntactic language modeling through latent svms,' in Proceedings of the 8th Conference of the Association for Machine Translation in the Americas: Research Papers , 2008, pp. 65-74. [29] Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner, 'Gradientbased learning applied to document recognition,' Proceedings of the IEEE , vol. 86, no. 11, pp. 2278-2324, 1998. [30] J. L. Elman, 'Finding structure in time,' Cognitive science , vol. 14, no. 2, pp. 179-211, 1990. [31] D. Shen, H. Zhu, C. Zhu, T. Xu, C. Ma, and H. Xiong, 'A joint learning approach to intelligent job interview assessment.' in IJCAI , vol. 18, 2018, pp. 3542-3548. [32] R. Yan, R. Le, Y. Song, T. Zhang, X. Zhang, and D. Zhao, 'Interview choice reveals your preference on the market: To improve job-resume matching through profiling memories,' in Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining , 2019, pp. 914-922. [33] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, and I. Polosukhin, 'Attention is all you need,' in NeurIPS , Long Beach, CA, 2017, pp. 59986008. [34] X. Geng and R. Ji, 'Label distribution learning,' in ICDM , TX, USA, 2013, pp. 377-383. [35] N. Kalchbrenner, E. Grefenstette, and P. Blunsom, 'A convolutional neural network for modelling sentences,' in ACL , Baltimore, MD, 2014, pp. 655-665. [36] S. Ioffe and C. Szegedy, 'Batch normalization: Accelerat- 13 ing deep network training by reducing internal covariate shift,' in ICML , Lille, France, 2015, pp. 448-456. [37] V. Nair and G. E. Hinton, 'Rectified linear units improve restricted boltzmann machines,' in ICML , Haifa, Israel, 2010, pp. 807-814. [38] N. Srivastava, G. E. Hinton, A. Krizhevsky, I. Sutskever, and R. Salakhutdinov, 'Dropout: a simple way to prevent neural networks from overfitting,' JMLR , vol. 15, pp. 1929-1958, 2014. [39] K. He, X. Zhang, S. Ren, and J. Sun, 'Deep residual learning for image recognition,' in CVPR , Las Vegas, NV, 2016, pp. 770-778. [40] L. J. Ba, J. R. Kiros, and G. E. Hinton, 'Layer normalization,' CoRR , vol. abs/1607.06450, 2016. [41] D. J. MacKay and D. J. Mac Kay, Information theory, inference and learning algorithms . Cambridge university press, 2003. [42] X. Jia, W. Li, J. Liu, and Y. Zhang, 'Label distribution learning by exploiting label correlations,' in AAAI , New Orleans, Louisiana, 2018, pp. 3310-3317. [43] Y. Yang, Z. Fu, D. Zhan, Z. Liu, and Y. Jiang, 'Semisupervised multi-modal multi-instance multi-label deep network with optimal transport,' IEEE TKDE , vol. 33, pp. 696-709, 2021. [44] S. Huang and Z. Zhou, 'Multi-label learning by exploiting label correlations locally,' in AAAI , vol. 26, Toronto, Canada, 2012, pp. 949-955. [45] F. Faghri, D. J. Fleet, J. R. Kiros, and S. Fidler, 'Vse++: Improving visual-semantic embeddings with hard negatives,' arXiv preprint arXiv:1707.05612 , 2017. [46] P. Matthews, AShort History of Structural Linguistics . Cambridge University Press, 2001. [47] X. Jia, Z. Li, X. Zheng, W. Li, and S. Huang, 'Label distribution learning with label correlations on local samples,' IEEE TKDE , vol. 33, pp. 1619-1631, 2021. [48] X. Glorot and Y. Bengio, 'Understanding the difficulty of training deep feedforward neural networks,' in AISTATS , vol. 9, Sardinia, Italy, 2010, pp. 249-256. [49] C. Wu, F. Wu, M. An, J. Huang, Y. Huang, and X. Xie, 'Npa: neural news recommendation with personalized attention,' in Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining , 2019, pp. 2576-2584. [50] --,'Neural news recommendation with attentive multiview learning,' arXiv preprint arXiv:1907.05576 , 2019. [51] C. Wu, F. Wu, S. Ge, T. Qi, Y. Huang, and X. Xie, 'Neural news recommendation with multi-head self-attention,' in Proceedings of the 2019 conference on empirical methods in natural language processing and the 9th international joint conference on natural language processing (EMNLP-IJCNLP) , 2019, pp. 6389-6394. [52] Z. Mao, X. Zeng, and K.-F. Wong, 'Neural news recommendation with collaborative news encoding and structural user encoding,' arXiv preprint arXiv:2109.00750 , 2021. [53] Q. Zhang, J. Li, Q. Jia, C. Wang, J. Zhu, Z. Wang, and X. He, 'Unbert: User-news matching bert for news recommendation.' in IJCAI , 2021, pp. 3356-3362. [54] J. Li, J. Zhu, Q. Bi, G. Cai, L. Shang, Z. Dong, X. Jiang, and Q. Liu, 'Miner: multi-interest matching network for news recommendation,' in Findings of the Association for Computational Linguistics: ACL 2022 , 2022, pp. 343-352. [55] Z. Wang, Q. She, and J. Zhang, 'Masknet: Introducing feature-wise multiplication to ctr ranking models by instance-guided mask,' arXiv preprint arXiv:2102.07619 , 2021. [56] F. Wang, Y. Wang, D. Li, H. Gu, T. Lu, P. Zhang, and N. Gu, 'Enhancing ctr prediction with context-aware feature representation learning,' in Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval , 2022, pp. 343-352. [57] W. Krichene and S. Rendle, 'On sampled metrics for item recommendation (extended abstract),' in IJCAI , Virtual Event, 2021, pp. 4784-4788. [58] L. Yin, X. Wei, Y. Sun, J. Wang, and M. J. Rosato, 'A 3d facial expression database for facial behavior research,' in FGR , Southampton, UK, 2006, pp. 211-216. Zhihao Guan is working towards the Ph.D. degree with the School of Computer Science and Engineering, in Nanjing University of Science and Technology, China. His research interests lie primarily in deep learning and data mining, including cross-modal learning. Jia-Qi Yang earned his M.E. degree in 2021 and is currently pursuing a Ph.D. at the State Key Laboratory for Novel Software Technology, Nanjing University, China. His research are primarily focused on machine learning and data mining, with specific expertise in uncertainty calibration, recommendation systems, and AI for science. He serves as a Program Committee member and Reviewer for prestigious conferences like AAAI, NeurIPS, ICLR, and others. Yang Yang received the Ph.D. degree in computer science, Nanjing University, China in 2019. At the same year, he became a faculty member at Nanjing University of Science and Technology, China. He is currently a Professor with the school of Computer Science and Engineering. His research interests lie primarily in machine learning and data mining, including heterogeneous learning, model reuse, and incremental mining. He serves as PC in leading conferences such as IJCAI, AAAI, ICML, NIPS, etc. Hengshu Zhu (SM'19) is currently a principal data scientist & architect at Baidu Inc. He received the Ph.D. degree in 2014 and B.E. degree in 2009, both in Computer Science from University of Science and Technology of China (USTC), China. His general area of research is data mining and machine learning, with a focus on developing advanced data analysis techniques for innovative business applications. He has published prolifically in refereed journals and conference proceedings, including IEEE Trans- actions on Knowledge and Data Engineering (TKDE), IEEE Transactions on Mobile Computing (TMC), ACM Transactions on Information Systems (ACM TOIS), ACM Transactions on Knowledge Discovery from Data (TKDD), ACM SIGKDD, ACM SIGIR, WWW, IJCAI, and AAAI. He has served regularly on the organization and program committees of numerous conferences, including as a program co-chair of the KDD Cup-2019 Regular ML Track, and a founding co-chair of the first International Workshop on Organizational Behavior and Talent Analytics (OBTA) and the International Workshop on Talent and Management Computing (TMC), in conjunction with ACM SIGKDD. He was the recipient of the Distinguished Dissertation Award of CAS (2016), the Distinguished Dissertation Award of CAAI (2016), the Special Prize of President Scholarship for Postgraduate Students of CAS (2014), the Best Student Paper Award of KSEM-2011, WAIM-2013, CCDM-2014, and the Best Paper Nomination of ICDM-2014. He is the senior member of IEEE, ACM, and CCF. Wenjie Li received the PhD degree in systems engineering and engineering management from the Chinese University of Hong Kong, Hong Kong, in 1997. She is currently an associate professor with the Department of Computing, The Hong Kong Polytechnic University. Her main research interests include online social network analysis, natural language processing, and document summarization. 14 Hui Xiong (Fellow'20) is a Professor at the Artificial Intelligence Thrust, The Hong Kong University of Science and Technology. Xiong's research interests include data mining, mobile computing, and their applications in business. Xiong received his PhD in Computer Science from University of Minnesota, USA. He has served regularly on the organization and program committees of numerous conferences, including as a Program Co-Chair of the Industrial and Government Track for the 18th ACM SIGKDD Interna- tional Conference on Knowledge Discovery and Data Mining (KDD), a Program Co-Chair for the IEEE 2013 International Conference on Data Mining (ICDM), a General Co-Chair for the 2015 IEEE International Conference on Data Mining (ICDM), and a Program Co-Chair of the Research Track for the 2018 ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. He received the 2021 AAAI Best Paper Award and the 2011 IEEE ICDM Best Research Paper award. For his outstanding contributions to data mining and mobile computing, he was elected an AAAS Fellow and an IEEE Fellow in 2020.",
   "keywords_parsed": [
-    "None"
+    "Skill-Aware Representation",
+    "Transformer",
+    "Job Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Online recruitment market"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Domain adaptation for person-job fit with transferable deep global match network"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Knowledge enhanced person-job fit for talent recruitment"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Learning to match jobs with resumes from sparse interaction data using multi-view coteaching network"
+    },
+    {
+      "ref_id": "b5",
+      "title": "An interactive neural network approach to keyphrase extraction in talent recruitment"
+    },
+    {
+      "ref_id": "b6",
+      "title": "A survey on accuracy-oriented neural recommendation: From collaborative filtering to information-rich recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deepfm: a factorization-machine based neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Tem: Tree-enhanced embedding model for explainable recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Enhancing person-job fit for talent recruitment: An ability-aware neural network approach"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Person-job fit: Adapting the right talent for the right job with joint representation learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Two birds with one stone: Unified model learning for both recall and ranking in news recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Uni-fedrec: A unified privacy-preserving news recommendation framework for model training and online serving"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Personalized job recommendation system at LinkedIn: Practical challenges and lessons learned"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Based on the application of ai technology in resume analysis and job recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Toward the next generation of recruitment tools: an online social network-based job recommender system"
+    },
+    {
+      "ref_id": "b17",
+      "title": "A recommender system for job seeking and recruiting website"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Mitigating demographic bias in ai-based resume filtering"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Glimx: Generalized linear mixed models for large-scale response prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Multitask learning using a hybrid representation for text classification"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Hierarchical interattention network for document classification with multitask learning"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Tied transformers: Neural machine translation with shared encoder and decoder"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Acquiring knowledge from pre-trained model to neural machine translation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Modeling biological processes for reading comprehension"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Teaching machines to read and comprehend"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Baselines and bigrams: Simple, good sentiment and topic classification"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Supervised and traditional term weighting methods for automatic text categorization"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Discriminative, syntactic language modeling through latent svms"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Gradient-based learning applied to document recognition"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Finding structure in time"
+    },
+    {
+      "ref_id": "b31",
+      "title": "A joint learning approach to intelligent job interview assessment"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Interview choice reveals your preference on the market: To improve job-resume matching through profiling memories"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Label distribution learning"
+    },
+    {
+      "ref_id": "b35",
+      "title": "A convolutional neural network for modelling sentences"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Rectified linear units improve restricted boltzmann machines"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Dropout: a simple way to prevent neural networks from overfitting"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Layer normalization"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Information theory, inference and learning algorithms"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Label distribution learning by exploiting label correlations"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Semi-supervised multi-modal multi-instance multi-label deep network with optimal transport"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Multi-label learning by exploiting label correlations locally"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Vse++: Improving visual-semantic embeddings with hard negatives"
+    },
+    {
+      "ref_id": "b46",
+      "title": "A Short History of Structural Linguistics"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Label distribution learning with label correlations on local samples"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Understanding the difficulty of training deep feedforward neural networks"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Npa: neural news recommendation with personalized attention"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Neural news recommendation with attentive multiview learning"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Neural news recommendation with multi-head self-attention"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Neural news recommendation with collaborative news encoding and structural user encoding"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Unbert: User-news matching bert for news recommendation"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Miner: multi-interest matching network for news recommendation"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Masknet: Introducing feature-wise multiplication to ctr ranking models by instance-guided mask"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Enhancing ctr prediction with context-aware feature representation learning"
+    },
+    {
+      "ref_id": "b57",
+      "title": "On sampled metrics for item recommendation (extended abstract)"
+    },
+    {
+      "ref_id": "b58",
+      "title": "A 3d facial expression database for facial behavior research"
+    }
   ]
 }

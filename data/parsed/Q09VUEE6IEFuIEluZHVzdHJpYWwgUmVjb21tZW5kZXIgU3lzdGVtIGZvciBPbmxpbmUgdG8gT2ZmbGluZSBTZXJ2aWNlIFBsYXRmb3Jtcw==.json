@@ -23,8 +23,198 @@
   "REFERENCES": "[1] Aman Agarwal, Kenta Takatsu, Ivan Zaitsev, and Thorsten Joachims. 2019. A general framework for counterfactual learning-to-rank. In SIGIR . 5-14. [2] Qingyao Ai, Keping Bi, Cheng Luo, Jiafeng Guo, and W Bruce Croft. 2018. Unbiased learning to rank with unbiased propensity estimation. In SIGIR . 385-394. [3] Ting Bai, Lixin Zou, Wayne Xin Zhao, Pan Du, Weidong Liu, Jian-Yun Nie, and Ji-Rong Wen. 2019. Ctrec: A long-short demands evolution model for continuoustime recommendation. In SIGIR . 675-684. [4] Olivier Chapelle and Ya Zhang. 2009. A dynamic bayesian network click model for web search ranking. In WWW . 1-10. [5] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2020. Bias and Debias in Recommender System: A Survey and Future Directions. arXiv preprint arXiv:2010.03240 (2020). [6] Xu Chen, Hongteng Xu, Yongfeng Zhang, Jiaxi Tang, Yixin Cao, Zheng Qin, and Hongyuan Zha. 2018. Sequential recommendation with user memory networks. In WSDM . 108-116. [7] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In RecSys Workshop . 7-10. [8] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In RecSys . 191-198. [9] Nick Craswell, Onno Zoeter, Michael Taylor, and Bill Ramsey. 2008. An experimental comparison of click position-bias models. In WSDM . 87-94. [10] Yann N Dauphin, Angela Fan, Michael Auli, and David Grangier. 2017. Language modeling with gated convolutional networks. In ICML . 933-941. [11] Georges E Dupret and Benjamin Piwowarski. 2008. A user browsing model to predict search engine click data from past observations.. In SIGIR . 331-338. [12] Hui Fang, Danning Zhang, Yiheng Shu, and Guibing Guo. 2020. Deep Learning for Sequential Recommendation: Algorithms, Influential Factors, and Evaluations. ACM Transactions on Information Systems 39, 1 (2020), 1-42. [13] Yu Gong, Ziwen Jiang, Yufei Feng, Binbin Hu, Kaiqi Zhao, Qingwen Liu, and Wenwu Ou. 2020. EdgeRec: Recommender System on Edge in Mobile Taobao. In CIKM . 2477-2484. [14] Fan Guo, Chao Liu, Anitha Kannan, Tom Minka, Michael Taylor, Yi-Min Wang, and Christos Faloutsos. 2009. Click chain model in web search. In WWW . 11-20. [15] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In IJCAI . 1725-1731. [16] Huifeng Guo, Jinkai Yu, Qing Liu, Ruiming Tang, and Yuzhou Zhang. 2019. PAL: a position-bias aware learning framework for CTR prediction in live recommender systems. In RecSys . 452-456. [17] Ruining He and Julian McAuley. 2016. Fusing similarity models with markov chains for sparse sequential recommendation. In ICDM . 191-200. [18] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2016. Session-based recommendations with recurrent neural networks. In ICLR . [19] Yupeng Hou, Binbin Hu, Zhiqiang Zhang, and Wayne Xin Zhao. 2022. Core: simple and effective session-based recommendation within consistent representation space. In SIGIR . 1796-1801. [20] Binbin Hu, Zhengwei Wu, Jun Zhou, Ziqi Liu, Zhigang Huangfu, Zhiqiang Zhang, and Chaochao Chen. 2022. MERIT: Learning Multi-level Representations on Temporal Graphs. In IJCAI . [21] Jiarui Jin, Yuchen Fang, Weinan Zhang, Kan Ren, Guorui Zhou, Jian Xu, Yong Yu, Jun Wang, Xiaoqiang Zhu, and Kun Gai. 2020. A deep recurrent survival model for unbiased ranking. In SIGIR . 29-38. [22] Thorsten Joachims, Adith Swaminathan, and Tobias Schnabel. 2017. Unbiased learning-to-rank with biased feedback. In WSDM . 781-789. [23] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In ICDM . 197-206. [24] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In SIGKDD . 1754-1763. [25] Anjing Luo, Pengpeng Zhao, Yanchi Liu, Fuzhen Zhuang, Deqing Wang, Jiajie Xu, Junhua Fang, and Victor S Sheng. 2020. Collaborative Self-Attention Network for Session-based Recommendation. In IJCAI . 2591-2597. [26] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In SIGKDD . 1930-1939. [27] Ha Quang Minh, Partha Niyogi, and Yuan Yao. 2006. Mercer's theorem, feature maps, and smoothing. In COLT . 154-168. [28] Takahiro Omi, Naonori Ueda, and Kazuyuki Aihara. 2019. Fully neural network based model for general temporal point processes. In NIPS . 2120-2129. [29] Zhen Qin, Suming J Chen, Donald Metzler, Yongwoo Noh, Jingzheng Qin, and Xuanhui Wang. 2020. Attribute-based propensity for unbiased learning in recommender systems: Algorithm and case studies. In SIGKDD . 2359-2367. [30] Steffen Rendle, Christoph Freudenthaler, and Lars Schmidt-Thieme. 2010. Factorizing personalized markov chains for next-basket recommendation. In WWW . 811-820. [31] Yong Kiam Tan, Xinxing Xu, and Yong Liu. 2016. Improved recurrent neural networks for session-based recommendations. In RecSys Workshop . 17-22. [32] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In WSDM . 565-573. [33] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In NIPS . 5998-6008. [34] Xuanhui Wang, Nadav Golbandi, Michael Bendersky, Donald Metzler, and Marc Najork. 2018. Position bias estimation for unbiased learning to rank in personal search. In WSDM . 610-618. [35] Le Wu, Xiangnan He, Xiang Wang, Kun Zhang, and Meng Wang. 2021. A Survey on Neural Recommendation: From Collaborative Filtering to Content and Context Enriched Recommendation. arXiv preprint arXiv:2104.13030 (2021). [36] Jun Xiao, Hao Ye, Xiangnan He, Hanwang Zhang, Fei Wu, and Tat-Seng Chua. 2017. Attentional factorization machines: Learning the weight of feature interactions via attention networks. In IJCAI . 3119-3125. [37] Chengfeng Xu, Pengpeng Zhao, Yanchi Liu, Jiajie Xu, Victor S Sheng S. Sheng, Zhiming Cui, Xiaofang Zhou, and Hui Xiong. 2019. Recurrent convolutional neural network for sequential recommendation. In WWW . 3398-3404. [38] Da Xu, Chuanwei Ruan, Sushant Kumar, Evren Korpeoglu, and Kannan Achan. 2019. Self-attention with functional time representation learning. In NIPS . 15915-15925. [39] An Yan, Shuo Cheng, Wang-Cheng Kang, Mengting Wan, and Julian McAuley. 2019. CosRec: 2D convolutional neural networks for sequential recommendation. In CIKM . 2173-2176. [40] Wenwen Ye, Shuaiqiang Wang, Xu Chen, Xuepeng Wang, Zheng Qin, and Dawei Yin. 2020. Time Matters: Sequential Recommendation with Complex Temporal Information. In SIGIR . 1459-1468. [41] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. Recommending what video to watch next: a multitask ranking system. In RecSys . 43-51. [42] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In AAAI . 5941-5948. [43] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In SIGKDD . 1059-1068. [44] Jun Zhou, Xiaolong Li, Peilin Zhao, Chaochao Chen, Longfei Li, Xinxing Yang, Qing Cui, Jin Yu, Xu Chen, Yi Ding, et al. 2017. Kunpeng: Parameter server based distributed learning systems and its applications in alibaba and ant financial. In SIGKDD . 1693-1702. [45] Yu Zhu, Hao Li, Yikang Liao, Beidou Wang, Ziyu Guan, Haifeng Liu, and Deng Cai. 2017. What to Do Next: Modeling User Behaviors by Time-LSTM.. In IJCAI . 3602-3608. [46] Zeyuan Allen Zhu, Weizhu Chen, Tom Minka, Chenguang Zhu, and Zheng Chen. 2010. A novel click model and its applications to online advertising. In WSDM . 321-330. [47] Andrew Zimdars, David Maxwell Chickering, and Christopher Meek. 2001. Using temporal data for making recommendations. In UAI . 580-588.",
   "keywords_parsed": [
     "O2O service platform",
-    " Recommender system",
-    " Temporal pattern",
-    " Position bias"
+    "Recommender system",
+    "Temporal pattern",
+    "Position bias"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A general framework for counterfactual learning-to-rank"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Unbiased learning to rank with unbiased propensity estimation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Ctrec: A long-short demands evolution model for continuoustime recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A dynamic bayesian network click model for web search ranking"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Bias and Debias in Recommender System: A Survey and Future Directions"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Sequential recommendation with user memory networks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "An experimental comparison of click position-bias models"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Language modeling with gated convolutional networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A user browsing model to predict search engine click data from past observations."
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep Learning for Sequential Recommendation: Algorithms, Influential Factors, and Evaluations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "EdgeRec: Recommender System on Edge in Mobile Taobao"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Click chain model in web search"
+    },
+    {
+      "ref_id": "b15",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "PAL: a position-bias aware learning framework for CTR prediction in live recommender systems"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Fusing similarity models with markov chains for sparse sequential recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Core: simple and effective session-based recommendation within consistent representation space"
+    },
+    {
+      "ref_id": "b20",
+      "title": "MERIT: Learning Multi-level Representations on Temporal Graphs"
+    },
+    {
+      "ref_id": "b21",
+      "title": "A deep recurrent survival model for unbiased ranking"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Unbiased learning-to-rank with biased feedback"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Collaborative Self-Attention Network for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Mercer's theorem, feature maps, and smoothing"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Fully neural network based model for general temporal point processes"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Attribute-based propensity for unbiased learning in recommender systems: Algorithm and case studies"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Factorizing personalized markov chains for next-basket recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Improved recurrent neural networks for session-based recommendations"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Position bias estimation for unbiased learning to rank in personal search"
+    },
+    {
+      "ref_id": "b35",
+      "title": "A Survey on Neural Recommendation: From Collaborative Filtering to Content and Context Enriched Recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Attentional factorization machines: Learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Recurrent convolutional neural network for sequential recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Self-attention with functional time representation learning"
+    },
+    {
+      "ref_id": "b39",
+      "title": "CosRec: 2D convolutional neural networks for sequential recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Time Matters: Sequential Recommendation with Complex Temporal Information"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Recommending what video to watch next: a multitask ranking system"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Kunpeng: Parameter server based distributed learning systems and its applications in alibaba and ant financial"
+    },
+    {
+      "ref_id": "b45",
+      "title": "What to Do Next: Modeling User Behaviors by Time-LSTM"
+    },
+    {
+      "ref_id": "b46",
+      "title": "A novel click model and its applications to online advertising"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Using temporal data for making recommendations"
+    }
   ]
 }

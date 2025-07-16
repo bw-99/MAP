@@ -27,16 +27,181 @@
   "REFERENCES": "[1] Charu C. Aggarwal. 2016. Recommender Systems - The Textbook . Springer. [2] Naveed Akhtar and Ajmal S. Mian. 2018. Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey. IEEE Access 6 (2018), 14410-14430. [3] Al Borchers, Jonathan L. Herlocker, and John Riedl. 1998. Ganging up on Information Overload. Computer 31, 4 (1998), 106-108. [4] Robin Burke, Bamshad Mobasher, and Runa Bhaumik. 2005. Limited Knowledge Shilling Attacks in Collaborative Filtering Systems. In ITWP@IJCAI . [5] Robin D. Burke, Bamshad Mobasher, Runa Bhaumik, and Chad Williams. 2005. Segment-Based Injection Attacks against Collaborative Filtering Recommender Systems. In ICDM . 577-580. [6] Joseph A. Calandrino, Ann Kilzer, Arvind Narayanan, Edward W. Felten, and Vitaly Shmatikov. 2011. 'You Might Also Like:' Privacy Risks of Collaborative Filtering. In IEEE Symposium on Security and Privacy . 231-246. [7] Iván Cantador, Peter Brusilovsky, and Tsvi Kuflik. 2011. Second workshop on information heterogeneity and fusion in recommender systems (HetRec2011). In RecSys . 387-388. [8] Huiyuan Chen and Jing Li. 2019. Data Poisoning Attacks on Cross-domain Recommendation. In CIKM . 2177-2180. [9] Konstantina Christakopoulou and Arindam Banerjee. 2019. Adversarial attacks on an oblivious recommender. In RecSys . 322-330. [10] R Dennis Cook and Sanford Weisberg. 1980. Characterizations of an empirical influence function for detecting influential cases in regression. Technometrics 22, 4 (1980), 495-508. [11] Yashar Deldjoo, Tommaso Di Noia, and Felice Antonio Merra. 2022. A Survey on Adversarial Recommender Systems: From Attack/Defense Strategies to Generative Adversarial Networks. ACM Comput. Surv. 54, 2 (2022), 35:1-35:38. [12] Danhao Ding, Hui Li, Zhipeng Huang, and Nikos Mamoulis. 2017. Efficient FaultTolerant Group Recommendation Using alpha-beta-core. In CIKM . 2047-2050. [13] Pavlos S. Efraimidis and Paul G. Spirakis. 2006. Weighted random sampling with a reservoir. Inf. Process. Lett. 97, 5 (2006), 181-185. [14] Wenqi Fan, Tyler Derr, Xiangyu Zhao, Yao Ma, Hui Liu, Jianping Wang, Jiliang Tang, and Qing Li. 2021. Attacking Black-box Recommendations via Copying Cross-domain User Profiles. In ICDE . 1583-1594. [15] Minghong Fang, Guolei Yang, Neil Zhenqiang Gong, and Jia Liu. 2018. Poisoning Attacks to Graph-Based Recommender Systems. In ACSAC . 381-392. [16] Ben Finkelshtein, Chaim Baskin, Evgenii Zheltonozhskii, and Uri Alon. 2022. Single-node attacks for fooling graph neural networks. Neurocomputing 513 (2022), 1-12. [17] Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David WardeFarley, Sherjil Ozair, Aaron C. Courville, and Yoshua Bengio. 2014. Generative Adversarial Nets. In NIPS . 2672-2680. [18] Ihsan Gunes, Cihan Kaleli, Alper Bilge, and Huseyin Polat. 2014. Shilling attacks against recommender systems: a comprehensive survey. Artif. Intell. Rev. 42, 4 (2014), 767-799. [19] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yong-Dong Zhang, and Meng Wang. 2020. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation. In SIGIR . 639-648. [20] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural Collaborative Filtering. In WWW . 173-182. [21] Yifan Hu, Yehuda Koren, and Chris Volinsky. 2008. Collaborative Filtering for Implicit Feedback Datasets. In ICDM . 263-272. [22] Eric Jang, Shixiang Gu, and Ben Poole. 2017. Categorical Reparameterization with Gumbel-Softmax. In ICLR (Poster) . https://openreview.net/pdf?id=rkE3y85ee [23] Leslie Pack Kaelbling, Michael L. Littman, and Andrew W. Moore. 1996. Reinforcement Learning: A Survey. J. Artif. Intell. Res. 4 (1996), 237-285. [24] Diederik P. Kingma and Jimmy Ba. 2015. Adam: A Method for Stochastic Optimization. In ICLR (Poster) . https://arxiv.org/abs/1412.6980 [25] Pang Wei Koh and Percy Liang. 2017. Understanding Black-box Predictions via Influence Functions. In ICML , Vol. 70. 1885-1894. [26] David Kügler, Alexander Distergoft, Arjan Kuijper, and Anirban Mukhopadhyay. 2018. Exploring Adversarial Examples - Patterns of One-Pixel Attacks. In MLCN/DLF/iMIMIC@MICCAI , Vol. 11038. 70-78. [27] Shyong K. Lam and John Riedl. 2004. Shilling recommender systems for fun and profit. In WWW . 393-402. [28] Bo Li, Yining Wang, Aarti Singh, and Yevgeniy Vorobeychik. 2016. Data Poisoning Attacks on Factorization-Based Collaborative Filtering. In NIPS . 1885-1893. [29] Hui Li, Tsz Nam Chan, Man Lung Yiu, and Nikos Mamoulis. 2017. FEXIPRO: Fast and Exact Inner Product Retrieval in Recommender Systems. In SIGMOD Conference . 835-850. [30] Hui Li, Lianyun Li, Guipeng Xv, Chen Lin, Ke Li, and Bingchuan Jiang. 2022. SPEX: A Generic Framework for Enhancing Neural Social Recommendation. ACM Trans. Inf. Syst. 40, 2 (2022), 37:1-37:33. [31] Hui Li, Ye Liu, Nikos Mamoulis, and David S. Rosenblum. 2020. Translation-Based Sequential Recommendation for Complex Users on Sparse Data. IEEE Trans. Knowl. Data Eng. 32, 8 (2020), 1639-1651. [32] Hui Li, Yu Liu, Yuqiu Qian, Nikos Mamoulis, Wenting Tu, and David W. Cheung. 2019. HHMF: hidden hierarchical matrix factorization for recommender systems. CIKM '23, October 21-25, 2023, Birmingham, United Kingdom Chengzhi Huang and Hui Li [62] Xiaoyong Yuan, Pan He, Qile Zhu, and Xiaolin Li. 2019. Adversarial Examples: Attacks and Defenses for Deep Learning. IEEE Trans. Neural Networks Learn. Syst. 30, 9 (2019), 2805-2824. [63] Zhenrui Yue, Zhankui He, Huimin Zeng, and Julian J. McAuley. 2021. Black-Box Attacks on Sequential Recommenders via Data-Free Model Extraction. In RecSys . 44-54. [64] Meifang Zeng, Ke Li, Bingchuan Jiang, Liujuan Cao, and Hui Li. 2023. Practical Cross-System Shilling Attacks with Limited Access to Data. In AAAI . 4864-4874. [65] Hengtong Zhang, Yaliang Li, Bolin Ding, and Jing Gao. 2020. Practical Data Poisoning Attack against Next-Item Recommendation. In WWW . 2458-2464. [66] Hengtong Zhang, Changxin Tian, Yaliang Li, Lu Su, Nan Yang, Wayne Xin Zhao, and Jing Gao. 2021. Data Poisoning Attack against Recommender System Using Incomplete and Perturbed Data. In KDD . 2154-2164. [67] Shuai Zhang, Lina Yao, Aixin Sun, and Yi Tay. 2019. Deep Learning Based Recommender System: A Survey and New Perspectives. ACM Comput. Surv. 52, 1 (2019), 5:1-5:38. [68] Wei Emma Zhang, Quan Z Sheng, Ahoud Alhazmi, and Chenliang Li. 2020. Adversarial Attacks on Deep-learning Models in Natural Language Processing: A Survey. ACM Trans. Intell. Syst. Technol. 11, 3 (2020). [69] Xuxin Zhang, Jian Chen, Rui Zhang, Chen Wang, and Ling Liu. 2021. Attacking Recommender Systems With Plausible Profile. IEEE Trans. Inf. Forensics Secur. 16 (2021), 4788-4800. [70] Xin Zhang, Zengmao Wang, and Bo Du. 2022. Deep Dynamic Interest Learning With Session Local and Global Consistency for Click-Through Rate Predictions. IEEE Trans. Ind. Informatics 18, 5 (2022), 3306-3315. [71] Yongfeng Zhang, Yunzhi Tan, Min Zhang, Yiqun Liu, Tat-Seng Chua, and Shaoping Ma. 2015. Catch the Black Sheep: Unified Framework for Shilling Attack Detection Based on Fraudulent Action Propagation. In IJCAI . 2408-2414. [72] Kun Zhou, Hui Yu, Wayne Xin Zhao, and Ji-Rong Wen. 2022. Filter-enhanced MLP is All You Need for Sequential Recommendation. arXiv Preprint (2022). https://arxiv.org/abs/2202.13556",
   "keywords_parsed": [
     "Shilling Attack",
-    " Recommender System",
-    " Adversarial Attack ∗ Corresponding author. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CIKM '23",
-    " October 21-25",
-    " 2023",
-    " Birmingham",
-    " United Kingdom © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0124-5/23/10...$15.00 https://doi.org/10.1145/3583780.3615062 Key Laboratory of Multimedia Trusted Perception and Efficient Computing",
-    " Ministry of Education of China Xiamen University Xiamen",
-    " China hui@xmu.edu.cn"
+    "Recommender System",
+    "Adversarial Attack"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Recommender Systems - The Textbook"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Ganging up on Information Overload"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Limited Knowledge Shilling Attacks in Collaborative Filtering Systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Segment-Based Injection Attacks against Collaborative Filtering Recommender Systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "'You Might Also Like:' Privacy Risks of Collaborative Filtering"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Second workshop on information heterogeneity and fusion in recommender systems (HetRec2011)"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Data Poisoning Attacks on Cross-domain Recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Adversarial attacks on an oblivious recommender"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Characterizations of an empirical influence function for detecting influential cases in regression"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A Survey on Adversarial Recommender Systems: From Attack/Defense Strategies to Generative Adversarial Networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Efficient FaultTolerant Group Recommendation Using alpha-beta-core"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Weighted random sampling with a reservoir"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Attacking Black-box Recommendations via Copying Cross-domain User Profiles"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Poisoning Attacks to Graph-Based Recommender Systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Single-node attacks for fooling graph neural networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Generative Adversarial Nets"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Shilling attacks against recommender systems: a comprehensive survey"
+    },
+    {
+      "ref_id": "b19",
+      "title": "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Neural Collaborative Filtering"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Collaborative Filtering for Implicit Feedback Datasets"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Categorical Reparameterization with Gumbel-Softmax"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Reinforcement Learning: A Survey"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Understanding Black-box Predictions via Influence Functions"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Exploring Adversarial Examples - Patterns of One-Pixel Attacks"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Shilling recommender systems for fun and profit"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Data Poisoning Attacks on Factorization-Based Collaborative Filtering"
+    },
+    {
+      "ref_id": "b29",
+      "title": "FEXIPRO: Fast and Exact Inner Product Retrieval in Recommender Systems"
+    },
+    {
+      "ref_id": "b30",
+      "title": "SPEX: A Generic Framework for Enhancing Neural Social Recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Translation-Based Sequential Recommendation for Complex Users on Sparse Data"
+    },
+    {
+      "ref_id": "b32",
+      "title": "HHMF: hidden hierarchical matrix factorization for recommender systems"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Adversarial Examples: Attacks and Defenses for Deep Learning"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Black-Box Attacks on Sequential Recommenders via Data-Free Model Extraction"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Practical Cross-System Shilling Attacks with Limited Access to Data"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Practical Data Poisoning Attack against Next-Item Recommendation"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Data Poisoning Attack against Recommender System Using Incomplete and Perturbed Data"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Deep Learning Based Recommender System: A Survey and New Perspectives"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Adversarial Attacks on Deep-learning Models in Natural Language Processing: A Survey"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Attacking Recommender Systems With Plausible Profile"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Deep Dynamic Interest Learning With Session Local and Global Consistency for Click-Through Rate Predictions"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Catch the Black Sheep: Unified Framework for Shilling Attack Detection Based on Fraudulent Action Propagation"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Filter-enhanced MLP is All You Need for Sequential Recommendation"
+    }
   ]
 }

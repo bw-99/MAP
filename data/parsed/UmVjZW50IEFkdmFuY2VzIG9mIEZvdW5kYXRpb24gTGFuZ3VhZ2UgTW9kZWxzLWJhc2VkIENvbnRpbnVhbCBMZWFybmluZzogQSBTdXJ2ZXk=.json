@@ -46,6 +46,597 @@
   "A.4 Metrics for Continual Pre-training.": "CKL [66] introduces a novel metric, named FUAR (FORGOTTEN / (UPDATED + ACQUIRED) RATIO), which quantitatively measures the efficiency of each CKL method. It calculates the number of instances of time-invariant knowledge Manuscript submitted to ACM 38 Yutao Yang et al. that a model forgets in order to learn or update one instance of new knowledge. When FUAR is equal to 1.0, it signifies an equilibrium where one time-invariant knowledge instance is forgotten on average to obtain a new or updated knowledge instance. Formally, FUAR is defined as:   where 𝑇 represents an arbitrary task, and ( 𝐷 𝑖 ) 𝑁 𝑖 = 0 is a sequence of corpora for LM pretraining. Gap( 𝑇, 𝐷 𝑎 , 𝐷 𝑏 ) is Score ( 𝑇 ) of 𝐿𝑀 𝑎 - Score ( 𝑇 ) of 𝐿𝑀 𝑏 , where 𝐿𝑀 𝑎 is pretrained on 𝐷 𝑎 . ❚ 𝐹 = ( 𝑇 𝐹 𝑖 ) 𝑁 -1 𝑖 = 0 measures forgetting of invariant-knowledge from ( 𝐷 𝑖 ) 𝑁 -1 𝑖 = 0 . If no task is from 𝐷 𝑖 , 𝑇 𝐹 𝑖 is \"n.d. \" (not defined). 𝑇 𝑈 𝑁 and 𝑇 𝐴 𝑁 from 𝐷 𝑁 measure update and acquisition of new knowledge, respectively.",
   "A.5 Online CL-Specific Metrics.": "Near-future accuracy (NFA) [2] is introduced as a novel evaluation metric for OCL problem. Unlike traditional evaluation methods that assess models on immediately subsequent samples, NFA evaluates models on samples slightly further into the future, using a minimal shift 𝑆 . Such operation can mitigate label correlation effects, which can adversely impact the accuracy of model adaptability assessments. The smallest shift 𝑆 is selected to ensure that the test sample aligns closely with the distribution of recently observed training data. The calculation of NFA involves first checking if the model correctly predicts the label of a future sample, which can be expressed as 𝑎 𝑡 = ✶ { 𝑓 𝜃 𝑡 ( 𝑥 𝑡 + 1 + 𝑆 ) = 𝑦 𝑡 + 1 + 𝑆 } . Subsequently, the running average is updated using the formula 𝐴 𝑅𝐴 𝑡 = 1 𝑡 ( 𝐴 𝑅𝐴 𝑡 -1 · ( 𝑡 -1 ) + 𝑎 𝑡 ) . Yogatama et al. [205] proposed a novel online codelength ( ℓ ( 𝐷 ) ), inspired by prequential encoding [9], to quantify how quickly an existing model can adapt to a new task.  where | 𝑌 | is the number of possible labels (classes), and 𝜃 𝐷 𝑖 represents a particular subset of the dataset 𝐷 . Similar to the approach in Latent Contextual Allocation (LCA) [22], the concept of online codelength is associated with the area under the learning curve. Manuscript submitted to ACM",
   "keywords_parsed": [
-    "None"
+    "Continual Learning",
+    "Foundation Language Models",
+    "Pre-trained Language Models",
+    "Large Language Models",
+    "Vision-Language Models",
+    "Survey"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gpt-4 technical report"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Rapid Adaptation in Online Continual Learning: Are We Evaluating It Right?"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Memory aware synapses: Learning what (not) to forget"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Training a helpful and harmless assistant with reinforcement learning from human feedback"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Learning to continually learn"
+    },
+    {
+      "ref_id": "b6",
+      "title": "A comprehensive study of class incremental learning algorithms for visual tasks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Continual Lifelong Learning in Natural Language Processing: A Survey"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Tweets Dataset - Top 20 most followed users in Twitter social platform"
+    },
+    {
+      "ref_id": "b9",
+      "title": "The description length of deep learning models"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Large-scale simple question answering with memory networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b12",
+      "title": "MultiWOZ-a large-scale multi-domain wizard-of-oz dataset for task-oriented dialogue modelling"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Coyo-700m: Image-text pair dataset"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Taskmaster-1: Toward a realistic and diverse dialog dataset"
+    },
+    {
+      "ref_id": "b15",
+      "title": "InstructAlign: High-and-Low Resource Language Alignment via Continual Crosslingual Instruction Tuning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "e-snli: Natural language inference with natural language explanations"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Generative Multi-modal Models are Good Class-Incremental Learners"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Efficient intent detection with dual sentence encoders"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Learning to Solve NLP Tasks in an Incremental Number of Languages"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Conceptual 12m: Pushing web-scale image-text pre-training to recognize long-tail visual concepts"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Riemannian walk for incremental learning: Understanding forgetting and intransigence"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Efficient Lifelong Learning with A-GEM"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Recall and learn: Fine-tuning deep pretrained language models with less forgetting"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Lifelong language pretraining with distribution-specialized experts"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Adapting large language models via reading comprehension"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Decouple knowledge from parameters for plug-and-play language modeling"
+    },
+    {
+      "ref_id": "b27",
+      "title": "QuAC: Question Answering in Context"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Continual pre-training mitigates forgetting in language and vision"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Snips voice platform: an embedded spoken language understanding system for private-by-design voice interfaces"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Continual Vision-Language Retrieval via Dynamic Knowledge Rectification"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Probing representation forgetting in supervised and unsupervised continual learning"
+    },
+    {
+      "ref_id": "b32",
+      "title": "A continual learning survey: Defying forgetting in classification tasks"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Episodic memory in lifelong language learning"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b35",
+      "title": "A holistic lexicon-based approach to opinion mining"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Boosting Large Language Models with Continual Learning for Aspect-based Sentiment Analysis"
+    },
+    {
+      "ref_id": "b37",
+      "title": "A survey on in-context learning"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Podnet: Pooled outputs distillation for small-tasks incremental learning"
+    },
+    {
+      "ref_id": "b39",
+      "title": "From Static to Dynamic: A Continual Learning Framework for Large Language Models"
+    },
+    {
+      "ref_id": "b40",
+      "title": "A Survey of Vision-Language Pre-Trained Models"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Differential privacy"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Understanding dataset difficulty with V-usable information"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Datacomp: In search of the next generation of multimodal datasets"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Continual Learning for Task-oriented Dialogue System with Iterative Network Pruning, Expanding and Masking"
+    },
+    {
+      "ref_id": "b45",
+      "title": "A study of continual learning under language shift"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Secure multi-party computation"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Making the v in vqa matter: Elevating the role of image understanding in visual question answering"
+    },
+    {
+      "ref_id": "b48",
+      "title": "The iapr tc-12 benchmark: A new evaluation resource for visual information systems"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Semantic parsing for task oriented dialog using hierarchical representations"
+    },
+    {
+      "ref_id": "b50",
+      "title": "DEMix Layers: Disentangling Domains for Modular Language Modeling"
+    },
+    {
+      "ref_id": "b51",
+      "title": "FewRel: A large-scale supervised few-shot relation classification dataset with state-of-the-art evaluation"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Replay in deep learning: Current approaches and missing biological elements"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Meta-learning with sparse experience replay for lifelong language learning"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Parameter-efficient transfer learning for NLP"
+    },
+    {
+      "ref_id": "b57",
+      "title": "OntoNotes: The 90% Solution"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Drinking from a firehose: Continual learning with web-scale natural language"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Mining and summarizing customer reviews"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Class-Incremental Learning with CLIP: Adaptive Representation Adjustment and Parameter Fusion"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Continual Learning for Text Classification with Information Disentanglement Based Regularization"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Codesearchnet challenge: Evaluating the state of semantic code search"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Mapping language to code in programmatic context"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Exploring the benefits of training expert language models over instruction tuning"
+    },
+    {
+      "ref_id": "b65",
+      "title": "TemporalWiki: A Lifelong Benchmark for Training and Evaluating Ever-Evolving Language Models"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Towards Continual Knowledge Learning of Language Models"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Meta-learning representations for continual learning"
+    },
+    {
+      "ref_id": "b68",
+      "title": "CLAP4CLIP: Continual Learning with Probabilistic Finetuning for Vision-Language Models"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Scaling up visual and vision-language representation learning with noisy text supervision"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Learn Continually, Generalize Rapidly: Lifelong Knowledge Accumulation for Few-shot Learning"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Lifelong Pretraining: Continually Adapting Language Models to Emerging Corpora"
+    },
+    {
+      "ref_id": "b72",
+      "title": "TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension"
+    },
+    {
+      "ref_id": "b73",
+      "title": "An analysis of visual question answering algorithms"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Continual Training of Language Models for Few-Shot Learning"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Continual learning of natural language processing tasks: A survey"
+    },
+    {
+      "ref_id": "b76",
+      "title": "Achieving Forgetting Prevention and Knowledge Transfer in Continual Learning"
+    },
+    {
+      "ref_id": "b77",
+      "title": "CLASSIC: Continual and Contrastive Learning of Aspect Sentiment Classification Tasks"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Continual Pre-training of Language Models"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Adapting BERT for Continual Learning of a Sequence of Aspect Sentiment Classification Tasks"
+    },
+    {
+      "ref_id": "b80",
+      "title": "Measuring catastrophic forgetting in neural networks"
+    },
+    {
+      "ref_id": "b81",
+      "title": "Introducing language guidance in prompt-based continual learning"
+    },
+    {
+      "ref_id": "b82",
+      "title": "VLM-PL: Advanced Pseudo Labeling approach Class Incremental Object Detection with Vision-Language Model"
+    },
+    {
+      "ref_id": "b83",
+      "title": "Task Relation-aware Continual User Representation Learning"
+    },
+    {
+      "ref_id": "b84",
+      "title": "Overcoming catastrophic forgetting in neural networks"
+    },
+    {
+      "ref_id": "b85",
+      "title": "Online Boundary-Free Continual Learning by Scheduled Data Prior"
+    },
+    {
+      "ref_id": "b86",
+      "title": "Hierarchical deep learning for text classification"
+    },
+    {
+      "ref_id": "b87",
+      "title": "Newsweeder: Learning to filter netnews"
+    },
+    {
+      "ref_id": "b88",
+      "title": "An evaluation dataset for intent classification and out-of-scope prediction"
+    },
+    {
+      "ref_id": "b89",
+      "title": "Do pre-trained models benefit equally in continual learning?"
+    },
+    {
+      "ref_id": "b90",
+      "title": "Toward continual learning for conversational agents"
+    },
+    {
+      "ref_id": "b91",
+      "title": "Continual learning for robotics: Definition, framework, learning strategies, opportunities and challenges"
+    },
+    {
+      "ref_id": "b92",
+      "title": "Overcoming catastrophic forgetting during domain adaptation of seq2seq language generation"
+    },
+    {
+      "ref_id": "b93",
+      "title": "Online noisy continual relation learning"
+    },
+    {
+      "ref_id": "b94",
+      "title": "Continual few-shot intent detection"
+    },
+    {
+      "ref_id": "b95",
+      "title": "RoboCoder: Robotic Learning from Basic Skills to General Tasks with Large Language Models"
+    },
+    {
+      "ref_id": "b96",
+      "title": "Microsoft coco: Common objects in context"
+    },
+    {
+      "ref_id": "b97",
+      "title": "Mitigating the Alignment Tax of RLHF"
+    },
+    {
+      "ref_id": "b98",
+      "title": "Learning on the job: Online lifelong and continual learning"
+    },
+    {
+      "ref_id": "b99",
+      "title": "Lifelong and continual learning dialogue systems: learning during conversation"
+    },
+    {
+      "ref_id": "b100",
+      "title": "AI Autonomy: Self-initiated Open-world Continual Learning and Adaptation"
+    },
+    {
+      "ref_id": "b101",
+      "title": "Self-Corrected Multimodal Large Language Model for End-to-End Robot Manipulation"
+    },
+    {
+      "ref_id": "b102",
+      "title": "Automated rule selection for aspect extraction in opinion mining"
+    },
+    {
+      "ref_id": "b103",
+      "title": "Lifelong intent detection via multi-strategy rebalancing"
+    },
+    {
+      "ref_id": "b104",
+      "title": "Continual Learning for Sentence Representations Using Conceptors"
+    },
+    {
+      "ref_id": "b105",
+      "title": "Class Incremental Learning with Pre-trained Vision-Language Models"
+    },
+    {
+      "ref_id": "b106",
+      "title": "Benchmarking natural language understanding services for building conversational agents"
+    },
+    {
+      "ref_id": "b107",
+      "title": "P-Tuning: Prompt Tuning Can Be Comparable to Fine-tuning Across Scales and Tasks"
+    },
+    {
+      "ref_id": "b108",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b109",
+      "title": "S2ORC: The Semantic Scholar Open Research Corpus"
+    },
+    {
+      "ref_id": "b110",
+      "title": "Gradient episodic memory for continual learning"
+    },
+    {
+      "ref_id": "b111",
+      "title": "Codexglue: A machine learning benchmark dataset for code understanding and generation"
+    },
+    {
+      "ref_id": "b112",
+      "title": "Exploring models and data for remote sensing image caption generation"
+    },
+    {
+      "ref_id": "b113",
+      "title": "An Empirical Study of Catastrophic Forgetting in Large Language Models During Continual Fine-tuning"
+    },
+    {
+      "ref_id": "b114",
+      "title": "EcomGPT-CT: Continual pre-training of e-commerce large language models with semi-structured data"
+    },
+    {
+      "ref_id": "b115",
+      "title": "Eureka: Human-Level Reward Design via Coding Large Language Models"
+    },
+    {
+      "ref_id": "b116",
+      "title": "Learning Word Vectors for Sentiment Analysis"
+    },
+    {
+      "ref_id": "b117",
+      "title": "Continual learning in task-oriented dialogue systems"
+    },
+    {
+      "ref_id": "b118",
+      "title": "Generative Replay Inspired by Hippocampal Memory Indexing for Continual Language Learning"
+    },
+    {
+      "ref_id": "b119",
+      "title": "Online continual learning in image classification: An empirical survey"
+    },
+    {
+      "ref_id": "b120",
+      "title": "Class-incremental learning: survey and performance evaluation on image classification"
+    },
+    {
+      "ref_id": "b121",
+      "title": "Lifelong and Continual Learning Dialogue Systems"
+    },
+    {
+      "ref_id": "b122",
+      "title": "The natural language decathlon: Multitask learning as question answering"
+    },
+    {
+      "ref_id": "b123",
+      "title": "An Empirical Investigation of the Role of Pre-training in Lifelong Learning"
+    },
+    {
+      "ref_id": "b124",
+      "title": "Semantic Residual Prompts for Continual Learning"
+    },
+    {
+      "ref_id": "b212",
+      "title": "A survey on federated learning"
+    },
+    {
+      "ref_id": "b213",
+      "title": "COPR: Continual Human Preference Learning via Optimal Policy Regularization"
+    },
+    {
+      "ref_id": "b214",
+      "title": "Copf: Continual learning human preference through optimal policy fitting"
+    },
+    {
+      "ref_id": "b215",
+      "title": "CPPO: Continual Learning for Reinforcement Learning with Human Feedback"
+    },
+    {
+      "ref_id": "b216",
+      "title": "A Survey on Incremental Update for Neural Recommender Systems"
+    },
+    {
+      "ref_id": "b217",
+      "title": "Vqacl: A novel visual question answering continual learning setting"
+    },
+    {
+      "ref_id": "b218",
+      "title": "Character-level convolutional networks for text classification"
+    },
+    {
+      "ref_id": "b219",
+      "title": "Continual Sequence Generation with Adaptive Compositional Modules"
+    },
+    {
+      "ref_id": "b220",
+      "title": "Reformulating Domain Adaptation of Large Language Models as AdaptRetrieve-Revise"
+    },
+    {
+      "ref_id": "b221",
+      "title": "Citb: A benchmark for continual instruction tuning"
+    },
+    {
+      "ref_id": "b222",
+      "title": "A survey of large language models"
+    },
+    {
+      "ref_id": "b223",
+      "title": "Prompt Conditioned VAE: Enhancing Generative Replay for Lifelong Learning in Task-Oriented Dialogue"
+    },
+    {
+      "ref_id": "b224",
+      "title": "Towards Lifelong Learning of Large Language Models: A Survey"
+    },
+    {
+      "ref_id": "b225",
+      "title": "Adapt without Forgetting: Distill Proximity from Dual Teachers in Vision-Language Models"
+    },
+    {
+      "ref_id": "b226",
+      "title": "Preventing zero-shot transfer degradation in continual learning of vision-language models"
+    },
+    {
+      "ref_id": "b227",
+      "title": "Seq2sql: Generating structured queries from natural language using reinforcement learning"
+    },
+    {
+      "ref_id": "b228",
+      "title": "Deep class-incremental learning: A survey"
+    },
+    {
+      "ref_id": "b229",
+      "title": "Learning without forgetting for vision-language models"
+    },
+    {
+      "ref_id": "b230",
+      "title": "ChatGPT: potential, prospects, and limitations"
+    },
+    {
+      "ref_id": "b231",
+      "title": "Ctp: Towards vision-language continual pretraining via compatible momentum contrast and topology preservation"
+    },
+    {
+      "ref_id": "b232",
+      "title": "Continual Prompt Tuning for Dialog State Tracking"
+    },
+    {
+      "ref_id": "b233",
+      "title": "Aligning books and movies: Towards story-like visual explanations by watching movies and reading books"
+    }
   ]
 }

@@ -23,16 +23,48 @@
   "PRESENTER'S BIO": "Wenping Wang is a software engineer at Facebook. His team is responsible for Facebook search's quality, the retrieval, ranking, etc. Before that, he received Master's degree from Carnegie Mellon University. He is interested in computer systems, machine learning in general and their real-world applications.",
   "REFERENCES": "[1] Mengnan Du, Fan Yang, Na Zou, and Xia Hu. 2020. Fairness in deep learning: A computational perspective. IEEE Intelligent Systems 36, 4 (2020), 25-34. [2] Kenneth Holstein, Jennifer Wortman Vaughan, Hal Daumé, Miro Dudik, and Hanna Wallach. 2019. Improving Fairness in Machine Learning Systems: What Do Industry Practitioners Need?. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI '19) . Association for Computing Machinery, New York, NY, USA, 1-16. https://doi.org/10.1145/3290605.3300830 [3] Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, and Linjun Yang. 2020. Embeddingbased retrieval in facebook search. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2553-2561. [4] Sen Li, Fuyu Lv, Taiwei Jin, Guli Lin, Keping Yang, Xiaoyi Zeng, Xiao-Ming Wu, and Qianli Ma. 2021. Embedding-based product retrieval in taobao search. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3181-3189. [5] Yunqi Li, Hanxiong Chen, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2021. User-oriented fairness in recommendation. In Proceedings of the Web Conference 2021 . 624-632. [6] Yiding Liu, Weixue Lu, Suqi Cheng, Daiting Shi, Shuaiqiang Wang, Zhicong Cheng, and Dawei Yin. 2021. Pre-trained language model for web-scale retrieval in baidu search. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3365-3375. [7] Yiqun Liu, Kaushik Rangadurai, Yunzhong He, Siddarth Malreddy, Xunlong Gui, Xiaoyi Liu, and Fedor Borisyuk. 2021. Que2Search: fast and accurate query and document understanding for search at Facebook. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3376-3384. [8] Priyanka Nigam, Yiwei Song, Vijai Mohan, Vihan Lakshman, Weitian Ding, Ankit Shingavi, Choon Hui Teo, Hao Gu, and Bing Yin. 2019. Semantic product search. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2876-2885. [9] Han Zhang, Songlin Wang, Kang Zhang, Zhiling Tang, Yunjiang Jiang, Yun Xiao, Weipeng Yan, and Wen-Yun Yang. 2020. Towards personalized and semantic retrieval: An end-to-end solution for e-commerce search via embedding learning. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2407-2416.",
   "keywords_parsed": [
-    "Embedding based retrieval has seen its usage in a variety of search applications like e-commerce",
-    " social networking search etc. While the approach has demonstrated its efficacy in tasks like semantic matching and contextual search",
-    " it is plagued by the problem of uncontrollable relevance. In this paper",
-    " we conduct an analysis of embedding-based retrieval launched in early 2021 on our social network search engine",
-    " and define two main categories of failures introduced by it",
-    " integrity and junkiness. The former refers to issues such as hate speech and offensive content that can severely harm user experience",
-    " while the latter includes irrelevant results like fuzzy text matching or language mismatches. Efficient methods during model inference are further proposed to resolve the issue",
-    " including indexing treatments and targeted user cohort treatments",
-    " etc. Though being simple",
-    " we show the methods have good offline NDCG and online A/B tests metrics gain in practice. We analyze the reasons for the improvements",
-    " pointing out that our methods are only preliminary attempts to this important but challenging problem. We put forward potential future directions to explore."
+    "Embedding",
+    "information retrieval",
+    "social network search",
+    "search relevance",
+    "integrity and junkiness failure"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Fairness in deep learning: A computational perspective"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Improving Fairness in Machine Learning Systems: What Do Industry Practitioners Need?"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Embedding-based retrieval in facebook search"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Embedding-based product retrieval in taobao search"
+    },
+    {
+      "ref_id": "b5",
+      "title": "User-oriented fairness in recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Pre-trained language model for web-scale retrieval in baidu search"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Que2Search: fast and accurate query and document understanding for search at Facebook"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Semantic product search"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Towards personalized and semantic retrieval: An end-to-end solution for e-commerce search via embedding learning"
+    }
   ]
 }

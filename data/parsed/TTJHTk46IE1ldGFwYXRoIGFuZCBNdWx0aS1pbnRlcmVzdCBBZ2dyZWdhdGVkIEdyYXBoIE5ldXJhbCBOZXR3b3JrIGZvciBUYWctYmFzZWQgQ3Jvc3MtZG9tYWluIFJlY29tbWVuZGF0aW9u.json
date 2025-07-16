@@ -29,7 +29,177 @@
   "REFERENCES": "[1] Ye Bi, Liqiang Song, Mengqiu Yao, Zhenyu Wu, Jianming Wang, and Jing Xiao. 2020. A heterogeneous information network based cross domain insurance recommendation system for cold start users. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2211-2220. [3] Qiang Cui, Tao Wei, Yafeng Zhang, and Qing Zhang. 2020. HeroGRAPH: A Heterogeneous Graph Framework for Multi-Target Cross-Domain Recommendation.. In ORSUM@ RecSys . [2] Jianxin Chang, Chen Gao, Yu Zheng, Yiqun Hui, Yanan Niu, Yang Song, Depeng Jin, and Yong Li. 2021. Sequential Recommendation with Graph Neural Networks. In SIGIR . 378-387. [4] Ali Mamdouh Elkahky, Yang Song, and Xiaodong He. 2015. A multi-view deep learning approach for cross domain user modeling in recommendation systems. In Proceedings of the 24th international conference on world wide web . 278-288. [6] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, and Meng Wang. 2020. Lightgcn: Simplifying and powering graph convolution network for recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 639-648. [5] Wenjing Fu, Zhaohui Peng, Senzhang Wang, Yang Xu, and Jin Li. 2019. Deeply fusing reviews and contents for cold start users in cross-domain recommendation systems. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 94-101. [7] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [9] Guangneng Hu, Yu Zhang, and Qiang Yang. 2018. MTNet: a neural approach for cross-domain recommendation with unstructured text. KDD Deep Learning Day (2018), 1-10. [8] Fenyu Hu, Yanqiao Zhu, Shu Wu, Weiran Huang, Liang Wang, and Tieniu Tan. 2021. Graphair: Graph representation learning with neighborhood aggregation and interaction. Pattern Recognition 112 (2021), 107745. [10] Wenyi Huang and Jack W Stokes. 2016. MtNet: a multi-task neural network for dynamic malware classification. In International conference on detection of intrusions and malware, and vulnerability assessment . Springer, 399-418. [12] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [11] SeongKu Kang, Junyoung Hwang, Dongha Lee, and Hwanjo Yu. 2019. Semisupervised learning for cross-domain recommendation to cold-start users. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1563-1572. [13] Chao Li, Zhiyuan Liu, Mengmeng Wu, Yuchi Xu, Huan Zhao, Pipei Huang, Guoliang Kang, Qiwei Chen, Wei Li, and Dik Lun Lee. 2019. Multi-interest network with dynamic routing for recommendation at Tmall. In KDD . 26152623. [15] Meng Liu, Jianjun Li, Guohui Li, and Peng Pan. 2020. Cross domain recommendation via bi-directional transfer graph collaborative filtering networks. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 885-894. [14] Jin Li, Zhaohui Peng, Senzhang Wang, Xiaokang Xu, Philip S Yu, and Zhenyun Hao. 2020. Heterogeneous Graph Embedding for Cross-Domain Recommendation Through Adversarial Learning. In International Conference on Database Systems for Advanced Applications . Springer, 507-522. [16] Minh-Thang Luong, Hieu Pham, and Christopher D Manning. 2015. Effective approaches to attention-based neural machine translation. EMNLP (2015). [18] Nils Reimers and Iryna Gurevych. 2019. Sentence-bert: Sentence embeddings using siamese bert-networks. arXiv preprint arXiv:1908.10084 (2019). [17] Tong Man, Huawei Shen, Xiaolong Jin, and Xueqi Cheng. 2017. Cross-domain recommendation: An embedding and mapping approach.. In IJCAI , Vol. 17. 24642470. [19] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2012. BPR: Bayesian personalized ranking from implicit feedback. arXiv preprint arXiv:1205.2618 (2012). [21] Sungyong Seo, Jing Huang, Hao Yang, and Yan Liu. 2017. Interpretable convolutional neural networks with dual local and global attention for review rating prediction. In Proceedings of the eleventh ACM conference on recommender systems . 297-305. [20] Sara Sabour, Nicholas Frosst, and Geoffrey E Hinton. 2017. Dynamic routing between capsules. Advances in neural information processing systems 30 (2017). [22] Ajit P Singh and Geoffrey J Gordon. 2008. Relational learning via collective matrix factorization. In Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining . 650-658. Zepeng Huai, Yuji Yang, Mengdi Zhang, Zhongyi Zhang, Yichun Li, and Wei Wu [23] Tianhang Song, Zhaohui Peng, Senzhang Wang, Wenjing Fu, Xiaoguang Hong, and Philip S Yu. 2017. Based cross-domain recommendation through joint tensor factorization. In International conference on database systems for advanced applications . Springer, 525-540. [25] Pascal Vincent, Hugo Larochelle, Isabelle Lajoie, Yoshua Bengio, Pierre-Antoine Manzagol, and Léon Bottou. 2010. Stacked denoising autoencoders: Learning useful representations in a deep network with a local denoising criterion. Journal of machine learning research 11, 12 (2010). [24] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [26] Xiang Wang, Xiangnan He, Yixin Cao, Meng Liu, and Tat-Seng Chua. 2019. Kgat: Knowledge graph attention network for recommendation. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 950-958. [28] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural graph collaborative filtering. In Proceedings of the 42nd international ACM SIGIR conference on Research and development in Information Retrieval . 165-174. [27] Xiang Wang, Xiangnan He, Liqiang Nie, and Tat-Seng Chua. 2017. Item silk road: Recommending items from information domains to social users. In Proceedings of the 40th International ACM SIGIR conference on Research and Development in Information Retrieval . 185-194. [29] Xiang Wang, Tinglin Huang, Dingxian Wang, Yancheng Yuan, Zhenguang Liu, Xiangnan He, and Tat-Seng Chua. 2021. Learning Intents behind Interactions with Knowledge Graph for Recommendation. In Proceedings of the Web Conference 2021 . 878-887. [31] Libing Wu, Cong Quan, Chenliang Li, Qian Wang, Bolong Zheng, and Xiangyang Luo. 2019. A context-aware user-item representation learning for item recommendation. ACM Transactions on Information Systems (TOIS) 37, 2 (2019), 1-29. [30] Xiao Wang, Houye Ji, Chuan Shi, Bai Wang, Yanfang Ye, Peng Cui, and Philip S Yu. 2019. Heterogeneous graph attention network. In WWW . 2022-2032. [32] Haifeng Xia, Zengmao Wang, Bo Du, Lefei Zhang, Shuai Chen, and Gang Chun. 2019. Leveraging ratings and reviews with gating mechanism for recommendation. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1573-1582. [34] Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhudinov, Rich Zemel, and Yoshua Bengio. 2015. Show, attend and tell: Neural image caption generation with visual attention. In International conference on machine learning . PMLR, 2048-2057. [33] Chengfeng Xu, Pengpeng Zhao, Yanchi Liu, Victor S Sheng, Jiajie Xu, Fuzhen Zhuang, Junhua Fang, and Xiaofang Zhou. 2019. Graph Contextualized SelfAttention Network for Session-based Recommendation.. In IJCAI , Vol. 19. 39403946. [35] Huan Yan, Xiangning Chen, Chen Gao, Yong Li, and Depeng Jin. 2019. Deepapf: Deep attentive probabilistic factorization for multi-site video recommendation. IJCAI 2019 (2019). [37] Cheng Zhao, Chenliang Li, and Cong Fu. 2019. Cross-domain recommendation via preference propagation graphnet. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 2165-2168. [36] Jiangyi Yin, Yuchun Guo, and Yishuai Chen. 2019. Heterogenous Information Network Embedding Based Cross-Domain Recommendation System. In 2019 International Conference on Data Mining Workshops (ICDMW) . IEEE, 362-369. [38] Cheng Zhao, Chenliang Li, Rong Xiao, Hongbo Deng, and Aixin Sun. 2020. CATN: Cross-domain recommendation for cold-start users via aspect transfer network. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 229-238. [40] Jie Zhou, Ganqu Cui, Shengding Hu, Zhengyan Zhang, Cheng Yang, Zhiyuan Liu, Lifeng Wang, Changcheng Li, and Maosong Sun. 2020. Graph neural networks: A review of methods and applications. AI Open 1 (2020), 57-81. [39] Lei Zheng, Vahid Noroozi, and Philip S Yu. 2017. Joint deep modeling of users and items using reviews for recommendation. In Proceedings of the tenth ACM international conference on web search and data mining . 425-434. [41] Feng Zhu, Yan Wang, Jun Zhou, Chaochao Chen, Longfei Li, and Guanfeng Liu. 2021. A unified framework for cross-domain and cross-system recommendations. IEEE Transactions on Knowledge and Data Engineering (2021). [42] Yongchun Zhu, Zhenwei Tang, Yudan Liu, Fuzhen Zhuang, Ruobing Xie, Xu Zhang, Leyu Lin, and Qing He. 2022. Personalized transfer of user preferences for cross-domain recommendation. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 1507-1515.",
   "keywords_parsed": [
     "Cross-domain Recommendation",
-    " Graph Neural Network",
-    " Tag-based Recommendation"
+    "Graph Neural Network",
+    "Tag-based Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A heterogeneous information network based cross domain insurance recommendation system for cold start users"
+    },
+    {
+      "ref_id": "b3",
+      "title": "HeroGRAPH: A Heterogeneous Graph Framework for Multi-Target Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Sequential Recommendation with Graph Neural Networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A multi-view deep learning approach for cross domain user modeling in recommendation systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deeply fusing reviews and contents for cold start users in cross-domain recommendation systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b9",
+      "title": "MTNet: a neural approach for cross-domain recommendation with unstructured text"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Graphair: Graph representation learning with neighborhood aggregation and interaction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "MtNet: a multi-task neural network for dynamic malware classification"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Semisupervised learning for cross-domain recommendation to cold-start users"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Multi-interest network with dynamic routing for recommendation at Tmall"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Cross domain recommendation via bi-directional transfer graph collaborative filtering networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Heterogeneous Graph Embedding for Cross-Domain Recommendation Through Adversarial Learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Effective approaches to attention-based neural machine translation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Sentence-bert: Sentence embeddings using siamese bert-networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Cross-domain recommendation: An embedding and mapping approach"
+    },
+    {
+      "ref_id": "b19",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Interpretable convolutional neural networks with dual local and global attention for review rating prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Dynamic routing between capsules"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Relational learning via collective matrix factorization"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Based cross-domain recommendation through joint tensor factorization"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Stacked denoising autoencoders: Learning useful representations in a deep network with a local denoising criterion"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Kgat: Knowledge graph attention network for recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Item silk road: Recommending items from information domains to social users"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Learning Intents behind Interactions with Knowledge Graph for Recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "A context-aware user-item representation learning for item recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Heterogeneous graph attention network"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Leveraging ratings and reviews with gating mechanism for recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Show, attend and tell: Neural image caption generation with visual attention"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Graph Contextualized Self-Attention Network for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deepapf: Deep attentive probabilistic factorization for multi-site video recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Cross-domain recommendation via preference propagation graphnet"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Heterogenous Information Network Embedding Based Cross-Domain Recommendation System"
+    },
+    {
+      "ref_id": "b38",
+      "title": "CATN: Cross-domain recommendation for cold-start users via aspect transfer network"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Graph neural networks: A review of methods and applications"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Joint deep modeling of users and items using reviews for recommendation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A unified framework for cross-domain and cross-system recommendations"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Personalized transfer of user preferences for cross-domain recommendation"
+    }
   ]
 }

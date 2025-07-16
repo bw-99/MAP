@@ -21,10 +21,132 @@
   "REFERENCES": "[1] Chris Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole Hamilton, and Greg Hullender. 2005. Learning to Rank using Gradient Descent. In Proceedings of the 22nd International Conference on Machine Learning . ACM, 89-96. [2] Christopher JC Burges. 2010. From Ranknet to Lambdarank to Lambdamart: an overview. Microsoft Research Technical Report 11, 23-581 (2010), 81. [3] Zhe Cao, Tao Qin, Tie-Yan Liu, Ming-Feng Tsai, and Hang Li. 2007. Learning to rank: from pairwise approach to listwise approach. In Proceedings of the 24th international conference on Machine learning . 129-136. [4] ONNX Runtime developers. 2021. ONNX Runtime. https://www.onnxruntime.ai. Version: x.y.z. [5] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers) . Association for Computational Linguistics, Minneapolis, Minnesota, 4171-4186. https://doi.org/10.18653/v1/N19-1423 [6] Seppo Enarvi, Marilisa Amoia, Miguel Del-Agua Teba, B. Delaney, Frank Diehl, Stefan Hahn, Kristina Harris, Liam R. McGrath, Yue Pan, Joel Pinto, Luca Rubini, Miguel Ruiz, Gagandeep Singh, Fabian Stemmer, Weiyi Sun, Paul Vozila, Thomas Lin, and Ranjani Ramamurthy. 2020. Generating Medical Reports from PatientDoctor Conversations Using Sequence-to-Sequence Models. In NLPMC . [7] Luyu Gao, Zhuyun Dai, and Jamie Callan. 2020. Modularized transfomer-based ranking framework. arXiv preprint arXiv:2004.13313 (2020). [8] Shuguang Han, Xuanhui Wang, Mike Bendersky, and Marc Najork. 2020. Learning-to-Rank with BERT in TF-Ranking. arXiv preprint arXiv:2004.08476 (2020). [9] Elad Hoffer and Nir Ailon. 2015. Deep metric learning using triplet network. In International workshop on similarity-based pattern recognition . Springer, 84-92. [10] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning deep structured semantic models for web search using clickthrough data. In Proceedings of the 22nd ACM international conference on Information & Knowledge Management . 2333-2338. [11] Anjuli Kannan, Karol Kurach, Sujith Ravi, Tobias Kaufman, Balint Miklos, Greg Corrado, Andrew Tomkins, Laszlo Lukacs, Marina Ganea, Peter Young, and Vivek Ramavajjala. 2016. Smart Reply: Automated Response Suggestion for Email. In Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) (2016). https://arxiv.org/pdf/1606.04870v1.pdf [12] Vladimir Karpukhin, Barlas Oğuz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, and Wen-tau Yih. 2020. Dense passage retrieval for opendomain question answering. arXiv preprint arXiv:2004.04906 (2020). [13] Omar Khattab and Matei Zaharia. 2020. Colbert: Efficient and effective passage search via contextualized late interaction over bert. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 39-48. [14] Tom Knoll, Francesco Moramarco, Alex Papadopoulos Korfiatis, Rachel D. Young, Claudia Ruffini, Mark Perera, Christian Perstl, Ehud Reiter, Anya Belz, and Aleksandar Savkov. 2022. User-Driven Research of Medical Note Generation Software. In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies . 385-394. [15] Canjia Li, Andrew Yates, Sean MacAvaney, Ben He, and Yingfei Sun. 2020. Parade: Passage representation aggregation for document reranking. arXiv preprint arXiv:2008.09093 (2020). [16] Chin-Yew Lin. 2004. Rouge: A package for automatic evaluation of summaries. In Text summarization branches out . 74-81. [17] Sean MacAvaney, Franco Maria Nardini, Raffaele Perego, Nicola Tonellotto, Nazli Goharian, and Ophir Frieder. 2020. Efficient document re-ranking for transformers by precomputing term representations. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 49-58. [18] George Michalopoulos, Kyle Williams, Gagandeep Singh, and Thomas Lin. 2022. MedicalSum: A Guided Clinical Abstractive Summarization Model for Generating Medical Reports from Patient-Doctor Conversations. In Findings of the Association for Computational Lingustics: EMNLP 2022 . [19] Stephen Robertson, Hugo Zaragoza, et al. 2009. The probabilistic relevance framework: BM25 and beyond. Foundations and Trends® in Information Retrieval 3, 4 (2009), 333-389. [20] Soumava Kumar Roy, Mehrtash Harandi, Richard Nock, and Richard Hartley. 2019. Siamese networks: The tale of two manifolds. In Proceedings of the IEEE/CVF International Conference on Computer Vision . 3046-3055. [21] Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf. 2019. DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter. arXiv preprint arXiv:1910.01108 (2019). [22] Yelong Shen, Xiaodong He, Jianfeng Gao, Li Deng, and Grégoire Mesnil. 2014. Learning semantic representations using convolutional neural networks for web search. In Proceedings of the 23rd international conference on world wide web . 373-374. [23] Michael Taylor, John Guiver, Stephen Robertson, and Tom Minka. 2008. Softrank: Optimizing Non-smooth Rank Metrics. In Proceedings of the 2008 International Conference on Web Search and Data Mining . ACM, 77-86. [24] N Thakur, N Reimers, J Daxenberger, and I Gurevych. 2021. Augmented SBERT: data augmentation method for improving bi-encoders for pairwise sentence scoring tasks 2020. arXiv preprint arXiv:2010.08240 (2021). [25] Hamed Valizadegan, Rong Jin, Ruofei Zhang, and Jianchang Mao. 2009. Learning to Rank by Optimizing NDCG Measure. In Advances in Neural Information Processing Systems , Y. Bengio, D. Schuurmans, J. Lafferty, C. Williams, and A. Culotta (Eds.), Vol. 22. Curran Associates, Inc. https://proceedings.neurips.cc/paper/ 2009/file/b3967a0e938dc2a6340e258630febd5a-Paper.pdf [26] Xuanhui Wang, Cheng Li, Nadav Golbandi, Michael Bendersky, and Marc Najork. 2018. The Lambdaloss Framework for Ranking Metric Optimization. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . ACM, 1313-1322. [27] Fen Xia, Tie-Yan Liu, Jue Wang, Wensheng Zhang, and Hang Li. 2008. Listwise approach to learning to rank: theory and algorithm. In Proceedings of the 25th international conference on Machine learning . 1192-1199. [28] Manzil Zaheer, Guru Guruganesh, Kumar Avinava Dubey, Joshua Ainslie, Chris Alberti, Santiago Ontanon, Philip Pham, Anirudh Ravula, Qifan Wang, Li Yang, et al. 2020. Big bird: Transformers for longer sequences. Advances in Neural Information Processing Systems 33 (2020), 17283-17297. [29] Giulio Zhou and Jacob Devlin. 2021. Multi-Vector Attention Models for Deep Re-ranking. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing . 5452-5456. [30] Xiaofeng Zhu and Diego Klabjan. 2020. Listwise learning to rank by exploring unique ratings. In Proceedings of the 13th international conference on web search and data mining . 798-806.",
   "keywords_parsed": [
     "semantic search",
-    " pairwise learning to rank",
-    " smart reply",
-    " text summarization",
-    " transformer",
-    " dual encoder"
+    "pairwise learning to rank",
+    "smart reply",
+    "text summarization",
+    "transformer",
+    "dual encoder"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning to Rank using Gradient Descent"
+    },
+    {
+      "ref_id": "b2",
+      "title": "From Ranknet to Lambdarank to Lambdamart: an overview"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b4",
+      "title": "ONNX Runtime"
+    },
+    {
+      "ref_id": "b5",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Generating Medical Reports from PatientDoctor Conversations Using Sequence-to-Sequence Models"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Modularized transfomer-based ranking framework"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning-to-Rank with BERT in TF-Ranking"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep metric learning using triplet network"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Smart Reply: Automated Response Suggestion for Email"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Dense passage retrieval for opendomain question answering"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Colbert: Efficient and effective passage search via contextualized late interaction over bert"
+    },
+    {
+      "ref_id": "b14",
+      "title": "User-Driven Research of Medical Note Generation Software"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Parade: Passage representation aggregation for document reranking"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Rouge: A package for automatic evaluation of summaries"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Efficient document re-ranking for transformers by precomputing term representations"
+    },
+    {
+      "ref_id": "b18",
+      "title": "MedicalSum: A Guided Clinical Abstractive Summarization Model for Generating Medical Reports from Patient-Doctor Conversations"
+    },
+    {
+      "ref_id": "b19",
+      "title": "The probabilistic relevance framework: BM25 and beyond"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Siamese networks: The tale of two manifolds"
+    },
+    {
+      "ref_id": "b21",
+      "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Learning semantic representations using convolutional neural networks for web search"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Softrank: Optimizing Non-smooth Rank Metrics"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Augmented SBERT: data augmentation method for improving bi-encoders for pairwise sentence scoring tasks 2020"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Learning to Rank by Optimizing NDCG Measure"
+    },
+    {
+      "ref_id": "b26",
+      "title": "The Lambdaloss Framework for Ranking Metric Optimization"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Listwise approach to learning to rank: theory and algorithm"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Big bird: Transformers for longer sequences"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Multi-Vector Attention Models for Deep Re-ranking"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Listwise learning to rank by exploring unique ratings"
+    }
   ]
 }

@@ -14,7 +14,151 @@
   "3.2 Online A/B Test": "To conduct online A/B test, we deploy the proposed ASYS model in the online advertising system. The online A/B test lasts for 7 days (from 2022-Aug-25 to 2022-Sep-1). Compared to a highly optimized baseline, our ASYS contributes to 2.62% CTR and 3.56% eCPM (Effective Cost Per Mille) gain.",
   "4 CONCLUSION": "In this paper, we introduce a novel incremental learning framework, ASYS, to address the catastrophic forgetting in CTR prediction. The experiments show that our method overwhelms all other incremental learning methods on a real-world production dataset and public dataset. The online A/B test results further demonstrate the effectiveness of the proposed method. A theoretical analysis and qualitative results are provided to illustrate the superior performance of ASYS on data streams. To the best of our knowledge, this is the first work to explicitly detect drift to handle catastrophic forgetting in the CTR prediction. Always Strengthen Your Strengths: A Drift-Aware Incremental Learning Framework for CTR Prediction SIGIR '23, July 23-27, 2023, Taipei, Taiwan",
   "REFERENCES": "[1] 2021. Multi-Domain Multi-Task Rehearsal for Lifelong Learning. 35 (May 2021), 8819-8827. https://doi.org/10.1609/aaai.v35i10.17068 [2] Rahaf Aljundi, Punarjay Chakravarty, and Tinne Tuytelaars. 2017. Expert gate: Lifelong learning with a network of experts. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition . 3366-3375. [3] Tarek Amer, Jordana S Wynn, and Lynn Hasher. 2022. Cluttered memory representations shape cognition in old age. Trends in Cognitive Sciences (2022). [4] Albert Bifet and Ricard Gavalda. 2007. Learning from time-changing data with adaptive windowing. In Proceedings of the 2007 SIAM International Conference on Data Mining . SIAM, Minneapolis, Minnesota, USA, 443-448. [5] Pei-Hung Chen, Wei Wei, Cho-Jui Hsieh, and Bo Dai. 2021. Overcoming Catastrophic Forgetting by Bayesian Generative Regularization. In Proceedings of the 38th International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 139) , Marina Meila and Tong Zhang (Eds.). PMLR, 1760-1770. https://proceedings.mlr.press/v139/chen21v.html [6] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems . ACM, Boston, MA, USA, 7-10. [7] Mayur Datar, Aristides Gionis, Piotr Indyk, and Rajeev Motwani. 2002. Maintaining Stream Statistics over Sliding Windows. SIAM J. Comput. 31, 6 (2002), 1794-1813. https://doi.org/10.1137/S0097539701398363 arXiv:https://doi.org/10.1137/S0097539701398363 [8] Mayur Datar and Rajeev Motwani. 2016. The Sliding-Window Computation Model and Results . Springer Berlin Heidelberg, Berlin, Heidelberg, 149-165. https: //doi.org/10.1007/978-3-540-28608-0_7 [9] Matthias De Lange, Rahaf Aljundi, Marc Masana, Sarah Parisot, Xu Jia, Aleš Leonardis, Gregory Slabaugh, and Tinne Tuytelaars. 2022. A Continual Learning Survey: Defying Forgetting in Classification Tasks. IEEE Transactions on Pattern Analysis and Machine Intelligence 44, 7 (2022), 3366-3385. https://doi.org/10. 1109/TPAMI.2021.3057446 [10] Prithviraj Dhar, Rajat Vikram Singh, Kuan-Chuan Peng, Ziyan Wu, and Rama Chellappa. 2019. Learning Without Memorizing. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) . [11] Robert M French. 1999. Catastrophic forgetting in connectionist networks. Trends in cognitive sciences 3, 4 (1999), 128-135. [12] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . ijcai.org, Melbourne, Australia, 1725-1731. [13] Zai Huang, Mingyuan Tao, and Bufeng Zhang. 2021. Deep User Match Network for Click-Through Rate Prediction. In proceedings of the 44th ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, Virtual Event, Canada, 1890-1894. [14] Robert A Jacobs, Michael I Jordan, Steven J Nowlan, and Geoffrey E Hinton. 1991. Adaptive mixtures of local experts. Neural computation 3, 1 (1991), 79-87. [15] Minsoo Kang, Jaeyoo Park, and Bohyung Han. 2022. Class-Incremental Learning by Knowledge Distillation With Adaptive Feature Consolidation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) . 16071-16080. [16] James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei A. Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka Grabska-Barwinska, Demis Hassabis, Claudia Clopath, Dharshan Kumaran, and Raia Hadsell. 2017. Overcoming catastrophic forgetting in neural networks. Proceedings of the National Academy of Sciences 114, 13 (2017), 3521-3526. https://doi.org/10.1073/pnas.1611835114 arXiv:https://www.pnas.org/doi/pdf/10.1073/pnas.1611835114 [17] Bartosz Krawczyk, Leandro L Minku, João Gama, Jerzy Stefanowski, and Michał Woźniak. 2017. Ensemble learning for data stream analysis: A survey. Information Fusion 37 (2017), 132-156. [18] Sang-Woo Lee, Jin-Hwa Kim, Jaehyun Jun, Jung-Woo Ha, and Byoung-Tak Zhang. 2017. Overcoming Catastrophic Forgetting by Incremental Moment Matching. In Advances in Neural Information Processing Systems , I. Guyon, U. Von Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, and R. Garnett (Eds.), Vol. 30. Curran Associates, Inc. https://proceedings.neurips.cc/paper/2017/file/ f708f064faaf32a43e4d3c784e6af9ea-Paper.pdf [19] Xilai Li, Yingbo Zhou, Tianfu Wu, Richard Socher, and Caiming Xiong. 2019. Learn to Grow: A Continual Structure Learning Framework for Overcoming Catastrophic Forgetting. In Proceedings of the 36th International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 97) , Kamalika Chaudhuri and Ruslan Salakhutdinov (Eds.). PMLR, 3925-3934. https: //proceedings.mlr.press/v97/li19m.html [20] Zhizhong Li and Derek Hoiem. 2018. Learning without Forgetting. IEEE Transactions on Pattern Analysis and Machine Intelligence 40, 12 (2018), 2935-2947. https://doi.org/10.1109/TPAMI.2017.2773081 [21] Congcong Liu, Yuejiang Li, Xiwei Zhao, Changping Peng, Zhangang Lin, and Jingping Shao. 2022. Concept Drift Adaptation for CTR Prediction in Online Advertising Systems. arXiv preprint arXiv:2204.05101 (2022). [22] Congcong Liu, Yuejiang Li, Jian Zhu, Fei Teng, Xiwei Zhao, Changping Peng, Zhangang Lin, and Jingping Shao. 2022. Position Awareness Modeling with Knowledge Distillation for CTR Prediction. In Proceedings of the 16th ACM Conference on Recommender Systems . 562-566. [23] Huihui Liu, Yiding Yang, and Xinchao Wang. 2021. Overcoming Catastrophic Forgetting in Graph Neural Networks. Proceedings of the AAAI Conference on Artificial Intelligence 35, 10 (May 2021), 8653-8661. https://doi.org/10.1609/aaai. v35i10.17049 [24] Jie Lu, Anjin Liu, Fan Dong, Feng Gu, Joao Gama, and Guangquan Zhang. 2018. Learning under concept drift: A review. IEEE Transactions on Knowledge and Data Engineering 31, 12 (2018), 2346-2363. [25] Dillon H Murphy and Alan D Castel. 2022. Differential effects of proactive and retroactive interference in value-directed remembering for younger and older adults. Psychology and Aging (2022). [26] Sasthakumar Ramamurthy and Raj Bhatnagar. 2007. Tracking recurrent concept drift in streaming data using ensemble classifiers. In Sixth International Conference on Machine Learning and Applications (ICMLA 2007) . 404-409. https://doi.org/10. 1109/ICMLA.2007.80 [27] Sylvestre-Alvise Rebuffi, Alexander Kolesnikov, Georg Sperl, and Christoph H. Lampert. 2017. iCaRL: Incremental Classifier and Representation Learning. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . [28] Joan Serra, Didac Suris, Marius Miron, and Alexandros Karatzoglou. 2018. Overcoming Catastrophic Forgetting with Hard Attention to the Task. In Proceedings of the 35th International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 80) , Jennifer Dy and Andreas Krause (Eds.). PMLR, 4548-4557. https://proceedings.mlr.press/v80/serra18a.html [29] Alexey Tsymbal. 2004. The problem of concept drift: Definitions and related work. Computer Science Department, Trinity College Dublin 106, 2 (2004), 58. [30] Endel Tulving and Joseph Psotka. 1971. Retroactive inhibition in free recall: Inaccessibility of information available in the memory store. Journal of experimental Psychology 87, 1 (1971), 1. [31] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD . ACM, Halifax, NS, Canada, 12:1-12:7. [32] Yichao Wang, Huifeng Guo, Ruiming Tang, Zhirong Liu, and Xiuqiang He. 2020. A practical incremental method to train deep ctr models. arXiv preprint arXiv:2009.02147 (2020). [33] Zhibo Xiao, Luwei Yang, Wen Jiang, Yi Wei, Yi Hu, and Hao Wang. 2020. Deep multi-interest network for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM) . ACM, Virtual Event, Ireland, 2265-2268. [34] Yang Yang, Da-Wei Zhou, De-Chuan Zhan, Hui Xiong, and Yuan Jiang. 2019. Adaptive deep models for incremental learning: Considering capacity scalability and sustainability. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD) . ACM, Anchorage, AK, USA, 74-82. [35] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In The 33rd AAAI Conference on Artificial Intelligence (AAAI) . AAAI Press, Honolulu, Hawaii, USA, 5941-5948. [36] Guorui Zhou, Xiaoqiang Zhu, Chengru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for clickthrough rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD) . ACM, London, UK, 1059-1068.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Multi-Domain Multi-Task Rehearsal for Lifelong Learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Expert gate: Lifelong learning with a network of experts"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Cluttered memory representations shape cognition in old age"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Learning from time-changing data with adaptive windowing"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Overcoming Catastrophic Forgetting by Bayesian Generative Regularization"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Maintaining Stream Statistics over Sliding Windows"
+    },
+    {
+      "ref_id": "b8",
+      "title": "The Sliding-Window Computation Model and Results"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A Continual Learning Survey: Defying Forgetting in Classification Tasks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Learning Without Memorizing"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Catastrophic forgetting in connectionist networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deep User Match Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adaptive mixtures of local experts"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Class-Incremental Learning by Knowledge Distillation With Adaptive Feature Consolidation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Overcoming catastrophic forgetting in neural networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Ensemble learning for data stream analysis: A survey"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Overcoming Catastrophic Forgetting by Incremental Moment Matching"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Learn to Grow: A Continual Structure Learning Framework for Overcoming Catastrophic Forgetting"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Learning without Forgetting"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Concept Drift Adaptation for CTR Prediction in Online Advertising Systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Position Awareness Modeling with Knowledge Distillation for CTR Prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Overcoming Catastrophic Forgetting in Graph Neural Networks"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Learning under concept drift: A review"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Differential effects of proactive and retroactive interference in value-directed remembering for younger and older adults"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Tracking recurrent concept drift in streaming data using ensemble classifiers"
+    },
+    {
+      "ref_id": "b27",
+      "title": "iCaRL: Incremental Classifier and Representation Learning"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Overcoming Catastrophic Forgetting with Hard Attention to the Task"
+    },
+    {
+      "ref_id": "b29",
+      "title": "The problem of concept drift: Definitions and related work"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Retroactive inhibition in free recall: Inaccessibility of information available in the memory store"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b32",
+      "title": "A practical incremental method to train deep ctr models"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Deep multi-interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Adaptive deep models for incremental learning: Considering capacity scalability and sustainability"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Deep interest network for clickthrough rate prediction"
+    }
   ]
 }

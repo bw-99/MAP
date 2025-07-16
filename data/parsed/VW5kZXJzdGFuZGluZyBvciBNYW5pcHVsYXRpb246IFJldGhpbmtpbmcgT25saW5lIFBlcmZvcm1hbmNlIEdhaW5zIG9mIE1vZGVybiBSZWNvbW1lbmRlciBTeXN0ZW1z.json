@@ -27,6 +27,122 @@
   "REFERENCES": "[1] Gediminas Adomavicius, Jesse C Bockstedt, Shawn P Curley, and Jingjing Zhang. 2018. Effects of online recommendations on consumers' willingness to pay. Information Systems Research 29, 1 (2018), 84-102. [2] Qingyao Ai, Keping Bi, Jiafeng Guo, and W Bruce Croft. 2018. Learning a deep listwise context model for ranking refinement. In The 41st international ACM SIGIR conference on research & development in information retrieval. 135-144. [3] Oscar Bergman, Tore Ellingsen, Magnus Johannesson, and Cicek Svensson. 2010. Anchoring and cognitive ability. Economics Letters 107, 1 (2010), 66-68. [4] Lucas Bernardi, Sakshi Batra, and Cintia Alicia Bruscantini. 2021. Simulations in Recommender Systems: An industry perspective. arXiv preprint arXiv:2109.06723 (2021). ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023. Understanding or Manipulation: Rethinking Online Performance Gains of Modern Recommender Systems 29 [5] Alex Beutel, Jilin Chen, Tulsee Doshi, Hai Qian, Li Wei, Yi Wu, Lukasz Heldt, Zhe Zhao, Lichan Hong, Ed H Chi, et al. 2019. Fairness in recommendation ranking through pairwise comparisons. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. 2212-2220. [6] Alex Beutel, Paul Covington, Sagar Jain, Can Xu, Jia Li, Vince Gatto, and Ed H Chi. 2018. Latent cross: Making use of context in recurrent recommender systems. In Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining. 46-54. [7] Alexey Borisov, Ilya Markov, Maarten De Rijke, and Pavel Serdyukov. 2016. A neural click model for web search. In Proceedings of the 25th International Conference on World Wide Web. 531-541. [8] Alexey Borisov, Martijn Wardenaar, Ilya Markov, and Maarten de Rijke. 2018. A click sequence model for web search. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval. 45-54. [9] Chris Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole Hamilton, and Greg Hullender. 2005. Learning to rank using gradient descent. In Proceedings of the 22nd international conference on Machine learning. 89-96. [10] Christopher JC Burges. 2010. From ranknet to lambdarank to lambdamart: An overview. Learning 11, 23-581 (2010), 81. [11] Colin Camerer. 1999. Behavioral economics: Reunifying psychology and economics. Proceedings of the National Academy of Sciences 96, 19 (1999), 10575-10577. [12] Micah Carroll, Dylan Hadfield-Menell, Stuart Russell, and Anca Dragan. 2022. Estimating and Penalizing Induced Preference Shifts in Recommender Systems. arXiv preprint arXiv:2204.11966 (2022). [13] Allison JB Chaney, Brandon M Stewart, and Barbara E Engelhardt. 2018. How algorithmic confounding in recommendation systems increases homogeneity and decreases utility. In Proceedings of the 12th ACM conference on recommender systems. 224-232. [14] Gary Charness and Chetan Dave. 2017. Confirmation bias with motivated beliefs. Games and Economic Behavior 104 (2017), 1-23. [15] Jia Chen, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. 2019. TianGong-ST: A new dataset with large-scale refined real-world web search sessions. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management. 2485-2488. [16] Jia Chen, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. 2020. A context-aware click model for web search. In Proceedings of the 13th International Conference on Web Search and Data Mining. 88-96. [17] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior sequence transformer for ecommerce recommendation in alibaba. In Proceedings of the 1st International Workshop on Deep Learning Practice for High-Dimensional Sparse Data. 1-4. [18] Ye Chen and John F Canny. 2011. Recommending ephemeral items at web scale. In Proceedings of the 34th international ACM SIGIR conference on Research and development in Information Retrieval. 1013-1022. [19] Yanhong Chen, Yaobin Lu, Bin Wang, and Zhao Pan. 2019. How do product recommendations affect impulse buying? An empirical study on WeChat social commerce. Information & Management 56, 2 (2019), 236-248. [20] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems. 7-10. [21] Kyunghyun Cho, Bart Van Merriënboer, Dzmitry Bahdanau, and Yoshua Bengio. 2014. On the properties of neural machine translation: Encoder-decoder approaches. arXiv preprint arXiv:1409.1259 (2014). [22] Caspar Chorus, Sander van Cranenburgh, and Thijs Dekker. 2014. Random regret minimization for consumer choice modeling: Assessment of empirical evidence. Journal of Business Research 67, 11 (2014), 2428-2436. [23] Nick Craswell, Onno Zoeter, Michael Taylor, and Bill Ramsey. 2008. An experimental comparison of click position-bias models. In Proceedings of the 2008 international conference on web search and data mining. 87-94. [24] Xinyi Dai, Jianghao Lin, Weinan Zhang, Shuai Li, Weiwen Liu, Ruiming Tang, Xiuqiang He, Jianye Hao, Jun Wang, and Yong Yu. 2021. An Adversarial Imitation Click Model for Information Retrieval. In Proceedings of the Web Conference 2021. 1809-1820. [25] Abhinandan S Das, Mayur Datar, Ashutosh Garg, and Shyam Rajaram. 2007. Google news personalization: scalable online collaborative filtering. In Proceedings of the 16th international conference on World Wide Web. 271-280. [26] Michael D Ekstrand, Mucun Tian, Ion Madrazo Azpiazu, Jennifer D Ekstrand, Oghenemaro Anuyah, David McNeill, and Maria Soledad Pera. 2018. All the cool kids, how do they fit in?: Popularity and demographic biases in recommender evaluation and effectiveness. In Conference on fairness, accountability and transparency. PMLR, 172-186. [27] Fenglei Fan, Jinjun Xiong, and Ge Wang. 2020. On interpretability of artificial neural networks. arXiv preprint arXiv:2001.02522 2, 10 (2020). [28] Scott Fujimoto, David Meger, and Doina Precup. 2019. Off-policy deep reinforcement learning without exploration. In International Conference on Machine Learning. PMLR, 2052-2062. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023. 30 Z. Zhu et al. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023. Understanding or Manipulation: Rethinking Online Performance Gains of Modern Recommender Systems 31 ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023. 32 Z. Zhu et al. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023. Understanding or Manipulation: Rethinking Online Performance Gains of Modern Recommender Systems 33",
   "85-93.": "[102] Ziwei Zhu, Jianling Wang, and James Caverlee. 2020. Measuring and mitigating item under-recommendation bias in personalized ranking systems. In Proceedings of the 43rd international ACM SIGIR conference on research and development in information retrieval. 449-458. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023.",
   "keywords_parsed": [
-    "None"
+    "Recommender System",
+    "User Model",
+    "Bounded Rationality"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Effects of online recommendations on consumers' willingness to pay"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Anchoring and cognitive ability"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Simulations in Recommender Systems: An industry perspective"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fairness in recommendation ranking through pairwise comparisons"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Latent cross: Making use of context in recurrent recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A neural click model for web search"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A click sequence model for web search"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Learning to rank using gradient descent"
+    },
+    {
+      "ref_id": "b10",
+      "title": "From ranknet to lambdarank to lambdamart: An overview"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Behavioral economics: Reunifying psychology and economics"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Estimating and Penalizing Induced Preference Shifts in Recommender Systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "How algorithmic confounding in recommendation systems increases homogeneity and decreases utility"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Confirmation bias with motivated beliefs"
+    },
+    {
+      "ref_id": "b15",
+      "title": "TianGong-ST: A new dataset with large-scale refined real-world web search sessions"
+    },
+    {
+      "ref_id": "b16",
+      "title": "A context-aware click model for web search"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Behavior sequence transformer for ecommerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Recommending ephemeral items at web scale"
+    },
+    {
+      "ref_id": "b19",
+      "title": "How do product recommendations affect impulse buying?"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "On the properties of neural machine translation: Encoder-decoder approaches"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Random regret minimization for consumer choice modeling: Assessment of empirical evidence"
+    },
+    {
+      "ref_id": "b23",
+      "title": "An experimental comparison of click position-bias models"
+    },
+    {
+      "ref_id": "b24",
+      "title": "An Adversarial Imitation Click Model for Information Retrieval"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Google news personalization: scalable online collaborative filtering"
+    },
+    {
+      "ref_id": "b26",
+      "title": "All the cool kids, how do they fit in?: Popularity and demographic biases in recommender evaluation and effectiveness"
+    },
+    {
+      "ref_id": "b27",
+      "title": "On interpretability of artificial neural networks"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Off-policy deep reinforcement learning without exploration"
+    }
   ]
 }

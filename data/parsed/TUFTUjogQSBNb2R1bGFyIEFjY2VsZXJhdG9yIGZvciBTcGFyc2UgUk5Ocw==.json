@@ -27,7 +27,275 @@
   "X. CONCLUSION": "We present MASR, a novel bidirectional RNN accelerator for on-chip ASR that exploits sparsity in both dynamic activations and static weights, compacts storage of non-zero parameters, and wastes no energy at all on null computations. Compared to a state-of-the-art sparse DNN accelerator [8], MASR improves performance, area, and energy by 1.6 × , 3 × , and 2 × , respectively. MASR's modular architecture provides scalable designs ranging from resource-constrained low-power IoT applications to highly parallel datacenter deployments.",
   "ACKNOWLEDGEMENTS": "This work was supported by the Applications Driving Architectures (ADA) Research Center, a JUMP Center cosponsored by SRC and DARPA, the NSF under CCF-1704834, and Intel Corporation. 12",
   "REFERENCES": "[1] Amazon, 'What is automatic speech recognition (ASR)?.' https://developer.amazon.com/alexa-skills-kit/asr, 2018. [2] 'Google Duplex: An AI system for accomplishing real-world tasks over the phone.' https://ai.googleblog.com/2018/05/duplex-ai-system-fornatural-conversation.html, 2018. [3] D. Amodei, R. Anubhai, E. Battenberg, C. Case, J. Casper, B. Catanzaro, J. Chen, M. Chrzanowski, A. Coates, G. Diamos, E. Elsen, J. Engel, L. Fan, C. Fougner, T. Han, A. Y. Hannun, B. Jun, P. LeGresley, L. Lin, S. Narang, A. Y. Ng, S. Ozair, R. Prenger, J. Raiman, S. Satheesh, D. Seetapun, S. Sengupta, Y. Wang, Z. Wang, C. Wang, B. Xiao, D. Yogatama, J. Zhan, and Z. Zhu, 'Deep speech 2: End-to-end speech recognition in english and mandarin,' CoRR , vol. abs/1512.02595, 2015. [4] H. Sak, A. Senior, and F. Beaufays, 'Long short-term memory recurrent neural network architectures for large scale acoustic modeling,' in Fifteenth annual conference of the international speech communication association , 2014. [5] H. Sak, A. W. Senior, K. Rao, and F. Beaufays, 'Fast and accurate recurrent neural network acoustic models for speech recognition,' in INTERSPEECH , 2015. [6] 'Google voice search: faster and more accurate.' https://ai.googleblog.com/2015/09/google-voice-search-faster-andmore.html, 2015. [7] D. P. Vassil Panayotov, Guoguo Chen and S. Khudanpur, 'Librispeech: an asr corpus based on public domain audio books,' ICASSP'15, 2015. [8] S. Han, X. Liu, H. Mao, J. Pu, A. Pedram, M. A. Horowitz, and W. J. Dally, 'EIE: efficient inference engine on compressed deep neural network,' CoRR , vol. abs/1602.01528, 2016. [9] A. Parashar, M. Rhu, A. Mukkara, A. Puglielli, R. Venkatesan, B. Khailany, J. S. Emer, S. W. Keckler, and W. J. Dally, 'SCNN: an accelerator for compressed-sparse convolutional neural networks,' CoRR , vol. abs/1708.04485, 2017. [10] S. Zhang, Z. Du, L. Zhang, H. Lan, S. Liu, L. Li, Q. Guo, T. Chen, and Y. Chen, 'Cambricon-X: An accelerator for sparse neural networks,' in 49th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO) , pp. 1-12, Oct 2016. [11] Y.-H. Chen, T. Krishna, J. Emer, and V. Sze, 'Eyeriss: An EnergyEfficient Reconfigurable Accelerator for Deep Convolutional Neural Networks,' in ISSCC , 2016. [12] G. E. Hinton, O. Vinyals, and J. Dean, 'Distilling the knowledge in a neural network,' CoRR , vol. abs/1503.02531, 2015. [13] F. Silfa, G. Dot, J.-M. Arnau, and A. Gonzalez, 'E-PUR: An energyefficient processing unit for recurrent neural networks,' 2017. [14] J. Zhu, J. Jiang, X. Chen, and C.-Y. Tsui, 'Sparsenn: An energy-efficient neural network accelerator exploiting input and output sparsity,' in 2018 Design, Automation & Test in Europe Conference & Exhibition (DATE) , pp. 241-244, IEEE, 2018. [15] N. P. Jouppi, C. Young, N. Patil, D. Patterson, G. Agrawal, R. Bajwa, S. Bates, S. Bhatia, N. Boden, A. Borchers, R. Boyle, P.-l. Cantin, C. Chao, C. Clark, J. Coriell, M. Daley, M. Dau, J. Dean, B. Gelb, T. V. Ghaemmaghami, R. Gottipati, W. Gulland, R. Hagmann, C. R. Ho, D. Hogberg, J. Hu, R. Hundt, D. Hurt, J. Ibarz, A. Jaffey, A. Jaworski, A. Kaplan, H. Khaitan, D. Killebrew, A. Koch, N. Kumar, S. Lacy, J. Laudon, J. Law, D. Le, C. Leary, Z. Liu, K. Lucke, A. Lundin, G. MacKean, A. Maggiore, M. Mahony, K. Miller, R. Nagarajan, R. Narayanaswami, R. Ni, K. Nix, T. Norrie, M. Omernick, N. Penukonda, A. Phelps, J. Ross, M. Ross, A. Salek, E. Samadiani, C. Severn, G. Sizikov, M. Snelham, J. Souter, D. Steinberg, A. Swing, M. Tan, G. Thorson, B. Tian, H. Toma, E. Tuttle, V. Vasudevan, R. Walter, W. Wang, E. Wilcox, and D. H. Yoon, 'In-datacenter performance analysis of a tensor processing unit,' in Proceedings of the 44th Annual International Symposium on Computer Architecture , ISCA '17, (New York, NY, USA), pp. 1-12, ACM, 2017. [16] NVIDIA, 'Nvidia deep learning accelerator (NVDLA),' 2018. [17] K. Hazzelwood, S. Bird, D. Brooks, S. Chintala, U. Diril, M. Fawzy, B. Jia, Y. Jia, A. Kalro, J. Law, K. Lee, J. Lu, P. Noordhuis, M. Smelyanskiy, L. Xiong, and X. Wang, 'Applied machine learning at facebook: A datacenter infrastructure perspective,' in Proceedings of the 24th IEEE International Symposium on High-Performance Computer Architecture , HPCA '18, 2018. [18] B. R. G.-Y. W. Robert Adolf, Saketh Rama and D. Brooks, 'Fathom: Reference workloads for modern deep learning methods,' IISWC'16, 2016. [19] J. Park, M. Naumov, P. Basu, S. Deng, A. Kalaiah, D. Khudia, J. Law, P. Malani, A. Malevich, S. Nadathur, et al. , 'Deep learning inference in facebook data centers: Characterization, performance optimizations and hardware implications,' arXiv preprint arXiv:1811.09886 , 2018. [20] T. Chen, Z. Du, N. Sun, J. Wang, C. Wu, Y. Chen, and O. Temam, 'Diannao: A small-footprint high-throughput accelerator for ubiquitous machine-learning,' in ASPLOS , 2014. [21] Y. Chen, T. Luo, S. Liu, S. Zhang, L. He, J. Wang, L. Li, T. Chen, Z. Xu, N. Sun, and O. Teman, 'Dadiannao: A machine-learning supercomputer,' in MICRO , 2014. [22] B. Reagen, P. Whatmough, R. Adolf, S. Rama, H. Lee, S. K. Lee, J. M. Hernandez-Lobato, G.-Y. Wei, and D. Brooks, 'Minerva: Enabling LowPower, Highly-Accurate Deep Neural Network Accelerators,' in ISCA , 2016. [23] J. Albericio, P. Judd, T. Hetherington, T. Aamodt, N. E. Jerger, and A. Moshovos, 'Cnvlutin: Ineffectual-neuron-free deep neural network computing,' SIGARCH Comput. Archit. News , vol. 44, pp. 1-13, June 2016. [24] C. Ding, S. Liao, Y. Wang, Z. Li, N. Liu, Y. Zhuo, C. Wang, X. Qian, Y. Bai, G. Yuan, X. Ma, Y. Zhang, J. Tang, Q. Qiu, X. Lin, and B. Yuan, 'Circnn: Accelerating and compressing deep neural networks using blockcirculant weight matrices,' in Proceedings of the 50th Annual IEEE/ACM International Symposium on Microarchitecture , MICRO-50 '17, (New York, NY, USA), pp. 395-408, ACM, 2017. [25] A. Shafiee, A. Nag, N. Muralimanohar, R. Balasubramonian, J. P. Strachan, M. Hu, R. S. Williams, and V. Srikumar, 'Isaac: A convolutional neural network accelerator with in-situ analog arithmetic in crossbars,' in Proceedings of the 43rd International Symposium on Computer Architecture , ISCA '16, (Piscataway, NJ, USA), pp. 14-26, IEEE Press, 2016. [26] M. Rhu, M. O'Connor, N. Chatterjee, J. Pool, and S. W. Keckler, 'Compressing DMA engine: Leveraging activation sparsity for training deep neural networks,' CoRR , vol. abs/1705.01626, 2017. [27] S. Venkataramani, A. Ranjan, S. Banerjee, D. Das, S. Avancha, A. Jagannathan, A. Durg, D. Nagaraj, B. Kaul, P. Dubey, et al. , 'Scaledeep: A scalable compute architecture for learning and evaluating deep networks,' ACM SIGARCH Computer Architecture News , vol. 45, no. 2, pp. 13-26, 2017. [28] M. Song, J. Zhao, Y. Hu, J. Zhang, and T. Li, 'Prediction based execution on deep neural networks,' in 2018 ACM/IEEE 45th Annual International Symposium on Computer Architecture (ISCA) , pp. 752-763, IEEE, 2018. [29] P. Chi, S. Li, C. Xu, T. Zhang, J. Zhao, Y. Liu, Y. Wang, and Y. Xie, 'Prime: A novel processing-in-memory architecture for neural network computation in reram-based main memory,' in ACM SIGARCH Computer Architecture News , vol. 44, pp. 27-39, IEEE Press, 2016. [30] P. Judd, J. Albericio, T. Hetherington, T. M. Aamodt, and A. Moshovos, 'Stripes: Bit-serial deep neural network computing,' in 2016 49th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO) , pp. 1-12, IEEE, 2016. [31] H. Sharma, J. Park, N. Suda, L. Lai, B. Chau, V. Chandra, and H. Esmaeilzadeh, 'Bit fusion: Bit-level dynamically composable architecture for accelerating deep neural networks,' in Proceedings of the 45th Annual International Symposium on Computer Architecture , pp. 764-775, IEEE Press, 2018. [32] A. Ren, T. Zhang, S. Ye, J. Li, W. Xu, X. Qian, X. Lin, and Y. Wang, 'Admm-nn: An algorithm-hardware co-design framework of dnns using alternating direction methods of multipliers,' in Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems , ASPLOS '19, (New York, NY, USA), pp. 925-938, ACM, 2019. [33] H. Kung, B. McDanel, and S. Q. Zhang, 'Packing sparse convolutional neural networks for efficient systolic array implementations: Column combining under joint optimization,' in Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems , pp. 821-834, ACM, 2019. [34] T. Jin and S. Hong, 'Split-cnn: Splitting window-based operations in convolutional neural networks for memory system optimization,' in Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems , pp. 835-847, ACM, 2019. [35] Z. Li, C. Ding, S. Wang, W. Wen, Y. Zhuo, C. Liu, Q. Qiu, W. Xu, X. Lin, X. Qian, et al. , 'E-rnn: Design optimization for efficient recurrent neural networks in fpgas,' in 2019 IEEE International Symposium on High Performance Computer Architecture (HPCA) , pp. 69-80, IEEE, 2019. [36] J. F. K. O. M. Papamichael, T. M. M. Liu, D. L. S. A. M. Haselman, L. A. M. Ghandi, S. H. P. P. A. Sapek, and G. W. L. Woods, 'A configurable cloud-scale dnn processor for real-time ai,' 13 [37] X. Zhang, C. Xie, J. Wang, W. Zhang, and X. Fu, 'Towards memory friendly long-short term memory networks (lstms) on mobile gpus,' in 2018 51st Annual IEEE/ACM International Symposium on Microarchitecture (MICRO) , pp. 162-174, IEEE, 2018. [38] H. Kwon, A. Samajdar, and T. Krishna, 'Maeri: Enabling flexible dataflow mapping over dnn accelerators via reconfigurable interconnects,' in ACM SIGPLAN Notices , vol. 53, pp. 461-475, ACM, 2018. [39] M. Sivathanu, T. Chugh, S. S. Singapuram, and L. Zhou, 'Astra: Exploiting predictability to optimize deep learning,' in Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems , ASPLOS '19, (New York, NY, USA), pp. 909-923, ACM, 2019. [40] M. Gao, X. Yang, J. Pu, M. Horowitz, and C. Kozyrakis, 'Tangram: Optimized coarse-grained dataflow for scalable nn accelerators,' in Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems , pp. 807820, ACM, 2019. [41] Y. Guan, Z. Yuan, G. Sun, and J. Cong, 'Fpga-based accelerator for long short-term memory recurrent neural networks,' in 2017 22nd Asia and South Pacific Design Automation Conference (ASP-DAC) , pp. 629-634, Jan 2017. [42] E. C. Andre Xian Ming Chang, Berin Martini, 'Recurrent neural networks hardware implementation on fpga,' 2016. [43] C. Gao, D. Neil, E. Ceolini, S.-C. Liu, and T. Delbruck, 'Deltarnn: A power-efficient recurrent neural network accelerator,' in Proceedings of the 2018 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays , FPGA '18, (New York, NY, USA), pp. 21-30, ACM, 2018. [44] R. Yazdani, J.-M. Arnau, and A. Gonz´ alez, 'Unfold: A memoryefficient speech recognizer using on-the-fly wfst composition,' in Proceedings of the 50th Annual IEEE/ACM International Symposium on Microarchitecture , MICRO-50 '17, (New York, NY, USA), pp. 69-81, ACM, 2017. [45] A. Y. Hannun, C. Case, J. Casper, B. Catanzaro, G. Diamos, E. Elsen, R. Prenger, S. Satheesh, S. Sengupta, A. Coates, and A. Y. Ng, 'Deep speech: Scaling up end-to-end speech recognition,' CoRR , vol. abs/1412.5567, 2014. [46] V. Sze, Y.-H. Chen, T.-J. Yang, and J. S. Emer, 'Efficient processing of deep neural networks: A tutorial and survey,' Proceedings of the IEEE , vol. 105, no. 12, pp. 2295-2329, 2017. [47] S. Han, J. Kang, H. Mao, Y. Hu, X. Li, Y. Li, D. Xie, H. Luo, S. Yao, Y. Wang, H. Yang, and W. J. Dally, 'ESE: efficient speech recognition engine with compressed LSTM on FPGA,' CoRR , vol. abs/1612.00694, 2016. [48] A.-R. Mohamed, G. E. Dahl, and G. Hinton, 'Acoustic modeling using deep belief networks,' IEEE Transactions on Audio, Speech, and Language Processing , vol. 20, no. 1, pp. 14-22, 2012. [49] G. Hinton, L. Deng, D. Yu, G. E. Dahl, A.-r. Mohamed, N. Jaitly, A. Senior, V. Vanhoucke, P. Nguyen, T. N. Sainath, et al. , 'Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups,' IEEE Signal Processing Magazine , vol. 29, no. 6, pp. 82-97, 2012. [50] J. Chung, C. Gulcehre, K. Cho, and Y. Bengio, 'Empirical evaluation of gated recurrent neural networks on sequence modeling,' arXiv preprint arXiv:1412.3555 , 2014. [51] S. Hochreiter and J. Schmidhuber, 'Long short-term memory,' Neural computation , vol. 9, no. 8, pp. 1735-1780, 1997. [52] 'A broad ml benchmark suite for measuring performance of ml software frameworks, ml hardware accelerators, and ml cloud platforms.' https://mlperf.org/, 2018. [53] 'Pytorch.' http://pytorch.org/, 2017. [54] 'deepspeech.pytorch.' https://github.com/SeanNaren/deepspeech.pytorch, 2018. [55] A. Graves, S. Fernandez, F. Gomez, and J. Schmidhuber, 'Connectionist temporal classification: Labelling unsegmented sequence data with recurrent neural networks,' ICML'2006 , 2006. [56] R. Yazdani, M. Riera, J.-M. Arnau, and A. Gonzalez, 'The dark side of dnn pruning,' in ISCA , 2018. [57] S. Han, H. Mao, and W. J. Dally, 'Deep compression: Compressing deep neural network with pruning, trained quantization and huffman coding,' CoRR , vol. abs/1510.00149, 2015. [58] B. Reagen, U. Gupta, R. Adolf, M. M. Mitzenmacher, A. M. Rush, G.-Y. Wei, and D. Brooks, 'Weightless: Lossy weight encoding for deep neural network compression,' arXiv preprint arXiv:1711.04686 , 2017. [59] S. Narang, E. Elsen, G. Diamos, and S. Sengupta, 'Exploring sparsity in recurrent neural networks,' arXiv preprint arXiv:1704.05119 , 2017. [60] E. Battenberg, J. Chen, R. Child, A. Coates, Y. G. Y. Li, H. Liu, S. Satheesh, A. Sriram, and Z. Zhu, 'Exploring neural transducers for end-to-end speech recognition,' in 2017 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU) , pp. 206-213, IEEE, 2017. [61] Y. He, T. N. Sainath, R. Prabhavalkar, I. McGraw, R. Alvarez, D. Zhao, D. Rybach, A. Kannan, Y. Wu, R. Pang, et al. , 'Streaming end-to-end speech recognition for mobile devices,' arXiv preprint arXiv:1811.06621 , 2018. [62] C.-C. Chiu and C. Raffel, 'Monotonic chunkwise attention,' arXiv preprint arXiv:1712.05382 , 2017. [63] 'Deepbench.' https://github.com/baidu-research/DeepBench, 2018. [64] V. Akhlaghi, A. Yazdanbakhsh, K. Samadi, R. K. Gupta, and H. Esmaeilzadeh, 'SnaPEA : Predictive early activation for reducing computation in deep convolutional neural networks,' in Proceedings of the 45th International Symposium on Computer Architecture , 2018. [65] K. Chandrasekar, C. Weis, Y. Li, S. Goossens, M. Jung, O. Naji, B. Akesson, N. Wehn, , and K. Goossens, 'Drampower: Open-source dram power and energy estimation tool.' http://www.drampower.info. [66] K. Ullrich, E. Meeds, and M. Welling, 'Soft weight-sharing for neural network compression,' ICLR'2017 , vol. abs/1702.04008, 2017. [67] Y. Guo, A. Yao, and Y. Chen, 'Dynamic network surgery for efficient dnns,' NIPS'2016 , vol. abs/1608.04493, 2016. 14",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "What is automatic speech recognition (ASR)?"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Google Duplex: An AI system for accomplishing real-world tasks over the phone."
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep speech 2: End-to-end speech recognition in english and mandarin"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Long short-term memory recurrent neural network architectures for large scale acoustic modeling"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fast and accurate recurrent neural network acoustic models for speech recognition"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Google voice search: faster and more accurate."
+    },
+    {
+      "ref_id": "b7",
+      "title": "Librispeech: an asr corpus based on public domain audio books"
+    },
+    {
+      "ref_id": "b8",
+      "title": "EIE: efficient inference engine on compressed deep neural network"
+    },
+    {
+      "ref_id": "b9",
+      "title": "SCNN: an accelerator for compressed-sparse convolutional neural networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Cambricon-X: An accelerator for sparse neural networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Eyeriss: An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b13",
+      "title": "E-PUR: An energy-efficient processing unit for recurrent neural networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Sparsenn: An energy-efficient neural network accelerator exploiting input and output sparsity"
+    },
+    {
+      "ref_id": "b15",
+      "title": "In-datacenter performance analysis of a tensor processing unit"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Nvidia deep learning accelerator (NVDLA)"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Applied machine learning at facebook: A datacenter infrastructure perspective"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Fathom: Reference workloads for modern deep learning methods"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Deep learning inference in facebook data centers: Characterization, performance optimizations and hardware implications"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Diannao: A small-footprint high-throughput accelerator for ubiquitous machine-learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Dadiannao: A machine-learning supercomputer"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Minerva: Enabling Low-Power, Highly-Accurate Deep Neural Network Accelerators"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Cnvlutin: Ineffectual-neuron-free deep neural network computing"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Circnn: Accelerating and compressing deep neural networks using blockcirculant weight matrices"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Isaac: A convolutional neural network accelerator with in-situ analog arithmetic in crossbars"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Compressing DMA engine: Leveraging activation sparsity for training deep neural networks"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Scaledeep: A scalable compute architecture for learning and evaluating deep networks"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Prediction based execution on deep neural networks"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Prime: A novel processing-in-memory architecture for neural network computation in reram-based main memory"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Stripes: Bit-serial deep neural network computing"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Bit fusion: Bit-level dynamically composable architecture for accelerating deep neural networks"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Admm-nn: An algorithm-hardware co-design framework of dnns using alternating direction methods of multipliers"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Packing sparse convolutional neural networks for efficient systolic array implementations: Column combining under joint optimization"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Split-cnn: Splitting window-based operations in convolutional neural networks for memory system optimization"
+    },
+    {
+      "ref_id": "b35",
+      "title": "E-rnn: Design optimization for efficient recurrent neural networks in fpgas"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A configurable cloud-scale dnn processor for real-time ai"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Towards memory friendly long-short term memory networks (lstms) on mobile gpus"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Maeri: Enabling flexible dataflow mapping over dnn accelerators via reconfigurable interconnects"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Astra: Exploiting predictability to optimize deep learning"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Tangram: Optimized coarse-grained dataflow for scalable nn accelerators"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Fpga-based accelerator for long short-term memory recurrent neural networks"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Recurrent neural networks hardware implementation on fpga"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Deltarnn: A power-efficient recurrent neural network accelerator"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Unfold: A memory-efficient speech recognizer using on-the-fly wfst composition"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Deep speech: Scaling up end-to-end speech recognition"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Efficient processing of deep neural networks: A tutorial and survey"
+    },
+    {
+      "ref_id": "b47",
+      "title": "ESE: efficient speech recognition engine with compressed LSTM on FPGA"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Acoustic modeling using deep belief networks"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Empirical evaluation of gated recurrent neural networks on sequence modeling"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Long short-term memory"
+    },
+    {
+      "ref_id": "b52",
+      "title": "A broad ml benchmark suite for measuring performance of ml software frameworks, ml hardware accelerators, and ml cloud platforms"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Pytorch"
+    },
+    {
+      "ref_id": "b54",
+      "title": "deepspeech.pytorch"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Connectionist temporal classification: Labelling unsegmented sequence data with recurrent neural networks"
+    },
+    {
+      "ref_id": "b56",
+      "title": "The dark side of dnn pruning"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Deep compression: Compressing deep neural network with pruning, trained quantization and huffman coding"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Weightless: Lossy weight encoding for deep neural network compression"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Exploring sparsity in recurrent neural networks"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Exploring neural transducers for end-to-end speech recognition"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Streaming end-to-end speech recognition for mobile devices"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Monotonic chunkwise attention"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Deepbench"
+    },
+    {
+      "ref_id": "b64",
+      "title": "SnaPEA : Predictive early activation for reducing computation in deep convolutional neural networks"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Drampower: Open-source dram power and energy estimation tool."
+    },
+    {
+      "ref_id": "b66",
+      "title": "Soft weight-sharing for neural network compression"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Dynamic network surgery for efficient dnns"
+    }
   ]
 }

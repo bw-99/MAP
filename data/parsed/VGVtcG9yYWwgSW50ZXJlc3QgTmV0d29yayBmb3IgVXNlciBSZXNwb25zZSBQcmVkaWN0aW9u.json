@@ -28,21 +28,195 @@
   "A.2 Expressiveness Study of Target-aware Attention and Target-aware Representation": "Both Target-aware Attention (TA) and Target-aware Representation (TR) are able to learn semantic correlation between behaviors and target. However, TR should be more expressive because there exists a solution by construction to make it the same as TA by simply 2 http://jmcauley.ucsd.edu/data/amazon/ 3 https://tianchi.aliyun.com/dataset/56 4 https://github.com/shenweichen/DSIN/tree/master/code Figure 5: Expressiveness of target-aware attention and target-aware representation in DIN. The green line denotes the performance of DIN with various attention embedding sizes 𝑑 TA, while the blue line denotes the performance of DIN with various representation embedding sizes 𝑑 TR. The red star corresponds to totally disabling the target-aware attention. 0 2 4 8 16 32 64 128 256 Embedding Size 0.76 0.78 0.80 0.82 0.84 0.86 GAUC DIN with various kTR DIN with various kTA (a) Amazon 0 2 4 8 16 32 64 128 256 Embedding Size 0.500 0.505 0.510 0.515 0.520 0.525 0.530 GAUC DIN with various kTR DIN with various kTA (b) Alibaba summing up all elements of the representation vector of TR. We conduct a simple experiment to investigate their expressiveness on DIN which consists of both TA and TR. Specifically, we separate the embedding space of TA and TR in DIN, i.e. , separate { 𝒗 TA , 𝒆 TA } ∈ R 𝑑 TA from { 𝒗 TR , 𝒆 TR } ∈ R 𝑑 TR . Formally,   We then tune the embedding size of each space, i.e. , 𝑑 TA , 𝑑 TR from 0 to 256 in one component while retaining it as 128 for the other one. As shown in Fig. 5, the performance drops dramatically with lower embedding size in TR, from 0.854 with 𝑑 TR = 256 to 0.808 with 𝑑 TR = 2, shown as the blue line. On the other hand, its performance keeps around 0.853 with various embedding sizes ( 𝑑 TA) from 256 to 2, when retaining 𝑑 TR as 128, shown as the green line. This verifies that TR is more expressive than TA in learning the semantic correlation between behaviors and target. Analysis of semantic-temporal correlation on more categories. We have also computed the learned semantic-temporal correlation for all the models on the top 200 frequent target categories. To evaluate the correlation between the ground truth and learned Categorywise Target-aware Correlation (CTC), we select the history behaviors with the same category as the target and calculate the Pearson coefficient. The coefficients are then categorized as follows: poor (range of [-1, 0.2]), medium (0.2, 0.8], and strong (0.8, 1.0]. We plot the distribution of these coefficients across the three bins for TIN and several other models. As depicted in Figure 6, a significant majority (90.0%) of the categories demonstrate a strong ability to learn the CTC in TIN. Similarly, TIN w/o TR also exhibits a commendable performance in learning the CTC. However, the remaining models do not achieve comparable results. Temporal Interest Network for User Response Prediction WWW'24 Companion, May 13-17, 2024, Singapore, Singapore Figure 6: Distribution of Pearson coefficient regarding ground-truth and learned temporal correlation on the top-200 target categories. The range for poor, medium, and strong coefficients are [-1, 0.2], (0.2, 0.8], and (0.8, 1.0], respectively. The results of DIN are omitted as it's the same with TIN w/o TTE. 5.0% 5.0% 90.0% (a) TIN (0.8870) 100.0% (b) TIN w/o TTE (0) 59.5% 38.0% 2.5% (c) TIN w/o TA (0.0712) 9.5% 33.0% 57.5% (d) TIN w/o TR (0.7142) 54.0% 41.5% 4.5% (e) SASRec (0.1062) 28.0% 71.0% 1.0% poor medium strong (f) BST (0.3328)",
   "A.3 Visualization on User Behavior Sequences": "We have randomly selected two samples (user behavior sequences) and visualized the ground truth and learned Category-wise Targetaware Correlation (CTC) for the latest 10 behaviors of each sequence in Figure 7. In the first sequence, 8 out of 10 behaviors share the same category as the target (142). The ground truth CTC exhibits a strong temporally decaying pattern over these 8 behaviors. Notably, both TIN and TIN without Target-aware Representation (TR) successfully capture this correlation, while other models fail to do so. Specifically, DIN', DIN, and TIN without Target-aware Temporal Encoding (TTE) learn the same correlation for all 8 behaviors. In the second sequence, only 2 behaviors have the same category with the target (388), displaying an evident temporal decaying pattern. Conversely, the remaining 8 behaviors belong to diverse categories and has weaker correlation with the target according to the mutual information. TIN and TIN without TR effectively capture both the temporal and semantic correlations. However, DIN', DIN, and TIN without TTE fail to learn the temporal correlation for the 1st and 3rd behaviors, while TIN without Target-aware Attention (TA) fails to capture the weak semantic correlation in the other behaviors. These visualizations demonstrate the superior performance of TIN in capturing both temporal and semantic correlations in specific user behavior sequences. Figure 7: Visualization of ground-truth CTC and learned CTC between behavior sequence and the target item of 2 random samples from the Amazon dataset. 142 142 142 142 142 142 142 44 142 462 142 1 0.6 0.41 0.3 0.18 0.14 0.1 0 0.08 0 Ground-truth CTC 142 142 142 142 142 142 142 44 142 462 142 1 0.29 0.08 0.08 0.03 0.06 0.03 0 0.03 0 Learned CTC of TIN 142 142 142 142 142 142 142 44 142 462 142 1 1 1 1 1 1 1 0 1 0.02 Learned CTC of DIN' 142 142 142 142 142 142 142 44 142 462 142 1 1 1 1 1 1 1 0 1 0.04 Learned CTC of DIN 142 142 142 142 142 142 142 44 142 462 142 1 1 1 1 1 1 1 0 1 0.12 Learned CTC of TIN w/o TTE 142 142 142 142 142 142 142 44 142 462 142 1 0.65 0.3 0.08 0 0.08 0 0.12 0.12 0.11 Learned CTC of TIN w/o TA 142 142 142 142 142 142 142 44 142 462 142 1 0.5 0.22 0.13 0.1 0.11 0.05 0 0.04 0.01 Learned CTC of TIN w/o TR (a) The first sample(sequence) 388 281 388 89 540 540 556 10 135 756 388 1 0 0.6 0.1 0.03 0.01 0.01 0 0 0.02 Ground-truth CTC 388 281 388 89 540 540 556 10 135 756 388 1 0.04 0.35 0.17 0.01 0.01 0.02 0 0.04 0.04 Learned CTC of TIN 388 281 388 89 540 540 556 10 135 756 388 1 0.01 1 0.57 0.05 0.05 0.04 0 0.03 0.04 Learned CTC of DIN' 388 281 388 89 540 540 556 10 135 756 388 1 0.05 1 0.44 0.05 0.05 0.02 0.02 0 0.09 Learned CTC of DIN 388 281 388 89 540 540 556 10 135 756 388 1 0.02 1 0.25 0.02 0.02 0.02 0 0.03 0.06 Learned CTC of TIN w/o TTE 388 281 388 89 540 540 556 10 135 756 388 1 0.29 0.49 0.37 0 0.14 0.01 0.31 0.25 0.16 Learned CTC of TIN w/o TA 388 281 388 89 540 540 556 10 135 756 388 1 0.09 0.4 0.19 0.02 0.04 0.01 0 0.03 0.01 Learned CTC of TIN w/o TR (b) The second sample(sequence)",
   "keywords_parsed": [
-    "User behaviors are among the most critical features for user response prediction in recommendation systems. Many works have revealed that a user's behavior reflects her interest in the candidate item",
-    " owing to their semantic or temporal correlation. While the literature has individually examined each of these correlations",
-    " researchers have yet to analyze them in combination",
-    " that is",
-    " the semantic-temporal correlation. We empirically measure this correlation and observe intuitive yet robust patterns. We then examine several popular user interest models and find that",
-    " surprisingly",
-    " none of them learn such correlation well. To fill this gap",
-    " we propose a Temporal Interest Network (TIN) to capture the semantic-temporal correlation simultaneously between behaviors and the target. We achieve this by incorporating target-aware temporal encoding",
-    " in addition to semantic encoding",
-    " to represent behaviors and the target. Furthermore",
-    " we conduct explicit 4-way interaction by deploying target-aware attention and target-aware representation to capture both semantic and temporal correlation. We conduct comprehensive evaluations on two popular public datasets",
-    " and our proposed TIN outperforms the best-performing baselines by 0.43% and 0.29% on GAUC",
-    " respectively. During online A/B testing in Tencent's advertising platform",
-    " TIN achieves 1.65% cost lift",
-    " and 1.93% GMV lift over the base model. It has been successfully deployed in production since October 2023",
-    " serving the WeChat Moments traffic. We have released our code at https://github.com/zhouxy1003/TIN."
+    "User Response Prediction",
+    "Target Attention",
+    "Sequential Recommendation",
+    "CTR Prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Controllable multi-interest framework for recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "End-to-End User Behavior Retrieval in Click-Through RatePrediction Model"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Adaptive subgradient methods for online learning and stochastic optimization"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "On the Embedding Collapse when Scaling up Recommendation Models"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Memory bank augmented long-tail sequential recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Field-aware factorization machines in a real-world online advertising system"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Multi-interest network with dynamic routing for recommendation at Tmall"
+    },
+    {
+      "ref_id": "b13",
+      "title": "xDeepFM: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Multi-Sequence Attentive User Representation Learning for Side-information Integrated Sequential Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Noninvasive self-attention for side information fusion in sequential recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Augmenting sequential recommendation with pseudo-prior items via reversely pre-training transformer"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Field-weighted factorization machines for click-through rate prediction in display advertising"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Ad Recommendation in a Collapsed and Entangled World"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Lifelong sequential modeling with personalized memorization for user response prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Neural collaborative filtering vs. matrix factorization revisited"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Opening the black box of deep neural networks via information"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Personalized Behavior-Aware Transformer for Multi-Behavior Sequential Recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "STEM: Unleashing the Power of Embeddings for Multi-task Recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b30",
+      "title": "FM2: field-matrixed factorization machines for recommender systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Recurrent recommender networks"
+    },
+    {
+      "ref_id": "b35",
+      "title": "SSE-PT: Sequential recommendation via personalized transformer"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Rethinking Lifelong Sequential Recommendation with Incremental Multi-Interest Attention"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Denoising Time Cycle Modeling for Recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Contrastive learning for sequential recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Decoupled Side Information Fusion for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "A dynamic recurrent model for next basket recommendation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A simple convolutional generative network for next item recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Revisiting Neural Retrieval on Accelerators"
+    },
+    {
+      "ref_id": "b43",
+      "title": "AutoAttention: Automatic Field Pair Selection for Attention in User Behavior Modeling"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b46",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    }
   ]
 }

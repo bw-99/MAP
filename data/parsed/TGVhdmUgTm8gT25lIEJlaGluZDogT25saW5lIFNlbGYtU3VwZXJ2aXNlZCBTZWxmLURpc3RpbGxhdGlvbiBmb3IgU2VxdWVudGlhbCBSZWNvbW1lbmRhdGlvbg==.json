@@ -29,7 +29,127 @@
   "B IMPLEMENTATION DETAILS": "For BPR-MF and GRU4Rec, we use the source code provided by Wang et al. in PyTorch. For Caser, SASRec, BERT4Rec and 𝑆 3 Rec, the source code is provided by Zhao et al. in PyTorch. For DSSRec ICLRec and CL4SRec, we use the source code provided by their authors. Our method is implemented in PyTorch as well. For all models, the dimension of embedding is set as 64, and the maximum sequence length is set as 50 for alignment, following previous works [11, 21, 30]. For each baseline model, all other hyperparameters are set following the suggestions from the original papers. For our proposed 𝑆 4 Rec, the optimizer is Adam [12], learning rate is 0 . 001, batch size 𝐵 is 512, dropout rate is 0 . 5, number of clusters 𝐾 is 128, number of hidden layers is set from { 1 , 2 , 3 } . Multi-task objective weights 𝛼, 𝛽 1 , 𝛽 2 , 𝜆 ∈ { 0 , 0 . 01 , 0 . 1 , 1 . 0 } . The temperature parameters 𝜏 1 , 𝜏 2 , 𝜏 3 are chosen from { 0 . 1 , 1 . 0 } .",
   "C TRAINING EFFICIENCY ON CLUSTERING ALGORITHM": "We have present the performance of replacing online clustering of S4Rec with K-means, i.e. SR+CSD+GR. Here we further report the training time result in Table 4. Table 4: Training Time (minutes) on GPU Tesla P100. We conclude that K-means clustering algorithm suffers nonnegligible training time. On the contrary, online clustering algorithm provides better training efficiency with lossless performance.",
   "D A/B TESTING EVALUATION": "We present the results of an online A/B test conducted on a realworld recommendation system. Due to the excessive computational cost of K-means to over 10 million samples, we deploy another wellperforming CL4SRec as the A/B test baseline, instead of ICLRec. As demonstrated in the following table, our method consistently achieves stable and statistically significant improvements in the real-world large-scale recommendation scenario, our method can achieve statistically significant improvements stably. Table 5: Online A/B Testing results and offline AUC uplifts.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Unsupervised learning of visual features by contrasting cluster assignments"
+    },
+    {
+      "ref_id": "b2",
+      "title": "SSSD: Self-Supervised Self Distillation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Improving end-to-end sequential recommendations with intent-aware diversification"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Intent Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Generative Adversarial Nets"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Fusing similarity models with markov chains for sparse sequential recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Recurrent neural networks with top-k gains for session-based recommendations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Improving sequential recommendation with knowledge-enhanced memory networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Intention-aware Sequential Recommendation with Structured Intent Transition : (Extended Abstract)"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Dual Contrastive Network for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Contrastive Self-supervised Sequential Recommendation with Robust Augmentation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Augmenting sequential recommendation with pseudo-prior items via reversely pre-training transformer"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Disentangled Self-Supervision in Sequential Recommenders"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Image-Based Recommendations on Styles and Substitutes"
+    },
+    {
+      "ref_id": "b19",
+      "title": "BPR: Bayesian Personalized Ranking from Implicit Feedback"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Factorizing personalized markov chains for next-basket recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Sparse-interest network for sequential recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Understanding contrastive representation learning through alignment and uniformity on the hypersphere"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Self-Supervised Graph Co-Training for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Are graph augmentations necessary? simple graph contrastive learning for recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "A simple convolutional generative network for next item recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization"
+    }
   ]
 }

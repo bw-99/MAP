@@ -15,7 +15,87 @@
   "4 RELATED WORK": "DDL simulation. A number of simulators have been developed to study the behavior of DNN clusters, including DeepFlow[1], Astrasim [19, 29], vTrain [2] and several others [7, 20, 21, 24]. These simulators use analytical methods combined with profiling results to make predictions, suffering from limitations mentioned in § 1. Network emulation. Emulation has been widely adopted in networking research [11, 27]. MimicNet [31] is a machine learning based network emulator. It exercises a similar idea by dividing the datacenter into an 'observable' cluster ( N in our work) and a blackbox ( E in our work) and it applies a machine learning model to fit it. However, MimicNet focuses on how to train a model to better approximate the datacenter network at scale, whereas our work focuses on emulating end-to-end DNN training behaviors. Goodput prediction. Currently, NeuronaBox only sends dummy data to N during emulation since it only predicts the completion time for each training iteration. However, lossy training optimization techniques like compression and quantization [12, 28] require goodput (accuracy) to be taken into account. To support that, NeuronaBox needs to communicate meaningful data to N without incurring much overhead. One possible solution is to use a proxy model [3] that generates data with a similar distribution to the dataset and intermediate results.",
   "5 CONCLUSION": "We proposed a novel approach for estimating time-per-iteration in distributed DNN training, focusing on executing only a part of the model along with collective communication operations. To substantiate our proposal, we designed the NeuronaBox emulator and implement a proof-of-concept system. Through extensive experimentation, we demonstrated in a two-node setup that NeuronaBox achieves high accuracy in predicting training time across a variety of DNN models, with an error margin of less than 1% compared to actual training runs. Finally, we encourage further research in this direction, recognizing that many questions remain to be explored.",
   "REFERENCES": "[1] Newsha Ardalani, Saptadeep Pal, and Puneet Gupta. 2024. DeepFlow: A CrossStack Pathfinding Framework for Distributed AI Systems. ACM Trans. Des. Autom. Electron. Syst. 29, 2 (2024). [2] Jehyeon Bang, Yujeong Choi, Myeongwoo Kim, Yongdeok Kim, and Minsoo Rhu. 2023. vTrain: A Simulation Framework for Evaluating Costeffective and Compute-optimal Large Language Model Training. (2023). arXiv:cs.LG/2312.12391 [3] Cody Coleman, Christopher Yeh, Stephen Mussmann, Baharan Mirzasoleiman, Peter Bailis, Percy Liang, Jure Leskovec, and Matei Zaharia. 2020. Selection via Proxy: Efficient Data Selection for Deep Learning. In ICLR . [4] Wei Deng, Junwei Pan, Tian Zhou, Deguang Kong, Aaron Flores, and Guang Lin. 2021. DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving. In WSDM . [5] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In NAACL-HLT . [6] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep Residual Learning for Image Recognition. In CVPR . [7] Joel Hestness, Sharan Narang, Newsha Ardalani, Gregory Diamos, Heewoo Jun, Hassan Kianinejad, Md Mostofa Ali Patwary, Yang Yang, and Yanqi Zhou. 2017. Deep Learning Scaling is Predictable, Empirically. (2017). arXiv:cs.LG/1712.00409 [8] Yanping Huang, Youlong Cheng, Ankur Bapna, Orhan Firat, Dehao Chen, Mia Chen, HyoukJoong Lee, Jiquan Ngiam, Quoc V Le, Yonghui Wu, and zhifeng Chen. 2019. GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism. In NeurIPS . [9] Changho Hwang, Wei Cui, Yifan Xiong, Ziyue Yang, Ze Liu, Han Hu, Zilong Wang, Rafael Salas, Jithin Jose, Prabhat Ram, Joe Chau, Peng Cheng, Fan Yang, Mao Yang, and Yongqiang Xiong. 2023. Tutel: Adaptive Mixture-of-Experts at Scale. In MLSys . [10] Fan Lai, Wei Zhang, Rui Liu, William Tsai, Xiaohan Wei, Yuxi Hu, Sabin Devkota, Jianyu Huang, Jongsoo Park, Xing Liu, Zeliang Chen, Ellie Wen, Paul Rivera, Jie You, Chun cheng Jason Chen, and Mosharaf Chowdhury. 2023. AdaEmbed: Adaptive Embedding for Large-Scale Recommendation Models. In OSDI . [11] Bob Lantz, Brandon Heller, and Nick McKeown. 2010. A network in a laptop: rapid prototyping for software-defined networks. In HotNets . [12] Yujun Lin, Song Han, Huizi Mao, Yu Wang, and William J Dally. 2018. Deep Gradient Compression: Reducing the Communication Bandwidth for Distributed Training. In ICLR . [13] Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019. RoBERTa: A Robustly Optimized BERT Pretraining Approach. (2019). arXiv:cs.CL/1907.11692 [14] Microsoft. 2015. Criteo's 1TB Click Prediction Dataset. https://docs.microsoft.com/en-us/archive/blogs/machinelearning/nowavailable-on-azure-ml-criteos-1tb-click-prediction-dataset. (2015). [15] Radhika Mittal, Alexander Shpiner, Aurojit Panda, Eitan Zahavi, Arvind Krishnamurthy, Sylvia Ratnasamy, and Scott Shenker. 2018. Revisiting Network Support for RDMA. In SIGCOMM . [16] NVIDIA. 2024. A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch . (2024). https://github.com/NVIDIA/apex. [17] NVIDIA. 2024. Collective Communication Library (NCCL). (2024). https: //developer.nvidia.com/nccl. [18] Pranav Rajpurkar, Robin Jia, and Percy Liang. 2018. Know What You Don't Know: Unanswerable Questions for SQuAD. In ACL . [19] Saeed Rashidi, Srinivas Sridharan, Sudarshan Srinivasan, and Tushar Krishna. 2020. ASTRA-SIM: Enabling SW/HW Co-Design Exploration for Distributed DL Training Platforms. In ISPASS . [20] Saeed Rashidi, William Won, Sudarshan Srinivasan, Srinivas Sridharan, and Tushar Krishna. 2022. Themis: A Network Bandwidth-Aware Collective Scheduling Policy for Distributed Training of DL Models. In ISCA . 5 Banruo Liu, Mubarak Adetunji Ojewale, Yuhan Ding, and Marco Canini 6",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "DeepFlow: A CrossStack Pathfinding Framework for Distributed AI Systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "vTrain: A Simulation Framework for Evaluating Costeffective and Compute-optimal Large Language Model Training"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Selection via Proxy: Efficient Data Selection for Deep Learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving"
+    },
+    {
+      "ref_id": "b5",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep Residual Learning for Image Recognition"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep Learning Scaling is Predictable, Empirically"
+    },
+    {
+      "ref_id": "b8",
+      "title": "GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Tutel: Adaptive Mixture-of-Experts at Scale"
+    },
+    {
+      "ref_id": "b10",
+      "title": "AdaEmbed: Adaptive Embedding for Large-Scale Recommendation Models"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A network in a laptop: rapid prototyping for software-defined networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep Gradient Compression: Reducing the Communication Bandwidth for Distributed Training"
+    },
+    {
+      "ref_id": "b13",
+      "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Criteo's 1TB Click Prediction Dataset"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Revisiting Network Support for RDMA"
+    },
+    {
+      "ref_id": "b16",
+      "title": "A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Collective Communication Library (NCCL)"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Know What You Don't Know: Unanswerable Questions for SQuAD"
+    },
+    {
+      "ref_id": "b19",
+      "title": "ASTRA-SIM: Enabling SW/HW Co-Design Exploration for Distributed DL Training Platforms"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Themis: A Network Bandwidth-Aware Collective Scheduling Policy for Distributed Training of DL Models"
+    }
   ]
 }

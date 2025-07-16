@@ -23,6 +23,256 @@
   "ACKNOWLEDGMENTS": "This work is supported by the National Key Research and Development Program of China (2020AAA0 106000) and the National Natural Science Foundation of China (U19A2079, 62121002).",
   "REFERENCES": "[1] Himan Abdollahpouri, Robin Burke, and Bamshad Mobasher. 2017. Controlling Popularity Bias in Learning-to-rank Recommendation. In Proceedings of the Eleventh ACM Conference on Recommender Systems . ACM, 42-46. [2] Alex Beutel, Jilin Chen, Tulsee Doshi, Hai Qian, Li Wei, Yi Wu, Lukasz Heldt, Zhe Zhao, Lichan Hong, Ed H Chi, et al. 2019. Fairness in Recommendation Ranking through Pairwise Comparisons. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 2212-2220. [3] Jiawei Chen, Hande Dong, Yang Qiu, Xiangnan He, Xin Xin, Liang Chen, Guli Lin, and Keping Yang. 2021. AutoDebias: Learning to Debias for Recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, 21-30. [4] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2020. Bias and Debias in Recommender System: A Survey and Future Directions. arXiv preprint arXiv:2010.03240 (2020). [5] Jiawei Chen, Yan Feng, Martin Ester, Sheng Zhou, Chun Chen, and Can Wang. 2018. Modeling Users' Exposure with Social Knowledge Influence and Consumption Influence for Recommendation. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . ACM, 953-962. [6] Konstantina Christakopoulou, Madeleine Traverse, Trevor Potter, Emma Marriott, Daniel Li, Chris Haulk, Ed H Chi, and Minmin Chen. 2020. Deconfounding User Satisfaction Estimation from Response Rate Bias. In Fourteenth ACM Conference on Recommender Systems . ACM, 450-455. [7] John Duchi, Elad Hazan, and Yoram Singer. 2011. Adaptive Subgradient Methods for Online Learning and Stochastic Optimization. Journal of Machine Learning Research 12, 7 (2011). [8] Constantine E Frangakis and Donald B Rubin. 2002. Principal Stratification in Causal Inference. Biometrics 58, 1 (2002), 21-29. [9] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence . 1725-1731. [10] Ruocheng Guo, Xiaoting Zhao, Adam Henderson, Liangjie Hong, and Huan Liu. 2020. Debiasing Grid-based Product Search in E-commerce. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 2852-2860. [11] Xiangnan He and Tat-Seng Chua. 2017. Neural Factorization Machines for Sparse Predictive Analytics. In Proceedings of the 40th International ACM SIGIR conference on Research and Development in Information Retrieval . ACM, 355-364. [12] Jin Huang, Harrie Oosterhuis, and Maarten de Rijke. 2022. It Is Different When Items Are Older: Debiasing Recommendations When Selection Bias and User Preferences Are Dynamic. In Proceedings of the Fifteenth ACM International ACM Trans. Inf. Syst., Vol. x, No. x, Article 1. Publication date: January 2022. 1:22 Xiangnan He, et al. Conference on Web Search and Data Mining . ACM, 381-389. [13] Rashidul Islam, Kamrun Naher Keya, Ziqian Zeng, Shimei Pan, and James Foulds. 2021. Debiasing Career Recommendations with Neural Fair Collaborative Filtering. In Proceedings of the Web Conference 2021 . ACM / IW3C2, 3779-3790. [14] Jurek Leonhardt, Avishek Anand, and Megha Khosla. 2018. User Fairness in Recommender Systems. In Companion Proceedings of the The Web Conference 2018 . ACM, 101-102. [15] Jie Li, Yongli Ren, and Ke Deng. 2022. FairGAN: GANs-based Fairness-aware Learning for Recommendations with Implicit Feedback. In Proceedings of the ACM Web Conference 2022 . ACM, 297-307. [16] Yunqi Li, Hanxiong Chen, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2021. User-oriented Fairness in Recommendation. In Proceedings of the Web Conference 2021 . ACM / IW3C2, 624-632. [17] Yunqi Li, Hanxiong Chen, Shuyuan Xu, Yingqiang Ge, and Yongfeng Zhang. 2021. Towards Personalized Fairness Based on Causal Notion. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, 1054-1063. [18] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 1754-1763. [19] Dugang Liu, Pengxiang Cheng, Zhenhua Dong, Xiuqiang He, Weike Pan, and Zhong Ming. 2020. A General Knowledge Distillation Framework for Counterfactual Recommendation via Uniform Data. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, 831-840. [20] Dugang Liu, Pengxiang Cheng, Hong Zhu, Zhenhua Dong, Xiuqiang He, Weike Pan, and Zhong Ming. 2021. Mitigating Confounding Bias in Recommendation via Information Bottleneck. In Fifteenth ACM Conference on Recommender Systems . ACM, 351-360. [21] Francesco Locatello, Stefan Bauer, Mario Lucic, Gunnar Raetsch, Sylvain Gelly, Bernhard Schölkopf, and Olivier Bachem. 2019. Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations. In Proceedings of the 36th International Conference on Machine Learning . PMLR, 4114-4124. [22] Rishabh Mehrotra, Prasanta Bhattacharya, and Mounia Lalmas. 2020. Inferring the Causal Impact of New Track Releases on Music Recommendation Platforms through Counterfactual Predictions. In Fourteenth ACM Conference on Recommender Systems . ACM, 687-691. [23] Marcia L Meldrum. 2000. A Brief History of the Randomized Controlled Trial: From Oranges and Lemons to the Gold Standard. Hematology/oncology Clinics of North America 14, 4 (2000), 745-760. [24] Philipp Moritz, Robert Nishihara, Stephanie Wang, Alexey Tumanov, Richard Liaw, Eric Liang, Melih Elibol, Zongheng Yang, William Paul, Michael I. Jordan, and Ion Stoica. 2018. Ray: A Distributed Framework for Emerging AI Applications. In 13th USENIX Symposium on Operating Systems Design and Implementation . USENIX Association, 561-577. [25] Judea Pearl. 2009. Causality . Cambridge University Press. [26] Jiaxin Qi, Yulei Niu, Jianqiang Huang, and Hanwang Zhang. 2020. Two Causal Principles for Improving Visual Dialog. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . Computer Vision Foundation / IEEE, 10860-10869. [27] Steffen Rendle. 2010. Factorization Machines. In 2010 IEEE International Conference on Data Mining . IEEE Computer Society, 995-1000. [28] Yuta Saito, Suguru Yaginuma, Yuta Nishino, Hayato Sakata, and Kazuhide Nakata. 2020. Unbiased Recommender Learning from Missing-not-at-random Implicit Feedback. In Proceedings of the 13th International Conference on Web Search and Data Mining . ACM, 501-509. [29] Masahiro Sato, Sho Takemori, Janmajay Singh, and Tomoko Ohkuma. 2020. Unbiased Learning for the Causal Effect of Recommendation. In Fourteenth ACM Conference on Recommender Systems . ACM, 378-387. [30] Tobias Schnabel, Adith Swaminathan, Ashudeep Singh, Navin Chandak, and Thorsten Joachims. 2016. Recommendations as Treatments: Debiasing Learning and Evaluation. In Proceedings of the 33nd International Conference on Machine Learning . PMLR, 1670-1679. [31] Wenjie Shang, Yang Yu, Qingyang Li, Zhiwei Qin, Yiping Meng, and Jieping Ye. 2019. Environment Reconstruction with Hidden Confounders for Reinforcement Learning based Recommendation. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 566-576. [32] Khanh Hiep Tran, Azin Ghazimatin, and Rishiraj Saha Roy. 2021. Counterfactual Explanations for Neural Recommenders. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, 1627-1631. [33] Qi Wan, Xiangnan He, Xiang Wang, Jiancan Wu, Wei Guo, and Ruiming Tang. 2022. Cross Pairwise Ranking for Unbiased Item Recommendation. In Proceedings of the ACM Web Conference 2022 . ACM, 2370-2378. [34] Jizhe Wang, Pipei Huang, Huan Zhao, Zhibo Zhang, Binqiang Zhao, and Dik Lun Lee. 2018. Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba. In Proceedings of the 24th ACM SIGKDD International ACM Trans. Inf. Syst., Vol. x, No. x, Article 1. Publication date: January 2022. Addressing Confounding Feature Issue for Causal Recommendation 1:23 Conference on Knowledge Discovery & Data Mining . ACM, 839-848. [35] Wenjie Wang, Fuli Feng, Xiangnan He, Xiang Wang, and Tat-Seng Chua. 2021. Deconfounded Recommendation for Alleviating Bias Amplification. In The 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . ACM, 1717-1725. [36] Wenjie Wang, Fuli Feng, Xiangnan He, Hanwang Zhang, and Tat-Seng Chua. 2021. Clicks can be Cheating: Counterfactual Recommendation for Mitigating Clickbait Issue. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, 1288-1297. [37] Wenjie Wang, Xinyu Lin, Fuli Feng, Xiangnan He, Min Lin, and Tat-Seng Chua. 2022. Causal Representation Learning for Out-of-Distribution Recommendation. In Proceedings of the ACM Web Conference 2022 . ACM, 3562-3571. [38] Xiangmeng Wang, Qian Li, Dianer Yu, Peng Cui, Zhichao Wang, and Guandong Xu. 2022. Causal Disentanglement for Semantics-Aware Intent Learning in Recommendation. IEEE Transactions on Knowledge and Data Engineering (2022). [39] Xiaojie Wang, Rui Zhang, Yu Sun, and Jianzhong Qi. 2021. Combating Selection Biases in Recommender Systems with a Few Unbiased Ratings. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . ACM, 427-435. [40] Yixin Wang and David M Blei. 2019. The Blessings of Multiple Causes. J. Amer. Statist. Assoc. 114, 528 (2019), 1574-1596. [41] Yixin Wang, Dawen Liang, Laurent Charlin, and David M Blei. 2020. Causal Inference for Recommender Systems. In Fourteenth ACM Conference on Recommender Systems . ACM, 426-431. [42] Yifan Wang, Weizhi Ma, Min Zhang, Yiqun Liu, and Shaoping Ma. 2022. A Survey on the Fairness of Recommender Systems. ACM Trans. Inf. Syst. (2022). Just Accepted. [43] Zhenlei Wang, Shiqi Shen, Zhipeng Wang, Bo Chen, Xu Chen, and Ji-Rong Wen. 2022. Unbiased Sequential Recommendation with Latent Confounders. In Proceedings of the ACM Web Conference 2022 . ACM, 2195-2204. [44] Zhenlei Wang, Jingsen Zhang, Hongteng Xu, Xu Chen, Yongfeng Zhang, Wayne Xin Zhao, and Ji-Rong Wen. 2021. Counterfactual Data-augmented Sequential Recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, 347-356. [45] Tianxin Wei, Fuli Feng, Jiawei Chen, Ziwei Wu, Jinfeng Yi, and Xiangnan He. 2021. Model-agnostic Counterfactual Reasoning for Eliminating Popularity Bias in Recommender System. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . ACM, 1791-1800. [46] Chuhan Wu, Fangzhao Wu, Xiting Wang, Yongfeng Huang, and Xing Xie. 2021. Fairness-aware News Recommendation with Decomposed Adversarial Learning. In Proceedings of the AAAI Conference on Artificial Intelligence . AAAI Press, 4462-4469. [47] Le Wu, Lei Chen, Pengyang Shao, Richang Hong, Xiting Wang, and Meng Wang. 2021. Learning Fair Representations for Recommendation: A Graph-based Perspective. In Proceedings of the Web Conference 2021 . ACM / IW3C2, 2198-2208. [48] Teng Xiao and Suhang Wang. 2022. Towards Unbiased and Robust Causal Ranking for Recommender Systems. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . ACM, 1158-1167. [49] Jun Xu, Xiangnan He, and Hang Li. 2020. Deep Learning for Matching in Search and Recommendation. Found. Trends Inf. Retr. 14, 2-3 (2020), 102-288. [50] Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhudinov, Rich Zemel, and Yoshua Bengio. 2015. Show, Attend and Tell: Neural Image Caption Generation with Visual Attention. In Proceedings of the 32nd International Conference on Machine Learning . JMLR, 2048-2057. [51] Mengyue Yang, Quanyu Dai, Zhenhua Dong, Xu Chen, Xiuqiang He, and Jun Wang. 2021. Top-N Recommendation with Counterfactual User Preference Simulation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . ACM, 2342-2351. [52] Sirui Yao and Bert Huang. 2017. Beyond Parity: Fairness Objectives for Collaborative Filtering. In the Thirty-first Conference on Neural Information Processing Systems . 2921-2930. [53] Kun Zhang and Aapo Hyvärinen. 2009. On the Identifiability of the Post-Nonlinear Causal Model. In Proceedings of the Twenty-Fifth Conference on Uncertainty in Artificial Intelligence . AUAI Press, 647-655. [54] Shengyu Zhang, Dong Yao, Zhou Zhao, Tat-Seng Chua, and Fei Wu. 2021. Causerec: Counterfactual User Sequence Synthesis for Sequential Recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, 367-377. [55] Xiao Zhang, Haonan Jia, Hanjing Su, Wenhan Wang, Jun Xu, and Ji-Rong Wen. 2021. Counterfactual Reward Modification for Streaming Recommendation with Delayed Feedback. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, 41-50. [56] Yang Zhang, Fuli Feng, Xiangnan He, Tianxin Wei, Chonggang Song, Guohui Ling, and Yongdong Zhang. 2021. Causal Intervention for Leveraging Popularity Bias in Recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, 11-20. [57] Yu Zheng, Chen Gao, Xiang Li, Xiangnan He, Yong Li, and Depeng Jin. 2021. Disentangling User Interest and Conformity for Recommendation with Causal Embedding. In Proceedings of the Web Conference 2021 . ACM / IW3C2, 2980-2991. ACM Trans. Inf. Syst., Vol. x, No. x, Article 1. Publication date: January 2022. 1:24 Xiangnan He, et al. [58] Chang Zhou, Jianxin Ma, Jianwei Zhang, Jingren Zhou, and Hongxia Yang. 2021. Contrastive Learning for Debiased Candidate Generation in Large-scale Recommender Systems. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . ACM, 3985-3995. [59] Shengyu Zhu, Ignavier Ng, and Zhitang Chen. 2020. Causal Discovery with Reinforcement Learning. In 8th International Conference on Learning Representations . [60] Ziwei Zhu, Yun He, Xing Zhao, Yin Zhang, Jianling Wang, and James Caverlee. 2021. Popularity-opportunity Bias in Collaborative Filtering. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . ACM, 85-93. [61] Ziwei Zhu, Xia Hu, and James Caverlee. 2018. Fairness-aware Tensor-based Recommendation. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . ACM, 1153-1162. ACM Trans. Inf. Syst., Vol. x, No. x, Article 1. Publication date: January 2022.",
   "keywords_parsed": [
-    "None"
+    "recommender system",
+    "causal inference",
+    "causal recommendation",
+    "bias",
+    "fairness"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Controlling Popularity Bias in Learning-to-rank Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Fairness in Recommendation Ranking through Pairwise Comparisons"
+    },
+    {
+      "ref_id": "b3",
+      "title": "AutoDebias: Learning to Debias for Recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Bias and Debias in Recommender System: A Survey and Future Directions"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Modeling Users' Exposure with Social Knowledge Influence and Consumption Influence for Recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deconfounding User Satisfaction Estimation from Response Rate Bias"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Adaptive Subgradient Methods for Online Learning and Stochastic Optimization"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Principal Stratification in Causal Inference"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Debiasing Grid-based Product Search in E-commerce"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Neural Factorization Machines for Sparse Predictive Analytics"
+    },
+    {
+      "ref_id": "b12",
+      "title": "It Is Different When Items Are Older: Debiasing Recommendations When Selection Bias and User Preferences Are Dynamic"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Debiasing Career Recommendations with Neural Fair Collaborative Filtering"
+    },
+    {
+      "ref_id": "b14",
+      "title": "User Fairness in Recommender Systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "FairGAN: GANs-based Fairness-aware Learning for Recommendations with Implicit Feedback"
+    },
+    {
+      "ref_id": "b16",
+      "title": "User-oriented Fairness in Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Towards Personalized Fairness Based on Causal Notion"
+    },
+    {
+      "ref_id": "b18",
+      "title": "xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A General Knowledge Distillation Framework for Counterfactual Recommendation via Uniform Data"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Mitigating Confounding Bias in Recommendation via Information Bottleneck"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Inferring the Causal Impact of New Track Releases on Music Recommendation Platforms through Counterfactual Predictions"
+    },
+    {
+      "ref_id": "b23",
+      "title": "A Brief History of the Randomized Controlled Trial: From Oranges and Lemons to the Gold Standard"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Ray: A Distributed Framework for Emerging AI Applications"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Causality"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Two Causal Principles for Improving Visual Dialog"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Unbiased Recommender Learning from Missing-not-at-random Implicit Feedback"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Unbiased Learning for the Causal Effect of Recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Recommendations as Treatments: Debiasing Learning and Evaluation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Environment Reconstruction with Hidden Confounders for Reinforcement Learning based Recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Counterfactual Explanations for Neural Recommenders"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Cross Pairwise Ranking for Unbiased Item Recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deconfounded Recommendation for Alleviating Bias Amplification"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Clicks can be Cheating: Counterfactual Recommendation for Mitigating Clickbait Issue"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Causal Representation Learning for Out-of-Distribution Recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Causal Disentanglement for Semantics-Aware Intent Learning in Recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Combating Selection Biases in Recommender Systems with a Few Unbiased Ratings"
+    },
+    {
+      "ref_id": "b40",
+      "title": "The Blessings of Multiple Causes"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Causal Inference for Recommender Systems"
+    },
+    {
+      "ref_id": "b42",
+      "title": "A Survey on the Fairness of Recommender Systems"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Unbiased Sequential Recommendation with Latent Confounders"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Counterfactual Data-augmented Sequential Recommendation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Model-agnostic Counterfactual Reasoning for Eliminating Popularity Bias in Recommender System"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Fairness-aware News Recommendation with Decomposed Adversarial Learning"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Learning Fair Representations for Recommendation: A Graph-based Perspective"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Towards Unbiased and Robust Causal Ranking for Recommender Systems"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Deep Learning for Matching in Search and Recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Show, Attend and Tell: Neural Image Caption Generation with Visual Attention"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Top-N Recommendation with Counterfactual User Preference Simulation"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Beyond Parity: Fairness Objectives for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b53",
+      "title": "On the Identifiability of the Post-Nonlinear Causal Model"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Causerec: Counterfactual User Sequence Synthesis for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Counterfactual Reward Modification for Streaming Recommendation with Delayed Feedback"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Causal Intervention for Leveraging Popularity Bias in Recommendation"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Disentangling User Interest and Conformity for Recommendation with Causal Embedding"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Contrastive Learning for Debiased Candidate Generation in Large-scale Recommender Systems"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Causal Discovery with Reinforcement Learning"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Popularity-opportunity Bias in Collaborative Filtering"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Fairness-aware Tensor-based Recommendation"
+    }
   ]
 }

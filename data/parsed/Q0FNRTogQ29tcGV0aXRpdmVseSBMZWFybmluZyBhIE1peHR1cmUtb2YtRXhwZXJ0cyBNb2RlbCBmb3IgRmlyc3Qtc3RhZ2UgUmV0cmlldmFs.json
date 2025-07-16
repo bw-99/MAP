@@ -34,7 +34,221 @@
   "REFERENCES": "[1] Jane Bromley, Isabelle Guyon, Yann LeCun, Eduard Säckinger, and Roopak Shah. 1993. Signature verification using a\" siamese\" time delay neural network. Advances in neural information processing systems 6 (1993). [2] Xilun Chen, Kushal Lakhotia, Barlas Oğuz, Anchit Gupta, Patrick Lewis, Stan Peshterliev, Yashar Mehdad, Sonal Gupta, and Wen-tau Yih. 2021. Salient Phrase Aware Dense Retrieval: Can a Dense Retriever Imitate a Sparse One? arXiv preprint arXiv:2110.06918 (2021). [3] Nick Craswell, Bhaskar Mitra, Emine Yilmaz, Daniel Campos, and Ellen M Voorhees. 2020. Overview of the TREC 2019 deep learning track. arXiv preprint arXiv:2003.07820 (2020). [4] WBruceCroft. 2002. Combining approaches to information retrieval. In Advances in information retrieval . Springer, 1-36. [5] Damai Dai, Wenbin Jiang, Jiyuan Zhang, Weihua Peng, Yajuan Lyu, Zhifang Sui, Baobao Chang, and Yong Zhu. 2022. Mixture of Experts for Biomedical Question Answering. arXiv preprint arXiv:2204.07469 (2022). [6] Zhuyun Dai and Jamie Callan. 2020. Context-aware term weighting for first stage passage retrieval. In Proceedings of the 43rd International ACM SIGIR . 1533-1536. [7] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [8] H Leonard Fisher and Dennis R Elchesen. 1972. General: Effectiveness of Combining Title Words and Index Terms in Machine Retrieval Searches. Nature 238, 5359 (1972), 109-110. [9] Thibault Formal, Carlos Lassance, Benjamin Piwowarski, and Stéphane Clinchant. 2021. SPLADE v2: Sparse lexical and expansion model for information retrieval. arXiv preprint arXiv:2109.10086 (2021). [10] Edward A Fox and Robert K France. 1987. Architecture of an expert system for composite document analysis, representation, and retrieval. International Journal of Approximate Reasoning 1, 2 (1987), 151-175. [11] Luyu Gao and Jamie Callan. 2021. Unsupervised corpus aware language model pre-training for dense passage retrieval. arXiv preprint arXiv:2108.05540 (2021). [12] Luyu Gao, Zhuyun Dai, and Jamie Callan. 2021. COIL: Revisit exact lexical match in information retrieval with contextualized inverted list. arXiv:2104.07186 arXiv preprint (2021). [13] Luyu Gao, Zhuyun Dai, Tongfei Chen, Zhen Fan, Benjamin Van Durme, and Jamie Callan. 2021. Complement lexical retrieval model with semantic residual embeddings. In European Conference on Information Retrieval . Springer, 146-160. [14] Jiafeng Guo, Yinqiong Cai, Yixing Fan, Fei Sun, Ruqing Zhang, and Xueqi Cheng. 2022. Semantic models for the first-stage retrieval: A comprehensive review. ACM Transactions on Information Systems (TOIS) 40, 4 (2022), 1-42. [15] Jiafeng Guo, Yixing Fan, Qingyao Ai, and W Bruce Croft. 2016. A deep relevance matching model for ad-hoc retrieval. In Proceedings of the 25th ACM international on conference on information and knowledge management . 55-64. [16] Donna Harman. 1995. Overview of the second text retrieval conference (TREC-2). Information Processing & Management 31, 3 (1995), 271-289. [17] Sebastian Hofstätter, Sheng-Chieh Lin, Jheng-Hong Yang, Jimmy Lin, and Allan Hanbury. 2021. Efficiently teaching an effective dense retriever with balanced topic aware sampling. In Proceedings of the 44th International ACM SIGIR . 113122. [18] Robert A Jacobs, Michael I Jordan, Steven J Nowlan, and Geoffrey E Hinton. 1991. Adaptive mixtures of local experts. Neural computation 3, 1 (1991), 79-87. [19] Herve Jegou, Matthijs Douze, and Cordelia Schmid. 2010. Product quantization for nearest neighbor search. IEEE transactions on pattern analysis and machine intelligence 33, 1 (2010), 117-128. [20] K Sparck Jones, Steve Walker, and Stephen E. Robertson. 2000. A probabilistic model of information retrieval: development and comparative experiments: Part 2. Information processing & management 36, 6 (2000), 809-840. [21] Vladimir Karpukhin, Barlas Oğuz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, and Wen-tau Yih. 2020. Dense passage retrieval for opendomain question answering. arXiv preprint arXiv:2004.04906 (2020). Conference acronym 'XX, June 03-05, 2018, Woodstock, NY CAME: Competitively Learning a Mixture-of-Experts Model for First-stage Retrieval [22] Omar Khattab and Matei Zaharia. 2020. Colbert: Efficient and effective passage search via contextualized late interaction over bert. In Proceedings of the 43rd International ACM SIGIR . 39-48. [23] Saar Kuzi, Mingyang Zhang, Cheng Li, Michael Bendersky, and Marc Najork. 2020. Leveraging semantic and lexical matching to improve the recall of document retrieval systems: A hybrid approach. arXiv preprint arXiv:2010.01195 (2020). [24] Tom Kwiatkowski, Jennimaria Palomaki, Olivia Redfield, Michael Collins, Ankur Parikh, Chris Alberti, Danielle Epstein, Illia Polosukhin, Jacob Devlin, Kenton Lee, et al. 2019. Natural questions: a benchmark for question answering research. Transactions of the Association for Computational Linguistics 7 (2019), 453-466. [25] Carlos Lassance, Maroua Maachou, Joohee Park, and Stéphane Clinchant. 2022. Learned Token Pruning in Contextualized Late Interaction over BERT (ColBERT). In Proceedings of the 45th International ACM SIGIR . 2232-2236. [26] Patrick Lewis, Barlas Oguz, Wenhan Xiong, Fabio Petroni, Scott Yih, and Sebastian Riedel. 2022. Boosted Dense Retriever. In Proceedings of the 2022 Conference of NAACL . Association for Computational Linguistics, Seattle, United States, 31023117. https://aclanthology.org/2022.naacl-main.226 [27] Jimmy Lin, Rodrigo Nogueira, and Andrew Yates. 2021. Pretrained transformers for text ranking: Bert and beyond. Synthesis Lectures on Human Language Technologies 14, 4 (2021), 1-325. [28] Sheng-Chieh Lin and Jimmy Lin. 2021. Densifying Sparse Representations for Passage Retrieval by Representational Slicing. arXiv preprint arXiv:2112.04666 (2021). [29] Xiaoliang Ling, Weiwei Deng, Chen Gu, Hucheng Zhou, Cui Li, and Feng Sun. 2017. Model ensemble for click prediction in bing search ads. In Proceedings of the 26th international conference on world wide web companion . 689-698. [30] Nelson F Liu, Matt Gardner, Yonatan Belinkov, Matthew E Peters, and Noah A Smith. 2019. Linguistic knowledge and transferability of contextual representations. arXiv preprint arXiv:1903.08855 (2019). [31] Zheng Liu and Yingxia Shao. 2022. Retromae: Pre-training retrieval-oriented transformers via masked auto-encoder. arXiv preprint arXiv:2205.12035 (2022). [32] Yi Luan, Jacob Eisenstein, Kristina Toutanova, and Michael Collins. 2021. Sparse, dense, and attentional representations for text retrieval. Transactions of the Association for Computational Linguistics 9 (2021), 329-345. [33] Saeed Masoudnia and Reza Ebrahimpour. 2014. Mixture of experts: a literature survey. Artificial Intelligence Review 42, 2 (2014), 275-293. [34] Tri Nguyen, Mir Rosenberg, Xia Song, Jianfeng Gao, Saurabh Tiwary, Rangan Majumder, and Li Deng. 2016. MS MARCO: A human generated machine reading comprehension dataset. In CoCo@ NIPS . [35] Rodrigo Frassetto Nogueira, Kyunghyun Cho, and CIFAR Global Scholar. 2018. New York University at TREC 2018 Complex Answer Retrieval Track.. In TREC . [36] Yingqi Qu, Yuchen Ding, Jing Liu, Kai Liu, Ruiyang Ren, Wayne Xin Zhao, Daxiang Dong, Hua Wu, and Haifeng Wang. 2020. RocketQA: An optimized training approach to dense passage retrieval for open-domain question answering. arXiv preprint arXiv:2010.08191 (2020). [37] Stephen Robertson, Hugo Zaragoza, et al. 2009. The probabilistic relevance framework: BM25 and beyond. Foundations and Trends® in Information Retrieval 3, 4 (2009), 333-389. [38] Keshav Santhanam, Omar Khattab, Jon Saad-Falcon, Christopher Potts, and Matei Zaharia. 2022. ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction. In Proceedings of the 2022 Conference of NAACL . Association for Computational Linguistics, Seattle, United States, 3715-3734. https://doi.org/10. 18653/v1/2022.naacl-main.272 [39] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. 2017. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv preprint arXiv:1701.06538 (2017). [40] Tao Shen, Xiubo Geng, Chongyang Tao, Can Xu, Kai Zhang, and Daxin Jiang. 2022. UnifieR: A Unified Retriever for Large-Scale Retrieval. arXiv preprint arXiv:2205.11194 (2022). [41] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In Proceedings of the 30th ACM International CIKM . 4104-4113. [42] Nicola Tonellotto and Craig Macdonald. 2021. Query embedding pruning for dense retrieval. In Proceedings of the 30th ACM International CIKM . 3453-3457. [43] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [44] William Webber, Alistair Moffat, and Justin Zobel. 2010. A similarity measure for indefinite rankings. ACM TOIS 28, 4 (2010), 1-38. [45] Lee Xiong, Chenyan Xiong, Ye Li, Kwok-Fung Tang, Jialin Liu, Paul Bennett, Junaid Ahmed, and Arnold Overwijk. 2020. Approximate nearest neighbor negative contrastive learning for dense text retrieval. arXiv preprint arXiv:2007.00808 (2020). [46] Seniha Esen Yuksel, Joseph N Wilson, and Paul D Gader. 2012. Twenty years of mixture of experts. IEEE transactions on neural networks and learning systems 23, 8 (2012), 1177-1193. [47] Jingtao Zhan, Jiaxin Mao, Yiqun Liu, Jiafeng Guo, Min Zhang, and Shaoping Ma. 2021. Optimizing dense retrieval model training with hard negatives. In Proceedings of the 44th International ACM SIGIR . 1503-1512. [48] Jingtao Zhan, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. 2020. RepBERT: Contextualized text embeddings for first-stage retrieval. arXiv preprint arXiv:2006.15498 (2020). [49] Hang Zhang, Yeyun Gong, Yelong Shen, Jiancheng Lv, Nan Duan, and Weizhu Chen. 2022. Adversarial retriever-ranker for dense text retrieval. In ICLR . [50] Wayne Xin Zhao, Jing Liu, Ruiyang Ren, and Ji-Rong Wen. 2022. Dense text retrieval based on pretrained language models: A survey. arXiv preprint arXiv:2211.14876 (2022). [51] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. Recommending what video to watch next: a multitask ranking system. In Proceedings of the 13th ACM Conference on Recommender Systems . 43-51. [52] Kun Zhou, Xiao Liu, Yeyun Gong, Wayne Xin Zhao, Daxin Jiang, Nan Duan, and Ji-Rong Wen. 2022. MASTER: Multi-task Pre-trained Bottlenecked Masked Autoencoders are Better Dense Retrievers. arXiv preprint arXiv:2212.07841 (2022). [53] Xinyu Zou, Zhi Hu, Yiming Zhao, Xuchu Ding, Zhongyi Liu, Chenliang Li, and Aixin Sun. 2022. Automatic Expert Selection for Multi-Scenario and Multi-Task Search. arXiv preprint arXiv:2205.14321 (2022).",
   "keywords_parsed": [
     "Neural Retrieval Models",
-    " Model Ensemble",
-    " Mixture-of-Experts"
+    "Model Ensemble",
+    "Mixture-of-Experts"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Signature verification using a\" siamese\" time delay neural network"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Salient Phrase Aware Dense Retrieval: Can a Dense Retriever Imitate a Sparse One?"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Overview of the TREC 2019 deep learning track"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Combining approaches to information retrieval"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Mixture of Experts for Biomedical Question Answering"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Context-aware term weighting for first stage passage retrieval"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Effectiveness of Combining Title Words and Index Terms in Machine Retrieval Searches"
+    },
+    {
+      "ref_id": "b9",
+      "title": "SPLADE v2: Sparse lexical and expansion model for information retrieval"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Architecture of an expert system for composite document analysis, representation, and retrieval"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Unsupervised corpus aware language model pre-training for dense passage retrieval"
+    },
+    {
+      "ref_id": "b12",
+      "title": "COIL: Revisit exact lexical match in information retrieval with contextualized inverted list"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Complement lexical retrieval model with semantic residual embeddings"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Semantic models for the first-stage retrieval: A comprehensive review"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A deep relevance matching model for ad-hoc retrieval"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Overview of the second text retrieval conference (TREC-2)"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Efficiently teaching an effective dense retriever with balanced topic aware sampling"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Adaptive mixtures of local experts"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Product quantization for nearest neighbor search"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A probabilistic model of information retrieval: development and comparative experiments: Part 2"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Dense passage retrieval for open-domain question answering"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Colbert: Efficient and effective passage search via contextualized late interaction over bert"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Leveraging semantic and lexical matching to improve the recall of document retrieval systems: A hybrid approach"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Natural questions: a benchmark for question answering research"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Learned Token Pruning in Contextualized Late Interaction over BERT (ColBERT)"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Boosted Dense Retriever"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Pretrained transformers for text ranking: Bert and beyond"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Densifying Sparse Representations for Passage Retrieval by Representational Slicing"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Model ensemble for click prediction in bing search ads"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Linguistic knowledge and transferability of contextual representations"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Retromae: Pre-training retrieval-oriented transformers via masked auto-encoder"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Sparse, dense, and attentional representations for text retrieval"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Mixture of experts: a literature survey"
+    },
+    {
+      "ref_id": "b34",
+      "title": "MS MARCO: A human generated machine reading comprehension dataset"
+    },
+    {
+      "ref_id": "b35",
+      "title": "New York University at TREC 2018 Complex Answer Retrieval Track"
+    },
+    {
+      "ref_id": "b36",
+      "title": "RocketQA: An optimized training approach to dense passage retrieval for open-domain question answering"
+    },
+    {
+      "ref_id": "b37",
+      "title": "The probabilistic relevance framework: BM25 and beyond"
+    },
+    {
+      "ref_id": "b38",
+      "title": "ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+    },
+    {
+      "ref_id": "b40",
+      "title": "UnifieR: A Unified Retriever for Large-Scale Retrieval"
+    },
+    {
+      "ref_id": "b41",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Query embedding pruning for dense retrieval"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b44",
+      "title": "A similarity measure for indefinite rankings"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Approximate nearest neighbor negative contrastive learning for dense text retrieval"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Twenty years of mixture of experts"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Optimizing dense retrieval model training with hard negatives"
+    },
+    {
+      "ref_id": "b48",
+      "title": "RepBERT: Contextualized text embeddings for first-stage retrieval"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Adversarial retriever-ranker for dense text retrieval"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Dense text retrieval based on pretrained language models: A survey"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Recommending what video to watch next: a multitask ranking system"
+    },
+    {
+      "ref_id": "b52",
+      "title": "MASTER: Multi-task Pre-trained Bottlenecked Masked Autoencoders are Better Dense Retrievers"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Automatic Expert Selection for Multi-Scenario and Multi-Task Search"
+    }
   ]
 }

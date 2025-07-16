@@ -34,14 +34,186 @@
   "ACKNOWLEDGMENT": "This paper is partially supported by National Key Research and Development Program of China with Grant No. 2018AAA0101902 and the National Natural Science Foundation of China (NSFC Grant Numbers 62276002 and 62106008) DisenPOI: Disentangling Sequential and Geographical Influence for Point-of-Interest Recommendation WSDM'23, February 27-March 3, 2023, Singapore, Singapore.",
   "REFERENCES": "[1] Yoshua Bengio, Aaron Courville, and Pascal Vincent. 2013. Representation learning: A review and new perspectives. IEEE transactions on pattern analysis and machine intelligence 35, 8 (2013), 1798-1828. [2] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In International conference on machine learning . PMLR, 1597-1607. [3] Chen Cheng, Haiqin Yang, Irwin King, and Michael Lyu. 2012. Fused matrix factorization with geographical and social influence in location-based social networks. In Proceedings of the AAAI conference on artificial intelligence , Vol. 26. 17-23. [4] Chen Cheng, Haiqin Yang, Michael R Lyu, and Irwin King. 2013. Where you like to go next: Successive point-of-interest recommendation. In Twenty-Third international joint conference on Artificial Intelligence . [5] Yunfei Chu, Xiaofu Chang, Kunyang Jia, Jingzhen Zhou, and Hongxia Yang. 2021. Dynamic Sequential Graph Learning for Click-Through Rate Prediction. arXiv preprint arXiv:2109.12541 (2021). [6] Jie Feng, Yong Li, Chao Zhang, Funing Sun, Fanchao Meng, Ang Guo, and Depeng Jin. 2018. Deepmove: Predicting human mobility with attentional recurrent networks. In Proceedings of the 2018 world wide web conference . 1459-1468. [7] Huiji Gao, Jiliang Tang, Xia Hu, and Huan Liu. 2015. Content-aware point of interest recommendation on location-based social networks. In Twenty-ninth AAAI conference on Artificial Intelligence . [8] Huiji Gao, Jiliang Tang, and Huan Liu. 2012. gSCorr: Modeling geo-social correlations for new check-ins on location-based social networks. In Proceedings of the 21st ACM international conference on Information and knowledge management . 1582-1586. [9] Will Hamilton, Zhitao Ying, and Jure Leskovec. 2017. Inductive representation learning on large graphs. Advances in neural information processing systems 30 (2017). [10] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, and Meng Wang. 2020. Lightgcn: Simplifying and powering graph convolution network for recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 639-648. [11] Wei Ju, Yifang Qin, Ziyue Qiao, Xiao Luo, Yifan Wang, Yanjie Fu, and Ming Zhang. 2022. Kernel-based Substructure Exploration for Next POI Recommendation. arXiv preprint arXiv:2210.03969 (2022). [12] Wei Ju, Junwei Yang, Meng Qu, Weiping Song, Jianhao Shen, and Ming Zhang. 2022. KGNN: Harnessing Kernel-based Networks for Semi-supervised Graph Classification. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 421-429. [13] Thomas N Kipf and Max Welling. 2016. Semi-supervised classification with graph convolutional networks. arXiv preprint arXiv:1609.02907 (2016). [14] Huayu Li, Yong Ge, Richang Hong, and Hengshu Zhu. 2016. Point-of-interest recommendations: Learning potential check-ins from friends. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining . 975-984. [15] Yujia Li, Richard Zemel, Marc Brockschmidt, and Daniel Tarlow. 2016. Gated Graph Sequence Neural Networks. In Proceedings of ICLR'16 . [16] Zeyu Li, Wei Cheng, Haiqi Xiao, Wenchao Yu, Haifeng Chen, and Wei Wang. 2021. You Are What and Where You Are: Graph Enhanced Attention Network for Explainable POI Recommendation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 3945-3954. [17] Defu Lian, Vincent W Zheng, and Xing Xie. 2013. Collaborative filtering meets next check-in location prediction. In Proceedings of the 22nd International Conference on World Wide Web . 231-232. [18] Qiang Liu, Shu Wu, Liang Wang, and Tieniu Tan. 2016. Predicting the next location: A recurrent model with spatial and temporal contexts. In Thirtieth AAAI conference on artificial intelligence . [19] Xiao Luo, Wei Ju, Meng Qu, Chong Chen, Minghua Deng, Xian-Sheng Hua, and Ming Zhang. 2022. DualGraph: Improving Semi-supervised Graph Classification via Dual Contrastive Learning. In 2022 IEEE 38th International Conference on Data Engineering (ICDE) . IEEE, 699-712. [20] Jianxin Ma, Chang Zhou, Peng Cui, Hongxia Yang, and Wenwu Zhu. 2019. Learning disentangled representations for recommendation. Advances in neural information processing systems 32 (2019). [21] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2012. BPR: Bayesian personalized ranking from implicit feedback. arXiv preprint arXiv:1205.2618 (2012). [22] Steffen Rendle, Christoph Freudenthaler, and Lars Schmidt-Thieme. 2010. Factorizing personalized markov chains for next-basket recommendation. In Proceedings of the 19th international conference on World wide web . 811-820. [23] Ruslan Salakhutdinov and Andriy Mnih. 2008. Bayesian probabilistic matrix factorization using Markov chain Monte Carlo. In Proceedings of the 25th international conference on Machine learning . 880-887. [24] Ke Sun, Tieyun Qian, Tong Chen, Yile Liang, Quoc Viet Hung Nguyen, and Hongzhi Yin. 2020. Where to go next: Modeling long-and short-term user preferences for point-of-interest recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 214-221. [25] Laurens Van der Maaten and Geoffrey Hinton. 2008. Visualizing data using t-SNE. Journal of machine learning research 9, 11 (2008). [26] Petar Veličković, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Lio, and Yoshua Bengio. 2017. Graph attention networks. arXiv preprint arXiv:1710.10903 (2017). [27] Dongjie Wang, Pengyang Wang, Kunpeng Liu, Yuanchun Zhou, Charles E Hughes, and Yanjie Fu. 2021. Reinforced imitative graph representation learning for mobile user profiling: An adversarial training perspective. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 35. 4410-4417. [28] Hao Wang, Huawei Shen, Wentao Ouyang, and Xueqi Cheng. 2018. Exploiting POI-Specific Geographical Influence for Point-of-Interest Recommendation.. In IJCAI . 3877-3883. [29] Pengyang Wang, Kunpeng Liu, Lu Jiang, Xiaolin Li, and Yanjie Fu. 2020. Incremental mobile user profiling: Reinforcement learning with spatial knowledge graph for modeling event streams. In Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining . 853-861. [30] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural graph collaborative filtering. In Proceedings of the 42nd international ACM SIGIR conference on Research and development in Information Retrieval . 165-174. [31] Xiang Wang, Tinglin Huang, Dingxian Wang, Yancheng Yuan, Zhenguang Liu, Xiangnan He, and Tat-Seng Chua. 2021. Learning intents behind interactions with knowledge graph for recommendation. In Proceedings of the Web Conference 2021 . 878-887. [32] Xiang Wang, Hongye Jin, An Zhang, Xiangnan He, Tong Xu, and Tat-Seng Chua. 2020. Disentangled graph collaborative filtering. In Proceedings of the 43rd international ACM SIGIR conference on research and development in information retrieval . 1001-1010. [33] Yifan Wang, Yifang Qin, Fang Sun, Bo Zhang, Xuyang Hou, Ke Hu, Jia Cheng, Jun Lei, and Ming Zhang. 2022. DisenCTR: Dynamic Graph-based Disentangled Representation for Click-Through Rate Prediction. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . [34] Yifan Wang, Suyao Tang, Yuntong Lei, Weiping Song, Sheng Wang, and Ming Zhang. 2020. Disenhan: Disentangled heterogeneous graph attention network for recommendation. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 1605-1614. [35] Zhaobo Wang, Yanmin Zhu, Qiaomei Zhang, Haobin Liu, Chunyang Wang, and Tong Liu. 2022. Graph-enhanced Spatial-temporal Network for Next POI Recommendation. ACM Transactions on Knowledge Discovery from Data (TKDD) (2022). [36] Shu Wu, Yuyuan Tang, Yanqiao Zhu, Liang Wang, Xing Xie, and Tieniu Tan. 2019. Session-based recommendation with graph neural networks. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 346-353. [37] Keyulu Xu, Chengtao Li, Yonglong Tian, Tomohiro Sonobe, Ken-ichi Kawarabayashi, and Stefanie Jegelka. 2018. Representation learning on graphs with jumping knowledge networks. In International Conference on Machine Learning . PMLR, 5453-5462. [38] Carl Yang, Lanxiao Bai, Chao Zhang, Quan Yuan, and Jiawei Han. 2017. Bridging collaborative filtering and semi-supervised learning: a neural approach for poi recommendation. In Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 1245-1254. [39] Dingqi Yang, Daqing Zhang, Vincent W Zheng, and Zhiyong Yu. 2014. Modeling user activity preference by leveraging user spatial temporal characteristics in LBSNs. IEEE Transactions on Systems, Man, and Cybernetics: Systems 45, 1 (2014), 129-142. [40] Quan Yuan, Gao Cong, and Aixin Sun. 2014. Graph-Based Point-of-Interest Recommendation with Geographical and Temporal Influences. In Proceedings of the 23rd ACM International Conference on Conference on Information and Knowledge Management . 659--668. [41] Pengpeng Zhao, Anjing Luo, Yanchi Liu, Fuzhen Zhuang, Jiajie Xu, Zhixu Li, Victor S Sheng, and Xiaofang Zhou. 2020. Where to go next: A spatio-temporal gated network for next poi recommendation. IEEE Transactions on Knowledge and Data Engineering (2020). [42] Yu Zheng, Chen Gao, Jianxin Chang, Yanan Niu, Yang Song, Depeng Jin, and Yong Li. 2022. Disentangling Long and Short-Term Interests for Recommendation. arXiv preprint arXiv:2202.13090 (2022). [43] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [44] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068.",
   "keywords_parsed": [
-    "Point-of-Interest (POI) recommendation plays a vital role in various location-aware services. It has been observed that POI recommendation is driven by both sequential and geographical influences. However",
-    " since there is no annotated label of the dominant influence during recommendation",
-    " existing methods tend to entangle these two influences",
-    " which may lead to sub-optimal recommendation performance and poor interpretability. In this paper",
-    " we address the above challenge by proposing DisenPOI ",
-    " a novel Disen tangled dual-graph framework for POI recommendation",
-    " which jointly utilizes sequential and geographical relationships on two separate graphs and disentangles the two influences with self-supervision. The key novelty of our model compared with existing approaches is to extract disentangled representations of both sequential and geographical influences with contrastive learning. To be specific",
-    " we construct a geographical graph and a sequential graph based on the check-in sequence of a user. We tailor their propagation schemes to become sequence-/geo-aware to better capture the corresponding influences. Preference proxies are extracted from check-in sequence as pseudo labels for the two influences",
-    " which supervise the disentanglement via a contrastive loss. Extensive experiments on three datasets demonstrate the superiority of the proposed model."
+    "POI Recommendation",
+    "Graph Neural Networks",
+    "Disentangled Representation Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Representation learning: A review and new perspectives"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Fused matrix factorization with geographical and social influence in location-based social networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Where you like to go next: Successive point-of-interest recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Dynamic Sequential Graph Learning for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deepmove: Predicting human mobility with attentional recurrent networks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Content-aware point of interest recommendation on location-based social networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "gSCorr: Modeling geo-social correlations for new check-ins on location-based social networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Kernel-based Substructure Exploration for Next POI Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "KGNN: Harnessing Kernel-based Networks for Semi-supervised Graph Classification"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Point-of-interest recommendations: Learning potential check-ins from friends"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Gated Graph Sequence Neural Networks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "You Are What and Where You Are: Graph Enhanced Attention Network for Explainable POI Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Collaborative filtering meets next check-in location prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Predicting the next location: A recurrent model with spatial and temporal contexts"
+    },
+    {
+      "ref_id": "b19",
+      "title": "DualGraph: Improving Semi-supervised Graph Classification via Dual Contrastive Learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Learning disentangled representations for recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Factorizing personalized markov chains for next-basket recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Bayesian probabilistic matrix factorization using Markov chain Monte Carlo"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Where to go next: Modeling long-and short-term user preferences for point-of-interest recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Graph attention networks"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Reinforced imitative graph representation learning for mobile user profiling: An adversarial training perspective"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Exploiting POI-Specific Geographical Influence for Point-of-Interest Recommendation."
+    },
+    {
+      "ref_id": "b29",
+      "title": "Incremental mobile user profiling: Reinforcement learning with spatial knowledge graph for modeling event streams"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Learning intents behind interactions with knowledge graph for recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Disentangled graph collaborative filtering"
+    },
+    {
+      "ref_id": "b33",
+      "title": "DisenCTR: Dynamic Graph-based Disentangled Representation for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Disenhan: Disentangled heterogeneous graph attention network for recommendation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Graph-enhanced Spatial-temporal Network for Next POI Recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Session-based recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Representation learning on graphs with jumping knowledge networks"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Bridging collaborative filtering and semi-supervised learning: a neural approach for poi recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Modeling user activity preference by leveraging user spatial temporal characteristics in LBSNs"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Graph-Based Point-of-Interest Recommendation with Geographical and Temporal Influences"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Where to go next: A spatio-temporal gated network for next poi recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Disentangling Long and Short-Term Interests for Recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

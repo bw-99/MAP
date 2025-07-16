@@ -39,7 +39,201 @@
   "REFERENCES": "[1] Michał Bałchanowski and Urszula Boryczka. 2022. Aggregation of Rankings Using Metaheuristics in Recommendation Systems. Electronics 11, 3 (2022), 369. [2] Michał Bałchanowski and Urszula Boryczka. 2022. Collaborative Rank Aggregation in Recommendation Systems. Procedia Computer Science 207 (2022), 22132222. [3] Avradeep Bhowmik and Joydeep Ghosh. 2017. Letor methods for unsupervised rank aggregation. In Proceedings of the 26th international conference on world wide web . 1331-1340. [4] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, et al. 2022. CAN: Feature Co-Action Network for Click-Through Rate Prediction. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 57-65. [5] JC de Borda. 1784. Mémoire sur les élections au scrutin. Histoire de l'Academie Royale des Sciences pour 1781 (Paris, 1784) (1784). [6] Gavin Brown, Jeremy Wyatt, Rachel Harris, and Xin Yao. 2005. Diversity creation methods: a survey and categorisation. Information fusion 6, 1 (2005), 5-20. [7] Christopher Burges, Robert Ragno, and Quoc Le. 2006. Learning to rank with nonsmooth cost functions. Advances in neural information processing systems 19 (2006). [8] Pablo Castells, Neil Hurley, and Saul Vargas. 2022. Novelty and diversity in recommender systems. In Recommender systems handbook . Springer, 603-646. [9] Yukuo Cen, Jianwei Zhang, Xu Zou, Chang Zhou, Hongxia Yang, and Jie Tang. 2020. Controllable multi-interest framework for recommendation. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2942-2951. [10] Tong Chen, Hongzhi Yin, Hongxu Chen, Rui Yan, Quoc Viet Hung Nguyen, and Xue Li. 2019. Air: Attentional intention-aware recommender systems. In 2019 IEEE 35th International Conference on Data Engineering (ICDE) . IEEE, 304-315. [11] Yongjun Chen, Zhiwei Liu, Jia Li, Julian McAuley, and Caiming Xiong. 2022. Intent Contrastive Learning for Sequential Recommendation. In Proceedings of the ACM Web Conference 2022 . 2172-2182. [12] Junyoung Chung, Caglar Gulcehre, KyungHyun Cho, and Yoshua Bengio. 2014. Empirical evaluation of gated recurrent neural networks on sequence modeling. arXiv preprint arXiv:1412.3555 (2014). [13] Imre Csiszár. 1975. I-divergence geometry of probability distributions and minimization problems. The annals of probability (1975), 146-158. [14] Quanyu Dai, Haoxuan Li, Peng Wu, Zhenhua Dong, Xiao-Hua Zhou, Rui Zhang, Rui Zhang, and Jie Sun. 2022. A generalized doubly robust learning framework for debiasing post-click conversion rate prediction. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 252-262. [15] Weiqiang Di. 2022. A multi-intent based multi-policy relay contrastive learning for sequential recommendation. PeerJ Computer Science 8 (2022), e1088. [16] Cynthia Dwork, Ravi Kumar, Moni Naor, and Dandapani Sivakumar. 2001. Rank aggregation methods for the web. In Proceedings of the 10th international conference on World Wide Web . 613-622. [17] Cynthia Dwork, Ravi Kumar, Moni Naor, and D Sivakumar. 2001. Rank aggregation revisited. [18] Ronald Fagin, Ravi Kumar, and Dandapani Sivakumar. 2003. Efficient similarity search and classification via rank aggregation. In Proceedings of the 2003 ACM SIGMOD international conference on Management of data . 301-312. [19] Mohamed Farah and Daniel Vanderpooten. 2007. An outranking approach for rank aggregation in information retrieval. In Proceedings of the 30th annual international ACM SIGIR conference on Research and development in information retrieval . 591-598. [20] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [21] Raivo Kolde, Sven Laur, Priit Adler, and Jaak Vilo. 2012. Robust rank aggregation for gene list integration and meta-analysis. Bioinformatics 28, 4 (2012), 573-580. [22] Anders Krogh and Jesper Vedelsby. 1994. Neural network ensembles, cross validation, and active learning. Advances in neural information processing systems 7 (1994). [23] Shangsong Liang, Ilya Markov, Zhaochun Ren, and Maarten de Rijke. 2018. Manifold learning for rank aggregation. In Proceedings of the 2018 World Wide Web Conference . 1735-1744. [24] Hongzhi Liu, Yingpeng Du, and Zhonghai Wu. 2022. Generalized Ambiguity Decomposition for Ranking Ensemble Learning. Journal of Machine Learning Research 23, 88 (2022), 1-36. [25] Zhaoyang Liu, Haokun Chen, Fei Sun, Xu Xie, Jinyang Gao, Bolin Ding, and Yanyan Shen. 2021. Intent preference decoupling for user representation on online recommender system. In Proceedings of the Twenty-Ninth International Conference on International Joint Conferences on Artificial Intelligence . 2575-2582. [26] Zhiwei Liu, Xiaohan Li, Ziwei Fan, Stephen Guo, Kannan Achan, and S Yu Philip. 2020. Basket recommendation with multi-intent translation graph neural network. In 2020 IEEE International Conference on Big Data (Big Data) . IEEE, 728-737. [27] Hui Luo, Jingbo Zhou, Zhifeng Bao, Shuangli Li, J Shane Culpepper, Haochao Ying, Hao Liu, and Hui Xiong. 2020. Spatial object recommendation with hints: When spatial granularity matters. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 781-790. [28] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [29] Joao Mendes-Moreira, Carlos Soares, Alípio Mário Jorge, and Jorge Freire De Sousa. 2012. Ensemble approaches for regression: A survey. Acm computing surveys (csur) 45, 1 (2012), 1-40. [30] Samuel Oliveira, Victor Diniz, Anisio Lacerda, and Gisele L Pappa. 2016. Evolutionary rank aggregation for recommender systems. In 2016 IEEE Congress on Evolutionary Computation (CEC) . IEEE, 255-262. [31] Samuel EL Oliveira, Victor Diniz, Anisio Lacerda, Luiz Merschmanm, and Gisele L Pappa. 2020. Is rank aggregation effective in recommender systems? an experimental analysis. ACM Transactions on Intelligent Systems and Technology (TIST) 11, 2 (2020), 1-26. [32] Xiaofeng Pan, Ming Li, Jing Zhang, Keren Yu, Hong Wen, Luping Wang, Chengjun Mao, and Bo Cao. 2022. MetaCVR: Conversion Rate Prediction via Meta Learning in Small-Scale Recommendation Scenarios. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2110-2114. [33] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2012. BPR: Bayesian personalized ranking from implicit feedback. arXiv preprint arXiv:1205.2618 (2012). [34] Sara Sabour, Nicholas Frosst, and Geoffrey E Hinton. 2017. Dynamic routing between capsules. Advances in neural information processing systems 30 (2017). [35] Omer Sagi and Lior Rokach. 2018. Ensemble learning: A survey. Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery 8, 4 (2018), e1249. [36] Qi Shen, Lingfei Wu, Yitong Pang, Yiming Zhang, Zhihua Wei, Fangli Xu, and Bo Long. 2021. Multi-behavior graph contextual aware network for session-based recommendation. arXiv preprint arXiv:2109.11903 (2021). [37] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [38] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Fourteenth ACM Conference on Recommender Systems . 269278. [39] Aayushi Verma and Shikha Mehta. 2017. A comparative study of ensemble learning methods for classification in bioinformatics. In 2017 7th International Conference on Cloud Computing, Data Science & Engineering-Confluence . IEEE, 155-158. [40] Chenyang Wang, Weizhi Ma, Min Zhang, Chong Chen, Yiqun Liu, and Shaoping Ma. 2020. Toward dynamic user intention: Temporal evolutionary effects of item relations in sequential recommendation. ACM Transactions on Information Systems (TOIS) 39, 2 (2020), 1-33. [41] Chenyang Wang, Zhefan Wang, Yankai Liu, Yang Ge, Weizhi Ma, Min Zhang, Yiqun Liu, Junlan Feng, Chao Deng, and Shaoping Ma. 2022. Target Interest Distillation for Multi-Interest Recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2007-2016. [42] Gang Wang, Jianshan Sun, Jian Ma, Kaiquan Xu, and Jibao Gu. 2014. Sentiment classification: The contribution of ensemble learning. Decision support systems 57 (2014), 77-93. [43] Shoujin Wang, Liang Hu, Yan Wang, Quan Z Sheng, Mehmet Orgun, and Longbing Cao. 2020. Intention nets: psychology-inspired user choice behavior modeling for next-basket prediction. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 6259-6266. [44] Yifan Wang, Weizhi Ma, Min Zhang*, Yiqun Liu, and Shaoping Ma. 2022. A survey on the fairness of recommender systems. ACMJournal of the ACM (JACM) (2022). [45] Xu-Cheng Yin, Kaizhu Huang, Chun Yang, and Hong-Wei Hao. 2014. Convex ensemble learning with sparsity and diversity. Information Fusion 20 (2014), 49-59. [46] Enming Yuan, Wei Guo, Zhicheng He, Huifeng Guo, Chengkai Liu, and Ruiming Tang. 2022. Multi-Behavior Sequential Transformer Recommender. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1642-1652. [47] Qihua Zhang, Junning Liu, Yuzhuo Dai, Yiyan Qi, Yifan Yuan, Kunlun Zheng, Fan Huang, and Xianfeng Tan. 2022. Multi-Task Fusion via Reinforcement Learning for Long-Term User Satisfaction in Recommender Systems. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4510-4520. [48] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open Benchmarking for Click-Through Rate Prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 2759-2769.",
   "keywords_parsed": [
     "Ranking ensemble",
-    " User intents",
-    " Personalized recommendation"
+    "User intents",
+    "Personalized recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Aggregation of Rankings Using Metaheuristics in Recommendation Systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Collaborative Rank Aggregation in Recommendation Systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Letor methods for unsupervised rank aggregation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "CAN: Feature Co-Action Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Mémoire sur les élections au scrutin"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Diversity creation methods: a survey and categorisation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Learning to rank with nonsmooth cost functions"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Novelty and diversity in recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Controllable multi-interest framework for recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Air: Attentional intention-aware recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Intent Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Empirical evaluation of gated recurrent neural networks on sequence modeling"
+    },
+    {
+      "ref_id": "b13",
+      "title": "I-divergence geometry of probability distributions and minimization problems"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A generalized doubly robust learning framework for debiasing post-click conversion rate prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A multi-intent based multi-policy relay contrastive learning for sequential recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Rank aggregation methods for the web"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Rank aggregation revisited"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Efficient similarity search and classification via rank aggregation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "An outranking approach for rank aggregation in information retrieval"
+    },
+    {
+      "ref_id": "b20",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Robust rank aggregation for gene list integration and meta-analysis"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Neural network ensembles, cross validation, and active learning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Manifold learning for rank aggregation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Generalized Ambiguity Decomposition for Ranking Ensemble Learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Intent preference decoupling for user representation on online recommender system"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Basket recommendation with multi-intent translation graph neural network"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Spatial object recommendation with hints: When spatial granularity matters"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Ensemble approaches for regression: A survey"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Evolutionary rank aggregation for recommender systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Is rank aggregation effective in recommender systems? an experimental analysis"
+    },
+    {
+      "ref_id": "b32",
+      "title": "MetaCVR: Conversion Rate Prediction via Meta Learning in Small-Scale Recommendation Scenarios"
+    },
+    {
+      "ref_id": "b33",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Dynamic routing between capsules"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Ensemble learning: A survey"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Multi-behavior graph contextual aware network for session-based recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A comparative study of ensemble learning methods for classification in bioinformatics"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Toward dynamic user intention: Temporal evolutionary effects of item relations in sequential recommendation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Target Interest Distillation for Multi-Interest Recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Sentiment classification: The contribution of ensemble learning"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Intention nets: psychology-inspired user choice behavior modeling for next-basket prediction"
+    },
+    {
+      "ref_id": "b44",
+      "title": "A survey on the fairness of recommender systems"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Convex ensemble learning with sparsity and diversity"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Multi-Behavior Sequential Transformer Recommender"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Multi-Task Fusion via Reinforcement Learning for Long-Term User Satisfaction in Recommender Systems"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Open Benchmarking for Click-Through Rate Prediction"
+    }
   ]
 }

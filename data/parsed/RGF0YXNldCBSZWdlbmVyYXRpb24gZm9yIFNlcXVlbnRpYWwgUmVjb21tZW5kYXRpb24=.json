@@ -40,14 +40,191 @@
   "Algorithm 2 Pseudo code of DR4SR+": "Input: The regenerated sequence dataset X ′ , a target model 𝑓 with parameters 𝜃 . Output: Apersonalizer 𝑔 with parameters 𝜙 that can assign scores W ∈ R | X ′ | for each data sample in X ′ . 1: Generate a dev dataset X ′ dev by shuffling X ′ 2: while not converged do 3: // Lower optimization 4: for round = 1 → 𝑇 lower do 5: 6: 7: Extract a batch 𝑏 from X ′ Get data sample scores W = 𝑔 ( 𝑏 ) Optimize 𝑓 based on Equation 8 8: end for 9: // Upper optimization 10: Extract a batch 𝑏 X ′ 11: Get ∇ 𝜃 𝐿 dev ( 𝜃 ∗ ( 𝜙 )) with 𝑏 dev and Equation 6 dev from dev 12: Get ∇ 𝜙 𝜃 ∗ ( 𝜙 ) by implicit differentiation 13: Get ∇ 𝜙 𝐿 dev ( 𝜃 ∗ ( 𝜙 )) as in Equation 11 14: update 𝜙 with ∇ 𝜙 𝐿 dev ( 𝜃 ∗ ( 𝜙 )) 15: end while DR4SR KDD '24, August 25-29, 2024, Barcelona, Spain SGD as the upper optimizer with learning rate and weight decay searched among [1e-3, 1e-2, 1e-1].",
   "A.5 Generalization to More Datasets": "Weprovide the results on two additional datasets Amazon-book and Gowalla in Table 6, where we can find that the proposed method can be generalized to datasets with large-scale or different distribution.",
   "keywords_parsed": [
-    "The sequential recommender (SR) system is a crucial component of modern recommender systems",
-    " as it aims to capture the evolving preferences of users. Significant efforts have been made to enhance the capabilities of SR systems. These methods typically follow the model-centric paradigm",
-    " which involves developing effective models based on fixed datasets. However",
-    " this approach often overlooks potential quality issues and flaws inherent in the data. Driven by the potential of data-centric AI",
-    " we propose a novel datacentric paradigm for developing an ideal training dataset using a model-agnostic dataset regeneration framework called DR4SR. This framework enables the regeneration of a dataset with exceptional cross-architecture generalizability. Additionally",
-    " we introduce the DR4SR+ framework",
-    " which incorporates a model-aware dataset personalizer to tailor the regenerated dataset specifically for a target model. To demonstrate the effectiveness of the data-centric paradigm",
-    " we integrate our framework with various model-centric methods and observe significant performance improvements across four widely adopted datasets. Furthermore",
-    " we conduct in-depth analyses to explore the potential of the data-centric paradigm and provide valuable insights. The anonymous code can be found at https://github.com/USTC-StarTeam/DR4SR."
+    "Recommendation System",
+    "Sequential Recommendation",
+    "Data-Centric AI",
+    "Data Generation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Comprehensive Exploration of Synthetic Data Generation: A Survey"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Crossdomain Recommendation with Behavioral Importance Perception"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Intent Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Graph Trend Filtering Networks for Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Generative Adversarial Networks"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Towards Lossless Dataset Distillation via Difficulty-Aligned Trajectory Matching"
+    },
+    {
+      "ref_id": "b7",
+      "title": "END4Rec: Efficient Noise-Decoupling for Multi-Behavior Sequential Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Guesr: A global unsupervised dataenhancement with bucket-cluster sampling for sequential recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A survey on user behavior modeling in recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Session-based Recommendations with Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Denoising Diffusion Probabilistic Models"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Cascaded Diffusion Models for High Fidelity Image Generation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "When to Learn What: Model-Adaptive Data Augmentation Curriculum"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Towards Universal Sequence Representation Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Effective and Efficient Training for Sequential Recommendation using Recency Sampling"
+    },
+    {
+      "ref_id": "b56",
+      "title": "A Survey on Large Language Models for Recommendation"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Session-based Recommendation with Graph Neural Networks"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Unlocking Efficiency in Large Language Model Inference: A Comprehensive Survey of Speculative Decoding"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Graph Contextualized SelfAttention Network for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b61",
+      "title": "CosRec: 2D Convolutional Neural Networks for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Dealmvc: Dual contrastive calibration for multi-view clustering"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Cluster-guided Contrastive Graph Clustering Network"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Convert: Contrastive graph clustering with reliable augmentation"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Effective Next-Items Recommendation via Personalized Sequential Pattern Mining"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Learning Partially Aligned Item Representation for Cross-Domain Sequential Recommendation"
+    },
+    {
+      "ref_id": "b67",
+      "title": "APGL4SR: A Generic Framework with Adaptive and Personalized Global Collaborative Information in Sequential Recommendation"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Self-Supervised Learning for Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Dataset Distillation: A Comprehensive Review"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Dual Sparse Attention Network For Session-based Recommendation"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Data-centric Artificial Intelligence: A Survey"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Robust Collaborative Filtering to Popularity Distribution Shift"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Denoising and Prompt-Tuning for Multi-Behavior Recommendation"
+    },
+    {
+      "ref_id": "b74",
+      "title": "A Unified Framework for Adaptive Representation Enhancement and Inversed Learning in Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Clustering based behavior sampling with long sequential data for CTR prediction"
+    },
+    {
+      "ref_id": "b76",
+      "title": "Dataset Condensation with Distribution Matching"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Dataset Condensation with Gradient Matching"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Dataset Condensation with Gradient Matching"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Towards Data-centric Graph Machine Learning: Review and Outlook"
+    },
+    {
+      "ref_id": "b80",
+      "title": "Dataset Quantization"
+    },
+    {
+      "ref_id": "b81",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    },
+    {
+      "ref_id": "b82",
+      "title": "Filter-enhanced MLP is All You Need for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b83",
+      "title": "Deep Graph Structure Learning for Robust Representations: A Survey"
+    },
+    {
+      "ref_id": "b84",
+      "title": "LearnDA: Learnable knowledge-guided data augmentation for event causality identification"
+    }
   ]
 }

@@ -19,15 +19,101 @@
   "References": "[1] AWS. 2019. Create, store, and share features with Amazon SageMaker Feature Store. https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html [3] Pedro Celis, Per-Ake Larson, and J. Ian Munro. 1985. Robin hood hashing. In 26th annual symposium on foundations of computer science (sfcs 1985) . IEEE, 281-288. [2] Nathan Bronson and Xiao Shi. 2019. Open-sourcing F14 for faster, more memoryefficient hash tables. https://engineering.fb.com/2019/04/25/developer-tools/f14/ [4] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. CIKM '24, October 21-25, 2024, Boise, ID, USA Qiang Zhang, Zhipeng Teng, Disheng Wu, and Jiayin Wang [5] Paarth Chothani. 2017. Palette Meta Store Journey. https://www.uber.com/enKR/blog/palette-meta-store-journey/ [7] James Davidson, Benjamin Liebald, Junning Liu, Palash Nandy, Taylor Van Vleet, Ullas Gargi, Sujoy Gupta, Yu He, Mike Lambert, Blake Livingston, et al. 2010. The YouTube video recommendation system. In Proceedings of the fourth ACM conference on Recommender systems . 293-296. [6] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [8] Biplob Debnath, Sudipta Sengupta, and Jin Li. 2010. FlashStore: High throughput persistent key-value store. Proceedings of the VLDB Endowment 3, 1-2 (2010), 1414-1425. [10] etcd io. 2017. etcd. http://etcd.io [9] Siying Dong, Andrew Kryczka, Yanqin Jin, and Michael Stumm. 2021. Rocksdb: Evolution of development priorities in a key-value store serving large-scale applications. ACM Transactions on Storage (TOS) 17, 4 (2021), 1-32. [11] Facebook. 2021. RocksDB. https://github.com/facebook/rocksdb [13] Google. 2011. LevelDB. https://github.com/google/leveldb [12] Zhuhe Fang, Beilei Zheng, and Chuliang Weng. 2019. Interleaved multivectorizing. Proceedings of the VLDB Endowment 13, 3 (2019), 226-238. [14] Google. 2017. Abseil. http://abseil.io [16] Udit Gupta, Carole-Jean Wu, Xiaodong Wang, Maxim Naumov, Brandon Reagen, David Brooks, Bradford Cottel, Kim Hazelwood, Mark Hempstead, Bill Jia, et al. 2020. The architectural implications of facebook's dnn-based personalized recommendation. In 2020 IEEE International Symposium on High Performance Computer Architecture (HPCA) . IEEE, 488-501. [15] Ashish Gupta, Fan Yang, Jason Govig, Adam Kirsch, Kelvin Chan, Kevin Lai, Shuo Wu, Sandeep Dhoot, Abhilash Kumar, and Ankur Agiwal. 2014. Mesa: Georeplicated, near real-time, scalable data warehousing. (2014). https://research. google/pubs/pub42851/ [17] Maurice Herlihy, Nir Shavit, and Moran Tzafrir. 2008. Hopscotch hashing. In Distributed Computing: 22nd International Symposium, DISC 2008, Arcachon, France, September 22-24, 2008. Proceedings 22 . Springer, 350-364. [19] Onur Kocberber, Babak Falsafi, and Boris Grot. 2015. Asynchronous memory access chaining. Proceedings of the VLDB Endowment 9, 4 (2015), 252-263. [18] Konstantinos Kanellis, Badrish Chandramouli, and Shivaram Venkataraman. 2023. F2: Designing a Key-Value Store for Large Skewed Workloads. arXiv preprint arXiv:2305.01516 (2023). [20] Daniar H Kurniawan, Ruipu Wang, Kahfi S Zulkifli, Fandi A Wiranata, John Bent, Ymir Vigfusson, and Haryadi S Gunawi. 2023. EVStore: Storage and Caching Capabilities for Scaling Embedding Tables in Deep Recommendation Systems. In Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2 . 281-294. [22] MuLi, Li Zhou, Zichao Yang, Aaron Li, Fei Xia, David G Andersen, and Alexander Smola. 2013. Parameter server for distributed machine learning. In Big learning NIPS workshop , Vol. 6. Lake Tahoe, CA. [21] Mu Li, David G Andersen, Jun Woo Park, Alexander J Smola, Amr Ahmed, Vanja Josifovski, James Long, Eugene J Shekita, and Bor-Yiing Su. 2014. Scaling distributed machine learning with the parameter server. In 11th USENIX Symposium on operating systems design and implementation (OSDI 14) . 583-598. [23] Xiangru Lian, Binhang Yuan, Xuefeng Zhu, Yulong Wang, Yongjun He, Honghuan Wu, Lei Sun, Haodong Lyu, Chengjun Liu, Xing Dong, et al. 2022. Persia: An open, hybrid system scaling deep learning-based recommenders up to 100 trillion parameters. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge",
   "keywords_parsed": [
     "Key-value storage",
-    " Recommender system",
-    " Hash-table Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CIKM '24",
-    " October 21-25",
-    " 2024",
-    " Boise",
-    " ID",
-    " USA https://doi.org/10.1145/3627673.3680034 © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0436-9/24/10"
+    "Recommender system",
+    "Hash-table"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Create, store, and share features with Amazon SageMaker Feature Store"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Robin hood hashing"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Open-sourcing F14 for faster, more memoryefficient hash tables"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Palette Meta Store Journey"
+    },
+    {
+      "ref_id": "b7",
+      "title": "The YouTube video recommendation system"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "FlashStore: High throughput persistent key-value store"
+    },
+    {
+      "ref_id": "b10",
+      "title": "etcd"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Rocksdb: Evolution of development priorities in a key-value store serving large-scale applications"
+    },
+    {
+      "ref_id": "b11",
+      "title": "RocksDB"
+    },
+    {
+      "ref_id": "b13",
+      "title": "LevelDB"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Interleaved multivectorizing"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Abseil"
+    },
+    {
+      "ref_id": "b16",
+      "title": "The architectural implications of facebook's dnn-based personalized recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Mesa: Georeplicated, near real-time, scalable data warehousing"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Hopscotch hashing"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Asynchronous memory access chaining"
+    },
+    {
+      "ref_id": "b18",
+      "title": "F2: Designing a Key-Value Store for Large Skewed Workloads"
+    },
+    {
+      "ref_id": "b20",
+      "title": "EVStore: Storage and Caching Capabilities for Scaling Embedding Tables in Deep Recommendation Systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Parameter server for distributed machine learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Scaling distributed machine learning with the parameter server"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Persia: An open, hybrid system scaling deep learning-based recommenders up to 100 trillion parameters"
+    }
   ]
 }

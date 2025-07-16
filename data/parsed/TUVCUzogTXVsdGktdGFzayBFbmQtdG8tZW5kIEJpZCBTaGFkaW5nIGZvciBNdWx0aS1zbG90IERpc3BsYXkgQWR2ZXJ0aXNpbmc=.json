@@ -22,7 +22,99 @@
   "6.2 Online Experiments": "In online A/B tests, we use gross merchandise volume (GMV), return on investment (ROI), buy count (BuyCnt), and cost per click (CPC) as our metrics. GMV indicates the total gained revenue. ROI is calculated by dividing GMV by the cost showing the cost-effectiveness of advertising. Buy count is the total number of ads that are brought. CPC is the average cost for a click, implying the payment level of bidding. As for CPC, the lower the better. We experiment on the Alibaba display ad platform for six days. In A/B tests, we choose 10,000 ad campaigns and spare 25% ad requests for experiments. These ad campaigns and requests are equally divided into two groups. One group receives the control and the other group receives the treatment of MEBS. The percentage change results of metrics are shown in Table 5. The lift results of GMV, ROI, and BuyCnt as well as the decline of CPC prove that MEBS improves advertising performance. From the results of each day shown in Figure 7, we demonstrate that MEBS performs well during the experiment period. The increment percentages of GMV, ROI, and BuyCnt stay positive each day. And the change percentage of CPC stabilizes around -8%, indicating MEBS saves costs for advertisers steadily.",
   "7 Conclusion": "We propose the MEBS model, which is the first to adapt the bid shading method to multi-slot display advertising. We prove the optimality of our bidding strategy with bid shading. Leveraging multi-task learning, we mitigate the issue of data sparsity that hampers pCTR calibration and shading ratio estimation. Following the objective of bid shading in our proof, we directly maximize the expected surplus to optimize shading ratio estimation in an end-toend paradigm. Through extensive offline and online experiments, we prove the effectiveness and efficiency of MEBS and show its significant impact on enhancing bidding performance. 6",
   "References": "[1] Vibhanshu Abhishek and Kartik Hosanagar. 2013. Optimal bidding in multi-item multislot sponsored search auctions. Operations Research 61, 4 (2013), 855-873. [2] Google Inside AdWords. [n. d.]. Conversion Rates Don't Vary Much with Ad Position. https://adwords.googleblog.com/2009/08/conversion-rates-dont-varymuch-with-ad.html. [3] Gagan Aggarwal, Ashish Goel, and Rajeev Motwani. 2006. Truthful auctions for pricing search keywords. In Proceedings of the 7th ACM Conference on Electronic Commerce . 1-7. [4] Dimitri P Bertsekas. 1997. Nonlinear programming. Journal of the Operational Research Society 48, 3 (1997), 334-334. [5] Han Cai, Kan Ren, Weinan Zhang, Kleanthis Malialis, Jun Wang, Yong Yu, and Defeng Guo. 2017. Real-time bidding by reinforcement learning in display advertising. In Proceedings of the tenth ACM international conference on web search and data mining . 661-670. [6] Nick Craswell, Onno Zoeter, Michael Taylor, and Bill Ramsey. 2008. An experimental comparison of click position-bias models. In Proceedings of the 2008 international conference on web search and data mining . 87-94. [7] Xiaotie Deng, Yang Sun, Ming Yin, and Yunhong Zhou. 2010. Mechanism design for multi-slot ads auction in sponsored search markets. In Frontiers in Algorithmics: 4th International Workshop, FAW 2010, Wuhan, China, August 11-13, 2010. Proceedings 4 . Springer, 11-22. [8] Benjamin Edelman, Michael Ostrovsky, and Michael Schwarz. 2007. Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords. American economic review 97, 1 (2007), 242-259. [9] Djordje Gligorijevic, Tian Zhou, Bharatbhushan Shetty, Brendan Kitts, Shengjun Pan, Junwei Pan, and Aaron Flores. 2020. Bid shading in the brave new world of first-price auctions. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2453-2460. [10] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [11] Xiaotian Hao, Zhaoqing Peng, Yi Ma, Guan Wang, Junqi Jin, Jianye Hao, Shan Chen, Rongquan Bai, Mingzhou Xie, Miao Xu, et al. 2020. Dynamic knapsack optimization towards efficient multi-channel sequential advertising. In International Conference on Machine Learning . PMLR, 4060-4070. [12] Yue He, Xiujun Chen, Di Wu, Junwei Pan, Qing Tan, Chuan Yu, Jian Xu, and Xiaoqiang Zhu. 2021. A unified solution to constrained bidding in online display advertising. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 2993-3001. [13] Yi-Ting Huang. 2018. The female gaze: Content composition and slot position in personalized banner ads, and how they influence visual attention in online shoppers. Computers in Human Behavior 82 (2018), 1-15. [14] Niklas Karlsson and Qian Sang. 2021. Adaptive bid shading optimization of firstprice ad inventory. In 2021 American Control Conference (ACC) . IEEE, 4983-4990. [15] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic opti- mization. arXiv preprint arXiv:1412.6980 (2014). [16] Kuang-chih Lee, Burkay Orten, Ali Dasdan, and Wentong Li. 2012. Estimating conversion rate in display advertising from past erformance data. In Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining . 768-776. [17] Quan Lu, Shengjun Pan, Liang Wang, Junwei Pan, Fengdan Wan, and Hongxia Yang. 2017. A practical framework of conversion rate prediction for online display advertising. In Proceedings of the ADKDD'17 . 1-9. [18] David G Luenberger, Yinyu Ye, et al. 1984. Linear and nonlinear programming . Vol. 2. Springer. [19] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [20] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [21] Yabo Ni, Dan Ou, Shichen Liu, Xiang Li, Wenwu Ou, Anxiang Zeng, and Luo Si. 2018. Perceive your users in depth: Learning universal user representations from multiple e-commerce tasks. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 596-605. [22] Junwei Pan, Jian Xu, Alfonso Lobos Ruiz, Wenliang Zhao, Shengjun Pan, Yu Sun, and Quan Lu. 2018. Field-weighted factorization machines for click-through rate prediction in display advertising. In Proceedings of the 2018 World Wide Web Conference . 1349-1357. [23] Shengjun Pan, Brendan Kitts, Tian Zhou, Hao He, Bharatbhushan Shetty, Aaron Flores, Djordje Gligorijevic, Junwei Pan, Tingyu Mao, San Gultekin, et al. 2020. Bid shading by win-rate estimation and surplus maximization. arXiv preprint arXiv:2009.09259 (2020). 7",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Optimal bidding in multi-item multislot sponsored search auctions"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Conversion Rates Don't Vary Much with Ad Position"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Truthful auctions for pricing search keywords"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Nonlinear programming"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Real-time bidding by reinforcement learning in display advertising"
+    },
+    {
+      "ref_id": "b6",
+      "title": "An experimental comparison of click position-bias models"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Mechanism design for multi-slot ads auction in sponsored search markets"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Bid shading in the brave new world of first-price auctions"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Dynamic knapsack optimization towards efficient multi-channel sequential advertising"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A unified solution to constrained bidding in online display advertising"
+    },
+    {
+      "ref_id": "b13",
+      "title": "The female gaze: Content composition and slot position in personalized banner ads, and how they influence visual attention in online shoppers"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adaptive bid shading optimization of first-price ad inventory"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Estimating conversion rate in display advertising from past performance data"
+    },
+    {
+      "ref_id": "b17",
+      "title": "A practical framework of conversion rate prediction for online display advertising"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Linear and nonlinear programming"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Perceive your users in depth: Learning universal user representations from multiple e-commerce tasks"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Field-weighted factorization machines for click-through rate prediction in display advertising"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Bid shading by win-rate estimation and surplus maximization"
+    }
   ]
 }

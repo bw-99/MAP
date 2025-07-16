@@ -31,10 +31,196 @@
   "C.2 Computational Overhead": "Table 5 shows a detailed comparison of the computational overhead for all compared methods. As indicated, EmerG demonstrates relatively lower time and space requirements. Table 5: Computational overhead of compared methods on MovieLens. Time is reported as seconds per epoch. KDD '24, August 25-29, 2024, Barcelona, Spain Yaqing Wang, Hongming Piao, Daxiang Dong, Quanming Yao, and Jingbo Zhou Table 4: Comparing EmerG with methods for emerging items with incremental interaction records, using various backbones. Test performance obtained on MovieLens and Taobao. The best results are bolded, the second-best results are underlined.",
   "keywords_parsed": [
     "Cold-Start Recommendation",
-    " Warm Up",
-    " Click-Through Rate Prediction",
-    " Few-Shot Learning",
-    " Hypernetworks",
-    " New Items"
+    "Warm Up",
+    "Click-Through Rate Prediction",
+    "Few-Shot Learning",
+    "Hypernetworks",
+    "New Items"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Feynman: Federated Learning-based Advertising for Ecosystems-Oriented Mobile Apps Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Higher-order factorization machines"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Simple and scalable response prediction for display advertising"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Generative adversarial framework for cold-start item recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Adaptive factorization network: Learning adaptive-order feature interactions"
+    },
+    {
+      "ref_id": "b7",
+      "title": "MAMO: Memory-augmented meta-optimization for cold-start recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Model-agnostic metalearning for fast adaptation of deep networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepFM: A factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Hypernetworks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "The MovieLens datasets: History and context"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Aligning distillation for cold-start item recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Maximum F1score discriminative training criterion for automatic mispronunciation detection"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "MeLU: Meta-learned user preference estimator for cold-start recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Fi-GNN: Modeling feature interactions via graph neural networks for CTR prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Task-adaptive neural process for user cold-start recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "AUC: A statistically consistent and more discriminating measure than accuracy"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Meta-learning on heterogeneous information networks for cold-start recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "FinalMLP: An enhanced two-stream MLP model for CTR prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Neighbour interaction based click-through rate prediction via graph-masked transformer"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Learning graph meta embeddings for cold-start ads in click-through rate prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Warm up cold-start advertisements: Improving CTR predictions via learning to learn ID embeddings"
+    },
+    {
+      "ref_id": "b25",
+      "title": "The long tail of recommender systems and how to leverage it"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Predicting clicks: Estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b28",
+      "title": "AutoInt: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Taobao Display Ads Click Dataset"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b31",
+      "title": "DropoutNet: Addressing cold start in recommender systems"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Preference-adaptive meta-learning for cold-start recommendation."
+    },
+    {
+      "ref_id": "b33",
+      "title": "Property-aware relation networks for few-shot molecular property prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Recognizing medical search query intent by few-shot learning"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Generalizing from a few examples: A survey on few-shot learning"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Efficient and Joint Hyperparameter and Architecture Search for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b37",
+      "title": "ColdNAS: Search to modulate for user cold-start recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "PACIA: Parameter-efficient adapter for few-shot molecular property prediction"
+    },
+    {
+      "ref_id": "b39",
+      "title": "FIVES: Feature interaction via edge search for large-scale tabular data"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Learning feature interactions with Lorentzian factorization machine"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Property-aware relation networks for few-shot molecular property prediction"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Improving item cold-start recommendation via model-agnostic conditional variational autoencoder"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b44",
+      "title": "FINAL: Factorized interaction layer for CTR prediction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Learning to warm up cold item embeddings for cold-start recommendation with meta scaling and shifting networks"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Recommendation for new users and new items via randomized training and mixture-of-experts transformation"
+    }
   ]
 }

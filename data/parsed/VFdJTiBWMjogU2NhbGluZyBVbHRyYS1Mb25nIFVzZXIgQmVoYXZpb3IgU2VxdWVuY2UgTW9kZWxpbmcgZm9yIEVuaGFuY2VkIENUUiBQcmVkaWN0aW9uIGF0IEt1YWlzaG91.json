@@ -37,6 +37,104 @@
   "A.3 Analysis of User Activity Levels": "We postulate that enhancing recommendation model performance can be achieved by extending the length of user history input. Given that users with different activity levels exhibit varied lengths of historical behavior, the effect of extending long-term interest modeling to the life-cycle level is likely to differ among them. Consequently, we grouped users by different history lengths and reported the performance improvement across these groups. We categorized users in the dataset into three groups based on the number of their historical behaviors: Low, Medium, and High. Additionally, we calculated the GAUC for TWIN and TWINV2 models across these groups. The improvements in GAUC for TWIN-V2 in different groups and their respective proportions of the total user count are shown in Figure 5. It is observable that TWINV2 achieves performance improvements across all user groups, validating the effectiveness of our approach. It is also evident that the absolute increase in GAUC is greater in user groups with a higher number of historical behaviors. This occurs as users with a greater number of historical actions possess a broader spectrum of interests within their life-cycle behaviors, thereby presenting more significant opportunities for enhancement. Additionally, TWINV2 also achieves performance improvements in groups of users with shorter histories. This is due to the incorporation of clustered behavior features in the cluster-aware target attention mechanism. These features represent the aggregated characteristics of all items within the cluster. Consequently, the data fed into GSU and ESU reflects a more comprehensive scope of behaviors compared to TWIN, leading to improved performance.",
   "keywords_parsed": [
     "Recommendation",
-    " Click-Through Rate Prediction"
+    "Click-Through Rate Prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "End-to-End User Behavior Retrieval in Click-Through Rate Prediction Model"
+    },
+    {
+      "ref_id": "b2",
+      "title": "TWIN: TWo-Stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Behavior Sequence Transformer for E-commerce Recommendation in Alibaba"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep Session Interest Network for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Field-Aware Factorization Machines for CTR Prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep Group Interest Modeling of Full Lifelong User Behaviors for CTR Prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Search-Based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "User Behavior Retrieval for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Learning to Retrieve User Behaviors for Click-through Rate Estimation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Lifelong Sequential Modeling with Personalized Memorization for User Response Prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Predicting Clicks: Estimating the Click-through Rate for New Ads"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b19",
+      "title": "AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-Scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Clustering Based Behavior Sampling with Long Sequential Data for CTR Prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Deep Interest Evolution Network for Click-Through Rate Prediction"
+    }
   ]
 }

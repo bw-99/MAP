@@ -15,7 +15,91 @@
   "Table 3: Offline and online performance on industrial dataset.": "other modules, indicating the superiority introduced by the subset granularity. 3.2.3 Impact of Subsets' Number. Fig. 3 presents the results from hyper-parameter tuning for the number of subsets within a group. Results were only reported for Movielens-1M and Meetup-CA due to similar results on Meetup-NYC. Higher 𝑀 indicates more subsets in a group and fewer members in a subset. The optimal subset sizes for the two datasets are 3 and 5, as depicted in Fig. 3(a) and Fig. 3(b), respectively. 3.2.4 Analysis of Clustering Methods. Table 2 also shows variation studies with different clustering methods, including K-Means (MGAM), Spectral Clustering (MGAM w/ SC), and Agglomerative Clustering (MGAM w/ AC). Our findings suggest that our approach is better suited to be used with K-Means compared to Spectral Clustering and Agglomerative Clustering. This is likely due to K-Means clustering having several advantages over Agglomerative Clustering and Spectral Clustering, including scalability, simplicity, and convergence guarantees. 3.2.5 Industrial Implementation and Online Performance. In online food ordering services, an area grid is utilized as a means of area division. Specifically, for a designated area grid, individuals with purchasing histories within the past seven days are grouped since they exhibit similar area preferences. For such groups of users, we can employ group recommendation techniques to suggest product collections just prior to the product recall stage in industrial recommendation. By doing so, we can significantly improve product selection without the need for excessive human labor and enhance the efficiency of this stage. Ultimately, this approach can lead to improved personalized recommendation outcomes. To validate the performance of our proposed model, we conducted methods comparison in our industrial dataset. Table 3 shows that our MGAM significantly outperformed the base model (AGREE). Our online Multi-Granularity Attention Model for Group Recommendation Conference'23, October 2023, Birmingham, UK experiments also confirmed this, as we deployed MGAM and compared it with the AGREE. The CTR from the 5-day experiment consistently outperformed the base model, with an average improvement of 1.2%.",
   "4 CONCLUSIONS": "In this paper, we propose a Multi-Granularity Attention Model (MGAM) to uncover the latent preferences of users in group recommendation tasks, further improving the preference extraction and aggregation ability of the model. Specifically, we propose the Subset Preference Extraction module, the Group Preference Extraction module, and the Superset Extraction Preference module from 3 different granularities to uncover group members' latent preferences and further mitigate recommendation noise. Extensive offline experiments and online performance demonstrate the effectiveness and efficiency of MGAM.",
   "REFERENCES": "[1] Sihem Amer-Yahia, Senjuti Basu Roy, Ashish Chawlat, Gautam Das, and Cong Yu. 2009. Group recommendation: Semantics and efficiency. Proceedings of the VLDB Endowment 2, 1 (2009), 754-765. [2] Linas Baltrunas, Tadas Makcinskas, and Francesco Ricci. 2010. Group recommendations with rank aggregation and collaborative filtering. In Proceedings of the fourth ACM conference on Recommender systems . 119-126. [3] Ludovico Boratto and Salvatore Carta. 2014. Modeling the preferences of a group of users detected by clustering: A group recommendation case-study. In Proceedings of the 4th international conference on web intelligence, mining and semantics (WIMS14) . 1-7. [4] Da Cao, Xiangnan He, Lianhai Miao, Yahui An, Chao Yang, and Richang Hong. 2018. Attentive group recommendation. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 645-654. [5] Da Cao, Xiangnan He, Lianhai Miao, Guangyi Xiao, Hao Chen, and Jiao Xu. 2019. Social-enhanced attentive group recommendation. IEEE Transactions on Knowledge and Data Engineering (2019). [6] Lei Guo, Hongzhi Yin, Tong Chen, Xiangliang Zhang, and Kai Zheng. 2021. Hierarchical hyperedge embedding-based representation learning for group recommendation. ACM Transactions on Information Systems (TOIS) 40, 1 (2021), 1-27. [7] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural Collaborative Filtering. In Proceedings of the 26th International Conference on World Wide Web, WWW 2017, Perth, Australia, April 3-7, 2017 , Rick Barrett, Rick Cummings, Eugene Agichtein, and Evgeniy Gabrilovich (Eds.). ACM, 173-182. [8] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [9] Zhixiang He, Chi-Yin Chow, and Jia-Dong Zhang. 2020. GAME: Learning Graphical and Attentive Multi-view Embeddings for Occasional Group Recommendation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 649-658. [10] Z. He, C. Y. Chow, J. D. Zhang, and N. Li. 2019. GRADI: Towards Group Recommendation Using Attentive Dual Top-Down and Bottom-Up Influences. In 2019 IEEE International Conference on Big Data (Big Data) . [11] Zhenhua Huang, Xin Xu, Honghao Zhu, and MengChu Zhou. 2020. An efficient group recommendation model with multiattention-based neural networks. IEEE Transactions on Neural Networks and Learning Systems 31, 11 (2020), 4461-4474. [12] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [13] Ruxia Liang, Qian Zhang, Jianqiang Wang, and Jie Lu. 2022. A Hierarchical Attention Network for Cross-Domain Group Recommendation. IEEE Transactions on Neural Networks and Learning Systems (2022). [14] Hongtao Liu, Fangzhao Wu, Wenjun Wang, Xianchen Wang, Pengfei Jiao, Chuhan Wu, and Xing Xie. 2019. NRPA: neural recommendation with personalized attention. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1233-1236. [15] Aravind Sankar, Yanhong Wu, Yuhang Wu, Wei Zhang, Hao Yang, and Hari Sundaram. 2020. Groupim: A mutual information maximization framework for neural group recommendation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1279-1288. [16] Lucas Vinh Tran, Tuan-Anh Nguyen Pham, Yi Tay, Yiding Liu, Gao Cong, and Xiaoli Li. 2019. Interact and decide: Medley of sub-attention networks for effective group recommendation. In Proceedings of the 42nd International ACM SIGIR conference on research and development in information retrieval . 255-264. [17] Wen Wang, Wei Zhang, Jun Rao, Zhijie Qiu, Bo Zhang, Leyu Lin, and Hongyuan Zha. 2020. Group-Aware Long-and Short-Term Graph Representation Learning for Sequential Group Recommendation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1449-1458. [18] Xixi Wu, Yun Xiong, Yao Zhang, Yizhu Jiao, Jiawei Zhang, Yangyong Zhu, and Philip S Yu. 2023. ConsRec: Learning Consensus Behind Interactions for Group Recommendation. arXiv preprint arXiv:2302.03555 (2023). [19] Hongzhi Yin, Qinyong Wang, Kai Zheng, Zhixu Li, Jiali Yang, and Xiaofang Zhou. 2019. Social influence-based group representation learning for group recommendation. In 2019 IEEE 35th International Conference on Data Engineering (ICDE) . IEEE, 566-577. [20] Zhiwen Yu, Xingshe Zhou, Yanbin Hao, and Jianhua Gu. 2006. TV program recommendation for multiple viewers based on user profile merging. User modeling and user-adapted interaction 16, 1 (2006), 63-82. [21] Junwei Zhang, Min Gao, Junliang Yu, Lei Guo, Jundong Li, and Hongzhi Yin. 2021. Double-Scale Self-Supervised Hypergraph Learning for Group Recommendation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 2557-2567.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Group recommendation: Semantics and efficiency"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Group recommendations with rank aggregation and collaborative filtering"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Modeling the preferences of a group of users detected by clustering: A group recommendation case-study"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Attentive group recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Social-enhanced attentive group recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Hierarchical hyperedge embedding-based representation learning for group recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Neural Collaborative Filtering"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b9",
+      "title": "GAME: Learning Graphical and Attentive Multi-view Embeddings for Occasional Group Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "GRADI: Towards Group Recommendation Using Attentive Dual Top-Down and Bottom-Up Influences"
+    },
+    {
+      "ref_id": "b11",
+      "title": "An efficient group recommendation model with multiattention-based neural networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A Hierarchical Attention Network for Cross-Domain Group Recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "NRPA: neural recommendation with personalized attention"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Groupim: A mutual information maximization framework for neural group recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Interact and decide: Medley of sub-attention networks for effective group recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Group-Aware Long-and Short-Term Graph Representation Learning for Sequential Group Recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "ConsRec: Learning Consensus Behind Interactions for Group Recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Social influence-based group representation learning for group recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "TV program recommendation for multiple viewers based on user profile merging"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Double-Scale Self-Supervised Hypergraph Learning for Group Recommendation"
+    }
   ]
 }

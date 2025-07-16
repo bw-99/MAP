@@ -21,6 +21,227 @@
   "6 FUTURE OUTLOOK": "We anticipate that the following areas will receive future attention, and be the subject of future surveys: Forecasting. The majority of fashion recommendations are focused on predicting the 'present' based on previous interactions and trends, i.e., what the user will do right now based on their history. How might such models be utilized to make predictions regarding the fashion trends of ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. A Review of Modern Fashion Recommender Systems 111:27 the future? This aspect can be linked to popularity forecasting in the fashion domain since trendy items will likely be popular [16, 88]. Ethics. Fashion recommendation raises a number of ethical considerations. For instance, how certain factors like gender [22], race, body shape, or religion, to name a few, result in stereotypical recommendations. A fashion recommendation system, for instance, may be biased towards recommending clothing items that are traditionally worn by men or women, thereby ignoring the fashion tastes of people who do not conform to these traditional gender roles. Besides the ethical considerations, such bias and unfairness can have other severe consequences, including decreased retail sales, dissatisfied customers, and degradation of the brand image (see also [11, 43]). With the goal of rare product discovery, Sá et al. [141] explore how to diversify the recommendations in the context of luxury fashion, while Nestler et al. [123] use a Bayesian model to reduce the size and fit-related product returns, hence reducing the risk of personal issues such as 'it's not me' or other body image issues. The ethics of 'fast fashion' is also worth considering. Fast fashion is a term that refers to the manufacturing process, which means that the consumer may have to choose between purchasing something cheaper but manufactured under dubious conditions or paying more (or even having a very limited selection) for sustainable and ethically superior clothing. Adversarial robustness and privacy. Protecting the security of ML/RS models and user data. In the fashion recommendation domain, adversarial attacks are a significant concern as attackers can manipulate the system's output and deceive users [45]. One common form of such an attack is to manipulate the images of clothing items, making them appear different from their actual appearance. Another form of attack involves adding adversarial perturbations (noise) to the images that are invisible to the naked eye and promoting or demoting certain items or item categories in the recommendation list for purposes such as marketing presentations. Consequently, users may be directed to clothing items they may not have otherwise considered, which could result in dissatisfaction and a reduction in retail sales [12, 160]. An example of an attack is presented by Treu et al. [160], which uses a fashion image to generate an adversarial texture applied to the clothing regions of the target image, preventing person segmentation from working correctly. Deployability. What are the practical considerations in terms of deploying models from academia? Perhaps complexity and being naturally black-box models (relating to the preceding discussion about interpretation) are important aspects for consideration given that the majority of the techniques described are based on neural networks. Furthermore, good performance on a small academic dataset may fail to reproduce at an Internet-size scenario, which compounded with the lack of interpretability may result in unforeseen problems when a new model is released to the public [124, 137]. Properly testing systematically and at scale, and how to better explain and understand model predictions, is thus a relevant area of research. Multi-modal and cross-modal representations. A multi-modal fashion RS can be trained to recognize the semantic aspects of clothing items, such as their color, style, and material, and combine this information with visual data, such as images of the clothing items, to improve the product representations and ultimately provide more accurate recommendations [47]. However, it is costly to scale the training data required for all the fashion concepts with industry-level accuracy. However, recent advances in multimodal text-and-image models such as CLIP [133] or ALBEF [101] have shown that it is possible to achieve a remarkable level of semantic understanding using only weakly related internet text and image data. Future research will probably target how to use similar approaches for fashion RS. Similarly, cross-modal text-to-image generative models, such as DALL-E [134] and Stable Diffusion [140], could be incorporated into fashion AI systems to improve the accuracy of recommendations. These models can be trained to generate images of clothing items based on textual ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. 111:28 Deldjoo et al. descriptions or retrieve textual descriptions of clothing items based on visual data, which can provide more accurate and diverse recommendations for users. Iterative and multi-modal recommendation. As conversational systems progress and gain wide adoption, fashion RS will be able to utilize multi-turn interactions [49, 189], as well as multiple forms of input, to refine and improve the recommendations to the customer. Furthermore, different pieces of information provided by the customer may be contradictory or modify each other, and in future fashion RS will need to exhibit robustness to more informal forms of communication. Works such as [173], [51], or [178], among others, start to tap into this area, but more research will be needed to make such systems practical, and train them at scale. Virtual try-on. Augmented Reality (AR) is becoming commonplace in mobile camera apps, and in consequence it is very likely that customers will start expecting it in e-commerce settings. Some product vertical like beauty or eyewear, where the requirements are more aligned with current commercial AR technology, are early adopters [171]. Clothing virtual try-on will require more research before it becomes useful, but it will create opportunities to make fashion RS more personalized [89]. Causal view and interpretability. Afinal challenge for fashion AI and recommendation is to take a causal approach to fashion recommendation, which entails understanding the causal relationships between data and the effect of features on informed decision-making. For instance, a fashion AI model can be trained to understand the causal relationships between a user's clothing preferences and their body type, age, or lifestyle, and then use this knowledge to provide personalized recommendations that are more likely to suit the user's needs and preferences. This problem is related to interpretability of fashion RS predictions, a topic common to many of the future research areas mentioned above. Works such as [71, 127, 157] make inroads on this problem, but more research will be needed to be able to explain the recommendation of a fashion RS based on the input customer data. Integration with generative AI and large language models (LLMs). Finally, as generative AI and large language models (LLMs) continue to advance, their roles in recommender systemsparticularly in the field of fashion-are becoming increasingly significant [54, 72, 169]. These models can operate in both uni-modal and multi-modal capacities. For example, in the fashion industry, LLMs can generate outfit recommendations by understanding the compatibility between various fashion items in a nuanced manner. In multi-modal scenarios, these models can combine both text and visual data to offer more personalized choices. For instance, a user could interactively decide what they would like to wear by inputting both textual and visual preferences into the system. Moreover, these models can also tackle common challenges in recommender systems such as sparsity and the cold-start problem through prompt-engineering techniques such as few-shot and zero-shot learning [40, 122].",
   "REFERENCES": "[1] [n.d.]. Amazon \"Made for You\" Custom T-shirt. https://www.amazon.com/Made-for-You-Custom-T-shirt/dp/ B08N6J8G5M. Accessed: 2021-04-17. [2] G. Mohammed Abdulla, Shreya Singh, and Sumit Borar. 2019. Shop your Right Size: A System for Recommending Sizes for Fashion products. In Companion of The 2019 World Wide Web Conference, WWW 2019, San Francisco, CA, USA, May 13-17, 2019 . ACM, 327-334. https://doi.org/10.1145/3308560.3316599 [3] Adewole Adewumi, Adebola Taiwo, Sanjay Misra, Rytis Maskeliunas, Robertas Damasevicius, Ravin Ahuja, and Foluso Ayeni. 2019. A Unified Framework for Outfit Design and Advice . 31-41. https://doi.org/10.1007/978-981-13-9364-8_3 [4] Pankaj Agarwal, Sreekanth Vempati, and Sumit Borar. 2018. Personalizing Similar Product Recommendations in Fashion E-commerce. CoRR abs/1806.11371 (2018). arXiv:1806.11371 http://arxiv.org/abs/1806.11371 [5] Charu C Aggarwal. 2016. Ensemble-based and hybrid recommender systems. In Recommender Systems . Springer, 199-224. ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. A Review of Modern Fashion Recommender Systems 111:29 [6] Divyansh Aggarwal, Elchin Valiyev, Fadime Sener, and Angela Yao. 2018. Learning Style Compatibility for Furniture. In Pattern Recognition - 40th German Conference, GCPR 2018, Stuttgart, Germany, October 9-12, 2018, Proceedings (Lecture Notes in Computer Science) , Thomas Brox, Andrés Bruhn, and Mario Fritz (Eds.), Vol. 11269. Springer, 552-566. https://doi.org/10.1007/978-3-030-12939-2_38 [7] Kenan E Ak, Ashraf A Kassim, Joo Hwee Lim, and Jo Yew Tham. 2018. Learning attribute representations with localization for flexible fashion search. In Proceedings of the IEEE conference on computer vision and pattern recognition . 7708-7717. [8] Ziad Al-Halah and Kristen Grauman. 2020. From paris to berlin: Discovering fashion style influences around the world. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 10136-10145. [9] Ziad Al-Halah, Rainer Stiefelhagen, and Kristen Grauman. 2017. Fashion forward: Forecasting visual style in fashion. In Proceedings of the IEEE international conference on computer vision . 388-397. [10] Mohammed Al-Rawi and Joeran Beel. 2021. Probabilistic Color Modelling of Clothing Items. Recommender Systems in Fashion and Retail 734 (2021), 21. [11] Enrique Amigó, Yashar Deldjoo, Stefano Mizzaro, and Alejandro Bellogín. 2023. A unifying and general account of fairness measurement in recommender systems. Information Processing & Management 60, 1 (2023), 103115. [12] Vito Walter Anelli, Yashar Deldjoo, Tommaso Di Noia, Daniele Malitesta, and Felice Antonio Merra. 2021. A study of defensive methods to protect visual recommendation against adversarial manipulation of images. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1094-1103. [13] Phoebe R Apeagyei et al. 2010. Application of 3D body scanning technology to human measurement for clothing fit. International Journal of Digital Content Technology and its Applications 4, 7 (2010), 58-68. [14] Susan P Ashdown, Suzanne Loker, Katherine Schoenfelder, and Lindsay Lyman-Clarke. 2004. Using 3D scans for fit analysis. Journal of Textile and Apparel, Technology and Management 4, 1 (2004), 1-12. [15] Krisztian Balog and Filip Radlinski. 2020. Measuring Recommendation Explanation Quality: The Conflicting Goals of Explanations. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 329-338. [16] Roja Bandari, Sitaram Asur, and Bernardo Huberman. 2021. The Pulse of News in Social Media: Forecasting Popularity. Proceedings of the International AAAI Conference on Web and Social Media 6, 1 (Aug. 2021), 26-33. https://ojs.aaai.org/index.php/ICWSM/article/view/14261 [17] Debopriyo Banerjee, Krothapalli Sreenivasa Rao, Shamik Sural, and Niloy Ganguly. 2020. BOXREC: Recommending a Box of Preferred Outfits in Online Shopping. ACM Trans. Intell. Syst. Technol. 11, 6 (2020), 69:1-69:28. https: //doi.org/10.1145/3408890 [18] Sean Bell and Kavita Bala. 2015. Learning visual similarity for product design with convolutional neural networks. ACM Trans. Graph. 34, 4 (2015), 98:1-98:10. https://doi.org/10.1145/2766959 [19] Elaine M Bettaney, Stephen R Hardwick, Odysseas Zisimopoulos, and Benjamin Paul Chamberlain. 2019. Fashion outfit generation for E-commerce. arXiv preprint arXiv:1904.00741 (2019). [20] Anurag Bhardwaj, Vignesh Jagadeesh, Wei Di, Robinson Piramuthu, and Elizabeth F. Churchill. 2014. Enhancing Visual Fashion Recommendations with Users in the Loop. CoRR abs/1405.4013 (2014). arXiv:1405.4013 http: //arxiv.org/abs/1405.4013 [21] Christian Bracher, Sebastian Heinz, and Roland Vollgraf. 2016. Fashion DNA: Merging Content and Sales Data for Recommendation and Article Mapping. CoRR abs/1609.02489 (2016). [22] Alexander Brand and Tom Gross. 2020. Paying the Pink Tax on a Blue Dress - Exploring Gender-Based Price-Premiums in Fashion Recommendations. In Human-Centered Software Engineering - 8th IFIP WG 13.2 International Working Conference, HCSE 2020, Eindhoven, The Netherlands, November 30 - December 2, 2020, Proceedings (Lecture Notes in Computer Science) , Vol. 12481. Springer, 190-198. https://doi.org/10.1007/978-3-030-64266-2_12 [23] Ângelo Cardoso, Fabio Daolio, and Saúl Vargas. 2018. Product Characterisation towards Personalisation: Learning Attributes from Unstructured Data to Recommend Fashion Products. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2018, London, UK, August 19-23, 2018 . ACM, 80-89. https://doi.org/10.1145/3219819.3219888 [24] Yeongnam Chae, Jiu Xu, Björn Stenger, and Soh Masuko. 2018. Color navigation by qualitative attributes for fashion recommendation. In IEEE International Conference on Consumer Electronics, ICCE 2018, Las Vegas, NV, USA, January 12-14, 2018 . IEEE, 1-3. https://doi.org/10.1109/ICCE.2018.8326138 [25] Yu-Ting Chang, Wen-Haung Cheng, Bo Wu, and Kai-Lung Hua. 2017. Fashion world map: Understanding cities through streetwear fashion. In Proceedings of the 25th ACM international conference on Multimedia . 91-99. [26] Huizhong Chen, Andrew Gallagher, and Bernd Girod. 2012. Describing clothing by semantic attributes. In European conference on computer vision . Springer, 609-623. [27] Jingyuan Chen, Hanwang Zhang, Xiangnan He, Liqiang Nie, Wei Liu, and Tat-Seng Chua. 2017. Attentive Collaborative Filtering: Multimedia Recommendation with Item- and Component-Level Attention. In SIGIR . ACM, 335-344. ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. 111:30 Deldjoo et al. ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. A Review of Modern Fashion Recommender Systems 111:31 [50] Ginger Delmas, Rafael Sampaio de Rezende, Gabriela Csurka, and Diane Larlus. 2022. ARTEMIS: Attention-based Retrieval with Text-Explicit Matching and Implicit Similarity. In The Tenth International Conference on Learning Representations, ICLR 2022, Virtual Event, April 25-29, 2022 . OpenReview.net. https://openreview.net/forum?id= CVfLvQq9gLo [51] Ginger Delmas, Rafael S Rezende, Gabriela Csurka, and Diane Larlus. 2022. ARTEMIS: Attention-based Retrieval with Text-Explicit Matching and Implicit Similarity. In International Conference on Learning Representations . [52] Yujuan Ding, Yunshan Ma, Lizi Liao, Waikeung Wong, and Tat-Seng Chua. 2021. Leveraging Multiple Relations for Fashion Trend Forecasting Based on Social Media. IEEE Transactions on Multimedia (2021). [53] Min Dong, Xianyi Zeng, Ludovic Koehl, and Junjie Zhang. 2020. An interactive knowledge-based recommender system for fashion product design in the big data environment. Inf. Sci. 540 (2020), 469-488. https://doi.org/10.1016/j. ins.2020.05.094 [54] Wenqi Fan, Zihuai Zhao, Jiatong Li, Yunqing Liu, Xiaowei Mei, Yiqi Wang, Jiliang Tang, and Qing Li. 2023. Recommender systems in the era of large language models (llms). arXiv preprint arXiv:2307.02046 (2023). [55] Beatriz Quintino Ferreira, Joao P Costeira, Ricardo G Sousa, Liang-Yan Gui, and Joao P Gomes. 2019. Pose Guided Attention for Multi-Label Fashion Image Classification. In 2019 IEEE/CVF International Conference on Computer Vision Workshop (ICCVW) . IEEE Computer Society, 3125-3128. [56] Takao Furukawa, Chikako Miura, Kaoru Mori, Sou Uchida, and Makoto Hasegawa. 2019. Visualisation for analysing evolutionary dynamics of fashion trends. International Journal of Fashion Design, Technology and Education 12, 2 (2019), 247-259. [57] Romain Guigourès, Yuen King Ho, Evgenii Koriagin, Abdul-Saboor Sheikh, Urs Bergmann, and Reza Shirvany. 2018. A hierarchical bayesian model for size recommendation in fashion. In RecSys . ACM, 392-396. [58] M Hadi Kiapour, Xufeng Han, Svetlana Lazebnik, Alexander C Berg, and Tamara L Berg. 2015. Where to buy it: Matching street clothing photos in online shops. In Proceedings of the IEEE international conference on computer vision . 3343-3351. [59] Xianjing Han, Xuemeng Song, Jianhua Yin, Yinglong Wang, and Liqiang Nie. 2019. Prototype-guided attribute-wise interpretable scheme for clothing matching. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . 785-794. [60] Xintong Han, Zuxuan Wu, Yu-Gang Jiang, and Larry S. Davis. 2017. Learning Fashion Compatibility with Bidirectional LSTMs. In Proceedings of the 2017 ACM on Multimedia Conference, MM 2017, Mountain View, CA, USA, October 23-27, 2017 . ACM, 1078-1086. https://doi.org/10.1145/3123266.3123394 [61] Xintong Han, Zuxuan Wu, Yu-Gang Jiang, and Larry S Davis. 2017. Learning fashion compatibility with bidirectional lstms. In Proceedings of the 25th ACM international conference on Multimedia . ACM, 1078-1086. [62] Kota Hara, Vignesh Jagadeesh, and Robinson Piramuthu. 2016. Fashion apparel detection: the role of deep convolutional neural network and pose-dependent priors. In 2016 IEEE Winter Conference on Applications of Computer Vision (WACV) . IEEE, 1-9. [63] Ruining He and Julian McAuley. 2016. VBPR: visual bayesian personalized ranking from implicit feedback. In Thirtieth AAAI Conference on Artificial Intelligence . [64] Ruining He and Julian J. McAuley. 2016. Ups and Downs: Modeling the Visual Evolution of Fashion Trends with One-Class Collaborative Filtering. In Proceedings of the 25th International Conference on World Wide Web, WWW 2016, Montreal, Canada, April 11 - 15, 2016 , Jacqueline Bourdeau, Jim Hendler, Roger Nkambou, Ian Horrocks, and Ben Y. Zhao (Eds.). ACM, 507-517. https://doi.org/10.1145/2872427.2883037 [65] Ruining He and Julian J. McAuley. 2016. VBPR: Visual Bayesian Personalized Ranking from Implicit Feedback. In Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence, February 12-17, 2016, Phoenix, Arizona, USA , Dale Schuurmans and Michael P. Wellman (Eds.). AAAI Press, 144-150. http://www.aaai.org/ocs/index.php/AAAI/ AAAI16/paper/view/11914 [66] Ruining He, Charles Packer, and Julian J. McAuley. 2016. Learning Compatibility Across Categories for Heterogeneous Item Recommendation. In IEEE 16th International Conference on Data Mining, ICDM 2016, December 12-15, 2016, Barcelona, Spain , Francesco Bonchi, Josep Domingo-Ferrer, Ricardo Baeza-Yates, Zhi-Hua Zhou, and Xindong Wu (Eds.). IEEE Computer Society, 937-942. https://doi.org/10.1109/ICDM.2016.0116 [67] Tong He and Yang Hu. 2018. FashionNet: Personalized Outfit Recommendation with Deep Neural Network. CoRR abs/1810.02443 (2018). arXiv:1810.02443 http://arxiv.org/abs/1810.02443 [68] Sebastian Heinz, Christian Bracher, and Roland Vollgraf. 2017. An LSTM-Based Dynamic Customer Model for Fashion Recommendation. In RecTemp@RecSys (CEUR Workshop Proceedings) , Vol. 1922. CEUR-WS.org, 45-49. [69] Shintami Chusnul Hidayati, Ting Wei Goh, Ji-Sheng Gary Chan, Cheng-Chun Hsu, John See, Lai-Kuan Wong, KaiLung Hua, Yu Tsao, and Wen-Huang Cheng. 2021. Dress With Style: Learning Style From Joint Deep Embedding of Clothing Styles and Body Shapes. IEEE Trans. Multim. 23 (2021), 365-377. https://doi.org/10.1109/TMM.2020.2980195 ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. 111:32 Deldjoo et al. ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. A Review of Modern Fashion Recommender Systems 111:33 ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. 111:34 Deldjoo et al. ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. A Review of Modern Fashion Recommender Systems 111:35 ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. 111:36 Deldjoo et al. ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. A Review of Modern Fashion Recommender Systems 111:37 ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023. 111:38 Deldjoo et al. International Society for Optics and Photonics, 1117938. [196] Wei Zhou, P. Y. Mok, Yanghong Zhou, Yangping Zhou, Jialie Shen, Qiang Qu, and K. P. Chau. 2019. Fashion recommendations through cross-media information retrieval. J. Visual Communication and Image Representation 61 (2019), 112-120. [197] Zhengzhong Zhou, Xiu Di, Wei Zhou, and Liqing Zhang. 2018. Fashion Sensitive Clothing Recommendation Using Hierarchical Collocation Model. In ACM Multimedia . ACM, 1119-1127. [198] Shizhan Zhu, Sanja Fidler, Raquel Urtasun, Dahua Lin, and Chen Change Loy. 2017. Be Your Own Prada: Fashion Synthesis with Structural Coherence. In IEEE International Conference on Computer Vision, ICCV 2017, Venice, Italy, October 22-29, 2017 . IEEE Computer Society, 1689-1697. https://doi.org/10.1109/ICCV.2017.186 [199] Kevin Zielnicki. 2019. Simulacra and Selection: Clothing Set Recommendation at Stitch Fix. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1379-1380. [200] Susana Zoghbi, Geert Heyman, Juan Carlos Gomez, and Marie-Francine Moens. 2016. Fashion meets computer vision and nlp at e-commerce search. International Journal of Computer and Electrical Engineering 8, 1 (2016), 31-43. [201] Qin Zou, Zheng Zhang, Qian Wang, Qingquan Li, Long Chen, and Song Wang. 2016. Who Leads the Clothing Fashion: Style, Color, or Texture? A Computational Study. CoRR abs/1608.07444 (2016). arXiv:1608.07444 http: //arxiv.org/abs/1608.07444 ACM Computing Surveys, Vol. 37, No. 4, Article 111. Publication date: December 2023.",
   "keywords_parsed": [
-    "None"
+    "recommender systems",
+    "information retrieval",
+    "fashion retail",
+    "machine learning",
+    "artificial intelligence",
+    "computer vision",
+    "text mining",
+    "e-commerce"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Amazon \"Made for You\" Custom T-shirt"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Shop your Right Size: A System for Recommending Sizes for Fashion products"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A Unified Framework for Outfit Design and Advice"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Personalizing Similar Product Recommendations in Fashion E-commerce"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Ensemble-based and hybrid recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Learning Style Compatibility for Furniture"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Learning attribute representations with localization for flexible fashion search"
+    },
+    {
+      "ref_id": "b8",
+      "title": "From paris to berlin: Discovering fashion style influences around the world"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Fashion forward: Forecasting visual style in fashion"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Probabilistic Color Modelling of Clothing Items"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A unifying and general account of fairness measurement in recommender systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A study of defensive methods to protect visual recommendation against adversarial manipulation of images"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Application of 3D body scanning technology to human measurement for clothing fit"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Using 3D scans for fit analysis"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Measuring Recommendation Explanation Quality: The Conflicting Goals of Explanations"
+    },
+    {
+      "ref_id": "b16",
+      "title": "The Pulse of News in Social Media: Forecasting Popularity"
+    },
+    {
+      "ref_id": "b17",
+      "title": "BOXREC: Recommending a Box of Preferred Outfits in Online Shopping"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Learning visual similarity for product design with convolutional neural networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Fashion outfit generation for E-commerce"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Enhancing Visual Fashion Recommendations with Users in the Loop"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Fashion DNA: Merging Content and Sales Data for Recommendation and Article Mapping"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Paying the Pink Tax on a Blue Dress - Exploring Gender-Based Price-Premiums in Fashion Recommendations"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Product Characterisation towards Personalisation: Learning Attributes from Unstructured Data to Recommend Fashion Products"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Color navigation by qualitative attributes for fashion recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Fashion world map: Understanding cities through streetwear fashion"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Describing clothing by semantic attributes"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Attentive Collaborative Filtering: Multimedia Recommendation with Item- and Component-Level Attention"
+    },
+    {
+      "ref_id": "b50",
+      "title": "ARTEMIS: Attention-based Retrieval with Text-Explicit Matching and Implicit Similarity"
+    },
+    {
+      "ref_id": "b51",
+      "title": "ARTEMIS: Attention-based Retrieval with Text-Explicit Matching and Implicit Similarity"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Leveraging Multiple Relations for Fashion Trend Forecasting Based on Social Media"
+    },
+    {
+      "ref_id": "b53",
+      "title": "An interactive knowledge-based recommender system for fashion product design in the big data environment"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Recommender systems in the era of large language models (llms)"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Pose Guided Attention for Multi-Label Fashion Image Classification"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Visualisation for analysing evolutionary dynamics of fashion trends"
+    },
+    {
+      "ref_id": "b57",
+      "title": "A hierarchical bayesian model for size recommendation in fashion"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Where to buy it: Matching street clothing photos in online shops"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Prototype-guided attribute-wise interpretable scheme for clothing matching"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Learning Fashion Compatibility with Bidirectional LSTMs"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Learning fashion compatibility with bidirectional lstms"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Fashion apparel detection: the role of deep convolutional neural network and pose-dependent priors"
+    },
+    {
+      "ref_id": "b63",
+      "title": "VBPR: visual bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Ups and Downs: Modeling the Visual Evolution of Fashion Trends with One-Class Collaborative Filtering"
+    },
+    {
+      "ref_id": "b65",
+      "title": "VBPR: Visual Bayesian Personalized Ranking from Implicit Feedback"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Learning Compatibility Across Categories for Heterogeneous Item Recommendation"
+    },
+    {
+      "ref_id": "b67",
+      "title": "FashionNet: Personalized Outfit Recommendation with Deep Neural Network"
+    },
+    {
+      "ref_id": "b68",
+      "title": "An LSTM-Based Dynamic Customer Model for Fashion Recommendation"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Dress With Style: Learning Style From Joint Deep Embedding of Clothing Styles and Body Shapes"
+    },
+    {
+      "ref_id": "b196",
+      "title": "Fashion recommendations through cross-media information retrieval"
+    },
+    {
+      "ref_id": "b197",
+      "title": "Fashion Sensitive Clothing Recommendation Using Hierarchical Collocation Model"
+    },
+    {
+      "ref_id": "b198",
+      "title": "Be Your Own Prada: Fashion Synthesis with Structural Coherence"
+    },
+    {
+      "ref_id": "b199",
+      "title": "Simulacra and Selection: Clothing Set Recommendation at Stitch Fix"
+    },
+    {
+      "ref_id": "b200",
+      "title": "Fashion meets computer vision and nlp at e-commerce search"
+    },
+    {
+      "ref_id": "b201",
+      "title": "Who Leads the Clothing Fashion: Style, Color, or Texture? A Computational Study"
+    }
   ]
 }

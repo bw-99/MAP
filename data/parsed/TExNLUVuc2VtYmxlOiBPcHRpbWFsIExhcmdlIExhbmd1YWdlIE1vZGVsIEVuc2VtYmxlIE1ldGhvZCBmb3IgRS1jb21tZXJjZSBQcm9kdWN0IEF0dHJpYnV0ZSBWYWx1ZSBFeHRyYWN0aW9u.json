@@ -19,7 +19,161 @@
   "REFERENCES": "[1] Monica Agrawal, Stefan Hegselmann, Hunter Lang, Yoon Kim, and David Sontag. 2022. Large language models are few-shot clinical information extractors. In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing . 1998-2022. [2] Ansel Blume, Nasser Zalmout, Heng Ji, and Xian Li. 2023. Generative Models for Product Attribute Extraction. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: Industry Track . 575-585. [3] Alexander Brinkmann, Roee Shraga, and Christian Bizer. 2023. Product Attribute Value Extraction using Large Language Models. arXiv preprint arXiv:2310.12537 (2023). [4] Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al. 2020. Language models are few-shot learners. Advances in neural information processing systems 33 (2020), 1877-1901. [5] Jiao Chen, Luyi Ma, Xiaohan Li, Nikhil Thakurdesai, Jianpeng Xu, Jason HD Cho, Kaushiki Nag, Evren Korpeoglu, Sushant Kumar, and Kannan Achan. 2023. Knowledge Graph Completion Models are Few-shot Learners: An Empirical Study of Relation Labeling in E-commerce with LLMs. arXiv preprint arXiv:2305.09858 (2023). [6] Ziqi Chen, Liangxiao Jiang, and Chaoqun Li. 2022. Label augmented and weighted majority voting for crowdsourcing. Information Sciences 606 (2022), 397-409. [7] Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung Won Chung, Charles Sutton, Sebastian Gehrmann, et al. 2023. Palm: Scaling language modeling with pathways. Journal of Machine Learning Research 24, 240 (2023), 1-113. [8] Alexander Philip Dawid and Allan M Skene. 1979. Maximum likelihood estimation of observer error-rates using the EM algorithm. Journal of the Royal Statistical Society: Series C (Applied Statistics) 28, 1 (1979), 20-28. [9] Thomas G Dietterich. 2000. Ensemble methods in machine learning. In International workshop on multiple classifier systems . Springer, 1-15. [10] Rayid Ghani, Katharina Probst, Yan Liu, Marko Krema, and Andrew Fano. 2006. Text mining for product attribute extraction. ACM SIGKDD Explorations Newsletter 8, 1 (2006), 41-48. [11] David W Hosmer Jr, Stanley Lemeshow, and Rodney X Sturdivant. 2013. Applied logistic regression . Vol. 398. John Wiley & Sons. [12] Yupeng Hou, Junjie Zhang, Zihan Lin, Hongyu Lu, Ruobing Xie, Julian McAuley, and Wayne Xin Zhao. 2023. Large language models are zero-shot rankers for recommender systems. arXiv preprint arXiv:2305.08845 (2023). [13] Dongfu Jiang, Xiang Ren, and Bill Yuchen Lin. 2023. LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion. arXiv preprint arXiv:2306.02561 (2023). [14] Giannis Karamanolakis, Jun Ma, and Xin Luna Dong. 2020. Txtract: Taxonomyaware knowledge extraction for thousands of product categories. arXiv preprint arXiv:2004.13852 (2020). [15] Zornitsa Kozareva, Qi Li, Ke Zhai, and Weiwei Guo. 2016. Recognizing salient entities in shopping queries. In Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers) . 107-111. [16] Hongwei Li and Bin Yu. 2014. Error rate bounds and iterative weighted majority voting for crowdsourcing. arXiv preprint arXiv:1411.4086 (2014). [17] Reza Yousefi Maragheh, Chenhao Fang, Charan Chand Irugu, Parth Parikh, Jason Cho, Jianpeng Xu, Saranyan Sukumar, Malay Patel, Evren Korpeoglu, Sushant Kumar, et al. 2023. LLM-TAKE: Theme-Aware Keyword Extraction Using Large Language Models. In 2023 IEEE International Conference on Big Data (BigData) . IEEE, 4318-4324. [18] Ajinkya More. 2016. Attribute extraction from product titles in ecommerce. arXiv preprint arXiv:1608.04670 (2016). [19] Tanmay Parekh, I-Hung Hsu, Kuan-Hao Huang, Kai-Wei Chang, and Nanyun Peng. 2023. GENEVA: Benchmarking Generalizability for Event Argument Extraction with Hundreds of Event Types and Argument Roles. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . 3664-3686. [20] Duangmanee Putthividhya and Junling Hu. 2011. Bootstrapped named entity recognition for product attribute extraction. In Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing . 1557-1567. [21] Martin Rezk, Laura Alonso Alemany, Lasguido Nio, and Ted Zhang. 2019. Accurate product attribute extraction on the field. In 2019 IEEE 35th International Conference on Data Engineering (ICDE) . IEEE, 1862-1873. [22] Tian Tian and Jun Zhu. 2015. Max-margin majority voting for learning from crowds. Advances in neural information processing systems 28 (2015). [23] Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, et al. 2023. Llama: Open and efficient foundation language models. arXiv preprint arXiv:2302.13971 (2023). [24] Damir Vandic, Jan-Willem Van Dam, and Flavius Frasincar. 2012. Faceted product search powered by the semantic web. Decision Support Systems 53, 3 (2012), 425-437. [25] Fanqi Wan, Xinting Huang, Deng Cai, Xiaojun Quan, Wei Bi, and Shuming Shi. 2024. Knowledge fusion of large language models. arXiv preprint arXiv:2401.10491 (2024). [26] Qifan Wang, Li Yang, Bhargav Kanagal, Sumit Sanghai, D Sivakumar, Bin Shu, Zac Yu, and Jon Elsas. 2020. Learning to extract attribute value from product via question answering: A multi-task approach. In Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining . 47-55. [27] Xingyao Wang, Sha Li, and Heng Ji. 2023. Code4struct: Code generation for few-shot event structure prediction. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . 3640-3663. [28] Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, Maarten Bosma, Denny Zhou, Donald Metzler, et al. 2022. Emergent abilities of large language models. arXiv preprint arXiv:2206.07682 (2022). [29] Yuk Wah Wong, Dominic Widdows, Tom Lokovic, and Kamal Nigam. 2009. Scalable attribute-value extraction from semi-structured text. In 2009 IEEE international conference on data mining workshops . IEEE, 302-307. [30] Huimin Xu, Wenting Wang, Xinnian Mao, Xinyu Jiang, and Man Lan. 2019. Scaling up open tagging from tens to thousands: Comprehension empowered attribute value extraction from product title. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics . 5214-5223. [31] Jun Yan, Nasser Zalmout, Yan Liang, Christan Grant, Xiang Ren, and Xin Luna Dong. 2021. AdaTag: Multi-attribute value extraction from product profiles with adaptive decoding. arXiv preprint arXiv:2106.02318 (2021). [32] Li Yang, Qifan Wang, Jingang Wang, Xiaojun Quan, Fuli Feng, Yu Chen, Madian Khabsa, Sinong Wang, Zenglin Xu, and Dongfang Liu. 2023. Mixpave: Mixprompt tuning for few-shot product attribute value extraction. In Findings of the Association for Computational Linguistics: ACL 2023 . 9978-9991. [33] Li Yang, Qifan Wang, Zac Yu, Anand Kulkarni, Sumit Sanghai, Bin Shu, Jon Elsas, and Bhargav Kanagal. 2022. MAVE: A product dataset for multi-source attribute value extraction. In Proceedings of the fifteenth ACM international conference on web search and data mining . 1256-1265. [34] Liyi Zhang, Mingzhu Zhu, and Wei Huang. 2009. A Framework for an Ontologybased E-commerce Product Information Retrieval System. J. Comput. 4, 6 (2009), 436-443. [35] Xinyang Zhang, Chenwei Zhang, Xian Li, Xin Luna Dong, Jingbo Shang, Christos Faloutsos, and Jiawei Han. 2022. Oa-mine: open-world attribute mining for ecommerce products with weak supervision. In Proceedings of the ACM Web Conference 2022 . 3153-3161. [36] Guineng Zheng, Subhabrata Mukherjee, Xin Luna Dong, and Feifei Li. 2018. Opentag: Open attribute value extraction from product profiles. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1049-1058. [37] Henry Peng Zou, Vinay Samuel, Yue Zhou, Weizhi Zhang, Liancheng Fang, Zihe Song, Philip S. Yu, and Cornelia Caragea. 2024. ImplicitAVE: An Open-Source Dataset and Multimodal LLMs Benchmark for Implicit Attribute Value Extraction. arXiv preprint arXiv:2404.15592 (2024). [38] Henry Peng Zou, Gavin Heqing Yu, Ziwei Fan, Dan Bu, Han Liu, Peng Dai, Dongmei Jia, and Cornelia Caragea. 2024. EIVEN: Efficient Implicit Attribute Value Extraction using Multimodal LLM. In Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Industry Track .",
   "keywords_parsed": [
     "Attribute Value Extraction",
-    " Large Language Models",
-    " E-commerce"
+    "Large Language Models",
+    "E-commerce"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Large language models are few-shot clinical information extractors"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Generative Models for Product Attribute Extraction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Product Attribute Value Extraction using Large Language Models"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Knowledge Graph Completion Models are Few-shot Learners: An Empirical Study of Relation Labeling in E-commerce with LLMs"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Label augmented and weighted majority voting for crowdsourcing"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Palm: Scaling language modeling with pathways"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Maximum likelihood estimation of observer error-rates using the EM algorithm"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Ensemble methods in machine learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Text mining for product attribute extraction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Applied logistic regression"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Large language models are zero-shot rankers for recommender systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Txtract: Taxonomy-aware knowledge extraction for thousands of product categories"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Recognizing salient entities in shopping queries"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Error rate bounds and iterative weighted majority voting for crowdsourcing"
+    },
+    {
+      "ref_id": "b17",
+      "title": "LLM-TAKE: Theme-Aware Keyword Extraction Using Large Language Models"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Attribute extraction from product titles in ecommerce"
+    },
+    {
+      "ref_id": "b19",
+      "title": "GENEVA: Benchmarking Generalizability for Event Argument Extraction with Hundreds of Event Types and Argument Roles"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Bootstrapped named entity recognition for product attribute extraction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Accurate product attribute extraction on the field"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Max-margin majority voting for learning from crowds"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Llama: Open and efficient foundation language models"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Faceted product search powered by the semantic web"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Knowledge fusion of large language models"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Learning to extract attribute value from product via question answering: A multi-task approach"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Code4struct: Code generation for few-shot event structure prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Emergent abilities of large language models"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Scalable attribute-value extraction from semi-structured text"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Scaling up open tagging from tens to thousands: Comprehension empowered attribute value extraction from product title"
+    },
+    {
+      "ref_id": "b31",
+      "title": "AdaTag: Multi-attribute value extraction from product profiles with adaptive decoding"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Mixpave: Mixprompt tuning for few-shot product attribute value extraction"
+    },
+    {
+      "ref_id": "b33",
+      "title": "MAVE: A product dataset for multi-source attribute value extraction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "A Framework for an Ontology-based E-commerce Product Information Retrieval System"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Oa-mine: open-world attribute mining for ecommerce products with weak supervision"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Opentag: Open attribute value extraction from product profiles"
+    },
+    {
+      "ref_id": "b37",
+      "title": "ImplicitAVE: An Open-Source Dataset and Multimodal LLMs Benchmark for Implicit Attribute Value Extraction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "EIVEN: Efficient Implicit Attribute Value Extraction using Multimodal LLM"
+    }
   ]
 }

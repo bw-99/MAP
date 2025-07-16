@@ -33,8 +33,8 @@
   "C.3 Parameters Sensitivity": "We conduct the parameter sensitivity on the two critical hyperparameters in the gradient process of HTLNet, i.e. 𝛼 and 𝛾 , which affects the optimization strategy. The results on the KuaiRand dataset are shown in Figure 8. In Figure 8, we varies the both 𝛼 and 𝛾 in the range [ 1 𝑒 -5 , 1 ] with the step of 10. Overall, increasing both 𝛼 and 𝛾 will improve the performance at the beginning, but too large a value will degrade the performance. However, the effect of 𝛾 is less sensitive compared with 𝛼 . We speculate that the gradients of the core target magnitude differ from preceding targets in a certain value, far way from which will be detrimental to the core target performance. While 𝛼 controlling the direction will be smoother in the tuning process.",
   "keywords_parsed": [
     "Multi-task Learning",
-    " Task Dependence",
-    " Hybrid Targets",
-    " Recommendation"
+    "Task Dependence",
+    "Hybrid Targets",
+    "Recommendation"
   ]
 }

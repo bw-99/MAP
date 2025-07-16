@@ -36,7 +36,141 @@
   "A.2 Nearline inference for GNNs": "Here on Figure 7 we present details on nearline pipeline developed for Job Recommendations Engine. Due to deployment of the pipeline we could enable fresh job recommendations within LinkedIn. Figure 7: GNN nearline pipeline example Siore Hach",
   "keywords_parsed": [
     "Graph Neural Networks",
-    " GNN",
-    " Recommender Systems"
+    "GNN",
+    "Recommender Systems"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "adSformers: Personalization from Short-Term Sequences and Diversity of Representations in Etsy Ads"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Scaling graph neural networks with approximate pagerank"
+    },
+    {
+      "ref_id": "b3",
+      "title": "LANNS: a web-scale approximate nearest neighbor lookup system"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Mixed precision training"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Relational Deep Learning: Graph Representation Learning on Relational Databases"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Grale: Designing Networks for Graph Learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Inductive Representation Learning on Large Graphs"
+    },
+    {
+      "ref_id": "b8",
+      "title": "MLPInit: Embarrassingly Simple GNN Training Acceleration with MLP Initialization"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A MultiStrategy-Based Pre-Training Method for Cold-Start Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "PreTraining Graph Neural Networks for Cold-Start Users and Items Representation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "How Powerful are Graph Neural Networks?"
+    },
+    {
+      "ref_id": "b12",
+      "title": "One weird trick for parallelizing convolutional neural networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "an open-source system for automating deployment"
+    },
+    {
+      "ref_id": "b14",
+      "title": "GraphCast: Learning skillful medium-range global weather forecasting"
+    },
+    {
+      "ref_id": "b15",
+      "title": "PyTorch-BigGraph: A Large-scale Graph Embedding System"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Generating Wikipedia by Summarizing Long Sequences"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Uncertainty-Aware Consistency Learning for Cold-Start Item Recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Que2Search: Fast and Accurate Query and Document Understanding for Search at Facebook"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Heterogeneous Graph Neural Networks for Large-Scale Bid Keyword Matching"
+    },
+    {
+      "ref_id": "b20",
+      "title": "HUGE: Huge Unsupervised Graph Embeddings with TPUs"
+    },
+    {
+      "ref_id": "b21",
+      "title": "PinnerFormer: Sequence Modeling for User Representation at Pinterest"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Attribute Graph Neural Networks for Strict Cold Start Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Nxtpost: User to post recommendations in facebook groups"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Temporal graph networks for deep learning on dynamic graphs"
+    },
+    {
+      "ref_id": "b25",
+      "title": "DeepGNN is a framework for training machine learning models on large scale graph data"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Graph Neural Networks for Friend Ranking in Large-Scale Social Platforms"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Modeling Relational Data with Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Foundations and modeling of dynamic networks using dynamic graph neural networks: A survey"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b30",
+      "title": "FORA: Simple and Effective Approximate Single-Source Personalized PageRank"
+    },
+    {
+      "ref_id": "b31",
+      "title": "TopPPR: Top-k Personalized PageRank Queries with Precision Guarantees on Large Graphs"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Graph convolutional neural networks for web-scale recommender systems"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Fast-track graph ML with GraphStorm: A new way to solve problems on enterprise-scale graphs"
+    }
   ]
 }

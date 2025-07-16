@@ -28,7 +28,97 @@
   "REFERENCES": "[1] Carl Yang, Xiaolin Shi, Luo Jie, and Jiawei Han. I know you'll be back: Interpretable new user clustering and churn prediction on a mobile social application. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining , pages 914-922, 2018. [2] Yozen Liu, Xiaolin Shi, Lucas Pierce, and Xiang Ren. Characterizing and forecasting user engagement with in-app action graph: A case study of snapchat. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining , pages 2023-2031, 2019. [3] Xianfeng Tang, Yozen Liu, Neil Shah, Xiaolin Shi, Prasenjit Mitra, and Suhang Wang. Knowing your fate: Friendship, action and temporal explanations for user engagement prediction on social apps. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining , pages 2269-2279, 2020. [4] Caroline Lo, Dan Frankowski, and Jure Leskovec. Understanding behaviors that lead to purchasing: A case study of pinterest. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining , pages 531-540, 2016. [5] Zhiyuan Lin, Tim Althoff, and Jure Leskovec. I'll be back: on the multiple lives of users of a mobile activity tracking application. In Proceedings of the 2018 World Wide Web Conference , pages 1501-1511, 2018. [6] Vicki G Morwitz, Eric Johnson, and David Schmittlein. Does measuring intent change behavior? Journal of consumer research , 20(1):46-61, 1993. [7] Martin Fishbein and Icek Ajzen. Belief, attitude, intention, and behavior: An introduction to theory and research. Philosophy and Rhetoric , 10(2), 1977. [8] David M Blei, Andrew Y Ng, and Michael I Jordan. Latent dirichlet allocation. the Journal of machine Learning research , 3:993-1022, 2003. [9] Farhan Asif Chowdhury, Yozen Liu, Koustuv Saha, Nicholas Vincent, Leonardo Neves, Neil Shah, and Maarten W Bos. Ceam: The effectiveness of cyclic and ephemeral attention models of user behavior on social platforms. In Proceedings of the International AAAI Conference on Web and Social Media , volume 15, pages 117-128, 2021. [10] Guozhen Zhang, Jinwei Zeng, Zhengyue Zhao, Depeng Jin, and Yong Li. A counterfactual modeling framework for churn prediction. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining , pages 1424-1432, 2022. [11] Arno De Caigny, Kristof Coussement, and Koen W De Bock. A new hybrid classification algorithm for customer churn prediction based on logistic regression and decision trees. European Journal of Operational Research , 269(2):760-772, 2018. [12] Lin Yang, Mingxuan Yuan, Yanjiao Chen, Wei Wang, Qian Zhang, and Jia Zeng. Personalized user engagement modeling for mobile videos. Computer Networks , 126:256-267, 2017. [13] Guandong Xu, Yanchun Zhang, and Xun Yi. Modeling user behavior for web recommendation using lda model. In 2008 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology , volume 3, pages 529-532. IEEE, 2008. [14] Mark J Carman, Fabio Crestani, Morgan Harvey, and Mark Baillie. Towards query log based personalization using topic models. In Proceedings of the 19th ACM international conference on Information and knowledge management , pages 1849-1852, 2010. [15] Jimmy Lin and W John Wilbur. Modeling actions of pubmed users with n-gram language models. Information retrieval , 12(4):487-503, 2009. [16] Pablo Loyola, Chen Liu, and Yu Hirate. Modeling user session and intent with an attention-based encoder-decoder architecture. In Proceedings of the Eleventh ACM Conference on Recommender Systems , pages 147-151, 2017. [17] Rakshit Agrawal, Anwar Habeeb, and Chih-Hsin Hsueh. Learning user intent from action sequences on interactive systems. In Workshops at the Thirty-Second AAAI Conference on Artificial Intelligence , 2018. [18] Qi Guo and Eugene Agichtein. Ready to buy or just browsing? detecting web searcher goals from interaction data. In Proceedings of the 33rd international ACMSIGIR conference on Research and development in information retrieval , pages 130-137, 2010. [19] Wenchao Gu, Yanlin Wang, Lun Du, Hongyu Zhang, Shi Han, Dongmei Zhang, and Michael Lyu. Accelerating code search with deep hashing and code classification. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , pages 2534-2544, 2022. [20] Justin Cheng, Caroline Lo, and Jure Leskovec. Predicting intent using activity logs: How goal specificity and temporal range affect user behavior. In Proceedings of the 26th International Conference on World Wide Web Companion , pages 593-601, 2017. [21] Haoyang Li, Xin Wang, Ziwei Zhang, Jianxin Ma, Peng Cui, and Wenwu Zhu. Intention-aware sequential recommendation with structured intent transition. IEEE Transactions on Knowledge and Data Engineering , 2021. [22] Yongjun Chen, Zhiwei Liu, Jia Li, Julian McAuley, and Caiming Xiong. Intent contrastive learning for sequential recommendation. In Proceedings of the ACM Web Conference 2022 , pages 2172-2182, 2022.",
   "keywords_parsed": [
     "User Intent",
-    " User Engagement Forecasting",
-    " Meta Learning"
+    "User Engagement Forecasting",
+    "Meta Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "I know you'll be back: Interpretable new user clustering and churn prediction on a mobile social application"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Characterizing and forecasting user engagement with in-app action graph: A case study of snapchat"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Knowing your fate: Friendship, action and temporal explanations for user engagement prediction on social apps"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Understanding behaviors that lead to purchasing: A case study of pinterest"
+    },
+    {
+      "ref_id": "b5",
+      "title": "I'll be back: on the multiple lives of users of a mobile activity tracking application"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Does measuring intent change behavior?"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Belief, attitude, intention, and behavior: An introduction to theory and research"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Latent dirichlet allocation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Ceam: The effectiveness of cyclic and ephemeral attention models of user behavior on social platforms"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A counterfactual modeling framework for churn prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A new hybrid classification algorithm for customer churn prediction based on logistic regression and decision trees"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Personalized user engagement modeling for mobile videos"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Modeling user behavior for web recommendation using lda model"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Towards query log based personalization using topic models"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Modeling actions of pubmed users with n-gram language models"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Modeling user session and intent with an attention-based encoder-decoder architecture"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Learning user intent from action sequences on interactive systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Ready to buy or just browsing? detecting web searcher goals from interaction data"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Accelerating code search with deep hashing and code classification"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Predicting intent using activity logs: How goal specificity and temporal range affect user behavior"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Intention-aware sequential recommendation with structured intent transition"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Intent contrastive learning for sequential recommendation"
+    }
   ]
 }

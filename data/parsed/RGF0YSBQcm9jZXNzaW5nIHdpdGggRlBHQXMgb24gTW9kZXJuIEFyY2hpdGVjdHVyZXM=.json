@@ -13,8 +13,86 @@
   "REFERENCES": "[1] AWSCloud. 2020. AQUA (Advanced Query Accelerator) for Amazon Redshift. https://pages.awscloud.com/AQUA_Preview.html [3] Adrian M. Caulfield, Eric S. Chung, Andrew Putnam, Hari Angepat, Jeremy Fowers, Michael Haselman, Stephen Heil, Matt Humphrey, Puneet Kaur, JooYoung Kim, Daniel Lo, Todd Massengill, Kalin Ovtcharov, Michael Papamichael, Lisa Woods, Sitaram Lanka, Derek Chiou, and Doug Burger. 2016. A Cloud-Scale Acceleration Architecture. In The 49th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO-49) . IEEE Press. [2] Sebastian Borgeaud, Arthur Mensch, Jordan Hoffmann, Trevor Cai, Eliza Rutherford, Katie Millican, George van den Driessche, Jean-Baptiste Lespiau, Bogdan Damoc, Aidan Clark, et al. 2021. Improving language models by retrieving from trillions of tokens. arXiv preprint arXiv:2112.04426 (2021). [4] Qi Chen, Bing Zhao, Haidong Wang, Mingqin Li, Chuanjie Liu, Zengzhong Li, Mao Yang, and Jingdong Wang. 2021. SPANN: Highly-efficient Billion-scale Approximate Nearest Neighbor Search. arXiv preprint arXiv:2111.08566 (2021). SIGMOD-Companion '23, June 18-23, 2023, Seattle, WA, USA Wenqi Jiang, Dario Korolija, & Gustavo Alonso [5] Xinyu Chen, Yao Chen, Ronak Bajaj, Jiong He, Bingsheng He, Weng-Fai Wong, and Deming Chen. 2020. Is FPGA Useful for Hash Joins?. In 10th Conference on Innovative Data Systems Research, CIDR 2020, Amsterdam, The Netherlands, January 12-15, 2020, Online Proceedings . [7] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [6] Monica Chiosa, Fabio Maschi, Ingo Müller, Gustavo Alonso, and Norman May. 2022. Hardware Acceleration of Compression and Encryption in SAP HANA. Proc. VLDB Endow. (2022), 3277-3291. [8] Yuanwei Fang, Chen Zou, and Andrew A. Chien. 2019. Accelerating Raw Data Analysis with the ACCORDA Software and Hardware Architecture. Proc. VLDB Endow. 12, 11 (July 2019). [10] Jianyang Gao and Cheng Long. 2023. High-Dimensional Approximate Nearest Neighbor Search: with Reliable and Efficient Distance Comparison Operations. Proceedings of the ACM on Management of Data 1, 2 (2023), 1-27. [9] Daniel Firestone, Andrew Putnam, Sambhrama Mundkur, Derek Chiou, Alireza Dabagh, Mike Andrewartha, Hari Angepat, Vivek Bhanu, Adrian Caulfield, Eric Chung, Harish Kumar Chandrappa, Somesh Chaturmohta, Matt Humphrey, Jack Lavier, Norman Lam, Fengfen Liu, Kalin Ovtcharov, Jitu Padhye, Gautham Popuri, Shachar Raindel, Tejas Sapre, Mark Shaw, Gabriel Silva, Madhan Sivakumar, Nisheeth Srivastava, Anshuman Verma, Qasim Zuhair, Deepak Bansal, Doug Burger, Kushagra Vaid, David A. Maltz, and Albert Greenberg. 2018. Azure Accelerated Networking: SmartNICs in the Public Cloud. In Proceedings of the 15th USENIX Conference on Networked Systems Design and Implementation (NSDI'18) . USENIX Association, USA. [11] Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-Wei Chang. 2020. Realm: Retrieval-augmented language model pre-training. arXiv preprint arXiv:2002.08909 (2020). [13] Zhenhao He, Dario Korolija, and Gustavo Alonso. 2021. EasyNet: 100 Gbps Network for HLS. In 31st International Conference on Field-Programmable Logic and Applications, FPL 2021, Dresden, Germany, August 30 - Sept. 3, 2021 . [12] Dong He, Supun Chathuranga Nakandala, Dalitso Banda, Rathijit Sen, Karla Saur, Kwanghyun Park, Carlo Curino, Jesús Camacho-Rodríguez, Konstantinos Karanasos, and Matteo Interlandi. 2022. Query Processing on Tensor Computation Runtimes. Proc. VLDB Endow. 15, 11 (2022). [14] Zhenhao He, Daniele Parravicini, Lucian Petrica, Kenneth O'Brien, Gustavo Alonso, and Michaela Blott. 2021. ACCL: FPGA-Accelerated Collectives over 100 Gbps TCP-IP. In IEEE/ACM International Workshop on Heterogeneous Highperformance Reconfigurable Computing, H2RC@SC 2021, St. Louis, MO, USA, November 15, 2021 . [16] Gui Huang, Xuntao Cheng, Jianying Wang, Yujie Wang, Dengcheng He, Tieying Zhang, Feifei Li, Sheng Wang, Wei Cao, and Qiang Li. 2019. X-Engine: An Optimized Storage Engine for Large-scale E-commerce Transaction Processing. In Proceedings of the 2019 International Conference on Management of Data, SIGMOD Conference 2019, Amsterdam, The Netherlands, June 30 - July 5, 2019 . 651-665. [15] Zhenhao He, Zeke Wang, and Gustavo Alonso. 2020. BiS-KM: Enabling AnyPrecision K-Means on FPGAs. In FPGA '20: The 2020 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays, Seaside, CA, USA, February 23-25, 2020 , Stephen Neuendorffer and Lesley Shannon (Eds.). [17] Wenqi Jiang, Zhenhao He, Shuai Zhang, Thomas B. Preußer, Kai Zeng, Liang Feng, Jiansong Zhang, Tongxuan Liu, Yong Li, Jingren Zhou, Ce Zhang, and Gustavo Alonso. 2021. MicroRec: Efficient Recommendation Inference by Hardware and Data Structure Solutions. In Proceedings of Machine Learning and Systems 2021, MLSys 2021, virtual, April 5-9, 2021 , Alex Smola, Alex Dimakis, and Ion Stoica (Eds.). [19] Wenqi Jiang, Shigang Li, Yu Zhu, Johannes de Fine Licht, Zhenhao He, Runbin Shi, Cedric Renggli, Shuai Zhang, Theodoros Rekatsinas, Torsten Hoefler, et al. 2023. Co-design Hardware and Algorithm for Vector Search. arXiv preprint arXiv:2306.11182 (2023). [18] Wenqi Jiang, Zhenhao He, Shuai Zhang, Kai Zeng, Liang Feng, Jiansong Zhang, Tongxuan Liu, Yong Li, Jingren Zhou, Ce Zhang, and Gustavo Alonso. 2021. FleetRec: Large-Scale Recommendation Inference on Hybrid GPU-FPGA Clusters. In KDD '21: The 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Virtual Event, Singapore, August 14-18, 2021 , Feida Zhu, Beng Chin Ooi, and Chunyan Miao (Eds.).",
   "keywords_parsed": [
     "Data management",
-    " data processing",
-    " hardware acceleration",
-    " FPGA"
+    "data processing",
+    "hardware acceleration",
+    "FPGA"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "AQUA (Advanced Query Accelerator) for Amazon Redshift"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A Cloud-Scale Acceleration Architecture"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Improving language models by retrieving from trillions of tokens"
+    },
+    {
+      "ref_id": "b4",
+      "title": "SPANN: Highly-efficient Billion-scale Approximate Nearest Neighbor Search"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Is FPGA Useful for Hash Joins?"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Hardware Acceleration of Compression and Encryption in SAP HANA"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Accelerating Raw Data Analysis with the ACCORDA Software and Hardware Architecture"
+    },
+    {
+      "ref_id": "b10",
+      "title": "High-Dimensional Approximate Nearest Neighbor Search: with Reliable and Efficient Distance Comparison Operations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Azure Accelerated Networking: SmartNICs in the Public Cloud"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Realm: Retrieval-augmented language model pre-training"
+    },
+    {
+      "ref_id": "b13",
+      "title": "EasyNet: 100 Gbps Network for HLS"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Query Processing on Tensor Computation Runtimes"
+    },
+    {
+      "ref_id": "b14",
+      "title": "ACCL: FPGA-Accelerated Collectives over 100 Gbps TCP-IP"
+    },
+    {
+      "ref_id": "b16",
+      "title": "X-Engine: An Optimized Storage Engine for Large-scale E-commerce Transaction Processing"
+    },
+    {
+      "ref_id": "b15",
+      "title": "BiS-KM: Enabling Any-Precision K-Means on FPGAs"
+    },
+    {
+      "ref_id": "b17",
+      "title": "MicroRec: Efficient Recommendation Inference by Hardware and Data Structure Solutions"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Co-design Hardware and Algorithm for Vector Search"
+    },
+    {
+      "ref_id": "b18",
+      "title": "FleetRec: Large-Scale Recommendation Inference on Hybrid GPU-FPGA Clusters"
+    }
   ]
 }

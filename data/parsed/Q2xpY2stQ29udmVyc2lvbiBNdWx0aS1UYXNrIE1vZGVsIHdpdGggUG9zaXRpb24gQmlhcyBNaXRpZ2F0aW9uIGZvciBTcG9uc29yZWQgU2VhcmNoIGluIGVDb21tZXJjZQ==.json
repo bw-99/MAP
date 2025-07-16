@@ -17,7 +17,93 @@
   "REFERENCES": "[1] Aman Agarwal, Ivan Zaitsev, Xuanhui Wang, Cheng Li, Marc Najork, and Thorsten Joachims. 2019. Estimating position bias without intrusive interventions. In Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining . 474-482. [2] Qingyao Ai, Keping Bi, Cheng Luo, Jiafeng Guo, and W Bruce Croft. 2018. Unbiased learning to rank with unbiased propensity estimation. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 385-394. [3] Jia Chen, Jiaxin Mao, Yiqun Liu, Min Zhang, and Shaoping Ma. 2020. A contextaware click model for web search. In Proceedings of the 13th International Conference on Web Search and Data Mining . 88-96. [4] Ye Chen and Tak W Yan. 2012. Position-normalized click prediction in search advertising. In Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining . 795-803. [5] Andrew Collins, Dominika Tkaczyk, Akiko Aizawa, and Joeran Beel. 2018. A study of position bias in digital library recommender systems. arXiv preprint arXiv:1802.06565 (2018). [6] Nick Craswell, Onno Zoeter, Michael Taylor, and Bill Ramsey. 2008. An experimental comparison of click position-bias models. In Proceedings of the 2008 international conference on web search and data mining . 87-94. [7] Yulong Gu, Zhuoye Ding, Shuaiqiang Wang, Lixin Zou, Yiding Liu, and Dawei Yin. 2020. Deep Multifaceted Transformers for Multi-Objective Ranking in Large-Scale E-Commerce Recommender Systems. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management (Virtual Event, Ireland) (CIKM '20) . Association for Computing Machinery, New York, NY, USA, 2493-2500. https://doi.org/10.1145/3340531.3412697 [8] Huifeng Guo, Jinkai Yu, Qing Liu, Ruiming Tang, and Yuzhou Zhang. 2019. PAL: a position-bias aware learning framework for CTR prediction in live recommender systems. In Proceedings of the 13th ACM Conference on Recommender Systems . 452-456. [9] Ruocheng Guo, Xiaoting Zhao, Adam Henderson, Liangjie Hong, and Huan Liu. 2020. Debiasing grid-based product search in e-commerce. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2852-2860. [10] Ziniu Hu, Yang Wang, Qu Peng, and Hang Li. 2019. Unbiased lambdamart: an unbiased pairwise learning-to-rank algorithm. In The World Wide Web Conference . 2830-2836. [11] Jianqiang Huang, Ke Hu, Qingtao Tang, Mingjian Chen, Yi Qi, Jia Cheng, and Jun Lei. 2021. Deep position-wise interaction network for CTR prediction. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1885-1889. [12] Jiarui Jin, Yuchen Fang, Weinan Zhang, Kan Ren, Guorui Zhou, Jian Xu, Yong Yu, Jun Wang, Xiaoqiang Zhu, and Kun Gai. 2020. A deep recurrent survival model for unbiased ranking. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 29-38. [13] Thorsten Joachims, Laura Granka, Bing Pan, Helene Hembrooke, and Geri Gay. 2005. Accurately Interpreting Clickthrough Data as Implicit Feedback. In Proceedings of the 28th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (Salvador, Brazil) (SIGIR '05) . Association for Computing Machinery, New York, NY, USA, 154-161. https: //doi.org/10.1145/1076034.1076063 [14] Thorsten Joachims, Laura Granka, Bing Pan, Helene Hembrooke, Filip Radlinski, and Geri Gay. 2007. Evaluating the Accuracy of Implicit Feedback from Clicks and Query Reformulations in Web Search. ACM Trans. Inf. Syst. 25, 2 (apr 2007), 7-es. https://doi.org/10.1145/1229179.1229181 [15] Thorsten Joachims, Adith Swaminathan, and Tobias Schnabel. 2017. Unbiased Learning-to-Rank with Biased Feedback. In Proceedings of the Tenth ACM International Conference on Web Search and Data Mining (Cambridge, United Kingdom) (WSDM'17) . Association for Computing Machinery, New York, NY, USA, 781-789. https://doi.org/10.1145/3018661.3018699 [16] Jacob Devlin Ming-Wei Chang Kenton and Lee Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proceedings of NAACL-HLT . 4171-4186. [17] Xiaoliang Ling, Weiwei Deng, Chen Gu, Hucheng Zhou, Cui Li, and Feng Sun. 2017. Model ensemble for click prediction in bing search ads. In Proceedings of the 26th international conference on world wide web companion . 689-698. [18] Ali Vardasbi, Maarten de Rijke, and Ilya Markov. 2020. Cascade model-based propensity estimation for counterfactual learning to rank. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2089-2092. [19] Xuanhui Wang, Nadav Golbandi, Michael Bendersky, Donald Metzler, and Marc Najork. 2018. Position Bias Estimation for Unbiased Learning to Rank in Personal Search. In Proceedings of the 11th ACM International Conference on Web Search and Data Mining (WSDM) . 610-618. [20] Dongbo Xi, Zhen Zi Chen, Peng Yan, Yinger Zhang, Yongchun Zhu, Fuzhen Zhuang, and Yu Chen. 2021. Modeling the Sequential Dependence among Audience Multi-step Conversions with Multi-task Learning in Targeted Display Advertising. Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (2021). [21] Honglei Zhuang, Zhen Qin, Xuanhui Wang, Michael Bendersky, Xinyu Qian, Po Hu, and Dan Chary Chen. 2021. Cross-positional attention for debiasing clicks. In Proceedings of the Web Conference 2021 . 788-797.",
   "keywords_parsed": [
     "Multi-task Learning",
-    " Sponsored Product Search",
-    " Position Bias"
+    "Sponsored Product Search",
+    "Position Bias"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Estimating position bias without intrusive interventions"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Unbiased learning to rank with unbiased propensity estimation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A contextaware click model for web search"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Position-normalized click prediction in search advertising"
+    },
+    {
+      "ref_id": "b5",
+      "title": "A study of position bias in digital library recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "An experimental comparison of click position-bias models"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep Multifaceted Transformers for Multi-Objective Ranking in Large-Scale E-Commerce Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "PAL: a position-bias aware learning framework for CTR prediction in live recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Debiasing grid-based product search in e-commerce"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Unbiased lambdamart: an unbiased pairwise learning-to-rank algorithm"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deep position-wise interaction network for CTR prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A deep recurrent survival model for unbiased ranking"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Accurately Interpreting Clickthrough Data as Implicit Feedback"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Evaluating the Accuracy of Implicit Feedback from Clicks and Query Reformulations in Web Search"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Unbiased Learning-to-Rank with Biased Feedback"
+    },
+    {
+      "ref_id": "b16",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Model ensemble for click prediction in bing search ads"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Cascade model-based propensity estimation for counterfactual learning to rank"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Position Bias Estimation for Unbiased Learning to Rank in Personal Search"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Modeling the Sequential Dependence among Audience Multi-step Conversions with Multi-task Learning in Targeted Display Advertising"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Cross-positional attention for debiasing clicks"
+    }
   ]
 }

@@ -27,6 +27,289 @@
   "VI. CONCLUSION": "where k denotes trajectory length, Z = ∑ k j =1 1 log 2 ( j +1) and I ( · ) is an indicator function. Different from the next-item prediction task, the model predicts the next interaction each time, then adds the predicted item to the input history and further performs a new prediction based on the updated input sequence. Intuitively, the task becomes more difficult as the length of prediction increases, because accumulated errors are amplified when the sequence is extended. We vary the prediction length from 1 to 10, in which length 1 denotes the task of next-item recommendation and length 10 indicates the most difficult prediction case in our experiments. The experimental results of different scaled LSRMs on user trajectory prediction are shown in Figure 9. Firstly, we observe that as we increase the prediction length, small models experience a notable decline in performance, as they may have limited capacity to capture long-term dependencies in user trajectory data. In contrast, larger models exhibit remarkable stability in user trajectory prediction, even for long sequences. To summarize, by investigating the LSRM models of different scales on five complex recommendation tasks, we find that model scalability has great potential to overcome various long-standing problems in recommendation scenarios. In this work, we investigated the scaling effect of large sequential recommendation models (LSRM) by training and testing models with parameters ranging from 98.3K to 0.8B. Overall, our empirical experiments have demonstrated that scaling laws hold in recommender systems, although with unique data characteristics, e.g., data scarcity and sparsity, compared to language domains. Specially, we have conducted two groups of main experiments: · By scaling the recommendation model to a billion level, the overall performance (test loss) improves greatly (almost two times) compared to the model of traditional size. In addition, we find that it is feasible to explore predictable scaling properties by fitting scaling law curves. In the experiments, based on the performance of small models, we can accurately predict the performance of large (100 × larger) models. · Furthermore, we examine the performance benefits of LSRMs in five challenging recommendation tasks, including long-tail item recommendation, cold-start user recommendation and multi-domain sequential recommendation, robustness challenges, and user long trajectory predictions. The experimental results show that large sequential models can consistently yield a stronger performance on these challenging tasks, indicating the great potential for exploring scaling effects for recommender systems. As for future work, we will investigate how to successfully scale up models to a larger level, and investigate more potential benefits underlying the large-scale recommendation models. To achieve this, two critical issues are in need to be studied. First, it is essential to extend the available amount of user interaction behaviors, to alleviate the data scarcity in recommender systems. Second, it is important to develop more efficient and stable optimization methods for training large recommendation models. 12",
   "REFERENCES": "[1] OpenAI, 'Gpt-4 technical report,' 2023. [2] W. X. Zhao, K. Zhou, J. Li, T. Tang, X. Wang, Y. Hou, Y. Min, B. Zhang, J. Zhang, Z. Dong et al. , 'A survey of large language models,' arXiv:2303.18223 , 2023. [3] T. Gong, C. Lyu, S. Zhang, Y. Wang, M. Zheng, Q. Zhao, K. Liu, W. Zhang, P. Luo, and K. Chen, 'Multimodal-gpt: A vision and language model for dialogue with humans,' arXiv:2305.04790 , 2023. [4] H. Touvron, T. Lavril, G. Izacard, X. Martinet, M.-A. Lachaux, T. Lacroix, B. Rozi` ere, N. Goyal, E. Hambro, F. Azhar et al. , 'Llama: Open and efficient foundation language models,' arXiv:2302.13971 , 2023. [5] T. Henighan, J. Kaplan, M. Katz, M. Chen, C. Hesse, J. Jackson, H. Jun, T. B. Brown, P. Dhariwal, S. Gray et al. , 'Scaling laws for autoregressive generative modeling,' arXiv:2010.14701 , 2020. [6] N. Ardalani, C.-J. Wu, Z. Chen, B. Bhushanam, and A. Aziz, 'Understanding scaling laws for recommendation models,' arXiv:2208.08489 , 2022. [7] J. Kaplan, S. McCandlish, T. Henighan, T. B. Brown, B. Chess, R. Child, S. Gray, A. Radford, J. Wu, and D. Amodei, 'Scaling laws for neural language models,' arXiv:2001.08361 , 2020. [8] X. Zhai, A. Kolesnikov, N. Houlsby, and L. Beyer, 'Scaling vision transformers,' in CVPR , 2022, pp. 12 104-12 113. [9] X. Guo, J. Pan, X. Wang, B. Chen, J. Jiang, and M. Long, 'On the embedding collapse when scaling up recommendation models,' arXiv:2310.04400 , 2023. [10] S. Chitlangia, K. R. Kesari, and R. Agarwal, 'Scaling generative pretraining for user ad activity sequences,' 2023. [11] K. Shin, H. Kwak, S. Y. Kim, M. N. Ramstr¨ om, J. Jeong, J.-W. Ha, and K.-M. Kim, 'Scaling law for recommendation models: Towards general-purpose user representations,' in AAAI , vol. 37, no. 4, 2023, pp. 4596-4604. [12] Y. Hou, S. Mu, W. X. Zhao, Y. Li, B. Ding, and J.-R. Wen, 'Towards universal sequence representation learning for recommender systems,' in KDD , 2022, pp. 585-593. [13] J. Li, M. Wang, J. Li, J. Fu, X. Shen, J. Shang, and J. McAuley, 'Text is all you need: Learning language representations for sequential recommendation,' arXiv:2305.13731 , 2023. [14] Y. Hou, Z. He, J. McAuley, and W. X. Zhao, 'Learning vector-quantized item representation for transferable sequential recommenders,' in WWW , 2023, pp. 1162-1171. [15] N. Muennighoff, A. M. Rush, B. Barak, T. L. Scao, A. Piktus, N. Tazi, S. Pyysalo, T. Wolf, and C. Raffel, 'Scaling data-constrained language models,' arXiv:2305.16264 , 2023. [16] Z. Liu, Z. Xu, J. Jin, Z. Shen, and T. Darrell, 'Dropout reduces underfitting,' arXiv:2303.01500 , 2023. [17] X. He, K. Deng, X. Wang, Y. Li, Y. Zhang, and M. Wang, 'Lightgcn: Simplifying and powering graph convolution network for recommendation,' in SIGIR , 2020, pp. 639-648. [18] W.-C. Kang and J. McAuley, 'Self-attentive sequential recommendation,' in ICDM . [19] F. Sun, J. Liu, J. Wu, C. Pei, X. Lin, W. Ou, and P. Jiang, 'Bert4rec: Sequential recommendation with bidirectional encoder representations from transformer,' in CIKM , 2019, pp. 1441-1450. [20] Z. Lin, C. Tian, Y. Hou, and W. X. Zhao, 'Improving graph collaborative filtering with neighborhood-enriched contrastive learning,' in WWW , 2022, pp. 2320-2329. [21] S. Rendle, C. Freudenthaler, and L. Schmidt-Thieme, 'Factorizing personalized markov chains for next-basket recommendation,' in WWW , 2010, pp. 811-820. [22] B. Hidasi, A. Karatzoglou, L. Baltrunas, and D. Tikk, 'Session-based recommendations with recurrent neural networks,' arXiv:1511.06939 , 2015. [23] J. Tang and K. Wang, 'Personalized top-n sequential recommendation via convolutional sequence embedding,' in WSDM , 2018, pp. 565-573. [24] S. Wu, Y. Tang, Y. Zhu, L. Wang, X. Xie, and T. Tan, 'Session-based recommendation with graph neural networks,' in AAAI , vol. 33, no. 01, 2019, pp. 346-353. [25] J. Chang, C. Gao, Y. Zheng, Y. Hui, Y. Niu, Y. Song, D. Jin, and Y. Li, 'Sequential recommendation with graph neural networks,' in SIGIR , 2021, pp. 378-387. [26] K. Zhou, H. Yu, W. X. Zhao, and J.-R. Wen, 'Filter-enhanced mlp is all you need for sequential recommendation,' in WWW , 2022, pp. 2388-2399. [27] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin, 'Attention is all you need,' NeurIPS , vol. 30, 2017. [28] Y. Li, T. Chen, P.-F. Zhang, and H. Yin, 'Lightweight self-attentive sequential recommendation,' in CIKM , 2021, pp. 967-977. [29] Y. Hou, B. Hu, Z. Zhang, and W. X. Zhao, 'Core: Simple and effective session-based recommendation within consistent representation space,' in SIGIR , 2022. [30] X. Fan, Z. Liu, J. Lian, W. X. Zhao, X. Xie, and J.-R. Wen, 'Lighter and better: low-rank decomposed self-attention networks for next-item recommendation,' in SIGIR , 2021, pp. 1733-1737. [31] H. N. Mhaskar, 'Neural networks for optimal approximation of smooth and analytic functions,' Neural computation , vol. 8, no. 1, pp. 164-177, 1996. [32] T. Brown, B. Mann, N. Ryder, M. Subbiah, J. D. Kaplan, P. Dhariwal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell et al. , 'Language models are few-shot learners,' NeurIPS , vol. 33, pp. 1877-1901, 2020. [33] R. Tang, X. Han, X. Jiang, and X. Hu, 'Does synthetic data generation of llms help clinical text mining?' arXiv:2303.04360 , 2023. [34] O. Nov, N. Singh, and D. M. Mann, 'Putting chatgpt's medical advice to the (turing) test,' medRxiv , pp. 2023-01, 2023. [35] K. Malinka, M. Peres´ ıni, A. Firc, O. Hujnak, and F. Janus, 'On the educational impact of chatgpt: Is artificial intelligence ready to obtain a university degree?' in ITiCSE , 2023, pp. 47-53. [36] H. Yang, X.-Y. Liu, and C. D. Wang, 'Fingpt: Open-source financial large language models,' arXiv:2306.06031 , 2023. [37] Z. Sun, 'A short survey of viewing large language models in legal aspect,' arXiv:2303.09136 , 2023. [38] C. Zhang, C. Zhang, C. Li, Y. Qiao, S. Zheng, S. K. Dam, M. Zhang, J. U. Kim, S. T. Kim, J. Choi et al. , 'One small step for generative ai, one giant leap for agi: A complete survey on chatgpt in aigc era,' arXiv:2304.06488 , 2023. [39] L. Wu, Z. Zheng, Z. Qiu, H. Wang, H. Gu, T. Shen, C. Qin, C. Zhu, H. Zhu, Q. Liu et al. , 'A survey on large language models for recommendation,' arXiv:2305.19860 , 2023. [40] J. Lin, X. Dai, Y. Xi, W. Liu, B. Chen, X. Li, C. Zhu, H. Guo, Y. Yu, R. Tang et al. , 'How can recommender systems benefit from large language models: A survey,' arXiv:2306.05817 , 2023. [41] W. Fan, Z. Zhao, J. Li, Y. Liu, X. Mei, Y. Wang, J. Tang, and Q. Li, 'Recommender systems in the era of large language models (llms),' arXiv:2307.02046 , 2023. [42] L. Li, Y. Zhang, D. Liu, and L. Chen, 'Large language models for generative recommendation: A survey and visionary discussions,' arXiv:2309.01157 , 2023. [43] Y. Hou, J. Zhang, Z. Lin, H. Lu, R. Xie, J. McAuley, and W. X. Zhao, 'Large language models are zero-shot rankers for recommender systems,' arXiv:2305.08845 , 2023. [44] J. Zhang, R. Xie, Y. Hou, W. X. Zhao, L. Lin, and J.-R. Wen, 'Recommendation as instruction following: A large language model empowered recommendation approach,' arXiv:2305.07001 , 2023. [45] L. Wang and E.-P. Lim, 'Zero-shot next-item recommendation using large pretrained language models,' arXiv:2304.03153 , 2023. [46] J. Liu, C. Liu, R. Lv, K. Zhou, and Y. Zhang, 'Is chatgpt a good recommender? a preliminary study,' arXiv:2304.10149 , 2023. [47] J. Harte, W. Zorgdrager, P. Louridas, A. Katsifodimos, D. Jannach, and M. Fragkoulis, 'Leveraging large language models for sequential recommendation,' in RecSys , 2023, pp. 1096-1102. [48] K. Bao, J. Zhang, Y. Zhang, W. Wang, F. Feng, and X. He, 'Tallrec: An effective and efficient tuning framework to align large language model with recommendation,' arXiv:2305.00447 , 2023. [49] J. Zhang, Y. Hou, R. Xie, W. Sun, J. McAuley, W. X. Zhao, L. Lin, and J.-R. Wen, 'Agentcf: Collaborative learning with autonomous language agents for recommender systems,' arXiv:2310.09233 , 2023. [50] T. Wolf, L. Debut, V. Sanh, J. Chaumond, C. Delangue, A. Moi, P. Cistac, T. Rault, R. Louf, M. Funtowicz, J. Davison, S. Shleifer, P. von Platen, C. Ma, Y. Jernite, J. Plu, C. Xu, T. L. Scao, S. Gugger, M. Drame, Q. Lhoest, and A. M. Rush, 'Transformers: State-of-the-art natural language processing,' in EMNLP . Online: Association for Computational Linguistics, Oct. 2020, pp. 38-45. [Online]. Available: https://www.aclweb.org/anthology/2020.emnlp-demos.6 [51] W. X. Zhao, S. Mu, Y. Hou, Z. Lin, Y. Chen, X. Pan, K. Li, Y. Lu, H. Wang, C. Tian et al. , 'Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms,' in CIKM , 2021, pp. 4653-4664. 13 [52] K. He, X. Zhang, S. Ren, and J. Sun, 'Deep residual learning for image recognition,' in Proceedings of the IEEE conference on computer vision and pattern recognition , 2016, pp. 770-778. [53] A. Baevski and M. Auli, 'Adaptive input representations for neural language modeling,' arXiv:1809.10853 , 2018. [54] N. Srivastava, G. Hinton, A. Krizhevsky, I. Sutskever, and R. Salakhutdinov, 'Dropout: a simple way to prevent neural networks from overfitting,' The journal of machine learning research , vol. 15, no. 1, pp. 1929-1958, 2014. [55] J. Hoffmann, S. Borgeaud, A. Mensch, E. Buchatskaya, T. Cai, E. Rutherford, D. d. L. Casas, L. A. Hendricks, J. Welbl, A. Clark et al. , 'Training compute-optimal large language models,' arXiv:2203.15556 , 2022. [56] D. P. Kingma and J. Ba, 'Adam: A method for stochastic optimization,' arXiv:1412.6980 , 2014. [57] H. Robbins and S. Monro, 'A stochastic approximation method,' The annals of mathematical statistics , pp. 400-407, 1951. [58] N. S. Keskar and R. Socher, 'Improving generalization performance by switching from adam to sgd,' arXiv preprint arXiv:1712.07628 , 2017. [59] F. M. Harper and J. A. Konstan, 'The movielens datasets: History and context,' TiiS , vol. 5, no. 4, pp. 1-19, 2015. [60] J. Ni, J. Li, and J. McAuley, 'Justifying recommendations using distantlylabeled reviews and fine-grained aspects,' in EMNLP-IJCNLP , 2019, pp. 188-197. [61] W. Yu, X. Lin, J. Ge, W. Ou, and Z. Qin, 'Semi-supervised collaborative filtering by text-enhanced domain adaptation,' in KDD , 2020, pp. 21362144. [62] P. Gage, 'A new algorithm for data compression,' C Users Journal , vol. 12, no. 2, pp. 23-38, 1994. [63] N. Carlini, D. Ippolito, M. Jagielski, K. Lee, F. Tramer, and C. Zhang, 'Quantifying memorization across neural language models,' arXiv:2202.07646 , 2022. [64] K. Tirumala, A. Markosyan, L. Zettlemoyer, and A. Aghajanyan, 'Memorization without overfitting: Analyzing the training dynamics of large language models,' NeurIPS , vol. 35, pp. 38 274-38 290, 2022. [65] J. Cao, X. Cong, J. Sheng, T. Liu, and B. Wang, 'Contrastive crossdomain sequential recommendation,' in CIKM , 2022, pp. 138-147. [66] Z. Tang, Z. Huan, Z. Li, X. Zhang, J. Hu, C. Fu, J. Zhou, and C. Li, 'One model for all: Large language models are domain-agnostic recommendation systems,' arXiv:2310.14304 , 2023. [67] J. Tan, S. Heinecke, Z. Liu, Y. Chen, Y. Zhang, and H. Wang, 'Towards more robust and accurate sequential recommendation with cascade-guided adversarial training,' arXiv:2304.05492 , 2023. [68] X. He, Z. He, X. Du, and T.-S. Chua, 'Adversarial personalized ranking for recommendation,' in The 41st International ACM SIGIR conference on research & development in information retrieval , 2018, pp. 355-364. [69] M. O'Mahony, N. Hurley, N. Kushmerick, and G. Silvestre, 'Collaborative recommendation: A robustness analysis,' TOIT , vol. 4, no. 4, pp. 344-377, 2004. [70] J. O'Donovan and B. Smyth, 'Trust in recommender systems,' in IUI , 2005, pp. 167-174. 14",
   "keywords_parsed": [
-    "None"
+    "Sequential Recommendation",
+    "Scaling Law"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gpt-4 technical report"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A survey of large language models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Multimodal-gpt: A vision and language model for dialogue with humans"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Llama: Open and efficient foundation language models"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Scaling laws for autoregressive generative modeling"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Understanding scaling laws for recommendation models"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Scaling laws for neural language models"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Scaling vision transformers"
+    },
+    {
+      "ref_id": "b9",
+      "title": "On the embedding collapse when scaling up recommendation models"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Scaling generative pretraining for user ad activity sequences"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Scaling law for recommendation models: Towards general-purpose user representations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Towards universal sequence representation learning for recommender systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Text is all you need: Learning language representations for sequential recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Learning vector-quantized item representation for transferable sequential recommenders"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Scaling data-constrained language models"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Dropout reduces underfitting"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Bert4rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Improving graph collaborative filtering with neighborhood-enriched contrastive learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Factorizing personalized markov chains for next-basket recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Session-based recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Sequential recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Filter-enhanced mlp is all you need for sequential recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Lightweight self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Core: Simple and effective session-based recommendation within consistent representation space"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Lighter and better: low-rank decomposed self-attention networks for next-item recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Neural networks for optimal approximation of smooth and analytic functions"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Does synthetic data generation of llms help clinical text mining?"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Putting chatgpt's medical advice to the (turing) test"
+    },
+    {
+      "ref_id": "b35",
+      "title": "On the educational impact of chatgpt: Is artificial intelligence ready to obtain a university degree?"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Fingpt: Open-source financial large language models"
+    },
+    {
+      "ref_id": "b37",
+      "title": "A short survey of viewing large language models in legal aspect"
+    },
+    {
+      "ref_id": "b38",
+      "title": "One small step for generative ai, one giant leap for agi: A complete survey on chatgpt in aigc era"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A survey on large language models for recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "How can recommender systems benefit from large language models: A survey"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Recommender systems in the era of large language models (llms)"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Large language models for generative recommendation: A survey and visionary discussions"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Large language models are zero-shot rankers for recommender systems"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Recommendation as instruction following: A large language model empowered recommendation approach"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Zero-shot next-item recommendation using large pretrained language models"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Is chatgpt a good recommender? a preliminary study"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Leveraging large language models for sequential recommendation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Agentcf: Collaborative learning with autonomous language agents for recommender systems"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Transformers: State-of-the-art natural language processing"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Adaptive input representations for neural language modeling"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Dropout: a simple way to prevent neural networks from overfitting"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Training compute-optimal large language models"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b57",
+      "title": "A stochastic approximation method"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Improving generalization performance by switching from adam to sgd"
+    },
+    {
+      "ref_id": "b59",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Justifying recommendations using distantlylabeled reviews and fine-grained aspects"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Semi-supervised collaborative filtering by text-enhanced domain adaptation"
+    },
+    {
+      "ref_id": "b62",
+      "title": "A new algorithm for data compression"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Quantifying memorization across neural language models"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Memorization without overfitting: Analyzing the training dynamics of large language models"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Contrastive crossdomain sequential recommendation"
+    },
+    {
+      "ref_id": "b66",
+      "title": "One model for all: Large language models are domain-agnostic recommendation systems"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Towards more robust and accurate sequential recommendation with cascade-guided adversarial training"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Adversarial personalized ranking for recommendation"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Collaborative recommendation: A robustness analysis"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Trust in recommender systems"
+    }
   ]
 }

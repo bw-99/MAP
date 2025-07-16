@@ -19,7 +19,121 @@
   "REFERENCES": "[1] Martin Abadi, Andy Chu, Ian Goodfellow, H Brendan McMahan, Ilya Mironov, Kunal Talwar, and Li Zhang. 2016. Deep learning with differential privacy. In Proceedings of the 2016 ACM SIGSAC conference on computer and communications security . 308-318. [2] Hédy Attouch, Jérôme Bolte, Patrick Redont, and Antoine Soubeyran. 2010. Proximal alternating minimization and projection methods for nonconvex problems: An approach based on the Kurdyka-Łojasiewicz inequality. Mathematics of operations research 35, 2 (2010), 438-457. [3] Jérôme Bolte, Shoham Sabach, and Marc Teboulle. 2014. Proximal alternating linearized minimization for nonconvex and nonsmooth problems. Mathematical Programming 146, 1 (2014), 459-494. [4] Keith Bonawitz, Hubert Eichner, Wolfgang Grieskamp, Dzmitry Huba, Alex Ingerman, Vladimir Ivanov, Chloe Kiddon, Jakub Konečn` y, Stefano Mazzocchi, Brendan McMahan, et al. 2019. Towards federated learning at scale: System design. Proceedings of Machine Learning and Systems 1 (2019), 374-388. [5] Fahao Chen, Peng Li, Toshiaki Miyazaki, and Celimuge Wu. 2021. Fedgraph: Federated graph learning with intelligent sampling. IEEE Transactions on Parallel and Distributed Systems 33, 8 (2021), 1775-1786. [6] Hong-You Chen and Wei-Lun Chao. 2020. FedBE: Making Bayesian Model Ensemble Applicable to Federated Learning. In International Conference on Learning Representations . [7] Sijie Cheng, Jingwen Wu, Yanghua Xiao, and Yang Liu. 2021. Fedgems: Federated learning of larger server models via selective knowledge fusion. arXiv preprint arXiv:2110.11027 (2021). [8] Xingbo Fu, Binchi Zhang, Yushun Dong, Chen Chen, and Jundong Li. 2022. Federated graph machine learning: A survey of concepts, techniques, and applications. arXiv preprint arXiv:2207.11812 (2022). [9] Yu Gong, Ziwen Jiang, Yufei Feng, Binbin Hu, Kaiqi Zhao, Qingwen Liu, and Wenwu Ou. 2020. EdgeRec: recommender system on edge in Mobile Taobao. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2477-2484. [10] Chaoyang He, Murali Annavaram, and Salman Avestimehr. 2020. Group knowledge transfer: Federated learning of large cnns at the edge. Advances in Neural Information Processing Systems 33 (2020), 14068-14080. [11] Geoffrey Hinton, Oriol Vinyals, Jeff Dean, et al. 2015. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531 2, 7 (2015). [12] Alex Krizhevsky, Geoffrey Hinton, et al. 2009. Learning multiple layers of features from tiny images. (2009). [13] Tian Li, Anit Kumar Sahu, Ameet Talwalkar, and Virginia Smith. 2020. Federated Learning: Challenges, Methods, and Future Directions. IEEE Signal Process. Mag. 37, 3 (2020), 50-60. https://doi.org/10.1109/MSP.2020.2975749 [14] Zexi Li, Jiaxun Lu, Shuang Luo, Didi Zhu, Yunfeng Shao, Yinchuan Li, Zhimeng Zhang, Yongheng Wang, and Chao Wu. 2022. Towards Effective Clustered Federated Learning: A Peer-to-peer Framework with Adaptive Neighbor Matching. IEEE Transactions on Big Data (2022). [15] Zexi Li, Feng Mao, and Chao Wu. 2022. Can we share models if sharing data is not an option? Patterns 3, 11 (2022), 100603. [16] Shih-wei Liao, Tzu-Han Hung, Donald Nguyen, Chinyen Chou, Chiaheng Tu, and Hucheng Zhou. 2009. Machine learning-based prefetch optimization for data center applications. In Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis . 1-10. [17] Tao Lin, Lingjing Kong, Sebastian U Stich, and Martin Jaggi. 2020. Ensemble distillation for robust model fusion in federated learning. Advances in Neural Information Processing Systems 33 (2020), 2351-2363. [18] Brendan McMahan, Eider Moore, Daniel Ramage, Seth Hampson, and Blaise Aguera y Arcas. 2017. Communication-efficient learning of deep networks from decentralized data. In Artificial intelligence and statistics . PMLR, 1273-1282. [19] Minh NH Nguyen, Huy Q Le, Shashi Raj Pandey, and Choong Seon Hong. 2022. CDKT-FL: Cross-Device Knowledge Transfer using Proxy Dataset in Federated Learning. arXiv preprint arXiv:2204.01542 (2022). [20] Xufeng Qian, Yue Xu, Fuyu Lv, Shengyu Zhang, Ziwen Jiang, Qingwen Liu, Xiaoyi Zeng, Tat-Seng Chua, and Fei Wu. 2022. Intelligent Request Strategy Design in Recommender System. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3772-3782. [21] Saim Salman, Christopher Streiffer, Huan Chen, Theophilus Benson, and Asim Kadav. 2018. DeepConf: Automating data center network topologies management with machine learning. In Proceedings of the 2018 Workshop on Network Meets AI & ML . 8-14. [22] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1161-1170. [23] Will Cukierski Steve Wang. 2014. Click-Through Rate Prediction. https://kaggle. com/competitions/avazu-ctr-prediction [24] Jianyu Wang, Zachary Charles, Zheng Xu, Gauri Joshi, H Brendan McMahan, Maruan Al-Shedivat, Galen Andrew, Salman Avestimehr, Katharine Daly, Deepesh Data, et al. 2021. A field guide to federated optimization. arXiv preprint arXiv:2107.06917 (2021). [25] Kang Wei, Jun Li, Ming Ding, Chuan Ma, Howard H Yang, Farhad Farokhi, Shi Jin, Tony QS Quek, and H Vincent Poor. 2020. Federated learning with differential privacy: Algorithms and performance analysis. IEEE Transactions on Information Forensics and Security 15 (2020), 3454-3469. [26] Jiangchao Yao, Feng Wang, Xichen Ding, Shaohu Chen, Bo Han, Jingren Zhou, and Hongxia Yang. 2022. Device-cloud Collaborative Recommendation via Meta Controller. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4353-4362. [27] Jiangchao Yao, Feng Wang, Kunyang Jia, Bo Han, Jingren Zhou, and Hongxia Yang. 2021. Device-cloud collaborative learning for recommendation. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3865-3874. [28] Hong Zhang, Ji Liu, Juncheng Jia, Yang Zhou, Huaiyu Dai, and Dejing Dou. 2022. FedDUAP: Federated Learning with Dynamic Update and Adaptive Pruning Using Shared Data on the Server. arXiv preprint arXiv:2204.11536 (2022).",
   "keywords_parsed": [
     "Edge-cloud collaborative learning",
-    " Federated learning",
-    " Recommender systems"
+    "Federated learning",
+    "Recommender systems"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Deep learning with differential privacy"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Proximal alternating minimization and projection methods for nonconvex problems: An approach based on the Kurdyka-Łojasiewicz inequality"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Proximal alternating linearized minimization for nonconvex and nonsmooth problems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Towards federated learning at scale: System design"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fedgraph: Federated graph learning with intelligent sampling"
+    },
+    {
+      "ref_id": "b6",
+      "title": "FedBE: Making Bayesian Model Ensemble Applicable to Federated Learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Fedgems: Federated learning of larger server models via selective knowledge fusion"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Federated graph machine learning: A survey of concepts, techniques, and applications"
+    },
+    {
+      "ref_id": "b9",
+      "title": "EdgeRec: recommender system on edge in Mobile Taobao"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Group knowledge transfer: Federated learning of large cnns at the edge"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Learning multiple layers of features from tiny images"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Federated Learning: Challenges, Methods, and Future Directions"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Towards Effective Clustered Federated Learning: A Peer-to-peer Framework with Adaptive Neighbor Matching"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Can we share models if sharing data is not an option?"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Machine learning-based prefetch optimization for data center applications"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Ensemble distillation for robust model fusion in federated learning"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Communication-efficient learning of deep networks from decentralized data"
+    },
+    {
+      "ref_id": "b19",
+      "title": "CDKT-FL: Cross-Device Knowledge Transfer using Proxy Dataset in Federated Learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Intelligent Request Strategy Design in Recommender System"
+    },
+    {
+      "ref_id": "b21",
+      "title": "DeepConf: Automating data center network topologies management with machine learning"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Autoint: Automatic feature interaction learning via selfattentive neural networks"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "A field guide to federated optimization"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Federated learning with differential privacy: Algorithms and performance analysis"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Device-cloud Collaborative Recommendation via Meta Controller"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Device-cloud collaborative learning for recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "FedDUAP: Federated Learning with Dynamic Update and Adaptive Pruning Using Shared Data on the Server"
+    }
   ]
 }

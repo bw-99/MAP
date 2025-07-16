@@ -25,8 +25,154 @@
   "REFERENCES": "[1] Paul Baltescu, Haoyu Chen, Nikil Pancha, Andrew Zhai, Jure Leskovec, and Charles Rosenberg. 2022. ItemSage: Learning product embeddings for shopping recommendations at pinterest. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2703-2711. [2] Oren Barkan and Noam Koenigstein. 2016. Item2vec: neural item embedding for collaborative filtering. In 2016 IEEE 26th International Workshop on Machine Learning for Signal Processing (MLSP) . IEEE, 1-6. [3] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [4] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [5] Nick Craswell. [n. d.]. Precision at n. In Encyclopedia of Database Systems , LING LIU and M. TAMER ÖZSU (Eds.). Springer US, 2127-2128. https://doi.org/10. 1007/978-0-387-39940-9_484 [6] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [7] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep session interest network for click-through rate prediction. arXiv preprint arXiv:1905.06482 (2019). [8] Tianyu Gao, Xingcheng Yao, and Danqi Chen. 2021. Simcse: Simple contrastive learning of sentence embeddings. arXiv preprint arXiv:2104.08821 (2021). [9] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [10] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition . 770-778. [11] Ruining He and Julian McAuley. 2016. VBPR: visual bayesian personalized ranking from implicit feedback. In Proceedings of the AAAI conference on artificial intelligence , Vol. 30. [12] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [13] Yupeng Hou, Shanlei Mu, Wayne Xin Zhao, Yaliang Li, Bolin Ding, and Ji-Rong Wen. 2022. Towards universal sequence representation learning for recommender systems. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 585-593. [14] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [15] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [16] Youngjune Lee, Yeongjong Jeong, Keunchan Park, and SeongKu Kang. 2023. MvFS: Multi-view Feature Selection for Recommender System. arXiv preprint arXiv:2309.02064 (2023). [17] Chang Liu, Xiaoguang Li, Guohao Cai, Zhenhua Dong, Hong Zhu, and Lifeng Shang. 2021. Noninvasive self-attention for side information fusion in sequential recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 35. 4249-4256. [18] Qijiong Liu, Jieming Zhu, Quanyu Dai, and Xiao-Ming Wu. 2022. Boosting Deep CTR Prediction with a Plug-and-Play Pre-trainer for News Recommendation. In Proceedings of the 29th International Conference on Computational Linguistics . International Committee on Computational Linguistics, Gyeongju, Republic of Korea, 2823-2833. https://aclanthology.org/2022.coling-1.249 [19] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on WWW'24 Companion, May 13-17, 2024, Singapore, Singapore Yuanbo Gao et al. knowledge discovery & data mining . 1930-1939. [20] Matthew Richardson, Ewa Dominowska, and Robert Ragno. 2007. Predicting clicks: estimating the click-through rate for new ads. In Proceedings of the 16th international conference on World Wide Web . 521-530. [21] Badrul Sarwar, George Karypis, Joseph Konstan, and John Riedl. 2001. Item-based collaborative filtering recommendation algorithms. In Proceedings of the 10th international conference on World Wide Web . 285-295. [22] Qijie Shen, Hong Wen, Wanjie Tao, Jing Zhang, Fuyu Lv, Zulong Chen, and Zhao Li. 2022. Deep interest highlight network for click-through rate prediction in trigger-induced recommendation. In Proceedings of the ACM Web Conference 2022 . 422-430. [23] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [24] Jun Wang, Arjen P De Vries, and Marcel JT Reinders. 2006. Unifying userbased and item-based collaborative filtering approaches by similarity fusion. In Proceedings of the 29th annual international ACM SIGIR conference on Research and development in information retrieval . 501-508. [25] Chuhan Wu, Fangzhao Wu, Tao Qi, Jianxun Lian, Yongfeng Huang, and Xing Xie. 2020. PTUM: Pre-training User Model from Unlabeled User Behaviors via Selfsupervision. In Findings of the Association for Computational Linguistics: EMNLP 2020 , Trevor Cohn, Yulan He, and Yang Liu (Eds.). Association for Computational Linguistics, Online, 1939-1944. https://doi.org/10.18653/v1/2020.findings-emnlp. 174 [26] Chuhan Wu, Fangzhao Wu, Yang Yu, Tao Qi, Yongfeng Huang, and Xing Xie. 2021. UserBERT: Contrastive User Model Pre-training. https://doi.org/10.48550/ arXiv.2109.01274 arXiv:2109.01274 [cs]. [27] Chaojun Xiao, Ruobing Xie, Yuan Yao, Zhiyuan Liu, Maosong Sun, Xu Zhang, and Leyu Lin. 2021. UPRec: User-Aware Pre-training for Recommender Systems. https://doi.org/10.48550/ARXIV.2102.10989 [28] Xinyang Yi, Ji Yang, Lichan Hong, Derek Zhiyuan Cheng, Lukasz Heldt, Aditee Ajit Kumthekar, Zhe Zhao, Li Wei, and Ed Chi (Eds.). 2019. Sampling-BiasCorrected Neural Modeling for Large Corpus Item Recommendations . [29] Fajie Yuan, Xiangnan He, Alexandros Karatzoglou, and Liguang Zhang. 2020. Parameter-efficient transfer from sequential behaviors for user modeling and recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 1469-1478. [30] Kai Zhang, Hao Qian, Qing Cui, Qi Liu, Longfei Li, Jun Zhou, Jianhui Ma, and Enhong Chen. 2021. Multi-interactive attention network for fine-grained feature learning in ctr prediction. In Proceedings of the 14th ACM international conference on web search and data mining . 984-992. [31] Zhi-Dan Zhao and Ming-Sheng Shang. 2010. User-based collaborative-filtering recommendation algorithms on hadoop. In 2010 third international conference on knowledge discovery and data mining . IEEE, 478-481. [32] Xiaoyang Zheng, Zilong Wang, Sen Li, Ke Xu, Tao Zhuang, Qingwen Liu, and Xiaoyi Zeng. 2023. MAKE: Vision-Language Pre-training based Product Retrieval in Taobao Search. [33] Zuowu Zheng, Changwang Zhang, Xiaofeng Gao, and Guihai Chen. 2022. HIEN: hierarchical intention embedding network for click-through rate prediction. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 322-331. [34] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [35] Feng Zhu, Yan Wang, Chaochao Chen, Jun Zhou, Longfei Li, and Guanfeng Liu. 2021. Cross-domain recommendation: challenges, progress, and prospects. arXiv preprint arXiv:2103.01696 (2021). [36] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open benchmarking for click-through rate prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 2759-2769.",
   "keywords_parsed": [
     "E-commerce recommendation systems",
-    " pre-trained model",
-    " CTR",
-    " end-to-end training"
+    "pre-trained model",
+    "CTR",
+    "end-to-end training"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "ItemSage: Learning product embeddings for shopping recommendations at pinterest"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Item2vec: neural item embedding for collaborative filtering"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Precision at n"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Simcse: Simple contrastive learning of sentence embeddings"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b11",
+      "title": "VBPR: visual bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Towards universal sequence representation learning for recommender systems"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b16",
+      "title": "MvFS: Multi-view Feature Selection for Recommender System"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Noninvasive self-attention for side information fusion in sequential recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Boosting Deep CTR Prediction with a Plug-and-Play Pre-trainer for News Recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Item-based collaborative filtering recommendation algorithms"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Deep interest highlight network for click-through rate prediction in trigger-induced recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Unifying user-based and item-based collaborative filtering approaches by similarity fusion"
+    },
+    {
+      "ref_id": "b25",
+      "title": "PTUM: Pre-training User Model from Unlabeled User Behaviors via Self-supervision"
+    },
+    {
+      "ref_id": "b26",
+      "title": "UserBERT: Contrastive User Model Pre-training"
+    },
+    {
+      "ref_id": "b27",
+      "title": "UPRec: User-Aware Pre-training for Recommender Systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Parameter-efficient transfer from sequential behaviors for user modeling and recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Multi-interactive attention network for fine-grained feature learning in ctr prediction"
+    },
+    {
+      "ref_id": "b31",
+      "title": "User-based collaborative-filtering recommendation algorithms on hadoop"
+    },
+    {
+      "ref_id": "b32",
+      "title": "MAKE: Vision-Language Pre-training based Product Retrieval in Taobao Search"
+    },
+    {
+      "ref_id": "b33",
+      "title": "HIEN: hierarchical intention embedding network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Cross-domain recommendation: challenges, progress, and prospects"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Open benchmarking for click-through rate prediction"
+    }
   ]
 }

@@ -16,7 +16,97 @@
   "REFERENCES": "[1] Zhi Bian, Shaojun Zhou, Hao Fu, Qihong Yang, Zhenqi Sun, Junjie Tang, Guiquan Liu, Kaikui Liu, and Xiaolong Li. 2021. Denoising User-aware Memory Network for Recommendation. In Fifteenth ACM Conference on Recommender Systems . 400-410. [2] Jesús Bobadilla, Raúl Lara-Cabrera, Ángel González-Prieto, and Fernando Ortega. 2020. Deepfair: deep learning for improving fairness in recommender systems. arXiv preprint arXiv:2006.05255 (2020). [3] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior sequence transformer for e-commerce recommendation in alibaba. In Proceedings of the 1st International Workshop on Deep Learning Practice for High-Dimensional Sparse Data . 1-4. [4] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [5] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [6] Zhifang Fan, Dan Ou, Yulong Gu, Bairan Fu, Xiang Li, Wentian Bao, Xin-Yu Dai, Xiaoyi Zeng, Tao Zhuang, and Qingwen Liu. 2022. Modeling Users' Contextualized Page-wise Feedback for Click-Through Rate Prediction in E-commerce Search. (2022). [7] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep session interest network for click-through rate prediction. arXiv preprint arXiv:1905.06482 (2019). [8] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [9] Huifeng Guo, Jinkai Yu, Qing Liu, Ruiming Tang, and Yuzhou Zhang. 2019. PAL: a position-bias aware learning framework for CTR prediction in live recommender systems. In Proceedings of the 13th ACM Conference on Recommender Systems . 452-456. [10] Jianqiang Huang, Ke Hu, Qingtao Tang, Mingjian Chen, Yi Qi, Jia Cheng, and Jun Lei. 2021. Deep Position-wise Interaction Network for CTR Prediction. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1885-1889. [11] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. 2017. Neural attentive session-based recommendation. In Proceedings of the 2017 ACM CIKM '23, October 21-25, 2023, Birmingham, United Kingdom. on Conference on Information and Knowledge Management . 1419-1428. [12] Xiang Li, Shuwei Chen, Jian Dong, Jin Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2023. Decision-Making Context Interaction Network for ClickThrough Rate Prediction. Proceedings of the AAAI Conference on Artificial Intelligence 37, 4 (Jun. 2023), 5195-5202. [13] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on long sequential user behavior modeling for click-through rate prediction. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2671-2679. [14] Laurens Van der Maaten and Geoffrey Hinton. 2008. Visualizing data using t-SNE. Journal of machine learning research 9, 11 (2008). [15] MenghanWang,MingmingGong,Xiaolin Zheng, and Kun Zhang. 2018. Modeling dynamic missingness of implicit feedback for recommendation. Advances in neural information processing systems 31 (2018). [16] Zhibo Xiao, Luwei Yang, Wen Jiang, Yi Wei, Yi Hu, and Hao Wang. 2020. Deep multi-interest network for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2265-2268. [17] Ruobing Xie, Cheng Ling, Yalong Wang, Rui Wang, Feng Xia, and Leyu Lin. 2021. Deep feedback network for recommendation. In Proceedings of the Twenty-Ninth International Conference on International Joint Conferences on Artificial Intelligence . 2519-2525. [18] Weinan Xu, Hengxu He, Minshi Tan, Yunming Li, Jun Lang, and Dongbai Guo. 2020. Deep interest with hierarchical attention network for click-through rate prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1905-1908. [19] Ling Yan, Wu-Jun Li, Gui-Rong Xue, and Dingyi Han. 2014. Coupled group lasso for web-scale ctr prediction in display advertising. In International Conference on Machine Learning . PMLR, 802-810. [20] Yu Zheng, Chen Gao, Xiang Li, Xiangnan He, Yong Li, and Depeng Jin. 2021. Disentangling user interest and conformity for recommendation with causal embedding. In Proceedings of the Web Conference 2021 . 2980-2991. [21] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [22] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068.",
   "keywords_parsed": [
     "CTR Prediction",
-    " User Behavior Modeling",
-    " Context-aware Interests"
+    "User Behavior Modeling",
+    "Context-aware Interests"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Denoising User-aware Memory Network for Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Deepfair: deep learning for improving fairness in recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Modeling Users' Contextualized Page-wise Feedback for Click-Through Rate Prediction in E-commerce Search"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "PAL: a position-bias aware learning framework for CTR prediction in live recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep Position-wise Interaction Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Neural attentive session-based recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Decision-Making Context Interaction Network for ClickThrough Rate Prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Modeling dynamic missingness of implicit feedback for recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Deep multi-interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deep feedback network for recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Deep interest with hierarchical attention network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Coupled group lasso for web-scale ctr prediction in display advertising"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Disentangling user interest and conformity for recommendation with causal embedding"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

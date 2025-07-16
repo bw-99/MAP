@@ -26,25 +26,98 @@
   "REFERENCES": "[1] 1959. The Pattern of Consumer Purchases. Journal of the Royal Statistical Society. Series C (Applied Statistics) 8, 1 (1959), 26-41. http://www.jstor.org/stable/2985810 [2] Rahul Bhagat, Srevatsan Muralidharan, Alex Lobzhanidze, and Shankar Vishwanath. 2018. Buy it again: Modeling repeat purchase recommendations. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 62-70. [3] Chris Chatfield and Gerald Goodhardt. 1973. A Consumer Purchasing Model with Erlang Inter-Purchase Times. J. Amer. Statist. Assoc. 68 (1973), 828-835. [4] Sai Chand Chintala, Jura Liaukonyte, and Nathan Yang. 2022. Browsing the Aisles or Browsing the App? How Online Grocery Shopping Is Changing What We Buy. How Online Grocery Shopping is Changing What We Buy (August 8, 2022) (2022). [5] D. R. Cox. 1972. Regression Models and Life Tables. Journal of the Royal Statistical Society 34 (1972), 187-220. [6] Suvodip Dey, Pabitra Mitra, and Kratika Gupta. 2016. Recommending Repeat Purchases Using Product Segment Statistics. In Proceedings of the 10th ACM Conference on Recommender Systems (Boston, Massachusetts, USA) (RecSys '16) . Association for Computing Machinery, New York, NY, USA, 357-360. https: //doi.org/10.1145/2959100.2959145 [7] P S Fader, B G Hardie, and K Lee. 2009. Probability Models for Customer-Base Analysis. Journal of Interactive Marketing 23 (2009). [8] Sofia Gomes and João M Lopes. 2022. Evolution of the online grocery shopping experience during the COVID-19 Pandemic: Empiric study from Portugal. Journal of Theoretical and Applied Electronic Commerce Research 17, 3 (2022), 909-923. [9] Gary L. Grahn. 1969. NBD Model of Repeat-Purchase Loyalty: An Empirical Investigation. Journal of Marketing Research 6 (1969), 72 - 78. [10] Ruining He, Wang-Cheng Kang, Julian J McAuley, et al. 2018. Translation-based Recommendation: A Scalable Method for Modeling Sequential Behavior.. In IJCAI . 5264-5268. [11] Ruining He and Julian McAuley. 2016. Fusing similarity models with markov chains for sparse sequential recommendation. In 2016 IEEE 16th international conference on data mining (ICDM) . IEEE, 191-200. [12] Haoji Hu and Xiangnan He. 2019. Sets2sets: Learning from sequential sets with neural networks. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1491-1499. [13] Haoji Hu, Xiangnan He, Jinyang Gao, and Zhi-Li Zhang. 2020. Modeling personalized item frequency information for next-basket recommendation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1071-1080. [14] Komal Kapoor, Karthik Subbian, Jaideep Srivastava, and Paul R. Schrater. 2015. Just in Time Recommendations: Modeling the Dynamics of Boredom in Activity Streams. Proceedings of the Eighth ACM International Conference on Web Search and Data Mining (2015). [15] Komal Kapoor, Mingxuan Sun, Jaideep Srivastava, and Tao Ye. 2014. A hazard based approach to user return time prediction. Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (08 2014). https://doi.org/10.1145/2623330.2623348 Conference acronym 'XX, June 03-05, 2023, Woodstock, NY [16] Joseph A Konstan, Bradley N Miller, David Maltz, Jonathan L Herlocker, Lee R Gordon, and John Riedl. 1997. Grouplens: Applying collaborative filtering to usenet news. Commun. ACM 40, 3 (1997), 77-87. [17] Yehuda Koren. 2009. Collaborative filtering with temporal dynamics. In Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining . 447-456. [18] Pengjie Ren, Zhumin Chen, Jing Li, Zhaochun Ren, Jun Ma, and Maarten De Rijke. 2019. Repeatnet: A repeat aware neural recommendation machine for sessionbased recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 4806-4813. [19] Steffen Rendle, Christoph Freudenthaler, and Lars Schmidt-Thieme. 2010. Factorizing personalized markov chains for next-basket recommendation. In Proceedings of the 19th international conference on World wide web . 811-820. [20] Haochao Ying, Fuzhen Zhuang, Fuzheng Zhang, Yanchi Liu, Guandong Xu, Xing Xie, Hui Xiong, and Jian Wu. 2018. Sequential recommender system based on hierarchical attention network. In IJCAI International Joint Conference on Artificial Intelligence . [21] Feng Yu, Qiang Liu, Shu Wu, Liang Wang, and Tieniu Tan. 2016. A dynamic recurrent model for next basket recommendation. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval . 729-732.",
   "keywords_parsed": [
     "Personalization",
-    " Recommender Systems",
-    " E-commerce",
-    " Repeat purchases",
-    " Buy it again",
-    " Survival Models",
-    " Time-Series Models",
-    " Neural Network Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. Conference acronym 'XX",
-    " June 03-05",
-    " 2023",
-    " Woodstock",
-    " NY © 2023 Association for Computing Machinery. ACM ISBN 978-1-4503-XXXX-X/18/06...$15.00 https://doi.org/XXXXXXX.XXXXXXX Amit Pande",
-    " Kunal Ghosh",
-    " Rankyung Park. 2023. Personalized Category Frequency prediction for Buy It Again recommendations. In Proceedings of Make sure to enter the correct conference title from your rights confirmation emai (Conference acronym 'XX). ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 9 pages. https: //doi.org/XXXXXXX.XXXXXXX"
+    "Recommender Systems",
+    "E-commerce",
+    "Repeat purchases",
+    "Buy it again",
+    "Survival Models",
+    "Time-Series Models",
+    "Neural Network"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "The Pattern of Consumer Purchases"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Buy it again: Modeling repeat purchase recommendations"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A Consumer Purchasing Model with Erlang Inter-Purchase Times"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Browsing the Aisles or Browsing the App? How Online Grocery Shopping Is Changing What We Buy"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Regression Models and Life Tables"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Recommending Repeat Purchases Using Product Segment Statistics"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Probability Models for Customer-Base Analysis"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Evolution of the online grocery shopping experience during the COVID-19 Pandemic: Empiric study from Portugal"
+    },
+    {
+      "ref_id": "b9",
+      "title": "NBD Model of Repeat-Purchase Loyalty: An Empirical Investigation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Translation-based Recommendation: A Scalable Method for Modeling Sequential Behavior"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Fusing similarity models with markov chains for sparse sequential recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Sets2sets: Learning from sequential sets with neural networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Modeling personalized item frequency information for next-basket recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Just in Time Recommendations: Modeling the Dynamics of Boredom in Activity Streams"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A hazard based approach to user return time prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Grouplens: Applying collaborative filtering to usenet news"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Collaborative filtering with temporal dynamics"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Repeatnet: A repeat aware neural recommendation machine for sessionbased recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Factorizing personalized markov chains for next-basket recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Sequential recommender system based on hierarchical attention network"
+    },
+    {
+      "ref_id": "b21",
+      "title": "A dynamic recurrent model for next basket recommendation"
+    }
   ]
 }

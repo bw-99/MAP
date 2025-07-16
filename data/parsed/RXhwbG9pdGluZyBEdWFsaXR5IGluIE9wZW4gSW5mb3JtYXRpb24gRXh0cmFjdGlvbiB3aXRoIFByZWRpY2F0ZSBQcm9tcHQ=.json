@@ -43,8 +43,126 @@
   "REFERENCES": "[1] Gabor Angeli, Melvin Jose Johnson Premkumar, and Christopher D Manning. 2015. Leveraging linguistic structure for open domain information extraction. In Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) . 344-354. [2] Yejin Bang, Samuel Cahyawijaya, Nayeon Lee, Wenliang Dai, Dan Su, Bryan Wilie, Holy Lovenia, Ziwei Ji, Tiezheng Yu, Willy Chung, et al. 2023. A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity. arXiv preprint arXiv:2302.04023 (2023). [3] M. Banko, M. J. Cafarella, S. Soderland, M. Broadhead, and O. Etzioni. 2007. Open information extraction from the web. Communications of the Acm (2007). [4] Sangnie Bhardwaj, Samarth Aggarwal, and Mausam Mausam. 2019. CaRB: A Crowdsourced Benchmark for Open IE. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) . Association for Computational Linguistics, Hong Kong, China, 6262-6267. https://doi.org/ 10.18653/v1/D19-1651 [5] Ziqiang Cao, Furu Wei, Wenjie Li, and Sujian Li. 2018. Faithful to the original: Fact aware neural abstractive summarization. In thirty-second AAAI conference on artificial intelligence . [6] Lei Cui, Furu Wei, and Ming Zhou. 2018. Neural Open Information Extraction. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers) . Association for Computational Linguistics, Melbourne, Australia, 407-413. https://doi.org/10.18653/v1/P18-2065 [7] Ning Ding, Guangwei Xu, Yulin Chen, Xiaobin Wang, Xu Han, Pengjun Xie, Hai-Tao Zheng, and Zhiyuan Liu. 2021. Few-nerd: A few-shot named entity recognition dataset. arXiv preprint arXiv:2105.07464 (2021). [8] Xin Dong, Evgeniy Gabrilovich, Geremy Heitz, Wilko Horn, Ni Lao, Kevin Murphy, Thomas Strohmann, Shaohua Sun, and Wei Zhang. 2014. Knowledge vault: Aweb-scale approach to probabilistic knowledge fusion. In Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining . 601-610. [9] Anthony Fader, Stephen Soderland, and Oren Etzioni. 2011. Identifying relations for open information extraction. In Proceedings of the 2011 conference on empirical methods in natural language processing . 1535-1545. [10] Kiril Gashteovski, Rainer Gemulla, and Luciano del Corro. 2017. Minie: minimizing facts in open information extraction. Association for Computational Linguistics. [11] Ridong Han, Tao Peng, Chaohao Yang, Benyou Wang, Lu Liu, and Xiang Wan. 2023. Is Information Extraction Solved by ChatGPT? An Analysis of Performance, Evaluation Criteria, Robustness and Errors. arXiv preprint arXiv:2305.14450 (2023). [12] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [13] Keshav Kolluru, Vaibhav Adlakha, Samarth Aggarwal, Mausam, and Soumen Chakrabarti. 2020. OpenIE6: Iterative Grid Labeling and Coordination Analysis for Open Information Extraction. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) . Association for Computational Linguistics, Online, 3748-3761. https://doi.org/10.18653/v1/2020.emnlpmain.306 [14] Keshav Kolluru, Samarth Aggarwal, Vipul Rathore, Mausam, and Soumen Chakrabarti. 2020. IMoJIE: Iterative Memory-Based Joint Open Information Extraction. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics . Association for Computational Linguistics, Online, 5871-5886. https://doi.org/10.18653/v1/2020.acl-main.521 [15] Keshav Kolluru, Muqeeth Mohammed, Shubham Mittal, Soumen Chakrabarti, et al. 2022. Alignment-Augmented Consistent Translation for Multilingual Open Information Extraction. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . 2502-2517. [16] Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu. 2002. Bleu: a method for automatic evaluation of machine translation. In Proceedings of the 40th annual meeting of the Association for Computational Linguistics . 311-318. [17] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J Liu, et al. 2020. Exploring the limits of transfer learning with a unified text-to-text transformer. J. Mach. Learn. Res. 21, 140 (2020), 1-67. [18] Arpita Roy, Youngja Park, Taesung Lee, and Shimei Pan. 2019. Supervising unsupervised open information extraction models. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) . 728-737. [19] Swarnadeep Saha, Harinder Pal, et al. 2017. Bootstrapping for numerical open ie. In Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers) . 317-323. [20] Michael Schmitz, Stephen Soderland, Robert Bart, Oren Etzioni, et al. 2012. Open language learning for information extraction. In Proceedings of the 2012 joint conference on empirical methods in natural language processing and computational natural language learning . 523-534. [21] Gabriel Stanovsky, Julian Michael, Luke Zettlemoyer, and Ido Dagan. 2018. Supervised Open Information Extraction. In Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers) . Association for Computational Linguistics, New Orleans, Louisiana, 885-895. https://doi.org/10.18653/v1/N181081 [22] Jianlin Su. 2021. T5 PEGASUS - ZhuiyiAI . Technical Report. https://github.com/ ZhuiyiTechnology/t5-pegasus [23] Mingming Sun, Xu Li, Xin Wang, Miao Fan, Yue Feng, and Ping Li. 2018. Logician: a unified end-to-end neural approach for open-domain information extraction. In Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining . 556-564. [24] Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed Chi, Quoc V Le, Denny Zhou, et al. 2022. Chain-of-thought prompting elicits reasoning in large language models. Advances in Neural Information Processing Systems 35 (2022), 24824-24837. [25] Linting Xue, Noah Constant, Adam Roberts, Mihir Kale, Rami Al-Rfou, Aditya Siddhant, Aditya Barua, and Colin Raffel. 2020. mT5: A massively multilingual pre-trained text-to-text transformer. arXiv preprint arXiv:2010.11934 (2020). [26] Zhao Yan, Duyu Tang, Nan Duan, Shujie Liu, Wendi Wang, Daxin Jiang, Ming Zhou, and Zhoujun Li. 2018. Assertion-based QA with question-aware open information extraction. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 32. [27] Bowen Yu, Yucheng Wang, Tingwen Liu, Hongsong Zhu, Limin Sun, and Bin Wang. 2021. Maximal clique based non-autoregressive open information extraction. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing . 9696-9706. [28] Junlang Zhan and Hai Zhao. 2020. Span model for open information extraction on accurate corpus. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 9523-9530. [29] Shaowen Zhou, Bowen Yu, Aixin Sun, Cheng Long, Jingyang Li, and Jian Sun. 2022. A Survey on Neural Open Information Extraction: Current Status and Future Directions. In Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence, IJCAI-22 , Lud De Raedt (Ed.). International Joint Conferences on Artificial Intelligence Organization, 5694-5701. https: //doi.org/10.24963/ijcai.2022/793 Survey Track.",
   "keywords_parsed": [
     "OpenIE",
-    " dual task",
-    " prompt",
-    " generative model."
+    "dual task",
+    "prompt",
+    "generative model"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Leveraging linguistic structure for open domain information extraction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Open information extraction from the web"
+    },
+    {
+      "ref_id": "b4",
+      "title": "CaRB: A Crowdsourced Benchmark for Open IE"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Faithful to the original: Fact aware neural abstractive summarization"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Neural Open Information Extraction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Few-nerd: A few-shot named entity recognition dataset"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Knowledge vault: Aweb-scale approach to probabilistic knowledge fusion"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Identifying relations for open information extraction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Minie: minimizing facts in open information extraction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Is Information Extraction Solved by ChatGPT? An Analysis of Performance, Evaluation Criteria, Robustness and Errors"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b13",
+      "title": "OpenIE6: Iterative Grid Labeling and Coordination Analysis for Open Information Extraction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "IMoJIE: Iterative Memory-Based Joint Open Information Extraction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Alignment-Augmented Consistent Translation for Multilingual Open Information Extraction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Bleu: a method for automatic evaluation of machine translation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Supervising unsupervised open information extraction models"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Bootstrapping for numerical open ie"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Open language learning for information extraction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Supervised Open Information Extraction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "T5 PEGASUS - ZhuiyiAI"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Logician: a unified end-to-end neural approach for open-domain information extraction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Chain-of-thought prompting elicits reasoning in large language models"
+    },
+    {
+      "ref_id": "b25",
+      "title": "mT5: A massively multilingual pre-trained text-to-text transformer"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Assertion-based QA with question-aware open information extraction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Maximal clique based non-autoregressive open information extraction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Span model for open information extraction on accurate corpus"
+    },
+    {
+      "ref_id": "b29",
+      "title": "A Survey on Neural Open Information Extraction: Current Status and Future Directions"
+    }
   ]
 }

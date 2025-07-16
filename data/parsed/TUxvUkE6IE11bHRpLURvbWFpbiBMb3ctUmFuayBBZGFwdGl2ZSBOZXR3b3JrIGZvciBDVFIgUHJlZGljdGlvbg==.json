@@ -26,7 +26,261 @@
   "REFERENCES": "[1] Armen Aghajanyan, Luke Zettlemoyer, and Sonal Gupta. 2020. Intrinsic dimensionality explains the effectiveness of language model fine-tuning. arXiv preprint arXiv:2012.13255 (2020). [2] Mathieu Blondel, Akinori Fujino, Naonori Ueda, and Masakazu Ishihata. 2016. Higher-order factorization machines. Advances in Neural Information Processing Systems 29 (2016). [3] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems . 7-10. [4] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [5] Mark Dredze, Alex Kulesza, and Koby Crammer. 2010. Multi-domain learning by confidence-weighted parameter combination. Machine Learning 79 (2010), 123-149. [6] Mark Dredze, Alex Kulesza, and Koby Crammer. 2010. Multi-domain learning by confidence-weighted parameter combination. Machine Learning 79 (2010), 123-149. [7] Zhengxiao Du, Xiaowei Wang, Hongxia Yang, Jingren Zhou, and Jie Tang. 2019. Sequential scenario-specific meta learner for online recommendation. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2895-2904. [8] Tom Fawcett. 2006. An introduction to ROC analysis. Pattern Recognition Letters 27, 8 (2006), 861-874. [9] Jerome H Friedman. 2001. Greedy function approximation: a gradient boosting machine. Annals of Statistics (2001), 1189-1232. [10] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [11] Ruining He and Julian McAuley. 2016. Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering. In Proceedings of the 25th International Conference on World Wide Web . 507-517. [12] Xiangnan He and Tat-Seng Chua. 2017. Neural factorization machines for sparse predictive analytics. In Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval . 355-364. [13] Edward J Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2021. Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685 (2021). [14] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM Conference on Recommender Systems . 169-177. [15] Mahesh Joshi, Mark Dredze, William Cohen, and Carolyn Rose. 2012. Multidomain learning: when do domains matter?. In Proceedings of the 2012 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning . 1302-1312. [16] Yehuda Koren. 2008. Factorization meets the neighborhood: a multifaceted collaborative filtering model. In Proceedings of the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 426-434. [17] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix factorization techniques for recommender systems. Computer 42, 8 (2009), 30-37. [18] Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoyanov, and Luke Zettlemoyer. 2019. Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension. arXiv preprint arXiv:1910.13461 (2019). [19] Chunyuan Li, Heerad Farkhoor, Rosanne Liu, and Jason Yosinski. 2018. Measuring the intrinsic dimension of objective landscapes. arXiv preprint arXiv:1804.08838 (2018). [20] Dongfang Li, Baotian Hu, Qingcai Chen, Xiao Wang, Quanchang Qi, Liubin Wang, and Haishan Liu. 2021. Attentive capsule network for click-through rate and conversion rate prediction in online advertising. Knowledge-Based Systems 211 (2021), 106522. [21] Da Li, Yongxin Yang, Yi-Zhe Song, and Timothy M Hospedales. 2017. Deeper, broader and artier domain generalization. In Proceedings of the IEEE International Conference on Computer Vision . 5542-5550. [22] Pengcheng Li, Runze Li, Qing Da, An-Xiang Zeng, and Lijun Zhang. 2020. Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2605-2612. [23] Pengcheng Li, Runze Li, Qing Da, An-Xiang Zeng, and Lijun Zhang. 2020. Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2605-2612. [24] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1754-1763. [25] Haokun Liu, Derek Tam, Mohammed Muqeeth, Jay Mohta, Tenghao Huang, Mohit Bansal, and Colin A Raffel. 2022. Few-shot parameter-efficient fine-tuning is better and cheaper than in-context learning. Advances in Neural Information Processing Systems 35 (2022), 1950-1965. [26] Jiahui Liu, Peter Dolan, and Elin Rønby Pedersen. 2010. Personalized news recommendation based on click behavior. In Proceedings of the 15th International Conference on Intelligent User Interfaces . 31-40. [27] Tie-Yan Liu et al. 2009. Learning to rank for information retrieval. Foundations and Trends® in Information Retrieval 3, 3 (2009), 225-331. [28] Linhao Luo, Yumeng Li, Buyu Gao, Shuai Tang, Sinan Wang, Jiancheng Li, Tanchao Zhu, Jiancai Liu, Zhao Li, and Shirui Pan. 2023. MAMDR: A model agnostic learning framework for multi-domain recommendation. In 2023 IEEE 39th International Conference on Data Engineering (ICDE) . IEEE, 3079-3092. [29] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1930-1939. [30] Kelong Mao, Jieming Zhu, Liangcai Su, Guohao Cai, Yuru Li, and Zhenhua Dong. 2023. FinalMLP: an enhanced two-stream MLP model for CTR prediction. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 37. 4552-4560. [31] Sewon Min, Mike Lewis, Luke Zettlemoyer, and Hannaneh Hajishirzi. 2021. Metaicl: Learning to learn in context. arXiv preprint arXiv:2110.15943 (2021). [32] Maxim Naumov, Dheevatsa Mudigere, Hao-Jun Michael Shi, Jianyu Huang, Narayanan Sundaraman, Jongsoo Park, Xiaodong Wang, Udit Gupta, CaroleJean Wu, Alisson G Azzolini, et al. 2019. Deep learning recommendation model for personalization and recommendation systems. arXiv preprint arXiv:1906.00091 (2019). [33] Ashutosh Nayak, Mayur Garg, and Rajasekhara Reddy Duvvuru Muni. 2023. News Popularity Beyond the Click-Through-Rate for Personalized Recommendations. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1396-1405. [34] Yixin Nie, Adina Williams, Emily Dinan, Mohit Bansal, Jason Weston, and Douwe Kiela. 2019. Adversarial NLI: A new benchmark for natural language understanding. arXiv preprint arXiv:1910.14599 (2019). [35] Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et al. 2022. Training language models to follow instructions with human feedback. Advances in Neural Information Processing Systems 35 (2022), 27730-27744. [36] Changhua Pei, Yi Zhang, Yongfeng Zhang, Fei Sun, Xiao Lin, Hanxiao Sun, Jian Wu, Peng Jiang, Junfeng Ge, Wenwu Ou, et al. 2019. Personalized re-ranking for recommendation. In Proceedings of the 13th ACM Conference on Recommender Systems . 3-11. [37] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. [38] Jiarui Qin, Weinan Zhang, Rong Su, Zhirong Liu, Weiwen Liu, Guangpeng Zhao, Hao Li, Ruiming Tang, Xiuqiang He, and Yong Yu. 2023. Learning to retrieve user behaviors for click-through rate estimation. ACM Transactions on Information Systems 41, 4 (2023), 1-31. [39] Jiarui Qin, Weinan Zhang, Xin Wu, Jiarui Jin, Yuchen Fang, and Yong Yu. 2020. User behavior retrieval for click-through rate prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2347-2356. [40] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-based neural networks for user response prediction. In 2016 IEEE 16th International Conference on Data Mining (ICDM) . IEEE, 1149-1154. [41] Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever, et al. 2019. Language models are unsupervised multitask learners. OpenAI blog 1, 8 (2019), 9. [42] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International Conference on Data Mining . IEEE, 995-1000. [43] Reuven Rubinstein. 1999. The cross-entropy method for combinatorial and continuous optimization. Methodology and Computing in Applied Probability 1 (1999), 127-190. [44] Hinrich Schütze, Christopher D Manning, and Prabhakar Raghavan. 2008. Introduction to information retrieval . Vol. 39. Cambridge University Press Cambridge. [45] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4104-4113. [46] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1161-1170. MLoRA: Multi-Domain Low-Rank Adaptive Network for Click-Through Rate Prediction [47] Yukihiro Tagami, Shingo Ono, Koji Yamamoto, Koji Tsukamoto, and Akira Tajima. 2013. Ctr prediction for contextual advertising: Learning-to-rank approach. In Proceedings of the Seventh International Workshop on Data Mining for Online Advertising . 1-8. [48] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Proceedings of the 14th ACM Conference on Recommender Systems . 269-278. [49] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [50] Xin Wang, Peng Yang, Shaopeng Chen, Lin Liu, Lian Zhao, Jiacheng Guo, Mingming Sun, and Ping Li. 2021. Efficient learning to learn a robust CTR model for web-scale online sponsored search advertising. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4203-4213. [51] Yizhong Wang, Swaroop Mishra, Pegah Alipoormolabashi, Yeganeh Kordi, Amirreza Mirzaei, Anjana Arunkumar, Arjun Ashok, Arut Selvan Dhanasekaran, Atharva Naik, David Stap, et al. 2022. Super-naturalinstructions: Generalization via declarative instructions on 1600+ nlp tasks. arXiv preprint arXiv:2204.07705 (2022). [52] Jason Wei, Maarten Bosma, Vincent Y Zhao, Kelvin Guu, Adams Wei Yu, Brian Lester, Nan Du, Andrew M Dai, and Quoc V Le. 2021. Finetuned language models are zero-shot learners. arXiv preprint arXiv:2109.01652 (2021). [53] Jun Xiao, Hao Ye, Xiangnan He, Hanwang Zhang, Fei Wu, and Tat-Seng Chua. 2017. Attentional factorization machines: Learning the weight of feature interactions via attention networks. arXiv preprint arXiv:1708.04617 (2017). [54] Zhibo Xiao, Luwei Yang, Wen Jiang, Yi Wei, Yi Hu, and Hao Wang. 2020. Deep multi-interest network for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . [55] Zhibo Xiao, Luwei Yang, Tao Zhang, Wen Jiang, Wei Ning, and Yujiu Yang. 2024. Deep Evolutional Instant Interest Network for CTR Prediction in Trigger-Induced Conference acronym 'XX, June 03-05, 2018, Woodstock, NY Recommendation. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining . [56] Haizhi Yang, Tengyun Wang, Xiaoli Tang, Qianyu Li, Yueyue Shi, Siyu Jiang, Han Yu, and Hengjie Song. 2021. Multi-task learning for bias-free joint ctr prediction and market price modeling in online advertising. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 2291-2300. [57] Weinan Zhang, Jiarui Qin, Wei Guo, Ruiming Tang, and Xiuqiang He. 2021. Deep learning for click-through rate estimation. arXiv preprint arXiv:2104.10584 (2021). [58] Guorui Zhou, Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Na Mou, Xinchen Luo, et al. 2020. CAN: revisiting feature coaction for click-through rate prediction. arXiv preprint arXiv:2011.05625 (2020). [59] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 5941-5948. [60] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Dining . 1059-1068. [61] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1059-1068. [62] Kaiyang Zhou, Ziwei Liu, Yu Qiao, Tao Xiang, and Chen Change Loy. 2022. Domain generalization: A survey. IEEE Transactions on Pattern Analysis and Machine Intelligence 45, 4 (2022), 4396-4415. [63] Yunhong Zhou, Dennis Wilkinson, Robert Schreiber, and Rong Pan. 2008. Largescale parallel collaborative filtering for the netflix prize. In Algorithmic Aspects in Information and Management: 4th International Conference, AAIM 2008, Shanghai, China, June 23-25, 2008. Proceedings 4 . Springer, 337-348.",
   "keywords_parsed": [
     "Low-Rank Adaptive",
-    " Click-Through Rate Prediction",
-    " Multi-domain"
+    "Click-Through Rate Prediction",
+    "Multi-domain"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Intrinsic dimensionality explains the effectiveness of language model fine-tuning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Higher-order factorization machines"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Multi-domain learning by confidence-weighted parameter combination"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Multi-domain learning by confidence-weighted parameter combination"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Sequential scenario-specific meta learner for online recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "An introduction to ROC analysis"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Greedy function approximation: a gradient boosting machine"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b14",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Multidomain learning: when do domains matter?"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Factorization meets the neighborhood: a multifaceted collaborative filtering model"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Measuring the intrinsic dimension of objective landscapes"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Attentive capsule network for click-through rate and conversion rate prediction in online advertising"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Deeper, broader and artier domain generalization"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space"
+    },
+    {
+      "ref_id": "b24",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Few-shot parameter-efficient fine-tuning is better and cheaper than in-context learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Personalized news recommendation based on click behavior"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Learning to rank for information retrieval"
+    },
+    {
+      "ref_id": "b28",
+      "title": "MAMDR: A model agnostic learning framework for multi-domain recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b30",
+      "title": "FinalMLP: an enhanced two-stream MLP model for CTR prediction"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Metaicl: Learning to learn in context"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b33",
+      "title": "News Popularity Beyond the Click-Through-Rate for Personalized Recommendations"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Adversarial NLI: A new benchmark for natural language understanding"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Training language models to follow instructions with human feedback"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Learning to retrieve user behaviors for click-through rate estimation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "User behavior retrieval for click-through rate prediction"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Language models are unsupervised multitask learners"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b43",
+      "title": "The cross-entropy method for combinatorial and continuous optimization"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Introduction to information retrieval"
+    },
+    {
+      "ref_id": "b45",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Ctr prediction for contextual advertising: Learning-to-rank approach"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Efficient learning to learn a robust CTR model for web-scale online sponsored search advertising"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Super-naturalinstructions: Generalization via declarative instructions on 1600+ nlp tasks"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Finetuned language models are zero-shot learners"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Attentional factorization machines: Learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Deep multi-interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Deep Evolutional Instant Interest Network for CTR Prediction in Trigger-Induced Recommendation"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Multi-task learning for bias-free joint ctr prediction and market price modeling in online advertising"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Deep learning for click-through rate estimation"
+    },
+    {
+      "ref_id": "b58",
+      "title": "CAN: revisiting feature coaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Domain generalization: A survey"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Largescale parallel collaborative filtering for the netflix prize"
+    }
   ]
 }

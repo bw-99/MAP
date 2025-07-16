@@ -32,7 +32,129 @@
   "REFERENCES": "[1] Aman Agarwal, Xuanhui Wang, Cheng Li, Michael Bendersky, and Marc Najork. 2019. Addressing Trust Bias for Unbiased Learning-to-Rank. In The World Wide Web Conference (San Francisco, CA, USA) (WWW'19) . ACM, New York, NY, USA, 4-14. [2] Qingyao Ai, Keping Bi, Cheng Luo, Jiafeng Guo, and W. Bruce Croft. 2018. Unbiased Learning to Rank with Unbiased Propensity Estimation. In The 41st International ACM SIGIR Conference on Research Development in Information Retrieval (Ann Arbor, MI, USA) (SIGIR '18) . ACM, New York, NY, USA, 385-394. https://doi.org/10.1145/3209978.3209986 [3] Devansh Arpit, Stanisław Jastrzębski, Nicolas Ballas, David Krueger, Emmanuel Bengio, Maxinder S Kanwal, Tegan Maharaj, Asja Fischer, Aaron Courville, Yoshua Bengio, et al. 2017. A closer look at memorization in deep networks. In International conference on machine learning . PMLR, 233-242. [4] Stephen Bonner and Flavian Vasile. 2018. Causal Embeddings for Recommendation (RecSys '18) . Association for Computing Machinery, New York, NY, USA, 104-112. https://doi.org/10.1145/3240323.3240360 [5] Mouxiang Chen, Chenghao Liu, Jianling Sun, and Steven C.H. Hoi. 2021. Adapting Interactional Observation Embedding for Counterfactual Learning to Rank. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (Virtual Event, Canada) (SIGIR '21) . Association for Computing Machinery, New York, NY, USA, 285-294. https: //doi.org/10.1145/3404835.3462901 [6] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems (Boston, MA, USA) (DLRS 2016) . Association for Computing Machinery, New York, NY, USA, 7-10. https://doi.org/10.1145/2988450.2988454 [7] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems (Boston, Massachusetts, USA) (RecSys '16) . Association for Computing Machinery, New York, NY, USA, 191-198. https://doi.org/10.1145/ 2959100.2959190 [8] James Davidson, Benjamin Liebald, Junning Liu, Palash Nandy, Taylor Van Vleet, Ullas Gargi, Sujoy Gupta, Yu He, Mike Lambert, Blake Livingston, and Dasarathi Sampath. 2010. The YouTube Video Recommendation System. In Proceedings of the Fourth ACM Conference on Recommender Systems (Barcelona, Spain) (RecSys '10) . Association for Computing Machinery, New York, NY, USA, 293-296. https: //doi.org/10.1145/1864708.1864770 [9] Chongming Gao, Shijun Li, Yuan Zhang, Jiawei Chen, Biao Li, Wenqiang Lei, Peng Jiang, and Xiangnan He. 2022. KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos. In Proceedings of the 31st ACM International Conference on Information and Knowledge Management (Atlanta, GA, USA) (CIKM '22) . 5 pages. https://doi.org/10.1145/3511808.3557624 [10] Yunjun Gao, Yuntao Du, Yujia Hu, Lu Chen, Xinjun Zhu, Ziquan Fang, and Baihua Zheng. 2022. Self-Guided Learning to Denoise for Robust Recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (Madrid, Spain) (SIGIR '22) . Association for Computing Machinery, New York, NY, USA, 1412-1422. https://doi.org/10.1145/ 3477495.3532059 [11] Xudong Gong, Qinlin Feng, Yuan Zhang, Jiangling Qin, Weijie Ding, Biao Li, Peng Jiang, and Kun Gai. 2022. Real-Time Short Video Recommendation on Mobile Devices. In Proceedings of the 31st ACM International Conference on Information Knowledge Management (Atlanta, GA, USA) (CIKM '22) . Association for Computing Machinery, New York, NY, USA, 3103-3112. https: //doi.org/10.1145/3511808.3557065 [12] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In IJCAI . [13] Thorsten Joachims, Adith Swaminathan, and Tobias Schnabel. 2017. Unbiased Learning-to-Rank with Biased Feedback. In Proceedings of the Tenth ACM International Conference on Web Search and Data Mining (Cambridge, United Kingdom) (WSDM'17) . ACM, New York, NY, USA, 781-789. https://doi.org/10.1145/3018661. 3018699 [14] Beibei Li, Beihong Jin, Jiageng Song, Yisong Yu, Yiyuan Zheng, and Wei Zhou. 2022. Improving Micro-Video Recommendation via Contrastive Multiple Interests. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (Madrid, Spain) (SIGIR '22) . Association for Computing Machinery, New York, NY, USA, 2377-2381. https://doi.org/10.1145/ 3477495.3531861 [15] Yongqi Li, Meng Liu, Jianhua Yin, Chaoran Cui, Xin-Shun Xu, and Liqiang Nie. 2019. Routing Micro-Videos via A Temporal Graph-Guided Recommendation System. In Proceedings of the 27th ACM International Conference on Multimedia (Nice, France) (MM '19) . Association for Computing Machinery, New York, NY, USA, 1464-1472. https://doi.org/10.1145/3343031.3350950 [16] Shang Liu, Zhenzhong Chen, Hongyi Liu, and Xinghai Hu. 2019. User-Video Co-Attention Network for Personalized Micro-Video Recommendation. In The World Wide Web Conference (San Francisco, CA, USA) (WWW'19) . Association for Computing Machinery, New York, NY, USA, 3020-3026. https://doi.org/10. 1145/3308558.3313513 [17] Yiyu Liu, Qian Liu, Yu Tian, Changping Wang, Yanan Niu, Yang Song, and Chenliang Li. 2021. Concept-Aware Denoising Graph Neural Network for Micro-Video Recommendation. In Proceedings of the 30th ACM International Conference on Information Knowledge Management (Virtual Event, Queensland, Australia) (CIKM '21) . Association for Computing Machinery, New York, NY, USA, 1099-1108. https://doi.org/10.1145/3459637.3482417 [18] Judea Pearl. 2009. Causality . Cambridge university press. [19] Steffen Rendle. 2012. Factorization Machines with LibFM. ACM Trans. Intell. Syst. Technol. 3, 3, Article 57 (may 2012), 22 pages. https://doi.org/10.1145/2168752. 2168771 RecSys '23, September 18-22, 2023, Singapore, Singapore Haiyuan Zhao et al. [30] Yinwei Wei, Xiang Wang, Liqiang Nie, Xiangnan He, Richang Hong, and Tat-Seng Chua. 2019. MMGCN: Multi-Modal Graph Convolution Network for Personalized Recommendation of Micro-Video. In Proceedings of the 27th ACM International Conference on Multimedia (Nice, France) (MM '19) . Association for Computing Machinery, New York, NY, USA, 1437-1445. https://doi.org/10.1145/3343031. 3351034 [31] Peng Wu, Haoxuan Li, Yuhao Deng, Wenjie Hu, Quanyu Dai, Zhenhua Dong, Jie Sun, Rui Zhang, and Xiao-Hua Zhou. 2022. On the Opportunity of Causal Learning in Recommendation Systems: Foundation, Estimation, Prediction and Challenges. In Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence, IJCAI-22 . 5646-5653. Survey Track. [32] Siqi Wu, Marian-Andrei Rizoiu, and Lexing Xie. 2018. Beyond views: Measuring and predicting engagement in online videos. In Twelfth international AAAI conference on web and social media . [33] Xing Yi, Liangjie Hong, Erheng Zhong, Nanthan Nan Liu, and Suju Rajan. 2014. Beyond Clicks: Dwell Time for Personalization (RecSys '14) . Association for Computing Machinery, New York, NY, USA, 113-120. https://doi.org/10.1145/ 2645710.2645724 [34] Bowen Yuan, Yaxu Liu, Jui-Yang Hsia, Zhenhua Dong, and Chih-Jen Lin. 2020. Unbiased Ad Click Prediction for Position-Aware Advertising Systems. In Fourteenth ACM Conference on Recommender Systems (Virtual Event, Brazil) (RecSys '20) . ACM, New York, NY, USA, 368-377. https://doi.org/10.1145/3383313.3412241 [35] Ruohan Zhan, Changhua Pei, Qiang Su, Jianfeng Wen, Xueliang Wang, Guanyu Mu, Dong Zheng, Peng Jiang, and Kun Gai. 2022. Deconfounding Duration Bias in Watch-Time Prediction for Video Recommendation. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Washington DC, USA) (KDD '22) . Association for Computing Machinery, New York, NY, USA, 4472-4481. https://doi.org/10.1145/3534678.3539092 [36] Xiao Zhang, Sunhao Dai, Jun Xu, Zhenhua Dong, Quanyu Dai, and Ji-Rong Wen. 2022. Counteracting user attention bias in music streaming recommendation via reward modification. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2504-2514. [37] Yang Zhang, Fuli Feng, Xiangnan He, Tianxin Wei, Chonggang Song, Guohui Ling, and Yongdong Zhang. 2021. Causal Intervention for Leveraging Popularity Bias in Recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (Virtual Event, Canada) (SIGIR '21) . ACM, New York, NY, USA, 11-20. https://doi.org/10.1145/ 3404835.3462875 [38] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. Recommending What Video to Watch next: A Multitask Ranking System. In Proceedings of the 13th ACM Conference on Recommender Systems (Copenhagen, Denmark) (RecSys '19) . Association for Computing Machinery, New York, NY, USA, 43-51. https://doi.org/10.1145/3298689.3346997 [39] Yu Zheng, Chen Gao, Jingtao Ding, Lingling Yi, Depeng Jin, Yong Li, and Meng Wang. 2022. DVR: Micro-Video Recommendation Optimizing Watch-Time-Gain under Duration Bias. In Proceedings of the 30th ACM International Conference on Multimedia (Lisboa, Portugal) (MM '22) . Association for Computing Machinery, New York, NY, USA, 334-345. https://doi.org/10.1145/3503161.3548428 [40] YuZheng, Chen Gao, Xiang Li, Xiangnan He, Yong Li, and Depeng Jin. 2021. Disentangling User Interest and Conformity for Recommendation with Causal Embedding. In Proceedings of the Web Conference 2021 (Ljubljana, Slovenia) (WWW'21) . ACM, New York, NY, USA, 2980-2991. https://doi.org/10.1145/3442381.3449788",
   "keywords_parsed": [
     "video recommendation",
-    " duration bias",
-    " noisy watching"
+    "duration bias",
+    "noisy watching"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Addressing Trust Bias for Unbiased Learning-to-Rank"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Unbiased Learning to Rank with Unbiased Propensity Estimation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A closer look at memorization in deep networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Causal Embeddings for Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Adapting Interactional Observation Embedding for Counterfactual Learning to Rank"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "The YouTube Video Recommendation System"
+    },
+    {
+      "ref_id": "b9",
+      "title": "KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Self-Guided Learning to Denoise for Robust Recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Real-Time Short Video Recommendation on Mobile Devices"
+    },
+    {
+      "ref_id": "b12",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Unbiased Learning-to-Rank with Biased Feedback"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Improving Micro-Video Recommendation via Contrastive Multiple Interests"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Routing Micro-Videos via A Temporal Graph-Guided Recommendation System"
+    },
+    {
+      "ref_id": "b16",
+      "title": "User-Video Co-Attention Network for Personalized Micro-Video Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Concept-Aware Denoising Graph Neural Network for Micro-Video Recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Causality"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Factorization Machines with LibFM"
+    },
+    {
+      "ref_id": "b30",
+      "title": "MMGCN: Multi-Modal Graph Convolution Network for Personalized Recommendation of Micro-Video"
+    },
+    {
+      "ref_id": "b31",
+      "title": "On the Opportunity of Causal Learning in Recommendation Systems: Foundation, Estimation, Prediction and Challenges"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Beyond views: Measuring and predicting engagement in online videos"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Beyond Clicks: Dwell Time for Personalization"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Unbiased Ad Click Prediction for Position-Aware Advertising Systems"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deconfounding Duration Bias in Watch-Time Prediction for Video Recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Counteracting user attention bias in music streaming recommendation via reward modification"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Causal Intervention for Leveraging Popularity Bias in Recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Recommending What Video to Watch next: A Multitask Ranking System"
+    },
+    {
+      "ref_id": "b39",
+      "title": "DVR: Micro-Video Recommendation Optimizing Watch-Time-Gain under Duration Bias"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Disentangling User Interest and Conformity for Recommendation with Causal Embedding"
+    }
   ]
 }

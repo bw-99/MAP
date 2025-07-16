@@ -23,8 +23,110 @@
   "REFERENCES": "[1] Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. 2016. Layer normalization. arXiv preprint arXiv:1607.06450 (2016). [2] Mathieu Blondel, Akinori Fujino, Naonori Ueda, and Masakazu Ishihata. 2016. Higher-order factorization machines. Advances in Neural Information Processing Systems 29 (2016). [3] Yin-Wen Chang, Cho-Jui Hsieh, Kai-Wei Chang, Michael Ringgaard, and Chih-Jen Lin. 2010. Training and testing low-degree polynomial data mappings via linear SVM. Journal of Machine Learning Research 11, 4 (2010). [4] Tianqi Chen and Carlos Guestrin. 2016. Xgboost: A scalable tree boosting system. In Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining . 785-794. [5] Wenqiang Chen, Lizhang Zhan, Yuanlong Ci, Minghua Yang, Chen Lin, and Dugang Liu. 2019. FLEN: leveraging field for scalable CTR prediction. arXiv preprint arXiv:1911.04690 (2019). [6] Chen Cheng, Fen Xia, Tong Zhang, Irwin King, and Michael R Lyu. 2014. Gradient boosting factorization machines. In Proceedings of the 8th ACM Conference on Recommender systems . 265-272. [7] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [8] Weiyu Cheng, Yanyan Shen, and Linpeng Huang. 2020. Adaptive factorization network: Learning adaptive-order feature interactions. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 3609-3616. [9] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [10] Xiangnan He and Tat-Seng Chua. 2017. Neural factorization machines for sparse predictive analytics. In Proceedings of the 40th International ACM SIGIR conference on Research and Development in Information Retrieval . 355-364. [11] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In Proceedings of the eighth international workshop on data mining for online advertising . 1-9. [12] J Wesley Hines. 1996. A logarithmic neural network architecture for unbounded non-linear function approximation. In Proceedings of International Conference on Neural Networks (ICNN'96) , Vol. 2. IEEE, 1245-1250. [13] Fuxing Hong, Dongbo Huang, and Ge Chen. 2019. Interaction-aware factorization machines for recommender systems. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 3804-3811. [14] Jie Hu, Li Shen, and Gang Sun. 2018. Squeeze-and-excitation networks. In Proceedings of the IEEE conference on computer vision and pattern recognition . 7132-7141. [15] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning deep structured semantic models for web search using clickthrough data. In Proceedings of the 22nd ACM international conference on Information & Knowledge Management . 2333-2338. [16] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM Conference on Recommender Systems . 169-177. [17] Sergey Ioffe and Christian Szegedy. 2015. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In International conference on machine learning . PMLR, 448-456. [18] Yuchin Juan, Yong Zhuang, Wei-Sheng Chin, and Chih-Jen Lin. 2016. Fieldaware factorization machines for CTR prediction. In Proceedings of the 10th ACM conference on recommender systems . 43-50. [19] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [20] Zeyu Li, Wei Cheng, Yang Chen, Haifeng Chen, and Wei Wang. 2020. Interpretable click-through rate prediction through hierarchical attention. In Proceedings of the 13th International Conference on Web Search and Data Mining . 313-321. [21] Zekun Li, Zeyu Cui, Shu Wu, Xiaoyu Zhang, and Liang Wang. 2019. Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 539-548. [22] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [23] Wantong Lu, Yantao Yu, Yongzhe Chang, Zhen Wang, Chenhui Li, and Bo Yuan. 2021. A dual input-aware factorization machine for CTR prediction. In Proceedings of the Twenty-Ninth International Conference on International Joint Conferences on Artificial Intelligence . 3139-3145. [24] Maxim Naumov, Dheevatsa Mudigere, Hao-Jun Michael Shi, Jianyu Huang, Narayanan Sundaraman, Jongsoo Park, Xiaodong Wang, Udit Gupta, CaroleJean Wu, Alisson G Azzolini, et al. 2019. Deep learning recommendation model for personalization and recommendation systems. arXiv preprint arXiv:1906.00091 [44] Jieming Zhu, Jinyang Liu, Weiqi Li, Jincai Lai, Xiuqiang He, Liang Chen, and Zibin Zheng. 2020. Ensembled CTR prediction via knowledge distillation. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2941-2958.",
   "keywords_parsed": [
     "Feature Interaction",
-    " CTR Prediction",
-    " Recommender Systems",
-    " Neural Networks"
+    "CTR Prediction",
+    "Recommender Systems",
+    "Neural Networks"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Layer normalization"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Higher-order factorization machines"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Training and testing low-degree polynomial data mappings via linear SVM"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Xgboost: A scalable tree boosting system"
+    },
+    {
+      "ref_id": "b5",
+      "title": "FLEN: leveraging field for scalable CTR prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Gradient boosting factorization machines"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Adaptive factorization network: Learning adaptive-order feature interactions"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A logarithmic neural network architecture for unbounded non-linear function approximation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Interaction-aware factorization machines for recommender systems"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Squeeze-and-excitation networks"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b16",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Field-aware factorization machines for CTR prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Interpretable click-through rate prediction through hierarchical attention"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "A dual input-aware factorization machine for CTR prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Ensembled CTR prediction via knowledge distillation"
+    }
   ]
 }

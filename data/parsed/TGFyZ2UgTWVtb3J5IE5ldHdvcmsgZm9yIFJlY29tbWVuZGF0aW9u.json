@@ -18,14 +18,85 @@
   "References": "[1] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, et al. 2022. CAN: feature co-action network for click-through rate prediction. In Proceedings of the fifteenth ACM international conference on web search and data mining . 57-65. [2] Yue Cao, Xiaojiang Zhou, Jiaqi Feng, Peihao Huang, Yao Xiao, Dayao Chen, and Sheng Chen. 2022. Sampling is all you need on modeling long-term user behaviors for CTR prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2974-2983. [3] Zheng Chai, Zhihong Chen, Chenliang Li, Rong Xiao, Houyi Li, Jiawei Wu, Jingxu Chen, and Haihong Tang. 2022. User-aware multi-interest learning for candidate matching in recommenders. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1326-1335. [4] Jianxin Chang, Chenbin Zhang, Zhiyi Fu, Xiaoxue Zang, Lin Guan, Jing Lu, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, et al. 2023. TWIN: TWo-stage interest network for lifelong user behavior modeling in CTR prediction at kuaishou. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3785-3794. [5] Gabriel de Souza Pereira Moreira, Sara Rabhi, Jeong Min Lee, Ronay Ak, and Even Oldridge. 2021. Transformers4rec: Bridging the gap between nlp and sequential/session-based recommendation. In Proceedings of the 15th ACM conference on recommender systems . 143-153. [6] R Girshick. 2015. Fast R-CNN. In Proceedings of the IEEE International Conference on Computer Vision (ICCV) . [7] Xingzhuo Guo, Junwei Pan, Ximei Wang, Baixu Chen, Jie Jiang, and Mingsheng Long. 2024. On the Embedding Collapse when Scaling up Recommendation Models. In Forty-first International Conference on Machine Learning . [8] Herve Jegou, Matthijs Douze, and Cordelia Schmid. 2010. Product quantization for nearest neighbor search. IEEE Transactions on Pattern Analysis and Machine Intelligence 33, 1 (2010), 117-128. [9] Guillaume Lample, Alexandre Sablayrolles, Marc'Aurelio Ranzato, Ludovic Denoyer, and Hervé Jégou. 2019. Large memory layers with product keys. Advances in Neural Information Processing Systems 32 (2019). [10] Qi Liu, Xuyang Hou, Haoran Jin, Zhe Wang, Defu Lian, Tan Qu, Jia Cheng, Jun Lei, et al. 2023. Deep Group Interest Modeling of Full Lifelong User Behaviors WWWCompanion '25, April 28-May 2, 2025, Sydney, NSW, Australia for CTR Prediction. arXiv preprint arXiv:2311.10764 (2023). [11] Alexander Miller, Adam Fisch, Jesse Dodge, Amir-Hossein Karimi, Antoine Bordes, and Jason Weston. 2016. Key-Value Memory Networks for Directly Reading Documents. In Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing . [12] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on long sequential user behavior modeling for click-through rate prediction. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2671-2679. [13] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. [14] Ling Yan, Wu-Jun Li, Gui-Rong Xue, and Dingyi Han. 2014. Coupled group lasso for web-scale ctr prediction in display advertising. In International conference on machine learning . PMLR, 802-810. [15] Wenhui Yu, Chao Feng, Yanze Zhang, Lantao Hu, Peng Jiang, and Han Li. 2024. IFA: Interaction Fidelity Attention for Entire Lifelong Behaviour Sequence Modeling. arXiv preprint arXiv:2406.09742 (2024). [16] Jiaqi Zhai, Lucy Liao, Xing Liu, Yueming Wang, Rui Li, Xuan Cao, Leon Gao, Zhaojie Gong, Fangda Gu, Jiayuan He, et al. [n. d.]. Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations. In International conference on machine learning . [17] Buyun Zhang, Liang Luo, Yuxin Chen, Jade Nie, Xi Liu, Shen Li, Yanli Zhao, Yuchen Hao, Yantao Yao, Ellie Dingqiao Wen, et al. [n. d.]. Wukong: Towards a Scaling Law for Large-Scale Recommendation. In Forty-first International Conference on Machine Learning . [18] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [19] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068.",
   "keywords_parsed": [
     "Large Recommender Models",
-    " Memory Learning",
-    " Personalized Recommender System",
-    " Sequential Modeling † Corresponding Author. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. WWWCompanion '25",
-    " Sydney",
-    " NSW",
-    " Australia © 2025 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-1331-6/2025/04 https://doi.org/10.1145/3701716.3715514"
+    "Memory Learning",
+    "Sequential Modeling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "CAN: feature co-action network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Sampling is all you need on modeling long-term user behaviors for CTR prediction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "User-aware multi-interest learning for candidate matching in recommenders"
+    },
+    {
+      "ref_id": "b4",
+      "title": "TWIN: TWo-stage interest network for lifelong user behavior modeling in CTR prediction at kuaishou"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Transformers4rec: Bridging the gap between nlp and sequential/session-based recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Fast R-CNN"
+    },
+    {
+      "ref_id": "b7",
+      "title": "On the Embedding Collapse when Scaling up Recommendation Models"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Product quantization for nearest neighbor search"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Large memory layers with product keys"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep Group Interest Modeling of Full Lifelong User Behaviors for CTR Prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Key-Value Memory Networks for Directly Reading Documents"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Coupled group lasso for web-scale ctr prediction in display advertising"
+    },
+    {
+      "ref_id": "b15",
+      "title": "IFA: Interaction Fidelity Attention for Entire Lifelong Behaviour Sequence Modeling"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Wukong: Towards a Scaling Law for Large-Scale Recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

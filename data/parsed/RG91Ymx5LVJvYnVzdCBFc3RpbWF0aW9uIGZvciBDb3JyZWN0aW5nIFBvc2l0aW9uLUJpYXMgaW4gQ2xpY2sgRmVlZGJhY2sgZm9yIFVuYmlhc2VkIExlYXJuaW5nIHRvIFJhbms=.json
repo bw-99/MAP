@@ -41,6 +41,238 @@
   "E MAIN RESULTS EVALUATED WITH DISCOUNTED CUMULATIVE GAIN": "The main results presented in Section 8 used ECP (Eq. 7) as the metric of performance. As argued in Section 3.2, we think ECP is the most appropriate metric as it is based on the actual user model in the simulation, i.e. it utilizes the true 𝛼 and 𝛽 values. Nevertheless, this makes it harder to compare our results with previous work that relies on more traditional metrics. To better enable such comparisons, and to verify whether our conclusions translate to other metrics, Table 2 reports the same results as Table 1 but in terms of normalized discounted cumulative gain (NDCG) [15]:  Comparing Table 1 with Table 2 reveals that both tables show the same trends and relative differences between the different methods. This confirms that the conclusions that were made from comparisons in Section 8 are still valid when measuring with NDCG instead of ECP. In other words, Table 2 shows that even when evaluating with NDCG, the performance improvements of DR and DM over IPS and other baselines remain very clear. ACM Trans. Inf. Syst., Vol. 0, No. 0, Article 0. Publication date: 2023. Doubly-Robust Estimation for Correcting Position-Bias in Click Feedback for Unbiased Learning to Rank 0:31 Table 2. NDCG reached using different estimators in three different settings and three datasets for several 𝑁 values: the number of displayed rankings in the simulated training set. In addition, the NDCG of the logging policy and a model trained on the ground-truth (Full-Information) are included to indicate estimated lower and upper bounds on possible performance respectively. Top part: NDCG@5 in the top-5 setting with known 𝛼 and 𝛽 bias parameters; middle part: NDCG@5 in the top-5 setting with estimated ˆ 𝛼 and ˆ 𝛽 ; bottom part: NDCG in the full-ranking setting (no cutoff) with known 𝛼 and 𝛽 bias parameters. Reported numbers are averages over 20 independent runs evaluated on held-out test-sets, brackets display the standard deviation (logging policy deviation is ommitted since it did not vary between runs). Bold numbers indicate the highest performance per setting, dataset and 𝑁 combination. Statistical differences with our DR estimator are measured via a two-sided student-t test, ▼ and ▲ indicate methods with significantly lower or higher NDCG with 𝑝 < 0 . 01 respectively; additionally, ▽ and △ indicate significant differences with 𝑝 < 0 . 05 . ACM Trans. Inf. Syst., Vol. 0, No. 0, Article 0. Publication date: 2023. 0:32 Harrie Oosterhuis",
   "REFERENCES": "[1] Aman Agarwal, Kenta Takatsu, Ivan Zaitsev, and Thorsten Joachims. 2019. A General Framework for Counterfactual Learning-to-Rank. In Proceedings of the 42nd International ACM SIGIR Conference on Research & Development in Information Retrieval . ACM, 5-14. [2] Aman Agarwal, Xuanhui Wang, Cheng Li, Michael Bendersky, and Marc Najork. 2019. Addressing Trust Bias for Unbiased Learning-to-Rank. In The World Wide Web Conference . ACM, 4-14. [3] Aman Agarwal, Ivan Zaitsev, Xuanhui Wang, Cheng Li, Marc Najork, and Thorsten Joachims. 2019. Estimating Position Bias without Intrusive Interventions. In Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining . ACM, 474-482. [4] Qingyao Ai, Tao Yang, Huazheng Wang, and Jiaxin Mao. 2021. Unbiased Learning to Rank: Online or Offline? ACM Transactions on Information Systems (TOIS) 39, 2 (2021), 1-29. [5] Jessa Bekker, Pieter Robberechts, and Jesse Davis. 2019. Beyond the Selected Completely at Random Assumption for Learning from Positive and Unlabeled Data. In Joint European Conference on Machine Learning and Knowledge Discovery in Databases . Springer, 71-85. [6] Christopher J.C. Burges. 2010. From RankNet to LambdaRank to LambdaMART: An Overview . Technical Report MSR-TR-2010-82. Microsoft. [7] Olivier Chapelle and Yi Chang. 2011. Yahoo! Learning to Rank Challenge Overview. Journal of Machine Learning Research 14 (2011), 1-24. [8] Nick Craswell, Onno Zoeter, Michael Taylor, and Bill Ramsey. 2008. An Experimental Comparison of Click Position-Bias Models. In Proceedings of the 2008 International Conference on Web Search and Data Mining . 87-94. [9] Domenico Dato, Claudio Lucchese, Franco Maria Nardini, Salvatore Orlando, Raffaele Perego, Nicola Tonellotto, and Rossano Venturini. 2016. Fast Ranking with Additive Ensembles of Oblivious and Non-Oblivious Regression Trees. ACM Transactions on Information Systems (TOIS) 35, 2 (2016), Article 15. [10] Miroslav Dudík, Dumitru Erhan, John Langford, and Lihong Li. 2014. Doubly Robust Policy Evaluation and Optimization. Statist. Sci. 29, 4 (2014), 485-511. [11] Zhichong Fang, Aman Agarwal, and Thorsten Joachims. 2019. Intervention Harvesting for Context-Dependent Examination-Bias estimation. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . 825-834. [12] Katja Hofmann, Anne Schuth, Shimon Whiteson, and Maarten de Rijke. 2013. Reusing Historical Interaction Data for Faster Online Learning to Rank for IR. In Proceedings of the Sixth ACM International Conference on Web Search and Data Mining . ACM, 183-192. [13] Daniel G Horvitz and Donovan J Thompson. 1952. A Generalization of Sampling Without Replacement from a Finite Universe. Journal of the American statistical Association 47, 260 (1952), 663-685. [14] Rolf Jagerman, Ilya Markov, and Maarten De Rijke. 2020. Safe Exploration for Optimizing Contextual Bandits. ACM Transactions on Information Systems (TOIS) 38, 3 (2020), 1-23. [15] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated Gain-Based Evaluation of IR Techniques. ACM Transactions on Information Systems (TOIS) 20, 4 (2002), 422-446. [16] Thorsten Joachims. 2002. Optimizing Search Engines Using Clickthrough Data. In Proceedings of the Eighth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . ACM, 133-142. [17] Thorsten Joachims, Laura Granka, Bing Pan, Helene Hembrooke, and Geri Gay. 2017. Accurately Interpreting Clickthrough Data as Implicit Feedback. In ACM SIGIR Forum , Vol. 51. Acm New York, NY, USA, 4-11. [18] Thorsten Joachims, Adith Swaminathan, and Tobias Schnabel. 2017. Unbiased Learning-to-Rank with Biased Feedback. In Proceedings of the Tenth ACM International Conference on Web Search and Data Mining . ACM, 781-789. [19] Joseph DY Kang, Joseph L Schafer, et al. 2007. Demystifying Double Robustness: A Comparison of Alternative Strategies for Estimating a Population Mean from Incomplete Data. Statistical science 22, 4 (2007), 523-539. [20] Haruka Kiyohara, Yuta Saito, Tatsuya Matsuhiro, Yusuke Narita, Nobuyuki Shimizu, and Yasuo Yamamoto. 2022. Doubly Robust Off-Policy Evaluation for Ranking Policies Under the Cascade Behavior Model. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 487-497. [21] Junpei Komiyama, Junya Honda, and Hiroshi Nakagawa. 2015. Optimal Regret Analysis of Thompson Sampling in Stochastic Multi-armed Bandit Problem with Multiple Plays. In Proceedings of the 32Nd International Conference on International Conference on Machine Learning - Volume 37 (Lille, France) (ICML'15) . JMLR.org, 1152-1161. [22] Paul Lagrée, Claire Vernade, and Olivier Cappé. 2016. Multiple-Play Bandits in the Position-Based Model. In Advances in Neural Information Processing Systems . 1597-1605. [23] Shuai Li, Yasin Abbasi-Yadkori, Branislav Kveton, S Muthukrishnan, Vishwa Vinay, and Zheng Wen. 2018. Offline Evaluation of Ranking Policies with Click Models. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 1685-1694. ACM Trans. Inf. Syst., Vol. 0, No. 0, Article 0. Publication date: 2023. Doubly-Robust Estimation for Correcting Position-Bias in Click Feedback for Unbiased Learning to Rank 0:33 [24] Tie-Yan Liu. 2009. Learning to Rank for Information Retrieval. Foundations and Trends in Information Retrieval 3, 3 (2009), 225-331. [25] Harrie Oosterhuis. 2021. Computationally Efficient Optimization of Plackett-Luce Ranking Models for Relevance and Fairness. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (Virtual Event, Canada) (SIGIR '21) . ACM, 1023-1032. [26] Harrie Oosterhuis and Maarten de Rijke. 2018. Differentiable Unbiased Online Learning to Rank. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . ACM, 1293-1302. [27] Harrie Oosterhuis and Maarten de Rijke. 2019. Optimizing Ranking Models in an Online Setting. In Advances in Information Retrieval . Springer International Publishing, Cham, 382-396. [28] Harrie Oosterhuis and Maarten de Rijke. 2020. Policy-Aware Unbiased Learning to Rank for Top-k Rankings. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, 489-498. [29] Harrie Oosterhuis and Maarten de Rijke. 2021. Unifying Online and Counterfactual Learning to Rank. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining (WSDM'21) . ACM. [30] Harrie Oosterhuis and Maarten de de Rijke. 2021. Robust Generalization and Safe Query-Specialization in Counterfactual Learning to Rank. In Proceedings of the Web Conference 2021 . 158-170. [31] Zohreh Ovaisi, Ragib Ahsan, Yifan Zhang, Kathryn Vasilaky, and Elena Zheleva. 2020. Correcting for Selection Bias in Learning-to-rank Systems. In Proceedings of The Web Conference 2020 . 1863-1873. [32] Tao Qin and Tie-Yan Liu. 2013. Introducing LETOR 4.0 datasets. arXiv preprint arXiv:1306.2597 (2013). [33] Filip Radlinski, Madhu Kurup, and Thorsten Joachims. 2008. How Does Clickthrough Data Reflect Retrieval Quality?. In Proceedings of the 17th ACM Conference on Information and Knowledge Management . ACM, 43-52. [34] Matthew Richardson, Ewa Dominowska, and Robert Ragno. 2007. Predicting Clicks: Estimating the Click-Through Rate for New Ads. In Proceedings of the 16th International Conference on World Wide Web . 521-530. [35] James M Robins, Andrea Rotnitzky, and Lue Ping Zhao. 1994. Estimation of Regression Coefficients when Some Regressors are not Always Observed. Journal of the American statistical Association 89, 427 (1994), 846-866. [36] Yuta Saito. 2020. Doubly Robust Estimator for Ranking Metrics with Post-Click Conversions. In Fourteenth ACM Conference on Recommender Systems . 92-100. [37] Yuta Saito and Thorsten Joachims. 2021. Counterfactual Learning and Evaluation for Recommender Systems: Foundations, Implementations, and Recent Advances. In Fifteenth ACM Conference on Recommender Systems . 828-830. [38] Yuta Saito, Suguru Yaginuma, Yuta Nishino, Hayato Sakata, and Kazuhide Nakata. 2020. Unbiased Recommender Learning from Missing-not-at-Random Implicit Feedback. In Proceedings of the 13th International Conference on Web Search and Data Mining . 501-509. [39] Anne Schuth, Harrie Oosterhuis, Shimon Whiteson, and Maarten de Rijke. 2016. Multileave Gradient Descent for Fast Online Learning to Rank. In Proceedings of the Ninth ACM International Conference on Web Search and Data Mining . 457-466. [40] Ashudeep Singh and Thorsten Joachims. 2018. Fairness of Exposure in Rankings. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2219-2228. [41] Ashudeep Singh and Thorsten Joachims. 2019. Policy Learning for Fairness in Ranking. In Advances in Neural Information Processing Systems . 5426-5436. [42] Alex Strehl, John Langford, Lihong Li, and Sham M Kakade. 2010. Learning from Logged Implicit Exploration Data. In Advances in Neural Information Processing Systems , J. Lafferty, C. Williams, J. Shawe-Taylor, R. Zemel, and A. Culotta (Eds.), Vol. 23. Curran Associates, Inc. [43] Student. 1908. The Probable Error of a Mean. Biometrika (1908), 1-25. [44] Richard S Sutton, Andrew G Barto, et al. 1998. Introduction to Reinforcement Learning . Vol. 135. MIT press Cambridge. [45] Aleksei Ustimenko and Liudmila Prokhorenkova. 2020. StochasticRank: Global Optimization of Scale-Free Discrete Functions. In International Conference on Machine Learning . PMLR, 9669-9679. [46] Ali Vardasbi, Maarten de Rijke, and Ilya Markov. 2020. Cascade Model-Based Propensity Estimation for Counterfactual Learning to Rank. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2089-2092. [47] Ali Vardasbi, Harrie Oosterhuis, and Maarten de Rijke. 2020. When Inverse Propensity Scoring does not Work: Affine Corrections for Unbiased Learning to Rank. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . [48] Nan Wang, Zhen Qin, Xuanhui Wang, and Hongning Wang. 2021. Non-Clicks Mean Irrelevant? Propensity Ratio Scoring As a Correction. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . 481-489. ACM Trans. Inf. Syst., Vol. 0, No. 0, Article 0. Publication date: 2023. 0:34 Harrie Oosterhuis [49] Xuanhui Wang, Michael Bendersky, Donald Metzler, and Marc Najork. 2016. Learning to Rank with Selection Bias in Personal Search. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval . ACM, 115-124. [50] Xuanhui Wang, Nadav Golbandi, Michael Bendersky, Donald Metzler, and Marc Najork. 2018. Position Bias Estimation for Unbiased Learning to Rank in Personal Search. In Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining . ACM, 610-618. [51] Xuanhui Wang, Cheng Li, Nadav Golbandi, Michael Bendersky, and Marc Najork. 2018. The LambdaLoss Framework for Ranking Metric Optimization. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . ACM, 1313-1322. [52] Ronald J Williams. 1992. Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning. Machine Learning 8, 3-4 (1992), 229-256. [53] Le Yan, Zhen Qin, Honglei Zhuang, Xuanhui Wang, Mike Bendersky, and Marc Najork. 2022. Revisiting Two Tower Models for Unbiased Learning to Rank. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (Madrid, Spain) (SIGIR '22) . ACM. [54] Bowen Yuan, Yaxu Liu, Jui-Yang Hsia, Zhenhua Dong, and Chih-Jen Lin. 2020. Unbiased Ad Click Prediction for Position-Aware Advertising Systems. In Fourteenth ACM Conference on Recommender Systems . 368-377. [55] Yisong Yue and Thorsten Joachims. 2009. Interactively Optimizing Information Retrieval Systems as a Dueling Bandits Problem. In Proceedings of the 26th Annual International Conference on Machine Learning . ACM, 1201-1208. [56] Honglei Zhuang, Zhen Qin, Xuanhui Wang, Michael Bendersky, Xinyu Qian, Po Hu, and Dan Chary Chen. 2021. Cross-Positional Attention for Debiasing Clicks. In Proceedings of the Web Conference 2021 . 788-797. [57] Shengyao Zhuang and Guido Zuccon. 2020. Counterfactual Online Learning to Rank. In European Conference on Information Retrieval . Springer, 415-430. ACM Trans. Inf. Syst., Vol. 0, No. 0, Article 0. Publication date: 2023.",
   "keywords_parsed": [
-    "None"
+    "Unbiased Learning to Rank",
+    "Counterfactual Learning",
+    "Position Bias"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A General Framework for Counterfactual Learning-to-Rank"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Addressing Trust Bias for Unbiased Learning-to-Rank"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Estimating Position Bias without Intrusive Interventions"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Unbiased Learning to Rank: Online or Offline?"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Beyond the Selected Completely at Random Assumption for Learning from Positive and Unlabeled Data"
+    },
+    {
+      "ref_id": "b6",
+      "title": "From RankNet to LambdaRank to LambdaMART: An Overview"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Yahoo! Learning to Rank Challenge Overview"
+    },
+    {
+      "ref_id": "b8",
+      "title": "An Experimental Comparison of Click Position-Bias Models"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Fast Ranking with Additive Ensembles of Oblivious and Non-Oblivious Regression Trees"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Doubly Robust Policy Evaluation and Optimization"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Intervention Harvesting for Context-Dependent Examination-Bias estimation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Reusing Historical Interaction Data for Faster Online Learning to Rank for IR"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A Generalization of Sampling Without Replacement from a Finite Universe"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Safe Exploration for Optimizing Contextual Bandits"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Cumulated Gain-Based Evaluation of IR Techniques"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Optimizing Search Engines Using Clickthrough Data"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Accurately Interpreting Clickthrough Data as Implicit Feedback"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Unbiased Learning-to-Rank with Biased Feedback"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Demystifying Double Robustness: A Comparison of Alternative Strategies for Estimating a Population Mean from Incomplete Data"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Doubly Robust Off-Policy Evaluation for Ranking Policies Under the Cascade Behavior Model"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Optimal Regret Analysis of Thompson Sampling in Stochastic Multi-armed Bandit Problem with Multiple Plays"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Multiple-Play Bandits in the Position-Based Model"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Offline Evaluation of Ranking Policies with Click Models"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Learning to Rank for Information Retrieval"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Computationally Efficient Optimization of Plackett-Luce Ranking Models for Relevance and Fairness"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Differentiable Unbiased Online Learning to Rank"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Optimizing Ranking Models in an Online Setting"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Policy-Aware Unbiased Learning to Rank for Top-k Rankings"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Unifying Online and Counterfactual Learning to Rank"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Robust Generalization and Safe Query-Specialization in Counterfactual Learning to Rank"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Correcting for Selection Bias in Learning-to-rank Systems"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Introducing LETOR 4.0 datasets"
+    },
+    {
+      "ref_id": "b33",
+      "title": "How Does Clickthrough Data Reflect Retrieval Quality?"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Predicting Clicks: Estimating the Click-Through Rate for New Ads"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Estimation of Regression Coefficients when Some Regressors are not Always Observed"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Doubly Robust Estimator for Ranking Metrics with Post-Click Conversions"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Counterfactual Learning and Evaluation for Recommender Systems: Foundations, Implementations, and Recent Advances"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Unbiased Recommender Learning from Missing-not-at-Random Implicit Feedback"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Multileave Gradient Descent for Fast Online Learning to Rank"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Fairness of Exposure in Rankings"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Policy Learning for Fairness in Ranking"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Learning from Logged Implicit Exploration Data"
+    },
+    {
+      "ref_id": "b43",
+      "title": "The Probable Error of a Mean"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Introduction to Reinforcement Learning"
+    },
+    {
+      "ref_id": "b45",
+      "title": "StochasticRank: Global Optimization of Scale-Free Discrete Functions"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Cascade Model-Based Propensity Estimation for Counterfactual Learning to Rank"
+    },
+    {
+      "ref_id": "b47",
+      "title": "When Inverse Propensity Scoring does not Work: Affine Corrections for Unbiased Learning to Rank"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Non-Clicks Mean Irrelevant? Propensity Ratio Scoring As a Correction"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Learning to Rank with Selection Bias in Personal Search"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Position Bias Estimation for Unbiased Learning to Rank in Personal Search"
+    },
+    {
+      "ref_id": "b51",
+      "title": "The LambdaLoss Framework for Ranking Metric Optimization"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Revisiting Two Tower Models for Unbiased Learning to Rank"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Unbiased Ad Click Prediction for Position-Aware Advertising Systems"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Interactively Optimizing Information Retrieval Systems as a Dueling Bandits Problem"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Cross-Positional Attention for Debiasing Clicks"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Counterfactual Online Learning to Rank"
+    }
   ]
 }

@@ -32,9 +32,171 @@
   "REFERENCES": "[1] [n. d.]. Best practices to potentially reduce cost per result for Meta ads. https: //www.facebook.com/business/help/321695409726523. [2] [n. d.]. Netflix Prize data. https://www.kaggle.com/datasets/netflix-inc/netflixprize-data. [3] Anton Alekseev, Elena Tutubalina, Sejeong Kwon, and Sergey Nikolenko. 2022. Near-Zero-Shot Suggestion Mining with a Little Help from WordNet. In Analysis of Images, Social Networks and Texts . Springer International Publishing, Cham, 23-36. [4] J. Bergstra, R. Bardenet, Y. Bengio, and B. Kégl. 2011. Algorithms for HyperParameter Optimization. In Advances in Neural Information Processing Systems , Vol. 24. Curran Associates, Inc. [5] K Buraya, A Farseev, and A Filchenkov. 2018. Multi-view personality profiling based on longitudinal data. Lecture Notes in Computer Science 11018 (2018), 15-27. [6] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2023. Bias and Debias in Recommender System: A Survey and Future Directions. ACM Trans. Inf. Syst. 41, 3, Article 67 (feb 2023), 39 pages. [7] H.-T. Cheng, L. Koc, J. Harmsen, T. Shaked, T. Chandra, H. Aradhye, G. Anderson, G. Corrado, W. Chai, M. Ispir, R. Anil, Z. Haque, L. Hong, V. Jain, X. Liu, and H. Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proc. 1st Workshop on Deep Learning for Recommender Systems (Boston, MA, USA) (DLRS 2016) . ACM, New York, NY, USA, 7-10. [8] Alok Kumar Chowdhury, Aleksandr Farseev, Prithwi Raj Chakraborty, Dian Tjondronegoro, and Vinod Chandran. 2017. Automatic classification of physical exercises from wearable sensors using small dataset from non-laboratory settings. In 2017 IEEE Life Sciences Conference (LSC) . 111-114. https://doi.org/10.1109/LSC. 2017.8268156 [9] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proc. 2019 NAACL . ACL, 4171-4186. [10] Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, et al. 2020. An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929 (2020). [11] Yali Du, Yinwei Wei, Wei Ji, Fan Liu, Xin Luo, and Liqiang Nie. 2023. MultiQueue Momentum Contrast for Microvideo-Product Retrieval. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (Singapore, Singapore) (WSDM '23) . ACM, New York, NY, USA, 1003-1011. https: //doi.org/10.1145/3539597.3570405 [12] Aleksandr Farseev. 2023. Under the Hood of Social Media Advertising: How Do We Use AI Responsibly for Advertising Targeting and Creative Evaluation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (Singapore, Singapore) (WSDM '23) . ACM, New York, NY, USA, 1281-1282. https://doi.org/10.1145/3539597.3575791 [13] A Farseev, N Gukov, I Gossoudarev, and U Zarichnyak. 2014. Cross-platform online venue and user community recommendation based upon social networks data mining. Computer Instruments in Education 6 (2014), 28-38. [14] Aleksandr Farseev, Kirill Lepikhin, Hendrik Schwartz, Eu Khoon Ang, and Kenny Powar. 2018. SoMin.Ai: Social Multimedia Influencer Discovery Marketplace. In Proceedings of the 26th ACM International Conference on Multimedia (Seoul, Republic of Korea) (MM '18) . ACM, New York, NY, USA, 1234-1236. https: //doi.org/10.1145/3240508.3241387 [15] Aleksandr Farseev, Qi Yang, Andrey Filchenkov, Kirill Lepikhin, Yu-Yi ChuFarseeva, and Daron-Benjamin Loo. 2021. SoMin.Ai: Personality-Driven Content Generation Platform. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining (WSDM '21) . ACM, New York, NY, USA, 890-893. https://doi.org/10.1145/3437963.3441714 [16] H. Fukui, T. Hirakawa, T. Yamashita, and H. Fujiyoshi. 2019. Attention Branch Network: Learning of Attention Mechanism for Visual Explanation. Computer Vision and Pattern Recognition (2019), 10705-10714. [17] T. Ge, H. Liu, P. Yi, S. Huang, Z. Zhang, X. Zhu, Y. Zhang, K. Gai, L. Zhao, G. Zhou, K. Chen, S. Liu, H. Yi, Z. Hu, B. Liu, and P. Sun. 2018. Image Matters: Visually Modeling User Behaviors Using Advanced Model Server. 2087-2095. [18] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural Collaborative Filtering. In Proceedings of the 26th International Conference on World Wide Web (Perth, Australia) (WWW'17) . International World Wide Web Conferences Steering Committee, Republic and Canton of Geneva, CHE, 173-182. https://doi.org/10.1145/3038912.3052569 [19] X. He, J. Pan, O. Jin, T. Xu, B. Liu, T. Xu, Y. Shi, A. Atallah, R. Herbrich, S. Bowers, and J. Q. Candela. 2014. Practical Lessons from Predicting Clicks on Ads at Facebook. In Proc. 8th International Workshop on Data Mining for Online Advertising (ADKDD'14) . ACM, 1-9. [20] Alfred Huang, Qi Yang, Sergey Nikolenko, Marlo Ongpin, Ilia Gossoudarev, Ngoc Yen Duong, Kirill Lepikhin, Sergey Vishnyakov, Yuyi Chu-Farseeva, and Aleksandr Farseev. 2023. SoCraft: Advertiser-Level Predictive Scoring for Creative Performance on Meta. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (Singapore, Singapore) (WSDM '23) . ACM, New York, NY, USA, 1132-1135. https://doi.org/10.1145/3539597.3573032 [21] X. Huang, A. Khetan, M. Cvitkovic, and Z. Karnin. 2020. TabTransformer: Tabular Data Modeling Using Contextual Embeddings. (2020). arXiv:2012.06678 [cs.LG] [22] Sergei Koltcov, Olessia Koltsova, and Sergey Nikolenko. 2014. Latent Dirichlet Allocation: Stability and Applications to Studies of User-Generated Content. In Proceedings of the 2014 ACM Conference on Web Science (Bloomington, Indiana, USA) (WebSci '14) . ACM, New York, NY, USA, 161-165. https://doi.org/10.1145/ 2615569.2615680 [23] H. B. McMahan, G. Holt, D. Sculley, M. Young, D. Ebner, J. Grady, L. Nie, T. Phillips, E. Davydov, D. Golovin, S. Chikkerur, D. Liu, M. Wattenberg, A. M. Hrafnkelsson, T. Boulos, and J. Kubica. 2013. Ad Click Prediction: A View from the Trenches. In Proc. 19th ACM SIGKDD (KDD '13) . ACM, 1222-1230. [24] Meta. 2023. Meta Blueprint. https://www.facebookblueprint.com/student/catalog Accessed on June 06, 2023. [25] Sergey Nikolenko. 2015. SVD-LDA: Topic Modeling for Full-Text Recommender Systems. In Advances in Artificial Intelligence and Its Applications , Obdulia Pichardo Lagunas, Oscar Herrera Alcántara, and Gustavo Arroyo Figueroa (Eds.). Springer International Publishing, Cham, 67-79. [26] OpenAI. 2023. GPT-4 Technical Report. arXiv:2303.08774 [cs.CL] [27] Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, John Schulman, Jacob Hilton, Fraser Kelton, Luke Miller, Maddie Simens, Amanda Askell, Peter Welinder, Paul Christiano, Jan Leike, and Ryan Lowe. 2022. Training language models to follow instructions with human feedback. arXiv:2203.02155 [cs.CL] [28] Wentao Ouyang, Xiuwu Zhang, Shukui Ren, Chao Qi, Zhaojie Liu, and Yanlong Du. 2019. Representation Learning-Assisted Click-Through Rate Prediction. In Proc. 28th IJCAI . 4561-4567. https://doi.org/10.24963/ijcai.2019/634 [29] Francesco Ricci, Lior Rokach, Bracha Shapira, and Paul B. Kantor. 2010. Recommender Systems Handbook (1st ed.). Springer-Verlag, Berlin, Heidelberg. [30] Matthew Richardson, Ewa Dominowska, and Robert Ragno. 2007. Predicting Clicks: Estimating the Click-through Rate for New Ads. In Proc. 16th WWW (WWW'07) . ACM, 521-530. [31] Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer. 2022. High-Resolution Image Synthesis With Latent Diffusion Models. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) . 10684-10695. [32] Andrey Savchenko, Anton Alekseev, Sejeong Kwon, Elena Tutubalina, Evgeny Myasnikov, and Sergey Nikolenko. 2020. Ad Lingua: Text Classification Improves Symbolism Prediction in Image Advertisements. In Proceedings of the 28th International Conference on Computational Linguistics . International Committee on Computational Linguistics, Barcelona, Spain (Online), 1886-1892. https://doi.org/10.18653/v1/2020.coling-main.171 [33] Ilya Shenbin, Anton Alekseev, Elena Tutubalina, Valentin Malykh, and Sergey I. Nikolenko. 2020. RecVAE: A New Variational Autoencoder for Top-N Recommendations with Implicit Feedback. In Proceedings of the 13th International Conference on Web Search and Data Mining (Houston, TX, USA) (WSDM '20) . ACM, New York, NY, USA, 528-536. https://doi.org/10.1145/3336191.3371831 [34] Elena Tutubalina and Sergey I. Nikolenko. 2017. Demographic Prediction based on User Reviews about Medications. Computación y Sistemas 21, 2 (2017), 227241. [35] Elena Tutubalina and Sergey I. Nikolenko. 2018. Exploring convolutional neural networks and topic models for user profiling from drug reviews. Multimedia Tools and Applications 77, 4 (2018), 4791-4809. [36] Wenjie Wang, Fuli Feng, Liqiang Nie, and Tat-Seng Chua. 2022. User-Controllable Recommendation Against Filter Bubbles. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (Madrid, Spain) (SIGIR '22) . ACM, New York, NY, USA, 1251-1261. https://doi. org/10.1145/3477495.3532075 [37] Qi Yang, Aleksandr Farseev, and Andrey Filchenkov. 2021. Two-Faced Humans on Twitter and Facebook: Harvesting Social Multimedia for Human Personality Profiling. In Proceedings of the 2021 Workshop on Intelligent Cross-Data Analysis and Retrieval (Taipei, Taiwan) (ICDAR '21) . ACM, New York, NY, USA, 39-47. https://doi.org/10.1145/3463944.3469270 [38] Qi Yang, Aleksandr Farseev, Sergey Nikolenko, and Andrey Filchenkov. 2022. Do we behave differently on Twitter and Facebook: Multi-view social network user personality profiling for content recommendation. Frontiers in Big Data 5 (2022). https://doi.org/10.3389/fdata.2022.931206 [39] Qi Yang, Sergey Nikolenko, Alfred Huang, and Aleksandr Farseev. 2022. Personality-Driven Social Multimedia Content Recommendation. In Proceedings of the 30th ACM International Conference on Multimedia (Lisboa, Portugal) (MM '22) . ACM, New York, NY, USA, 7290-7299. https://doi.org/10.1145/3503161. 3548769 [40] Qi Yang, Christos Tzelepis, Sergey Nikolenko, Ioannis Patras, and Aleksandr Farseev. 2023. \"Just To See You Smile\": SMILEY, a Voice-Guided <Strike>GUY</Strike> GAN. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (Singapore, Singapore) (WSDM '23) . ACM, New York, NY, USA, 1196-1199. https://doi.org/10.1145/3539597.3573031",
   "keywords_parsed": [
     "Digital Advertising",
-    " Ads Performance Prediction",
-    " Deep Learning",
-    " Large Language Model",
-    " Explainable AI"
+    "Ads Performance Prediction",
+    "Deep Learning",
+    "Large Language Model",
+    "Explainable AI"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Best practices to potentially reduce cost per result for Meta ads"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Netflix Prize data"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Near-Zero-Shot Suggestion Mining with a Little Help from WordNet"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Algorithms for HyperParameter Optimization"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Multi-view personality profiling based on longitudinal data"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Bias and Debias in Recommender System: A Survey and Future Directions"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Automatic classification of physical exercises from wearable sensors using small dataset from non-laboratory settings"
+    },
+    {
+      "ref_id": "b9",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b10",
+      "title": "An image is worth 16x16 words: Transformers for image recognition at scale"
+    },
+    {
+      "ref_id": "b11",
+      "title": "MultiQueue Momentum Contrast for Microvideo-Product Retrieval"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Under the Hood of Social Media Advertising: How Do We Use AI Responsibly for Advertising Targeting and Creative Evaluation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Cross-platform online venue and user community recommendation based upon social networks data mining"
+    },
+    {
+      "ref_id": "b14",
+      "title": "SoMin.Ai: Social Multimedia Influencer Discovery Marketplace"
+    },
+    {
+      "ref_id": "b15",
+      "title": "SoMin.Ai: Personality-Driven Content Generation Platform"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Attention Branch Network: Learning of Attention Mechanism for Visual Explanation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Image Matters: Visually Modeling User Behaviors Using Advanced Model Server"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Neural Collaborative Filtering"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Practical Lessons from Predicting Clicks on Ads at Facebook"
+    },
+    {
+      "ref_id": "b20",
+      "title": "SoCraft: Advertiser-Level Predictive Scoring for Creative Performance on Meta"
+    },
+    {
+      "ref_id": "b21",
+      "title": "TabTransformer: Tabular Data Modeling Using Contextual Embeddings"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Latent Dirichlet Allocation: Stability and Applications to Studies of User-Generated Content"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Ad Click Prediction: A View from the Trenches"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Meta Blueprint"
+    },
+    {
+      "ref_id": "b25",
+      "title": "SVD-LDA: Topic Modeling for Full-Text Recommender Systems"
+    },
+    {
+      "ref_id": "b26",
+      "title": "GPT-4 Technical Report"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Training language models to follow instructions with human feedback"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Representation Learning-Assisted Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Recommender Systems Handbook"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Predicting Clicks: Estimating the Click-through Rate for New Ads"
+    },
+    {
+      "ref_id": "b31",
+      "title": "High-Resolution Image Synthesis With Latent Diffusion Models"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Ad Lingua: Text Classification Improves Symbolism Prediction in Image Advertisements"
+    },
+    {
+      "ref_id": "b33",
+      "title": "RecVAE: A New Variational Autoencoder for Top-N Recommendations with Implicit Feedback"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Demographic Prediction based on User Reviews about Medications"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Exploring convolutional neural networks and topic models for user profiling from drug reviews"
+    },
+    {
+      "ref_id": "b36",
+      "title": "User-Controllable Recommendation Against Filter Bubbles"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Two-Faced Humans on Twitter and Facebook: Harvesting Social Multimedia for Human Personality Profiling"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Do we behave differently on Twitter and Facebook: Multi-view social network user personality profiling for content recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Personality-Driven Social Multimedia Content Recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "\"Just To See You Smile\": SMILEY, a Voice-Guided GUY GAN"
+    }
   ]
 }

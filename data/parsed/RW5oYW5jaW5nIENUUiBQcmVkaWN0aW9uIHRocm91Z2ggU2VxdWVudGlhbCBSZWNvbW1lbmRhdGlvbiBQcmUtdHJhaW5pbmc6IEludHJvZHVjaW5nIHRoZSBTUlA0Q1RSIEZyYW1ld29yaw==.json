@@ -16,6 +16,96 @@
   "REFERENCES": "[1] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, et al. 2022. CAN: feature co-action network for click-through rate prediction. In Proceedings of the fifteenth ACM international conference on web search and data mining . 57-65. [2] Jianxin Chang, Chenbin Zhang, Zhiyi Fu, Xiaoxue Zang, Lin Guan, Jing Lu, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, et al. 2023. TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou. arXiv preprint arXiv:2302.02352 (2023). [3] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior sequence transformer for e-commerce recommendation in alibaba. In Proceedings of the 1st international workshop on deep learning practice for high-dimensional sparse data . 1-4. [4] Sharad Chitlangia, Krishna Reddy Kesari, and Rajat Agarwal. 2023. Scaling generative pre-training for user ad activity sequences. (2023). [5] Kevin Clark, Minh-Thang Luong, Quoc V Le, and Christopher D Manning. 2020. Electra: Pre-training text encoders as discriminators rather than generators. arXiv preprint arXiv:2003.10555 (2020). [6] Gabriel de Souza Pereira Moreira, Sara Rabhi, Jeong Min Lee, Ronay Ak, and Even Oldridge. 2021. Transformers4rec: Bridging the gap between nlp and sequential/session-based recommendation. In Proceedings of the 15th ACM Conference on Recommender Systems . 143-153. [7] F Maxwell Harper and Joseph A Konstan. 2015. The movielens datasets: History and context. Acm transactions on interactive intelligent systems (tiis) 5, 4 (2015), 1-19. [8] Yiping Liao. 2020. On the Effectiveness of Self-supervised Pre-training for Modeling User Behavior Sequences. [9] Jianghao Lin, Yanru Qu, Wei Guo, Xinyi Dai, Ruiming Tang, Yong Yu, and Weinan Zhang. 2023. MAP: A Model-agnostic Pretraining Framework for Click-through [10] Chang Liu, Xiaoguang Li, Guohao Cai, Zhenhua Dong, Hong Zhu, and Lifeng Shang. 2021. Noninvasive self-attention for side information fusion in sequential recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 35. 4249-4256. [11] Qijiong Liu, Jieming Zhu, Quanyu Dai, and Xiao-Ming Wu. 2022. Boosting deep CTR prediction with a plug-and-play pre-trainer for news recommendation. In Proceedings of the 29th International Conference on Computational Linguistics . 2823-2833. [12] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [13] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. [14] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-based neural networks for user response prediction. In 2016 IEEE 16th international conference on data mining (ICDM) . IEEE, 1149-1154. [15] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [16] Dong Wang, Kavé Salamatian, Yunqing Xia, Weiwei Deng, and Qi Zhang. 2023. BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 5039-5050. [17] Tiansheng Yao, Xinyang Yi, Derek Zhiyuan Cheng, Felix Yu, Ting Chen, Aditya Menon, Lichan Hong, Ed H Chi, Steve Tjoa, Jieqi Kang, et al. 2021. Self-supervised learning for large-scale item recommendations. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4321-4330. [18] Fajie Yuan, Xiangnan He, Alexandros Karatzoglou, and Liguang Zhang. 2020. Parameter-efficient transfer from sequential behaviors for user modeling and recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 1469-1478. [19] Jiaqi Zhai, Lucy Liao, Xing Liu, Yueming Wang, Rui Li, Xuan Cao, Leon Gao, Zhaojie Gong, Fangda Gu, Michael He, et al. 2024. Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations. arXiv preprint arXiv:2402.17152 (2024). [20] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [21] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [22] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization. In Proceedings of the 29th ACM international conference on information & knowledge management . 1893-1902. Received 20 February 2007; revised 12 March 2009; accepted 5 June 2009",
   "keywords_parsed": [
     "Recommender Systems",
-    " Click-Through Rate Prediction"
+    "Click-Through Rate Prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "CAN: feature co-action network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Scaling generative pre-training for user ad activity sequences"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Electra: Pre-training text encoders as discriminators rather than generators"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Transformers4rec: Bridging the gap between nlp and sequential/session-based recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b8",
+      "title": "On the Effectiveness of Self-supervised Pre-training for Modeling User Behavior Sequences"
+    },
+    {
+      "ref_id": "b9",
+      "title": "MAP: A Model-agnostic Pretraining Framework for Click-through"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Noninvasive self-attention for side information fusion in sequential recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Boosting deep CTR prediction with a plug-and-play pre-trainer for news recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b16",
+      "title": "BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Self-supervised learning for large-scale item recommendations"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Parameter-efficient transfer from sequential behaviors for user modeling and recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    }
   ]
 }

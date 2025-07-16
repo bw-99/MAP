@@ -42,8 +42,94 @@
   "C Experiment on campaigns of different durations": "Advertising campaigns of varying durations exhibit statistically sig- nificant disparities, thereby enhancing the diversity of the dataset. To substantiate this observation, we conducted a supplementary experiment. The accompanying Table 10 illustrates the performance metrics of maximized SCR, normalized on a per diem basis, when algorithms operate in an environment using exclusively long-term or short-term advertising campaigns. Best effectiveness is marked with *** in descending order. BAT: Benchmark for Auto-bidding Task WWW'25, April 28-May 2, 2025, Sydney, NSW, Australia. Table 9: Comparison of parameters for different logical categories The differential performance of these algorithms aligns with their inherent operational characteristics: PID controllers demonstrate superior efficacy in environments conducive to parameter calibration, particularly in long-term campaign strategies. ALM consistently exhibits optimal performance metrics in short-term campaign scenarios. Mystique, which modulates daily expenditure to conform to the theoretical optimal curve, demonstrates particular efficacy in campaigns with a temporal constraint of 24 hours or less. Table 10: Performance comparison of different algorithms",
   "keywords_parsed": [
     "Online auctions",
-    " advertising platforms",
-    " RTB",
-    " autobidding"
+    "advertising platforms",
+    "RTB",
+    "autobidding"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Optuna: A Next-generation Hyperparameter Optimization Framework"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Budget optimization for sponsored search: Censored learning in mdps"
+    },
+    {
+      "ref_id": "b3",
+      "title": "First-price auctions with general information structures: Implications for bidding and revenue"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Real-time bidding by reinforcement learning in display advertising"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Optimization-Based Budget Pacing in eBay Sponsored Search"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Real-time bidding algorithms for performance-based display ad allocation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Multi-unit auction format design"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning to bid optimally and efficiently in adversarial first-price auctions"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Using a PID controller engine for controlling the pace of an online campaign in realtime"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Sponsored search: An overview of the concept, history, and technology"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Optimization of a ssp's header bidding strategy using thompson sampling"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Learning to bid with AuctionGym"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Off-Policy Learning-to-Bid with AuctionGym"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Robust bidding in first-price auctions: How to bid without knowing what others are doing"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Real time bid optimization with smooth budget delivery in online advertising"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Incentive Mechanism Design for ROI-constrained Auto-bidding"
+    },
+    {
+      "ref_id": "b17",
+      "title": "iPinYou global rtb bidding algorithm competition dataset"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Reinforcement learning with sequential information clustering in real-time bidding"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Ranking relevance in yahoo search"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Sequential selection of correlated ads by pomdps"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Real-time bidding for online advertising: measurement and analysis"
+    }
   ]
 }

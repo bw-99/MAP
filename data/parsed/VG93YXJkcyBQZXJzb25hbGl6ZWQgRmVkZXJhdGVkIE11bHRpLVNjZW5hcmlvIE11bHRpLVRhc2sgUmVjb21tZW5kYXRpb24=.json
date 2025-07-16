@@ -25,7 +25,169 @@
   "A THE PROOF IN SECTION 3.3.1": "To proof that the aggregated parameter ¯ W 𝑛 𝑗 is only related to the normalization parameter 𝛽 𝑔 if federated communication occurs after the completion of each local batch, we substitute Eq. (8) into Eq. (10), we can derive:  Acommunication round typically occurs after one or more local training epochs, with each epoch comprising multiple batches. Consequently, the 𝛽 value at the communication round differs from that at an individual batch. Received 20 February 2007; revised 12 March 2009; accepted 5 June 2009",
   "keywords_parsed": [
     "Multi-task Recommendation",
-    " Federated Learning",
-    " Collaborative Filtering"
+    "Federated Learning",
+    "Collaborative Filtering"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "No Prejudice! Fair Federated Graph Neural Networks for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Federated collaborative filtering for privacy-preserving personalized recommendation system"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A Contrastive Sharing Model for Multi-Task Recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Many-Task Federated Learning: A New Problem Setting and a Simple Baseline"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Pepnet: Parameter and embedding personalized network for infusing with personalized prior information"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Fedbone: Towards large-scale federated multi-task learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deeprec: On-device deep learning for privacy-preserving sequential recommendation in mobile commerce"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Adversarial feature translation for multi-domain recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Spreadgnn: Decentralized multi-task federated learning for graph neural networks on molecular data"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Metabalance: improving multi-task recommendations via adapting gradient magnitudes of auxiliary tasks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "SAMD: An Industrial Framework for Heterogeneous Multi-Scenario Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A federated multi-view deep learning framework for privacy-preserving recommendations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Personalized cross-silo federated learning on non-iid data"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adaptive domain interest network for multi-domain recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Federated learning: Strategies for improving communication efficiency"
+    },
+    {
+      "ref_id": "b17",
+      "title": "M3REC: A Meta-based Multiscenario Multi-task Recommendation Framework"
+    },
+    {
+      "ref_id": "b18",
+      "title": "AdaTT: Adaptive Task-to-Task Fusion Network for Multitask Learning in Recommendations"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Ditto: Fair and robust federated learning through personalization"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Federated Optimization in Heterogeneous Networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Hamur: Hyper adapter for multi-domain recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Fedrec: Federated recommendation with explicit feedback"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Conflictaverse gradient descent for multi-task learning"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Personalized federated recommendation via joint representation learning, user clustering, and model adaptation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Towards fair federated recommendation learning: Characterizing the inter-dependence of system and data heterogeneity"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Federated multi-task learning under a mixture of distributions"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Communication-efficient learning of deep networks from decentralized data"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Multi-task federated learning for personalised deep neural networks in edge computing"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Fedfast: Going beyond average for faster training of federated recommender systems"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Multi-domain Recommendation with Embedding Disentangling and Domain Alignment"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Semi-decentralized federated ego graph learning for recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Federated multi-task learning"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Towards personalized federated learning"
+    },
+    {
+      "ref_id": "b37",
+      "title": "A federated recommender system for online services"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Multi-Scenario Ranking with Adaptive Feature Learning"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Multi-task learning for dense prediction tasks: A survey"
+    }
   ]
 }

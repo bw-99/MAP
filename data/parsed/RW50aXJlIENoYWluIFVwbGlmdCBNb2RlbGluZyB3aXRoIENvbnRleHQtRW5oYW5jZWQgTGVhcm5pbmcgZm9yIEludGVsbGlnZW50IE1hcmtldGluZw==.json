@@ -24,7 +24,145 @@
   "REFERENCES": "[1] Alberto Abadie, David Drukker, Jane Leber Herr, and Guido W Imbens. 2004. Implementing matching estimators for average treatment effects in Stata. The stata journal 4, 3 (2004), 290-311. [2] Susan Athey, Julie Tibshirani, and Stefan Wager. 2019. GENERALIZED RANDOM FORESTS. The Annals of Statistics 47, 2 (2019), 1148-1178. [3] Ioana Bica, James Jordon, and Mihaela van der Schaar. 2020. Estimating the effects of continuous-valued interventions using generative adversarial networks. Advances in Neural Information Processing Systems 33 (2020), 16434-16445. [4] David Brüggemann, Menelaos Kanakis, Stamatios Georgoulis, and Luc Van Gool. 2020. Automated Search for Resource-Efficient Branched Multi-Task Networks. In 31st British Machine Vision Conference 2020, BMVC 2020 . BMVA Press, 359. [5] Jianxin Chang, Chenbin Zhang, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, and Kun Gai. 2023. Pepnet: Parameter and embedding personalized network for infusing with personalized prior information. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3795-3804. [6] Huigang Chen, Totte Harinen, Jeong-Yoon Lee, Mike Yung, and Zhenyu Zhao. 2020. Causalml: Python package for causal machine learning. arXiv preprint arXiv:2002.11631 (2020). [7] Hugh A Chipman, Edward I George, and Robert E McCulloch. 2010. BART: Bayesian additive regression trees. (2010). [8] Abhishek Kumar Hal Daumé III and A Kumar. 2013. Learning task grouping and overlap in multi-task learning. In International Conference on Machine Learning . 1723-1730. [9] Eustache Diemert, Artem Betlei, Christophe Renaudin, Massih-Reza Amini, Théophane Gregoir, and Thibaud Rahier. 2021. A large scale benchmark for individual treatment effect prediction and uplift modeling. arXiv preprint arXiv:2111.10106 (2021). [10] Yuan Gao, Jiayi Ma, Mingbo Zhao, Wei Liu, and Alan L Yuille. 2019. Nddr-cnn: Layerwise feature fusing in multi-task cnns by neural discriminative dimensionality reduction. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 3205-3214. [11] Pengsheng Guo, Chen-Yu Lee, and Daniel Ulbricht. 2020. Learning to branch for multi-task learning. In International conference on machine learning . PMLR, 3854-3863. [12] Guido W Imbens and Donald B Rubin. 2015. Causal inference in statistics, social, and biomedical sciences . Cambridge University Press. [13] Wenwei Ke, Chuanren Liu, Xiangfu Shi, Yiqiao Dai, S Yu Philip, and Xiaoqiang Zhu. 2021. Addressing exposure bias in uplift modeling for large-scale online advertising. In 2021 IEEE International Conference on Data Mining (ICDM) . IEEE, 1156-1161. [14] Kun Kuang, Peng Cui, Bo Li, Meng Jiang, and Shiqiang Yang. 2017. Estimating treatment effect in the wild via differentiated confounder balancing. In Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining . 265-274. [15] Sören R Künzel, Jasjeet S Sekhon, Peter J Bickel, and Bin Yu. 2019. Metalearners for estimating heterogeneous treatment effects using machine learning. Proceedings of the national academy of sciences 116, 10 (2019), 4156-4165. [16] Ying-Chun Lin, Chi-Hsuan Huang, Chu-Cheng Hsieh, Yu-Chen Shu, and Kun-Ta Chuang. 2017. Monetary discount strategies for real-time promotion campaign. In Proceedings of the 26th International Conference on World Wide Web . 1123-1132. [17] Dugang Liu, Xing Tang, Han Gao, Fuyuan Lyu, and Xiuqiang He. 2023. Explicit Feature Interaction-aware Uplift Network for Online Marketing. arXiv preprint arXiv:2306.00315 (2023). [18] Christos Louizos, Uri Shalit, Joris M Mooij, David Sontag, Richard Zemel, and Max Welling. 2017. Causal effect inference with deep latent-variable models. Advances in neural information processing systems 30 (2017). [19] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [20] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [21] Paul R Rosenbaum. 1987. Model-based direct adjustment. Journal of the American statistical Association 82, 398 (1987), 387-394. [22] Donald B Rubin. 2005. Causal inference using potential outcomes: Design, modeling, decisions. J. Amer. Statist. Assoc. 100, 469 (2005), 322-331. [23] Uri Shalit, Fredrik D Johansson, and David Sontag. 2017. Estimating individual treatment effect: generalization bounds and algorithms. In International conference on machine learning . PMLR, 3076-3085. [24] Claudia Shi, David Blei, and Victor Veitch. 2019. Adapting neural networks for the estimation of treatment effects. Advances in neural information processing systems 32 (2019). [25] Elizabeth A Stuart. 2010. Matching methods for causal inference: A review and a look forward. Statistical science: a review journal of the Institute of Mathematical Statistics 25, 1 (2010), 1. [26] Simon Vandenhende, Stamatios Georgoulis, Wouter Van Gansbeke, Marc Proesmans, Dengxin Dai, and Luc Van Gool. 2021. Multi-task learning for dense prediction tasks: A survey. IEEE transactions on pattern analysis and machine intelligence 44, 7 (2021), 3614-3633. [27] Stefan Wager and Susan Athey. 2018. Estimation and inference of heterogeneous treatment effects using random forests. J. Amer. Statist. Assoc. 113, 523 (2018), 1228-1242. [28] Fangye Wang, Yingxu Wang, Dongsheng Li, Hansu Gu, Tun Lu, Peng Zhang, and Ning Gu. 2022. Enhancing CTR prediction with context-aware feature representation learning. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 343-352. [29] Guoqiang Xu, Cunxiang Yin, Yuchen Zhang, Yuncong Li, Yancheng He, Jing Cai, and Zhongyu Wei. 2022. Learning discriminative representation base on attention for uplift. In Pacific-Asia Conference on Knowledge Discovery and Data Mining . Springer, 200-211. [30] Liuyi Yao, Zhixuan Chu, Sheng Li, Yaliang Li, Jing Gao, and Aidong Zhang. 2021. A survey on causal inference. ACM Transactions on Knowledge Discovery from Data (TKDD) 15, 5 (2021), 1-46. [31] Jinsung Yoon, James Jordon, and Mihaela Van Der Schaar. 2018. GANITE: Estimation of individualized treatment effects using generative adversarial nets. In International conference on learning representations . [32] Kui Zhao, Junhao Hua, Ling Yan, Qi Zhang, Huan Xu, and Cheng Yang. 2019. A unified framework for marketing budget allocation. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1820-1830. [33] Kailiang Zhong, Fengtong Xiao, Yan Ren, Yaorong Liang, Wenqing Yao, Xiaofeng Yang, and Ling Cen. 2022. DESCN: Deep Entire Space Cross Networks for Individual Treatment Effect Estimation. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4612-4620. [34] Jiayu Zhou, Jianhui Chen, and Jieping Ye. 2011. Clustered multi-task learning via alternating structure optimization. Advances in neural information processing systems 24 (2011). 9",
   "keywords_parsed": [
     "Uplift modeling",
-    " Context-enhanced learning",
-    " Entire chain modeling"
+    "Context-enhanced learning",
+    "Entire chain modeling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Implementing matching estimators for average treatment effects in Stata"
+    },
+    {
+      "ref_id": "b2",
+      "title": "GENERALIZED RANDOM FORESTS"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Estimating the effects of continuous-valued interventions using generative adversarial networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Automated Search for Resource-Efficient Branched Multi-Task Networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Pepnet: Parameter and embedding personalized network for infusing with personalized prior information"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Causalml: Python package for causal machine learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "BART: Bayesian additive regression trees"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning task grouping and overlap in multi-task learning"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A large scale benchmark for individual treatment effect prediction and uplift modeling"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Nddr-cnn: Layerwise feature fusing in multi-task cnns by neural discriminative dimensionality reduction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Learning to branch for multi-task learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Causal inference in statistics, social, and biomedical sciences"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Addressing exposure bias in uplift modeling for large-scale online advertising"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Estimating treatment effect in the wild via differentiated confounder balancing"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Metalearners for estimating heterogeneous treatment effects using machine learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Monetary discount strategies for real-time promotion campaign"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Explicit Feature Interaction-aware Uplift Network for Online Marketing"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Causal effect inference with deep latent-variable models"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Model-based direct adjustment"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Causal inference using potential outcomes: Design, modeling, decisions"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Estimating individual treatment effect: generalization bounds and algorithms"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Adapting neural networks for the estimation of treatment effects"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Matching methods for causal inference: A review and a look forward"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Multi-task learning for dense prediction tasks: A survey"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Estimation and inference of heterogeneous treatment effects using random forests"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Enhancing CTR prediction with context-aware feature representation learning"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Learning discriminative representation base on attention for uplift"
+    },
+    {
+      "ref_id": "b30",
+      "title": "A survey on causal inference"
+    },
+    {
+      "ref_id": "b31",
+      "title": "GANITE: Estimation of individualized treatment effects using generative adversarial nets"
+    },
+    {
+      "ref_id": "b32",
+      "title": "A unified framework for marketing budget allocation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "DESCN: Deep Entire Space Cross Networks for Individual Treatment Effect Estimation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Clustered multi-task learning via alternating structure optimization"
+    }
   ]
 }

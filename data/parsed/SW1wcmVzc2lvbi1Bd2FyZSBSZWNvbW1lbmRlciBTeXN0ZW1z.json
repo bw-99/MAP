@@ -38,6 +38,393 @@
   "References": "[1] Fabian Abel, András A. Benczúr, Daniel Kohlsdorf, Martha A. Larson, and Róbert Pálovics. 2016. RecSys Challenge 2016: Job Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems, Boston, MA, USA, September 15-19, 2016 , Shilad Sen, Werner Geyer, Jill Freyne, and Pablo Castells (Eds.). ACM, 425-426. https://doi.org/10.1145/2959100.2959207 [2] Fabian Abel, Yashar Deldjoo, Mehdi Elahi, and Daniel Kohlsdorf. 2017. RecSys Challenge 2017: Offline and Online Evaluation. In Proceedings of the Eleventh ACM Conference on Recommender Systems, RecSys 2017, Como, Italy, August 27-31, 2017 , Paolo Cremonesi, Francesco Ricci, Shlomo Berkovsky, and Alexander Tuzhilin (Eds.). ACM, 372-373. https://doi.org/10.1145/3109859.3109954 [3] Gediminas Adomavicius, Konstantin Bauman, Alexander Tuzhilin, and Moshe Unger. 2022. Context-Aware Recommender Systems: From Foundations to Recent Developments. In Recommender Systems Handbook , Francesco Ricci, Lior Rokach, and Bracha Shapira (Eds.). Springer US, 211-250. https://doi.org/10.1007/978-1-0716-2197-4_6 [4] Mohammad Mehdi Afsar, Trafford Crump, and Behrouz H. Far. 2023. Reinforcement Learning based Recommender Systems: A Survey. ACM Comput. Surv. 55, 7 (2023), 145:1-145:38. https://doi.org/10.1145/3543846 [5] Deepak Agarwal, Bee-Chung Chen, and Pradheep Elango. 2009. Spatio-temporal models for estimating click-through rate. In Proceedings of the 18th International Conference on World Wide Web, WWW 2009, Madrid, Spain, April 20-24, 2009 . ACM, 21-30. https://doi.org/10.1145/1526709.1526713 [6] Deepak Agarwal, Bee-Chung Chen, Rupesh Gupta, Joshua Hartman, Qi He, Anand Iyer, Sumanth Kolar, Yiming Ma, Pannagadatta Shivaswamy, Ajit Singh, and Liang Zhang. 2014. Activity ranking in LinkedIn feed. In The 20th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD '14, New York, NY, USA - August 24 - 27, 2014 , Sofus A. Macskassy, Claudia Perlich, Jure Leskovec, Wei Wang, and Rayid Ghani (Eds.). ACM, 1603-1612. https://doi.org/10.1145/2623330.2623362 [7] Michal Aharon, Natalie Aizenberg, Edward Bortnikov, Ronny Lempel, Roi Adadi, Tomer Benyamini, Liron Levin, Ran Roth, and Ohad Serfaty. 2013. OFF-set: one-pass factorization of feature sets for online recommendation in persistent cold start settings. In Seventh ACM Conference on Recommender Systems, RecSys '13, Hong Kong, China, October 12-16, 2013 , Qiang Yang, Irwin King, Qing Li, Pearl Pu, and George Karypis (Eds.). ACM, 375-378. https://doi.org/10.1145/2507157.2507221 [8] Michal Aharon, Yohay Kaplan, Rina Levy, Oren Somekh, Ayelet Blanc, Neetai Eshel, Avi Shahar, Assaf Singer, and Alex Zlotnik. 2019. Soft Frequency Capping for Improved Ad Click Prediction in Yahoo Gemini Native. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management, CIKM 2019, Beijing, China, November 3-7, 2019 , Wenwu Zhu, Dacheng Tao, Xueqi Cheng, Peng Cui, Elke A. Rundensteiner, David Carmel, Qi He, and Jeffrey Xu Yu (Eds.). ACM, 2793-2801. https://doi.org/10.1145/3357384.3357801 [9] Davide Azzalini, Fabio Azzalini, Chiara Criscuolo, Tommaso Dolci, Davide Martinenghi, and Sihem Amer-Yahia. 2022. SoCRATe: A Recommendation System with Limited-Availability Items. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management, Atlanta, GA, USA, October 17-21, 2022 , Mohammad Al Hasan and Li Xiong (Eds.). ACM, 4793-4797. https://doi.org/10.1145/3511808.3557208 Eduardo Barbaro, Eoin Martino Grua, Ivano Malavolta, Mirjana Stercevic, Esther Weusthof, and Jeroen van den Hoven. 2020. Modelling and [10] predicting User Engagement in mobile applications. Data Sci. 3, 2 (2020), 61-77. https://doi.org/10.3233/ds-190027 [11] Guillaume Bied, Solal Nathan, Elia Perennes, Morgane Hoffmann, Philippe Caillou, Bruno Crépon, Christophe Gaillac, and Michèle Sebag. 2023. Toward Job Recommendation for All. In Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence, IJCAI 2023, 19th-25th August 2023, Macao, SAR, China . ijcai.org, 5906-5914. https://doi.org/10.24963/IJCAI.2023/655 [12] Fedor Borisyuk, Liang Zhang, and Krishnaram Kenthapadi. 2017. LiJAR: A System for Job Application Redistribution towards Efficient Career Marketplace. In Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Halifax, NS, Canada, August 13 - 17, 2017 . ACM, 1397-1406. https://doi.org/10.1145/3097983.3098028 [13] Niv Buchbinder, Moran Feldman, Arpita Ghosh, and Joseph Naor. 2014. Frequency capping in online advertising. J. Sched. 17, 4 (2014), 385-398. https://doi.org/10.1007/s10951-014-0367-z [14] Robin D. Burke. 2007. Hybrid Web Recommender Systems. In The Adaptive Web, Methods and Strategies of Web Personalization (Lecture Notes in Computer Science, Vol. 4321) , Peter Brusilovsky, Alfred Kobsa, and Wolfgang Nejdl (Eds.). Springer, 377-408. https://doi.org/10.1007/978-3-54072079-9_12 [15] Rocío Cañamares, Pablo Castells, and Alistair Moffat. 2020. Offline evaluation options for recommender systems. Inf. Retr. J. 23, 4 (2020), 387-410. https://doi.org/10.1007/s10791-020-09371-3 [16] Jia-Wei Chang, Ming-Che Lee, and Tzone I. Wang. 2016. Integrating a semantic-based retrieval agent into case-based reasoning systems: A case study of an online bookstore. Comput. Ind. 78 (2016), 29-42. https://doi.org/10.1016/j.compind.2015.10.007 [17] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2023. Bias and Debias in Recommender System: A Survey and Future Directions. ACM Trans. Inf. Syst. 41, 3 (2023), 67:1-67:39. https://doi.org/10.1145/3564284 [18] Minmin Chen, Alex Beutel, Paul Covington, Sagar Jain, Francois Belletti, and Ed H. Chi. 2019. Top-K Off-Policy Correction for a REINFORCE Recommender System. In Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining, WSDM 2019, Melbourne, VIC, Australia, February 11-15, 2019 , J. Shane Culpepper, Alistair Moffat, Paul N. Bennett, and Kristina Lerman (Eds.). ACM, 456-464. https: //doi.org/10.1145/3289600.3290999 [19] Sirui Chen, Yuan Wang, Zijing Wen, Zhiyu Li, Changshuo Zhang, Xiao Zhang, Quan Lin, Cheng Zhu, and Jun Xu. 2023. Controllable Multi-Objective Re-ranking with Policy Hypernetworks. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD 2023, Long Beach, CA, USA, August 6-10, 2023 , Ambuj K. Singh, Yizhou Sun, Leman Akoglu, Dimitrios Gunopulos, Xifeng Yan, Ravi Kumar, Fatma Ozcan, Manuscript submitted to ACM and Jieping Ye (Eds.). ACM, 3855-3864. https://doi.org/10.1145/3580305.3599796 [20] Zhihong Chen, Jiawei Wu, Chenliang Li, Jingxu Chen, Rong Xiao, and Binqiang Zhao. 2022. Co-training Disentangled Domain Adaptation Network for Leveraging Popularity Bias in Recommenders. In SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 , Enrique Amigó, Pablo Castells, Julio Gonzalo, Ben Carterette, J. Shane Culpepper, and Gabriella Kazai (Eds.). ACM, 60-69. https://doi.org/10.1145/3477495.3531952 [21] Fabian Christoffel, Bibek Paudel, Chris Newell, and Abraham Bernstein. 2015. Blockbusters and Wallflowers: Accurate, Diverse, and Scalable Recommendations with Random Walks. In Proceedings of the 9th ACM Conference on Recommender Systems, RecSys 2015, Vienna, Austria, September 1620, 2015 , Hannes Werthner, Markus Zanker, Jennifer Golbeck, and Giovanni Semeraro (Eds.). ACM, 163-170. https://doi.org/10.1145/2792838.2800180 [22] Wei Chu, Seung-Taek Park, Todd Beaupre, Nitin Motgi, Amit Phadke, Seinjuti Chakraborty, and Joe Zachariah. 2009. A case study of behavior-driven conjoint analysis on Yahoo!: front page today module. In Proceedings of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Paris, France, June 28 - July 1, 2009 , John F. Elder IV, Françoise Fogelman-Soulié, Peter A. Flach, and Mohammed Javeed Zaki (Eds.). ACM, 1097-1104. https://doi.org/10.1145/1557019.1557138 [23] Colin Cooper, Sang-Hyuk Lee, Tomasz Radzik, and Yiannis Siantos. 2014. Random walks in recommender systems: exact computation and simulations. In 23rd International World Wide Web Conference, WWW '14, Seoul, Republic of Korea, April 7-11, 2014, Companion Volume , Chin-Wan Chung, Andrei Z. Broder, Kyuseok Shim, and Torsten Suel (Eds.). ACM, 811-816. https://doi.org/10.1145/2567948.2579244 [24] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems, Boston, MA, USA, September 15-19, 2016 , Shilad Sen, Werner Geyer, Jill Freyne, and Pablo Castells (Eds.). ACM, 191-198. https://doi.org/10.1145/2959100.2959190 [25] Romain Deffayet, Thibaut Thonet, Jean-Michel Renders, and Maarten de Rijke. 2023. Generative Slate Recommendation with Reinforcement Learning. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining, WSDM 2023, Singapore, 27 February 2023 - 3 March 2023 , Tat-Seng Chua, Hady W. Lauw, Luo Si, Evimaria Terzi, and Panayiotis Tsaparas (Eds.). ACM, 580-588. https://doi.org/10.1145/3539597.3570412 [26] A. P. Dempster, N. M. Laird, and D. B. Rubin. 1977. Maximum Likelihood from Incomplete Data via the EM Algorithm. Journal of the Royal Statistical Society. Series B (Methodological) 39, 1 (1977), 1-38. http://www.jstor.org/stable/2984875 [27] Simen Eide, David S. Leslie, and Arnoldo Frigessi. 2022. Dynamic slate recommendation with gated recurrent units and Thompson sampling. Data Min. Knowl. Discov. 36, 5 (2022), 1756-1786. https://doi.org/10.1007/s10618-022-00849-w [28] Simen Eide, David S. Leslie, Arnoldo Frigessi, Joakim Rishaug, Helge Jenssen, and Sofie Verrewaere. 2021. FINN.no Slates Dataset: A new Sequential Dataset Logging Interactions, all Viewed Items and Click Responses/No-Click for Recommender Systems Research. In RecSys '21: Fifteenth ACM Conference on Recommender Systems, Amsterdam, The Netherlands, 27 September 2021 - 1 October 2021 , Humberto Jesús Corona Pampín, Martha A. Larson, Martijn C. Willemsen, Joseph A. Konstan, Julian J. McAuley, Jean Garcia-Gathright, Bouke Huurnink, and Even Oldridge (Eds.). ACM, 556-558. https://doi.org/10.1145/3460231.3474607 [29] Maurizio Ferrari Dacrema, Simone Boglio, Paolo Cremonesi, and Dietmar Jannach. 2021. A Troubling Analysis of Reproducibility and Progress in Recommender Systems Research. ACM Trans. Inf. Syst. 39, 2 (2021), 20:1-20:49. https://doi.org/10.1145/3434185 [30] Maurizio Ferrari Dacrema, Nicolò Felicioni, and Paolo Cremonesi. 2022. Offline Evaluation of Recommender Systems in a User Interface With Multiple Carousels. Frontiers Big Data 5 (2022), 910030. https://doi.org/10.3389/fdata.2022.910030 [31] Yingqiang Ge, Xiaoting Zhao, Lucia Yu, Saurabh Paul, Diane Hu, Chu-Cheng Hsieh, and Yongfeng Zhang. 2022. Toward Pareto Efficient FairnessUtility Trade-off in Recommendation through Reinforcement Learning. In WSDM '22: The Fifteenth ACM International Conference on Web Search and Data Mining, Virtual Event / Tempe, AZ, USA, February 21 - 25, 2022 , K. Selcuk Candan, Huan Liu, Leman Akoglu, Xin Luna Dong, and Jiliang Tang (Eds.). ACM, 316-324. https://doi.org/10.1145/3488560.3498487 [32] Timnit Gebru, Jamie Morgenstern, Briana Vecchione, Jennifer Wortman Vaughan, Hanna M. Wallach, Hal Daumé III, and Kate Crawford. 2018. Datasheets for Datasets. CoRR abs/1803.09010 (2018). arXiv:1803.09010 http://arxiv.org/abs/1803.09010 [33] Claudio Gentile, Shuai Li, and Giovanni Zappella. 2014. Online Clustering of Bandits. In Proceedings of the 31th International Conference on Machine Learning, ICML 2014, Beijing, China, 21-26 June 2014 (JMLR Workshop and Conference Proceedings, Vol. 32) . JMLR.org, 757-765. http://proceedings.mlr.press/v32/gentile14.html [34] Zhabiz Gharibshah and Xingquan Zhu. 2022. User Response Prediction in Online Advertising. ACM Comput. Surv. 54, 3 (2022), 64:1-64:43. https://doi.org/10.1145/3446662 [35] Shansan Gong and Kenny Q. Zhu. 2022. Positive, Negative and Neutral: Modeling Implicit Feedback in Session-based News Recommendation. In SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 , Enrique Amigó, Pablo Castells, Julio Gonzalo, Ben Carterette, J. Shane Culpepper, and Gabriella Kazai (Eds.). ACM, 1185-1195. https: //doi.org/10.1145/3477495.3532040 [36] Xudong Gong, Qinlin Feng, Yuan Zhang, Jiangling Qin, Weijie Ding, Biao Li, Peng Jiang, and Kun Gai. 2022. Real-time Short Video Recommendation on Mobile Devices. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management, Atlanta, GA, USA, October 17-21, 2022 , Mohammad Al Hasan and Li Xiong (Eds.). ACM, 3103-3112. https://doi.org/10.1145/3511808.3557065 [37] Thore Graepel, Joaquin Quiñonero Candela, Thomas Borchert, and Ralf Herbrich. 2010. Web-Scale Bayesian Click-Through rate Prediction for Sponsored Search Advertising in Microsoft's Bing Search Engine. In Proceedings of the 27th International Conference on Machine Learning (ICML-10), June 21-24, 2010, Haifa, Israel , Johannes Fürnkranz and Thorsten Joachims (Eds.). Omnipress, 13-20. https://icml.cc/Conferences/2010/papers/901.pdf Manuscript submitted to ACM [38] Ivo Grondman, Lucian Busoniu, Gabriel A. D. Lopes, and Robert Babuska. 2012. A Survey of Actor-Critic Reinforcement Learning: Standard and Natural Policy Gradients. IEEE Trans. Syst. Man Cybern. Part C 42, 6 (2012), 1291-1307. https://doi.org/10.1109/TSMCC.2012.2218595 [39] Alois Gruson, Praveen Chandar, Christophe Charbuillet, James McInerney, Samantha Hansen, Damien Tardieu, and Ben Carterette. 2019. Offline Evaluation to Make Decisions About Playlist Recommendation Algorithms. In Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining, WSDM 2019, Melbourne, VIC, Australia, February 11-15, 2019 , J. Shane Culpepper, Alistair Moffat, Paul N. Bennett, and Kristina Lerman (Eds.). ACM, 420-428. https://doi.org/10.1145/3289600.3291027 [40] Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, and Sergey Levine. 2018. Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor. In Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholmsmässan, Stockholm, Sweden, July 10-15, 2018 (Proceedings of Machine Learning Research, Vol. 80) , Jennifer G. Dy and Andreas Krause (Eds.). PMLR, 1856-1865. http://proceedings.mlr.press/v80/haarnoja18b.html [41] Geoffrey E. Hinton, Oriol Vinyals, and Jeffrey Dean. 2015. Distilling the Knowledge in a Neural Network. CoRR abs/1503.02531 (2015). arXiv:1503.02531 http://arxiv.org/abs/1503.02531 [42] Xiao Hu, Yuan Cheng, Zhi Zheng, Yue Wang, Xinxin Chi, and Hengshu Zhu. 2023. BOSS: A Bilateral Occupational-Suitability-Aware Recommender System for Online Recruitment. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD 2023, Long Beach, CA, USA, August 6-10, 2023 , Ambuj K. Singh, Yizhou Sun, Leman Akoglu, Dimitrios Gunopulos, Xifeng Yan, Ravi Kumar, Fatma Ozcan, and Jieping Ye (Eds.). ACM, 4146-4155. https://doi.org/10.1145/3580305.3599783 [43] Kirti Jain and Rajni Jindal. 2023. Sampling and noise filtering methods for recommender systems: A literature review. Eng. Appl. Artif. Intell. 122 (2023), 106129. https://doi.org/10.1016/J.ENGAPPAI.2023.106129 [44] Olivier Jeunen. 2019. Revisiting offline evaluation for implicit-feedback recommender systems. In Proceedings of the 13th ACM Conference on Recommender Systems, RecSys 2019, Copenhagen, Denmark, September 16-20, 2019 , Toine Bogers, Alan Said, Peter Brusilovsky, and Domonkos Tikk (Eds.). ACM, 596-600. https://doi.org/10.1145/3298689.3347069 [45] Kyung-Yong Jung, Dong-Hyun Park, and Jung-Hyun Lee. 2004. Hybrid Collaborative Filtering and Content-Based Filtering for Improved Recommender System. In Computational Science - ICCS 2004, 4th International Conference, Kraków, Poland, June 6-9, 2004, Proceedings, Part I (Lecture Notes in Computer Science, Vol. 3036) , Marian Bubak, G. Dick van Albada, Peter M. A. Sloot, and Jack J. Dongarra (Eds.). Springer, 295-302. https://doi.org/10.1007/978-3-540-24685-5_37 [46] Michael N. Katehakis and Arthur F. Veinott Jr. 1987. The Multi-Armed Bandit Problem: Decomposition and Computation. Math. Oper. Res. 12, 2 (1987), 262-268. https://doi.org/10.1287/moor.12.2.262 [47] Guolin Ke, Qi Meng, Thomas Finley, Taifeng Wang, Wei Chen, Weidong Ma, Qiwei Ye, and Tie-Yan Liu. 2017. LightGBM: A Highly Efficient Gradient Boosting Decision Tree. In Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA , Isabelle Guyon, Ulrike von Luxburg, Samy Bengio, Hanna M. Wallach, Rob Fergus, S. V. N. Vishwanathan, and Roman Garnett (Eds.). 3146-3154. https://proceedings.neurips.cc/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html [48] Guolin Ke, Zhenhui Xu, Jia Zhang, Jiang Bian, and Tie-Yan Liu. 2019. DeepGBM: A Deep Learning Framework Distilled by GBDT for Online Prediction Tasks. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2019, Anchorage, AK, USA, August 4-8, 2019 , Ankur Teredesai, Vipin Kumar, Ying Li, Rómer Rosales, Evimaria Terzi, and George Karypis (Eds.). ACM, 384-394. https://doi.org/10.1145/3292500.3330858 [49] Diederik P. Kingma and Max Welling. 2014. Auto-Encoding Variational Bayes. In 2nd International Conference on Learning Representations, ICLR 2014, Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings , Yoshua Bengio and Yann LeCun (Eds.). http://arxiv.org/abs/1312.6114 [50] Peter Knees, Yashar Deldjoo, Farshad Bakhshandegan Moghaddam, Jens Adamczak, Gerard Paul Leyson, and Philipp Monreal. 2019. RecSys challenge 2019: session-based hotel recommendations. In Proceedings of the 13th ACM Conference on Recommender Systems, RecSys 2019, Copenhagen, Denmark, September 16-20, 2019 , Toine Bogers, Alan Said, Peter Brusilovsky, and Domonkos Tikk (Eds.). ACM, 570-571. https://doi.org/10.1145/ 3298689.3346974 [51] Arnd Christian König, Michael Gamon, and Qiang Wu. 2009. Click-through prediction for news queries. In Proceedings of the 32nd Annual International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2009, Boston, MA, USA, July 19-23, 2009 , James Allan, Javed A. Aslam, Mark Sanderson, ChengXiang Zhai, and Justin Zobel (Eds.). ACM, 347-354. https://doi.org/10.1145/1571941.1572002 [52] Yehuda Koren, Steffen Rendle, and Robert M. Bell. 2022. Advances in Collaborative Filtering. In Recommender Systems Handbook , Francesco Ricci, Lior Rokach, and Bracha Shapira (Eds.). Springer US, 91-142. https://doi.org/10.1007/978-1-0716-2197-4_3 [53] S. Shunmuga Krishnan and Ramesh K. Sitaraman. 2013. Understanding the effectiveness of video ads: a measurement study. In Proceedings of the 2013 Internet Measurement Conference, IMC 2013, Barcelona, Spain, October 23-25, 2013 , Konstantina Papagiannaki, P. Krishna Gummadi, and Craig Partridge (Eds.). ACM, 149-162. https://doi.org/10.1145/2504730.2504748 [54] Thomas Laurent and James von Brecht. 2017. A recurrent neural network without chaos. In 5th International Conference on Learning Representations, ICLR 2017, Toulon, France, April 24-26, 2017, Conference Track Proceedings . OpenReview.net. https://openreview.net/forum?id=S1dIzvclg [55] Pei Lee, Laks V. S. Lakshmanan, Mitul Tiwari, and Sam Shah. 2014. Modeling impression discounting in large-scale recommender systems. In The 20th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD '14, New York, NY, USA - August 24 - 27, 2014 , Sofus A. Macskassy, Claudia Perlich, Jure Leskovec, Wei Wang, and Rayid Ghani (Eds.). ACM, 1837-1846. https://doi.org/10.1145/2623330.2623356 [56] Cheng Li, Yue Lu, Qiaozhu Mei, Dong Wang, and Sandeep Pandey. 2015. Click-through Prediction for Advertising in Twitter Timeline. In Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Sydney, NSW, Australia, August 10-13, 2015 , Manuscript submitted to ACM Longbing Cao, Chengqi Zhang, Thorsten Joachims, Geoffrey I. Webb, Dragos D. Margineantu, and Graham Williams (Eds.). ACM, 1959-1968. https://doi.org/10.1145/2783258.2788582 [57] Lihong Li, Wei Chu, John Langford, and Xuanhui Wang. 2011. Unbiased offline evaluation of contextual-bandit-based news article recommendation algorithms. In Proceedings of the Forth International Conference on Web Search and Web Data Mining, WSDM 2011, Hong Kong, China, February 9-12, 2011 , Irwin King, Wolfgang Nejdl, and Hang Li (Eds.). ACM, 297-306. https://doi.org/10.1145/1935826.1935878 [58] Pengyang Li, Rong Chen, Quan Liu, Jian Xu, and Bo Zheng. 2022. Transform Cold-Start Users into Warm via Fused Behaviors in Large-Scale Recommendation. In SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 , Enrique Amigó, Pablo Castells, Julio Gonzalo, Ben Carterette, J. Shane Culpepper, and Gabriella Kazai (Eds.). ACM, 2013-2017. https://doi.org/10.1145/3477495.3531797 [59] Shuai Li, Alexandros Karatzoglou, and Claudio Gentile. 2016. Collaborative Filtering Bandits. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval, SIGIR 2016, Pisa, Italy, July 17-21, 2016 , Raffaele Perego, Fabrizio Sebastiani, Javed A. Aslam, Ian Ruthven, and Justin Zobel (Eds.). ACM, 539-548. https://doi.org/10.1145/2911451.2911548 [60] Dawen Liang, Laurent Charlin, James McInerney, and David M. Blei. 2016. Modeling User Exposure in Recommendation. In Proceedings of the 25th , Jacqueline Bourdeau, Jim Hendler, Roger Nkambou, International Conference on World Wide Web, WWW 2016, Montreal, Canada, April 11 - 15, 2016 Ian Horrocks, and Ben Y. Zhao (Eds.). ACM, 951-961. https://doi.org/10.1145/2872427.2883090 [61] Xiao Lin, Xiaokai Chen, Linfeng Song, Jingwei Liu, Biao Li, and Peng Jiang. 2023. Tree based Progressive Regression Model for Watch-Time Prediction in Short-video Recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD 2023, Long Beach, CA, USA, August 6-10, 2023 , Ambuj K. Singh, Yizhou Sun, Leman Akoglu, Dimitrios Gunopulos, Xifeng Yan, Ravi Kumar, Fatma Ozcan, and Jieping Ye (Eds.). ACM, 4497-4506. https://doi.org/10.1145/3580305.3599919 [62] Bin Liu, Niannan Xue, Huifeng Guo, Ruiming Tang, Stefanos Zafeiriou, Xiuqiang He, and Zhenguo Li. 2020. AutoGroup: Automatic Feature Grouping for Modelling Explicit High-Order Feature Interactions in CTR Prediction. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval, SIGIR 2020, Virtual Event, China, July 25-30, 2020 , Jimmy X. Huang, Yi Chang, Xueqi Cheng, Jaap Kamps, Vanessa Murdock, Ji-Rong Wen, and Yiqun Liu (Eds.). ACM, 199-208. https://doi.org/10.1145/3397271.3401082 [63] David C. Liu, Stephanie Kaye Rogers, Raymond Shiau, Dmitry Kislyuk, Kevin C. Ma, Zhigang Zhong, Jenny Liu, and Yushi Jing. 2017. Related Pins at Pinterest: The Evolution of a Real-World Recommender System. In Proceedings of the 26th International Conference on World Wide Web Companion, Perth, Australia, April 3-7, 2017 , Rick Barrett, Rick Cummings, Eugene Agichtein, and Evgeniy Gabrilovich (Eds.). ACM, 583-592. https://doi.org/10.1145/3041021.3054202 [64] Babak Loni, Roberto Pagano, Martha A. Larson, and Alan Hanjalic. 2016. Bayesian Personalized Ranking with Multi-Channel User Feedback. In Proceedings of the 10th ACM Conference on Recommender Systems, Boston, MA, USA, September 15-19, 2016 , Shilad Sen, Werner Geyer, Jill Freyne, and Pablo Castells (Eds.). ACM, 361-364. https://doi.org/10.1145/2959100.2959163 [65] Wenjie Lu. 2023. Knowledge distillation-enhanced multitask framework for recommendation. Inf. Sci. 630 (2023), 235-251. https://doi.org/10.1016/ J.INS.2023.02.021 [66] Hao Ma, Xueqing Liu, and Zhihong Shen. 2016. User Fatigue in Online News Recommendation. In Proceedings of the 25th International Conference on World Wide Web, WWW 2016, Montreal, Canada, April 11 - 15, 2016 , Jacqueline Bourdeau, Jim Hendler, Roger Nkambou, Ian Horrocks, and Ben Y. Zhao (Eds.). ACM, 1363-1372. https://doi.org/10.1145/2872427.2874813 [67] Ning Ma, Mustafa Ispir, Yuan Li, Yongpeng Yang, Zhe Chen, Derek Zhiyuan Cheng, Lan Nie, and Kishor Barman. 2022. An Online Multi-task Learning Framework for Google Feed Ads Auction Models. In KDD '22: The 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Washington, DC, USA, August 14 - 18, 2022 , Aidong Zhang and Huzefa Rangwala (Eds.). ACM, 3477-3485. https://doi.org/10.1145/3534678.3539055 [68] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval, SIGIR 2018, Ann Arbor, MI, USA, July 08-12, 2018 , Kevyn Collins-Thompson, Qiaozhu Mei, Brian D. Davison, Yiqun Liu, and Emine Yilmaz (Eds.). ACM, 1137-1140. https://doi.org/10.1145/3209978.3210104 [69] James McInerney, Benjamin Lacker, Samantha Hansen, Karl Higley, Hugues Bouchard, Alois Gruson, and Rishabh Mehrotra. 2018. Explore, exploit, and explain: personalizing explainable recommendations with bandits. In Proceedings of the 12th ACM Conference on Recommender Systems, RecSys 2018, Vancouver, BC, Canada, October 2-7, 2018 , Sole Pera, Michael D. Ekstrand, Xavier Amatriain, and John O'Donovan (Eds.). ACM, 31-39. https://doi.org/10.1145/3240323.3240354 [70] Bonan Min, Hayley Ross, Elior Sulem, Amir Pouran Ben Veyseh, Thien Huu Nguyen, Oscar Sainz, Eneko Agirre, Ilana Heintz, and Dan Roth. 2024. Recent Advances in Natural Language Processing via Large Pre-trained Language Models: A Survey. ACM Comput. Surv. 56, 2 (2024), 30:1-30:40. https://doi.org/10.1145/3605943 [71] Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, and Martin A. Riedmiller. 2013. Playing Atari with Deep Reinforcement Learning. CoRR abs/1312.5602 (2013). arXiv:1312.5602 http://arxiv.org/abs/1312.5602 [72] Jose G. Moreno-Torres, Troy Raeder, Rocío Alaíz-Rodríguez, Nitesh V. Chawla, and Francisco Herrera. 2012. A unifying view on dataset shift in classification. Pattern Recognit. 45, 1 (2012), 521-530. https://doi.org/10.1016/j.patcog.2011.06.019 [73] Ashutosh Nayak, Mayur Garg, and Rajasekhara Reddy Duvvuru Muni. 2023. News Popularity Beyond the Click-Through-Rate for Personalized Recommendations. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2023, Taipei, Taiwan, July 23-27, 2023 , Hsin-Hsi Chen, Wei-Jou (Edward) Duh, Hen-Hsen Huang, Makoto P. Kato, Josiane Mothe, and Barbara Poblete Manuscript submitted to ACM (Eds.). ACM, 1396-1405. https://doi.org/10.1145/3539618.3591741 [74] Xia Ning and George Karypis. 2012. Sparse linear methods with side information for top-n recommendations. In Sixth ACM Conference on Recommender Systems, RecSys '12, Dublin, Ireland, September 9-13, 2012 , Padraig Cunningham, Neil J. Hurley, Ido Guy, and Sarabjot Singh Anand (Eds.). ACM, 155-162. https://doi.org/10.1145/2365952.2365983 [75] Andrzej Pacuk, Piotr Sankowski, Karol Wegrzycki, Adam Witkowski, and Piotr Wygocki. 2016. RecSys Challenge 2016: job recommendations based on preselection of offers and gradient boosting. In Proceedings of the 2016 Recommender Systems Challenge, RecSys Challenge 2016, Boston, Massachusetts, USA, September 15, 2016 , Fabian Abel, András A. Benczúr, Daniel Kohlsdorf, Martha A. Larson, and Róbert Pálovics (Eds.). ACM, 10:1-10:4. https://doi.org/10.1145/2987538.2987544 [76] Changhua Pei, Xinru Yang, Qing Cui, Xiao Lin, Fei Sun, Peng Jiang, Wenwu Ou, and Yongfeng Zhang. 2019. Value-aware Recommendation based on Reinforcement Profit Maximization. In The World Wide Web Conference, WWW 2019, San Francisco, CA, USA, May 13-17, 2019 , Ling Liu, Ryen W. White, Amin Mantrach, Fabrizio Silvestri, Julian J. McAuley, Ricardo Baeza-Yates, and Leila Zia (Eds.). ACM, 3123-3129. https: //doi.org/10.1145/3308558.3313404 [77] Fernando Benjamín Pérez Maurera, Maurizio Ferrari Dacrema, Pablo Castells, and Paolo Cremonesi. 2023. Incorporating Impressions to Graph-Based Recommenders. In Proceedings of the Workshop on Learning and Evaluating Recommendations with Impressions 2023, Singapore, September 19, 2023 (CEUR Workshop Proceedings, Vol. 3590) , Maurizio Ferrari Dacrema, Justin Basilico, Pablo Castells, Paolo Cremonesi, and Fernando Benjamín Pérez Maurera (Eds.). CEUR-WS.org. http://ceur-ws.org/Vol-3590/short5.pdf [78] Fernando Benjamín Pérez Maurera, Maurizio Ferrari Dacrema, and Paolo Cremonesi. 2022. Replication of Recommender Systems with Impressions. In Proceedings of the 12th Italian Information Retrieval Workshop 2022, Milan, Italy, June 29-30, 2022 (CEUR Workshop Proceedings, Vol. 3177) , Gabriella Pasi, Paolo Cremonesi, Salvatore Orlando, Markus Zanker, David Massimo, and Gloria Turati (Eds.). CEUR-WS.org. http://ceur-ws.org/Vol3177/paper20.pdf [79] Fernando Benjamín Pérez Maurera, Maurizio Ferrari Dacrema, and Paolo Cremonesi. 2022. Towards the Evaluation of Recommender Systems with Impressions. In RecSys '22: Sixteenth ACM Conference on Recommender Systems, Seattle, WA, USA, September 18 - 23, 2022 , Jennifer Golbeck, F. Maxwell Harper, Vanessa Murdock, Michael D. Ekstrand, Bracha Shapira, Justin Basilico, Keld T. Lundgaard, and Even Oldridge (Eds.). ACM, 610-615. https://doi.org/10.1145/3523227.3551483 [80] Fernando Benjamín Pérez Maurera, Maurizio Ferrari Dacrema, Lorenzo Saule, Mario Scriminaci, and Paolo Cremonesi. 2020. ContentWise Impressions: An Industrial Dataset with Impressions Included. In CIKM '20: The 29th ACM International Conference on Information and Knowledge Management, Virtual Event, Ireland, October 19-23, 2020 , Mathieu d'Aquin, Stefan Dietze, Claudia Hauff, Edward Curry, and Philippe Cudré-Mauroux (Eds.). ACM, 3093-3100. https://doi.org/10.1145/3340531.3412774 [81] Joaquin Quionero-Candela, Masashi Sugiyama, Anton Schwaighofer, and Neil D. Lawrence. 2009. Dataset Shift in Machine Learning . The MIT Press. [82] Ghazala Rafiq, Muhammad Rafiq, and Gyu Sang Choi. 2023. Video description: A comprehensive survey of deep learning approaches. Artif. Intell. Rev. 56, 11 (2023), 13293-13372. https://doi.org/10.1007/S10462-023-10414-6 [83] Yi Ren, Xiao Han, Xu Zhao, Shenzheng Zhang, and Yan Zhang. 2023. Slate-Aware Ranking for Recommendation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining, WSDM 2023, Singapore, 27 February 2023 - 3 March 2023 , Tat-Seng Chua, Hady W. Lauw, Luo Si, Evimaria Terzi, and Panayiotis Tsaparas (Eds.). ACM, 499-507. https://doi.org/10.1145/3539597.3570380 [84] Steffen Rendle. 2010. Factorization Machines. In ICDM 2010, The 10th IEEE International Conference on Data Mining, Sydney, Australia, 14-17 December 2010 , Geoffrey I. Webb, Bing Liu, Chengqi Zhang, Dimitrios Gunopulos, and Xindong Wu (Eds.). IEEE Computer Society, 995-1000. https://doi.org/10.1109/ICDM.2010.127 [85] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2009. BPR: Bayesian Personalized Ranking from Implicit Feedback. In UAI 2009, Proceedings of the Twenty-Fifth Conference on Uncertainty in Artificial Intelligence, Montreal, QC, Canada, June 18-21, 2009 , Jeff A. Bilmes and Andrew Y. Ng (Eds.). AUAI Press, 452-461. https://dslpitt.org/uai/displayArticleDetails.jsp?mmnu=1&smnu=2&article_id= 1630&proceeding_id=25 [86] Francesco Ricci, Lior Rokach, and Bracha Shapira. 2022. Recommender Systems: Techniques, Applications, and Challenges. In Recommender Systems Handbook , Francesco Ricci, Lior Rokach, and Bracha Shapira (Eds.). Springer US, 1-35. https://doi.org/10.1007/978-1-0716-2197-4_1 [87] Matthew Richardson, Ewa Dominowska, and Robert Ragno. 2007. Predicting clicks: estimating the click-through rate for new ads. In Proceedings of the 16th International Conference on World Wide Web, WWW 2007, Banff, Alberta, Canada, May 8-12, 2007 , Carey L. Williamson, Mary Ellen Zurko, Peter F. Patel-Schneider, and Prashant J. Shenoy (Eds.). ACM, 521-530. https://doi.org/10.1145/1242572.1242643 [88] Tim Salimans, Jonathan Ho, Xi Chen, and Ilya Sutskever. 2017. Evolution Strategies as a Scalable Alternative to Reinforcement Learning. CoRR abs/1703.03864 (2017). arXiv:1703.03864 http://arxiv.org/abs/1703.03864 [89] Masahiro Sato, Janmajay Singh, Sho Takemori, Takashi Sonoda, Qian Zhang, and Tomoko Ohkuma. 2019. Uplift-based evaluation and optimization of recommenders. In Proceedings of the 13th ACM Conference on Recommender Systems, RecSys 2019, Copenhagen, Denmark, September 16-20, 2019 , Toine Bogers, Alan Said, Peter Brusilovsky, and Domonkos Tikk (Eds.). ACM, 296-304. https://doi.org/10.1145/3298689.3347018 [90] Tobias Schnabel, Adith Swaminathan, Ashudeep Singh, Navin Chandak, and Thorsten Joachims. 2016. Recommendations as Treatments: Debiasing Learning and Evaluation. In Proceedings of the 33nd International Conference on Machine Learning, ICML 2016, New York City, NY, USA, June 19-24, 2016 (JMLR Workshop and Conference Proceedings, Vol. 48) , Maria-Florina Balcan and Kilian Q. Weinberger (Eds.). JMLR.org, 1670-1679. http://proceedings.mlr.press/v48/schnabel16.html Manuscript submitted to ACM [91] Faisal Shehzad and Dietmar Jannach. 2023. Everyone's a Winner! On Hyperparameter Tuning of Recommendation Models. In Proceedings of the 17th ACM Conference on Recommender Systems, RecSys 2023, Singapore, Singapore, September 18-22, 2023 , Jie Zhang, Li Chen, Shlomo Berkovsky, Min Zhang, Tommaso Di Noia, Justin Basilico, Luiz Pizzato, and Yang Song (Eds.). ACM, 652-657. https://doi.org/10.1145/3604915.3609488 [92] Qijie Shen, Hong Wen, Wanjie Tao, Jing Zhang, Fuyu Lv, Zulong Chen, and Zhao Li. 2022. Deep Interest Highlight Network for Click-Through Rate Prediction in Trigger-Induced Recommendation. In WWW'22: The ACM Web Conference 2022, Virtual Event, Lyon, France, April 25 - 29, 2022 , Frédérique Laforest, Raphaël Troncy, Elena Simperl, Deepak Agarwal, Aristides Gionis, Ivan Herman, and Lionel Médini (Eds.). ACM, 422-430. https://doi.org/10.1145/3485447.3511970 [93] Ting-Yi Shih, Ting-Chang Hou, Jian-De Jiang, Yen-Chieh Lien, Chia-Rui Lin, and Pu-Jen Cheng. 2016. Dynamically Integrating Item Exposure with Rating Prediction in Collaborative Filtering. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval, SIGIR 2016, Pisa, Italy, July 17-21, 2016 , Raffaele Perego, Fabrizio Sebastiani, Javed A. Aslam, Ian Ruthven, and Justin Zobel (Eds.). ACM, 813-816. https://doi.org/10.1145/2911451.2914769 [94] Sumit Sidana, Charlotte Laclau, and Massih-Reza Amini. 2018. Learning to recommend diverse items over implicit feedback on PANDOR. In Proceedings of the 12th ACM Conference on Recommender Systems, RecSys 2018, Vancouver, BC, Canada, October 2-7, 2018 , Sole Pera, Michael D. Ekstrand, Xavier Amatriain, and John O'Donovan (Eds.). ACM, 427-431. https://doi.org/10.1145/3240323.3240400 [95] Nícollas Silva, Heitor Werneck, Thiago Silva, Adriano C. M. Pereira, and Leonardo Rocha. 2022. Multi-Armed Bandits in Recommendation Systems: A survey of the state-of-the-art and future directions. Expert Syst. Appl. 197 (2022), 116669. https://doi.org/10.1016/j.eswa.2022.116669 [96] Aixin Sun. 2023. Take a Fresh Look at Recommender Systems from an Evaluation Standpoint. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2023, Taipei, Taiwan, July 23-27, 2023 , Hsin-Hsi Chen, Wei-Jou (Edward) Duh, Hen-Hsen Huang, Makoto P. Kato, Josiane Mothe, and Barbara Poblete (Eds.). ACM, 2629-2638. https://doi.org/10.1145/3539618.3591931 [97] Norha M. Villegas, Cristian Sánchez, Javier Díaz-Cely, and Gabriel Tamura. 2018. Characterizing context-aware recommender systems: A systematic literature review. Knowl. Based Syst. 140 (2018), 173-200. https://doi.org/10.1016/j.knosys.2017.11.003 [98] Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly. 2015. Pointer Networks. In Advances in Neural Information Processing Systems 28: Annual Conference on Neural Information Processing Systems 2015, December 7-12, 2015, Montreal, Quebec, Canada , Corinna Cortes, Neil D. Lawrence, Daniel D. Lee, Masashi Sugiyama, and Roman Garnett (Eds.). 2692-2700. https://proceedings.neurips.cc/paper/2015/hash/29921001f2f04bd3baee84a12e98098fAbstract.html [99] Dong Wang, Kavé Salamatian, Yunqing Xia, Weiwei Deng, and Qi Zhang. 2023. BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD 2023, Long Beach, CA, USA, August 6-10, 2023 , Ambuj K. Singh, Yizhou Sun, Leman Akoglu, Dimitrios Gunopulos, Xifeng Yan, Ravi Kumar, Fatma Ozcan, and Jieping Ye (Eds.). ACM, 5039-5050. https://doi.org/10.1145/3580305.3599780 [100] Hao Wang, Tai-Wei Chang, Tianqiao Liu, Jianmin Huang, Zhichao Chen, Chao Yu, Ruopeng Li, and Wei Chu. 2022. ESCM2: Entire Space Counterfactual Multi-Task Model for Post-Click Conversion Rate Estimation. In SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 , Enrique Amigó, Pablo Castells, Julio Gonzalo, Ben Carterette, J. Shane Culpepper, and Gabriella Kazai (Eds.). ACM, 363-372. https://doi.org/10.1145/3477495.3531972 [101] Haifeng Wang, Jiwei Li, Hua Wu, Eduard Hovy, and Yu Sun. 2023. Pre-Trained Language Models and Their Applications. Engineering 25 (2023), 51-65. https://doi.org/10.1016/j.eng.2022.04.024 [102] Jiayin Wang, Weizhi Ma, Jiayu Li, Hongyu Lu, Min Zhang, Biao Li, Yiqun Liu, Peng Jiang, and Shaoping Ma. 2022. Make Fairness More Fair: Fair Item Utility Estimation and Exposure Re-Distribution. In KDD '22: The 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Washington, DC, USA, August 14 - 18, 2022 , Aidong Zhang and Huzefa Rangwala (Eds.). ACM, 1868-1877. https://doi.org/10.1145/3534678.3539354 [103] Kai Wang, Zhene Zou, Minghao Zhao, Qilin Deng, Yue Shang, Yile Liang, Runze Wu, Xudong Shen, Tangjie Lyu, and Changjie Fan. 2023. RL4RS: A Real-World Dataset for Reinforcement Learning based Recommender System. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2023, Taipei, Taiwan, July 23-27, 2023 , Hsin-Hsi Chen, Wei-Jou (Edward) Duh, Hen-Hsen Huang, Makoto P. Kato, Josiane Mothe, and Barbara Poblete (Eds.). ACM, 2935-2944. https://doi.org/10.1145/3539618.3591899 [104] Yifan Wang, Weizhi Ma, Min Zhang, Yiqun Liu, and Shaoping Ma. 2023. A Survey on the Fairness of Recommender Systems. ACM Trans. Inf. Syst. 41, 3 (2023), 52:1-52:43. https://doi.org/10.1145/3547333 [105] Ronald J. Williams. 1992. Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning. Mach. Learn. 8 (1992), 229-256. https://doi.org/10.1007/BF00992696 [106] Chao-Yuan Wu, Christopher V. Alvino, Alexander J. Smola, and Justin Basilico. 2016. Using Navigation to Improve Recommendations in Real-Time. In Proceedings of the 10th ACM Conference on Recommender Systems, Boston, MA, USA, September 15-19, 2016 , Shilad Sen, Werner Geyer, Jill Freyne, and Pablo Castells (Eds.). ACM, 341-348. https://doi.org/10.1145/2959100.2959174 [107] Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu, and Ming Zhou. 2020. MIND: A Large-scale Dataset for News Recommendation. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, ACL 2020, Online, July 5-10, 2020 , Dan Jurafsky, Joyce Chai, Natalie Schluter, and Joel R. Tetreault (Eds.). Association for Computational Linguistics, 3597-3606. https://doi.org/10.18653/v1/2020.acl-main.331 [108] Yunjia Xi, Jianghao Lin, Weiwen Liu, Xinyi Dai, Weinan Zhang, Rui Zhang, Ruiming Tang, and Yong Yu. 2023. A Bird's-eye View of Reranking: From List Level to Page Level. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining, WSDM 2023, Singapore, 27 February 2023 - 3 March 2023 , Tat-Seng Chua, Hady W. Lauw, Luo Si, Evimaria Terzi, and Panayiotis Tsaparas (Eds.). ACM, 1075-1083. Manuscript submitted to ACM",
   "https://doi.org/10.1145/3539597.3570399": "[109] Ruobing Xie, Shaoliang Zhang, Rui Wang, Feng Xia, and Leyu Lin. 2021. Explore, Filter and Distill: Distilled Reinforcement Learning in Recommendation. In CIKM '21: The 30th ACM International Conference on Information and Knowledge Management, Virtual Event, Queensland, Australia, November 1 - 5, 2021 , Gianluca Demartini, Guido Zuccon, J. Shane Culpepper, Zi Huang, and Hanghang Tong (Eds.). ACM, 4243-4252. https://doi.org/10.1145/3459637.3481917 [110] Ruobing Xie, Shaoliang Zhang, Rui Wang, Feng Xia, and Leyu Lin. 2022. A Peep into the Future: Adversarial Future Encoding in Recommendation. In WSDM '22: The Fifteenth ACM International Conference on Web Search and Data Mining, Virtual Event / Tempe, AZ, USA, February 21 - 25, 2022 , K. Selcuk Candan, Huan Liu, Leman Akoglu, Xin Luna Dong, and Jiliang Tang (Eds.). ACM, 1177-1185. https://doi.org/10.1145/3488560.3498476 [111] Xin Xin, Jiyuan Yang, Hanbing Wang, Jun Ma, Pengjie Ren, Hengliang Luo, Xinlei Shi, Zhumin Chen, and Zhaochun Ren. 2023. On the User Behavior Leakage from Recommender System Exposure. ACM Trans. Inf. Syst. 41, 3 (2023), 57:1-57:25. https://doi.org/10.1145/3568954 [112] Yanwu Yang and Panyu Zhai. 2022. Click-through rate prediction in online advertising: A literature review. Inf. Process. Manag. 59, 2 (2022), 102853. https://doi.org/10.1016/j.ipm.2021.102853 [113] Xinyang Yi, Ji Yang, Lichan Hong, Derek Zhiyuan Cheng, Lukasz Heldt, Aditee Kumthekar, Zhe Zhao, Li Wei, and Ed H. Chi. 2019. Samplingbias-corrected neural modeling for large corpus item recommendations. In Proceedings of the 13th ACM Conference on Recommender Systems, RecSys 2019, Copenhagen, Denmark, September 16-20, 2019 , Toine Bogers, Alan Said, Peter Brusilovsky, and Domonkos Tikk (Eds.). ACM, 269-277. https://doi.org/10.1145/3298689.3346996 [114] Manzil Zaheer, Satwik Kottur, Siamak Ravanbakhsh, Barnabás Póczos, Ruslan Salakhutdinov, and Alexander J. Smola. 2017. Deep Sets. In Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA , Isabelle Guyon, Ulrike von Luxburg, Samy Bengio, Hanna M. Wallach, Rob Fergus, S. V. N. Vishwanathan, and Roman Garnett (Eds.). 3391-3401. https://proceedings.neurips.cc/paper/2017/hash/f22e4747da1aa27e363d86d40ff442fe-Abstract.html [115] Eva Zangerle and Christine Bauer. 2023. Evaluating Recommender Systems: Survey and Framework. ACM Comput. Surv. 55, 8 (2023), 170:1-170:38. https://doi.org/10.1145/3556536 [116] Ruohan Zhan, Changhua Pei, Qiang Su, Jianfeng Wen, Xueliang Wang, Guanyu Mu, Dong Zheng, Peng Jiang, and Kun Gai. 2022. Deconfounding Duration Bias in Watch-time Prediction for Video Recommendation. In KDD '22: The 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Washington, DC, USA, August 14 - 18, 2022 , Aidong Zhang and Huzefa Rangwala (Eds.). ACM, 4472-4481. https://doi.org/10.1145/ 3534678.3539092 [117] Junzi Zhang, Jongho Kim, Brendan O'Donoghue, and Stephen P. Boyd. 2021. Sample Efficient Reinforcement Learning with REINFORCE. In Thirty-Fifth AAAI Conference on Artificial Intelligence, AAAI 2021, Thirty-Third Conference on Innovative Applications of Artificial Intelligence, IAAI 2021, The Eleventh Symposium on Educational Advances in Artificial Intelligence, EAAI 2021, Virtual Event, February 2-9, 2021 . AAAI Press, 10887-10895. https://ojs.aaai.org/index.php/AAAI/article/view/17300 [118] Qing Zhang, Xiaoying Zhang, Yang Liu, Hongning Wang, Min Gao, Jiheng Zhang, and Ruocheng Guo. 2023. Debiasing Recommendation by Learning Identifiable Latent Confounders. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD 2023, Long Beach, CA, USA, August 6-10, 2023 , Ambuj K. Singh, Yizhou Sun, Leman Akoglu, Dimitrios Gunopulos, Xifeng Yan, Ravi Kumar, Fatma Ozcan, and Jieping Ye (Eds.). ACM, 3353-3363. https://doi.org/10.1145/3580305.3599296 [119] Xikun Zhang, Deepak Ramachandran, Ian Tenney, Yanai Elazar, and Dan Roth. 2020. Do Language Embeddings capture Scales?. In Proceedings of the Third BlackboxNLP Workshop on Analyzing and Interpreting Neural Networks for NLP, BlackboxNLP@EMNLP 2020, Online, November 2020 , Afra Alishahi, Yonatan Belinkov, Grzegorz Chrupala, Dieuwke Hupkes, Yuval Pinter, and Hassan Sajjad (Eds.). Association for Computational Linguistics, 292-299. https://doi.org/10.18653/V1/2020.BLACKBOXNLP-1.27 [120] XianXing Zhang, Yitong Zhou, Yiming Ma, Bee-Chung Chen, Liang Zhang, and Deepak Agarwal. 2016. GLMix: Generalized Linear Mixed Models For Large-Scale Response Prediction. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, San Francisco, CA, USA, August 13-17, 2016 , Balaji Krishnapuram, Mohak Shah, Alexander J. Smola, Charu C. Aggarwal, Dou Shen, and Rajeev Rastogi (Eds.). ACM, 363-372. https://doi.org/10.1145/2939672.2939684 [121] Yujing Zhang, Zhangming Chan, Shuhao Xu, Weijie Bian, Shuguang Han, Hongbo Deng, and Bo Zheng. 2022. KEEP: An Industrial Pre-Training Framework for Online Recommendation via Knowledge Extraction and Plugging. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management, Atlanta, GA, USA, October 17-21, 2022 , Mohammad Al Hasan and Li Xiong (Eds.). ACM, 3684-3693. https://doi.org/10.1145/3511808.3557106 [122] Feipeng Zhao, Min Xiao, and Yuhong Guo. 2016. Predictive Collaborative Filtering with Side Information. In Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence, IJCAI 2016, New York, NY, USA, 9-15 July 2016 , Subbarao Kambhampati (Ed.). IJCAI/AAAI Press, 2385-2391. http://www.ijcai.org/Abstract/16/340 [123] Qian Zhao, Gediminas Adomavicius, F. Maxwell Harper, Martijn C. Willemsen, and Joseph A. Konstan. 2017. Toward Better Interactions in Recommender Systems: Cycling and Serpentining Approaches for Top-N Item Lists. In Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing, CSCW 2017, Portland, OR, USA, February 25 - March 1, 2017 , Charlotte P. Lee, Steven E. Poltrock, Louise Barkhuus, Marcos Borges, and Wendy A. Kellogg (Eds.). ACM, 1444-1453. https://doi.org/10.1145/2998181.2998211 [124] Qian Zhao, Martijn C. Willemsen, Gediminas Adomavicius, F. Maxwell Harper, and Joseph A. Konstan. 2018. Interpreting user inaction in recommender systems. In Proceedings of the 12th ACM Conference on Recommender Systems, RecSys 2018, Vancouver, BC, Canada, October 2-7, 2018 , Sole Pera, Michael D. Ekstrand, Xavier Amatriain, and John O'Donovan (Eds.). ACM, 40-48. https://doi.org/10.1145/3240323.3240366 Manuscript submitted to ACM [125] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed H. Chi. 2019. Recommending what video to watch next: a multitask ranking system. In Proceedings of the 13th ACM Conference on Recommender Systems, RecSys 2019, Copenhagen, Denmark, September 16-20, 2019 , Toine Bogers, Alan Said, Peter Brusilovsky, and Domonkos Tikk (Eds.). ACM, 43-51. https://doi.org/10.1145/3298689.3346997 [126] Guanglin Zhou, Chengkai Huang, Xiaocong Chen, Xiwei Xu, Chen Wang, Liming Zhu, and Lina Yao. 2023. Contrastive Counterfactual Learning for Causality-aware Interpretable Recommender Systems. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management, CIKM 2023, Birmingham, United Kingdom, October 21-25, 2023 , Ingo Frommholz, Frank Hopfgartner, Mark Lee, Michael Oakes, Mounia Lalmas, Min Zhang, and Rodrygo L. T. Santos (Eds.). ACM, 3564-3573. https://doi.org/10.1145/3583780.3614823 [127] Chenxu Zhu, Peng Du, Weinan Zhang, Yong Yu, and Yang Cao. 2022. Combo-Fashion: Fashion Clothes Matching CTR Prediction with Item History. In KDD '22: The 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Washington, DC, USA, August 14 - 18, 2022 , Aidong Zhang and Huzefa Rangwala (Eds.). ACM, 4621-4629. https://doi.org/10.1145/3534678.3539101 Received 05 February 2024; revised 08 August 2024; accepted 07 December 2024 Manuscript submitted to ACM",
   "keywords_parsed": [
-    "None"
+    "Recommender Systems",
+    "Impression",
+    "Slate",
+    "Exposure",
+    "Dataset",
+    "Evaluation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "RecSys Challenge 2016: Job Recommendations"
+    },
+    {
+      "ref_id": "b2",
+      "title": "RecSys Challenge 2017: Offline and Online Evaluation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Context-Aware Recommender Systems: From Foundations to Recent Developments"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Reinforcement Learning based Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Spatio-temporal models for estimating click-through rate"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Activity ranking in LinkedIn feed"
+    },
+    {
+      "ref_id": "b7",
+      "title": "OFF-set: one-pass factorization of feature sets for online recommendation in persistent cold start settings"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Soft Frequency Capping for Improved Ad Click Prediction in Yahoo Gemini Native"
+    },
+    {
+      "ref_id": "b9",
+      "title": "SoCRATe: A Recommendation System with Limited-Availability Items"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Modeling and predicting User Engagement in mobile applications"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Toward Job Recommendation for All"
+    },
+    {
+      "ref_id": "b12",
+      "title": "LiJAR: A System for Job Application Redistribution towards Efficient Career Marketplace"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Frequency capping in online advertising"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Hybrid Web Recommender Systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Offline evaluation options for recommender systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Integrating a semantic-based retrieval agent into case-based reasoning systems: A case study of an online bookstore"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Bias and Debias in Recommender System: A Survey and Future Directions"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Top-K Off-Policy Correction for a REINFORCE Recommender System"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Controllable Multi-Objective Re-ranking with Policy Hypernetworks"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Co-training Disentangled Domain Adaptation Network for Leveraging Popularity Bias in Recommenders"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Blockbusters and Wallflowers: Accurate, Diverse, and Scalable Recommendations with Random Walks"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A case study of behavior-driven conjoint analysis on Yahoo!: front page today module"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Random walks in recommender systems: exact computation and simulations"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Generative Slate Recommendation with Reinforcement Learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Maximum Likelihood from Incomplete Data via the EM Algorithm"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Dynamic slate recommendation with gated recurrent units and Thompson sampling"
+    },
+    {
+      "ref_id": "b28",
+      "title": "FINN.no Slates Dataset: A new Sequential Dataset Logging Interactions, all Viewed Items and Click Responses/No-Click for Recommender Systems Research"
+    },
+    {
+      "ref_id": "b29",
+      "title": "A Troubling Analysis of Reproducibility and Progress in Recommender Systems Research"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Offline Evaluation of Recommender Systems in a User Interface With Multiple Carousels"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Toward Pareto Efficient FairnessUtility Trade-off in Recommendation through Reinforcement Learning"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Datasheets for Datasets"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Online Clustering of Bandits"
+    },
+    {
+      "ref_id": "b34",
+      "title": "User Response Prediction in Online Advertising"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Positive, Negative and Neutral: Modeling Implicit Feedback in Session-based News Recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Real-time Short Video Recommendation on Mobile Devices"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Web-Scale Bayesian Click-Through rate Prediction for Sponsored Search Advertising in Microsoft's Bing Search Engine"
+    },
+    {
+      "ref_id": "b38",
+      "title": "A Survey of Actor-Critic Reinforcement Learning: Standard and Natural Policy Gradients"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Offline Evaluation to Make Decisions About Playlist Recommendation Algorithms"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Distilling the Knowledge in a Neural Network"
+    },
+    {
+      "ref_id": "b42",
+      "title": "BOSS: A Bilateral Occupational-Suitability-Aware Recommender System for Online Recruitment"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Sampling and noise filtering methods for recommender systems: A literature review"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Revisiting offline evaluation for implicit-feedback recommender systems"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Hybrid Collaborative Filtering and Content-Based Filtering for Improved Recommender System"
+    },
+    {
+      "ref_id": "b46",
+      "title": "The Multi-Armed Bandit Problem: Decomposition and Computation"
+    },
+    {
+      "ref_id": "b47",
+      "title": "LightGBM: A Highly Efficient Gradient Boosting Decision Tree"
+    },
+    {
+      "ref_id": "b48",
+      "title": "DeepGBM: A Deep Learning Framework Distilled by GBDT for Online Prediction Tasks"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Auto-Encoding Variational Bayes"
+    },
+    {
+      "ref_id": "b50",
+      "title": "RecSys challenge 2019: session-based hotel recommendations"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Click-through prediction for news queries"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Advances in Collaborative Filtering"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Understanding the effectiveness of video ads: a measurement study"
+    },
+    {
+      "ref_id": "b54",
+      "title": "A recurrent neural network without chaos"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Modeling impression discounting in large-scale recommender systems"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Click-through Prediction for Advertising in Twitter Timeline"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Unbiased offline evaluation of contextual-bandit-based news article recommendation algorithms"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Transform Cold-Start Users into Warm via Fused Behaviors in Large-Scale Recommendation"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Collaborative Filtering Bandits"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Modeling User Exposure in Recommendation"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Tree based Progressive Regression Model for Watch-Time Prediction in Short-video Recommendation"
+    },
+    {
+      "ref_id": "b62",
+      "title": "AutoGroup: Automatic Feature Grouping for Modelling Explicit High-Order Feature Interactions in CTR Prediction"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Related Pins at Pinterest: The Evolution of a Real-World Recommender System"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Bayesian Personalized Ranking with Multi-Channel User Feedback"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Knowledge distillation-enhanced multitask framework for recommendation"
+    },
+    {
+      "ref_id": "b66",
+      "title": "User Fatigue in Online News Recommendation"
+    },
+    {
+      "ref_id": "b67",
+      "title": "An Online Multi-task Learning Framework for Google Feed Ads Auction Models"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Explore, exploit, and explain: personalizing explainable recommendations with bandits"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Recent Advances in Natural Language Processing via Large Pre-trained Language Models: A Survey"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Playing Atari with Deep Reinforcement Learning"
+    },
+    {
+      "ref_id": "b72",
+      "title": "A unifying view on dataset shift in classification"
+    },
+    {
+      "ref_id": "b73",
+      "title": "News Popularity Beyond the Click-Through-Rate for Personalized Recommendations"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Sparse linear methods with side information for top-n recommendations"
+    },
+    {
+      "ref_id": "b75",
+      "title": "RecSys Challenge 2016: job recommendations based on preselection of offers and gradient boosting"
+    },
+    {
+      "ref_id": "b76",
+      "title": "Value-aware Recommendation based on Reinforcement Profit Maximization"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Incorporating Impressions to Graph-Based Recommenders"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Replication of Recommender Systems with Impressions"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Towards the Evaluation of Recommender Systems with Impressions"
+    },
+    {
+      "ref_id": "b80",
+      "title": "ContentWise Impressions: An Industrial Dataset with Impressions Included"
+    },
+    {
+      "ref_id": "b81",
+      "title": "Dataset Shift in Machine Learning"
+    },
+    {
+      "ref_id": "b82",
+      "title": "Video description: A comprehensive survey of deep learning approaches"
+    },
+    {
+      "ref_id": "b83",
+      "title": "Slate-Aware Ranking for Recommendation"
+    },
+    {
+      "ref_id": "b84",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b85",
+      "title": "BPR: Bayesian Personalized Ranking from Implicit Feedback"
+    },
+    {
+      "ref_id": "b86",
+      "title": "Recommender Systems: Techniques, Applications, and Challenges"
+    },
+    {
+      "ref_id": "b87",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b88",
+      "title": "Evolution Strategies as a Scalable Alternative to Reinforcement Learning"
+    },
+    {
+      "ref_id": "b89",
+      "title": "Uplift-based evaluation and optimization of recommenders"
+    },
+    {
+      "ref_id": "b90",
+      "title": "Recommendations as Treatments: Debiasing Learning and Evaluation"
+    },
+    {
+      "ref_id": "b91",
+      "title": "Everyone's a Winner! On Hyperparameter Tuning of Recommendation Models"
+    },
+    {
+      "ref_id": "b92",
+      "title": "Deep Interest Highlight Network for Click-Through Rate Prediction in Trigger-Induced Recommendation"
+    },
+    {
+      "ref_id": "b93",
+      "title": "Dynamically Integrating Item Exposure with Rating Prediction in Collaborative Filtering"
+    },
+    {
+      "ref_id": "b94",
+      "title": "Learning to recommend diverse items over implicit feedback on PANDOR"
+    },
+    {
+      "ref_id": "b95",
+      "title": "Multi-Armed Bandits in Recommendation Systems: A survey of the state-of-the-art and future directions"
+    }
   ]
 }

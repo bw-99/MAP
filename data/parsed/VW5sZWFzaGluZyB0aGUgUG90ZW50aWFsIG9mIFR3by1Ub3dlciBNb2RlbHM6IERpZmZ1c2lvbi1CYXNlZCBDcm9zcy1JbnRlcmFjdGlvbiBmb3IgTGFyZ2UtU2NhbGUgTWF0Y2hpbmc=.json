@@ -25,7 +25,165 @@
   "References": "[1] Fedor Borisyuk, Krishnaram Kenthapadi, David Stein, and Bo Zhao. 2016. CaSMoS: A Framework for Learning Candidate Selection Models over Structured Queries and Documents. 441-450. https://doi.org/10.1145/2939672.2939718 [2] Ziwei Fan, Zhiwei Liu, Yu Wang, Alice Wang, Zahra Nazari, Lei Zheng, Hao Peng, and Philip S Yu. 2022. Sequential recommendation via stochastic self-attention. In Proceedings of the ACM Web Conference 2022 . 2036-2047. [3] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep Session Interest Network for Click-Through Rate Prediction. arXiv:1905.06482 [cs.IR] https://arxiv.org/abs/1905.06482 [4] Chongming Gao, Shijun Li, Yuan Zhang, Jiawei Chen, Biao Li, Wenqiang Lei, Peng Jiang, and Xiangnan He. 2022. Kuairand: an unbiased sequential recommendation dataset with randomly exposed videos. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3953-3957. [5] Ruiqi Guo, Quan Geng, David Simcha, Felix Chern, Sanjiv Kumar, and Xiang Wu. 2019. New Loss Functions for Fast Maximum Inner Product Search. CoRR abs/1908.10396 (2019). arXiv:1908.10396 http://arxiv.org/abs/1908.10396 [6] F. Maxwell Harper, Joseph A. Konstan, and Joseph A. 2016. The MovieLens Datasets: History and Context. ACM Trans. Interact. Intell. Syst. 5 (2016), 19:119:19. https://api.semanticscholar.org/CorpusID:16619709 [7] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2016. Session-based Recommendations with Recurrent Neural Networks. arXiv:1511.06939 [cs.LG] [8] Irina Higgins, Loic Matthey, Arka Pal, Christopher Burgess, Xavier Glorot, Matthew Botvinick, Shakir Mohamed, and Alexander Lerchner. 2017. beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework. In International Conference on Learning Representations . https://openreview.net/ forum?id=Sy2fzU9gl [9] Jonathan Ho, Ajay Jain, and Pieter Abbeel. 2020. Denoising Diffusion Probabilistic Models. In Advances in Neural Information Processing Systems , H. Larochelle, M. Ranzato, R. Hadsell, M.F. Balcan, and H. Lin (Eds.), Vol. 33. Curran Associates, Inc., 6840-6851. https://proceedings.neurips.cc/paper_files/paper/2020/ file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf [10] Yu Hou, Jin-Duk Park, and Won-Yong Shin. 2024. Collaborative Filtering Based on Diffusion Models: Unveiling the Potential of High-Order Connectivity. arXiv:2404.14240 [cs.IR] https://arxiv.org/abs/2404.14240 [11] Jiri Hron, Karl Krauth, Michael I. Jordan, and Niki Kilbertus. 2020. Exploration in two-stage recommender systems. CoRR abs/2009.08956 (2020). arXiv:2009.08956 https://arxiv.org/abs/2009.08956 [12] Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, and Linjun Yang. 2020. EmbeddingBased Retrieval in Facebook Search. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (Virtual Event, CA, USA) (KDD '20) . Association for Computing Machinery, New York, NY, USA, 2553-2561. https://doi.org/10.1145/3394486.3403305 [13] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning Deep Structured Semantic Models for Web Search Using Clickthrough Data. In Proceedings of the 22nd ACM International Conference on Information & Knowledge Management (San Francisco, California, USA) (CIKM '13) . Association for Computing Machinery, New York, NY, USA, 2333-2338. https://doi.org/10.1145/2505515.2505665 [14] Rongjie Huang, Zhou Zhao, Huadai Liu, Jinglin Liu, Chenye Cui, and Yi Ren. 2022. ProDiff: Progressive Fast Diffusion Model for High-Quality Text-to-Speech. In Proceedings of the 30th ACM International Conference on Multimedia (Lisboa, Portugal) (MM '22) . Association for Computing Machinery, New York, NY, USA, 2595-2605. https://doi.org/10.1145/3503161.3547855 [15] Jeff Johnson, Matthijs Douze, and Hervé Jégou. 2017. Billion-scale similarity search with GPUs. CoRR abs/1702.08734 (2017). arXiv:1702.08734 http://arxiv. org/abs/1702.08734 [16] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [17] Omar Khattab and Matei Zaharia. 2020. ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT. arXiv:2004.12832 [cs.IR] [18] Xiangyang Li, Bo Chen, HuiFeng Guo, Jingjie Li, Chenxu Zhu, Xiang Long, Sujian Li, Yichao Wang, Wei Guo, Longxia Mao, Jinxing Liu, Zhenhua Dong, and Ruiming Tang. 2022. IntTower: the Next Generation of Two-Tower Model for Pre-Ranking System. arXiv:2210.09890 [cs.IR] [19] Zihao Li, Aixin Sun, and Chenliang Li. 2023. DiffuRec: A Diffusion Model for Sequential Recommendation. arXiv:2304.00686 [cs.IR] [20] Chengkai Liu, Jianghao Lin, Jianling Wang, Hanzhou Liu, and James Caverlee. 2024. Mamba4rec: Towards efficient sequential recommendation with selective state space models. arXiv preprint arXiv:2403.03900 (2024). [21] Calvin Luo. 2022. Understanding Diffusion Models: A Unified Perspective. arXiv:2208.11970 [cs.LG] [22] Xu Ma, Pengjie Wang, Hui Zhao, Shaoguo Liu, Chuhan Zhao, Wei Lin, Kuang chih Lee, Jian Xu, and Bo Zheng. 2021. Towards a Better Tradeoff between Effectiveness and Efficiency in Pre-Ranking: A Learnable Feature Selection based Approach. Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (2021). https://api.semanticscholar.org/ CorpusID:234742003 [23] Kelong Mao, Jieming Zhu, Jinpeng Wang, Quanyu Dai, Zhenhua Dong, Xi Xiao, and Xiuqiang He. 2021. SimpleX: A Simple and Strong Baseline for Collaborative Filtering. CoRR abs/2109.12613 (2021). arXiv:2109.12613 https://arxiv.org/abs/ 2109.12613 [24] Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer. 2022. High-Resolution Image Synthesis With Latent Diffusion Models. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) . 10684-10695. [25] Jiaming Song, Chenlin Meng, and Stefano Ermon. 2021. Denoising Diffusion Implicit Models. In International Conference on Learning Representations . https: //openreview.net/forum?id=St1giarCHLP [26] Liangcai Su, Fan Yan, Jieming Zhu, Xi Xiao, Haoyi Duan, Zhou Zhao, Zhenhua Dong, and Ruiming Tang. 2023. Beyond Two-Tower Matching: Learning Sparse Retrievable Cross-Interactions for Recommendation. arXiv:2311.18213 [cs.IR] [27] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [28] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In Proceedings of the eleventh ACM international conference on web search and data mining . 565-573. [29] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Ł ukasz Kaiser, and Illia Polosukhin. 2017. Attention is All you Need. In Advances in Neural Information Processing Systems , I. Guyon, U. Von Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, and R. Garnett (Eds.), Vol. 30. Curran Associates, Inc. https://proceedings.neurips.cc/paper_files/paper/ 2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf [30] Wenjie Wang, Yiyan Xu, Fuli Feng, Xinyu Lin, Xiangnan He, and Tat-Seng Chua. 2023. Diffusion Recommender Model. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (Taipei, Taiwan) (SIGIR '23) . Association for Computing Machinery, New York, NY, USA, 832-841. https://doi.org/10.1145/3539618.3591663 [31] Yu Wang, Hengrui Zhang, Zhiwei Liu, Liangwei Yang, and Philip S Yu. 2022. Contrastvae: Contrastive variational autoencoder for sequential recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2056-2066. [32] Zhe Wang, Liqin Zhao, Biye Jiang, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2020. COLD: Towards the Next Generation of Pre-Ranking System. arXiv:2007.16122 [cs.IR] [33] Ji Yang, Xinyang Yi, Derek Zhiyuan Cheng, Lichan Hong, Yang Li, Simon Wang, Taibai Xu, and Ed H. Chi. 2020. Mixed Negative Sampling for Learning Two-tower Neural Networks in Recommendations. [34] Xinyang Yi, Ji Yang, Lichan Hong, Derek Zhiyuan Cheng, Lukasz Heldt, Aditee Kumthekar, Zhe Zhao, Li Wei, and Ed Chi. 2019. Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations. In Proceedings of the 13th ACM Conference on Recommender Systems (Copenhagen, Denmark) (RecSys '19) . Association for Computing Machinery, New York, NY, USA, 269-277. https: //doi.org/10.1145/3298689.3346996 [35] Yantao Yu, Weipeng Wang, Zhoutian Feng, and Daiyue Xue. 2021. A dual augmented two-tower model for online large-scale recommendation. DLP-KDD (2021). [36] Yuan Zhang, Xue Dong, Weijie Ding, Biao Li, Peng Jiang, and Kun Gai. 2023. Divide and Conquer: Towards Better Embedding-based Retrieval for Recommender Systems From a Multi-task Perspective. arXiv:2302.02657 [cs.IR] [37] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2018. Deep Interest Evolution Network for Click-Through Rate Prediction. arXiv:1809.03672 [stat.ML] [38] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for ClickThrough Rate Prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD '18) . Association for Computing Machinery, New York, NY, USA, 1059-1068. https://doi.org/10.1145/3219819.3219823 [39] Yunqin Zhu, Chao Wang, Qi Zhang, and Hui Xiong. 2024. Graph Signal Diffusion Model for Collaborative Filtering. arXiv:2311.08744 [cs.IR] https://arxiv.org/abs/ 2311.08744",
   "keywords_parsed": [
     "Candidate Matching",
-    " Diffusion Models",
-    " Embedding-based Retrieval"
+    "Diffusion Models",
+    "Embedding-based Retrieval"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "CaSMoS: A Framework for Learning Candidate Selection Models over Structured Queries and Documents"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Sequential recommendation via stochastic self-attention"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep Session Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Kuairand: an unbiased sequential recommendation dataset with randomly exposed videos"
+    },
+    {
+      "ref_id": "b5",
+      "title": "New Loss Functions for Fast Maximum Inner Product Search"
+    },
+    {
+      "ref_id": "b6",
+      "title": "The MovieLens Datasets: History and Context"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Session-based Recommendations with Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Denoising Diffusion Probabilistic Models"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Collaborative Filtering Based on Diffusion Models: Unveiling the Potential of High-Order Connectivity"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Exploration in two-stage recommender systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Embedding-Based Retrieval in Facebook Search"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Learning Deep Structured Semantic Models for Web Search Using Clickthrough Data"
+    },
+    {
+      "ref_id": "b14",
+      "title": "ProDiff: Progressive Fast Diffusion Model for High-Quality Text-to-Speech"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Billion-scale similarity search with GPUs"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT"
+    },
+    {
+      "ref_id": "b18",
+      "title": "IntTower: the Next Generation of Two-Tower Model for Pre-Ranking System"
+    },
+    {
+      "ref_id": "b19",
+      "title": "DiffuRec: A Diffusion Model for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Mamba4rec: Towards efficient sequential recommendation with selective state space models"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Understanding Diffusion Models: A Unified Perspective"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Towards a Better Tradeoff between Effectiveness and Efficiency in Pre-Ranking: A Learnable Feature Selection based Approach"
+    },
+    {
+      "ref_id": "b23",
+      "title": "SimpleX: A Simple and Strong Baseline for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b24",
+      "title": "High-Resolution Image Synthesis With Latent Diffusion Models"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Denoising Diffusion Implicit Models"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Beyond Two-Tower Matching: Learning Sparse Retrievable Cross-Interactions for Recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Diffusion Recommender Model"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Contrastvae: Contrastive variational autoencoder for sequential recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "COLD: Towards the Next Generation of Pre-Ranking System"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Mixed Negative Sampling for Learning Two-tower Neural Networks in Recommendations"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations"
+    },
+    {
+      "ref_id": "b35",
+      "title": "A dual augmented two-tower model for online large-scale recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Divide and Conquer: Towards Better Embedding-based Retrieval for Recommender Systems From a Multi-task Perspective"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Deep Interest Evolution Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Graph Signal Diffusion Model for Collaborative Filtering"
+    }
   ]
 }

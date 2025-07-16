@@ -26,6 +26,230 @@
   "ACKNOWLEDGMENTS": "To Robert, for the bagels and explaining CMYK and color spaces.",
   "REFERENCES": "[1] Ye Bi, Liqiang Song, Mengqiu Yao, Zhenyu Wu, Jianming Wang, and Jing Xiao. 2020. A heterogeneous information network based cross domain insurance recommendation system for cold start users. In Proceedings of International Conference on Research on Development in Information Retrieval (SIGIR) . [2] Jiangxia Cao, Xin Cong, Jiawei Sheng, Tingwen Liu, and Bin Wang. 2022. Contrastive Cross-Domain Sequential Recommendation. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [3] Jiangxia Cao, Xixun Lin, Xin Cong, Jing Ya, Tingwen Liu, and Bin Wang. 2022. DisenCDR: Learning Disentangled Representations for Cross-Domain Recommendation. In Proceedings of International Conference on Research on Development in Information Retrieval (SIGIR) . [4] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In Proceedings of International Conference on Machine Learning (ICML) . [5] Ziwei Fan, Zhiwei Liu, Yu Wang, Alice Wang, Zahra Nazari, Lei Zheng, Hao Peng, and Philip S Yu. 2022. Sequential Recommendation via Stochastic Self-Attention. In Proceedings of International World Wide Web Conferences (WWW) . [6] John Giorgi, Osvald Nitski, Bo Wang, and Gary Bader. 2021. DeCLUTR: Deep Contrastive Learning for Unsupervised Textual Representations. In Proceedings of Annual Meeting of the Association for Computational Linguistics (ACL) . [7] Lei Guo, Li Tang, Tong Chen, Lei Zhu, Quoc Viet Hung Nguyen, and Hongzhi Yin. 2021. DA-GCN: a domain-aware attentive graph convolution network for shared-account cross-domain sequential recommendation. Proceedings of International Joint Conference on Artificial Intelligence (IJCAI) . [8] Xiaobo Guo, Shaoshuai Li, Naicheng Guo, Jiangxia Cao, Xiaolei Liu, Qiongxu Ma, Runsheng Gan, and Yunan Zhao. 2023. Disentangled Representations Learning for Multi-target Cross-domain Recommendation. ACM Transactions on Information Systems (TOIS) (2023). [9] Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick. 2020. Momentum contrast for unsupervised visual representation learning. In Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . [10] Ruining He and Julian McAuley. 2016. Fusing similarity models with markov chains for sparse sequential recommendation. In Proceedings of International Conference on Data Mining (ICDM) . [11] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2016. Session-based recommendations with recurrent neural networks. In Proceedings of International Conference on Learning Representations (ICLR) . [12] Guangneng Hu, Yu Zhang, and Qiang Yang. 2018. Conet: Collaborative cross networks for cross-domain recommendation. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [13] SeongKu Kang, Junyoung Hwang, Dongha Lee, and Hwanjo Yu. 2019. Semi-supervised learning for cross-domain recommendation to cold-start users. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [14] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In Proceedings of International Conference on Data Mining (ICDM) . [15] Chenglin Li, Mingjun Zhao, Huanming Zhang, Chenyun Yu, Lei Cheng, Guoqiang Shu, Beibei Kong, and Di Niu. 2022. RecGURU: Adversarial Learning of Generalized User Representations for Cross-Domain Recommendation. In Proceedings of ACM International Conference on Web Search and Data Mining (WSDM) . [16] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. 2017. Neural attentive session-based recommendation. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [17] Pan Li, Zhichao Jiang, Maofei Que, Yao Hu, and Alexander Tuzhilin. 2021. Dual Attentive Sequential Learning for Cross-Domain Click-Through Rate Prediction. In Proceedings of ACM Knowledge Discovery and Data Mining (SIGKDD) . [18] Pan Li and Alexander Tuzhilin. 2020. Ddtcdr: Deep dual transfer cross domain recommendation. In Proceedings of ACM International Conference on Web Search and Data Mining (WSDM) . [19] Zihan Lin, Changxin Tian, Yupeng Hou, and Wayne Xin Zhao. 2022. Improving Graph Collaborative Filtering with Neighborhood-enriched Contrastive Learning. In Proceedings of International World Wide Web Conferences (WWW) . [20] Kang Liu, Feng Xue, Dan Guo, Le Wu, Shujie Li, and Richang Hong. 2023. Megcf: Multimodal entity graph collaborative filtering for personalized recommendation. Proceedings of ACM Transactions on Information Systems (TOIS) (2023). [21] Meng Liu, Jianjun Li, Guohui Li, and Peng Pan. 2020. Cross Domain Recommendation via Bi-Directional Transfer Graph Collaborative Filtering Networks. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . 22 Triple Sequence Learning for Cross-domain Recommendation Conference acronym 'XX, June 03-05, 2018, Woodstock, NY In Proceedings of the 16th ACM Conference on Recommender Systems (Recsys) . [32] Steffen Rendle, Christoph Freudenthaler, and Lars Schmidt-Thieme. 2010. Factorizing personalized markov chains for next-basket recommendation. In Proceedings of International World Wide Web Conferences (WWW) . 811-820. [33] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [34] Wenchao Sun, Muyang Ma, Pengjie Ren, Yujie Lin, Zhumin Chen, Zhaochun Ren, Jun Ma, and Maarten De Rijke. 2021. Parallel Split-Join Networks for Shared Account Cross-domain Sequential Recommendations. Proceedings of IEEE Transactions on Knowledge and Data Engineering (TKDE) . [35] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In Proceedings of ACM International Conference on Web Search and Data Mining (WSDM) . [36] Laurens Van der Maaten and Geoffrey Hinton. 2008. Visualizing data using t-SNE. Journal of machine learning research (2008). [37] Tongzhou Wang and Phillip Isola. 2020. Understanding contrastive representation learning through alignment and uniformity on the hypersphere. In Proceedings of International Conference on Machine Learning (ICML) . [38] Tianxin Wang, Fuzhen Zhuang, Zhiqiang Zhang, Daixin Wang, Jun Zhou, and Qing He. 2021. Low-dimensional Alignment for Cross-Domain Recommendation. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [39] Yaqing Wang, Caili Guo, Yunfei Chu, Jenq-Neng Hwang, and Chunyan Feng. 2020. A cross-domain hierarchical recurrent model for personalized session-based recommendations. Proceedings of Neurocomputing . [40] Yiqi Wang, Chaozhuo Li, Zheng Liu, Mingzheng Li, Jiliang Tang, Xing Xie, Lei Chen, and Philip S Yu. 2022. An Adaptive Graph Pre-training Framework for Localized Collaborative Filtering. Proceedings of ACM Transactions on Information Systems (TOIS) (2022). [41] Yinwei Wei, Xiang Wang, Qi Li, Liqiang Nie, Yan Li, Xuanping Li, and Tat-Seng Chua. 2021. Contrastive learning for cold-start recommendation. In Proceedings of ACM International Conference on Multimedia (ACM MM) . [42] Haolun Wu, Chen Ma, Yingxue Zhang, Xue Liu, Ruiming Tang, and Mark Coates. 2022. Adapting Triplet Importance of Implicit Feedback for Personalized Recommendation. Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [43] Yiqing Wu, Ruobing Xie, Yongchun Zhu, Xiang Ao, Xin Chen, Xu Zhang, Fuzhen Zhuang, Leyu Lin, and Qing He. 2022. Multi-view Multi-behavior Contrastive Learning in Recommendation. In Proceedings of Database Systems for Advanced Applications (DASFAA) . [44] Zhuofeng Wu, Sinong Wang, Jiatao Gu, Madian Khabsa, Fei Sun, and Hao Ma. 2020. Clear: Contrastive learning for sentence representation. arXiv preprint arXiv:2012.15466 . [45] Ruobing Xie, Qi Liu, Liangdong Wang, Shukai Liu, Bo Zhang, and Leyu Lin. 2022. Contrastive cross-domain recommendation in matching. In Proceedings of ACM Knowledge Discovery and Data Mining (SIGKDD) . [46] Ruobing Xie, Zhijie Qiu, Jun Rao, Yi Liu, Bo Zhang, and Leyu Lin. 2020. Internal and Contextual Attention Network for Cold-start Multi-channel Matching in Recommendation.. In Proceedings of International Joint Conference on Artificial Intelligence (IJCAI) . [47] Xu Xie, Fei Sun, Zhaoyang Liu, Shiwen Wu, Jinyang Gao, Jiandong Zhang, Bolin Ding, and Bin Cui. 2022. Contrastive learning for sequential recommendation. In Proceedings of IEEE International Conference on Data Engineering (ICDE) . 23 Conference acronym 'XX, June 03-05, 2018, Woodstock, NY Haokai Ma et al. [48] Yueqi Xie, Peilin Zhou, and Sunghun Kim. 2022. Decoupled side information fusion for sequential recommendation. In Proceedings of International Conference on Research on Development in Information Retrieval (SIGIR) . [49] Chengfeng Xu, Pengpeng Zhao, Yanchi Liu, Jiajie Xu, Victor S Sheng S. Sheng, Zhiming Cui, Xiaofang Zhou, and Hui Xiong. 2019. Recurrent convolutional neural network for sequential recommendation. In Proceedings of International World Wide Web Conferences (WWW) . [50] Lyuxin Xue, Deqing Yang, Shuoyao Zhai, Yuxin Li, and Yanghua Xiao. 2023. Learning Dual-view User Representations for Enhanced Sequential Recommendation. Proceedings of ACM Transactions on Information Systems (TOIS) (2023). [51] Junliang Yu, Hongzhi Yin, Xin Xia, Tong Chen, Lizhen Cui, and Quoc Viet Hung Nguyen. 2022. Are graph augmentations necessary? simple graph contrastive learning for recommendation. In Proceedings of International Conference on Research on Development in Information Retrieval (SIGIR) . [52] Tianzi Zang, Yanmin Zhu, Haobing Liu, Ruohan Zhang, and Jiadi Yu. 2022. A survey on cross-domain recommendation: taxonomies, methods, and future directions. Proceedings of ACM Transactions on Information Systems (TOIS) (2022). [53] Shengyu Zhang, Dong Yao, Zhou Zhao, Tat-Seng Chua, and Fei Wu. 2021. Causerec: Counterfactual user sequence synthesis for sequential recommendation. In Proceedings of International Conference on Research on Development in Information Retrieval (SIGIR) . [54] Cheng Zhao, Chenliang Li, and Cong Fu. 2019. Cross-domain recommendation via preference propagation graphnet. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [55] Chuang Zhao, Hongke Zhao, Ming HE, Jian Zhang, and Jianping Fan. 2023. Cross-domain recommendation via user interest alignment. In Proceedings of International World Wide Web Conferences (WWW) . [56] Wayne Xin Zhao, Junhua Chen, Pengfei Wang, Qi Gu, and Ji-Rong Wen. 2020. Revisiting Alternative Experimental Settings for Evaluating Top-N Item Recommendation Algorithms. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [57] Wayne Xin Zhao, Shanlei Mu, Yupeng Hou, Zihan Lin, Kaiyuan Li, Yushuo Chen, Yujie Lu, Hui Wang, Changxin Tian, Xingyu Pan, Yingqian Min, Zhichao Feng, Xinyan Fan, Xu Chen, Pengfei Wang, Wendi Ji, Yaliang Li, Xiaoling Wang, and Ji-Rong Wen. 2021. Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [58] Xiaolin Zheng, Jiajie Su, Weiming Liu, and Chaochao Chen. 2022. DDGHM: Dual Dynamic Graph with Hybrid Metric Training for Cross-Domain Sequential Recommendation. In Proceedings of ACM International Conference on Multimedia (ACM MM) . [59] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of ACM Knowledge Discovery and Data Mining (SIGKDD) . [60] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [61] Yuanhang Zhou, Kun Zhou, Wayne Xin Zhao, Cheng Wang, Peng Jiang, and He Hu. 2022. C 2 -CRS: Coarse-to-Fine Contrastive Learning for Conversational Recommender System. In Proceedings of ACM International Conference on Web Search and Data Mining (WSDM) . [62] Feng Zhu, Chaochao Chen, Yan Wang, Guanfeng Liu, and Xiaolin Zheng. 2019. Dtcdr: A framework for dual-target cross-domain recommendation. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM) . [63] Yongchun Zhu, Kaikai Ge, Fuzhen Zhuang, Ruobing Xie, Dongbo Xi, Xu Zhang, Leyu Lin, and Qing He. 2021. Transfer-meta framework for cross-domain recommendation to cold-start users. In Proceedings of International Conference on Research on Development in Information Retrieval (SIGIR) . [64] Yongchun Zhu, Zhenwei Tang, Yudan Liu, Fuzhen Zhuang, Ruobing Xie, Xu Zhang, Leyu Lin, and Qing He. 2022. Personalized transfer of user preferences for cross-domain recommendation. In Proceedings of ACM International Conference on Web Search and Data Mining (WSDM) . Received 30 May 2023; revised 12 March 2009; accepted 5 June 2009 24",
   "keywords_parsed": [
-    "None"
+    "cross-domain recommendation",
+    "contrastive learning",
+    "triple learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A heterogeneous information network based cross domain insurance recommendation system for cold start users"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Contrastive Cross-Domain Sequential Recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "DisenCDR: Learning Disentangled Representations for Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Sequential Recommendation via Stochastic Self-Attention"
+    },
+    {
+      "ref_id": "b6",
+      "title": "DeCLUTR: Deep Contrastive Learning for Unsupervised Textual Representations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "DA-GCN: a domain-aware attentive graph convolution network for shared-account cross-domain sequential recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Disentangled Representations Learning for Multi-target Cross-domain Recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Momentum contrast for unsupervised visual representation learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Fusing similarity models with markov chains for sparse sequential recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Conet: Collaborative cross networks for cross-domain recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Semi-supervised learning for cross-domain recommendation to cold-start users"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "RecGURU: Adversarial Learning of Generalized User Representations for Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Neural attentive session-based recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Dual Attentive Sequential Learning for Cross-Domain Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Ddtcdr: Deep dual transfer cross domain recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Improving Graph Collaborative Filtering with Neighborhood-enriched Contrastive Learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Megcf: Multimodal entity graph collaborative filtering for personalized recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Cross Domain Recommendation via Bi-Directional Transfer Graph Collaborative Filtering Networks"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Triple Sequence Learning for Cross-domain Recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Factorizing personalized markov chains for next-basket recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Parallel Split-Join Networks for Shared Account Cross-domain Sequential Recommendations"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Understanding contrastive representation learning through alignment and uniformity on the hypersphere"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Low-dimensional Alignment for Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A cross-domain hierarchical recurrent model for personalized session-based recommendations"
+    },
+    {
+      "ref_id": "b40",
+      "title": "An Adaptive Graph Pre-training Framework for Localized Collaborative Filtering"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Contrastive learning for cold-start recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Adapting Triplet Importance of Implicit Feedback for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Multi-view Multi-behavior Contrastive Learning in Recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Clear: Contrastive learning for sentence representation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Contrastive cross-domain recommendation in matching"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Internal and Contextual Attention Network for Cold-start Multi-channel Matching in Recommendation"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Contrastive learning for sequential recommendation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Decoupled side information fusion for sequential recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Recurrent convolutional neural network for sequential recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Learning Dual-view User Representations for Enhanced Sequential Recommendation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Are graph augmentations necessary? simple graph contrastive learning for recommendation"
+    },
+    {
+      "ref_id": "b52",
+      "title": "A survey on cross-domain recommendation: taxonomies, methods, and future directions"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Causerec: Counterfactual user sequence synthesis for sequential recommendation"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Cross-domain recommendation via preference propagation graphnet"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Cross-domain recommendation via user interest alignment"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Revisiting Alternative Experimental Settings for Evaluating Top-N Item Recommendation Algorithms"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms"
+    },
+    {
+      "ref_id": "b58",
+      "title": "DDGHM: Dual Dynamic Graph with Hybrid Metric Training for Cross-Domain Sequential Recommendation"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b60",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    },
+    {
+      "ref_id": "b61",
+      "title": "C 2 -CRS: Coarse-to-Fine Contrastive Learning for Conversational Recommender System"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Dtcdr: A framework for dual-target cross-domain recommendation"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Transfer-meta framework for cross-domain recommendation to cold-start users"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Personalized transfer of user preferences for cross-domain recommendation"
+    }
   ]
 }

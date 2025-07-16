@@ -42,14 +42,220 @@
   "Motivation": "Incentve Fear Growh Power Social CHI '24, May 11-16, 2024, Honolulu, HI, USA Yamani et al. Table 7: Results of Heuristic Evaluation of Weka and KNIME Establishing Heuristics for Improving the Usability of GUI Machine Learning Tools for Novice Users CHI '24, May 11-16, 2024, Honolulu, HI, USA Table 8: Cognitive walkthrough results.Task X Action Y will be referred to as Task X A(Y). CHI '24, May 11-16, 2024, Honolulu, HI, USA Yamani et al. Weka KNIME 50 45 40 35 30 25 20 15 10 5 2 Issue Severity Figure 13: Issues discovered during the Heuristic Evaluation by severity. KNIME Weka 12 10 Q1 Q2 Q3 Cognitive walkthrough results Figure 14: Cognitive walkthrough Results by Question. 3.75 2.5 1.25 3 3 8 66 8 @ @ @ @ 8 3 Figure 15: Average Task completion duration (in minutes). 16 14 12 10 1 8 8 76 8 8 @ @ Figure 16: Error rate of Tasks During User Testing of Weka. Figure 17: Average Task completion duration (in minutes) prototype. 3.75 2.5 1.25 8 8 66 @ Figure 18: Error rate of Tasks During User Testing of Prototype. 16 14 12 10 8 86 8 8 8 Establishing Heuristics for Improving the Usability of GUI Machine Learning Tools for Novice Users CHI '24, May 11-16, 2024, Honolulu, HI, USA Figure 19: Previous experience with ML tools and educational materials No courses courses degree Weka KNIME Azure RapidMiner Less than months months year More than year 1506 406 1596 3096 5206 5696",
   "keywords_parsed": [
     "Usable",
-    " ML tools",
-    " GUI machine learning tools",
-    " Weka",
-    " Knime",
-    " Heuristic evaluation (HE)",
-    " Cognitive walkthrough (CW)",
-    " Novice users",
-    " User testing",
-    " SUS"
+    "ML tools",
+    "GUI machine learning tools",
+    "Weka",
+    "Knime",
+    "Heuristic evaluation (HE)",
+    "Cognitive walkthrough (CW)",
+    "Novice users",
+    "User testing",
+    "SUS"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Systematic review of an automated multiclass detection and classification system for acute Leukaemia in terms of evaluation and benchmarking, open challenges, issues and methodological aspects"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Software engineering for machine learning: A case study"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Guidelines for human-AI interaction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "MACHINE LEARNING AND NATURAL LANGUAGE PROCESSING - A REVIEW"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Prototyping of user interfaces for mobile applications"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Determining what individual SUS scores mean: Adding an adjective rating scale"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Tools Used in Data Analysis: A Comparative Study"
+    },
+    {
+      "ref_id": "b8",
+      "title": "KNIME - the Konstanz Information Miner: Version 2.0 and Beyond"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Secure usable authentication using strong pass text passwords"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Analyzing HCI Issues in Data Clustering Tools"
+    },
+    {
+      "ref_id": "b11",
+      "title": "How the machine 'thinks': Understanding opacity in machine learning algorithms"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Teachable Machine: Approachable Web-Based Tool for Exploring Machine Learning Classification"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A survey of open source data mining systems"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Top 10 machine learning tools 2021"
+    },
+    {
+      "ref_id": "b15",
+      "title": "UX Design Innovation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "A Review of User Interface Design for Interactive Machine Learning"
+    },
+    {
+      "ref_id": "b17",
+      "title": "A review of user interface design for interactive machine learning"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Comprehensive study of data analytics tools (RapidMiner, Weka, R tool, Knime)"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Interactive Machine Learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "How Do UX Practitioners Communicate AI as a Design Material? Artifacts, Conceptions, and Propositions"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Addressing UX Practitioners' Challenges in Designing ML Applications: an Interactive Machine Learning Approach"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Addressing UX Practitioners' Challenges in Designing ML Applications: An Interactive Machine Learning Approach"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Designing with Language: Wireframing UI Design Intent with Generative Large Language Models"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Akin: Generating UI Wireframes From UI Design Patterns Using Deep Learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Human-Centred Machine Learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Educational data mining and analysis of students' academic performance using WEKA"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Explore, edit, guess: understanding novice programmers' use of codeblocks for regression experiments"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Improving Student's Design Prototyping Skills Using Interactive Prototyping Tool"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Heuristic evaluation of conversational agents"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Usability evaluation on websites"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Heuristic evaluation of ambient displays"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Designing Interactive Transfer Learning Tools for ML Non-Experts"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Revolution or evolution? Speech interaction and HCI design guidelines"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Severity Ratings for Usability Problems: Article by Jakob Nielsen"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Heuristic evaluation of user interfaces"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Success rate: The simplest usability metric"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Development of a Simple Graphical Interface Based Software for Machine Learning and Data Visualization"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Experimental evaluation of open source data mining tools (WEKA and Orange)"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Some popular usability evaluation techniques for websites"
+    },
+    {
+      "ref_id": "b40",
+      "title": "5 Ways to Interpret a SUS Score - MeasuringU"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Usability of Jawara Sains Mobile Learning Application Using System Usability Scale (SUS)"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Goal Question Metric (GQM) Approach"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Beginner's Guide to WEKA - A Tool for ML and Analytics"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Evaluating speech-based smart devices using new usability heuristics"
+    },
+    {
+      "ref_id": "b45",
+      "title": "The cognitive walkthrough method: A practitioner's guide"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Balsamiq Wireframes - Industry Standard Low-Fidelity Wireframing Software"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Data mining: practical machine learning tools and techniques with Java implementations"
+    },
+    {
+      "ref_id": "b48",
+      "title": "What is GDPR, the EU's new data protection law?"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Mapping machine learning advances from hci research to reveal starting places for design innovation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Investigating How Experienced UX Designers Effectively Work with Machine Learning"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Grounding Interactive Machine Learning Tool Design in How Non-Experts Actually Build Models"
+    }
   ]
 }

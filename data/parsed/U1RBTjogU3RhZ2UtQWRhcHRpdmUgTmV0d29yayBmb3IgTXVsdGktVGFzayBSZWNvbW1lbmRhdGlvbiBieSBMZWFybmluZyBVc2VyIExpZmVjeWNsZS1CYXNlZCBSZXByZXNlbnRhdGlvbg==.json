@@ -27,6 +27,38 @@
   "7 CONCLUSION": "In this paper, we innovatively introduce the concept of user lifecycle stages to enhance multi-task learning in recommendation systems. We propose STAN, a user lifecycle stage-adaptive framework that models latent stage information. STAN first learns user preferences for various tasks by utilizing user behaviors and then represents latent user stages based on these learned preferences. By incorporating latent user stage information into multi-task recommendations, STAN can identify the most critical task for each user and adjust accordingly as users' interests evolve. Experimental results on public and industrial datasets and online recommendation services demonstrate the effectiveness of our proposed framework. For future work, we plan to explore the application of adaptive stage information in a broader range of contexts, including online social networks, advertising, and search systems.",
   "REFERENCES": "[1] Ting Bai, Yudong Xiao, Bin Wu, Guojun Yang, Hongyong Yu, and Jian-Yun Nie. 2022. A Contrastive Sharing Model for Multi-Task Recommendation. In Proceedings of the 31st international conference on World Wide Web . 3239-3247. [2] Jiangxia Cao, Jiawei Sheng, Xin Cong, Tingwen Liu, and Bin Wang. 2022. Cross-Domain Recommendation to Cold-Start Users via Variational Information Bottleneck. In IEEE International Conference on Data Engineering . [3] Rich Caruana. 1997. Multitask learning. Machine learning 28, 1 (1997), 41-75. [4] Cristian Danescu-Niculescu-Mizil, Robert West, Dan Jurafsky, Jure Leskovec, and Christopher Potts. 2013. No country for old members: User lifecycle and linguistic change in online communities. In Proceedings of the 22nd international conference on World Wide Web . 307-318. [5] Xavier Glorot, Antoine Bordes, and Yoshua Bengio. 2011. Deep sparse rectifier neural networks. In Proceedings of the 14th international conference on artificial intelligence and statistics . JMLR Workshop and Conference Proceedings, 315-323. [6] Ian Goodfellow, Yoshua Bengio, and Aaron Courville. 2016. Deep learning . MIT press. [7] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2016. Session-based recommendations with recurrent neural networks. ICLR (2016). 16 STAN: Stage-Adaptive Network for Multi-Task Recommendation by Learning [29] Chuhan Wu, Fangzhao Wu, Xiting Wang, Yongfeng Huang, and Xing Xie. 2021. Fairness-aware news recommendation with decomposed adversarial learning. In Proceedings of the 35th AAAI Conference on Artificial Intelligence , Vol. 35. 17 Recsys '23, Sept 18-22, 2023, Singapore, SG Wanda Li, Wenhao Zheng, Xuanji Xiao, and Suhang Wang 18",
   "keywords_parsed": [
-    "None"
+    "Recommendation Systems",
+    "Multi-task Learning",
+    "User Lifecycle Modeling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A Contrastive Sharing Model for Multi-Task Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Cross-Domain Recommendation to Cold-Start Users via Variational Information Bottleneck"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "No country for old members: User lifecycle and linguistic change in online communities"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deep sparse rectifier neural networks"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Fairness-aware news recommendation with decomposed adversarial learning"
+    }
   ]
 }

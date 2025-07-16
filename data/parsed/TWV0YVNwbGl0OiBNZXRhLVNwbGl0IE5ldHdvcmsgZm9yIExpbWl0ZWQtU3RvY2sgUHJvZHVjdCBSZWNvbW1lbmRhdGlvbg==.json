@@ -27,8 +27,186 @@
   "REFERENCES": "[1] Yi Cao, Sihao Hu, Yu Gong, Zhao Li, Yazheng Yang, Qingwen Liu, and Shouling Ji. 2022. GIFT: Graph-GuIded Feature Transfer for Cold-Start Video ClickThrough Rate Prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (Atlanta, GA, USA) (CIKM '22) . Association for Computing Machinery, New York, NY, USA, 2964-2973. https://doi.org/10.1145/3511808.3557120 [2] Zhangming Chan, Yu Zhang, Shuguang Han, Yong Bai, Xiang-Rong Sheng, Siyuan Lou, Jiacen Hu, Baolin Liu, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Capturing Conversion Rate Fluctuation during Sales Promotions: A Novel Historical Data Reuse Approach. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Long Beach, CA, USA) (KDD '23) . Association for Computing Machinery, New York, NY, USA, 3774-3784. https://doi.org/10.1145/ 3580305.3599788 [3] Jianxin Chang, Chenbin Zhang, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, and Kun Gai. 2023. PEPNet: Parameter and Embedding Personalized Network for Infusing with Personalized Prior Information. arXiv:2302.01115 [cs.IR] [4] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior Sequence Transformer for E-Commerce Recommendation in Alibaba. In Proceedings of the 1st International Workshop on Deep Learning Practice for High-Dimensional Sparse Data (Anchorage, Alaska) (DLP-KDD '19) . Association for Computing Machinery, New York, NY, USA, Article 12, 4 pages. https://doi.org/10.1145/3326937.3341261 [5] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems (Boston, MA, USA) (DLRS 2016) . Association for Computing Machinery, New York, NY, USA, 7-10. https://doi.org/10.1145/2988450.2988454 [6] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems (Boston, Massachusetts, USA) (RecSys '16) . Association for Computing Machinery, New York, NY, USA, 191-198. https://doi.org/10.1145/ 2959100.2959190 [7] Yin Cui, Menglin Jia, Tsung-Yi Lin, Yang Song, and Serge Belongie. 2019. ClassBalanced Loss Based on Effective Number of Samples. In 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) . 9260-9269. https://doi.org/ 10.1109/CVPR.2019.00949 [8] Zeyu Cui, Jianxin Ma, Chang Zhou, Jingren Zhou, and Hongxia Yang. 2022. M6Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems. arXiv:2205.08084 [cs.IR] [9] Shangfeng Dai, Haobin Lin, Zhichen Zhao, Jianying Lin, Honghuan Wu, Zhe Wang, Sen Yang, and Ji Liu. 2021. POSO: Personalized Cold Start Modules for Large-scale Recommender Systems. arXiv:2108.04690 [cs.IR] [10] Chelsea Finn, Pieter Abbeel, and Sergey Levine. 2017. Model-Agnostic MetaLearning for Fast Adaptation of Deep Networks. (2017). [11] Jerome H. Friedman. 2001. Greedy function approximation: A gradient boosting machine. Annals of Statistics 29 (2001), 1189-1232. https://api.semanticscholar. org/CorpusID:39450643 [12] Jingyue Gao, Shuguang Han, Han Zhu, Siran Yang, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Rec4Ad: A Free Lunch to Mitigate Sample Selection Bias for Ads CTR Prediction in Taobao. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (<conf-loc>, <city>Birmingham</city>, <country>United Kingdom</country>, </conf-loc>) (CIKM '23) . Association for Computing Machinery, New York, NY, USA, 4574-4580. https://doi.org/10.1145/ 3583780.3615496 [13] Mihajlo Grbovic and Haibin Cheng. 2018. Real-Time Personalization Using Embeddings for Search Ranking at Airbnb. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD '18) . Association for Computing Machinery, New York, NY, USA, 311-320. https://doi.org/10.1145/3219819.3219885 [14] Xiaoqiang Gui, Yueyao Cheng, Xiang-Rong Sheng, Yunfeng Zhao, Guoxian Yu, Shuguang Han, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Calibrationcompatible Listwise Distillation of Privileged Features for CTR Prediction. arXiv preprint arXiv:2312.08727 (2023). [15] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (Melbourne, Australia) (IJCAI'17) . AAAI Press, 1725-1731. [16] Jiacen Hu, Zhangming Chan, Yu Zhang, Shuguang Han, Siyuan Lou, Baolin Liu, Han Zhu, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. PS-SA: An Efficient SelfAttention via Progressive Sampling for User Behavior Sequence Modeling. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (<conf-loc>, <city>Birmingham</city>, <country>United Kingdom</country>, </conf-loc>) (CIKM '23) . Association for Computing Machinery, New York, NY, USA, 4639-4645. https://doi.org/10.1145/3583780.3615495 [17] Tongwen Huang, Qingyun She, Zhiqiang Wang, and Junlin Zhang. 2020. GateNet: gating-enhanced deep network for click-through rate prediction. arXiv preprint arXiv:2007.03519 (2020). [18] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: Combining Feature Importance and Bilinear Feature Interaction for Click-through Rate Prediction. In Proceedings of the 13th ACM Conference on Recommender Systems (Copenhagen, Denmark) (RecSys '19) . Association for Computing Machinery, New York, NY, USA, 169-177. https://doi.org/10.1145/3298689.3347043 [19] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix Factorization Techniques for Recommender Systems. Computer 42, 8 (2009), 30-37. https: //doi.org/10.1109/MC.2009.263 [20] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H. Chi. 2018. Modeling Task Relationships in Multi-Task Learning with Multi-Gate Mixtureof-Experts. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD '18) . Association for Computing Machinery, New York, NY, USA, 1930-1939. https: //doi.org/10.1145/3219819.3220007 [21] Tong Man, Huawei Shen, Xiaolong Jin, and Xueqi Cheng. 2017. Cross-Domain Recommendation: An Embedding and Mapping Approach. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (Melbourne, Australia) (IJCAI'17) . AAAI Press, 2464-2470. [22] Aditya Krishna Menon, Sadeep Jayasumana, Ankit Singh Rawat, Himanshu Jain, Andreas Veit, and Sanjiv Kumar. 2021. Long-tail learning via logit adjustment. In International Conference on Learning Representations . https://openreview.net/ forum?id=37nvvqkCo5 [23] Kaixiang Mo, Bo Liu, Lei Xiao, Yong Li, and Jie Jiang. 2015. Image Feature Learning for Cold Start Problem in Display Advertising. In Proceedings of the 24th International Conference on Artificial Intelligence (Buenos Aires, Argentina) (IJCAI'15) . AAAI Press, 3728-3734. [24] Feiyang Pan, Shuokai Li, Xiang Ao, Pingzhong Tang, and Qing He. 2019. Warm Up Cold-Start Advertisements: Improving CTR Predictions via Learning to Learn ID Embeddings. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval (Paris, France) (SIGIR'19) . Association for Computing Machinery, New York, NY, USA, 695-704. https: //doi.org/10.1145/3331184.3331268 [25] Yanru Qu, Bohui Fang, Weinan Zhang, Ruiming Tang, Minzhe Niu, Huifeng Guo, Yong Yu, and Xiuqiang He. 2018. Product-Based Neural Networks for User Response Prediction over Multi-Field Categorical Data. ACM Trans. Inf. Syst. 37, 1, Article 5 (oct 2018), 35 pages. https://doi.org/10.1145/3233770 [26] Steffen Rendle. 2010. Factorization Machines. 2010 IEEE International Conference on Data Mining (2010), 995-1000. https://api.semanticscholar.org/CorpusID: 17265929 [27] Xiang-Rong Sheng, Jingyue Gao, Yueyao Cheng, Siran Yang, Shuguang Han, Hongbo Deng, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Long Beach, CA, USA) (KDD '23) . Association for Computing Machinery, New York, NY, USA, 4813-4822. https://doi.org/10.1145/3580305.3599851 [28] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, and Xiaoqiang Zhu. 2021. One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management (Virtual Event, Queensland, Australia) (CIKM '21) . Association for Computing Machinery, New York, NY, USA, 4104-4113. https://doi.org/10.1145/3459637.3481941 [29] HongyanTang,Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations. In Proceedings of the 14th ACM Conference on Recommender Systems (Virtual Event, Brazil) (RecSys '20) . Association for Computing Machinery, New York, NY, USA, 269-278. https://doi.org/10.1145/3383313.3412236 [30] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is All You Need. In Proceedings of the 31st International Conference on Neural Information Processing Systems (Long Beach, California, USA) (NIPS'17) . Curran Associates Inc., Red Hook, NY, USA, 6000-6010. [31] Maksims Volkovs, Guangwei Yu, and Tomi Poutanen. 2017. DropoutNet: Addressing Cold Start in Recommender Systems. In Proceedings of the 31st International Conference on Neural Information Processing Systems (Long Beach, California, USA) (NIPS'17) . Curran Associates Inc., Red Hook, NY, USA, 4964-4973. [32] Hongwei Wang, Fuzheng Zhang, Jialin Wang, Miao Zhao, Wenjie Li, Xing Xie, and Minyi Guo. 2018. RippleNet: Propagating User Preferences on the Knowledge Graph for Recommender Systems. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management (Torino, Italy) (CIKM '18) . Association for Computing Machinery, New York, NY, USA, 417-426. https: //doi.org/10.1145/3269206.3271739 [33] Kailun Wu, Weijie Bian, Zhangming Chan, Lejian Ren, Shiming Xiang, ShuGuang Han, Hongbo Deng, and Bo Zheng. 2022. Adversarial gradient driven exploration for deep click-through rate prediction. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2050-2058. WWW'24 Companion, May 13-17, 2024, Singapore, Singapore Wenhao Wu et al. [34] Qitian Wu, Hengrui Zhang, Xiaofeng Gao, Peng He, Paul Weng, Han Gao, and Guihai Chen. 2019. Dual Graph Attention Networks for Deep Latent Representation of Multifaceted Social Effects in Recommender Systems. In The World Wide Web Conference (San Francisco, CA, USA) (WWW '19) . Association for Computing Machinery, New York, NY, USA, 2091-2102. https: //doi.org/10.1145/3308558.3313442 [35] Dongo Xi, Fuzhen Zhuang, Yanchi Liu, Jingjing Gu, Hui Xiong, and Qing He. 2019. Modelling of Bi-Directional Spatio-Temporal Dependence and Users' Dynamic Preferences for Missing POI Check-in Identification. In Proceedings of the Thirty-Third AAAI Conference on Artificial Intelligence and Thirty-First Innovative Applications of Artificial Intelligence Conference and Ninth AAAI Symposium on Educational Advances in Artificial Intelligence (Honolulu, Hawaii, USA) (AAAI'19/IAAI'19/EAAI'19) . AAAI Press, Article 669, 8 pages. https: //doi.org/10.1609/aaai.v33i01.33015458 [36] Ruobing Xie, Zhijie Qiu, Jun Rao, Yi Liu, Bo Zhang, and Leyu Lin. 2021. Internal and Contextual Attention Network for Cold-Start Multi-Channel Matching in Recommendation. In Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence (Yokohama, Yokohama, Japan) (IJCAI'20) . Article 379, 7 pages. [37] Jia-Qi Yang, Xiang Li, Shuguang Han, Tao Zhuang, De chuan Zhan, Xiaoyi Zeng, and Bin Tong. 2020. Capturing Delayed Feedback in Conversion Rate Prediction via Elapsed-Time Sampling. In AAAI Conference on Artificial Intelligence . https: //api.semanticscholar.org/CorpusID:227333826 [38] Yujing Zhang, Zhangming Chan, Shuhao Xu, Weijie Bian, Shuguang Han, Hongbo Deng, and Bo Zheng. 2022. KEEP: An industrial pre-training framework for online recommendation via knowledge extraction and plugging. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3684-3693. [39] Zhao-Yu Zhang, Xiang-Rong Sheng, Yujing Zhang, Biye Jiang, Shuguang Han, Hongbo Deng, and Bo Zheng. 2022. Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Models. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (Atlanta, GA, USA) (CIKM '22) . Association for Computing Machinery, New York, NY, USA, 2671-2680. https://doi.org/10.1145/3511808.3557479 [40] Yunfeng Zhao, Xu Yan, Xiaoqiang Gui, Shuguang Han, Xiang-Rong Sheng, Guoxian Yu, Jufeng Chen, Zhao Xu, and Bo Zheng. 2023. Entire Space Cascade Delayed Feedback Modeling for Effective Conversion Rate Prediction. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 4981-4987. [41] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep Interest Evolution Network for Click-through Rate Prediction. In Proceedings of the Thirty-Third AAAI Conference on Artificial Intelligence and Thirty-First Innovative Applications of Artificial Intelligence Conference and Ninth AAAI Symposium on Educational Advances in Artificial Intelligence (Honolulu, Hawaii, USA) (AAAI'19/IAAI'19/EAAI'19) . AAAI Press, Article 729, 8 pages. https://doi.org/10.1609/aaai.v33i01.33015941 [42] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for ClickThrough Rate Prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD '18) . Association for Computing Machinery, New York, NY, USA, 1059-1068. https://doi.org/10.1145/3219819.3219823 [43] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization. ACM. https://doi.org/10.1145/3340531.3411954 [44] Yongchun Zhu, Ruobing Xie, Fuzhen Zhuang, Kaikai Ge, Ying Sun, Xu Zhang, Leyu Lin, and Juan Cao. 2021. Learning to Warm Up Cold Item Embeddings for Cold-Start Recommendation with Meta Scaling and Shifting Networks. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (Virtual Event, Canada) (SIGIR '21) . Association for Computing Machinery, New York, NY, USA, 1167-1176. https://doi.org/10.1145/3404835.3462843",
   "keywords_parsed": [
     "Recommendation System",
-    " Click-through Rate Prediction",
-    " Meta Learning",
-    " Limited-Stock Product Recommendation"
+    "Click-through Rate Prediction",
+    "Meta Learning",
+    "Limited-Stock Product Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "GIFT: Graph-GuIded Feature Transfer for Cold-Start Video ClickThrough Rate Prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Capturing Conversion Rate Fluctuation during Sales Promotions: A Novel Historical Data Reuse Approach"
+    },
+    {
+      "ref_id": "b3",
+      "title": "PEPNet: Parameter and Embedding Personalized Network for Infusing with Personalized Prior Information"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Behavior Sequence Transformer for E-Commerce Recommendation in Alibaba"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "ClassBalanced Loss Based on Effective Number of Samples"
+    },
+    {
+      "ref_id": "b8",
+      "title": "M6Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "POSO: Personalized Cold Start Modules for Large-scale Recommender Systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Greedy function approximation: A gradient boosting machine"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Rec4Ad: A Free Lunch to Mitigate Sample Selection Bias for Ads CTR Prediction in Taobao"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Real-Time Personalization Using Embeddings for Search Ranking at Airbnb"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Calibration-compatible Listwise Distillation of Privileged Features for CTR Prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "PS-SA: An Efficient Self-Attention via Progressive Sampling for User Behavior Sequence Modeling"
+    },
+    {
+      "ref_id": "b17",
+      "title": "GateNet: gating-enhanced deep network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "FiBiNET: Combining Feature Importance and Bilinear Feature Interaction for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Matrix Factorization Techniques for Recommender Systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Modeling Task Relationships in Multi-Task Learning with Multi-Gate Mixture-of-Experts"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Cross-Domain Recommendation: An Embedding and Mapping Approach"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Long-tail learning via logit adjustment"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Image Feature Learning for Cold Start Problem in Display Advertising"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Warm Up Cold-Start Advertisements: Improving CTR Predictions via Learning to Learn ID Embeddings"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Product-Based Neural Networks for User Response Prediction over Multi-Field Categorical Data"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model"
+    },
+    {
+      "ref_id": "b28",
+      "title": "One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Attention is All You Need"
+    },
+    {
+      "ref_id": "b31",
+      "title": "DropoutNet: Addressing Cold Start in Recommender Systems"
+    },
+    {
+      "ref_id": "b32",
+      "title": "RippleNet: Propagating User Preferences on the Knowledge Graph for Recommender Systems"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Adversarial gradient driven exploration for deep click-through rate prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Dual Graph Attention Networks for Deep Latent Representation of Multifaceted Social Effects in Recommender Systems"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Modelling of Bi-Directional Spatio-Temporal Dependence and Users' Dynamic Preferences for Missing POI Check-in Identification"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Internal and Contextual Attention Network for Cold-Start Multi-Channel Matching in Recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Capturing Delayed Feedback in Conversion Rate Prediction via Elapsed-Time Sampling"
+    },
+    {
+      "ref_id": "b38",
+      "title": "KEEP: An industrial pre-training framework for online recommendation via knowledge extraction and plugging"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Models"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Entire Space Cascade Delayed Feedback Modeling for Effective Conversion Rate Prediction"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep Interest Evolution Network for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b43",
+      "title": "S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Learning to Warm Up Cold Item Embeddings for Cold-Start Recommendation with Meta Scaling and Shifting Networks"
+    }
   ]
 }

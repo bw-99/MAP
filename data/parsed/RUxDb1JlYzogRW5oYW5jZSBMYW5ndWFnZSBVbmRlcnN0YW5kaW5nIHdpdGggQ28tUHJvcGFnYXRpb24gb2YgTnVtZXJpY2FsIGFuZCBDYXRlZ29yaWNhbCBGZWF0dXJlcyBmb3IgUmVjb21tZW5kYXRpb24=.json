@@ -28,8 +28,274 @@
   "REFERENCES": "[1] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems (RecSys '23). ACM. https://doi.org/10. 1145/3604915.3608857 [2] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems. 7-10. [3] Wei-Lin Chiang, Zhuohan Li, Zi Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph E. Gonzalez, Ion Stoica, and Eric P. Xing. 2023. Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality. https://lmsys.org/blog/2023-03-30-vicuna/ [4] Ingrid A. Christensen and Silvia Schiaffino. 2011. Entertainment recommender systems for group of users. Expert Systems with Applications 38, 11 (2011), 14127-14135. https://doi.org/10.1016/j.eswa.2011.04.221 [5] Junyoung Chung, Caglar Gulcehre, KyungHyun Cho, and Yoshua Bengio. 2014. Empirical evaluation of gated recurrent neural networks on sequence modeling. arXiv preprint arXiv:1412.3555 (2014). [6] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep session interest network for click-through rate prediction. arXiv preprint arXiv:1905.06482 (2019). [7] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5). In Proceedings of the 16th ACM Conference on Recommender Systems. 299-315. [8] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [9] Stefan Hegselmann, Alejandro Buendia, Hunter Lang, Monica Agrawal, Xiaoyi Jiang, and David Sontag. 2023. Tabllm: Few-shot classification of tabular data with large language models. In International Conference on Artificial Intelligence and Statistics. PMLR, 5549-5581. [10] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [11] Yupeng Hou, Zhankui He, Julian McAuley, and Wayne Xin Zhao. 2023. Learning Vector-Quantized Item Representation for Transferable Sequential Recommenders. arXiv:2210.12316 [cs.IR] [12] Yupeng Hou, Shanlei Mu, Wayne Xin Zhao, Yaliang Li, Bolin Ding, and Ji-Rong Wen. 2022. Towards Universal Sequence Representation Learning for Recommender Systems. arXiv:2206.05941 [cs.IR] [13] Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2021. LoRA: Low-Rank Adaptation of Large Language Models. arXiv:2106.09685 [cs.CL] [14] Ziniu Hu, Yuxiao Dong, Kuansan Wang, and Yizhou Sun. 2020. Heterogeneous graph transformer. In Proceedings of the web conference 2020. 2704-2710. [15] Yanhua Huang, Hangyu Wang, Yiyun Miao, Ruiwen Xu, Lei Zhang, and Weinan Zhang. 2022. Neural Statistics for Click-Through Rate Prediction. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval. 1849-1853. [16] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM). IEEE, 197-206. [17] Wang-Cheng Kang, Jianmo Ni, Nikhil Mehta, Maheswaran Sathiamoorthy, Lichan Hong, Ed Chi, and Derek Zhiyuan Cheng. 2023. Do llms understand user preferences? evaluating llms on user rating prediction. arXiv preprint arXiv:2305.06474 (2023). [18] Jiacheng Li, Ming Wang, Jin Li, Jinmiao Fu, Xin Shen, Jingbo Shang, and Julian McAuley. 2023. Text is all you need: Learning language representations for sequential recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 1258-1267. [19] Xiangyang Li, Bo Chen, Lu Hou, and Ruiming Tang. 2023. CTRL: Connect Collaborative and Language Model for CTR Prediction. arXiv:2306.02841 [cs.IR] [20] Xinhang Li, Chong Chen, Xiangyu Zhao, Yong Zhang, and Chunxiao Xing. 2023. E4SRec: An Elegant Effective Efficient Extensible Solution of Large Language Models for Sequential Recommendation. arXiv:2312.02443 [cs.IR] [21] Zekun Li, Zeyu Cui, Shu Wu, Xiaoyu Zhang, and Liang Wang. 2019. Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction. In Proceedings of the 28th ACM international conference on information and knowledge management. 539-548. [22] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining. 1754-1763. [23] Jianghao Lin, Bo Chen, Hangyu Wang, Yunjia Xi, Yanru Qu, Xinyi Dai, Kangning Zhang, Ruiming Tang, Yong Yu, and Weinan Zhang. 2024. ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction. In Proceedings of the ACM on Web Conference 2024 (WWW '24). 3319-3330. [24] Jianghao Lin, Xinyi Dai, Yunjia Xi, Weiwen Liu, Bo Chen, Hao Zhang, Yong Liu, Chuhan Wu, Xiangyang Li, Chenxu Zhu, Huifeng Guo, Yong Yu, Ruiming Tang, and Weinan Zhang. 2023. How Can Recommender Systems Benefit from Large Language Models: A Survey. arXiv preprint arXiv:2306.05817 (2023). [25] Jianghao Lin, Yanru Qu, Wei Guo, Xinyi Dai, Ruiming Tang, Yong Yu, and Weinan Zhang. 2023. MAP: A Model-agnostic Pretraining Framework for Clickthrough Rate Prediction. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 1384-1395. [26] Jianghao Lin, Rong Shan, Chenxu Zhu, Kounianhua Du, Bo Chen, Shigang Quan, Ruiming Tang, Yong Yu, and Weinan Zhang. 2024. ReLLa: Retrieval-enhanced Large Language Models for Lifelong Sequential Behavior Comprehension in Recommendation. In Proceedings of the ACM on Web Conference 2024 (WWW '24). 3497-3508. [27] David B Lindell, Julien NP Martel, and Gordon Wetzstein. 2021. Autoint: Automatic integration for fast neural volume rendering. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 1455614565. [28] Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, and Yuzhou Zhang. 2019. Feature generation by convolutional neural network for click-through rate prediction. In The World Wide Web Conference. 1119-1129. [29] Chengkai Liu, Jianghao Lin, Jianling Wang, Hanzhou Liu, and James Caverlee. 2024. Mamba4Rec: Towards Efficient Sequential Recommendation with Selective State Space Models. arXiv preprint arXiv:2403.03900 (2024). [30] Guang Liu, Jie Yang, and Ledell Wu. 2022. Ptab: Using the pre-trained language model for modeling tabular data. arXiv preprint arXiv:2209.08060 (2022). [31] Zhenghao Liu, Sen Mei, Chenyan Xiong, Xiaohua Li, Shi Yu, Zhiyuan Liu, Yu Gu, and Ge Yu. 2023. Text Matching Improves Sequential Recommendation by Reducing Popularity Biases. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management. 1534-1544. [32] Ilya Loshchilov and Frank Hutter. 2017. Decoupled weight decay regularization. arXiv preprint arXiv:1711.05101 (2017). [33] Zhiming Mao, Huimin Wang, Yiming Du, and Kam-Fai Wong. 2023. Unitrec: A unified text-to-text transformer and joint contrastive learning framework for text-based recommendation. arXiv preprint arXiv:2305.15756 (2023). [34] Keiron O'shea and Ryan Nash. 2015. An introduction to convolutional neural networks. arXiv preprint arXiv:1511.08458 (2015). [35] Harshit Pande. 2020. Field-embedded factorization machines for click-through rate prediction. arXiv preprint arXiv:2009.09931 (2020). [36] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on long sequential user behavior modeling for click-through rate prediction. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. 2671-2679. [37] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management. 2685-2692. [38] Jiarui Qin, Weinan Zhang, Xin Wu, Jiarui Jin, Yuchen Fang, and Yong Yu. 2020. User behavior retrieval for click-through rate prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval. 2347-2356. [39] Zhaopeng Qiu, Xian Wu, Jingyue Gao, and Wei Fan. 2021. U-BERT: Pre-training user representations for improved recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 35. 4320-4327. [40] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-based neural networks for user response prediction. In 2016 IEEE 16th international conference on data mining (ICDM). IEEE, 1149-1154. [41] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. 2020. Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. Journal of Machine Learning Research 21, 140 (2020), 1-67. http://jmlr.org/papers/v21/20-074.html [42] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining. IEEE, 995-1000. [43] Ying Shan, T. Ryan Hoens, Jian Jiao, Haijing Wang, Dong Yu, and J. C. Mao. 2016. Deep Crossing: Web-Scale Modeling without Manually Crafted Combinatorial Features. Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (2016). https://api.semanticscholar.org/ CorpusID:9704646 [44] Damien Sileo, Wout Vossen, and Robbe Raymaekers. 2022. Zero-shot recommendation as language modeling. In European Conference on Information Retrieval. Springer, 223-230. [45] Brent Smith and Greg Linden. 2017. Two Decades of Recommender Systems at Amazon.com. IEEE Internet Computing 21, 3 (2017), 12-18. https://doi.org/10. ELCoRec: Enhance Language Understanding with Co-Propagation of Numerical and Categorical Features for Recommendation CIKM '24, Oct 21-25, 2024, Boise 1109/MIC.2017.72 [46] Zhaoxuan Tan and Meng Jiang. 2023. User Modeling in the Era of Large Language Models: Current Research and Future Directions. arXiv preprint arXiv:2312.11518 (2023). [47] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In Proceedings of the eleventh ACM international conference on web search and data mining. 565-573. [48] Laurens van der Maaten and Geoffrey E. Hinton. 2008. Visualizing Data using t-SNE. Journal of Machine Learning Research 9 (2008), 2579-2605. https://api. semanticscholar.org/CorpusID:5855042 [49] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2023. Attention Is All You Need. arXiv:1706.03762 [cs.CL] [50] Petar Veličković, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Lio, and Yoshua Bengio. 2017. Graph attention networks. arXiv preprint arXiv:1710.10903 (2017). [51] Saurabh Verma and Zhi-Li Zhang. 2019. Stability and generalization of graph convolutional neural networks. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. 1539-1548. [52] Dong Wang, Kavé Salamatian, Yunqing Xia, Weiwei Deng, and Qi Zhiang. 2023. BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction. arXiv:2308.11527 [cs.CL] [53] Hangyu Wang, Jianghao Lin, Xiangyang Li, Bo Chen, Chenxu Zhu, Ruiming Tang, Weinan Zhang, and Yong Yu. 2023. FLIP: Towards Fine-grained Alignment between ID-based Models and Pretrained Language Models for CTR Prediction. arXiv e-prints (2023), arXiv-2310. [54] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17. 1-7. [55] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. DCN V2: Improved Deep &amp; Cross Network and Practical Lessons for Web-scale Learning to Rank Systems. In Proceedings of the Web Conference 2021 (WWW '21). ACM. https://doi.org/10.1145/3442381.3450078 [56] Yangkun Wang, Jiarui Jin, Weinan Zhang, Yongyi Yang, Jiuhai Chen, Quan Gan, Yong Yu, Zheng Zhang, Zengfeng Huang, and David Wipf. 2021. Why propagate alone? parallel use of labels and features on graphs. arXiv preprint arXiv:2110.07190 (2021). [57] Likang Wu, Zhaopeng Qiu, Zhi Zheng, Hengshu Zhu, and Enhong Chen. 2024. Exploring large language model for graph data understanding in online job recommendations. In Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 38. 9178-9186. [58] Zonghan Wu, Shirui Pan, Fengwen Chen, Guodong Long, Chengqi Zhang, and S Yu Philip. 2020. A comprehensive survey on graph neural networks. IEEE transactions on neural networks and learning systems 32, 1 (2020), 4-24. [59] Yunjia Xi, Weiwen Liu, Jianghao Lin, Jieming Zhu, Bo Chen, Ruiming Tang, Weinan Zhang, Rui Zhang, and Yong Yu. 2023. Towards open-world recommendation with knowledge augmentation from large language models. arXiv preprint arXiv:2306.10933 (2023). [60] Bing Xu, Naiyan Wang, Tianqi Chen, and Mu Li. 2015. Empirical evaluation of rectified activations in convolutional network. arXiv preprint arXiv:1505.00853 (2015). [61] Yuhui Zhang, Hao Ding, Zeren Shui, Yifei Ma, James Zou, Anoop Deoras, and Hao Wang. 2021. Language models as recommender systems: Evaluations and limitations. In NeurIPS 2021 Workshop on I (Still) Can't Believe It's Not Better. https://www.amazon.science/publications/language-models-asrecommender-systems-evaluations-and-limitations [62] Yang Zhang, Fuli Feng, Jizhi Zhang, Keqin Bao, Qifan Wang, and Xiangnan He. 2023. Collm: Integrating collaborative embeddings into large language models for recommendation. arXiv preprint arXiv:2310.19488 (2023). [63] Zizhuo Zhang and Bang Wang. 2023. Prompt Learning for News Recommendation. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '23). ACM. https://doi.org/10. 1145/3539618.3591752 [64] Aakas Zhiyuli, Yanfang Chen, Xuan Zhang, and Xun Liang. 2023. Bookgpt: A general framework for book recommendation empowered by large language model. arXiv preprint arXiv:2305.15673 (2023). [65] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep Interest Evolution Network for ClickThrough Rate Prediction. In The Thirty-Third AAAI Conference on Artificial Intelligence, AAAI 2019, The Thirty-First Innovative Applications of Artificial Intelligence Conference, IAAI 2019, The Ninth AAAI Symposium on Educational Advances in Artificial Intelligence, EAAI 2019, Honolulu, Hawaii, USA, January 27 - February 1, 2019. 5941-5948. [66] Guorui Zhou, Xiaoqiang Zhu, Chengru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for Click-Through Rate Prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2018, London, UK, August 19-23, 2018. 1059-1068. Received 20 February 2007; revised 12 March 2009; accepted 5 June 2009",
   "keywords_parsed": [
     "Sequential Recommendation",
-    " Graph Attention Network",
-    " Prompt Engineering",
-    " Large Language Model"
+    "Graph Attention Network",
+    "Prompt Engineering",
+    "Large Language Model"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Entertainment recommender systems for group of users"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Empirical evaluation of gated recurrent neural networks on sequence modeling"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b8",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Tabllm: Few-shot classification of tabular data with large language models"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Learning Vector-Quantized Item Representation for Transferable Sequential Recommenders"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Towards Universal Sequence Representation Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Heterogeneous graph transformer"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Neural Statistics for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Do llms understand user preferences? evaluating llms on user rating prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Text is all you need: Learning language representations for sequential recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "CTRL: Connect Collaborative and Language Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "E4SRec: An Elegant Effective Efficient Extensible Solution of Large Language Models for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "How Can Recommender Systems Benefit from Large Language Models: A Survey"
+    },
+    {
+      "ref_id": "b25",
+      "title": "MAP: A Model-agnostic Pretraining Framework for Clickthrough Rate Prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "ReLLa: Retrieval-enhanced Large Language Models for Lifelong Sequential Behavior Comprehension in Recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Autoint: Automatic integration for fast neural volume rendering"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Feature generation by convolutional neural network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Mamba4Rec: Towards Efficient Sequential Recommendation with Selective State Space Models"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Ptab: Using the pre-trained language model for modeling tabular data"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Text Matching Improves Sequential Recommendation by Reducing Popularity Biases"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Decoupled weight decay regularization"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Unitrec: A unified text-to-text transformer and joint contrastive learning framework for text-based recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "An introduction to convolutional neural networks"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Field-embedded factorization machines for click-through rate prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "User behavior retrieval for click-through rate prediction"
+    },
+    {
+      "ref_id": "b39",
+      "title": "U-BERT: Pre-training user representations for improved recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Deep Crossing: Web-Scale Modeling without Manually Crafted Combinatorial Features"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Zero-shot recommendation as language modeling"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Two Decades of Recommender Systems at Amazon.com"
+    },
+    {
+      "ref_id": "b46",
+      "title": "User Modeling in the Era of Large Language Models: Current Research and Future Directions"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Visualizing Data using t-SNE"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Attention Is All You Need"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Graph attention networks"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Stability and generalization of graph convolutional neural networks"
+    },
+    {
+      "ref_id": "b52",
+      "title": "BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction"
+    },
+    {
+      "ref_id": "b53",
+      "title": "FLIP: Towards Fine-grained Alignment between ID-based Models and Pretrained Language Models for CTR Prediction"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b55",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Why propagate alone? parallel use of labels and features on graphs"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Exploring large language model for graph data understanding in online job recommendations"
+    },
+    {
+      "ref_id": "b58",
+      "title": "A comprehensive survey on graph neural networks"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Towards open-world recommendation with knowledge augmentation from large language models"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Empirical evaluation of rectified activations in convolutional network"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Language models as recommender systems: Evaluations and limitations"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Collm: Integrating collaborative embeddings into large language models for recommendation"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Prompt Learning for News Recommendation"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Bookgpt: A general framework for book recommendation empowered by large language model"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Deep Interest Evolution Network for ClickThrough Rate Prediction"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    }
   ]
 }

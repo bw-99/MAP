@@ -27,6 +27,191 @@
   "ACKNOWLEDGMENTS": "This work is supported in part by National Natural Science Foundation of China under grants 62376103, 62302184, 62206102, and Science and Technology Support Program of Hubei Province under grant 2022BAA046.",
   "REFERENCES": "[1] Artem Babenko and Victor S. Lempitsky. 2014. Additive Quantization for Extreme Vector Compression. In 2014 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2014, Columbus, OH, USA, June 23-28, 2014 . IEEE Computer Society, Columbus, OH, USA, 931-938. ACM Comput. Surv., Vol. 56, No. 5, Article 130. Publication date: January 2024. Embedding Compression in Recommender Systems: A Survey 130:17 [2] Yash Bhalgat, Jinwon Lee, Markus Nagel, Tijmen Blankevoort, and Nojun Kwak. 2020. LSQ+: Improving low-bit quantization through learnable offsets and better initialization. In 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR Workshops 2020, Seattle, WA, USA, June 14-19, 2020 . Computer Vision Foundation / IEEE, 2978-2985. [3] Tong Chen, Hongzhi Yin, Yujia Zheng, Zi Huang, Yang Wang, and Meng Wang. 2021. Learning Elastic Embeddings for Customizing On-Device Recommenders. In KDD '21: The 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Virtual Event, Singapore, August 14-18, 2021 . ACM, 138-147. [4] Yunchuan Chen, Lili Mou, Yan Xu, Ge Li, and Zhi Jin. 2016. Compressing Neural Language Models by Sparse Word Representations. In Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics, ACL 2016, August 7-12, 2016, Berlin, Germany, Volume 1: Long Papers . The Association for Computer Linguistics. [5] Yankai Chen, Yifei Zhang, Yingxue Zhang, Huifeng Guo, Jingjie Li, Ruiming Tang, Xiuqiang He, and Irwin King. 2021. Towards Low-loss 1-bit Quantization of User-item Representations for Top-K Recommendation. CoRR abs/2112.01944 (2021). [6] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems, DLRS@RecSys 2016, Boston, MA, USA, September 15, 2016 . ACM, 7-10. [7] Weiyu Cheng, Yanyan Shen, and Linpeng Huang. 2020. Differentiable Neural Input Search for Recommender Systems. CoRR abs/2006.04466 (2020). [8] Tejalal Choudhary, Vipul Kumar Mishra, Anurag Goswami, and Jagannathan Sarangapani. 2020. A comprehensive survey on model compression and acceleration. Artif. Intell. Rev. 53, 7 (2020), 5113-5155. [9] Matthieu Courbariaux, Yoshua Bengio, and Jean-Pierre David. 2015. BinaryConnect: Training Deep Neural Networks with binary weights during propagations. In Advances in Neural Information Processing Systems 28: Annual Conference on Neural Information Processing Systems 2015, December 7-12, 2015, Montreal, Quebec, Canada . 3123-3131. [10] Wei Deng, Junwei Pan, Tian Zhou, Deguang Kong, Aaron Flores, and Guang Lin. 2021. DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving. In WSDM '21, The Fourteenth ACM International Conference on Web Search and Data Mining, Virtual Event, Israel, March 8-12, 2021 . ACM, 922-930. [11] Aditya Desai, Li Chou, and Anshumali Shrivastava. 2022. Random Offset Block Embedding (ROBE) for compressed embedding tables in deep learning recommendation systems. Proceedings of Machine Learning and Systems 4 (2022), 762-778. [12] Aditya Desai, Yanzhou Pan, Kuangyuan Sun, et al. 2021. Semantically Constrained Memory Allocation (SCMA) for Embedding in Efficient Recommendation Systems. CoRR abs/2103.06124 (2021). [13] Steven K. Esser, Jeffrey L. McKinstry, Deepika Bablani, Rathinakumar Appuswamy, and Dharmendra S. Modha. 2020. Learned Step Size quantization. In 8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020 . OpenReview.net. [14] Benjamin Ghaemmaghami, Zihao Deng, Benjamin Y. Cho, et al. 2020. Training with Multi-Layer Embeddings for Model Reduction. CoRR abs/2006.05623 (2020). [15] Antonio A. Ginart, Maxim Naumov, Dheevatsa Mudigere, Jiyan Yang, and James Zou. 2021. Mixed Dimension Embeddings with Application to Memory-Efficient Recommendation Systems. In IEEE International Symposium on Information Theory, ISIT 2021, Melbourne, Australia, July 12-20, 2021 . IEEE, 2786-2791. [16] Hui Guan, Andrey Malevich, Jiyan Yang, Jongsoo Park, and Hector Yuen. 2019. Post-Training 4-bit Quantization on Embedding Tables. CoRR abs/1911.02079 (2019). [17] Huifeng Guo, Wei Guo, Yong Gao, Ruiming Tang, Xiuqiang He, and Wenzhi Liu. 2021. ScaleFreeCTR: MixCache-based Distributed Training System for CTR Models with Huge Embedding Table. In SIGIR '21: The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval, Virtual Event, Canada, July 11-15, 2021 . ACM, 1269-1278. [18] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence, IJCAI 2017, Melbourne, Australia, August 19-25, 2017 . ijcai.org, 1725-1731. [19] Manish Gupta and Puneet Agrawal. 2022. Compression of Deep Learning Models for Text: A Survey. ACM Trans. Knowl. Discov. Data 16, 4 (2022), 61:1-61:55. [20] Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, and Chang Xu. 2020. GhostNet: More Features From Cheap Operations. In 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR 2020, Seattle, WA, USA, June 13-19, 2020 . 1577-1586. [21] Xin He, Kaiyong Zhao, and Xiaowen Chu. 2021. AutoML: A Survey of the State-of-the-Art. Knowledge-Based Systems 212 (2021), 106622. ACM Comput. Surv., Vol. 56, No. 5, Article 130. Publication date: January 2024. 130:18 Shiwei Li and Huifeng Guo, et al. ACM Comput. Surv., Vol. 56, No. 5, Article 130. Publication date: January 2024. Embedding Compression in Recommender Systems: A Survey 130:19 [40] Qiang Liu, Feng Yu, Shu Wu, and Liang Wang. 2015. A Convolutional Click Prediction Model. In Proceedings of the 24th ACM International Conference on Information and Knowledge Management, CIKM 2015, Melbourne, VIC, Australia, October 19 - 23, 2015 . ACM, 1743-1746. [41] Siyi Liu, Chen Gao, Yihong Chen, Depeng Jin, and Yong Li. 2021. Learnable Embedding sizes for Recommender Systems. In 9th International Conference on Learning Representations, ICLR 2021, Virtual Event, Austria, May 3-7, 2021 . OpenReview.net. [42] Xianglong Liu, Junfeng He, Cheng Deng, and Bo Lang. 2014. Collaborative Hashing. In 2014 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2014, Columbus, OH, USA, June 23-28, 2014 . IEEE Computer Society, 2147-2154. [43] Fuyuan Lyu, Xing Tang, Hong Zhu, Huifeng Guo, Yingxue Zhang, Ruiming Tang, and Xue Liu. 2022. OptEmbed: Learning Optimal Embedding Table for Click-through Rate Prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management, Atlanta, GA, USA, October 17-21, 2022 . ACM, 1399-1409. [44] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire Space MultiTask Model: An Effective Approach for Estimating Post-Click Conversion Rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval, SIGIR 2018, Ann Arbor, MI, USA, July 08-12, 2018 , Kevyn Collins-Thompson, Qiaozhu Mei, Brian D. Davison, Yiqun Liu, and Emine Yilmaz (Eds.). ACM, 1137-1140. [45] Kelong Mao, Jieming Zhu, Jinpeng Wang, Quanyu Dai, Zhenhua Dong, Xi Xiao, and Xiuqiang He. 2021. SimpleX: A Simple and Strong Baseline for Collaborative Filtering. In CIKM '21: The 30th ACM International Conference on Information and Knowledge Management, Virtual Event, Queensland, Australia, November 1 - 5, 2021 . ACM, 1243-1252. [46] H. Brendan McMahan, Gary Holt, David Sculley, Michael Young, Dietmar Ebner, Julian Grady, Lan Nie, Todd Phillips, Eugene Davydov, Daniel Golovin, Sharat Chikkerur, Dan Liu, Martin Wattenberg, Arnar Mar Hrafnkelsson, Tom Boulos, and Jeremy Kubica. 2013. Ad click prediction: a view from the trenches. In The 19th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD 2013, Chicago, IL, USA, August 11-14, 2013 . ACM, 1222-1230. [47] Niketan Pansare, Jay Katukuri, Aditya Arora, Frank Cipollone, Riyaaz Shaik, Noyan Tokgozoglu, and Chandru Venkataraman. 2022. Learning Compressed Embeddings for On-Device Inference. In Proceedings of Machine Learning and Systems 2022, MLSys 2022, Santa Clara, CA, USA, August 29 - September 1, 2022 . mlsys.org. [48] Liang Qu, Yonghong Ye, Ningzhi Tang, Lixin Zhang, Yuhui Shi, and Hongzhi Yin. 2022. Single-shot Embedding Dimension Search in Recommender System. In SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 . ACM, 513-522. [49] Steffen Rendle. 2010. Factorization Machines. In ICDM 2010, The 10th IEEE International Conference on Data Mining, Sydney, Australia, 14-17 December 2010 . IEEE Computer Society, 995-1000. [50] Hao-Jun Michael Shi, Dheevatsa Mudigere, Maxim Naumov, and Jiyan Yang. 2020. Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems. In KDD '20: The 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Virtual Event, CA, USA, August 23-27, 2020 . ACM, 165-175. [51] Yixin Su, Rui Zhang, Sarah M. Erfani, and Zhenghua Xu. 2021. Detecting Beneficial Feature Interactions for Recommender Systems. In Thirty-Fifth AAAI Conference on Artificial Intelligence, AAAI 2021, Thirty-Third Conference on Innovative Applications of Artificial Intelligence, IAAI 2021, The Eleventh Symposium on Educational Advances in Artificial Intelligence, EAAI 2021, Virtual Event, February 2-9, 2021 . AAAI Press, 4357-4365. [52] Yixin Su, Yunxiang Zhao, Sarah M. Erfani, Junhao Gan, and Rui Zhang. 2022. Detecting Arbitrary Order Beneficial Feature Interactions for Recommender Systems. In KDD '22: The 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Washington, DC, USA, August 14 - 18, 2022 . ACM, 1676-1686. [53] Yang Sun, Fajie Yuan, Min Yang, Guoao Wei, Zhou Zhao, and Duo Liu. 2020. A Generic Network Compression Framework for Sequential Recommender Systems. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval, SIGIR 2020, Virtual Event, China, July 25-30, 2020 . ACM, 1299-1308. [54] Qiaoyu Tan, Ninghao Liu, Xing Zhao, Hongxia Yang, Jingren Zhou, and Xia Hu. 2020. Learning to Hash with Graph Neural Networks for Recommender Systems. In WWW'20: The Web Conference 2020, Taipei, Taiwan, April 20-24, 2020 . ACM / IW3C2, 1988-1998. [55] Jinpeng Wang, Ziyun Zeng, Yunxiao Wang, Yuting Wang, Xingyu Lu, Tianxiang Li, Jun Yuan, Rui Zhang, Hai-Tao Zheng, and Shu-Tao Xia. 2023. MISSRec: Pre-training and Transferring Multi-modal Interest-aware Sequence Representation for Recommendation. In Proceedings of the 31st ACM International Conference on Multimedia, MM 2023, Ottawa, ON, Canada, 29 October 2023- 3 November 2023 . ACM, 6548-6557. [56] Qinyong Wang, Hongzhi Yin, Tong Chen, Zi Huang, Hao Wang, Yanchang Zhao, and Nguyen Quoc Viet Hung. 2020. Next Point-of-Interest Recommendation on Resource-Constrained Mobile Devices. In WWW'20: The Web Conference 2020, Taipei, Taiwan, April 20-24, 2020 . ACM / IW3C2, 906-916. [57] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & Cross Network for Ad Click Predictions. In Proceedings of the ADKDD'17, Halifax, NS, Canada, August 13 - 17, 2017 . ACM, 12:1-12:7. ACM Comput. Surv., Vol. 56, No. 5, Article 130. Publication date: January 2024. 130:20 Shiwei Li and Huifeng Guo, et al. ACM Comput. Surv., Vol. 56, No. 5, Article 130. Publication date: January 2024. Embedding Compression in Recommender Systems: A Survey 130:21 Francisco, California, USA . AAAI Press, 1669-1675. [77] Zhiwei Zhang, Qifan Wang, Lingyun Ruan, and Luo Si. 2014. Preference preserving hashing for efficient recommendation. In The 37th International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR '14, Gold Coast , QLD, Australia - July 06 - 11, 2014 . ACM, 183-192. [78] Xiangyu Zhao, Haochen Liu, Wenqi Fan, Hui Liu, Jiliang Tang, Chong Wang, Ming Chen, Xudong Zheng, Xiaobing Liu, and Xiwang Yang. 2021. AutoEmb: Automated Embedding Dimensionality Search in Streaming Recommendations. (2021), 896-905. [79] Xiangyu Zhao, Haochen Liu, Hui Liu, Jiliang Tang, Weiwei Guo, Jun Shi, Sida Wang, Huiji Gao, and Bo Long. 2020. Memory-efficient Embedding for Recommendations. CoRR abs/2006.14827 (2020). [80] Guorui Zhou, Xiaoqiang Zhu, Chengru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for Click-Through Rate Prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2018, London, UK, August 19-23, 2018 . ACM, 1059-1068. [81] Jieming Zhu, Quanyu Dai, Liangcai Su, Rong Ma, Jinyang Liu, Guohao Cai, Xi Xiao, and Rui Zhang. 2022. BARS: Towards Open Benchmarking for Recommender Systems. In SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 . ACM, 2912-2923. [82] Barret Zoph and Quoc V. Le. 2017. Neural Architecture Search with Reinforcement Learning. In 5th International Conference on Learning Representations, ICLR 2017, Toulon, France, April 24-26, 2017, Conference Track Proceedings . OpenReview.net. ACM Comput. Surv., Vol. 56, No. 5, Article 130. Publication date: January 2024.",
   "keywords_parsed": [
-    "None"
+    "recommender systems",
+    "embedding tables",
+    "model compression",
+    "survey"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Additive Quantization for Extreme Vector Compression"
+    },
+    {
+      "ref_id": "b2",
+      "title": "LSQ+: Improving low-bit quantization through learnable offsets and better initialization"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Learning Elastic Embeddings for Customizing On-Device Recommenders"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Compressing Neural Language Models by Sparse Word Representations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Towards Low-loss 1-bit Quantization of User-item Representations for Top-K Recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Differentiable Neural Input Search for Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A comprehensive survey on model compression and acceleration"
+    },
+    {
+      "ref_id": "b9",
+      "title": "BinaryConnect: Training Deep Neural Networks with binary weights during propagations"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Random Offset Block Embedding (ROBE) for compressed embedding tables in deep learning recommendation systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Semantically Constrained Memory Allocation (SCMA) for Embedding in Efficient Recommendation Systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Learned Step Size quantization"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Training with Multi-Layer Embeddings for Model Reduction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Mixed Dimension Embeddings with Application to Memory-Efficient Recommendation Systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Post-Training 4-bit Quantization on Embedding Tables"
+    },
+    {
+      "ref_id": "b17",
+      "title": "ScaleFreeCTR: MixCache-based Distributed Training System for CTR Models with Huge Embedding Table"
+    },
+    {
+      "ref_id": "b18",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Compression of Deep Learning Models for Text: A Survey"
+    },
+    {
+      "ref_id": "b20",
+      "title": "GhostNet: More Features From Cheap Operations"
+    },
+    {
+      "ref_id": "b21",
+      "title": "AutoML: A Survey of the State-of-the-Art"
+    },
+    {
+      "ref_id": "b40",
+      "title": "A Convolutional Click Prediction Model"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Learnable Embedding sizes for Recommender Systems"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Collaborative Hashing"
+    },
+    {
+      "ref_id": "b43",
+      "title": "OptEmbed: Learning Optimal Embedding Table for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Entire Space MultiTask Model: An Effective Approach for Estimating Post-Click Conversion Rate"
+    },
+    {
+      "ref_id": "b45",
+      "title": "SimpleX: A Simple and Strong Baseline for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Ad click prediction: a view from the trenches"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Learning Compressed Embeddings for On-Device Inference"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Single-shot Embedding Dimension Search in Recommender System"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Detecting Beneficial Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Detecting Arbitrary Order Beneficial Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b53",
+      "title": "A Generic Network Compression Framework for Sequential Recommender Systems"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Learning to Hash with Graph Neural Networks for Recommender Systems"
+    },
+    {
+      "ref_id": "b55",
+      "title": "MISSRec: Pre-training and Transferring Multi-modal Interest-aware Sequence Representation for Recommendation"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Next Point-of-Interest Recommendation on Resource-Constrained Mobile Devices"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Preference preserving hashing for efficient recommendation"
+    },
+    {
+      "ref_id": "b78",
+      "title": "AutoEmb: Automated Embedding Dimensionality Search in Streaming Recommendations"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Memory-efficient Embedding for Recommendations"
+    },
+    {
+      "ref_id": "b80",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b81",
+      "title": "BARS: Towards Open Benchmarking for Recommender Systems"
+    },
+    {
+      "ref_id": "b82",
+      "title": "Neural Architecture Search with Reinforcement Learning"
+    }
   ]
 }

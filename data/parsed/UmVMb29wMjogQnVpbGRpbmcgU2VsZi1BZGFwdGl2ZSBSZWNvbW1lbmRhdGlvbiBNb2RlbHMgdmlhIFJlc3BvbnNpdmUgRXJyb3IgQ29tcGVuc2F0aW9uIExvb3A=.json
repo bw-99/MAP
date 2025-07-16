@@ -23,15 +23,88 @@
   "ACKNOWLEDGMENTS": "We gratefully acknowledge the support of MindSpore 1 , which is a new deep learning computing framework used for this research.",
   "REFERENCES": "[1] Elahe Arani, Fahad Sarfraz, and Bahram Zonooz. 2022. Learning Fast, Learning Slow: A General Continual Learning Method based on Complementary Learning System. In The Tenth International Conference on Learning Representations (ICLR) . [2] Andreas Blattmann, Robin Rombach, Kaan Oktay, Jonas Müller, and Björn Ommer. 2022. Retrieval-Augmented Diffusion Models. In Annual Conference on Neural Information Processing Systems (NeurIPS) . [3] Guohao Cai, Jieming Zhu, Quanyu Dai, Zhenhua Dong, Xiuqiang He, Ruiming Tang, and Rui Zhang. 2022. ReLoop: A Self-Correction Continual Learning Loop for Recommender Systems. In The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . 2692-2697. [4] Moses Charikar. 2002. Similarity estimation techniques from rounding algorithms. In Annual ACM Symposium on Theory of Computing (STOC) . 380-388. [5] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior Sequence Transformer for E-commerce Recommendation in Alibaba. CoRR abs/1905.06874. [6] Xusong Chen, Dong Liu, Zheng-Jun Zha, Wengang Zhou, Zhiwei Xiong, and Yan Li. 2018. Temporal Hierarchical Attention at Category- and Item-Level for Micro-Video Click-Through Prediction. In 2018 ACM Multimedia Conference on Multimedia Conference (MM) . 1146-1153. [7] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, et al. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems (DLRS@RecSys) . 7-10. [8] Benjamin Coleman and Anshumali Shrivastava. 2020. Sub-linear RACE Sketches for Approximate Kernel Density Estimation on Streaming Data. In The Web Conference 2020 (WWW) . 1739-1749. [9] Aristides Gionis, Piotr Indyk, and Rajeev Motwani. 1999. Similarity Search in High Dimensions via Hashing. In Proceedings of 25th International Conference on Very Large Data Bases (VLDB) . 518-529. 1 https://www.mindspore.cn KDD '23, August 6-10, 2023, Long Beach, CA, USA Jieming Zhu et al. [33] Yongqi Li, Meng Liu, Jianhua Yin, Chaoran Cui, Xin-Shun Xu, and Liqiang Nie. 2019. Routing Micro-videos via A Temporal Graph-guided Recommendation [54] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. AutoInt: Automatic Feature Interaction Learning via SelfAttentive Neural Networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management (CIKM) . 1161-1170. ReLoop2: Building Self-Adaptive Recommendation Models via Responsive Error Compensation Loop KDD '23, August 6-10, 2023, Long Beach, CA, USA [55] Yang Sun, Junwei Pan, Alex Zhang, and Aaron Flores. 2021. FM2: Field-matrixed Factorization Machines for Recommender Systems. In Proceedings of the Web Conference (WWW) . 2828-2837. [56] Jianguo Wang, Xiaomeng Yi, Rentong Guo, Hai Jin, Peng Xu, Shengjun Li, Xiangyu Wang, Xiangzhou Guo, Chengming Li, Xiaohai Xu, Kun Yu, Yuxing Yuan, Yinghao Zou, Jiquan Long, Yudong Cai, Zhenxiang Li, Zhifeng Zhang, Yihua Mo, Jun Gu, Ruiyi Jiang, Yi Wei, and Charles Xie. 2021. Milvus: A Purpose-Built Vector Data Management System. In International Conference on Management of Data (SIGMOD) . 2614-2627. [57] Liyuan Wang, Xingxing Zhang, Hang Su, and Jun Zhu. 2023. A Comprehensive Survey of Continual Learning: Theory, Method and Application. CoRR abs/2302.00487 (2023). [58] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & Cross Network for Ad Click Predictions. In Proceedings of the 11th International Workshop on Data Mining for Online Advertising (ADKDD) . 12:1-12:7. [59] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems. In Proceedings of the Web Conference (WWW) . 1785-1797. [60] Shuhe Wang, Jiwei Li, Yuxian Meng, Rongbin Ouyang, Guoyin Wang, Xiaoya Li, Tianwei Zhang, and Shi Zong. 2021. Faster Nearest Neighbor Machine Translation. CoRR abs/2112.08152 (2021). [61] Yichao Wang, Huifeng Guo, Ruiming Tang, Zhirong Liu, and Xiuqiang He. 2020. APractical Incremental Method to Train Deep CTR Models. CoRR abs/2009.02147 (2020). [62] Yaqing Wang, Quanming Yao, James T. Kwok, and Lionel M. Ni. 2021. Generalizing from a Few Examples: A Survey on Few-shot Learning. ACM Comput. Surv. 53, 3 (2021), 63:1-63:34.",
   "keywords_parsed": [
-    "Industrial recommender systems face the challenge of operating in non-stationary environments",
-    " where data distribution shifts arise from evolving user behaviors over time. To tackle this challenge",
-    " a common approach is to periodically re-train or incrementally update deployed deep models with newly observed data",
-    " resulting in a continual learning process. However",
-    " the conventional learning paradigm of neural networks relies on iterative gradient-based updates with a small learning rate",
-    " making it slow for large recommendation models to adapt. In this paper",
-    " we introduce ReLoop2",
-    " a self-correcting learning loop that facilitates fast model adaptation in online recommender systems through responsive error compensation. Inspired by the slow-fast complementary learning system observed in human brains",
-    " we propose an error memory module that directly stores error samples from incoming data streams. These stored samples are subsequently leveraged to compensate for model prediction errors during testing",
-    " particularly under distribution shifts. The error memory module is designed with fast access capabilities and undergoes continual refreshing with newly observed data samples during the model serving phase to support fast model adaptation. We evaluate the effectiveness of ReLoop2 on three open benchmark datasets as well as a real-world production dataset. The results demonstrate the potential of ReLoop2 in enhancing the responsiveness and adaptiveness of recommender systems operating in non-stationary environments."
+    "Recommender systems",
+    "continual learning",
+    "distribution shift",
+    "model adaptation",
+    "retrieval augmentation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning Fast, Learning Slow: A General Continual Learning Method based on Complementary Learning System"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Retrieval-Augmented Diffusion Models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "ReLoop: A Self-Correction Continual Learning Loop for Recommender Systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Similarity estimation techniques from rounding algorithms"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Behavior Sequence Transformer for E-commerce Recommendation in Alibaba"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Temporal Hierarchical Attention at Category- and Item-Level for Micro-Video Click-Through Prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Sub-linear RACE Sketches for Approximate Kernel Density Estimation on Streaming Data"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Similarity Search in High Dimensions via Hashing"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Routing Micro-videos via A Temporal Graph-guided Recommendation"
+    },
+    {
+      "ref_id": "b54",
+      "title": "AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks"
+    },
+    {
+      "ref_id": "b55",
+      "title": "FM2: Field-matrixed Factorization Machines for Recommender Systems"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Milvus: A Purpose-Built Vector Data Management System"
+    },
+    {
+      "ref_id": "b57",
+      "title": "A Comprehensive Survey of Continual Learning: Theory, Method and Application"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b59",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Faster Nearest Neighbor Machine Translation"
+    },
+    {
+      "ref_id": "b61",
+      "title": "A Practical Incremental Method to Train Deep CTR Models"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Generalizing from a Few Examples: A Survey on Few-shot Learning"
+    }
   ]
 }

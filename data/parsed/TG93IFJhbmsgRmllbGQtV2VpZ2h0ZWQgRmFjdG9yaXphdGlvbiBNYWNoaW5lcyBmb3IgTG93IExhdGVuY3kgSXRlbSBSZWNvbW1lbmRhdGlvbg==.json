@@ -26,7 +26,165 @@
   "A LATENCY CHARTS": "In Figure 3 we observe that the improvement in the latency of the low-rank solution is consistent over time. Average scoring latency Figure 3: Latency graphs over a 10 hour period. (a) (b) 95th percentile ranking latency (c) low rank pruned 06.00 08.00 10.00 12.00 14.00 Time 2023-Sep-20 95th percentile scoring latency low rank pruned 06:00 08.00 10.00 12.00 14.00 Time 2023-Sep-20 p low rank pruned 08.00 10.00 12:.00 14.00 Time 2023-Sep-20",
   "keywords_parsed": [
     "Recommender systems",
-    " Factorization machines",
-    " Low rank factorization"
+    "Factorization machines",
+    "Low rank factorization"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "3 Idiots' Approach for Display Advertising Challenge"
+    },
+    {
+      "ref_id": "b2",
+      "title": "OFF-set: onepass factorization of feature sets for online recommendation in persistent cold start settings"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Build your own music recommender by modeling internet radio streams"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Optuna: A Next-generation Hyperparameter Optimization Framework"
+    },
+    {
+      "ref_id": "b5",
+      "title": "You Say Factorization Machine, I Say Neural Network-It's All in the Activation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Lessons from the Netflix prize challenge"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Pyro: Deep Universal Probabilistic Programming"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Latent dirichlet allocation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deeplight: Deep lightweight feature interactions for accelerating ctr predictions in ad serving"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Using collaborative filtering to weave an information tapestry"
+    },
+    {
+      "ref_id": "b12",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Field-Aware Factorization Machines for CTR Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Fieldaware factorization machines for CTR prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Dynamic length factorization machines for CTR prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Online Compact Convexified Factorization Machine"
+    },
+    {
+      "ref_id": "b21",
+      "title": "A diagonal plus low-rank covariance model for computationally efficient source separation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Incorporating context and trends in news recommender systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Slang: Fast structured covariance approximations for bayesian deep learning with natural gradient"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Gaussian variational approximation with a factor covariance structure"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Field-Weighted Factorization Machines for Click-Through Rate Prediction in Display Advertising"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Field-weighted factorization machines for click-through rate prediction in display advertising"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Field-Embedded Factorization Machines for Click-through rate prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "The Matrix Cookbook"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Diagonal and low-rank matrix decompositions, correlation matrices, and ellipsoid fitting"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Hidden technical debt in machine learning systems"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b34",
+      "title": "FM2: Field-Matrixed Factorization Machines for Recommender Systems"
+    },
+    {
+      "ref_id": "b35",
+      "title": "FM2: Field-matrixed factorization machines for recommender systems"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Efficient low rank gaussian variational inference for neural networks"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b38",
+      "title": "How to retrain recommender system? A sequential metalearning method"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Low-rank plus diagonal adaptation for deep neural networks"
+    }
   ]
 }

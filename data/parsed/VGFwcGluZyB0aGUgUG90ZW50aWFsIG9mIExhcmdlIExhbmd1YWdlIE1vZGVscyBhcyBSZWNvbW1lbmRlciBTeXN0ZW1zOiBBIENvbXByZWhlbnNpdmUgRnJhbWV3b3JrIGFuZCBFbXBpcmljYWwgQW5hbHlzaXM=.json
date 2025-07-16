@@ -32,6 +32,186 @@
   "ACKNOWLEDGMENTS": "The authors would like to thank Chuyuan Wang and Chenrui Zhang for participating in discussions of this paper. Lanling Xu is supported by Meituan Group during her research internship. Xin Zhao is the corresponding author.",
   "REFERENCES": "[1] Saurabh Agrawal, John Trenkle, and Jaya Kawale. 2023. Beyond Labels: Leveraging Deep Learning and LLMs for Content Metadata. In RecSys . ACM, 1. [2] Zhipu AI. 2024. ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools. arXiv e-prints 2406.12793 (2024). [3] Keqin Bao, Jizhi Zhang, Wenjie Wang, Yang Zhang, Zhengyi Yang, Yancheng Luo, Fuli Feng, Xiangnan He, and Qi Tian. 2023. A Bi-Step Grounding Paradigm for Large Language Models in Recommendation Systems. arXiv e-prints 2308.08434 (2023). [4] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation. In RecSys . ACM, 1007-1014. [5] Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, and et al. 2020. Language Models are Few-Shot Learners. In NeurIPS . , Vol. 1, No. 1, Article . Publication date: January 2025. 46 Lanling Xu et al. [6] Michael K. Buckland and Fredric C. Gey. 1994. The Relationship between Recall and Precision. J. Am. Soc. Inf. Sci. 45, 1 (1994), 12-19. [7] Aldo Gael Carranza, Rezsa Farahani, Natalia Ponomareva, Alex Kurakin, Matthew Jagielski, and Milad Nasr. 2023. Privacy-Preserving Recommender Systems with Synthetic Query Generation using Differentially Private Large Language Models. arXiv e-prints 2305.05973 (2023). [8] Diego Carraro and Derek Bridge. 2024. Enhancing Recommendation Diversity by Re-ranking with Large Language Models. ACM Transactions on Recommender Systems abs/2401.11506 (2024). [9] Jin Chen, Zheng Liu, Xu Huang, Chenwang Wu, Qi Liu, Gangwei Jiang, Yuanhao Pu, Yuxuan Lei, Xiaolong Chen, Xingmei Wang, and et al. 2024. When large language models meet personalization: perspectives of challenges and opportunities. World Wide Web (WWW) 27, 4 (2024), 42. [10] Runjin Chen, Mingxuan Ju, Ngoc Bui, Dimosthenis Antypas, Stanley Cai, Xiaopeng Wu, Leonardo Neves, Zhangyang Wang, Neil Shah, and Tong Zhao. 2024. Enhancing Item Tokenization for Generative Recommendation through Self-Improvement. arXiv e-prints 2412.17171 (2024). [11] Yuxin Chen, Junfei Tan, An Zhang, Zhengyi Yang, Leheng Sheng, Enzhi Zhang, Xiang Wang, and Tat-Seng Chua. 2024. On Softmax Direct Preference Optimization for Recommendation. arXiv e-prints 2406.09215 (2024). [12] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, and et al. 2016. Wide & Deep Learning for Recommender Systems. In DLRS@RecSys . ACM, 7-10. [13] Wei-Lin Chiang, Zhuohan Li, Zi Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph E. Gonzalez, Ion Stoica, and Eric P. Xing. 2023. Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality. https://lmsys.org/blog/2023-03-30-vicuna/ [14] Zhixuan Chu, Hongyan Hao, Xin Ouyang, Simeng Wang, Yan Wang, Yue Shen, Jinjie Gu, Qing Cui, Longfei Li, Siqiao Xue, James Y. Zhang, and Sheng Li. 2023. Leveraging Large Language Models for Pre-trained Recommender Systems. arXiv e-prints 2308.10837 (2023). [15] Hyung Won Chung, Le Hou, Shayne Longpre, Barret Zoph, Yi Tay, William Fedus, Yunxuan Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha Brahma, and et al. 2024. Scaling Instruction-Finetuned Language Models. J. Mach. Learn. Res. 25 (2024), 70:1-70:53. [16] Anthony M. Colas, Jun Araki, Zhengyu Zhou, Bingqing Wang, and Zhe Feng. 2023. Knowledge-Grounded Natural Language Recommendation Explanation. In BlackboxNLP@EMNLP . Association for Computational Linguistics, 1-15. [17] Sunhao Dai, Ninglu Shao, Haiyuan Zhao, Weijie Yu, Zihua Si, Chen Xu, Zhongxiang Sun, Xiao Zhang, and Jun Xu. 2023. Uncovering ChatGPT's Capabilities in Recommender Systems. In RecSys . ACM, 1126-1132. [18] Sunhao Dai, Yuqi Zhou, Liang Pang, Weihao Liu, Xiaolin Hu, Yong Liu, Xiao Zhang, and Jun Xu. 2023. LLMs may Dominate Information Access: Neural Retrievers are Biased Towards LLM-Generated Texts. arXiv e-prints 2310.20501 (2023). [19] DeepSeek-AI. 2024. DeepSeek-V3 Technical Report. arXiv e-prints 2412.19437 (2024). [20] Yashar Deldjoo. 2024. Understanding Biases in ChatGPT-based Recommender Systems: Provider Fairness, Temporal Stability, and Recency. ACM Transactions on Recommender Systems (2024). [21] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In NAACL-HLT (1) . Association for Computational Linguistics, 4171-4186. [22] Dario Di Palma, Giovanni Maria Biancofiore, Vito Walter Anelli, Fedelucio Narducci, Tommaso Di Noia, and Eugenio Di Sciascio. 2023. Evaluating ChatGPT as a Recommender System: A Rigorous Approach. arXiv e-prints 2309.03613 (2023). [23] Shizhe Diao, Pengcheng Wang, Yong Lin, Rui Pan, Xiang Liu, and Tong Zhang. 2024. Active Prompting with Chain-of-Thought for Large Language Models. In ACL (1) . Association for Computational Linguistics, 1330-1350. [24] Yijie Ding, Yupeng Hou, Jiacheng Li, and Julian J. McAuley. 2024. Inductive Generative Recommendation via Retrieval-based Speculation. arXiv e-prints 2410.02939 (2024). [25] Yingpeng Du, Di Luo, Rui Yan, Hongzhi Liu, Yang Song, Hengshu Zhu, and Jie Zhang. 2023. Enhancing Job Recommendation through LLM-based Generative Adversarial Networks. arXiv preprint arXiv:2307.10747 (2023). [26] Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey, Abhishek Kadian, Ahmad Al-Dahle, Aiesha Letman, Akhil Mathur, Alan Schelten, Amy Yang, Angela Fan, and et al. 2024. The Llama 3 Herd of Models. arXiv e-prints 2407.21783 (2024). [27] Yue Feng, Shuchang Liu, Zhenghai Xue, Qingpeng Cai, Lantao Hu, Peng Jiang, Kun Gai, and Fei Sun. 2023. A Large Language Model Enhanced Conversational Recommender System. arXiv e-prints 2308.06212 (2023). [28] Luke Friedman, Sameer Ahuja, David Allen, Terry Tan, Hakim Sidahmed, Changbo Long, Jun Xie, Gabriel Schubiner, Ajay Patel, Harsh Lara, et al. 2023. Leveraging Large Language Models in Conversational Recommender Systems. arXiv preprint arXiv:2305.07961 (2023). , Vol. 1, No. 1, Article . Publication date: January 2025. Leveraging Large Language Models as Recommender Systems 47 , Vol. 1, No. 1, Article . Publication date: January 2025. 48 Lanling Xu et al. , Vol. 1, No. 1, Article . Publication date: January 2025. Leveraging Large Language Models as Recommender Systems 49 , Vol. 1, No. 1, Article . Publication date: January 2025. 50 Lanling Xu et al. [129] Poonam B Thorat, Rajeshwari M Goudar, and Sunita Barve. 2015. Survey on collaborative filtering, content-based filtering and hybrid recommendation system. International Journal of Computer Applications 110, 4 (2015), 31-36. , Vol. 1, No. 1, Article . Publication date: January 2025. Leveraging Large Language Models as Recommender Systems 51 [153] Chuhan Wu, Fangzhao Wu, Tao Qi, and Yongfeng Huang. 2021. Empowering news recommendation with pre-trained language models. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in , Vol. 1, No. 1, Article . Publication date: January 2025. 52 Lanling Xu et al. [176] Junjie Zhang, Ruobing Xie, Yupeng Hou, Wayne Xin Zhao, Leyu Lin, and Ji-Rong Wen. 2023. Recommendation as Instruction Following: A Large Language Model Empowered Recommendation Approach. ACM Transactions on , Vol. 1, No. 1, Article . Publication date: January 2025. Leveraging Large Language Models as Recommender Systems 53 Information Systems (2023). [177] Wenxuan Zhang, Hongzhi Liu, Yingpeng Du, Chen Zhu, Yang Song, Hengshu Zhu, and Zhonghai Wu. 2023. Bridging the Information Gap Between Domain-Specific Model and General LLM for Personalized Recommendation. arXiv preprint arXiv:2311.03778 (2023). [178] Yuhui Zhang, Hao Ding, Zeren Shui, Yifei Ma, James Zou, Anoop Deoras, and Hao Wang. 2021. Language models as recommender systems: Evaluations and limitations. In I (Still) Can't Believe It's Not Better! NeurIPS 2021 Workshop . [179] Yang Zhang, Fuli Feng, Jizhi Zhang, Keqin Bao, Qifan Wang, and Xiangnan He. 2023. CoLLM: Integrating Collaborative Embeddings into Large Language Models for Recommendation. arXiv e-prints 2310.19488 (2023). [180] Yang Zhang, Juntao You, Yimeng Bai, Jizhi Zhang, Keqin Bao, Wenjie Wang, and Tat-Seng Chua. 2024. CausalityEnhanced Behavior Sequence Modeling in LLMs for Personalized Recommendation. arXiv e-prints 2410.22809 (2024). [181] Zhuosheng Zhang, Aston Zhang, Mu Li, Hai Zhao, George Karypis, and Alex Smola. 2024. Multimodal Chain-ofThought Reasoning in Language Models. Trans. Mach. Learn. Res. 2024 (2024). [182] Wayne Xin Zhao, Yupeng Hou, Xingyu Pan, Chen Yang, Zeyu Zhang, Zihan Lin, Jingsen Zhang, Shuqing Bian, Jiakai Tang, Wenqi Sun, and et al. 2022. RecBole 2.0: Towards a More Up-to-Date Recommendation Library. In CIKM . ACM, 4722-4726. [183] Wayne Xin Zhao, Shanlei Mu, Yupeng Hou, Zihan Lin, Yushuo Chen, Xingyu Pan, Kaiyuan Li, Yujie Lu, Hui Wang, Changxin Tian, and et al. 2021. RecBole: Towards a Unified, Comprehensive and Efficient Framework for Recommendation Algorithms. In CIKM . ACM, 4653-4664. [184] Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, and et al. 2023. A Survey of Large Language Models. arXiv e-prints 2303.18223 (2023). [185] Zihuai Zhao, Wenqi Fan, Jiatong Li, Yunqing Liu, Xiaowei Mei, Yiqi Wang, Zhen Wen, Fei Wang, Xiangyu Zhao, Jiliang Tang, and Qing Li. 2024. Recommender Systems in the Era of Large Language Models (LLMs). IEEE Trans. Knowl. Data Eng. 36, 11 (2024), 6889-6907. [186] Bowen Zheng, Yupeng Hou, Hongyu Lu, Yu Chen, Wayne Xin Zhao, Ming Chen, and Ji-Rong Wen. 2024. Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation. In ICDE . IEEE, 1435-1448. [187] Denny Zhou, Nathanael Schärli, Le Hou, Jason Wei, Nathan Scales, Xuezhi Wang, Dale Schuurmans, Claire Cui, Olivier Bousquet, Quoc V. Le, and Ed H. Chi. 2023. Least-to-Most Prompting Enables Complex Reasoning in Large Language Models. In ICLR . OpenReview.net. [188] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization. In CIKM . ACM, 1893-1902. [189] Yaochen Zhu, Liang Wu, Qi Guo, Liangjie Hong, and Jundong Li. 2024. Collaborative Large Language Model for Recommender Systems. In WWW . ACM, 3162-3172. Received 6 June 2024; revised 16 Jan 2025 , Vol. 1, No. 1, Article . Publication date: January 2025.",
   "keywords_parsed": [
-    "None"
+    "Large Language Models",
+    "Recommender Systems",
+    "Empirical Study"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Beyond Labels: Leveraging Deep Learning and LLMs for Content Metadata"
+    },
+    {
+      "ref_id": "b2",
+      "title": "ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A Bi-Step Grounding Paradigm for Large Language Models in Recommendation Systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Language Models are Few-Shot Learners"
+    },
+    {
+      "ref_id": "b6",
+      "title": "The Relationship between Recall and Precision"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Privacy-Preserving Recommender Systems with Synthetic Query Generation using Differentially Private Large Language Models"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Enhancing Recommendation Diversity by Re-ranking with Large Language Models"
+    },
+    {
+      "ref_id": "b9",
+      "title": "When large language models meet personalization: perspectives of challenges and opportunities"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Enhancing Item Tokenization for Generative Recommendation through Self-Improvement"
+    },
+    {
+      "ref_id": "b11",
+      "title": "On Softmax Direct Preference Optimization for Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Leveraging Large Language Models for Pre-trained Recommender Systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Scaling Instruction-Finetuned Language Models"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Knowledge-Grounded Natural Language Recommendation Explanation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Uncovering ChatGPT's Capabilities in Recommender Systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "LLMs may Dominate Information Access: Neural Retrievers are Biased Towards LLM-Generated Texts"
+    },
+    {
+      "ref_id": "b19",
+      "title": "DeepSeek-V3 Technical Report"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Understanding Biases in ChatGPT-based Recommender Systems: Provider Fairness, Temporal Stability, and Recency"
+    },
+    {
+      "ref_id": "b21",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Evaluating ChatGPT as a Recommender System: A Rigorous Approach"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Active Prompting with Chain-of-Thought for Large Language Models"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Inductive Generative Recommendation via Retrieval-based Speculation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Enhancing Job Recommendation through LLM-based Generative Adversarial Networks"
+    },
+    {
+      "ref_id": "b26",
+      "title": "The Llama 3 Herd of Models"
+    },
+    {
+      "ref_id": "b27",
+      "title": "A Large Language Model Enhanced Conversational Recommender System"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Leveraging Large Language Models in Conversational Recommender Systems"
+    },
+    {
+      "ref_id": "b129",
+      "title": "Survey on collaborative filtering, content-based filtering and hybrid recommendation system"
+    },
+    {
+      "ref_id": "b153",
+      "title": "Empowering news recommendation with pre-trained language models"
+    },
+    {
+      "ref_id": "b176",
+      "title": "Recommendation as Instruction Following: A Large Language Model Empowered Recommendation Approach"
+    },
+    {
+      "ref_id": "b177",
+      "title": "Bridging the Information Gap Between Domain-Specific Model and General LLM for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b178",
+      "title": "Language models as recommender systems: Evaluations and limitations"
+    },
+    {
+      "ref_id": "b179",
+      "title": "CoLLM: Integrating Collaborative Embeddings into Large Language Models for Recommendation"
+    },
+    {
+      "ref_id": "b180",
+      "title": "CausalityEnhanced Behavior Sequence Modeling in LLMs for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b181",
+      "title": "Multimodal Chain-of-Thought Reasoning in Language Models"
+    },
+    {
+      "ref_id": "b182",
+      "title": "RecBole 2.0: Towards a More Up-to-Date Recommendation Library"
+    },
+    {
+      "ref_id": "b183",
+      "title": "RecBole: Towards a Unified, Comprehensive and Efficient Framework for Recommendation Algorithms"
+    },
+    {
+      "ref_id": "b184",
+      "title": "A Survey of Large Language Models"
+    },
+    {
+      "ref_id": "b185",
+      "title": "Recommender Systems in the Era of Large Language Models (LLMs)"
+    },
+    {
+      "ref_id": "b186",
+      "title": "Adapting Large Language Models by Integrating Collaborative Semantics for Recommendation"
+    },
+    {
+      "ref_id": "b187",
+      "title": "Least-to-Most Prompting Enables Complex Reasoning in Large Language Models"
+    },
+    {
+      "ref_id": "b188",
+      "title": "S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization"
+    },
+    {
+      "ref_id": "b189",
+      "title": "Collaborative Large Language Model for Recommender Systems"
+    }
   ]
 }

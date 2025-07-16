@@ -24,6 +24,92 @@
   "REFERENCES": "[1] 2019. Combining online and offline tests to improve News Feed ranking. https: //ai.meta.com/blog/online-and-offline-tests-to-improve-news-feed-ranking/ [2] 2020. Efficient tuning of online systems using Bayesian optimization. https://engineering.fb.com/2018/09/17/ml-applications/bayesianoptimization-for-tuning-online-systems-with-a-b-tests/ [3] Gagan Aggarwal, Jon Feldman, Martin Pál, and S. Muthukrishnan. 2008. Sponsored Search Auctions for Markovian Users. In Fourth Workshop on Ad Auctions; Workshop on Internet and Network Economics (WINE). http://arxiv.org/abs/0805. 0766 [4] Qingpeng Cai, Shuchang Liu, Xueliang Wang, Tianyou Zuo, Wentao Xie, Bin Yang, Dong Zheng, Peng Jiang, and Kun Gai. 2023. Reinforcing user retention in a billion scale short video recommender system. In Companion Proceedings of the ACM Web Conference 2023 . 421-426. [5] Olivier Chapelle and Ya Zhang. 2009. A dynamic bayesian network click model for web search ranking. In Proceedings of the 18th international conference on World wide web . 1-10. [6] Minmin Chen, Alex Beutel, Paul Covington, Sagar Jain, Francois Belletti, and Ed H Chi. 2019. Top-k off-policy correction for a REINFORCE recommender system. In Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining . 456-464. [7] Konstantina Christakopoulou, Can Xu, Sai Zhang, Sriraj Badam, Trevor Potter, Daniel Li, Hao Wan, Xinyang Yi, Elaine Le, Chris Berg, Eric Bencomo Dixon, Ed H. Chi, and Minmin Chen (Eds.). 2021. Reward Shaping for User Satisfaction in a REINFORCE Recommender . [8] Paul Covington, , Jay Adams, and Emrin Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems . New York, NY, USA. [9] Nick Craswell, Onno Zoeter, Michael J. Taylor, and Bill Ramsey. 2008. An experimental comparison of click position-bias models. In Web Search and Data Mining . https://api.semanticscholar.org/CorpusID:2625350 [10] Pinterest Engineering. 2023. Deep multi-task learning and real-time personalization for closeup recommendations. https://medium.com/pinterestengineering/deep-multi-task-learning-and-real-time-personalization-forcloseup-recommendations-1030edfe445f [11] Daniel Golovin, Benjamin Solnik, Subhodeep Moitra, Greg Kochanski, John Karro, and D. Sculley. 2017. Google Vizier: A Service for Black-Box Optimization. In Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Halifax, NS, Canada, August 13 - 17, 2017 . ACM, 1487-1495. https://doi.org/10.1145/3097983.3098043 [12] Pierre Gutierrez and Jean-Yves Gérardy. 2017. Causal Inference and Uplift Modelling: A Review of the Literature. In Proceedings of The 3rd International Conference on Predictive Applications and APIs (Proceedings of Machine Learning Research) , Claire Hardgrove, Louis Dorard, Keiran Thompson, and Florian Douetteau (Eds.), Vol. 67. PMLR, 1-13. https://proceedings.mlr.press/v67/gutierrez17a. html [13] Eugene Ie, Vihan Jain, Jing Wang, Sanmit Narvekar, Ritesh Agarwal, Rui Wu, Heng-Tze Cheng, Tushar Chandra, and Craig Boutilier. 2019. SlateQ: A Tractable Decomposition for Reinforcement Learning with Recommendation Sets. In Proceedings of the Twenty-eighth International Joint Conference on Artificial Intelligence (IJCAI-19) . Macau, China, 2592-2599. See arXiv:1905.12767 for a related and expanded paper (with additional material and authors). [14] Weiwen Liu, Yunjia Xi, Jiarui Qin, Fei Sun, Bo Chen, Weinan Zhang, Rui Zhang, and Ruiming Tang. 2022. Neural re-ranking in multi-stage recommender systems: A review. arXiv preprint arXiv:2202.06602 (2022). [15] Diederik M Roijers, Peter Vamplew, Shimon Whiteson, and Richard Dazeley. 2013. A survey of multi-objective sequential decision-making. Journal of Artificial Intelligence Research 48 (2013), 67-113. [16] Richard S Sutton and Andrew G Barto. 2018. Reinforcement learning: An introduction . MIT press. [17] Vladislav Vorotilov, Vladislav Vorotilov, and Ilnur Shugaepov. 2023. Scaling the Instagram explore recommendations system. https://engineering.fb.com/2023/ 08/09/ml-applications/scaling-instagram-explore-recommendations-system/ [18] Mark Wilhelm, Ajith Ramanathan, Alexander Bonomo, Sagar Jain, Ed H Chi, and Jennifer Gillenwater. 2018. Practical diversified recommendations on youtube with determinantal point processes. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . 2165-2173. [19] Xinyang Yi, Ji Yang, Lichan Hong, Derek Zhiyuan Cheng, Lukasz Heldt, Aditee Kumthekar, Zhe Zhao, Li Wei, and Ed Chi. 2019. Sampling-bias-corrected neural modeling for large corpus item recommendations. In Proceedings of the 13th ACM Conference on Recommender Systems . 269-277. [20] Qihua Zhang, Junning Liu, Yuzhuo Dai, Yiyan Qi, Yifan Yuan, Kunlun Zheng, Fan Huang, and Xianfeng Tan. 2022. Multi-Task Fusion via Reinforcement Learning for Long-Term User Satisfaction in Recommender Systems. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '22) . ACM. https://doi.org/10.1145/3534678.3539040 [21] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. Recommending what video to watch next: a multitask ranking system. In Proceedings of the 13th ACM Conference on Recommender Systems . 43-51.",
   "keywords_parsed": [
     "Slate Optimization",
-    " Reinforcement Learning"
+    "Reinforcement Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Combining online and offline tests to improve News Feed ranking"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Efficient tuning of online systems using Bayesian optimization"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Sponsored Search Auctions for Markovian Users"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Reinforcing user retention in a billion scale short video recommender system"
+    },
+    {
+      "ref_id": "b5",
+      "title": "A dynamic bayesian network click model for web search ranking"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Top-k off-policy correction for a REINFORCE recommender system"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Reward Shaping for User Satisfaction in a REINFORCE Recommender"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "An experimental comparison of click position-bias models"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep multi-task learning and real-time personalization for closeup recommendations"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Google Vizier: A Service for Black-Box Optimization"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Causal Inference and Uplift Modelling: A Review of the Literature"
+    },
+    {
+      "ref_id": "b13",
+      "title": "SlateQ: A Tractable Decomposition for Reinforcement Learning with Recommendation Sets"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Neural re-ranking in multi-stage recommender systems: A review"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A survey of multi-objective sequential decision-making"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Reinforcement learning: An introduction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Scaling the Instagram explore recommendations system"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Practical diversified recommendations on youtube with determinantal point processes"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Sampling-bias-corrected neural modeling for large corpus item recommendations"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Multi-Task Fusion via Reinforcement Learning for Long-Term User Satisfaction in Recommender Systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Recommending what video to watch next: a multitask ranking system"
+    }
   ]
 }

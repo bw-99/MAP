@@ -36,7 +36,165 @@
   "D.2 Better fit to the true watch time distribution": "We examine whether CWM can fit the true watch time distribution. As a comparison, we also present the estimated watch time distribution by PCR, which is representative of existing debiasing methods. Fig 12(a) shows the true and estimated watch time distribution on videos with less than 100s duration on KuaiRand. We can find that the estimated watch time distribution by PCR is more flattening than the true distribution. It overestimates higher watch time (i.e., >10s). In contrast, our CWM can fit the true distribution even better. Fig 12(b) shows the true and estimated watch time distribution on videos with 30s duration on KuaiRand. It can be found that PCR only estimates a single-peaked distribution which differs significantly from the true bimodal distribution. In comparison, CWM can estimate a similar bimodal distribution to the true distribution, demonstrating CWM's effectiveness in watch time prediction.",
   "keywords_parsed": [
     "video recommendation",
-    " duration bias",
-    " user modelling"
+    "duration bias",
+    "user modelling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Unbiased Learning to Rank with Unbiased Propensity Estimation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Utility maximization, choice and preference"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Tobit models: A survey"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A Neural Click Model for Web Search"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Two-Stage Constrained Actor-Critic for Short Video Recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "PEPNet: Parameter and Embedding Personalized Network for Infusing with Personalized Prior Information"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A Dynamic Bayesian Network Click Model for Web Search Ranking"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A Context-Aware Click Model for Web Search"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Adapting Interactional Observation Embedding for Counterfactual Learning to Rank"
+    },
+    {
+      "ref_id": "b10",
+      "title": "No, that's not my feedback: TV show recommendation using watchable interval"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Click Models for Web Search and Their Applications to IR: WSDM 2016 Tutorial"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b14",
+      "title": "An Experimental Comparison of Click Position-Bias Models"
+    },
+    {
+      "ref_id": "b15",
+      "title": "The YouTube Video Recommendation System"
+    },
+    {
+      "ref_id": "b16",
+      "title": "A User Browsing Model to Predict Search Engine Click Data from Past Observations"
+    },
+    {
+      "ref_id": "b17",
+      "title": "An F-Shape Click Model for Information Retrieval on MultiBlock Mobile Pages"
+    },
+    {
+      "ref_id": "b18",
+      "title": "KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Self-Guided Learning to Denoise for Robust Recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Addressing Confounding Feature Issue for Causal"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Counterfactual Video Recommendation for Duration Debiasing"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Habituation: a model phenomenon for the study of neuronal substrates of behavior"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Rational behavior and economic theory"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Machine learning for survival analysis: A survey"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Denoising Implicit Feedback for Recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Learning to Rank with Selection Bias in Personal Search"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Learning Robust Recommenders through Cross-Model Agreement"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Model-Agnostic Counterfactual Reasoning for Eliminating Popularity Bias in Recommender System"
+    },
+    {
+      "ref_id": "b46",
+      "title": "On the Opportunity of Causal Learning in Recommendation Systems: Foundation, Estimation, Prediction and Challenges"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Reweighting Clicks with Dwell Time in Recommendation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Unbiased Ad Click Prediction for Position-Aware Advertising Systems"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Deconfounding Duration Bias in Watch-Time Prediction for Video Recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Causal Intervention for Leveraging Popularity Bias in Recommendation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Uncovering User Interest from Biased and Noised Watch Time in Video Recommendation"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Recommending what video to watch next: a multitask ranking system"
+    },
+    {
+      "ref_id": "b53",
+      "title": "DVR: Micro-Video Recommendation Optimizing Watch-Time-Gain under Duration Bias"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Disentangling User Interest and Conformity for Recommendation with Causal Embedding"
+    },
+    {
+      "ref_id": "b55",
+      "title": "JUMP: a joint predictor for user click and dwell time"
+    }
   ]
 }

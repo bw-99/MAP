@@ -20,6 +20,88 @@
   "8 CONCLUSION": "This paper presents our approach to the ACM RecSys Challenge 2023. Our solution comprises adversarial validation, feature engineering, and a prediction model. In the adversarial validation phase, we detect and exclude potential 6 Lightweight Boosting Models for User Response Prediction Using Adversarial Validation RecSys '23, June 03-05, 2018, Woodstock, NY features exhibiting the covariate shift. Next, in the feature engineering phase, we focused on denoising noisy continuous features and transforming categorical features into informative continuous values by performing frequency or CatBoost encoding. We employ LightGBM as our primary prediction model with tuned hyperparameters, and the final model showed excellent performance on the leaderboard even without applying an additional ensemble method. The proposed lightweight solution is simple yet effective for the following reasons: 1) adversarial validation can filter out noninformative features in the early stage, and 2) it does not apply the ensemble method that often requires much effort to find the optimal configuration. We believe our solution can be used for rapid prototyping for CTR/CVR prediction tasks.",
   "REFERENCES": "[1] Sercan Ö Arik and Tomas Pfister. 2021. Tabnet: Attentive interpretable tabular learning. In Proceedings of the AAAI conference on artificial intelligence , Vol. 35. 6679-6687. [2] Konrad Banachewicz, Luca Massaron, and Anthony Goldbloom. 2022. The Kaggle Book: Data analysis and machine learning for competitive data science . Packt Publishing Ltd. [3] James Bennett, Stan Lanning, et al. 2007. The netflix prize. In Proceedings of KDD cup and workshop , Vol. 2007. New York, 35. [4] Tianqi Chen and Carlos Guestrin. 2016. Xgboost: A scalable tree boosting system. In Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining . 785-794. [5] Anna Veronika Dorogush, Vasily Ershov, and Andrey Gulin. 2018. CatBoost: gradient boosting with categorical features support. arXiv preprint arXiv:1810.11363 (2018). [6] Léo Grinsztajn, Edouard Oyallon, and Gaël Varoquaux. 2022. Why do tree-based models still outperform deep learning on typical tabular data? Advances in Neural Information Processing Systems 35 (2022), 507-520. [7] Léo Grinsztajn, Edouard Oyallon, and Gaël Varoquaux. 2022. Why do tree-based models still outperform deep learning on typical tabular data? Advances in Neural Information Processing Systems 35 (2022), 507-520. [8] Yulong Gu, Zhuoye Ding, Shuaiqiang Wang, Lixin Zou, Yiding Liu, and Dawei Yin. 2020. Deep multifaceted transformers for multi-objective ranking in large-scale e-commerce recommender systems. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2493-2500. [9] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In Proceedings of the eighth international workshop on data mining for online advertising . 1-9. [10] Paweł Jankiewicz, Liudmyla Kyrashchuk, Paweł Sienkowski, and Magdalena Wójcik. 2019. Boosting algorithms for a session-based, context-aware recommender system in an online travel domain. In Proceedings of the Workshop on ACM Recommender Systems Challenge . 1-5. [11] Yuchin Juan, Yong Zhuang, Wei-Sheng Chin, and Chih-Jen Lin. 2016. Field-aware factorization machines for CTR prediction. In Proceedings of the 10th ACM conference on recommender systems . 43-50. [12] Guolin Ke, Qi Meng, Thomas Finley, Taifeng Wang, Wei Chen, Weidong Ma, Qiwei Ye, and Tie-Yan Liu. 2017. Lightgbm: A highly efficient gradient boosting decision tree. Advances in neural information processing systems 30 (2017). [13] Duncan McElfresh, Sujay Khandagale, Jonathan Valverde, Ganesh Ramakrishnan, Micah Goldblum, Colin White, et al. 2023. When Do Neural Nets Outperform Boosted Trees on Tabular Data? arXiv preprint arXiv:2305.02997 (2023). [14] H Brendan McMahan, Gary Holt, David Sculley, Michael Young, Dietmar Ebner, Julian Grady, Lan Nie, Todd Phillips, Eugene Davydov, Daniel Golovin, et al. 2013. Ad click prediction: a view from the trenches. In Proceedings of the 19th ACM SIGKDD international conference on Knowledge discovery and data mining . 1222-1230. [15] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . IEEE, 995-1000. [16] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [17] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [18] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [19] Zzh, Wei Zhang, and Wentao. 2022. Industrial Solution in Fashion-domain Recommendation by an Efficient Pipeline using GNN and Lightgbm. In Proceedings of the Recommender Systems Challenge 2022 . 45-49. 7",
   "keywords_parsed": [
-    "None"
+    "ACM RecSys Challenge 2023",
+    "User Response Prediction",
+    "Adversarial Validation",
+    "Gradient Boosting Decision Trees",
+    "CTR Prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Tabnet: Attentive interpretable tabular learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "The Kaggle Book: Data analysis and machine learning for competitive data science"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The netflix prize"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Xgboost: A scalable tree boosting system"
+    },
+    {
+      "ref_id": "b5",
+      "title": "CatBoost: gradient boosting with categorical features support"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Why do tree-based models still outperform deep learning on typical tabular data?"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Why do tree-based models still outperform deep learning on typical tabular data?"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep multifaceted transformers for multi-objective ranking in large-scale e-commerce recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Boosting algorithms for a session-based, context-aware recommender system in an online travel domain"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Field-aware factorization machines for CTR prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Lightgbm: A highly efficient gradient boosting decision tree"
+    },
+    {
+      "ref_id": "b13",
+      "title": "When Do Neural Nets Outperform Boosted Trees on Tabular Data?"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Ad click prediction: a view from the trenches"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Industrial Solution in Fashion-domain Recommendation by an Efficient Pipeline using GNN and Lightgbm"
+    }
   ]
 }

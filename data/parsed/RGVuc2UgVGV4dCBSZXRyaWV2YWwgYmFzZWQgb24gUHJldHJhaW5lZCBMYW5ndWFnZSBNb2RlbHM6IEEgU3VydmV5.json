@@ -77,6 +77,1414 @@
   "10 CONCLUSION": "In this survey, we thoroughly review the recent progress of dense retrieval based on pretrained language models (PLM). As an important evolution of language intelligence techniques, PLMs empower dense retrieval models with excellent modeling capacities to capture and represent text semantics for relevance matching. Our survey has extensively discussed the key issues and the mainstream solutions in four major aspects to develop dense retrieval systems, including architecture, training, indexing and integration. Next, we briefly summarize the discussions of this survey and introduce some remaining issues for dense retrieval. PLM-based architecture . In dense retrieval, two kinds of PLM architectures have been extensively used, namely biencoder ( efficient yet less effective ) and cross-encoder ( effective yet less efficient ). In particular, bi-encoder is usually employed to implement the retriever and cross-encoder is usually employed to implement the reranker. Since the bi-encoder has limited capacity in capturing the semantic interaction between query and text, the multi-representation technique has been widely explored in enhancing the finegrained interaction modeling. It proposes to compute the relevance score according to multiple contextual representations of a text. Although dense retrieval models have achieved decent retrieval performance on several benchmark datasets, it has been shown that their capacities in some specific settings are rather limited, especially the capability on zero-shot retrieval [72]. Compared to sparse retrievers ( e.g., BM25), dense retrievers perform better in terms of semantic matching, but less well in terms of lexical matching [1], [52]. Thus, there has been increasing attention in combining the merits of both dense retrievers and sparse retrievers in a unified retrieval system [123], [147]. Moreover, dense retrieval models rely on latent semantic representations for relevance matching. It is not fully clear that how dense retrieval models behave and perform in response to different types of queries, e.g., how they mimic ' bag-of-words ' retrieval [96]. More theoretical discussions are needed in order to better understand and enhance the retrieval capacity of dense retrieval models. Despite the rapid improvement, the problem whether dense retrieval can fully replace sparse retrieval is still being under explored by the research community, and there are also some studies that devise new framework consisting of multiple effectiveness measurements for examining this problem [350]. Training approach . Compared with previous neural IR methods, PLM-based dense retrieval models are more difficult to be optimized given the huge number of parameters. Even with the ever-increasing labeled dataset, it still requires specific training techniques to effectively optimize large retrieval models. We summarize three major issues to address for improving dense retrieval systems, i.e., largescale candidate space, limited relevance judgements, and pretraining discrepancy. Focused on the three issues, the researchers have made extensive efforts by designing various effective training strategies, including negative selection, data augmentation and specific pretraining techniques. These studies have significantly improved the retrieval performance of dense retrievers on benchmark datasets [1], [36], [98], [112]. In particular, negative selection is a key step in the training approach, and using more negatives ( e.g., in- and cross-batch negatives) or more high-quality negatives ( e.g., sampling static or dynamic hard negatives) typically lead to a better retrieval performance. Besides, in order to enhance the capacity of bi-encoder, it is very useful to distill a more capable teacher model ( e.g., cross-encoder) and design suitable pretraining tasks ( e.g., representationenhanced pretraining). More recently, auto-encoder and contrastive learning based pretraining methods have been widely adopted to enhance the semantic representations of texts. As an improvement direction, it is important to design dataand parameter-efficient training approaches 27. https://engineering.atspotify.com/2022/03/ introducing-natural-language-search-for-podcast-episodes/ 32 for enhancing the retrieval capacity under low-resourced setting ( e.g., zero-shot retrieval). Dense vector index . Although the idea of representing texts by dense vectors is intuitive, it is not easy to construct largescale dense vector index for efficient search. Without the support of a suitable index structure, the retrieval process ( i.e., finding the most close text vectors w.r.t. query vectors) would be extremely slow. For this issue, a popular solution is the use of Approximate Nearest Neighbor Search (ANNS) algorithms [84], [248], [351], which can achieve highly efficient retrieval performance ( e.g., sublinear time cost [248]). Compared with term-based index, it is more difficult to maintain the ANNS index for dense retrieval, especially with the regular operations of adding, deleting and updating the embeddings of texts. For example, when the optimization involves in the update of indexed embeddings, it usually suffers from the index staleness issue [94]. Therefore, it is necessary to develop efficient online update algorithms for enhancing the flexibility of ANNS index 28 . In addition, dense vector index is typically used in memory, taking a higher cost compared to a term-based inverted index that can be stored on disk. Besides the effectiveness, the cost for maintenance and use is also important to consider for the practical deployment of dense retrieval systems [350]. Although quantization techniques can alleviate the cost issue to some extent, it is not easy to optimize quantization-based vector index due to the involved non-differential operation (with some joint optimization approaches proposed [117], [263]). Overall, the dense vector index should be well suited to the architecture and optimization of the PLM-based retrievers, which still requires more research in this line. Retrieval pipeline . An information retrieval system typically adopts a pipeline way (consisting of first-stage retrieval and reranking stages) to recall and rank the texts, which gradually reduces the search space and refines the top ranked texts. Generally, it is more complicated to optimize the entire retrieval pipeline than a single-stage component in it ( e.g., first-stage retriever). A preferred approach is to jointly optimize the retrieval pipeline, considering different components as a whole. As the major difficulty for joint training, these stages are usually learned according to different optimization goals, based on varied input and output. In early studies [275], the multiple stages in a retrieval pipeline are separately optimized. Recent studies propose a series of improved optimization approaches for jointly training the retrieval pipeline [38], [94]. The basic idea is to let the retriever and the reranker adjust according to the learned relevance information from each other. However, it is still challenging to optimize a multi-stage retrieval pipeline, especially when it is built in a sparse-dense hybrid way. Besides, it is also meaningful to study how to automatically construct the pipeline ( e.g., what component to use for each of the stages) by learning from labeled dataset. Besides the above four aspects, we have also extensively discussed several important advanced topics that have received increasing attention. In order to support this survey, 28. There is commercial software ( e.g., https://pinecone.io) for maintaining the embedding index instantly ( i.e., add, edit or delete data instantly), while academic solutions are still lacking. we have created a referencing website (at the link https:// github.com/RUCAIBox/DenseRetrieval) to provide useful resources on paper collection and code repertory for dense retrieval. This survey is expected to provide a systemic literature review that summarizes the major progress for PLM-based dense retrieval. Coda : This survey was planned in June, 2021, when we drafted a preliminary outline to organize the content. We started the writing in September, 2021, and finished the initial version in December, 2021. Considering the rapid research progress of dense retrieval, we did not release the initial version online. In this year, we have largely revised this survey by extensively including recent papers and finally made it online, which we expect to be helpful for both researchers and engineers on the research of dense retrieval. It is not easy to write a long survey, and we will keep updating this survey and welcome any constructive comments to improve our survey.",
   "REFERENCES": "[1] V. Karpukhin, B. Oguz, S. Min, P. Lewis, L. Wu, S. Edunov, D. Chen, and W.-t. Yih, 'Dense passage retrieval for open-domain question answering,' in Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) , 2020, pp. 6769-6781. [2] E. M. Voorhees et al. , 'The trec-8 question answering track report.' in Trec , vol. 99, 1999, pp. 77-82. [3] Z. Ji, Z. Lu, and H. Li, 'An information retrieval approach to short text conversation,' CoRR , vol. abs/1408.6988, 2014. [4] H. Chen, X. Liu, D. Yin, and J. Tang, 'A survey on dialogue systems: Recent advances and new frontiers,' SIGKDD Explor. , vol. 19, no. 2, pp. 25-35, 2017. [5] D. Gillick, S. Kulkarni, L. Lansing, A. Presta, J. Baldridge, E. Ie, and D. Garcia-Olano, 'Learning dense representations for entity retrieval,' in Proceedings of the 23rd Conference on Computational Natural Language Learning (CoNLL) , 2019, pp. 528-537. [6] L. Wu, F. Petroni, M. Josifoski, S. Riedel, and L. Zettlemoyer, 'Scalable zero-shot entity linking with dense entity retrieval,' in Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) , 2020, pp. 6397-6407. [7] B. Mitra, F. Diaz, and N. Craswell, 'Learning to match using local and distributed representations of text for web search,' in Proceedings of the 26th International Conference on World Wide Web, WWW2017, Perth, Australia, April 3-7, 2017 , 2017, pp. 1291-1299. [8] T. Joyce and R. Needham, 'The thesaurus approach to information retrieval,' American Documentation (pre-1986) , vol. 9, no. 3, p. 192, 1958. [9] G. Salton, 'Some experiments in the generation of word and document associations,' in Proceedings of the 1962 fall joint computer conference, AFIPS 1962 (Fall), Philadelphia, Pennsylvania, USA, December 4-6, 1962 , 1962, pp. 234-250. [10] G. Salton, A. Wong, and C. Yang, 'A vector space model for automatic indexing,' Commun. ACM , vol. 18, no. 11, pp. 613-620, 1975. [11] G. Salton and C. Buckley, 'Term-weighting approaches in automatic text retrieval,' Inf. Process. Manag. , vol. 24, pp. 513-523, 1988. [12] A. Aizawa, 'An information-theoretic perspective of tf-idf measures,' Information Processing & Management , vol. 39, no. 1, pp. 45-65, 2003. [13] S. Robertson, 'Understanding inverse document frequency: on theoretical arguments for idf,' Journal of documentation , 2004. [14] J. Zobel and A. Moffat, 'Inverted files for text search engines,' ACM Comput. Surv. , vol. 38, p. 6, 2006. [15] J. Zobel, A. Moffat, and K. Ramamohanarao, 'Inverted files versus signature files for text indexing,' ACM Transactions on Database Systems (TODS) , vol. 23, no. 4, pp. 453-490, 1998. [16] S. E. Robertson, S. Walker, S. Jones, M. M. Hancock-Beaulieu, M. Gatford et al. , 'Okapi at trec-3,' Nist Special Publication Sp , vol. 109, p. 109, 1995. 33 [17] S. Robertson and H. Zaragoza, The probabilistic relevance framework: BM25 and beyond , 2009. [18] C. Zhai, Statistical Language Models for Information Retrieval , ser. Synthesis Lectures on Human Language Technologies. Morgan & Claypool Publishers, 2008. [19] T. Liu, 'Learning to rank for information retrieval,' in Proceeding of the 33rd International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2010, Geneva, Switzerland, July 19-23, 2010 , 2010, p. 904. [20] H. Li, 'Learning to rank for information retrieval and natural language processing,' Synthesis Lectures on Human Language Technologies , vol. 4, pp. 1-113, 2011. [21] P. Huang, X. He, J. Gao, L. Deng, A. Acero, and L. P. Heck, 'Learning deep structured semantic models for web search using clickthrough data,' in 22nd ACM International Conference on Information and Knowledge Management, CIKM'13, San Francisco, CA, USA, October 27 - November 1, 2013 , 2013, pp. 2333-2338. [22] J. Guo, Y. Fan, Q. Ai, and W. B. Croft, 'A deep relevance matching model for ad-hoc retrieval,' in Proceedings of the 25th ACM International Conference on Information and Knowledge Management, CIKM 2016, Indianapolis, IN, USA, October 24-28, 2016 , 2016, pp. 55-64. [23] B. Mitra and N. Craswell, 'Neural models for information retrieval,' arXiv preprint arXiv:1705.01509 , 2017. [24] J. Guo, Y. Fan, L. Pang, L. Yang, Q. Ai, H. Zamani, C. Wu, W. B. Croft, and X. Cheng, 'A deep look into neural ranking models for information retrieval,' Information Processing & Management , vol. 57, no. 6, p. 102067, 2020. [25] J. Lin, R. Nogueira, and A. Yates, 'Pretrained transformers for text ranking: Bert and beyond,' Synthesis Lectures on Human Language Technologies , vol. 14, no. 4, pp. 1-325, 2021. [26] Y. Fan, X. Xie, Y. Cai, J. Chen, X. Ma, X. Li, R. Zhang, J. Guo, and Y. Liu, 'Pre-training methods in information retrieval,' arXiv preprint arXiv:2111.13853 , 2021. [27] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, and I. Polosukhin, 'Attention is all you need,' in Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA , 2017, pp. 5998-6008. [28] J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, 'BERT: Pretraining of deep bidirectional transformers for language understanding,' in Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers) , 2019, pp. 4171-4186. [29] Y. Cai, Y. Fan, J. Guo, F. Sun, R. Zhang, and X. Cheng, 'Semantic models for the first-stage retrieval: A comprehensive review,' arXiv preprint arXiv:2103.04831 , 2021. [30] N. Craswell, B. Mitra, E. Yilmaz, D. Campos, and J. Lin, 'Overview of the trec 2021 deep learning track,' in Text REtrieval Conference (TREC) , 2022. [31] N. Craswell, B. Mitra, E. Yilmaz, and D. Campos, 'Overview of the TREC 2020 deep learning track,' arXiv preprint arXiv:2102.07662 , 2021. [32] T. Nguyen, M. Rosenberg, X. Song, J. Gao, S. Tiwary, R. Majumder, and L. Deng, 'MS MARCO: A human generated machine reading comprehension dataset,' in Proceedings of the Workshop on Cognitive Computation: Integrating neural and symbolic approaches 2016 co-located with the 30th Annual Conference on Neural Information Processing Systems (NIPS 2016), Barcelona, Spain, December 9, 2016 , ser. CEUR Workshop Proceedings, vol. 1773, 2016. [33] T. Kwiatkowski, J. Palomaki, O. Redfield, M. Collins, A. Parikh, C. Alberti, D. Epstein, I. Polosukhin, J. Devlin, K. Lee, K. Toutanova, L. Jones, M. Kelcey, M.-W. Chang, A. M. Dai, J. Uszkoreit, Q. Le, and S. Petrov, 'Natural questions: A benchmark for question answering research,' Transactions of the Association for Computational Linguistics , vol. 7, pp. 452-466, 2019. [34] N. Craswell, B. Mitra, E. Yilmaz, D. Campos, and E. M. Voorhees, 'Overview of the trec 2019 deep learning track,' arXiv preprint arXiv:2003.07820 , 2020. [35] N. Tonellotto, 'Lecture notes on neural information retrieval,' CoRR , vol. abs/2207.13443, 2022. [36] Y. Qu, Y. Ding, J. Liu, K. Liu, R. Ren, W. X. Zhao, D. Dong, H. Wu, and H. Wang, 'RocketQA: An optimized training approach to dense passage retrieval for open-domain question answering,' in Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies , 2021, pp. 5835-5847. [37] R. Ren, S. Lv, Y. Qu, J. Liu, W. X. Zhao, Q. She, H. Wu, H. Wang, and J.-R. Wen, 'PAIR: Leveraging passage-centric similarity relation for improving dense passage retrieval,' in Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021 , 2021, pp. 2173-2183. [38] R. Ren, Y. Qu, J. Liu, W. X. Zhao, Q. She, H. Wu, H. Wang, and J.R. Wen, 'Rocketqav2: A joint training method for dense passage retrieval and passage re-ranking,' in Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing , 2021, pp. 2825-2835. [39] D. Chen, A. Fisch, J. Weston, and A. Bordes, 'Reading Wikipedia to answer open-domain questions,' in Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , 2017, pp. 1870-1879. [40] J. Lin, 'A proposed conceptual framework for a representational approach to information retrieval,' SIGIR Forum , vol. 55, no. 2, pp. 4:1-4:29, 2021. [41] R. Nogueira, Z. Jiang, R. Pradeep, and J. Lin, 'Document ranking with a pretrained sequence-to-sequence model,' in Findings of the Association for Computational Linguistics: EMNLP 2020 , 2020, pp. 708-718. [42] K. J¨ arvelin and J. Kek¨ al¨ ainen, 'Cumulated gain-based evaluation of IR techniques,' ACM Trans. Inf. Syst. , vol. 20, no. 4, pp. 422446, 2002. [43] I. Soboroff, S. Huang, and D. Harman, 'Trec 2019 news track overview.' in TREC , 2019. [44] L. H. Bonifacio, I. Campiotti, R. Lotufo, and R. Nogueira, 'mmarco: A multilingual version of ms marco passage ranking dataset,' arXiv preprint arXiv:2108.13897 , 2021. [45] K. Roberts, T. Alam, S. Bedrick, D. Demner-Fushman, K. Lo, I. Soboroff, E. Voorhees, L. L. Wang, and W. R. Hersh, 'Trec-covid: rationale and structure of an information retrieval shared task for covid-19,' Journal of the American Medical Informatics Association , vol. 27, no. 9, pp. 1431-1436, 2020. [46] V. Boteva, D. Gholipour, A. Sokolov, and S. Riezler, 'A full-text learning to rank dataset for medical information retrieval,' in European Conference on Information Retrieval . Springer, 2016, pp. 716-722. [47] A. Suarez, D. Albakour, D. Corney, M. Martinez, and J. Esquivel, 'A data collection for evaluating the retrieval of related tweets to news articles,' in European Conference on Information Retrieval . Springer, 2018, pp. 780-786. [48] A. Bondarenko, M. Fr¨ obe, M. Beloucif, L. Gienapp, Y. Ajjour, A. Panchenko, C. Biemann, B. Stein, H. Wachsmuth, M. Potthast, and M. Hagen, 'Overview of touch´ e 2020: Argument retrieval,' in Working Notes of CLEF 2020 - Conference and Labs of the Evaluation Forum, Thessaloniki, Greece, September 22-25, 2020 , ser. CEUR Workshop Proceedings, vol. 2696, 2020. [49] H. Wachsmuth, S. Syed, and B. Stein, 'Retrieval of the best counterargument without prior topic knowledge,' in Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , 2018, pp. 241-251. [50] F. Hasibi, F. Nikolaev, C. Xiong, K. Balog, S. E. Bratsberg, A. Kotov, and J. Callan, 'Dbpedia-entity v2: A test collection for entity search,' in Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval, Shinjuku, Tokyo, Japan, August 7-11, 2017 , 2017, pp. 1265-1268. [51] N. Craswell, D. Campos, B. Mitra, E. Yilmaz, and B. Billerbeck, 'ORCAS: 20 million clicked query-document pairs for analyzing search,' in CIKM '20: The 29th ACM International Conference on Information and Knowledge Management, Virtual Event, Ireland, October 19-23, 2020 , 2020, pp. 2983-2989. [52] C. Sciavolino, Z. Zhong, J. Lee, and D. Chen, 'Simple entitycentric questions challenge dense retrievers,' in EMNLP , 2021. [53] N. Craswell, B. Mitra, E. Yilmaz, D. Campos, and J. Lin, 'Trec 2021 deep learning track guidelines,' https://microsoft.github. io/msmarco/TREC-Deep-Learning.html. [54] Y. Qiu, H. Li, Y. Qu, Y. Chen, Q. She, J. Liu, H. Wu, and H. Wang, 'Dureader retrieval: A large-scale chinese benchmark for passage retrieval from web search engine,' arXiv preprint arXiv:2203.10232 , 2022. [55] P. Rajpurkar, J. Zhang, K. Lopyrev, and P. Liang, 'SQuAD: 100,000+ questions for machine comprehension of text,' in Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing , 2016, pp. 2383-2392. 34 [56] M. Joshi, E. Choi, D. Weld, and L. Zettlemoyer, 'TriviaQA: A large scale distantly supervised challenge dataset for reading comprehension,' in Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , 2017, pp. 1601-1611. [57] Z. Yang, P. Qi, S. Zhang, Y. Bengio, W. Cohen, R. Salakhutdinov, and C. D. Manning, 'HotpotQA: A dataset for diverse, explainable multi-hop question answering,' in Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing , 2018, pp. 2369-2380. [58] J. Berant, A. Chou, R. Frostig, and P. Liang, 'Semantic parsing on Freebase from question-answer pairs,' in Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing , 2013, pp. 1533-1544. [59] P. Baudiˇ s and J. ˇ Sediv` y, 'Modeling of the question answering task in the yodaqa system,' in International Conference of the crosslanguage evaluation Forum for European languages . Springer, 2015, pp. 222-228. [60] M. Maia, S. Handschuh, A. Freitas, B. Davis, R. McDermott, M. Zarrouk, and A. Balahur, 'Www'18 open challenge: financial opinion mining and question answering,' in Companion Proceedings of the The Web Conference 2018 , 2018, pp. 1941-1942. [61] G. Tsatsaronis, G. Balikas, P. Malakasiotis, I. Partalas, M. Zschunke, M. R. Alvers, D. Weissenborn, A. Krithara, S. Petridis, D. Polychronopoulos et al. , 'An overview of the bioasq large-scale biomedical semantic indexing and question answering competition,' BMC bioinformatics , vol. 16, no. 1, pp. 1-28, 2015. [62] D. Hoogeveen, K. M. Verspoor, and T. Baldwin, 'Cqadupstack: A benchmark data set for community question-answering research,' in Proceedings of the 20th Australasian document computing symposium , 2015, pp. 1-8. [63] S. Iyer, N. Dandekar, and K. Csernai, 'First quora dataset release: Question pairs,' https://quoradata.quora.com/ First-Quora-Dataset-Release-Question-Pairs. [64] J. Wang, A. Jatowt, and M. Yoshikawa, 'Archivalqa: A large-scale benchmark dataset for open domain question answering over archival news collections,' arXiv preprint arXiv:2109.03438 , 2021. [65] P. Huber, A. Aghajanyan, B. O˘ guz, D. Okhonko, W.-t. Yih, S. Gupta, and X. Chen, 'Ccqa: A new web-scale question answering dataset for model pre-training,' arXiv preprint arXiv:2110.07731 , 2021. [66] J. Thorne, A. Vlachos, C. Christodoulopoulos, and A. Mittal, 'FEVER: a large-scale dataset for fact extraction and VERification,' in Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers) , 2018, pp. 809-819. [67] T. Diggelmann, J. Boyd-Graber, J. Bulian, M. Ciaramita, and M. Leippold, 'Climate-fever: A dataset for verification of realworld climate claims,' arXiv preprint arXiv:2012.00614 , 2020. [68] D. Wadden, S. Lin, K. Lo, L. L. Wang, M. van Zuylen, A. Cohan, and H. Hajishirzi, 'Fact or fiction: Verifying scientific claims,' in Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) , 2020, pp. 7534-7550. [69] A. Cohan, S. Feldman, I. Beltagy, D. Downey, and D. Weld, 'SPECTER: Document-level representation learning using citation-informed transformers,' in Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics , 2020, pp. 2270-2282. [70] N. Craswell, B. Mitra, E. Yilmaz, D. F. Campos, and J. J. Lin, 'Ms marco: Benchmarking ranking models in the large-data regime,' Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval , 2021. [71] N. Arabzadeh, B. Mitra, and E. Bagheri, 'Ms marco chameleons: Challenging the ms marco leaderboard with extremely obstinate queries,' in Proceedings of the 30th ACM International Conference on Information & Knowledge Management , 2021, pp. 4426-4435. [72] N. Thakur, N. Reimers, A. R¨ uckl´ e, A. Srivastava, and I. Gurevych, 'Beir: A heterogenous benchmark for zero-shot evaluation of information retrieval models,' arXiv preprint arXiv:2104.08663 , 2021. [73] F. Petroni, A. Piktus, A. Fan, P. Lewis, M. Yazdani, N. De Cao, J. Thorne, Y. Jernite, V. Karpukhin, J. Maillard, V. Plachouras, T. Rockt¨ aschel, and S. Riedel, 'KILT: a benchmark for knowledge intensive language tasks,' in Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies , 2021, pp. 2523-2544. [74] N. Arabzadeh, A. Vtyurina, X. Yan, and C. L. Clarke, 'Shallow pooling for sparse labels,' arXiv preprint arXiv:2109.00062 , 2021. [75] D. Harman, 'Information retrieval evaluation,' Synthesis Lectures on Information Concepts, Retrieval, and Services , vol. 3, no. 2, pp. 1-119, 2011. [76] S. Vargas, 'Novelty and diversity enhancement and evaluation in recommender systems and information retrieval,' in The 37th International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR '14, Gold Coast , QLD, Australia July 06 - 11, 2014 , 2014, p. 1281. [77] M. Zhu, 'Recall, precision and average precision,' Department of Statistics and Actuarial Science, University of Waterloo, Waterloo , vol. 2, no. 30, p. 6, 2004. [78] L. Gao and J. Callan, 'Unsupervised corpus aware language model pre-training for dense passage retrieval,' arXiv preprint arXiv:2108.05540 , 2021. [79] C. D. Manning, P. Raghavan, and H. Sch¨ utze, Introduction to information retrieval , 2008. [80] M. Sanderson et al. , 'Test collection based evaluation of information retrieval systems,' Foundations and Trends® in Information Retrieval , vol. 4, no. 4, pp. 247-375, 2010. [81] L. Gao, X. Ma, J. J. Lin, and J. Callan, 'Tevatron: An efficient and flexible toolkit for dense retrieval,' ArXiv , vol. abs/2203.05765, 2022. [82] J. Lin, X. Ma, S.-C. Lin, J.-H. Yang, R. Pradeep, and R. Nogueira, 'Pyserini: A Python toolkit for reproducible information retrieval research with sparse and dense representations,' in Proceedings of the 44th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2021) , 2021, pp. 2356-2362. [83] P. Yang, H. Fang, and J. Lin, 'Anserini: Enabling the use of lucene for information retrieval research,' in Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval, Shinjuku, Tokyo, Japan, August 7-11, 2017 , 2017, pp. 1253-1256. [84] J. Johnson, M. Douze, and H. J ˜ A©gou, 'Billion-scale similarity search with gpus,' IEEE Transactions on Big Data , 2019. [85] S. Zhuang and G. Zuccon, 'Asyncval: A toolkit for asynchronously validating dense retriever checkpoints during training,' ArXiv , vol. abs/2202.12510, 2022. [86] Z. Liu, K. Zhang, C. Xiong, Z. Liu, and M. Sun, 'Openmatch: An open source library for neu-ir research,' in SIGIR '21: The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval, Virtual Event, Canada, July 11-15, 2021 , 2021, pp. 2531-2535. [87] J. Guo, Y. Fan, X. Ji, and X. Cheng, 'Matchzoo: A learning, practicing, and developing system for neural text matching,' in Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2019, Paris, France, July 21-25, 2019 , 2019, pp. 1297-1300. [88] C. Macdonald, N. Tonellotto, S. MacAvaney, and I. Ounis, 'Pyterrier: Declarative experimentation in python from BM25 to dense retrieval,' in CIKM '21: The 30th ACM International Conference on Information and Knowledge Management, Virtual Event, Queensland, Australia, November 1 - 5, 2021 , 2021, pp. 4526-4533. [89] N. Reimers and I. Gurevych, 'Sentence-BERT: Sentence embeddings using Siamese BERT-networks,' in Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) , 2019, pp. 3982-3992. [90] K. Wang, N. Reimers, and I. Gurevych, 'Tsdae: Using transformer-based sequential denoising auto-encoder for unsupervised sentence embedding learning,' in EMNLP , 2021. [91] S. Humeau, K. Shuster, M. Lachaux, and J. Weston, 'Polyencoders: Architectures and pre-training strategies for fast and accurate multi-sentence scoring,' in 8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020 , 2020. [92] K. Lee, M.-W. Chang, and K. Toutanova, 'Latent retrieval for weakly supervised open domain question answering,' in Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics , 2019, pp. 6086-6096. [93] W. Chang, F. X. Yu, Y. Chang, Y. Yang, and S. Kumar, 'Pretraining tasks for embedding-based large-scale retrieval,' in 8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020 , 2020. 35 [94] K. Guu, K. Lee, Z. Tung, P. Pasupat, and M. Chang, 'REALM: retrieval-augmented language model pre-training,' CoRR , vol. abs/2002.08909, 2020. [95] O. Khattab and M. Zaharia, 'Colbert: Efficient and effective passage search via contextualized late interaction over BERT,' in Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval, SIGIR 2020, Virtual Event, China, July 25-30, 2020 , 2020, pp. 39-48. [96] Y. Luan, J. Eisenstein, K. Toutanova, and M. Collins, 'Sparse, dense, and attentional representations for text retrieval,' Transactions of the Association for Computational Linguistics , vol. 9, pp. 329-345, 2021. [97] J. Zhan, J. Mao, Y. Liu, M. Zhang, and S. Ma, 'Repbert: Contextualized text embeddings for first-stage retrieval,' CoRR , vol. abs/2006.15498, 2020. [98] L. Xiong, C. Xiong, Y. Li, K. Tang, J. Liu, P. N. Bennett, J. Ahmed, and A. Overwijk, 'Approximate nearest neighbor negative contrastive learning for dense text retrieval,' in 9th International Conference on Learning Representations, ICLR 2021, Virtual Event, Austria, May 3-7, 2021 , 2021. [99] D. Liang, P. Xu, S. Shakeri, C. N. d. Santos, R. Nallapati, Z. Huang, and B. Xiang, 'Embedding-based zero-shot retrieval through query generation,' arXiv preprint arXiv:2009.10270 , 2020. [100] Y. Yang, N. Jin, K. Lin, M. Guo, and D. Cer, 'Neural retrieval for question answering with cross-attention supervised data augmentation,' in Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers) , 2021, pp. 263-268. [101] S. Hofst¨ atter, S. Althammer, M. Schr¨ oder, M. Sertkan, and A. Hanbury, 'Improving efficient neural ranking models with cross-architecture knowledge distillation,' arXiv preprint arXiv:2010.02666 , 2020. [102] N. Thakur, N. Reimers, J. Daxenberger, and I. Gurevych, 'Augmented SBERT: Data augmentation method for improving biencoders for pairwise sentence scoring tasks,' in Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies , 2021, pp. 296-310. [103] S.-C. Lin, J.-H. Yang, and J. Lin, 'Distilling dense representations for ranking using tightly-coupled teachers,' arXiv preprint arXiv:2010.11386 , 2020. [104] J. Lu, G. H. ´ Abrego, J. Ma, J. Ni, and Y. Yang, 'Multi-stage training with improved negative contrast for neural passage retrieval,' in Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing , 2021, pp. 6091-6103. [105] G. Izacard and E. Grave, 'Distilling knowledge from reader to retriever for question answering,' in International Conference on Learning Representations , 2021. [106] J. Lee, M. Sung, J. Kang, and D. Chen, 'Learning dense representations of phrases at scale,' in Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) , 2021, pp. 6634-6647. [107] B. Oguz, X. Chen, V. Karpukhin, S. Peshterliev, D. Okhonko, M. Schlichtkrull, S. Gupta, Y. Mehdad, and S. Yih, 'Unikqa: Unified representations of structured and unstructured knowledge for open-domain question answering,' arXiv preprint arXiv:2012.14610 , 2020. [108] D. Sachan, M. Patwary, M. Shoeybi, N. Kant, W. Ping, W. L. Hamilton, and B. Catanzaro, 'End-to-end training of neural retrievers for open-domain question answering,' in Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) , 2021, pp. 6648-6662. [109] L. Gao, Y. Zhang, J. Han, and J. Callan, 'Scaling deep contrastive learning batch size under memory limited setup,' in Proceedings of the 6th Workshop on Representation Learning for NLP (RepL4NLP2021) , 2021, pp. 316-321. [110] S. Hofst¨ atter, S.-C. Lin, J.-H. Yang, J. Lin, and A. Hanbury, 'Efficiently teaching an effective dense retriever with balanced topic aware sampling,' in Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval , 2021, pp. 113-122. [111] J. Zhan, J. Mao, Y. Liu, J. Guo, M. Zhang, and S. Ma, 'Optimizing dense retrieval model training with hard negatives,' in Proceed- ings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval , 2021, pp. 1503-1512. [112] L. Gao and J. Callan, 'Condenser: a pre-training architecture for dense retrieval,' in Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing , 2021, pp. 981-993. [113] H. Tang, X. Sun, B. Jin, J. Wang, F. Zhang, and W. Wu, 'Improving document representations by generating pseudo query embeddings for dense retrieval,' in Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) , 2021, pp. 5054-5064. [114] P. Prakash, J. Killingback, and H. Zamani, 'Learning robust dense retrieval models from incomplete relevance labels,' in Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval , 2021, pp. 1728-1732. [115] Y. Li, Z. Liu, C. Xiong, and Z. Liu, 'More robust dense retrieval with contrastive dual learning,' in Proceedings of the 2021 ACM SIGIR International Conference on Theory of Information Retrieval , 2021, pp. 287-296. [116] B. O˘ guz, K. Lakhotia, A. Gupta, P. Lewis, V. Karpukhin, A. Piktus, X. Chen, S. Riedel, W.-t. Yih, S. Gupta et al. , 'Domainmatched pre-training tasks for dense retrieval,' arXiv preprint arXiv:2107.13602 , 2021. [117] J. Zhan, J. Mao, Y. Liu, J. Guo, M. Zhang, and S. Ma, 'Jointly optimizing query encoder and product quantization to improve retrieval performance,' in Proceedings of the 30th ACM International Conference on Information & Knowledge Management , 2021, pp. 2487-2496. [118] J. Ni, G. H. 'Abrego, N. Constant, J. Ma, K. B. Hall, D. M. Cer, and Y. Yang, 'Sentence-t5: Scalable sentence encoders from pretrained text-to-text models,' ArXiv , vol. abs/2108.08877, 2021. [119] H. Yu, C. Xiong, and J. Callan, 'Improving query representations for dense retrieval with pseudo relevance feedback,' in Proceedings of the 30th ACM International Conference on Information & Knowledge Management , 2021, pp. 3592-3596. [120] F. Liu, S. Havrylov, Y. Jiao, J. Massiah, and E. Yilmaz, 'Transencoder: Unsupervised sentence-pair modelling through self-and mutual-distillations,' arXiv preprint arXiv:2109.13059 , 2021. [121] H. Zhang, Y. Gong, Y. Shen, J. Lv, N. Duan, and W. Chen, 'Adversarial retriever-ranker for dense text retrieval,' arXiv preprint arXiv:2110.03611 , 2021. [122] J. Zhan, J. Mao, Y. Liu, J. Guo, M. Zhang, and S. Ma, 'Learning discrete representations via constrained clustering for effective and efficient dense retrieval,' arXiv preprint arXiv:2110.05789 , 2021. [123] X. Chen, K. Lakhotia, B. O˘ guz, A. Gupta, P. Lewis, S. Peshterliev, Y. Mehdad, S. Gupta, and W.-t. Yih, 'Salient phrase aware dense retrieval: Can a dense retriever imitate a sparse one?' arXiv preprint arXiv:2110.06918 , 2021. [124] S. Lu, D. He, C. Xiong, G. Ke, W. Malik, Z. Dou, P. Bennett, T. Liu, and A. Overwijk, 'Less is more: Pretrain a strong siamese encoder for dense text retrieval using a weak decoder,' in Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing, EMNLP 2021, Virtual Event / Punta Cana, Dominican Republic, 7-11 November, 2021 , 2021, pp. 2780-2791. [125] K. Santhanam, O. Khattab, J. Saad-Falcon, C. Potts, and M. Zaharia, 'Colbertv2: Effective and efficient retrieval via lightweight late interaction,' arXiv preprint arXiv:2112.01488 , 2021. [126] K. Wang, N. Thakur, N. Reimers, and I. Gurevych, 'Gpl: Generative pseudo labeling for unsupervised domain adaptation of dense retrieval,' arXiv preprint arXiv:2112.07577 , 2021. [127] O. Ram, G. Shachaf, O. Levy, J. Berant, and A. Globerson, 'Learning to retrieve passages without supervision,' ArXiv , vol. abs/2112.07708, 2021. [128] P. Lewis, B. O˘ guz, W. Xiong, F. Petroni, W. tau Yih, and S. Riedel, 'Boosted dense retriever,' ArXiv , vol. abs/2112.07771, 2021. [129] J. Ni, C. Qu, J. Lu, Z. Dai, G. H. 'Abrego, J. Ma, V. Zhao, Y. Luan, K. Hall, M.-W. Chang, and Y. Yang, 'Large dual encoders are generalizable retrievers,' ArXiv , vol. abs/2112.07899, 2021. [130] G. Izacard, M. Caron, L. Hosseini, S. Riedel, P. Bojanowski, A. Joulin, and E. Grave, 'Towards unsupervised dense information retrieval with contrastive learning,' ArXiv , vol. abs/2112.09118, 2021. [131] J. Zhang, Z. Liu, W. Han, S. Xiao, R. Zheng, Y. Shao, H. Sun, H. Zhu, P. Srinivasan, D. Deng, Q. Zhang, and X. Xie, 'Uniretriever: Towards learning the unified embedding based re- 36 triever in bing sponsored search,' ArXiv , vol. abs/2202.06212, 2022. [132] C. Xu, D. Guo, N. Duan, and J. McAuley, 'Laprador: Unsupervised pretrained dense retriever for zero-shot text retrieval,' arXiv preprint arXiv:2203.06169 , 2022. [133] J. Zhou, X. Li, L. Shang, L. Luo, K. Zhan, E. Hu, X. Zhang, H. Jiang, Z. Cao, F. Yu et al. , 'Hyperlink-induced pre-training for passage retrieval in open-domain question answering,' in Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , 2022, pp. 7135-7146. [134] S. Jeong, J. Baek, S. Cho, S. J. Hwang, and J. C. Park, 'Augmenting document representations for dense retrieval with interpolation and perturbation,' in Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers) , 2022, pp. 442-452. [135] S. Zhang, Y. Liang, M. Gong, D. Jiang, and N. Duan, 'Multiview document representation learning for open-domain dense retrieval,' in Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , 2022, pp. 5990-6000. [136] S. Hofst¨ atter, O. Khattab, S. Althammer, M. Sertkan, and A. Hanbury, 'Introducing neural bag of whole-words with colberter: Contextualized late interactions using enhanced reduction,' ArXiv , vol. abs/2203.13088, 2022. [137] S. Zhuang and G. Zuccon, 'Characterbert and self-teaching for improving the robustness of dense retrievers on queries with typos,' in Proceedings of the 45rd International ACM SIGIR Conference on Research and Development in Information Retrieval , 2022, pp. 1444-1454. [138] J. Liu, J. Liu, Y. Yang, J. Wang, W. Wu, D. Zhao, and R. Yan, 'Gnnencoder: Learning a dual-encoder architecture via graph neural networks for passage retrieval,' arXiv preprint arXiv:2204.08241 , 2022. [139] X. Ma, J. Guo, R. Zhang, Y. Fan, and X. Cheng, 'Pre-train a discriminative text encoder for dense retrieval via contrastive span prediction,' in Proceedings of the 45rd International ACM SIGIR Conference on Research and Development in Information Retrieval , 2022, pp. 848-858. [140] H. Zeng, H. Zamani, and V. Vinay, 'Curriculum learning for dense retrieval distillation,' in SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 , 2022, pp. 1979-1983. [141] Y. Lu, Y. Liu, J. Liu, Y. Shi, Z. Huang, S. Feng, Y. Sun, H. Tian, H. Wu, S. Wang, D. Yin, and H. Wang, 'Ernie-search: Bridging cross-encoder with dual-encoder via self on-the-fly distillation for dense passage retrieval,' CoRR , vol. abs/2205.09153, 2022. [142] Z. Liu and Y. Shao, 'Retromae: Pre-training retrievaloriented transformers via masked auto-encoder,' CoRR , vol. abs/2205.12035, 2022. [143] W. Hong, Z. Zhang, J. Wang, and H. Zhao, 'Sentence-aware contrastive learning for open-domain passage retrieval,' in Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) , 2022, pp. 1062-1074. [144] D. S. Sachan, M. Lewis, D. Yogatama, L. Zettlemoyer, J. Pineau, and M. Zaheer, 'Questions are all you need to train a dense passage retriever,' arXiv preprint arXiv:2206.10658 , 2022. [145] L. Wang, N. Yang, X. Huang, B. Jiao, L. Yang, D. Jiang, R. Majumder, and F. Wei, 'Simlm: Pre-training with representation bottleneck for dense passage retrieval,' CoRR , vol. abs/2207.02578, 2022. [146] X. Chen, J. Luo, B. He, L. Sun, and Y. Sun, 'Towards robust dense retrieval via local ranking alignment,' in Proceedings of the ThirtyFirst International Joint Conference on Artificial Intelligence, IJCAI 2022, Vienna, Austria, 23-29 July 2022 , 2022, pp. 1980-1986. [147] S.-C. Lin, M. Li, and J. Lin, 'Aggretriever: A simple approach to aggregate textual representation for robust dense passage retrieval,' ArXiv , vol. abs/2208.00511, 2022. [148] X. Wu, G. Ma, M. Lin, Z. Lin, Z. Wang, and S. Hu, 'Contextual mask auto-encoder for dense passage retrieval,' arXiv preprint arXiv:2208.07670 , 2022. [149] X. Ma, R. Zhang, J. Guo, Y. Fan, and X. Cheng, 'A contrastive pretraining approach to learn discriminative autoencoder for dense retrieval,' arXiv preprint arXiv:2208.09846 , 2022. [150] Z. Tang, B. Wang, and T. Yao, 'Dptdr: Deep prompt tuning for dense passage retrieval,' arXiv preprint arXiv:2208.11503 , 2022. [151] K. Zhang, C. Tao, T. Shen, C. Xu, X. Geng, B. Jiao, and D. Jiang, 'Led: Lexicon-enlightened dense retriever for large-scale retrieval,' ArXiv , vol. abs/2208.13661, 2022. [152] T. Shen, X. Geng, C. Tao, C. Xu, X. Huang, B. Jiao, L. Yang, and D. Jiang, 'Lexmae: Lexicon-bottlenecked pretraining for largescale retrieval,' CoRR , vol. abs/2208.14754, 2022. [153] Z. Dai, V. Zhao, J. Ma, Y. Luan, J. Ni, J. Lu, A. Bakalov, K. Guu, K. B. Hall, and M.-W. Chang, 'Promptagator: Few-shot dense retrieval from 8 examples,' ArXiv , vol. abs/2209.11755, 2022. [154] Z. Lin, Y. Gong, X. Liu, H. Zhang, C. Lin, A. Dong, J. Jiao, J. Lu, D. Jiang, R. Majumder, and N. Duan, 'Prod: Progressive distillation for dense retrieval,' 2022. [155] H. Cheng, H. Fang, X. Liu, and J. Gao, 'Task-aware specialization for efficient and robust dense retrieval for open-domain question answering,' arXiv preprint arXiv:2210.05156 , 2022. [156] S. Hochreiter and J. Schmidhuber, 'Long short-term memory,' Neural computation , vol. 9, no. 8, pp. 1735-1780, 1997. [157] K. Cho, B. van Merri¨ enboer, D. Bahdanau, and Y. Bengio, 'On the properties of neural machine translation: Encoder-decoder approaches,' in Proceedings of SSST-8, Eighth Workshop on Syntax, Semantics and Structure in Statistical Translation , 2014, pp. 103-111. [158] T. Lin, Y. Wang, X. Liu, and X. Qiu, 'A survey of transformers,' CoRR , vol. abs/2106.04554, 2021. [159] Y. Tay, M. Dehghani, D. Bahri, and D. Metzler, 'Efficient transformers: A survey,' CoRR , vol. abs/2009.06732, 2020. [160] Y. Liu, M. Ott, N. Goyal, J. Du, M. Joshi, D. Chen, O. Levy, M. Lewis, L. Zettlemoyer, and V. Stoyanov, 'Roberta: A robustly optimized bert pretraining approach,' arXiv preprint arXiv:1907.11692 , 2019. [161] T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. Kaplan, P. Dhariwal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell, S. Agarwal, A. Herbert-Voss, G. Krueger, T. Henighan, R. Child, A. Ramesh, D. M. Ziegler, J. Wu, C. Winter, C. Hesse, M. Chen, E. Sigler, M. Litwin, S. Gray, B. Chess, J. Clark, C. Berner, S. McCandlish, A. Radford, I. Sutskever, and D. Amodei, 'Language models are few-shot learners,' in Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual , 2020. [162] P. Liu, W. Yuan, J. Fu, Z. Jiang, H. Hayashi, and G. Neubig, 'Pretrain, prompt, and predict: A systematic survey of prompting methods in natural language processing,' ACM Computing Surveys (CSUR) , 2022. [163] X. Ma, Z. Wang, P. Ng, R. Nallapati, and B. Xiang, 'Universal text representation from bert: An empirical study,' arXiv preprint arXiv:1910.07973 , 2019. [164] V. Sanh, L. Debut, J. Chaumond, and T. Wolf, 'Distilbert, a distilled version of bert: smaller, faster, cheaper and lighter,' arXiv preprint arXiv:1910.01108 , 2019. [165] C. Raffel, N. M. Shazeer, A. Roberts, K. Lee, S. Narang, M. Matena, Y. Zhou, W. Li, and P. J. Liu, 'Exploring the limits of transfer learning with a unified text-to-text transformer,' ArXiv , vol. abs/1910.10683, 2020. [166] R. Bommasani, D. A. Hudson, E. Adeli, R. Altman, S. Arora, S. von Arx, M. S. Bernstein, J. Bohg, A. Bosselut, E. Brunskill, E. Brynjolfsson, S. Buch, D. Card, R. Castellon, N. S. Chatterji, A. S. Chen, K. Creel, J. Q. Davis, D. Demszky, C. Donahue, M. Doumbouya, E. Durmus, S. Ermon, J. Etchemendy, K. Ethayarajh, L. Fei-Fei, C. Finn, T. Gale, L. Gillespie, K. Goel, N. D. Goodman, S. Grossman, N. Guha, T. Hashimoto, P. Henderson, J. Hewitt, D. E. Ho, J. Hong, K. Hsu, J. Huang, T. Icard, S. Jain, D. Jurafsky, P. Kalluri, S. Karamcheti, G. Keeling, F. Khani, O. Khattab, P. W. Koh, M. S. Krass, R. Krishna, R. Kuditipudi, and et al., 'On the opportunities and risks of foundation models,' CoRR , vol. abs/2108.07258, 2021. [167] Z. Dai and J. Callan, 'Context-aware term weighting for first stage passage retrieval,' in Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval, SIGIR 2020, Virtual Event, China, July 25-30, 2020 , 2020, pp. 1533-1536. [168] --, 'Context-aware document term weighting for ad-hoc search,' in WWW '20: The Web Conference 2020, Taipei, Taiwan, April 20-24, 2020 , 2020, pp. 1897-1907. [169] L. Gao, Z. Dai, and J. Callan, 'COIL: Revisit exact lexical match in information retrieval with contextualized inverted list,' in Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies , 2021, pp. 3030-3042. 37 [170] J. J. Lin and X. Ma, 'A few brief notes on deepimpact, coil, and a conceptual framework for information retrieval techniques,' ArXiv , vol. abs/2106.14807, 2021. [171] R. Nogueira, J. Lin, and A. Epistemic, 'From doc2query to doctttttquery,' Online preprint , 2019. [172] T. Formal, B. Piwowarski, and S. Clinchant, 'Splade: Sparse lexical and expansion model for first stage ranking,' in Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval , 2021, pp. 2288-2292. [173] T. Formal, C. Lassance, B. Piwowarski, and S. Clinchant, 'Splade v2: Sparse lexical and expansion model for information retrieval,' arXiv preprint arXiv:2109.10086 , 2021. [174] Y. Qiao, C. Xiong, Z. Liu, and Z. Liu, 'Understanding the behaviors of bert in ranking,' ArXiv , vol. abs/1904.07531, 2019. [175] C. Xiong, Z. Dai, J. Callan, Z. Liu, and R. Power, 'End-toend neural ad-hoc ranking with kernel pooling,' in Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval, Shinjuku, Tokyo, Japan, August 7-11, 2017 , 2017, pp. 55-64. [176] Y. Sun, S. Wang, Y. Li, S. Feng, H. Tian, H. Wu, and H. Wang, 'ERNIE 2.0: A continual pre-training framework for language understanding,' in The Thirty-Fourth AAAI Conference on Artificial Intelligence, AAAI 2020, The Thirty-Second Innovative Applications of Artificial Intelligence Conference, IAAI 2020, The Tenth AAAI Symposium on Educational Advances in Artificial Intelligence, EAAI 2020, New York, NY, USA, February 7-12, 2020 , 2020, pp. 8968-8975. [177] N. Reimers and I. Gurevych, 'Sentence-BERT: Sentence embeddings using Siamese BERT-networks,' in Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) , 2019, pp. 3982-3992. [178] A. Conneau and D. Kiela, 'SentEval: An evaluation toolkit for universal sentence representations,' in Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018) , 2018. [179] W. Kong, S. Khadanga, C. Li, S. K. Gupta, M. Zhang, W. Xu, and M. Bendersky, 'Multi-aspect dense retrieval,' in KDD '22: The 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Washington, DC, USA, August 14 - 18, 2022 , 2022, pp. 3178-3186. [180] M. Seo, J. Lee, T. Kwiatkowski, A. Parikh, A. Farhadi, and H. Hajishirzi, 'Real-time open-domain question answering with dense-sparse phrase index,' in Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics , 2019, pp. 4430-4441. [181] J. Lee, A. Wettig, and D. Chen, 'Phrase retrieval learns passage retrieval, too,' arXiv preprint arXiv:2109.08133 , 2021. [182] M. Seo, T. Kwiatkowski, A. Parikh, A. Farhadi, and H. Hajishirzi, 'Phrase-indexed question answering: A new challenge for scalable document comprehension,' in Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing , 2018, pp. 559-564. [183] Y. Liu, K. Hashimoto, Y. Zhou, S. Yavuz, C. Xiong, and S. Y. Philip, 'Dense hierarchical retrieval for open-domain question answering,' in Findings of the Association for Computational Linguistics: EMNLP 2021 , 2021, pp. 188-200. [184] M. Li, M. Li, K. Xiong, and J. Lin, 'Multi-task dense retrieval via model uncertainty fusion for open-domain question answering,' in Findings of the Association for Computational Linguistics: EMNLP 2021, Virtual Event / Punta Cana, Dominican Republic, 16-20 November, 2021 , 2021, pp. 274-287. [185] N. Tonellotto and C. Macdonald, 'Query embedding pruning for dense retrieval,' in Proceedings of the 30th ACM International Conference on Information & Knowledge Management , 2021, pp. 3453-3457. [186] H. Li, A. Mourad, S. Zhuang, B. Koopman, and G. Zuccon, 'Pseudo relevance feedback with deep language models and dense retrievers: Successes and pitfalls,' arXiv preprint arXiv:2108.11044 , 2021. [187] X. Wang, C. Macdonald, N. Tonellotto, and I. Ounis, 'Pseudorelevance feedback for multiple representation dense retrieval,' arXiv preprint arXiv:2106.11251 , 2021. [188] H. Li, S. Zhuang, A. Mourad, X. Ma, J. J. Lin, and G. Zuccon, 'Improving query representations for dense retrieval with pseudo relevance feedback: A reproducibility study,' ArXiv , vol. abs/2112.06400, 2021. [189] S. Zhuang, H. Li, and G. Zuccon, 'Implicit feedback for dense passage retrieval: A counterfactual approach,' ArXiv , vol. abs/2204.00718, 2022. [190] X. Wang, C. Macdonald, N. Tonellotto, and I. Ounis, 'Pseudorelevance feedback for multiple representation dense retrieval,' in ICTIR '21: The 2021 ACM SIGIR International Conference on the Theory of Information Retrieval, Virtual Event, Canada, July 11, 2021 , 2021, pp. 297-306. [191] W. L. Tam, X. Liu, K. Ji, L. Xue, X. Zhang, Y. Dong, J. Liu, M. Hu, and J. Tang, 'Parameter-efficient prompt tuning makes generalized and calibrated neural text retrievers,' ArXiv , vol. abs/2207.07087, 2022. [192] X. Liu, K. Ji, Y. Fu, Z. Du, Z. Yang, and J. Tang, 'P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks,' ArXiv , vol. abs/2110.07602, 2021. [193] R. Nogueira and K. Cho, 'Passage re-ranking with BERT,' CoRR , vol. abs/1901.04085, 2019. [194] L. Liu, P. Lewis, S. Riedel, and P. Stenetorp, 'Challenges in generalization in open domain question answering,' ArXiv , vol. abs/2109.01156, 2021. [195] N. Reimers and I. Gurevych, 'The curse of dense lowdimensional information retrieval for large index sizes,' in Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers) , 2021, pp. 605-611. [196] H. Fang, T. Tao, and C. Zhai, 'A formal study of information retrieval heuristics,' in SIGIR '04 , 2004. [197] H. Fang and C. Zhai, 'An exploration of axiomatic approaches to information retrieval,' in SIGIR '05 , 2005. [198] --, 'Semantic term matching in axiomatic approaches to information retrieval,' Proceedings of the 29th annual international ACM SIGIR conference on Research and development in information retrieval , 2006. [199] C. Rosset, B. Mitra, C. Xiong, N. Craswell, X. Song, and S. Tiwary, 'An axiomatic approach to regularizing neural ranking models,' in Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2019, Paris, France, July 21-25, 2019 , B. Piwowarski, M. Chevalier, ´ E. Gaussier, Y. Maarek, J. Nie, and F. Scholer, Eds. ACM, 2019, pp. 981-984. [200] M. V¨ olske, A. Bondarenko, M. Fr¨ obe, B. Stein, J. Singh, M. Hagen, and A. Anand, 'Towards axiomatic explanations for neural ranking models,' in Proceedings of the 2021 ACM SIGIR International Conference on Theory of Information Retrieval , 2021, pp. 13-22. [201] A. Cˆ amara and C. Hauff, 'Diagnosing BERT with retrieval heuristics,' in Advances in Information Retrieval - 42nd European Conference on IR Research, ECIR 2020, Lisbon, Portugal, April 14-17, 2020, Proceedings, Part I , vol. 12035, 2020, pp. 605-618. [202] S. MacAvaney, S. Feldman, N. Goharian, D. Downey, and A. Cohan, 'Abnirml: Analyzing the behavior of neural ir models,' arXiv preprint arXiv:2011.00696 , 2020. [203] T. Formal, B. Piwowarski, and S. Clinchant, 'A white box analysis of colbert,' in ECIR , 2021. [204] J. Lu, G. H. ´ Abrego, J. Ma, J. Ni, and Y. Yang, 'Neural passage retrieval with improved negative contrast,' CoRR , vol. abs/2010.12523, 2020. [205] N. Arabzadeh, X. Yan, and C. L. Clarke, 'Predicting efficiency/effectiveness trade-offs for dense vs. sparse retrieval strategy selection,' arXiv preprint arXiv:2109.10739 , 2021. [206] S.-C. Lin and J. J. Lin, 'Densifying sparse representations for passage retrieval by representational slicing,' ArXiv , vol. abs/2112.04666, 2021. [207] A. van den Oord, Y. Li, and O. Vinyals, 'Representation learning with contrastive predictive coding,' CoRR , vol. abs/1807.03748, 2018. [208] B. Dodla, A. K. Mohankumar, and A. Singh, 'HEARTS: multitask fusion of dense retrieval and non-autoregressive generation for sponsored search,' CoRR , vol. abs/2209.05861, 2022. [209] N. Yang, F. Wei, B. Jiao, D. Jiang, and L. Yang, 'xMoCo: Cross momentum contrastive learning for open-domain question answering,' in Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) , 2021, pp. 6120-6129. 38 [210] Z. Li, N. Yang, L. Wang, and F. Wei, 'Learning diverse document representations with deep query interactions for dense retrieval,' arXiv preprint arXiv:2208.04232 , 2022. [211] X. Ma, J. Guo, R. Zhang, Y. Fan, X. Ji, and X. Cheng, 'Prop: Pre-training with representative words prediction for ad-hoc retrieval,' in Proceedings of the 14th ACM International Conference on Web Search and Data Mining , 2021, pp. 283-291. [212] M. Henderson, R. Al-Rfou, B. Strope, Y.-H. Sung, L. Luk´ acs, R. Guo, S. Kumar, B. Miklos, and R. Kurzweil, 'Efficient natural language response suggestion for smart reply,' arXiv preprint arXiv:1705.00652 , 2017. [213] M. E. Maron and J. L. Kuhns, 'On relevance, probabilistic indexing and information retrieval,' Journal of the ACM (JACM) , vol. 7, no. 3, pp. 216-244, 1960. [214] Y. Cai, J. Guo, Y. Fan, Q. Ai, R. Zhang, and X. Cheng, 'Hard negatives or false negatives: Correcting pooling bias in training neural ranking models,' arXiv preprint arXiv:2209.05072 , 2022. [215] K. Zhou, B. Zhang, X. Zhao, and J. Wen, 'Debiased contrastive learning of unsupervised sentence representations,' in ACL , 2022, pp. 6120-6130. [216] K. Zhou, Y. Gong, X. Liu, W. X. Zhao, Y. Shen, A. Dong, J. Lu, R. Majumder, J.-R. Wen, N. Duan, and W. Chen, 'Simans: Simple ambiguous negatives sampling for dense text retrieval,' in EMNLP , 2022. [217] Y. Goldberg and O. Levy, 'word2vec explained: deriving mikolov et al.'s negative-sampling word-embedding method,' arXiv preprint arXiv:1402.3722 , 2014. [218] Z. Yang, M. Ding, C. Zhou, H. Yang, J. Zhou, and J. Tang, 'Understanding negative sampling in graph representation learning,' in KDD '20: The 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Virtual Event, CA, USA, August 23-27, 2020 , 2020, pp. 1666-1676. [219] J. Maillard, V. Karpukhin, F. Petroni, W.-t. Yih, B. O˘ guz, V. Stoyanov, and G. Ghosh, 'Multi-task retrieval for knowledgeintensive tasks,' arXiv preprint arXiv:2101.00117 , 2021. [220] R. Ren, Y. Qu, J. Liu, W. X. Zhao, Q. Wu, Y. Ding, H. Wu, H. Wang, and J. Wen, 'A thorough examination on zero-shot dense retrieval,' CoRR , vol. abs/2204.12755, 2022. [221] J. Zhan, X. Xie, J. Mao, Y. Liu, M. Zhang, and S. Ma, 'Evaluating extrapolation performance of dense retrieval,' CoRR , vol. abs/2204.11447, 2022. [222] X. Shen, S. Vakulenko, M. D. Tredici, G. Barlacchi, B. Byrne, and A. de Gispert, 'Low-resource dense retrieval for opendomain question answering: A comprehensive survey,' CoRR , vol. abs/2208.03197, 2022. [223] G. E. Hinton, O. Vinyals, and J. Dean, 'Distilling the knowledge in a neural network,' CoRR , vol. abs/1503.02531, 2015. [224] S. Yu, Z. Liu, C. Xiong, T. Feng, and Z. Liu, 'Few-shot conversational dense retrieval,' in SIGIR '21: The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval, Virtual Event, Canada, July 11-15, 2021 , 2021, pp. 829-838. [225] M. Rezagholizadeh, A. Jafari, P. S. M. Saladi, P. Sharma, A. S. Pasand, and A. Ghodsi, 'Pro-kd: Progressive distillation by following the footsteps of the teacher,' in Proceedings of the 29th International Conference on Computational Linguistics, COLING 2022, Gyeongju, Republic of Korea, October 12-17, 2022 , 2022, pp. 4714-4727. [226] C. Zhou, J. Gu, and G. Neubig, 'Understanding knowledge distillation in non-autoregressive machine translation,' in 8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020 , 2020. [227] C. Alberti, D. Andor, E. Pitler, J. Devlin, and M. Collins, 'Synthetic QA corpora generation with roundtrip consistency,' in Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics , 2019, pp. 6168-6173. [228] P. Lewis, Y. Wu, L. Liu, P. Minervini, H. K¨ uttler, A. Piktus, P. Stenetorp, and S. Riedel, 'Paq: 65 million probably-asked questions and what you can do with them,' arXiv preprint arXiv:2102.07033 , 2021. [229] T. Gao, X. Yao, and D. Chen, 'Simcse: Simple contrastive learning of sentence embeddings,' in EMNLP , 2021. [230] Y. Yan, R. Li, S. Wang, F. Zhang, W. Wu, and W. Xu, 'ConSERT: A contrastive framework for self-supervised sentence representation transfer,' in Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) , 2021, pp. 5065-5075. [231] X. Ma, J. Guo, R. Zhang, Y. Fan, Y. Li, and X. Cheng, 'B-PROP: bootstrapped pre-training with representative words prediction for ad-hoc retrieval,' in SIGIR '21: The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval, Virtual Event, Canada, July 11-15, 2021 , 2021, pp. 1318-1327. [232] S. Shakeri, C. Nogueira dos Santos, H. Zhu, P. Ng, F. Nan, Z. Wang, R. Nallapati, and B. Xiang, 'End-to-end synthetic data generation for domain adaptation of question answering systems,' in Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) , 2020, pp. 5445-5460. [233] M. Lewis, Y. Liu, N. Goyal, M. Ghazvininejad, A. Mohamed, O. Levy, V. Stoyanov, and L. Zettlemoyer, 'BART: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension,' in Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics , 2020, pp. 7871-7880. [234] R. G. Reddy, V. Yadav, M. A. Sultan, M. Franz, V. Castelli, H. Ji, and A. Sil, 'Towards robust neural retrieval models with synthetic pre-training,' arXiv preprint arXiv:2104.07800 , 2021. [235] J. Ma, I. Korotkov, Y. Yang, K. Hall, and R. McDonald, 'Zero-shot neural passage retrieval via domain-targeted synthetic question generation,' in Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume , 2021, pp. 1075-1088. [236] V. Balachandran, A. Vaswani, Y. Tsvetkov, and N. Parmar, 'Simple and efficient ways to improve realm,' arXiv preprint arXiv:2104.08710 , 2021. [237] R. Socher, J. Pennington, E. H. Huang, A. Y. Ng, and C. D. Manning, 'Semi-supervised recursive autoencoders for predicting sentiment distributions,' in Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing , 2011, pp. 151161. [238] R. Socher, E. H. Huang, J. Pennington, A. Y. Ng, and C. D. Manning, 'Dynamic pooling and unfolding recursive autoencoders for paraphrase detection,' in Advances in Neural Information Processing Systems 24: 25th Annual Conference on Neural Information Processing Systems 2011. Proceedings of a meeting held 12-14 December 2011, Granada, Spain , 2011, pp. 801-809. [239] J. Li, T. Luong, and D. Jurafsky, 'A hierarchical neural autoencoder for paragraphs and documents,' in Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) , 2015, pp. 1106-1115. [240] A. M. Dai and Q. V. Le, 'Semi-supervised sequence learning,' in Advances in Neural Information Processing Systems 28: Annual Conference on Neural Information Processing Systems 2015, December 7-12, 2015, Montreal, Quebec, Canada , 2015, pp. 3079-3087. [241] N. Tishby and N. Zaslavsky, 'Deep learning and the information bottleneck principle,' in 2015 IEEE Information Theory Workshop, ITW 2015, Jerusalem, Israel, April 26 - May 1, 2015 , 2015, pp. 1-5. [242] A. Liu and S. Yang, 'Masked autoencoders as the unified learners for pre-trained sentence representation,' CoRR , vol. abs/2208.00231, 2022. [243] T. Chen, S. Kornblith, M. Norouzi, and G. E. Hinton, 'A simple framework for contrastive learning of visual representations,' in Proceedings of the 37th International Conference on Machine Learning, ICML 2020, 13-18 July 2020, Virtual Event , ser. Proceedings of Machine Learning Research, vol. 119, 2020, pp. 1597-1607. [244] K. He, H. Fan, Y. Wu, S. Xie, and R. B. Girshick, 'Momentum contrast for unsupervised visual representation learning,' in 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR 2020, Seattle, WA, USA, June 13-19, 2020 , 2020, pp. 97269735. [245] A. Neelakantan, T. Xu, R. Puri, A. Radford, J. M. Han, J. Tworek, Q. Yuan, N. A. Tezak, J. W. Kim, C. Hallacy, J. Heidecke, P. Shyam, B. Power, T. E. Nekoul, G. Sastry, G. Krueger, D. P. Schnurr, F. P. Such, K. S.-K. Hsu, M. Thompson, T. Khan, T. Sherbakov, J. Jang, P. Welinder, and L. Weng, 'Text and code embeddings by contrastive pre-training,' ArXiv , vol. abs/2201.10005, 2022. [246] Y. Ma, D. Yu, T. Wu, and H. Wang, 'Paddlepaddle: An opensource deep learning platform from industrial practice,' Frontiers of Data and Domputing , vol. 1, no. 1, pp. 105-115, 2019. [247] K. J. McDonell, 'An inverted index implementation,' The Computer Journal , vol. 20, no. 2, pp. 116-123, 1977. [248] A. Shrivastava and P. Li, 'Asymmetric LSH (ALSH) for sublinear time maximum inner product search (MIPS),' in Advances in Neural Information Processing Systems 27: Annual Conference on 39 Neural Information Processing Systems 2014, December 8-13 2014, Montreal, Quebec, Canada , 2014, pp. 2321-2329. [249] N. Bhatia and Vandana, 'Survey of nearest neighbor techniques,' CoRR , vol. abs/1007.0085, 2010. [250] K. Hajebi, Y. Abbasi-Yadkori, H. Shahbazi, and H. Zhang, 'Fast approximate nearest-neighbor search with k-nearest neighbor graph,' in IJCAI 2011, Proceedings of the 22nd International Joint Conference on Artificial Intelligence, Barcelona, Catalonia, Spain, July 16-22, 2011 , 2011, pp. 1312-1317. [251] W. Li, Y. Zhang, Y. Sun, W. Wang, M. Li, W. Zhang, and X. Lin, 'Approximate nearest neighbor search on high dimensional data-experiments, analyses, and improvement,' IEEE Transactions on Knowledge and Data Engineering , vol. 32, no. 8, pp. 14751488, 2019. [252] M. Aum¨ uller, E. Bernhardsson, and A. Faithfull, 'Annbenchmarks: A benchmarking tool for approximate nearest neighbor algorithms,' in SISAP , 2017. [253] H. V. Simhadri, G. R. Williams, M. Aum¨ uller, M. Douze, A. Babenko, D. Baranchuk, Q. Chen, L. Hosseini, R. Krishnaswamy, G. Srinivasa, S. J. Subramanya, and J. Wang, 'Results of the neurips'21 challenge on billion-scale approximate nearest neighbor search,' ArXiv , vol. abs/2205.03763, 2022. [254] P. Indyk and R. Motwani, 'Approximate nearest neighbors: towards removing the curse of dimensionality,' in STOC '98 , 1998. [255] J. Wang, T. Zhang, J. Song, N. Sebe, and H. T. Shen, 'A survey on learning to hash,' IEEE Transactions on Pattern Analysis and Machine Intelligence , vol. 40, pp. 769-790, 2018. [256] J. Sivic and A. Zisserman, 'Video google: a text retrieval approach to object matching in videos,' Proceedings Ninth IEEE International Conference on Computer Vision , pp. 1470-1477 vol.2, 2003. [257] Q. Chen, B. Zhao, H. Wang, M. Li, C. Liu, Z. Li, M. Yang, and J. Wang, 'Spann: Highly-efficient billion-scale approximate nearest neighbor search,' in NeurIPS , 2021. [258] J. Wang and S. Li, 'Query-driven iterated neighborhood graph search for large scale indexing,' Proceedings of the 20th ACM international conference on Multimedia , 2012. [259] Y. Malkov, A. Ponomarenko, A. Logvinov, and V. Krylov, 'Approximate nearest neighbor algorithm based on navigable small world graphs,' Inf. Syst. , vol. 45, pp. 61-68, 2014. [260] J. M. Kleinberg, 'The small-world phenomenon: an algorithmic perspective,' in Proceedings of the Thirty-Second Annual ACM Symposium on Theory of Computing, May 21-23, 2000, Portland, OR, USA , 2000, pp. 163-170. [261] H. J´ egou, M. Douze, and C. Schmid, 'Product quantization for nearest neighbor search,' IEEE Trans. Pattern Anal. Mach. Intell. , vol. 33, no. 1, pp. 117-128, 2011. [262] T. Ge, K. He, Q. Ke, and J. Sun, 'Optimized product quantization for approximate nearest neighbor search,' in 2013 IEEE Conference on Computer Vision and Pattern Recognition, Portland, OR, USA, June 23-28, 2013 , 2013, pp. 2946-2953. [263] H. Zhang, H. Shen, Y. Qiu, Y. Jiang, S. Wang, S. Xu, Y. Xiao, B. Long, and W.-Y. Yang, 'Joint learning of deep retrieval model and product quantization based embedding index,' arXiv preprint arXiv:2105.03933 , 2021. [264] I. Yamada, A. Asai, and H. Hajishirzi, 'Efficient passage retrieval with hashing for open-domain question answering,' in Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers) , 2021, pp. 979-986. [265] J. Zhan, J. Mao, Y. Liu, J. Guo, M. Zhang, and S. Ma, 'Interpreting dense retrieval as mixture of topics,' arXiv preprint arXiv:2111.13957 , 2021. [266] Y. A. Malkov and D. A. Yashunin, 'Efficient and robust approximate nearest neighbor search using hierarchical navigable small world graphs,' IEEE transactions on pattern analysis and machine intelligence , vol. 42, no. 4, pp. 824-836, 2018. [267] Q. Chen, H. Wang, M. Li, G. Ren, S. Li, J. Zhu, J. Li, C. Liu, L. Zhang, and J. Wang, SPTAG: A library for fast approximate nearest neighbor search , 2018. [268] R. Guo, P. Sun, E. Lindgren, Q. Geng, D. Simcha, F. Chern, and S. Kumar, 'Accelerating large-scale inference with anisotropic vector quantization,' in Proceedings of the 37th International Conference on Machine Learning, ICML 2020, 13-18 July 2020, Virtual Event , ser. Proceedings of Machine Learning Research, vol. 119, 2020, pp. 3887-3896. [269] A. Piktus, F. Petroni, V. Karpukhin, D. Okhonko, S. Broscheit, G. Izacard, P. Lewis, B. Oguz, E. Grave, W. Yih, and S. Riedel, 'The web is your oyster - knowledge-intensive NLP against a very large web corpus,' CoRR , vol. abs/2112.09924, 2021. [270] S. J. Subramanya, F. Devvrit, H. V. Simhadri, R. Krishnaswamy, and R. Kadekodi, 'Diskann: Fast accurate billion-point nearest neighbor search on a single node,' in Advances in Neural Information Processing Systems 32: Annual Conference on Neural Information Processing Systems 2019, NeurIPS 2019, December 8-14, 2019, Vancouver, BC, Canada , 2019. [271] R. Baeza-Yates and B. A. Ribeiro-Neto, Modern Information Retrieval -the concepts and technology behind search, Second edition , 2011. [272] Y. Qiao, C. Xiong, Z. Liu, and Z. Liu, 'Understanding the behaviors of BERT in ranking,' CoRR , vol. abs/1904.07531, 2019. [273] Z. Wang, P. Ng, X. Ma, R. Nallapati, and B. Xiang, 'Multi-passage BERT: A globally normalized BERT model for open-domain question answering,' in Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) , 2019, pp. 5878-5882. [274] M. Yan, C. Li, C. Wu, B. Bi, W. Wang, J. Xia, and L. Si, 'IDST at TREC 2019 deep learning track: Deep cascade ranking with generation-based document expansion and pre-trained language modeling,' in Proceedings of the Twenty-Eighth Text REtrieval Conference, TREC 2019, Gaithersburg, Maryland, USA, November 13-15, 2019 , ser. NIST Special Publication, vol. 1250, 2019. [275] R. Nogueira, W. Yang, K. Cho, and J. Lin, 'Multi-stage document ranking with BERT,' CoRR , vol. abs/1910.14424, 2019. [276] Y. Zhou, T. Shen, X. Geng, C. Tao, C. Xu, G. Long, B. Jiao, and D. Jiang, 'Towards robust ranker for text retrieval,' ArXiv , vol. abs/2206.08063, 2022. [277] L. Gao, Z. Dai, and J. Callan, 'Rethink training of BERT rerankers in multi-stage retrieval pipeline,' in Advances in Information Retrieval - 43rd European Conference on IR Research, ECIR 2021, Virtual Event, March 28 - April 1, 2021, Proceedings, Part II , vol. 12657, 2021, pp. 280-286. [278] H. Zhuang, Z. Qin, R. Jagerman, K. Hui, J. Ma, J. Lu, J. Ni, X. Wang, and M. Bendersky, 'Rankt5: Fine-tuning T5 for text ranking with ranking losses,' CoRR , vol. abs/2210.10634, 2022. [Online]. Available: https://doi.org/10.48550/arXiv.2210.10634 [279] Y. Zhang, D. Long, G. Xu, and P. Xie, 'HLATR: enhance multi-stage text retrieval with hybrid list aware transformer reranking,' CoRR , vol. abs/2205.10569, 2022. [Online]. Available: https://doi.org/10.48550/arXiv.2205.10569 [280] L. Pang, J. Xu, Q. Ai, Y. Lan, X. Cheng, and J. Wen, 'Setrank: Learning a permutation-invariant ranking model for information retrieval,' Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval , 2020. [281] J. Huang, A. Sharma, S. Sun, L. Xia, D. Zhang, P. Pronin, J. Padmanabhan, G. Ottaviano, and L. Yang, 'Embedding-based retrieval in facebook search,' in KDD '20: The 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Virtual Event, CA, USA, August 23-27, 2020 , 2020, pp. 2553-2561. [282] A. Magnani, F. Liu, S. Chaidaroon, S. Yadav, P. R. Suram, A. Puthenputhussery, S. Chen, M. Xie, A. Kashi, T. Lee, and C. Liao, 'Semantic retrieval at walmart,' in KDD '22: The 28th ACMSIGKDDConference on Knowledge Discovery and Data Mining, Washington, DC, USA, August 14 - 18, 2022 , 2022, pp. 3495-3503. [283] S. MacAvaney, A. Yates, A. Cohan, and N. Goharian, 'CEDR: contextualized embeddings for document ranking,' in Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2019, Paris, France, July 21-25, 2019 , 2019, pp. 1101-1104. [284] Z. Ma, Z. Dou, W. Xu, X. Zhang, H. Jiang, Z. Cao, and J.-R. Wen, 'Pre-training for ad-hoc retrieval: Hyperlink is also you need,' in Proceedings of the 30th ACM International Conference on Information & Knowledge Management , 2021, pp. 1212-1221. [285] Z. Cao, T. Qin, T. Liu, M. Tsai, and H. Li, 'Learning to rank: from pairwise approach to listwise approach,' in Machine Learning, Proceedings of the Twenty-Fourth International Conference (ICML 2007), Corvallis, Oregon, USA, June 20-24, 2007 , ser. ACM International Conference Proceeding Series, vol. 227, 2007, pp. 129-136. [286] G. Izacard and E. Grave, 'Leveraging passage retrieval with generative models for open domain question answering,' in Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume , 2021, pp. 874-880. 40 [287] P. S. H. Lewis, E. Perez, A. Piktus, F. Petroni, V. Karpukhin, N. Goyal, H. K¨ uttler, M. Lewis, W. Yih, T. Rockt¨ aschel, S. Riedel, and D. Kiela, 'Retrieval-augmented generation for knowledgeintensive NLP tasks,' in Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual , 2020. [288] J. Wei, M. Bosma, V. Zhao, K. Guu, A. W. Yu, B. Lester, N. Du, A. M. Dai, and Q. V. Le, 'Finetuned language models are zeroshot learners,' ArXiv , vol. abs/2109.01652, 2022. [289] T. Chen, M. Zhang, J. Lu, M. Bendersky, and M.-A. Najork, 'Outof-domain semantics to the rescue! zero-shot hybrid retrieval models,' in Advances in Information Retrieval -44th European Conference on IR Research, ECIR 2022, Stavanger, Norway, April 1014, 2022, Proceedings, Part I , 2022. [290] H. Fun, S. Gandhi, and S. Ravi, 'Efficient retrieval optimized multi-task learning,' arXiv preprint arXiv:2104.10129 , 2021. [291] S. Zhuang and G. Zuccon, 'Dealing with typos for bert-based passage retrieval and ranking,' in Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing, EMNLP 2021, Virtual Event / Punta Cana, Dominican Republic, 7-11 November, 2021 , 2021, pp. 2836-2842. [292] G. Penha, A. Cˆ amara, and C. Hauff, 'Evaluating the robustness of retrieval pipelines with query variation generators,' in Advances in Information Retrieval - 44th European Conference on IR Research, ECIR 2022, Stavanger, Norway, April 10-14, 2022, Proceedings, Part I , ser. Lecture Notes in Computer Science, vol. 13185, 2022, pp. 397-412. [293] G. Sidiropoulos and E. Kanoulas, 'Analysing the robustness of dual encoders for dense retrieval against misspellings,' in SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 , 2022, pp. 2132-2136. [294] C. Carpineto and G. Romano, 'A survey of automatic query expansion in information retrieval,' Acm Computing Surveys (CSUR) , vol. 44, no. 1, pp. 1-50, 2012. [295] Y. Wang, L. Lyu, and A. Anand, 'BERT rankers are brittle: A study using adversarial document perturbations,' in ICTIR '22: The 2022 ACM SIGIR International Conference on the Theory of Information Retrieval, Madrid, Spain, July 11 - 12, 2022 , 2022, pp. 115-120. [296] J. Liu, Y. Kang, D. Tang, K. Song, C. Sun, X. Wang, W. Lu, and X. Liu, 'Order-disorder: Imitation adversarial attacks for blackbox neural ranking models,' CoRR , vol. abs/2209.06506, 2022. [297] D. Metzler, Y. Tay, D. Bahri, and M. Najork, 'Rethinking search: Making experts out of dilettantes,' CoRR , vol. abs/2105.02274, 2021. [298] Y. Tay, V. Q. Tran, M. Dehghani, J. Ni, D. Bahri, H. Mehta, Z. Qin, K. Hui, Z. Zhao, J. Gupta, T. Schuster, W. W. Cohen, and D. Metzler, 'Transformer memory as a differentiable search index,' ArXiv , vol. abs/2202.06991, 2022. [299] N. D. Cao, G. Izacard, S. Riedel, and F. Petroni, 'Autoregressive entity retrieval,' ArXiv , vol. abs/2010.00904, 2021. [300] H. Lee, S. Yang, H. Oh, and M. Seo, 'Generative retrieval for long sequences,' CoRR , vol. abs/2204.13596, 2022. [301] Y. Zhou, J. Yao, Z. Dou, L. Y. Wu, and J. rong Wen, 'Dynamicretriever: A pre-training model-based ir system with neither sparse nor dense index,' ArXiv , vol. abs/2203.00537, 2022. [302] M. Bevilacqua, G. Ottaviano, P. Lewis, W. tau Yih, S. Riedel, and F. Petroni, 'Autoregressive search engines: Generating substrings as document identifiers,' ArXiv , vol. abs/2204.10628, 2022. [303] Y. Wang, Y. Hou, H. Wang, Z. Miao, S. Wu, H. Sun, Q. Chen, Y. Xia, C. Chi, G. Zhao, Z. Liu, X. Xie, H. A. Sun, W. Deng, Q. Zhang, and M. Yang, 'A neural corpus indexer for document retrieval,' CoRR , vol. abs/2206.02743, 2022. [304] S. Zhuang, H. Ren, L. Shou, J. Pei, M. Gong, G. Zuccon, and D. Jiang, 'Bridging the gap between indexing and retrieval for differentiable search index with query generation,' CoRR , vol. abs/2206.10128, 2022. [305] Y. Zhou, J. Yao, Z. Dou, L. Wu, P. Zhang, and J. Wen, 'Ultron: An ultimate retriever on corpus with a model-based indexer,' CoRR , vol. abs/2208.09257, 2022. [306] J. Chen, R. Zhang, J. Guo, Y. Fan, and X. Cheng, 'GERE: generative evidence retrieval for fact verification,' in SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 , 2022, pp. 2184-2189. [307] J. Chen, R. Zhang, J. Guo, Y. Liu, Y. Fan, and X. Cheng, 'Corpusbrain: Pre-train a generative retrieval model for knowledgeintensive language tasks,' CoRR , vol. abs/2208.07652, 2022. [308] Y. Bengio, R. Ducharme, and P. Vincent, 'A neural probabilistic language model,' in Advances in Neural Information Processing Systems 13, Papers from Neural Information Processing Systems (NIPS) 2000, Denver, CO, USA , 2000, pp. 932-938. [309] T. Mikolov, I. Sutskever, K. Chen, G. S. Corrado, and J. Dean, 'Distributed representations of words and phrases and their compositionality,' in Advances in Neural Information Processing Systems 26: 27th Annual Conference on Neural Information Processing Systems 2013. Proceedings of a meeting held December 5-8, 2013, Lake Tahoe, Nevada, United States , 2013, pp. 3111-3119. [310] M. E. Peters, M. Neumann, M. Iyyer, M. Gardner, C. Clark, K. Lee, and L. Zettlemoyer, 'Deep contextualized word representations,' in Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers) , 2018, pp. 2227-2237. [311] A. Radford and K. Narasimhan, 'Improving language understanding by generative pre-training,' . , 2018. [312] F. Petroni, T. Rockt¨ aschel, S. Riedel, P. Lewis, A. Bakhtin, Y. Wu, and A. Miller, 'Language models as knowledge bases?' in Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) , 2019, pp. 24632473. [313] U. Khandelwal, O. Levy, D. Jurafsky, L. Zettlemoyer, and M. Lewis, 'Generalization through memorization: Nearest neighbor language models,' in 8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020 , 2020. [314] J. He, G. Neubig, and T. Berg-Kirkpatrick, 'Efficient nearest neighbor language models,' in EMNLP , 2021. [315] D. Yogatama, C. de Masson d'Autume, and L. Kong, 'Adaptive semiparametric language models,' Transactions of the Association for Computational Linguistics , vol. 9, pp. 362-373, 2021. [316] S. Borgeaud, A. Mensch, J. Hoffmann, T. Cai, E. Rutherford, K. Millican, G. van den Driessche, J.-B. Lespiau, B. Damoc, A. Clark, D. de Las Casas, A. Guy, J. Menick, R. Ring, T. W. Hennigan, S. Huang, L. Maggiore, C. Jones, A. Cassirer, A. Brock, M. Paganini, G. Irving, O. Vinyals, S. Osindero, K. Simonyan, J. W. Rae, E. Elsen, and L. Sifre, 'Improving language models by retrieving from trillions of tokens,' ArXiv , vol. abs/2112.04426, 2021. [317] M. J. Zhang and E. Choi, 'Situatedqa: Incorporating extralinguistic contexts into qa,' arXiv preprint arXiv:2109.06157 , 2021. [318] J. Herzig, T. M¨ uller, S. Krichene, and J. Eisenschlos, 'Open domain question answering over tables via dense retrieval,' in Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies , 2021, pp. 512-519. [319] B. Kosti´ c, J. Risch, and T. M¨ oller, 'Multi-modal retrieval of tables and texts using tri-encoder models,' in Proceedings of the 3rd Workshop on Machine Reading for Question Answering , 2021, pp. 82-91. [320] X. Zhang, X. Ma, P. Shi, and J. Lin, 'Mr. tydi: A multi-lingual benchmark for dense retrieval,' CoRR , vol. abs/2108.08787, 2021. [321] A. Asai, J. Kasai, J. Clark, K. Lee, E. Choi, and H. Hajishirzi, 'XOR QA: Cross-lingual open-retrieval question answering,' in Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies , 2021, pp. 547-564. [322] A. Asai, X. Yu, J. Kasai, and H. Hajishirzi, 'One question answering model for many languages with cross-lingual dense passage retrieval,' Advances in Neural Information Processing Systems , vol. 34, 2021. [323] T. Pires, E. Schlinger, and D. Garrette, 'How multilingual is multilingual BERT?' in Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics , 2019, pp. 4996-5001. [324] W. Zhong, J. Yang, and J. Lin, 'Evaluating token-level and passage-level dense retrieval models for math information retrieval,' CoRR , vol. abs/2203.11163, 2022. [325] S. Lu, N. Duan, H. Han, D. Guo, S. Hwang, and A. Svyatkovskiy, 'Reacc: A retrieval-augmented code completion framework,' in Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), ACL 2022, Dublin, Ireland, May 22-27, 2022 , 2022, pp. 6227-6240. 41 [326] M. Luo, A. Mitra, T. Gokhale, and C. Baral, 'Improving biomedical information retrieval with neural retrievers,' in Thirty-Sixth AAAI Conference on Artificial Intelligence, AAAI 2022, Thirty-Fourth Conference on Innovative Applications of Artificial Intelligence, IAAI 2022, The Twelveth Symposium on Educational Advances in Artificial Intelligence, EAAI 2022 Virtual Event, February 22 - March 1, 2022 , 2022, pp. 11 038-11 046. [327] K. Wang, Q. Yin, W. Wang, S. Wu, and L. Wang, 'A comprehensive survey on cross-modal retrieval,' CoRR , vol. abs/1607.06215, 2016. [328] A. Radford, J. W. Kim, C. Hallacy, A. Ramesh, G. Goh, S. Agarwal, G. Sastry, A. Askell, P. Mishkin, J. Clark, G. Krueger, and I. Sutskever, 'Learning transferable visual models from natural language supervision,' in Proceedings of the 38th International Conference on Machine Learning, ICML 2021, 18-24 July 2021, Virtual Event , ser. Proceedings of Machine Learning Research, vol. 139, 2021, pp. 8748-8763. [329] Y. Jiang, S. Bordia, Z. Zhong, C. Dognin, M. Singh, and M. Bansal, 'HoVer: A dataset for many-hop fact extraction and claim verification,' in Findings of the Association for Computational Linguistics: EMNLP 2020 , 2020, pp. 3441-3460. [330] A. Asai, K. Hashimoto, H. Hajishirzi, R. Socher, and C. Xiong, 'Learning to retrieve reasoning paths over wikipedia graph for question answering,' in 8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020 , 2020. [331] O. Khattab, C. Potts, and M. A. Zaharia, 'Baleen: Robust multihop reasoning at scale via condensed retrieval,' ArXiv , vol. abs/2101.00436, 2021. [332] W. Xiong, X. L. Li, S. Iyer, J. Du, P. Lewis, W. Y. Wang, Y. Mehdad, W.-t. Yih, S. Riedel, D. Kiela, and B. O˘ guz, 'Answering complex open-domain questions with multi-hop dense retrieval,' International Conference on Learning Representations , 2021. [333] Q. Zhang, S. Chen, D. Xu, Q. Cao, X. Chen, T. Cohn, and M. Fang, 'A survey for efficient open domain question answering,' arXiv preprint arXiv:2211.07886 , 2022. [334] M. Francis-Landau, G. Durrett, and D. Klein, 'Capturing semantic similarity for entity linking with convolutional neural networks,' in Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies , 2016, pp. 1256-1261. [335] N. Gupta, S. Singh, and D. Roth, 'Entity linking via joint encoding of types, descriptions, and context,' in Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing , 2017, pp. 2681-2690. [336] O.-E. Ganea and T. Hofmann, 'Deep joint entity disambiguation with local neural attention,' in Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing , 2017, pp. 2619-2629. [337] L. Logeswaran, M.-W. Chang, K. Lee, K. Toutanova, J. Devlin, and H. Lee, 'Zero-shot entity linking by reading entity descriptions,' in Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics , 2019, pp. 3449-3460. [338] D. Adiwardana, M.-T. Luong, D. R. So, J. Hall, N. Fiedel, R. Thoppilan, Z. Yang, A. Kulshreshtha, G. Nemade, Y. Lu, and Q. V. Le, 'Towards a human-like open-domain chatbot,' ArXiv , vol. abs/2001.09977, 2020. [339] S. Roller, E. Dinan, N. Goyal, D. Ju, M. Williamson, Y. Liu, J. Xu, M. Ott, E. M. Smith, Y.-L. Boureau, and J. Weston, 'Recipes for building an open-domain chatbot,' in Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume , 2021, pp. 300-325. [340] S. Bao, H. He, F. Wang, H. Wu, H. Wang, W. Wu, Z. Guo, Z. Liu, and X. Xu, 'PLATO-2: Towards building an open-domain chatbot via curriculum learning,' in Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021 , 2021, pp. 2513-2525. [341] R. Thoppilan, D. D. Freitas, J. Hall, N. M. Shazeer, A. Kulshreshtha, H.-T. Cheng, A. Jin, T. Bos, L. Baker, Y. Du, Y. Li, H. Lee, H. S. Zheng, A. Ghafouri, M. Menegali, Y. Huang, M. Krikun, D. Lepikhin, J. Qin, D. Chen, Y. Xu, Z. Chen, A. Roberts, M. Bosma, Y. Zhou, C.-C. Chang, I. A. Krivokon, W. J. Rusch, M. Pickett, K. S. Meier-Hellstern, M. R. Morris, T. Doshi, R. D. Santos, T. Duke, J. H. Søraker, B. Zevenbergen, V. Prabhakaran, M. Diaz, B. Hutchinson, K. Olson, A. Molina, E. Hoffman-John, J. Lee, L. Aroyo, R. Rajakumar, A. Butryna, M. Lamm, V. O. Kuzmina, J. Fenton, A. Cohen, R. Bernstein, R. Kurzweil, B. Aguera-Arcas, C. Cui, M. Croak, E. Chi, and Q. H. Le, 'Lamda: Language models for dialog applications,' ArXiv , vol. abs/2201.08239, 2022. [342] K. Shuster, S. Poff, M. Chen, D. Kiela, and J. Weston, 'Retrieval augmentation reduces hallucination in conversation,' in EMNLP , 2021. [343] X. Huang, H. He, S. Bao, F. Wang, H. Wu, and H. Wang, 'Platokag: Unsupervised knowledge-grounded conversation via joint modeling,' Proceedings of the 3rd Workshop on Natural Language Processing for Conversational AI , 2021. [344] M. Komeili, K. Shuster, and J. Weston, 'Internet-augmented dialogue generation,' ArXiv , vol. abs/2107.07566, 2021. [345] Y. Liu, G. Huang, J. Liu, W. Lu, S. Cheng, Y. Li, D. Shi, S. Wang, Z. Cheng, and D. Yin, 'Pre-trained language model for web-scale retrieval in baidu search,' Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining , 2021. [346] M. Fan, J. Guo, S. Zhu, S. Miao, M. Sun, and P. Li, 'MOBIUS: towards the next generation of query-ad matching in baidu's sponsored search,' in Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2019, Anchorage, AK, USA, August 4-8, 2019 , 2019, pp. 2509-2517. [347] S. Li, F. Lv, T. Jin, G. Lin, K. Yang, X. Zeng, X.-M. Wu, and Q. Ma, 'Embedding-based product retrieval in taobao search,' in Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining , 2021, p. 3181-3189. [348] Y. Liu, K. Rangadurai, Y. He, S. Malreddy, X. Gui, X. Liu, and F. Borisyuk, 'Que2search: Fast and accurate query and document understanding for search at facebook,' Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining , 2021. [349] T. Qin, W. Chen, and T. Liu, 'Sponsored search auctions: Recent advances and future directions,' ACM Trans. Intell. Syst. Technol. , vol. 5, no. 4, pp. 60:1-60:34, 2014. [350] S. Hofstatter, N. Craswell, B. Mitra, H. Zamani, and A. Hanbury, 'Are we there yet? a decision framework for replacing term based retrieval with dense retrieval systems,' ArXiv , vol. abs/2206.12993, 2022. [351] A. Gionis, P. Indyk, R. Motwani et al. , 'Similarity search in high dimensions via hashing,' in Vldb , vol. 99, no. 6, 1999, pp. 518-529.",
   "keywords_parsed": [
-    "None"
+    "Text retrieval",
+    "Dense retrieval",
+    "Pretrained language models"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Dense passage retrieval for open-domain question answering"
+    },
+    {
+      "ref_id": "b2",
+      "title": "The trec-8 question answering track report"
+    },
+    {
+      "ref_id": "b3",
+      "title": "An information retrieval approach to short text conversation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A survey on dialogue systems: Recent advances and new frontiers"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Learning dense representations for entity retrieval"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Scalable zero-shot entity linking with dense entity retrieval"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Learning to match using local and distributed representations of text for web search"
+    },
+    {
+      "ref_id": "b8",
+      "title": "The thesaurus approach to information retrieval"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Some experiments in the generation of word and document associations"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A vector space model for automatic indexing"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Term-weighting approaches in automatic text retrieval"
+    },
+    {
+      "ref_id": "b12",
+      "title": "An information-theoretic perspective of tf-idf measures"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Understanding inverse document frequency: on theoretical arguments for idf"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Inverted files for text search engines"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Inverted files versus signature files for text indexing"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Okapi at trec-3"
+    },
+    {
+      "ref_id": "b17",
+      "title": "The probabilistic relevance framework: BM25 and beyond"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Statistical Language Models for Information Retrieval"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Learning to rank for information retrieval"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Learning to rank for information retrieval and natural language processing"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A deep relevance matching model for ad-hoc retrieval"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Neural models for information retrieval"
+    },
+    {
+      "ref_id": "b24",
+      "title": "A deep look into neural ranking models for information retrieval"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Pretrained transformers for text ranking: Bert and beyond"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Pre-training methods in information retrieval"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b28",
+      "title": "BERT: Pretraining of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Semantic models for the first-stage retrieval: A comprehensive review"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Overview of the trec 2021 deep learning track"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Overview of the TREC 2020 deep learning track"
+    },
+    {
+      "ref_id": "b32",
+      "title": "MS MARCO: A human generated machine reading comprehension dataset"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Natural questions: A benchmark for question answering research"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Overview of the trec 2019 deep learning track"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Lecture notes on neural information retrieval"
+    },
+    {
+      "ref_id": "b36",
+      "title": "RocketQA: An optimized training approach to dense passage retrieval for open-domain question answering"
+    },
+    {
+      "ref_id": "b37",
+      "title": "PAIR: Leveraging passage-centric similarity relation for improving dense passage retrieval"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Rocketqav2: A joint training method for dense passage retrieval and passage re-ranking"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Reading Wikipedia to answer open-domain questions"
+    },
+    {
+      "ref_id": "b40",
+      "title": "A proposed conceptual framework for a representational approach to information retrieval"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Document ranking with a pretrained sequence-to-sequence model"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Trec 2019 news track overview"
+    },
+    {
+      "ref_id": "b44",
+      "title": "mmarco: A multilingual version of ms marco passage ranking dataset"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Trec-covid: rationale and structure of an information retrieval shared task for covid-19"
+    },
+    {
+      "ref_id": "b46",
+      "title": "A full-text learning to rank dataset for medical information retrieval"
+    },
+    {
+      "ref_id": "b47",
+      "title": "A data collection for evaluating the retrieval of related tweets to news articles"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Overview of touché 2020: Argument retrieval"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Retrieval of the best counterargument without prior topic knowledge"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Dbpedia-entity v2: A test collection for entity search"
+    },
+    {
+      "ref_id": "b51",
+      "title": "ORCAS: 20 million clicked query-document pairs for analyzing search"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Simple entitycentric questions challenge dense retrievers"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Trec 2021 deep learning track guidelines"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Dureader retrieval: A large-scale chinese benchmark for passage retrieval from web search engine"
+    },
+    {
+      "ref_id": "b55",
+      "title": "SQuAD: 100,000+ questions for machine comprehension of text"
+    },
+    {
+      "ref_id": "b56",
+      "title": "TriviaQA: A large scale distantly supervised challenge dataset for reading comprehension"
+    },
+    {
+      "ref_id": "b57",
+      "title": "HotpotQA: A dataset for diverse, explainable multi-hop question answering"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Semantic parsing on Freebase from question-answer pairs"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Modeling of the question answering task in the yodaqa system"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Www'18 open challenge: financial opinion mining and question answering"
+    },
+    {
+      "ref_id": "b61",
+      "title": "An overview of the bioasq large-scale biomedical semantic indexing and question answering competition"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Cqadupstack: A benchmark data set for community question-answering research"
+    },
+    {
+      "ref_id": "b63",
+      "title": "First quora dataset release: Question pairs"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Archivalqa: A large-scale benchmark dataset for open domain question answering over archival news collections"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Ccqa: A new web-scale question answering dataset for model pre-training"
+    },
+    {
+      "ref_id": "b66",
+      "title": "FEVER: a large-scale dataset for fact extraction and VERification"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Climate-fever: A dataset for verification of realworld climate claims"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Fact or fiction: Verifying scientific claims"
+    },
+    {
+      "ref_id": "b69",
+      "title": "SPECTER: Document-level representation learning using citation-informed transformers"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Ms marco: Benchmarking ranking models in the large-data regime"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Ms marco chameleons: Challenging the ms marco leaderboard with extremely obstinate queries"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Beir: A heterogenous benchmark for zero-shot evaluation of information retrieval models"
+    },
+    {
+      "ref_id": "b73",
+      "title": "KILT: a benchmark for knowledge intensive language tasks"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Shallow pooling for sparse labels"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Information retrieval evaluation"
+    },
+    {
+      "ref_id": "b76",
+      "title": "Novelty and diversity enhancement and evaluation in recommender systems and information retrieval"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Recall, precision and average precision"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Unsupervised corpus aware language model pre-training for dense passage retrieval"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Introduction to information retrieval"
+    },
+    {
+      "ref_id": "b80",
+      "title": "Test collection based evaluation of information retrieval systems"
+    },
+    {
+      "ref_id": "b81",
+      "title": "Tevatron: An efficient and flexible toolkit for dense retrieval"
+    },
+    {
+      "ref_id": "b82",
+      "title": "Pyserini: A Python toolkit for reproducible information retrieval research with sparse and dense representations"
+    },
+    {
+      "ref_id": "b83",
+      "title": "Anserini: Enabling the use of lucene for information retrieval research"
+    },
+    {
+      "ref_id": "b84",
+      "title": "Billion-scale similarity search with gpus"
+    },
+    {
+      "ref_id": "b85",
+      "title": "Asyncval: A toolkit for asynchronously validating dense retriever checkpoints during training"
+    },
+    {
+      "ref_id": "b86",
+      "title": "Openmatch: An open source library for neu-ir research"
+    },
+    {
+      "ref_id": "b87",
+      "title": "Matchzoo: A learning, practicing, and developing system for neural text matching"
+    },
+    {
+      "ref_id": "b88",
+      "title": "Pyterrier: Declarative experimentation in python from BM25 to dense retrieval"
+    },
+    {
+      "ref_id": "b89",
+      "title": "Sentence-BERT: Sentence embeddings using Siamese BERT-networks"
+    },
+    {
+      "ref_id": "b90",
+      "title": "Tsdae: Using transformer-based sequential denoising auto-encoder for unsupervised sentence embedding learning"
+    },
+    {
+      "ref_id": "b91",
+      "title": "Polyencoders: Architectures and pre-training strategies for fast and accurate multi-sentence scoring"
+    },
+    {
+      "ref_id": "b92",
+      "title": "Latent retrieval for weakly supervised open domain question answering"
+    },
+    {
+      "ref_id": "b93",
+      "title": "Pretraining tasks for embedding-based large-scale retrieval"
+    },
+    {
+      "ref_id": "b94",
+      "title": "REALM: retrieval-augmented language model pre-training"
+    },
+    {
+      "ref_id": "b95",
+      "title": "Colbert: Efficient and effective passage search via contextualized late interaction over BERT"
+    },
+    {
+      "ref_id": "b96",
+      "title": "Sparse, dense, and attentional representations for text retrieval"
+    },
+    {
+      "ref_id": "b97",
+      "title": "Repbert: Contextualized text embeddings for first-stage retrieval"
+    },
+    {
+      "ref_id": "b98",
+      "title": "Approximate nearest neighbor negative contrastive learning for dense text retrieval"
+    },
+    {
+      "ref_id": "b99",
+      "title": "Embedding-based zero-shot retrieval through query generation"
+    },
+    {
+      "ref_id": "b100",
+      "title": "Neural retrieval for question answering with cross-attention supervised data augmentation"
+    },
+    {
+      "ref_id": "b101",
+      "title": "Improving efficient neural ranking models with cross-architecture knowledge distillation"
+    },
+    {
+      "ref_id": "b102",
+      "title": "Augmented SBERT: Data augmentation method for improving biencoders for pairwise sentence scoring tasks"
+    },
+    {
+      "ref_id": "b103",
+      "title": "Distilling dense representations for ranking using tightly-coupled teachers"
+    },
+    {
+      "ref_id": "b104",
+      "title": "Multi-stage training with improved negative contrast for neural passage retrieval"
+    },
+    {
+      "ref_id": "b105",
+      "title": "Distilling knowledge from reader to retriever for question answering"
+    },
+    {
+      "ref_id": "b106",
+      "title": "Learning dense representations of phrases at scale"
+    },
+    {
+      "ref_id": "b107",
+      "title": "Unikqa: Unified representations of structured and unstructured knowledge for open-domain question answering"
+    },
+    {
+      "ref_id": "b108",
+      "title": "End-to-end training of neural retrievers for open-domain question answering"
+    },
+    {
+      "ref_id": "b109",
+      "title": "Scaling deep contrastive learning batch size under memory limited setup"
+    },
+    {
+      "ref_id": "b110",
+      "title": "Efficiently teaching an effective dense retriever with balanced topic aware sampling"
+    },
+    {
+      "ref_id": "b111",
+      "title": "Optimizing dense retrieval model training with hard negatives"
+    },
+    {
+      "ref_id": "b112",
+      "title": "Condenser: a pre-training architecture for dense retrieval"
+    },
+    {
+      "ref_id": "b113",
+      "title": "Improving document representations by generating pseudo query embeddings for dense retrieval"
+    },
+    {
+      "ref_id": "b114",
+      "title": "Learning robust dense retrieval models from incomplete relevance labels"
+    },
+    {
+      "ref_id": "b115",
+      "title": "More robust dense retrieval with contrastive dual learning"
+    },
+    {
+      "ref_id": "b116",
+      "title": "Domainmatched pre-training tasks for dense retrieval"
+    },
+    {
+      "ref_id": "b117",
+      "title": "Jointly optimizing query encoder and product quantization to improve retrieval performance"
+    },
+    {
+      "ref_id": "b118",
+      "title": "Sentence-t5: Scalable sentence encoders from pretrained text-to-text models"
+    },
+    {
+      "ref_id": "b119",
+      "title": "Improving query representations for dense retrieval with pseudo relevance feedback"
+    },
+    {
+      "ref_id": "b120",
+      "title": "Transencoder: Unsupervised sentence-pair modelling through self-and mutual-distillations"
+    },
+    {
+      "ref_id": "b121",
+      "title": "Adversarial retriever-ranker for dense text retrieval"
+    },
+    {
+      "ref_id": "b122",
+      "title": "Learning discrete representations via constrained clustering for effective and efficient dense retrieval"
+    },
+    {
+      "ref_id": "b123",
+      "title": "Salient phrase aware dense retrieval: Can a dense retriever imitate a sparse one?"
+    },
+    {
+      "ref_id": "b124",
+      "title": "Less is more: Pretrain a strong siamese encoder for dense text retrieval using a weak decoder"
+    },
+    {
+      "ref_id": "b125",
+      "title": "Colbertv2: Effective and efficient retrieval via lightweight late interaction"
+    },
+    {
+      "ref_id": "b126",
+      "title": "Gpl: Generative pseudo labeling for unsupervised domain adaptation of dense retrieval"
+    },
+    {
+      "ref_id": "b127",
+      "title": "Learning to retrieve passages without supervision"
+    },
+    {
+      "ref_id": "b128",
+      "title": "Boosted dense retriever"
+    },
+    {
+      "ref_id": "b129",
+      "title": "Large dual encoders are generalizable retrievers"
+    },
+    {
+      "ref_id": "b130",
+      "title": "Towards unsupervised dense information retrieval with contrastive learning"
+    },
+    {
+      "ref_id": "b131",
+      "title": "Uniretriever: Towards learning the unified embedding based retriever in bing sponsored search"
+    },
+    {
+      "ref_id": "b132",
+      "title": "Laprador: Unsupervised pretrained dense retriever for zero-shot text retrieval"
+    },
+    {
+      "ref_id": "b133",
+      "title": "Hyperlink-induced pre-training for passage retrieval in open-domain question answering"
+    },
+    {
+      "ref_id": "b134",
+      "title": "Augmenting document representations for dense retrieval with interpolation and perturbation"
+    },
+    {
+      "ref_id": "b135",
+      "title": "Multiview document representation learning for open-domain dense retrieval"
+    },
+    {
+      "ref_id": "b136",
+      "title": "Introducing neural bag of whole-words with colberter: Contextualized late interactions using enhanced reduction"
+    },
+    {
+      "ref_id": "b137",
+      "title": "Characterbert and self-teaching for improving the robustness of dense retrievers on queries with typos"
+    },
+    {
+      "ref_id": "b138",
+      "title": "Gnnencoder: Learning a dual-encoder architecture via graph neural networks for passage retrieval"
+    },
+    {
+      "ref_id": "b139",
+      "title": "Pre-train a discriminative text encoder for dense retrieval via contrastive span prediction"
+    },
+    {
+      "ref_id": "b140",
+      "title": "Curriculum learning for dense retrieval distillation"
+    },
+    {
+      "ref_id": "b141",
+      "title": "Ernie-search: Bridging cross-encoder with dual-encoder via self on-the-fly distillation for dense passage retrieval"
+    },
+    {
+      "ref_id": "b142",
+      "title": "Retromae: Pre-training retrievaloriented transformers via masked auto-encoder"
+    },
+    {
+      "ref_id": "b143",
+      "title": "Sentence-aware contrastive learning for open-domain passage retrieval"
+    },
+    {
+      "ref_id": "b144",
+      "title": "Questions are all you need to train a dense passage retriever"
+    },
+    {
+      "ref_id": "b145",
+      "title": "Simlm: Pre-training with representation bottleneck for dense passage retrieval"
+    },
+    {
+      "ref_id": "b146",
+      "title": "Towards robust dense retrieval via local ranking alignment"
+    },
+    {
+      "ref_id": "b147",
+      "title": "Aggretriever: A simple approach to aggregate textual representation for robust dense passage retrieval"
+    },
+    {
+      "ref_id": "b148",
+      "title": "Contextual mask auto-encoder for dense passage retrieval"
+    },
+    {
+      "ref_id": "b149",
+      "title": "A contrastive pretraining approach to learn discriminative autoencoder for dense retrieval"
+    },
+    {
+      "ref_id": "b150",
+      "title": "Dptdr: Deep prompt tuning for dense passage retrieval"
+    },
+    {
+      "ref_id": "b151",
+      "title": "Led: Lexicon-enlightened dense retriever for large-scale retrieval"
+    },
+    {
+      "ref_id": "b152",
+      "title": "Lexmae: Lexicon-bottlenecked pretraining for large-scale retrieval"
+    },
+    {
+      "ref_id": "b153",
+      "title": "Promptagator: Few-shot dense retrieval from 8 examples"
+    },
+    {
+      "ref_id": "b154",
+      "title": "Prod: Progressive distillation for dense retrieval"
+    },
+    {
+      "ref_id": "b155",
+      "title": "Task-aware specialization for efficient and robust dense retrieval for open-domain question answering"
+    },
+    {
+      "ref_id": "b156",
+      "title": "Long short-term memory"
+    },
+    {
+      "ref_id": "b157",
+      "title": "On the properties of neural machine translation: Encoder-decoder approaches"
+    },
+    {
+      "ref_id": "b158",
+      "title": "A survey of transformers"
+    },
+    {
+      "ref_id": "b159",
+      "title": "Efficient transformers: A survey"
+    },
+    {
+      "ref_id": "b160",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b161",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b162",
+      "title": "Pretrain, prompt, and predict: A systematic survey of prompting methods in natural language processing"
+    },
+    {
+      "ref_id": "b163",
+      "title": "Universal text representation from bert: An empirical study"
+    },
+    {
+      "ref_id": "b164",
+      "title": "Distilbert, a distilled version of bert: smaller, faster, cheaper and lighter"
+    },
+    {
+      "ref_id": "b165",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b166",
+      "title": "On the opportunities and risks of foundation models"
+    },
+    {
+      "ref_id": "b167",
+      "title": "Context-aware term weighting for first stage passage retrieval"
+    },
+    {
+      "ref_id": "b168",
+      "title": "Context-aware document term weighting for ad-hoc search"
+    },
+    {
+      "ref_id": "b169",
+      "title": "COIL: Revisit exact lexical match in information retrieval with contextualized inverted list"
+    },
+    {
+      "ref_id": "b170",
+      "title": "A few brief notes on deepimpact, coil, and a conceptual framework for information retrieval techniques"
+    },
+    {
+      "ref_id": "b171",
+      "title": "From doc2query to doctttttquery"
+    },
+    {
+      "ref_id": "b172",
+      "title": "Splade: Sparse lexical and expansion model for first stage ranking"
+    },
+    {
+      "ref_id": "b173",
+      "title": "Splade v2: Sparse lexical and expansion model for information retrieval"
+    },
+    {
+      "ref_id": "b174",
+      "title": "Understanding the behaviors of bert in ranking"
+    },
+    {
+      "ref_id": "b175",
+      "title": "End-to-end neural ad-hoc ranking with kernel pooling"
+    },
+    {
+      "ref_id": "b176",
+      "title": "ERNIE 2.0: A continual pre-training framework for language understanding"
+    },
+    {
+      "ref_id": "b177",
+      "title": "Sentence-BERT: Sentence embeddings using Siamese BERT-networks"
+    },
+    {
+      "ref_id": "b178",
+      "title": "SentEval: An evaluation toolkit for universal sentence representations"
+    },
+    {
+      "ref_id": "b179",
+      "title": "Multi-aspect dense retrieval"
+    },
+    {
+      "ref_id": "b180",
+      "title": "Real-time open-domain question answering with dense-sparse phrase index"
+    },
+    {
+      "ref_id": "b181",
+      "title": "Phrase retrieval learns passage retrieval, too"
+    },
+    {
+      "ref_id": "b182",
+      "title": "Phrase-indexed question answering: A new challenge for scalable document comprehension"
+    },
+    {
+      "ref_id": "b183",
+      "title": "Dense hierarchical retrieval for open-domain question answering"
+    },
+    {
+      "ref_id": "b184",
+      "title": "Multi-task dense retrieval via model uncertainty fusion for open-domain question answering"
+    },
+    {
+      "ref_id": "b185",
+      "title": "Query embedding pruning for dense retrieval"
+    },
+    {
+      "ref_id": "b186",
+      "title": "Pseudo relevance feedback with deep language models and dense retrievers: Successes and pitfalls"
+    },
+    {
+      "ref_id": "b187",
+      "title": "Pseudorelevance feedback for multiple representation dense retrieval"
+    },
+    {
+      "ref_id": "b188",
+      "title": "Improving query representations for dense retrieval with pseudo relevance feedback: A reproducibility study"
+    },
+    {
+      "ref_id": "b189",
+      "title": "Implicit feedback for dense passage retrieval: A counterfactual approach"
+    },
+    {
+      "ref_id": "b190",
+      "title": "Pseudorelevance feedback for multiple representation dense retrieval"
+    },
+    {
+      "ref_id": "b191",
+      "title": "Parameter-efficient prompt tuning makes generalized and calibrated neural text retrievers"
+    },
+    {
+      "ref_id": "b192",
+      "title": "P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks"
+    },
+    {
+      "ref_id": "b193",
+      "title": "Passage re-ranking with BERT"
+    },
+    {
+      "ref_id": "b194",
+      "title": "Challenges in generalization in open domain question answering"
+    },
+    {
+      "ref_id": "b195",
+      "title": "The curse of dense low-dimensional information retrieval for large index sizes"
+    },
+    {
+      "ref_id": "b196",
+      "title": "A formal study of information retrieval heuristics"
+    },
+    {
+      "ref_id": "b197",
+      "title": "An exploration of axiomatic approaches to information retrieval"
+    },
+    {
+      "ref_id": "b198",
+      "title": "Semantic term matching in axiomatic approaches to information retrieval"
+    },
+    {
+      "ref_id": "b199",
+      "title": "An axiomatic approach to regularizing neural ranking models"
+    },
+    {
+      "ref_id": "b200",
+      "title": "Towards axiomatic explanations for neural ranking models"
+    },
+    {
+      "ref_id": "b201",
+      "title": "Diagnosing BERT with retrieval heuristics"
+    },
+    {
+      "ref_id": "b202",
+      "title": "Analyzing the behavior of neural ir models"
+    },
+    {
+      "ref_id": "b203",
+      "title": "A white box analysis of colbert"
+    },
+    {
+      "ref_id": "b204",
+      "title": "Neural passage retrieval with improved negative contrast"
+    },
+    {
+      "ref_id": "b205",
+      "title": "Predicting efficiency/effectiveness trade-offs for dense vs. sparse retrieval strategy selection"
+    },
+    {
+      "ref_id": "b206",
+      "title": "Densifying sparse representations for passage retrieval by representational slicing"
+    },
+    {
+      "ref_id": "b207",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b208",
+      "title": "HEARTS: multitask fusion of dense retrieval and non-autoregressive generation for sponsored search"
+    },
+    {
+      "ref_id": "b209",
+      "title": "Cross momentum contrastive learning for open-domain question answering"
+    },
+    {
+      "ref_id": "b210",
+      "title": "Learning diverse document representations with deep query interactions for dense retrieval"
+    },
+    {
+      "ref_id": "b211",
+      "title": "B-PROP: bootstrapped pre-training with representative words prediction for ad-hoc retrieval"
+    },
+    {
+      "ref_id": "b212",
+      "title": "Efficient natural language response suggestion for smart reply"
+    },
+    {
+      "ref_id": "b213",
+      "title": "On relevance, probabilistic indexing and information retrieval"
+    },
+    {
+      "ref_id": "b214",
+      "title": "Hard negatives or false negatives: Correcting pooling bias in training neural ranking models"
+    },
+    {
+      "ref_id": "b215",
+      "title": "Debiased contrastive learning of unsupervised sentence representations"
+    },
+    {
+      "ref_id": "b216",
+      "title": "Simple ambiguous negatives sampling for dense text retrieval"
+    },
+    {
+      "ref_id": "b217",
+      "title": "word2vec explained: deriving mikolov et al.'s negative-sampling word-embedding method"
+    },
+    {
+      "ref_id": "b218",
+      "title": "Understanding negative sampling in graph representation learning"
+    },
+    {
+      "ref_id": "b219",
+      "title": "Multi-task retrieval for knowledgeintensive tasks"
+    },
+    {
+      "ref_id": "b220",
+      "title": "A thorough examination on zero-shot dense retrieval"
+    },
+    {
+      "ref_id": "b221",
+      "title": "Evaluating extrapolation performance of dense retrieval"
+    },
+    {
+      "ref_id": "b222",
+      "title": "Low-resource dense retrieval for open-domain question answering: A comprehensive survey"
+    },
+    {
+      "ref_id": "b223",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b224",
+      "title": "Few-shot conversational dense retrieval"
+    },
+    {
+      "ref_id": "b225",
+      "title": "Progressive distillation by following the footsteps of the teacher"
+    },
+    {
+      "ref_id": "b226",
+      "title": "Understanding knowledge distillation in non-autoregressive machine translation"
+    },
+    {
+      "ref_id": "b227",
+      "title": "Synthetic QA corpora generation with roundtrip consistency"
+    },
+    {
+      "ref_id": "b228",
+      "title": "Paq: 65 million probably-asked questions and what you can do with them"
+    },
+    {
+      "ref_id": "b229",
+      "title": "Simcse: Simple contrastive learning of sentence embeddings"
+    },
+    {
+      "ref_id": "b230",
+      "title": "ConSERT: A contrastive framework for self-supervised sentence representation transfer"
+    },
+    {
+      "ref_id": "b231",
+      "title": "B-PROP: bootstrapped pre-training with representative words prediction for ad-hoc retrieval"
+    },
+    {
+      "ref_id": "b232",
+      "title": "End-to-end synthetic data generation for domain adaptation of question answering systems"
+    },
+    {
+      "ref_id": "b233",
+      "title": "BART: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension"
+    },
+    {
+      "ref_id": "b234",
+      "title": "Towards robust neural retrieval models with synthetic pre-training"
+    },
+    {
+      "ref_id": "b235",
+      "title": "Zero-shot neural passage retrieval via domain-targeted synthetic question generation"
+    },
+    {
+      "ref_id": "b236",
+      "title": "Simple and efficient ways to improve realm"
+    },
+    {
+      "ref_id": "b237",
+      "title": "Semi-supervised recursive autoencoders for predicting sentiment distributions"
+    },
+    {
+      "ref_id": "b238",
+      "title": "Dynamic pooling and unfolding recursive autoencoders for paraphrase detection"
+    },
+    {
+      "ref_id": "b239",
+      "title": "A hierarchical neural autoencoder for paragraphs and documents"
+    },
+    {
+      "ref_id": "b240",
+      "title": "Semi-supervised sequence learning"
+    },
+    {
+      "ref_id": "b241",
+      "title": "Deep learning and the information bottleneck principle"
+    },
+    {
+      "ref_id": "b242",
+      "title": "Masked autoencoders as the unified learners for pre-trained sentence representation"
+    },
+    {
+      "ref_id": "b243",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b244",
+      "title": "Momentum contrast for unsupervised visual representation learning"
+    },
+    {
+      "ref_id": "b245",
+      "title": "Text and code embeddings by contrastive pre-training"
+    },
+    {
+      "ref_id": "b246",
+      "title": "Paddlepaddle: An opensource deep learning platform from industrial practice"
+    },
+    {
+      "ref_id": "b247",
+      "title": "An inverted index implementation"
+    },
+    {
+      "ref_id": "b248",
+      "title": "Asymmetric LSH (ALSH) for sublinear time maximum inner product search (MIPS)"
+    },
+    {
+      "ref_id": "b249",
+      "title": "Survey of nearest neighbor techniques"
+    },
+    {
+      "ref_id": "b250",
+      "title": "Fast approximate nearest-neighbor search with k-nearest neighbor graph"
+    },
+    {
+      "ref_id": "b251",
+      "title": "Approximate nearest neighbor search on high dimensional data-experiments, analyses, and improvement"
+    },
+    {
+      "ref_id": "b252",
+      "title": "Annbenchmarks: A benchmarking tool for approximate nearest neighbor algorithms"
+    },
+    {
+      "ref_id": "b253",
+      "title": "Results of the neurips'21 challenge on billion-scale approximate nearest neighbor search"
+    },
+    {
+      "ref_id": "b254",
+      "title": "Approximate nearest neighbors: towards removing the curse of dimensionality"
+    },
+    {
+      "ref_id": "b255",
+      "title": "A survey on learning to hash"
+    },
+    {
+      "ref_id": "b256",
+      "title": "Video google: a text retrieval approach to object matching in videos"
+    },
+    {
+      "ref_id": "b257",
+      "title": "Spann: Highly-efficient billion-scale approximate nearest neighbor search"
+    },
+    {
+      "ref_id": "b258",
+      "title": "Query-driven iterated neighborhood graph search for large scale indexing"
+    },
+    {
+      "ref_id": "b259",
+      "title": "Approximate nearest neighbor algorithm based on navigable small world graphs"
+    },
+    {
+      "ref_id": "b260",
+      "title": "The small-world phenomenon: an algorithmic perspective"
+    },
+    {
+      "ref_id": "b261",
+      "title": "Product quantization for nearest neighbor search"
+    },
+    {
+      "ref_id": "b262",
+      "title": "Optimized product quantization for approximate nearest neighbor search"
+    },
+    {
+      "ref_id": "b263",
+      "title": "Joint learning of deep retrieval model and product quantization based embedding index"
+    },
+    {
+      "ref_id": "b264",
+      "title": "Efficient passage retrieval with hashing for open-domain question answering"
+    },
+    {
+      "ref_id": "b265",
+      "title": "Interpreting dense retrieval as mixture of topics"
+    },
+    {
+      "ref_id": "b266",
+      "title": "Efficient and robust approximate nearest neighbor search using hierarchical navigable small world graphs"
+    },
+    {
+      "ref_id": "b267",
+      "title": "SPTAG: A library for fast approximate nearest neighbor search"
+    },
+    {
+      "ref_id": "b268",
+      "title": "Accelerating large-scale inference with anisotropic vector quantization"
+    },
+    {
+      "ref_id": "b269",
+      "title": "The web is your oyster - knowledge-intensive NLP against a very large web corpus"
+    },
+    {
+      "ref_id": "b270",
+      "title": "Results of the neurips'21 challenge on billion-scale approximate nearest neighbor search"
+    },
+    {
+      "ref_id": "b271",
+      "title": "Modern Information Retrieval -the concepts and technology behind search, Second edition"
+    },
+    {
+      "ref_id": "b272",
+      "title": "Understanding the behaviors of BERT in ranking"
+    },
+    {
+      "ref_id": "b273",
+      "title": "Multi-passage BERT: A globally normalized BERT model for open-domain question answering"
+    },
+    {
+      "ref_id": "b274",
+      "title": "IDST at TREC 2019 deep learning track: Deep cascade ranking with generation-based document expansion and pre-trained language modeling"
+    },
+    {
+      "ref_id": "b275",
+      "title": "Multi-stage document ranking with BERT"
+    },
+    {
+      "ref_id": "b276",
+      "title": "Towards robust ranker for text retrieval"
+    },
+    {
+      "ref_id": "b277",
+      "title": "Rethink training of BERT rerankers in multi-stage retrieval pipeline"
+    },
+    {
+      "ref_id": "b278",
+      "title": "Rankt5: Fine-tuning T5 for text ranking with ranking losses"
+    },
+    {
+      "ref_id": "b279",
+      "title": "HLATR: enhance multi-stage text retrieval with hybrid list aware transformer reranking"
+    },
+    {
+      "ref_id": "b280",
+      "title": "Setrank: Learning a permutation-invariant ranking model for information retrieval"
+    },
+    {
+      "ref_id": "b281",
+      "title": "Embedding-based retrieval in facebook search"
+    },
+    {
+      "ref_id": "b282",
+      "title": "Semantic retrieval at walmart"
+    },
+    {
+      "ref_id": "b283",
+      "title": "CEDR: contextualized embeddings for document ranking"
+    },
+    {
+      "ref_id": "b284",
+      "title": "Pre-training for ad-hoc retrieval: Hyperlink is also you need"
+    },
+    {
+      "ref_id": "b285",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b286",
+      "title": "Leveraging passage retrieval with generative models for open domain question answering"
+    },
+    {
+      "ref_id": "b287",
+      "title": "Retrieval-augmented generation for knowledge-intensive NLP tasks"
+    },
+    {
+      "ref_id": "b288",
+      "title": "Finetuned language models are zero-shot learners"
+    },
+    {
+      "ref_id": "b289",
+      "title": "Out-of-domain semantics to the rescue! zero-shot hybrid retrieval models"
+    },
+    {
+      "ref_id": "b290",
+      "title": "Efficient retrieval optimized multi-task learning"
+    },
+    {
+      "ref_id": "b291",
+      "title": "Dealing with typos for bert-based passage retrieval and ranking"
+    },
+    {
+      "ref_id": "b292",
+      "title": "Evaluating the robustness of retrieval pipelines with query variation generators"
+    },
+    {
+      "ref_id": "b293",
+      "title": "Analysing the robustness of dual encoders for dense retrieval against misspellings"
+    },
+    {
+      "ref_id": "b294",
+      "title": "A survey of automatic query expansion in information retrieval"
+    },
+    {
+      "ref_id": "b295",
+      "title": "BERT rankers are brittle: A study using adversarial document perturbations"
+    },
+    {
+      "ref_id": "b296",
+      "title": "Order-disorder: Imitation adversarial attacks for blackbox neural ranking models"
+    },
+    {
+      "ref_id": "b297",
+      "title": "Rethinking search: Making experts out of dilettantes"
+    },
+    {
+      "ref_id": "b298",
+      "title": "Transformer memory as a differentiable search index"
+    },
+    {
+      "ref_id": "b299",
+      "title": "Autoregressive entity retrieval"
+    },
+    {
+      "ref_id": "b300",
+      "title": "Generative retrieval for long sequences"
+    },
+    {
+      "ref_id": "b301",
+      "title": "Dynamicretriever: A pre-training model-based ir system with neither sparse nor dense index"
+    },
+    {
+      "ref_id": "b302",
+      "title": "Autoregressive search engines: Generating substrings as document identifiers"
+    },
+    {
+      "ref_id": "b303",
+      "title": "A neural corpus indexer for document retrieval"
+    },
+    {
+      "ref_id": "b304",
+      "title": "Bridging the gap between indexing and retrieval for differentiable search index with query generation"
+    },
+    {
+      "ref_id": "b305",
+      "title": "Ultron: An ultimate retriever on corpus with a model-based indexer"
+    },
+    {
+      "ref_id": "b306",
+      "title": "GERE: generative evidence retrieval for fact verification"
+    },
+    {
+      "ref_id": "b307",
+      "title": "Corpusbrain: Pre-train a generative retrieval model for knowledge-intensive language tasks"
+    },
+    {
+      "ref_id": "b308",
+      "title": "A neural probabilistic language model"
+    },
+    {
+      "ref_id": "b309",
+      "title": "Distributed representations of words and phrases and their compositionality"
+    },
+    {
+      "ref_id": "b310",
+      "title": "Deep contextualized word representations"
+    },
+    {
+      "ref_id": "b311",
+      "title": "Improving language understanding by generative pre-training"
+    },
+    {
+      "ref_id": "b312",
+      "title": "Language models as knowledge bases?"
+    },
+    {
+      "ref_id": "b313",
+      "title": "Generalization through memorization: Nearest neighbor language models"
+    },
+    {
+      "ref_id": "b314",
+      "title": "Efficient nearest neighbor language models"
+    },
+    {
+      "ref_id": "b315",
+      "title": "Adaptive semiparametric language models"
+    },
+    {
+      "ref_id": "b316",
+      "title": "Improving language models by retrieving from trillions of tokens"
+    },
+    {
+      "ref_id": "b317",
+      "title": "Situatedqa: Incorporating extralinguistic contexts into qa"
+    },
+    {
+      "ref_id": "b318",
+      "title": "Open domain question answering over tables via dense retrieval"
+    },
+    {
+      "ref_id": "b319",
+      "title": "Multi-modal retrieval of tables and texts using tri-encoder models"
+    },
+    {
+      "ref_id": "b320",
+      "title": "Mr. tydi: A multi-lingual benchmark for dense retrieval"
+    },
+    {
+      "ref_id": "b321",
+      "title": "XOR QA: Cross-lingual open-retrieval question answering"
+    },
+    {
+      "ref_id": "b322",
+      "title": "One question answering model for many languages with cross-lingual dense passage retrieval"
+    },
+    {
+      "ref_id": "b323",
+      "title": "How multilingual is multilingual BERT?"
+    },
+    {
+      "ref_id": "b324",
+      "title": "Evaluating token-level and passage-level dense retrieval models for math information retrieval"
+    },
+    {
+      "ref_id": "b325",
+      "title": "Reacc: A retrieval-augmented code completion framework"
+    },
+    {
+      "ref_id": "b326",
+      "title": "Improving biomedical information retrieval with neural retrievers"
+    },
+    {
+      "ref_id": "b327",
+      "title": "A comprehensive survey on cross-modal retrieval"
+    },
+    {
+      "ref_id": "b328",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b329",
+      "title": "HoVer: A dataset for many-hop fact extraction and claim verification"
+    },
+    {
+      "ref_id": "b330",
+      "title": "Learning to retrieve reasoning paths over wikipedia graph for question answering"
+    },
+    {
+      "ref_id": "b331",
+      "title": "Baleen: Robust multihop reasoning at scale via condensed retrieval"
+    },
+    {
+      "ref_id": "b332",
+      "title": "Answering complex open-domain questions with multi-hop dense retrieval"
+    },
+    {
+      "ref_id": "b333",
+      "title": "A survey for efficient open domain question answering"
+    },
+    {
+      "ref_id": "b334",
+      "title": "Capturing semantic similarity for entity linking with convolutional neural networks"
+    },
+    {
+      "ref_id": "b335",
+      "title": "Entity linking via joint encoding of types, descriptions, and context"
+    },
+    {
+      "ref_id": "b336",
+      "title": "Deep joint entity disambiguation with local neural attention"
+    },
+    {
+      "ref_id": "b337",
+      "title": "Zero-shot entity linking by reading entity descriptions"
+    },
+    {
+      "ref_id": "b338",
+      "title": "Towards a human-like open-domain chatbot"
+    },
+    {
+      "ref_id": "b339",
+      "title": "Recipes for building an open-domain chatbot"
+    },
+    {
+      "ref_id": "b340",
+      "title": "PLATO-2: Towards building an open-domain chatbot via curriculum learning"
+    },
+    {
+      "ref_id": "b341",
+      "title": "Lamda: Language models for dialog applications"
+    },
+    {
+      "ref_id": "b342",
+      "title": "Retrieval augmentation reduces hallucination in conversation"
+    },
+    {
+      "ref_id": "b343",
+      "title": "Unsupervised knowledge-grounded conversation via joint modeling"
+    },
+    {
+      "ref_id": "b344",
+      "title": "Internet-augmented dialogue generation"
+    },
+    {
+      "ref_id": "b345",
+      "title": "Pre-trained language model for web-scale retrieval in baidu search"
+    },
+    {
+      "ref_id": "b346",
+      "title": "MOBIUS: towards the next generation of query-ad matching in baidu's sponsored search"
+    },
+    {
+      "ref_id": "b347",
+      "title": "Embedding-based product retrieval in taobao search"
+    },
+    {
+      "ref_id": "b348",
+      "title": "Que2search: Fast and accurate query and document understanding for search at facebook"
+    },
+    {
+      "ref_id": "b349",
+      "title": "Sponsored search auctions: Recent advances and future directions"
+    },
+    {
+      "ref_id": "b350",
+      "title": "Are we there yet? a decision framework for replacing term based retrieval with dense retrieval systems"
+    },
+    {
+      "ref_id": "b351",
+      "title": "Similarity search in high dimensions via hashing"
+    }
   ]
 }

@@ -24,32 +24,86 @@
   "B PRESENTER PROFILES": "Huimu Wang is a researcher in the Department of Search and Recommendation at JD.com Beijing. He received his doctor degree in Institute of Automation, Chinese Academy of Sciences. His research focuses on reinforcement learning and natural language processing. Mingming Li is a researcher in the Department of Search and Recommendation at JD.com Beijing. He received his doctor degree in Institute of Information Engineering, Chinese Academy of Sciences. His research focuses on information retrieval.",
   "keywords_parsed": [
     "Re-ranking",
-    " Mutual-information",
-    " Diversity",
-    " E-commerce Search ∗ Both authors contributed equally to this research. † Corresponding author. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. SIGIR '24",
-    " July 14-18",
-    " 2024",
-    " Washington",
-    " DC",
-    " USA © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0431-4/24/07 https://doi.org/10.1145/3626772.3661359 Huimu Wang",
-    " Mingming Li",
-    " Dadong Miao",
-    " Songlin Wang",
-    " Guoyu Tang",
-    " Lin Liu",
-    " Sulong Xu",
-    " and Jinghe Hu. 2024. A Preference-oriented Diversity Model Based on Mutual-information in Re-ranking for E-commerce Search. In Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '24)",
-    " July 14-18",
-    " 2024",
-    " Washington",
-    " DC",
-    " USA. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 5 pages. https: //doi.org/10.1145/3626772.3661359"
+    "Mutual-information",
+    "Diversity",
+    "E-commerce Search"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Seq2slate: Re-ranking and slate optimization with rnns"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The use of MMR, diversity-based reranking for reordering documents and producing summaries"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Fast greedy map inference for determinantal point process to improve recommendation diversity"
+    },
+    {
+      "ref_id": "b5",
+      "title": "End-to-End User Behavior Retrieval in Click-Through Rate Prediction Model"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Efficient Long Sequential User Data Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "EdgeRec: recommender system on edge in Mobile Taobao"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Practical diversified recommendations on youtube with determinantal point processes"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Sliding spectrum decomposition for diversified recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Feature-aware diversified re-ranking with disentangled representations for relevant recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Validation Set Evaluation can be Wrong: An Evaluator-Generator Approach for Maximizing Online Performance of Ranking in E-commerce"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Learning representations by back-propagating errors"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Globally optimized mutual influence aware ranking in e-commerce search"
+    }
   ]
 }

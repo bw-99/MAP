@@ -20,8 +20,178 @@
   "REFERENCES": "[1] Jianxin Chang, Chen Gao, Yu Zheng, Yiqun Hui, Yanan Niu, Yang Song, Depeng Jin, and Yong Li. 2021. Sequential Recommendation with Graph Neural Networks. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, New York, NY, USA, 378-387. [2] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In Proceedings of the 37th International Conference on Machine Learning . JMLR.org, San Diego, Article 149, 11 pages. [3] Xinlei Chen, Saining Xie, and Kaiming He. 2021. An Empirical Study of Training Self-Supervised Vision Transformers. In 2021 IEEE/CVF International Conference on Computer Vision (ICCV) . IEEE, Montreal, QC, Canada, 9620-9629. [4] Yongjun Chen, Zhiwei Liu, Jia Li, Julian McAuley, and Caiming Xiong. 2022. Intent Contrastive Learning for Sequential Recommendation. In Proceedings of the ACM Web Conference 2022 . ACM, New York, NY, USA, 2172-2182. [5] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems . ACM, New York, NY, USA, 7-10. [6] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep session interest network for click-through rate prediction. In Proceedings of the 28th International Joint Conference on Artificial Intelligence . AAAI Press, Honolulu, Hawaii, USA, 2301-2307. [7] Edmund A Gehan. 1965. A generalized Wilcoxon test for comparing arbitrarily singly-censored samples. Biometrika 52, 1-2 (1965), 203-224. [8] Zhabiz Gharibshah, Xingquan Zhu, Arthur Hainline, and Michael Conway. 2020. Deep Learning for User Interest and Response Prediction in Online Display Advertising. Data Science and Engineering (2020), 12-26. [9] Xavier Glorot, Antoine Bordes, and Yoshua Bengio. 2011. Deep Sparse Rectifier Neural Networks. In Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics (Proceedings of Machine Learning Research, Vol. 15) , Geoffrey Gordon, David Dunson, and Miroslav Dudík (Eds.). PMLR, Fort Lauderdale, FL, USA, 315-323. [10] Wang-Cheng Kang and Julian McAuley. 2018. Self-Attentive Sequential Recommendation. In 2018 IEEE International Conference on Data Mining (ICDM) . IEEE, Los Alamitos, CA, USA. [11] Jiacheng Li, Yujie Wang, and Julian McAuley. 2020. Time Interval Aware SelfAttention for Sequential Recommendation. In Proceedings of the 13th International Conference on Web Search and Data Mining . ACM, New York, NY, USA, 322-330. [12] Xiang Li, Chao Wang, Jiwei Tan, Xiaoyi Zeng, Dan Ou, Dan Ou, and Bo Zheng. 2020. Adversarial Multimodal Representation Learning for Click-Through Rate Prediction. In Proceedings of The Web Conference 2020 . ACM, New York, NY, USA, 827-836. [13] Zeyu Li, Wei Cheng, Yang Chen, Haifeng Chen, and Wei Wang. 2020. Interpretable Click-Through Rate Prediction through Hierarchical Attention. In Proceedings of the 13th International Conference on Web Search and Data Mining . ACM, New York, NY, USA, 313-321. [14] Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, and Yuzhou Zhang. 2019. Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction. In The World Wide Web Conference . ACM, New York, NY, USA, 1119-1129. [15] Ze Lyu, Yu Dong, Chengfu Huo, and Weijun Ren. 2020. Deep Match to Rank Model for Personalized Click-Through Rate Prediction. Proceedings of the AAAI Conference on Artificial Intelligence (2020), 156-163. [16] Erxue Min, Yu Rong, Tingyang Xu, Yatao Bian, Da Luo, Kangyi Lin, Junzhou Huang, Sophia Ananiadou, and Peilin Zhao. 2022. Neighbour interaction based click-through rate prediction via graph-masked transformer. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, New York, NY, USA, 353-362. [17] Fernando B. Pérez Maurera, Maurizio Ferrari Dacrema, Lorenzo Saule, Mario Scriminaci, and Paolo Cremonesi. 2020. ContentWise Impressions: An Industrial Dataset with Impressions Included. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . ACM, New York, NY, USA, 3093-3100. [18] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, New York, NY, USA, 2671-2679. [19] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . ACM, New York, NY, USA, 2685-2692. [20] Jiarui Qin, Weinan Zhang, Xin Wu, Jiarui Jin, Yuchen Fang, and Yong Yu. 2020. User Behavior Retrieval for Click-Through Rate Prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, New York, NY, USA, 2347-2356. [21] Ruihong Qiu, Zi Huang, Hongzhi Yin, and Zijian Wang. 2022. Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . ACM, New York, NY, USA, 813-823. [22] Qijie Shen, Hong Wen, Wanjie Tao, Jing Zhang, Fuyu Lv, Zulong Chen, and Zhao Li. 2022. Deep Interest Highlight Network for Click-Through Rate Prediction in Trigger-Induced Recommendation. In Proceedings of the ACM Web Conference 2022 . ACM, New York, NY, USA, 422-430. [23] Kaitao Song, Qingkang Huang, Fa-en Zhang, and Jianfeng Lu. 2021. Coarse-tofine: A dual-view attention network for click-through rate prediction. KnowledgeBased Systems 216 (2021), 106767. [24] Weiping Song, Zhiping Xiao, Yifan Wang, Laurent Charlin, Ming Zhang, and Jian Tang. 2019. Session-Based Social Recommendation via Dynamic Graph Attention Networks. In Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining . ACM, New York, NY, USA, 555-563. [25] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . ACM, New York, NY, USA, 1441-1450. [26] Yi Tay, Anh Tuan Luu, and Siu Cheung Hui. 2018. Multi-Pointer Co-Attention Networks for Recommendation. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, New York, NY, USA, 2309-2318. [27] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Proceedings of the 31st International Conference on Neural Information Processing Systems . Curran Associates Inc., Red Hook, NY, USA, 6000-6010. [28] Hongwei Wang, Fuzheng Zhang, Xing Xie, and Minyi Guo. 2018. DKN: Deep Knowledge-Aware Network for News Recommendation. In Proceedings of the 2018 World Wide Web Conference . International World Wide Web Conferences Steering Committee, Republic and Canton of Geneva, CHE, 1835-1844. [29] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & Cross Network for Ad Click Predictions. In Proceedings of the ADKDD'17 . ACM, New York, NY, USA, Article 12, 7 pages. [30] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems. In Proceedings of the Web Conference 2021 . ACM, New York, NY, USA, 1785-1797. [31] Xiang Wang, Xiangnan He, Yixin Cao, Meng Liu, and Tat-Seng Chua. 2019. KGAT: Knowledge Graph Attention Network for Recommendation. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, New York, NY, USA, 950-958. [32] Shu Wu, Yuyuan Tang, Yanqiao Zhu, Liang Wang, Xing Xie, and Tieniu Tan. 2019. Session-based recommendation with graph neural networks. In Proceedings of the Thirty-Third AAAI Conference on Artificial Intelligence . AAAI Press, Honolulu, Hawaii, USA, Article 43, 8 pages. [33] Yaxian Xia, Yi Cao, Sihao Hu, Tong Liu, and Lingling Lu. 2023. Deep IntentionAware Network for Click-Through Rate Prediction. In Companion Proceedings of the ACM Web Conference 2023 . ACM, New York, NY, USA, 533-537. [34] Zhibo Xiao, Luwei Yang, Wen Jiang, Yi Wei, Yi Hu, and Hao Wang. 2020. Deep Multi-Interest Network for Click-through Rate Prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . ACM, New York, NY, USA, 2265-2268. [35] Zhibo Xiao, Luwei Yang, Tao Zhang, Wen Jiang, Wei Ning, and Yujiu Yang. 2024. Deep Evolutional Instant Interest Network for CTR Prediction in Trigger-Induced Recommendation. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining . ACM, Merida, Mexico, 846-854. [36] Ruobing Xie, Rui Wang, Shaoliang Zhang, Zhihong Yang, Feng Xia, and Leyu Lin. 2021. Real-time Relevant Recommendation Suggestion. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . ACM, New York, NY, USA, 112-120. [37] Xu Xie, Fei Sun, Zhaoyang Liu, Shiwen Wu, Jinyang Gao, Jiandong Zhang, Bolin Ding, and Bin Cui. 2022. Contrastive learning for sequential recommendation. In 2022 IEEE 38th international conference on data engineering (ICDE) . IEEE, ACM, Kuala Lumpur, Malaysia, 1259-1273. [38] Chengfeng Xu, Pengpeng Zhao, Yanchi Liu, Victor S. Sheng, Jiajie Xu, Fuzhen Zhuang, Junhua Fang, and Xiaofang Zhou. 2019. Graph contextualized selfattention network for session-based recommendation. In Proceedings of the 28th International Joint Conference on Artificial Intelligence . AAAI Press, Honolulu, Hawaii, USA, 3940-3946. [39] Chengfeng Xu, Pengpeng Zhao, Yanchi Liu, Jiajie Xu, Victor S.Sheng S.Sheng, Zhiming Cui, Xiaofang Zhou, and Hui Xiong. 2019. Recurrent Convolutional Neural Network for Sequential Recommendation. In The World Wide Web Conference . ACM, New York, NY, USA, 3398-3404. Modeling User Intent Beyond Trigger: Incorporating Uncertainty for Trigger-Induced Recommendation [40] Weinan Xu, Hengxu He, Minshi Tan, Yunming Li, Jun Lang, and Dongbai Guo. 2020. Deep Interest with Hierarchical Attention Network for Click-Through Rate Prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, New York, NY, USA, 1905-1908. [41] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through Conference acronym 'XX, June 03-05, 2018, Woodstock, NY rate prediction. In Proceedings of the Thirty-Third AAAI Conference on Artificial Intelligence . AAAI Press, Honolulu, Hawaii, USA, Article 729, 8 pages. [42] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for ClickThrough Rate Prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, New York, NY, USA, 1059-1068.",
   "keywords_parsed": [
     "Click-Through Rate Prediction",
-    " Trigger-Induced Recommendation",
-    " Contrastive Learning",
-    " User Intent Modeling"
+    "Trigger-Induced Recommendation",
+    "Contrastive Learning",
+    "User Intent Modeling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Sequential Recommendation with Graph Neural Networks"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b3",
+      "title": "An Empirical Study of Training Self-Supervised Vision Transformers"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Intent Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A generalized Wilcoxon test for comparing arbitrarily singly-censored samples"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep Learning for User Interest and Response Prediction in Online Display Advertising"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep Sparse Rectifier Neural Networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Self-Attentive Sequential Recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Time Interval Aware SelfAttention for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Adversarial Multimodal Representation Learning for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Interpretable Click-Through Rate Prediction through Hierarchical Attention"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Deep Match to Rank Model for Personalized Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Neighbour interaction based click-through rate prediction via graph-masked transformer"
+    },
+    {
+      "ref_id": "b17",
+      "title": "ContentWise Impressions: An Industrial Dataset with Impressions Included"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "User Behavior Retrieval for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Deep Interest Highlight Network for Click-Through Rate Prediction in Trigger-Induced Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Coarse-to-fine: A dual-view attention network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Session-Based Social Recommendation via Dynamic Graph Attention Networks"
+    },
+    {
+      "ref_id": "b25",
+      "title": "BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Multi-Pointer Co-Attention Networks for Recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b28",
+      "title": "DKN: Deep Knowledge-Aware Network for News Recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b30",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "KGAT: Knowledge Graph Attention Network for Recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Session-based recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Deep Intention-Aware Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep Multi-Interest Network for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep Evolutional Instant Interest Network for CTR Prediction in Trigger-Induced Recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Real-time Relevant Recommendation Suggestion"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Contrastive learning for sequential recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Graph contextualized self-attention network for session-based recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Recurrent Convolutional Neural Network for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Deep Interest with Hierarchical Attention Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    }
   ]
 }

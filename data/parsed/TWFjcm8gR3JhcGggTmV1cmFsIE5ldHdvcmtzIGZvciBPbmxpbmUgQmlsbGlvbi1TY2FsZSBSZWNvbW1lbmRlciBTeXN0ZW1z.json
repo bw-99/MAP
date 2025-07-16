@@ -31,7 +31,181 @@
   "C.2 Case Study": "We further conduct the case study to verify the performance of MacGNN on users with different interaction frequencies. Specifically, we divided users into 6 groups according to their interaction frequency on the MovieLens dataset. The case study results are illustrated in Figure 7. We can find that our MacGNN performs better in most cases, which shows that the introduction of MAG can benefit users with different interaction frequencies. This observation can be explained in the following two main aspects: (i) For low-active users, the modeling view from a macro perspective will bring additional general key features, and the high-order graph information from MAG also provides helpful information for user modeling. (ii) For high-active users, in addition to ensuring computational efficiency, macro modeling on MAG can also avoid noise and overly complex information contained in excessively long interaction sequences. Thus, besides improving computational efficiency for considering both complete and high-order patterns, the organization of MAG is also beneficial for modeling interests in various interaction frequencies.",
   "keywords_parsed": [
     "next-generation recommendation model",
-    " graph-based CTR prediction",
-    " billion-scale online model"
+    "graph-based CTR prediction",
+    "billion-scale online model"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Non-Recursive Cluster-Scale Graph Interacted Model for ClickThrough Rate Prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Reinforcement Neighborhood Selection for Unsupervised Graph Anomaly Detection"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Non-recursive graph convolutional networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Generative adversarial framework for cold-start item recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep ctr prediction in display advertising"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Adap𝜏 : Adaptively Modulating Embedding Magnitude for Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Empirical evaluation of gated recurrent neural networks on sequence modeling"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Ad click prediction in sequence with long short-term memory networks: an externality-aware model"
+    },
+    {
+      "ref_id": "b12",
+      "title": "An introduction to ROC analysis"
+    },
+    {
+      "ref_id": "b13",
+      "title": "KuaiRec: A Fully-observed Dataset and Insights for Evaluating Recommender Systems"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Understanding the difficulty of training deep feedforward neural networks"
+    },
+    {
+      "ref_id": "b15",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Learning the k in k-means"
+    },
+    {
+      "ref_id": "b17",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Aligning Distillation For Cold-Start Item Recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Image-based recommendations on styles and substitutes"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Neighbour interaction based click-through rate prediction via graph-masked transformer"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Billion-scale recommendation with heterogeneous side information at taobao"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "User behavior retrieval for click-through rate prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Differentiable Neuro-Symbolic Reasoning on Large-Scale Knowledge Graphs"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Graph Based Long-Term And Short-Term Interest Model for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Learning adaptive display exposure for real-time advertising"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Graph neural networks in recommender systems: a survey"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Attentional factorization machines: learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Multi-factor Sequential Re-ranking with Perception-Aware Diversification"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Graph convolutional neural networks for web-scale recommender systems"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Evaluating recommender systems: survey and framework"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Deep Learning for Click-Through Rate Estimation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Clustering based behavior sampling with long sequential data for CTR prediction"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Contrastive learning for debiased candidate generation in large-scale recommender systems"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b42",
+      "title": "The impact of YouTube recommendation system on video views"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Open benchmarking for click-through rate prediction"
+    }
   ]
 }

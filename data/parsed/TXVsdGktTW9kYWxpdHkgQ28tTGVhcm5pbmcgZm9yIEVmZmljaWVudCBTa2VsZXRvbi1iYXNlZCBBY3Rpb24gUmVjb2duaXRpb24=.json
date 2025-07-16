@@ -26,15 +26,182 @@
   "ACKNOWLEDGMENTS": "This work was supported by Natural Science Foundation of Shenzhen (No. JCYJ20230807120801002), National Natural Science Foundation of China (No. 62203476). Multi-Modality Co-Learning for Efficient Skeleton-based Action Recognition MM'24, October 28-November 1, 2024, Melbourne, VIC, Australia",
   "REFERENCES": "[1] Dasom Ahn, Sangwon Kim, Hyunsu Hong, and Byoung Chul Ko. 2023. STARTransformer: a spatio-temporal cross attention transformer for human action recognition. In Proceedings of the IEEE Winter Conference on Applications of Computer Vision (WACV) . IEEE, Hawaii, USA, 3330-3339. [2] Danilo Avola, Marco Bernardi, Luigi Cinque, Gian Luca Foresti, and Cristiano Massaroni. 2019. Exploiting Recurrent Neural Networks and Leap Motion Controller for the Recognition of Sign Language and Semaphoric Hand Gestures. IEEE Transactions on Multimedia 21, 1 (2019), 234-245. [3] XB Bruce, Yan Liu, and Keith CC Chan. 2021. Multimodal fusion via teacherstudent network for indoor action recognition. In Proceedings of the AAAI Conference on Artificial Intelligence (AAAI) . AAAI, Canada, 3199-3207. [4] Chen Chen, Roozbeh Jafari, and Nasser Kehtarnavaz. 2015. UTD-MHAD: A multimodal dataset for human action recognition utilizing a depth camera and a wearable inertial sensor. In Proceedings of the IEEE International Conference on Image Processing (ICIP) . IEEE, Canada, 168-172. [5] Tailin Chen, Desen Zhou, Jian Wang, Shidong Wang, Yu Guan, Xuming He, and Errui Ding. 2021. Learning multi-granular spatio-temporal graph network for skeleton-based action recognition. In Proceedings of the ACM International Conference on Multimedia (ACM MM) . ACM, Chengdu, China, 4334-4342. [6] Yuxin Chen, Ziqi Zhang, Chunfeng Yuan, Bing Li, Ying Deng, and Weiming Hu. 2021. Channel-Wise Topology Refinement Graph Convolution for SkeletonBased Action Recognition. In Proceedings of the IEEE International Conference on Computer Vision (ICCV) . IEEE, Montreal, Canada, 13359-13368. [7] Zhan Chen, Sicheng Li, Bing Yang, Qinghan Li, and Hong Liu. 2021. MultiScale Spatial Temporal Graph Convolutional Network for Skeleton-Based Action Recognition. In Proceedings of the AAAI Conference on Artificial Intelligence (AAAI) . AAAI, Canada, 1113-1122. [8] Ke Cheng, Yifan Zhang, Xiangyu He, Weihan Chen, Cheng Jian, and Hanqing Lu. 2020. Skeleton-Based Action Recognition with Shift Graph Convolutional Network. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . IEEE, Seattle, USA, 183-192. [9] Hyung-gun Chi, Myoung Hoon Ha, Seunggeun Chi, Sang Wan Lee, Qixing Huang, and Karthik Ramani. 2022. InfoGCN: Representation Learning for Human Skeleton-Based Action Recognition. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . IEEE, New Orleans, USA, 2018620196. [10] Srijan Das, Saurav Sharma, Rui Dai, Francois Bremond, and Monique Thonnat. 2020. Vpn: Learning video-pose embedding for activities of daily living. In Proceedings of the European Conference on Computer Vision (ECCV) . Springer, Glasgow, USA, 72-90. [11] Zhichao Deng, Xiangtai Li, Xia Li, Yunhai Tong, Shen Zhao, and Mengyuan Liu. 2024. VG4D: Vision-Language Model Goes 4D Video Recognition. In Proceedings of the IEEE International Conference on Robotics and Automation (ICRA) . [12] Runwei Ding, Yuhang Wen, Jinfu Liu, Nan Dai, Fanyang Meng, and Mengyuan Liu. 2023. Integrating Human Parsing and Pose Network for Human Action Recognition. In Proceedings of the CAAI International Conference on Artificial Intelligence (CICAI) . CAAI, Fuzhou, China, 182-194. [13] Haodong Duan, Jiaqi Wang, Kai Chen, and Dahua Lin. 2022. DG-STGCN: Dynamic Spatial-Temporal Modeling for Skeleton-based Action Recognition. [14] Haodong Duan, Yue Zhao, Kai Chen, Dahua Lin, and Bo Dai. 2022. Revisiting skeleton-based action recognition. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . IEEE, New Orleans, USA, 2969-2978. [15] Peng Gao, Jiaming Han, Renrui Zhang, Ziyi Lin, Shijie Geng, Aojun Zhou, Wei Zhang, Pan Lu, Conghui He, Xiangyu Yue, Hongsheng Li, and Yu Qiao. 2023. LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model. [16] Tanmay Gupta and Aniruddha Kembhavi. 2023. Visual Programming: Compositional visual reasoning without training. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . IEEE, Vancouver, Canada, 14953-14962. [17] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . IEEE, Las Vegas, USA, 770-778. [18] Ruijie Hou, Yanran Li, Ningyu Zhang, Yulin Zhou, Xiaosong Yang, and Zhao Wang. 2022. Shifting perspective to see difference: A novel multi-view method for skeleton based action recognition. In Proceedings of the ACM International Conference on Multimedia (ACM MM) . ACM, Lisbon, Portugal, 4987-4995. [19] Jianfang Hu, Weishi Zheng, Jianhuang Lai, and Jianguo Zhang. 2017. Jointly Learning Heterogeneous Features for RGB-D Activity Recognition. IEEE Transactions on Pattern Analysis and Machine Intelligence 39, 11 (2017), 2186-2200. [20] Xiaohu Huang, Hao Zhou, Bin Feng, Xinggang Wang, Wenyu Liu, Jian Wang, Haocheng Feng, Junyu Han, Errui Ding, and Jingdong Wang. 2023. Graph contrastive learning for skeleton-based action recognition. In Proceedings of the International Conference on Learning Representations (ICLR) . OpenReview.net, Kigali, Rwanda. [21] Hamid Reza Vaezi Joze, Amirreza Shaban, Michael L Iuzzolino, and Kazuhito Koishida. 2020. MMTM: Multimodal transfer module for CNN fusion. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . IEEE, Seattle, USA, 13289-13299. [22] Qiuhong Ke, Mohammed Bennamoun, Senjian An, Ferdous Sohel, and Farid Boussaid. 2017. A New Representation of Skeleton Sequences for 3D Action Recognition. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . IEEE, Honolulu, USA, 3288-3297. [23] Qiuhong Ke, Mohammed Bennamoun, Senjian An, Ferdous Sohel, and Farid Boussaid. 2018. Learning Clip Representations for Skeleton-Based 3D Action Recognition. IEEE Transactions on Image Processing 27, 6 (2018), 2842-2855. [24] Sangwon Kim, Dasom Ahn, and Byoung Chul Ko. 2023. Cross-Modal Learning with 3D Deformable Attention for Action Recognition. In Proceedings of the IEEE International Conference on Computer Vision (ICCV) . IEEE, Paris, France, 10265-10275. [25] Jungho Lee, Minhyeok Lee, Dogyoon Lee, and Sangyoon Lee. 2023. Hierarchically Decomposed Graph Convolutional Networks for Skeleton-Based Action Recognition. In Proceedings of the IEEE International Conference on Computer Vision (ICCV) . IEEE, Paris, France, 10444-10453. [26] Ce Li, Chunyu Xie, Baochang Zhang, Jungong Han, Xiantong Zhen, and Jie Chen. 2022. Memory Attention Networks for Skeleton-Based Action Recognition. IEEE Transactions on Neural Networks and Learning Systems 33, 9 (2022), 4800-4814. [27] Chao Li, Qiaoyong Zhong, Di Xie, and Shiliang Pu. 2018. Co-occurrence Feature Learning from Skeleton Data for Action Recognition and Detection with Hierarchical Aggregation. [28] Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi. 2023. BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models. In Proceedings of the International Conference on Machine Learning (ICML) . ACM, Hawaii, USA, 19730-19742. [29] Junnan Li, Dongxu Li, Caiming Xiong, and Steven Hoi. 2022. BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation. In Proceedings of the International Conference on Machine Learning (ICML) . ACM, Seoul, Korea, 12888-12900. [30] Shuai Li, Wanqing Li, Chris Cook, Ce Zhu, and Yanbo Gao. 2018. Independently Recurrent Neural Network (IndRNN): Building a Longer and Deeper RNN. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . IEEE, Salt Lake City, USA, 5457-5466. [31] Yue Li, Baiqiao Yin, Jinfu Liu, Jiajun Wen, Jiaying Lin, and Mengyuan Liu. 2024. SemiPL: A Semi-supervised Method for Event Sound Source Localization. In Proceedings of the IEEE International Conference on Multimedia and Expo Workshop (ICMEW) . IEEE, Canada. [32] Jiaying Lin, Jiajun Wen, Mengyuan Liu, Jinfu Liu, Baiqiao Yin, and Yue Li. 2024. SFMViT: SlowFast Meet ViT in Chaotic World. In Proceedings of the IEEE International Conference on Multimedia and Expo Workshop (ICMEW) . IEEE, Canada. [33] Dongjingdin Liu, Pengpeng Chen, Miao Yao, Yijing Lu, Zijie Cai, and Yuxin Tian. 2023. TSGCNeXt: Dynamic-Static Multi-Graph Convolution for Efficient Skeleton-Based Action Recognition with Long-term Learning Potential. [34] Fang Liu, Yuhao Liu, Yuqiu Kong, Ke Xu, Lihe Zhang, Baocai Yin, Gerhard Hancke, and Rynson Lau. 2023. Referring Image Segmentation Using Text Supervision. In Proceedings of the IEEE International Conference on Computer Vision (ICCV) . IEEE, Paris, France, 22124-22134. [35] Hong Liu, Juanhui Tu, and Mengyuan Liu. 2017. Two-Stream 3D Convolutional Neural Network for Skeleton-Based Action Recognition. [36] Jinfu Liu, Runwei Ding, Yuhang Wen, Nan Dai, Fanyang Meng, Shen Zhao, and Mengyuan Liu. 2024. Explore Human Parsing Modality for Action Recognition. CAAI Transactions on Intelligence Technology (2024). [37] Jun Liu, Amir Shahroudy, Mauricio Perez, Gang Wang, Ling-Yu Duan, and Alex C. Kot. 2020. NTU RGB+D 120: A Large-Scale Benchmark for 3D Human Activity Understanding. IEEE Transactions on Pattern Analysis and Machine Intelligence 42, 10 (2020), 2684-2701. [38] Jun Liu, Gang Wang, Ling-Yu Duan, Kamila Abdiyeva, and Alex C. Kot. 2018. Skeleton-Based Human Action Recognition With Global Context-Aware Attention LSTM Networks. IEEE Transactions on Image Processing 27, 4 (2018), 1586-1599. [39] Jinfu Liu, Xinshun Wang, Can Wang, Yuan Gao, and Mengyuan Liu. 2023. Temporal Decoupling Graph Convolutional Network for Skeleton-based Gesture Recognition. IEEE Transactions on Multimedia 26 (2023), 811-823. [40] Jinfu Liu, Baiqiao Yin, Jiaying Lin, Jiajun Wen, Yue Li, and Mengyuan Liu. 2024. HDBN: A Novel Hybrid Dual-branch Network for Robust Skeleton-based Action Recognition. In Proceedings of the IEEE International Conference on Multimedia and Expo Workshop (ICMEW) . IEEE, Canada. [41] Mengyuan Liu, Hong Liu, and Chen Chen. 2017. Enhanced skeleton visualization for view invariant human action recognition. Pattern Recognition 68 (2017), 346-362. [42] Mengyuan Liu, Fanyang Meng, Chen Chen, and Songtao Wu. 2023. Novel motion patterns matter for practical skeleton-based action recognition. In Proceedings of the AAAI Conference on Artificial Intelligence (AAAI) , Vol. 37. 1701-1709. [43] Ziyu Liu, Hongwen Zhang, Zhenghao Chen, Zhiyong Wang, and Wanli Ouyang. 2020. Disentangling and unifying graph convolutions for skeleton-based action recognition. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . IEEE, Seattle, USA, 143-152. MM'24, October 28-November 1, 2024, Melbourne, VIC, Australia Jinfu Liu, Chen Chen, & Mengyuan Liu.",
   "keywords_parsed": [
-    "Skeleton-based action recognition has garnered significant attention due to the utilization of concise and resilient skeletons. Nevertheless",
-    " the absence of detailed body information in skeletons restricts performance",
-    " while other multimodal methods require substantial inference resources and are inefficient when using multimodal data during both training and inference stages. To address this and fully harness the complementary multimodal features",
-    " we propose a novel multi-modality co-learning (MMCL) framework by leveraging the multimodal large language models (LLMs) as auxiliary networks for efficient skeleton-based action recognition",
-    " which engages in multi-modality co-learning during the training stage and keeps efficiency by employing only concise skeletons in inference. Our MMCL framework primarily consists of two modules. First",
-    " the Feature Alignment Module (FAM) extracts rich RGB features from video frames and aligns them with global skeleton features via contrastive learning. Second",
-    " the Feature Refinement Module (FRM) uses RGB images with temporal information and text instruction to generate instructive features based on the powerful generalization of multimodal LLMs. These instructive text features will further refine the classification scores and the refined scores will enhance the model's robustness and generalization in a manner similar to soft labels. Extensive experiments on NTU RGB+D",
-    " NTU RGB+D 120 and Northwestern-UCLA benchmarks consistently verify the effectiveness of our MMCL",
-    " which outperforms the existing skeleton-based action recognition methods. Meanwhile",
-    " experiments on UTD-MHAD and SYSU-Action datasets demonstrate the commendable generalization of our MMCL in zero-shot and domain-adaptive action recognition. Our code is publicly available at: https://github.com/liujf69/MMCL-Action."
+    "Action Recognition",
+    "Multi-modality",
+    "Multimodal LLMs"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "STARTransformer: a spatio-temporal cross attention transformer for human action recognition"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Exploiting Recurrent Neural Networks and Leap Motion Controller for the Recognition of Sign Language and Semaphoric Hand Gestures"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Multimodal fusion via teacherstudent network for indoor action recognition"
+    },
+    {
+      "ref_id": "b4",
+      "title": "UTD-MHAD: A multimodal dataset for human action recognition utilizing a depth camera and a wearable inertial sensor"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Learning multi-granular spatio-temporal graph network for skeleton-based action recognition"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Channel-Wise Topology Refinement Graph Convolution for SkeletonBased Action Recognition"
+    },
+    {
+      "ref_id": "b7",
+      "title": "MultiScale Spatial Temporal Graph Convolutional Network for Skeleton-Based Action Recognition"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Skeleton-Based Action Recognition with Shift Graph Convolutional Network"
+    },
+    {
+      "ref_id": "b9",
+      "title": "InfoGCN: Representation Learning for Human Skeleton-Based Action Recognition"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Vpn: Learning video-pose embedding for activities of daily living"
+    },
+    {
+      "ref_id": "b11",
+      "title": "VG4D: Vision-Language Model Goes 4D Video Recognition"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Integrating Human Parsing and Pose Network for Human Action Recognition"
+    },
+    {
+      "ref_id": "b13",
+      "title": "DG-STGCN: Dynamic Spatial-Temporal Modeling for Skeleton-based Action Recognition"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Revisiting skeleton-based action recognition"
+    },
+    {
+      "ref_id": "b15",
+      "title": "LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Visual Programming: Compositional visual reasoning without training"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Shifting perspective to see difference: A novel multi-view method for skeleton based action recognition"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Jointly Learning Heterogeneous Features for RGB-D Activity Recognition"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Graph contrastive learning for skeleton-based action recognition"
+    },
+    {
+      "ref_id": "b21",
+      "title": "MMTM: Multimodal transfer module for CNN fusion"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A New Representation of Skeleton Sequences for 3D Action Recognition"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Learning Clip Representations for Skeleton-Based 3D Action Recognition"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Cross-Modal Learning with 3D Deformable Attention for Action Recognition"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Hierarchically Decomposed Graph Convolutional Networks for Skeleton-Based Action Recognition"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Memory Attention Networks for Skeleton-Based Action Recognition"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Co-occurrence Feature Learning from Skeleton Data for Action Recognition and Detection with Hierarchical Aggregation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models"
+    },
+    {
+      "ref_id": "b29",
+      "title": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Independently Recurrent Neural Network (IndRNN): Building a Longer and Deeper RNN"
+    },
+    {
+      "ref_id": "b31",
+      "title": "SemiPL: A Semi-supervised Method for Event Sound Source Localization"
+    },
+    {
+      "ref_id": "b32",
+      "title": "SFMViT: SlowFast Meet ViT in Chaotic World"
+    },
+    {
+      "ref_id": "b33",
+      "title": "TSGCNeXt: Dynamic-Static Multi-Graph Convolution for Efficient Skeleton-Based Action Recognition with Long-term Learning Potential"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Referring Image Segmentation Using Text Supervision"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Two-Stream 3D Convolutional Neural Network for Skeleton-Based Action Recognition"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Explore Human Parsing Modality for Action Recognition"
+    },
+    {
+      "ref_id": "b37",
+      "title": "NTU RGB+D 120: A Large-Scale Benchmark for 3D Human Activity Understanding"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Skeleton-Based Human Action Recognition With Global Context-Aware Attention LSTM Networks"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Temporal Decoupling Graph Convolutional Network for Skeleton-based Gesture Recognition"
+    },
+    {
+      "ref_id": "b40",
+      "title": "HDBN: A Novel Hybrid Dual-branch Network for Robust Skeleton-based Action Recognition"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Enhanced skeleton visualization for view invariant human action recognition"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Novel motion patterns matter for practical skeleton-based action recognition"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Disentangling and unifying graph convolutions for skeleton-based action recognition"
+    }
   ]
 }

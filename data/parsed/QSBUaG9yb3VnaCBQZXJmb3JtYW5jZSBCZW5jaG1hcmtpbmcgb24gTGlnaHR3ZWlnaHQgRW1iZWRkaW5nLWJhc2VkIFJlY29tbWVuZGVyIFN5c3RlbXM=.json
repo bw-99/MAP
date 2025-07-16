@@ -30,7 +30,139 @@
   "ACKNOWLEDGMENTS": "This work is supported by the Australian Research Council under the streams of Future Fellowship (No. FT210100624), Discovery Early Career Researcher Award (No. DE230101033), Discovery Project (No. DP240101108 and No. DP240101814), and Linkage Project (No. LP230200892).",
   "REFERENCES": "[1] 2014. The Criteo Dataset. https://www.kaggle.com/c/criteo-display-ad-challenge [2] 2018. The Yelp Dataset. https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset [3] Muhammad Ammad-Ud-Din et al. 2019. Federated collaborative filtering for privacy-preserving personalized recommendation system. arXiv preprint arXiv:1901.09888 (2019). , Vol. 1, No. 1, Article . Publication date: January 2025. A Thorough Performance Benchmarking on Lightweight Embedding-based Recommender Systems · 29 [4] James Bergstra, Rémi Bardenet, Yoshua Bengio, and Balázs Kégl. 2011. Algorithms for Hyper-Parameter Optimization. In NeurIPS . 2546-2554. [5] Han Cai, Ligeng Zhu, and Song Han. 2019. ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware. In ICLR . [6] Di Chai, Leye Wang, Kai Chen, and Qiang Yang. 2020. Secure federated matrix factorization. IEEE Intelligent Systems 36, 5 (2020), 11-20. [7] Huiyuan Chen, Vivian Lai, Hongye Jin, Zhimeng Jiang, Mahashweta Das, and Xia Hu. 2024. Towards mitigating dimensional collapse of representations in collaborative filtering. In WSDM . 106-115. [8] Tong Chen, Hongzhi Yin, Yujia Zheng, Zi Huang, Yang Wang, and Meng Wang. 2021. Learning Elastic Embeddings for Customizing On-Device Recommenders. In SIGKDD . 138-147. [9] Benjamin Coleman, Wang-Cheng Kang, Matthew Fahrbach, Ruoxi Wang, Lichan Hong, Ed H. Chi, and Derek Zhiyuan Cheng. 2023. Unified Embedding: Battle-tested feature representations for web-scale ML systems. In NeuRIPS . [10] Maurizio Ferrari Dacrema, Paolo Cremonesi, and Dietmar Jannach. 2019. Are we really making much progress? A worrying analysis of recent neural recommendation approaches. In RecSys . 101-109. [11] Wei Deng, Junwei Pan, Tian Zhou, Deguang Kong, Aaron Flores, and Guang Lin. 2021. DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . 922-930. [12] Sauptik Dhar, Junyao Guo, Jiayi (Jason) Liu, Samarth Tripathi, Unmesh Kurup, and Mohak Shah. 2021. A Survey of On-Device Machine Learning: An Algorithms and Learning Theory Perspective. ACM Trans. Internet Things 2 (jul 2021). [13] Jonathan Frankle and Michael Carbin. 2018. The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks. In ICLR . [14] Tim Gubner, Viktor Leis, and Peter Boncz. 2021. Optimistically Compressed Hash Tables & Strings in theUSSR. SIGMOD Rec. (2021). [15] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In IJCAI , Carles Sierra (Ed.). 1725-1731. [16] Saket Gurukar, Nikil Pancha, Andrew Zhai, Eric Kim, Samson Hu, Srinivasan Parthasarathy, Charles Rosenberg, and Jure Leskovec. 2022. MultiBiSage: A Web-Scale Recommendation System Using Multiple Bipartite Graphs at Pinterest. Proceedings of the VLDB Endowment 16, 4 (2022), 781-789. [17] Jialiang Han, Yun Ma, Qiaozhu Mei, and Xuanzhe Liu. 2021. Deeprec: On-device deep learning for privacy-preserving sequential recommendation in mobile commerce. In WebConf . 900-911. [18] Song Han, Jeff Pool, John Tran, and William J. Dally. 2015. Learning Both Weights and Connections for Efficient Neural Networks. In NeurIPS . 1135-1143. [19] F. Maxwell Harper and Joseph A. Konstan. 2016. The MovieLens Datasets: History and Context. ACM Trans. Interact. Intell. Syst. (2016), 19:1-19:19. [20] Ruining He and Julian McAuley. 2016. Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering. In WebConf . 507-517. [21] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, YongDong Zhang, and Meng Wang. 2020. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation. In SIGIR . 639-648. [22] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In WebConf . 173-182. [23] Torsten Hoefler, Dan Alistarh, Tal Ben-Nun, Nikoli Dryden, and Alexandra Peste. 2021. Sparsity in deep learning: Pruning and growth for efficient inference and training in neural networks. JMLR 22, 1 (2021), 10882-11005. [24] Samuel Hsia, Udit Gupta, Bilge Acun, Newsha Ardalani, Pan Zhong, Gu-Yeon Wei, David Brooks, and Carole-Jean Wu. 2023. Mprec: Hardware-software co-design to enable multi-path recommendation. In Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 3 . 449-465. [25] Eric Jang, Shixiang Gu, and Ben Poole. 2017. Categorical Reparameterization with Gumbel-Softmax. In ICLR . [26] Steven A. Janowsky. [n. d.]. Pruning versus clipping in neural networks. Phys. Rev. A 39 ([n. d.]), 6600-6603. Issue 12. [27] Manas R. Joglekar, Cong Li, Jay K. Adams, Pranav Khaitan, and Quoc V. Le. 2019. Neural Input Search for Large Scale Recommendation Models. SIGKDD (2019). https://api.semanticscholar.org/CorpusID:195874115 [28] Wang-Cheng Kang et al. 2021. Learning to Embed Categorical Features without Embedding Tables for Recommendation. In SIGKDD . 840-850. [29] Aditya Kusupati et al. 2020. Soft Threshold Weight Reparameterization for Learnable Sparsity. In ICLR . [30] Maximilian Lam et al. 2023. GPU-based Private Information Retrieval for On-Device Machine Learning Inference. arXiv preprint arXiv:2301.10904 (2023). [31] Shiwei Li et al. 2023. Adaptive Low-Precision Training for Embeddings in Click-through Rate Prediction. In AAAI . [32] Shiwei Li et al. 2024. Embedding Compression in Recommender Systems: A Survey. ACM Comput. Surv. (jan 2024). [33] Dawen Liang, Laurent Charlin, James McInerney, and David M Blei. 2016. Modeling user exposure in recommendation. In WebConf . 951-961. , Vol. 1, No. 1, Article . Publication date: January 2025.",
   "30 · Tran, et al.": "[34] Xurong Liang, Tong Chen, Lizhen Cui, Yang Wang, Meng Wang, and Hongzhi Yin. 2024. Lightweight Embeddings for Graph Collaborative Filtering. In SIGIR . 1296-1306. [35] Xurong Liang, Tong Chen, Quoc Viet Hung Nguyen, Jianxin Li, and Hongzhi Yin. 2023. Learning Compact Compositional Embeddings via Regularized Pruning for Recommendation. arXiv:2309.03518 [cs.IR] [36] Hanxiao Liu, Karen Simonyan, and Yiming Yang. 2018. DARTS: Differentiable Architecture Search. arXiv preprint arXiv:1806.09055 (2018). [37] Siyi Liu, Chen Gao, Yihong Chen, Depeng Jin, and Yong Li. 2021. Learnable Embedding Sizes for Recommender Systems. In ICLR . https://openreview.net/forum?id=vQzcqQWIS0q [38] Jing Long, Tong Chen, Quoc Viet Hung Nguyen, Guandong Xu, Kai Zheng, and Hongzhi Yin. 2023. Model-Agnostic Decentralized Collaborative Learning for On-Device POI Recommendation. In SIGIR . 423-432. [39] Fuyuan Lyu et al. 2022. OptEmbed: Learning Optimal Embedding Table for Click-through Rate Prediction. In CIKM . 1399-1409. [40] Matteo Marcuzzo, Alessandro Zangari, Andrea Albarelli, and Andrea Gasparetto. 2022. Recommendation systems: An insight into current development and future research challenges. IEEE Access 10 (2022), 86578-86623. [41] Dheevatsa Mudigere et al. 2022. Software-Hardware Co-Design for Fast and Scalable Training of Deep Learning Recommendation Models. In Proceedings of the 49th Annual International Symposium on Computer Architecture . 993-1011. [42] Dina Nawara and Rasha Kashef. 2020. IoT-based Recommendation Systems - An Overview. In 2020 IEEE International IOT, Electronics and Mechatronics Conference (IEMTRONICS) . 1-7. [43] Aaron van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation learning with contrastive predictive coding. arXiv preprint arXiv:1807.03748 (2018). [44] Niketan Pansare et al. 2022. Learning compressed embeddings for on-device inference. Proceedings of Machine Learning and Systems 4 (2022), 382-397. [45] Aleksandr Petrov and Craig Macdonald. 2022. Effective and Efficient Training for Sequential Recommendation using Recency Sampling. In RecSys . 81-91. [46] Jiarui Qin et al. 2023. Learning to Distinguish Multi-User Coupling Behaviors for TV Recommendation. In Proceedings of the 16th ACM International Conference on Web Search and Data Mining . 204-212. [47] Liang Qu, Yonghong Ye, Ningzhi Tang, Lixin Zhang, Yuhui Shi, and Hongzhi Yin. 2022. Single-shot Embedding Dimension Search in Recommender System. In SIGIR . 513-522. [48] Yunke Qu, Tong Chen, Quoc Viet Hung Nguyen, and Hongzhi Yin. 2024. Budgeted Embedding Table For Recommender Systems. In WSDM (WSDM '24) . 557-566. [49] Yunke Qu, Tong Chen, Xiangyu Zhao, Lizhen Cui, Kai Zheng, and Hongzhi Yin. 2023. Continuous Input Embedding Size Search For Recommender Systems. In SIGIR . 708-717. [50] Yunke Qu, Liang Qu, Tong Chen, Xiangyu Zhao, Quoc Viet Hung Nguyen, and Hongzhi Yin. 2024. Scalable Dynamic Embedding Size Search for Streaming Recommendation. In CIKM . 1941-1950. [51] Steffen Rendle. 2010. Factorization Machines. In ICDM . 995-1000. https://doi.org/10.1109/ICDM.2010.127 [52] Steffen Rendle, Li Zhang, and Yehuda Koren. 2019. On the difficulty of evaluating baselines: A study on recommender systems. arXiv preprint arXiv:1905.01395 (2019). [53] Harrisen Scells, Shengyao Zhuang, and Guido Zuccon. 2022. Reduce, reuse, recycle: Green information retrieval research. In SIGI . 2825-2837. [54] Victor Schmidt et al. 2021. CodeCarbon: estimate and track carbon emissions from machine learning computing. (2021). [55] Faisal Shehzad and Dietmar Jannach. 2023. Everyone's a Winner! On Hyperparameter Tuning of Recommendation Models. In RecSys . 652-657. [56] Hao-Jun Michael Shi, Dheevatsa Mudigere, Maxim Naumov, and Jiyan Yang. 2020. Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems. In KDD . 165-175. [57] Zhu Sun et al. 2020. Are We Evaluating Rigorously? Benchmarking Recommendation for Reproducible Evaluation and Fair Comparison. In RecSys . 23-32. [58] Zhu Sun et al. 2022. DaisyRec 2.0: Benchmarking Recommendation for Rigorous Evaluation. TPAMI (2022). [59] Hung Vinh Tran, Tong Chen, Guanhua Ye, Quoc Viet Hung Nguyen, Kai Zheng, and Hongzhi Yin. 2024. On-device Content-based Recommendation with Single-shot Embedding Pruning: A Cooperative Game Perspective. arXiv preprint arXiv:2411.13052 (2024). [60] Jizhe Wang, Pipei Huang, Huan Zhao, Zhibo Zhang, Binqiang Zhao, and Dik Lun Lee. 2018. Billion-scale commodity embedding for e-commerce recommendation in alibaba. In SIGKDD . 839-848. [61] Ruoxi Wang et al. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In WebConf . 1785-1797. [62] Shuyao Wang, Yongduo Sui, Jiancan Wu, Zhi Zheng, and Hui Xiong. 2024. Dynamic Sparse Learning: A Novel Paradigm for Efficient Recommendation. In WSDM . 740-749. [63] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural Graph Collaborative Filtering. In SIGIR . 165-174. , Vol. 1, No. 1, Article . Publication date: January 2025. A Thorough Performance Benchmarking on Lightweight Embedding-based Recommender Systems · 31 [64] Xin Xia, Hongzhi Yin, Junliang Yu, Qinyong Wang, Guandong Xu, and Quoc Viet Hung Nguyen. 2022. On-Device Next-Item Recommendation with Self-Supervised Knowledge Distillation. In SIGIR . 546-555. [65] Chunxing Yin, Bilge Acun, Xing Liu, and Carole-Jean Wu. 2021. TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models. ArXiv abs/2101.11714 (2021). https://api.semanticscholar.org/CorpusID:231719841 [66] Chunxing Yin, Da Zheng, Israt Nisa, Christos Faloutsos, George Karypis, and Richard Vuduc. 2022. Nimble gnn embedding with tensor-train decomposition. In KDD . 2327-2335. [67] Hongzhi Yin, Liang Qu, Tong Chen, Wei Yuan, Ruiqi Zheng, Jing Long, Xin Xia, Yuhui Shi, and Chengqi Zhang. 2024. On-Device Recommender Systems: A Comprehensive Survey. arXiv preprint arXiv:2401.11441 (2024). [68] Junliang Yu, Hongzhi Yin, Xin Xia, Tong Chen, Lizhen Cui, and Quoc Viet Hung Nguyen. 2022. Are Graph Augmentations Necessary? Simple Graph Contrastive Learning for Recommendation. In SIGIR . 1294-1303. [69] Hailin Zhang et al. 2023. Experimental Analysis of Large-scale Learnable Vector Storage Compression. arXiv:2311.15578 [cs.LG] [70] Xiangyu Zhao et al. 2021. AutoDim: Field-aware Embedding Dimension Searchin Recommender Systems. In WebConf . 3015-3022. [71] Xiangyu Zhaok et al. 2021. AutoEmb: Automated Embedding Dimensionality Search in Streaming Recommendations. In ICDM . 896-905. [72] Ruiqi Zheng, Liang Qu, Tong Chen, Kai Zheng, Yuhui Shi, and Hongzhi Yin. 2024. Personalized Elastic Embedding Learning for On-Device Recommendation. TKDE (2024). [73] Jieming Zhu et al. 2022. BARS: Towards Open Benchmarking for Recommender Systems. In SIGIR . 2912-2923. [74] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open benchmarking for click-through rate prediction. In CIKM . 2759-2769. , Vol. 1, No. 1, Article . Publication date: January 2025.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "The Criteo Dataset"
+    },
+    {
+      "ref_id": "b2",
+      "title": "The Yelp Dataset"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Federated collaborative filtering for privacy-preserving personalized recommendation system"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Algorithms for Hyper-Parameter Optimization"
+    },
+    {
+      "ref_id": "b5",
+      "title": "ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Secure federated matrix factorization"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Towards mitigating dimensional collapse of representations in collaborative filtering"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning Elastic Embeddings for Customizing On-Device Recommenders"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Unified Embedding: Battle-tested feature representations for web-scale ML systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Are we really making much progress? A worrying analysis of recent neural recommendation approaches"
+    },
+    {
+      "ref_id": "b11",
+      "title": "DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A Survey of On-Device Machine Learning: An Algorithms and Learning Theory Perspective"
+    },
+    {
+      "ref_id": "b13",
+      "title": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Optimistically Compressed Hash Tables & Strings in the USSR"
+    },
+    {
+      "ref_id": "b15",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "MultiBiSage: A Web-Scale Recommendation System Using Multiple Bipartite Graphs at Pinterest"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deeprec: On-device deep learning for privacy-preserving sequential recommendation in mobile commerce"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Learning Both Weights and Connections for Efficient Neural Networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "The MovieLens Datasets: History and Context"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b21",
+      "title": "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Sparsity in deep learning: Pruning and growth for efficient inference and training in neural networks"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Mprec: Hardware-software co-design to enable multi-path recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Categorical Reparameterization with Gumbel-Softmax"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Pruning versus clipping in neural networks"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Neural Input Search for Large Scale Recommendation Models"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Learning to Embed Categorical Features without Embedding Tables for Recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Soft Threshold Weight Reparameterization for Learnable Sparsity"
+    },
+    {
+      "ref_id": "b30",
+      "title": "GPU-based Private Information Retrieval for On-Device Machine Learning Inference"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Adaptive Low-Precision Training for Embeddings in Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Embedding Compression in Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Modeling user exposure in recommendation"
+    }
   ]
 }

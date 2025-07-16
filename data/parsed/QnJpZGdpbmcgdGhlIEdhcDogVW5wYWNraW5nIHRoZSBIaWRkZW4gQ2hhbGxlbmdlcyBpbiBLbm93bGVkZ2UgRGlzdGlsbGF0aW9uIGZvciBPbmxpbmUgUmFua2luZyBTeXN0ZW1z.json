@@ -11,13 +11,51 @@
   "5 SPEAKER BIO": "Nikhil Khani is a Senior Software Engineer at YouTube (Google), where he works on improving YouTube's Homepage Ranking. Li Wei is a Senior Staff Engineer at YouTube (Google), working on the WatchNext Team. RecSys '24, October 14-18, 2024, Bari, Italy Khani et al.",
   "REFERENCES": "[1] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [3] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [2] Yu Cheng, Duo Wang, Pan Zhou, and Tao Zhang. 2017. A survey of model compression and acceleration for deep neural networks. arXiv 2017. arXiv preprint arXiv:1710.09282 (2017). [4] Carlos A Gomez-Uribe and Neil Hunt. 2015. The netflix recommender system: Algorithms, business value, and innovation. ACM Transactions on Management Information Systems (TMIS) 6, 4 (2015), 1-19. [5] Priya Goyal, Piotr Dollár, Ross Girshick, Pieter Noordhuis, Lukasz Wesolowski, Aapo Kyrola, Andrew Tulloch, Yangqing Jia, and Kaiming He. 2017. Accurate, large minibatch sgd: Training imagenet in 1 hour. arXiv preprint arXiv:1706.02677 (2017). [7] Alex Krizhevsky and Geoff Hinton. 2010. Convolutional deep belief networks on cifar-10. Unpublished manuscript 40, 7 (2010), 1-9. [6] Geoffrey Hinton, Oriol Vinyals, and Jeff Dean. 2015. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531 (2015). [8] Seyed Iman Mirzadeh, Mehrdad Farajtabar, Ang Li, Nir Levine, Akihiro Matsukawa, and Hassan Ghasemzadeh. 2020. Improved knowledge distillation via teacher assistant. In Proceedings of the AAAI conference on artificial intelligence , Vol. 34. 5191-5198. [10] Jiaxi Tang, Yoel Drori, Daryl Chang, Maheswaran Sathiamoorthy, Justin Gilmer, Li Wei, Xinyang Yi, Lichan Hong, and Ed H Chi. 2023. Improving Training Stability for Multitask Ranking Models in Recommender Systems. arXiv preprint arXiv:2302.09178 (2023). [9] Harald Steck. 2018. Calibrated recommendations. In Proceedings of the 12th ACM conference on recommender systems . 154-162.",
   "keywords_parsed": [
-    "Knowledge Distillation (KD) is a powerful approach for compressing a large model into a smaller",
-    " more efficient model",
-    " particularly beneficial for latency-sensitive applications like recommender systems. However",
-    " current KD research predominantly focuses on Computer Vision (CV) and NLP tasks",
-    " overlooking unique data characteristics and challenges inherent to recommender systems. This paper addresses these overlooked challenges",
-    " specifically: (1) mitigating data distribution shifts between teacher and student models",
-    " (2) efficiently identifying optimal teacher configurations within time and budgetary constraints",
-    " and (3) enabling computationally efficient and rapid sharing of teacher labels to support multiple students. We present a robust KD system developed and rigorously evaluated on multiple large-scale personalized video recommendation systems within Google. Our live experiment results demonstrate significant improvements in student model performance while ensuring consistent and reliable generation of highquality teacher labels from a continuous data stream of data."
+    "Recommender Systems",
+    "Knowledge Distillation",
+    "Learning to Rank",
+    "Multitask Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A survey of model compression and acceleration for deep neural networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "The netflix recommender system: Algorithms, business value, and innovation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Accurate, large minibatch sgd: Training imagenet in 1 hour"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Convolutional deep belief networks on cifar-10"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Improved knowledge distillation via teacher assistant"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Improving Training Stability for Multitask Ranking Models in Recommender Systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Calibrated recommendations"
+    }
   ]
 }

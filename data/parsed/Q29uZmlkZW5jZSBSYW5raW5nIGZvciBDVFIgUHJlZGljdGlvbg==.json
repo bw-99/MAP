@@ -15,7 +15,61 @@
   "REFERENCES": "[1] Guohao Cai, Jieming Zhu, Quanyu Dai, Zhenhua Dong, Xiuqiang He, Ruiming Tang, and Rui Zhang. 2022. ReLoop: A Self-Correction Continual Learning Loop for Recommender Systems. arXiv preprint arXiv:2204.11165 (2022). [2] Tri Dao, Govinda M Kamath, Vasilis Syrgkanis, and Lester Mackey. 2021. Knowledge Distillation As Semiparametric Inference. arXiv preprint arXiv:2104.09732 (2021). [3] Yoav Freund, Raj Iyer, Robert E Schapire, and Yoram Singer. 2003. An efficient boosting algorithm for combining preferences. Journal of machine learning research 4, Nov (2003), 933-969. [4] Tilmann Gneiting and Adrian E Raftery. 2007. Strictly proper scoring rules, prediction, and estimation. Journal of the American statistical Association 102, 477 (2007), 359-378. [5] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [6] Geoffrey Hinton, Oriol Vinyals, Jeff Dean, et al. 2015. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531 2, 7 (2015). [7] Sebastian Hofstätter, Sophia Althammer, Michael Schröder, Mete Sertkan, and Allan Hanbury. 2020. Improving efficient neural ranking models with crossarchitecture knowledge distillation. arXiv preprint arXiv:2010.02666 (2020). Conference'17, July 2017, Washington, DC, USA [8] SeongKu Kang, Junyoung Hwang, Wonbin Kweon, and Hwanjo Yu. 2021. Topology distillation for recommender system. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 829-839. [9] Mehryar Mohri, Afshin Rostamizadeh, and Ameet Talwalkar. 2018. Foundations of machine learning . MIT press. [10] Wonpyo Park, Dongju Kim, Yan Lu, and Minsu Cho. 2019. Relational knowledge distillation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 3967-3976. [11] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-Based Neural Networks for User Response Prediction. In 2016 IEEE 16th International Conference on Data Mining (ICDM) . 1149-1154. [12] Jiaxi Tang and Ke Wang. 2018. Ranking distillation: Learning compact ranking models with high performance for recommender system. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 2289-2298. [13] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & Cross Network for Ad Click Predictions. In Proceedings of the ADKDD'17 . 12.",
   "keywords_parsed": [
     "Click-Through Rate Prediction",
-    " Loss function",
-    " Deep learning"
+    "Loss function",
+    "Deep learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "ReLoop: A Self-Correction Continual Learning Loop for Recommender Systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Knowledge Distillation As Semiparametric Inference"
+    },
+    {
+      "ref_id": "b3",
+      "title": "An efficient boosting algorithm for combining preferences"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Strictly proper scoring rules, prediction, and estimation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Improving efficient neural ranking models with crossarchitecture knowledge distillation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Topology distillation for recommender system"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Foundations of machine learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Relational knowledge distillation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Product-Based Neural Networks for User Response Prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Ranking distillation: Learning compact ranking models with high performance for recommender system"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    }
   ]
 }

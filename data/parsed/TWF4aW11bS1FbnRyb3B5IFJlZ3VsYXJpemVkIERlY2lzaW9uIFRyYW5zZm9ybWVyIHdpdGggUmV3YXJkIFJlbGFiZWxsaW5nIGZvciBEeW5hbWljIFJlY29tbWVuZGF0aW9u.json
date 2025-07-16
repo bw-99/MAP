@@ -23,7 +23,129 @@
   "REFERENCES": "[1] Xueying Bai, Jian Guan, and Hongning Wang. 2019. A model-based reinforcement learning with adversarial training for online recommendation. Advances in Neural Information Processing Systems 32 (2019). [2] Han Cai, Kan Ren, Weinan Zhang, Kleanthis Malialis, Jun Wang, Yong Yu, and Defeng Guo. 2017. Real-time bidding by reinforcement learning in display advertising. In Proceedings of the tenth ACM international conference on web search and data mining . 661-670. [3] Qingpeng Cai, Aris Filos-Ratsikas, Pingzhong Tang, and Yiwei Zhang. 2018. Reinforcement Mechanism Design for e-commerce. In Proceedings of the 2018 World Wide Web Conference . 1339-1348. Maximum-Entropy Regularized Decision Transformer with Reward Relabelling for Dynamic Recommendation KDD '24, August 25-29, 2024, Barcelona, Spain [4] Lili Chen, Kevin Lu, Aravind Rajeswaran, Kimin Lee, Aditya Grover, Misha Laskin, Pieter Abbeel, Aravind Srinivas, and Igor Mordatch. 2021. Decision transformer: Reinforcement learning via sequence modeling. Advances in neural information processing systems 34 (2021), 15084-15097. [5] Minmin Chen. 2021. Exploration in recommender systems. In Proceedings of the 15th ACM Conference on Recommender Systems . 551-553. [6] Xiaocong Chen, Chaoran Huang, Lina Yao, Xianzhi Wang, Wenjie Zhang, et al. 2020. Knowledge-guided deep reinforcement learning for interactive recommendation. In 2020 International Joint Conference on Neural Networks (IJCNN) . IEEE, 1-8. [7] Xiaocong Chen, Siyu Wang, Julian McAuley, Dietmar Jannach, and Lina Yao. 2023. On the Opportunities and Challenges of Offline Reinforcement Learning for Recommender Systems. arXiv preprint arXiv:2308.11336 (2023). [8] Xiaocong Chen, Lina Yao, Julian McAuley, Weili Guan, Xiaojun Chang, and Xianzhi Wang. 2022. Locality-sensitive state-guided experience replay optimization for sparse rewards in online recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1316-1325. [9] Xiaocong Chen, Lina Yao, Julian McAuley, Guanglin Zhou, and Xianzhi Wang. 2023. Deep reinforcement learning in recommender systems: A survey and new perspectives. Knowledge-Based Systems 264 (2023), 110335. [10] Xiaocong Chen, Lina Yao, Aixin Sun, Xianzhi Wang, Xiwei Xu, and Liming Zhu. 2021. Generative inverse deep reinforcement learning for online recommendation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 201-210. [11] Scott Fujimoto, Herke van Hoof, and David Meger. 2018. Addressing Function Approximation Error in Actor-Critic Methods. In Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholmsmässan, Stockholm, Sweden, July 10-15, 2018 (Proceedings of Machine Learning Research, Vol. 80) . PMLR, 1582-1591. http://proceedings.mlr.press/v80/fujimoto18a.html [12] Chongming Gao, Kexin Huang, Jiawei Chen, Yuan Zhang, Biao Li, Peng Jiang, Shiqi Wang, Zhong Zhang, and Xiangnan He. 2023. Alleviating matthew effect of offline reinforcement learning in interactive recommendation. arXiv preprint arXiv:2307.04571 (2023). [13] Chongming Gao, Shijun Li, Yuan Zhang, Jiawei Chen, Biao Li, Wenqiang Lei, Peng Jiang, and Xiangnan He. 2022. KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos. In Proceedings of the 31st ACM International Conference on Information and Knowledge Management (Atlanta, GA, USA) (CIKM '22) . 3953-3957. https://doi.org/10.1145/3511808.3557624 [14] Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, and Sergey Levine. 2018. Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor. In International conference on machine learning . PMLR, 18611870. [15] Yujing Hu, Qing Da, Anxiang Zeng, Yang Yu, and Yinghui Xu. 2018. Reinforcement learning to rank in e-commerce search engine: Formalization, analysis, and application. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 368-377. [16] Aviral Kumar, Aurick Zhou, George Tucker, and Sergey Levine. 2020. Conservative q-learning for offline reinforcement learning. Advances in Neural Information Processing Systems 33 (2020), 1179-1191. [17] Sergey Levine, Aviral Kumar, George Tucker, and Justin Fu. 2020. Offline reinforcement learning: Tutorial, review, and perspectives on open problems. arXiv preprint arXiv:2005.01643 (2020). [18] Wenzhe Li, Hao Luo, Zichuan Lin, Chongjie Zhang, Zongqing Lu, and Deheng Ye. 2023. A survey on transformers in reinforcement learning. arXiv preprint arXiv:2301.03044 (2023). [19] Timothy P. Lillicrap, Jonathan J. Hunt, Alexander Pritzel, Nicolas Heess, Tom Erez, Yuval Tassa, David Silver, and Daan Wierstra. 2016. Continuous control with deep reinforcement learning. In 4th International Conference on Learning Representations, ICLR 2016, San Juan, Puerto Rico, May 2-4, 2016, Conference Track Proceedings . http://arxiv.org/abs/1509.02971 [20] Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, and Martin Riedmiller. 2013. Playing atari with deep reinforcement learning. arXiv preprint arXiv:1312.5602 (2013). [21] Ashvin Nair, Abhishek Gupta, Murtaza Dalal, and Sergey Levine. 2020. Awac: Accelerating online reinforcement learning with offline datasets. arXiv preprint arXiv:2006.09359 (2020). [22] Jing-Cheng Shi, Yang Yu, Qing Da, Shi-Yong Chen, and An-Xiang Zeng. 2019. Virtual-Taobao: Virtualizing Real-World Online Retail Environment for Reinforcement Learning. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 4902-4909. [23] Mengting Wan and Julian McAuley. 2018. Item Recommendation on Monotonic Behavior Chains. In Proceedings of the 12th ACM Conference on Recommender Systems (Vancouver, British Columbia, Canada) (RecSys '18) . Association for Computing Machinery, New York, NY, USA, 86-94. https://doi.org/10.1145/ 3240323.3240369 [24] Siyu Wang, Xiaocong Chen, Dietmar Jannach, and Lina Yao. 2023. Causal Decision Transformer for Recommender Systems via Offline Reinforcement Learning. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (Taipei, Taiwan) (SIGIR '23) . Association for Computing Machinery, New York, NY, USA, 1599-1608. https://doi.org/10. 1145/3539618.3591648 [25] Taku Yamagata, Ahmed Khalil, and Raul Santos-Rodriguez. 2023. Q-learning decision transformer: Leveraging dynamic programming for conditional sequence modelling in offline rl. In International Conference on Machine Learning . PMLR, 38989-39007. [26] Kesen Zhao, Lixin Zou, Xiangyu Zhao, Maolin Wang, and Dawei Yin. 2023. User Retention-oriented Recommendation with Decision Transformer. In Proceedings of the ACM Web Conference 2023 . 1141-1149. [27] Xiangyu Zhao, Long Xia, Liang Zhang, Zhuoye Ding, Dawei Yin, and Jiliang Tang. 2018. Deep reinforcement learning for page-wise recommendations. In Proceedings of the 12th ACM Conference on Recommender Systems . 95-103. [28] Guanjie Zheng, Fuzheng Zhang, Zihan Zheng, Yang Xiang, Nicholas Jing Yuan, Xing Xie, and Zhenhui Li. 2018. DRN: A deep reinforcement learning framework for news recommendation. In Proceedings of the 2018 World Wide Web Conference . 167-176. [29] Qinqing Zheng, Amy Zhang, and Aditya Grover. 2022. Online decision transformer. In international conference on machine learning . PMLR, 27042-27059. [30] Cai-Nicolas Ziegler, Sean M. McNee, Joseph A. Konstan, and Georg Lausen. 2005. Improving Recommendation Lists through Topic Diversification. In Proceedings of the 14th International Conference on World Wide Web (Chiba, Japan) (WWW '05) . Association for Computing Machinery, New York, NY, USA, 22-32. https: //doi.org/10.1145/1060745.1060754",
   "keywords_parsed": [
     "Offline Reinforcement Learning",
-    " Recommender Systems",
-    " Deep Learning"
+    "Recommender Systems",
+    "Deep Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A model-based reinforcement learning with adversarial training for online recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Real-time bidding by reinforcement learning in display advertising"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Reinforcement Mechanism Design for e-commerce"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Decision transformer: Reinforcement learning via sequence modeling"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Exploration in recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Knowledge-guided deep reinforcement learning for interactive recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "On the Opportunities and Challenges of Offline Reinforcement Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Locality-sensitive state-guided experience replay optimization for sparse rewards in online recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep reinforcement learning in recommender systems: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Generative inverse deep reinforcement learning for online recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Addressing Function Approximation Error in Actor-Critic Methods"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Alleviating matthew effect of offline reinforcement learning in interactive recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Reinforcement learning to rank in e-commerce search engine: Formalization, analysis, and application"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Conservative q-learning for offline reinforcement learning"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Offline reinforcement learning: Tutorial, review, and perspectives on open problems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "A survey on transformers in reinforcement learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Continuous control with deep reinforcement learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Playing atari with deep reinforcement learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Awac: Accelerating online reinforcement learning with offline datasets"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Virtual-Taobao: Virtualizing Real-World Online Retail Environment for Reinforcement Learning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Item Recommendation on Monotonic Behavior Chains"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Causal Decision Transformer for Recommender Systems via Offline Reinforcement Learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Q-learning decision transformer: Leveraging dynamic programming for conditional sequence modelling in offline rl"
+    },
+    {
+      "ref_id": "b26",
+      "title": "User Retention-oriented Recommendation with Decision Transformer"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Deep reinforcement learning for page-wise recommendations"
+    },
+    {
+      "ref_id": "b28",
+      "title": "DRN: A deep reinforcement learning framework for news recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Online decision transformer"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Improving Recommendation Lists through Topic Diversification"
+    }
   ]
 }

@@ -18,17 +18,138 @@
   "REFERENCES": "[1] Liyue Chen, Linian Wang, Jinyu Xu, Shuai Chen, Weiqiang Wang, Wenbiao Zhao, Qiyu Li, and Leye Wang. 2023. Knowledge-inspired Subdomain Adaptation for Cross-Domain Knowledge Transfer. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 234-244. [2] Lei Chen, Fajie Yuan, Jiaxi Yang, Xiangnan He, Chengming Li, and Min Yang. 2021. User-specific adaptive fine-tuning for cross-domain recommendations. IEEE Transactions on Knowledge and Data Engineering (2021). [3] Qiwei Chen, Yue Xu, Changhua Pei, Shanshan Lv, Tao Zhuang, and Junfeng Ge. 2022. Efficient Long Sequential User Data Modeling for Click-Through Rate Prediction. arXiv preprint arXiv:2209.12212 (2022). [4] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [5] Michael Crawshaw. 2020. Multi-task learning with deep neural networks: A survey. arXiv preprint arXiv:2009.09796 (2020). [6] Matthias De Lange, Rahaf Aljundi, Marc Masana, Sarah Parisot, Xu Jia, Aleš Leonardis, Gregory Slabaugh, and Tinne Tuytelaars. 2021. A continual learning survey: Defying forgetting in classification tasks. IEEE transactions on pattern analysis and machine intelligence 44, 7 (2021), 3366-3385. [7] John Duchi, Elad Hazan, and Yoram Singer. 2011. Adaptive subgradient methods for online learning and stochastic optimization. Journal of machine learning research 12, 7 (2011). [8] Yaroslav Ganin and Victor Lempitsky. 2015. Unsupervised domain adaptation by backpropagation. In International conference on machine learning . PMLR, 11801189. [9] Jingtong Gao, Xiangyu Zhao, Bo Chen, Fan Yan, Huifeng Guo, and Ruiming Tang. 2023. AutoTransfer: Instance Transfer for Cross-Domain Recommendations. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1478-1487. [10] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [11] Guangneng Hu, Yu Zhang, and Qiang Yang. 2018. Conet: Collaborative cross networks for cross-domain recommendation. In Proceedings of the 27th ACM international conference on information and knowledge management . 667-676. [12] Jian Hu, Hongya Tuo, Chao Wang, Lingfeng Qiao, Haowen Zhong, and Zhongliang Jing. 2019. Multi-Weight Partial Domain Adaptation.. In BMVC . 5. [13] Jian Hu, Hongya Tuo, Chao Wang, Lingfeng Qiao, Haowen Zhong, Junchi Yan, Zhongliang Jing, and Henry Leung. 2020. Discriminative partial domain adversarial network. In Computer Vision-ECCV 2020: 16th European Conference, Glasgow, UK, August 23-28, 2020, Proceedings, Part XXVII 16 . Springer, 632-648. [14] Zhaoxin Huan, Ang Li, Xiaolu Zhang, Xu Min, Jieyu Yang, Yong He, and Jun Zhou. 2023. SAMD: An Industrial Framework for Heterogeneous Multi-Scenario Recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4175-4184. [15] Nikos Komodakis and Sergey Zagoruyko. 2017. Paying more attention to attention: improving the performance of convolutional neural networks via attention transfer. In ICLR . [16] Chenglin Li, Yuanzhen Xie, Chenyun Yu, Bo Hu, Zang Li, Guoqiang Shu, Xiaohu Qie, and Di Niu. 2023. One for All, All for One: Learning and Transferring User Embeddings for Cross-Domain Recommendation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 366-374. [17] Lixin Liu, Yanling Wang, Tianming Wang, Dong Guan, Jiawei Wu, Jingxu Chen, Rong Xiao, Wenxiang Zhu, and Fei Fang. 2023. Continual Transfer Learning for Cross-Domain Click-Through Rate Prediction at Taobao. In Companion Proceedings of the ACM Web Conference 2023 . 346-350. [18] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [19] Shanlei Mu, Penghui Wei, Wayne Xin Zhao, Shaoguo Liu, Liang Wang, and Bo Zheng. 2023. Hybrid Contrastive Constraints for Multi-Scenario Ad Ranking. arXiv preprint arXiv:2302.02636 (2023). [20] Wentao Ouyang, Xiuwu Zhang, Lei Zhao, Jinmei Luo, Yu Zhang, Heng Zou, Zhaojie Liu, and Yanlong Du. 2020. Minet: Mixed interest network for crossdomain click-through rate prediction. In Proceedings of the 29th ACM international conference on information & knowledge management . 2669-2676. [21] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. [22] Andrei A Rusu, Neil C Rabinowitz, Guillaume Desjardins, Hubert Soyer, James Kirkpatrick, Koray Kavukcuoglu, Razvan Pascanu, and Raia Hadsell. 2016. Progressive neural networks. arXiv preprint arXiv:1606.04671 (2016). [23] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4104-4113. [24] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Proceedings of the 14th ACM Conference on Recommender Systems . 269-278. [25] Yu Tian, Bofang Li, Si Chen, Xubin Li, Hongbo Deng, Jian Xu, Bo Zheng, Qian Wang, and Chenliang Li. 2023. Multi-Scenario Ranking with Adaptive Feature Learning. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 517-526. [26] Hao Wang, Hao He, and Dina Katabi. 2020. Continuously indexed domain adaptation. arXiv preprint arXiv:2007.01807 (2020). [27] Yufeng Xie, Mingchu Li, Kun Lu, Syed Bilal Hussain Shah, and Xiao Zheng. 2022. Multi-task Learning Model based on Multiple Characteristics and Multiple Interests for CTR prediction. In 2022 IEEE Conference on Dependable and Secure Computing (DSC) . IEEE, 1-7. [28] Xuanhua Yang, Jianxin Zhao, Shaoguo Liu, Liang Wang, and Bo Zheng. 2023. Gradient Coordination for Quantifying and Maximizing Knowledge Transference in Multi-Task Learning. arXiv preprint arXiv:2303.05847 (2023). [29] Weinan Zhang, Jiarui Qin, Wei Guo, Ruiming Tang, and Xiuqiang He. 2021. Deep learning for click-through rate estimation. arXiv preprint arXiv:2104.10584 (2021). [30] Yu Zhang and Qiang Yang. 2021. A survey on multi-task learning. IEEE Transactions on Knowledge and Data Engineering 34, 12 (2021), 5586-5609. [31] Pengyu Zhao, Xin Gao, Chunxu Xu, and Liang Chen. 2023. M5: Multi-Modal Multi-Interest Multi-Scenario Matching for Over-the-Top Recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 5650-5659. [32] Xinyu Zou, Zhi Hu, Yiming Zhao, Xuchu Ding, Zhongyi Liu, Chenliang Li, and Aixin Sun. 2022. Automatic expert selection for multi-scenario and multi-task search. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1535-1544.",
   "keywords_parsed": [
     "cross domain",
-    " continual transfer learning",
-    " adaptive knowledge distillation",
-    " graph guided ∗ Corresponding author. † Both authors contributed equally to this research. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. SIGIR '24",
-    " July 14-18",
-    " 2024",
-    " Washington",
-    " DC",
-    " USA. © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0431-4/24/07 https://doi.org/10.1145/3626772.3661348 Tong Liu yingmu@taobao.com Alibaba Group Hangzhou",
-    " China"
+    "continual transfer learning",
+    "adaptive knowledge distillation",
+    "graph guided"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Knowledge-inspired Subdomain Adaptation for Cross-Domain Knowledge Transfer"
+    },
+    {
+      "ref_id": "b2",
+      "title": "User-specific adaptive fine-tuning for cross-domain recommendations"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Efficient Long Sequential User Data Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Multi-task learning with deep neural networks: A survey"
+    },
+    {
+      "ref_id": "b6",
+      "title": "A continual learning survey: Defying forgetting in classification tasks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Adaptive subgradient methods for online learning and stochastic optimization"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Unsupervised domain adaptation by backpropagation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "AutoTransfer: Instance Transfer for Cross-Domain Recommendations"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Conet: Collaborative cross networks for cross-domain recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Multi-Weight Partial Domain Adaptation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Discriminative partial domain adversarial network"
+    },
+    {
+      "ref_id": "b14",
+      "title": "SAMD: An Industrial Framework for Heterogeneous Multi-Scenario Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Paying more attention to attention: improving the performance of convolutional neural networks via attention transfer"
+    },
+    {
+      "ref_id": "b16",
+      "title": "One for All, All for One: Learning and Transferring User Embeddings for Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Continual Transfer Learning for Cross-Domain Click-Through Rate Prediction at Taobao"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Hybrid Contrastive Constraints for Multi-Scenario Ad Ranking"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Minet: Mixed interest network for crossdomain click-through rate prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Progressive neural networks"
+    },
+    {
+      "ref_id": "b23",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Multi-Scenario Ranking with Adaptive Feature Learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Continuously indexed domain adaptation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Multi-task Learning Model based on Multiple Characteristics and Multiple Interests for CTR prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Gradient Coordination for Quantifying and Maximizing Knowledge Transference in Multi-Task Learning"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Deep learning for click-through rate estimation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "A survey on multi-task learning"
+    },
+    {
+      "ref_id": "b31",
+      "title": "M5: Multi-Modal Multi-Interest Multi-Scenario Matching for Over-the-Top Recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Automatic expert selection for multi-scenario and multi-task search"
+    }
   ]
 }

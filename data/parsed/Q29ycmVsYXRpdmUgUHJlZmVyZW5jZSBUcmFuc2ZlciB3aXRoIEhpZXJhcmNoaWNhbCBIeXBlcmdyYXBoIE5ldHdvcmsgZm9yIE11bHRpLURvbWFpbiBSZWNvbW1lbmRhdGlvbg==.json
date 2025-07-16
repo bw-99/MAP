@@ -26,16 +26,138 @@
   "REFERENCES": "[1] Fengwen Chen, Shirui Pan, Jing Jiang, Huan Huo, and Guodong Long. 2019. DAGCN: dual attention graph convolutional networks. In 2019 International Joint Conference on Neural Networks (IJCNN) . IEEE, 1-8. [3] Yuting Chen, Yanshi Wang, Yabo Ni, An-Xiang Zeng, and Lanfen Lin. 2020. Scenario-aware and Mutual-based approach for Multi-scenario Recommendation in E-Commerce. In 2020 International Conference on Data Mining Workshops (ICDMW) . IEEE, 127-135. [2] Xu Chen, Kun Xiong, Yongfeng Zhang, Long Xia, Dawei Yin, and Jimmy Xiangji Huang. 2020. Neural feature-aware recommendation with signed hypergraph convolutional network. ACM Transactions on Information Systems (TOIS) (2020). [4] Eli Chien, Chao Pan, Jianhao Peng, and Olgica Milenkovic. 2022. You are AllSet: AMultiset Function Framework for Hypergraph Neural Networks. ArXiv (2022). [6] Will Hamilton, Zhitao Ying, and Jure Leskovec. 2017. Inductive representation learning on large graphs. Advances in neural information processing systems 30 (2017). [5] Yulong Gu, Wentian Bao, Dan Ou, Xiang Li, Baoliang Cui, Biyu Ma, Haikuan Huang, Qingwen Liu, and Xiaoyi Zeng. 2021. Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . [7] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, and Meng Wang. 2020. Lightgcn: Simplifying and powering graph convolution network for recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . [9] Shuyi Ji, Yifan Feng, Rongrong Ji, Xibin Zhao, Wanwan Tang, and Yue Gao. 2020. Dual channel hypergraph collaborative filtering. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . [8] Jing Huang and Jie Yang. 2021. UniGNN: a Unified Framework for Graph and Hypergraph Neural Networks. In Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence (IJCAI-21) . [10] Bowen Jin, Chen Gao, Xiangnan He, Depeng Jin, and Yong Li. 2020. Multibehavior recommendation with graph convolutional networks. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 659-668. [12] Thomas N Kipf and Max Welling. 2016. Semi-supervised classification with graph convolutional networks. arXiv preprint arXiv:1609.02907 (2016). [11] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [13] Meng Liu, Jianjun Li, Guohui Li, and Peng Pan. 2020. Cross Domain Recommendation via Bi-Directional Transfer Graph Collaborative Filtering Networks. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . [15] Weizhi Ma, Min Zhang, Chenyang Wang, Cheng Luo, Yiqun Liu, and Shaoping Ma. 2018. Your Tweets Reveal What You Like: Introducing Cross-media Content Information into Multi-domain Recommendation.. In IJCAI . 3484-3490. [14] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [16] Jianmo Ni, Jiacheng Li, and Julian McAuley. 2019. Justifying recommendations using distantly-labeled reviews and fine-grained aspects. In Proceedings of the 2019 conference on empirical methods in natural language processing and the 9th international joint conference on natural language processing (EMNLP-IJCNLP) . 188-197. [18] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [17] Aaron Van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation learning with contrastive predictive coding. arXiv e-prints (2018). [19] Bei Wang, Chenrui Zhang, Hao Zhang, Xiaoqing Lyu, and Zhi Tang. 2020. Dual Autoencoder Network with Swap Reconstruction for Cold-Start Recommendation. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2249-2252. [21] Jianling Wang, Kaize Ding, Liangjie Hong, Huan Liu, and James Caverlee. 2020. Next-item recommendation with sequential hypergraphs. In Proceedings of the 43rd international ACM SIGIR conference on research and development in information retrieval . [20] Chen Wang, Yueqing Liang, Zhiwei Liu, Tao Zhang, and Philip S. Yu. 2021. Pretraining Graph Neural Network for Cross Domain Recommendation. CoRR abs/2111.08268 (2021). arXiv:2111.08268 [22] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural graph collaborative filtering. In Proceedings of the 42nd international ACM SIGIR conference on Research and development in Information Retrieval . 165-174. [23] Xin Xia, Hongzhi Yin, Junliang Yu, Qinyong Wang, Lizhen Cui, and Xiangliang Zhang. 2021. Self-supervised hypergraph convolutional networks for sessionbased recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence . [25] Chengxuan Ying, Tianle Cai, Shengjie Luo, Shuxin Zheng, Guolin Ke, Di He, Yanming Shen, and Tie-Yan Liu. 2021. Do transformers really perform badly for graph representation? Advances in Neural Information Processing Systems 34 (2021), 28877-28888. [24] Ruobing Xie, Zhijie Qiu, Jun Rao, Yi Liu, Bo Zhang, and Leyu Lin. 2020. Internal and Contextual Attention Network for Cold-start Multi-channel Matching in Recommendation.. In IJCAI . 2732-2738. [26] Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, William L Hamilton, and Jure Leskovec. 2018. Graph convolutional neural networks for web-scale recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 974-983. [28] Junwei Zhang, Min Gao, Junliang Yu, Lei Guo, Jundong Li, and Hongzhi Yin. 2021. Double-Scale Self-Supervised Hypergraph Learning for Group Recommendation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . [27] Junliang Yu, Hongzhi Yin, Jundong Li, Qinyong Wang, Nguyen Quoc Viet Hung, and Xiangliang Zhang. 2021. Self-supervised multi-channel hypergraph convolutional network for social recommendation. In Proceedings of the Web Conference 2021 . [29] Weifeng Zhang, Jingwen Mao, Yi Cao, and Congfu Xu. 2020. Multiplex Graph Neural Networks for Multi-Behavior Recommendation. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . [31] Cheng Zhao, Chenliang Li, and Cong Fu. 2019. Cross-Domain Recommendation via Preference Propagation GraphNet. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . [30] Yu Zhang, Bin Cao, and Dit-Yan Yeung. 2010. Multi-domain collaborative filtering. In Proceedings of the Twenty-Sixth Conference on Uncertainty in Artificial Intelligence . 725-732. [32] Feng Zhu, Yan Wang, Chaochao Chen, Guanfeng Liu, and Xiaolin Zheng. 2020. A Graphical and Attentional Framework for Dual-Target Cross-Domain Recommendation.. In IJCAI . 3001-3008.",
   "keywords_parsed": [
     "Multi-domain Recommendation",
-    " Preference Transfer",
-    " Hypergraph Learning",
-    " Behavior Sparseness † Co-first authorship. ∗ Correspondence to: S. Liu. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. WWW'23",
-    " April 30-May 4",
-    " 2023",
-    " Austin",
-    " Texas",
-    " USA ACM ISBN 978-1-nnnn-nnnn-n/nn/nn...$15.00 © 2023 Association for Computing Machinery. Figure 1: Multi-domain recommendation: the definition of domain can be recommendation scenario or item categories . … … … User A User B … … … … … … … … … Cate 1: Clothes Cate 2: Shoes Cate 3: Food Scenarios as domains Categories as domains Scenario 1: Homepage Scenario 3: Live Broadcast Scenario 2: Banner M"
+    "Preference Transfer",
+    "Hypergraph Learning",
+    "Behavior Sparseness"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "DAGCN: dual attention graph convolutional networks"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Neural feature-aware recommendation with signed hypergraph convolutional network"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Scenario-aware and Mutual-based approach for Multi-scenario Recommendation in E-Commerce"
+    },
+    {
+      "ref_id": "b4",
+      "title": "You are AllSet: AMultiset Function Framework for Hypergraph Neural Networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "UniGNN: a Unified Framework for Graph and Hypergraph Neural Networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Dual channel hypergraph collaborative filtering"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Multibehavior recommendation with graph convolutional networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Cross Domain Recommendation via Bi-Directional Transfer Graph Collaborative Filtering Networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Your Tweets Reveal What You Like: Introducing Cross-media Content Information into Multi-domain Recommendation."
+    },
+    {
+      "ref_id": "b16",
+      "title": "Justifying recommendations using distantly-labeled reviews and fine-grained aspects"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Dual Autoencoder Network with Swap Reconstruction for Cold-Start Recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Pretraining Graph Neural Network for Cross Domain Recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Next-item recommendation with sequential hypergraphs"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Self-supervised hypergraph convolutional networks for sessionbased recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Internal and Contextual Attention Network for Cold-start Multi-channel Matching in Recommendation."
+    },
+    {
+      "ref_id": "b25",
+      "title": "Do transformers really perform badly for graph representation?"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Graph convolutional neural networks for web-scale recommender systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Self-supervised multi-channel hypergraph convolutional network for social recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Double-Scale Self-Supervised Hypergraph Learning for Group Recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Multiplex Graph Neural Networks for Multi-Behavior Recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Multi-domain collaborative filtering"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Cross-Domain Recommendation via Preference Propagation GraphNet"
+    },
+    {
+      "ref_id": "b32",
+      "title": "A Graphical and Attentional Framework for Dual-Target Cross-Domain Recommendation."
+    }
   ]
 }

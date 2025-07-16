@@ -17,6 +17,139 @@
   "ACKNOWLEDGEMENT": "We specifically want to thank Erte Pan for the collaboration on the science design, Yixiong Fan and Lukas Dorward for model deployment, Alexander Bergdahl for the insight in business and product, Keivan Majidi for the administrative support.",
   "REFERENCES": "[1] H. Hwangbo, Y. S. Kim, and K. J. Cha, 'Recommendation system development for fashion retail e-commerce,' Electronic Commerce Research and Applications , vol. 28, pp. 94-101, 2018. [2] W. Liu, Y. Zhang, J. Wang, Y. He, J. Caverlee, P. P. Chan, D. S. Yeung, and P.-A. Heng, 'Item relationship graph neural networks for e-commerce,' IEEE Transactions on Neural Networks and Learning Systems , 2021. [3] T. Chen, H. Yin, G. Ye, Z. Huang, Y. Wang, and M. Wang, 'Try this instead: Personalized and interpretable substitute recommendation,' in Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval , pp. 891-900, 2020. [4] J. McAuley, R. Pandey, and J. Leskovec, 'Inferring networks of substitutable and complementary products,' in Proceedings of the 21th ACM SIGKDD international conference on knowledge discovery and data mining , pp. 785-794, 2015. [5] Z. Ovaisi, R. Ahsan, Y. Zhang, K. Vasilaky, and E. Zheleva, 'Correcting for selection bias in learning-to-rank systems,' in Proceedings of The Web Conference 2020 , pp. 1863-1873, 2020. [6] J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, 'Bert: Pre-training of deep bidirectional transformers for language understanding,' arXiv preprint arXiv:1810.04805 , 2018. [7] A. Conneau, K. Khandelwal, N. Goyal, V. Chaudhary, G. Wenzek, F. Guzm´ an, E. Grave, M. Ott, L. Zettlemoyer, and V. Stoyanov, 'Unsupervised cross-lingual representation learning at scale,' arXiv preprint arXiv:1911.02116 , 2019. [8] Z. Wang, Z. Jiang, Z. Ren, J. Tang, and D. Yin, 'A path-constrained framework for discriminating substitutable and complementary products in e-commerce,' in Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining , pp. 619-627, 2018. [9] S. Zhang, H. Yin, Q. Wang, T. Chen, H. Chen, and Q. V. H. Nguyen, 'Inferring substitutable products with deep network embedding.,' in IJCAI , pp. 4306-4312, 2019. [10] Z.-H. Zhou, 'A brief introduction to weakly supervised learning,' National science review , vol. 5, no. 1, pp. 44-53, 2018. [11] K. Hofmann, A. Schuth, A. Bellogin, and M. De Rijke, 'Effects of position bias on click-based recommender evaluation,' in European Conference on Information Retrieval , pp. 624-630, Springer, 2014. [12] M. Chen, A. Beutel, P. Covington, S. Jain, F. Belletti, and E. H. Chi, 'Top-k off-policy correction for a reinforce recommender system,' in Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining , pp. 456-464, 2019. [13] A. Virani, J. Baxter, D. Shiebler, P. Gautier, S. Verma, Y . Xia, A. Sharma, S. Binnani, L. Chen, and C. Yu, 'Lessons learned addressing dataset bias in model-based candidate generation at twitter,' arXiv preprint arXiv:2105.09293 , 2021. [14] X. He, H. Zhang, M.-Y. Kan, and T.-S. Chua, 'Fast matrix factorization for online recommendation with implicit feedback,' in Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval , pp. 549-558, 2016. [15] S. Li, F. Lv, T. Jin, G. Lin, K. Yang, X. Zeng, X.-M. Wu, and Q. Ma, 'Embedding-based product retrieval in taobao search,' arXiv preprint arXiv:2106.09297 , 2021. [16] Y. Liu, M. Ott, N. Goyal, J. Du, M. Joshi, D. Chen, O. Levy, M. Lewis, L. Zettlemoyer, and V. Stoyanov, 'Roberta: A robustly optimized bert pretraining approach,' arXiv preprint arXiv:1907.11692 , 2019. [17] P.-S. Huang, X. He, J. Gao, L. Deng, A. Acero, and L. Heck, 'Learning deep structured semantic models for web search using clickthrough data,' in Proceedings of the 22nd ACM international conference on Information & Knowledge Management , pp. 2333-2338, 2013. [18] L. Pang, Y. Lan, J. Guo, J. Xu, S. Wan, and X. Cheng, 'Text matching as image recognition,' in Proceedings of the AAAI Conference on Artificial Intelligence , vol. 30, 2016. [19] H. Lu, Y. Hu, T. Zhao, T. Wu, Y. Song, and B. Yin, 'Graph-based multilingual product retrieval in e-commerce search,' arXiv preprint arXiv:2105.02978 , 2021. [20] H. Zhang, S. Wang, K. Zhang, Z. Tang, Y. Jiang, Y. Xiao, W. Yan, and W.-Y. Yang, 'Towards personalized and semantic retrieval: An end-to-end solution for e-commerce search via embedding learning,' in Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval , pp. 2407-2416, 2020. [21] Q. Wu, W.-L. Hsu, T. Xu, Z. Liu, G. Ma, G. Jacobson, and S. Zhao, 'Speaking with actions-learning customer journey behavior,' in 2019 IEEE 13th International conference on semantic computing (ICSC) , pp. 279-286, IEEE, 2019. [22] S. Zhao, W.-L. Hsu, G. Ma, T. Xu, G. Jacobson, and R. Rustamov, 'Characterizing and learning representation on customer contact journeys in cellular services,' in Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining , pp. 3252-3260, 2020. [23] T. Chen and C. Guestrin, 'Xgboost: A scalable tree boosting system,' in Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining , pp. 785-794, 2016. [24] S. Zhao, A. Kalra, C. Wang, C. Borcea, and Y. Chen, 'Ad blocking whitelist prediction for online publishers,' in 2019 IEEE International Conference on Big Data (Big Data) , pp. 1711-1716, IEEE, 2019. [25] J. Pennington, R. Socher, and C. D. Manning, 'Glove: Global vectors for word representation,' in Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP) , pp. 15321543, 2014. [26] P. Bojanowski, E. Grave, A. Joulin, and T. Mikolov, 'Enriching word vectors with subword information,' Transactions of the Association for Computational Linguistics , vol. 5, pp. 135-146, 2017. [27] Q. Wu, A. Hare, S. Wang, Y. Tu, Z. Liu, C. G. Brinton, and Y. Li, 'Bats: a spectral biclustering approach to single document topic modeling and segmentation,' ACM Transactions on Intelligent Systems and Technology (TIST) , vol. 12, no. 5, pp. 1-29, 2021. [28] Q. Wu, C. G. Brinton, Z. Zhang, A. Pizzoferrato, Z. Liu, and M. Cucuringu, 'Equity2vec: End-to-end deep learning framework for crosssectional asset pricing,' in Proceedings of the Second ACM International Conference on AI in Finance , pp. 1-9, 2021. [29] A. Wang, A. Singh, J. Michael, F. Hill, O. Levy, and S. R. Bowman, 'Glue: A multi-task benchmark and analysis platform for natural language understanding,' arXiv preprint arXiv:1804.07461 , 2018. [30] S. Kaufman, S. Rosset, C. Perlich, and O. Stitelman, 'Leakage in data mining: Formulation, detection, and avoidance,' ACM Transactions on Knowledge Discovery from Data (TKDD) , vol. 6, no. 4, pp. 1-21, 2012. [31] I. Loshchilov and F. Hutter, 'Decoupled weight decay regularization,' arXiv preprint arXiv:1711.05101 , 2017. [32] T. Wolf, L. Debut, V. Sanh, J. Chaumond, C. Delangue, A. Moi, P. Cistac, T. Rault, R. Louf, M. Funtowicz, et al. , 'Huggingface's transformers: State-of-the-art natural language processing,' arXiv preprint arXiv:1910.03771 , 2019.",
   "keywords_parsed": [
-    "None"
+    "Substitute Recommendation",
+    "E-Commerce",
+    "Multilingual",
+    "Weakly Supervised Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Recommendation system development for fashion retail e-commerce"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Item relationship graph neural networks for e-commerce"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Try this instead: Personalized and interpretable substitute recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Inferring networks of substitutable and complementary products"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Correcting for selection bias in learning-to-rank systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Unsupervised cross-lingual representation learning at scale"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A path-constrained framework for discriminating substitutable and complementary products in e-commerce"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Inferring substitutable products with deep network embedding"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A brief introduction to weakly supervised learning"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Effects of position bias on click-based recommender evaluation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Top-k off-policy correction for a reinforce recommender system"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Lessons learned addressing dataset bias in model-based candidate generation at twitter"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Fast matrix factorization for online recommendation with implicit feedback"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Embedding-based product retrieval in taobao search"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Text matching as image recognition"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Graph-based multilingual product retrieval in e-commerce search"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Towards personalized and semantic retrieval: An end-to-end solution for e-commerce search via embedding learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Speaking with actions-learning customer journey behavior"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Characterizing and learning representation on customer contact journeys in cellular services"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Xgboost: A scalable tree boosting system"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Ad blocking whitelist prediction for online publishers"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Glove: Global vectors for word representation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Enriching word vectors with subword information"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Bats: a spectral biclustering approach to single document topic modeling and segmentation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Equity2vec: End-to-end deep learning framework for crosssectional asset pricing"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Glue: A multi-task benchmark and analysis platform for natural language understanding"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Leakage in data mining: Formulation, detection, and avoidance"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Decoupled weight decay regularization"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Huggingface's transformers: State-of-the-art natural language processing"
+    }
   ]
 }

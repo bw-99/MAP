@@ -24,7 +24,217 @@
   "REFERENCES": "[1] Christopher John Cornish Hellaby Watkins. 1989. Learning from delayed rewards. (1989). [2] Geoffrey E Hinton and Ruslan R Salakhutdinov. 2006. Reducing the dimensionality of data with neural networks. science 313, 5786 (2006), 504-507. [3] Diederik P Kingma and Max Welling. 2013. Auto-encoding variational bayes. arXiv preprint arXiv:1312.6114 (2013). [4] Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. 2014. Generative adversarial nets. Advances in neural information processing systems 27 (2014). [5] Olaf Ronneberger, Philipp Fischer, and Thomas Brox. 2015. U-net: Convolutional networks for biomedical image segmentation. In Medical Image Computing and Computer-Assisted Intervention-MICCAI 2015: 18th International Conference, Munich, Germany, October 5-9, 2015, Proceedings, Part III 18 . Springer, 234-241. [6] Scott Reed, Zeynep Akata, Xinchen Yan, Lajanugen Logeswaran, Bernt Schiele, and Honglak Lee. 2016. Generative adversarial text to image synthesis. In International conference on machine learning . PMLR, 1060-1069. [7] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [8] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [9] Aaron Van Den Oord, Oriol Vinyals, et al. 2017. Neural discrete representation learning. Advances in neural information processing systems 30 (2017). [10] Tero Karras, Timo Aila, Samuli Laine, and Jaakko Lehtinen. 2017. Progressive growing of gans for improved quality, stability, and variation. arXiv preprint arXiv:1710.10196 (2017). [11] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [12] Tiezheng Ge, Liqin Zhao, Guorui Zhou, Keyu Chen, Shuying Liu, Huimin Yi, Zelin Hu, Bochao Liu, Peng Sun, Haoyu Liu, et al. 2018. Image matters: Visually modeling user behaviors using advanced model server. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . 2087-2095. [13] Vincent François-Lavet, Peter Henderson, Riashat Islam, Marc G Bellemare, Joelle Pineau, et al. 2018. An introduction to deep reinforcement learning. Foundations and Trends® in Machine Learning 11, 3-4 (2018), 219-354. [14] Ali Razavi, Aaron Van den Oord, and Oriol Vinyals. 2019. Generating diverse high-fidelity images with vq-vae-2. Advances in neural information processing systems 32 (2019). [15] Tero Karras, Samuli Laine, and Timo Aila. 2019. A style-based generator architecture for generative adversarial networks. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 4401-4410. [16] Zhichen Zhao, Lei Li, Bowen Zhang, Meng Wang, Yuning Jiang, Li Xu, Fengkun Wang, and Weiying Ma. 2019. What you look matters? offline evaluation of advertising creatives for cold-start problem. In Proceedings of the 28th ACM international conference on information and knowledge management . 2605-2613. [17] Tero Karras, Samuli Laine, Miika Aittala, Janne Hellsten, Jaakko Lehtinen, and Timo Aila. 2020. Analyzing and improving the image quality of stylegan. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 8110-8119. [18] Jonathan Ho, Ajay Jain, and Pieter Abbeel. 2020. Denoising diffusion probabilistic models. Advances in neural information processing systems 33 (2020), 6840-6851. [19] Sreekanth Vempati, Korah T Malayil, V Sruthi, and R Sandeep. 2020. Enabling hyper-personalisation: Automated ad creative generation and ranking for fashion e-commerce. In Fashion Recommender Systems . Springer, 25-48. [20] Shaunak Mishra, Manisha Verma, Yichao Zhou, Kapil Thadani, and Wei Wang. 2020. Learning to create better ads: Generation and ranking approaches for ad creative refinement. In Proceedings of the 29th ACM international conference on information & knowledge management . 2653-2660. [21] Tero Karras, Miika Aittala, Samuli Laine, Erik Härkönen, Janne Hellsten, Jaakko Lehtinen, and Timo Aila. 2021. Alias-free generative adversarial networks. Advances in Neural Information Processing Systems 34 (2021), 852-863. [22] Ming Ding, Zhuoyi Yang, Wenyi Hong, Wendi Zheng, Chang Zhou, Da Yin, Junyang Lin, Xu Zou, Zhou Shao, Hongxia Yang, et al. 2021. Cogview: Mastering text-to-image generation via transformers. Advances in Neural Information Processing Systems 34 (2021), 19822-19835. [23] Prafulla Dhariwal and Alexander Nichol. 2021. Diffusion models beat gans on image synthesis. Advances in neural information processing systems 34 (2021), 8780-8794. [24] Alex Nichol, Prafulla Dhariwal, Aditya Ramesh, Pranav Shyam, Pamela Mishkin, Bob McGrew, Ilya Sutskever, and Mark Chen. 2021. Glide: Towards photorealistic image generation and editing with text-guided diffusion models. arXiv preprint arXiv:2112.10741 (2021). [25] Shiyao Wang, Qi Liu, Tiezheng Ge, Defu Lian, and Zhiqiang Zhang. 2021. A hybrid bandit model with visual priors for creative ranking in display advertising. In Proceedings of the web conference 2021 . 2324-2334. [26] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, et al. 2021. Learning transferable visual models from natural language supervision. In International conference on machine learning . PMLR, 8748-8763. [27] Edward J Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2021. Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685 (2021). [28] Axel Sauer, Kashyap Chitta, Jens Müller, and Andreas Geiger. 2021. Projected gans converge faster. Advances in Neural Information Processing Systems 34 (2021), 17480-17492. [29] Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, Zheng Zhang, Stephen Lin, and Baining Guo. 2021. Swin transformer: Hierarchical vision transformer using shifted windows. In Proceedings of the IEEE/CVF international conference on computer vision . 10012-10022. [30] Patrick Esser, Robin Rombach, and Bjorn Ommer. 2021. Taming transformers for high-resolution image synthesis. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 12873-12883. [31] Aditya Ramesh, Mikhail Pavlov, Gabriel Goh, Scott Gray, Chelsea Voss, Alec Radford, Mark Chen, and Ilya Sutskever. 2021. Zero-shot text-to-image generation. In International Conference on Machine Learning . PMLR, 8821-8831. [32] Yiqi Gao, Xinglin Hou, Yuanmeng Zhang, Tiezheng Ge, Yuning Jiang, and Peng Wang. 2022. Caponimage: Context-driven dense-captioning on image. arXiv preprint arXiv:2204.12974 (2022). [33] Min Zhou, Chenchen Xu, Ye Ma, Tiezheng Ge, Yuning Jiang, and Weiwei Xu. 2022. Composition-aware graphic layout GAN for visual-textual presentation designs. arXiv preprint arXiv:2205.00303 (2022). [34] Jihyeong Ko, Jisu Jeong, and Kyumgmin Kim. 2022. Contrastive Learning for Topic-Dependent Image Ranking. In Workshop on Recommender Systems in Fashion and Retail . Springer, 79-98. [35] Shiyao Wang, Qi Liu, Yicheng Zhong, Zhilong Zhou, Tiezheng Ge, Defu Lian, and Yuning Jiang. 2022. CreaGAN: An Automatic Creative Generation Framework for Display Advertising. In Proceedings of the 30th ACM International Conference on Multimedia . 7261-7269. [36] Aditya Ramesh, Prafulla Dhariwal, Alex Nichol, Casey Chu, and Mark Chen. 2022. Hierarchical text-conditional image generation with clip latents. arXiv preprint arXiv:2204.06125 1, 2 (2022), 3. [37] Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer. 2022. High-resolution image synthesis with latent diffusion models. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 10684-10695. [38] Xuebin Qin, Hang Dai, Xiaobin Hu, Deng-Ping Fan, Ling Shao, and Luc Van Gool. 2022. Highly accurate dichotomous image segmentation. In European Conference on Computer Vision . Springer, 38-56. [39] Kaiyi Lin, Xiang Zhang, Feng Li, Pengjie Wang, Qingqing Long, Hongbo Deng, Jian Xu, and Bo Zheng. 2022. Joint Optimization of Ad Ranking and Creative Selection. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2341-2346. [40] Chitwan Saharia, William Chan, Saurabh Saxena, Lala Li, Jay Whang, Emily L Denton, Kamyar Ghasemipour, Raphael Gontijo Lopes, Burcu Karagol Ayan, Tim Salimans, et al. 2022. Photorealistic text-to-image diffusion models with deep language understanding. Advances in Neural Information Processing Systems 35 (2022), 36479-36494. [41] Roman Suvorov, Elizaveta Logacheva, Anton Mashikhin, Anastasia Remizova, Arsenii Ashukha, Aleksei Silvestrov, Naejin Kong, Harshith Goka, Kiwoong Park, and Victor Lempitsky. 2022. Resolution-robust large mask inpainting with fourier convolutions. In Proceedings of the IEEE/CVF winter conference on applications of computer vision . 2149-2159. [42] Jiahui Yu, Yuanzhong Xu, Jing Yu Koh, Thang Luong, Gunjan Baid, Zirui Wang, Vijay Vasudevan, Alexander Ku, Yinfei Yang, Burcu Karagol Ayan, et al. 2022. Scaling autoregressive models for content-rich text-to-image generation. arXiv preprint arXiv:2206.10789 2, 3 (2022), 5. [43] Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et al. 2022. Training language models to follow instructions with human feedback. Advances in Neural Information Processing Systems 35 (2022), 27730-27744. Conference acronym 'XX, June 03-05, 2018, Woodstock, NY [44] Yuheng Li, Haotian Liu, Qingyang Wu, Fangzhou Mu, Jianwei Yang, Jianfeng Gao, Chunyuan Li, and Yong Jae Lee. 2023. Gligen: Open-set grounded text-to-image generation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 22511-22521. [45] James Betker, Gabriel Goh, and et.al. Jing. 2023. Improving image generation with better captions. Computer Science. https://cdn. openai. com/papers/dall-e-3. pdf (2023). [46] Naoto Inoue, Kotaro Kikuchi, Edgar Simo-Serra, Mayu Otani, and Kota Yamaguchi. 2023. LayoutDM: Discrete Diffusion Model for Controllable Layout Generation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 10167-10176. [47] Leigang Qu, Shengqiong Wu, Hao Fei, Liqiang Nie, and Tat-Seng Chua. 2023. LayoutLLM-T2I: Eliciting Layout Guidance from LLM for Text-to-Image Generation. arXiv preprint arXiv:2308.05095 (2023). [48] Simo Ryu. 2023. Low-rank adaptation for fast text-to-image diffusion fine-tuning. Hao Yang, Jianxin Yuan, Shuai Yang, Linhe Xu, Shuo Yuan, and Yifan Zeng [49] HaoYang, Ziliang Wang, Weijie Bian, and Yifan Zeng. 2023. Practice on Effectively Extracting NLP Features for Click-Through Rate Prediction. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 4887-4893. [50] Kevin Black, Michael Janner, Yilun Du, Ilya Kostrikov, and Sergey Levine. 2023. Training diffusion models with reinforcement learning. arXiv preprint arXiv:2305.13301 (2023). [51] Sheng You, Chao Wang, Baohua Wu, Jingping Liu, Quan Lu, Guanzhou Han, and Yanghua Xiao. 2023. What Image do You Need? A Two-stage Framework for Image Selection in E-commerce. In Companion Proceedings of the ACM Web Conference 2023 . 452-456. [52] Zhiwei Tang, Dmitry Rybin, and Tsung-Hui Chang. 2023. Zeroth-Order Optimization Meets Human Feedback: Provable Learning via Ranking Oracles. arXiv preprint arXiv:2303.03751 (2023).",
   "keywords_parsed": [
     "Stable Diffusion",
-    " Creative Generation",
-    " Prompt and Reward Models"
+    "Creative Generation",
+    "Prompt and Reward Models"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning from delayed rewards"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Reducing the dimensionality of data with neural networks"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Auto-encoding variational bayes"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Generative adversarial nets"
+    },
+    {
+      "ref_id": "b5",
+      "title": "U-net: Convolutional networks for biomedical image segmentation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Generative adversarial text to image synthesis"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b8",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Neural discrete representation learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Progressive growing of gans for improved quality, stability, and variation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Image matters: Visually modeling user behaviors using advanced model server"
+    },
+    {
+      "ref_id": "b13",
+      "title": "An introduction to deep reinforcement learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Generating diverse high-fidelity images with vq-vae-2"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A style-based generator architecture for generative adversarial networks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "What you look matters? offline evaluation of advertising creatives for cold-start problem"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Analyzing and improving the image quality of stylegan"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Denoising diffusion probabilistic models"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Enabling hyper-personalisation: Automated ad creative generation and ranking for fashion e-commerce"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Learning to create better ads: Generation and ranking approaches for ad creative refinement"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Alias-free generative adversarial networks"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Cogview: Mastering text-to-image generation via transformers"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Diffusion models beat gans on image synthesis"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Glide: Towards photorealistic image generation and editing with text-guided diffusion models"
+    },
+    {
+      "ref_id": "b25",
+      "title": "A hybrid bandit model with visual priors for creative ranking in display advertising"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Projected gans converge faster"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Swin transformer: Hierarchical vision transformer using shifted windows"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Taming transformers for high-resolution image synthesis"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Zero-shot text-to-image generation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Caponimage: Context-driven dense-captioning on image"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Composition-aware graphic layout GAN for visual-textual presentation designs"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Contrastive Learning for Topic-Dependent Image Ranking"
+    },
+    {
+      "ref_id": "b35",
+      "title": "CreaGAN: An Automatic Creative Generation Framework for Display Advertising"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Hierarchical text-conditional image generation with clip latents"
+    },
+    {
+      "ref_id": "b37",
+      "title": "High-resolution image synthesis with latent diffusion models"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Highly accurate dichotomous image segmentation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Joint Optimization of Ad Ranking and Creative Selection"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Photorealistic text-to-image diffusion models with deep language understanding"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Resolution-robust large mask inpainting with fourier convolutions"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Scaling autoregressive models for content-rich text-to-image generation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Training language models to follow instructions with human feedback"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Gligen: Open-set grounded text-to-image generation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Improving image generation with better captions"
+    },
+    {
+      "ref_id": "b46",
+      "title": "LayoutDM: Discrete Diffusion Model for Controllable Layout Generation"
+    },
+    {
+      "ref_id": "b47",
+      "title": "LayoutLLM-T2I: Eliciting Layout Guidance from LLM for Text-to-Image Generation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Low-rank adaptation for fast text-to-image diffusion fine-tuning"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Practice on Effectively Extracting NLP Features for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Training diffusion models with reinforcement learning"
+    },
+    {
+      "ref_id": "b51",
+      "title": "What Image do You Need? A Two-stage Framework for Image Selection in E-commerce"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Zeroth-Order Optimization Meets Human Feedback: Provable Learning via Ranking Oracles"
+    }
   ]
 }

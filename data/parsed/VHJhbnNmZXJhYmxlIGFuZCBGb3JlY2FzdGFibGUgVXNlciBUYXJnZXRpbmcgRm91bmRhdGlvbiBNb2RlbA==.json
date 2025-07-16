@@ -31,8 +31,186 @@
   "C Limitations and Future Work": "Though achieving high performance in user targeting and user modeling, there are still some limitations in our model: 1. Though showing fantastic capability at Alipay platform, our model's generalizability to other platforms or industrial scenarios is not fully tested. 2. The training cost remains high though our two-stage strategy releases the requirement compared to the from-scratch strategy. Therefore, our future work will focus on the following: 1. Enhancing the model transferability across platforms. We plan to achieve this by enhancing the model's ability for processing multimodal user features (such as images, videos, knowledge graph, etc) and improving the model scalability for more data. 2. Reducing the time consumption for the foundation model pre-training.",
   "keywords_parsed": [
     "User Targeting",
-    " User Understanding",
-    " Self-supervised Pre-training",
-    " Multi-modal Pretraining"
+    "User Understanding",
+    "Self-supervised Pre-training",
+    "Multi-modal Pretraining"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Kolmogorov-smirnov test: Overview"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The use of the area under the ROC curve in the evaluation of machine learning algorithms"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Congrat: Self-supervised contrastive pretraining for joint graph and text embeddings"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Digital marketing"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Crossvit: Crossattention multi-scale vision transformer for image classification"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Learning phrase representations using RNN encoderdecoder for statistical machine translation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Robust user behavioral sequence representation via multi-scale stochastic distribution prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Exploiting behavioral consistence for universal user representation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "In defense of the triplet loss for person re-identification"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Tabtransformer: Tabular data modeling using contextual embeddings"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Scaling up visual and visionlanguage representation learning with noisy text supervision"
+    },
+    {
+      "ref_id": "b15",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b16",
+      "title": "A survey of recommendation systems: recommendation models, techniques, and application fields"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Albert: A lite bert for self-supervised learning of language representations"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Pre-trained token-replaced detection model as few-shot learner"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Visual instruction tuning"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Multimodal graph contrastive learning for multimedia-based recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Multi-modal contrastive pre-training for recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Artificial intelligence techniques in finance and financial markets: a survey of the literature"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Perceive your users in depth: Learning universal user representations from multiple e-commerce tasks"
+    },
+    {
+      "ref_id": "b26",
+      "title": "The state-of-the-art in expert recommendation systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Training language models to follow instructions with human feedback"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b30",
+      "title": "One4all user representation for recommender systems in e-commerce"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Targeting prospective customers: Robustness of machine-learning methods to typical data challenges"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Headto-tail: How knowledgeable are large language models (llm)? AKA will llms replace knowledge graphs?"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Know Your Needs Better: Towards Structured Understanding of Marketer Demands with Analogical Reasoning Augmented LLMs"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Large-scale multi-modal pre-trained models: A comprehensive survey"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Multi-modal self-supervised learning for recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Augmenting low-resource text classification with graph-grounded pre-training and prompting"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Qwen2 technical report"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Parameter-efficient transfer from sequential behaviors for user modeling and recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Generalpurpose user embeddings based on mobile app usage"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Conditional prompt learning for vision-language models"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Learning to prompt for vision-language models"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Promptaligned gradient for prompt tuning"
+    },
+    {
+      "ref_id": "b44",
+      "title": "GraphCLIP: Enhancing Transferability in Graph Foundation Models for Text-Attributed Graphs"
+    }
   ]
 }

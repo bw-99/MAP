@@ -31,8 +31,202 @@
   "References": "[1] 2020. MindSpore. https://www.mindspore.cn/ [2] Yue Cao, Xiaojiang Zhou, Jiaqi Feng, Peihao Huang, Yao Xiao, Dayao Chen, and Sheng Chen. 2022. Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2974-2983. [3] Yin-Wen Chang, Cho-Jui Hsieh, Kai-Wei Chang, Michael Ringgaard, and Chih-Jen Lin. 2010. Training and testing low-degree polynomial data mappings via linear SVM. Journal of Machine Learning Research 11, 4 (2010). [4] Bo Chen, Yichao Wang, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, and Xiuqiang He. 2021. Enhancing explicit and implicit feature interactions via information sharing for parallel deep CTR models. In Proceedings of the 30th ACM international conference on information & knowledge management . 3757-3766. [5] Ming-Syan Chen, Jiawei Han, and Philip S. Yu. 1996. Data mining: an overview from a database perspective. IEEE Transactions on Knowledge and data Engineering 8, 6 (1996), 866-883. [6] Qiwei Chen, Changhua Pei, Shanshan Lv, Chao Li, Junfeng Ge, and Wenwu Ou. 2021. End-to-end user behavior retrieval in click-through rateprediction model. arXiv preprint arXiv:2108.04468 (2021). [7] Qiwei Chen, Yue Xu, Changhua Pei, Shanshan Lv, Tao Zhuang, and Junfeng Ge. 2022. Efficient Long Sequential User Data Modeling for Click-Through Rate Prediction. arXiv:2209.12212 [cs.IR] [8] Xinlei Chen and Kaiming He. 2021. Exploring simple siamese representation learning. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 15750-15758. [9] Xinyi Dai, Jianghao Lin, Weinan Zhang, Shuai Li, Weiwen Liu, Ruiming Tang, Xiuqiang He, Jianye Hao, Jun Wang, and Yong Yu. 2021. An adversarial imitation click model for information retrieval. In Proceedings of the Web Conference 2021 . 1809-1820. [10] Kounianhua Du, Weinan Zhang, Ruiwen Zhou, Yangkun Wang, Xilong Zhao, Jiarui Jin, Quan Gan, Zheng Zhang, and David Wipf. 2022. Learning enhanced representations for tabular data via neighborhood propagation. arXiv preprint arXiv:2206.06587 (2022). [11] Lingyue Fu, Jianghao Lin, Weiwen Liu, Ruiming Tang, Weinan Zhang, Rui Zhang, and Yong Yu. 2023. An F-shape Click Model for Information Retrieval on Multiblock Mobile Pages. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 1057-1065. [12] Huifeng Guo, Bo Chen, Ruiming Tang, Weinan Zhang, Zhenguo Li, and Xiuqiang He. 2021. An embedding learning framework for numerical features in ctr prediction. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 2910-2918. [13] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [14] Balázs Hidasi and Alexandros Karatzoglou. 2018. Recurrent neural networks with top-k gains for session-based recommendations. In Proceedings of the 27th ACM international conference on information and knowledge management . 843-852. [15] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [16] Xunqiang Jiang, Binbin Hu, Yuan Fang, and Chuan Shi. 2020. Multiplex memory network for collaborative filtering. In Proceedings of the 2020 SIAM International Conference on Data Mining . SIAM, 91-99. [17] Li Jing, Pascal Vincent, Yann LeCun, and Yuandong Tian. 2021. Understanding dimensional collapse in contrastive self-supervised learning. arXiv preprint arXiv:2110.09348 (2021). [18] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [19] Xiangyang Li, Bo Chen, HuiFeng Guo, Jingjie Li, Chenxu Zhu, Xiang Long, Sujian Li, Yichao Wang, Wei Guo, Longxia Mao, et al. 2022. IntTower: the Next Generation of Two-Tower Model for Pre-Ranking System. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3292-3301. [20] Xiaochen Li, Jian Liang, Xialong Liu, and Yu Zhang. 2022. Adversarial Filtering Modeling on Long-term User Behavior Sequences for Click-Through Rate Prediction. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1969-1973. [21] Yushen Li, Jinpeng Wang, Tao Dai, Jieming Zhu, Jun Yuan, Rui Zhang, and ShuTao Xia. 2024. RAT: Retrieval-Augmented Transformer for Click-Through Rate Prediction. In Companion Proceedings of the ACM on Web Conference 2024 (WWW '24) . ACM. https://doi.org/10.1145/3589335.3651550 [22] Jianghao Lin, Weiwen Liu, Xinyi Dai, Weinan Zhang, Shuai Li, Ruiming Tang, Xiuqiang He, Jianye Hao, and Yong Yu. 2021. A Graph-Enhanced Click Model for Web Search. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1259-1268. [23] Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, and Yuzhou Zhang. 2019. Feature generation by convolutional neural network for click-through rate prediction. In The World Wide Web Conference . 1119-1129. [24] Huanshuo Liu, Hao Zhang, Zhijiang Guo, Kuicai Dong, Xiangyang Li, Yi Quan Lee, Cong Zhang, and Yong Liu. 2024. CtrlA: Adaptive Retrieval-Augmented Generation via Probe-Guided Control. arXiv preprint arXiv:2405.18727 (2024). [25] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on long sequential user behavior modeling for click-through rate prediction. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2671-2679. [26] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. [27] Jiarui Qin, Weinan Zhang, Rong Su, Zhirong Liu, Weiwen Liu, Ruiming Tang, Xiuqiang He, and Yong Yu. 2021. Retrieval & Interaction Machine for Tabular Data Prediction. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 1379-1389. [28] Jiarui Qin, Weinan Zhang, Xin Wu, Jiarui Jin, Yuchen Fang, and Yong Yu. 2020. User behavior retrieval for click-through rate prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2347-2356. [29] Yanru Qu, Bohui Fang, Weinan Zhang, Ruiming Tang, Minzhe Niu, Huifeng Guo, Yong Yu, and Xiuqiang He. 2018. Product-based neural networks for user response prediction over multi-field categorical data. ACM Transactions on Information Systems (TOIS) 37, 1 (2018), 1-35. [30] Kan Ren, Jiarui Qin, Yuchen Fang, Weinan Zhang, Lei Zheng, Weijie Bian, Guorui Zhou, Jian Xu, Yong Yu, Xiaoqiang Zhu, et al. 2019. Lifelong sequential modeling with personalized memorization for user response prediction. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . 565-574. [31] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . IEEE, 995-1000. [32] Kendrick Shen, Robbie M Jones, Ananya Kumar, Sang Michael Xie, Jeff Z HaoChen, Tengyu Ma, and Percy Liang. 2022. Connect, not collapse: Explaining contrastive learning for unsupervised domain adaptation. In International Conference on Machine Learning . PMLR, 19847-19878. [33] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1161-1170. [34] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [35] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In Proceedings of the eleventh ACM international conference on web search and data mining . 565-573. [36] Laurens Van der Maaten and Geoffrey Hinton. 2008. Visualizing data using t-SNE. Journal of machine learning research 9, 11 (2008). [37] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [38] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the Web Conference 2021 . 1785-1797. [39] Yuhao Wang, Xiangyu Zhao, Bo Chen, Qidong Liu, Huifeng Guo, Huanshuo Liu, Yichao Wang, Rui Zhang, and Ruiming Tang. 2023. PLATE: A prompt-enhanced paradigm for multi-scenario recommendations. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1498-1507. [40] Qitian Wu, Chenxiao Yang, and Junchi Yan. 2021. Towards open-world feature extrapolation: An inductive graph learning approach. Advances in Neural Information Processing Systems 34 (2021), 19435-19447. [41] Yunjia Xi, Jianghao Lin, Weiwen Liu, Xinyi Dai, Weinan Zhang, Rui Zhang, Ruiming Tang, and Yong Yu. 2023. A Bird's-eye View of Reranking: from List Level to Page Level. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 1075-1083. [42] Jun Xiao, Hao Ye, Xiangnan He, Hanwang Zhang, Fei Wu, and Tat-Seng Chua. 2017. Attentional factorization machines: Learning the weight of feature interactions via attention networks. arXiv preprint arXiv:1708.04617 (2017). [43] Xin Xin, Bo Chen, Xiangnan He, Dong Wang, Yue Ding, and Joemon M Jose. 2019. CFM: Convolutional Factorization Machines for Context-Aware Recommendation.. In IJCAI , Vol. 19. 3926-3932. [44] Chaoning Zhang, Kang Zhang, Chenshuang Zhang, Trung X Pham, Chang D Yoo, and In So Kweon. 2022. How does simsiam avoid collapse without negative Retrieval-Oriented Knowledge for Click-Through Rate Prediction CIKM '24, October 21-25, 2024, Boise, ID, USA. samples? a unified understanding with self-supervised contrastive learning. arXiv preprint arXiv:2203.16262 (2022). [45] Weinan Zhang, Jiarui Qin, Wei Guo, Ruiming Tang, and Xiuqiang He. 2021. Deep learning for click-through rate estimation. arXiv preprint arXiv:2104.10584 (2021). [46] Lei Zheng, Ning Li, Xianyu Chen, Quan Gan, and Weinan Zhang. 2023. Dense Representation Learning and Retrieval for Tabular Data Prediction. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3559-3569. [47] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [48] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068.",
   "keywords_parsed": [
     "Information Retrieval",
-    " Recommender Systems",
-    " Knowledge Distillation",
-    " Contrastive Learning"
+    "Recommender Systems",
+    "Knowledge Distillation",
+    "Contrastive Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "MindSpore"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Training and testing low-degree polynomial data mappings via linear SVM"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Enhancing explicit and implicit feature interactions via information sharing for parallel deep CTR models"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Data mining: an overview from a database perspective"
+    },
+    {
+      "ref_id": "b6",
+      "title": "End-to-end user behavior retrieval in click-through rate prediction model"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Efficient Long Sequential User Data Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Exploring simple siamese representation learning"
+    },
+    {
+      "ref_id": "b9",
+      "title": "An adversarial imitation click model for information retrieval"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Learning enhanced representations for tabular data via neighborhood propagation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "An F-shape Click Model for Information Retrieval on Multiblock Mobile Pages"
+    },
+    {
+      "ref_id": "b12",
+      "title": "An embedding learning framework for numerical features in ctr prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Recurrent neural networks with top-k gains for session-based recommendations"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Multiplex memory network for collaborative filtering"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Understanding dimensional collapse in contrastive self-supervised learning"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "IntTower: the Next Generation of Two-Tower Model for Pre-Ranking System"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Adversarial Filtering Modeling on Long-term User Behavior Sequences for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "RAT: Retrieval-Augmented Transformer for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A Graph-Enhanced Click Model for Web Search"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Feature generation by convolutional neural network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "CtrlA: Adaptive Retrieval-Augmented Generation via Probe-Guided Control"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Retrieval & Interaction Machine for Tabular Data Prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "User behavior retrieval for click-through rate prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Product-based neural networks for user response prediction over multi-field categorical data"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Lifelong sequential modeling with personalized memorization for user response prediction"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Connect, not collapse: Explaining contrastive learning for unsupervised domain adaptation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b34",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b38",
+      "title": "DCN v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b39",
+      "title": "PLATE: A prompt-enhanced paradigm for multi-scenario recommendations"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Towards open-world feature extrapolation: An inductive graph learning approach"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A Bird's-eye View of Reranking: from List Level to Page Level"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Attentional factorization machines: Learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b43",
+      "title": "CFM: Convolutional Factorization Machines for Context-Aware Recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "How does simsiam avoid collapse without negative samples? a unified understanding with self-supervised contrastive learning"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Deep learning for click-through rate estimation"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Dense Representation Learning and Retrieval for Tabular Data Prediction"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

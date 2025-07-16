@@ -39,29 +39,367 @@
   "10 CONCLUSION": "In this paper, our work addresses the challenges that existing works did not and provides a public cryptographic dataset for future research on the current issue. We present FoC, a novel LLMbased framework for the analysis of cryptographic functions in stripped binaries. Our evaluation results demonstrate that FoC-BinLLM can summarize function semantics in natural language, and outperforms ChatGPT by 14.61% on the ROUGE-L score. Furthermore, FoC-Sim achieves 52% higher Recall@1 than previous methods on the cryptographic dataset for the BCSD task, which compensates for the intrinsic weakness of the prediction of our generative models. The two components of FoC have shown practical ability in cryptographic virus analysis and 1-day vulnerability detection.",
   "ACKNOWLEDGMENTS": "This work was supported in part by the Natural Science Foundation of China under Grant U20B2047, 62072421, 62002334, 62102386 and 62121002, and by Open Fund of Anhui Province Key Laboratory of Cyberspace Security Situation Awareness and Evaluation under Grant CSSAE-2021-007.",
   "REFERENCES": "[1] Hex-Rays SA. IDA Pro. https://www.hex-rays.com/products/ida, 2023. [2] NationalSecurityAgency. Ghidra. https://github.com/NationalSecurityAgency/ghidra, 2023. [3] polymorf. findcrypt-yara. https://github.com/polymorf/findcrypt-yara, 2022. [4] Sirmabus. Ida_signsrch. https://github.com/nihilus/IDA_Signsrch, 2015. [5] Zhi Wang, Xuxian Jiang, Weidong Cui, Xinyuan Wang, and Mike Grace. Reformat: Automatic reverse engineering of encrypted messages. In Computer Security-ESORICS 2009: 14th European Symposium on Research in Computer Security, Saint-Malo, France, September 21-23, 2009. Proceedings 14 , pages 200-215. Springer, 2009. [6] Felix Gröbert, Carsten Willems, and Thorsten Holz. Automated identification of cryptographic primitives in binary programs. In Recent Advances in Intrusion Detection: 14th International Symposium, RAID 2011, Menlo Park, CA, USA, September 20-21, 2011. Proceedings 14 , pages 41-60. Springer, 2011. [7] Léonard Benedetti, Aurélien Thierry, and Julien Francq. Detection of cryptographic algorithms with grap. Cryptology ePrint Archive , 2017. [8] Juanru Li, Zhiqiang Lin, Juan Caballero, Yuanyuan Zhang, and Dawu Gu. K-hunt: Pinpointing insecure cryptographic keys from execution traces. In Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security , pages 412-425, 2018. [9] Patrick Kochberger and Florian Seitl. Detecting cryptography through ir visualization. In 2018 International Conference on Software Security and Assurance (ICSSA) , pages 25-29. IEEE, 2018. [10] Ruoxu Zhao, Dawu Gu, Juanru Li, and Yuanyuan Zhang. Automatic detection and analysis of encrypted messages in malware. In International Conference on Information Security and Cryptology , pages 101-117. Springer, 2013. [11] Jizhong Li, Liehui Jiang, and Hu Shu. Binary code level cyclic feature recognition of cryptographic algorithm. Computer engineering and design , 35(8):2628-2632, 2014. [12] Pierre Lestringant, Frédéric Guihéry, and Pierre-Alain Fouque. Automated identification of cryptographic primitives in binary code with data flow graph isomorphism. In Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security , pages 203-214, 2015. [13] Joan Calvet, José M Fernandez, and Jean-Yves Marion. Aligot: Cryptographic function identification in obfuscated binary programs. In Proceedings of the 2012 ACM conference on Computer and communications security , pages 169-182, J. ACM, Vol. 37, No. 4, Article . Publication date: July 2024. 34 Shang et al. 2012. [14] Dongpeng Xu, Jiang Ming, and Dinghao Wu. Cryptographic function detection in obfuscated binaries via bit-precise symbolic loop mapping. In 2017 IEEE Symposium on Security and Privacy (SP) , pages 921-937. IEEE, 2017. [15] Carlo Meijer, Veelasha Moonsamy, and Jos Wetzels. Where's crypto?: Automated identification and classification of proprietary cryptographic primitives in binary code. In 30th USENIX Security Symposium (USENIX Security 21) , pages 555-572, 2021. [16] Weisong Sun, Chunrong Fang, Yuchen Chen, Quanjun Zhang, Guanhong Tao, Yudu You, Tingxu Han, Yifei Ge, Yuling Hu, Bin Luo, et al. An extractive-and-abstractive framework for source code summarization. ACM Transactions on Software Engineering and Methodology , 33(3):1-39, 2024. [17] Ali Al-Kaswan, Toufique Ahmed, Maliheh Izadi, Anand Ashok Sawant, Premkumar Devanbu, and Arie van Deursen. Extending source code pre-trained language models to summarise decompiled binaries. In 2023 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER) , pages 260-271. IEEE, 2023. [18] Jiaqi Xiong, Guoqiang Chen, Kejiang Chen, Han Gao, Shaoyin Cheng, and Weiming Zhang. Hext5: Unified pretraining for stripped binary code information inference. In 2023 38th IEEE/ACM International Conference on Automated Software Engineering (ASE) , pages 774-786. IEEE, 2023. [19] Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde De Oliveira Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph, Greg Brockman, et al. Evaluating large language models trained on code. arXiv preprint arXiv:2107.03374 , 2021. [20] Ben Wang and Aran Komatsuzaki. Gpt-j-6b: a 6 billion parameter autoregressive language model (2021). https: // github.com/kingoflolz/mesh-transformer-jax , 2022. [21] Sid Black, Stella Biderman, Eric Hallahan, Quentin Anthony, Leo Gao, Laurence Golding, Horace He, Connor Leahy, Kyle McDonell, Jason Phang, et al. Gpt-neox-20b: An open-source autoregressive language model. arXiv preprint arXiv:2204.06745 , 2022. [22] Frank F Xu, Uri Alon, Graham Neubig, and Vincent Josua Hellendoorn. A systematic evaluation of large language models of code. In Proceedings of the 6th ACM SIGPLAN International Symposium on Machine Programming , pages 1-10, 2022. [23] Lannan Luo, Jiang Ming, Dinghao Wu, Peng Liu, and Sencun Zhu. Semantics-based obfuscation-resilient binary code similarity comparison with applications to software and algorithm plagiarism detection. IEEE Transactions on Software Engineering , 43(12):1157-1177, 2017. [24] Luca Massarelli, Giuseppe Antonio Di Luna, Fabio Petroni, Roberto Baldoni, and Leonardo Querzoni. Safe: Selfattentive function embeddings for binary similarity. In Detection of Intrusions and Malware, and Vulnerability Assessment: 16th International Conference, DIMVA 2019, Gothenburg, Sweden, June 19-20, 2019, Proceedings 16 , pages 309-329. Springer, 2019. [25] Yue Duan, Xuezixiang Li, Jinghan Wang, and Heng Yin. Deepbindiff: Learning program-wide code representations for binary diffing. In Proceedings of the 2020 Network and Distributed Systems Security Symposium (NDSS) , 2020. [26] Xuezixiang Li, Qu Yu, and Heng Yin. Palmtree: Learning an assembly language model for instruction embedding. Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security , 2021. [27] Kexin Pei, Zhou Xuan, Junfeng Yang, Suman Jana, and Baishakhi Ray. Learning approximate execution semantics from traces for binary function similarity. IEEE Transactions on Software Engineering , 49(4):2776-2790, 2022. [28] Hao Wang, Wenjie Qu, Gilad Katz, Wenyu Zhu, Zeyu Gao, Han Qiu, Jianwei Zhuge, and Chao Zhang. jtrans: jump-aware transformer for binary code similarity detection. In Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysis , pages 1-13, 2022. [29] Shouguo Yang, Chaopeng Dong, Yang Xiao, Yiran Cheng, Zhiqiang Shi, Zhi Li, and Limin Sun. Asteria-pro: Enhancing deep learning-based binary code similarity detection by incorporating domain knowledge. ACM Transactions on Software Engineering and Methodology , 33(1):1-40, 2023. [30] Mehmet Adalier and Antara Teknik. Efficient and secure elliptic curve cryptography implementation of curve p-256. In Workshop on elliptic curve cryptography standards , volume 66, pages 2014-2017, 2015. [31] NIST FIPS Pub. 197: Advanced encryption standard (aes). Federal information processing standards publication , 197(441):0311, 2001. [32] CVE-2014-0160. Available from MITRE, CVE-ID CVE-2014-0160., December 3 2013. [33] Gregory Hill and Xavier Bellekens. Cryptoknight: generating and modelling compiled cryptographic primitives. Information , 9(9):231, 2018. [34] Xiao Li, Yuanhai Chang, Guixin Ye, Xiaoqing Gong, and Zhanyong Tang. Genda: A graph embedded network based detection approach on encryption algorithm of binary program. Journal of Information Security and Applications , 65:103088, 2022. [35] Ilfak Guilfanov. Findcrypt2. https://hex-rays.com/blog/findcrypt2/, 2006. J. ACM, Vol. 37, No. 4, Article . Publication date: July 2024. FoC: Figure out the Cryptographic Functions in Stripped Binaries with LLMs 35 [36] Chenxia Zhao, Fei Kang, Ju Yang, and Hui Shu. A review of cryptographic algorithm recognition technology for binary code. In Journal of Physics: Conference Series , volume 1856, page 012015. IOP Publishing, 2021. [37] OpenSSL. Openssl. https://github.com/openssl/openssl, 2023. [38] Yue Wang, Weishi Wang, Shafiq Joty, and Steven CH Hoi. Codet5: Identifier-aware unified pre-trained encoder-decoder models for code understanding and generation. arXiv preprint arXiv:2109.00859 , 2021. [39] Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, et al. A survey of large language models. arXiv preprint arXiv:2303.18223 , 2023. [40] Ben Mann, N Ryder, M Subbiah, J Kaplan, P Dhariwal, A Neelakantan, P Shyam, G Sastry, A Askell, S Agarwal, et al. Language models are few-shot learners. arXiv preprint arXiv:2005.14165 , 1, 2020. [41] Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung Won Chung, Charles Sutton, Sebastian Gehrmann, et al. Palm: Scaling language modeling with pathways. Journal of Machine Learning Research , 24(240):1-113, 2023. [42] Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, et al. Llama: Open and efficient foundation language models. arXiv preprint arXiv:2302.13971 , 2023. [43] Yue Wang, Hung Le, Akhilesh Deepak Gotmare, Nghi D. Q. Bui, Junnan Li, and Steven C. H. Hoi. Codet5+: Open code large language models for code understanding and generation, 2023. [44] Frank F Xu, Uri Alon, Graham Neubig, and Vincent Josua Hellendoorn. A systematic evaluation of large language models of code. In Proceedings of the 6th ACM SIGPLAN International Symposium on Machine Programming , pages 1-10, 2022. [45] Ziyang Luo, Can Xu, Pu Zhao, Qingfeng Sun, Xiubo Geng, Wenxiang Hu, Chongyang Tao, Jing Ma, Qingwei Lin, and Daxin Jiang. Wizardcoder: Empowering code large language models with evol-instruct, 2023. [46] Baptiste Roziere, Jonas Gehring, Fabian Gloeckle, Sten Sootla, Itai Gat, Xiaoqing Ellen Tan, Yossi Adi, Jingyu Liu, Tal Remez, Jérémy Rapin, et al. Code llama: Open foundation models for code. arXiv preprint arXiv:2308.12950 , 2023. [47] Jie Qin, Jie Wu, Weifeng Chen, Yuxi Ren, Huixia Li, Hefeng Wu, Xuefeng Xiao, Rui Wang, and Shilei Wen. Diffusiongpt: Llm-driven text-to-image generation system. arXiv preprint arXiv:2401.10061 , 2024. [48] Hanzhuo Huang, Yufan Feng, Cheng Shi, Lan Xu, Jingyi Yu, and Sibei Yang. Free-bloom: Zero-shot text-to-video generator with llm director and ldm animator. Advances in Neural Information Processing Systems , 36, 2024. [49] Xin Jin, Jonathan Larson, Weiwei Yang, and Zhiqiang Lin. Binary code summarization: Benchmarking chatgpt/gpt-4 and other large language models. arXiv preprint arXiv:2312.09601 , 2023. [50] I. UNIX International. Dwarf debugging information format version 4. https://dwarfstd.org/doc/DWARF4.pdf, 2010. [51] Ruoyu Zhang, Yanzeng Li, Yongliang Ma, Ming Zhou, and Lei Zou. Llmaaa: Making large language models as active annotators. arXiv preprint arXiv:2310.19596 , 2023. [52] Ruixuan Xiao, Yiwen Dong, Junbo Zhao, Runze Wu, Minmin Lin, Gang Chen, and Haobo Wang. Freeal: Towards human-free active learning in the era of large language models. arXiv preprint arXiv:2311.15614 , 2023. [53] Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et al. Training language models to follow instructions with human feedback. Advances in neural information processing systems , 35:27730-27744, 2022. [54] Erik Nijkamp, Bo Pang, Hiroaki Hayashi, Lifu Tu, Huan Wang, Yingbo Zhou, Silvio Savarese, and Caiming Xiong. Codegen: An open large language model for code with multi-turn program synthesis. ICLR , 2023. [55] Hamel Husain, Ho-Hsiang Wu, Tiferet Gazit, Miltiadis Allamanis, and Marc Brockschmidt. Codesearchnet challenge: Evaluating the state of semantic code search. arXiv preprint arXiv:1909.09436 , 2019. [56] Yujia Li, David Choi, Junyoung Chung, Nate Kushman, Julian Schrittwieser, Rémi Leblond, Tom Eccles, James Keeling, Felix Gimeno, Agustin Dal Lago, et al. Competition-level code generation with alphacode. Science , 378(6624):1092-1097, 2022. [57] Andrea Marcelli, Mariano Graziano, Xabier Ugarte-Pedrero, Yanick Fratantonio, Mohamad Mansouri, and Davide Balzarotti. How machine learning is solving the binary function similarity problem. In 31st USENIX Security Symposium (USENIX Security 22) , pages 2099-2116, 2022. [58] Juan Caballero, Pongsin Poosankam, Christian Kreibich, and Dawn Song. Dispatcher: Enabling active botnet infiltration using automatic protocol reverse-engineering. In Proceedings of the 16th ACM conference on Computer and communications security , pages 621-634, 2009. [59] Jian Gao, Yu Jiang, Zhe Liu, Xin Yang, Cong Wang, Xun Jiao, Zijiang Yang, and Jiaguang Sun. Semantic learning and emulation based cross-platform binary vulnerability seeker. IEEE Transactions on Software Engineering , 47(11):25752589, 2019. [60] Xiaojun Xu, Chang Liu, Qian Feng, Heng Yin, Le Song, and Dawn Song. Neural network-based graph embedding for cross-platform binary code similarity detection. In Proceedings of the 2017 ACM SIGSAC conference on computer and communications security , pages 363-376, 2017. J. ACM, Vol. 37, No. 4, Article . Publication date: July 2024. 36 Shang et al. J. ACM, Vol. 37, No. 4, Article . Publication date: July 2024. FoC: Figure out the Cryptographic Functions in Stripped Binaries with LLMs 37 privacy (sp) , pages 472-489. IEEE, 2019. [84] Yujia Li, Chenjie Gu, Thomas Dullien, Oriol Vinyals, and Pushmeet Kohli. Graph matching networks for learning the similarity of graph structured objects. In International conference on machine learning , pages 3835-3845. PMLR, 2019. [85] Weilong Li, Jintian Lu, Ruizhi Xiao, Pengfei Shao, and Shuyuan Jin. Rcfg2vec: Considering long-distance dependency for binary code similarity detection. In Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering , pages 770-782, 2024. [86] Hang Zhang and Zhiyun Qian. Precise and accurate patch presence test for binaries. In 27th USENIX Security Symposium (USENIX Security 18) , pages 887-902, 2018. [87] Yifei Xu, Zhengzi Xu, Bihuan Chen, Fu Song, Yang Liu, and Ting Liu. Patch based vulnerability matching for binary programs. In Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis , pages 376-387, 2020. [88] Shouguo Yang, Zhengzi Xu, Yang Xiao, Zhe Lang, Wei Tang, Yang Liu, Zhiqiang Shi, Hong Li, and Limin Sun. Towards practical binary code similarity detection: Vulnerability verification via patch semantic analysis. ACM Transactions on Software Engineering and Methodology , 32(6):1-29, 2023. [89] Ligeng Chen, Zhongling He, and Bing Mao. Cati: Context-assisted type inference from stripped binaries. In 2020 50th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN) , pages 88-98. IEEE, 2020. [90] Jayakrishna Vadayath, Moritz Eckert, Kyle Zeng, Nicolaas Weideman, Gokulkrishna Praveen Menon, Yanick Fratantonio, Davide Balzarotti, Adam Doupé, Tiffany Bao, Ruoyu Wang, et al. Arbiter: Bridging the static and dynamic divide in vulnerability discovery on binary programs. In 31st USENIX Security Symposium (USENIX Security 22) , pages 413-430, 2022. [91] Jian Gao, Xin Yang, Ying Fu, Yu Jiang, and Jiaguang Sun. Vulseeker: A semantic learning based vulnerability seeker for cross-platform binary. In Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering , pages 896-899, 2018. [92] Junzhe Wang, Matthew Sharp, Chuxiong Wu, Qiang Zeng, and Lannan Luo. Can a deep learning model for one architecture be used for others? { Retargeted-Architecture } binary code analysis. In 32nd USENIX Security Symposium (USENIX Security 23) , pages 7339-7356, 2023. [93] Intel Corporation. Pin - A Dynamic Binary Instrumentation Tool. https://www.intel.com/content/www/us/en/ developer/articles/tool/pin-a-dynamic-binary-instrumentation-tool.html, 2023. [94] Valgrind. https://valgrind.org/, 2024. [95] HanGao, Shaoyin Cheng, Yinxing Xue, and Weiming Zhang. A lightweight framework for function name reassignment based on large-scale stripped binaries. In Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis , pages 607-619, 2021. [96] Vikram Nitin, Anthony Saieva, Baishakhi Ray, and Gail Kaiser. Direct: A transformer-based model for decompiled variable name recov-ery. NLP4Prog 2021 , page 48, 2021. [97] Zhuo Zhang, Yapeng Ye, Wei You, Guanhong Tao, Wen-chuan Lee, Yonghwi Kwon, Yousra Aafer, and Xiangyu Zhang. Osprey: Recovery of variable and data structure via probabilistic analysis for stripped binary. In 2021 IEEE Symposium on Security and Privacy (SP) , pages 813-832. IEEE, 2021. [98] Qibin Chen, Jeremy Lacomis, Edward J Schwartz, Claire Le Goues, Graham Neubig, and Bogdan Vasilescu. Augmenting decompiler output with learned variable names and types. In 31st USENIX Security Symposium (USENIX Security 22) , pages 4327-4343, 2022. [99] Jingxuan He, Pesho Ivanov, Petar Tsankov, Veselin Raychev, and Martin Vechev. Debin: Predicting debug information in stripped binaries. In Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security , pages 1667-1680, 2018. [100] Peiwei Hu, Ruigang Liang, and Kai Chen. Degpt: Optimizing decompiler output with llm. In Proceedings 2024 Network and Distributed System Security Symposium (2024). https://api. semanticscholar. org/CorpusID , volume 267622140, 2024. [101] Jiang Nan, Wang Chengxiao, Liu Kevin, Xu Xiangzhe, Tan Lin, Zhang Xiangyu, and Babkin Petr. Nova: Generative language models for assembly code with hierarchical attention and contrastive learning. arXiv preprint arXiv:2311.13721 , 2024. [102] Daya Guo, Qihao Zhu, Dejian Yang, Zhenda Xie, Kai Dong, Wentao Zhang, Guanting Chen, Xiao Bi, Yu Wu, YK Li, et al. Deepseek-coder: When the large language model meets programming-the rise of code intelligence. arXiv preprint arXiv:2401.14196 , 2024. [103] Hanzhuo Tan, Qi Luo, Jing Li, and Yuqun Zhang. Llm4decompile: Decompiling binary code with large language models. arXiv preprint arXiv:2403.05286 , 2024. [104] Huaqing.AI. Machine language model, mlm. https://mlm01.com/, 2024. [105] Xinyi Hou, Yanjie Zhao, Yue Liu, Zhou Yang, Kailong Wang, Li Li, Xiapu Luo, David Lo, John Grundy, and Haoyu Wang. Large language models for software engineering: A systematic literature review. arXiv preprint arXiv:2308.10620 , 2023. J. ACM, Vol. 37, No. 4, Article . Publication date: July 2024. 38 Shang et al. [106] Quanjun Zhang, Chunrong Fang, Yang Xie, Yaxin Zhang, Yun Yang, Weisong Sun, Shengcheng Yu, and Zhenyu Chen. A survey on large language models for software engineering. arXiv preprint arXiv:2312.15223 , 2023. [107] Giriprasad Sridhara, Sourav Mazumdar, et al. Chatgpt: A study on its utility for ubiquitous software engineering tasks. arXiv preprint arXiv:2305.16837 , 2023. [108] Shantanu Mandal, Adhrik Chethan, Vahid Janfaza, SM Mahmud, Todd A Anderson, Javier Turek, Jesmin Jahan Tithi, and Abdullah Muzahid. Large language models based automatic synthesis of software specifications. arXiv preprint arXiv:2304.09181 , 2023. [109] Yihong Dong, Xue Jiang, Zhi Jin, and Ge Li. Self-collaboration code generation via chatgpt. arXiv preprint arXiv:2304.07590 , 2023. [110] Wei Tang, Mingwei Tang, Minchao Ban, Ziguo Zhao, and Mingjun Feng. Csgvd: A deep learning approach combining sequence and graph embedding for source code vulnerability detection. Journal of Systems and Software , 199:111623, 2023. [111] Mohammed Alhamed and Tim Storer. Evaluation of context-aware language models and experts for effort estimation of software maintenance issues. In 2022 IEEE International Conference on Software Maintenance and Evolution (ICSME) , pages 129-138. IEEE, 2022. [112] Lehuan Zhang, Shikai Guo, Yi Guo, Hui Li, Yu Chai, Rong Chen, Xiaochen Li, and He Jiang. Context-based transfer learning for structuring fault localization and program repair automation. ACM Transactions on Software Engineering and Methodology , 2024. [113] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J Liu. Exploring the limits of transfer learning with a unified text-to-text transformer. Journal of machine learning research , 21(140):1-67, 2020. J. ACM, Vol. 37, No. 4, Article . Publication date: July 2024.",
-  "keywords_parsed": [
-    "It is essential to assess whether these summaries align with the facts. Therefore",
-    " we propose a keyword-based discriminator to judge the correctness of generated summaries on the crucial cryptographic semantics. Specifically",
-    " as shown in Table 4",
-    " we have defined three categories and specific classes. We use whole-word matching to retrieve class-related keywords. However",
-    " a class is often written in multiple forms in summary or source code. For example",
-    " '3des' might be written as 'triple-des' ",
-    " 'triple des' ",
-    " 'tripledes' ",
-    " 'desede' ",
-    " and 'des-ede' etc. To get the most accurate results possible",
-    " we perform extensive manual inspections to comprehensively summarize the different forms that a class may exist in",
-    " as shown in Table 5. The discriminator considers these different forms as the same class",
-    " and it passes the inspection only when it obtains the same class between the generated summary and the source code. The results indicate that more than 85% of the generated summary passed and they were retained in the end. We further evaluate the textual consistency between developer-written comments and model-generated summaries. The results show that they have a 43.55% ROUGE-L score",
-    " which means a high degree of consistency. And Table 3 shows a few generated labels. Overall",
-    " for each function in our dataset",
-    " we obtain its binary code",
-    " source code",
-    " and semantic labels",
-    " which highly align with the facts. In this way",
-    " we address the challenges presented in C2 . J. ACM",
-    " Vol. 37",
-    " No. 4",
-    " Article . Publication date: July 2024. FoC: Figure out the Cryptographic Functions in Stripped Binaries with LLMs 11 Table 5. Classes and their corresponding different forms."
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "IDA Pro"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Ghidra"
+    },
+    {
+      "ref_id": "b3",
+      "title": "findcrypt-yara"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Ida_signsrch"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Reformat: Automatic reverse engineering of encrypted messages"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Automated identification of cryptographic primitives in binary programs"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Detection of cryptographic algorithms with grap"
+    },
+    {
+      "ref_id": "b8",
+      "title": "K-hunt: Pinpointing insecure cryptographic keys from execution traces"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Detecting cryptography through ir visualization"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Automatic detection and analysis of encrypted messages in malware"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Binary code level cyclic feature recognition of cryptographic algorithm"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Automated identification of cryptographic primitives in binary code with data flow graph isomorphism"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Aligot: Cryptographic function identification in obfuscated binary programs"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Cryptographic function detection in obfuscated binaries via bit-precise symbolic loop mapping"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Where's crypto?: Automated identification and classification of proprietary cryptographic primitives in binary code"
+    },
+    {
+      "ref_id": "b16",
+      "title": "An extractive-and-abstractive framework for source code summarization"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Extending source code pre-trained language models to summarise decompiled binaries"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Hext5: Unified pretraining for stripped binary code information inference"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Evaluating large language models trained on code"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Gpt-j-6b: a 6 billion parameter autoregressive language model"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Gpt-neox-20b: An open-source autoregressive language model"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A systematic evaluation of large language models of code"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Semantics-based obfuscation-resilient binary code similarity comparison with applications to software and algorithm plagiarism detection"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Safe: Self-attentive function embeddings for binary similarity"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deepbindiff: Learning program-wide code representations for binary diffing"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Palmtree: Learning an assembly language model for instruction embedding"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Learning approximate execution semantics from traces for binary function similarity"
+    },
+    {
+      "ref_id": "b28",
+      "title": "jtrans: jump-aware transformer for binary code similarity detection"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Asteria-pro: Enhancing deep learning-based binary code similarity detection by incorporating domain knowledge"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Efficient and secure elliptic curve cryptography implementation of curve p-256"
+    },
+    {
+      "ref_id": "b31",
+      "title": "NIST FIPS Pub. 197: Advanced encryption standard (aes)"
+    },
+    {
+      "ref_id": "b32",
+      "title": "CVE-2014-0160"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Cryptoknight: generating and modelling compiled cryptographic primitives"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Genda: A graph embedded network based detection approach on encryption algorithm of binary program"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Findcrypt2"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A review of cryptographic algorithm recognition technology for binary code"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Openssl"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Codet5: Identifier-aware unified pre-trained encoder-decoder models for code understanding and generation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A survey of large language models"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Palm: Scaling language modeling with pathways"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Llama: Open and efficient foundation language models"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Codet5+: Open code large language models for code understanding and generation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "A systematic evaluation of large language models of code"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Wizardcoder: Empowering code large language models with evol-instruct"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Code llama: Open foundation models for code"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Diffusiongpt: Llm-driven text-to-image generation system"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Free-bloom: Zero-shot text-to-video generator with llm director and ldm animator"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Binary code summarization: Benchmarking chatgpt/gpt-4 and other large language models"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Dwarf debugging information format version 4"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Llmaaa: Making large language models as active annotators"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Freeal: Towards human-free active learning in the era of large language models"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Training language models to follow instructions with human feedback"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Codegen: An open large language model for code with multi-turn program synthesis"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Codesearchnet challenge: Evaluating the state of semantic code search"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Competition-level code generation with alphacode"
+    },
+    {
+      "ref_id": "b57",
+      "title": "How machine learning is solving the binary function similarity problem"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Dispatcher: Enabling active botnet infiltration using automatic protocol reverse-engineering"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Semantic learning and emulation based cross-platform binary vulnerability seeker"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Neural network-based graph embedding for cross-platform binary code similarity detection"
+    },
+    {
+      "ref_id": "b84",
+      "title": "Graph matching networks for learning the similarity of graph structured objects"
+    },
+    {
+      "ref_id": "b85",
+      "title": "Rcfg2vec: Considering long-distance dependency for binary code similarity detection"
+    },
+    {
+      "ref_id": "b86",
+      "title": "Precise and accurate patch presence test for binaries"
+    },
+    {
+      "ref_id": "b87",
+      "title": "Patch based vulnerability matching for binary programs"
+    },
+    {
+      "ref_id": "b88",
+      "title": "Towards practical binary code similarity detection: Vulnerability verification via patch semantic analysis"
+    },
+    {
+      "ref_id": "b89",
+      "title": "Cati: Context-assisted type inference from stripped binaries"
+    },
+    {
+      "ref_id": "b90",
+      "title": "Arbiter: Bridging the static and dynamic divide in vulnerability discovery on binary programs"
+    },
+    {
+      "ref_id": "b91",
+      "title": "Vulseeker: A semantic learning based vulnerability seeker for cross-platform binary"
+    },
+    {
+      "ref_id": "b92",
+      "title": "Can a deep learning model for one architecture be used for others? Retargeted-Architecture binary code analysis"
+    },
+    {
+      "ref_id": "b93",
+      "title": "Pin - A Dynamic Binary Instrumentation Tool"
+    },
+    {
+      "ref_id": "b94",
+      "title": "Valgrind"
+    },
+    {
+      "ref_id": "b95",
+      "title": "A lightweight framework for function name reassignment based on large-scale stripped binaries"
+    },
+    {
+      "ref_id": "b96",
+      "title": "Direct: A transformer-based model for decompiled variable name recovery"
+    },
+    {
+      "ref_id": "b97",
+      "title": "Osprey: Recovery of variable and data structure via probabilistic analysis for stripped binary"
+    },
+    {
+      "ref_id": "b98",
+      "title": "Augmenting decompiler output with learned variable names and types"
+    },
+    {
+      "ref_id": "b99",
+      "title": "Debin: Predicting debug information in stripped binaries"
+    },
+    {
+      "ref_id": "b100",
+      "title": "Degpt: Optimizing decompiler output with llm"
+    },
+    {
+      "ref_id": "b101",
+      "title": "Nova: Generative language models for assembly code with hierarchical attention and contrastive learning"
+    },
+    {
+      "ref_id": "b102",
+      "title": "Deepseek-coder: When the large language model meets programming-the rise of code intelligence"
+    },
+    {
+      "ref_id": "b103",
+      "title": "Llm4decompile: Decompiling binary code with large language models"
+    },
+    {
+      "ref_id": "b104",
+      "title": "Machine language model, mlm"
+    },
+    {
+      "ref_id": "b105",
+      "title": "Large language models for software engineering: A systematic literature review"
+    },
+    {
+      "ref_id": "b106",
+      "title": "A survey on large language models for software engineering"
+    },
+    {
+      "ref_id": "b107",
+      "title": "Chatgpt: A study on its utility for ubiquitous software engineering tasks"
+    },
+    {
+      "ref_id": "b108",
+      "title": "Large language models based automatic synthesis of software specifications"
+    },
+    {
+      "ref_id": "b109",
+      "title": "Self-collaboration code generation via chatgpt"
+    },
+    {
+      "ref_id": "b110",
+      "title": "Csgvd: A deep learning approach combining sequence and graph embedding for source code vulnerability detection"
+    },
+    {
+      "ref_id": "b111",
+      "title": "Evaluation of context-aware language models and experts for effort estimation of software maintenance issues"
+    },
+    {
+      "ref_id": "b112",
+      "title": "Context-based transfer learning for structuring fault localization and program repair automation"
+    },
+    {
+      "ref_id": "b113",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    }
   ]
 }

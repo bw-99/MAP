@@ -18,11 +18,177 @@
   "9 CONCLUSION AND FUTURE WORK": "In this paper, we conducted an extensive empirical study examining the performance of the popular Adapter Tuning (AdaT) techniques for modality-based TransRec models. We identified two facts: (1) the SOTA AdaT achieves competitive results compared to fine-tuning all parameters (FTA) for text recommendation; (2) AdaT works fine but lags slightly behind FTA for image recommendations. We then benchmarked four well-known AdaT approaches and found that their behavior was somewhat idiosyncratic, compared to NLP and CV tasks. We deeply studied several key factors that may influence AdaT results for recommendation tasks. At last, we found that TransRec with AdaT meets our expectations due to the ideal data scaling effect - TransRec benefits when upscaling the source domain data or downscaling the target domain data. Our work provides important guidelines for parameter-efficient transfer learning for modality recommendation models. It also has important practical implications for foundation models [2] in the RS community, with the grand goal of 'one model for all' [50, 57, 72, 73]. There are several interesting future directions. The first one is to develop more advanced AdaT TransRec for visual item recommendation. Then, we are also interested in investigating the effects of AdaT for multimodal (i.e., both text and image) TransRec. Third, given that most typical AdaT does not help to speed up the training process in practice (nor for NLP and CV tasks), it is important to explore effective optimization techniques to reduce the computational cost and time for TransRec through end-to-end training of item modality encoders. 6 Some recent work also performed end-to-end training for modality recommendation, but they [62, 65, 69] did not study the TransRec problem. We do not discuss them here. Exploring Adapter-based Transfer Learning for Recommender Systems WSDM'24, March 4-8, 2024, Merida, Mexico.",
   "REFERENCES": "[1] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. Tallrec: An effective and efficient tuning framework to align large language model with recommendation. arXiv preprint arXiv:2305.00447 (2023). [2] Rishi Bommasani, Drew A Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S Bernstein, Jeannette Bohg, Antoine Bosselut, Emma Brunskill, et al. 2021. On the opportunities and risks of foundation models. arXiv preprint arXiv:2108.07258 (2021). [3] Tom Brown et al. 2020. Language models are few-shot learners. Advances in neural information processing systems 33 (2020), 1877-1901. [4] Guanzheng Chen, Fangyu Liu, Zaiqiao Meng, and Shangsong Liang. 2022. Revisiting parameter-efficient tuning: Are we really there yet? arXiv preprint arXiv:2202.07962 (2022). [5] Zhe Chen, Yuchen Duan, Wenhai Wang, Junjun He, Tong Lu, Jifeng Dai, and Yu Qiao. 2022. Vision transformer adapter for dense predictions. arXiv preprint arXiv:2205.08534 (2022). [6] Yu Cheng, Yunzhu Pan, Jiaqi Zhang, Yongxin Ni, Aixin Sun, and Fajie Yuan. 2023. An Image Dataset for Benchmarking Recommender Systems with Raw Pixels. arXiv preprint arXiv:2309.06789 (2023). [7] Zeyu Cui, Jianxin Ma, Chang Zhou, Jingren Zhou, and Hongxia Yang. 2022. M6-rec: Generative pretrained language models are open-ended recommender systems. arXiv preprint arXiv:2205.08084 (2022). [8] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [9] Hao Ding, Yifei Ma, Anoop Deoras, Yuyang Wang, and Hao Wang. 2021. Zeroshot recommender systems. arXiv preprint arXiv:2105.08318 (2021). [10] Alexey Dosovitskiy, Lucas Beyer, et al. 2020. An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929 (2020). [11] Peng Gao, Jiaming Han, Renrui Zhang, Ziyi Lin, Shijie Geng, Aojun Zhou, Wei Zhang, Pan Lu, Conghui He, Xiangyu Yue, et al. 2023. Llama-adapter v2: Parameter-efficient visual instruction model. arXiv preprint arXiv:2304.15010 (2023). [12] Xuri Ge, Joemon M Jose, Pengcheng Wang, Arunachalam Iyer, Xiao Liu, and Hu Han. 2023. ALGRNet: Multi-Relational Adaptive Facial Action Unit Modelling for Face Representation and Relevant Recognitions. IEEE Transactions on Biometrics, Behavior, and Identity Science (2023). [13] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5). arXiv preprint arXiv:2203.13366 (2022). [14] Shijie Geng, Juntao Tan, Shuchang Liu, Zuohui Fu, and Yongfeng Zhang. 2023. VIP5: Towards Multimodal Foundation Models for Recommendation. arXiv preprint arXiv:2305.14302 (2023). [15] Jon Atle Gulla, Lemei Zhang, Peng Liu, Özlem Özgöbek, and Xiaomeng Su. 2017. The adressa dataset for news recommendation. In Proceedings of the international conference on web intelligence . 1042-1048. [16] Wenjuan Han, Bo Pang, and Yingnian Wu. 2021. Robust transfer learning with pretrained language models through adapters. arXiv preprint arXiv:2108.02340 (2021). [17] Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Dollár, and Ross Girshick. 2022. Masked autoencoders are scalable vision learners. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 16000-16009. [18] Ruining He and Julian McAuley. 2016. Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering. In proceedings of the 25th international conference on world wide web . 507-517. [19] Xuehai He, Chunyuan Li, Pengchuan Zhang, Jianwei Yang, and Xin Eric Wang. 2022. Parameter-efficient Fine-tuning for Vision Transformers. https://doi.org/ 10.48550/ARXIV.2203.16329 [20] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [21] Yupeng Hou, Shanlei Mu, Wayne Xin Zhao, Yaliang Li, Bolin Ding, and Ji-Rong Wen. 2022. Towards Universal Sequence Representation Learning for Recommender Systems. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 585-593. [22] Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone, Quentin De Laroussilhe, Andrea Gesmundo, Mona Attariyan, and Sylvain Gelly. 2019. Parameter-efficient transfer learning for NLP. In International Conference on Machine Learning . PMLR, 2790-2799. [23] Edward J Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2021. Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685 (2021). [24] Menglin Jia, Luming Tang, Bor-Chun Chen, Claire Cardie, Serge Belongie, Bharath Hariharan, and Ser-Nam Lim. 2022. Visual prompt tuning. In European Conference on Computer Vision . Springer, 709-727. [25] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, [49] Shashank Rajput, Nikhil Mehta, Anima Singh, Raghunandan H Keshavan, Trung Vu, Lukasz Heldt, Lichan Hong, Yi Tay, Vinh Q Tran, Jonah Samost, et al. 2023. Recommender Systems with Generative Retrieval. arXiv preprint arXiv:2305.05065 (2023). WSDM'24, March 4-8, 2024, Merida, Mexico. Fu, et al. [64] Chuhan Wu, Fangzhao Wu, Tao Qi, and Yongfeng Huang. 2021. Two birds with one stone: Unified model learning for both recall and ranking in news recommendation. arXiv preprint arXiv:2104.07404 (2021). [65] Chuhan Wu, Fangzhao Wu, Tao Qi, and Yongfeng Huang. 2022. End-to-end Learnable Diversity-aware News Recommendation. arXiv preprint arXiv:2204.00539 (2022). [66] Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu, et al. 2020. Mind: A large-scale dataset for news recommendation. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics . 3597-3606. [67] Yiqing Wu, Ruobing Xie, Yongchun Zhu, Fuzhen Zhuang, Ao Xiang, Xu Zhang, Leyu Lin, and Qing He. 2022. Selective fairness in recommendation via prompts. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2657-2662. [68] Yiqing Wu, Ruobing Xie, Yongchun Zhu, Fuzhen Zhuang, Xu Zhang, Leyu Lin, and Qing He. 2022. Personalized Prompts for Sequential Recommendation. arXiv preprint arXiv:2205.09666 (2022). [69] Shitao Xiao, Zheng Liu, Yingxia Shao, Tao Di, Bhuvan Middha, Fangzhao Wu, and Xing Xie. 2022. Training large-scale news recommenders with pretrained language models in the loop. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4215-4225. [70] Xin Xin, Tiago Pimentel, Alexandros Karatzoglou, Pengjie Ren, Konstantina Christakopoulou, and Zhaochun Ren. 2022. Rethinking Reinforcement Learning for Recommendation: A Prompt Perspective. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1347-1357. [71] Shenghao Yang, Chenyang Wang, Yankai Liu, Kangping Xu, Weizhi Ma, Yiqun Liu, Min Zhang, Haitao Zeng, Junlan Feng, and Chao Deng. 2023. Collaborative Word-based Pre-trained Item Representation for Transferable Recommendation. arXiv preprint arXiv:2311.10501 (2023). [72] Fajie Yuan, Xiangnan He, Alexandros Karatzoglou, and Liguang Zhang. 2020. Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation. arXiv e-prints (2020), arXiv-2001. [73] Fajie Yuan, Guoxiao Zhang, Alexandros Karatzoglou, Joemon Jose, Beibei Kong, and Yudong Li. 2021. One person, one model, one world: Learning continual user representation without forgetting. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 696-705. [74] Zheng Yuan, Fajie Yuan, Yu Song, Youhua Li, Junchen Fu, Fei Yang, Yunzhu Pan, and Yongxin Ni. 2023. Where to go next for recommender systems? id-vs. modality-based recommender models revisited. arXiv preprint arXiv:2303.13835 (2023). [75] Jiaqi Zhang, Yu Cheng, Yongxin Ni, Yunzhu Pan, Zheng Yuan, Junchen Fu, Youhua Li, Jie Wang, and Fajie Yuan. 2023. NineRec: A Benchmark Dataset Suite for Evaluating Transferable Recommendation. arXiv preprint arXiv:2309.07705 (2023). [76] Renrui Zhang, Jiaming Han, Aojun Zhou, Xiangfei Hu, Shilin Yan, Pan Lu, Hongsheng Li, Peng Gao, and Yu Qiao. 2023. Llama-adapter: Efficient fine-tuning of language models with zero-init attention. arXiv preprint arXiv:2303.16199 (2023). [77] Zizhuo Zhang and Bang Wang. 2023. Prompt learning for news recommendation. arXiv preprint arXiv:2304.05263 (2023). [78] Yaoming Zhu, Jiangtao Feng, Chengqi Zhao, Mingxuan Wang, and Lei Li. 2021. Serial or parallel? plug-able adapter for multilingual machine translation. arXiv preprint arXiv:2104.08154 6, 3 (2021).",
   "keywords_parsed": [
-    "RecommenderSystem",
-    " Parameter-efficient",
-    " Transfer Learning",
-    " Adapter",
-    " Pre-training and Fine-tuning",
-    " TransRec"
+    "Recommender System",
+    "Parameter-efficient",
+    "Transfer Learning",
+    "Adapter",
+    "Pre-training and Fine-tuning",
+    "TransRec"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "On the opportunities and risks of foundation models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Revisiting parameter-efficient tuning: Are we really there yet?"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Vision transformer adapter for dense predictions"
+    },
+    {
+      "ref_id": "b6",
+      "title": "An Image Dataset for Benchmarking Recommender Systems with Raw Pixels"
+    },
+    {
+      "ref_id": "b7",
+      "title": "M6-rec: Generative pretrained language models are open-ended recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Zeroshot recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "An image is worth 16x16 words: Transformers for image recognition at scale"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Llama-adapter v2: Parameter-efficient visual instruction model"
+    },
+    {
+      "ref_id": "b12",
+      "title": "ALGRNet: Multi-Relational Adaptive Facial Action Unit Modelling for Face Representation and Relevant Recognitions"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)"
+    },
+    {
+      "ref_id": "b14",
+      "title": "VIP5: Towards Multimodal Foundation Models for Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "The adressa dataset for news recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Robust transfer learning with pretrained language models through adapters"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Masked autoencoders are scalable vision learners"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Parameter-efficient Fine-tuning for Vision Transformers"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Towards Universal Sequence Representation Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Parameter-efficient transfer learning for NLP"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Visual prompt tuning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Recommender Systems with Generative Retrieval"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Two birds with one stone: Unified model learning for both recall and ranking in news recommendation"
+    },
+    {
+      "ref_id": "b65",
+      "title": "End-to-end Learnable Diversity-aware News Recommendation"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Mind: A large-scale dataset for news recommendation"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Selective fairness in recommendation via prompts"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Personalized Prompts for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Training large-scale news recommenders with pretrained language models in the loop"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Rethinking Reinforcement Learning for Recommendation: A Prompt Perspective"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Collaborative Word-based Pre-trained Item Representation for Transferable Recommendation"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation"
+    },
+    {
+      "ref_id": "b73",
+      "title": "One person, one model, one world: Learning continual user representation without forgetting"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Where to go next for recommender systems? id-vs. modality-based recommender models revisited"
+    },
+    {
+      "ref_id": "b75",
+      "title": "NineRec: A Benchmark Dataset Suite for Evaluating Transferable Recommendation"
+    },
+    {
+      "ref_id": "b76",
+      "title": "Llama-adapter: Efficient fine-tuning of language models with zero-init attention"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Prompt learning for news recommendation"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Serial or parallel? plug-able adapter for multilingual machine translation"
+    }
   ]
 }

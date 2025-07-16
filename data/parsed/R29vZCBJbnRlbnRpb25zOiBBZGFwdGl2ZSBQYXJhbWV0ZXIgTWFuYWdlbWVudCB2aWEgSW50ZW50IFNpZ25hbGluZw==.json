@@ -38,7 +38,201 @@
   "E ADAPM IN ACTION (FIGURE 15)": "AdaPM decides dynamically and automatically between relocation and replication. To explore how AdaPM actually manages parameters, we traced AdaPM's parameter management. Figure 15 depicts parameter management for selected parameters during the first half of the first epoch of KGE training on 8 nodes. AdaPM managed extreme hot spots and extreme cold spots the same way a multi-technique PS does, but used more efficient approaches for parameters between the extremes. The extremes. NuPS decides statically how to manage a parameter. The NuPS heuristic would use static full replication for the first three depicted parameters (Figures 15a, and 15b, and 15c) and relocation for the others. AdaPM ended up managing the two extremes-i.e., the extreme hot spot (Figure 15a) and the rarely accessed parameter (Figure 15e)-as NuPS would. Between the extremes. For the parameters between these two extremes, AdaPM took more fine-grained approaches than NuPS. For example, for the parameter in Figure 15b, AdaPM maintained replicas exactly while they were needed. Concretely, the gray areas in Figures 15b and 15c indicate periods in which AdaPM communicates less than NuPS: in contrast to AdaPM, NuPS would maintain replicas during these periods. For the parameter in Figure 15d, AdaPM created (short-lived) replicas whenever multiple (e) Typical parameter (median frequency) One node Allocation Replica (a) Hot spot parameter (most frequent parameter) (b) Hot spot parameter (99.997% frequency quantile) (c) Hot spot parameter (99.991% frequency quantile) (d) Frequent parameter (99.95% frequency quantile) Figure 15: Parameter management for selected parameters in the KGE task. Each row corresponds to one of 8 nodes. The red boxes indicate two short-lived replicas. nodes accessed this parameter concurrently. These short-lived replicas are barely visible in the figure, so we highlighted two of them with red boxes. The short-term replicas prevented workers from having to access the parameter remotely. In contrast, NuPS would manage this parameter exclusively by relocation, such that workers are slowed down by remote parameter accesses.",
   "keywords_parsed": [
     "machine learning systems",
-    " distributed training",
-    " parameter servers"
+    "distributed training",
+    "parameter servers"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "TensorFlow: A System for Large-scale Machine Learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Accelerating Recommendation System Training by Leveraging Popular Choices"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Scalable Inference in Latent Variable Models"
+    },
+    {
+      "ref_id": "b4",
+      "title": "AE: A domain-agnostic platform for adaptive experimentation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "TuckER: Tensor Factorization for Knowledge Graph Completion"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Translating Embeddings for Modeling Multirelational Data"
+    },
+    {
+      "ref_id": "b7",
+      "title": "LibKGE - A Knowledge Graph Embedding Library for Reproducible research"
+    },
+    {
+      "ref_id": "b8",
+      "title": "One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A Linear Ensemble of Individual and Blended Models for Music Rating Prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "MXNet: A Flexible and Efficient Machine Learning Library for Heterogeneous Distributed Systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "High-Performance Distributed ML at Scale through Parameter Server Consistency Models"
+    },
+    {
+      "ref_id": "b13",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adaptive Subgradient Methods for Online Learning and Stochastic Optimization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Inductive Representation Learning on Large Graphs"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Large Graph Convolutional Network Training with GPU-Oriented Data Communication Architecture"
+    },
+    {
+      "ref_id": "b35",
+      "title": "A Review of Relational Machine Learning for Knowledge Graphs"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A Three-way Model for Collective Learning on Multi-relational Data"
+    },
+    {
+      "ref_id": "b37",
+      "title": "PyTorch: An Imperative Style, High-Performance Deep Learning Library"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Sancus: Staleness-Aware Communication-Avoiding Full-Graph Decentralized Training in Large-Scale Graph Neural Networks"
+    },
+    {
+      "ref_id": "b39",
+      "title": "GloVe: Global Vectors for Word Representation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Deep Contextualized Word Representations"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Software Framework for Topic Modelling with Large Corpora"
+    },
+    {
+      "ref_id": "b42",
+      "title": "NuPS: A Parameter Server for Machine Learning with Non-Uniform Parameter Access"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Dynamic Parameter Allocation in Parameter Servers"
+    },
+    {
+      "ref_id": "b44",
+      "title": "You CAN Teach an Old Dog New Tricks! On Training Knowledge Graph Embeddings"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Modeling Relational Data with Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Horovod: Fast and easy distributed deep learning in TensorFlow"
+    },
+    {
+      "ref_id": "b47",
+      "title": "End-to-End Structure-Aware Convolutional Networks for Knowledge Base Completion"
+    },
+    {
+      "ref_id": "b48",
+      "title": "An Architecture for Parallel Topic Models"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Parsing with Compositional Vector Grammars"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Distributed Matrix Completion"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Complex Embeddings for Simple Link Prediction"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Distributed Systems (3rd ed.)"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Composition-based Multi-Relational Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Marius++: Large-Scale Training of Graph Neural Networks on a Single Machine"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Deep Graph Library: Towards Efficient and Scalable Deep Learning on Graphs"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b57",
+      "title": "KEPLER: A Unified Model for Knowledge Embedding and Pretrained Language Representation"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Merlin HugeCTR: GPU-Accelerated Recommender System Training and Inference"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Managed communication and consistency for fast data-parallel iterative analytics"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Petuum: A New Platform for Distributed Machine Learning on Big Data"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Distributed Hierarchical GPU Parameter Server for Massive Scale Deep Learning Ads Systems"
+    },
+    {
+      "ref_id": "b62",
+      "title": "BiPS: Hotness-aware Bi-tier Parameter Synchronization for Recommendation Models"
+    },
+    {
+      "ref_id": "b63",
+      "title": "CowClip: Reducing CTR Prediction Model Training Time from 12 hours to 10 minutes on 1 GPU"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b65",
+      "title": "AliGraph: A Comprehensive Graph Neural Network Platform"
+    }
   ]
 }

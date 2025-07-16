@@ -30,8 +30,186 @@
   "Algorithm 3 Online Serving of RL-MPCA": "Input: Trained Network 𝑄 𝜃 , trained constraint parameter 𝝀 = ( 𝜆 1 , . . . , 𝜆 𝑇 ) 1: Initialize state 𝑠 0 2: for 𝑡 = 1 , . . . , 𝑇 do 3: Take action 𝑎 ∗ 𝑡 = arg max 𝑎 𝑡 ( 𝑄 𝜃 ( 𝑠 𝑡 , 𝑎 𝑡 ) -𝜆 𝑡 𝐶𝑜𝑠𝑡 ( 𝑠 𝑡 , 𝑎 𝑡 )) 4: Execute allocation following 𝑎 ∗ 𝑡 5: Observe the next state from system 6: end for",
   "keywords_parsed": [
     "Computation Resource Allocation",
-    " Deep Reinforcement Learning",
-    " Recommender System",
-    " Weakly Coupled MDP"
+    "Deep Reinforcement Learning",
+    "Recommender System",
+    "Weakly Coupled MDP"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Constrained policy optimization"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Relaxations of weakly coupled stochastic dynamic programs"
+    },
+    {
+      "ref_id": "b3",
+      "title": "An optimistic perspective on offline reinforcement learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Constrained Markov decision processes"
+    },
+    {
+      "ref_id": "b5",
+      "title": "PID control system analysis, design, and technology"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Random search for hyper-parameter optimization"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Budget allocation using weakly coupled, constrained Markov decision processes"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Apache flink: Stream and batch processing in a single engine"
+    },
+    {
+      "ref_id": "b9",
+      "title": "BCRLSP: An Offline Reinforcement Learning Framework for Sequential Targeted Promotion"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A primal-dual approach to constrained markov decision processes"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Unified conversational recommendation policy learning via graph-based reinforcement learning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Training with quantization noise for extreme model compression"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "D4rl: Datasets for deep data-driven reinforcement learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Benchmarking batch deep reinforcement learning algorithms"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Off-policy deep reinforcement learning without exploration"
+    },
+    {
+      "ref_id": "b18",
+      "title": "DRCGR: Deep reinforcement learning framework incorporating CNN and GANbased for interactive recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A Unified Solution to Constrained Bidding in Online Display Advertising"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Recommendation systems for e-commerce systems an overview"
+    },
+    {
+      "ref_id": "b21",
+      "title": "DCAF: A Dynamic computation resource allocation Framework for Online Serving System"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Conservative q-learning for offline reinforcement learning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Cross dqn: Cross deep q network for ads allocation in feed"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Cascade ranking for operational e-commerce search"
+    },
+    {
+      "ref_id": "b25",
+      "title": "IPO: Interior-point policy optimization under constraints"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Solving very large weakly coupled Markov decision processes"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Human-level control through deep reinforcement learning"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Model compression via distillation and quantization"
+    },
+    {
+      "ref_id": "b29",
+      "title": "The cross-entropy method: a unified approach to combinatorial optimization, Monte-Carlo simulation, and machine learning"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Optimized Cost per Mille in Feeds Advertising"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Reward constrained policy optimization"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Deep reinforcement learning with double q-learning"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Dueling network architectures for deep reinforcement learning"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Natural evolution strategies"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Budget constrained bidding by model-free reinforcement learning in display advertising"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Hierarchical reinforcement learning for integrated recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "MoTiAC: Multi-objective actor-critics for real-time bidding"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Computation Resource Allocation Solution in Recommender Systems"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Combo: Conservative offline model-based policy optimization"
+    },
+    {
+      "ref_id": "b40",
+      "title": "BCORLE (λ): An Offline Reinforcement Learning and Evaluation Framework for Coupons Allocation in E-commerce Market"
+    },
+    {
+      "ref_id": "b41",
+      "title": "DEAR: Deep reinforcement learning for online advertising impression in recommender systems"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Jointly learning to recommend and advertise"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Interactive recommender system via knowledge graph-enhanced reinforcement learning"
+    }
   ]
 }

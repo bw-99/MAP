@@ -25,20 +25,114 @@
   "6 Conclusion": "This paper introduces a novel creator-side recommender system called DualRec to find the most appropriate users for each item to improve creator satisfaction. We show that the algorithms in traditional user-side recommender systems, including the retrieval algorithms and the ranking algorithms, can be easily translated into the creator-side version with a few changes. Moreover, we discuss the user availability issue in DualRec and introduce UAC to tackle this challenge. We implement DualRec in Kwai, a short video platform with over 100 million users and over 10 million creators, significantly improving creator satisfaction. Creator-Side Recommender System: Challenges, Designs, and Applications WWWCompanion '25, April 28-May 2, 2025, Sydney, NSW, Australia",
   "References": "[1] Jianxin Chang, Chen Gao, Yu Zheng, Yiqun Hui, Yanan Niu, Yang Song, Depeng Jin, and Yong Li. 2021. Sequential recommendation with graph neural networks. In Proceedings of the 44th international ACM SIGIR conference on research and development in information retrieval . 378-387. [2] Tianqi Chen and Carlos Guestrin. 2016. Xgboost: A scalable tree boosting system. In Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining . 785-794. [3] Marco De Nadai, Francesco Fabbri, Paul Gigioli, Alice Wang, Ang Li, Fabrizio Silvestri, Laura Kim, Shawn Lin, Vladan Radosavljevic, Sandeep Ghael, David Nyhan, Hugues Bouchard, Mounia Lalmas, and Andreas Damianou. 2024. Personalized Audiobook Recommendations at Spotify Through Graph Neural Networks. In Companion Proceedings of the ACM Web Conference 2024 (Singapore, Singapore) (WWW'24) . Association for Computing Machinery, New York, NY, USA, 403-412. https://doi.org/10.1145/3589335.3648339 [4] Chantat Eksombatchai, Pranav Jindal, Jerry Zitao Liu, Yuchen Liu, Rahul Sharma, Charles Sugnet, Mark Ulrich, and Jure Leskovec. 2018. Pixie: A System for Recommending 3+ Billion Items to 200+ Million Users in Real-Time. In Proceedings of the 2018 World Wide Web Conference (Lyon, France) (WWW '18) . International World Wide Web Conferences Steering Committee, Republic and Canton of Geneva, CHE, 1775-1784. https://doi.org/10.1145/3178876.3186183 [5] Yulong Gu, Zhuoye Ding, Shuaiqiang Wang, and Dawei Yin. 2020. Hierarchical user profiling for e-commerce recommender systems. In Proceedings of the 13th International Conference on Web Search and Data Mining . 223-231. [6] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [7] Hengchang Hu, Wei Guo, Xu Liu, Yong Liu, Ruiming Tang, Rui Zhang, and Min-Yen Kan. 2024. User Behavior Enriched Temporal Knowledge Graphs for Sequential Recommendation. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining (Merida, Mexico) (WSDM '24) . Association for Computing Machinery, New York, NY, USA, 266-275. https: //doi.org/10.1145/3616855.3635762 [8] Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, and Linjun Yang. 2020. Embeddingbased retrieval in facebook search. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2553-2561. [9] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning deep structured semantic models for web search using clickthrough data. In Proceedings of the 22nd ACM international conference on Information & Knowledge Management . 2333-2338. [10] Hyeyoung Ko, Suyeon Lee, Yoonseo Park, and Anna Choi. 2022. A Survey of Recommendation Systems: Recommendation Models, Techniques, and Application Fields. Electronics 11, 1 (2022). https://doi.org/10.3390/electronics11010141 [11] Greg Linden, Brent Smith, and Jeremy York. 200 3. Amazon. com recommendations: Item-to-item collaborative filtering. IEEE Internet computing 7, 1 (200 3), 76-80. [12] Gourab K Patro, Arpita Biswas, Niloy Ganguly, Krishna P Gummadi, and Abhijnan Chakraborty. 2020. Fairrec: Two-sided fairness for personalized recommendations in two-sided platforms. In Proceedings of the web conference 2020 . 1194-1204. [13] Badrul Sarwar, George Karypis, Joseph Konstan, and John Riedl. 2001. Itembased collaborative filtering recommendation algorithms. In Proceedings of the 10th International Conference on World Wide Web (Hong Kong, Hong Kong) (WWW'01) . Association for Computing Machinery, New York, NY, USA, 285-295. https://doi.org/10.1145/371920.372071 [14] Teng Shi, Zihua Si, Jun Xu, Xiao Zhang, Xiaoxue Zang, Kai Zheng, Dewei Leng, Yanan Niu, and Yang Song. 2024. UniSAR: Modeling User Transition Behaviors between Search and Recommendation. In Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (Washington DC, USA) (SIGIR '24) . Association for Computing Machinery, New York, NY, USA, 1029-1039. https://doi.org/10.1145/3626772.3657811 [15] Zihua Si, Zhongxiang Sun, Xiao Zhang, Jun Xu, Xiaoxue Zang, Yang Song, Kun Gai, and Ji-Rong Wen. 2023. When Search Meets Recommendation: Learning Disentangled Search Representation for Recommendation. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (Taipei, Taiwan) (SIGIR '23) . Association for Computing Machinery, New York, NY, USA, 1313-1323. https://doi.org/10.1145/3539618.3591786 [16] Linpeng Tang, Qi Huang, Amit Puntambekar, Ymir Vigfusson, Wyatt Lloyd, and Kai Li. 2017. Popularity prediction of facebook videos for higher quality streaming. In 2017 USENIX Annual Technical Conference (USENIX ATC 17) . 111-123. [17] Jizhe Wang, Pipei Huang, Huan Zhao, Zhibo Zhang, Binqiang Zhao, and Dik Lun Lee. 2018. Billion-scale commodity embedding for e-commerce recommendation in alibaba. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 839-848. [18] Jianling Wang, Haokai Lu, Sai Zhang, Bart Locanthi, Haoting Wang, Dylan Greaves, Benjamin Lipshitz, Sriraj Badam, Ed H. Chi, Cristos J. Goodrow, Su-Lin Wu, Lexi Baugher, and Minmin Chen. 2023. Fresh Content Needs More Attention: Multi-funnel Fresh Content Recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Long Beach, CA, USA) (KDD '23) . 5082-5091. [19] Patrick Wieschollek, Oliver Wang, Alexander Sorkine-Hornung, and Hendrik Lensch. 2016. Efficient large-scale approximate nearest neighbor search on the gpu. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition . 2027-2035. [20] Siqi Wu, Marian-Andrei Rizoiu, and Lexing Xie. 2018. Beyond views: Measuring and predicting engagement in online videos. In Proceedings of the International AAAI Conference on Web and Social Media , Vol. 12. [21] Zhibo Xiao, Luwei Yang, Tao Zhang, Wen Jiang, Wei Ning, and Yujiu Yang. 2024. Deep Evolutional Instant Interest Network for CTR Prediction in Trigger-Induced Recommendation. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining (Merida, Mexico) (WSDM '24) . Association for Computing Machinery, New York, NY, USA, 846-854. https://doi.org/10.1145/ 3616855.3635829 [22] Zheng Yuan, Fajie Yuan, Yu Song, Youhua Li, Junchen Fu, Fei Yang, Yunzhu Pan, and Yongxin Ni. 2023. Where to go next for recommender systems? idvs. modality-based recommender models revisited. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2639-2649. [23] Yin Zhang, Derek Zhiyuan Cheng, Tiansheng Yao, Xinyang Yi, Lichan Hong, and Ed H Chi. 2021. A model of two tales: Dual transfer learning framework for improved long-tail item recommendation. In Proceedings of the web conference 2021 . 2220-2231. [24] Yin Zhang, Ruoxi Wang, Derek Zhiyuan Cheng, Tiansheng Yao, Xinyang Yi, Lichan Hong, James Caverlee, and Ed H Chi. 2023. Empowering Long-tail Item Recommendation through Cross Decoupling Network (CDN). In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 5608-5617. [25] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [26] Ziwei Zhu, Jingu Kim, Trung Nguyen, Aish Fenton, and James Caverlee. 2021. Fairness among new items in cold start recommender systems. In Proceedings of the 44th international ACM SIGIR conference on research and development in information retrieval . 767-776.",
   "keywords_parsed": [
-    "Users and creators are two crucial components of recommender systems. Typical recommender systems focus on the user side",
-    " providing the most suitable items based on each user's request. In such scenarios",
-    " a few items receive a majority of exposures",
-    " while many items receive very few. This imbalance leads to poorer experiences and decreased activity among the creators receiving less feedback",
-    " harming the recommender system in the long term. To this end",
-    " we develop a creator-side recommender system",
-    " called DualRec ",
-    " to answer the following question: How to find the most suitable users for each item to enhance the creators' experience? We show that typical user-side recommendation algorithms",
-    " such as retrieval and ranking algorithms",
-    " can be adapted into the creator-side versions with just a few modifications. This greatly simplifies algorithm design in DualRec. Moreover",
-    " we discuss a unique challenge in DualRec: the user availability issue",
-    " which is not present in userside recommender systems. To tackle this issue",
-    " we incorporate a user availability calculation (UAC) module to effectively enhance DualRec's performance. DualRec has already been implemented in Kwai",
-    " a short video recommendation system with over 100 million users and over 10 million creators",
-    " significantly improving the experience for creators."
+    "Recommender System",
+    "Creator Experience",
+    "Cold Start"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Sequential recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Xgboost: A scalable tree boosting system"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Personalized Audiobook Recommendations at Spotify Through Graph Neural Networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Pixie: A System for Recommending 3+ Billion Items to 200+ Million Users in Real-Time"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Hierarchical user profiling for e-commerce recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b7",
+      "title": "User Behavior Enriched Temporal Knowledge Graphs for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Embedding-based retrieval in facebook search"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A Survey of Recommendation Systems: Recommendation Models, Techniques, and Application Fields"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Amazon.com recommendations: Item-to-item collaborative filtering"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Fairrec: Two-sided fairness for personalized recommendations in two-sided platforms"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Item-based collaborative filtering recommendation algorithms"
+    },
+    {
+      "ref_id": "b14",
+      "title": "UniSAR: Modeling User Transition Behaviors between Search and Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "When Search Meets Recommendation: Learning Disentangled Search Representation for Recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Popularity prediction of facebook videos for higher quality streaming"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Billion-scale commodity embedding for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Fresh Content Needs More Attention: Multi-funnel Fresh Content Recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Efficient large-scale approximate nearest neighbor search on the gpu"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Beyond views: Measuring and predicting engagement in online videos"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Deep Evolutional Instant Interest Network for CTR Prediction in Trigger-Induced Recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Where to go next for recommender systems? idvs. modality-based recommender models revisited"
+    },
+    {
+      "ref_id": "b23",
+      "title": "A model of two tales: Dual transfer learning framework for improved long-tail item recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Empowering Long-tail Item Recommendation through Cross Decoupling Network (CDN)"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Fairness among new items in cold start recommender systems"
+    }
   ]
 }

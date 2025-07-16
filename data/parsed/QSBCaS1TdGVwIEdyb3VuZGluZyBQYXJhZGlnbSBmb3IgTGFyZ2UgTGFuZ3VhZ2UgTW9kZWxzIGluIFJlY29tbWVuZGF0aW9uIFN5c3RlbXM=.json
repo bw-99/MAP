@@ -16,6 +16,214 @@
   "5 CONCLUSION AND FUTURE WORK": "In this paper, we aim to thoroughly discuss the performance across all ranks for LLM4Rec. In order to fully exploit the potential of LLMs, we formulate a bi-step grounding paradigm for recommendation (BIGRec), which follows a generative methodology that can effectively incorporate statistical information. Our empirical findings indicate that BIGRec trained on 1024 samples considerably outstrips that of traditional recommender models trained on an identical number of samples, attaining performance on par even with conventional models trained on the full dataset in most cases. Furthermore, we have scaled up the training data for LLM-based recommendations. The results indicate that LLMs rely heavily on semantics for recommendations while ignoring some other useful information. Based on this insight, we have infused popularity and collaborative information into the LLM, further enhancing its capability and validating our assumption. In view of the aforementioned discussions, it is inferred that employing a bi-step grounding approach in LLM-based recommendations shows promise. However, several unresolved issues persist. Firstly, in terms of the initial stage of grounding in the recommendation space, our experiments reveal that satisfactory recommendation performance can be achieved with a relatively small number of samples. Besides, further increasing the sample size can potentially enhance the performance. However, there are two opposing considerations. On one hand, training an LLM incurs considerable costs. Is it feasible to select appropriate samples for constructing the recommendation space, thereby reducing the associated expenses? On the other hand, the question of whether all items should belong to the same recommendation space remains a topic of debate. Furthermore, concerning the second grounding step, the methodology we currently employ is rather crude, extracting embeddings using the decoder model and computing similarity is an elementary operation. Despite our ability to regulate the production of samples with a large beam size, this approach is highly time-consuming. Therefore, it is imperative to find a more efficient method for connecting with actual items. Moreover, we have confirmed the viability of integrating item popularity and collaborative information during the grounding process. We hope to incorporate more conventional recommendation features more effectively to improve model performance further.",
   "REFERENCES": "[1] Michael Ahn, Anthony Brohan, Noah Brown, Yevgen Chebotar, Omar Cortes, Byron David, Chelsea Finn, Chuyuan Fu, Keerthana Gopalakrishnan, Karol Hausman, et al. 2022. Do as i can, not as i say: Grounding language in robotic affordances. arXiv preprint arXiv:2204.01691 (2022). [2] Qingyao Ai, Ting Bai, and et al. 2023. Information Retrieval Meets Large Language Models: A Strategic Report from Chinese IR Community. arXiv preprint arXiv:2307.09751 (2023). [3] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. Tallrec: An effective and efficient tuning framework to align large language model with recommendation. Recsys short (2023). [4] Lisa Beinborn, Teresa Botschen, and Iryna Gurevych. 2018. Multimodal grounding for language processing. arXiv preprint arXiv:1806.06371 (2018). [5] Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel M. Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei. 2020. Language Models are Few-Shot Learners. In Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual , Hugo Larochelle, Marc'Aurelio Ranzato, Raia Hadsell, Maria-Florina Balcan, and Hsuan-Tien Lin (Eds.). https://proceedings.neurips.cc/paper/2020/hash/ Manuscript submitted to ACM A Bi-Step Grounding Paradigm for Large Language Models in Recommendation Systems 15 1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html [6] Zheng Chen. 2023. PALR: Personalization Aware LLMs for Recommendation. arXiv preprint arXiv:2305.07622 (2023). [7] Wei-Lin Chiang, Zhuohan Li, Zi Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph E. Gonzalez, Ion Stoica, and Eric P. Xing. 2023. Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality. https://lmsys.org/blog/2023-0330-vicuna/ [8] Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung Won Chung, Charles Sutton, Sebastian Gehrmann, et al. 2022. Palm: Scaling language modeling with pathways. arXiv preprint arXiv:2204.02311 (2022). [9] Qiang Cui, Shu Wu, Qiang Liu, Wen Zhong, and Liang Wang. 2020. MV-RNN: A Multi-View Recurrent Neural Network for Sequential Recommendation. IEEE Trans. Knowl. Data Eng. 32, 2 (2020), 317-331. https://doi.org/10.1109/TKDE.2018.2881260 [10] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers) . Association for Computational Linguistics, Minneapolis, Minnesota, 4171-4186. https: //doi.org/10.18653/v1/N19-1423 [11] Sihao Ding, Fuli Feng, Xiangnan He, Jinqiu Jin, Wenjie Wang, Yong Liao, and Yongdong Zhang. 2022. Interpolative Distillation for Unifying Biased and Debiased Recommendation. In SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 , Enrique Amigó, Pablo Castells, Julio Gonzalo, Ben Carterette, J. Shane Culpepper, and Gabriella Kazai (Eds.). ACM, 40-49. https://doi.org/10.1145/3477495.3532002 [12] Tim Donkers, Benedikt Loepp, and Jürgen Ziegler. 2017. Sequential user-based recurrent neural network recommendations. In Proceedings of the eleventh ACM conference on recommender systems . 152-160. [13] Danny Driess, Fei Xia, Mehdi SM Sajjadi, Corey Lynch, Aakanksha Chowdhery, Brian Ichter, Ayzaan Wahid, Jonathan Tompson, Quan Vuong, Tianhe Yu, et al. 2023. Palm-e: An embodied multimodal language model. arXiv preprint arXiv:2303.03378 (2023). [14] Wenqi Fan, Zihuai Zhao, Jiatong Li, Yunqing Liu, Xiaowei Mei, Yiqi Wang, Jiliang Tang, and Qing Li. 2023. Recommender Systems in the Era of Large Language Models (LLMs). arXiv preprint arXiv:2307.02046 (2023). [15] Hui Fang, Danning Zhang, Yiheng Shu, and Guibing Guo. 2020. Deep Learning for Sequential Recommendation: Algorithms, Influential Factors, and Evaluations. ACM Trans. Inf. Syst. 39, 1 (2020), 10:1-10:42. https://doi.org/10.1145/3426723 [16] Luke Friedman, Sameer Ahuja, David Allen, Terry Tan, Hakim Sidahmed, Changbo Long, Jun Xie, Gabriel Schubiner, Ajay Patel, Harsh Lara, et al. 2023. Leveraging Large Language Models in Conversational Recommender Systems. arXiv preprint arXiv:2305.07961 (2023). [17] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5). In Proceedings of the 16th ACM Conference on Recommender Systems . 299-315. [18] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2016. Session-based Recommendations with Recurrent Neural Networks. In ICLR . [19] Yupeng Hou, Shanlei Mu, Wayne Xin Zhao, Yaliang Li, Bolin Ding, and Ji-Rong Wen. 2022. Towards universal sequence representation learning for recommender systems. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 585-593. [20] Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2022. LoRA: Low-Rank Adaptation of Large Language Models. In The Tenth International Conference on Learning Representations, ICLR 2022, Virtual Event, April 25-29, 2022 . OpenReview.net. https://openreview.net/forum?id=nZeVKeeFYf9 [21] Yitong Ji, Aixin Sun, Jie Zhang, and Chenliang Li. 2023. A critical study on data leakage in recommender system offline evaluation. ACMTransactions on Information Systems 41, 3 (2023), 1-27. [22] Chen Ju, Tengda Han, Kunhao Zheng, Ya Zhang, and Weidi Xie. 2022. Prompting visual-language models for efficient video understanding. In European Conference on Computer Vision . Springer, 105-124. [23] Wang-Cheng Kang and Julian J. McAuley. 2018. Self-Attentive Sequential Recommendation. In IEEE International Conference on Data Mining, ICDM 2018, Singapore, November 17-20, 2018 . IEEE Computer Society, 197-206. [24] Diederik P. Kingma and Jimmy Ba. 2015. Adam: A Method for Stochastic Optimization. In 3rd International Conference on Learning Representations, ICLR 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings , Yoshua Bengio and Yann LeCun (Eds.). http://arxiv.org/abs/1412.6980 [25] Walid Krichene and Steffen Rendle. 2020. On sampled metrics for item recommendation. In Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining . 1748-1757. [26] Jiatong Li, Yunqing Liu, Wenqi Fan, Xiao-Yong Wei, Hui Liu, Jiliang Tang, and Qing Li. 2023. Empowering Molecule Discovery for Molecule-Caption Translation with Large Language Models: A ChatGPT Perspective. arXiv preprint arXiv:2306.06615 (2023). [27] Jinming Li, Wentao Zhang, Tian Wang, Guanglei Xiong, Alan Lu, and Gerard Medioni. 2023. GPT4Rec: A generative framework for personalized recommendation and user interests interpretation. arXiv preprint arXiv:2304.03879 (2023). [28] Ruyu Li, Wenhao Deng, Yu Cheng, Zheng Yuan, Jiaqi Zhang, and Fajie Yuan. 2023. Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights. arXiv preprint arXiv:2305.11700 (2023). [29] Xiujun Li, Xi Yin, Chunyuan Li, Pengchuan Zhang, Xiaowei Hu, Lei Zhang, Lijuan Wang, Houdong Hu, Li Dong, Furu Wei, et al. 2020. Oscar: Object-semantics aligned pre-training for vision-language tasks. In Computer Vision-ECCV 2020: 16th European Conference, Glasgow, UK, August 23-28, 2020, Proceedings, Part XXX 16 . Springer, 121-137. Manuscript submitted to ACM 16 Bao and Zhang, et al. [30] Junling Liu, Chao Liu, Renjie Lv, Kang Zhou, and Yan Zhang. 2023. Is chatgpt a good recommender? a preliminary study. arXiv preprint arXiv:2304.10149 (2023). [31] Ilya Loshchilov and Frank Hutter. 2019. Decoupled Weight Decay Regularization. In 7th International Conference on Learning Representations, ICLR 2019, New Orleans, LA, USA, May 6-9, 2019 . OpenReview.net. https://openreview.net/forum?id=Bkg6RiCqY7 [32] Yabo Ni, Dan Ou, Shichen Liu, Xiang Li, Wenwu Ou, Anxiang Zeng, and Luo Si. 2018. Perceive Your Users in Depth: Learning Universal User Representations from Multiple E-commerce Tasks. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2018, London, UK, August 19-23, 2018 , Yike Guo and Faisal Farooq (Eds.). ACM, 596-605. https://doi.org/10.1145/3219819.3219828 [33] Ruihong Qiu, Zi Huang, Hongzhi Yin, and Zijian Wang. 2021. Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation. CoRR abs/2110.05730 (2021). arXiv:2110.05730 https://arxiv.org/abs/2110.05730 [34] Ruihong Qiu, Zi Huang, Hongzhi Yin, and Zijian Wang. 2022. Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation. In WSDM '22: The Fifteenth ACM International Conference on Web Search and Data Mining, Virtual Event / Tempe, AZ, USA, February 21 - 25, 2022 , K. Selcuk Candan, Huan Liu, Leman Akoglu, Xin Luna Dong, and Jiliang Tang (Eds.). ACM, 813-823. https://doi.org/10.1145/ 3488560.3498433 [35] Alec Radford, Jeff Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever. 2019. Language Models are Unsupervised Multitask Learners. (2019). [36] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J Liu. 2020. Exploring the limits of transfer learning with a unified text-to-text transformer. The Journal of Machine Learning Research 21, 1 (2020), 5485-5551. [37] Xiaoyuan Su and Taghi M Khoshgoftaar. 2009. A survey of collaborative filtering techniques. Advances in artificial intelligence 2009 (2009). [38] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In WSDM . 565-573. [39] Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, and Tatsunori B. Hashimoto. 2023. Stanford Alpaca: An Instruction-following LLaMA model. https://github.com/tatsu-lab/stanford_alpaca. [40] Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, Aurélien Rodriguez, Armand Joulin, Edouard Grave, and Guillaume Lample. 2023. LLaMA: Open and Efficient Foundation Language Models. CoRR abs/2302.13971 (2023). https://doi.org/10.48550/arXiv.2302.13971 arXiv:2302.13971 [41] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is All you Need. In Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA , Isabelle Guyon, Ulrike von Luxburg, Samy Bengio, Hanna M. Wallach, Rob Fergus, S. V. N. Vishwanathan, and Roman Garnett (Eds.). 5998-6008. https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html [42] Shoujin Wang, Liang Hu, Yan Wang, Longbing Cao, Quan Z. Sheng, and Mehmet A. Orgun. 2019. Sequential Recommender Systems: Challenges, Progress and Prospects. In Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, IJCAI 2019, Macao, China, August 10-16, 2019 , Sarit Kraus (Ed.). ijcai.org, 6332-6338. https://doi.org/10.24963/ijcai.2019/883 [43] Zhenlei Wang, Shiqi Shen, Zhipeng Wang, Bo Chen, Xu Chen, and Ji-Rong Wen. 2022. Unbiased Sequential Recommendation with Latent Confounders. In WWW'22: The ACM Web Conference 2022, Virtual Event, Lyon, France, April 25 - 29, 2022 , Frédérique Laforest, Raphaël Troncy, Elena Simperl, Deepak Agarwal, Aristides Gionis, Ivan Herman, and Lionel Médini (Eds.). ACM, 2195-2204. https://doi.org/10.1145/3485447.3512092 [44] Zekun Wang, Ge Zhang, Kexin Yang, Ning Shi, Wangchunshu Zhou, Shaochun Hao, Guangzheng Xiong, Yizhi Li, Mong Yuan Sim, Xiuying Chen, et al. 2023. Interactive natural language processing. arXiv preprint arXiv:2305.13246 (2023). [45] Hongyi Wen, Xinyang Yi, Tiansheng Yao, Jiaxi Tang, Lichan Hong, and Ed H Chi. 2022. Distributionally-robust Recommendations for Improving Worst-case User Experience. In Proceedings of the ACM Web Conference 2022 . 3606-3610. [46] Likang Wu, Zhi Zheng, Zhaopeng Qiu, Hao Wang, Hongchao Gu, Tingjia Shen, Chuan Qin, Chen Zhu, Hengshu Zhu, Qi Liu, et al. 2023. A Survey on Large Language Models for Recommendation. arXiv preprint arXiv:2305.19860 (2023). [47] Lingxi Xie, Longhui Wei, Xiaopeng Zhang, Kaifeng Bi, Xiaotao Gu, Jianlong Chang, and Qi Tian. 2023. Towards AGI in Computer Vision: Lessons Learned from GPT and Large Language Models. arXiv preprint arXiv:2306.08641 (2023). [48] Chengfeng Xu, Jian Feng, Pengpeng Zhao, Fuzhen Zhuang, Deqing Wang, Yanchi Liu, and Victor S. Sheng. 2021. Long- and short-term self-attention network for sequential recommendation. Neurocomputing 423 (2021), 580-589. https://doi.org/10.1016/j.neucom.2020.10.066 [49] An Yan, Shuo Cheng, Wang-Cheng Kang, Mengting Wan, and Julian J. McAuley. 2019. CosRec: 2D Convolutional Neural Networks for Sequential Recommendation. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management, CIKM 2019, Beijing, China, November 3-7, 2019 , Wenwu Zhu, Dacheng Tao, Xueqi Cheng, Peng Cui, Elke A. Rundensteiner, David Carmel, Qi He, and Jeffrey Xu Yu (Eds.). ACM, 2173-2176. https://doi.org/10.1145/3357384.3358113 [50] Zhengyi Yang, Xiangnan He, Jizhi Zhang, Jiancan Wu, Xin Xin, Jiawei Chen, and Xiang Wang. 2023. A Generic Learning Framework for Sequential Recommendation with Distribution Shifts. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . [51] Fajie Yuan, Xiangnan He, Alexandros Karatzoglou, and Liguang Zhang. 2020. Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval, SIGIR 2020, Virtual Event, China, July 25-30, 2020 , Jimmy X. Huang, Yi Chang, Xueqi Cheng, Jaap Kamps, Vanessa Murdock, Ji-Rong Wen, and Yiqun Liu (Eds.). ACM, 1469-1478. https://doi.org/10.1145/3397271.3401156 Manuscript submitted to ACM 17",
   "keywords_parsed": [
-    "None"
+    "Large Language Models",
+    "Grounding",
+    "Sequential Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Do as i can, not as i say: Grounding language in robotic affordances"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Information Retrieval Meets Large Language Models: A Strategic Report from Chinese IR Community"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Multimodal grounding for language processing"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Language Models are Few-Shot Learners"
+    },
+    {
+      "ref_id": "b6",
+      "title": "PALR: Personalization Aware LLMs for Recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Palm: Scaling language modeling with pathways"
+    },
+    {
+      "ref_id": "b9",
+      "title": "MV-RNN: A Multi-View Recurrent Neural Network for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Interpolative Distillation for Unifying Biased and Debiased Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Sequential user-based recurrent neural network recommendations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Palm-e: An embodied multimodal language model"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Recommender Systems in the Era of Large Language Models (LLMs)"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Deep Learning for Sequential Recommendation: Algorithms, Influential Factors, and Evaluations"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Leveraging Large Language Models in Conversational Recommender Systems"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Session-based Recommendations with Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Towards universal sequence representation learning for recommender systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models"
+    },
+    {
+      "ref_id": "b21",
+      "title": "A critical study on data leakage in recommender system offline evaluation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Prompting visual-language models for efficient video understanding"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Self-Attentive Sequential Recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b25",
+      "title": "On sampled metrics for item recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Empowering Molecule Discovery for Molecule-Caption Translation with Large Language Models: A ChatGPT Perspective"
+    },
+    {
+      "ref_id": "b27",
+      "title": "GPT4Rec: A generative framework for personalized recommendation and user interests interpretation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Oscar: Object-semantics aligned pre-training for vision-language tasks"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Is chatgpt a good recommender? a preliminary study"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Decoupled Weight Decay Regularization"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Perceive Your Users in Depth: Learning Universal User Representations from Multiple E-commerce Tasks"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Language Models are Unsupervised Multitask Learners"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b37",
+      "title": "A survey of collaborative filtering techniques"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Stanford Alpaca: An Instruction-following LLaMA model"
+    },
+    {
+      "ref_id": "b40",
+      "title": "LLaMA: Open and Efficient Foundation Language Models"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Sequential Recommender Systems: Challenges, Progress and Prospects"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Unbiased Sequential Recommendation with Latent Confounders"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Interactive natural language processing"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Distributionally-robust Recommendations for Improving Worst-case User Experience"
+    },
+    {
+      "ref_id": "b46",
+      "title": "A Survey on Large Language Models for Recommendation"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Towards AGI in Computer Vision: Lessons Learned from GPT and Large Language Models"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Long- and short-term self-attention network for sequential recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "CosRec: 2D Convolutional Neural Networks for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "A Generic Learning Framework for Sequential Recommendation with Distribution Shifts"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation"
+    }
   ]
 }

@@ -8,6 +8,79 @@
   "4 CONCLUSIONS AND FURTHER WORK": "This work explored whether simple hash-based encoding can offer added value in profiling interaction. Hash-based encoding is a simple and efficient technique that allows us to encode the interaction between two or more features into a single feature. We demonstrated that CardMI heuristic, a variant of mutual information that incorporates features' cardinalities, offers pruned feature space that enables up to 30% faster AutoML model search (TPOT) with no loss of performance and up to 50% faster search with minimal performance loss ( ≈ 0.5% F1). Our results showed that even with simple hash-based encoding, we were able to achieve significant improvements in feature ranking compared to existing methods - including strong baselines such as Random Forest-based ranking. However, there are more complex schemes for encoding interactions that are also possible. For example, negations and conditionals instead of simple conjunctions can give rise to more complex features that are currently out of reach and might further boost the performance of feature profiling. The potential benefits of these more complex schemes for encoding interactions are clear, but they also come with added computational costs. The source of OutRank will be made available upon concluded internal review required for its release 2 . 2 https://github.com/outbrain/outrank Manuscript submitted to ACM 8 Blaž Škrlj and Blaž Mramor",
   "REFERENCES": "[1] Zeynep Batmaz, Ali Yurekli, Alper Bilge, and Cihan Kaleli. 2019. A review on deep learning for recommender systems: challenges and remedies. Artificial Intelligence Review 52 (2019), 1-37. [2] Leo Breiman. 2001. Random forests. Machine learning 45 (2001), 5-32. [3] Isabelle Guyon, Steve Gunn, Masoud Nikravesh, and Lofti A Zadeh. 2008. Feature extraction: foundations and applications . Vol. 207. Springer. [4] Xin He, Kaiyong Zhao, and Xiaowen Chu. 2021. AutoML: A survey of the state-of-the-art. Knowledge-Based Systems 212 (2021), 106622. [5] Alexander Kraskov, Harald Stögbauer, and Peter Grassberger. 2011. Erratum: estimating mutual information [Phys. Rev. E 69, 066138 (2004)]. Physical Review E 83, 1 (2011), 019903. [6] Lili Liu, Lei Chen, Yu-Hang Zhang, Lai Wei, Shiwen Cheng, Xiangyin Kong, Mingyue Zheng, Tao Huang, and Yu-Dong Cai. 2017. Analysis and prediction of drug-drug interaction by minimum redundancy maximum relevance and incremental feature selection. Journal of Biomolecular Structure and Dynamics 35, 2 (2017), 312-329. [7] Laurent Parmentier, Olivier Nicol, Laetitia Jourdan, and Marie-Eléonore Kessaci. 2019. Tpot-sh: A faster optimization algorithm to solve the automl problem on large datasets. In 2019 IEEE 31st International Conference on Tools with Artificial Intelligence (ICTAI) . IEEE, 471-478. [8] Hanchuan Peng, Fuhui Long, and Chris Ding. 2005. Feature selection based on mutual information criteria of max-dependency, max-relevance, and min-redundancy. IEEE Transactions on pattern analysis and machine intelligence 27, 8 (2005), 1226-1238. [9] Sergio Ramírez-Gallego, Iago Lastra, David Martínez-Rego, Verónica Bolón-Canedo, José Manuel Benítez, Francisco Herrera, and Amparo AlonsoBetanzos. 2017. Fast-mRMR: Fast minimum redundancy maximum relevance algorithm for high-dimensional big data. International Journal of Intelligent Systems 32, 2 (2017), 134-152. [10] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . IEEE, 995-1000. [11] Lars Ropeid Selsaas, Bikash Agrawal, Chumming Rong, and Thomasz Wiktorski. 2015. AFFM: Auto feature engineering in field-aware factorization machines for predictive analytics. In 2015 IEEE International Conference on Data Mining Workshop (ICDMW) . IEEE, 1705-1709. [12] Kunal Shah, Akshaykumar Salunke, Saurabh Dongare, and Kisandas Antala. 2017. Recommender systems: An overview of different approaches to recommendations. In 2017 International Conference on Innovations in Information, Embedded and Communication Systems (ICIIECS) . IEEE, 1-4. [13] Razieh Sheikhpour. 2023. A local spline regression-based framework for semi-supervised sparse feature selection. Knowledge-Based Systems (2023), 110265. [14] B Venkatesh and J Anuradha. 2019. A review of feature selection and its methods. Cybernetics and information technologies 19, 1 (2019), 3-26. [15] Jialei Wang, Peilin Zhao, Steven CH Hoi, and Rong Jin. 2013. Online feature selection and its applications. IEEE Transactions on knowledge and data engineering 26, 3 (2013), 698-710. [16] Zhenyu Zhao, Radhika Anand, and Mallory Wang. 2019. Maximum relevance and minimum redundancy feature selection methods for a marketing machine learning platform. In 2019 IEEE international conference on data science and advanced analytics (DSAA) . IEEE, 442-452. [17] Ruiqi Zheng, Liang Qu, Bin Cui, Yuhui Shi, and Hongzhi Yin. 2023. AutoML for Deep Recommender Systems: A Survey. ACM Transactions on Information Systems (2023). Manuscript submitted to ACM",
   "keywords_parsed": [
-    "None"
+    "Feature ranking",
+    "massive data sets",
+    "AutoML",
+    "recommender systems"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A review on deep learning for recommender systems: challenges and remedies"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Random forests"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Feature extraction: foundations and applications"
+    },
+    {
+      "ref_id": "b4",
+      "title": "AutoML: A survey of the state-of-the-art"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Erratum: estimating mutual information"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Analysis and prediction of drug-drug interaction by minimum redundancy maximum relevance and incremental feature selection"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Tpot-sh: A faster optimization algorithm to solve the automl problem on large datasets"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Feature selection based on mutual information criteria of max-dependency, max-relevance, and min-redundancy"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Fast-mRMR: Fast minimum redundancy maximum relevance algorithm for high-dimensional big data"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b11",
+      "title": "AFFM: Auto feature engineering in field-aware factorization machines for predictive analytics"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Recommender systems: An overview of different approaches to recommendations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A local spline regression-based framework for semi-supervised sparse feature selection"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A review of feature selection and its methods"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Online feature selection and its applications"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Maximum relevance and minimum redundancy feature selection methods for a marketing machine learning platform"
+    },
+    {
+      "ref_id": "b17",
+      "title": "AutoML for Deep Recommender Systems: A Survey"
+    }
   ]
 }

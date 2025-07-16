@@ -35,7 +35,189 @@
   "C CASE STUDY": "In this section, We would like to provide an example to support the claim that encodings from LLMs can capture open-world knowledge as below. Given two items in the movielens dataset: \"Galaxy Quest\" and \"Babe: Pig in the City\". Their genres provided in the dataset and the tags provided by open world are listed in Table 7. For the two items: · The two items do not share any common tokens. · The two items do not share any common features given in the dataset. · But they are actually close as they share a lot common features in the open world (e.g., the tags given by Douban). We then compute the cosine similarities between the above two items in the tabular space and that in the semantic space as in Table 8. (Note that no generation is involved. We use the same genres provided by the movielens dataset to obtain the item encodings for both the tabular encodings and the semantic encodings.) · Tabular representations cannot find the relevance between the two items, since no common features exist. · Semantic representations by small language models cannot well find the relevance between the two items, since no common tokens exist. · Semantic representations by LLMs can well find the relevance between the two items, even there are nearly no common tokens shared between the two items in the dataset. Since there are many anchors about the two items existing in the large open world training corpus (e.g., the common tags given by Douban, the similar descriptions of movies, etc.), as they are trained together, the representations of the two items tend to get close. The above case study can justify that the encodings from LLMs can help to capture open-world knowledge. Received 20 February 2007; revised 12 March 2009; accepted 5 June 2009",
   "keywords_parsed": [
     "Recommender Systems",
-    " User Modeling",
-    " Large Language Model"
+    "User Modeling",
+    "Large Language Model"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Mutual Information Neural Estimation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "CLUB: A Contrastive Log-ratio Upper Bound of Mutual Information"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Entertainment recommender systems for group of users"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b7",
+      "title": "ZeroShot Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning Enhanced Representation for Tabular Data via Neighborhood Propagation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep Session Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b11",
+      "title": "VIP5: Towards Multimodal Foundation Models for Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Learning deep representations by mutual information estimation and maximization"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Learning Vector-Quantized Item Representation for Transferable Sequential Recommenders"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Towards Universal Sequence Representation Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "UP5: Unbiased Foundation Model for Fairness-aware Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "How to Index Item IDs for Recommendation Foundation Models"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Neural Statistics for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Field-aware Factorization Machines for CTR Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Field-aware factorization machines for CTR prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b22",
+      "title": "CTRL: Connect Tabular and Language Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b24",
+      "title": "ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "How Can Recommender Systems Benefit from Large Language Models: A Survey"
+    },
+    {
+      "ref_id": "b26",
+      "title": "ReLLa: Retrieval-enhanced Large Language Models for Lifelong Sequential Behavior Comprehension in Recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "PTab: Using the Pre-trained Language Model for Modeling Tabular Data"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Retrieval & Interaction Machine for Tabular Data Prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "User Behavior Retrieval for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Product-based Neural Networks for User Response Prediction over Multi-field Categorical Data"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Two decades of recommender systems at Amazon.com"
+    },
+    {
+      "ref_id": "b37",
+      "title": "AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Attention Is All You Need"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Personalized news recommendation: Methods and challenges"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Attentional Factorization Machines: Learning the Weight of Feature Interactions via Attention Networks"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Deep Interest Evolution Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    }
   ]
 }

@@ -19,8 +19,122 @@
   "A.3 Label DP experiment results": "Reduce Calibration Error . Suppose 𝑝 is the original positive probability, 𝑛 + is the number of positive instances, and 𝑛 -is the number of negative instances in the original dataset. Then, 𝑝 = 𝑛 + 𝑛 ++ 𝑛 -= 1 1 + 𝑛 -𝑛 + . Suppose the flipping probability is 1 -𝑞 𝜖 . After flip- Hence 𝑝 ′ = 𝑝𝑞 𝜖 + ( 1 -𝑝 )( 1 -𝑞 𝜖 ) . During model training, we can use the de-biasing function in our loss function 𝑙 𝑑𝑒𝑏 ( 𝑝 ) = 𝑙 ( 𝑝 ′ ) = 𝑙 ( 𝑝𝑞 𝜖 + ( 1 -𝑝 )( 1 -𝑞 𝜖 )) to adjust the predictions. At model serving time, we use the model output directly as our prediction, which is close to the original distribution. We demonstrated the effectiveness of the debias function as shown in Table A1.  Calibration ratio used in our experiments is calculated as ˝ 𝑛 𝑖 𝑝 𝑖 𝑛 + 𝑛 ++ 𝑛 -where 𝑝 𝑖 is the predicted probability for sample 𝑖 . If the ratio is above 1, it means our model is over-forecasting. If the ratio is smaller than 1, it indicates that our model is under-forecasting. A perfect ratio would be 1.",
   "keywords_parsed": [
     "ADs Conversion",
-    " Privacy",
-    " CVR Prediction",
-    " Differential Privacy"
+    "Privacy",
+    "CVR Prediction",
+    "Differential Privacy"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Deep learning with differential privacy"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Sparse communication for distributed gradient descent"
+    },
+    {
+      "ref_id": "b3",
+      "title": "QSGD: Communication-efficient SGD via gradient quantization and encoding"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Modeling delayed feedback in display advertising"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Differential privacy"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Label inference attacks against vertical federated learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep learning with label differential privacy"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Calibrated Conversion Rate Prediction via Knowledge Distillation under Delayed Feedback in Online Advertising"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Extended conversion: Capturing successful interactions in voice shopping"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Data Clean Rooms"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Privacy-centric digital advertising: Implications for research"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Estimating conversion rate in display advertising from past performance data"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Label leakage and protection in two-party split learning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Vertical Federated Learning: Concepts, Advances, and Challenges"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Predicting different types of conversions with multi-task learning in online advertising"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Label Leakage and Protection from Forward Embedding in Vertical Federated Learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Privacy-preserving learning models for communication: A tutorial on advanced split learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "PowerSGD: Practical low-rank gradient compression for distributed optimization"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Transact: Transformer-based realtime user action model for recommendation at pinterest"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Grace: A compressed communication framework for distributed machine learning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Ukd: Debiasing conversion rate estimation via uncertainty-regularized knowledge distillation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Differentially Private Label Protection in Split Learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Wukong: Towards a Scaling Law for Large-Scale Recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "DHEN: A deep and hierarchical ensemble network for large-scale click-through rate prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Deep Leakage from Gradients"
+    }
   ]
 }

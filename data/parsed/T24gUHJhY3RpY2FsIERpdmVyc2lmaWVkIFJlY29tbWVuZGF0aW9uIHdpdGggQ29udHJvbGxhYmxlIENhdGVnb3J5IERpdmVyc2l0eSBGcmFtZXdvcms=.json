@@ -25,8 +25,130 @@
   "REFERENCES": "[1] Zeinab Abbassi, Vahab S Mirrokni, and Mayur Thakur. 2013. Diversity maximization under matroid constraints. In Proceedings of the 19th ACM SIGKDD international conference on Knowledge discovery and data mining . 32-40. [2] Abien Fred Agarap. 2018. Deep learning using rectified linear units (relu). arXiv preprint arXiv:1803.08375 (2018). [3] Jaime G. Carbonell and Jade Goldstein. 1998. The Use of MMR, Diversity-Based Reranking for Reordering Documents and Producing Summaries. In Proceedings of the 21st Annual International ACM SIGIR Conference on Research and Development in Information Retrieval . [4] Yukuo Cen, Jianwei Zhang, Xu Zou, Chang Zhou, Hongxia Yang, and Jie Tang. 2020. Controllable multi-interest framework for recommendation. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2942-2951. [5] Jingyuan Chen, Hanwang Zhang, Xiangnan He, Liqiang Nie, Wei Liu, and TatSeng Chua. 2017. Attentive Collaborative Filtering: Multimedia Recommendation with Item- and Component-Level Attention. Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval . [6] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In the 1st workshop on deep learning for recommender systems . 7-10. [7] Sang-Min Choi and Yo-Sub Han. 2010. A content recommendation system based on category correlations. In 2010 Fifth International Multi-conference on Computing in the Global Information Technology . IEEE, 66-70. [8] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [9] Yingqiang Ge, Shuya Zhao, Honglu Zhou, Changhua Pei, Fei Sun, Wenwu Ou, and Yongfeng Zhang. 2020. Understanding echo chambers in e-commerce recommender systems. In Proceedings of the 43rd international ACM SIGIR conference on research and development in information retrieval . [10] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . [11] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yong-Dong Zhang, and Meng Wang. 2020. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation. Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . [12] Elad Hoffer and Nir Ailon. 2015. Deep Metric Learning Using Triplet Network. In Similarity-Based Pattern Recognition . Springer International Publishing, Cham, 84-92. [13] Rong Hu and Pearl Pu. 2011. Helping users perceive recommendation diversity.. In DiveRS@ RecSys . 43-50. [14] Matevž Kunaver and Tomaž Požrl. 2017. Diversity in recommender systems - A survey. Knowledge-Based Systems 123 (2017), 154-162. [15] Chao Li, Zhiyuan Liu, Mengmeng Wu, Yuchi Xu, Huan Zhao, Pipei Huang, Guoliang Kang, Qiwei Chen, Wei Li, and Dik Lun Lee. 2019. Multi-interest network with dynamic routing for recommendation at Tmall. In Proceedings of the 28th ACM international conference on information and knowledge management . 2615-2623. [16] Greg Linden, Brent Smith, and Jeremy York. 2003. Amazon.com Recommendations: Item-to-Item Collaborative Filtering. IEEE Internet Comput. (2003). [17] Eli Pariser. 2011. The filter bubble: What the Internet is hiding from you . penguin UK. [18] Sashank J. Reddi, Satyen Kale, and Sanjiv Kumar. 2018. On the Convergence of Adam and Beyond. In 6th International Conference on Learning Representations, ICLR 2018 . OpenReview.net. [19] Qiaoyu Tan, Jianwei Zhang, Jiangchao Yao, Ninghao Liu, Jingren Zhou, Hongxia Yang, and Xia Hu. 2021. Sparse-Interest Network for Sequential Recommendation. In WSDM '21, The Fourteenth ACM International Conference on Web Search and Data Mining, Virtual Event, Israel, March 8-12, 2021 . ACM, 598-606. [20] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in neural information processing systems . 5998-6008. [21] Mark Wilhelm, Ajith Ramanathan, Alexander Bonomo, Sagar Jain, Ed H. Chi, and Jennifer Gillenwater. 2018. Practical Diversified Recommendations on YouTube with Determinantal Point Processes. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . [22] Chuhan Wu, Fangzhao Wu, Mingxiao An, Jianqiang Huang, Yongfeng Huang, and Xing Xie. 2019. NPA: Neural News Recommendation with Personalized Attention. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . [23] Haolun Wu, Yansen Zhang, Chen Ma, Fuyuan Lyu, Fernando Diaz, and Xue Liu. 2022. A Survey of Diversification Techniques in Search and Recommendation. arXiv preprint arXiv:2212.14464 (2022). WWW'24, May 13-17, 2024, Singapore [24] Zhibo Xiao, Luwei Yang, Wen Jiang, Yi Wei, Yi Hu, and Hao Wang. 2020. Deep multi-interest network for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . [25] Liangwei Yang, Shengjie Wang, Yunzhe Tao, Jiankai Sun, Xiaolong liu, Taiqing Wang, and Philip S. Yu. 2023. DGRec: Graph Neural Network for Recommendation with Diversified Embedding Generation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . [26] Rui Ye, Yuqing Hou, Te Lei, Yunxing Zhang, Qing Zhang, Jiale Guo, Huaiwen Wu, and Hengliang Luo. 2021. Dynamic graph construction for improving diversity of recommendation. In Proceedings of the 15th ACM Conference on Recommender Systems . [27] Zhe Yuan, AJ Chen, Y Wang, and T Sun. 2022. How Recommendation Affects Customer Search: A Field Experiment . Technical Report. Working Paper. [28] Yu Zheng, Chen Gao, Liang Chen, Depeng Jin, and Yong Li. 2021. DGCN: Diversified recommendation with graph convolutional networks. In Proceedings of the Web Conference . [29] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 5941-5948. [30] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1059-1068.",
   "keywords_parsed": [
     "Recommender systems",
-    " Controllable category diversity",
-    " Diversification",
-    " User-category matching"
+    "Controllable category diversity",
+    "Diversification",
+    "User-category matching"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Diversity maximization under matroid constraints"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Deep learning using rectified linear units (relu)"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The Use of MMR, Diversity-Based Reranking for Reordering Documents and Producing Summaries"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Controllable multi-interest framework for recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Attentive Collaborative Filtering: Multimedia Recommendation with Item- and Component-Level Attention"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A content recommendation system based on category correlations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Understanding echo chambers in e-commerce recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep Metric Learning Using Triplet Network"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Helping users perceive recommendation diversity"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Diversity in recommender systems - A survey"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Multi-interest network with dynamic routing for recommendation at Tmall"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Amazon.com Recommendations: Item-to-Item Collaborative Filtering"
+    },
+    {
+      "ref_id": "b17",
+      "title": "The filter bubble: What the Internet is hiding from you"
+    },
+    {
+      "ref_id": "b18",
+      "title": "On the Convergence of Adam and Beyond"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Sparse-Interest Network for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Practical Diversified Recommendations on YouTube with Determinantal Point Processes"
+    },
+    {
+      "ref_id": "b22",
+      "title": "NPA: Neural News Recommendation with Personalized Attention"
+    },
+    {
+      "ref_id": "b23",
+      "title": "A Survey of Diversification Techniques in Search and Recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Deep multi-interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "DGRec: Graph Neural Network for Recommendation with Diversified Embedding Generation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Dynamic graph construction for improving diversity of recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "How Recommendation Affects Customer Search: A Field Experiment"
+    },
+    {
+      "ref_id": "b28",
+      "title": "DGCN: Diversified recommendation with graph convolutional networks"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

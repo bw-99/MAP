@@ -26,14 +26,197 @@
   "REFERENCES": "[1] 2020. MindSpore. https://www.mindspore.cn/ [2] Qingyao Ai, Keping Bi, Jiafeng Guo, and W Bruce Croft. 2018. Learning a deep listwise context model for ranking refinement. In The 41st international ACM SIGIR conference on research & development in information retrieval . 135-144. [3] Qingyao Ai, Xuanhui Wang, Sebastian Bruch, Nadav Golbandi, Michael Bendersky, and Marc Najork. 2019. Learning groupwise multivariate scoring functions using deep neural networks. In SIGIR . 85-92. [4] Irwan Bello, Sayali Kulkarni, Sagar Jain, Craig Boutilier, Ed Chi, Elad Eban, Xiyang Luo, Alan Mackey, and Ofer Meshi. 2018. Seq2slate: Re-ranking and slate optimization with rnns. arXiv preprint arXiv:1810.02019 (2018). [5] Walid Bendada, Guillaume Salha, and Théo Bontempelli. 2020. Carousel personalization in music streaming apps with contextual bandits. In Fourteenth ACM Conference on Recommender Systems . 420-425. [6] Yuting Chen, Yanshi Wang, Yabo Ni, An-Xiang Zeng, and Lanfen Lin. 2020. Scenario-aware and Mutual-based approach for Multi-scenario Recommendation in E-Commerce. In 2020 International Conference on Data Mining Workshops (ICDMW) . IEEE, 127-135. [7] Nick Craswell, Onno Zoeter, Michael Taylor, and Bill Ramsey. 2008. An experimental comparison of click position-bias models. In Proceedings of the 2008 international conference on web search and data mining . 87-94. [8] Xinyi Dai, Jianghao Lin, Weinan Zhang, Shuai Li, Weiwen Liu, Ruiming Tang, Xiuqiang He, Jianye Hao, Jun Wang, and Yong Yu. 2021. An Adversarial Imitation Click Model for Information Retrieval. In Proceedings of the Web Conference 2021 . 1809-1820. [9] Weicong Ding, Dinesh Govindaraj, and SVN Vishwanathan. 2019. Whole page optimization with global constraints. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 3153-3161. [10] Zhengxiao Du, Xiaowei Wang, Hongxia Yang, Jingren Zhou, and Jie Tang. 2019. Sequential Scenario-Specific Meta Learner for Online Recommendation. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2895-2904. [11] Jun Feng, Heng Li, Minlie Huang, Shichen Liu, Wenwu Ou, Zhirong Wang, and Xiaoyan Zhu. 2018. Learning to collaborate: Multi-scenario ranking via multi-agent reinforcement learning. In Proceedings of the 2018 World Wide Web Conference . 1939-1948. [12] Yufei Feng, Yu Gong, Fei Sun, Junfeng Ge, and Wenwu Ou. 2021. Revisit recommender system in the permutation prospective. arXiv preprint arXiv:2102.12057 (2021). [13] Yufei Feng, Binbin Hu, Yu Gong, Fei Sun, Qingwen Liu, and Wenwu Ou. 2021. GRN: Generative Rerank Network for Context-wise Recommendation. arXiv preprint arXiv:2104.00860 (2021). [14] Lingyue Fu, Jianghao Lin, Weiwen Liu, Ruiming Tang, Weinan Zhang, Rui Zhang, and Yong Yu. 2022. An F-shape Click Model for Information Retrieval on Multiblock Mobile Pages. arXiv preprint arXiv:2206.08604 (2022). WSDM'23, February 27-March 3, 2023, Singapore, Singapore Yunjia Xi and Jianghao Lin, et al. [15] Carlos A Gomez-Uribe and Neil Hunt. 2015. The netflix recommender system: Algorithms, business value, and innovation. ACM Transactions on Management Information Systems (TMIS) 6, 4 (2015), 1-19. [16] Yulong Gu, Wentian Bao, Dan Ou, Xiang Li, Baoliang Cui, Biyu Ma, Haikuan Huang, Qingwen Liu, and Xiaoyi Zeng. 2021. Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce. In CIKM . 3828-3837. [17] Fan Guo, Chao Liu, Anitha Kannan, Tom Minka, Michael Taylor, Yi-Min Wang, and Christos Faloutsos. 2009. Click Chain Model in Web Search. In Proceedings of the 18th International Conference on World Wide Web . 11-20. [18] Bin Hao, Min Zhang, Cheng Guo, Weizhi Ma, Yiqun Liu, and Shaoping Ma. 2021. Diversify or Not: Dynamic Diversification for Personalized Recommendation. In Advances in Knowledge Discovery and Data Mining: 25th Pacific-Asia Conference, PAKDD 2021, Virtual Event, May 11-14, 2021, Proceedings, Part II . 461-472. [19] Qi Hao, Tianze Luo, and Guangda Huzhang. 2021. Re-ranking with constraints on diversified exposures for homepage recommender system. arXiv preprint arXiv:2112.07621 (2021). [20] XuHe, Bo An, Yanghua Li, Haikai Chen, Rundong Wang, Xinrun Wang, Runsheng Yu, Xin Li, and Zhirong Wang. 2020. Learning to collaborate in multi-module recommendation via multi-agent reinforcement learning without communication. In Fourteenth ACM Conference on Recommender Systems . 210-219. [21] Daniel N Hill, Houssam Nassif, Yi Liu, Anand Iyer, and SVN Vishwanathan. 2017. An efficient bandit algorithm for realtime multivariate optimization. In Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 1813-1821. [22] Jiri Hron, Karl Krauth, Michael Jordan, and Niki Kilbertus. 2021. On component interactions in two-stage recommender systems. Advances in Neural Information Processing Systems 34 (2021), 2744-2757. [23] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated Gain-Based Evaluation of IR Techniques. ACM Trans. Inf. Syst. (2002), 422-446. [24] Pengcheng Li, Runze Li, Qing Da, An-Xiang Zeng, and Lijun Zhang. 2020. Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2605-2612. [25] Yi Li, Jieming Zhu, Weiwen Liu, Liangcai Su, Guohao Cai, Qi Zhang, Ruiming Tang, Xi Xiao, and Xiuqiang He. 2022. PEAR: Personalized Re-ranking with Contextualized Transformer for Recommendation. arXiv preprint arXiv:2203.12267 (2022). [26] Jianghao Lin, Weiwen Liu, Xinyi Dai, Weinan Zhang, Shuai Li, Ruiming Tang, Xiuqiang He, Jianye Hao, and Yong Yu. 2021. A Graph-Enhanced Click Model for Web Search. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1259-1268. [27] Weiwen Liu, Yunjia Xi, Jiarui Qin, Fei Sun, Bo Chen, Weinan Zhang, Rui Zhang, and Ruiming Tang. 2022. Neural Re-ranking in Multi-stage Recommender Systems: A Review. arXiv preprint arXiv:2202.06602 (2022). [28] Chieh Lo, Hongliang Yu, Xin Yin, Krutika Shetty, Changchen He, Kathy Hu, Justin M Platz, Adam Ilardi, and Sriganesh Madhvanath. 2021. Page-level Optimization of e-Commerce Item Recommendations. In Fifteenth ACM Conference on Recommender Systems . 495-504. [29] Felicia Loecherbach, Kasper Welbers, Judith Moeller, Damian Trilling, and Wouter Van Atteveldt. 2021. Is This a Click towards Diversity? Explaining When and Why News Users Make Diverse Choices. In 13th ACM Web Science Conference 2021 . 282-290. [30] Jiasen Lu, Jianwei Yang, Dhruv Batra, and Devi Parikh. 2016. Hierarchical Question-Image Co-Attention for Visual Question Answering. 289-297. [31] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [32] Harrie Oosterhuis and Maarten de Rijke. 2018. Ranking for relevance and display preferences in complex presentation layouts. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 845-854. [33] Liang Pang, Jun Xu, Qingyao Ai, Yanyan Lan, Xueqi Cheng, and Jirong Wen. 2020. Setrank: Learning a permutation-invariant ranking model for information retrieval. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 499-508. [34] Changhua Pei, Yi Zhang, Yongfeng Zhang, Fei Sun, Xiao Lin, Hanxiao Sun, Jian Wu, Peng Jiang, Junfeng Ge, Wenwu Ou, et al. 2019. Personalized re-ranking for recommendation. In Proceedings of the 13th ACM conference on recommender systems . 3-11. [35] Jiarui Qin, Weinan Zhang, Xin Wu, Jiarui Jin, Yuchen Fang, and Yong Yu. 2020. User behavior retrieval for click-through rate prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2347-2356. [36] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4104-4113. [37] Yingfei Wang, Hua Ouyang, Chu Wang, Jianhui Chen, Tsvetan Asamov, and Yi Chang. 2017. Efficient ordered combinatorial semi-bandits for whole-page recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence . [38] Yue Wang, Dawei Yin, Luo Jie, Pengyuan Wang, Makoto Yamada, Yi Chang, and Qiaozhu Mei. 2016. Beyond ranking: Optimizing whole-page presentation. In Proceedings of the Ninth ACM International Conference on Web Search and Data Mining . 103-112. [39] Yue Wang, Dawei Yin, Luo Jie, Pengyuan Wang, Makoto Yamada, Yi Chang, and Qiaozhu Mei. 2018. Optimizing whole-page presentation for web search. ACM Transactions on the Web (TWEB) 12, 3 (2018), 1-25. [40] Chuhan Wu, Fangzhao Wu, and Yongfeng Huang. 2021. DA-Transformer: Distance-aware Transformer. In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies . 2059-2068. [41] Yunjia Xi, Weiwen Liu, Xinyi Dai, Ruiming Tang, Weinan Zhang, Qing Liu, Xiuqiang He, and Yong Yu. 2021. Context-aware Reranking with Utility Maximization for Recommendation. arXiv preprint arXiv:2110.09059 (2021). [42] Yunjia Xi, Weiwen Liu, Jieming Zhu, Xilong Zhao, Xinyi Dai, Ruiming Tang, Weinan Zhang, Rui Zhang, and Yong Yu. 2022. Multi-Level Interaction Reranking with User Behavior History. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . [43] Shuai Xiao, Zaifan Jiang, and Shuang Yang. 2022. Tile Networks: Learning Optimal Geometric Layout for Whole-page Recommendation. In International Conference on Artificial Intelligence and Statistics . PMLR, 8360-8369. [44] Zichao Yang, Diyi Yang, Chris Dyer, Xiaodong He, Alex Smola, and Eduard Hovy. 2016. Hierarchical Attention Networks for Document Classification. In Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies . [45] Xiangyu Zhao, Long Xia, Liang Zhang, Zhuoye Ding, Dawei Yin, and Jiliang Tang. 2018. Deep reinforcement learning for page-wise recommendations. In Proceedings of the 12th ACM Conference on Recommender Systems . 95-103. [46] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. Recommending what video to watch next: a multitask ranking system. In Proceedings of the 13th ACM Conference on Recommender Systems . 43-51. [47] Tao Zhuang, Wenwu Ou, and Zhirong Wang. 2018. Globally optimized mutual influence aware ranking in e-commerce search. arXiv preprint arXiv:1805.08524 (2018).",
   "keywords_parsed": [
     "Reranking",
-    " Recommender System",
-    " Multi-block Page ∗ Both authors contributed equally to this research. † The corresponding author. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. WSDM '23",
-    " February 27-March 3",
-    " 2023",
-    " Singapore",
-    " Singapore © 2023 Association for Computing Machinery. ACM ISBN 978-1-4503-9407-9/23/02...$15.00 https://doi.org/10.1145/3539597.3570399"
+    "Recommender System",
+    "Multi-block Page"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "MindSpore"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Learning groupwise multivariate scoring functions using deep neural networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Seq2slate: Re-ranking and slate optimization with rnns"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Carousel personalization in music streaming apps with contextual bandits"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Scenario-aware and Mutual-based approach for Multi-scenario Recommendation in E-Commerce"
+    },
+    {
+      "ref_id": "b7",
+      "title": "An experimental comparison of click position-bias models"
+    },
+    {
+      "ref_id": "b8",
+      "title": "An Adversarial Imitation Click Model for Information Retrieval"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Whole page optimization with global constraints"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Sequential Scenario-Specific Meta Learner for Online Recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Learning to collaborate: Multi-scenario ranking via multi-agent reinforcement learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Revisit recommender system in the permutation prospective"
+    },
+    {
+      "ref_id": "b13",
+      "title": "GRN: Generative Rerank Network for Context-wise Recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "An F-shape Click Model for Information Retrieval on Multiblock Mobile Pages"
+    },
+    {
+      "ref_id": "b15",
+      "title": "The netflix recommender system: Algorithms, business value, and innovation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Click Chain Model in Web Search"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Diversify or Not: Dynamic Diversification for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Re-ranking with constraints on diversified exposures for homepage recommender system"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Learning to collaborate in multi-module recommendation via multi-agent reinforcement learning without communication"
+    },
+    {
+      "ref_id": "b21",
+      "title": "An efficient bandit algorithm for realtime multivariate optimization"
+    },
+    {
+      "ref_id": "b22",
+      "title": "On component interactions in two-stage recommender systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Cumulated Gain-Based Evaluation of IR Techniques"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space"
+    },
+    {
+      "ref_id": "b25",
+      "title": "PEAR: Personalized Re-ranking with Contextualized Transformer for Recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "A Graph-Enhanced Click Model for Web Search"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Neural Re-ranking in Multi-stage Recommender Systems: A Review"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Page-level Optimization of e-Commerce Item Recommendations"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Is This a Click towards Diversity? Explaining When and Why News Users Make Diverse Choices"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Hierarchical Question-Image Co-Attention for Visual Question Answering"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Ranking for relevance and display preferences in complex presentation layouts"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Setrank: Learning a permutation-invariant ranking model for information retrieval"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "User behavior retrieval for click-through rate prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Efficient ordered combinatorial semi-bandits for whole-page recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Beyond ranking: Optimizing whole-page presentation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Optimizing whole-page presentation for web search"
+    },
+    {
+      "ref_id": "b40",
+      "title": "DA-Transformer: Distance-aware Transformer"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Context-aware Reranking with Utility Maximization for Recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Multi-Level Interaction Reranking with User Behavior History"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Tile Networks: Learning Optimal Geometric Layout for Whole-page Recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Hierarchical Attention Networks for Document Classification"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Deep reinforcement learning for page-wise recommendations"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Recommending what video to watch next: a multitask ranking system"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Globally optimized mutual influence aware ranking in e-commerce search"
+    }
   ]
 }

@@ -18,99 +18,155 @@
   "4.6 Hyper-parameters Study (RQ3)": "DT performs worse than CDT4Rec. One main reason is that CDT4Rec introduces an extra causal layer to estimate the potential 8 https://drive.google.com/file/d/1zFCWn_QPpqRGG1mxGt_YVYUcQmZn_3qE/ view?usp=sharing 2023-08-29 01:02. Page 7 of 1-10. In this section, we will investigate the impact of hyper-parameters. Here, we consider two different hyper-parameters: context length and the number of trajectories used for training. The context length determines the number of steps on which the agent's present action depends, and the number of trajectories means the number Conference'17, July 2017, Washington, DC, USA Wang, et al. Table 2: The overall results of our model comparison with several state-of-the-art models on different datasets. The highest results are in bold and the second highest are marked by * 30k Trajectories 0.6 0,4 CDTARec CDTARec CDTARec 0.0 DT 20000 40000 60000 80000 100000 20000 40000 60000 80000 100000 20000 40000 60000 80000 100000 Episode Episode Episode Unpublished working draft. Not for distribution. Figure 3: Performance Comparison Between CDT4Rec and DT for Different Numbers of Trajectories of trajectories included in the dataset. The results can be found in Figure 4. In our experiments, we find that when the context length is 2, CDT4Rec leads to the best performance. One plausible reason may be that user's behavior is highly determined by the most recent behavior (i.e., the previous one). Based on the results regarding the number of trajectories in the dataset, we observed that the performance did not vary considerably. This could be attributed to the fact that CDT4Rec is capable of learning effectively and performing well even with a smaller dataset. 2023-08-29 01:02. Page 8 of 1-10. Causal Decision Transformer for Recommender Systems via Offline Reinforcement Learning Conference'17, July 2017, Washington, DC, USA 1.0 1.0 0.8 0.8 0.6 0.6 g 5 0.4 0.4 context length =2 0.2 context length =4 0.2 context length =6 Ik Trajectories context length =8 20k Trajectories context length=10 0.0 30k Trajectories 20000 40000 80000 100000 20000 40000 80000 (a) Context Length (b) Number of Trajectories Offline RL. Recent studies have begun to investigate the possibility of integrating data-driven learning into the reinforcement learning framework. Kumar et al. [19] proposed conservative Qlearning for offline RL aiming to learn a lower bound of the value function. MOReL [17] is an algorithmic framework for model-based offline RL, which uses an offline dataset to learn a near-optimal policy by training on a Pessimistic MDP. Chen et al. [3] presented an approach in which the offline RL problem is modeled as a conditional sequence modeling problem. They trained a transformer on collected offline data, utilizing a sequence modeling objective, with the goal of generating optimal actions. Janner et al. [15] also adopted a transformer architecture and treat the offline RL as a sequence modeling problem. Kostrikov et al. [18] introduced FisherBRC for offline RL that employs a simple critic representation and regularization technique to ensure that the learned policy remains consistent with the collected data. However, these works are not applied for recommendation tasks and we are interested in the feasibility of employing offline RL for recommender systems. In this work, we design a causal decision transformer for recommender systems (CDT4Rec) to address two major challenges: i) The difficulty of manually designing a reward function; ii) How to incorporate an offline dataset to reduce the amount of required expensive online interaction but maintain the performance. Our experimental results reveal that our proposed CDT4Rec model outperforms both existing RL algorithms and the state-of-the-art transformer-based recommendation algorithms. Unpublished working draft. Not for distribution. Figure 4: Hyper-parameters Study for CDT4Rec 5 RELATED WORK RL-basedRecommenderSystems. Reinforcement learning-based recommendation methods view the interactive process of making recommendations as a Markov Decision Process (MDP) [6]. This approach can be divided into two categories: model-based and model-free methods. Bai et al. [1] proposed a model-based method that uses a generative adversarial training approach to jointly learn the user behavior model and update the policy for the recommendation. Recently, there has been a trend in the literature toward using model-free techniques for RL-based recommendations. Zhao et al. [33] proposed a page-wise recommendation framework based on deep RL to optimize the selection of items on a page by taking into account real-time feedback from users. Chen et al. [5] introduced knowledge graphs into the RL framework to improve the efficiency of the decision-making process. Chen et al. [7] designed a generative inverse reinforcement learning approach for online recommendation that automatically extracts a reward function from user behavior. However, these are all online RL-based frameworks while we are interested in offline RL-based recommendations. Transformer in Recommender Systems. Recent developments in the field of sequential recommendations have seen a growing interest in incorporating transformer architectures. Sun et al. [27] proposed the model BERT4Rec that uses the bidirectional self-attention network to model user behavior sequences in sequential recommendation tasks. Wu et al. [31] designed a personalized transformer architecture that effectively incorporates personalization in selfattentive neural network architectures, by incorporating SSE regularization. Chen et al. [4] introduced a method in which they incorporated the sequential signals of users' behavior sequences into a recommendation system on a real-world e-commerce platform. The method applied a self-attention mechanism to learn a better representation of each item in a user's behavior sequence by taking into account the sequential information. 6 CONCLUSION In the future, we plan to investigate further how to better estimate the causal effect of users' decisions so that we can better estimate the reward function via the collected trajectory. Moreover, we will work on further improving the offline reinforcement learning algorithm as we can find that there is still room for improvement.",
   "REFERENCES": "[1] Xueying Bai, Jian Guan, and Hongning Wang. 2019. A model-based reinforcement learning with adversarial training for online recommendation. Advances in Neural Information Processing Systems 32 (2019). [2] Haokun Chen, Xinyi Dai, Han Cai, Weinan Zhang, Xuejian Wang, Ruiming Tang, Yuzhou Zhang, and Yong Yu. 2019. Large-scale interactive recommendation with tree-structured policy gradient. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 3312-3320. 2023-08-29 01:02. Page 9 of 1-10. Conference'17, July 2017, Washington, DC, USA Wang, et al. [3] Lili Chen, Kevin Lu, Aravind Rajeswaran, Kimin Lee, Aditya Grover, Michael Laskin, Pieter Abbeel, Aravind Srinivas, and Igor Mordatch. 2021. Decision Transformer: Reinforcement Learning via Sequence Modeling. In Advances in Neural Information Processing Systems . https://openreview.net/forum?id=a7APmM4B9d [4] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior sequence transformer for e-commerce recommendation in alibaba. In Proceedings of the 1st International Workshop on Deep Learning Practice for High-Dimensional Sparse Data . 1-4. [5] Xiaocong Chen, Chaoran Huang, Lina Yao, Xianzhi Wang, Wei liu, and Wenjie Zhang. 2020. Knowledge-guided Deep Reinforcement Learning for Interactive Recommendation. In 2020 International Joint Conference on Neural Networks (IJCNN) . 1-8. https://doi.org/10.1109/IJCNN48605.2020.9207010 melnychuk22a.html [23] Jianmo Ni, Jiacheng Li, and Julian McAuley. 2019. Justifying Recommendations using Distantly-Labeled Reviews and Fine-Grained Aspects. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLPIJCNLP) . Association for Computational Linguistics, Hong Kong, China, 188-197. https://doi.org/10.18653/v1/D19-1018 [24] Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever, et al. 2018. Improving Language Understanding by Generative Pre-Training. (2018). [6] Xiaocong Chen, Lina Yao, Julian McAuley, Guanglin Zhou, and Xianzhi Wang. 2023. Deep reinforcement learning in recommender systems: A survey and new perspectives. Knowledge-Based Systems 264 (2023), 110335. [7] Xiaocong Chen, Lina Yao, Aixin Sun, Xianzhi Wang, Xiwei Xu, and Liming Zhu. 2021. Generative inverse deep reinforcement learning for online recommendation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 201-210. [25] Jing-Cheng Shi, Yang Yu, Qing Da, Shi-Yong Chen, and An-Xiang Zeng. 2019. Virtual-Taobao: Virtualizing Real-World Online Retail Environment for Reinforcement Learning. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 4902-4909. [26] Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdinov. 2014. Dropout: A Simple Way to Prevent Neural Networks from Overfitting. Journal of Machine Learning Research 15, 56 (2014), 1929-1958. http://jmlr.org/papers/v15/srivastava14a.html [8] Xiaocong Chen, Lina Yao, Xianzhi Wang, Aixin Sun, and Quan Z Sheng. 2022. Generative adversarial reward learning for generalized behavior tendency inference. IEEE Transactions on Knowledge and Data Engineering (2022), 1-12. https://doi.org/10.1109/TKDE.2022.3186920 [27] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer (CIKM '19) . Association for Computing Machinery, New York, NY, USA, 1441-1450. https://doi.org/10.1145/3357384.3357895 [28] Richard S Sutton and Andrew G Barto. 2018. Reinforcement learning: An introduction . MIT press. [9] Yihe Dong, Jean-Baptiste Cordonnier, and Andreas Loukas. 2021. Attention is not all you need: Pure attention loses rank doubly exponentially with depth. In International Conference on Machine Learning . PMLR, 2793-2803. [10] Philipp Dufter, Martin Schmitt, and Hinrich Schütze. 2022. Position information in transformers: An overview. Computational Linguistics 48, 3 (2022), 733-763. [11] Scott Fujimoto, Herke van Hoof, and David Meger. 2018. Addressing Function Approximation Error in Actor-Critic Methods. In Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholmsmässan, Stockholm, Sweden, July 10-15, 2018 (Proceedings of Machine Learning Research, Vol. 80) . PMLR, 1582-1591. http://proceedings.mlr.press/v80/fujimoto18a.html [12] Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, and Sergey Levine. 2018. Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor. In Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholmsmässan, Stockholm, Sweden, July 10-15, 2018 (Proceedings of Machine Learning Research, Vol. 80) . PMLR, 1856-1865. http: //proceedings.mlr.press/v80/haarnoja18b.html [13] Dan Hendrycks and Kevin Gimpel. 2016. Bridging Nonlinearities and Stochastic Regularizers with Gaussian Error Linear Units. CoRR abs/1606.08415 (2016). arXiv:1606.08415 http://arxiv.org/abs/1606.08415 [14] Zhiheng Huang, Davis Liang, Peng Xu, and Bing Xiang. 2020. Improve Transformer Models with Better Relative Position Embeddings. In Findings of the Association for Computational Linguistics: EMNLP 2020 . Association for Computational Linguistics, Online, 3327-3335. https://doi.org/10.18653/v1/2020.findingsemnlp.298 [15] Michael Janner, Qiyang Li, and Sergey Levine. 2021. Offline Reinforcement Learning as One Big Sequence Modeling Problem. In Advances in Neural Information Processing Systems , Vol. 34. Curran Associates, Inc., 1273-1286. https://proceedings.neurips.cc/paper_files/paper/2021/file/ 099fe6b0b444c23836c4a5d07346082b-Paper.pdf [16] Wang-Cheng Kang and Julian McAuley. 2018. Self-Attentive Sequential Recommendation. In 2018 IEEE International Conference on Data Mining (ICDM) . 197-206. https://doi.org/10.1109/ICDM.2018.00035 [17] Rahul Kidambi, Aravind Rajeswaran, Praneeth Netrapalli, and Thorsten Joachims. 2020. MOReL: Model-Based Offline Reinforcement Learning. In Advances in Neural Information Processing Systems , Vol. 33. Curran Associates, Inc., 21810-21823. https://proceedings.neurips.cc/paper_files/paper/2020/file/ f7efa4f864ae9b88d43527f4b14f750f-Paper.pdf Unpublished working draft. Not for distribution. [29] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Ł ukasz Kaiser, and Illia Polosukhin. 2017. Attention is All you Need. In Advances in Neural Information Processing Systems , I. Guyon, U. Von Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, and R. Garnett (Eds.), Vol. 30. Curran Associates, Inc. https://proceedings.neurips.cc/paper_files/paper/ 2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf [30] Mengting Wan and Julian McAuley. 2018. Item Recommendation on Monotonic Behavior Chains. In Proceedings of the 12th ACM Conference on Recommender Systems (Vancouver, British Columbia, Canada) (RecSys '18) . Association for Computing Machinery, New York, NY, USA, 86-94. https://doi.org/10.1145/ 3240323.3240369 [31] Liwei Wu, Shuqing Li, Cho-Jui Hsieh, and James Sharpnack. 2020. SSE-PT: Sequential recommendation via personalized transformer. In Fourteenth ACM Conference on Recommender Systems . 328-337. [32] Yikun Xian, Zuohui Fu, S Muthukrishnan, Gerard de Melo, and Yongfeng Zhang. 2019. Reinforcement Knowledge Graph Reasoning for Explainable Recommendation. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . 285-294. [33] Xiangyu Zhao, Long Xia, Liang Zhang, Zhuoye Ding, Dawei Yin, and Jiliang Tang. 2018. Deep reinforcement learning for page-wise recommendations. In Proceedings of the 12th ACM Conference on Recommender Systems . 95-103. [34] Xiangyu Zhao, Liang Zhang, Zhuoye Ding, Long Xia, Jiliang Tang, and Dawei Yin. 2018. Recommendations with negative feedback via pairwise deep reinforcement learning. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1040-1048. [35] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 1893-1902. [36] Cai-Nicolas Ziegler, Sean M. McNee, Joseph A. Konstan, and Georg Lausen. 2005. Improving Recommendation Lists through Topic Diversification. In Proceedings of the 14th International Conference on World Wide Web (Chiba, Japan) (WWW '05) . Association for Computing Machinery, New York, NY, USA, 22-32. https: //doi.org/10.1145/1060745.1060754 [18] Ilya Kostrikov, Rob Fergus, Jonathan Tompson, and Ofir Nachum. 2021. Offline reinforcement learning with fisher divergence critic regularization. In International Conference on Machine Learning . PMLR, 5774-5783. [19] Aviral Kumar, Aurick Zhou, George Tucker, and Sergey Levine. 2020. Conservative q-learning for offline reinforcement learning. Advances in Neural Information Processing Systems 33 (2020), 1179-1191. [20] Sergey Levine, Aviral Kumar, George Tucker, and Justin Fu. 2020. Offline reinforcement learning: Tutorial, review, and perspectives on open problems. arXiv preprint arXiv:2005.01643 (2020). [21] Timothy P. Lillicrap, Jonathan J. Hunt, Alexander Pritzel, Nicolas Heess, Tom Erez, Yuval Tassa, David Silver, and Daan Wierstra. 2016. Continuous control with deep reinforcement learning. In 4th International Conference on Learning Representations, ICLR 2016, San Juan, Puerto Rico, May 2-4, 2016, Conference Track Proceedings . http://arxiv.org/abs/1509.02971 [22] Valentyn Melnychuk, Dennis Frauen, and Stefan Feuerriegel. 2022. Causal Transformer for Estimating Counterfactual Outcomes. In Proceedings of the 39th International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 162) . PMLR, 15293-15329. https://proceedings.mlr.press/v162/ 2023-08-29 01:02. Page 10 of 1-10.",
   "keywords_parsed": [
-    "RecommenderSystems",
-    " Deep Learning",
-    " Offline Reinforcement Learning",
-    " Transformer Unpublished working draft. Not for distribution. Conference'17",
-    " July 2017",
-    " Washington",
-    " DC",
-    " USA 2023. ACM ISBN 978-x-xxxx-xxxx-x/YY/MM...$15.00 https://doi.org/10.1145/nnnnnnn.nnnnnnn 2023-08-29 01:02. Page 1 of 1-10. In RL",
-    " the reward function plays a crucial role in evaluating the effectiveness of the current action. When it comes to RLRS",
-    " the reward function is used to assess whether a recommended item is a good fit for a specific user. This evaluation can be considered a representation of the user's interests or behavior logic. However",
-    " defining the reward function can be a challenging task. Some researchers have chosen to omit it altogether and instead learn the recommendation policy directly from expert demonstrations [7",
-    " 8]. This approach",
-    " however",
-    " requires pre-training an expert agent in a simulation environment. Unfortunately",
-    " the lack of suitable simulation environments makes achieving this goal challenging. Meanwhile",
-    " the majority of recommendation algorithms proposed in the literature rely on data-driven approaches",
-    " with offline datasets used for both training and testing. However",
-    " such an approach is incompatible with the reinforcement learning paradigm",
-    " which necessitates online training and evaluation. To address the aforementioned two challenges",
-    " one possible solution is to integrate the established data-driven approach into the reinforcement learning framework and avoid the design of reward function. Recently",
-    " data-driven methods",
-    " such as transformers [29]",
-    " have attracted significant attention. Transformers are renowned for their ability to handle large datasets",
-    " and the success of BERT4Rec [27] Conference'17",
-    " July 2017",
-    " Washington",
-    " DC",
-    " USA Wang",
-    " et al. demonstrated the effectiveness of transformers in recommendation systems. Further research [4",
-    " 35] has shown that transformers can effectively handle sparse and high-dimensional data. Therefore",
-    " in this work",
-    " we investigate the use of transformers in RLRS to enhance their capacity for processing large datasets. Decision Transformer [3] and Trajectory Transformer [15] are two typical offline reinforcement learning methods that leverage transformers. Both approaches view offline RL as a sequence modeling problem and train transformer models on collected data. Decision Transformer shows that by training an autoregressive model on sequences of states",
-    " actions",
-    " and returns",
-    " agents can learn to generate optimal behavior with limited experience [3]. On the other hand",
-    " the Trajectory Transformer demonstrates that sequence modeling in reinforcement learning is a more reliable method for predicting long-term outcomes in environments that satisfy the Markov property [15]. However",
-    " both Decision Transformer and Trajectory Transformer were designed primarily for robot learning. They may not be suitable for addressing the unique challenges faced by RLRS (i.e.",
-    " understanding user behavior and learning users' dynamic interests). Addressing these challenges requires understanding the causal logic behind their observed behaviors. Hence",
-    " we develop a causal mechanism in the transformer to estimate the causal relationship between action",
-    " state",
-    " and reward to predict users' potential feedback on the actions taken by the system. In this way",
-    " we can avoid designing a reward function and instead estimate the reward by relying on the causality in the user's recent behavior. The contributions of this work are as follows: · To avoid the reward function design",
-    " we design a causal mechanism to estimate the reward based on the user's recent behavior. · We propose a method named causal decision transformer (CDT4Rec)",
-    " which adopts transformer and offline reinforcement learning as the main framework to empower the proposed method to use existing real-world datasets. · To the best of our knowledge",
-    " this is the first work that uses offline reinforcement learning and transformer in a recommender system. · Extensive experiments on six public datasets and one online environment demonstrate the superiority of the proposed method. the agent. Formally",
-    " components mentioned above in the MDP can be represented as a tuple (S ",
-    " A ",
-    " P ",
-    " R ",
-    " 𝛾 ) ",
-    " in which: · State S : state space. 𝑠 𝑡 ∈ S is the state in time step 𝑡 ",
-    " and 𝑠 𝑇 is the terminal state",
-    " where 𝑇 is the final time step of an episode. · Action A : action space. A( 𝑠 𝑡 ) is set of actions possible in state 𝑠 . · Transition Probability P : denoted as 𝑝 ( 𝑠 𝑡 + 1 | 𝑠 𝑡 ",
-    " 𝑎 𝑡 ) ∈ P ",
-    " is the probability of transitioning to state 𝑠 𝑡 + 1",
-    " from 𝑠 𝑡 with 𝑎 𝑡 . · Reward R : S × A → R is the reward distribution",
-    " where 𝑅 ( 𝑠",
-    " 𝑎 ) is the reward that an agent receives for taking action 𝑎 when observing the state 𝑠 . · Discount-rate Parameter 𝛾 : 𝛾 ∈ [ 0 ",
-    " 1 ] is the discount factor for future rewards. As a result",
-    " a dataset for an offline RL-based recommender system can be described formally as D = {( 𝑠 𝑢 𝑡 ",
-    " 𝑎 𝑢 𝑡 ",
-    " 𝑠 𝑢 𝑡 + 1 ",
-    " 𝑟 𝑢 𝑡 )} ",
-    " following the MDP (S ",
-    " A ",
-    " P ",
-    " R ",
-    " 𝛾 ) . For each user 𝑢 at the time step 𝑡 ",
-    " we have the following elements: a current state 𝑠 𝑢 𝑡 ∈ S ",
-    " items recommended by the agent (or recommender system) via taking action 𝑎 𝑡 ",
-    " and the user's feedback 𝑟 𝑢 𝑡 . Unpublished working draft. Not for distribution. Given (S ",
-    " A ",
-    " P ",
-    " R ",
-    " 𝛾 ) ",
-    " an RL agent behaves following its policy 𝜋 ",
-    " which is a mapping from states to actions to be taken when in those states. The RL objective",
-    " 𝐽 ( 𝜋 ) ",
-    " can then be written as an expectation under the trajectory distribution ( 𝑠 0 ",
-    " 𝑎 0 ",
-    " ...",
-    " 𝑠 𝑇 ",
-    " 𝑎 𝑇 ) : 𝐽 ( 𝜋 ) = E 𝜏 ∼ 𝑝 𝜋 ( 𝜏 ) GLYPH<20> ∞ ∑︁ 𝑘 = 0 𝛾 𝑘 𝑟 ( 𝑠 𝑡 ",
-    " 𝑎 𝑡 ) GLYPH<21> (1) Offline reinforcement learning is defined as the data-driven formulation of RL problems that improve with more data training. In an offline RL problem",
-    " the goal is still to train the agent to maximize the total reward it receives over time",
-    " as expressed in Equation (1). The fundamental difference between offline RL and RL is that offline RL just uses offline data and does not require any further online interaction [20]. Thus",
-    " a static dataset of transitions",
-    " such as data collected previously or human demonstrations",
-    " is presented to the offline RL learning system. As a result",
-    " the agent in offline RL is deprived of the ability to explore and interact with the environment to collect more transitions. Formally",
-    " we consider the transition dataset D to be the training dataset for the policy",
-    " from which the offline RL algorithms try to gain adequate insight into the dynamical systems underlying the MDP. We denote the distribution over states and actions in D as 𝜋 𝛽 . The states in state-action pairs ( 𝑠",
-    " 𝑎 ) ∈ D are sampled following 𝑠 ∼ 𝑑 𝜋 𝛽 ( 𝑠 ) ",
-    " and the actions are sampled following 𝑎 ∼ 𝜋 𝛽 ( 𝑎 | 𝑠 ) ."
+    "Recommender Systems",
+    "Deep Learning",
+    "Offline Reinforcement Learning",
+    "Transformer"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A model-based reinforcement learning with adversarial training for online recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Large-scale interactive recommendation with tree-structured policy gradient"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Decision Transformer: Reinforcement Learning via Sequence Modeling"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Knowledge-guided Deep Reinforcement Learning for Interactive Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Justifying Recommendations using Distantly-Labeled Reviews and Fine-Grained Aspects"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Improving Language Understanding by Generative Pre-Training"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep reinforcement learning in recommender systems: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Generative inverse deep reinforcement learning for online recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Virtual-Taobao: Virtualizing Real-World Online Retail Environment for Reinforcement Learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Generative adversarial reward learning for generalized behavior tendency inference"
+    },
+    {
+      "ref_id": "b27",
+      "title": "BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Reinforcement learning: An introduction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Attention is not all you need: Pure attention loses rank doubly exponentially with depth"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Position information in transformers: An overview"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Addressing Function Approximation Error in Actor-Critic Methods"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Bridging Nonlinearities and Stochastic Regularizers with Gaussian Error Linear Units"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Improve Transformer Models with Better Relative Position Embeddings"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Offline Reinforcement Learning as One Big Sequence Modeling Problem"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Self-Attentive Sequential Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "MOReL: Model-Based Offline Reinforcement Learning"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Item Recommendation on Monotonic Behavior Chains"
+    },
+    {
+      "ref_id": "b31",
+      "title": "SSE-PT: Sequential recommendation via personalized transformer"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Reinforcement Knowledge Graph Reasoning for Explainable Recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Deep reinforcement learning for page-wise recommendations"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Recommendations with negative feedback via pairwise deep reinforcement learning"
+    },
+    {
+      "ref_id": "b35",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Improving Recommendation Lists through Topic Diversification"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Offline reinforcement learning with fisher divergence critic regularization"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Conservative q-learning for offline reinforcement learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Offline reinforcement learning: Tutorial, review, and perspectives on open problems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Continuous control with deep reinforcement learning"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Causal Transformer for Estimating Counterfactual Outcomes"
+    }
   ]
 }

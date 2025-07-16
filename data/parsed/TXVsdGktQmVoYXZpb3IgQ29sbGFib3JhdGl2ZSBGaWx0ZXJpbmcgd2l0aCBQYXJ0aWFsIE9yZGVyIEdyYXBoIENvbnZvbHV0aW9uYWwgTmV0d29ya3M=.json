@@ -38,7 +38,285 @@
   "(III) Single-behavior CF models :": "· MF-BPR [36] is a widely used matrix factorization strategy with the assumption that the positive items should score higher than negative ones. 2 https://github.com/Sunscreen123/Beibei-dataset 3 https://tianchi.aliyun.com/dataset/dataDetail?dataId=649 4 https://static.qblv.qq.com/qblv/h5/algo-frontend/tenrec_dataset.html · NCF [19] is a CF model that leverages a multi-layer perceptron to learn the user-item interaction function. · NGCF [46] explicitly encodes the collaborative signal in the form of high-order connectivities by performing graph embedding propagation. · LightGCN [18] is a simplified variant of NGCF by including only the most essential components.",
   "keywords_parsed": [
     "recommender systems",
-    " multi-behavior recommendation",
-    " graph collaborative filtering"
+    "multi-behavior recommendation",
+    "graph collaborative filtering"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Non-Recursive Cluster-Scale Graph Interacted Model for ClickThrough Rate Prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "CPDG: A Contrastive Pre-Training Method for Dynamic Graph Neural Networks"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Reinforcement Neighborhood Selection for Unsupervised Graph Anomaly Detection"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Simulated annealing"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Graph heterogeneous multi-relational recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Differential private knowledge transfer for privacy-preserving cross-domain recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Macro graph neural networks for online billion-scale recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Neighbor enhanced graph convolutional networks for node classification and recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Generative adversarial framework for cold-start item recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Label-Aware Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Multi-Behavior Recommendation with Cascading Graph Convolution Networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Multi-task learning with deep neural networks: A survey"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Neural multi-task recommendation from multi-behavior data"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A survey of graph neural networks for recommender systems: Challenges, methods, and directions"
+    },
+    {
+      "ref_id": "b16",
+      "title": "A survey on knowledge graph-based recommender systems"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Inductive Representation Learning on Large Graphs"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Recent Advances in Heterogeneous Relation Learning for Recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Aligning Distillation For Cold-Start Item Recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Large Language Model Interaction Simulator for Cold-Start Item Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Adaptive mixtures of local experts"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Multibehavior recommendation with graph convolutional networks"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Advances in collaborative filtering"
+    },
+    {
+      "ref_id": "b28",
+      "title": "On sampled metrics for item recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "When Box Meets Graph Neural Network in Tag-aware Recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Improving graph collaborative filtering with neighborhood-enriched contrastive learning"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Deep Task-specific Bottom Representation Network for Multi-Task Recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Bayesian personalized ranking with multi-channel user feedback"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Machine learning: a probabilistic perspective"
+    },
+    {
+      "ref_id": "b36",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b37",
+      "title": "DropEdge: Towards Deep Graph Convolutional Networks on Node Classification"
+    },
+    {
+      "ref_id": "b38",
+      "title": "STEM: Unleashing the Power of Embeddings for Multi-task Recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A survey of collaborative filtering techniques"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Collaborative graph neural networks for attributed network embedding"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Simulated annealing"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Towards Dynamic Spatial-Temporal Graph Learning: A Decoupled Perspective"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Pattern expansion and consolidation on evolving graphs for continual traffic prediction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Graph Learning based Recommender Systems: A Review"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Multi-Task Deep Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Contrastive meta learning with behavior multiplicity for recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Self-supervised graph learning for recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Graph neural networks in recommender systems: a survey"
+    },
+    {
+      "ref_id": "b51",
+      "title": "A comprehensive survey on graph neural networks"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Multiplex behavioral relation learning for recommendation via memory augmented transformer network"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Graph meta network for multi-behavior recommendation"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Imputation-based Time-Series Anomaly Detection with Conditional Weight-Incremental Diffusion Models"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Counterfactual graph learning for anomaly detection on attributed networks"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Multi-Factor Sequential Re-Ranking with Perception-Aware Diversification"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Cascading residual graph convolutional network for multibehavior recommendation"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Are graph augmentations necessary? simple graph contrastive learning for recommendation"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Self-supervised learning for recommender systems: A survey"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Tenrec: A Large-scale Multipurpose Benchmark Dataset for Recommender Systems"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Link prediction based on graph neural networks"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Contrastive knowledge graph error detection"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Integrating entity attributes for error-aware knowledge graph embedding"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Alleviating Behavior Data Imbalance for Multi-Behavior Graph Collaborative Filtering"
+    },
+    {
+      "ref_id": "b65",
+      "title": "A survey on multi-task learning"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Multi-interest refinement by collaborative attributes modeling for clickthrough rate prediction"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Temporal augmented graph neural networks for session-based recommendations"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Learning tree-based deep model for recommender systems"
+    }
   ]
 }

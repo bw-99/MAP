@@ -30,17 +30,186 @@
   "A.2 Compatibility Experiment Details": "For Different backbone network experiments, we compare three networks: MLP, DCN, and Wide & Deep. The general structures are shown in Figure 5. The following setups are employed for conducting the experiments. · We design two kinds of experiments, integrating HAMUR in the backbone network and without HAMUR in the backbone network. Taking DCN as an example, each domain will construct a DCN independently as a backbone network. In the experiment ingratiating the backbone network and HAMUR, domain-specific adapters will be inserted in each backbone network, and a domainshared hyper-network will also be constructed to capture domainshared information. · The adapter is integrated into the Deep Network for DCN and into the deep side for Wide & Deep, and for MLP, we follow the setting elaborated in the Appendix A.1. · Various insertion positions of the adapter are tested through extensive experiments, and it is observed that the positions closer to the model's terminus produced the most favorable performance. Consequently, all adapters are integrated between the last and penultimate layers. For details, refer to Table 5. CIKM '23, October 21-25, 2023, Birmingham, United Kingdom Xiaopeng Li et al.",
   "REFERENCES": "[1] 2020. MindSpore. https://www.mindspore.cn/ [2] Shunichi Amari. 1967. A theory of adaptive pattern classifiers. IEEE Transactions on Electronic Computers 3 (1967), 299-307. [3] Ankur Bapna, Naveen Arivazhagan, and Orhan Firat. 2019. Simple, scalable adaptation for neural machine translation. arXiv preprint arXiv:1909.08478 (2019). [4] Jacob Beck, Matthew Thomas Jackson, Risto Vuorio, and Shimon Whiteson. 2023. Hypernetworks in meta-reinforcement learning. In Conference on Robot Learning . PMLR, 1478-1487. [5] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, et al. 2020. CAN: Feature Co-Action for Click-Through Rate Prediction. arXiv preprint arXiv:2011.05625 (2020). [6] Rich Caruana. 1997. Multitask learning. Machine learning 28 (1997), 41-75. [7] Jianxin Chang, Chenbin Zhang, Yiqun Hui, Dewei Leng, Yanan Niu, and Yang Song. 2023. PEPNet: Parameter and Embedding Personalized Network for Infusing with Personalized Prior Information. arXiv preprint arXiv:2302.01115 (2023). [8] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [9] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [10] Rumen Dangovski, Li Jing, Preslav Nakov, Mićo Tatalović, and Marin Soljačić. 2019. Rotational unit of memory: a novel representation unit for RNNs with scalable applications. Transactions of the Association for Computational Linguistics 7 (2019), 121-138. [11] James Davidson, Benjamin Liebald, Junning Liu, Palash Nandy, Taylor Van Vleet, Ullas Gargi, Sujoy Gupta, Yu He, Mike Lambert, Blake Livingston, et al. 2010. The YouTube video recommendation system. In Proceedings of the fourth ACM conference on Recommender systems . 293-296. [12] Yingjun Du, Nithin Holla, Xiantong Zhen, Cees GM Snoek, and Ekaterina Shutova. 2021. Meta-learning with variational semantic memory for word sense disambiguation. arXiv preprint arXiv:2106.02960 (2021). [13] Wenqi Fan, Xiangyu Zhao, Qing Li, Tyler Derr, Yao Ma, Hui Liu, Jianping Wang, and Jiliang Tang. 2023. Adversarial Attacks for Black-Box Recommender Systems Via Copying Transferable Cross-Domain User Profiles. IEEE Transactions on Knowledge and Data Engineering (2023). [14] Jingtong Gao, Xiangyu Zhao, Bo Chen, Fan Yan, Huifeng Guo, and Ruiming Tang. 2023. AutoTransfer: Instance Transfer for Cross-Domain Recommendations. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1478-1487. [15] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [16] David Ha, Andrew Dai, and Quoc V Le. 2016. HyperNetworks. arXiv preprint arXiv:1609.09106 (2016). [17] Sungsoo Ha. 2019. An End-to-end Deep Convolutional Neural Network for a Multiscale Image Matching and Localization Problem . Technical Report. Brookhaven National Lab.(BNL), Upton, NY (United States). [18] Xiaobo Hao, Yudan Liu, Ruobing Xie, Kaikai Ge, Linyao Tang, Xu Zhang, and Leyu Lin. 2021. Adversarial feature translation for multi-domain recommendation. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 2964-2973. [19] Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone, Quentin De Laroussilhe, Andrea Gesmundo, Mona Attariyan, and Sylvain Gelly. 2019. Parameter-efficient transfer learning for NLP. In International Conference on Machine Learning . PMLR, 2790-2799. [20] Guangneng Hu, Yu Zhang, and Qiang Yang. 2018. Conet: Collaborative cross networks for cross-domain recommendation. In Proceedings of the 27th ACM international conference on information and knowledge management . 667-676. [21] Yuchen Jiang, Qi Li, Han Zhu, Jinbei Yu, Jin Li, Ziru Xu, Huihui Dong, and Bo Zheng. 2022. Adaptive domain interest network for multi-domain recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3212-3221. [22] Jinyun Li, Huiwen Zheng, Yuanlin Liu, Minfang Lu, Lixia Wu, and Haoyuan Hu. 2022. AdaptDHM: Adaptive Distribution Hierarchical Model for Multi-Domain CTR Prediction. arXiv preprint arXiv:2211.12105 (2022). [23] Muyang Li, Zijian Zhang, Xiangyu Zhao, Wanyu Wang, Minghao Zhao, Runze Wu, and Ruocheng Guo. 2023. AutoMLP: Automated MLP for Sequential Recommendations. In Proceedings of the Web Conference 2023 . [24] Pan Li and Alexander Tuzhilin. 2020. Ddtcdr: Deep dual transfer cross domain recommendation. In Proceedings of the 13th International Conference on Web Search and Data Mining . 331-339. [25] Zhiqiu Lin, Samuel Yu, Zhiyi Kuang, Deepak Pathak, and Deva Ramanan. 2023. Multimodality helps unimodality: Cross-modal few-shot learning with multimodal models. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 19325-19337. [26] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [27] Weizhi Ma, Min Zhang, Chenyang Wang, Cheng Luo, Yiqun Liu, and Shaoping Ma. 2018. Your Tweets Reveal What You Like: Introducing Cross-media Content Information into Multi-domain Recommendation.. In IJCAI . 3484-3490. [28] Rabeeh Karimi Mahabadi, Sebastian Ruder, Mostafa Dehghani, and James Henderson. 2021. Parameter-efficient multi-task fine-tuning for transformers via shared hypernetworks. arXiv preprint arXiv:2106.04489 (2021). [29] Tony CW Mok and Albert CS Chung. 2021. Conditional deformable image registration with convolutional neural network. In Medical Image Computing and Computer Assisted Intervention-MICCAI 2021: 24th International Conference, Strasbourg, France, September 27-October 1, 2021, Proceedings, Part IV 24 . Springer, 35-45. [30] Shumpei Okura, Yukihiro Tagami, Shingo Ono, and Akira Tajima. 2017. Embedding-based news recommendation for millions of users. In Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining . 1933-1942. [31] Sylvestre-Alvise Rebuffi, Hakan Bilen, and Andrea Vedaldi. 2017. Learning multiple visual domains with residual adapters. Advances in neural information processing systems 30 (2017). [32] Sahand Rezaei-Shoshtari, Charlotte Morissette, Francois R Hogan, Gregory Dudek, and David Meger. 2023. Hypernetworks for zero-shot transfer in reinforcement learning. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 37. 9579-9587. [33] Qijie Shen, Wanjie Tao, Jing Zhang, Hong Wen, Zulong Chen, and Quan Lu. 2021. Sar-net: a scenario-aware ranking network for personalized fair recommendation in hundreds of travel scenarios. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4094-4103. [34] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4104-4113. [35] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [36] Ruize Wang, Duyu Tang, Nan Duan, Zhongyu Wei, Xuanjing Huang, Guihong Cao, Daxin Jiang, Ming Zhou, et al. 2020. K-adapter: Infusing knowledge into pre-trained models with adapters. arXiv preprint arXiv:2002.01808 (2020). [37] Yejing Wang, Zhaocheng Du, Xiangyu Zhao, Bo Chen, Huifeng Guo, Ruiming Tang, and Zhenhua Dong. 2023. Single-shot Feature Selection for Multi-task Recommendations. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 341-351. [38] Yichao Wang, Huifeng Guo, Bo Chen, Weiwen Liu, Zhirong Liu, Qi Zhang, Zhicheng He, Hongkun Zheng, Weiwei Yao, Muyu Zhang, et al. 2022. Causalint: Causal inspired intervention for multi-scenario recommendation. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4090-4099. [39] Yuhao Wang, Xiangyu Zhao, Bo Chen, Qidong Liu, Huifeng Guo, Huanshuo Liu, Yichao Wang, Rui Zhang, and Ruiming Tang. 2023. PLATE: A PromptEnhanced Paradigm for Multi-Scenario Recommendations. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1498-1507. [40] Bencheng Yan, Pengjie Wang, Kai Zhang, Feng Li, Hongbo Deng, Jian Xu, and Bo Zheng. 2022. Apg: Adaptive parameter generation network for click-through rate prediction. Advances in Neural Information Processing Systems 35 (2022), 24740-24752. [41] Xuanhua Yang, Xiaoyu Peng, Penghui Wei, Shaoguo Liu, Liang Wang, and Bo Zheng. 2022. AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 4635-4639. [42] Qianqian Zhang, Xinru Liao, Quan Liu, Jian Xu, and Bo Zheng. 2022. Leaving no one behind: A multi-scenario multi-task meta learning approach for advertiser modeling. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 1368-1376. [43] Xiangyu Zhao, Long Xia, Liang Zhang, Zhuoye Ding, Dawei Yin, and Jiliang Tang. 2018. Deep Reinforcement Learning for Page-wise Recommendations. In Proceedings of the 12th ACM Recommender Systems Conference . ACM, 95-103. [44] Xiangyu Zhao, Liang Zhang, Zhuoye Ding, Long Xia, Jiliang Tang, and Dawei Yin. 2018. Recommendations with Negative Feedback via Pairwise Deep Reinforcement Learning. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 1040-1048.",
   "keywords_parsed": [
-    "Multi-Domain Recommendation (MDR) has gained significant attention in recent years",
-    " which leverages data from multiple domains to enhance their performance concurrently. However",
-    " current MDR models are confronted with two limitations. Firstly",
-    " the majority of these models adopt an approach that explicitly shares parameters between domains",
-    " leading to mutual interference amongthem. Secondly",
-    " due to the distribution differences among domains",
-    " the utilization of static parameters in existing methods limits their flexibility to adapt to diverse domains. To address these challenges",
-    " we propose a novel model H yper A dapter for MU lti-Domain R ecommendation ( HAMUR ). Specifically",
-    " HAMUR consists of two components: (1). Domain-specific adapter",
-    " designed as a pluggable module that can be seamlessly integrated into various existing multidomain backbone models",
-    " and (2). Domain-shared hyper-network",
-    " which implicitly captures shared information among domains and dynamically generates the parameters for the adapter. We conduct extensive experiments on two public datasets using various backbone networks. The experimental results validate the effectiveness and scalability of the proposed model. And we release our code implementation publicly 12 ."
+    "Multi-Domain Recommendation",
+    "Recommendation Systems",
+    "CTR Prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "MindSpore"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A theory of adaptive pattern classifiers"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Simple, scalable adaptation for neural machine translation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Hypernetworks in meta-reinforcement learning"
+    },
+    {
+      "ref_id": "b5",
+      "title": "CAN: Feature Co-Action for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "PEPNet: Parameter and Embedding Personalized Network for Infusing with Personalized Prior Information"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Rotational unit of memory: a novel representation unit for RNNs with scalable applications"
+    },
+    {
+      "ref_id": "b11",
+      "title": "The YouTube video recommendation system"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Meta-learning with variational semantic memory for word sense disambiguation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Adversarial Attacks for Black-Box Recommender Systems Via Copying Transferable Cross-Domain User Profiles"
+    },
+    {
+      "ref_id": "b14",
+      "title": "AutoTransfer: Instance Transfer for Cross-Domain Recommendations"
+    },
+    {
+      "ref_id": "b15",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "HyperNetworks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "An End-to-end Deep Convolutional Neural Network for a Multiscale Image Matching and Localization Problem"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Adversarial feature translation for multi-domain recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Parameter-efficient transfer learning for NLP"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Conet: Collaborative cross networks for cross-domain recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Adaptive domain interest network for multi-domain recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "AdaptDHM: Adaptive Distribution Hierarchical Model for Multi-Domain CTR Prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "AutoMLP: Automated MLP for Sequential Recommendations"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Ddtcdr: Deep dual transfer cross domain recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Multimodality helps unimodality: Cross-modal few-shot learning with multimodal models"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Your Tweets Reveal What You Like: Introducing Cross-media Content Information into Multi-domain Recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Parameter-efficient multi-task fine-tuning for transformers via shared hypernetworks"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Conditional deformable image registration with convolutional neural network"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Embedding-based news recommendation for millions of users"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Learning multiple visual domains with residual adapters"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Hypernetworks for zero-shot transfer in reinforcement learning"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Sar-net: a scenario-aware ranking network for personalized fair recommendation in hundreds of travel scenarios"
+    },
+    {
+      "ref_id": "b34",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b36",
+      "title": "K-adapter: Infusing knowledge into pre-trained models with adapters"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Single-shot Feature Selection for Multi-task Recommendations"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Causalint: Causal inspired intervention for multi-scenario recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "PLATE: A Prompt-Enhanced Paradigm for Multi-Scenario Recommendations"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Apg: Adaptive parameter generation network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b41",
+      "title": "AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Leaving no one behind: A multi-scenario multi-task meta learning approach for advertiser modeling"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Deep Reinforcement Learning for Page-wise Recommendations"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Recommendations with Negative Feedback via Pairwise Deep Reinforcement Learning"
+    }
   ]
 }

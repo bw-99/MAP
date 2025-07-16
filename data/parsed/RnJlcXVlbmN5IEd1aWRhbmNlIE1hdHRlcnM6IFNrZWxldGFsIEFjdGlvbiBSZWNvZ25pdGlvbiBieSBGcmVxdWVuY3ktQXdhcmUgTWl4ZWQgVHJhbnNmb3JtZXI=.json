@@ -42,18 +42,106 @@
   "H Limitations and Future Work": "Despite the high accuracy of our model, it still has some limitations. Firstly, our model is still not efficient and lightweight enough. As we discussed in the ablation study from the main paper, there is a gap between our method and the recent GCN-based methods such as HD-GCN [23] (1.68M parameters vs 2.04M, 1.60 GFLIOPS vs 2.40 GFLOPS), and we have no remarkable advantages of efficiency over the recent transformer-based methods. Secondly, we keep all the high-frequency coefficients during the training, which is not robust to noisy joint information. The more efficient way is to enhance the high-frequency coefficients selectively instead of the whole coefficients. Our future work will focus on finding the best trade-off point between efficiency and accuracy. MM'24, October 28-November 1, 2024, Melbourne, VIC, Australia Wenhan Wu et al. 1 make victory sign counting Money thumh up play with phoncltablet 1 fold paper shoot with gun point something shoot basket reach into pocket open writing ball up paper nausealvomiting play magic cuhe wield knile hand waving palms together throw up cap taking front cross toe touch cutting nails Dulon headphone kesboard somcbody reading hush photo punchslap drink water hopping exchange things giving object paper jacket stand up butt kicks nlick hair kicking juccle table tennis ball 1 check timenodone adabch) kicking something hcadache apply shake hcud phone call capitulate cutting paper pushing walking apart pain cheers and drink puton hatcap couph heavy objects shaking hands self brush hair high-five rock-paper-scissors walking towards salute take olf a hatlcap pocket carry ohjccr abject into pick bacl squat dov put on jump fallins stcp bae Figure 12: Top-1 Accuracy Difference (%) between the proposed FreqMixFormer and the baseline method SkeMixFormer with the joint input modality on NTU RGB+D 120 X-Sub. Frequency Guidance Matters: Skeletal Action Recognition by Frequency-Aware Mixed Transformer MM'24, October 28-November 1, 2024, Melbourne, VIC, Australia",
   "References": "[1] Nasir Ahmed, T_ Natarajan, and Kamisetty R Rao. 1974. Discrete cosine transform. IEEE transactions on Computers 100, 1 (1974), 90-93. [2] Dasom Ahn, Sangwon Kim, Hyunsu Hong, and Byoung Chul Ko. 2023. Startransformer: A spatio-temporal cross attention transformer for human action recognition. In Proceedings of the IEEE/CVF winter conference on applications of computer vision . 3330-3339. [3] Ijaz Akhter, Yaser Sheikh, Sohaib Khan, and Takeo Kanade. 2008. Nonrigid structure from motion in trajectory space. Advances in neural information processing systems 21 (2008). [4] Ruwen Bai, Min Li, Bo Meng, Fengfa Li, Miao Jiang, Junxing Ren, and Degang Sun. 2022. Hierarchical graph convolutional skeleton transformer for action recognition. In 2022 IEEE International Conference on Multimedia and Expo (ICME) . IEEE, 01-06. [5] Chaitanya Bandi and Ulrike Thomas. 2021. Skeleton-based action recognition for human-robot interaction using self-attention mechanism. In 2021 16th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2021) . IEEE, 1-8. [6] Zhe Cao, Tomas Simon, Shih-En Wei, and Yaser Sheikh. 2017. Realtime multiperson 2d pose estimation using part affinity fields. In Proceedings of the IEEE conference on computer vision and pattern recognition . 7291-7299. [7] Haochen Chang, Jing Chen, Yilin Li, Jixiang Chen, and Xiaofeng Zhang. 2024. Wavelet-Decoupling Contrastive Enhancement Network for Fine-Grained Skeleton-Based Action Recognition. arXiv preprint arXiv:2402.02210 (2024). [8] Yuxin Chen, Ziqi Zhang, Chunfeng Yuan, Bing Li, Ying Deng, and Weiming Hu. 2021. Channel-wise topology refinement graph convolution for skeleton-based action recognition. In Proceedings of the IEEE/CVF international conference on computer vision . 13359-13368. [9] Ke Cheng, Yifan Zhang, Xiangyu He, Weihan Chen, Jian Cheng, and Hanqing Lu. 2020. Skeleton-based action recognition with shift graph convolutional network. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 183-192. [10] Hyung-gun Chi, Myoung Hoon Ha, Seunggeun Chi, Sang Wan Lee, Qixing Huang, and Karthik Ramani. 2022. Infogcn: Representation learning for human skeletonbased action recognition. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 20186-20196. [11] Yutao Cui, Cheng Jiang, Limin Wang, and Gangshan Wu. 2022. Mixformer: Endto-end tracking with iterative mixed attention. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 13608-13618. [12] Yong Du, Wei Wang, and Liang Wang. 2015. Hierarchical recurrent neural network for skeleton based action recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition . 1110-1118. [13] Xuehao Gao, Shaoyi Du, Yang Wu, and Yang Yang. 2023. Decompose more and aggregate better: Two closer looks at frequency representation learning for human motion prediction. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 6451-6460. [14] Zhimin Gao, Peitao Wang, Pei Lv, Xiaoheng Jiang, Qidong Liu, Pichao Wang, Mingliang Xu, and Wanqing Li. 2022. Focal and global spatial-temporal transformer for skeleton-based action recognition. In Proceedings of the Asian Conference on Computer Vision . 382-398. [15] Yonghong Hou, Zhaoyang Li, Pichao Wang, and Wanqing Li. 2016. Skeleton optical spectra-based action recognition using convolutional neural networks. IEEE Transactions on Circuits and Systems for Video Technology 28, 3 (2016), 807811. [16] Guyue Hu, Bo Cui, and Shan Yu. 2019. Joint learning in the spatio-temporal and frequency domains for skeleton-based action recognition. IEEE Transactions on Multimedia 22, 9 (2019), 2207-2220. [17] Jie Hu, Li Shen, and Gang Sun. 2018. Squeeze-and-excitation networks. In Proceedings of the IEEE conference on computer vision and pattern recognition . 7132-7141. [18] Yujian Jiang, Zhaoneng Sun, Saisai Yu, Shuang Wang, and Yang Song. 2022. A graph skeleton transformer network for action recognition. Symmetry 14, 8 (2022), 1547. [19] Mohamad Kashef, Anna Visvizi, and Orlando Troisi. 2021. Smart city as a smart service system: Human-computer interaction and smart city surveillance systems. Computers in Human Behavior 124 (2021), 106923. [20] Qiuhong Ke, Mohammed Bennamoun, Senjian An, Ferdous Sohel, and Farid Boussaid. 2017. A new representation of skeleton sequences for 3d action recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition . 3288-3297. [21] Tae Soo Kim and Austin Reiter. 2017. Interpretable 3D Human Action Analysis with Temporal Convolutional Networks. In 2017 IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW) . https://doi.org/10.1109/ cvprw.2017.207 [22] Inwoong Lee, Doyoung Kim, Seoungyoon Kang, and Sanghoon Lee. 2017. Ensemble deep learning for skeleton-based action recognition using temporal sliding lstm networks. In Proceedings of the IEEE international conference on computer vision . 1012-1020. [44] Chiara Plizzari, Marco Cannici, and Matteo Matteucci. 2021. Skeleton-based action recognition via spatial and temporal transformer networks. Computer MM'24, October 28-November 1, 2024, Melbourne, VIC, Australia Wenhan Wu et al. [64] Xinghan Wang, Xin Xu, and Yadong Mu. 2023. Neural Koopman pooling: Controlinspired temporal dynamics encoding for skeleton-based action recognition. In",
   "keywords_parsed": [
-    "Recently",
-    " transformers have demonstrated great potential for modeling long-term dependencies from skeleton sequences and thereby gained ever-increasing attention in skeleton action recognition. However",
-    " the existing transformer-based approaches heavily rely on the naive attention mechanism for capturing the spatiotemporal features",
-    " which falls short in learning discriminative representations that exhibit similar motion patterns. To address this challenge",
-    " we introduce the Freq uency-aware Mix ed Trans former (FreqMixFormer)",
-    " specifically designed for recognizing similar skeletal actions with subtle discriminative motions. First",
-    " we introduce a frequency-aware attention module to unweave skeleton frequency representations by embedding joint features into frequency attention maps",
-    " aiming to distinguish the discriminative movements based on their frequency coefficients. Subsequently",
-    " we develop a mixed transformer architecture to incorporate spatial features with frequency features to model the comprehensive frequency-spatial patterns. Additionally",
-    " a temporal transformer is proposed to extract the global correlations across frames. Extensive experiments show that FreqMiXFormer outperforms SOTA on 3 popular skeleton action recognition datasets",
-    " including NTU RGB+D",
-    " NTU RGB+D 120",
-    " and NW-UCLA datasets. Our project is publicly available at: https://github.com/wenhanwu95/FreqMixFormer."
+    "Skeleton Action Recognition",
+    "Frequency",
+    "Transformer"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Discrete cosine transform"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Startransformer: A spatio-temporal cross attention transformer for human action recognition"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Nonrigid structure from motion in trajectory space"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Hierarchical graph convolutional skeleton transformer for action recognition"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Skeleton-based action recognition for human-robot interaction using self-attention mechanism"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Realtime multiperson 2d pose estimation using part affinity fields"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wavelet-Decoupling Contrastive Enhancement Network for Fine-Grained Skeleton-Based Action Recognition"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Channel-wise topology refinement graph convolution for skeleton-based action recognition"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Skeleton-based action recognition with shift graph convolutional network"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Infogcn: Representation learning for human skeletonbased action recognition"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Mixformer: Endto-end tracking with iterative mixed attention"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Hierarchical recurrent neural network for skeleton based action recognition"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Decompose more and aggregate better: Two closer looks at frequency representation learning for human motion prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Focal and global spatial-temporal transformer for skeleton-based action recognition"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Skeleton optical spectra-based action recognition using convolutional neural networks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Joint learning in the spatio-temporal and frequency domains for skeleton-based action recognition"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Squeeze-and-excitation networks"
+    },
+    {
+      "ref_id": "b18",
+      "title": "A graph skeleton transformer network for action recognition"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Smart city as a smart service system: Human-computer interaction and smart city surveillance systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A new representation of skeleton sequences for 3d action recognition"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Interpretable 3D Human Action Analysis with Temporal Convolutional Networks"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Ensemble deep learning for skeleton-based action recognition using temporal sliding lstm networks"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Skeleton-based action recognition via spatial and temporal transformer networks"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Neural Koopman pooling: Controlinspired temporal dynamics encoding for skeleton-based action recognition"
+    }
   ]
 }

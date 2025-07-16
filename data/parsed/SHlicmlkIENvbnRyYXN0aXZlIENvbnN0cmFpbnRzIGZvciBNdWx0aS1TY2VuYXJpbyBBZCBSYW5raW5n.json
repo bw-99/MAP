@@ -24,8 +24,178 @@
   "REFERENCES": "[1] Hamed R. Bonab, Mohammad Aliannejadi, Ali Vardasbi, Evangelos Kanoulas, and James Allan. 2021. Cross-Market Product Recommendation. In CIKM . 110-119. [3] Rich Caruana. 1998. Multitask Learning. In Learning to Learn . 95-133. [2] Léon Bottou, Jonas Peters, Joaquin Quiñonero Candela, Denis Xavier Charles, Max Chickering, Elon Portugaly, Dipankar Ray, Patrice Y. Simard, and Ed Snelson. 2013. Counterfactual reasoning and learning systems: the example of computational advertising. JMLR 14, 1 (2013), 3207-3260. [4] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey E. Hinton. 2020. A Simple Framework for Contrastive Learning of Visual Representations. In ICML , Vol. 119. 1597-1607. [6] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In RecSys . 7-10. [5] Yuting Chen, Yanshi Wang, Yabo Ni, Anxiang Zeng, and Lanfen Lin. 2020. Scenario-aware and Mutual-based approach for Multi-scenario Recommendation in E-Commerce. In ICDM workshop . 127-135. [7] Kawin Ethayarajh. 2019. How Contextual are Contextualized Word Representations? Comparing the Geometry of BERT, ELMo, and GPT-2 Embeddings. In EMNLP , Kentaro Inui, Jing Jiang, Vincent Ng, and Xiaojun Wan (Eds.). 55-65. [9] Tianyu Gao, Xingcheng Yao, and Danqi Chen. 2021. SimCSE: Simple Contrastive Learning of Sentence Embeddings. In EMNLP . 6894-6910. [8] Jun Feng, Heng Li, Minlie Huang, Shichen Liu, Wenwu Ou, Zhirong Wang, and Xiaoyan Zhu. 2018. Learning to Collaborate: Multi-Scenario Ranking via MultiAgent Reinforcement Learning. In WWW . 1939-1948. [10] John M. Giorgi, Osvald Nitski, Bo Wang, and Gary D. Bader. 2021. DeCLUTR: Deep Contrastive Learning for Unsupervised Textual Representations. In ACL . 879-895. [12] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In IJCAI . 1725-1731. [11] Yulong Gu, Wentian Bao, Dan Ou, Xiang Li, Baoliang Cui, Biyu Ma, Haikuan Huang, Qingwen Liu, and Xiaoyi Zeng. 2021. Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce. In CIKM . 3828-3837. [13] Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross B. Girshick. 2020. Momentum Contrast for Unsupervised Visual Representation Learning. In CVPR . 9726-9735. [15] Yuchen Jiang, Qi Li, Han Zhu, Jinbei Yu, Jin Li, Ziru Xu, Huihui Dong, and Bo Zheng. 2022. Adaptive Domain Interest Network for Multi-domain Recommendation. In CIKM . 3212-3221. [14] Jonathan Ho, Ajay Jain, and Pieter Abbeel. 2020. Denoising Diffusion Probabilistic Models. In NeurIPS . [16] Jeff Johnson, Matthijs Douze, and Hervé Jégou. 2019. Billion-scale similarity search with GPUs. IEEE Transactions on Big Data 7, 3 (2019), 535-547. [18] Zihan Lin, Changxin Tian, Yupeng Hou, and Wayne Xin Zhao. 2022. Improving Graph Collaborative Filtering with Neighborhood-enriched Contrastive Learning. In WWW . 2320-2329. [17] Pengcheng Li, Runze Li, Qing Da, Anxiang Zeng, and Lijun Zhang. 2020. Improving Multi-Scenario Learning to Rank in E-commerce by Exploiting Task Relationships in the Label Space. In CIKM . 2605-2612. [19] Linhao Luo, Yumeng Li, Buyu Gao, Shuai Tang, Sinan Wang, Jiancheng Li, Tanchao Zhu, Jiancai Liu, Zhao Li, Binqiang Zhao, Ziyang Zheng, and Shirui Pan. 2022. MAMDR: A Model Agnostic Learning Method for Multi-Domain Recommendation. CoRR abs/2202.12524 (2022). [21] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate. In SIGIR . 1137-1140. [20] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H. Chi. 2018. Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-ofExperts. In KDD . 1930-1939. [22] Xichuan Niu, Bofang Li, Chenliang Li, Jun Tan, Rong Xiao, and Hongbo Deng. 2021. Heterogeneous Graph Augmented Multi-Scenario Sharing Recommendation with Tree-Guided Expert Networks. In WSDM . 1038-1046. [24] Ruihong Qiu, Zi Huang, Hongzhi Yin, and Zijian Wang. 2022. Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation. In WSDM . 813-823. [23] Louisa Ha Ph.D. 2008. Online Advertising Research in Advertising Journals: A Review. Journal of Current Issues & Research in Advertising 30, 1 (2008), 31-48. [25] Qijie Shen, Wanjie Tao, Jing Zhang, Hong Wen, Zulong Chen, and Quan Lu. 2021. SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios. In CIKM . 4094-4103. [27] Shulong Tan, Meifang Li, Weijie Zhao, Yandan Zheng, Xin Pei, and Ping Li. 2021. Multi-Task and Multi-Scene Unified Ranking Model for Online Advertising. In Big Data . 2046-2051. [26] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, and Xiaoqiang Zhu. 2021. One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction. In CIKM . 4104-4113. [28] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations. In RecSys . 269-278. [30] Chen Wang, Yueqing Liang, Zhiwei Liu, Tao Zhang, and Philip S. Yu. 2021. Pretraining Graph Neural Network for Cross Domain Recommendation. In CogMI . 140-145. [29] Laurens van der Maaten and Geoffrey Hinton. 2008. Visualizing Data using t-SNE. Journal of Machine Learning Research (2008), 2579-2605. [31] Tongzhou Wang and Phillip Isola. 2020. Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere. In ICML , Vol. 119. 9929-9939. [33] Jiancan Wu, Xiang Wang, Fuli Feng, Xiangnan He, Liang Chen, Jianxun Lian, and Xing Xie. 2021. Self-supervised Graph Learning for Recommendation. In SIGIR . 726-735. [32] Yichao Wang, Huifeng Guo, Bo Chen, Weiwen Liu, Zhirong Liu, Qi Zhang, Zhicheng He, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Zhenhua Dong, and Ruiming Tang. 2022. CausalInt: Causal Inspired Intervention for Multi-Scenario Recommendation. In KDD . 4090-4099. [34] Ruobing Xie, Qi Liu, Liangdong Wang, Shukai Liu, Bo Zhang, and Leyu Lin. 2021. Contrastive Cross-domain Recommendation in Matching. (2021). arXiv:2112.00999 https://arxiv.org/abs/2112.00999 [36] Xuanhua Yang, Xiaoyu Peng, Penghui Wei, Shaoguo Liu, Liang Wang, and Bo Zheng. 2022. AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction. In CIKM . 4635-4639. [35] Bencheng Yan, Pengjie Wang, Kai Zhang, Feng Li, Jian Xu, and Bo Zheng. 2022. APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction. CoRR abs/2203.16218 (2022). [37] Tiansheng Yao, Xinyang Yi, Derek Zhiyuan Cheng, Felix X. Yu, Ting Chen, Aditya Krishna Menon, Lichan Hong, Ed H. Chi, Steve Tjoa, Jieqi (Jay) Kang, and Evan Ettinger. 2021. Self-supervised Learning for Large-scale Item Recommendations. In CIKM . 4321-4330. [39] Yuanliang Zhang, Xiaofeng Wang, Jinxin Hu, Ke Gao, Chenyi Lei, and Fei Fang. 2022. Scenario-Adaptive and Self-Supervised Model for Multi-Scenario Personalized Recommendation. In CIKM . 3674-3683. [38] Qianqian Zhang, Xinru Liao, Quan Liu, Jian Xu, and Bo Zheng. 2022. Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling. In WSDM . 1368-1376. [40] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization. In CIKM . 1893-1902. [42] Xinyu Zou, Zhi Hu, Yiming Zhao, Xuchu Ding, Zhongyi Liu, Chenliang Li, and Aixin Sun. 2022. Automatic Expert Selection for Multi-Scenario and Multi-Task Search. In SIGIR . 1535-1544. [41] Yongchun Zhu, Zhenwei Tang, Yudan Liu, Fuzhen Zhuang, Ruobing Xie, Xu Zhang, Leyu Lin, and Qing He. 2022. Personalized Transfer of User Preferences for Cross-domain Recommendation. In WSDM . 1507-1515.",
   "keywords_parsed": [
     "Online Advertising",
-    " Advertisement Ranking",
-    " Multi-Scenario Ad Ranking",
-    " Contrastive Learning"
+    "Advertisement Ranking",
+    "Multi-Scenario Ad Ranking",
+    "Contrastive Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Cross-Market Product Recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Multitask Learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Counterfactual reasoning and learning systems: the example of computational advertising"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A Simple Framework for Contrastive Learning of Visual Representations"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Scenario-aware and Mutual-based approach for Multi-scenario Recommendation in E-Commerce"
+    },
+    {
+      "ref_id": "b7",
+      "title": "How Contextual are Contextualized Word Representations? Comparing the Geometry of BERT, ELMo, and GPT-2 Embeddings"
+    },
+    {
+      "ref_id": "b9",
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning to Collaborate: Multi-Scenario Ranking via MultiAgent Reinforcement Learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeCLUTR: Deep Contrastive Learning for Unsupervised Textual Representations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Momentum Contrast for Unsupervised Visual Representation Learning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Adaptive Domain Interest Network for Multi-domain Recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Denoising Diffusion Probabilistic Models"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Billion-scale similarity search with GPUs"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Improving Graph Collaborative Filtering with Neighborhood-enriched Contrastive Learning"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Improving Multi-Scenario Learning to Rank in E-commerce by Exploiting Task Relationships in the Label Space"
+    },
+    {
+      "ref_id": "b19",
+      "title": "MAMDR: A Model Agnostic Learning Method for Multi-Domain Recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-ofExperts"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Heterogeneous Graph Augmented Multi-Scenario Sharing Recommendation with Tree-Guided Expert Networks"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Online Advertising Research in Advertising Journals: A Review"
+    },
+    {
+      "ref_id": "b25",
+      "title": "SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Multi-Task and Multi-Scene Unified Ranking Model for Online Advertising"
+    },
+    {
+      "ref_id": "b26",
+      "title": "One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Pretraining Graph Neural Network for Cross Domain Recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Visualizing Data using t-SNE"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Self-supervised Graph Learning for Recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "CausalInt: Causal Inspired Intervention for Multi-Scenario Recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Contrastive Cross-domain Recommendation in Matching"
+    },
+    {
+      "ref_id": "b36",
+      "title": "AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Self-supervised Learning for Large-scale Item Recommendations"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Scenario-Adaptive and Self-Supervised Model for Multi-Scenario Personalized Recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling"
+    },
+    {
+      "ref_id": "b40",
+      "title": "S3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Automatic Expert Selection for Multi-Scenario and Multi-Task Search"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Personalized Transfer of User Preferences for Cross-domain Recommendation"
+    }
   ]
 }

@@ -22,27 +22,70 @@
   "5 CONCLUSION": "In this paper, we propose the Contrastive Learning for CVR prediction (CL4CVR) framework. It associates the supervised CVR prediction task with a contrastive learning task, which can learn better data representations exploiting abundant unlabeled data and improve the CVR prediction performance. To tailor the contrastive learning task to the CVR prediction problem, we propose embedding masking, false negative elimination and supervised positive inclusion strategies. Experimental results on two real-world conversion datasets demonstrate the superior performance of CL4CVR. Contrastive Learning for Conversion Rate Prediction SIGIR '23, July 23-27, 2023, Taipei, Taiwan",
   "REFERENCES": "[1] Martín Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay Ghemawat, Geoffrey Irving, Michael Isard, et al. 2016. Tensorflow: A system for large-scale machine learning. In 12th USENIX Symposium on Operating Systems Design and Implementation (OSDI) . USENIX, 265-283. [2] Deepak Agarwal, Rahul Agrawal, Rajiv Khanna, and Nagaraj Kota. 2010. Estimating rates of rare events with multiple hierarchies through scalable log-linear models. In Proceedings of the 16th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) . 213-222. [3] Wentian Bao, Hong Wen, Sha Li, Xiao-Yang Liu, Quan Lin, and Keping Yang. 2020. GMCM:Graph-based micro-behavior conversion model for post-click conversion rate estimation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . 2201-2210. [4] Olivier Chapelle. 2014. Modeling delayed feedback in display advertising. In Proceedings of the 20th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) . 1097-1105. [5] Olivier Chapelle, Eren Manavoglu, and Romer Rosales. 2014. Simple and scalable response prediction for display advertising. ACM Transactions on Intelligent Systems and Technology (TIST) 5, 4 (2014), 1-34. [6] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In International Conference on Machine Learning (ICML) . PMLR, 1597-1607. [7] John Duchi, Elad Hazan, and Yoram Singer. 2011. Adaptive subgradient methods for online learning and stochastic optimization. Journal of Machine Learning Research 12, Jul (2011), 2121-2159. [8] Tianyu Gao, Xingcheng Yao, and Danqi Chen. 2021. SimCSE: Simple Contrastive Learning of Sentence Embeddings. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP) . 6894-6910. [9] Siyuan Guo, Lixin Zou, Yiding Liu, Wenwen Ye, Suqi Cheng, Shuaiqiang Wang, Hechang Chen, Dawei Yin, and Yi Chang. 2021. Enhanced doubly robust learning for debiasing post-click conversion rate estimation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . 275-284. [10] Prannay Khosla, Piotr Teterwak, Chen Wang, Aaron Sarna, Yonglong Tian, Phillip Isola, Aaron Maschinot, Ce Liu, and Dilip Krishnan. 2020. Supervised contrastive learning. Advances in Neural Information Processing Systems 33 (2020), 1866118673. [11] Kuang-chih Lee, Burkay Orten, Ali Dasdan, and Wentong Li. 2012. Estimating conversion rate in display advertising from past erformance data. In Proceedings of the 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) . 768-776. [12] Quan Lu, Shengjun Pan, Liang Wang, Junwei Pan, Fengdan Wan, and Hongxia Yang. 2017. A practical framework of conversion rate prediction for online display advertising. In Proceedings of the International Workshop on Data Mining for Online Advertising (ADKDD) . 1-9. [13] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval (SIGIR) . ACM, 1137-1140. [14] Vinod Nair and Geoffrey E Hinton. 2010. Rectified linear units improve restricted boltzmann machines. In Proceedings of the 27th International Conference on Machine Learning (ICML) . 807-814. [15] Junwei Pan, Yizhi Mao, Alfonso Lobos Ruiz, Yu Sun, and Aaron Flores. 2019. Predicting different types of conversions with multi-task learning in online",
   "keywords_parsed": [
-    "Online advertising; Conversion rate (CVR) prediction; Contrastive learning Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. SIGIR '23",
-    " July 23-27",
-    " 2023",
-    " Taipei",
-    " Taiwan © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-9408-6/23/07...$15.00 https://doi.org/10.1145/3539618.3591968 Wentao Ouyang",
-    " Rui Dong",
-    " Xiuwu Zhang",
-    " Chaofeng Guo",
-    " Jinmei Luo",
-    " Xiangzheng Liu",
-    " and Yanlong Du. 2023. Contrastive Learning for Conversion Rate Prediction. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '23)",
-    " July 23-27",
-    " 2023",
-    " Taipei",
-    " Taiwan. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 5 pages. https://doi.org/10.1145/3539618.3591968"
+    "Online advertising",
+    "Conversion rate (CVR) prediction",
+    "Contrastive learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Tensorflow: A system for large-scale machine learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Estimating rates of rare events with multiple hierarchies through scalable log-linear models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "GMCM:Graph-based micro-behavior conversion model for post-click conversion rate estimation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Modeling delayed feedback in display advertising"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Simple and scalable response prediction for display advertising"
+    },
+    {
+      "ref_id": "b6",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Adaptive subgradient methods for online learning and stochastic optimization"
+    },
+    {
+      "ref_id": "b8",
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Enhanced doubly robust learning for debiasing post-click conversion rate estimation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Supervised contrastive learning"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Estimating conversion rate in display advertising from past performance data"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A practical framework of conversion rate prediction for online display advertising"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Rectified linear units improve restricted boltzmann machines"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Predicting different types of conversions with multi-task learning in online"
+    }
   ]
 }

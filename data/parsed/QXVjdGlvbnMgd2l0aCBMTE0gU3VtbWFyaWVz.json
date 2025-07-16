@@ -26,7 +26,115 @@
   "5.5.2 Efficiency": "In figure 2, we compare the two baselines, namely the position auction with fixed length ('POSFL') and the greedy auction against GPA+LLM with α = 1 1 -β . Note that the behavior of the two baselines, Greedy and Position Auction, do not depend on the value of β . Furthermore, the reward for Greedy also does not depend on β because if it shows an ad then it shows the entire ad text yielding a ROUGE score of 1. We observe from figure 2 that GPA+LLM does better than both the baselines showcasing the value of utilizing the power of LLM along with optimizing the auction allocation. As the total number of words increases, the baselines catch up to the proposed GPA+LLM approach since the LLM is largely not required for summarizing the creatives, as all the original ad creatives can fit in many cases. Comparing across the two baselines, when the 14 total number of words is small, then greedy often leaves space unused since it can only show an ad creative in its entirety (since it does not use LLM to resize ads) and hence performs worse than position auction which does resize ads. When the total number of words is larger, then greedy starts doing better than position auction, because it is often better to split the space between fewer ads (e.g., two ads when the third ad's bid is low).",
   "6 Conclusions and Future Directions": "This paper develops a factorization that enables auction based allocation for general LLM-based summarizations. The paper studies an instantiation that shows the near-optimality of the generalized proportional auction under a certain class of parameterized click through rate models for the LLM-generated summaries. While the empirical section in the paper works with a fixed LLM and the dynamic word-length summarization interface, it is worth looking into the use of finetuning to work in conjunction with appropriate auction design to adapt to user behavior on other classes of flexible user interfaces.",
   "References": "Gagan Aggarwal, Kshipra Bhawalkar, Aranyak Mehta, Divyarthi Mohan, and Alexandros Psomas. Simple mechanisms for welfare maximization in rich advertising auctions. Advances in Neural Information Processing Systems , 35:28280-28292, 2022. Maciej Besta, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, Michal Podstawski, Hubert Niewiadomski, Piotr Nyczyk, et al. Graph of thoughts: Solving elaborate problems with large language models. arXiv preprint arXiv:2308.09687 , 2023. Ruggiero Cavallo, Prabhakar Krishnamurthy, Maxim Sviridenko, and Christopher A. Wilkens. Sponsored search auctions with rich ads. In Proceedings of the 26th International Conference on World Wide Web , WWW '17, page 43-51, Republic and Canton of Geneva, CHE, 2017. International World Wide Web Conferences Steering Committee. ISBN 9781450349130. doi: 10.1145/3038912.3052703. URL https://doi.org/10.1145/3038912.3052703 . Paul Duetting, Vahab Mirrokni, Renato Paes Leme, Haifeng Xu, and Song Zuo. Mechanism design for large language models, 2023. Benjamin Edelman, Michael Ostrovsky, and Michael Schwarz. Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords. American Economic Review , 97(1):242-259, March 2007. Wenqi Fan, Zihuai Zhao, Jiatong Li, Yunqing Liu, Xiaowei Mei, Yiqi Wang, Jiliang Tang, and Qing Li. Recommender systems in the era of large language models (llms). arXiv preprint arXiv:2307.02046 , 2023. Soheil Feizi, MohammadTaghi Hajiaghayi, Keivan Rezaei, and Suho Shin. Online advertisements with llms: Opportunities and challenges, 2023. Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5). In Proceedings of the 16th ACM Conference on Recommender Systems , pages 299-315, 2022. 15 Google. Supercharging search with generative ai. https://blog.google/products/search/ generative-ai-search/ , 2023. Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa. Large language models are zero-shot reasoners. Advances in neural information processing systems , 35: 22199-22213, 2022. Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich K¨ uttler, Mike Lewis, Wen-tau Yih, Tim Rockt¨ aschel, Sebastian Riedel, and Douwe Kiela. Retrieval-augmented generation for knowledge-intensive nlp tasks. In Proceedings of the 34th International Conference on Neural Information Processing Systems , NIPS '20, 2020. ISBN 9781713829546. Chin-Yew Lin. ROUGE: A package for automatic evaluation of summaries. In Text Summarization Branches Out , pages 74-81, Barcelona, Spain, July 2004. Association for Computational Linguistics. URL https://aclanthology.org/W04-1013 . Yixin Liu, Alexander R Fabbri, Pengfei Liu, Yilun Zhao, Linyong Nan, Ruilin Han, Simeng Han, Shafiq Joty, Chien-Sheng Wu, Caiming Xiong, et al. Revisiting the gold standard: Grounding summarization evaluation with robust human evaluation. arXiv preprint arXiv:2212.07981 , 2022. Aman Madaan and Amir Yazdanbakhsh. Text and patterns: For effective chain of thought, it takes two to tango. arXiv preprint arXiv:2209.07686 , 2022. Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, et al. Self-refine: Iterative refinement with self-feedback. arXiv preprint arXiv:2303.17651 , 2023. Microsoft. Ai powered bing. https://blogs.microsoft.com/blog/2023/02/07/ reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/ , 2023. Roger B Myerson. Optimal auction design. Mathematics of operations research , 6(1):58-73, 1981. Maxwell Nye, Anders Johan Andreassen, Guy Gur-Ari, Henryk Michalewski, Jacob Austin, David Bieber, David Dohan, Aitor Lewkowycz, Maarten Bosma, David Luan, et al. Show your work: Scratchpads for intermediate computation with language models. arXiv preprint arXiv:2112.00114 , 2021. Michael Ostrovsky and Michael Schwarz. Reserve prices in internet advertising auctions: A field experiment. In Proceedings of the 12th ACM conference on Electronic commerce , pages 59-60, 2011. Hal R. Varian. Position auction. International Journal of Industrial Organization , 2006. William Vickrey. Counterspeculation, auctions, and competitive sealed tenders. The Journal of finance , 16(1):8-37, 1961. Lei Wang, Wanyu Xu, Yihuai Lan, Zhiqiang Hu, Yunshi Lan, Roy Ka-Wei Lee, and Ee-Peng Lim. Plan-and-solve prompting: Improving zero-shot chain-of-thought reasoning by large language models. arXiv preprint arXiv:2305.04091 , 2023. 16 Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Sharan Narang, Aakanksha Chowdhery, and Denny Zhou. Self-consistency improves chain of thought reasoning in language models. arXiv preprint arXiv:2203.11171 , 2022. Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed Chi, Quoc V Le, Denny Zhou, et al. Chain-of-thought prompting elicits reasoning in large language models. Advances in Neural Information Processing Systems , 35:24824-24837, 2022. Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L Griffiths, Yuan Cao, and Karthik Narasimhan. Tree of thoughts: Deliberate problem solving with large language models. arXiv preprint arXiv:2305.10601 , 2023. Tianyi Zhang, Faisal Ladhak, Esin Durmus, Percy Liang, Kathleen McKeown, and Tatsunori B Hashimoto. Benchmarking large language models for news summarization. Transactions of the Association for Computational Linguistics , 12:39-57, 2024. Denny Zhou, Nathanael Sch¨ arli, Le Hou, Jason Wei, Nathan Scales, Xuezhi Wang, Dale Schuurmans, Claire Cui, Olivier Bousquet, Quoc Le, et al. Least-to-most prompting enables complex reasoning in large language models. arXiv preprint arXiv:2205.10625 , 2022. 17",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Simple mechanisms for welfare maximization in rich advertising auctions"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Graph of thoughts: Solving elaborate problems with large language models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Sponsored search auctions with rich ads"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Mechanism design for large language models"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Recommender systems in the era of large language models (llms)"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Online advertisements with llms: Opportunities and challenges"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Supercharging search with generative ai"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Large language models are zero-shot reasoners"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Retrieval-augmented generation for knowledge-intensive nlp tasks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "ROUGE: A package for automatic evaluation of summaries"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Revisiting the gold standard: Grounding summarization evaluation with robust human evaluation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Text and patterns: For effective chain of thought, it takes two to tango"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Self-refine: Iterative refinement with self-feedback"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Ai powered bing"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Optimal auction design"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Show your work: Scratchpads for intermediate computation with language models"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Reserve prices in internet advertising auctions: A field experiment"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Position auction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Counterspeculation, auctions, and competitive sealed tenders"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Plan-and-solve prompting: Improving zero-shot chain-of-thought reasoning by large language models"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Self-consistency improves chain of thought reasoning in language models"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Chain-of-thought prompting elicits reasoning in large language models"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Tree of thoughts: Deliberate problem solving with large language models"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Benchmarking large language models for news summarization"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Least-to-most prompting enables complex reasoning in large language models"
+    }
   ]
 }

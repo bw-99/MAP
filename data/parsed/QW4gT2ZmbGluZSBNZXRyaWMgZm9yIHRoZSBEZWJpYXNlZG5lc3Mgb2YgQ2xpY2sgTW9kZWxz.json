@@ -38,7 +38,89 @@
   "A PROOF OF THEOREM 4.4": "Proof. First, a model such that ˜ 𝑟 D = 0 is debiased since 0 ⫫ 𝑅 𝑙 | ( 𝑅, D) , and therefore satisfies Eq. 8. Next, assume ˜ 𝑟 D ≠ 0 in the remainder. For a model following the examination-hypothesis, we can write, for any rank 𝑘 , ranking 𝑦 and training dataset D :  Consider two documents 𝑑 1 and 𝑑 2 with ˜ 𝑟 D ( 𝑑 2 ) ≠ 0. Consider also two rankings 𝑦 1 , 𝑦 2 that differ only by their first document: 𝑦 1 [ 1 ] = 𝑑 1 , 𝑦 2 [ 1 ] = 𝑑 2 , and 𝑦 1 [ 𝑘 ] = 𝑦 2 [ 𝑘 ] for 𝑘 > 1. Let these rankings share the same examination probability on their first position: ˜ 𝑜 D ( 𝑦 1 ) [ 1 ] = ˜ 𝑜 D ( 𝑦 2 ) [ 1 ] , then we can write down the two click probabilities:  Because of the equality of examination probabilities, we have:  When the left-hand side of Eq. 8 is true, this ratio does not depend on 𝜋 𝑙 and relevance scores are determined up to a documentindependent constant, so knowing 𝑅 𝑙 does not help predict the relevance of a newly picked document: 𝑃 ( ˜ 𝑅 D | D , 𝑅 ) = 𝑃 ( ˜ 𝑅 D | D , 𝑅, 𝑅 𝑙 ) . Thus, the model is strongly debiasing: ˜ 𝑅 D ⫫ 𝑅 𝑙 | ( 𝑅, D) . □ Akeyobservation is that the estimated relevance of a document may depend on the training dataset and ultimately on the logging policy, yet revealing 𝑅 𝑙 | ( 𝑅, D) might not help to predict ˜ 𝑅 D | ( 𝑅, D) . Take, for example, the PBM model. Without explicit constraints, we can scale its inferred relevance scores up or down, and by adjusting the examination scores accordingly, the click probabilities stay constant. Then a perfectly fitted PBM may be invariant under policy shift, while the exact set of parameters it recovers depends on the training dataset. However, for a fixed dataset, knowing 𝑅 𝑙 does not help to predict ˜ 𝑅 D in this setting.",
   "keywords_parsed": [
     "Click models",
-    " Offline evaluation",
-    " Counterfactual learning-to-rank"
+    "Offline evaluation",
+    "Counterfactual learning-to-rank"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Addressing Trust Bias for Unbiased Learning-to-Rank"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Unbiased Learning to Rank: Online or Offline?"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A Neural Click Model for Web Search"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A Click Sequence Model for Web Search"
+    },
+    {
+      "ref_id": "b5",
+      "title": "A Stochastic Treatment of Learning to Rank Scoring Functions"
+    },
+    {
+      "ref_id": "b6",
+      "title": "From RankNet to LambdaRank to LambdaMART: An Overview"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Yahoo! Learning to Rank Challenge Overview"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Expected Reciprocal Rank for Graded Relevance"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A Dynamic Bayesian Network Click Model for Web Search Ranking"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A Context-Aware Click Model for Web Search"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Position-Normalized Click Prediction in Search Advertising"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Click Models for Web Search"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Click Model-Based Information Retrieval Metrics"
+    },
+    {
+      "ref_id": "b14",
+      "title": "An Experimental Comparison of Click Position-Bias Models"
+    },
+    {
+      "ref_id": "b15",
+      "title": "An Adversarial Imitation Click Model for Information Retrieval"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Conditional Independence in Statistical Theory"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Evaluating the Robustness of Click Models to Policy Distributional Shift"
+    },
+    {
+      "ref_id": "b18",
+      "title": "A Permutation-Based Kernel Conditional Independence Test"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A User Browsing Model to Predict Search Engine Click Data from Past Observations."
+    },
+    {
+      "ref_id": "b20",
+      "title": "Dimensionality Reduction for Supervised Learning with Reproducing Kernel Hilbert Spaces"
+    }
   ]
 }

@@ -10,7 +10,91 @@
   "3 EXPERIMENTS": "We conduct offline experiments on a real-world news recommendation dataset, MIND [17], containing over 65K items and 94K users. We evaluate the effectiveness of our proposed UIST against three modern deep CTR models: DCN [13], DeepFM [4], and FinalMLP [10]. We follow common practice [8] to evaluate the recommendation effectiveness with AUC [3] and nDCG [5]. We also measure the inference time (latency) of each baseline for a single sample. During training, we employ the Adam optimizer [7] with a learning rate of 1e-3 for all paradigms. We set the number of transformer layers to 6 for 1) the item encoder (Fig. 1b), 2) user encoder (Fig. 1f), and 3) encoder-decoder used in semantic tokenization. For fair comparison, z in Section 2.1 serves as the pretrained embeddings for the embedding-based paradigms. During semantic tokenization, we set the residual depth to 4 and the codebook size to 64. We will release the code and data for reproducible research 1 . Table 2 compares the various paradigms across three deep CTR models, averaged over five independent runs. We make three key 1 https://github.com/Jyonn/SemanticTokenizer WWW'24 Companion, May 13-17, 2024, Singapore, Singapore Qijiong Liu, Hengchang Hu, Jiahao Wu, Jieming Zhu, Min-Yen Kan, & Xiao-Ming Wu Table 2: Performance comparison among different paradigms. We use red and green background to represent inefficient and efficient memory usage or inference latency, respectively. Table 3: Various aggregation mechanisms for user-item tokens. 'Add' indicates the addition of item and user token embeddings to create a unified item and user representation. 'Layer' signifies that only tokens from the same layer are input into the base CTR models. HMI represents our hierarchical mixture inference module. observations. i. The content-based paradigm yields latencies exceeding 60ms, intolerable for industrial scenarios. ii. The single-layered ID-based and embedding-based approaches - i.e., (a)/(f) and (c)/(f) pairings - exhibit similar latency, as both include a user encoder to model user behavior; however, the performance of the embeddingbased approaches are superior due to the use of the content-based item representation. On the other hand, the single-layered semanticbased IST approach is slightly slower because the item tokenization leads to a longer user sequence. iii. Our proposed IST and UIST achieve substantial memory compression (approximately 200 times) compared to other paradigms, while maintaining up to 99% accuracy (for IST) and 98% accuracy (for UIST) when compared to the state-of-the-art embedding-based paradigm. These findings, observed from diverse base models, validate the effectiveness and efficiency of our semantic-based approach. Table 3 examines various aggregation mechanisms for dual tokens, revealing that the simple addition and layer-wise approaches are inferior to our proposed HMI module.",
   "4 CONCLUSION": "We introduce a user-item semantic tokenization method, providing a streamlined approach to integrating item content into deep CTR models. Through our experimentation, we demonstrate the significant potential of semantic tokenization, initially proposed for generative retrieval, in boosting recommendation efficiency, particularly in industrial scenarios. Upon reflection, this method also offers new perspectives for applications such as dataset compression. We encourage researchers to further explore its potential.",
   "REFERENCES": "[1] Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2014. Neural machine translation by jointly learning to align and translate. arXiv (2014). [2] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior sequence transformer for e-commerce recommendation in alibaba. In 1st DLP4Rec . 1-4. [3] Tom Fawcett. 2006. An introduction to ROC analysis. PRL (2006). [4] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv (2017). [5] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated gain-based evaluation of IR techniques. TOIS 20, 4 (2002). [6] Bowen Jin, Hansi Zeng, Guoyin Wang, Xiusi Chen, Tianxin Wei, Ruirui Li, Zhengyang Wang, Zheng Li, Yang Li, Hanqing Lu, et al. 2023. Language Models As Semantic Indexers. arXiv (2023). [7] Diederik P Kingma and Jimmy Ba. 2015. Adam: A Method for Stochastic Optimization. ICLR (2015). [8] Qijiong Liu, Jieming Zhu, Quanyu Dai, and Xiaoming Wu. 2022. Boosting Deep CTR Prediction with a Plug-and-Play Pre-trainer for News Recommendation. In COLING . International Committee on Computational Linguistics. [9] Qijiong Liu, Jieming Zhu, Quanyu Dai, and Xiao-Ming Wu. 2023. Only Encode Once: Making Content-based News Recommender Greener. [10] Kelong Mao, Jieming Zhu, Liangcai Su, Guohao Cai, Yuru Li, and Zhenhua Dong. 2023. FinalMLP: An Enhanced Two-Stream MLP Model for CTR Prediction. In AAAI . [11] Shashank Rajput, Nikhil Mehta, Anima Singh, Raghunandan H Keshavan, Trung Vu, Lukasz Heldt, Lichan Hong, Yi Tay, Vinh Q Tran, Jonah Samost, et al. 2023. Recommender Systems with Generative Retrieval. arXiv (2023). [12] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. NIPS 30 (2017). [13] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & Cross Network for Ad Click Predictions. In ADKDD (Halifax, NS, Canada) (ADKDD'17) . ACM, New York, NY, USA, Article 12, 7 pages. [14] Chuhan Wu, Fangzhao Wu, Suyu Ge, Tao Qi, Yongfeng Huang, and Xing Xie. 2019. Neural News Recommendation with Multi-head Self-attention. In EMNLPIJCNLP . [15] Chuhan Wu, Fangzhao Wu, Tao Qi, and Yongfeng Huang. 2022. UserBERT: Pre-training User Model with Contrastive Self-supervision. In SIGIR . 2087-2092. [16] Chuhan Wu, Fangzhao Wu, Yang Yu, Tao Qi, Yongfeng Huang, and Qi Liu. 2021. NewsBERT: Distilling pre-trained language model for intelligent news application. arXiv (2021). [17] Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu, et al. 2020. Mind: A large-scale dataset for news recommendation. In ACL . 3597-3606. [18] Zheng Yuan, Fajie Yuan, Yu Song, Youhua Li, Junchen Fu, Fei Yang, Yunzhu Pan, and Yongxin Ni. 2023. Where to go next for recommender systems? id-vs. modality-based recommender models revisited. arXiv (2023). [19] Neil Zeghidour, Alejandro Luebs, Ahmed Omran, Jan Skoglund, and Marco Tagliasacchi. 2021. Soundstream: An end-to-end neural audio codec. TASLP 30 (2021). [20] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In SIGKDD . 1059-1068. [21] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open Benchmarking for Click-Through Rate Prediction. In CIKM . 2759-2769.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Neural machine translation by jointly learning to align and translate"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b3",
+      "title": "An introduction to ROC analysis"
+    },
+    {
+      "ref_id": "b4",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Language Models As Semantic Indexers"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Boosting Deep CTR Prediction with a Plug-and-Play Pre-trainer for News Recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Only Encode Once: Making Content-based News Recommender Greener"
+    },
+    {
+      "ref_id": "b10",
+      "title": "FinalMLP: An Enhanced Two-Stream MLP Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Recommender Systems with Generative Retrieval"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Neural News Recommendation with Multi-head Self-attention"
+    },
+    {
+      "ref_id": "b15",
+      "title": "UserBERT: Pre-training User Model with Contrastive Self-supervision"
+    },
+    {
+      "ref_id": "b16",
+      "title": "NewsBERT: Distilling pre-trained language model for intelligent news application"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Mind: A large-scale dataset for news recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Where to go next for recommender systems? id-vs. modality-based recommender models revisited"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Soundstream: An end-to-end neural audio codec"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Open Benchmarking for Click-Through Rate Prediction"
+    }
   ]
 }

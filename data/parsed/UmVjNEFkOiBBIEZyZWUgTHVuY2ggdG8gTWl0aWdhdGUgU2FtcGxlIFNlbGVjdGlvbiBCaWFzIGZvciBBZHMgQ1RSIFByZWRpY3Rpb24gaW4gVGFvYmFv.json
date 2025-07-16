@@ -19,9 +19,147 @@
   "REFERENCES": "[1] Rohan Anil, Sandra Gadanho, Da Huang, Nijith Jacob, Zhuoshu Li, Dong Lin, Todd Phillips, Cristina Pop, Kevin Regan, Gil I Shamir, et al. 2022. On the Factory Floor: ML Engineering for Industrial-Scale Ads Recommendation Models. arXiv preprint arXiv:2209.05310 (2022). [2] Stephen Bonner and Flavian Vasile. 2018. Causal Embeddings for Recommendation. In Proceedings of the 12th ACM conference on recommender systems . Association for Computing Machinery, New York, NY, USA, 104-112. [3] Léon Bottou, Jonas Peters, Joaquin Quiñonero-Candela, Denis X Charles, D Max Chickering, Elon Portugaly, Dipankar Ray, Patrice Simard, and Ed Snelson. 2013. Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising. Journal of Machine Learning Research 14, 11 (2013). [4] Dagui Chen, Junqi Jin, Weinan Zhang, Fei Pan, Lvyin Niu, Chuan Yu, Jun Wang, Han Li, Jian Xu, and Kun Gai. 2019. Learning to Advertise for Organic Traffic Maximization in E-Commerce Product Feeds. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 2527-2535. [5] Brian Cheung, Jesse A Livezey, Arjun K Bansal, and Bruno A Olshausen. 2014. Discovering hidden factors of variation in deep networks. arXiv preprint arXiv:1412.6583 (2014). [6] Michael Cogswell, Faruk Ahmed, Ross Girshick, Larry Zitnick, and Dhruv Batra. 2015. Reducing overfitting in deep networks by decorrelating representations. arXiv preprint arXiv:1511.06068 (2015). [7] Marco Cuturi and Arnaud Doucet. 2014. Fast computation of Wasserstein barycenters. In International conference on machine learning . PMLR, 685-693. [8] Yaroslav Ganin and Victor Lempitsky. 2015. Unsupervised domain adaptation by backpropagation. In International conference on machine learning . PMLR, 11801189. [9] Robert Geirhos, Patricia Rubisch, Claudio Michaelis, Matthias Bethge, Felix A. Wichmann, and Wieland Brendel. 2019. ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness.. In International Conference on Learning Representations . https://openreview.net/ forum?id=Bygh9j09KX [10] Avi Goldfarb and Catherine Tucker. 2011. Online display advertising: Targeting and obtrusiveness. Marketing Science 30, 3 (2011), 389-404. [11] Arthur Gretton, Karsten M Borgwardt, Malte J Rasch, Bernhard Schölkopf, and Alexander Smola. 2012. A kernel two-sample test. The Journal of Machine Learning Research 13, 1 (2012), 723-773. [12] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [13] James J Heckman. 1979. Sample selection bias as a specification error. Econometrica: Journal of the econometric society (1979), 153-161. [14] Ziniu Hu, Zhe Zhao, Xinyang Yi, Tiansheng Yao, Lichan Hong, Yizhou Sun, and Ed H. Chi. 2022. Improving Multi-Task Generalization via Regularizing Spurious Correlation. In Advances in Neural Information Processing Systems , Alice H. Oh, Alekh Agarwal, Danielle Belgrave, and Kyunghyun Cho (Eds.). https://openreview.net/forum?id=HLzjd09oRx [15] Sergey Ioffe and Christian Szegedy. 2015. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In International conference on machine learning . pmlr, 448-456. [16] Thorsten Joachims, Adith Swaminathan, and Tobias Schnabel. 2017. Unbiased learning-to-rank with biased feedback. In Proceedings of the tenth ACM international conference on web search and data mining . 781-789. [17] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [18] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [19] Xiaoliang Ling, Weiwei Deng, Chen Gu, Hucheng Zhou, Cui Li, and Feng Sun. 2017. Model ensemble for click prediction in bing search ads. In Proceedings of the 26th international conference on world wide web companion . 689-698. [20] Dugang Liu, Pengxiang Cheng, Zhenhua Dong, Xiuqiang He, Weike Pan, and Zhong Ming. 2020. A General Knowledge Distillation Framework for Counterfactual Recommendation via Uniform Data. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . Association for Computing Machinery, 831-840. [21] Ning Ma, Mustafa Ispir, Yuan Li, Yongpeng Yang, Zhe Chen, Derek Zhiyuan Cheng, Lan Nie, and Kishor Barman. 2022. An Online Multi-task Learning Framework for Google Feed Ads Auction Models. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3477-3485. [22] Zohreh Ovaisi, Ragib Ahsan, Yifan Zhang, Kathryn Vasilaky, and Elena Zheleva. 2020. Correcting for selection bias in learning-to-rank systems. In Proceedings of The Web Conference 2020 . 1863-1873. [23] Judea Pearl. 2009. Causality . Cambridge university press. [24] Tobias Schnabel, Adith Swaminathan, Ashudeep Singh, Navin Chandak, and Thorsten Joachims. 2016. Recommendations as Treatments: Debiasing Learning and Evaluation. In Proceedings of The 33rd International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 48) . PMLR, 1670-1679. [25] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4104-4113. [26] Zihua Si, Xueran Han, Xiao Zhang, Jun Xu, Yue Yin, Yang Song, and Ji-Rong Wen. 2022. A model-agnostic causal learning framework for recommendation using search data. In Proceedings of the ACM Web Conference 2022 . 224-233. [27] Laurens Van der Maaten and Geoffrey Hinton. 2008. Visualizing data using t-SNE. Journal of machine learning research 9, 11 (2008). [28] Xuanhui Wang, Michael Bendersky, Donald Metzler, and Marc Najork. 2016. Learning to rank with selection bias in personal search. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval . 115-124. [29] Yixin Wang, Dawen Liang, Laurent Charlin, and David M Blei. 2020. Causal inference for recommender systems. In Fourteenth ACM Conference on Recommender Systems . 426-431. [30] Le Yan, Zhen Qin, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2022. Scale Calibration of Deep Ranking Models. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4300-4309. [31] Bowen Yuan, Jui-Yang Hsia, Meng-Yuan Yang, Hong Zhu, Chih-Yao Chang, Zhenhua Dong, and Chih-Jen Lin. 2019. Improving ad click prediction by considering non-displayed events. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 329-338. [32] Bianca Zadrozny. 2004. Learning and evaluating classifiers under sample selection bias. In Proceedings of the twenty-first international conference on Machine learning . 114. [33] Yang Zhang, Fuli Feng, Xiangnan He, Tianxin Wei, Chonggang Song, Guohui Ling, and Yongdong Zhang. 2021. Causal intervention for leveraging popularity bias in recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 11-20. [34] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068.",
   "keywords_parsed": [
     "CTR Prediction",
-    " Sample Selection Bias",
-    " Disentangled Representation",
-    " Online Advertising",
-    " System Deployment"
+    "Sample Selection Bias",
+    "Disentangled Representation",
+    "Online Advertising",
+    "System Deployment"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "On the Factory Floor: ML Engineering for Industrial-Scale Ads Recommendation Models"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Causal Embeddings for Recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Learning to Advertise for Organic Traffic Maximization in E-Commerce Product Feeds"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Discovering hidden factors of variation in deep networks"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Reducing overfitting in deep networks by decorrelating representations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Fast computation of Wasserstein barycenters"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Unsupervised domain adaptation by backpropagation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness."
+    },
+    {
+      "ref_id": "b10",
+      "title": "Online display advertising: Targeting and obtrusiveness"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A kernel two-sample test"
+    },
+    {
+      "ref_id": "b12",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Sample selection bias as a specification error"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Improving Multi-Task Generalization via Regularizing Spurious Correlation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Unbiased learning-to-rank with biased feedback"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b18",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Model ensemble for click prediction in bing search ads"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A General Knowledge Distillation Framework for Counterfactual Recommendation via Uniform Data"
+    },
+    {
+      "ref_id": "b21",
+      "title": "An Online Multi-task Learning Framework for Google Feed Ads Auction Models"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Correcting for selection bias in learning-to-rank systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Causality"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Recommendations as Treatments: Debiasing Learning and Evaluation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "A model-agnostic causal learning framework for recommendation using search data"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Learning to rank with selection bias in personal search"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Causal inference for recommender systems"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Scale Calibration of Deep Ranking Models"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Improving ad click prediction by considering non-displayed events"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Learning and evaluating classifiers under sample selection bias"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Causal intervention for leveraging popularity bias in recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

@@ -24,20 +24,167 @@
   "7.3 Subnet Sampling Details": "In Section 4, we sample 100 subnets within NASRec-Full search space on Criteo benchmark, with a more balanced and efficient setting on dimension search components: the dense output dimension can choose from {32, 64, 128, 256, 512}, and the sparse output dimension can choose from {16, 32, 64}. All subnets are trained on the Criteo benchmark with a batch size of 1024 and a learning rate of 0.12. We plot the CDF distribution of sampled subnets on all three benchmarks in Table 12. For the top 50% architectures evaluated on NASRec-Full supernet, we report a Kendall's 𝜏 of 0.24 for Criteo benchmark, showing a clear improvement on ranking top-performing architectures over the random search (0.0). In future work, we propose to establish a CTR benchmark for NAS to increase the statistical significance of evaluated ranking coefficients and better facilitate the research in accurately ranking different architectures. Figure 12: CDF of log loss on CTR benchmarks. 13 dense features 26 sparse features 0 dense features 23 sparse features 3 dense features 10 sparse features KDD Cup 2012 Avazu Criteo NASRec-Full NASRec-Small 1.0 1.0 0.8 0.4 0.442 0.444 0.446 0.448 0.383 0.384 0.385 0.386 0.156 0.157 Loss Loss Loss Log Log Log",
   "keywords_parsed": [
     "recommender systems",
-    " neural architecture search",
-    " weight sharing",
-    " regularized evolution",
-    " neural networks ∗ A majority of this work was done when the first author was an intern at Meta Platforms",
-    " Inc. † Corresponding author. Intern Manager. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. WWW'23",
-    " May 1-5",
-    " 2023",
-    " Austin",
-    " TX",
-    " USA © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-9416-1/23/04...$15.00 https://doi.org/10.1145/3543507.3583446 Feng Yan University of Houston Houston",
-    " USA fyan5@central.uh.edu Wei Wen † Meta AI Menlo Park",
-    " USA wewen@fb.com"
+    "neural architecture search",
+    "weight sharing",
+    "regularized evolution",
+    "neural networks"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Layer normalization"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Understanding and simplifying one-shot architecture search"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Can weight sharing outperform random architecture search? an investigation with tunas"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Once-for-all: Train one network and specialize it for efficient deployment"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Evaluating search engines by modeling the relationship between relevance and clicks"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepLight: Deep lightweight feature interactions for accelerating CTR predictions in ad serving"
+    },
+    {
+      "ref_id": "b10",
+      "title": "An image is worth 16x16 words: Transformers for image recognition at scale"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Progressive Feature Interaction Search for Deep Sparse Network"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Modularized transformer-based ranking framework"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Trustsvd: Collaborative filtering with both the explicit and implicit influence of user trust and of item ratings"
+    },
+    {
+      "ref_id": "b14",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Single path one-shot neural architecture search with uniform sampling"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Temporal effects on hashtag reuse in twitter: A cognitive-inspired hashtag recommendation approach"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Differentiable NAS Framework and Application to Ads CTR Prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Darts+: Improved differentiable architecture search with early stopping"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Darts: Differentiable architecture search"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Sgdr: Stochastic gradient descent with warm restarts"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Regularized evolution for image classifier architecture search"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Fast context-aware recommendations with factorization machines"
+    },
+    {
+      "ref_id": "b26",
+      "title": "fvcore"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Deep crossing: Web-scale modeling without manually crafted combinatorial features"
+    },
+    {
+      "ref_id": "b29",
+      "title": "The evolved transformer"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Towards automated neural interaction discovery for click-through rate prediction"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Hat: Hardware-aware transformers for efficient natural language processing"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b35",
+      "title": "DCN V2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b36",
+      "title": "MaskNet: introducing feature-wise multiplication to CTR ranking models by instance-guided mask"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Neural predictor for neural architecture search"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Bignas: Scaling up neural architecture search with big single-stage models"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Learning transferable architectures for scalable image recognition"
+    }
   ]
 }

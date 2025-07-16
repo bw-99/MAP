@@ -13,8 +13,46 @@
   "REFERENCES": "[1] Jesús Bobadilla, Fernando Ortega, Antonio Hernando, and Abraham Gutiérrez. 2013. Recommender systems survey. Knowledge-based systems 46 (2013), 109-132. [3] Rui Chen, Qingyi Hua, Yan-Shuo Chang, Bo Wang, Lei Zhang, and Xiangjie Kong. 2018. A survey of collaborative filtering-based recommender systems: From traditional methods to hybrid methods based on social networks. IEEE Access 6 (2018), 64301-64320. [2] Sabri Boutemedjet and Djemel Ziou. 2012. Predictive approach for user long-term needs in content-based image suggestion. IEEE transactions on neural networks and learning systems 23, 8 (2012), 1242-1253. [4] Yupeng Gu, Bo Zhao, David Hardtke, and Yizhou Sun. 2016. Learning global term weights for content-based recommender systems. In Proceedings of the 25th International Conference on World Wide Web . 391-400. CODS-COMAD 2024, January 4-7, 2024, Bangalore, India [5] Trevor Hastie, Rahul Mazumder, Jason D Lee, and Reza Zadeh. 2015. Matrix completion and low-rank SVD via fast alternating least squares. The Journal of Machine Learning Research 16, 1 (2015), 3367-3402. [7] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix factorization techniques for recommender systems. Computer 42, 8 (2009), 30-37. [6] Dietmar Jannach, Markus Zanker, Alexander Felfernig, and Gerhard Friedrich. 2010. Recommender systems: an introduction . Cambridge University Press. [8] Pasquale Lops, Marco De Gemmis, and Giovanni Semeraro. 2011. Content-based recommender systems: State of the art and trends. Recommender systems handbook (2011), 73-105. [9] Faiza Rehman, Hira Masood, Adnan Ul-Hasan, Raheel Nawaz, and Faisal Shafait. 2020. An intelligent context aware recommender system for real-estate. In Pattern Recognition and Artificial Intelligence: Third Mediterranean Conference, MedPRAI 2019, Istanbul, Turkey, December 22-23, 2019, Proceedings 3 . Springer, 177-191.",
   "keywords_parsed": [
     "recommendation engines",
-    " PDP widgets",
-    " matrix factorization",
-    " cold start"
+    "PDP widgets",
+    "matrix factorization",
+    "cold start"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Recommender systems survey"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A survey of collaborative filtering-based recommender systems: From traditional methods to hybrid methods based on social networks"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Predictive approach for user long-term needs in content-based image suggestion"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Learning global term weights for content-based recommender systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Matrix completion and low-rank SVD via fast alternating least squares"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Recommender systems: an introduction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Content-based recommender systems: State of the art and trends"
+    },
+    {
+      "ref_id": "b9",
+      "title": "An intelligent context aware recommender system for real-estate"
+    }
   ]
 }

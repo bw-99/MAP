@@ -34,8 +34,234 @@
   "C Case Study": "To provide qualitative insights into the performance of MKD, we present case study on typical examples. From Figure 3 we can observe that, due to the rich knowledge and CoT reasoning ability, ELLM-rele has shown good performance in cases that current student model ColBERT cannot handle well. And such knowledge can be generalized to MKD ColBERT through score distribution and CoT distillation, which enables the student model to make correct relevance discriminations. ️ ️ Case2 Query : Make curly hair straight Title : Hair straightener protein correction home softener, long-lasting without damaging hair Groud truth : Good ️ ️ Figure 3: Typical translated relevance learning cases.",
   "keywords_parsed": [
     "E-Commerce",
-    " Semantic Matching",
-    " Large Language Model",
-    " Knowledge Distillation"
+    "Semantic Matching",
+    "Large Language Model",
+    "Knowledge Distillation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gpt-4 technical report"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Why do people buy seemingly irrelevant items in voice product search? On the relation between product relevance and customer satisfaction in ecommerce"
+    },
+    {
+      "ref_id": "b4",
+      "title": "AugGPT: Leveraging ChatGPT for Text Data Augmentation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Promptagator: Fewshot Dense Retrieval From 8 Examples"
+    },
+    {
+      "ref_id": "b6",
+      "title": "The relationship between Precision-Recall and ROC curves"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b8",
+      "title": "The llama 3 herd of models"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Finding Structure in Time"
+    },
+    {
+      "ref_id": "b10",
+      "title": "MiniLLM: Knowledge Distillation of Large Language Models"
+    },
+    {
+      "ref_id": "b11",
+      "title": "AnnoLLM: Making Large Language Models to Be Better Crowdsourced Annotators"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Targeted Data Generation: Finding and Fixing Model Weaknesses"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Convolutional neural network architectures for matching natural language sentences"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Convolutional Neural Network Architectures for Matching Natural Language Sentences"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Poly-encoders: Architectures and Pre-training Strategies for Fast and Accurate Multi-sentence Scoring"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Poly-encoders: Transformer architectures and pre-training strategies for fast and accurate multi-sentence scoring"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Exploiting Asymmetry for Synthetic Training Data Generation: SynthIE and the Case of Information Extraction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Colbert: Efficient and effective passage search via contextualized late interaction over bert"
+    },
+    {
+      "ref_id": "b21",
+      "title": "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Conditional random fields: Probabilistic models for segmenting and labeling sequence data"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Gradient-based learning applied to document recognition"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Deep Bag-of-Words Model: An Efficient and Interpretable Relevance Architecture for Chinese E-Commerce"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deep Bag-of-Words Model: An Efficient and Interpretable Relevance Architecture for Chinese E-Commerce"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Search Augmented Instruction Learning"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Large Language Models for Relevance Judgment in Product Search"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Training language models to follow instructions with human feedback"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Semantic modelling with long-short-term memory for information retrieval"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Semantic Modelling with Long-Short-Term Memory for Information Retrieval"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Deep Sentence Embedding Using Long Short-Term Memory Networks: Analysis and Application to Information Retrieval"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Text Matching as Image Recognition"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Text matching as image recognition"
+    },
+    {
+      "ref_id": "b34",
+      "title": "A Decomposable Attention Model for Natural Language Inference"
+    },
+    {
+      "ref_id": "b35",
+      "title": "A decomposable attention model for natural language inference"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Instruction Tuning with GPT-4"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Using tf-idf to determine word relevance in document queries"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Sentence-BERT: Sentence Embeddings using Siamese BERTNetworks"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks"
+    },
+    {
+      "ref_id": "b40",
+      "title": "The probabilistic relevance framework: BM25 and beyond"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Distilling Reasoning Capabilities into Smaller Language Models"
+    },
+    {
+      "ref_id": "b42",
+      "title": "QUILL: Query Intent with Large Language Models using Retrieval Augmentation and Multi-stage Distillation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Baby Llama: knowledge distillation from an ensemble of teachers trained on a small dataset with no performance penalty"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Llama: Open and efficient foundation language models"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Attention Is All You Need"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Match-srnn: Modeling the recursive matching structure with spatial rnn"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN"
+    },
+    {
+      "ref_id": "b49",
+      "title": "OpenChat: Advancing Open-source Language Models with MixedQuality Data"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Self-Instruct: Aligning Language Model with Self Generated Instructions"
+    },
+    {
+      "ref_id": "b52",
+      "title": "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Chain-of-thought prompting elicits reasoning in large language models"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Qwen2 technical report"
+    },
+    {
+      "ref_id": "b55",
+      "title": "ReprBERT: distilling BERT to an efficient representation-based relevance model for e-commerce"
+    },
+    {
+      "ref_id": "b56",
+      "title": "LinkNER: Linking Local Named Entity Recognition Models to Large Language Models using Uncertainty"
+    }
   ]
 }

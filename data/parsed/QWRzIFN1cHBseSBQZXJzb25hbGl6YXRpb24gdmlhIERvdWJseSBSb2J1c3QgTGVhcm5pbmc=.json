@@ -28,7 +28,149 @@
   "References": "[1] Ahmed M Alaa, Michael Weisz, and Mihaela Van Der Schaar. 2017. Deep counterfactual networks with propensity-dropout. arXiv preprint arXiv:1706.05966 (2017). [2] Susan Athey and Guido Imbens. 2016. Recursive partitioning for heterogeneous causal effects. Proceedings of the National Academy of Sciences 113, 27 (2016), 7353-7360. [3] Carlos Carrion, Zenan Wang, Harikesh Nair, Xianghong Luo, Yulin Lei, Xiliang Lin, Wenlong Chen, Qiyu Hu, Changping Peng, Yongjun Bao, et al. 2021. Blending Advertising with Organic Content in E-Commerce: A Virtual Bids Optimization Approach. arXiv preprint arXiv:2105.13556 (2021). [4] Huigang Chen, Totte Harinen, Jeong-Yoon Lee, Mike Yung, and Zhenyu Zhao. 2020. Causalml: Python package for causal machine learning. arXiv preprint arXiv:2002.11631 (2020). [5] George B Dantzig. 1957. Discrete-variable extremum problems. Operations research 5, 2 (1957), 266-288. [6] Eustache Diemert, Artem Betlei, Christophe Renaudin, Massih-Reza Amini, Théophane Gregoir, and Thibaud Rahier. 2021. A large scale benchmark for individual treatment effect prediction and uplift modeling. arXiv preprint arXiv:2111.10106 (2021). [7] Shuyang Du, James Lee, and Farzin Ghaffarizadeh. 2019. Improve User Retention with Causal Learning. In The 2019 ACM SIGKDD Workshop on Causal Discovery . PMLR, 34-49. [8] Max H Farrell, Tengyuan Liang, and Sanjog Misra. 2021. Deep neural networks for estimation and inference. Econometrica 89, 1 (2021), 181-213. [9] Dylan J Foster and Vasilis Syrgkanis. 2023. Orthogonal statistical learning. The Annals of Statistics 51, 3 (2023), 879-908. [10] Adam N Glynn and Kevin M Quinn. 2010. An introduction to the augmented inverse propensity weighted estimator. Political analysis 18, 1 (2010), 36-56. [11] Fredrik Johansson, Uri Shalit, and David Sontag. 2016. Learning representations for counterfactual inference. In International conference on machine learning . PMLR, 3020-3029. [12] Edward H Kennedy. 2023. Towards optimal doubly robust estimation of heterogeneous causal effects. Electronic Journal of Statistics 17, 2 (2023), 3008-3049. [13] Sören R Künzel, Jasjeet S Sekhon, Peter J Bickel, and Bin Yu. 2019. Metalearners for estimating heterogeneous treatment effects using machine learning. Proceedings of the national academy of sciences 116, 10 (2019), 4156-4165. [14] Guogang Liao, Xiaowen Shi, Ze Wang, Xiaoxu Wu, Chuheng Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. Deep Page-Level Interest Network in Reinforcement Learning for Ads Allocation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2292-2296. [15] Guogang Liao, Ze Wang, Xiaoxu Wu, Xiaowen Shi, Chuheng Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. Cross dqn: Cross deep q network for ads allocation in feed. In Proceedings of the ACM Web Conference 2022 . 401409. [16] Dugang Liu, Xing Tang, Han Gao, Fuyuan Lyu, and Xiuqiang He. 2023. Explicit Feature Interaction-aware Uplift Network for Online Marketing. arXiv preprint arXiv:2306.00315 (2023). [17] Christos Louizos, Uri Shalit, Joris M Mooij, David Sontag, Richard Zemel, and Max Welling. 2017. Causal effect inference with deep latent-variable models. Advances in neural information processing systems 30 (2017). [18] Nicholas J Radcliffe and Patrick D Surry. 2011. Real-world uplift modelling with significance-based uplift trees. White Paper TR-2011-1, Stochastic Solutions (2011), 1-33. [19] Paul R Rosenbaum and Donald B Rubin. 1983. The central role of the propensity score in observational studies for causal effects. Biometrika 70, 1 (1983), 41-55. [20] Donald B Rubin. 1974. Estimating causal effects of treatments in randomized and nonrandomized studies. Journal of educational Psychology 66, 5 (1974), 688. [21] Donald B Rubin. 2005. Causal inference using potential outcomes: Design, modeling, decisions. J. Amer. Statist. Assoc. 100, 469 (2005), 322-331. [22] Yuta Saito, Hayato Sakata, and Kazuhide Nakata. 2020. Cost-effective and stable policy optimization algorithm for uplift modeling with multiple treatments. In Proceedings of the 2020 SIAM International Conference on Data Mining . SIAM, 406-414. [23] Patrick Schwab, Lorenz Linhardt, and Walter Karlen. 2018. Perfect match: A simple method for learning representations for counterfactual inference with neural networks. arXiv preprint arXiv:1810.00656 (2018). [24] Uri Shalit, Fredrik D Johansson, and David Sontag. 2017. Estimating individual treatment effect: generalization bounds and algorithms. In International conference on machine learning . PMLR, 3076-3085. [25] Claudia Shi, David Blei, and Victor Veitch. 2019. Adapting neural networks for the estimation of treatment effects. Advances in neural information processing systems 32 (2019). [26] Xiaoqing Tan, Shu Yang, Wenyu Ye, Douglas E Faries, Ilya Lipkovich, and Zbigniew Kadziola. 2022. When doubly robust methods meet machine learning for estimating treatment effects from real-world data: A comparative study. arXiv preprint arXiv:2204.10969 (2022). [27] Mark J Van Der Laan and Daniel Rubin. 2006. Targeted maximum likelihood learning. The international journal of biostatistics 2, 1 (2006). [28] Ze Wang, Guogang Liao, Xiaowen Shi, Xiaoxu Wu, Chuheng Zhang, Bingqi Zhu, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. Hybrid Transfer in Deep Reinforcement Learning for Ads Allocation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 4560-4564. [29] Guojun Wu, Ge Song, Xiaoxiang Lv, Shikai Luo, Chengchun Shi, and Hongtu Zhu. 2023. DNet: Distributional Network for Distributional Individualized Treatment Effects. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 5215-5224. [30] Wanqi Xue, Qingpeng Cai, Ruohan Zhan, Dong Zheng, Peng Jiang, Kun Gai, and Bo An. 2022. ResAct: Reinforcing long-term engagement in sequential recommendation with residual actor. arXiv preprint arXiv:2206.02620 (2022). [31] Jinyun Yan, Zhiyuan Xu, Birjodh Tiwana, and Shaunak Chatterjee. 2020. Ads allocation in feed via constrained optimization. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 33863394. [32] Shu Yang and Yunshu Zhang. 2023. Multiply robust matching estimators of average and quantile treatment effects. Scandinavian Journal of Statistics 50, 1 (2023), 235-265. [33] Jinsung Yoon, James Jordon, and Mihaela Van Der Schaar. 2018. GANITE: Estimation of individualized treatment effects using generative adversarial nets. In International conference on learning representations . [34] Xiangyu Zhao, Changsheng Gu, Haoshenglun Zhang, Xiwang Yang, Xiaobing Liu, Jiliang Tang, and Hui Liu. 2021. Dear: Deep reinforcement learning for online advertising impression in recommender systems. In Proceedings of the AAAI conference on artificial intelligence , Vol. 35. 750-758. [35] Yan Zhao, Xiao Fang, and David Simchi-Levi. 2017. Uplift modeling with multiple treatments and general response types. In Proceedings of the 2017 SIAM International Conference on Data Mining . SIAM, 588-596.",
   "keywords_parsed": [
     "Advertisement",
-    " Causal Learning",
-    " Doubly Robust Learning"
+    "Causal Learning",
+    "Doubly Robust Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Deep counterfactual networks with propensity-dropout"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Recursive partitioning for heterogeneous causal effects"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Blending Advertising with Organic Content in E-Commerce: A Virtual Bids Optimization Approach"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Causalml: Python package for causal machine learning"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Discrete-variable extremum problems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "A large scale benchmark for individual treatment effect prediction and uplift modeling"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Improve User Retention with Causal Learning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep neural networks for estimation and inference"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Orthogonal statistical learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "An introduction to the augmented inverse propensity weighted estimator"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Learning representations for counterfactual inference"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Towards optimal doubly robust estimation of heterogeneous causal effects"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Metalearners for estimating heterogeneous treatment effects using machine learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Deep Page-Level Interest Network in Reinforcement Learning for Ads Allocation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Cross dqn: Cross deep q network for ads allocation in feed"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Explicit Feature Interaction-aware Uplift Network for Online Marketing"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Causal effect inference with deep latent-variable models"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Real-world uplift modelling with significance-based uplift trees"
+    },
+    {
+      "ref_id": "b19",
+      "title": "The central role of the propensity score in observational studies for causal effects"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Estimating causal effects of treatments in randomized and nonrandomized studies"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Causal inference using potential outcomes: Design, modeling, decisions"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Cost-effective and stable policy optimization algorithm for uplift modeling with multiple treatments"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Perfect match: A simple method for learning representations for counterfactual inference with neural networks"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Estimating individual treatment effect: generalization bounds and algorithms"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Adapting neural networks for the estimation of treatment effects"
+    },
+    {
+      "ref_id": "b26",
+      "title": "When doubly robust methods meet machine learning for estimating treatment effects from real-world data: A comparative study"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Targeted maximum likelihood learning"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Hybrid Transfer in Deep Reinforcement Learning for Ads Allocation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "DNet: Distributional Network for Distributional Individualized Treatment Effects"
+    },
+    {
+      "ref_id": "b30",
+      "title": "ResAct: Reinforcing long-term engagement in sequential recommendation with residual actor"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Ads allocation in feed via constrained optimization"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Multiply robust matching estimators of average and quantile treatment effects"
+    },
+    {
+      "ref_id": "b33",
+      "title": "GANITE: Estimation of individualized treatment effects using generative adversarial nets"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Dear: Deep reinforcement learning for online advertising impression in recommender systems"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Uplift modeling with multiple treatments and general response types"
+    }
   ]
 }

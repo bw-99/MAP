@@ -25,37 +25,126 @@
   "REFERENCES": "[1] Yukuo Cen, Jianwei Zhang, Xu Zou, Chang Zhou, Hongxia Yang, and Jie Tang. 2020. Controllable multi-interest framework for recommendation. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2942-2951. [2] Rihan Chen, Bin Liu, Han Zhu, Yaoxuan Wang, Qi Li, Buting Ma, Qingbo Hua, Jun Jiang, Yunlong Xu, Hongbo Deng, et al. 2022. Approximate nearest neighbor search under neural similarity metric for large-scale recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3013-3022. [3] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [4] Chao Du, Zhifeng Gao, Shuo Yuan, Lining Gao, Ziyan Li, Yifan Zeng, Xiaoqiang Zhu, Jian Xu, Kun Gai, and Kuang-Chih Lee. 2021. Exploration in online advertising systems with deep uncertainty-aware learning. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 2792-2801. [5] Zeshan Fayyaz, Mahsa Ebrahimian, Dina Nawara, Ahmed Ibrahim, and Rasha Kashef. 2020. Recommendation systems: Algorithms, challenges, metrics, and business opportunities. applied sciences 10, 21 (2020), 7748. [6] Zhe Fu and Xi Niu. 2023. Modeling Users' Curiosity in Recommender Systems. ACM Transactions on Knowledge Discovery from Data 18, 1 (2023), 1-23. [7] Juan Gong, Zhenlin Chen, Chaoyi Ma, Zhuojian Xiao, Haonan Wang, Guoyu Tang, Lin Liu, Sulong Xu, Bo Long, and Yunjiang Jiang. 2023. Attention Weighted Mixture of Experts with Contrastive Learning for Personalized Ranking in Ecommerce. arXiv preprint arXiv:2306.05011 (2023). [8] Aditya Grover and Jure Leskovec. 2016. node2vec: Scalable feature learning for networks. In Proceedings of the 22nd ACM SIGKDD international conference on Knowledge discovery and data mining . 855-864. [9] Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, and Linjun Yang. 2020. Embeddingbased retrieval in facebook search. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2553-2561. [10] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning deep structured semantic models for web search using clickthrough data. In Proceedings of the 22nd ACM international conference on Information & Knowledge Management . 2333-2338. [11] Shristi Shakya Khanal, PWC Prasad, Abeer Alsadoon, and Angelika Maag. 2020. A systematic review: machine learning based recommendation systems for elearning. Education and Information Technologies 25 (2020), 2635-2664. [12] Chao Li, Zhiyuan Liu, Mengmeng Wu, Yuchi Xu, Huan Zhao, Pipei Huang, Guoliang Kang, Qiwei Chen, Wei Li, and Dik Lun Lee. 2019. Multi-interest network with dynamic routing for recommendation at Tmall. In Proceedings of the 28th ACM international conference on information and knowledge management . 2615-2623. [13] Wanda Li, Wenhao Zheng, Xuanji Xiao, and Suhang Wang. 2023. STAN: StageAdaptive Network for Multi-Task Recommendation by Learning User LifecycleBased Representation. arXiv preprint arXiv:2306.12232 (2023). [14] Kachun Lo and Tsukasa Ishigaki. 2021. PPNW: personalized pairwise novelty loss weighting for novel recommendation. Knowledge and Information Systems 63 (2021), 1117-1148. [15] Yu A Malkov and Dmitry A Yashunin. 2018. Efficient and robust approximate nearest neighbor search using hierarchical navigable small world graphs. IEEE transactions on pattern analysis and machine intelligence 42, 4 (2018), 824-836. [16] Aditya Krishna Menon, Sadeep Jayasumana, Ankit Singh Rawat, Himanshu Jain, Andreas Veit, and Sanjiv Kumar. 2020. Long-tail learning via logit adjustment. arXiv preprint arXiv:2007.07314 (2020). [17] Arseto Satriyo Nugroho, Igi Ardiyanto, and Teguh Bharata Adji. [n. d.]. User Curiosity Factor in Determining Serendipity of Recommender System. IJITEE (International Journal of Information Technology and Electrical Engineering) 5, 3 ([n. d.]), 75-81. [18] Dvir Samuel and Gal Chechik. 2021. Distributional robustness loss for long-tail learning. In Proceedings of the IEEE/CVF International Conference on Computer Vision . 9495-9504. [19] Qiaoyu Tan, Jianwei Zhang, Jiangchao Yao, Ninghao Liu, Jingren Zhou, Hongxia Yang, and Xia Hu. 2021. Sparse-interest network for sequential recommendation. In Proceedings of the 14th ACM international conference on web search and data mining . 598-606. [20] Saúl Vargas and Pablo Castells. 2011. Rank and relevance in novelty and diversity metrics for recommender systems. In Proceedings of the fifth ACM conference on Recommender systems . 109-116. [21] Jizhe Wang, Pipei Huang, Huan Zhao, Zhibo Zhang, Binqiang Zhao, and Dik Lun Lee. 2018. Billion-scale commodity embedding for e-commerce recommendation in alibaba. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 839-848. [22] Xudong Wang, Long Lian, Zhongqi Miao, Ziwei Liu, and Stella X Yu. 2020. Longtailed recognition by routing diverse distribution-aware experts. arXiv preprint arXiv:2010.01809 (2020). [23] Jun Xu, Xiangnan He, and Hang Li. 2018. Deep learning for matching in search and recommendation. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1365-1368. [24] Xiaoyong Yang, Yadong Zhu, Yi Zhang, Xiaobo Wang, and Quan Yuan. 2020. Large scale product graph construction for recommendation in e-commerce. arXiv preprint arXiv:2010.05525 (2020). [25] Yifan Zhang, Bingyi Kang, Bryan Hooi, Shuicheng Yan, and Jiashi Feng. 2023. Deep long-tailed learning: A survey. IEEE Transactions on Pattern Analysis and Machine Intelligence (2023). [26] Pengfei Zhao and Dik Lun Lee. 2016. How much novelty is relevant? it depends on your curiosity. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval . 315-324. [27] Han Zhu, Daqing Chang, Ziru Xu, Pengye Zhang, Xiang Li, Jie He, Han Li, Jian Xu, and Kun Gai. 2019. Joint optimization of tree-based index and deep model for recommender systems. Advances in Neural Information Processing Systems 32 (2019). [28] Han Zhu, Xiang Li, Pengye Zhang, Guozheng Li, Jie He, Han Li, and Kun Gai. 2018. Learning tree-based deep model for recommender systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1079-1088. [29] Jingwei Zhuo, Ziru Xu, Wei Dai, Han Zhu, Han Li, Jian Xu, and Kun Gai. 2020. Learning optimal tree models under beam search. In International Conference on Machine Learning . PMLR, 11650-11659.",
   "keywords_parsed": [
     "Uncertainty",
-    " Model-based Retrieval",
-    " Matching",
-    " Recommendation System Recommendation systems adopt a multi-stage cascade architecture [5",
-    " 11]",
-    " primarily comprising matching",
-    " ranking and strategy. During the matching stage[23]",
-    " thousands of candidates are retrieved from an extensive corpus. In the subsequent ranking and strategy stages",
-    " these retrieved candidates are prioritized based on user preferences and business rules. One of the core objectives of recommendation systems is to deliver recommendations that are not only relevant to users but also exhibit novelty [6",
-    " 14",
-    " 17",
-    " 26]. Novelty typically refers to items or content recommended to users that they have not encountered in their historical behavior or exposure. It is important to note that the set of items considered novel varies for different users. Therefore",
-    " at the forefront of the system pipeline",
-    " in the matching stage",
-    " it is crucial to balance the relevance and the novelty. In industrial-scale recommendation systems",
-    " the matching service based on deep models",
-    " such as [2",
-    " 3",
-    " 10]",
-    " often needs to retrieve thousands of items from millions to billions of candidate items within tens of milliseconds for subsequent scoring in the downstream pipeline. To accelerate the matching process",
-    " recommendation systems often employ a data structure called an index",
-    " such as the HNSW[15] algorithm",
-    " to assist the matching model in storing and retrieving candidate items relevant to user interests. During the training process of deep matching models",
-    " due to the lack of sufficient training samples for long-tail items [7",
-    " 13",
-    " 25]",
-    " traditional point estimation training methods fail to adequately train the embeddings for these items. This leads to two problems: 1) Under traditional point estimation modeling",
-    " these models exhibit significant uncertainty in predicting long-tail items (e.g.",
-    " due to insufficient sample size[16",
-    " 18",
-    " 22]). 2) The index",
-    " constructed by Shuai Yang Shopee Discovery Ads Beijing",
-    " China lucas.yang@shopee.com"
+    "Model-based Retrieval",
+    "Matching",
+    "Recommendation System"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Controllable multi-interest framework for recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Approximate nearest neighbor search under neural similarity metric for large-scale recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Exploration in online advertising systems with deep uncertainty-aware learning"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Recommendation systems: Algorithms, challenges, metrics, and business opportunities"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Modeling Users' Curiosity in Recommender Systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Attention Weighted Mixture of Experts with Contrastive Learning for Personalized Ranking in Ecommerce"
+    },
+    {
+      "ref_id": "b8",
+      "title": "node2vec: Scalable feature learning for networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Embeddingbased retrieval in facebook search"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A systematic review: machine learning based recommendation systems for elearning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Multi-interest network with dynamic routing for recommendation at Tmall"
+    },
+    {
+      "ref_id": "b13",
+      "title": "STAN: Stage-Adaptive Network for Multi-Task Recommendation by Learning User Lifecycle-Based Representation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "PPNW: personalized pairwise novelty loss weighting for novel recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Efficient and robust approximate nearest neighbor search using hierarchical navigable small world graphs"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Long-tail learning via logit adjustment"
+    },
+    {
+      "ref_id": "b17",
+      "title": "User Curiosity Factor in Determining Serendipity of Recommender System"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Distributional robustness loss for long-tail learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Sparse-interest network for sequential recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Rank and relevance in novelty and diversity metrics for recommender systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Billion-scale commodity embedding for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Longtailed recognition by routing diverse distribution-aware experts"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Deep learning for matching in search and recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Large scale product graph construction for recommendation in e-commerce"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deep long-tailed learning: A survey"
+    },
+    {
+      "ref_id": "b26",
+      "title": "How much novelty is relevant? it depends on your curiosity"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Joint optimization of tree-based index and deep model for recommender systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Learning tree-based deep model for recommender systems"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Learning optimal tree models under beam search"
+    }
   ]
 }

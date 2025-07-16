@@ -19,7 +19,69 @@
   "REFERENCES": "[1] Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato. 2020. Multistakeholder recommendation: Survey and research directions. User Modeling and User-Adapted Interaction 30, 1 (March 2020), 127-158. https://doi.org/10.1007/ s11257-019-09256-1 RecSys '24, October 14-18, 2024, Bari, Italy Timo Wilm, Philipp Normann, and Felix Stepprath [2] David Ben-Shimon, Alexander Tsikinovsky, Michael Friedmann, Bracha Shapira, Lior Rokach, and Johannes Hoerle. 2015. RecSys Challenge 2015 and the YOOCHOOSE Dataset. In Proceedings of the 9th ACM Conference on Recommender Systems . ACM, Vienna Austria, 357-358. https://doi.org/10.1145/2792838.2798723 [3] Gabriel De Souza Pereira Moreira, Sara Rabhi, Jeong Min Lee, Ronay Ak, and Even Oldridge. 2021. Transformers4Rec: Bridging the Gap between NLP and Sequential / Session-Based Recommendation. In Fifteenth ACM Conference on Recommender Systems . ACM, Amsterdam Netherlands, 143-153. https://doi.org/ 10.1145/3460231.3474255 [4] Kalyanmoy Deb, Kaisa Miettinen, and Shamik Chaudhuri. 2010. Toward an Estimation of Nadir Objective Vector Using a Hybrid of Evolutionary and Local Search Approaches. IEEE Transactions on Evolutionary Computation 14, 6 (Dec. 2010), 821-841. https://doi.org/10.1109/TEVC.2010.2041667 [5] DIGINETICA. 2016. CIKM Cup 2016 Track 2: Personalized E-Commerce Search Challenge. https://competitions.codalab.org/competitions/11161 [6] Alexey Dosovitskiy and Josip Djolonga. 2020. You Only Train Once: LossConditional Training of Deep Networks. In International Conference on Learning Representations . https://api.semanticscholar.org/CorpusID:214278158 [7] Yingqiang Ge, Xiaoting Zhao, Lucia Yu, Saurabh Paul, Diane Hu, Chu-Cheng Hsieh, and Yongfeng Zhang. 2022. Toward Pareto Efficient Fairness-Utility Trade-off in Recommendation through Reinforcement Learning. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (WSDM'22) . Association for Computing Machinery, New York, NY, USA, 316-324. https://doi.org/10.1145/3488560.3498487 [8] Andreia P. Guerreiro, Carlos M. Fonseca, and Luís Paquete. 2022. The Hypervolume Indicator: Computational Problems and Algorithms. Comput. Surveys 54, 6 (July 2022), 1-42. https://doi.org/10.1145/3453474 [9] Balázs Hidasi and Alexandros Karatzoglou. 2018. Recurrent Neural Networks with Top-k Gains for Session-based Recommendations. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . 843-852. https://doi.org/10.1145/3269206.3271761 [10] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2016. Session-based Recommendations with Recurrent Neural Networks. In 4th International Conference on Learning Representations, ICLR 2016, San Juan, Puerto Rico, May 2-4, 2016, Conference Track Proceedings , Yoshua Bengio and Yann LeCun (Eds.). http://arxiv.org/abs/1511.06939 [11] Long P. Hoang, Dung D. Le, Tran Anh Tuan, and Tran Ngoc Thang. 2023. Improving Pareto Front Learning via Multi-Sample Hypernetworks. Proceedings of the AAAI Conference on Artificial Intelligence 37, 7 (June 2023), 7875-7883. https://doi.org/10.1609/aaai.v37i7.25953 [12] Jipeng Jin, Zhaoxiang Zhang, Zhiheng Li, Xiaofeng Gao, Xiongwen Yang, Lei Xiao, and Jie Jiang. 2023. Pareto-based Multi-Objective Recommender System with Forgetting Curve. https://doi.org/10.48550/ARXIV.2312.16868 Version Number: 2. [13] W.KangandJ. McAuley. 2018. Self-Attentive Sequential Recommendation. In 2018 IEEE International Conference on Data Mining (ICDM) . IEEE Computer Society, Los Alamitos, CA, USA, 197-206. https://doi.org/10.1109/ICDM.2018.00035 [14] Walid Krichene and Steffen Rendle. 2020. On Sampled Metrics for Item Recommendation. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, Virtual Event CA USA, 1748-1757. https://doi.org/10.1145/3394486.3403226 [15] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. 2017. Neural Attentive Session-based Recommendation. In Proceedings of the 2017 ACM on Conference on Information and Knowledge Management . ACM, Singapore",
   "keywords_parsed": [
     "session-based recommender systems",
-    " multi-objective",
-    " pareto front"
+    "multi-objective",
+    "pareto front"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Multistakeholder recommendation: Survey and research directions"
+    },
+    {
+      "ref_id": "b2",
+      "title": "RecSys Challenge 2015 and the YOOCHOOSE Dataset"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Transformers4Rec: Bridging the Gap between NLP and Sequential / Session-Based Recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Toward an Estimation of Nadir Objective Vector Using a Hybrid of Evolutionary and Local Search Approaches"
+    },
+    {
+      "ref_id": "b5",
+      "title": "CIKM Cup 2016 Track 2: Personalized E-Commerce Search Challenge"
+    },
+    {
+      "ref_id": "b6",
+      "title": "You Only Train Once: Loss-Conditional Training of Deep Networks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Toward Pareto Efficient Fairness-Utility Trade-off in Recommendation through Reinforcement Learning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "The Hypervolume Indicator: Computational Problems and Algorithms"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Recurrent Neural Networks with Top-k Gains for Session-based Recommendations"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Session-based Recommendations with Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Improving Pareto Front Learning via Multi-Sample Hypernetworks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Pareto-based Multi-Objective Recommender System with Forgetting Curve"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Self-Attentive Sequential Recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "On Sampled Metrics for Item Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Neural Attentive Session-based Recommendation"
+    }
   ]
 }

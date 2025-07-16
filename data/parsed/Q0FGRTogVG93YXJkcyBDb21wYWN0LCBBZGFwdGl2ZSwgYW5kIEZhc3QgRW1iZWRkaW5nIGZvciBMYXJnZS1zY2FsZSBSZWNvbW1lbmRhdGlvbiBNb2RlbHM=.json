@@ -32,6 +32,278 @@
   "ACKNOWLEDGMENTS": "This work is supported by National Key R&D Program of China (2022ZD0116315), National Natural Science Foundation of China (U22B2037, U23B2048, 62372009), PKU-Tencent joint research Lab.",
   "REFERENCES": "[1] Aden and Yi Wang. 2012. KDD Cup 2012, Track 2. https://kaggle.com/competitions/kddcup2012-track2. [2] Zeyuan Allen-Zhu. 2017. Natasha: Faster Non-Convex Stochastic Optimization via Strongly Non-Convex Parameter. In Proceedings of the 34th International Conference on Machine Learning (ICML) . [3] Moses Charikar, Kevin C. Chen, and Martin Farach-Colton. 2002. Finding Frequent Items in Data Streams. In Automata, Languages and Programming, 29th International Colloquium (ICALP) . [4] Tianyi Chen, Jun Gao, Hedui Chen, and Yaofeng Tu. 2023. LOGER: A Learned Optimizer towards Generating Efficient and Robust Query Execution Plans. Proceedings of the VLDB Endowment 16, 7 (2023), 1777-1789. [5] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems (DLRS@RecSys) . [6] Monica Chiosa, Thomas Preußer, and Gustavo Alonso. 2021. SKT: A One-Pass Multi-Sketch Data Analytics Accelerator. Proceedings of the VLDB Endowment 14, 11 (2021), 2369-2382. [7] Michael Chui, James Manyika, Mehdi Miremadi, Nicolaus Henke, Rita Chung, Pieter Nel, and Sankalp Malhotra. 2018. Notes from the AI frontier: Insights from hundreds of use cases. McKinsey Global Institute 2 (2018). https://www.mckinsey.com/west-coast/~/media/McKinsey/Featured%20Insights/Artificial%20Intelligence/Notes% 20from%20the%20AI%20frontier%20Applications%20and%20value%20of%20deep%20learning/Notes-from-the-AIfrontier-Insights-from-hundreds-of-use-cases-Discussion-paper.pdf [8] Graham Cormode and S. Muthukrishnan. 2005. An improved data stream summary: the count-min sketch and its applications. Journal of Algorithms 55, 1 (2005), 58-75. Proc. ACM Manag. Data, Vol. 2, No. N1 (SIGMOD), Article 51. Publication date: February 2024. CAFE: Towards Compact, Adaptive, and Fast Embedding for Large-scale Recommendation Models 51:25 [9] Fan Deng and Davood Rafiei. 2007. New estimation algorithms for streaming data: Count-min can do more. Webdocs. Cs. Ualberta. Ca (2007). [10] Wei Deng, Junwei Pan, Tian Zhou, Deguang Kong, Aaron Flores, and Guang Lin. 2021. DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining (WSDM) . [11] Xenofontas A. Dimitropoulos, Paul Hurley, and Andreas Kind. 2008. Probabilistic lossy counting: an efficient algorithm for finding heavy hitters. ACM SIGCOMM Computer Communication Review 38, 1 (2008), 5. [12] Yue Ding, Yuhe Guo, Wei Lu, Hai-Xiang Li, Meihui Zhang, Hui Li, An-Qun Pan, and Xiaoyong Du. 2023. ContextAware Semantic Type Identification for Relational Attributes. Journal of Computer Science and Technology 38, 4 (2023), 927-946. [13] Muhammad Ebraheem, Saravanan Thirumuruganathan, Shafiq R. Joty, Mourad Ouzzani, and Nan Tang. 2018. Distributed Representations of Tuples for Entity Resolution. Proceedings of the VLDB Endowment 11, 11 (2018), 1454-1467. [14] Cristian Estan and George Varghese. 2002. New directions in traffic measurement and accounting. ACM SIGCOMM Computer Communication Review 32, 4 (2002), 323-336. [15] Yao-Chung Fan and Arbee L. P. Chen. 2008. Efficient and robust sensor data aggregation using linear counting sketches. In 22nd IEEE International Symposium on Parallel and Distributed Processing (IPDPS) . [16] Fangcheng Fu, Yuzheng Hu, Yihan He, Jiawei Jiang, Yingxia Shao, Ce Zhang, and Bin Cui. 2020. Don't Waste Your Bits! Squeeze Activations and Gradients for Deep Neural Networks via TinyScript. In Proceedings of the 37th International Conference on Machine Learning (ICML) . [17] Antonio A. Ginart, Maxim Naumov, Dheevatsa Mudigere, Jiyan Yang, and James Zou. 2021. Mixed Dimension Embeddings with Application to Memory-Efficient Recommendation Systems. In IEEE International Symposium on Information Theory (ISIT) . [18] Siddharth Gopal. 2016. Adaptive Sampling for SGD by Exploiting Side Information. In Proceedings of the 33nd International Conference on Machine Learning (ICML) . [19] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (IJCAI) . [20] Udit Gupta, Samuel Hsia, Vikram Saraph, Xiaodong Wang, Brandon Reagen, Gu-Yeon Wei, Hsien-Hsin S. Lee, David Brooks, and Carole-Jean Wu. 2020. DeepRecSys: A System for Optimizing End-To-End At-Scale Neural Recommendation Inference. In Proceedings of the 47th Annual International Symposium on Computer Architecture (ISCA) . [21] Udit Gupta, Carole-Jean Wu, Xiaodong Wang, Maxim Naumov, Brandon Reagen, David Brooks, Bradford Cottel, Kim M. Hazelwood, Mark Hempstead, Bill Jia, Hsien-Hsin S. Lee, Andrey Malevich, Dheevatsa Mudigere, Mikhail Smelyanskiy, Liang Xiong, and Xuan Zhang. 2020. The Architectural Implications of Facebook's DNN-Based Personalized Recommendation. In IEEE International Symposium on High Performance Computer Architecture (HPCA) . [22] Teng-Yue Han, Pengfei Wang, and Shaozhang Niu. 2023. Multimodal Interactive Network for Sequential Recommendation. Journal of Computer Science and Technology 38, 4 (2023), 911-926. [23] Ruihong Huang, Shaoxu Song, Yunsu Lee, Jungho Park, Soo-Hyung Kim, and Sungmin Yi. 2020. Effective and Efficient Retrieval of Structured Entities. Proceedings of the VLDB Endowment 13, 6 (2020), 826-839. [24] Yesdaulet Izenov, Asoke Datta, Florin Rusu, and Jun Hyung Shin. 2021. COMPASS: Online Sketch-based Query Optimization for In-Memory Databases. In Proceedings of the International Conference on Management of Data (SIGMOD) . [25] Biye Jiang, Chao Deng, Huimin Yi, Zelin Hu, Guorui Zhou, Yang Zheng, Sui Huang, Xinyang Guo, Dongyue Wang, Yue Song, Liqin Zhao, Zhi Wang, Peng Sun, Yu Zhang, Di Zhang, Jinhui Li, Jian Xu, Xiaoqiang Zhu, and Kun Gai. 2019. Xdl: an industrial deep learning framework for high-dimensional sparse data. In Proceedings of the 1st International Workshop on Deep Learning Practice for High-Dimensional Sparse Data . [26] Angelos Katharopoulos and François Fleuret. 2018. Not All Samples Are Created Equal: Deep Learning with Importance Sampling. In Proceedings of the 35th International Conference on Machine Learning (ICML) . [27] Hyeonji Kim, Byeong-Hoon So, Wook-Shin Han, and Hongrae Lee. 2020. Natural language to SQL: Where are we today? Proceedings of the VLDB Endowment 13, 10 (2020), 1737-1750. [28] Diederik P. Kingma and Jimmy Ba. 2015. Adam: A Method for Stochastic Optimization. In 3rd International Conference on Learning Representations (ICLR) . [29] Adrian Kochsiek and Rainer Gemulla. 2021. Parallel Training of Knowledge Graph Embedding Models: A Comparison of Techniques. Proceedings of the VLDB Endowment 15, 3 (2021), 633-645. [30] Shuming Kong, Weiyu Cheng, Yanyan Shen, and Linpeng Huang. 2023. AutoSrh: An Embedding Dimensionality Search Framework for Tabular Data Prediction. IEEE Transactions on Knowledge and Data Engineering 35, 7 (2023), 6673-6686. [31] Suyong Kwon, Woohwan Jung, and Kyuseok Shim. 2022. Cardinality Estimation of Approximate Substring Queries using Deep Learning. Proceedings of the VLDB Endowment 15, 11 (2022), 3145-3157. Proc. ACM Manag. Data, Vol. 2, No. N1 (SIGMOD), Article 51. Publication date: February 2024. 51:26 Hailin Zhang, et al. [50] Maxim Naumov, John Kim, Dheevatsa Mudigere, Srinivas Sridharan, Xiaodong Wang, Whitney Zhao, Serhat Yilmaz, Changkyu Kim, Hector Yuen, Mustafa Ozdal, Krishnakumar Nair, Isabel Gao, Bor-Yiing Su, Jiyan Yang, and Mikhail Smelyanskiy. 2020. Deep Learning Training in Facebook Data Centers: Design of Scale-up and Scale-out Systems. Proc. ACM Manag. Data, Vol. 2, No. N1 (SIGMOD), Article 51. Publication date: February 2024. CAFE: Towards Compact, Adaptive, and Fast Embedding for Large-scale Recommendation Models 51:27 CoRR abs/2003.09518 (2020). [51] Maxim Naumov, Dheevatsa Mudigere, Hao-Jun Michael Shi, Jianyu Huang, Narayanan Sundaraman, Jongsoo Park, Xiaodong Wang, Udit Gupta, Carole-Jean Wu, Alisson G. Azzolini, Dmytro Dzhulgakov, Andrey Mallevich, Ilia Cherniavskii, Yinghai Lu, Raghuraman Krishnamoorthi, Ansha Yu, Volodymyr Kondratenko, Stephanie Pereira, Xianjie Chen, Wenlin Chen, Vijay Rao, Bill Jia, Liang Xiong, and Misha Smelyanskiy. 2019. Deep Learning Recommendation Model for Personalization and Recommendation Systems. CoRR abs/1906.00091 (2019). [52] Niketan Pansare, Jay Katukuri, Aditya Arora, Frank Cipollone, Riyaaz Shaik, Noyan Tokgozoglu, and Chandru Venkataraman. 2022. Learning Compressed Embeddings for On-Device Inference. In Proceedings of Machine Learning and Systems (MLSys) . [53] Guillaume Pitel and Geoffroy Fouquier. 2015. Count-Min-Log sketch: Approximately counting with approximate counters. In International Symposium on Web AlGorithms . [54] NVIDIA AI platform. 2020. MLPerf Benchmark. https://mlperf.org. [55] Pratanu Roy, Arijit Khan, and Gustavo Alonso. 2016. Augmented Sketch: Faster and More Accurate Stream Processing. In Proceedings of the International Conference on Management of Data (SIGMOD) . [56] Pengyang Shao, Le Wu, Lei Chen, Kun Zhang, and Meng Wang. 2022. FairCF: fairness-aware collaborative filtering. Science China Information Sciences 65, 12 (2022). [57] Benwei Shi, Zhuoyue Zhao, Yanqing Peng, Feifei Li, and Jeff M. Phillips. 2021. At-the-time and Back-in-time Persistent Sketches. In Proceedings of the International Conference on Management of Data (SIGMOD) . [58] Hao-Jun Michael Shi, Dheevatsa Mudigere, Maxim Naumov, and Jiyan Yang. 2020. Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems. In Proceedings of the 26th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (KDD) . [59] Daniel Ting. 2018. Data Sketches for Disaggregated Subset Sum and Frequent Item Estimation. In Proceedings of the International Conference on Management of Data (SIGMOD) . [60] Corinna Underwood. 2019. Use cases of recommendation systems in business-current applications and methods. Emerj (2019). https://emerj.com/ai-sector-overviews/use-cases-recommendation-systems/ [61] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & Cross Network for Ad Click Predictions. In Proceedings of the ADKDD'17 . [62] Steve Wang and Will Cukierski. 2014. Avazu Click-Through Rate Prediction. https://kaggle.com/competitions/avazuctr-prediction. [63] Zehuan Wang, Yingcan Wei, Minseok Lee, Matthias Langer, Fan Yu, Jie Liu, Shijie Liu, Daniel G. Abel, Xu Guo, Jianbing Dong, Ji Shi, and Kunlun Li. 2022. Merlin HugeCTR: GPU-accelerated Recommender System Training and Inference. In Proceedings of the 16th ACM Conference on Recommender Systems (RecSys) . [64] Kilian Q. Weinberger, Anirban Dasgupta, John Langford, Alexander J. Smola, and Josh Attenberg. 2009. Feature hashing for large scale multitask learning. In Proceedings of the 26th International Conference on Machine Learning (ICML) . [65] Minhui Xie, Kai Ren, Youyou Lu, Guangxu Yang, Qingxing Xu, Bihai Wu, Jiazhen Lin, Hongbo Ao, Wanhong Xu, and Jiwu Shu. 2020. Kraken: memory-efficient continual learning for large-scale real-time recommendations. In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC) . [66] Xing Xie, Jianxun Lian, Zheng Liu, Xiting Wang, Fangzhao Wu, Hongwei Wang, and Zhongxia Chen. 2018. Personalized recommendation systems: Five hot research topics you must know. Microsoft Research Lab-Asia (2018). https: //www.microsoft.com/en-us/research/lab/microsoft-research-asia/articles/personalized-recommendation-systems/ [67] Zhiqiang Xu, Dong Li, Weijie Zhao, Xing Shen, Tianbo Huang, Xiaoyun Li, and Ping Li. 2021. Agile and Accurate CTR Prediction Model Training for Massive-Scale Online Advertising Systems. In Proceedings of the International Conference on Management of Data (SIGMOD) . [68] Bencheng Yan, Pengjie Wang, Jinquan Liu, Wei Lin, Kuang-Chih Lee, Jian Xu, and Bo Zheng. 2021. Binary Code based Hash Embedding for Web-scale Applications. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management (CIKM) . [69] Renchi Yang, Jieming Shi, Xiaokui Xiao, Yin Yang, Juncheng Liu, and Sourav S. Bhowmick. 2020. Scaling Attributed Network Embedding to Massive Graphs. Proceedings of the VLDB Endowment 14, 1 (2020), 37-49. [70] Tong Yang, Junzhi Gong, Haowei Zhang, Lei Zou, Lei Shi, and Xiaoming Li. 2018. HeavyGuardian: Separate and Guard Hot Items in Data Streams. In Proceedings of the 24th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (KDD) . [71] Tong Yang, Jie Jiang, Peng Liu, Qun Huang, Junzhi Gong, Yang Zhou, Rui Miao, Xiaoming Li, and Steve Uhlig. 2018. Elastic sketch: adaptive and fast network-wide measurements. In Proceedings of the 2018 ACM SIGCOMM Conference . [72] Chunxing Yin, Bilge Acun, Carole-Jean Wu, and Xing Liu. 2021. TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models. In Proceedings of Machine Learning and Systems (MLSys) . [73] Zhiyang Yuan, Wenguang Zheng, Peilin Yang, Qingbo Hao, and Yingyuan Xiao. 2023. Evolving Interest with Feature Co-action Network for CTR Prediction. Data Science and Engineering 8, 4 (2023), 344-356. Proc. ACM Manag. Data, Vol. 2, No. N1 (SIGMOD), Article 51. Publication date: February 2024. 51:28 Hailin Zhang, et al. [74] Caojin Zhang, Yicun Liu, Yuanpu Xie, Sofia Ira Ktena, Alykhan Tejani, Akshay Gupta, Pranay Kumar Myana, Deepak Dilipkumar, Suvadip Paul, Ikuhiro Ihara, Prasang Upadhyaya, Ferenc Huszar, and Wenzhe Shi. 2020. Model Size Reduction Using Frequency Based Double Hashing for Recommender Systems. In Proceedings of the 14th ACM Conference on Recommender Systems (RecSys) . [75] Hailin Zhang, Zirui Liu, and Boxuan Chen. 2023. Source codes related to CAFE. https://github.com/HugoZHL/CAFE. [76] Hailin Zhang, Penghao Zhao, Xupeng Miao, Yingxia Shao, Zirui Liu, Tong Yang, and Bin Cui. 2023. Experimental Analysis of Large-scale Learnable Vector Storage Compression. CoRR abs/2311.15578 (2023). [77] Jia-Dong Zhang and Chi-Yin Chow. 2015. GeoSoCa: Exploiting Geographical, Social and Categorical Correlations for Point-of-Interest Recommendations. In Proceedings of the 38th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . [78] Yinda Zhang, Zaoxing Liu, Ruixin Wang, Tong Yang, Jizhou Li, Ruijie Miao, Peng Liu, Ruwen Zhang, and Junchen Jiang. 2021. CocoSketch: high-performance sketch-based measurement over arbitrary partial key query. In Proceedings of the 2021 ACM SIGCOMM Conference . [79] Weijie Zhao, Deping Xie, Ronglai Jia, Yulei Qian, Ruiquan Ding, Mingming Sun, and Ping Li. 2020. Distributed Hierarchical GPU Parameter Server for Massive Scale Deep Learning Ads Systems. In Proceedings of Machine Learning and Systems (MLSys) . [80] Weijie Zhao, Jingyuan Zhang, Deping Xie, Yulei Qian, Ronglai Jia, and Ping Li. 2019. AIBox: CTR Prediction Model Training on a Single Node. In Proceedings of the 28th ACM International Conference on Information & Knowledge Management (CIKM) . [81] Xiangyu Zhao, Haochen Liu, Hui Liu, Jiliang Tang, Weiwei Guo, Jun Shi, Sida Wang, Huiji Gao, and Bo Long. 2021. AutoDim: Field-aware Embedding Dimension Searchin Recommender Systems. In Proceedings of the Web Conference (WWW) . [82] Yue Zhao, Gao Cong, Jiachen Shi, and Chunyan Miao. 2022. QueryFormer: A Tree Transformer Model for Query Plan Representation. Proceedings of the VLDB Endowment 15, 8 (2022), 1658-1670. [83] Guorui Zhou, Xiaoqiang Zhu, Chengru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for Click-Through Rate Prediction. In Proceedings of the 24th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (KDD) . [84] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open Benchmarking for Click-Through Rate Prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management (CIKM) . Received July 2023; revised October 2023; accepted November 2023 Proc. ACM Manag. Data, Vol. 2, No. N1 (SIGMOD), Article 51. Publication date: February 2024.",
   "keywords_parsed": [
-    "None"
+    "Embedding",
+    "Deep Learning Recommendation Model",
+    "Sketch"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "KDD Cup 2012, Track 2"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Natasha: Faster Non-Convex Stochastic Optimization via Strongly Non-Convex Parameter"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Finding Frequent Items in Data Streams"
+    },
+    {
+      "ref_id": "b4",
+      "title": "LOGER: A Learned Optimizer towards Generating Efficient and Robust Query Execution Plans"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "SKT: A One-Pass Multi-Sketch Data Analytics Accelerator"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Notes from the AI frontier: Insights from hundreds of use cases"
+    },
+    {
+      "ref_id": "b8",
+      "title": "An improved data stream summary: the count-min sketch and its applications"
+    },
+    {
+      "ref_id": "b9",
+      "title": "New estimation algorithms for streaming data: Count-min can do more"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Probabilistic lossy counting: an efficient algorithm for finding heavy hitters"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Context-Aware Semantic Type Identification for Relational Attributes"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Distributed Representations of Tuples for Entity Resolution"
+    },
+    {
+      "ref_id": "b14",
+      "title": "New directions in traffic measurement and accounting"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Efficient and robust sensor data aggregation using linear counting sketches"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Don't Waste Your Bits! Squeeze Activations and Gradients for Deep Neural Networks via TinyScript"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Mixed Dimension Embeddings with Application to Memory-Efficient Recommendation Systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Adaptive Sampling for SGD by Exploiting Side Information"
+    },
+    {
+      "ref_id": "b19",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "DeepRecSys: A System for Optimizing End-To-End At-Scale Neural Recommendation Inference"
+    },
+    {
+      "ref_id": "b21",
+      "title": "The Architectural Implications of Facebook's DNN-Based Personalized Recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Multimodal Interactive Network for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Effective and Efficient Retrieval of Structured Entities"
+    },
+    {
+      "ref_id": "b24",
+      "title": "COMPASS: Online Sketch-based Query Optimization for In-Memory Databases"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Xdl: an industrial deep learning framework for high-dimensional sparse data"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Not All Samples Are Created Equal: Deep Learning with Importance Sampling"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Natural language to SQL: Where are we today?"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Parallel Training of Knowledge Graph Embedding Models: A Comparison of Techniques"
+    },
+    {
+      "ref_id": "b30",
+      "title": "AutoSrh: An Embedding Dimensionality Search Framework for Tabular Data Prediction"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Cardinality Estimation of Approximate Substring Queries using Deep Learning"
+    },
+    {
+      "ref_id": "b32",
+      "title": "CAFE: Towards Compact, Adaptive, and Fast Embedding for Large-scale Recommendation Models"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Deep Learning Training in Facebook Data Centers: Design of Scale-up and Scale-out Systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep Learning Recommendation Model for Personalization and Recommendation Systems"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Learning Compressed Embeddings for On-Device Inference"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Count-Min-Log sketch: Approximately counting with approximate counters"
+    },
+    {
+      "ref_id": "b37",
+      "title": "MLPerf Benchmark"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Augmented Sketch: Faster and More Accurate Stream Processing"
+    },
+    {
+      "ref_id": "b39",
+      "title": "FairCF: fairness-aware collaborative filtering"
+    },
+    {
+      "ref_id": "b40",
+      "title": "At-the-time and Back-in-time Persistent Sketches"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Data Sketches for Disaggregated Subset Sum and Frequent Item Estimation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Use cases of recommendation systems in business-current applications and methods"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Avazu Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Merlin HugeCTR: GPU-accelerated Recommender System Training and Inference"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Feature hashing for large scale multitask learning"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Kraken: memory-efficient continual learning for large-scale real-time recommendations"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Personalized recommendation systems: Five hot research topics you must know"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Agile and Accurate CTR Prediction Model Training for Massive-Scale Online Advertising Systems"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Binary Code based Hash Embedding for Web-scale Applications"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Scaling Attributed Network Embedding to Massive Graphs"
+    },
+    {
+      "ref_id": "b53",
+      "title": "HeavyGuardian: Separate and Guard Hot Items in Data Streams"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Elastic sketch: adaptive and fast network-wide measurements"
+    },
+    {
+      "ref_id": "b55",
+      "title": "TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Evolving Interest with Feature Co-action Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Model Size Reduction Using Frequency Based Double Hashing for Recommender Systems"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Source codes related to CAFE"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Experimental Analysis of Large-scale Learnable Vector Storage Compression"
+    },
+    {
+      "ref_id": "b60",
+      "title": "GeoSoCa: Exploiting Geographical, Social and Categorical Correlations for Point-of-Interest Recommendations"
+    },
+    {
+      "ref_id": "b61",
+      "title": "CocoSketch: high-performance sketch-based measurement over arbitrary partial key query"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Distributed Hierarchical GPU Parameter Server for Massive Scale Deep Learning Ads Systems"
+    },
+    {
+      "ref_id": "b63",
+      "title": "AIBox: CTR Prediction Model Training on a Single Node"
+    },
+    {
+      "ref_id": "b64",
+      "title": "AutoDim: Field-aware Embedding Dimension Search in Recommender Systems"
+    },
+    {
+      "ref_id": "b65",
+      "title": "QueryFormer: A Tree Transformer Model for Query Plan Representation"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Open Benchmarking for Click-Through Rate Prediction"
+    }
   ]
 }

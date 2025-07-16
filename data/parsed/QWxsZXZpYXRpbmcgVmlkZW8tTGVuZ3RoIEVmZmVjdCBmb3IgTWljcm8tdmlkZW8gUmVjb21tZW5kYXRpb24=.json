@@ -26,6 +26,146 @@
   "ACKNOWLEDGMENTS": "This work is supported by the National Key Research and Development Program of China under grant 2020YFA0711403. This work is also supported by National Natural Science Foundation of China under 62272262, U22B2057, 62171260.",
   "REFERENCES": "[1] Himan Abdollahpouri, Masoud Mansoury, Robin Burke, and Bamshad Mobasher. 2020. The connection between popularity bias, calibration, and fairness in recommendation. In RecSys . 726-731. [2] Qingyao Ai, Keping Bi, Cheng Luo, Jiafeng Guo, and W Bruce Croft. 2018. Unbiased learning to rank with unbiased propensity estimation. In SIGIR . 385-394. [3] Stephen Bonner and Flavian Vasile. 2018. Causal embeddings for recommendation. In RecSys . 104-112. [4] Léon Bottou, Jonas Peters, Joaquin Quiñonero-Candela, Denis X Charles, D Max Chickering, Elon Portugaly, Dipankar Ray, Patrice Simard, and Ed Snelson. 2013. Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising. Journal of Machine Learning Research 14, 11 (2013). [5] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2020. Bias and debias in recommender system: A survey and future directions. arXiv preprint arXiv:2010.03240 (2020). [6] Jingyuan Chen, Hanwang Zhang, Xiangnan He, Liqiang Nie, Wei Liu, and Tat-Seng Chua. 2017. Attentive collaborative filtering: Multimedia recommendation with item-and component-level attention. In SIGIR . 335-344. [7] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In RecSys . 191-198. ACM Trans. Inf. Syst., Vol. 37, No. 4, Article 111. Publication date: August 2022. Alleviating Video-Length Effect for Micro-video Recommendation 111:23 [8] James Davidson, Benjamin Liebald, Junning Liu, Palash Nandy, Taylor Van Vleet, Ullas Gargi, Sujoy Gupta, Yu He, Mike Lambert, Blake Livingston, et al. 2010. The YouTube video recommendation system. In ResSys . 293-296. [9] Jingtao Ding, Yuhan Quan, Xiangnan He, Yong Li, and Depeng Jin. 2019. Reinforced Negative Sampling for Recommendation with Exposure Data.. In IJCAI . 2230-2236. [10] Jingtao Ding, Yuhan Quan, Quanming Yao, Yong Li, and Depeng Jin. 2020. Simplify and robustify negative sampling for implicit collaborative filtering. Advances in Neural Information Processing Systems 33 (2020), 1094-1105. [11] Jingtao Ding, Guanghui Yu, Yong Li, Xiangnan He, and Depeng Jin. 2020. Improving implicit recommender systems with auxiliary data. ACM Transactions on Information Systems (TOIS) 38, 1 (2020), 1-27. [12] Bent Fuglede and Flemming Topsoe. 2004. Jensen-Shannon divergence and Hilbert space embedding. In International Symposium on Information Theory (ISIT) . IEEE, 31. [13] Chongming Gao, Shijun Li, Yuan Zhang, Jiawei Chen, Biao Li, Wenqiang Lei, Peng Jiang, and Xiangnan He. 2022. KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos. In CIKM . 3953-3957. [14] Chen Gao, Yu Zheng, Nian Li, Yinfeng Li, Yingrong Qin, Jinghua Piao, Yuhan Quan, Jianxin Chang, Depeng Jin, Xiangnan He, et al. 2023. A survey of graph neural networks for recommender systems: challenges, methods, and directions. ACM Transactions on Recommender Systems 1, 1 (2023), 1-51. [15] Chen Gao, Yu Zheng, Wenjie Wang, Fuli Feng, Xiangnan He, and Yong Li. 2022. Causal Inference in Recommender Systems: A Survey and Future Directions. arXiv preprint arXiv:2208.12397 (2022). [16] Alois Gruson, Praveen Chandar, Christophe Charbuillet, James McInerney, Samantha Hansen, Damien Tardieu, and Ben Carterette. 2019. Offline evaluation to make decisions about playlistrecommendation algorithms. In WSDM . 420-428. [17] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [18] Xiangnan He and Tat-Seng Chua. 2017. Neural factorization machines for sparse predictive analytics. In SIGIR . 355-364. [19] Thorsten Joachims, Adith Swaminathan, and Tobias Schnabel. 2017. Unbiased learning-to-rank with biased feedback. In WSDM . 781-789. [20] Chenyi Lei, Yong Liu, Lingzi Zhang, Guoxin Wang, Haihong Tang, Houqiang Li, and Chunyan Miao. 2021. SEMI: A Sequential Multi-Modal Information Transfer Network for E-Commerce Micro-Video Recommendations. In KDD . 3161-3171. [21] Yunqi Li, Hanxiong Chen, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2021. User-oriented fairness in recommendation. In WWW . 624-632. [22] Yunqi Li, Hanxiong Chen, Shuyuan Xu, Yingqiang Ge, Juntao Tan, Shuchang Liu, and Yongfeng Zhang. 2022. Fairness in Recommendation: A Survey. arXiv preprint arXiv:2205.13619 (2022). [23] Yongqi Li, Meng Liu, Jianhua Yin, Chaoran Cui, Xin-Shun Xu, and Liqiang Nie. 2019. Routing micro-videos via a temporal graph-guided recommendation system. In MM . 1464-1472. [24] Wei Lu, Fu-Lai Chung, Wenhao Jiang, Martin Ester, and Wei Liu. 2018. A deep Bayesian tensor-based system for video recommendation. ACM Transactions on Information Systems (TOIS) 37, 1 (2018), 1-22. [25] Yujie Lu, Yingxuan Huang, Shengyu Zhang, Wei Han, Hui Chen, Zhou Zhao, and Fei Wu. 2021. Multi-trends Enhanced Dynamic Micro-video Recommendation. arXiv preprint arXiv:2110.03902 (2021). [26] Jianxin Ma, Chang Zhou, Peng Cui, Hongxia Yang, and Wenwu Zhu. 2019. Learning disentangled representations for recommendation. arXiv preprint arXiv:1910.14238 (2019). [27] Elisa Mena-Maldonado, Rocío Cañamares, Pablo Castells, Yongli Ren, and Mark Sanderson. 2021. Popularity Bias in False-positive Metrics for Recommender Systems Evaluation. ACM Transactions on Information Systems (TOIS) 39, 3 (2021), 1-43. [28] Aditya Pal, F Maxwell Harper, and Joseph A Konstan. 2012. Exploring question selection bias to identify experts and potential experts in community question answering. ACM Transactions on Information Systems (TOIS) 30, 2 (2012), 1-28. [29] Zhen Qin, Suming J Chen, Donald Metzler, Yongwoo Noh, Jingzheng Qin, and Xuanhui Wang. 2020. Attribute-based propensity for unbiased learning in recommender systems: Algorithm and case studies. In KDD . 2359-2367. [30] Yuhan Quan, Jingtao Ding, Chen Gao, Lingling Yi, Depeng Jin, and Yong Li. 2023. Robust Preference-Guided Denoising for Graph based Social Recommendation. In Proceedings of the ACM Web Conference 2023 . 1097-1108. [31] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2012. BPR: Bayesian personalized ranking from implicit feedback. arXiv preprint arXiv:1205.2618 (2012). [32] Tobias Schnabel, Adith Swaminathan, Ashudeep Singh, Navin Chandak, and Thorsten Joachims. 2016. Recommendations as treatments: Debiasing learning and evaluation. In ICML . PMLR, 1670-1679. [33] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via self-attentive neural networks. In CIKM . 1161-1170. [34] Harald Steck. 2010. Training and testing of recommender systems on data missing not at random. In KDD . 713-722. ACM Trans. Inf. Syst., Vol. 37, No. 4, Article 111. Publication date: August 2022. 111:24 Quan et al. ACM Trans. Inf. Syst., Vol. 37, No. 4, Article 111. Publication date: August 2022.",
   "keywords_parsed": [
-    "None"
+    "Debias",
+    "Micro-video Recommendation",
+    "Multi-task Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "The connection between popularity bias, calibration, and fairness in recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Unbiased learning to rank with unbiased propensity estimation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Causal embeddings for recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Bias and debias in recommender system: A survey and future directions"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Attentive collaborative filtering: Multimedia recommendation with item-and component-level attention"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "The YouTube video recommendation system"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Reinforced Negative Sampling for Recommendation with Exposure Data"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Simplify and robustify negative sampling for implicit collaborative filtering"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Improving implicit recommender systems with auxiliary data"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Jensen-Shannon divergence and Hilbert space embedding"
+    },
+    {
+      "ref_id": "b13",
+      "title": "KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A survey of graph neural networks for recommender systems: challenges, methods, and directions"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Causal Inference in Recommender Systems: A Survey and Future Directions"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Offline evaluation to make decisions about playlist recommendation algorithms"
+    },
+    {
+      "ref_id": "b17",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Unbiased learning-to-rank with biased feedback"
+    },
+    {
+      "ref_id": "b20",
+      "title": "SEMI: A Sequential Multi-Modal Information Transfer Network for E-Commerce Micro-Video Recommendations"
+    },
+    {
+      "ref_id": "b21",
+      "title": "User-oriented fairness in recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Fairness in Recommendation: A Survey"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Routing micro-videos via a temporal graph-guided recommendation system"
+    },
+    {
+      "ref_id": "b24",
+      "title": "A deep Bayesian tensor-based system for video recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Multi-trends Enhanced Dynamic Micro-video Recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Learning disentangled representations for recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Popularity Bias in False-positive Metrics for Recommender Systems Evaluation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Exploring question selection bias to identify experts and potential experts in community question answering"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Attribute-based propensity for unbiased learning in recommender systems: Algorithm and case studies"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Robust Preference-Guided Denoising for Graph based Social Recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Recommendations as treatments: Debiasing learning and evaluation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Training and testing of recommender systems on data missing not at random"
+    }
   ]
 }

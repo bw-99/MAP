@@ -36,6 +36,123 @@
   "Appendix E: Proofs for Section 6": "",
   "E.1. Proof of Theorem 6.2": "For convenience, define δ =2 -1 ∆ , so ∆ > 1 implies δ ∈ (1 , 2) , and further 1 >β> ∆ 2∆ -1 implies 1 δ <β< 1 . Fix a bidder i ∈ [ K ] and any feasible competing bid profile b ∈U . Denote the corresponding outcome as x = X ( b ) , where x =( x 1 ... x M ) where x j ∈ { 0 , 1 } N × L j is the outcome vector in auction A j . Note that by definition of U which is the set of undominated and feasible bids, under the outcome x all bidders' ROAS constraints are satisfied. Denote ℓ k,j , ℓ ∗ k,j to be the position of bidder k ∈ [ N ] in auction j ∈ [ M ] under outcome x and the efficient outcome, respectively. Recall in Eq.(8) the definition for the set of all 'coverings' for bidder i , denoted as C i ( x ) :  where L i ( x ) = { j ∈ [ M ] : W i,j ( x ) < OPT i,j } is the set of auctions in which bidder i 's acquired welfare is less than that of her welfare under the efficient outcome; see Definition 4.1. Denote p k,j as the payment of any bidder k , and ˆ b ℓ,j as the ℓ th largest bid in any auction j ∈ [ M ] . Similar to the proof of Theorem 4.1, fix any covering C ⊆ C i ( x ) , and any bidder k ∈C , such that in some auction 8 j ∈ B i ( k ; x ) , we have v k,j <v i,j but ℓ k,j ≤ ℓ ∗ i,j <ℓ i,j . Thus following a similar deduction as Eq. (12) in the proof of Theorem 4.1, bidder k 's payment is lower bounded as  Here , (a) follows from the fact that for a fix bid profile, the payment of GSP or GFP for each bidder in an auction dominates that of VCG (see Example B.1 and discussions thereof); (b) follows from ˆ b ℓ,j ≥ b i,j for ℓ ≤ ℓ i,j , and since b ∈ U ⊆ R N × M + is an undominated bid profile, Lemma 6.1 applies and b i,j ≥ βv i,j . Also p i,j ≥ r i,j ≥ βv i,j be the definition of β -approximate reserves; (c) follows from the fact that β > 1 δ and µ ( ℓ ∗ i,j ) ≤ µ ( ℓ k,j ) since ℓ k,j ≤ ℓ ∗ i,j for any k ∈C ⊆C i ( x ) and j ∈B i ( k ; x ) ; see definition in Eq. (8). On the other hand, we have  where the first inequality follows from bidder k 's ROAS constraint; the second inequality follows from the fact that any winning bidder's payment must be greater than her β -approximate reserves. Combining the above inequalities and rearranging we get  9 Summing Eq.(29) over all j ∈B i ( k ; x ) and combining with Eq. (30), we get   We now upper bound Y :  where in (a) we recall δ > 1 and ℓ k,j <ℓ i,j for any k ∈C and j ∈B i ( k ; x ) so that µ ( ℓ k,j ) >µ ( ℓ i,j ) ; (b) follows from the fact that values are δ -separated, so v i,j >v k,j for k ∈C and j ∈B i ( k ; x ) implies v k,j v ≤ 1 ∆ =2 -δ ; in i,j (c) we used the fact that β > 1 δ so 1 -β < 1 -1 δ , and the fact that v k,j <v i,j for any k ∈C and j ∈B i ( k ; x ) . 10 Combining Equations (31) and (32) we get   where (a) follows from µ ( ℓ ∗ i,j ) ≤ µ ( ℓ k,j ) due to the fact that ℓ k,j <ℓ i,j for any k ∈C and j ∈B i ( k ; x ) . Summing the above over all k ∈C , and following the same arguments as in Eq.(10) of the proof of Theorem 4.1, we have  Rearranging we get loss i ( x ) ≤ 1 -β β -1 δ OPT -i = 1 -β β -∆ 2∆ -1 OPT -i . Finally, applying Proposition 4.4 w.r.t. upper bound of loss i ( x ) and using the fact that the competing bid profile is arbitrary, we obtain the desired welfare guarantee lower bound. □",
   "keywords_parsed": [
-    "None"
+    "Individual welfare guarantee",
+    "mechanism design",
+    "machine-learned advice",
+    "welfare maximization"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Autobidding with constraints"
+    },
+    {
+      "ref_id": "b2",
+      "title": "No-regret learning in repeated first-price auctions with budget constraints"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Robust auction design in the auto-bidding world"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Budget management strategies in repeated auctions"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Budget-management strategies in repeated auctions"
+    },
+    {
+      "ref_id": "b6",
+      "title": "The best of many worlds: Dual mirror descent for online allocation problems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "The landscape of auto-bidding auctions: Value versus utility maximization"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Auction design for roi-constrained buyers"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Online page migration with ml advice"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Estimating the confidence interval for prediction errors of support vector machine classifiers"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Dynamic reserve prices for repeated auctions: Learning from bids"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Sponsored search auctions"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Estimating conversion rate in display advertising from past performance data"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Competitive caching with machine learned advice"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Ad click prediction: a view from the trenches"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Auction design in an auto-bidding setting: Randomization improves efficiency beyond vcg"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Revenue optimization with approximate bid predictions"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Introductory lectures on convex optimization: A basic course"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A field guide to personalized reserve prices"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Optimal auctions with financially constrained buyers"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Intrinsic robustness of the price of anarchy"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Machine learning approaches for estimation of prediction interval for the model output"
+    },
+    {
+      "ref_id": "b24",
+      "title": "A predictive model for advertiser value-per-click in sponsored search"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Position auctions"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Online algorithms for multi-shop ski rental with machine learned advice"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Click-through rate prediction in online advertising: A literature review"
+    },
+    {
+      "ref_id": "b28",
+      "title": "An empirical study of reserve price optimisation in real-time bidding"
+    }
   ]
 }

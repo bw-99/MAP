@@ -35,8 +35,186 @@
   "B.3 Original Results for Significant Analysis": "Table 9: The original results (micro-F1 and accuracy) of five repetitions on Product2PT for significant analysis.",
   "keywords_parsed": [
     "Large Language Model",
-    " Pre-Training and Fine-Tuning",
-    " Graph Neural Network",
-    " Heterogeneous Graph"
+    "Pre-Training and Fine-Tuning",
+    "Graph Neural Network",
+    "Heterogeneous Graph"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Relational graph attention networks"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Node Feature Extraction by SelfSupervised Multi-scale Neighborhood Prediction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Pre-Trained Models for Heterogeneous Information Networks"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Understanding the difficulty of training deep feedforward neural networks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Adaptive transfer learning on graph neural networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Strategies for Pre-training Graph Neural Networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Gpt-gnn: Generative pre-training of graph neural networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Heterogeneous graph transformer"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Self-supervised auxiliary learning with meta-paths for heterogeneous graphs"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Efficient and effective training of language and graph neural network models"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Pre-training on large-scale heterogeneous graph"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Contrastive pretraining of gnns on heterogeneous graphs"
+    },
+    {
+      "ref_id": "b16",
+      "title": "JointGT: Graph-Text Joint Representation Learning for Text Generation from Knowledge Graphs"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b18",
+      "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Adsgnn: Behavior-graph augmented relevance modeling in sponsored search"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Learning to pretrain graph neural networks"
+    },
+    {
+      "ref_id": "b22",
+      "title": "GNN-LM: Language Modeling based on Global Contexts via GNN"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Recent advances in natural language processing via large pre-trained language models: A survey"
+    },
+    {
+      "ref_id": "b24",
+      "title": "GPT-4 Technical Report"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Gcc: Graph contrastive coding for graph neural network pre-training"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Improving language understanding by generative pre-training"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Language models are unsupervised multitask learners"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Self-supervised graph transformer on large-scale molecular data"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Knowledge-aware language model pretraining"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Modeling relational data with graph convolutional networks"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Exploiting Structured Knowledge in Text via Graph-Guided Representation Learning"
+    },
+    {
+      "ref_id": "b33",
+      "title": "The probable error of a mean"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Does GNN Pretraining Help Molecular Representation?"
+    },
+    {
+      "ref_id": "b35",
+      "title": "KEPLER: A Unified Model for Knowledge Embedding and Pre-trained Language Representation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Heterogeneous graph attention network"
+    },
+    {
+      "ref_id": "b37",
+      "title": "How Powerful are Graph Neural Networks?"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Heterogeneous network representation learning: A unified framework with survey and benchmark"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Xlnet: Generalized autoregressive pretraining for language understanding"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Graph convolutional networks for text classification"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep Bidirectional LanguageKnowledge Graph Pretraining"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Jaket: Joint pre-training of knowledge graph and language understanding"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Textgnn: Improving text encoder via graph neural network in sponsored search"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Transfer learning of graph neural networks with ego-graph information maximization"
+    }
   ]
 }

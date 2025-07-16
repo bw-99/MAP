@@ -34,36 +34,179 @@
   "E MORE ANALYSIS ABOUT THE PRESUMPTIONS": "It is notable that the two presumptions are derived from large-scale data analysis and we find that they hold in almost every promotion in our system. Here, We provide more analysis to improve the credibility of our presumptions. In Table 6, we provide more statistics from the most recent 3.8 Sales (in 2023/03) as well as the 9.9 Sales from the last year. We can see that Presumption I holds for both of them, e.g. p(U1,C1|y=0) in 9.9 Sales and 3.8 Sales are both around 1.1%. Moreover, on a normal day without any sales events (No Sales), such a probability has a large deviation from 1.1%. As for Presumption II, we also conduct a similar large-scale analysis and do observe a common pattern as illustrated by Figure 4, in almost every sales promotion. The rhythm of sales promotions in our system is generally aligned, thereby, we propose Presumption II to simplify our problem. When it is not valid, we have the following alternatives. In practice, we observe that user behaviors are highly correlated to the time difference between the current time and the promotion start time. Therefore, we can calculate 𝐵 ℎ ( 𝑦 )/ 𝐵 ′ ℎ ( 𝑦 ) by aligning the time interval instead of aligning it to an absolute time point. Another alternative is to increase model update frequency. For example, we may calculate 𝐵 ℎ ( 𝑦 )/ 𝐵 ′ ℎ ( 𝑦 ) on an hourly basis, which allows us to capture changes more frequently and accurately. 5 We provide a demo in https://github.com/MingMTC/HDR.",
   "keywords_parsed": [
     "Conversion Rate Prediction",
-    " Recommender System",
-    " Label Shift",
-    " Online Advertising",
-    " Data-centric AI ∗ Shuguang Han and Baolin Liu are the corresponding authors. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. KDD '23",
-    " August 6-10",
-    " 2023",
-    " Long Beach",
-    " CA",
-    " USA ACM ISBN 979-8-4007-0103-0/23/08...$15.00 © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. https://doi.org/10.1145/3580305.3599788 Zhangming Chan",
-    " Yu Zhang",
-    " Shuguang Han",
-    " Yong Bai",
-    " Xiang-Rong Sheng",
-    " Siyuan Lou",
-    " Jiacen Hu",
-    " Baolin Liu",
-    " Yuning Jiang",
-    " Jian Xu",
-    " Bo Zheng. 2023. Capturing Conversion Rate Fluctuation during Sales Promotions: A Novel Historical Data Reuse Approach. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '23)",
-    " August 6-10",
-    " 2023",
-    " Long Beach",
-    " CA",
-    " USA. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 11 pages. https://doi.org/10.1145/3580305.3599788"
+    "Recommender System",
+    "Label Shift",
+    "Online Advertising",
+    "Data-centric AI"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Maximum likelihood with bias-corrected calibration is hard-to-beat at label shift adaptation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Adapting to Online Label Shift with Provable Guarantees"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Regularized learning for domain adaptation under label shifts"
+    },
+    {
+      "ref_id": "b4",
+      "title": "CAN: feature co-action network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Modeling delayed feedback in display advertising"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Discriminative learning under covariate shift"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Contrastive test-time adaptation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Improving test-time adaptation via shift-agnostic weight regularization and nearest source prototypes"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Asymptotically Unbiased Estimation for Delayed Feedback Modeling via Label Correction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Real Negatives Matter: Continuous Training with Real Negatives for Delayed Feedback Modeling"
+    },
+    {
+      "ref_id": "b12",
+      "title": "MBCT: Tree-Based Feature-Aware Binning for Individual Uncertainty Calibration"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Correcting sample selection bias by unlabeled data"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A Multi-Task Learning Approach for Delayed Feedback Modeling"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Xdl: an industrial deep learning framework for high-dimensional sparse data"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Addressing delayed feedback for continuous training with neural networks in CTR prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "TTT++: When does self-supervised test-time training fail or thrive?"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Detecting and correcting for label shift with black box predictors"
+    },
+    {
+      "ref_id": "b19",
+      "title": "What Do We Need for Industrial Machine Learning Systems?"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Efficient test-time model adaptation without forgetting"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Introduction to information retrieval"
+    },
+    {
+      "ref_id": "b22",
+      "title": "On causal and anticausal learning"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Improving predictive inference under covariate shift by weighting the log-likelihood function"
+    },
+    {
+      "ref_id": "b25",
+      "title": "One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Improving predictive inference under covariate shift by weighting the log-likelihood function"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Delayed feedback modeling for the entire space conversion rate prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Tent: Fully test-time adaptation by entropy minimization"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Hierarchically modeling micro and macro behaviors via multi-task learning for conversion rate prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Adversarial Gradient Driven Exploration for Deep Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Entire space multi-task modeling via post-click behavior decomposition for conversion rate prediction"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Online adaptation to label distribution shift"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Scale Calibration of Deep Ranking Models"
+    },
+    {
+      "ref_id": "b34",
+      "title": "UKD: Debiasing Conversion Rate Estimation via Uncertainty-regularized Knowledge Distillation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Generalized Delayed Feedback Model with Post-Click Information in Recommender Systems"
+    },
+    {
+      "ref_id": "b38",
+      "title": "KEEP: An Industrial Pre-Training Framework for Online Recommendation via Knowledge Extraction and Plugging"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Capturing delayed feedback in conversion rate prediction via elapsed-time sampling"
+    },
+    {
+      "ref_id": "b39",
+      "title": "PICASSO: Unleashing the Potential of GPU-centric Training for Wide-and-deep Recommender Systems"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Models"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Open benchmarking for click-through rate prediction"
+    }
   ]
 }

@@ -19,7 +19,149 @@
   "REFERENCES": "[1] Aijun Bai, Rolf Jagerman, Zhen Qin, Le Yan, Pratyush Kar, Bing-Rong Lin, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2023. Regression Compatible Listwise Objectives for Calibrated Ranking with Binary Relevance. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 4502-4508. [2] Sebastian Bruch, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2019. An analysis of the softmax cross entropy loss for learning-to-rank with binary relevance. In Proceedings of the 2019 ACM SIGIR international conference on theory of information retrieval . 75-78. [3] Christopher JC Burges. 2010. From ranknet to lambdarank to lambdamart: An overview. Learning 11, 23-581 (2010), 81. [4] Christopher J. C. Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole Hamilton, and Gregory N. Hullender. 2005. Learning to rank using gradient descent. In Proceedings of the 22nd international conference on Machine learning , Vol. 119. 89-96. [5] Zhe Cao, Tao Qin, Tie-Yan Liu, Ming-Feng Tsai, and Hang Li. 2007. Learning to rank: from pairwise approach to listwise approach. In Proceedings of the 24th international conference on Machine learning . 129-136. [6] Sougata Chaudhuri, Abraham Bagherjeiran, and James Liu. 2017. Ranking and calibrating click-attributed purchases in performance display advertising. In Proceedings of the ADKDD'17 . 1-6. [7] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems . ACM, 7-10. [8] Chao Deng, Hao Wang, Qing Tan, Jian Xu, and Kun Gai. 2021. Calibrating user response predictions in online advertising. In Machine Learning and Knowledge Discovery in Databases: Applied Data Science Track: European Conference, ECML PKDD 2020, Ghent, Belgium, September 14-18, 2020, Proceedings, Part IV . Springer, 208-223. [9] Tom Fawcett. 2006. An introduction to ROC analysis. Pattern Recognit. Lett. 27, 8 (2006), 861-874. [10] Fredric C Gey. 1994. Inferring probability of relevance using the method of logistic regression. In Proceedings of the 17th Annual International ACM-SIGIR Conference on Research and Development in Information Retrieval. 222-231. [11] Bin Gu, Victor S. Sheng, KengYeow Tay, Walter Romano, and Shuo Li. 2015. Incremental Support Vector Learning for Ordinal Regression. IEEE Transactions on Neural networks and learning systems 26, 7 (2015), 1403-1416. [12] Chuan Guo, Geoff Pleiss, Yu Sun, and Kilian Q. Weinberger. 2017. On Calibration of Modern Neural Networks. In Proceedings of the 34th International Conference on Machine Learning , Vol. 70. 1321-1330. [13] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. Deepfm: a factorization-machine based neural network for ctr prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . KDD '24, August 25-29, 2024, Barcelona, Spain Zhang and Liu, et al. Melbourne, Australia., 2782-2788. [14] Tong Guo, Xuanping Li, Haitao Yang, Xiao Liang, Yong Yuan, Jingyou Hou, Bingqing Ke, Chao Zhang, Junlin He, Shunyu Zhang, et al. 2023. Query-dominant User Interest Network for Large-Scale Search Ranking. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 629638. [15] Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, and Linjun Yang. 2020. Embeddingbased retrieval in facebook search. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2553-2561. [16] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated gain-based evaluation of IR techniques. ACM Transactions on Information Systems (TOIS) 20, 4 (2002), 422-446. [17] Guolin Ke, Qi Meng, Thomas Finley, Taifeng Wang, Wei Chen, Weidong Ma, Qiwei Ye, and Tie-Yan Liu. 2017. Lightgbm: A highly efficient gradient boosting decision tree. Advances in neural information processing systems 30 (2017). [18] Ananya Kumar, Percy S Liang, and Tengyu Ma. 2019. Verified uncertainty calibration. Advances in Neural Information Processing Systems 32 (2019). [19] Cheng Li, Yue Lu, Qiaozhu Mei, Dong Wang, and Sandeep Pandey. 2015. Clickthrough prediction for advertising in twitter timeline. In Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 1959-1968. [20] Tie-Yan Liu et al. 2009. Learning to rank for information retrieval. Foundations and Trends® in Information Retrieval 3, 3 (2009), 225-331. [21] Mahdi Pakdaman Naeini, Gregory Cooper, and Milos Hauskrecht. 2015. Obtaining well calibrated probabilities using bayesian binning. In Proceedings of the AAAI conference on artificial intelligence , Vol. 29. [22] Feiyang Pan, Xiang Ao, Pingzhong Tang, Min Lu, Dapeng Liu, Lei Xiao, and Qing He. 2020. Field-aware calibration: a simple and empirically strong method for reliable probabilistic predictions. In Proceedings of The Web Conference 2020 . 729-739. [23] Rama Kumar Pasumarthi, Sebastian Bruch, Xuanhui Wang, Cheng Li, Michael Bendersky, Marc Najork, Jan Pfeifer, Nadav Golbandi, Rohan Anil, and Stephan Wolf. 2019. Tf-ranking: Scalable tensorflow library for learning-to-rank. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2970-2978. [24] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. [25] John Platt et al. 1999. Probabilistic outputs for support vector machines and comparisons to regularized likelihood methods. Advances in large margin classifiers 10, 3 (1999), 61-74. [26] Tao Qin, Tie-Yan Liu, and Hang Li. 2010. A general approximation framework for direct optimization of information retrieval measures. Information retrieval 13 (2010), 375-397. [27] David Sculley. 2010. Combined regression and ranking. In Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining . 979-988. [28] Xiang-Rong Sheng, Jingyue Gao, Yueyao Cheng, Siran Yang, Shuguang Han, Hongbo Deng, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Joint optimization of ranking and calibration with contextualized hybrid model. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4813-4822. [29] Yukihiro Tagami, Shingo Ono, Koji Yamamoto, Koji Tsukamoto, and Akira Tajima. 2013. Ctr prediction for contextual advertising: Learning-to-rank approach. In Proceedings of the Seventh International Workshop on Data Mining for Online Advertising . 1-8. [30] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [31] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the web conference 2021 . 1785-1797. [32] Fen Xia, Tie-Yan Liu, Jue Wang, Wensheng Zhang, and Hang Li. 2008. Listwise approach to learning to rank: theory and algorithm. In Proceedings of the 25th international conference on Machine learning , Vol. 307. 1192-1199. [33] Le Yan, Zhen Qin, Xuanhui Wang, Mike Bendersky, and Marc Najork. 2022. Scale Calibration of Deep Ranking Models. In Proceedings of the 28th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 4300-4309. [34] Zhao-Yu Zhang, Xiang-Rong Sheng, Yujing Zhang, Biye Jiang, Shuguang Han, Hongbo Deng, and Bo Zheng. 2022. Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Models. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2671-2680. [35] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 1059-1068.",
   "keywords_parsed": [
     "Calibrated Ranking",
-    " Learning-to-rank",
-    " Search Ranking System"
+    "Learning-to-rank",
+    "Search Ranking System"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Regression Compatible Listwise Objectives for Calibrated Ranking with Binary Relevance"
+    },
+    {
+      "ref_id": "b2",
+      "title": "An analysis of the softmax cross entropy loss for learning-to-rank with binary relevance"
+    },
+    {
+      "ref_id": "b3",
+      "title": "From ranknet to lambdarank to lambdamart: An overview"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Learning to rank using gradient descent"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Ranking and calibrating click-attributed purchases in performance display advertising"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Calibrating user response predictions in online advertising"
+    },
+    {
+      "ref_id": "b9",
+      "title": "An introduction to ROC analysis"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Inferring probability of relevance using the method of logistic regression"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Incremental Support Vector Learning for Ordinal Regression"
+    },
+    {
+      "ref_id": "b12",
+      "title": "On Calibration of Modern Neural Networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deepfm: a factorization-machine based neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Query-dominant User Interest Network for Large-Scale Search Ranking"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Embedding-based retrieval in facebook search"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Lightgbm: A highly efficient gradient boosting decision tree"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Verified uncertainty calibration"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Clickthrough prediction for advertising in twitter timeline"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Learning to rank for information retrieval"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Obtaining well calibrated probabilities using bayesian binning"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Field-aware calibration: a simple and empirically strong method for reliable probabilistic predictions"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Tf-ranking: Scalable tensorflow library for learning-to-rank"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Probabilistic outputs for support vector machines and comparisons to regularized likelihood methods"
+    },
+    {
+      "ref_id": "b26",
+      "title": "A general approximation framework for direct optimization of information retrieval measures"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Combined regression and ranking"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Joint optimization of ranking and calibration with contextualized hybrid model"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Ctr prediction for contextual advertising: Learning-to-rank approach"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Listwise approach to learning to rank: theory and algorithm"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Scale Calibration of Deep Ranking Models"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Models"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

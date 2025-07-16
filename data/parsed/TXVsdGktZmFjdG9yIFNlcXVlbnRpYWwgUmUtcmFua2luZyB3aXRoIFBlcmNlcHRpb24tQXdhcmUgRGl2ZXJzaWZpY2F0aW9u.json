@@ -23,7 +23,205 @@
   "A DERIVATION OF ITEM SELECTION": "The composite kernel 𝑫 𝑢 𝑆 is a PSD matrix since it is an addition of multiple PSD elementary kernels. The Cholesky decomposition of 𝑫 𝑢 𝑆 can be written as 𝑫 𝑢 𝑆 = VV ⊤ , where V ∈ R 𝑘 × 𝑘 is an invertible lower triangular matrix. For any 𝑖 ∈ 𝐼 \\ 𝑆 , the Cholesky decomposition of 𝑫 𝑢 𝑆 ∪{ 𝑖 } can be represented as  where the row vector c 𝑖 and the scalar 𝑑 𝑖 ≥ 0 satisfies   According to (22), we have  Combine (6c) with (24), we obtain  We follow [9] to derive the update of log ( 𝑑 2 𝑖 ) as follows. The Cholesky decomposition of 𝑫 𝑢 𝑆 ∪{ 𝑗 } can be written as  Define c ′ 𝑖 and 𝑑 ′ 𝑖 as the new vector and scalar of 𝑖 ∈ 𝐼 \\ ( 𝑆 ∪ { 𝑗 }) after adding item 𝑗 into 𝑆 . According to (23a) and (26), we have  Combining (27) with Eq. (23a), we have  Then (23b) implies  11",
   "keywords_parsed": [
     "feed recommendation",
-    " diversified recommendation",
-    " re-ranking"
+    "diversified recommendation",
+    "re-ranking"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Managing diversity in airbnb search"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Optimal greedy diversity for recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Modularity and community detection in bipartite networks"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Diversification and refinement in collaborative filtering recommender"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Seq2slate: Re-ranking and slate optimization with rnns"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Max-sum diversification, monotone submodular functions and dynamic updates"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Fast greedy map inference for determinantal point process to improve recommendation diversity"
+    },
+    {
+      "ref_id": "b8",
+      "title": "The use of mmr, diversity-based reranking for reordering documents and producing summaries"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Efficient long sequential user data modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Wide&deeplearning for recommender systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Learning to recommend accurate and diverse items"
+    },
+    {
+      "ref_id": "b14",
+      "title": "GRN: Generative rerank network for context-wise recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Improving performances of topn recommendations with co-clustering method"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Enhancing recommendation diversity using determinantal point processes on knowledge graphs"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deepfm: A factorization-machine based neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Deep determinantal point processes"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Re-ranking with constraints on diversified exposures for homepage recommender system"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Personalized flight itinerary ranking at fliggy"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Squeeze-and-excitation networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Sliding spectrum decomposition for diversified recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Beyond greedy ranking: Slate optimization via list-cvae"
+    },
+    {
+      "ref_id": "b22",
+      "title": "IR evaluation methods for retrieving highly relevant documents"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Learning to diversify search results via subtopic attention"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Multi-interest network with dynamic routing for recommendation at tmall"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Determinantal point processes for machine learning"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Feature-aware diversified re-ranking with disentangled representations for relevant recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Neural re-ranking in multi-stage recommender systems: A review"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Variation control and evaluation for generative slate recommendations"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Diversified interactive recommendation with implicit feedback"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Ad click prediction: a view from the trenches"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "User behavior retrieval for click-through rate prediction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Intelligent request strategy design in recommender system"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Promoting diversity in recommendation by entropy regularizer"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Gaussian Processes for Machine Learning"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Lifelong sequential modeling with personalized memorization for user response prediction"
+    },
+    {
+      "ref_id": "b42",
+      "title": "A framework for recommending accurate and diverse items using bayesian graph convolutional neural networks"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A framework for recommending relevant and diverse items"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Sequential evaluation and generation framework for combinatorial recommender system"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Avoiding monotony: improving the diversity of recommendation lists"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Practical diversified recommendations on youtube with determinantal point processes"
+    },
+    {
+      "ref_id": "b46",
+      "title": "DGCN: Diversified recommendation with graph convolutional networks"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b47",
+      "title": "In Deep Interest Evolution Network for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Globally optimized mutual influence aware ranking in e-commerce search"
+    }
   ]
 }

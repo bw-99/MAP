@@ -19,7 +19,253 @@
   "REFERENCES": "[1] Qingyao Ai, Keping Bi, Jiafeng Guo, and W Bruce Croft. 2018. Learning a deep listwise context model for ranking refinement. In SIGIR . 135-144. [2] Qingyao Ai, Keping Bi, Cheng Luo, Jiafeng Guo, and W Bruce Croft. 2018. Unbiased learning to rank with unbiased propensity estimation. In SIGIR . 385-394. [3] Qingyao Ai, Xuanhui Wang, Sebastian Bruch, Nadav Golbandi, Michael Bendersky, and Marc Najork. 2019. Learning groupwise multivariate scoring functions using deep neural networks. In SIGIR . 85-92. [4] Qingyao Ai, Tao Yang, Huazheng Wang, and Jiaxin Mao. [n. d.]. Unbiased learning to rank: online or offline? TOIS ([n. d.]). [5] Aijun Bai, Rolf Jagerman, Zhen Qin, Le Yan, Pratyush Kar, Bing-Rong Lin, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2023. Regression Compatible Listwise Objectives for Calibrated Ranking with Binary Relevance. In CIKM . 4502-4508. [6] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, et al. 2022. CAN: feature co-action network for click-through rate prediction. In WSDM . 57-65. [7] Sebastian Bruch, Shuguang Han, Michael Bendersky, and Marc Najork. 2020. A stochastic treatment of learning to rank scoring functions. In WSDM . 61-69. [8] Chris Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole Hamilton, and Greg Hullender. 2005. Learning to rank using gradient descent. In ICML . 89-96. [9] Zhe Cao, Tao Qin, Tie-Yan Liu, Ming-Feng Tsai, and Hang Li. 2007. Learning to rank: from pairwise approach to listwise approach. In ICML . 129-136. [10] Zhangming Chan, Yu Zhang, Shuguang Han, Yong Bai, Xiang-Rong Sheng, Siyuan Lou, Jiacen Hu, Baolin Liu, Yuning Jiang, Jian Xu, et al. 2023. Capturing Conversion Rate Fluctuation during Sales Promotions: A Novel Historical Data Reuse Approach. In KDD . 1-11. [11] Sougata Chaudhuri, Abraham Bagherjeiran, and James Liu. 2017. Ranking and calibrating click-attributed purchases in performance display advertising. In KDD . 1-6. [12] Mouxiang Chen, Chenghao Liu, Jianling Sun, and Steven CH Hoi. 2021. Adapting interactional observation embedding for counterfactual learning to rank. In SIGIR . 285-294. [13] Wei Chen, Tie-Yan Liu, Yanyan Lan, Zhiming Ma, and Hang Li. 2009. Ranking measures and loss functions in learning to rank. In NeurIPS . 315-323. [14] David Cossock and Tong Zhang. 2008. Statistical analysis of Bayes optimal subset ranking. IEEE Transactions on Information Theory 54, 11 (2008), 5140-5154. [15] Zhifang Fan, Dan Ou, Yulong Gu, Bairan Fu, Xiang Li, Wentian Bao, Xin-Yu Dai, Xiaoyi Zeng, Tao Zhuang, and Qingwen Liu. 2022. Modeling users' contextualized page-wise feedback for click-through rate prediction in e-commerce search. In WSDM . 262-270. [16] Jingyue Gao, Shuguang Han, Han Zhu, Siran Yang, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Rec4Ad: A Free Lunch to Mitigate Sample Selection Bias for Ads CTR Prediction in Taobao. CIKM (2023). [17] Thore Graepel, Klaus Obermayer, et al. 2000. Large margin rank boundaries for ordinal regression. In Advances in large margin classifiers . 115-132. [18] Siyu Gu, Xiang-Rong Sheng, Ying Fan, Guorui Zhou, and Xiaoqiang Zhu. 2021. Real negatives matter: continuous training with real negatives for delayed feedback modeling. In KDD . 2890-2898. [19] Huifeng Guo, Jinkai Yu, Qing Liu, Ruiming Tang, and Yuzhou Zhang. 2019. PAL: a position-bias aware learning framework for CTR prediction in live recommender systems. In RecSys . 452-456. [20] Malay Haldar, Prashant Ramanathan, Tyler Sax, Mustafa Abdool, Lanbo Zhang, Aamir Mansawala, Shulin Yang, Bradley Turnbull, and Junshuo Liao. 2020. Improving deep learning for airbnb search. In KDD . 2822-2830. [21] Shuguang Han, Xuanhui Wang, Mike Bendersky, and Marc Najork. 2020. Learning-to-Rank with BERT in TF-Ranking. arXiv preprint arXiv:2004.08476 (2020). [22] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2015. Delving deep into rectifiers: surpassing human-level performance on imagenet classification. In ICCV . 1026-1034. [23] Geoffrey Hinton, Oriol Vinyals, Jeff Dean, et al. 2015. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531 (2015). [24] Katja Hofmann, Anne Schuth, Shimon Whiteson, and Maarten De Rijke. 2013. Reusing historical interaction data for faster online learning to rank for IR. In WSDM . 183-192. [25] Jianqiang Huang, Xingyuan Tang, Zhe Wang, Shaolin Jia, Yin Bai, Zhiwei Liu, Jia Cheng, Jun Lei, and Yan Zhang. 2022. Deep presentation bias integrated framework for CTR prediction. In CIKM . 4049-4053. [26] Wonkyung Lee, Junghyup Lee, Dohyung Kim, and Bumsub Ham. 2020. Learning with privileged information for efficient image super-resolution. In ECCV . 465482. [27] Ping Li, Christopher J. C. Burges, and Qiang Wu. 2007. McRank: learning to rank using multiple classification and gradient boosting. In NeurIPS . 897-904. [28] Xiang Li, Shuwei Chen, Jian Dong, Jin Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2023. Decision-making context interaction network for clickthrough rate prediction. AAAI (2023). [29] Xiaoliang Ling, Weiwei Deng, Chen Gu, Hucheng Zhou, Cui Li, and Feng Sun. 2017. Model ensemble for click prediction in bing search ads. In Web Conf . 689-698. [30] Congcong Liu, Yuejiang Li, Jian Zhu, Fei Teng, Xiwei Zhao, Changping Peng, Zhangang Lin, and Jingping Shao. 2022. Position awareness modeling with knowledge distillation for CTR prediction. In RecSys . 562-566. [31] David Lopez-Paz, Léon Bottou, Bernhard Schölkopf, and Vladimir Vapnik. 2016. Unifying distillation and privileged information. In ICLR . 1-12. [32] Claudio Lucchese, Franco Maria Nardini, Salvatore Orlando, Raffaele Perego, Fabrizio Silvestri, and Salvatore Trani. 2016. Post-learning optimization of tree ensembles for efficient ranking. In SIGIR . 949-952. [33] Zelun Luo, Jun-Ting Hsieh, Lu Jiang, Juan Carlos Niebles, and Li Fei-Fei. 2018. Graph distillation for action detection with privileged modalities. In ECCV . 166183. [34] Rama Kumar Pasumarthi, Honglei Zhuang, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2020. Permutation equivariant document interaction network for neural learning to rank. In ICTIR . 145-148. [35] Changhua Pei, Yi Zhang, Yongfeng Zhang, Fei Sun, Xiao Lin, Hanxiao Sun, Jian Wu, Peng Jiang, Junfeng Ge, Wenwu Ou, et al. 2019. Personalized re-ranking for recommendation. In RecSys . 3-11. [36] Tao Qin and Tie-Yan Liu. 2013. Introducing LETOR 4.0 datasets. arXiv preprint arXiv:1306.2597 (2013). [37] Tao Qin, Tie-Yan Liu, and Hang Li. 2010. A general approximation framework for direct optimization of information retrieval measures. Information Retrieval 13 (2010), 375-397. [38] Tao Qin, Xu-Dong Zhang, Ming-Feng Tsai, De-Sheng Wang, Tie-Yan Liu, and Hang Li. 2008. Query-level loss functions for information retrieval. Information Processing & Management 44, 2 (2008), 838-855. [39] Xiang-Rong Sheng, Jingyue Gao, Yueyao Cheng, Siran Yang, Shuguang Han, Hongbo Deng, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Joint optimization of ranking and calibration with contextualized hybrid model. In KDD . [40] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In CIKM . 4104-4113. [41] Masashi Sugiyama, Matthias Krauledat, and Klaus-Robert Müller. 2007. Covariate shift adaptation by importance weighted cross validation. JMLR 8 (2007), 9851005. [42] Adith Swaminathan and Thorsten Joachims. 2015. Batch learning from logged bandit feedback through counterfactual risk minimization. JMLR 16, 1 (2015), 1731-1755. [43] Vladimir Vapnik, Rauf Izmailov, et al. 2015. Learning using privileged information: similarity control and knowledge transfer. JMLR 16, 1 (2015), 2023-2049. [44] Shangfei Wang, Yachen Zhu, Lihua Yue, and Qiang Ji. 2015. Emotion recognition with the help of privileged information. IEEE Transactions on Autonomous Mental Development 7, 3 (2015), 189-200. [45] Xuanhui Wang, Michael Bendersky, Donald Metzler, and Marc Najork. 2016. Learning to rank with selection bias in personal search. In SIGIR . 115-124. [46] Xuanhui Wang, Nadav Golbandi, Michael Bendersky, Donald Metzler, and Marc Najork. 2018. Position bias estimation for unbiased learning to rank in personal search. In WSDM . 610-618. [47] Kailun Wu, Weijie Bian, Zhangming Chan, Lejian Ren, Shiming Xiang, ShuGuang Han, Hongbo Deng, and Bo Zheng. 2022. Adversarial gradient driven exploration for deep click-through rate prediction. In KDD . 2050-2058. [48] Fen Xia, Tie-Yan Liu, Jue Wang, Wensheng Zhang, and Hang Li. 2008. Listwise approach to learning to rank: theory and algorithm. In ICML . 1192-1199. [49] Chen Xu, Quan Li, Junfeng Ge, Jinyang Gao, Xiaoyong Yang, Changhua Pei, Fei Sun, Jian Wu, Hanxiao Sun, and Wenwu Ou. 2020. Privileged features distillation at Taobao recommendations. In KDD . 2590-2598. [50] Le Yan, Zhen Qin, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2022. Scale calibration of deep ranking models. In KDD . 4300-4309. [51] Shuo Yang, Sujay Sanghavi, Holakou Rahmanian, Jan Bakus, and SVN Vishwanathan. 2022. Toward understanding privileged features distillation in learningto-rank. In NeurIPS . 1-12. [52] Hai-Tao Yu. 2020. PT-ranking: A benchmarking platform for neural learning-torank. arXiv preprint arXiv:2008.13368 (2020). [53] Yujing Zhang, Zhangming Chan, Shuhao Xu, Weijie Bian, Shuguang Han, Hongbo Deng, and Bo Zheng. 2022. KEEP: An industrial pre-training framework for online recommendation via knowledge extraction and plugging. In CIKM . 3684-3693. [54] Yunan Zhang, Le Yan, Zhen Qin, Honglei Zhuang, Jiaming Shen, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2023. Towards Disentangling Relevance and Bias in Unbiased Learning to Rank. In KDD . 5618-5627. [55] Zhao-Yu Zhang, Xiang-Rong Sheng, Yujing Zhang, Biye Jiang, Shuguang Han, Hongbo Deng, and Bo Zheng. 2022. Towards understanding the overfitting phenomenon of deep click-through rate models. In CIKM . 2671-2680. WSDM'24, March 4-8, 2024, Merida, Mexico Xiaoqiang Gui et al. [56] Yunfeng Zhao, Xu Yan, Xiaoqiang Gui, Shuguang Han, Xiang-Rong Sheng, Guoxian Yu, Jufeng Chen, Zhao Xu, and Bo Zheng. 2023. Entire Space Cascade Delayed Feedback Modeling for Effective Conversion Rate Prediction. In CIKM . 49814987. [57] Zhishan Zhao, Jingyue Gao, Yu Zhang, Shuguang Han, Siyuan Lou, Xiang-Rong Sheng, Zhe Wang, Han Zhu, Yuning Jiang, Jian Xu, et al. 2023. COPR: ConsistencyOriented Pre-Ranking for Online Advertising. CIKM (2023). [58] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. Recommending what video to watch next: a multitask ranking system. In RecSys . 43-51. [59] Zhi Zheng, Zhaopeng Qiu, Tong Xu, Xian Wu, Xiangyu Zhao, Enhong Chen, and Hui Xiong. 2022. CBR: context bias aware recommendation for debiasing user modeling and click prediction. In Web Conf . 2268-2276. [60] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In KDD . 1059-1068. [61] Han Zhu, Junqi Jin, Chang Tan, Fei Pan, Yifan Zeng, Han Li, and Kun Gai. 2017. Optimized cost per click in taobao display advertising. In KDD . 2191-2200.",
   "keywords_parsed": [
     "CTR Prediction",
-    " Privileged Features",
-    " Calibration-compatible Listwise Distillation"
+    "Privileged Features",
+    "Calibration-compatible Listwise Distillation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Unbiased learning to rank with unbiased propensity estimation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Learning groupwise multivariate scoring functions using deep neural networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Unbiased learning to rank: online or offline?"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Regression Compatible Listwise Objectives for Calibrated Ranking with Binary Relevance"
+    },
+    {
+      "ref_id": "b6",
+      "title": "CAN: feature co-action network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A stochastic treatment of learning to rank scoring functions"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning to rank using gradient descent"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Capturing Conversion Rate Fluctuation during Sales Promotions: A Novel Historical Data Reuse Approach"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Ranking and calibrating click-attributed purchases in performance display advertising"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Adapting interactional observation embedding for counterfactual learning to rank"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Ranking measures and loss functions in learning to rank"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Statistical analysis of Bayes optimal subset ranking"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Modeling users' contextualized page-wise feedback for click-through rate prediction in e-commerce search"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Rec4Ad: A Free Lunch to Mitigate Sample Selection Bias for Ads CTR Prediction in Taobao"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Large margin rank boundaries for ordinal regression"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Real negatives matter: continuous training with real negatives for delayed feedback modeling"
+    },
+    {
+      "ref_id": "b19",
+      "title": "PAL: a position-bias aware learning framework for CTR prediction in live recommender systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Improving deep learning for airbnb search"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Learning-to-Rank with BERT in TF-Ranking"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Delving deep into rectifiers: surpassing human-level performance on imagenet classification"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Reusing historical interaction data for faster online learning to rank for IR"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deep presentation bias integrated framework for CTR prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Learning with privileged information for efficient image super-resolution"
+    },
+    {
+      "ref_id": "b27",
+      "title": "McRank: learning to rank using multiple classification and gradient boosting"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Decision-making context interaction network for clickthrough rate prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Model ensemble for click prediction in bing search ads"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Position awareness modeling with knowledge distillation for CTR prediction"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Unifying distillation and privileged information"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Post-learning optimization of tree ensembles for efficient ranking"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Graph distillation for action detection with privileged modalities"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Permutation equivariant document interaction network for neural learning to rank"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Introducing LETOR 4.0 datasets"
+    },
+    {
+      "ref_id": "b37",
+      "title": "A general approximation framework for direct optimization of information retrieval measures"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Query-level loss functions for information retrieval"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Joint optimization of ranking and calibration with contextualized hybrid model"
+    },
+    {
+      "ref_id": "b40",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Covariate shift adaptation by importance weighted cross validation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Batch learning from logged bandit feedback through counterfactual risk minimization"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Learning using privileged information: similarity control and knowledge transfer"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Emotion recognition with the help of privileged information"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Learning to rank with selection bias in personal search"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Position bias estimation for unbiased learning to rank in personal search"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Adversarial gradient driven exploration for deep click-through rate prediction"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Listwise approach to learning to rank: theory and algorithm"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Privileged features distillation at Taobao recommendations"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Scale calibration of deep ranking models"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Toward understanding privileged features distillation in learning-to-rank"
+    },
+    {
+      "ref_id": "b52",
+      "title": "PT-ranking: A benchmarking platform for neural learning-to-rank"
+    },
+    {
+      "ref_id": "b53",
+      "title": "KEEP: An industrial pre-training framework for online recommendation via knowledge extraction and plugging"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Towards Disentangling Relevance and Bias in Unbiased Learning to Rank"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Towards understanding the overfitting phenomenon of deep click-through rate models"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Entire Space Cascade Delayed Feedback Modeling for Effective Conversion Rate Prediction"
+    },
+    {
+      "ref_id": "b57",
+      "title": "COPR: Consistency-Oriented Pre-Ranking for Online Advertising"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Recommending what video to watch next: a multitask ranking system"
+    },
+    {
+      "ref_id": "b59",
+      "title": "CBR: context bias aware recommendation for debiasing user modeling and click prediction"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Optimized cost per click in taobao display advertising"
+    }
   ]
 }

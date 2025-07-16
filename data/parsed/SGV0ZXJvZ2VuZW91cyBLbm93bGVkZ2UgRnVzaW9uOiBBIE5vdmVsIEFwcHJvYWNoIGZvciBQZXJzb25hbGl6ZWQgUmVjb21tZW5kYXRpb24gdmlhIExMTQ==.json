@@ -14,6 +14,49 @@
   "4 CONCLUSION": "In this article, we propose HKFR, a new approach of personalized recommendation via LLM, which is based on the fusion of heterogeneous knowledge. By leveraging the two stages of heterogeneous knowledge fusion and instruction tuning, HKFR can effectively model user heterogeneous behavior. Extensive experiments on the Waimai dataset have validated the ability of HKFR to improve recommendation performance. In the future, we will focus on further training HKFR in the catering domain to better integrate heterogeneous knowledge and enhance recommendation performance.",
   "REFERENCES": "[1] Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung Won Chung, Charles Sutton, Sebastian Gehrmann, et al. 2022. Palm: Scaling language modeling with pathways. arXiv preprint arXiv:2204.02311 (2022). [2] Zhengxiao Du, Yujie Qian, Xiao Liu, Ming Ding, Jiezhong Qiu, Zhilin Yang, and Jie Tang. 2022. GLM: General language model pretraining with autoregressive blank infilling. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . 320-335. 4 Heterogeneous Knowledge Fusion: A Novel Approach for Personalized Recommendation via LLM RecSys '23, September 18-22, 2023, Singapore, Singapore [3] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5). In Proceedings of the 16th ACM Conference on Recommender Systems . 299-315. [4] Edward J Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2021. Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685 (2021). [5] Junling Liu, Chao Liu, Renjie Lv, Kang Zhou, and Yan Zhang. 2023. Is ChatGPT a Good Recommender? A Preliminary Study. arXiv preprint arXiv:2304.10149 (2023). [6] OpenAI. 2023. GPT-4 Technical Report. CoRR abs/2303.08774 (2023). https://doi.org/10.48550/arXiv.2303.08774 arXiv:2303.08774 [7] Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et al. 2022. Training language models to follow instructions with human feedback. Advances in Neural Information Processing Systems 35 (2022), 27730-27744. [8] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [9] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In Proceedings of the eleventh ACM international conference on web search and data mining . 565-573. [10] Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, et al. 2023. A survey of large language models. arXiv preprint arXiv:2303.18223 (2023). Received 1 June 2023; revised 29 June 2023; accepted 27 July 2023 5",
   "keywords_parsed": [
-    "None"
+    "Recommendation",
+    "Large Language Models"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Palm: Scaling language modeling with pathways"
+    },
+    {
+      "ref_id": "b2",
+      "title": "GLM: General language model pretraining with autoregressive blank infilling"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Is ChatGPT a Good Recommender? A Preliminary Study"
+    },
+    {
+      "ref_id": "b6",
+      "title": "GPT-4 Technical Report"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Training language models to follow instructions with human feedback"
+    },
+    {
+      "ref_id": "b8",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A survey of large language models"
+    }
   ]
 }

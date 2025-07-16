@@ -19,17 +19,139 @@
   "ACKNOWLEDGMENTS": "The authors would like to thank Jingjing Duan, Xufeng He, Dawei Wang, Lingbao Ye, Juanjuan Li, Weijie Zhuang, Jiajia Shi, Jianghua Ye who did effective optimization work for online deployment.",
   "REFERENCES": "[1] Deepak Agarwal, Bee-Chung Chen, and Pradheep Elango. 2009. Spatio-temporal models for estimating click-through rate. WWW'09 - Proceedings of the 18th International World Wide Web Conference , 21-30. https://doi.org/10.1145/1526709. 1526713 [2] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, Xinchen Luo, Shiming Xiang, Guorui Zhou, Xiaoqiang Zhu, and Hongbo Deng. 2021. CAN: Feature Co-Action for Click-Through Rate Prediction. arXiv:2011.05625 [cs.IR] [3] Yue Cao, XiaoJiang Zhou, Jiaqi Feng, Peihao Huang, Yao Xiao, Dayao Chen, and Sheng Chen. 2022. Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction. arXiv:2205.10249 [cs.IR] [4] Jianxin Chang, Chenbin Zhang, Zhiyi Fu, Xiaoxue Zang, Lin Guan, Jing Lu, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, and Kun Gai. 2023. TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou. arXiv:2302.02352 [cs.IR] [5] Qiwei Chen, Changhua Pei, Shanshan Lv, Chao Li, Junfeng Ge, and Wenwu Ou. 2021. End-to-End User Behavior Retrieval in Click-Through RatePrediction Model. CoRR abs/2108.04468 (2021). arXiv:2108.04468 https://arxiv.org/abs/2108.04468 [6] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. CoRR abs/1606.07792 (2016). arXiv:1606.07792 http://arxiv.org/abs/1606.07792 [7] Boya Du, Shaochuan Lin, Jiong Gao, Xiyu Ji, Mengya Wang, Taotao Zhou, Hengxu He, Jia Jia, and Ning Hu. 2022. BASM: A Bottom-up Adaptive Spatiotemporal Model for Online Food Ordering Service. arXiv:2211.12033 [cs.LG] [8] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep Session Interest Network for Click-Through Rate Prediction. arXiv:1905.06482 [cs.IR] [9] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. arXiv:1703.04247 [cs.IR] [10] Ruining He and Julian McAuley. 2016. Ups and Downs. In Proceedings of the 25th International Conference on World Wide Web . International World Wide Web Conferences Steering Committee. https://doi.org/10.1145/2872427.2883037 [11] Weizhe Hua, Zihang Dai, Hanxiao Liu, and Quoc V. Le. 2022. Transformer Quality in Linear Time. arXiv:2202.10447 [cs.LG] [12] Bumjun Jung, Yusuke Mukuta, and Tatsuya Harada. 2022. Grouped self-attention mechanism for a memory-efficient Transformer. arXiv:2210.00440 [cs.LG] [13] Diederik P. Kingma and Jimmy Ba. 2017. Adam: A Method for Stochastic Optimization. arXiv:1412.6980 [cs.LG] [14] Sotiris B. Kotsiantis and Dimitris N. Kanellopoulos. 2006. Discretization Techniques: A recent survey. [15] Chao Li, Zhiyuan Liu, Mengmeng Wu, Yuchi Xu, Pipei Huang, Huan Zhao, Guoliang Kang, Qiwei Chen, Wei Li, and Dik Lun Lee. 2019. Multi-Interest Network with Dynamic Routing for Recommendation at Tmall. arXiv:1904.08030 [cs.IR] [16] Jiacheng Li, Jingbo Shang, and Julian McAuley. 2022. UCTopic: Unsupervised Contrastive Learning for Phrase Representations and Topic Mining. arXiv:2202.13469 [cs.CL] [17] Yinfeng Li, Chen Gao, Xiaoyi Du, Huazhou Wei, Hengliang Luo, Depeng Jin, and Yong Li. 2022. Spatiotemporal-Aware Session-Based Recommendation with Conference acronym 'XX, June 03-05, 2018, Woodstock, NY Graph Neural Networks (CIKM '22) . Association for Computing Machinery, New York, NY, USA, 1209-1218. https://doi.org/10.1145/3511808.3557458 [18] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xDeepFM. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp Data Mining . ACM. https: //doi.org/10.1145/3219819.3220023 [19] Shaochuan Lin, Yicong Yu, Xiyu Ji, Taotao Zhou, Hengxu He, Zisen Sang, Jia Jia, Guodong Cao, and Ning Hu. 2022. Spatiotemporal-Enhanced Network for ClickThrough Rate Prediction in Location-based Services. arXiv:2209.09427 [cs.IR] [20] Wentao Ouyang, Xiuwu Zhang, Li Li, Heng Zou, Xin Xing, Zhaojie Liu, and Yanlong Du. 2019. Deep Spatio-Temporal Neural Networks for Click-Through Rate Prediction. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery &amp Data Mining . ACM. https://doi.org/10.1145/ 3292500.3330655 [21] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction. CoRR abs/1905.09248 (2019). arXiv:1905.09248 http://arxiv.org/abs/1905.09248 [22] Qi Pi, Xiaoqiang Zhu, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, and Kun Gai. 2020. Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction. CoRR abs/2006.05639 (2020). arXiv:2006.05639 https://arxiv.org/abs/2006.05639 [23] Yi Qi, Ke Hu, Bo Zhang, Jia Cheng, and Jun Lei. 2021. Trilateral Spatiotemporal Attention Network for User Behavior Modeling in Location-Based Search. In Proceedings of the 30th ACM International Conference on Information &amp; Knowledge Management (Virtual Event, Queensland, Australia) (CIKM '21) . Association for Computing Machinery, New York, NY, USA, 3373-3377. https: //doi.org/10.1145/3459637.3482206 [24] Jiarui Qin, Weinan Zhang, Xin Wu, Jiarui Jin, Yuchen Fang, and Yong Yu. 2020. User Behavior Retrieval for Click-Through Rate Prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM. https://doi.org/10.1145/3397271.3401440 [25] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention Is All You Need. CoRR abs/1706.03762 (2017). arXiv:1706.03762 http://arxiv.org/abs/ 1706.03762 [26] Daheng Wang, Meng Jiang, Munira Syed, Oliver Conway, Vishal Juneja, Sriram Subramanian, and Nitesh V. Chawla. 2020. Calendar Graph Neural Networks for Modeling Time Structures in Spatiotemporal User Behaviors. arXiv:2006.06820 [cs.LG] [27] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & Cross Network for Ad Click Predictions. arXiv:1708.05123 [cs.LG] [28] Shoujin Wang, Liang Hu, Yan Wang, Longbing Cao, Quan Z. Sheng, and Mehmet Orgun. 2019. Sequential Recommender Systems: Challenges, Progress and Prospects. In Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence . International Joint Conferences on Artificial Intelligence Organization. https://doi.org/10.24963/ijcai.2019/883 [29] Haifeng Yang, Linjing Yao, Jianghui Cai, Yupeng Wang, and Xujun Zhao. 2023. A new interest extraction method based on multi-head attention mechanism for CTR prediction. Knowledge and Information Systems (04 2023), 1-16. https: //doi.org/10.1007/s10115-023-01867-w [30] Zeping Yu, Jianxun Lian, Ahmad Mahmoody, Gongshen Liu, and Xing Xie. 2019. Adaptive User Modeling with Long and Short-Term Preferences for Personalized Recommendation. In Proceedings of the 28th International Joint Conference on Artificial Intelligence (Macao, China) (IJCAI'19) . AAAI Press, 4213-4219. [31] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2018. Deep Interest Evolution Network for Click-Through Rate Prediction. arXiv:1809.03672 [stat.ML] [32] Guorui Zhou, Chengru Song, Xiaoqiang Zhu, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for Click-Through Rate Prediction. arXiv:1706.06978 [stat.ML]",
   "keywords_parsed": [
-    "Spatial-temporal information has been proven to be of great significance for click-through rate prediction tasks in online LocationBased Services (LBS)",
-    " especially in mainstream food ordering platforms such as DoorDash",
-    " Uber Eats",
-    " Meituan",
-    " and Ele.me. Modeling user spatial-temporal preferences with sequential behavior data has become a hot topic in recommendation systems and online advertising. However",
-    " most of existing methods either lack the representation of rich spatial-temporal information or only handle user behaviors with limited length",
-    " e.g. 100. In this paper",
-    " we tackle these problems by designing a new spatial-temporal modeling paradigm named F ragment and I ntegrate N etwork (FIN). FIN consists of two networks: (i) Fragment Network (FN) extracts M ultiple S ubS equences (MSS) from lifelong sequential behavior data",
-    " and captures the specific spatial-temporal representation by modeling each MSS respectively. Here both a simplified attention and a complicated attention are adopted to balance the performance gain and resource consumption. (ii) Integrate Network (IN) builds a new integrated sequence by utilizing spatial-temporal interaction on MSS and captures the comprehensive spatial-temporal representation by modeling the integrated sequence with a complicated attention. Both public datasets and production datasets have demonstrated the accuracy and scalability of FIN. Since 2022",
-    " FIN has been fully deployed in the recommendation advertising system of Ele.me",
-    " one of the most popular online food ordering platforms in China",
-    " obtaining 5.7% improvement on Click-Through Rate (CTR) and 7.3% increase on Revenue Per Mille (RPM)."
+    "Click-Through Rate Prediction",
+    "Long Sequential Behavior",
+    "Spatial-temporal Modeling",
+    "Online Food Ordering"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Spatio-temporal models for estimating click-through rate"
+    },
+    {
+      "ref_id": "b2",
+      "title": "CAN: Feature Co-Action for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou"
+    },
+    {
+      "ref_id": "b5",
+      "title": "End-to-End User Behavior Retrieval in Click-Through RatePrediction Model"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "BASM: A Bottom-up Adaptive Spatiotemporal Model for Online Food Ordering Service"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep Session Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Ups and Downs"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Transformer Quality in Linear Time"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Grouped self-attention mechanism for a memory-efficient Transformer"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Discretization Techniques: A recent survey"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Multi-Interest Network with Dynamic Routing for Recommendation at Tmall"
+    },
+    {
+      "ref_id": "b16",
+      "title": "UCTopic: Unsupervised Contrastive Learning for Phrase Representations and Topic Mining"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Spatiotemporal-Aware Session-Based Recommendation with Graph Neural Networks"
+    },
+    {
+      "ref_id": "b18",
+      "title": "xDeepFM"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Spatiotemporal-Enhanced Network for Click-Through Rate Prediction in Location-based Services"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Deep Spatio-Temporal Neural Networks for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Trilateral Spatiotemporal Attention Network for User Behavior Modeling in Location-Based Search"
+    },
+    {
+      "ref_id": "b24",
+      "title": "User Behavior Retrieval for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Attention Is All You Need"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Calendar Graph Neural Networks for Modeling Time Structures in Spatiotemporal User Behaviors"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Sequential Recommender Systems: Challenges, Progress and Prospects"
+    },
+    {
+      "ref_id": "b29",
+      "title": "A new interest extraction method based on multi-head attention mechanism for CTR prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Adaptive User Modeling with Long and Short-Term Preferences for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Deep Interest Evolution Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    }
   ]
 }

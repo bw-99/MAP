@@ -23,8 +23,214 @@
   "REFERENCES": "[1] Yu Bai, Song Mei, Huan Wang, and Caiming Xiong. 2021. Don't just blame over-parametrization for over-confidence: Theoretical analysis of calibration in binary classification. In ICML . PMLR, 566-576. [3] Olivier Chapelle, Eren Manavoglu, and Romer Rosales. 2014. Simple and scalable response prediction for display advertising. ACM Transactions on Intelligent Systems and Technology (TIST) 5, 4 (2014), 1-34. [2] Antonio Bella, Cèsar Ferri, José Hernández-Orallo, and María José RamírezQuintana. 2010. Calibration of machine learning models. In Handbook of Research on Machine Learning Applications and Trends: Algorithms, Methods, and Techniques . IGI Global, 128-146. [4] Junxuan Chen, Baigui Sun, Hao Li, Hongtao Lu, and Xian-Sheng Hua. 2016. Deep ctr prediction in display advertising. In ACM MM . 811-820. [6] Chao Deng, Hao Wang, Qing Tan, Jian Xu, and Kun Gai. 2021. Calibrating user response predictions in online advertising. In ECML-PKDD . Springer, 208-223. [5] Morris H DeGroot and Stephen E Fienberg. 1983. The comparison and evaluation of forecasters. Journal of the Royal Statistical Society: Series D (The Statistician) 32, 1-2 (1983), 12-22. [7] Jakob Gawlikowski, Cedrique Rovile Njieutcheu Tassi, Mohsin Ali, Jongseok Lee, Matthias Humt, Jianxiang Feng, Anna Kruspe, Rudolph Triebel, Peter Jung, Ribana Roscher, et al. 2023. A survey of uncertainty in deep neural networks. Artificial Intelligence Review 56, Suppl 1 (2023), 1513-1589. [9] Chuan Guo, Geoff Pleiss, Yu Sun, and Kilian Q Weinberger. 2017. On calibration of modern neural networks. In ICML . PMLR, 1321-1330. [8] Tilmann Gneiting and Adrian E Raftery. 2005. Weather forecasting with ensemble methods. Science 310, 5746 (2005), 248-249. [10] Yuyao Guo, Haoming Li, Xiang Ao, Min Lu, Dapeng Liu, Lei Xiao, Jie Jiang, and Qing He. 2022. Calibrated Conversion Rate Prediction via Knowledge Distillation under Delayed Feedback in Online Advertising. In CIKM . 3983-3987. [12] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In AdKDD . 1-9. [11] Kartik Gupta, Amir Rahimi, Thalaiyasingam Ajanthan, Thomas Mensink, Cristian Sminchisescu, and Richard Hartley. 2021. Calibration of Neural Networks using Splines. In ICLR . https://openreview.net/forum?id=eQe8DEWNN2W [13] Rui Huang, Andrew Geng, and Yixuan Li. 2021. On the importance of gradients for detecting distributional shifts in the wild. NeurIPS 34 (2021), 677-689. [15] Xiaoqian Jiang, Melanie Osl, Jihoon Kim, and Lucila Ohno-Machado. 2012. Calibrating predictive model estimates to support personalized medicine. JAMIA 19, 2 (2012), 263-274. [14] Siguang Huang, Yunli Wang, Lili Mou, Huayue Zhang, Han Zhu, Chuan Yu, and Bo Zheng. 2022. MBCT: Tree-Based Feature-Aware Binning for Individual Uncertainty Calibration. In WWW . 2236-2246. [16] Archit Karandikar, Nicholas Cain, Dustin Tran, Balaji Lakshminarayanan, Jonathon Shlens, Michael C Mozer, and Becca Roelofs. 2021. Soft calibration objectives for neural networks. NeurIPS 34 (2021), 29768-29779. [18] Meelis Kull, Miquel Perello Nieto, Markus Kängsepp, Telmo Silva Filho, Hao Song, and Peter Flach. 2019. Beyond temperature scaling: Obtaining well-calibrated multi-class probabilities with dirichlet calibration. NeurIPS 32 (2019). [17] Ranganath Krishnan and Omesh Tickoo. 2020. Improving model calibration with accuracy versus uncertainty optimization. NeurIPS 33 (2020), 18237-18248. [19] Meelis Kull, Telmo Silva Filho, and Peter Flach. 2017. Beta calibration: a wellfounded and easily implemented improvement on logistic calibration for binary classifiers. In AISTATS . PMLR, 623-631. [21] Aviral Kumar, Sunita Sarawagi, and Ujjwal Jain. 2018. Trainable calibration measures for neural networks from kernel mean embeddings. In ICML . PMLR, 2805-2814. [20] Ananya Kumar, Percy S Liang, and Tengyu Ma. 2019. Verified uncertainty calibration. NeurIPS 32 (2019). [22] Wonbin Kweon, SeongKu Kang, and Hwanjo Yu. 2022. Obtaining Calibrated Probabilities with Personalized Ranking Models. In AAAI , Vol. 36. 4083-4091. [24] Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, and Piotr Dollár. 2017. Focal loss for dense object detection. In ICCV . 2980-2988. [23] Kuang-chih Lee, Burkay Orten, Ali Dasdan, and Wentong Li. 2012. Estimating conversion rate in display advertising from past erformance data. In KDD . 768776. [25] Bingyuan Liu, Ismail Ben Ayed, Adrian Galdran, and Jose Dolz. 2022. The devil is in the margin: Margin-based label smoothing for network calibration. In CVPR . 80-88. [27] Aditya Krishna Menon, Xiaoqian J Jiang, Shankar Vembu, Charles Elkan, and Lucila Ohno-Machado. 2012. Predicting accurate probabilities with a ranking loss. In ICML , Vol. 2012. NIH Public Access, 703. [26] H Brendan McMahan, Gary Holt, David Sculley, Michael Young, Dietmar Ebner, Julian Grady, Lan Nie, Todd Phillips, Eugene Davydov, Daniel Golovin, et al. 2013. Ad click prediction: a view from the trenches. In KDD . 1222-1230. [28] Azadeh Sadat Mozafari, Hugo Siqueira Gomes, Wilson Leão, Steeven Janny, and Christian Gagné. 2018. Attended temperature scaling: a practical approach for calibrating deep neural networks. arXiv preprint arXiv:1810.11586 (2018). [30] Rafael Müller, Simon Kornblith, and Geoffrey E Hinton. 2019. When does label smoothing help? NeurIPS 32 (2019). [29] Jishnu Mukhoti, Viveka Kulharia, Amartya Sanyal, Stuart Golodetz, Philip Torr, and Puneet Dokania. 2020. Calibrating deep neural networks using focal loss. NeurIPS 33 (2020), 15288-15299. [31] Mahdi Pakdaman Naeini, Gregory Cooper, and Milos Hauskrecht. 2015. Obtaining well calibrated probabilities using bayesian binning. In AAAI , Vol. 29. [33] Alexandru Niculescu-Mizil and Rich Caruana. 2005. Predicting good probabilities with supervised learning. In ICML . 625-632. [32] Brian Neelon and David B Dunson. 2004. Bayesian isotonic regression and trend analysis. Biometrics 60, 2 (2004), 398-406. [34] Jeremy Nixon, Michael W Dusenberry, Linchuan Zhang, Ghassen Jerfel, and Dustin Tran. 2019. Measuring Calibration in Deep Learning.. In CVPR workshops , Vol. 2. [36] Feiyang Pan, Xiang Ao, Pingzhong Tang, Min Lu, Dapeng Liu, Lei Xiao, and Qing He. 2020. Field-aware calibration: a simple and empirically strong method for reliable probabilistic predictions. In WWW . 729-739. [35] Yaniv Ovadia, Emily Fertig, Jie Ren, Zachary Nado, David Sculley, Sebastian Nowozin, Joshua Dillon, Balaji Lakshminarayanan, and Jasper Snoek. 2019. Can you trust your model's uncertainty? evaluating predictive uncertainty under dataset shift. NeurIPS 32 (2019). [37] Gabriel Pereyra, George Tucker, Jan Chorowski, Łukasz Kaiser, and Geoffrey Hinton. 2017. Regularizing neural networks by penalizing confident output distributions. arXiv preprint arXiv:1701.06548 (2017). [39] Geoff Pleiss, Manish Raghavan, Felix Wu, Jon Kleinberg, and Kilian Q Weinberger. 2017. On fairness and calibration. NeurIPS 30 (2017). [38] John Platt et al. 1999. Probabilistic outputs for support vector machines and comparisons to regularized likelihood methods. Advances in large margin classifiers 10, 3 (1999), 61-74. [40] Amir Rahimi, Amirreza Shaban, Ching-An Cheng, Richard Hartley, and Byron Boots. 2020. Intra order-preserving functions for calibration of multi-class neural networks. NeurIPS 33 (2020), 13456-13467. [42] Zheyan Shen, Jiashuo Liu, Yue He, Xingxuan Zhang, Renzhe Xu, Han Yu, and Peng Cui. 2021. Towards out-of-distribution generalization: A survey. arXiv preprint arXiv:2108.13624 (2021). [41] Matthew Richardson, Ewa Dominowska, and Robert Ragno. 2007. Predicting clicks: estimating the click-through rate for new ads. In WWW . 521-530. [43] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In RecSys . 269-278. [45] Jindong Wang, Cuiling Lan, Chang Liu, Yidong Ouyang, Tao Qin, Wang Lu, Yiqiang Chen, Wenjun Zeng, and Philip Yu. 2022. Generalizing to unseen domains: A survey on domain generalization. TKDE (2022). [44] Yoav Wald, Amir Feder, Daniel Greenfeld, and Uri Shalit. 2021. On calibration and out-of-domain generalization. NeurIPS 34 (2021), 2215-2227. [46] Penghui Wei, Weimin Zhang, Ruijie Hou, Jinquan Liu, Shaoguo Liu, Liang Wang, and Bo Zheng. 2022. Posterior Probability Matters: Doubly-Adaptive Calibration for Neural Predictions in Online Advertising. In SIGIR . 2645-2649. [48] Edwin B Wilson. 1927. Probable inference, the law of succession, and statistical inference. JASA 22, 158 (1927), 209-212. [47] Jonathan Wenger, Hedvig Kjellström, and Rudolph Triebel. 2020. Non-parametric calibration for classification. In AISTATS . PMLR, 178-190. [49] Bianca Zadrozny and Charles Elkan. 2001. Obtaining calibrated probability estimates from decision trees and naive bayesian classifiers. In ICML , Vol. 1. 609-616. [51] Jize Zhang, Bhavya Kailkhura, and T Yong-Jin Han. 2020. Mix-n-match: Ensemble and compositional methods for uncertainty calibration in deep learning. In ICML . PMLR, 11117-11128. [50] Bianca Zadrozny and Charles Elkan. 2002. Transforming classifier scores into accurate multiclass probability estimates. In KDD . 694-699.",
   "keywords_parsed": [
     "Model Calibration",
-    " Confidence-aware",
-    " Multi-field",
-    " Online Advertising"
+    "Confidence-aware",
+    "Multi-field",
+    "Online Advertising"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Don't just blame over-parametrization for over-confidence: Theoretical analysis of calibration in binary classification"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Simple and scalable response prediction for display advertising"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Calibration of machine learning models"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Deep ctr prediction in display advertising"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Calibrating user response predictions in online advertising"
+    },
+    {
+      "ref_id": "b5",
+      "title": "The comparison and evaluation of forecasters"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A survey of uncertainty in deep neural networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "On calibration of modern neural networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Weather forecasting with ensemble methods"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Calibrated Conversion Rate Prediction via Knowledge Distillation under Delayed Feedback in Online Advertising"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Calibration of Neural Networks using Splines"
+    },
+    {
+      "ref_id": "b13",
+      "title": "On the importance of gradients for detecting distributional shifts in the wild"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Calibrating predictive model estimates to support personalized medicine"
+    },
+    {
+      "ref_id": "b14",
+      "title": "MBCT: Tree-Based Feature-Aware Binning for Individual Uncertainty Calibration"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Soft calibration objectives for neural networks"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Beyond temperature scaling: Obtaining well-calibrated multi-class probabilities with dirichlet calibration"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Improving model calibration with accuracy versus uncertainty optimization"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Beta calibration: a well-founded and easily implemented improvement on logistic calibration for binary classifiers"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Trainable calibration measures for neural networks from kernel mean embeddings"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Verified uncertainty calibration"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Obtaining Calibrated Probabilities with Personalized Ranking Models"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Focal loss for dense object detection"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Estimating conversion rate in display advertising from past performance data"
+    },
+    {
+      "ref_id": "b25",
+      "title": "The devil is in the margin: Margin-based label smoothing for network calibration"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Predicting accurate probabilities with a ranking loss"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Ad click prediction: a view from the trenches"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Attended temperature scaling: a practical approach for calibrating deep neural networks"
+    },
+    {
+      "ref_id": "b30",
+      "title": "When does label smoothing help?"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Calibrating deep neural networks using focal loss"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Obtaining well calibrated probabilities using bayesian binning"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Predicting good probabilities with supervised learning"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Bayesian isotonic regression and trend analysis"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Measuring Calibration in Deep Learning."
+    },
+    {
+      "ref_id": "b36",
+      "title": "Field-aware calibration: a simple and empirically strong method for reliable probabilistic predictions"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Can you trust your model's uncertainty? evaluating predictive uncertainty under dataset shift"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Regularizing neural networks by penalizing confident output distributions"
+    },
+    {
+      "ref_id": "b39",
+      "title": "On fairness and calibration"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Probabilistic outputs for support vector machines and comparisons to regularized likelihood methods"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Intra order-preserving functions for calibration of multi-class neural networks"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Towards out-of-distribution generalization: A survey"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Generalizing to unseen domains: A survey on domain generalization"
+    },
+    {
+      "ref_id": "b44",
+      "title": "On calibration and out-of-domain generalization"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Posterior Probability Matters: Doubly-Adaptive Calibration for Neural Predictions in Online Advertising"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Probable inference, the law of succession, and statistical inference"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Non-parametric calibration for classification"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Obtaining calibrated probability estimates from decision trees and naive bayesian classifiers"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Mix-n-match: Ensemble and compositional methods for uncertainty calibration in deep learning"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Transforming classifier scores into accurate multiclass probability estimates"
+    }
   ]
 }

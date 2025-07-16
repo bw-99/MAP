@@ -25,6 +25,118 @@
   "A.1 Detailed Experiment Results for Different CTRs and Different Numbers of Advertisement Slots.": "The results of experiments on the settings of different CTRs and different numbers of advertisement slots are shown in Figure 4. The detailed information about the experiment results is shown in Table 4 and Table 5, respectively. Figure 4: The results of experiments on the settings of different CTRs (a) and different numbers of advertisement slots (b). In all results, the regrets are less than 0.001. (a) (b) RegretNet IRegNet JRegNet 0.8 1 [0.4,0.3,0.15] [0.5,0.3,0.15] [0.5,0.4,0.25] CTRs RegretNet IRegNet VCG JRegNet 0.6 1 0.5 0.4 Number of advertising slots",
   "A.2 Real-World Data Experiment": "The number of real search query samples used for training JRegNet is shown in Figure 5, and the number used for testing is shown in Figure 6. 15 Figure 5: The number of real search query samples used for training JRegNet. The horizontal axis is the generation time of the search query samples. In this figure, all search query samples are obtained from logs of the year 2023. Within settings E1 to E3, we use data from (a) to (c) to train JRegNet, respectively. (a) (b) (c) Train 0913-0923 70000 60000 f 50000 40000 30000 09.13 09.14 09.15 09.16 09.17 09.18 09.19 09.20 09.21 09.22 09.23 Date 74000 Train 1015-1017 73000 72000 1 71000 70000 69000 68000 67000 66000 10.15 10.16 10.17 Date 109000 108000 107000 106000 5 105000 1 104000 103000 11.24 11.25 Date 16 Table 4: The results of experiments for different CTRs (Settings B1, B, B2 and B3). ' † ' indicates that the revenue has a significant improvement over other methods in paired t-test at p < 0 . 05 level. Table 5: The results of experiments for different number of advertising slots (Settings D1, D, D2 and D3). ' † ' indicates that the revenue has a significant improvement over other methods in paired t-test at p < 0 . 05 level. Figure 6: The number of real search query samples used for testing JRegNet and baseline methods. In this figure, all search query samples are obtained from logs of the year 2023. For settings E1 to E3, we take three days of real data for testing, respectively. 09.24 09.25 09.26 10.18 10.19 10.20 11.26 11.27 11.28 Date 2200 2250 2300 2350 2400 Number of search query samples Test E1 Test E2 Test E3 17",
   "keywords_parsed": [
-    "None"
+    "Joint auction",
+    "Neural network",
+    "JRegNet"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Optimal auctions through deep learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A permutation-equivariant neural network architecture for auction design"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A context-integrated transformer-based neural network for auction design"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Deep learning for revenue-optimal auctions with budgets"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Optimal auction design"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Counterspeculation, auctions, and competitive sealed tenders"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Multipart pricing of public goods"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Incentives in teams"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Position auctions"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords"
+    },
+    {
+      "ref_id": "b11",
+      "title": "On the efficiency of equilibria in generalized second price auctions"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Bayes-nash equilibria of the generalized second price auction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "On revenue in the generalized second price auction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Revenue analysis of a family of ranking rules for keyword auctions"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Revenue optimization in the generalized second-price auction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Ranking and tradeoffs in sponsored search auctions"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Multi-score position auctions"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Complexity of mechanism design"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Self-interested automated mechanism design and implications for optimal combinatorial auctions"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Automated design of revenue-maximizing combinatorial auctions"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Reducing mechanism design to algorithm design via machine learning"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A kernel-based iterative combinatorial auction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Payment rules through discriminant-based classifiers"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Proportionnet: Balancing fairness and revenue for auction design with deep learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Preferencenet: Encoding human preferences in auction design with deep learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Optimal-er auctions through attention"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Nma: Neural multi-slot auctions with externalities for online advertising"
+    }
   ]
 }

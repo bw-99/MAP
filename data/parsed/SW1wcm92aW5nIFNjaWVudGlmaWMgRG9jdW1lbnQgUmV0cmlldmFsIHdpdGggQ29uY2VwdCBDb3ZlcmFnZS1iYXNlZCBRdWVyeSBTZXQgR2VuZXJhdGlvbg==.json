@@ -22,7 +22,237 @@
   "References": "[1] Chris Alberti, Daniel Andor, Emily Pitler, Jacob Devlin, and Michael Collins. 2019. Synthetic QA Corpora Generation with Roundtrip Consistency. In ACL . 6168-6173. [2] Payal Bajaj, Daniel Campos, Nick Craswell, Li Deng, Jianfeng Gao, Xiaodong Liu, Rangan Majumder, Andrew McNamara, Bhaskar Mitra, Tri Nguyen, et al. 2016. Ms marco: A human generated machine reading comprehension dataset. arXiv preprint arXiv:1611.09268 (2016). [3] Iz Beltagy, Kyle Lo, and Arman Cohan. 2019. SciBERT: Pretrained Language Model for Scientific Text. In EMNLP . 3615-3620. [4] Luiz Bonifacio, Hugo Abonizio, Marzieh Fadaee, and Rodrigo Nogueira. 2022. Inpars: Unsupervised dataset generation for information retrieval. In SIGIR . 23872392. [5] Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al. 2020. Language models are few-shot learners. In NeurIPS , Vol. 33. 1877-1901. [6] Aditi Chaudhary, Karthik Raman, and Michael Bendersky. 2024. It's All Relative!A Synthetic Query Generation Approach for Improving Zero-Shot Relevance Prediction. In Findings of NAACL . [7] Aditi Chaudhary, Karthik Raman, Krishna Srinivasan, Kazuma Hashimoto, Mike Bendersky, and Marc Najork. 2023. Exploring the viability of synthetic query generation for relevance prediction. In The SIGIR 2023 Workshop on eCommerce . [8] Arman Cohan, Sergey Feldman, Iz Beltagy, Doug Downey, and Daniel S. Weld. 2020. SPECTER: Document-level Representation Learning using Citationinformed Transformers. In ACL . [9] Zhuyun Dai, Vincent Y Zhao, Ji Ma, Yi Luan, Jianmo Ni, Jing Lu, Anton Bakalov, Kelvin Guu, Keith B Hall, and Ming-Wei Chang. 2023. Promptagator: Few-shot dense retrieval from 8 examples. In ICLR . [10] Thibault Formal, Carlos Lassance, Benjamin Piwowarski, and Stéphane Clinchant. 2022. From distillation to hard negative sampling: Making sparse neural ir models more effective. In SIGIR . 2353-2359. [11] Luyu Gao and Jamie Callan. 2022. Unsupervised Corpus Aware Language Model Pre-training for Dense Passage Retrieval. In ACL . 2843-2853. [12] Gautier Izacard, Mathilde Caron, Lucas Hosseini, Sebastian Riedel, Piotr Bojanowski, Armand Joulin, and Edouard Grave. 2021. Unsupervised dense information retrieval with contrastive learning. arXiv preprint arXiv:2112.09118 (2021). [13] Vitor Jeronymo, Luiz Bonifacio, Hugo Abonizio, Marzieh Fadaee, Roberto Lotufo, Jakub Zavrel, and Rodrigo Nogueira. 2023. Inpars-v2: Large language models as efficient dataset generators for information retrieval. arXiv preprint arXiv:2301.01820 (2023). [14] SeongKu Kang, Shivam Agarwal, Bowen Jin, Dongha Lee, Hwanjo Yu, and Jiawei Han. 2024. Improving Retrieval in Theme-specific Applications using a Corpus Topical Taxonomy. In WWW . 1497-1508. [15] SeongKu Kang, Junyoung Hwang, Wonbin Kweon, and Hwanjo Yu. 2020. DERRD: A Knowledge Distillation Framework for Recommender System. In CIKM . [16] SeongKu Kang, Junyoung Hwang, Dongha Lee, and Hwanjo Yu. 2019. Semisupervised learning for cross-domain recommendation to cold-start users. In CIKM . [17] SeongKu Kang, Yunyi Zhang, Pengcheng Jiang, Dongha Lee, Jiawei Han, and Hwanjo Yu. 2024. Taxonomy-guided Semantic Indexing for Academic Paper Search. In EMNLP . 7169-7184. [18] Vladimir Karpukhin, Barlas Oguz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, and Wen-tau Yih. 2020. Dense Passage Retrieval for OpenDomain Question Answering. In EMNLP . 6769-6781. [19] Tom Kwiatkowski, Jennimaria Palomaki, Olivia Redfield, Michael Collins, Ankur Parikh, Chris Alberti, Danielle Epstein, Illia Polosukhin, Jacob Devlin, Kenton Lee, et al. 2019. Natural questions: a benchmark for question answering research. Transactions of the Association for Computational Linguistics 7 (2019), 453-466. [20] Dongha Lee, Jiaming Shen, SeongKu Kang, Susik Yoon, Jiawei Han, and Hwanjo Yu. 2022. Taxocom: Topic taxonomy completion with hierarchical discovery of novel topic clusters. In WWW . 2819-2829. [21] Youngjune Lee, Yeongjong Jeong, Keunchan Park, and SeongKu Kang. 2023. MvFS: Multi-view Feature Selection for Recommender System. In CIKM . [22] Haitao Li, Qingyao Ai, Jia Chen, Qian Dong, Yueyue Wu, Yiqun Liu, Chong Chen, and Qi Tian. 2023. SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval. In SIGIR . [23] Yunzhe Li, Qian Chen, Weixiang Yan, Wen Wang, Qinglin Zhang, and Hari Sundaram. 2024. Advancing Precise Outline-Conditioned Text Generation with Task Duality and Explicit Outline Control. In Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics . 2362-2377. [24] Davis Liang, Peng Xu, Siamak Shakeri, Cicero Nogueira dos Santos, Ramesh Nallapati, Zhiheng Huang, and Bing Xiang. 2020. Embedding-based zero-shot retrieval through query generation. arXiv preprint arXiv:2009.10270 (2020). [25] Xiao Liu, Da Yin, Jingnan Zheng, Xingjian Zhang, Peng Zhang, Hongxia Yang, Yuxiao Dong, and Jie Tang. 2022. OAG-BERT: Towards a Unified Backbone Language Model for Academic Knowledge Services. In KDD . 3418-3428. [26] Kyle Lo, Lucy Lu Wang, Mark Neumann, Rodney Kinney, and Daniel S Weld. 2020. S2ORC: The Semantic Scholar Open Research Corpus. In ACL . 4969-4983. [27] Ji Ma, Ivan Korotkov, Yinfei Yang, Keith Hall, and Ryan McDonald. 2021. Zero-shot Neural Passage Retrieval via Domain-targeted Synthetic Question Generation. In Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume . 1075-1088. [28] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In KDD . 1930-1939. [29] Iain Mackie, Shubham Chatterjee, and Jeffrey Dalton. 2023. Generative Relevance Feedback with Large Language Models. In SIGIR . 2026-2031. [30] Sheshera Mysore, Arman Cohan, and Tom Hope. 2022. Multi-Vector Models with Textual Guidance for Fine-Grained Scientific Document Similarity. In NAACL . 4453-4470. [31] Sheshera Mysore, Tim O'Gorman, Andrew McCallum, and Hamed Zamani. 2021. CSFCube-A Test Collection of Computer Science Research Articles for Faceted Query by Example. NeurIPS 2021 Track on Datasets and Benchmarks (2021). [32] Rodrigo Nogueira, Jimmy Lin, and AI Epistemic. 2019. From doc2query to docTTTTTquery. Online preprint 6, 2 (2019). [33] Rodrigo Nogueira, Wei Yang, Jimmy Lin, and Kyunghyun Cho. 2019. Document expansion by query prediction. arXiv preprint arXiv:1904.08375 (2019). [34] Malte Ostendorff, Nils Rethmeier, Isabelle Augenstein, Bela Gipp, and Georg Rehm. 2022. Neighborhood Contrastive Learning for Scientific Document Representations with Citation Embeddings. In EMNLP . [35] Gustavo Penha, Enrico Palumbo, Maryam Aziz, Alice Wang, and Hugues Bouchard. 2023. Improving content retrievability in search with controllable query generation. In WWW . 3182-3192. [36] Yingqi Qu, Yuchen Ding, Jing Liu, Kai Liu, Ruiyang Ren, Wayne Xin Zhao, Daxiang Dong, Hua Wu, and Haifeng Wang. 2021. RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering. In NAACL-HLT . 5835-5847. [37] Anastasiia Razdaibiedina and Aleksandr Brechalov. 2023. MIReAD: Simple Method for Learning High-quality Representations from Scientific Documents. In ACL . 530-539. [38] Jon Saad-Falcon, Omar Khattab, Keshav Santhanam, Radu Florian, Martin Franz, Salim Roukos, Avirup Sil, Md Sultan, and Christopher Potts. 2023. UDAPDR: Unsupervised Domain Adaptation via LLM Prompting and Distillation of Rerankers. In EMNLP . 11265-11279. [39] Devendra Sachan, Mike Lewis, Mandar Joshi, Armen Aghajanyan, Wen-tau Yih, Joelle Pineau, and Luke Zettlemoyer. 2022. Improving Passage Retrieval with Zero-Shot Question Generation. In EMNLP . 3781-3797. [40] Victor Sanh, Albert Webson, Colin Raffel, Stephen H Bach, Lintang Sutawika, Zaid Alyafeai, Antoine Chaffin, Arnaud Stiegler, Teven Le Scao, Arun Raja, et al. 2021. Multitask prompted training enables zero-shot task generalization. arXiv preprint arXiv:2110.08207 (2021). [41] Sonal Sannigrahi, Thiago Fraga-Silva, Youssef Oualil, and Christophe Van Gysel. 2024. Synthetic query generation using large language models for virtual assistants. In SIGIR . 2837-2841. [42] Jingbo Shang, Jialu Liu, Meng Jiang, Xiang Ren, Clare R Voss, and Jiawei Han. 2018. Automated phrase mining from massive text corpora. IEEE Transactions on Knowledge and Data Engineering 30, 10 (2018), 1825-1837. [43] Xinyao Shen, Jiangjie Chen, Jiaze Chen, Chun Zeng, and Yanghua Xiao. 2022. Diversified query generation guided by knowledge graph. In WSDM . 897-907. [44] Zhihong Shen, Hao Ma, and Kuansan Wang. 2018. A Web-scale system for scientific knowledge exploration. In Proceedings of ACL 2018, System Demonstrations . 87-92. [45] Amanpreet Singh, Mike D'Arcy, Arman Cohan, Doug Downey, and Sergey Feldman. 2023. SciRepEval: A Multi-Format Benchmark for Scientific Document Representations. In EMNLP . 5548-5566. [46] Fangbo Tao, Honglei Zhuang, Chi Wang Yu, Qi Wang, Taylor Cassidy, Lance M Kaplan, Clare R Voss, and Jiawei Han. 2016. Multi-Dimensional, Phrase-Based Summarization in Text Cubes. IEEE Data Eng. Bull. 39, 3 (2016), 74-84. [47] Nandan Thakur, Nils Reimers, Andreas Rücklé, Abhishek Srivastava, and Iryna Gurevych. 2021. BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models. In NeurIPS Datasets and Benchmarks Track . [48] Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, et al. 2023. Llama: Open and efficient foundation language models. arXiv preprint arXiv:2302.13971 (2023). [49] Jianyou Wang, Kaicheng Wang, Xiaoyue Wang, Prudhviraj Naidu, Leon Bergen, and Ramamohan Paturi. 2023. Scientific Document Retrieval using Multi-level Aspect-based Queries. In NeurIPS Datasets and Benchmarks Track . [50] Kexin Wang, Nandan Thakur, Nils Reimers, and Iryna Gurevych. 2022. GPL: Generative Pseudo Labeling for Unsupervised Domain Adaptation of Dense Retrieval. In NAACL . 2345-2360. [51] Jason Wei, Maarten Bosma, Vincent Y Zhao, Kelvin Guu, Adams Wei Yu, Brian Lester, Nan Du, Andrew M Dai, and Quoc V Le. 2021. Finetuned language models WSDM'25, March 10-14, 2025, Hannover, Germany SeongKu Kang et al. are zero-shot learners. arXiv preprint arXiv:2109.01652 (2021). [52] HongChien Yu, Chenyan Xiong, and Jamie Callan. 2021. Improving query representations for dense retrieval with pseudo relevance feedback. In CIKM . 35923596. [53] Jingtao Zhan, Jiaxin Mao, Yiqun Liu, Jiafeng Guo, Min Zhang, and Shaoping Ma. 2021. Optimizing dense retrieval model training with hard negatives. In SIGIR . 1503-1512. [54] Hang Zhang, Yeyun Gong, Yelong Shen, Jiancheng Lv, Nan Duan, and Weizhu Chen. 2022. Adversarial Retriever-Ranker model for Dense Retrieval. In ICLR . [55] Yu Zhang, Hao Cheng, Zhihong Shen, Xiaodong Liu, Ye-Yi Wang, and Jianfeng Gao. 2023. Pre-training Multi-task Contrastive Learning Models for Scientific Literature Understanding. In Findings of EMNLP . 12259-12275. [56] Zhi Zheng, Kai Hui, Ben He, Xianpei Han, Le Sun, and Andrew Yates. 2020. BERTQE: Contextualized Query Expansion for Document Re-ranking. In Findings of EMNLP . 4718-4728. [57] Wangchunshu Zhou, Yuchen Eleanor Jiang, Ethan Wilcox, Ryan Cotterell, and Mrinmaya Sachan. 2023. Controlled text generation with natural language instructions. In ICML . 42602-42613.",
   "keywords_parsed": [
     "Information retrieval",
-    " Query generation",
-    " Scientific document search"
+    "Query generation",
+    "Scientific document search"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Synthetic QA Corpora Generation with Roundtrip Consistency"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Ms marco: A human generated machine reading comprehension dataset"
+    },
+    {
+      "ref_id": "b3",
+      "title": "SciBERT: Pretrained Language Model for Scientific Text"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Inpars: Unsupervised dataset generation for information retrieval"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b6",
+      "title": "It's All Relative!A Synthetic Query Generation Approach for Improving Zero-Shot Relevance Prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Exploring the viability of synthetic query generation for relevance prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "SPECTER: Document-level Representation Learning using Citationinformed Transformers"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Promptagator: Few-shot dense retrieval from 8 examples"
+    },
+    {
+      "ref_id": "b10",
+      "title": "From distillation to hard negative sampling: Making sparse neural ir models more effective"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Unsupervised Corpus Aware Language Model Pre-training for Dense Passage Retrieval"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Unsupervised dense information retrieval with contrastive learning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Inpars-v2: Large language models as efficient dataset generators for information retrieval"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Improving Retrieval in Theme-specific Applications using a Corpus Topical Taxonomy"
+    },
+    {
+      "ref_id": "b15",
+      "title": "DERRD: A Knowledge Distillation Framework for Recommender System"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Semisupervised learning for cross-domain recommendation to cold-start users"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Taxonomy-guided Semantic Indexing for Academic Paper Search"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Dense Passage Retrieval for OpenDomain Question Answering"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Natural questions: a benchmark for question answering research"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Taxocom: Topic taxonomy completion with hierarchical discovery of novel topic clusters"
+    },
+    {
+      "ref_id": "b21",
+      "title": "MvFS: Multi-view Feature Selection for Recommender System"
+    },
+    {
+      "ref_id": "b22",
+      "title": "SAILER: Structure-aware Pre-trained Language Model for Legal Case Retrieval"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Advancing Precise Outline-Conditioned Text Generation with Task Duality and Explicit Outline Control"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Embedding-based zero-shot retrieval through query generation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "OAG-BERT: Towards a Unified Backbone Language Model for Academic Knowledge Services"
+    },
+    {
+      "ref_id": "b26",
+      "title": "S2ORC: The Semantic Scholar Open Research Corpus"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Zero-shot Neural Passage Retrieval via Domain-targeted Synthetic Question Generation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Generative Relevance Feedback with Large Language Models"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Multi-Vector Models with Textual Guidance for Fine-Grained Scientific Document Similarity"
+    },
+    {
+      "ref_id": "b31",
+      "title": "CSFCube-A Test Collection of Computer Science Research Articles for Faceted Query by Example"
+    },
+    {
+      "ref_id": "b32",
+      "title": "From doc2query to docTTTTTquery"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Document expansion by query prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Neighborhood Contrastive Learning for Scientific Document Representations with Citation Embeddings"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Improving content retrievability in search with controllable query generation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering"
+    },
+    {
+      "ref_id": "b37",
+      "title": "MIReAD: Simple Method for Learning High-quality Representations from Scientific Documents"
+    },
+    {
+      "ref_id": "b38",
+      "title": "UDAPDR: Unsupervised Domain Adaptation via LLM Prompting and Distillation of Rerankers"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Improving Passage Retrieval with Zero-Shot Question Generation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Multitask prompted training enables zero-shot task generalization"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Synthetic query generation using large language models for virtual assistants"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Automated phrase mining from massive text corpora"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Diversified query generation guided by knowledge graph"
+    },
+    {
+      "ref_id": "b44",
+      "title": "A Web-scale system for scientific knowledge exploration"
+    },
+    {
+      "ref_id": "b45",
+      "title": "SciRepEval: A Multi-Format Benchmark for Scientific Document Representations"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Multi-Dimensional, Phrase-Based Summarization in Text Cubes"
+    },
+    {
+      "ref_id": "b47",
+      "title": "BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Llama: Open and efficient foundation language models"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Scientific Document Retrieval using Multi-level Aspect-based Queries"
+    },
+    {
+      "ref_id": "b50",
+      "title": "GPL: Generative Pseudo Labeling for Unsupervised Domain Adaptation of Dense Retrieval"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Finetuned language models are zero-shot learners"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Improving query representations for dense retrieval with pseudo relevance feedback"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Optimizing dense retrieval model training with hard negatives"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Adversarial Retriever-Ranker model for Dense Retrieval"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Pre-training Multi-task Contrastive Learning Models for Scientific Literature Understanding"
+    },
+    {
+      "ref_id": "b56",
+      "title": "BERTQE: Contextualized Query Expansion for Document Re-ranking"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Controlled text generation with natural language instructions"
+    }
   ]
 }

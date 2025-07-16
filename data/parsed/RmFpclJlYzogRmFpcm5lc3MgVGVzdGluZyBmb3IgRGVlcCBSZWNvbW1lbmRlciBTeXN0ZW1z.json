@@ -24,7 +24,207 @@
   "REFERENCES": "[1] HimanAbdollahpouri and Robin Burke. 2019. Multi-stakeholder recommendation and its connection to multi-sided fairness. arXiv preprint arXiv:1907.13158 (2019). [2] Himan Abdollahpouri, Masoud Mansoury, Robin Burke, Bamshad Mobasher, and Edward Malthouse. 2021. User-centered evaluation of popularity bias in recommender systems. In Proceedings of the 29th ACM Conference on User Modeling, Adaptation and Personalization . 119-129. [3] Aniya Aggarwal, Pranay Lohia, Seema Nagar, Kuntal Dey, and Diptikalyan Saha. 2019. Black box fairness testing of machine learning models. In Proceedings of the 2019 27th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering . 625-635. [4] Rico Angell, Brittany Johnson, Yuriy Brun, and Alexandra Meliou. 2018. Themis: Automatically testing software for discrimination. In Proceedings of the 2018 26th ACM Joint meeting on european software engineering conference and symposium on the foundations of software engineering . 871-875. [5] Alex Beutel, Jilin Chen, Tulsee Doshi, Hai Qian, Li Wei, Yi Wu, Lukasz Heldt, Zhe Zhao, Lichan Hong, Ed H Chi, et al. 2019. Fairness in recommendation ranking through pairwise comparisons. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2212-2220. [6] Alessandro Castelnovo, Riccardo Crupi, Greta Greco, Daniele Regoli, Ilaria Giuseppina Penco, and Andrea Claudio Cosentini. [n. d.]. A clarification of the nuances in the fairness metrics landscape. Scientific Reports 12, 1 ([n. d.]), 1-21. [7] Òscar Celma Herrada et al. 2009. Music recommendation and discovery in the long tail . Universitat Pompeu Fabra. [8] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2023. Bias and debias in recommender system: A survey and future directions. ACM Transactions on Information Systems 41, 3 (2023), 1-39. [9] Zhenpeng Chen, Jie M Zhang, Max Hort, Federica Sarro, and Mark Harman. 2022. Fairness Testing: A Comprehensive Survey and Analysis of Trends. arXiv preprint arXiv:2207.10223 (2022). [10] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [11] Mengnan Du, Fan Yang, Na Zou, and Xia Hu. 2020. Fairness in deep learning: A computational perspective. IEEE Intelligent Systems 36, 4 (2020), 25-34. [12] Ming Fan, Wenying Wei, Wuxia Jin, Zijiang Yang, and Ting Liu. 2022. Explanation-Guided Fairness Testing through Genetic Algorithm. arXiv preprint arXiv:2205.08335 (2022). [13] Sainyam Galhotra, Yuriy Brun, and Alexandra Meliou. 2017. Fairness testing: testing software for discrimination. In Proceedings of the 2017 11th Joint meeting on foundations of software engineering . 498-510. [14] Elizabeth Gómez, Carlos Shui Zhang, Ludovico Boratto, Maria Salamó, and Mirko Marras. 2021. The winner takes it all: geographic imbalance and provider (un) fairness in educational recommender systems. In Proceedings of the 44th International ISSTA 2023, 17-21 July, 2023, Seattle, USA Huizhong Guo, Jinfeng Li, Jingyi Wang, Xiangyu Liu, Dongxia Wang, Zehong Hu, Rong Zhang, and Hui Xue ACM SIGIR Conference on Research and Development in Information Retrieval . 1808-1812. [15] Nina Grgic-Hlaca, Muhammad Bilal Zafar, Krishna P Gummadi, and Adrian Weller. 2016. The case for process fairness in learning: Feature selection for fair decision making. In NIPS symposium on machine learning and the law , Vol. 1. Barcelona, Spain, 2. [16] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [17] Moritz Hardt, Eric Price, and Nati Srebro. 2016. Equality of opportunity in supervised learning. Advances in neural information processing systems 29 (2016). [18] F Maxwell Harper and Joseph A Konstan. 2015. The movielens datasets: History and context. Acm transactions on interactive intelligent systems (tiis) 5, 4 (2015), 1-19. [19] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [20] Rashidul Islam, Kamrun Naher Keya, Ziqian Zeng, Shimei Pan, and James Foulds. 2021. Debiasing career recommendations with neural fair collaborative filtering. In Proceedings of the Web Conference 2021 . 3779-3790. [21] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated gain-based evaluation of IR techniques. ACM Transactions on Information Systems (TOIS) 20, 4 (2002), 422-446. [22] James Kennedy and Russell Eberhart. 1995. Particle swarm optimization. In Proceedings of ICNN'95-international conference on neural networks , Vol. 4. IEEE, 1942-1948. [23] Matt J Kusner, Joshua Loftus, Chris Russell, and Ricardo Silva. 2017. Counterfactual fairness. Advances in neural information processing systems 30 (2017). [24] Jurek Leonhardt, Avishek Anand, and Megha Khosla. 2018. User fairness in recommender systems. In Companion Proceedings of the The Web Conference 2018 . 101-102. [25] Yunqi Li, Hanxiong Chen, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2021. User-oriented fairness in recommendation. In Proceedings of the Web Conference 2021 . 624-632. [26] Charles X Ling, Jin Huang, Harry Zhang, et al. 2003. AUC: a statistically consistent and more discriminating measure than accuracy. In Ijcai , Vol. 3. 519-524. [27] Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, and Yuzhou Zhang. 2019. Feature generation by convolutional neural network for click-through rate prediction. In The World Wide Web Conference . 1119-1129. [28] Chenyang Lyu, Shouling Ji, Chao Zhang, Yuwei Li, Wei-Han Lee, Yu Song, and Raheem Beyah. 2019. { MOPT } : Optimized mutation scheduling for fuzzers. In 28th USENIX Security Symposium (USENIX Security 19) . 1949-1966. [29] Shira Mitchell, Eric Potash, Solon Barocas, Alexander D'Amour, and Kristian Lum. 2021. Algorithmic fairness: Choices, assumptions, and definitions. Annual Review of Statistics and Its Application 8 (2021), 141-163. [30] Anjana Perera, Aldeida Aleti, Chakkrit Tantithamthavorn, Jirayus Jiarpakdee, Burak Turhan, Lisa Kuhn, and Katie Walker. 2022. Search-based fairness testing for regression-based machine learning systems. Empirical Software Engineering 27, 3 (2022), 1-36. [31] Lijing Qin and Xiaoyan Zhu. 2013. Promoting diversity in recommendation by entropy regularizer. In Twenty-Third International Joint Conference on Artificial Intelligence . Citeseer. [32] Hossein A Rahmani, Mohammadmehdi Naghiaei, Mahdi Dehghan, and MohammadAliannejadi. 2022. Experiments on Generalizability of User-Oriented Fairness in Recommender Systems. arXiv preprint arXiv:2205.08289 (2022). [33] Ying Shan, T Ryan Hoens, Jian Jiao, Haijing Wang, Dong Yu, and JC Mao. 2016. Deep crossing: Web-scale modeling without manually crafted combinatorial features. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining . 255-262. [34] Weichen Shen. 2017. DeepCTR: Easy-to-use,Modular and Extendible package of deep-learning based CTR models. https://github.com/shenweichen/deepctr. [35] Nian Si, Karthyek Murthy, Jose Blanchet, and Viet Anh Nguyen. 2021. Testing group fairness via optimal transport projections. In International Conference on Machine Learning . PMLR, 9649-9659. [36] Ryosuke Sonoda. 2021. A Pre-processing Method for Fairness in Ranking. arXiv preprint arXiv:2110.15503 (2021). [37] Jun Sun, Wei Fang, Xiaojun Wu, Choi-Hong Lai, and Wenbo Xu. 2011. Solving the multi-stage portfolio optimization problem with a novel particle swarm optimization. Expert Systems with Applications 38, 6 (2011), 6727-6735. [38] Sakshi Udeshi, Pryanshu Arora, and Sudipta Chattopadhyay. 2018. Automated directed fairness testing. In Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering . 98-108. [39] Ellen M Voorhees. 2001. The TREC question answering track. Natural Language Engineering 7, 4 (2001), 361-378. [40] Hao Wang. 2022. Fairness Metrics for Recommender Systems. In 2022 9th International Conference on Wireless Communication and Sensor Networks (ICWCSN) (Dalian, China) (icWCSN 2022) . Association for Computing Machinery, New York, NY, USA, 89-92. https://doi.org/10.1145/3514105.3514120 [41] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [42] Wenjie Wang, Fuli Feng, Xiangnan He, Xiang Wang, and Tat-Seng Chua. 2021. Deconfounded recommendation for alleviating bias amplification. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 1717-1725. [43] Xiuling Wang and Wendy Hui Wang. 2022. Providing Item-side Individual Fairness for Deep Recommender Systems. In 2022 ACM Conference on Fairness, Accountability, and Transparency . 117-127. [44] Andreas Windisch, Stefan Wappler, and Joachim Wegener. 2007. Applying particle swarmoptimization to software testing. In Proceedings of the 9th annual conference on Genetic and evolutionary computation . 1121-1128. [45] Chuhan Wu, Fangzhao Wu, Xiting Wang, Yongfeng Huang, and Xing Xie. 2021. Fairness-aware news recommendation with decomposed adversarial learning. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 35. 4462-4469. [46] Sirui Yao and Bert Huang. 2017. Beyond parity: Fairness objectives for collaborative filtering. Advances in neural information processing systems 30 (2017). [47] Mengdi Zhang, Jun Sun, Jingyi Wang, and Bing Sun. 2022. TESTSGD: Interpretable Testing of Neural Networks Against Subtle Group Discrimination. arXiv preprint arXiv:2208.11321 (2022). [48] Peixin Zhang, Jingyi Wang, Jun Sun, Guoliang Dong, Xinyu Wang, Xingen Wang, Jin Song Dong, and Ting Dai. 2020. White-box fairness testing through adversarial sampling. In Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering . 949-960. [49] Ziwei Zhu, Yun He, Xing Zhao, and James Caverlee. 2021. Popularity Bias in Dynamic Recommendation. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 2439-2449. [50] Cai-Nicolas Ziegler, Sean M McNee, Joseph A Konstan, and Georg Lausen. 2005. Improving recommendation lists through topic diversification. In Proceedings of the 14th international conference on World Wide Web . 22-32. FairRec: Fairness Testing for Deep Recommender Systems ISSTA 2023, 17-21 July, 2023, Seattle, USA",
   "APPENDIX": "Table 5 shows the results of the fairness testing after dividing the population based on combinations of different sensitive attributes, which allows us to investigate the fairness issues under a multiattribute view. We select the dataset MovieLens (with sensitive attributes gender, age and occupation ) and BlackFriday (with sensitive attributes gender,age, occupation, city category, years of stay in the current city, and marital status ). We can observe that with more sensitive attributes considered, more serious fairness issues can be disclosed. For example, for MovieLens, when only Gender is considered (i.e., there are only two groups), the fairness-performance gap between the most advantaged group and disadvantaged group is 0 . 0021 . However, when Gender, Age and Occupation are all considered (i.e., users get divided w.r.t the combinatorial values of the three dimensions), that gap turns to be 0 . 2537 , implying the recommendations are more unfair. Table 5: Multi-attribute fairness based on different cases.",
   "Note:": "· 𝐴 1 : Gender. · 𝐴 2 : Gender, Age. · 𝐴 3 : Gender, Age, City category. · 𝐴 4 : Gender, Age, City category, Years of stay in the current city. · 𝐴 5 : Gender, Age, City category, Years of stay in the current city, Marital status. · 𝐴 6 : Gender, Age, City category, Years of stay in the current city, Marital status, Occupation. Table 6 shows the change of overall fairness scores before and after mitigation mentioned in the RQ3 of section 4.2. Each entry represents the gap between the most advantaged and disadvantaged groups is reduced w.r.t the corresponding metric after mitigation is applied. We can notice that after mitigation, the fairnessperformance w.r.t each metric gets improved (i.e., reduced gap between the target groups). Table 6: Unfairness mitigation based on our testing results. Table 7 in the next page shows the fixed-time testing results on BlackFriday and Amazon as mentioned in the RQ1 of section 4.2. We can observe that in most cases, our FairRec finds the largest gap between the advantaged and disadvantaged groups, revealing the severity of the fairness problem more accurately. ISSTA 2023, 17-21 July, 2023, Seattle, USA Huizhong Guo, Jinfeng Li, Jingyi Wang, Xiangyu Liu, Dongxia Wang, Zehong Hu, Rong Zhang, and Hui Xue Table 7: The fairness testing results on BlackFriday and Amazon within limited time.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Multi-stakeholder recommendation and its connection to multi-sided fairness"
+    },
+    {
+      "ref_id": "b2",
+      "title": "User-centered evaluation of popularity bias in recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Black box fairness testing of machine learning models"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Themis: Automatically testing software for discrimination"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fairness in recommendation ranking through pairwise comparisons"
+    },
+    {
+      "ref_id": "b6",
+      "title": "A clarification of the nuances in the fairness metrics landscape"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Music recommendation and discovery in the long tail"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Bias and debias in recommender system: A survey and future directions"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Fairness Testing: A Comprehensive Survey and Analysis of Trends"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Fairness in deep learning: A computational perspective"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Explanation-Guided Fairness Testing through Genetic Algorithm"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Fairness testing: testing software for discrimination"
+    },
+    {
+      "ref_id": "b14",
+      "title": "The winner takes it all: geographic imbalance and provider (un) fairness in educational recommender systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "The case for process fairness in learning: Feature selection for fair decision making"
+    },
+    {
+      "ref_id": "b16",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Equality of opportunity in supervised learning"
+    },
+    {
+      "ref_id": "b18",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Debiasing career recommendations with neural fair collaborative filtering"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Particle swarm optimization"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Counterfactual fairness"
+    },
+    {
+      "ref_id": "b24",
+      "title": "User fairness in recommender systems"
+    },
+    {
+      "ref_id": "b25",
+      "title": "User-oriented fairness in recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "AUC: a statistically consistent and more discriminating measure than accuracy"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Feature generation by convolutional neural network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "{MOPT}: Optimized mutation scheduling for fuzzers"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Algorithmic fairness: Choices, assumptions, and definitions"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Search-based fairness testing for regression-based machine learning systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Promoting diversity in recommendation by entropy regularizer"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Experiments on Generalizability of User-Oriented Fairness in Recommender Systems"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Deep crossing: Web-scale modeling without manually crafted combinatorial features"
+    },
+    {
+      "ref_id": "b34",
+      "title": "DeepCTR: Easy-to-use, Modular and Extendible package of deep-learning based CTR models"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Testing group fairness via optimal transport projections"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A Pre-processing Method for Fairness in Ranking"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Solving the multi-stage portfolio optimization problem with a novel particle swarm optimization"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Automated directed fairness testing"
+    },
+    {
+      "ref_id": "b39",
+      "title": "The TREC question answering track"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Fairness Metrics for Recommender Systems"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Deconfounded recommendation for alleviating bias amplification"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Providing Item-side Individual Fairness for Deep Recommender Systems"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Applying particle swarm optimization to software testing"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Fairness-aware news recommendation with decomposed adversarial learning"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Beyond parity: Fairness objectives for collaborative filtering"
+    },
+    {
+      "ref_id": "b47",
+      "title": "TESTSGD: Interpretable Testing of Neural Networks Against Subtle Group Discrimination"
+    },
+    {
+      "ref_id": "b48",
+      "title": "White-box fairness testing through adversarial sampling"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Popularity Bias in Dynamic Recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Improving recommendation lists through topic diversification"
+    }
   ]
 }

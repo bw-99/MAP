@@ -37,21 +37,218 @@
   "D FORMULA DERIVATION OF AUKC": "In this section, we detail the formula derivation process of AUKC. AUKC is a comprehensive metric for assessing the AUC performance of a given feature selection method across different numbers of feature selections. Under ideal circumstances, experiments can be conducted for each number of selections to obtain the corresponding AUC metrics, and then derive AUKC:   where | 𝐾 | denotes the number of all features, 𝐴𝑈𝐶 𝑘 is the AUC metric with 𝑘 features selected. When there is no feature selected, the model will predict labels randomly (i.e., 𝐴𝑈𝐶 = 0 . 5). Therefore, we subtract 0.5 from 𝐴𝑈𝐶 𝑘 to obtain the improvement. KDD '24, August 25-29, 2024, Barcelona, Spain Pengyue Jia, et al. Table 8: Overall experimental results of feature selection for deep recommender systems. When the number of selected features is unevenly distributed across the length of the set of features (e.g., in practice, the granularity of the feature selection number often becomes finer as it approaches the total number of features, and coarser when there are fewer features), AUKC has a more general format:   where | 𝑁 | represents the number of segments for the number of features selected across the entire length of the feature set. For example, with 6 features, if experiments are conducted at feature counts of 2,4,5, and 6, then | 𝑁 | = 4. 𝐴𝑈𝐶 𝑛,𝑙 is the AUC corresponding to the number of features selected at the left endpoint of the 𝑛 th segment, and 𝐴𝑈𝐶 𝑛,𝑟 denotes the AUC with the number of selections at the right endpoint of the 𝑛 th segment. Δ 𝑙 𝑛 represents the length of the 𝑛 th segment.",
   "E COMPLETE OVERALL PERFORMANCE": "Due to page limitations, we can not include the complete overall experimental results in the main content. We list the complete results in Table 8 for reference.",
   "keywords_parsed": [
-    "Deep Recommender Systems (DRS) are increasingly dependent on a large number of feature fields for more precise recommendations. Effective feature selection methods are consequently becoming critical for further enhancing the accuracy and optimizing storage efficiencies to align with the deployment demands. This research area",
-    " particularly in the context of DRS",
-    " is nascent and faces three core challenges. Firstly",
-    " variant experimental setups across research papers often yield unfair comparisons",
-    " obscuring practical insights. Secondly",
-    " the existing literature's lack of detailed analysis on selection attributes",
-    " based on large-scale datasets and a thorough comparison among selection techniques and DRS backbones",
-    " restricts the generalizability of findings and impedes deployment on DRS. Lastly",
-    " research often focuses on comparing the peak performance achievable by feature selection methods. This approach is typically computationally infeasible for identifying the optimal hyperparameters and overlooks evaluating the robustness and stability of these methods. To bridge these gaps",
-    " this paper presents ERASE",
-    " a comprehensive b E nchma R k for fe A ture SE lection for DRS. ERASE comprises a thorough evaluation of eleven feature selection methods",
-    " covering both traditional and deep learning approaches",
-    " across four public datasets",
-    " private industrial datasets",
-    " and a real-world commercial platform",
-    " achieving significant enhancement. Our code is available online 1 for ease of reproduction."
+    "Benchmark",
+    "Feature Selection",
+    "Deep Recommender System"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A review of feature selection methods on synthetic data"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A review of microarray datasets and applied feature selection methods"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Benchmark for filter methods for feature selection in high-dimensional classification data"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Random forests"
+    },
+    {
+      "ref_id": "b5",
+      "title": "A comprehensive survey on automated machine learning for recommendations"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Xgboost: A scalable tree boosting system"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A Performance-Driven Benchmark for Feature Selection in Tabular Deep Learning"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Performance evaluation of filter-based feature selection techniques in classifying portable executable files"
+    },
+    {
+      "ref_id": "b10",
+      "title": "AutoFS: Automated Feature selection via diversity-aware interactive reinforcement learning"
+    },
+    {
+      "ref_id": "b11",
+      "title": "All Models are Wrong, but Many are Useful: Learning a Variable's Importance by Studying an Entire Class of Prediction Models Simultaneously"
+    },
+    {
+      "ref_id": "b12",
+      "title": "An Extensive Empirical Study of Feature Selection Metrics for Text Classification"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Greedy function approximation: a gradient boosting machine"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Recursive feature elimination with random forest for PTR-MS analysis of agroindustrial products"
+    },
+    {
+      "ref_id": "b15",
+      "title": "An embedding learning framework for numerical features in ctr prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "LPFS: Learnable Polarizing Feature Selection for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "An introduction to variable and feature selection"
+    },
+    {
+      "ref_id": "b19",
+      "title": "An empirical analysis of feature engineering for predictive modeling"
+    },
+    {
+      "ref_id": "b20",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Fine-Grained Population Mobility Data-Based Community-Level COVID-19 Prediction Model"
+    },
+    {
+      "ref_id": "b22",
+      "title": "G3: An Effective and Adaptive Framework for Worldwide Geolocalization Using Large Multi-Modality Models"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Mill: Mutual verification with large language models for zero-shot query expansion"
+    },
+    {
+      "ref_id": "b24",
+      "title": "D3: A Methodological Exploration of Domain Division, Modeling, and Balance in Multi-Domain Recommendations"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deep visual-semantic alignments for generating image descriptions"
+    },
+    {
+      "ref_id": "b26",
+      "title": "MvFS: Multi-view Feature Selection for Recommender System"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Automlp: Automated mlp for sequential recommendations"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Agent4Ranking: Semantic Robust Ranking via Personalized Query Rewriting Using Multi-agent LLM"
+    },
+    {
+      "ref_id": "b29",
+      "title": "AdaFS: Adaptive Feature Selection in Deep Recommender System"
+    },
+    {
+      "ref_id": "b30",
+      "title": "MultiFS: Automated MultiScenario Feature Selection in Deep Recommender Systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Chi2: Feature selection and discretization of numeric attributes"
+    },
+    {
+      "ref_id": "b32",
+      "title": "DARTS: Differentiable Architecture Search"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Automated embedding size search in deep recommender systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Automating feature subspace exploration via multi-agent reinforcement learning"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Optimizing Feature Set for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b38",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Data mining and genetic algorithm based gene/SNP selection"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Bias in random forest variable importance measures: Illustrations, sources and a solution"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Regression shrinkage and selection via the lasso"
+    },
+    {
+      "ref_id": "b42",
+      "title": "A review of feature selection methods based on mutual information"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Single-shot Feature Selection for Multi-task Recommendations"
+    },
+    {
+      "ref_id": "b45",
+      "title": "AutoField: Automating Feature Selection in Deep Recommender Systems"
+    },
+    {
+      "ref_id": "b46",
+      "title": "SHARK: A Lightweight Model Compression Approach for Large-Scale Recommender Systems"
+    },
+    {
+      "ref_id": "b47",
+      "title": "M3oE: MultiDomain Multi-Task Mixture-of Experts Recommendation Framework"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Autoloss: Automated loss function search in recommendations"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Autodim: Field-aware embedding dimension search in recommender systems"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Simplifying reinforced feature selection via restructured choice strategy of single agent"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Autoemb: Automated embedding dimensionality search in streaming recommendations"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Automl for deep recommender systems: A survey"
+    }
   ]
 }

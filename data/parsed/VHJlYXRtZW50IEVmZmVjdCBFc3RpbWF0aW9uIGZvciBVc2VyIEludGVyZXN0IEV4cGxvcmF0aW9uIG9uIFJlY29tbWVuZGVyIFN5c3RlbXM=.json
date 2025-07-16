@@ -26,18 +26,195 @@
   "6 CONCLUSION": "In this work, we approach top𝑁 recommendation from a causal perspective, using the category exposure ratio as the treatment and the CTR of each category as the outcome. We tackle the challenges of expensive data collection, biased observation, and data sparsity by generating an augmented dataset for treatment effect estimation, employing an IPW method to address the backdoor path, and discretizing the treatment. Our proposed Uplift modelbased Recommender (UpliftRec) framework estimates personalized ADRF to explore user interests effectively. By optimizing potential outcomes based on ADRF, we determine the best treatment for each user and adjust backend scores using MTEF derived from ADRF.We conduct extensive experiments to validate the effectiveness of our framework. This work introduces a new field of estimating uplift effects in recommendations. In the future, we plan to extend our approach to session-based models, such as reinforcement learning. Furthermore, we will explore different actions as treatments to apply our method to various scenarios. SIGIR '24, July 14-18, 2024, Washington, DC, USA Jiaju Chen et al.",
   "REFERENCES": "[1] Himan Abdollahpouri, Robin Burke, and Bamshad Mobasher. 2017. Controlling Popularity Bias in Learning-to-Rank Recommendation. In Proceedings of the Eleventh ACM Conference on Recommender Systems (RecSys) . Association for Computing Machinery, 42-46. [2] MengAi, Biao Li, Heyang Gong, Qingwei Yu, Shengjie Xue, Yuan Zhang, Yunzhou Zhang, and Peng Jiang. 2022. LBCF: A Large-Scale Budget-Constrained Causal Forest Algorithm. In Proceedings of the ACM Web Conference 2022 (WWW '22) . Association for Computing Machinery, 2310-2319. [3] Ludovico Boratto, Gianni Fenu, and Mirko Marras. 2021. Connecting user and item perspectives in popularity debiasing for collaborative recommendation. Information Processing & Management 58, 1 (2021), 102387. [4] Jaime Carbonell and Jade Goldstein. 1998. The use of MMR, diversity-based reranking for reordering documents and producing summaries. In Proceedings of the 21st annual international ACM SIGIR conference on Research and development in information retrieval . 335-336. [5] Jiawei Chen, Hande Dong, Yang Qiu, Xiangnan He, Xin Xin, Liang Chen, Guli Lin, and Keping Yang. 2021. AutoDebias: Learning to Debias for Recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '21) . Association for Computing Machinery, 21-30. [6] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2023. Bias and Debias in Recommender System: A Survey and Future Directions. ACM Trans. Inf. Syst. 41, 3, Article 67 (feb 2023), 39 pages. [7] Konstantina Christakopoulou, Madeleine Traverse, Trevor Potter, Emma Marriott, Daniel Li, Chris Haulk, Ed H. Chi, and Minmin Chen. 2020. Deconfounding User Satisfaction Estimation from Response Rate Bias. In Proceedings of the 14th ACM Conference on Recommender Systems (Virtual Event, Brazil) (RecSys) . Association for Computing Machinery, 450-455. [8] Sihao Ding, Fuli Feng, Xiangnan He, Jinqiu Jin, Wenjie Wang, Yong Liao, and Yongdong Zhang. 2022. Interpolative Distillation for Unifying Biased and Debiased Recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . Association for Computing Machinery, 40-49. [9] Chongming Gao, Wenqiang Lei, Jiawei Chen, Shiqi Wang, Xiangnan He, Shijun Li, Biao Li, Yuan Zhang, and Peng Jiang. 2022. CIRS: Bursting Filter Bubbles by Counterfactual Interactive Recommender System. arXiv preprint arXiv:2204.01266 (2022). [10] Chongming Gao, Shijun Li, Wenqiang Lei, Jiawei Chen, Biao Li, Peng Jiang, Xiangnan He, Jiaxin Mao, and Tat-Seng Chua. 2022. KuaiRec: A Fully-Observed Dataset and Insights for Evaluating Recommender Systems. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (CIKM) . 540-550. [11] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [12] Pierre Gutierrez and Jean-Yves Gérardy. 2017. Causal Inference and Uplift Modelling: A Review of the Literature. In Proceedings of The 3rd International Conference on Predictive Applications and APIs (Proceedings of Machine Learning Research, Vol. 67) , Claire Hardgrove, Louis Dorard, Keiran Thompson, and Florian Douetteau (Eds.). PMLR, 1-13. [13] John A Hartigan and Manchek A Wong. 1979. Algorithm AS 136: A k-means clustering algorithm. Journal of the royal statistical society. series c (applied statistics) 28, 1 (1979), 100-108. [14] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, YongDong Zhang, and Meng Wang. 2020. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . Association for Computing Machinery, 639-648. [15] Yifan Hu, Yehuda Koren, and Chris Volinsky. 2008. Collaborative filtering for implicit feedback datasets. In 2008 Eighth IEEE international conference on data mining . Ieee, 263-272. [16] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated gain-based evaluation of IR techniques. ACM Transactions on Information Systems (TOIS) 20, 4 (2002), 422-446. [17] Ray Jiang, Silvia Chiappa, Tor Lattimore, András György, and Pushmeet Kohli. 2019. Degenerate Feedback Loops in Recommender Systems. In Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society (AIES) . Association for Computing Machinery, 383-390. [18] Nathan Kallus and Angela Zhou. 2018. Policy Evaluation and Optimization with Continuous Treatments. In Proceedings of the Twenty-First International Conference on Artificial Intelligence and Statistics (Proceedings of Machine Learning Research, Vol. 84) , Amos Storkey and Fernando Perez-Cruz (Eds.). PMLR, 12431251. [19] Edward H Kennedy, Zongming Ma, Matthew D McHugh, and Dylan S Small. 2017. Non-parametric methods for doubly robust estimation of continuous treatment effects. Journal of the Royal Statistical Society. Series B (Statistical Methodology) 79, 4 (2017), 1229-1245. [20] Ilyes Khemakhem, Diederik Kingma, Ricardo Monti, and Aapo Hyvarinen. 2020. Variational autoencoders and nonlinear ica: A unifying framework. In International Conference on Artificial Intelligence and Statistics . PMLR, 2207-2217. [21] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix factorization techniques for recommender systems. Computer 42, 8 (2009), 30-37. [22] Lihong Li, Wei Chu, John Langford, and Robert E. Schapire. 2010. A ContextualBandit Approach to Personalized News Article Recommendation. In Proceedings of the 19th International Conference on World Wide Web (WWW) . Association for Computing Machinery, 661-670. [23] Shuai Li, Alexandros Karatzoglou, and Claudio Gentile. 2016. Collaborative Filtering Bandits. In Proceedings of the 39th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . Association for Computing Machinery, 539-548. [24] Masoud Mansoury, Himan Abdollahpouri, Mykola Pechenizkiy, Bamshad Mobasher, and Robin Burke. 2020. Feedback Loop and Bias Amplification in Recommender Systems. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management (CIKM) . Association for Computing Machinery, 2145-2148. [25] Benjamin M. Marlin and Richard S. Zemel. 2009. Collaborative Prediction and Ranking with Non-Random Missing Data. In Proceedings of the Third ACM Conference on Recommender Systems . Association for Computing Machinery, 5-12. [26] Rishabh Mehrotra, Prasanta Bhattacharya, and Mounia Lalmas. 2020. Inferring the Causal Impact of New Track Releases on Music Recommendation Platforms through Counterfactual Predictions. In Proceedings of the 14th ACM Conference on Recommender Systems (RecSys) . Association for Computing Machinery, 687-691. [27] Judea Pearl. 2009. Causality . Cambridge university press. [28] Judea Pearl, Madelyn Glymour, and Nicholas P Jewell. 2016. Causal inference in statistics: A primer. 2016. Internet resource (2016). [29] Yunzhe Qi, Yikun Ban, and Jingrui He. 2023. Graph neural bandits. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 1920-1931. [30] Steffen Rendle. 2012. Factorization Machines with LibFM. ACM Trans. Intell. Syst. Technol. 3, 3, Article 57 (may 2012), 22 pages. [31] Yuta Saito, Suguru Yaginuma, Yuta Nishino, Hayato Sakata, and Kazuhide Nakata. 2020. Unbiased Recommender Learning from Missing-Not-At-Random Implicit Feedback. In Proceedings of the 13th International Conference on Web Search and Data Mining (WSDM) . Association for Computing Machinery, 501-509. [32] Fatemeh Sarvi, Ali Vardasbi, Mohammad Aliannejadi, Sebastian Schelter, and Maarten de Rijke. 2023. On the Impact of Outlier Bias on User Clicks. arXiv preprint arXiv:2305.00857 (2023). [33] Masahiro Sato, Sho Takemori, Janmajay Singh, and Tomoko Ohkuma. 2020. Unbiased Learning for the Causal Effect of Recommendation. In Proceedings of the 14th ACM Conference on Recommender Systems (RecSys) . Association for Computing Machinery, 378-387. [34] Tobias Schnabel, Adith Swaminathan, Ashudeep Singh, Navin Chandak, and Thorsten Joachims. 2016. Recommendations as Treatments: Debiasing Learning and Evaluation. In Proceedings of the 33rd International Conference on International Conference on Machine Learning (New York, NY, USA). JMLR.org, 1670-1679. [35] Tobias Schnabel, Adith Swaminathan, Ashudeep Singh, Navin Chandak, and Thorsten Joachims. 2016. Recommendations as Treatments: Debiasing Learning and Evaluation. In Proceedings of The 33rd International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 48) , Maria Florina Balcan and Kilian Q. Weinberger (Eds.). PMLR, 1670-1679. [36] Vira Semenova and Victor Chernozhukov. 2021. Debiased machine learning of conditional average treatment effects and other causal functions. The Econometrics Journal 24, 2 (2021), 264-289. [37] Chaofeng Sha, Xiaowei Wu, and Junyu Niu. 2016. A Framework for Recommending Relevant and Diverse Items. In Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence (IJCAI) . AAAI Press, 3868-3874. [38] Yu Song, Shuai Sun, Jianxun Lian, Hong Huang, Yu Li, Hai Jin, and Xing Xie. 2022. Show Me the Whole World: Towards Entire Item Space Exploration for Interactive Personalized Recommendations. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (WSDM) . Association for Computing Machinery, 947-956. [39] Dusan Stamenkovic, Alexandros Karatzoglou, Ioannis Arapakis, Xin Xin, and Kleomenis Katevas. 2022. Choosing the Best of Both Worlds: Diverse and Novel Recommendations through Multi-Objective Reinforcement Learning. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (WSDM) . Association for Computing Machinery, 957-965. [40] Teng Sun, Wenjie Wang, Liqaing Jing, Yiran Cui, Xuemeng Song, and Liqiang Nie. 2022. Counterfactual reasoning for out-of-distribution multimodal sentiment analysis. In Proceedings of the 30th ACM International Conference on Multimedia . 15-23. [41] Jiakai Tang, Shiqi Shen, Zhipeng Wang, Zhi Gong, Jingsen Zhang, and Xu Chen. 2023. When Fairness meets Bias: a Debiased Framework for Fairness aware Top-N Recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems . 200-210. SIGIR '24, July 14-18, 2024, Washington, DC, USA Treatment Effect Estimation for User Interest Exploration on Recommender Systems [42] Wenjie Wang, Fuli Feng, Liqiang Nie, and Tat-Seng Chua. 2022. User-Controllable Recommendation Against Filter Bubbles. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . 1251-1261. [43] Xiaojie Wang, Rui Zhang, Yu Sun, and Jianzhong Qi. 2019. Doubly Robust Joint Learning for Recommendation on Data Missing Not at Random. In Proceedings of the 36th International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 97) , Kamalika Chaudhuri and Ruslan Salakhutdinov (Eds.). PMLR, 6638-6647. [44] Sizhe Yu, Ziyi Liu, Shixiang Wan, Jia Zheng, Zang Li, and Fan Zhou. 2022. MDP2 Forest: A Constrained Continuous Multi-Dimensional Policy Optimization Approach for Short-Video Recommendation. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) . Association for Computing Machinery, 2388-2398. [45] Alessio Zanga, Elif Ozkirimli, and Fabio Stella. 2022. A survey on causal discovery: theory and practice. International Journal of Approximate Reasoning 151 (2022), 101-129. [46] An Zhang, Wenchang Ma, Xiang Wang, and Tat-Seng Chua. 2022. Incorporating Bias-aware Margins into Contrastive Loss for Collaborative Filtering. arXiv",
   "keywords_parsed": [
-    "Recommender systems learn personalized user preferences from user feedback like clicks. However",
-    " user feedback is usually biased towards partially observed interests",
-    " leaving many users' hidden interests unexplored. Existing approaches typically mitigate the bias",
-    " increase recommendation diversity",
-    " or use bandit algorithms to balance exploration-exploitation trade-offs. Nevertheless",
-    " they fail to consider the potential rewards of recommending different categories of items and lack the global scheduling of allocating top𝑁 recommendations to categories",
-    " leading to suboptimal exploration. In this work",
-    " we propose an Uplift model-based Recommender (UpliftRec) framework",
-    " which regards top𝑁 recommendation as a treatment optimization problem. UpliftRec estimates the treatment effects",
-    " i.e.",
-    " the click-through rate (CTR) under different category exposure ratios",
-    " by using observational user feedback. UpliftRec calculates group-level treatment effects to discover users' hidden interests with high CTR rewards and leverages inverse propensity weighting to alleviate confounder bias. Thereafter",
-    " UpliftRec adopts a dynamic programming method to calculate the optimal treatment for overall CTR maximization. We implement UpliftRec on different backend models and conduct extensive experiments on three datasets. The empirical results validate the effectiveness of UpliftRec in discovering users' hidden interests while achieving superior recommendation accuracy."
+    "Recommender Systems",
+    "User Interest Exploration",
+    "Treatment Effect Estimation",
+    "Multivariate Continuous Treatments"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Controlling Popularity Bias in Learning-to-Rank Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "LBCF: A Large-Scale Budget-Constrained Causal Forest Algorithm"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Connecting user and item perspectives in popularity debiasing for collaborative recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "The use of MMR, diversity-based reranking for reordering documents and producing summaries"
+    },
+    {
+      "ref_id": "b5",
+      "title": "AutoDebias: Learning to Debias for Recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Bias and Debias in Recommender System: A Survey and Future Directions"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deconfounding User Satisfaction Estimation from Response Rate Bias"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Interpolative Distillation for Unifying Biased and Debiased Recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "CIRS: Bursting Filter Bubbles by Counterfactual Interactive Recommender System"
+    },
+    {
+      "ref_id": "b10",
+      "title": "KuaiRec: A Fully-Observed Dataset and Insights for Evaluating Recommender Systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Causal Inference and Uplift Modelling: A Review of the Literature"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Algorithm AS 136: A k-means clustering algorithm"
+    },
+    {
+      "ref_id": "b14",
+      "title": "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Collaborative filtering for implicit feedback datasets"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Degenerate Feedback Loops in Recommender Systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Policy Evaluation and Optimization with Continuous Treatments"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Non-parametric methods for doubly robust estimation of continuous treatment effects"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Variational autoencoders and nonlinear ica: A unifying framework"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A ContextualBandit Approach to Personalized News Article Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Collaborative Filtering Bandits"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Feedback Loop and Bias Amplification in Recommender Systems"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Collaborative Prediction and Ranking with Non-Random Missing Data"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Inferring the Causal Impact of New Track Releases on Music Recommendation Platforms through Counterfactual Predictions"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Causality"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Causal inference in statistics: A primer"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Graph neural bandits"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Factorization Machines with LibFM"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Unbiased Recommender Learning from Missing-Not-At-Random Implicit Feedback"
+    },
+    {
+      "ref_id": "b32",
+      "title": "On the Impact of Outlier Bias on User Clicks"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Unbiased Learning for the Causal Effect of Recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Recommendations as Treatments: Debiasing Learning and Evaluation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Recommendations as Treatments: Debiasing Learning and Evaluation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Debiased machine learning of conditional average treatment effects and other causal functions"
+    },
+    {
+      "ref_id": "b37",
+      "title": "A Framework for Recommending Relevant and Diverse Items"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Show Me the Whole World: Towards Entire Item Space Exploration for Interactive Personalized Recommendations"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Choosing the Best of Both Worlds: Diverse and Novel Recommendations through Multi-Objective Reinforcement Learning"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Counterfactual reasoning for out-of-distribution multimodal sentiment analysis"
+    },
+    {
+      "ref_id": "b41",
+      "title": "When Fairness meets Bias: a Debiased Framework for Fairness aware Top-N Recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "User-Controllable Recommendation Against Filter Bubbles"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Doubly Robust Joint Learning for Recommendation on Data Missing Not at Random"
+    },
+    {
+      "ref_id": "b44",
+      "title": "MDP2 Forest: A Constrained Continuous Multi-Dimensional Policy Optimization Approach for Short-Video Recommendation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "A survey on causal discovery: theory and practice"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Incorporating Bias-aware Margins into Contrastive Loss for Collaborative Filtering"
+    }
   ]
 }

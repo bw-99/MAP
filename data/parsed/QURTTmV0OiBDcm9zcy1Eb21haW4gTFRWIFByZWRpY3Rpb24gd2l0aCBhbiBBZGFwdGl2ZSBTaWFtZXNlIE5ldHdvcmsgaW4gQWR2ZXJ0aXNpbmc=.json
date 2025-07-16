@@ -29,7 +29,229 @@
   "REFERENCES": "[1] Rishi Bommasani, Drew A Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S Bernstein, Jeannette Bohg, Antoine Bosselut, Emma Brunskill, et al. 2021. On the opportunities and risks of foundation models. arXiv preprint arXiv:2108.07258 (2021). [2] Sharad Borle, Siddharth S Singh, and Dipak C Jain. 2008. Customer lifetime value measurement. Management science 54, 1 (2008), 100-112. [3] Wenzhi Cao, Vahid Mirjalili, and Sebastian Raschka. 2020. Rank consistent ordinal regression for neural networks with application to age estimation. Pattern Recognition Letters 140 (2020), 325-331. [4] Rich Caruana. 1997. Multitask learning. Machine learning 28 (1997), 41-75. [5] Benjamin Paul Chamberlain, Angelo Cardoso, CH Bryan Liu, Roberto Pagliari, and Marc Peter Deisenroth. 2017. Customer lifetime value prediction using embeddings. In Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining . 1753-1762. [6] Xingping Dong and Jianbing Shen. 2018. Triplet loss in siamese network for object tracking. In Proceedings of the European conference on computer vision (ECCV) . 459-474. [7] Lixin Duan, Dong Xu, and Ivor Tsang. 2012. Learning with augmented features for heterogeneous domain adaptation. arXiv preprint arXiv:1206.4660 (2012). [8] Eibe Frank and Mark Hall. 2001. A simple approach to ordinal classification. In Machine Learning: ECML 2001: 12th European Conference on Machine Learning Freiburg, Germany, September 5-7, 2001 Proceedings 12 . Springer, 145-156. [9] Huan Fu, Mingming Gong, Chaohui Wang, Kayhan Batmanghelich, and Dacheng Tao. 2018. Deep ordinal regression network for monocular depth estimation. In Proceedings of the IEEE conference on computer vision and pattern recognition . 2002-2011. [10] Junyi Gao, Cao Xiao, Lucas M Glass, and Jimeng Sun. 2020. COMPOSE: Crossmodal pseudo-siamese network for patient trial matching. In Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining . 803-812. [11] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [12] Qing Guo, Wei Feng, Ce Zhou, Rui Huang, Liang Wan, and Song Wang. 2017. Learning dynamic siamese network for visual object tracking. In Proceedings of the IEEE international conference on computer vision . 1763-1771. [13] Sunil Gupta, Dominique Hanssens, Bruce Hardie, Wiliam Kahn, V Kumar, Nathaniel Lin, Nalini Ravishanker, and S Sriram. 2006. Modeling customer lifetime value. Journal of service research 9, 2 (2006), 139-155. [14] Jonathan Ho and Stefano Ermon. 2016. Generative adversarial imitation learning. Advances in neural information processing systems 29 (2016). [15] Tongwen Huang, Qingyun She, Zhiqiang Wang, and Junlin Zhang. 2020. GateNet: gating-enhanced deep network for click-through rate prediction. arXiv preprint arXiv:2007.03519 (2020). [16] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM Conference on Recommender Systems . 169-177. [17] Robert A Jacobs, Michael I Jordan, Steven J Nowlan, and Geoffrey E Hinton. 1991. Adaptive mixtures of local experts. Neural computation 3, 1 (1991), 79-87. [18] Junguang Jiang, Baixu Chen, Junwei Pan, Ximei Wang, Dapeng Liu, Mingsheng Long, et al. 2023. ForkMerge: Mitigating Negative Transfer in Auxiliary-Task Learning. In Thirty-seventh Conference on Neural Information Processing Systems . [19] Jing Jiang and ChengXiang Zhai. 2007. Instance weighting for domain adaptation in NLP. ACL. [20] Xiaoqi Jiao, Yichun Yin, Lifeng Shang, Xin Jiang, Xiao Chen, Linlin Li, Fang Wang, and Qun Liu. 2019. Tinybert: Distilling bert for natural language understanding. arXiv preprint arXiv:1909.10351 (2019). [21] Kunpeng Li, Guangcui Shao, Naijun Yang, Xiao Fang, and Yang Song. 2022. Billionuser Customer Lifetime Value Prediction: An Industrial-scale Solution from Kuaishou. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3243-3251. [22] Wen Li, Lixin Duan, Dong Xu, and Ivor W Tsang. 2013. Learning with augmented features for supervised and semi-supervised heterogeneous domain adaptation. IEEE Transactions on Pattern analysis and machine intelligence 36, 6 (2013), 11341148. [23] Zhongqi Lu, Erheng Zhong, Lili Zhao, Evan Wei Xiang, Weike Pan, and Qiang Yang. 2013. Selective transfer learning for cross domain recommendation. In Proceedings of the 2013 SIAM International Conference on Data Mining . SIAM, 641-649. [24] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [25] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [26] Brendan McMahan. 2011. Follow-the-regularized-leader and mirror descent: Equivalence theorems and l1 regularization. In Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics . JMLR Workshop and Conference Proceedings, 525-533. [27] Zhenxing Niu, Mo Zhou, Le Wang, Xinbo Gao, and Gang Hua. 2016. Ordinal regression with multiple output cnn for age estimation. In Proceedings of the IEEE conference on computer vision and pattern recognition . 4920-4928. [28] Junwei Pan, Jian Xu, Alfonso Lobos Ruiz, Wenliang Zhao, Shengjun Pan, Yu Sun, and Quan Lu. 2018. Field-weighted factorization machines for click-through rate prediction in display advertising. In Proceedings of the 2018 World Wide Web Conference . 1349-1357. [29] Sinno Jialin Pan and Qiang Yang. 2009. A survey on transfer learning. IEEE Transactions on knowledge and data engineering 22, 10 (2009), 1345-1359. [30] Michael Pulis and Josef Bajada. 2021. Siamese Neural Networks for Content-based Cold-Start Music Recommendation.. In Proceedings of the 15th ACM Conference on Recommender Systems . 719-723. [31] Kandula Balagangadhar Reddy, Debabrata Swain, Samiksha Shukla, and Lija Jacob. 2022. Prediction of Customer Lifetime Value Using Machine Learning. In Proceedings of Second Doctoral Symposium on Computational Intelligence: DoSCI 2021 . Springer, 271-278. [32] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4104-4113. KDD '24, August 25-29, 2024, Barcelona, Spain Wang, Xu and Cheng, et al. [33] Xintong Shi, Wenzhi Cao, and Sebastian Raschka. 2023. Deep neural networks for rank-consistent ordinal regression based on conditional probabilities. Pattern Analysis and Applications 26, 3 (2023), 941-955. [34] Pawel Swietojanski and Steve Renals. 2014. Learning hidden unit contributions for unsupervised speaker adaptation of neural network acoustic models. In 2014 IEEE Spoken Language Technology Workshop (SLT) . IEEE, 171-176. [35] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Proceedings of the 14th ACM Conference on Recommender Systems . 269-278. [36] Ali Vanderveld, Addhyan Pandey, Angela Han, and Rajesh Parekh. 2016. An engagement-based customer lifetime value system for e-commerce. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining . 293-302. [37] VNVapnik. 2000. The Nature of Statistical Learning Theory (Information Science and Statistics) Springer-Verlag. New York (2000). [38] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [39] Pablo Villalobos, Jaime Sevilla, Lennart Heim, Tamay Besiroglu, Marius Hobbhahn, and Anson Ho. 2022. Will we run out of data? An analysis of the limits of scaling datasets in Machine Learning. arXiv preprint arXiv:2211.04325 (2022). [40] Hao Wang, Tai-Wei Chang, Tianqiao Liu, Jianmin Huang, Zhichao Chen, Chao Yu, Ruopeng Li, and Wei Chu. 2022. Escm2: Entire space counterfactual multitask model for post-click conversion rate estimation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 363-372. [41] Jindong Wang, Yiqiang Chen, Shuji Hao, Wenjie Feng, and Zhiqi Shen. 2017. Balanced distribution adaptation for transfer learning. In 2017 IEEE international conference on data mining (ICDM) . IEEE, 1129-1134. [42] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [43] Xin Wang, Wenhu Chen, Yuan-Fang Wang, and William Yang Wang. 2018. No metrics are perfect: Adversarial reward learning for visual storytelling. arXiv preprint arXiv:1804.09160 (2018). [44] Xiaojing Wang, Tianqi Liu, and Jingang Miao. 2019. A deep probabilistic model for customer lifetime value prediction. arXiv preprint arXiv:1912.07753 (2019). [45] Tianyu Wu, Shizhu He, Jingping Liu, Siqi Sun, Kang Liu, Qing-Long Han, and Yang Tang. 2023. A brief overview of ChatGPT: The history, status quo and potential future development. IEEE/CAA Journal of Automatica Sinica 10, 5 (2023), 1122-1136. [46] Min Xiao and Yuhong Guo. 2014. Feature space independent semi-supervised domain adaptation via kernel matching. IEEE transactions on pattern analysis and machine intelligence 37, 1 (2014), 54-66. [47] Mingzhe Xing, Shuqing Bian, Wayne Xin Zhao, Zhen Xiao, Xinji Luo, Cunxiang Yin, Jing Cai, and Yancheng He. 2021. Learning Reliable User Representations from Volatile and Sparse Data to Accurately Predict Customer Lifetime Value. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3806-3816. [48] Xuejiao Yang, Binfeng Jia, Shuangyang Wang, and Shijie Zhang. 2023. Feature Missing-aware Routing-and-Fusion Network for Customer Lifetime Value Prediction in Advertising. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 1030-1038. [49] Yi Yao and Gianfranco Doretto. 2010. Boosting for transfer learning with multiple sources. In 2010 IEEE computer society conference on computer vision and pattern recognition . IEEE, 1855-1862. [50] Xianhua Zeng, Xinyu Wang, and Yicai Xie. 2023. Multiple Pseudo-Siamese Network with Supervised Contrast Learning for Medical Multi-modal Retrieval. ACM Transactions on Multimedia Computing, Communications and Applications (2023). [51] Shijie Zhang, Xin Yan, Xuejiao Yang, Binfeng Jia, and Shuangyang Wang. 2023. Out of the Box Thinking: Improving Customer Lifetime Value Modelling via Expert Routing and Game Whale Detection. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 3206-3215. [52] Wei Zhang, Pengye Zhang, Bo Zhang, Xingxing Wang, and Dong Wang. 2023. A Collaborative Transfer Learning Framework for Cross-domain Recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 5576-5585. [53] Jiejie Zhao, Bowen Du, Leilei Sun, Fuzhen Zhuang, Weifeng Lv, and Hui Xiong. 2019. Multiple relational attention network for multi-task learning. In Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & Data Mining . 1123-1131. [54] Shuai Zheng and James T Kwok. 2017. Follow the moving leader in deep learning. In International Conference on Machine Learning . PMLR, 4110-4119. [55] Ruixi Zhu, Li Yan, Nan Mo, and Yi Liu. 2019. Semi-supervised center-based discriminative adversarial learning for cross-domain scene-level land-cover classification of aerial images. ISPRS journal of photogrammetry and remote sensing 155 (2019), 72-89.",
   "keywords_parsed": [
     "Lifetime Value Prediction",
-    " Adaptive Cross-Domain Transfer Learning",
-    " Computational Advertising"
+    "Adaptive Cross-Domain Transfer Learning",
+    "Computational Advertising"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "On the opportunities and risks of foundation models"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Customer lifetime value measurement"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Rank consistent ordinal regression for neural networks with application to age estimation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Customer lifetime value prediction using embeddings"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Triplet loss in siamese network for object tracking"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Learning with augmented features for heterogeneous domain adaptation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A simple approach to ordinal classification"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep ordinal regression network for monocular depth estimation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "COMPOSE: Crossmodal pseudo-siamese network for patient trial matching"
+    },
+    {
+      "ref_id": "b11",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Learning dynamic siamese network for visual object tracking"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Modeling customer lifetime value"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Generative adversarial imitation learning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "GateNet: gating-enhanced deep network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Adaptive mixtures of local experts"
+    },
+    {
+      "ref_id": "b18",
+      "title": "ForkMerge: Mitigating Negative Transfer in Auxiliary-Task Learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Instance weighting for domain adaptation in NLP"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Tinybert: Distilling bert for natural language understanding"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Billionuser Customer Lifetime Value Prediction: An Industrial-scale Solution from Kuaishou"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Learning with augmented features for supervised and semi-supervised heterogeneous domain adaptation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Selective transfer learning for cross domain recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Follow-the-regularized-leader and mirror descent: Equivalence theorems and l1 regularization"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Ordinal regression with multiple output cnn for age estimation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Field-weighted factorization machines for click-through rate prediction in display advertising"
+    },
+    {
+      "ref_id": "b29",
+      "title": "A survey on transfer learning"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Siamese Neural Networks for Content-based Cold-Start Music Recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Prediction of Customer Lifetime Value Using Machine Learning"
+    },
+    {
+      "ref_id": "b32",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Deep neural networks for rank-consistent ordinal regression based on conditional probabilities"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Learning hidden unit contributions for unsupervised speaker adaptation of neural network acoustic models"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b36",
+      "title": "An engagement-based customer lifetime value system for e-commerce"
+    },
+    {
+      "ref_id": "b37",
+      "title": "The Nature of Statistical Learning Theory"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Will we run out of data? An analysis of the limits of scaling datasets in Machine Learning"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Escm2: Entire space counterfactual multitask model for post-click conversion rate estimation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Balanced distribution adaptation for transfer learning"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b43",
+      "title": "No metrics are perfect: Adversarial reward learning for visual storytelling"
+    },
+    {
+      "ref_id": "b44",
+      "title": "A deep probabilistic model for customer lifetime value prediction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "A brief overview of ChatGPT: The history, status quo and potential future development"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Feature space independent semi-supervised domain adaptation via kernel matching"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Learning Reliable User Representations from Volatile and Sparse Data to Accurately Predict Customer Lifetime Value"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Feature Missing-aware Routing-and-Fusion Network for Customer Lifetime Value Prediction in Advertising"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Boosting for transfer learning with multiple sources"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Multiple Pseudo-Siamese Network with Supervised Contrast Learning for Medical Multi-modal Retrieval"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Out of the Box Thinking: Improving Customer Lifetime Value Modelling via Expert Routing and Game Whale Detection"
+    },
+    {
+      "ref_id": "b52",
+      "title": "A Collaborative Transfer Learning Framework for Cross-domain Recommendation"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Multiple relational attention network for multi-task learning"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Follow the moving leader in deep learning"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Semi-supervised center-based discriminative adversarial learning for cross-domain scene-level land-cover classification of aerial images"
+    }
   ]
 }

@@ -33,24 +33,136 @@
   "6 CONCLUSION": "In this paper, we introduced Online Matching, a large-scale realtime bandit system for item exploration and recommendation. To scale up to serving billions of users and millions of items, we proposed an algorithm-system co-design that combines offline and online learning, introduces a novel Diagonal LinUCB algorithm, and devises a high-throughput online agent system. Empirically, we applied Online Matching to two important use cases in YouTube and demonstrated its effectiveness for increasing fresh content adoption and growing discoverable corpus. We hope our exercise of building a real-world bandit system can provide some valuable insights for future endeavors to address practical challenges. For example, we used a mixture of exploration and exploitation modes for our Fresh Content Discovery use case. In contrast to the classic bandit setup where minimizing regret in a single mode is the primary goal, more research needs to be done to study the mixture setup. In addition, real-world applications often have to deal with a dynamic exploration corpus, where items are being constantly added or removed in a streaming fashion. Designing principled bandit algorithms for dynamic arms remains an interesting open research problem.",
   "REFERENCES": "[1] Peter Auer, Nicolò Cesa-Bianchi, and Paul Fischer. 2002. Finite-Time Analysis of the Multiarmed Bandit Problem. Mach. Learn. 47, 2-3 (may 2002), 235-256. https://doi.org/10.1023/A:1013689704352 [2] Badrish Chandramouli, Justin Levandoski, Ahmed Eldawy, and Mohamed F. Mokbel. 2011. StreamRec: A Real-Time Recommender System. In ACM SIGMOD International Conference on Management of Data (SIGMOD 2011) (acm sigmod international conference on management of data (sigmod 2011) ed.). ACM SIGMOD. https://www.microsoft.com/en-us/research/publication/streamrec-a-realtime-recommender-system/ [3] Allison J. B. Chaney, Brandon M. Stewart, and Barbara E. Engelhardt. 2018. How Algorithmic Confounding in Recommendation Systems Increases Homogeneity and Decreases Utility. In Proceedings of the 12th ACM Conference on Recommender Online Matching: A Real-time Bandit System for Large-scale Recommendations RecSys '23, September 18-22, 2023, Singapore, Singapore Figure 7: Relative change in terms of the Daily Discoverable Corpus Size metric across different impression thresholds. 8.09 7.59 7.09 6.59 6.09 5.59 ; 5.09 4.59 4.09 5 3.59 Po 3.09 2.09 1.59 1.09 0.5% 0.09 1,000 2,000 3,000 4,000 5,000 6,000 7,000 8,000 9,000 10,000 2X Impressions Systems (Vancouver, British Columbia, Canada) (RecSys '18) . Association for Computing Machinery, New York, NY, USA, 224-232. https://doi.org/10.1145/ 3240323.3240370 [11] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems . New York, NY, USA. [4] Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A. Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, and Robert E. Gruber. 2006. Bigtable: A Distributed Storage System for Structured Data. In 7th USENIX Symposium on Operating Systems Design and Implementation (OSDI) . 205-218. [5] Wei-Cheng Chang, Felix X. Yu, Yin-Wen Chang, Yiming Yang, and Sanjiv Kumar. 2020. Pre-training Tasks for Embedding-based Large-scale Retrieval. In ICLR 2020 . [6] Olivier Chapelle and Lihong Li. 2011. An Empirical Evaluation of Thompson Sampling. In Proceedings of the 24th International Conference on Neural Information Processing Systems (Granada, Spain) (NIPS'11) . Curran Associates Inc., Red Hook, NY, USA, 2249-2257. [7] Minmin Chen. 2021. Exploration in Recommender Systems. In Proceedings of the 15th ACM Conference on Recommender Systems (Amsterdam, Netherlands) (RecSys '21) . Association for Computing Machinery, New York, NY, USA, 551-553. https://doi.org/10.1145/3460231.3474601 [8] Minmin Chen, Can Xu, Vince Gatto, Devanshu Jain, Aviral Kumar, and Ed Chi. 2022. Off-Policy Actor-Critic for Recommender Systems. In Proceedings of the 16th ACM Conference on Recommender Systems (Seattle, WA, USA) (RecSys '22) . Association for Computing Machinery, New York, NY, USA, 338-349. https: //doi.org/10.1145/3523227.3546758 [9] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems (DLRS 2016) . [10] Wei Chu, Lihong Li, Lev Reyzin, and Robert Schapire. 2011. Contextual Bandits with Linear Payoff Functions. In Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics (Proceedings of Machine Learning Research, Vol. 15) , Geoffrey Gordon, David Dunson, and Miroslav Dudík (Eds.). PMLR, Fort Lauderdale, FL, USA, 208-214. https://proceedings.mlr.press/v15/ chu11a.html [12] Yash Deshpande and Andrea Montanari. 2012. Linear bandits in high dimension and recommendation systems. In 2012 50th Annual Allerton Conference on Communication, Control, and Computing (Allerton) . 1750-1754. https: //doi.org/10.1109/Allerton.2012.6483433 [13] Alexandre Gilotte, Clément Calauzènes, Thomas Nedelec, Alexandre Abraham, and Simon Dollé. 2018. Offline A/B Testing for Recommender Systems. In Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining (Marina Del Rey, CA, USA) (WSDM '18) . Association for Computing Machinery, New York, NY, USA, 198-206. https://doi.org/10.1145/3159652.3159687 [14] Ruiqi Guo, Philip Sun, Erik Lindgren, Quan Geng, David Simcha, Felix Chern, and Sanjiv Kumar. 2020. Accelerating Large-Scale Inference with Anisotropic Vector Quantization. https://arxiv.org/abs/1908.10396 [15] Thorsten Joachims, Adith Swaminathan, and Tobias Schnabel. 2017. Unbiased Learning-to-Rank with Biased Feedback. In Proceedings of the Tenth ACM International Conference on Web Search and Data Mining (Cambridge, United Kingdom) (WSDM'17) . Association for Computing Machinery, New York, NY, USA, 781-789. https://doi.org/10.1145/3018661.3018699 [16] Pooria Joulani, Andras Gyorgy, and Csaba Szepesvari. 2013. Online Learning under Delayed Feedback. In Proceedings of the 30th International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 28) , Sanjoy Dasgupta and David McAllester (Eds.). PMLR, Atlanta, Georgia, USA, 1453-1461. https://proceedings.mlr.press/v28/joulani13.html [17] Lihong Li, Wei Chu, John Langford, and Robert E. Schapire. 2010. A contextualbandit approach to personalized news article recommendation. In Proceedings of the 19th international conference on World wide web . ACM. https://doi.org/10. 1145/1772690.1772758 [18] David C. Liu, Stephanie Rogers, Raymond Shiau, Dmitry Kislyuk, Kevin C. Ma, Zhigang Zhong, Jenny Liu, and Yushi Jing. 2017. Related Pins at Pinterest: The Evolution of a Real-World Recommender System. In WWW2017 . RecSys '23, September 18-22, 2023, Singapore, Singapore Yi et al. [19] Zhuoran Liu, Leqi Zou, Xuan Zou, Caihua Wang, Biao Zhang, Da Tang, Bolin Zhu, Yijie Zhu, Peng Wu, Ke Wang, and Youlong Cheng. 2022. Monolith: Real Time Recommendation System With Collisionless Embedding Table. arXiv:2209.07663 [cs.IR] [20] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Ji Yang, Minmin Chen, Jiaxi Tang, Lichan Hong, and Ed H. Chi. 2020. Off-Policy Learning in Two-Stage Recommender Systems. In Proceedings of The Web Conference 2020 (Taipei, Taiwan) (WWW'20) . Association for Computing Machinery, New York, NY, USA, 463-473. https://doi.org/10. 1145/3366423.3380130 [21] Jérémie Mary, Romaric Gaudel, and Philippe Preux. 2015. Bandits and Recommender Systems. In Machine Learning, Optimization, and Big Data , Panos Pardalos, Mario Pavone, Giovanni Maria Farinella, and Vincenzo Cutello (Eds.). Springer International Publishing, Cham, 325-336. [22] Shumpei Okura, Yukihiro Tagami, Shingo Ono, and Akira Tajima. 2017. Embedding-Based News Recommendation for Millions of Users. In Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (Halifax, NS, Canada) (KDD '17) . Association for Computing Machinery, New York, NY, USA, 1933-1942. [23] Yu Song, Shuai Sun, Jianxun Lian, Hong Huang, Yu Li, Hai Jin, and Xing Xie. 2022. Show Me the Whole World: Towards Entire Item Space Exploration for Interactive Personalized Recommendations. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (Virtual Event, AZ, USA) (WSDM'22) . Association for Computing Machinery, New York, NY, USA, 947-956. https://doi.org/10.1145/3488560.3498459 [24] Adith Swaminathan and Thorsten Joachims. 2015. The Self-Normalized Estimator for Counterfactual Learning. In Proceedings of the 28th International Conference on Neural Information Processing Systems - Volume 2 (Montreal, Canada) (NIPS'15) . MIT Press, Cambridge, MA, USA, 3231-3239. [25] Philip S. Thomas and Emma Brunskill. 2016. Data-Efficient off-Policy Policy Evaluation for Reinforcement Learning. In Proceedings of the 33rd International Conference on International Conference on Machine Learning - Volume 48 (New York, NY, USA) (ICML'16) . JMLR.org, 2139-2148. [26] Huazheng Wang, Qingyun Wu, and Hongning Wang. 2017. Factorization Bandits for Interactive Recommendation. [27] Ji Yang, Xinyang Yi, Derek Zhiyuan Cheng, Lichan Hong, Yang Li, Simon Xiaoming Wang, Taibai Xu, and Ed H. Chi. 2020. Mixed Negative Sampling for Learning Two-Tower Neural Networks in Recommendations. In Companion Proceedings of the Web Conference 2020 (Taipei, Taiwan) (WWW '20) . Association for Computing Machinery, New York, NY, USA, 441-447. https: //doi.org/10.1145/3366424.3386195 [28] Tiansheng Yao, Xinyang Yi, Derek Zhiyuan Cheng, Felix Yu, Ting Chen, Aditya Menon, Lichan Hong, Ed H. Chi, Steve Tjoa, Jieqi (Jay) Kang, and Evan Ettinger. 2021. Self-Supervised Learning for Large-Scale Item Recommendations. In Proceedings of the 30th ACM International Conference on Information and Knowledge Management (Virtual Event, Queensland, Australia) (CIKM '21) . Association for Computing Machinery, New York, NY, USA, 4321-4330. https://doi.org/10.1145/3459637.3481952 [29] Xinyang Yi, Ji Yang, Lichan Hong, Derek Zhiyuan Cheng, Lukasz Heldt, Aditee Kumthekar, Zhe Zhao, Li Wei, and Ed Chi. 2019. Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations. In RecSys 2019 . [30] Andrew Zhai, Dmitry Kislyuk, Yushi Jing, Michael Feng, Eric Tzeng, Jeff Donahue, Yue Li Du, and Trevor Darrell. 2017. Visual Discovery at Pinterest. In WWW 2017 . [31] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. Recommending What Video to Watch next: A Multitask Ranking System. In RecSys 2019 .",
   "keywords_parsed": [
-    "The last decade has witnessed many successes of deep learningbased models for industry-scale recommender systems. These models are typically trained offline in a batch manner. While being effective in capturing users' past interactions with recommendation platforms",
-    " batch learning suffers from long model-update latency and is vulnerable to system biases",
-    " making it hard to adapt to distribution shift and explore new items or user interests. Although online learning-based approaches (e.g.",
-    " multi-armed bandits) have demonstrated promising theoretical results in tackling these challenges",
-    " their practical real-time implementation in large-scale recommender systems remains limited. First",
-    " the scalability of online approaches in servicing a massive online traffic while ensuring timely updates of bandit parameters poses a significant challenge. Additionally",
-    " exploring uncertainty in recommender systems can easily result in unfavorable user experience",
-    " highlighting the need for devising intricate strategies that effectively balance the trade-off between exploitation and exploration. In this paper",
-    " we introduce Online Matching : a scalable closed-loop bandit system learning from users' direct feedback on items in real time. We present a hybrid offline + online approach for constructing this system",
-    " accompanied by a comprehensive exposition of the end-to-end system architecture. We propose Diag-LinUCB - a novel extension of the LinUCB algorithm - to enable distributed updates of bandits parameter in a scalable and timely manner. We conduct live experiments in YouTube and show that Online Matching is able to enhance the capabilities of fresh content discovery and item exploration in the present platform. Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party components of this work must be honored. For all other uses",
-    " contact the owner/author(s). RecSys '23",
-    " September 18-22",
-    " 2023",
-    " Singapore",
-    " Singapore © 2023 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-0241-9/23/09. https://doi.org/10.1145/3604915.3608792 recommender systems",
-    " bandits algorithms",
-    " neural networks",
-    " information retrieval",
-    " real-time recommenders"
+    "recommender systems",
+    "bandits algorithms",
+    "neural networks",
+    "information retrieval",
+    "real-time recommenders"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Finite-Time Analysis of the Multiarmed Bandit Problem"
+    },
+    {
+      "ref_id": "b2",
+      "title": "StreamRec: A Real-Time Recommender System"
+    },
+    {
+      "ref_id": "b3",
+      "title": "How Algorithmic Confounding in Recommendation Systems Increases Homogeneity and Decreases Utility"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Bigtable: A Distributed Storage System for Structured Data"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Pre-training Tasks for Embedding-based Large-scale Retrieval"
+    },
+    {
+      "ref_id": "b6",
+      "title": "An Empirical Evaluation of Thompson Sampling"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Exploration in Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Off-Policy Actor-Critic for Recommender Systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Contextual Bandits with Linear Payoff Functions"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Linear bandits in high dimension and recommendation systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Offline A/B Testing for Recommender Systems"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Accelerating Large-Scale Inference with Anisotropic Vector Quantization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Unbiased Learning-to-Rank with Biased Feedback"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Online Learning under Delayed Feedback"
+    },
+    {
+      "ref_id": "b17",
+      "title": "A contextualbandit approach to personalized news article recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Related Pins at Pinterest: The Evolution of a Real-World Recommender System"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Monolith: Real Time Recommendation System With Collisionless Embedding Table"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Off-Policy Learning in Two-Stage Recommender Systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Bandits and Recommender Systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Embedding-Based News Recommendation for Millions of Users"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Show Me the Whole World: Towards Entire Item Space Exploration for Interactive Personalized Recommendations"
+    },
+    {
+      "ref_id": "b24",
+      "title": "The Self-Normalized Estimator for Counterfactual Learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Data-Efficient off-Policy Policy Evaluation for Reinforcement Learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Factorization Bandits for Interactive Recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Mixed Negative Sampling for Learning Two-Tower Neural Networks in Recommendations"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Self-Supervised Learning for Large-Scale Item Recommendations"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Visual Discovery at Pinterest"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Recommending What Video to Watch next: A Multitask Ranking System"
+    }
   ]
 }

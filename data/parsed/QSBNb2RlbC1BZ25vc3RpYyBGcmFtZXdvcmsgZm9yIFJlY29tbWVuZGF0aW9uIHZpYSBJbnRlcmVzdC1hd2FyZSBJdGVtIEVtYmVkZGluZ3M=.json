@@ -12,6 +12,87 @@
   "4 CONCLUSION AND FUTURE WORK": "In this work, we propose a comprehensive framework aimed at improving the performance of recommendation models through the utilisation of interest-based item embedding representations. To achieve this, a novel framework is introduced, which directly learns interest-based item representations by incorporating a user interest-aware capsule network. Furthermore, the user interest-aware capsule network is incorporated as an auxiliary component, facilitating the joint learning of both item-based item representations and interest-based item representations within the framework. Our framework can be readily applied to recommendation model architectures without the need for additional data or significant modifications to the model structure. Furthermore, the framework exhibits a notable impact on longer sequences of viewed items and a wider range of user interests. Through experimental evaluations on industrial datasets, it is evident that incorporating the user interest-aware capsule network as an auxiliary component outperforms other approaches in terms of click-through rate prediction tasks. Looking ahead, we intend to extend this work towards developing an explainable recommendation system that leverages the interest-aware capsule network to elucidate users' interests. 7 RecSys '23, September 18-22, 2023, Singapore, Singapore Amit and Yu",
   "REFERENCES": "[1] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [2] Weiyu Cheng, Yanyan Shen, and Linpeng Huang. 2020. Adaptive factorization network: Learning adaptive-order feature interactions. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 3609-3616. [3] Yuan Cheng and Yanbo Xue. 2021. Looking at CTR Prediction Again: Is Attention All You Need?. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1279-1287. [4] Marzieh Edraki, Nazanin Rahnavard, and Mubarak Shah. 2020. Subspace capsule network. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 10745-10753. [5] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . 1725-1731. [6] Chao Li, Zhiyuan Liu, Mengmeng Wu, Yuchi Xu, Huan Zhao, Pipei Huang, Guoliang Kang, Qiwei Chen, Wei Li, and Dik Lun Lee. 2019. Multi-interest network with dynamic routing for recommendation at Tmall. In Proceedings of the 28th ACM international conference on information and knowledge management . 2615-2623. [7] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [8] Zheng Liu, Jianxun Lian, Junhan Yang, Defu Lian, and Xing Xie. 2020. Octopus: Comprehensive and elastic user representation for the generation of recommendation candidates. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 289-298. [9] Maxim Naumov, Dheevatsa Mudigere, Hao-Jun Michael Shi, Jianyu Huang, Narayanan Sundaraman, Jongsoo Park, Xiaodong Wang, Udit Gupta, Carole-Jean Wu, Alisson G Azzolini, et al. 2019. Deep learning recommendation model for personalization and recommendation systems. arXiv preprint arXiv:1906.00091 (2019). [10] Aditya Pal, Chantat Eksombatchai, Yitong Zhou, Bo Zhao, Charles Rosenberg, and Jure Leskovec. 2020. Pinnersage: Multi-modal user embedding framework for recommendations at pinterest. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2311-2320. [11] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on long sequential user behavior modeling for click-through rate prediction. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2671-2679. [12] Yanru Qu, Bohui Fang, Weinan Zhang, Ruiming Tang, Minzhe Niu, Huifeng Guo, Yong Yu, and Xiuqiang He. 2018. Product-based neural networks for user response prediction over multi-field categorical data. ACM Transactions on Information Systems (TOIS) 37, 1 (2018), 1-35. [13] Sara Sabour, Nicholas Frosst, and Geoffrey E Hinton. 2017. Dynamic routing between capsules. Advances in neural information processing systems 30 (2017). [14] Ying Shan, T Ryan Hoens, Jian Jiao, Haijing Wang, Dong Yu, and JC Mao. 2016. Deep crossing: Web-scale modeling without manually crafted combinatorial features. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining . 255-262. [15] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [16] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the web conference 2021 . 1785-1797. [17] Fuzheng Zhang, Nicholas Jing Yuan, Defu Lian, Xing Xie, and Wei-Ying Ma. 2016. Collaborative knowledge base embedding for recommender systems. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining . 353-362. [18] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [19] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. 8",
   "keywords_parsed": [
-    "None"
+    "Recommender System",
+    "Capsule Network",
+    "Interest-aware",
+    "Embedding"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Adaptive factorization network: Learning adaptive-order feature interactions"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Looking at CTR Prediction Again: Is Attention All You Need?"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Subspace capsule network"
+    },
+    {
+      "ref_id": "b5",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Multi-interest network with dynamic routing for recommendation at Tmall"
+    },
+    {
+      "ref_id": "b7",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Octopus: Comprehensive and elastic user representation for the generation of recommendation candidates"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Pinnersage: Multi-modal user embedding framework for recommendations at pinterest"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Product-based neural networks for user response prediction over multi-field categorical data"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Dynamic routing between capsules"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Deep crossing: Web-scale modeling without manually crafted combinatorial features"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b16",
+      "title": "dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Collaborative knowledge base embedding for recommender systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

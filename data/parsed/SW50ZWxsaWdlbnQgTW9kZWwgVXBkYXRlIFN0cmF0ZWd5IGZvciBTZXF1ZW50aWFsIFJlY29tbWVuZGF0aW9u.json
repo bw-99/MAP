@@ -25,9 +25,191 @@
   "A.4 Hyperparameters and Training Schedules": "We summarize the hyperparameters and training schedules of IntellectReq on the three datasets in Table 4. Table 4: Hyperparameters and training schedules. A.4.1 Impact on the Real World. A case based on a dynamic model from the previous moment is as follows. If it were based on a on-edge static model, the improvement would be much more significant. We found some more intuitive data and examples to show the challenge and IntellectReq's impact on the real world: (1) We calcu- Table 5: IntellectReq's Impact on Real World. late the number of bytes and FLOPs required to update a parameter. Bytes: 48.5kB, FLOPs: 1.53M. That is, updating a model on the edge requires the transmission of 48.5kB data through edge-cloud communication, and consumes 1.53M computing power of the cloud model. (2) According to the report, Google processes 99,000 clicks per second, so it needs to transmit 48.5kB ∗ 99k=4.69GB per second, and consume 1.53M ∗ 99k=152.46G of computing power in the cloud server. Alibaba processes 1,150,000 clicks per second, so it needs to transmit 48.5kB ∗ 1150k=53.19GB per second, and consume 1.53M ∗ 1150k=1.68T of computing power in the cloud server. These are not the peak value yet. Obviously, such a huge loan and computing power consumption make it hard to update the model for edges every moment especially at peak times. (3) Sometimes, the distributed nature of clouds today may can afford the computational volume, since it can call enough servers to support edge-cloud collaboration. However, the huge resource consumption is impractical in real-scenario. Besides, according to our empirical study, our IntellectReq can bring 21.4% resource saving when the performance is the same using the APG framework. Under the DUET framework, IntellectReq can bring 16.6% resource saving when the performance is the same. Summing up, IntellectReq can save 19% resources on average, which is very helpful for cost control and can facilitate the EC-CDR development in practice. The following Table 5 is the comparison between our method IntellectReq and EC-CDR in the amount of transmitted data and the computing power consumed on the cloud. (4) During the peak period, resources will be tight and cause freezes or even crashes. This is still in the case that EC-CDR has not been deployed yet, that is, the edge-cloud communication only performs the most basic user data transmission. Then, IntellectReq can achieve better performance than EC-CDR under any resource limit 𝜖 , or to achieve the performance that EC-CDR requires 𝜖 + 19% of resources to achieve.",
   "keywords_parsed": [
     "Edge-Cloud Collaboration",
-    " Distribution Shift",
-    " Mis-Recommendation Detection",
-    " Out-of-Domain Detection",
-    " Sequential Recommendation"
+    "Distribution Shift",
+    "Mis-Recommendation Detection",
+    "Out-of-Domain Detection",
+    "Sequential Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "LOF: identifying density-based local outliers"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Tinytl: Reduce activations, not trainable parameters for efficient on-device learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Large Scale Financial Time Series Forecasting with Multifaceted Model"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Sequential recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Multi-Initialization Meta-Learning with Domain Adaptation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "BA-GNN: On Learning BiasAware Graph Neural Network"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Learning to Reweight for Graph Neural Network"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning to Reweight for Generalizable Graph Neural Network"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep transfer tensor decomposition with orthogonal constraint for recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Hypernetworks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Make-an-audio: Textto-audio generation with prompt-enhanced diffusion models"
+    },
+    {
+      "ref_id": "b13",
+      "title": "FastDiff: A Fast Conditional Diffusion Model for High-Quality Speech Synthesis"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Generspeech: Towards style transfer for generalizable out-of-domain text-to-speech"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Partial Annotationbased Video Moment Retrieval via Iterative Learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Online Distillation-enhanced Multi-modal Transformer for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Session-aware recommendation: A surprising quest for the state-of-the-art"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Propensity matters: Measuring and enhancing balancing for recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Debiased Collaborative Filtering with Kernel-based Causal Balancing"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Fine-grained semantically aligned visionlanguage pre-training"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Finetuning Multimodal LLMs to Follow Zero-shot Demonstrative Instructions"
+    },
+    {
+      "ref_id": "b23",
+      "title": "BiasedPredicate Annotation Identification via Unbiased Visual Predicate Representation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Quantitatively Measuring and Contrastively Exploring Heterogeneity for Domain Generalization"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Community preserving network embedding"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Session-based recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Focus-aware response generation in inquiry conversation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Precedent-Enhanced Legal Judgment Prediction with LLM and Domain-Model Collaboration"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Temporally and Distributionally Robust Optimization for Cold-start Recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b51",
+      "title": "On-Device Learning for Model Personalization with Large-Scale Cloud-Coordinated Domain Adaption"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Device-cloud Collaborative Recommendation via Meta Controller"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Edge-Cloud Polarization and Collaboration: A Comprehensive Survey for AI"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Fairness-aware contrastive learning with partially annotated sensitive attributes"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Federated unsupervised representation learning"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Personalized Latent Structure Learning for Recommendation"
+    },
+    {
+      "ref_id": "b57",
+      "title": "DeVLBert: Learning Deconfounded VisioLinguistic Representations"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Learning in Imperfect Environment: Multi-Label Classification with Long-Tailed Distribution and Partial Labels"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Revisiting the Domain Shift and Sample Uncertainty in Multi-source Active Domain Transfer"
+    },
+    {
+      "ref_id": "b60",
+      "title": "MAGIC: Multimodal relAtional Graph adversarIal inferenCe for Diverse and Unpaired Text-based Image Captioning"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Boostmis: Boosting medical image semi-supervised learning with adaptive pseudo labeling and informative active annotation"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Mitigating the Popularity Bias of Graph Collaborative Filtering: A Dimensional Collapse Perspective"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Deep interest network for clickthrough rate prediction"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Generalized Universal Domain Adaptation with Generative Flow Networks"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Universal domain adaptation via compressive attention matching"
+    }
   ]
 }

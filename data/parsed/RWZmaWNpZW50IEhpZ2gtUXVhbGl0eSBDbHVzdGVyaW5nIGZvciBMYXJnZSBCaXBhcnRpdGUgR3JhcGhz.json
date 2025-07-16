@@ -32,8 +32,294 @@
   "REFERENCES": "[1] Jac M Anthonisse and Henk Tijms. 1977. Exponential convergence of products of stochastic matrices. J. Math. Anal. Appl. 59, 2 (1977), 360-364. Michael J Barber. 2007. Modularity and community detection in bipartite net- [2] works. Physical Review E 76, 6 (2007), 066102. [3] Michael J Barber, Margarida Faria, Ludwig Streit, and Oleg Strogan. 2008. Searching for communities in bipartite networks. In AIP Conference Proceedings , Vol. 1021. American Institute of Physics, 171-182. [4] Vladimir Batagelj and Ulrik Brandes. 2005. Efficient generation of large random networks. Physical Review E 71, 3 (2005), 036113. [5] Aleksandar Bojchevski and Stephan Günnemann. 2018. Deep Gaussian Embedding of Graphs: Unsupervised Inductive Learning via Ranking. In International Conference on Learning Representations . https://openreview.net/forum? id=r1ZdKJ-0W [6] Aleksandar Bojchevski, Johannes Klicpera, Bryan Perozzi, Amol Kapoor, Martin Blais, Benedek Rózemberczki, Michal Lukasik, and Stephan Günnemann. 2020. Scaling Graph Neural Networks with Approximate PageRank. In SIGKDD . [7] Gabriel Budel and Piet Van Mieghem. 2020. Detecting the number of clusters in a network. Journal of Complex Networks 8, 6 (2020), cnaa047. [8] Paola Gabriela Pesántez Cabrera. 2018. Bipartite Network Community Detection: Algorithms and Applications . Washington State University. [9] O. Celma. 2010. Music Recommendation and Discovery in the Long Tail . Springer. [10] Yizong Cheng and George M Church. 2000. Biclustering of expression data.. In Ismb , Vol. 8. 93-103. [11] Wenyuan Dai, Gui-Rong Xue, Qiang Yang, and Yong Yu. 2007. Co-clustering based classification for out-of-domain documents. In Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining . 210-219. [12] Inderjit S Dhillon. 2001. Co-clustering documents and words using bipartite spectral graph partitioning. In Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining . 269-274. [13] Carsten F Dormann and Rouven Strauss. 2014. A method for detecting modules in quantitative bipartite networks. Methods in Ecology and Evolution 5, 1 (2014), 90-98. [14] Jennifer A Dunne, Richard J Williams, and Neo D Martinez. 2002. Network structure and biodiversity loss in food webs: robustness increases with connectance. Ecology letters 5, 4 (2002), 558-567. [15] Ky Fan. 1949. On a theorem of Weyl concerning eigenvalues of linear transformations I. Proceedings of the National Academy of Sciences of the United States of America 35, 11 (1949), 652. [16] Yiling Chen Frederico Fonseca. 2003. A bipartite graph co-clustering approach to ontology mapping. In Proceedings of the Workshop on Semantic Web Technologies for Searching and Retrieving Scientific Data. Colocated with the Second International Semantic Web Conference (ISWC-03), CEUR-WS. org . [17] Santo Fortunato. 2010. Community detection in graphs. Physics reports 486, 3-5 (2010), 75-174. [18] Santo Fortunato and Marc Barthelemy. 2007. Resolution limit in community Proceedings of the national academy of sciences detection. 104, 1 (2007), 36-41. [19] Lise Getoor. 2005. Link-based classification. In Advanced methods for knowledge discovery from complex data . Springer, 189-207. [20] Michelle Girvan and Mark EJ Newman. 2002. Community structure in social and biological networks. Proceedings of the national academy of sciences 99, 12 (2002), 7821-7826. [21] Gene H Golub and Charles F Van Loan. 1996. Matrix computations. Johns Hopkins University, Press (1996). [22] John C Gower and Garmt B Dijksterhuis. 2004. Procrustes problems . Vol. 30. OUP Oxford. [23] Roger Guimera, Marta Sales-Pardo, and Luís A Nunes Amaral. 2007. Module identification in bipartite and directed networks. Physical Review E 76, 3 (2007), 036102. [24] John A Hartigan and Manchek A Wong. 1979. Algorithm AS 136: A k-means clustering algorithm. Journal of the royal statistical society. series c (applied statistics) 28, 1 (1979), 100-108. [25] Reinhard Heckel, Michail Vlachos, Thomas Parnell, and Celestine Dünner. 2017. Scalable and interpretable product recommendations via overlapping co-clustering. In 2017 IEEE 33rd International Conference on Data Engineering (ICDE) . IEEE, 1033-1044. [26] Xiao Huang, Jundong Li, and Xia Hu. 2017. Label informed attributed network embedding. In Proceedings of the tenth ACM international conference on web search and data mining . 731-739. [27] Lawrence Hubert and Phipps Arabie. 1985. Comparing partitions. Journal of classification 2 (1985), 193-218. [28] Pedro Jordano, Jordi Bascompte, and Jens M Olesen. 2003. Invariant properties in coevolutionary networks of plant-animal interactions. Ecology letters 6, 1 (2003), 69-81. [29] Leonard Kaufman and Peter J Rousseeuw. 2009. Finding groups in data: an introduction to cluster analysis . Vol. 344. John Wiley & Sons. [30] Brian W Kernighan and Shen Lin. 1970. An efficient heuristic procedure for partitioning graphs. The Bell system technical journal 49, 2 (1970), 291-307. [31] Yuval Kluger, Ronen Basri, Joseph T Chang, and Mark Gerstein. 2003. Spectral biclustering of microarray data: coclustering genes and conditions. Genome research 13, 4 (2003), 703-716. [32] Daniel B Larremore, Aaron Clauset, and Abigail Z Jacobs. 2014. Efficiently inferring community structure in bipartite networks. Physical Review E 90, 1 (2014), 012805. [33] Sune Lehmann, Martin Schwartz, and Lars Kai Hansen. 2008. Biclique communities. Physical review E 78, 1 (2008), 016108. [34] Yvonne Y Li and Steven JM Jones. 2012. Drug repositioning for personalized medicine. Genome medicine 4 (2012), 1-14. [35] Xin Liu and Tsuyoshi Murata. 2010. Community detection in large-scale bipartite networks. Transactions of the Japanese Society for Artificial Intelligence 25, 1 (2010), 16-24. [36] David Melamed. 2014. Community structures in bipartite networks: A dualprojection approach. PloS one 9, 5 (2014), e97823. [37] Tsuyoshi Murata. 2009. Detecting communities from bipartite networks based on bipartite modularities. In 2009 International Conference on Computational Science and Engineering , Vol. 4. IEEE, 50-57. [38] Jose C Nacher and Jean-Marc Schwartz. 2012. Modularity in protein complex and drug interactions reveals new polypharmacological properties. PloS one 7, 1 (2012), e30028. [39] Mark EJ Newman. 2006. Finding community structure in networks using the eigenvectors of matrices. Physical review E 74, 3 (2006), 036104. [40] Mark EJ Newman and Michelle Girvan. 2004. Finding and evaluating community structure in networks. Physical review E 69, 2 (2004), 026113. [41] Gergely Palla, Imre Derényi, Illés Farkas, and Tamás Vicsek. 2005. Uncovering the overlapping community structure of complex networks in nature and society. nature 435, 7043 (2005), 814-818. [42] Paola Pesántez-Cabrera and Ananth Kalyanaraman. 2017. Efficient detection of communities in biological bipartite networks. IEEE/ACM transactions on computational biology and bioinformatics 16, 1 (2017), 258-271. [43] Pascal Pons and Matthieu Latapy. 2005. Computing communities in large networks using random walks. In International symposium on computer and information sciences . Springer, 284-293. [44] Alex Pothen, Horst D Simon, and Kang-Pu Liou. 1990. Partitioning sparse matrices with eigenvectors of graphs. SIAM journal on matrix analysis and applications 11, 3 (1990), 430-452. [45] Benedek Rozemberczki and Rik Sarkar. 2020. Characteristic Functions on Graphs: Birds of a Feather, from Statistical Descriptors to Parametric Models. In Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM '20) . ACM, 1325-1334. [46] Risa D Sargent and David D Ackerly. 2008. Plant-pollinator interactions and the assembly of plant communities. Trends in Ecology & Evolution 23, 3 (2008), 123-130. [47] Prithviraj Sen, Galileo Namata, Mustafa Bilgic, Lise Getoor, Brian Galligher, and Tina Eliassi-Rad. 2008. Collective classification in network data. AI magazine 29, 3 (2008), 93-93. [48] Arnab Sinha, Zhihong Shen, Yang Song, Hao Ma, Darrin Eide, and Kuansan Wang. 2015. An Overview of Microsoft Academic Service (MAS) and Applications. In The WebConf . [49] Gilbert Strang, Gilbert Strang, Gilbert Strang, and Gilbert Strang. 1993. Introduction to linear algebra . Vol. 3. Wellesley-Cambridge Press. [50] Alexander Strehl and Joydeep Ghosh. 2002. Cluster ensembles-a knowledge reuse framework for combining multiple partitions. Journal of machine learning research 3, Dec (2002), 583-617. [51] Kenta Suzuki and Ken Wakita. 2009. Extracting multi-facet community structure from bipartite networks. In 2009 International Conference on Computational Science and Engineering , Vol. 4. IEEE, 312-319. [52] Raphael Tackx, Fabien Tarissan, and Jean-Loup Guillaume. 2018. ComSim: a bipartite community detection algorithm using cycle and node's similarity. In Complex Networks & Their Applications VI: Proceedings of Complex Networks 2017 (The Sixth International Conference on Complex Networks and Their Applications) . Springer, 278-289. [53] Lei Tang and Huan Liu. 2009. Relational learning via latent social dimensions. In Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining . 817-826. [54] Hanghang Tong, Christos Faloutsos, and Jia-Yu Pan. 2006. Fast random walk with restart and its applications. In Sixth international conference on data mining (ICDM'06) . IEEE, 613-622. [55] Ulrike Von Luxburg. 2007. A tutorial on spectral clustering. Statistics and computing 17, 4 (2007), 395-416. [56] Sibo Wang, Renchi Yang, Xiaokui Xiao, Zhewei Wei, and Yin Yang. 2017. FORA: simple and effective approximate single-source personalized pagerank. In Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 505-514. 14 Efficient High-Quality Clustering for Large Bipartite Graphs [57] David P Woodruff. 2014. Sketching as a Tool for Numerical Linear Algebra. (2014). [58] Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu, and Ming Zhou. 2020. MIND: A Large-scale Dataset for News Recommendation. In ACL . 3597-3606. [59] Yao Wu, Xudong Liu, Min Xie, Martin Ester, and Qing Yang. 2016. CCCF: Improving collaborative filtering via scalable user-item co-clustering. In Proceedings of the ninth ACM international conference on web search and data mining . 73-82. [60] Rongkai Xia, Yan Pan, Lei Du, and Jian Yin. 2014. Robust multi-view spectral clustering via low-rank and sparse decomposition. In Proceedings of the AAAI conference on artificial intelligence , Vol. 28. [61] Wei Xu, Xin Liu, and Yihong Gong. 2003. Document clustering based on nonnegative matrix factorization. In SIGIR . 267-273. [62] Renchi Yang. 2022. Efficient and Effective Similarity Search over Bipartite Graphs. In Proceedings of the ACM Web Conference 2022 . 308-318. [63] Renchi Yang, Jieming Shi, Keke Huang, and Xiaokui Xiao. 2022. Scalable and Effective Bipartite Network Embedding. In Proceedings of the 2022 International Conference on Management of Data . 1977-1991. [64] Renchi Yang, Jieming Shi, Xiaokui Xiao, Yin Yang, and Sourav S Bhowmick. 2020. Homogeneous network embedding for massive graphs via reweighted personalized PageRank. Proceedings of the VLDB Endowment 13, 5 (2020), 670683. [65] Renchi Yang, Jieming Shi, Yin Yang, Keke Huang, Shiqi Zhang, and Xiaokui Xiao. 2021. Effective and scalable clustering on massive attributed graphs. In Proceedings of the Web Conference 2021 . 3675-3687. [66] Mao Ye, Dong Shou, Wang-Chien Lee, Peifeng Yin, and Krzysztof Janowicz. 2011. On the semantic annotation of places in location-based social networks. In Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining . 520-528. [67] Tzu-Chi Yen and Daniel B Larremore. 2020. Community detection in bipartite networks with stochastic block models. Physical Review E 102, 3 (2020), 032309. [68] Weihua Zhan, Zhongzhi Zhang, Jihong Guan, and Shuigeng Zhou. 2011. Evolutionary method for finding communities in bipartite networks. Physical review E 83, 6 (2011), 066120. [69] Tian Zhang, Raghu Ramakrishnan, and Miron Livny. 1996. BIRCH: an efficient data clustering method for very large databases. SIGMOD (1996), 103-114. [70] Tao Zhou, Jie Ren, Matúš Medo, and Yi-Cheng Zhang. 2007. Bipartite network projection and personal recommendation. Physical review E 76, 4 (2007), 046115. [71] Katharina Anna Zweig and Michael Kaufmann. 2011. A systematic approach to the one-mode projection of bipartite graphs. Social Network Analysis and Mining 1 (2011), 187-218. 15",
   "keywords_parsed": [
     "Bipartite Graph",
-    " Clustering",
-    " Random Walk",
-    " Eigenvector"
+    "Clustering",
+    "Random Walk",
+    "Eigenvector"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Exponential convergence of products of stochastic matrices"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Modularity and community detection in bipartite networks"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Searching for communities in bipartite networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Efficient generation of large random networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deep Gaussian Embedding of Graphs: Unsupervised Inductive Learning via Ranking"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Scaling Graph Neural Networks with Approximate PageRank"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Detecting the number of clusters in a network"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Bipartite Network Community Detection: Algorithms and Applications"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Music Recommendation and Discovery in the Long Tail"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Biclustering of expression data"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Co-clustering based classification for out-of-domain documents"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Co-clustering documents and words using bipartite spectral graph partitioning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A method for detecting modules in quantitative bipartite networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Network structure and biodiversity loss in food webs: robustness increases with connectance"
+    },
+    {
+      "ref_id": "b15",
+      "title": "On a theorem of Weyl concerning eigenvalues of linear transformations I"
+    },
+    {
+      "ref_id": "b16",
+      "title": "A bipartite graph co-clustering approach to ontology mapping"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Community detection in graphs"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Resolution limit in community detection"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Link-based classification"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Community structure in social and biological networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Matrix computations"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Procrustes problems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Module identification in bipartite and directed networks"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Algorithm AS 136: A k-means clustering algorithm"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Scalable and interpretable product recommendations via overlapping co-clustering"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Label informed attributed network embedding"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Comparing partitions"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Invariant properties in coevolutionary networks of plant-animal interactions"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Finding groups in data: an introduction to cluster analysis"
+    },
+    {
+      "ref_id": "b30",
+      "title": "An efficient heuristic procedure for partitioning graphs"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Spectral biclustering of microarray data: coclustering genes and conditions"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Efficiently inferring community structure in bipartite networks"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Biclique communities"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Drug repositioning for personalized medicine"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Community detection in large-scale bipartite networks"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Community structures in bipartite networks: A dual-projection approach"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Detecting communities from bipartite networks based on bipartite modularities"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Modularity in protein complex and drug interactions reveals new polypharmacological properties"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Finding community structure in networks using the eigenvectors of matrices"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Finding and evaluating community structure in networks"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Uncovering the overlapping community structure of complex networks in nature and society"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Efficient detection of communities in biological bipartite networks"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Computing communities in large networks using random walks"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Partitioning sparse matrices with eigenvectors of graphs"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Characteristic Functions on Graphs: Birds of a Feather, from Statistical Descriptors to Parametric Models"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Plant-pollinator interactions and the assembly of plant communities"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Collective classification in network data"
+    },
+    {
+      "ref_id": "b48",
+      "title": "An Overview of Microsoft Academic Service (MAS) and Applications"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Introduction to linear algebra"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Cluster ensembles-a knowledge reuse framework for combining multiple partitions"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Extracting multi-facet community structure from bipartite networks"
+    },
+    {
+      "ref_id": "b52",
+      "title": "ComSim: a bipartite community detection algorithm using cycle and node's similarity"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Relational learning via latent social dimensions"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Fast random walk with restart and its applications"
+    },
+    {
+      "ref_id": "b55",
+      "title": "A tutorial on spectral clustering"
+    },
+    {
+      "ref_id": "b56",
+      "title": "FORA: simple and effective approximate single-source personalized pagerank"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Sketching as a Tool for Numerical Linear Algebra"
+    },
+    {
+      "ref_id": "b58",
+      "title": "MIND: A Large-scale Dataset for News Recommendation"
+    },
+    {
+      "ref_id": "b59",
+      "title": "CCCF: Improving collaborative filtering via scalable user-item co-clustering"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Robust multi-view spectral clustering via low-rank and sparse decomposition"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Document clustering based on nonnegative matrix factorization"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Efficient and Effective Similarity Search over Bipartite Graphs"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Scalable and Effective Bipartite Network Embedding"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Homogeneous network embedding for massive graphs via reweighted personalized PageRank"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Effective and scalable clustering on massive attributed graphs"
+    },
+    {
+      "ref_id": "b66",
+      "title": "On the semantic annotation of places in location-based social networks"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Community detection in bipartite networks with stochastic block models"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Evolutionary method for finding communities in bipartite networks"
+    },
+    {
+      "ref_id": "b69",
+      "title": "BIRCH: an efficient data clustering method for very large databases"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Bipartite network projection and personal recommendation"
+    },
+    {
+      "ref_id": "b71",
+      "title": "A systematic approach to the one-mode projection of bipartite graphs"
+    }
   ]
 }

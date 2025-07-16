@@ -24,6 +24,97 @@
   "7 Conclusion": "We presented Bagpipe, a new system that can accelerate the training of deep learning based recommendation models. Our gains are derived from better resource utilization and by overlapping computation with data movement. Our disaggregated architecture also allows independent scaling of resources and better fault tolerance, while retaining synchronous training semantics. Our experiments show that Bagpipe provides an end-to-end speedup of up to 5 . 6 × over state-of-the-art baselines. Acknowledgements Wewould like to thank Carole-Jean Wu for introducing us to deep learning recommendation models and the challenges in scaling their training. We would also like to thank Yibo Zhu for early discussion about our work. Finally, we would like to thank our shepherd, Junfeng Yang, the anonymous SOSP reviewers, Bilge Acun-Uyan and Muhammad Adnan for their invaluable feedback that helped in making this work better. This research was supported in part by NSF-CAREER grant CNS-2237306.",
   "References": "[1] Massively scale your deep learning training with nccl 2.4. https://bit. ly/341nGfs . Accessed: August 31, 2023. [2] Bilge Acun, Matthew Murphy, Xiaodong Wang, Jade Nie, Carole-Jean Wu, and Kim Hazelwood. Understanding training efficiency of deep learning recommendation models at scale. In 2021 IEEE International Symposium on High-Performance Computer Architecture (HPCA) , pages 802-814. IEEE, 2021. [3] Lada A Adamic and Bernardo A Huberman. Power-law distribution of the world wide web. science , 287(5461):2115-2115, 2000. [4] MuhammadAdnan, Yassaman Ebrahimzadeh Maboud, Divya Mahajan, and Prashant J. Nair. Accelerating recommendation system training by leveraging popular choices. Proc. VLDB Endow. , 15(1):127-140, sep 2021. [5] Michael Armbrust, Ali Ghodsi, Reynold Xin, and Matei Zaharia. Lakehouse: a new generation of open platforms that unify data warehousing and advanced analytics. In Proceedings of CIDR , 2021. [6] Zhihao Bai, Zhen Zhang, Yibo Zhu, and Xin Jin. Pipeswitch: Fast pipelined context switching for deep learning applications. In Proceedings of the 14th USENIX Conference on Operating Systems Design and Implementation , pages 499-514, 2020. [7] Keshav Balasubramanian, Abdulla Alshabanah, Joshua D Choe, and Murali Annavaram. cdlrm: Look ahead caching for scalable training of recommendation models. In Proceedings of the 15th ACM Conference on Recommender Systems , pages 263-272, 2021. [8] Laszlo A. Belady. A study of replacement algorithms for a virtualstorage computer. IBM Systems journal , 5(2):78-101, 1966. [9] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems , pages 7-10, 2016. [10] Paul Covington, Jay Adams, and Emre Sargin. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems , pages 191-198, 2016. [11] Benoit Dageville, Thierry Cruanes, Marcin Zukowski, Vadim Antonov, Artin Avanes, Jon Bock, Jonathan Claybaugh, Daniel Engovatov, Martin Hentschel, Jiansheng Huang, et al. The snowflake elastic data warehouse. In Proceedings of the 2016 International Conference on Management of Data , pages 215-226, 2016. [12] Shuiguang Deng, Longtao Huang, Guandong Xu, Xindong Wu, and Zhaohui Wu. On deep learning for trust-aware recommendations in social networks. IEEE transactions on neural networks and learning systems , 28(5):1164-1177, 2016. [13] Assaf Eisenman, Kiran Kumar Matam, Steven Ingram, Dheevatsa Mudigere, Raghuraman Krishnamoorthi, Krishnakumar Nair, Misha Smelyanskiy, and Murali Annavaram. { Check-N-Run } : a checkpointing system for training deep learning recommendation models. In 19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22) , pages 929-943, 2022. [14] Robert M French. Catastrophic forgetting in connectionist networks. Trends in cognitive sciences , 3(4):128-135, 1999. [15] Swapnil Gandhi and Anand Padmanabha Iyer. P3: Distributed deep graph learning at scale. In 15th USENIX Conference on Operating Systems Design and Implementation (OSDI) 21 , pages 551-568, 2021. [16] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. Deepfm: A factorization-machine based neural network for ctr prediction. In IJCAI , 2017. [17] Udit Gupta, Samuel Hsia, Vikram Saraph, Xiaodong Wang, Brandon Reagen, Gu-Yeon Wei, Hsien-Hsin S Lee, David Brooks, and CaroleJean Wu. Deeprecsys: A system for optimizing end-to-end at-scale neural recommendation inference. In 2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA) , pages 982995. IEEE, 2020. [69] Xiaofeng Wu, Jia Rao, Wei Chen, Hang Huang, Chris Ding, and Heng Huang. Switchflow: preemptive multitasking for deep learning. In Proceedings of the 22nd International Middleware Conference , pages 146-158, 2021. [70] C-Q Yang and Barton P Miller. Critical path analysis for the execution of parallel and distributed programs. In The 8th International Conference on Distributed , pages 366-367. IEEE Computer Society, 1988. [71] Juncheng Yang, Yazhuo Zhang, Ziyue Qiu, Yao Yue, and Rashmi Vinayak. Fifo queues are all you need for cache eviction. In Proceedings of the 29th Symposium on Operating Systems Principles , pages 130-149, 2023. [72] Chunxing Yin, Bilge Acun, Carole-Jean Wu, and Xing Liu. Tt-rec: Tensor train compression for deep learning recommendation models. In A. Smola, A. Dimakis, and I. Stoica, editors, Proceedings of Machine Learning and Systems , volume 3, pages 448-462, 2021. [73] Mark Zhao, Niket Agarwal, Aarti Basant, Bugra Gedik, Satadru Pan, Mustafa Ozdal, Rakesh Komuravelli, Jerry Pan, Tianshu Bao, Haowei Lu, et al. Understanding and co-designing the data ingestion pipeline for industry-scale recsys training. arXiv preprint arXiv:2108.09373 , 2021.",
   "keywords_parsed": [
-    "None"
+    "Distributed Training",
+    "Recommendation Models"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Massively scale your deep learning training with nccl 2.4"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Understanding training efficiency of deep learning recommendation models at scale"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Power-law distribution of the world wide web"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Accelerating recommendation system training by leveraging popular choices"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Lakehouse: a new generation of open platforms that unify data warehousing and advanced analytics"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Pipeswitch: Fast pipelined context switching for deep learning applications"
+    },
+    {
+      "ref_id": "b7",
+      "title": "cdlrm: Look ahead caching for scalable training of recommendation models"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A study of replacement algorithms for a virtualstorage computer"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b11",
+      "title": "The snowflake elastic data warehouse"
+    },
+    {
+      "ref_id": "b12",
+      "title": "On deep learning for trust-aware recommendations in social networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "{ Check-N-Run } : a checkpointing system for training deep learning recommendation models"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Catastrophic forgetting in connectionist networks"
+    },
+    {
+      "ref_id": "b15",
+      "title": "P3: Distributed deep graph learning at scale"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Deepfm: A factorization-machine based neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deeprecsys: A system for optimizing end-to-end at-scale neural recommendation inference"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Switchflow: preemptive multitasking for deep learning"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Critical path analysis for the execution of parallel and distributed programs"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Fifo queues are all you need for cache eviction"
+    },
+    {
+      "ref_id": "b72",
+      "title": "tt-rec: Tensor train compression for deep learning recommendation models"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Understanding and co-designing the data ingestion pipeline for industry-scale recsys training"
+    }
   ]
 }

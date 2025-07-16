@@ -19,27 +19,56 @@
   "REFERENCES": "[1] Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2014. Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473 (2014). [2] Farhan Asif Chowdhury, Yozen Liu, Koustuv Saha, Nicholas Vincent, Leonardo Neves, Neil Shah, and Maarten W Bos. 2021. CEAM: the effectiveness of cyclic and ephemeral attention models of user behavior on social platforms. In Proceedings of the international AAAI conference on web and social media , Vol. 15. 117-128. [3] Arno De Caigny, Kristof Coussement, and Koen W De Bock. 2018. A new hybrid classification algorithm for customer churn prediction based on logistic regression and decision trees. European Journal of Operational Research 269, 2 (2018), 760-772. [4] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805 (2018). [5] Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, et al. 2020. An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. In International Conference on Learning Representations . [6] Rupesh Gupta, Guanfeng Liang, Hsiao-Ping Tseng, Ravi Kiran Holur Vijay, Xiaoyu Chen, and Rómer Rosales. 2016. Email volume optimization at LinkedIn. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 97-106. [7] Rashid Kamal, Paul McCullagh, Ian Cleland, and Chris Nugent. 2021. A hybrid model based on behavioural and situational context to detect best time to deliver notifications on mobile devices. In Integrated Emerging Methods of Artificial Intelligence & Cloud Computing . Springer, 11-21. [8] Feifan Li, Lun Du, Qiang Fu, Shi Han, Yushu Du, Guangming Lu, and Zi Li. 2023. DIGMN: Dynamic Intent Guided Meta Network for Differentiated User Engagement Forecasting in Online Professional Social Platforms. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 384-392. [9] Yozen Liu, Xiaolin Shi, Lucas Pierce, and Xiang Ren. 2019. Characterizing and forecasting user engagement with in-app action graph: A case study of snapchat. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2023-2031. [10] Abhinav Mehrotra, Mirco Musolesi, Robert Hendley, and Veljko Pejovic. 2015. Designing content-driven intelligent notification mechanisms for mobile applications. In Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing . 813-824. [11] Conor O'Brien, Huasen Wu, Shaodan Zhai, Dalin Guo, Wenzhe Shi, and Jonathan J Hunt. 2022. Should i send this notification? Optimizing push notifications decision making by modeling the future. arXiv preprint arXiv:2202.08812 (2022). [12] Chunjong Park, Junsung Lim, Juho Kim, Sung-Ju Lee, and Dongman Lee. 2017. Don't bother me. I'm socializing! A breakpoint-based smartphone notification",
   "keywords_parsed": [
     "Mobile Notification",
-    " Deep Learning ∗ corresponding author Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. ICMR '24",
-    " June 10-14",
-    " 2024",
-    " Phuket",
-    " Thailand. © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0619-6/24/06...$15.00 https://doi.org/10.1145/3652583.3657614 Huxiao Ji",
-    " Haitao Yang",
-    " Linchuan Li",
-    " Shunyu Zhang",
-    " Cunyi Zhang",
-    " Xuanping Li",
-    " and Wenwu Ou. 2024. TIM: Temporal Interaction Model in Notification System. In Proceedings of the 2024 International Conference on Multimedia Retrieval (ICMR '24)",
-    " June 10-14",
-    " 2024",
-    " Phuket",
-    " Thailand. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 5 pages. https://doi.org/10.1145/3652583.3657614"
+    "Deep Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Neural machine translation by jointly learning to align and translate"
+    },
+    {
+      "ref_id": "b2",
+      "title": "CEAM: the effectiveness of cyclic and ephemeral attention models of user behavior on social platforms"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A new hybrid classification algorithm for customer churn prediction based on logistic regression and decision trees"
+    },
+    {
+      "ref_id": "b4",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Email volume optimization at LinkedIn"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A hybrid model based on behavioural and situational context to detect best time to deliver notifications on mobile devices"
+    },
+    {
+      "ref_id": "b8",
+      "title": "DIGMN: Dynamic Intent Guided Meta Network for Differentiated User Engagement Forecasting in Online Professional Social Platforms"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Characterizing and forecasting user engagement with in-app action graph: A case study of snapchat"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Designing content-driven intelligent notification mechanisms for mobile applications"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Should i send this notification? Optimizing push notifications decision making by modeling the future"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Don't bother me. I'm socializing! A breakpoint-based smartphone notification"
+    }
   ]
 }

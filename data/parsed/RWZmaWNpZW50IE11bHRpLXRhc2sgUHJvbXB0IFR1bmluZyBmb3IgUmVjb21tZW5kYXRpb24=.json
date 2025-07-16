@@ -23,7 +23,193 @@
   "REFERENCES": "[1] Akari Asai, Mohammadreza Salehi, Matthew E Peters, and Hannaneh Hajishirzi. 2022. Attempt: Parameter-efficient multi-task tuning via attentional mixtures of soft prompts. In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing . 6655-6672. [2] Arthur Asuncion and David Newman. 2007. UCI machine learning repository. [3] Ting Bai, Yudong Xiao, Bin Wu, Guojun Yang, Hongyong Yu, and Jian-Yun Nie. 2022. A Contrastive Sharing Model for Multi-Task Recommendation. In Proceedings of the ACM Web Conference 2022 . 3239-3247. [4] Rich Caruana. 1997. Multitask learning. Machine learning 28 (1997), 41-75. [5] Zhixuan Chu, Hongyan Hao, Xin Ouyang, Simeng Wang, Yan Wang, Yue Shen, Jinjie Gu, Qing Cui, Longfei Li, Siqiao Xue, et al. 2023. Leveraging large language models for pre-trained recommender systems. arXiv preprint arXiv:2308.10837 (2023). [6] Ronan Collobert and Jason Weston. 2008. A unified architecture for natural language processing: Deep neural networks with multitask learning. In Proceedings of the 25th international conference on Machine learning . 160-167. [7] Michael Crawshaw. 2020. Multi-task learning with deep neural networks: A survey. arXiv preprint arXiv:2009.09796 (2020). [8] Yang Deng, Wenxuan Zhang, Weiwen Xu, Wenqiang Lei, Tat-Seng Chua, and Wai Lam. 2023. A unified multi-task learning framework for multi-goal conversational recommender systems. ACM Transactions on Information Systems 41, 3 (2023), 1-25. [9] Ning Ding, Yujia Qin, Guang Yang, Fuchao Wei, Zonghan Yang, Yusheng Su, Shengding Hu, Yulin Chen, Chi-Min Chan, Weize Chen, et al. 2023. Parameterefficient fine-tuning of large-scale pre-trained language models. Nature Machine Intelligence 5, 3 (2023), 220-235. [10] Long Duong, Trevor Cohn, Steven Bird, and Paul Cook. 2015. Low resource dependency parsing: Cross-lingual parameter sharing in a neural network parser. In Proceedings of the 53rd annual meeting of the Association for Computational Linguistics and the 7th international joint conference on natural language processing (volume 2: short papers) . 845-850. [11] Chelsea Finn, Pieter Abbeel, and Sergey Levine. 2017. Model-agnostic metalearning for fast adaptation of deep networks. In International conference on machine learning . PMLR, 1126-1135. [12] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5). In Proceedings of the 16th ACM Conference on Recommender Systems . 299-315. [13] Bowen Hao, Chaoqun Yang, Lei Guo, Junliang Yu, and Hongzhi Yin. 2024. Motifbased prompt learning for universal cross-domain recommendation. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining . 257-265. [14] Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone, Quentin De Laroussilhe, Andrea Gesmundo, Mona Attariyan, and Sylvain Gelly. 2019. Parameter-efficient transfer learning for NLP. In International Conference on Machine Learning . PMLR, 2790-2799. [15] Xiaodong Liu, Pengcheng He, Weizhu Chen, and Jianfeng Gao. 2019. Multi-task deep neural networks for natural language understanding. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics . 4487-4496. [16] Yajing Liu, Yuning Lu, Hao Liu, Yaozu An, Zhuoran Xu, Zhuokun Yao, Baofeng Zhang, Zhiwei Xiong, and Chenguang Gui. 2023. Hierarchical Prompt Learning for Multi-Task Learning. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 10888-10898. [17] Yichao Lu, Ruihai Dong, and Barry Smyth. 2018. Why I like it: multi-task learning for recommendation and explanation. In Proceedings of the 12th ACM Conference on Recommender Systems . 4-12. [18] Linhao Luo, Yumeng Li, Buyu Gao, Shuai Tang, Sinan Wang, Jiancheng Li, Tanchao Zhu, Jiancai Liu, Zhao Li, and Shirui Pan. 2023. MAMDR: A model agnostic learning framework for multi-domain recommendation. In 2023 IEEE 39th International Conference on Data Engineering (ICDE) . IEEE, 3079-3092. [19] Minh-Thang Luong, Quoc V Le, Ilya Sutskever, Oriol Vinyals, and Lukasz Kaiser. 2016. Multi-task sequence to sequence learning. (2016). [20] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [21] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [22] Ishan Misra, Abhinav Shrivastava, Abhinav Gupta, and Martial Hebert. 2016. Cross-stitch networks for multi-task learning. In Proceedings of the IEEE conference on computer vision and pattern recognition . 3994-4003. [23] Sinno Jialin Pan and Qiang Yang. 2009. A survey on transfer learning. IEEE Transactions on knowledge and data engineering 22, 10 (2009), 1345-1359. [24] Danni Peng, Sinno Jialin Pan, Jie Zhang, and Anxiang Zeng. 2021. Learning an adaptive meta model-generator for incrementally updating recommender systems. In Proceedings of the 15th ACM Conference on Recommender Systems . 411-421. [25] Sebastian Ruder. 2017. An overview of multi-task learning in deep neural networks. arXiv preprint arXiv:1706.05098 (2017). [26] W Shen. 2021. Deepctr: easy-to-use, modular and extendible package of deep-learning based CTR models (2017). GitHub Repository, https://github. com/shenweichen/deepctr, accessed November (2021). [27] Liangcai Su, Junwei Pan, Ximei Wang, Xi Xiao, Shijie Quan, Xihua Chen, and Jie Jiang. 2023. STEM: Unleashing the Power of Embeddings for Multi-task Recommendation. arXiv preprint arXiv:2308.13537 (2023). [28] Tianxiang Sun, Yunfan Shao, Xiaonan Li, Pengfei Liu, Hang Yan, Xipeng Qiu, and Xuanjing Huang. 2020. Learning sparse sharing architectures for multiple tasks. In Proceedings of the AAAI conference on artificial intelligence , Vol. 34. 8936-8943. [29] Xiangguo Sun, Hong Cheng, Jia Li, Bo Liu, and Jihong Guan. 2023. All in one: Multi-task prompting for graph neural networks. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2120-2131. [30] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Proceedings of the 14th ACM Conference on Recommender Systems . 269-278. [31] Kim-Han Thung and Chong-Yaw Wee. 2018. A brief review on multi-task learning. Multimedia Tools and Applications 77 (2018), 29705-29725. [32] Richa Upadhyay, Ronald Phlypo, Rajkumar Saini, and Marcus Liwicki. 2023. Less is More-Towards parsimonious multi-task models using structured sparsity. arXiv preprint arXiv:2308.12114 (2023). [33] Yuhao Wang, Ha Tsz Lam, Yi Wong, Ziru Liu, Xiangyu Zhao, Yichao Wang, Bo Chen, Huifeng Guo, and Ruiming Tang. 2023. Multi-Task Deep Recommender Systems: A Survey. arXiv preprint arXiv:2302.03525 (2023). [34] Yuhao Wang, Xiangyu Zhao, Bo Chen, Qidong Liu, Huifeng Guo, Huanshuo Liu, Yichao Wang, Rui Zhang, and Ruiming Tang. 2023. PLATE: A PromptEnhanced Paradigm for Multi-Scenario Recommendations. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1498-1507. [35] Zimu Wang, Yue He, Jiashuo Liu, Wenchao Zou, Philip S Yu, and Peng Cui. 2022. Invariant preference learning for general debiasing in recommendation. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 1969-1978. [36] Zhen Wang, Rameswar Panda, Leonid Karlinsky, Rogerio Feris, Huan Sun, and Yoon Kim. 2023. Multitask prompt tuning enables parameter-efficient transfer learning. (2023). [37] Tianxin Wei, Ziwei Wu, Ruirui Li, Ziniu Hu, Fuli Feng, Xiangnan He, Yizhou Sun, and Wei Wang. 2020. Fast adaptation for cold-start collaborative filtering with meta-learning. In 2020 IEEE International Conference on Data Mining (ICDM) . 10 Efficient Multi-task Prompt Tuning for Recommendation IEEE, 661-670. [38] Karl Weiss, Taghi M Khoshgoftaar, and DingDing Wang. 2016. A survey of transfer learning. Journal of Big data 3, 1 (2016), 1-40. [39] Sen Wu, Hongyang R Zhang, and Christopher Ré. 2019. Understanding and Improving Information Transfer in Multi-Task Learning. In International Conference on Learning Representations . [40] Amir R Zamir, Alexander Sax, William Shen, Leonidas J Guibas, Jitendra Malik, and Silvio Savarese. 2018. Taskonomy: Disentangling task transfer learning. In Proceedings of the IEEE conference on computer vision and pattern recognition . 3712-3722. [41] Mingzhu Zhang, Ruiping Yin, Zhen Yang, Yipeng Wang, and Kan Li. 2023. Advances and Challenges of Multi-task Learning Method in Recommender System: A Survey. arXiv preprint arXiv:2305.13843 (2023). [42] Zijian Zhang, Shuchang Liu, Jiaao Yu, Qingpeng Cai, Xiangyu Zhao, Chunxu Zhang, Ziru Liu, Qidong Liu, Hongwei Zhao, Lantao Hu, et al. 2024. M3oE: MultiDomain Multi-Task Mixture-of Experts Recommendation Framework. arXiv preprint arXiv:2404.18465 (2024). [43] Cheng Zhao, Chenliang Li, Rong Xiao, Hongbo Deng, and Aixin Sun. 2020. CATN: Cross-domain recommendation for cold-start users via aspect transfer network. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 229-238. [44] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. Recommending what video to watch next: a multitask ranking system. In Proceedings of the 13th ACM Conference on Recommender Systems . 43-51. [45] Qihuang Zhong, Liang Ding, Juhua Liu, Bo Du, and Dacheng Tao. 2024. Panda: Prompt transfer meets knowledge distillation for efficient model adaptation. IEEE Transactions on Knowledge and Data Engineering (2024). [46] Fuzhen Zhuang, Zhiyuan Qi, Keyu Duan, Dongbo Xi, Yongchun Zhu, Hengshu Zhu, Hui Xiong, and Qing He. 2020. A comprehensive survey on transfer learning. Proc. IEEE 109, 1 (2020), 43-76. 11",
   "keywords_parsed": [
     "Multi-Task Learning",
-    " Prompt Learning",
-    " Recommender Systems"
+    "Prompt Learning",
+    "Recommender Systems"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Attempt: Parameter-efficient multi-task tuning via attentional mixtures of soft prompts"
+    },
+    {
+      "ref_id": "b2",
+      "title": "UCI machine learning repository"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A Contrastive Sharing Model for Multi-Task Recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Leveraging large language models for pre-trained recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "A unified architecture for natural language processing: Deep neural networks with multitask learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Multi-task learning with deep neural networks: A survey"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A unified multi-task learning framework for multi-goal conversational recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Parameterefficient fine-tuning of large-scale pre-trained language models"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Low resource dependency parsing: Cross-lingual parameter sharing in a neural network parser"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Model-agnostic metalearning for fast adaptation of deep networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Motifbased prompt learning for universal cross-domain recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Parameter-efficient transfer learning for NLP"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Multi-task deep neural networks for natural language understanding"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Hierarchical Prompt Learning for Multi-Task Learning"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Why I like it: multi-task learning for recommendation and explanation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "MAMDR: A model agnostic learning framework for multi-domain recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Multi-task sequence to sequence learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Cross-stitch networks for multi-task learning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "A survey on transfer learning"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Learning an adaptive meta model-generator for incrementally updating recommender systems"
+    },
+    {
+      "ref_id": "b25",
+      "title": "An overview of multi-task learning in deep neural networks"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Deepctr: easy-to-use, modular and extendible package of deep-learning based CTR models"
+    },
+    {
+      "ref_id": "b27",
+      "title": "STEM: Unleashing the Power of Embeddings for Multi-task Recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Learning sparse sharing architectures for multiple tasks"
+    },
+    {
+      "ref_id": "b29",
+      "title": "All in one: Multi-task prompting for graph neural networks"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b31",
+      "title": "A brief review on multi-task learning"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Less is More-Towards parsimonious multi-task models using structured sparsity"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Multi-Task Deep Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b34",
+      "title": "PLATE: A PromptEnhanced Paradigm for Multi-Scenario Recommendations"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Invariant preference learning for general debiasing in recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Multitask prompt tuning enables parameter-efficient transfer learning"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Fast adaptation for cold-start collaborative filtering with meta-learning"
+    },
+    {
+      "ref_id": "b38",
+      "title": "A survey of transfer learning"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Understanding and Improving Information Transfer in Multi-Task Learning"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Taskonomy: Disentangling task transfer learning"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Advances and Challenges of Multi-task Learning Method in Recommender System: A Survey"
+    },
+    {
+      "ref_id": "b42",
+      "title": "M3oE: MultiDomain Multi-Task Mixture-of Experts Recommendation Framework"
+    },
+    {
+      "ref_id": "b43",
+      "title": "CATN: Cross-domain recommendation for cold-start users via aspect transfer network"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Recommending what video to watch next: a multitask ranking system"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Panda: Prompt transfer meets knowledge distillation for efficient model adaptation"
+    },
+    {
+      "ref_id": "b46",
+      "title": "A comprehensive survey on transfer learning"
+    }
   ]
 }

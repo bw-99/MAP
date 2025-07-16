@@ -17,6 +17,38 @@
   "6. Conclusion": "In this paper, we propose a new principle that the diversification of recommendations should be performed within a user's preferred categories, such that improved recommendation diversity can be achieved without sacrificing recommendation accuracy. We realize this principle via a general framework, named DCRS, to disentangle a user's category dependent and independent preference in the learnt representations. We evaluate DCRS through both offline experiments on three widely-used benchmark datasets for recommendation and online A/B test on Toutiao, one of the largest news recommendation platforms in China. We demonstrate DCRS can provide more accurate and diversified recommendations. Via indepth analysis and case studies, we find that the benefit of DCRS is introduced by: (1) it can capture a user's diverse preference in historical interactions more thoroughly; and (2) it can rank items in the same category more accurately. In this work, we took a static view of users' preferences over items and item categories. But numerous studies have demonstrated that users' preferences evolve over time Wu et al. (2018b, 2019b). It is interesting to study the problem of recommendation diversification in an interactive manner over time. Moreover, currently we only recommend one item a time to a user. It is interesting to study how to generate a list of diverse recommendations, where diversity should be optimized within and across recommendation lists.",
   "References": "Ashton Anderson, Lucas Maystre, Ian Anderson, Rishabh Mehrotra, and Mounia Lalmas. Algorithmic effects on the diversity of consumption on spotify. In Proceedings of The Web Conference 2020 , pages 2155-2165, 2020. Azin Ashkan, Branislav Kveton, Shlomo Berkovsky, and Zheng Wen. Optimal greedy diversity for recommendation. In Twenty-Fourth International Joint Conference on Artificial Intelligence , 2015. 17 18 19 20 Yu Zheng, Chen Gao, Liang Chen, Depeng Jin, and Yong Li. Dgcn: Diversified recommendation with graph convolutional networks. In Proceedings of the Web Conference 2021 , pages 401-412, 2021a. Yu Zheng, Chen Gao, Xiang Li, Xiangnan He, Yong Li, and Depeng Jin. Disentangling user interest and conformity for recommendation with causal embedding. In Proceedings of the Web Conference 2021 , pages 2980-2991, 2021b. Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining , pages 1059-1068, 2018. Tao Zhou, Zolt´ an Kuscsik, Jian-Guo Liu, Mat´ uˇ s Medo, Joseph Rushton Wakeling, and YiCheng Zhang. Solving the apparent diversity-accuracy dilemma of recommender systems. Proceedings of the National Academy of Sciences , 107(10):4511-4515, 2010. Cai-Nicolas Ziegler, Sean M McNee, Joseph A Konstan, and Georg Lausen. Improving recommendation lists through topic diversification. In Proceedings of the 14th international conference on World Wide Web , pages 22-32, 2005. 21",
   "keywords_parsed": [
-    "None"
+    "Recommender system",
+    "recommendation diversity",
+    "disentangled user representation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Algorithmic effects on the diversity of consumption on spotify"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Optimal greedy diversity for recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Dgcn: Diversified recommendation with graph convolutional networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Disentangling user interest and conformity for recommendation with causal embedding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Solving the apparent diversity-accuracy dilemma of recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Improving recommendation lists through topic diversification"
+    }
   ]
 }

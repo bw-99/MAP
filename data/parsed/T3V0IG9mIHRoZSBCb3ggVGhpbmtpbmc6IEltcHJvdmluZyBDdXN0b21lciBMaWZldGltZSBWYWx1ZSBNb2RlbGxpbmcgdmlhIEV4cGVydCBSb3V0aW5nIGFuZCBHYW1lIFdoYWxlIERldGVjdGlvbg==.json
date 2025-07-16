@@ -28,7 +28,205 @@
   "REFERENCES": "[1] Rie Kubota Ando, Tong Zhang, and Peter Bartlett. 2005. A framework for learning predictive structures from multiple tasks and unlabeled data. Journal of Machine Learning Research 6, 11 (2005). [2] Muhammad Anshari, Mohammad Nabil Almunawar, Syamimi Ariff Lim, and Abdullah Al-Mudimigh. 2019. Customer relationship management and big data enabled: Personalization & customization of services. Applied Computing and Informatics 15, 2 (2019), 94-101. [3] BJ Bakker and TM Heskes. 2003. Task clustering and gating for bayesian multitask learning. (2003). [4] Paul D Berger and Nada I Nasr. 1998. Customer lifetime value: Marketing models and applications. Journal of interactive marketing 12, 1 (1998), 17-30. [5] Brian C Britt and Rebecca K Britt. 2021. From waifus to whales: The evolution of discourse in a mobile game-based competitive community of practice. Mobile Media & Communication 9, 1 (2021), 3-29. [6] Rich Caruana. 1998. Multitask learning . Springer. [7] Benjamin Paul Chamberlain, Angelo Cardoso, CH Bryan Liu, Roberto Pagliari, and Marc Peter Deisenroth. 2017. Customer lifetime value prediction using embeddings. In Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining . 1753-1762. [8] Pei Pei Chen, Anna Guitart, Ana Fernández del Río, and Africa Periánez. 2018. Customer lifetime value in video games using deep learning and parametric models. In 2018 IEEE international conference on big data (big data) . IEEE, 21342140. [9] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior sequence transformer for e-commerce recommendation in alibaba. In Proceedings of the 1st International Workshop on Deep Learning Practice for High-Dimensional Sparse Data . 1-4. [10] Tong Chen, Hongzhi Yin, Jing Long, Quoc Viet Hung Nguyen, Yang Wang, and MengWang.2022. Thinking inside The Box: Learning Hypercube Representations for Group Recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1664-1673. [11] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [12] Anders Drachen, Mari Pastor, Aron Liu, Dylan Jack Fontaine, Yuan Chang, Julian Runge, Rafet Sifa, and Diego Klabjan. 2018. To be or not to be... social: Incorporating simple social features in mobile game customer lifetime value predictions. In Proceedings of the Australasian Computer Science Week Multiconference . 1-10. [13] Michael Dreier, Klaus Wölfling, Eva Duven, Sebastián Giralt, Manfred E Beutel, and Kai W Müller. 2017. Free-to-play: About addicted Whales, at risk Dolphins and healthy Minnows. Monetarization design and Internet Gaming Disorder. Addictive behaviors 64 (2017), 328-333. [14] Theodoros Evgeniou, Charles A Micchelli, Massimiliano Pontil, and John ShaweTaylor. 2005. Learning multiple tasks with kernel methods. Journal of machine learning research 6, 4 (2005). [15] Peter S Fader, Bruce GS Hardie, and Ka Lok Lee. 2005. RFM and CLV: Using iso-value curves for customer base analysis. Journal of marketing research 42, 4 (2005), 415-430. [16] Peter S Fader, Bruce GS Hardie, and Ka Lok Lee. 2005. 'Counting your customers' the easy way: An alternative to the Pareto/NBD model. Marketing science 24, 2 (2005), 275-284. [17] Pinghua Gong, Jieping Ye, and Changshui Zhang. 2012. Robust multi-task feature learning. In Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining . 895-903. [18] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [19] Sunil Gupta, Dominique Hanssens, Bruce Hardie, Wiliam Kahn, V Kumar, Nathaniel Lin, Nalini Ravishanker, and S Sriram. 2006. Modeling customer lifetime value. Journal of service research 9, 2 (2006), 139-155. [20] Janny C Hoekstra and Eelko KRE Huizingh. 1999. The lifetime value concept in customer-based marketing. Journal of Market-Focused Management 3 (1999), 257-274. [21] Dipak Jain and Siddhartha S Singh. 2002. Customer lifetime value research in marketing: A review and future directions. Journal of interactive marketing 16, 2 (2002), 34-46. [22] Ali Jalali, Sujay Sanghavi, Chao Ruan, and Pradeep Ravikumar. 2010. A dirty model for multi-task learning. Advances in neural information processing systems 23 (2010). [23] Tsuyoshi Kato, Hisashi Kashima, Masashi Sugiyama, and Kiyoshi Asai. 2007. Multi-task learning via conic programming. Advances in Neural Information Processing Systems 20 (2007). [24] V Kumar, Girish Ramani, and Timothy Bohling. 2004. Customer lifetime value approaches and best practice applications. Journal of interactive Marketing 18, 3 (2004), 60-72. [25] Vineet Kumar and Werner Reinartz. 2018. Customer relationship management . Springer. [26] Kunpeng Li, Guangcui Shao, Naijun Yang, Xiao Fang, and Yang Song. 2022. Billionuser Customer Lifetime Value Prediction: An Industrial-scale Solution from Kuaishou. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3243-3251. [27] Xuejun Liao and Lawrence Carin. 2005. Radial basis function network for multitask learning. Advances in Neural Information Processing Systems 18 (2005). [28] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [29] John A McCarty and Manoj Hastak. 2007. Segmentation approaches in datamining: A comparison of RFM, CHAID, and logistic regression. Journal of business research 60, 6 (2007), 656-662. [30] Phillip E Pfeifer, Mark E Haskins, and Robert M Conroy. 2005. Customer lifetime value, customer profitability, and the treatment of acquisition spending. Journal of managerial issues (2005), 11-25. [31] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . IEEE, 995-1000. [32] David C Schmittlein, Donald G Morrison, and Richard Colombo. 1987. Counting your customers: Who-are they and what will they do next? Management science 33, 1 (1987), 1-24. [33] José-Ramón Segarra-Moliner and Miguel-Ángel Moliner-Tena. 2022. Engaging in customer citizenship behaviours to predict customer lifetime value. Journal of Marketing Analytics (2022), 1-14. [34] Ozan Sener and Vladlen Koltun. 2018. Multi-task learning as multi-objective optimization. Advances in neural information processing systems 31 (2018). [35] Yanhui Su. 2022. Data-driven method development and evaluation for indie mobile game publishing. Multimedia Tools and Applications (2022), 1-32. [36] Sebastian Thrun and Joseph O'Sullivan. 1996. Discovering structure in multiple learning tasks: The TC algorithm. In ICML , Vol. 96. Citeseer, 489-497. [37] Ali Vanderveld, Addhyan Pandey, Angela Han, and Rajesh Parekh. 2016. An engagement-based customer lifetime value system for e-commerce. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining . 293-302. [38] Petar Veličković, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Lio, and Yoshua Bengio. 2017. Graph attention networks. arXiv preprint arXiv:1710.10903 (2017). [39] Rajkumar Venkatesan and Vita Kumar. 2004. A customer lifetime value framework for customer selection and resource allocation strategy. Journal of marketing 68, 4 (2004), 106-125. [40] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [41] Xiaojing Wang, Tianqi Liu, and Jingang Miao. 2019. A deep probabilistic model for customer lifetime value prediction. arXiv preprint arXiv:1912.07753 (2019). [42] Hong Wen, Jing Zhang, Yuan Wang, Fuyu Lv, Wentian Bao, Quan Lin, and Keping Yang. 2020. Entire space multi-task modeling via post-click behavior decomposition for conversion rate prediction. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 2377-2386. [43] Mingzhe Xing, Shuqing Bian, Wayne Xin Zhao, Zhen Xiao, Xinji Luo, Cunxiang Yin, Jing Cai, and Yancheng He. 2021. Learning Reliable User Representations from Volatile and Sparse Data to Accurately Predict Customer Lifetime Value. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3806-3816. [44] Xuejiao Yang, Binfeng Jia, Shuangyang Wang, and Shijie Zhang. 2023. Feature Missing-aware Routing-and-Fusion Network for Customer Lifetime Value Prediction in Advertising. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 1030-1038. [45] Bianca Zadrozny. 2004. Learning and evaluating classifiers under sample selection bias. In Proceedings of the twenty-first international conference on Machine learning . 114. [46] Jian Zhang, Zoubin Ghahramani, and Yiming Yang. 2005. Learning multiple related tasks using latent independent component analysis. Advances in neural information processing systems 18 (2005). [47] Shijie Zhang, Hongzhi Yin, Tong Chen, Zi Huang, Quoc Viet Hung Nguyen, and Lizhen Cui. 2022. Pipattack: Poisoning federated recommender systems for manipulating item promotion. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 1415-1423. [48] Shijie Zhang, Hongzhi Yin, Tong Chen, Quoc Viet Nguyen Hung, Zi Huang, and Lizhen Cui. 2020. Gcn-based user representation learning for unifying robust recommendation and fraudster detection. In Proceedings of the 43rd international ACM SIGIR conference on research and development in information retrieval . 689698. [49] Yu Zhang and Qiang Yang. 2021. A survey on multi-task learning. IEEE Transactions on Knowledge and Data Engineering 34, 12 (2021), 5586-5609.",
   "keywords_parsed": [
     "Customer Lifetime Value Prediction",
-    " Game Whale Detection",
-    " MultiTask Learning"
+    "Game Whale Detection",
+    "Multi-Task Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A framework for learning predictive structures from multiple tasks and unlabeled data"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Customer relationship management and big data enabled: Personalization & customization of services"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Task clustering and gating for bayesian multitask learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Customer lifetime value: Marketing models and applications"
+    },
+    {
+      "ref_id": "b5",
+      "title": "From waifus to whales: The evolution of discourse in a mobile game-based competitive community of practice"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Customer lifetime value prediction using embeddings"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Customer lifetime value in video games using deep learning and parametric models"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Thinking inside The Box: Learning Hypercube Representations for Group Recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "To be or not to be... social: Incorporating simple social features in mobile game customer lifetime value predictions"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Free-to-play: About addicted Whales, at risk Dolphins and healthy Minnows"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Learning multiple tasks with kernel methods"
+    },
+    {
+      "ref_id": "b15",
+      "title": "RFM and CLV: Using iso-value curves for customer base analysis"
+    },
+    {
+      "ref_id": "b16",
+      "title": "'Counting your customers' the easy way: An alternative to the Pareto/NBD model"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Robust multi-task feature learning"
+    },
+    {
+      "ref_id": "b18",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Modeling customer lifetime value"
+    },
+    {
+      "ref_id": "b20",
+      "title": "The lifetime value concept in customer-based marketing"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Customer lifetime value research in marketing: A review and future directions"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A dirty model for multi-task learning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Multi-task learning via conic programming"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Customer lifetime value approaches and best practice applications"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Customer relationship management"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Billionuser Customer Lifetime Value Prediction: An Industrial-scale Solution from Kuaishou"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Radial basis function network for multitask learning"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Segmentation approaches in datamining: A comparison of RFM, CHAID, and logistic regression"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Customer lifetime value, customer profitability, and the treatment of acquisition spending"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Counting your customers: Who-are they and what will they do next?"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Engaging in customer citizenship behaviours to predict customer lifetime value"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Multi-task learning as multi-objective optimization"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Data-driven method development and evaluation for indie mobile game publishing"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Discovering structure in multiple learning tasks: The TC algorithm"
+    },
+    {
+      "ref_id": "b37",
+      "title": "An engagement-based customer lifetime value system for e-commerce"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Graph attention networks"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A customer lifetime value framework for customer selection and resource allocation strategy"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A deep probabilistic model for customer lifetime value prediction"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Entire space multi-task modeling via post-click behavior decomposition for conversion rate prediction"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Learning Reliable User Representations from Volatile and Sparse Data to Accurately Predict Customer Lifetime Value"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Feature Missing-aware Routing-and-Fusion Network for Customer Lifetime Value Prediction in Advertising"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Learning and evaluating classifiers under sample selection bias"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Learning multiple related tasks using latent independent component analysis"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Pipattack: Poisoning federated recommender systems for manipulating item promotion"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Gcn-based user representation learning for unifying robust recommendation and fraudster detection"
+    },
+    {
+      "ref_id": "b49",
+      "title": "A survey on multi-task learning"
+    }
   ]
 }

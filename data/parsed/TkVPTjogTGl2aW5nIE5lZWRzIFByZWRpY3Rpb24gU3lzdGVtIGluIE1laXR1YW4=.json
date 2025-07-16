@@ -33,7 +33,177 @@
   "A.5 Additional Ablation Study": "To gain a deeper understanding of the impact of each component design of our model, we also conduct ablation studies with a particular focus on the effects of the group behavior pattern features and the spatiotemporal context features. When removing the group behavior pattern features from the model input, the performance decreased by 1.06%. When removing the spatiotemporal context features from the model input, the performance decreased by 1.46%. These results provide compelling evidence of the pivotal role that these two features play in accurately predicting users' daily living needs.",
   "keywords_parsed": [
     "Living Needs Prediction",
-    " Deep Neural Networks",
-    " Multi-task Learning"
+    "Deep Neural Networks",
+    "Multi-task Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Short term load forecasting using XGBoost"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Food Demand Prediction using machine learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Who, what, when, and where: Multi-dimensional collaborative recommendations using tensor factorization on sparse user-generated data"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Fused matrix factorization with geographical and social influence in location-based social networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Probabilistic modeling of a sales funnel to prioritize leads"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Personalized context-aware collaborative online activity prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Forecasting of demand using ARIMA model"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep sparse rectifier neural networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A survey on electric power demand forecasting: future trends in smart grids, microgrids and smart buildings"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Clusterbased hierarchical demand forecasting for perishable goods"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Generative adversarial networks time series models to forecast medicine daily sales in hospital"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift"
+    },
+    {
+      "ref_id": "b14",
+      "title": "An improved demand forecasting model using deep learning approach and proposed decision integration strategy for supply chain"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "On information and sufficiency"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Sales demand forecasting using LSTM network"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Restaurant sales and customer demand forecasting: Literature survey and categorization of methods"
+    },
+    {
+      "ref_id": "b19",
+      "title": "DisenHCN: Disentangled Hypergraph Convolutional Networks for Spatiotemporal Activity Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Tensor completion for weakly-dependent data on graph for metro passenger flow prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Autofis: Automatic feature interaction selection in factorization models for click-through rate prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Demand forecasting with high dimensional data: The case of SKU retail sales forecasting with intra-and intercategory promotional information"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Knowledge graph embeddings with node2vec for item recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Demand forecasting at retail stage for selected vegetables: a performance analysis"
+    },
+    {
+      "ref_id": "b27",
+      "title": "An advanced sales forecasting using machine learning algorithm"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Prediction of Stock Market performance by using machine learning techniques"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Demand forecasting in retail operations for fashionable products: methods, practices, and real case study"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Econometric modeling of the US restaurant industry"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Predicting censored count data with COM-Poisson regression"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Predictive big data analytics for supply chain demand forecasting: methods, applications, and research opportunities"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Demand forecasting: A case study in the food industry"
+    },
+    {
+      "ref_id": "b34",
+      "title": "A review of research on tourism demand forecasting: Launching the Annals of Tourism Research Curated Collection on tourism demand forecasting"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Demand forecasting in transport: Overview and modeling advances"
+    },
+    {
+      "ref_id": "b37",
+      "title": "A selection of advanced technologies for demand forecasting in the retail industry"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Entire space multi-task modeling via post-click behavior decomposition for conversion rate prediction"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Semantic-aware spatio-temporal app usage representation via graph convolutional network"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Collaborative filtering meets mobile recommendation: A user-centered approach"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

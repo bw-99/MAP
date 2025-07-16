@@ -21,9 +21,71 @@
   "Algorithm 1 A Tensorflow-style Pseudocode of our proposed Margin InfoNCE Loss.": "1: function Cal_Margin_InfoNCE_Loss( ) 2: cos_theta = logits / (u_norm ∗ i_norm + 1 𝑒 -10 ) 3: logits_m = (cos_theta - margin) ∗ (u_norm · i_norm + 1 𝑒 -10 ) 4: l_update = (logits_m + beta ∗ logits) / (1 + beta) # logits, u_norm, i_norm: [B*K], to calculate 𝑐𝑜𝑠 𝜃 in Eq5 # margin: float, to get the logits with the margin 𝑣 · 𝜙 ( 𝜃 𝑘 ) in Eq5 # beta: float, using a weighted combination to maintain stability 5: beta ∗ = scale # scale: float, beta=9999 at the beginning of training. As iteration steps increase, beta becomes smaller. 6: l_p = tf.reshape(tf.where(p_mask), l_update, tf.fill(tf.shape(p_mask), neg_min) ), [-1,1]) # p_mask: [B*K] positive mask, neg_min: float 7: l_n_hard = tf.where(n_hard_mask, l_update, tf.fill(tf.shape(n_hard_mask), neg_min) ) # n_hard_mask: [B*K] hard negative mask 8: l_n_easy = tf.where(n_easy_mask, logits, tf.fill(tf.shape(n_easy_mask), float(neg_min)) ) # n_easy_mask: [B*K] easy negative mask 9: l_n = tf.concat([tf.reshape(l_n_hard, [B,K]), tf.reshape(l_n_easy], [B,K]), axis=1) # B: batch_size, K: sequence length. Get l_n: [B,2*K] l_n = tf.reshape(tf.repeat(tf.reshape(l_n, [B,1,K]), repeats=K, axis=1), [-1,2*K]) # repeat l_n ([B*K,2*K]) to match l_p([B*K,1]) 10: 11: l_all = tf.gather_nd(tf.concat([l_p, l_n], axis=1), tf.where(p_mask)) # get positive and corresponding negatives. l_all: [len(pos), 2*K+1] 12: loss = -tf.math.log_softmax( l_all/t )[:,0] # t: float, temperature. The first column of l_all is positive logit, while remaining is negative 13: return tf.reduce_sum(loss) 14: end function [16] Weiyang Liu, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj, and Le Song. 2017. Sphereface: Deep hypersphere embedding for face recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition . 212-220. [17] Weiyang Liu, Yandong Wen, Zhiding Yu, and Meng Yang. 2016. Large-margin softmax loss for convolutional neural networks. arXiv preprint arXiv:1612.02295 (2016). [18] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H. Chi. 2018. Modeling Task Relationships in Multi-task Learning with Multi-gate Mixtureof-Experts. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD '18) . Association for Computing Machinery, New York, NY, USA, 1930-1939. https: //doi.org/10.1145/3219819.3220007 [19] Xu Ma, Pengjie Wang, Hui Zhao, Shaoguo Liu, Chuhan Zhao, Wei Lin, KuangChih Lee, Jian Xu, and Bo Zheng. 2021. Towards a Better Tradeoff between Effectiveness and Efficiency in Pre-Ranking: A Learnable Feature Selection based Approach. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (Canada) (SIGIR '21) . Association for Computing Machinery, New York, NY, USA, 2036-2040. https://doi.org/10.1145/3404835.3462979 [20] Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013. Distributed representations of words and phrases and their compositionality. In Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 2 (Lake Tahoe, Nevada) (NIPS'13) . Curran Associates Inc., Red Hook, NY, USA, 3111-3119. [21] Aaron van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation learning with contrastive predictive coding. arXiv preprint arXiv:1807.03748 (2018). [22] H. Palangi, L. Deng, Y. Shen, J. Gao, X. He, J. Chen, X. Song, and R. Ward. 2015. Semantic Modelling with Long-Short-Term Memory for Information Retrieval. arXiv:1412.6629 [cs.IR] [23] Haojie Pan, Chengyu Wang, Minghui Qiu, Yichang Zhang, Yaliang Li, and Jun Huang. 2020. Meta-KD: A meta knowledge distillation framework for language model compression across domains. arXiv preprint arXiv:2012.01266 (2020). [24] Jiarui Qin, Jiachen Zhu, Bo Chen, Zhirong Liu, Weiwen Liu, Ruiming Tang, Rui Zhang, Yong Yu, and Weinan Zhang. 2022. RankFlow: Joint Optimization of MultiStage Cascade Ranking Systems as Flows. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (Madrid, Spain) (SIGIR '22) . Association for Computing Machinery, New York, NY, USA, 814-824. https://doi.org/10.1145/3477495.3532050 [25] Xiang-Rong Sheng, Jingyue Gao, Yueyao Cheng, Siran Yang, Shuguang Han, Hongbo Deng, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Long Beach, CA, USA) (KDD '23) . Association for Computing Machinery, New York, NY, USA, 4813-4822. https://doi.org/10.1145/3580305.3599851 [26] Jinbo Song, Ruoran Huang, Xinyang Wang, Wei Huang, Qian Yu, Mingming Chen, Yafei Yao, Chaosheng Fan, Changping Peng, Zhangang Lin, Jinghe Hu, and Jingping Shao. 2022. Rethinking Large-Scale Pre-Ranking System: EntireChain Cross-Domain Models. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (Atlanta, GA, USA) (CIKM '22) . Association for Computing Machinery, New York, NY, USA, 4495-4499. https://doi.org/10.1145/3511808.3557683 [27] Jiaxi Tang and Ke Wang. 2018. Ranking Distillation: Learning Compact Ranking Models With High Performance for Recommender System. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD '18) . Association for Computing Machinery, New York, NY, USA, 2289-2298. https://doi.org/10.1145/3219819.3220021 [28] Feng Wang, Jian Cheng, Weiyang Liu, and Haijun Liu. 2018. Additive Margin Softmax for Face Verification. IEEE Signal Processing Letters 25, 7 (2018), 926-930. https://doi.org/10.1109/LSP.2018.2822810 [29] Jinpeng Wang, Jieming Zhu, and Xiuqiang He. 2021. Cross-Batch Negative Sampling for Training Two-Tower Recommenders. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (Canada) (SIGIR '21) . Association for Computing Machinery, New York, NY, USA, 1632-1636. https://doi.org/10.1145/3404835.3463032 [30] X. Wang, H. Zhang, W. Huang, and M. R. Scott. 2020. Cross-Batch Memory for Embedding Learning. In 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) . IEEE Computer Society, Los Alamitos, CA, USA, 6387-6396. https://doi.org/10.1109/CVPR42600.2020.00642 [31] Zhe Wang, Liqin Zhao, Biye Jiang, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2020. COLD: Towards the Next Generation of Pre-Ranking System. CoRR abs/2007.16122 (2020). arXiv:2007.16122 https://arxiv.org/abs/2007.16122 [32] Fen Xia, Tie-Yan Liu, Jue Wang, Wensheng Zhang, and Hang Li. 2008. Listwise approach to learning to rank: theory and algorithm. In Proceedings of the 25th International Conference on Machine Learning (Helsinki, Finland) (ICML '08) . Association for Computing Machinery, New York, NY, USA, 1192-1199. https: //doi.org/10.1145/1390156.1390306 [33] Chen Xu, Quan Li, Junfeng Ge, Jinyang Gao, Xiaoyong Yang, Changhua Pei, Fei Sun, Jian Wu, Hanxiao Sun, and Wenwu Ou. 2020. Privileged Features Distillation at Taobao Recommendations. arXiv:1907.05171 [cs.IR] [34] Le Yan, Zhen Qin, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2022. Scale Calibration of Deep Ranking Models. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Washington DC, USA) (KDD '22) . Association for Computing Machinery, New York, NY, USA, 4300-4309. https://doi.org/10.1145/3534678.3539072 [35] Bianca Zadrozny. 2004. Learning and Evaluating Classifiers under Sample Selection Bias. In Proceedings of the Twenty-First International Conference on Machine Learning (Banff, Alberta, Canada) (ICML '04) . Association for Computing Machinery, New York, NY, USA, 114. https://doi.org/10.1145/1015330.1015425 [36] Yin Zhang, Ruoxi Wang, Derek Zhiyuan Cheng, Tiansheng Yao, Xinyang Yi, Lichan Hong, James Caverlee, and Ed H. Chi. 2023. Empowering Long-tail Item Recommendation through Cross Decoupling Network (CDN). In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Long Beach, CA, USA) (KDD '23) . Association for Computing Machinery, New York, NY, USA, 5608-5617. https://doi.org/10.1145/3580305.3599814 [37] Zhixuan Zhang, Yuheng Huang, Dan Ou, Sen Li, Longbin Li, Qingwen Liu, and Xiaoyi Zeng. 2023. Rethinking the Role of Pre-ranking in Large-scale E-Commerce Searching System. arXiv:2305.13647 [cs.IR] [38] Zhishan Zhao, Jingyue Gao, Yu Zhang, Shuguang Han, Siyuan Lou, Xiang-Rong Sheng, Zhe Wang, Han Zhu, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. COPR: Consistency-Oriented Pre-Ranking for Online Advertising. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (Birmingham, United Kingdom) (CIKM '23) . Association for Computing Machinery, New York, NY, USA, 4974-4980. https://doi.org/10.1145/3583780.3615465 [39] Guorui Zhou, Chengru Song, Xiaoqiang Zhu, Xiao Ma, Yanghui Yan, Xingya Dai, Han Zhu, Junqi Jin, Han Li, and Kun Gai. 2017. Deep Interest Network for Click-Through Rate Prediction. (2017).",
   "keywords_parsed": [
     "Pre-ranking",
-    " Cross-Stage Coordination",
-    " Long-tail Precision",
-    " Consistency",
-    " Sample Selecting Bias"
+    "Cross-Stage Coordination",
+    "Long-tail Precision",
+    "Consistency",
+    "Sample Selecting Bias"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning to rank using gradient descent"
+    },
+    {
+      "ref_id": "b2",
+      "title": "From RankNet to LambdaRank to LambdaMART: An Overview"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Inferring probability of relevance using the method of logistic regression"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Learning Dense Representations for Entity Retrieval"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Incremental Support Vector Learning for Ordinal Regression"
+    },
+    {
+      "ref_id": "b7",
+      "title": "On Ranking Consistency of Pre-ranking Stage"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Calibration-compatible Listwise Distillation of Privileged Features for CTR Prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Learning Deep Structured Semantic Models for Web Search Using Clickthrough Data"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Dense Passage Retrieval for Open-Domain Question Answering"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Two Birds One Stone: On both Cold-Start and Long-Tail Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Graph Contrastive Learning with Multi-Objective for Personalized Product Retrieval in Taobao Search"
+    },
+    {
+      "ref_id": "b13",
+      "title": "IntTower: The Next Generation of Two-Tower Model for Pre-Ranking System"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Long-tail Session-based Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Learning to Rank for Information Retrieval"
+    }
   ]
 }

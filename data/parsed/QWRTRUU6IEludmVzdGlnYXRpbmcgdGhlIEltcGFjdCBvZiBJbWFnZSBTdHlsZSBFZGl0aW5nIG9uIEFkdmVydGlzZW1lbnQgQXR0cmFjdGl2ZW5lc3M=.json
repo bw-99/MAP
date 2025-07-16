@@ -27,15 +27,275 @@
   "Example 1": "ad text: 'What does a dimple on the forehead mean? ' Category: other",
   "Example 2": "ad text: 'How many steps can you think ahead in Go?' Category: sports Example 3 ad text: 'The five most popular dramas' Figure 7: Examples of 𝑎𝑑 s enhanced by AdSEE where we show the 𝑎𝑑 category, text, and cover image. Left: Original cover image, Right: Enhanced cover image. Category: TV Face Segmentation Module, we utilize the Dlib [34] face alignment model to extract aligned human faces. As for the Image Embedding Model, we use the Tencent internal Sougou Image Embedding Model and multi-label classification model described in Section 3 for experiments on QQ-AD dataset. In addition, we adopt the publicly available ResNet-18 [22] model as the image embedding model for experiments on the public CreativeRanking [55] dataset. For the CRP-NIMA baseline model, we use the NIMA image quality assessment model [51] pre-trained on the AVA [19] dataset to obtain the ad cover image quality score mean and standard-deviation for all cover images in the QQ-AD dataset. Hyper-parameters and Implementation Details. For all of the base recommender models including AutoInt, we adopt the implementations from the DeepCTR [49] library and use the default hyperparameters of each model. For both of the QQ-AD and CreativeRanking [55], we use the train set to train the model and use the validation set to tune the hyper-parameters, select features and determine early stop, and evaluate the performance on the test set. For the CRP model training on both datasets, we find a learning rate of 1 𝑒 -4 performs well and we use a batch size of 256. For the CRP model trained on the QQ-AD dataset and CreativeRanking dataset, we train them for 37 epochs and 18 epochs respectively. For the GADE module, we use the following settings for experiments on the QQ-AD dataset. In Algorithm 1, we set the PopulationSize to 75 and set the NumGenerations to 20. In the Parent Selection step, we select 10 genotypes as parents by performing the rank selection method. In the Crossover step, the parents in the mating pool will create 65 off-springs using the uniform crossover operation. Then, the 10 parents are combined with the 65 offspring to form a new population of 75 genotypes. Next, we randomly select 20% of the 75 genotypes to mutate in the Mutation step. For each genotype selected for mutation, we randomly change one of its genes by perturbing its value by a value in the range of [-0 . 1 , 0 . 1 ] . The search space for each gene value is limited to a value between the range of [-3 , 3 ] with a step of 0.1. The gene values are randomly initialized to a value in the range of [-1 , 1 ] . In each genotype, we have 20 genes that correspond to the top 20 editing directions found by SeFa. On the CreativeRanking [55] dataset, we use a slightly different set of settings for the GADE module that is suitable for this dataset. We use a PopulationSize of 30 and set the NumGenerations to 5. In the Parent Selection step, we select 10 genotypes as parents by performing the rank selection method. In the Crossover step, the parents in the mating pool will create 20 off-springs using the uniform crossover operation. Then, the 10 parents are combined with the 20 offspring to form a new population of 30 genotypes. Next, we randomly select 20% of the 30 genotypes to mutate in the Mutation step. For each genotype selected for mutation, we randomly change one of its genes by perturbing its value by a value in the range of [-0 . 01 , 0 . 01 ] . The search space for each gene value is limited to a value between the range of [-1 . 5 , 1 . 5 ] with a step of 0.01. The gene values are randomly initialized to a value in the range of [-0 . 1 , 0 . 1 ] . In each genotype, we have 20 genes that correspond to the top 20 editing directions found by SeFa. For the operation used to convert face latent codes to a fixed length, we compare four operations including max-pooling, averagepooling, aggregation and concatenation with padding to a fixed length. We found max-pooling to be the best performer on both datasets and use the max-pooling operation throughout our experiments. In the implementation, we apply standardization to the click rate label and we predict the standardized click rate. Even more detailed implementation-related settings and their values can be found in the code.",
   "keywords_parsed": [
-    "Online advertisements are important elements in e-commerce sites",
-    " social media platforms",
-    " and search engines. With the increasing popularity of mobile browsing",
-    " many online ads are displayed with visual information in the form of a cover image in addition to text descriptions to grab the attention of users. Various recent studies have focused on predicting the click rates of online advertisements aware of visual features or composing optimal advertisement elements to enhance visibility. In this paper",
-    " we propose Advertisement Style Editing and Attractiveness Enhancement (AdSEE)",
-    " which explores whether semantic editing to ads images can affect or alter the popularity of online advertisements. We introduce StyleGANbased facial semantic editing and inversion to ads images and train a click rate predictor attributing GAN-based face latent representations in addition to traditional visual and textual features to click rates. Through a large collected dataset named QQ-AD",
-    " containing 20",
-    "527 online ads",
-    " we perform extensive offline tests to study how different semantic directions and their edit coefficients may impact click rates. We further design a Genetic Advertisement Editor to efficiently search for the optimal edit directions and intensity given an input ad cover image to enhance its projected click rates. Online A/B tests performed over a period of 5 days have verified the increased click-through rates of AdSEE-edited samples as compared to a control group of original ads",
-    " verifying the relation between image styles and ad popularity. We open source the code for AdSEE research at https://github.com/LiyaoJiang1998/adsee."
+    "Advertisement Image Editing",
+    "StyleGAN",
+    "Click-through Rate Prediction",
+    "Genetic Algorithms"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Pytorch:Tensors and dynamic neural networks in python with strong gpu acceleration"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Face presence and gaze direction in print advertisements: How they influence consumer responses-An eye-tracking study"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The Avazu Dataset"
+    },
+    {
+      "ref_id": "b4",
+      "title": "The impact of visual appearance on user response in online display advertising"
+    },
+    {
+      "ref_id": "b5",
+      "title": "The OpenCV Library"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Large scale GAN training for high fidelity natural image synthesis"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep ctr prediction in display advertising"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Automated Creative Optimization for E-Commerce Advertising"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Multimedia features for click prediction of new ads in display advertising"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Adaptive factorization network: Learning adaptive-order feature interactions"
+    },
+    {
+      "ref_id": "b12",
+      "title": "The Criteo Dataset"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b14",
+      "title": "FacialGAN: Style Transfer and Attribute Manipulation on Synthetic Faces"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Learning piecewise linear models from large scale data for ad click prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Image style transfer using convolutional neural networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Investigation on the effect of a Gaussian Blur in image filtering and segmentation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Generative adversarial nets"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Ava: A video dataset of spatio-temporally localized atomic visual actions"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Effects of face images and face pareidolia on consumers' responses to print advertising: an empirical investigation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b23",
+      "title": "VBPR: visual bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b25",
+      "title": "An efficient bandit algorithm for realtime multivariate optimization"
+    },
+    {
+      "ref_id": "b26",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Arbitrary style transfer in real-time with adaptive instance normalization"
+    },
+    {
+      "ref_id": "b28",
+      "title": "GANSpace: Discovering Interpretable GAN Controls"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Progressive growing of gans for improved quality, stability, and variation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Alias-Free Generative Adversarial Networks"
+    },
+    {
+      "ref_id": "b31",
+      "title": "A style-based generator architecture for generative adversarial networks"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Analyzing and Improving the Image Quality of StyleGAN"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Imagic: Text-based real image editing with diffusion models"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Dlib-ml: A Machine Learning Toolkit"
+    },
+    {
+      "ref_id": "b35",
+      "title": "The Open Images Dataset V4: Unified image classification, object detection, and visual relationship detection at scale"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A contextual bandit approach to personalized news article recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Adversarial multimodal representation learning for click-through rate prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Microsoft coco: Common objects in context"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Category-Specific CNN for Visual-aware CTR Prediction at JD.com"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deepstyle: Learning user preferences for visual recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "A convolutional click prediction model"
+    },
+    {
+      "ref_id": "b43",
+      "title": "A dual input-aware factorization machine for CTR prediction"
+    },
+    {
+      "ref_id": "b44",
+      "title": "The effect of human face and gaze direction in advertising"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Hierarchical text-conditional image generation with clip latents"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Encoding in Style: a StyleGAN Encoder for Image-to-Image Translation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "DeepCTR: Easy-to-use, Modular and Extendible package of deep-learning based CTR models"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Closed-Form Factorization of Latent Semantics in GANs"
+    },
+    {
+      "ref_id": "b51",
+      "title": "NIMA: Neural image assessment"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Designing an encoder for stylegan image manipulation"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b55",
+      "title": "A Hybrid Bandit Model with Visual Priors for Creative Ranking in Display Advertising"
+    },
+    {
+      "ref_id": "b56",
+      "title": "A Survey of Online Advertising Click-Through Rate Prediction Models"
+    },
+    {
+      "ref_id": "b57",
+      "title": "SOLO: Segmenting Objects by Locations"
+    },
+    {
+      "ref_id": "b58",
+      "title": "SOLOv2: Dynamic and Fast Instance Segmentation"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Beyond ranking: Optimizing whole-page presentation"
+    },
+    {
+      "ref_id": "b60",
+      "title": "AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks"
+    },
+    {
+      "ref_id": "b61",
+      "title": "GAN inversion: A survey"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Attentional factorization machines: Learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Learning compositional, visual and relational representations for CTR prediction in sponsored search"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Operation-aware neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b65",
+      "title": "An Input-aware Factorization Machine for Sparse Prediction"
+    },
+    {
+      "ref_id": "b66",
+      "title": "What You Look Matters? Offline Evaluation of Advertising Creatives for Cold-start Problem"
+    }
   ]
 }

@@ -26,8 +26,210 @@
   "References": "[1] Akiko Aizawa. 2003. An information-theoretic perspective of tf-idf measures. Information Processing & Management 39, 1 (2003), 45-65. [2] Jianxin Chang, Chenbin Zhang, Zhiyi Fu, Xiaoxue Zang, Lin Guan, Jing Lu, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, et al. 2023. TWIN: TWo-stage interest network for lifelong user behavior modeling in CTR prediction at kuaishou. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3785-3794. [3] Junxuan Chen, Baigui Sun, Hao Li, Hongtao Lu, and Xian-Sheng Hua. 2016. Deep ctr prediction in display advertising. In Proceedings of the 24th ACM international conference on Multimedia . 811-820. [4] Ming Chen, Weike Pan, and Zhong Ming. 2024. Explicit and Implicit Modeling via Dual-Path Transformer for Behavior Set-informed Sequential Recommendation. In Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 329-340. [5] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior sequence transformer for e-commerce recommendation in alibaba. In Proceedings of the 1st international workshop on deep learning practice for high-dimensional sparse data . 1-4. [6] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [7] Jacob Devlin. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [8] Yingpeng Du, Ziyan Wang, Zhu Sun, Yining Ma, Hongzhi Liu, and Jie Zhang. 2024. Disentangled Multi-interest Representation Learning for Sequential Recommendation. In Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 677-688. [9] Jerome H Friedman. 2001. Greedy function approximation: a gradient boosting machine. Annals of statistics (2001), 1189-1232. [10] Xiaoqiang Gui, Yueyao Cheng, Xiang-Rong Sheng, Yunfeng Zhao, Guoxian Yu, Shuguang Han, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Calibrationcompatible Listwise Distillation of Privileged Features for CTR Prediction. Proceedings of the 17th ACM International Conference on Web Search and Data Mining (2023). [11] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [12] Jiafeng Guo, Yixing Fan, Qingyao Ai, and W Bruce Croft. 2016. A deep relevance matching model for ad-hoc retrieval. In Proceedings of the 25th ACM international on conference on information and knowledge management . 55-64. [13] Shuguang Han, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2020. Learning-to-Rank with BERT in TF-Ranking. ArXiv abs/2004.08476 (2020). [14] Jonathan L Herlocker, Joseph A Konstan, and John Riedl. 2000. Explaining collaborative filtering recommendations. In Proceedings of the 2000 ACM conference on Computer supported cooperative work . 241-250. [15] Jonathan L Herlocker, Joseph A Konstan, Loren G Terveen, and John T Riedl. 2004. Evaluating collaborative filtering recommender systems. ACMTransactions on Information Systems (TOIS) 22, 1 (2004), 5-53. [16] David W Hosmer Jr, Stanley Lemeshow, and Rodney X Sturdivant. 2013. Applied logistic regression . John Wiley & Sons. [17] Baotian Hu, Zhengdong Lu, Hang Li, and Qingcai Chen. 2014. Convolutional neural network architectures for matching natural language sentences. Advances in neural information processing systems 27 (2014). [18] Yuchin Juan, Yong Zhuang, Wei-Sheng Chin, and Chih-Jen Lin. 2016. Fieldaware factorization machines for CTR prediction. In Proceedings of the 10th ACM conference on recommender systems . 43-50. [19] Michael P LaValley. 2008. Logistic regression. Circulation 117, 18 (2008), 23952399. [20] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [21] Pengfei Liu, Weizhe Yuan, Jinlan Fu, Zhengbao Jiang, Hiroaki Hayashi, and Graham Neubig. 2023. Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing. Comput. Surveys 55, 9 (2023), 1-35. [22] Priyanka Nigam, Yiwei Song, Vijai Mohan, Vihan Lakshman, Weitian Ding, Ankit Shingavi, Choon Hui Teo, Hao Gu, and Bing Yin. 2019. Semantic product search. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2876-2885. [23] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. WWWCompanion '25, April 28-May 2, 2025, Sydney, NSW, Australia [24] Wisam A Qader, Musa M Ameen, and Bilal I Ahmed. 2019. An overview of bag of words; importance, implementation, applications, and challenges. In 2019 international engineering conference (IEC) . IEEE, 200-204. [25] Yifan Qiao, Chenyan Xiong, Zhenghao Liu, and Zhiyuan Liu. 2019. Understanding the Behaviors of BERT in Ranking. arXiv preprint arXiv:1904.07531 (2019). [26] Juan Ramos et al. 2003. Using tf-idf to determine word relevance in document queries. In Proceedings of the first instructional conference on machine learning , Vol. 242. Citeseer, 29-48. [27] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . IEEE, 995-1000. [28] Yelong Shen, Xiaodong He, Jianfeng Gao, Li Deng, and Grégoire Mesnil. 2014. A latent semantic model with convolutional-pooling structure for information retrieval. In Proceedings of the 23rd ACM international conference on conference on information and knowledge management . 101-110. [29] Xiang-Rong Sheng, Jingyue Gao, Yueyao Cheng, Siran Yang, Shuguang Han, Hongbo Deng, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Joint optimization of ranking and calibration with contextualized hybrid model. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4813-4822. [30] Xiaoyuan Su and Taghi M Khoshgoftaar. 2009. A survey of collaborative filtering techniques. Advances in artificial intelligence 2009, 1 (2009), 421425. [31] A Vaswani. 2017. Attention is all you need. Advances in Neural Information Processing Systems (2017). [32] Shengxian Wan, Yanyan Lan, Jun Xu, Jiafeng Guo, Liang Pang, and Xueqi Cheng. 2016. Match-srnn: Modeling the recursive matching structure with spatial rnn. arXiv preprint arXiv:1604.04378 (2016). [33] Dong Wang, Kavé Salamatian, Yunqing Xia, Weiwei Deng, and Qi Zhang. 2023. BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 5039-5050. [34] Dong Wang, Shaoguang Yan, Yunqing Xia, Kavé Salamatian, Weiwei Deng, and Qi Zhang. 2022. Learning Supplementary NLP Features for CTR Prediction in Sponsored Search. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4010-4020. [35] Dong Wang, Shaoguang Yan, Yunqing Xia, Kavé Salamatian, Weiwei Deng, and Qi Zhang. 2022. Learning Supplementary NLP Features for CTR Prediction in Sponsored Search. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4010-4020. [36] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [37] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the web conference 2021 . 1785-1797. [38] Wenhao Wu, Jialiang Zhou, Ailong He, Shuguang Han, Jufeng Chen, and Bo Zheng. 2024. MetaSplit: Meta-Split Network for Limited-Stock Product Recommendation. Companion Proceedings of the ACM on Web Conference 2024 (2024). [39] Jun Xiao, Hao Ye, Xiangnan He, Hanwang Zhang, Fei Wu, and Tat-Seng Chua. 2017. Attentional factorization machines: Learning the weight of feature interactions via attention networks. arXiv preprint arXiv:1708.04617 (2017). [40] Shaowei Yao, Jiwei Tan, Xi Chen, Keping Yang, Rong Xiao, Hongbo Deng, and Xiaojun Wan. 2021. Learning a product relevance model from click-through data in e-commerce. In Proceedings of the Web Conference 2021 . 2890-2899. [41] Shaowei Yao, Jiwei Tan, Xi Chen, Juhao Zhang, Xiaoyi Zeng, and Keping Yang. 2022. ReprBERT: distilling BERT to an efficient representation-based relevance model for e-commerce. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4363-4371. [42] Hongchun Zhang, Tianyi Wang, Xiaonan Meng, Yi Hu, and Hao Wang. 2019. Improving Semantic Matching via Multi-Task Learning in E-Commerce. eCOM@ SIGIR 10 (2019). [43] Xikun Zhang, Deepak Ramachandran, Ian Tenney, Yanai Elazar, and Dan Roth. 2020. Do language embeddings capture scales? arXiv preprint arXiv:2010.05345 (2020). [44] Yujing Zhang, Zhangming Chan, Shuhao Xu, Weijie Bian, Shuguang Han, Hongbo Deng, and Bo Zheng. 2022. KEEP: An industrial pre-training framework for online recommendation via knowledge extraction and plugging. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3684-3693. [45] Yin Zhang, Rong Jin, and Zhi-Hua Zhou. 2010. Understanding bag-of-words model: a statistical framework. International journal of machine learning and cybernetics 1 (2010), 43-52. [46] Zhaorui Zhang, Xiang-Rong Sheng, Yujing Zhang, Biye Jiang, Shuguang Han, Hongbo Deng, and Bo Zheng. 2022. Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Models. Proceedings of the 31st ACM International Conference on Information & Knowledge Management (2022). [47] Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, et al. 2023. A survey of large language models. arXiv preprint arXiv:2303.18223 (2023). Rong Chen, Shuzhi Cao, Ailong He, Shuguang Han, & Jufeng Chen WWWCompanion '25, April 28-May 2, 2025, Sydney, NSW, Australia [48] Yunfeng Zhao, Xu Yan, Xiaoqiang Gui, Shuguang Han, Xiang-Rong Sheng, Guoxian Yu, Jufeng Chen, Zhao Xu, and Bo Zheng. 2023. Entire Space Cascade Delayed Feedback Modeling for Effective Conversion Rate Prediction. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 4981-4987. [49] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [50] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068.",
   "keywords_parsed": [
     "Search Recommendation System",
-    " CTR Prediction",
-    " Personalized Search Relevance Matching",
-    " Fusion Model"
+    "CTR Prediction",
+    "Personalized Search Relevance Matching",
+    "Fusion Model"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "An information-theoretic perspective of tf-idf measures"
+    },
+    {
+      "ref_id": "b2",
+      "title": "TWIN: TWo-stage interest network for lifelong user behavior modeling in CTR prediction at kuaishou"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep ctr prediction in display advertising"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Explicit and Implicit Modeling via Dual-Path Transformer for Behavior Set-informed Sequential Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Disentangled Multi-interest Representation Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Greedy function approximation: a gradient boosting machine"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Calibration-compatible Listwise Distillation of Privileged Features for CTR Prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A deep relevance matching model for ad-hoc retrieval"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Learning-to-Rank with BERT in TF-Ranking"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Explaining collaborative filtering recommendations"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Evaluating collaborative filtering recommender systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Applied logistic regression"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Convolutional neural network architectures for matching natural language sentences"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Field-aware factorization machines for CTR prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Logistic regression"
+    },
+    {
+      "ref_id": "b20",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Semantic product search"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "An overview of bag of words; importance, implementation, applications, and challenges"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Understanding the Behaviors of BERT in Ranking"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Using tf-idf to determine word relevance in document queries"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b28",
+      "title": "A latent semantic model with convolutional-pooling structure for information retrieval"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Joint optimization of ranking and calibration with contextualized hybrid model"
+    },
+    {
+      "ref_id": "b30",
+      "title": "A survey of collaborative filtering techniques"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Match-srnn: Modeling the recursive matching structure with spatial rnn"
+    },
+    {
+      "ref_id": "b33",
+      "title": "BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Learning Supplementary NLP Features for CTR Prediction in Sponsored Search"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Learning Supplementary NLP Features for CTR Prediction in Sponsored Search"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b37",
+      "title": "DCN v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b38",
+      "title": "MetaSplit: Meta-Split Network for Limited-Stock Product Recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Attentional factorization machines: Learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Learning a product relevance model from click-through data in e-commerce"
+    },
+    {
+      "ref_id": "b41",
+      "title": "ReprBERT: distilling BERT to an efficient representation-based relevance model for e-commerce"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Improving Semantic Matching via Multi-Task Learning in E-Commerce"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Do language embeddings capture scales?"
+    },
+    {
+      "ref_id": "b44",
+      "title": "KEEP: An industrial pre-training framework for online recommendation via knowledge extraction and plugging"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Understanding bag-of-words model: a statistical framework"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Models"
+    },
+    {
+      "ref_id": "b47",
+      "title": "A survey of large language models"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Entire Space Cascade Delayed Feedback Modeling for Effective Conversion Rate Prediction"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

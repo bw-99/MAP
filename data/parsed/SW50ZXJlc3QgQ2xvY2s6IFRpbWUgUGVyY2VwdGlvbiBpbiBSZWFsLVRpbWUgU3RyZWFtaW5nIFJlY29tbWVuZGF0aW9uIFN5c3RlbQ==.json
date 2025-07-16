@@ -16,6 +16,56 @@
   "A BIOGRAPHY": "Yongchun Zhu is currently a researcher at Douyin Group, Beijing, China. He received his Ph.D. degree from Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China. His main research interests include recommendation systems and transfer learning. He has published over 30 papers in top-tier international conferences and journals including KDD, WWW, SIGIR, TKDE, TNNLS and so on. Homepage: https://scholar.google.com. hk/citations?user=iKUIgeQAAAAJ",
   "keywords_parsed": [
     "Recommendation",
-    " Time Perception"
+    "Time Perception"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Buy it again: Modeling repeat purchase recommendations"
+    },
+    {
+      "ref_id": "b2",
+      "title": "TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "The YouTube video recommendation system"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Automatically Discovering User Consumption Intents in Meituan"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "User Consumption Intention Prediction in Meituan"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Collaborative knowledge base embedding for recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Modeling Dual PeriodVarying Preferences for Takeaway Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

@@ -19,7 +19,205 @@
   "REFERENCES": "[1] Avazu. 2015. Click-Through Rate Prediction, predict whether a mobile ad will be clicked. https://www.kaggle.com/c/avazu-ctr-prediction/data. [2] Baidu. 2020. An Open-Source Deep Learning Platform Originated from Industrial Practice, PaddlePaddle is dedicated to facilitating innovations and applications of deep learning. https://github.com/PaddlePaddle/PaddleRec. [3] Ran Bi, Tongtong Xu, Mingxue Xu, and Enhong Chen. 2022. PaddlePaddle: A Production-Oriented Deep Learning Platform Facilitating the Competency of Enterprises. In 2022 IEEE 24th Int Conf on High Performance Computing & Communications; 8th Int Conf on Data Science & Systems; 20th Int Conf on Smart City; 8th Int Conf on Dependability in Sensor, Cloud & Big Data Systems & Application (HPCC/DSS/SmartCity/DependSys) . IEEE, 92-99. [4] Jesús Bobadilla, Francisco Serradilla, and Jesus Bernal. 2010. A new collaborative filtering metric that improves the behavior of recommender systems. KnowledgeBased Systems 23, 6 (2010), 520-528. [5] Ludovico Boratto, Salvatore Carta, Gianni Fenu, and Roberto Saia. 2016. Using neural word embeddings to model user behavior and detect user segments. Knowledge-based systems 108 (2016), 5-14. [6] Giovanna Castellano, Anna Maria Fanelli, and Maria Alessandra Torsello. 2011. NEWER: A system for NEuro-fuzzy WEb Recommendation. Applied Soft Computing 11, 1 (2011), 793-806. [7] Ding Chong and Hapzi Ali. 2022. LITERATURE REVIEW: COMPETITIVE STRATEGY, COMPETITIVE ADVANTAGES, AND MARKETING PERFORMANCE ON E-COMMERCE SHOPEE INDONESIA. Dinasti International Journal of Digital Business Management 3, 2 (2022), 299-309. [8] Criteo. 2014. Display Advertising Challenge Predict click-through rates on display ads. https://www.kaggle.com/competitions/criteo-display-ad-challenge/data. [9] Sahraoui Dhelim, Nyothiri Aung, Mohammed Amine Bouras, Huansheng Ning, and Erik Cambria. 2022. A survey on personality-aware recommendation systems. Artificial Intelligence Review (2022), 1-46. [10] Chen Gao, Xiang Wang, Xiangnan He, and Yong Li. 2022. Graph neural networks for recommender system. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 1623-1625. [11] Ángel García-Crespo, José Luis López-Cuadrado, Ricardo Colomo-Palacios, Israel González-Carrasco, and Belén Ruiz-Mezcua. 2011. Sem-Fit: A semantic based expert system to provide recommendations in the tourism domain. Expert systems with applications 38, 10 (2011), 13310-13319. [12] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [13] DanHendrycksandKevinGimpel. 2016. A baseline for detecting misclassified and out-of-distribution examples in neural networks. arXiv preprint arXiv:1610.02136 (2016). [14] Junjie Huang, Huawei Shen, Qi Cao, Shuchang Tao, and Xueqi Cheng. 2021. Signed Bipartite Graph Neural Networks. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 740-749. [15] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM Conference on Recommender Systems . 169-177. [16] Caigao Jiang, Siqiao Xue, James Zhang, Lingyue Liu, Zhibo Zhu, and Hongyan Hao. 2022. Learning Large-scale Universal User Representation with Sparse Mixture of Experts. ICML Workshop on Pre-training (2022). [17] Diederik P Kingma and Max Welling. 2013. Auto-encoding variational bayes. arXiv preprint arXiv:1312.6114 (2013). [18] Thomas Kipf, Ethan Fetaya, Kuan-Chieh Wang, Max Welling, and Richard Zemel. 2018. Neural relational inference for interacting systems. In International conference on machine learning . PMLR, 2688-2697. [19] Thomas N Kipf and Max Welling. 2016. Variational graph auto-encoders. arXiv preprint arXiv:1611.07308 (2016). [20] Hyeyoung Ko, Suyeon Lee, Yoonseo Park, and Anna Choi. 2022. A survey of recommendation systems: recommendation models, techniques, and application fields. Electronics 11, 1 (2022), 141. Adaptive Learning on User Segmentation: Universal to Specific Representation via Bipartite Neural Interaction* * Note: This work has been published in the proceedings of the 2nd International ACM SIGIR Conference on Information Retrieval in the Asia Pacific. Conference acronym 'XX, June 03-05, 2018, Woodstock, NY [21] Alexander Kolesnikov, Yury Logachev, and Valeriy Topinskiy. 2012. Predicting CTR of new ads via click prediction. In Proceedings of the 21st ACM international conference on Information and knowledge management . 2547-2550. [22] Rohit Kumar, Sneha Manjunath Naik, Vani D Naik, Smita Shiralli, VG Sunil, and Moula Husain. 2015. Predicting clicks: CTR estimation of advertisements using logistic regression classifier. In 2015 IEEE international advance computing conference (IACC) . IEEE, 1134-1138. [23] Hoyeop Lee, Jinbae Im, Seongwon Jang, Hyunsouk Cho, and Sehee Chung. 2019. Melu: Meta-learned user preference estimator for cold-start recommendation. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1073-1082. [24] Haoxuan Li, Yan Lyu, Chunyuan Zheng, and Peng Wu. 2023. TDR-CL: Targeted Doubly Robust Collaborative Learning for Debiased Recommendations. In The Eleventh International Conference on Learning Representations . [25] Zekun Li, Zeyu Cui, Shu Wu, Xiaoyu Zhang, and Liang Wang. 2019. Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction. In Proceedings of the 28th ACM international conference on information and knowledge management . 539-548. [26] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [27] Siyi Liu and Yujia Zheng. 2020. Long-tail session-based recommendation. In Proceedings of the 14th ACM Conference on Recommender Systems . 509-514. [28] Yuanfu Lu, Yuan Fang, and Chuan Shi. 2020. Meta-learning on heterogeneous information networks for cold-start recommendation. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1563-1573. [29] Sanjay Mohapatra and Sanjay Mohapatra. 2013. E-commerce Strategy . Springer. [30] Gal Oestreicher-Singer and Arun Sundararajan. 2012. Recommendation networks and the long tail of electronic commerce. Mis quarterly (2012), 65-83. [31] Carlos Porcel, Juan Manuel Moreno, and Enrique Herrera-Viedma. 2009. A multidisciplinar recommender system to advice research resources in university digital libraries. Expert systems with applications 36, 10 (2009), 12520-12528. [32] Yunchen Pu, Zhe Gan, Ricardo Henao, Xin Yuan, Chunyuan Li, Andrew Stevens, and Lawrence Carin. 2016. Variational autoencoder for deep learning of images, labels and captions. Advances in neural information processing systems 29 (2016). [33] Chao Qu, Xiaoyu Tan, Siqiao Xue, Xiaoming Shi, James Zhang, and Hongyuan Mei. 2023. Bellman Meets Hawkes: Model-Based Reinforcement Learning via Temporal Point Processes. In AAAI 2023 . AAAI Press. https://arxiv.org/abs/2201. 12569 [34] Nur W Rahayu, Ridi Ferdiana, and Sri S Kusumawardani. 2022. A systematic review of ontology use in E-Learning recommender system. Computers and Education: Artificial Intelligence (2022), 100047. [35] Dushyant Rao, Francesco Visin, Andrei Rusu, Razvan Pascanu, Yee Whye Teh, and Raia Hadsell. 2019. Continual unsupervised representation learning. Advances in Neural Information Processing Systems 32 (2019). [36] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1161-1170. [37] Yumin Su, Liang Zhang, Quanyu Dai, Bo Zhang, Jinyao Yan, Dan Wang, Yongjun Bao, Sulong Xu, Yang He, and Weipeng Yan. 2021. An attention-based model for conversion rate prediction with delayed feedback via post-click calibration. In Proceedings of the Twenty-Ninth International Conference on International Joint Conferences on Artificial Intelligence . 3522-3528. [38] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [39] Arash Vahdat and Jan Kautz. 2020. NVAE: A deep hierarchical variational autoencoder. Advances in neural information processing systems 33 (2020), 19667-19679. [40] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [41] Wenjie Wang, Xinyu Lin, Fuli Feng, Xiangnan He, Min Lin, and Tat-Seng Chua. 2022. Causal representation learning for out-of-distribution recommendation. In Proceedings of the ACM Web Conference 2022 . 3562-3571. [42] Xiaohui Wu, Jun Yan, Ning Liu, Shuicheng Yan, Ying Chen, and Zheng Chen. 2009. Probabilistic latent semantic user segmentation for behavioral targeted advertising. In Proceedings of the Third International Workshop on Data Mining and Audience Intelligence for Advertising . 10-17. [43] Siqiao Xue, Chao Qu, Xiaoming Shi, Cong Liao, Shiyi Zhu, Xiaoyu Tan, Lintao Ma, Shiyu Wang, Shijun Wang, Yun Hu, Lei Lei, Yangfei Zheng, Jianguo Li, and James Zhang. 2022. A Meta Reinforcement Learning Approach for Predictive Autoscaling in the Cloud. In KDD '22: The 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Washington, DC, USA, August 14 - 18, 2022 , Aidong Zhang and Huzefa Rangwala (Eds.). ACM, 4290-4299. https: //doi.org/10.1145/3534678.3539063 [44] Siqiao Xue, Xiaoming Shi, Y James Zhang, and Hongyuan Mei. 2022. HYPRO: A Hybridly Normalized Probabilistic Model for Long-Horizon Prediction of Event Sequences. In Advances in Neural Information Processing Systems . https://arxiv. org/abs/2210.01753 [45] Yi Yang, Baile Xu, Shaofeng Shen, Furao Shen, and Jian Zhao. 2020. Operationaware neural networks for user response prediction. Neural Networks 121 (2020), 161-168. [46] Yanwu Yang and Panyu Zhai. 2022. Click-through rate prediction in online advertising: A literature review. Information Processing & Management 59, 2 (2022), 102853. https://doi.org/10.1016/j.ipm.2021.102853 [47] Kazuyoshi Yoshii, Masataka Goto, Kazunori Komatani, Tetsuya Ogata, and Hiroshi G Okuno. 2008. An efficient hybrid music recommender system using an incrementally trainable probabilistic generative model. IEEE Transactions on Audio, Speech, and Language Processing 16, 2 (2008), 435-447. [48] Yang Zhang, Dong Wang, Qiang Li, Yue Shen, Ziqi Liu, Xiaodong Zeng, Zhiqiang Zhang, Jinjie Gu, and Derek F Wong. 2021. User Retention: A Causal Approach with Triple Task Modeling.. In IJCAI . 3399-3405. [49] Jun Zhou, Yang Bao, Hua Wu, and Zhigang Hua. 2021. Antopt: A multi-functional large-scale decision optimization platform. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4833-4837. Received 20 February 2007; revised 12 March 2009; accepted 5 June 2009",
   "keywords_parsed": [
     "representation learning",
-    " adaptive learning",
-    " neural networks"
+    "adaptive learning",
+    "neural networks"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Click-Through Rate Prediction, predict whether a mobile ad will be clicked"
+    },
+    {
+      "ref_id": "b2",
+      "title": "An Open-Source Deep Learning Platform Originated from Industrial Practice, PaddlePaddle is dedicated to facilitating innovations and applications of deep learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "PaddlePaddle: A Production-Oriented Deep Learning Platform Facilitating the Competency of Enterprises"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A new collaborative filtering metric that improves the behavior of recommender systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Using neural word embeddings to model user behavior and detect user segments"
+    },
+    {
+      "ref_id": "b6",
+      "title": "NEWER: A system for NEuro-fuzzy WEb Recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "LITERATURE REVIEW: COMPETITIVE STRATEGY, COMPETITIVE ADVANTAGES, AND MARKETING PERFORMANCE ON E-COMMERCE SHOPEE INDONESIA"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Display Advertising Challenge Predict click-through rates on display ads"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A survey on personality-aware recommendation systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Graph neural networks for recommender system"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Sem-Fit: A semantic based expert system to provide recommendations in the tourism domain"
+    },
+    {
+      "ref_id": "b12",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A baseline for detecting misclassified and out-of-distribution examples in neural networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Signed Bipartite Graph Neural Networks"
+    },
+    {
+      "ref_id": "b15",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Learning Large-scale Universal User Representation with Sparse Mixture of Experts"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Auto-encoding variational bayes"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Neural relational inference for interacting systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Variational graph auto-encoders"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A survey of recommendation systems: recommendation models, techniques, and application fields"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Predicting CTR of new ads via click prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Predicting clicks: CTR estimation of advertisements using logistic regression classifier"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Melu: Meta-learned user preference estimator for cold-start recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "TDR-CL: Targeted Doubly Robust Collaborative Learning for Debiased Recommendations"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Long-tail session-based recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Meta-learning on heterogeneous information networks for cold-start recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "E-commerce Strategy"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Recommendation networks and the long tail of electronic commerce"
+    },
+    {
+      "ref_id": "b31",
+      "title": "A multidisciplinar recommender system to advice research resources in university digital libraries"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Variational autoencoder for deep learning of images, labels and captions"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Bellman Meets Hawkes: Model-Based Reinforcement Learning via Temporal Point Processes"
+    },
+    {
+      "ref_id": "b34",
+      "title": "A systematic review of ontology use in E-Learning recommender system"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Continual unsupervised representation learning"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Autoint: Automatic feature interaction learning via selfattentive neural networks"
+    },
+    {
+      "ref_id": "b37",
+      "title": "An attention-based model for conversion rate prediction with delayed feedback via post-click calibration"
+    },
+    {
+      "ref_id": "b38",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b39",
+      "title": "NVAE: A deep hierarchical variational autoencoder"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Causal representation learning for out-of-distribution recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Probabilistic latent semantic user segmentation for behavioral targeted advertising"
+    },
+    {
+      "ref_id": "b43",
+      "title": "A Meta Reinforcement Learning Approach for Predictive Autoscaling in the Cloud"
+    },
+    {
+      "ref_id": "b44",
+      "title": "HYPRO: A Hybridly Normalized Probabilistic Model for Long-Horizon Prediction of Event Sequences"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Operationaware neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Click-through rate prediction in online advertising: A literature review"
+    },
+    {
+      "ref_id": "b47",
+      "title": "An efficient hybrid music recommender system using an incrementally trainable probabilistic generative model"
+    },
+    {
+      "ref_id": "b48",
+      "title": "User Retention: A Causal Approach with Triple Task Modeling"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Antopt: A multi-functional large-scale decision optimization platform"
+    }
   ]
 }

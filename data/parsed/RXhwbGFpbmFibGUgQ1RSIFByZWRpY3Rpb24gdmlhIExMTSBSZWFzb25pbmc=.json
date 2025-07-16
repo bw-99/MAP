@@ -25,7 +25,205 @@
   "REFERENCES": "[1] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. Tallrec: An effective and efficient tuning framework to align large language model with recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems . 1007-1014. [2] Zhongxia Chen, Xiting Wang, Xing Xie, Tong Wu, Guoqing Bu, Yining Wang, and Enhong Chen. 2019. Co-attentive multi-task learning for explainable recommendation.. In IJCAI , Vol. 2019. 2137-2143. [3] Sunhao Dai, Ninglu Shao, Haiyuan Zhao, Weijie Yu, Zihua Si, Chen Xu, Zhongxiang Sun, Xiao Zhang, and Jun Xu. 2023. Uncovering chatgpt's capabilities in recommender systems. In Proceedings of the 17th ACM Conference on Recommender Systems . 1126-1132. [4] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [5] Maurizio Ferrari Dacrema, Paolo Cremonesi, and Dietmar Jannach. 2019. Are we really making much progress? A worrying analysis of recent neural recommendation approaches. In Proceedings of the 13th ACM conference on recommender systems . 101-109. [6] Jingyue Gao, Xiting Wang, Yasha Wang, and Xing Xie. 2019. Explainable recommendation through attentive multi-view learning. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 3622-3629. [7] Yunfan Gao, Tao Sheng, Youlin Xiang, Yun Xiong, Haofen Wang, and Jiawei Zhang. 2023. Chat-rec: Towards interactive and explainable llms-augmented recommender system. arXiv preprint arXiv:2303.14524 (2023). [8] Shuyu Guo, Shuo Zhang, Weiwei Sun, Pengjie Ren, Zhumin Chen, and Zhaochun Ren. 2023. Towards explainable conversational recommender systems. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2786-2795. [9] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [10] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2016. Session-based Recommendations with Recurrent Neural Networks. In Proceedings of the 4th International Conference on Learning Representations . [11] Neil Houlsby, Andrei Giurgiu, Stanislaw Jastrzebski, Bruna Morrone, Quentin De Laroussilhe, Andrea Gesmundo, Mona Attariyan, and Sylvain Gelly. 2019. Parameter-efficient transfer learning for NLP. In International conference on machine learning . PMLR, 2790-2799. [12] Edward J Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2021. Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685 (2021). [13] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning deep structured semantic models for web search using clickthrough data. In Proceedings of the 22nd ACM international conference on Information & Knowledge Management . 2333-2338. [14] Dietmar Jannach, Markus Zanker, Alexander Felfernig, and Gerhard Friedrich. 2010. Recommender systems: an introduction . Cambridge University Press. [15] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [16] Yuxuan Lei, Jianxun Lian, Jing Yao, Xu Huang, Defu Lian, and Xing Xie. 2023. Recexplainer: Aligning large language models for recommendation model interpretability. arXiv preprint arXiv:2311.10947 (2023). [17] Lei Li, Yongfeng Zhang, and Li Chen. 2021. Extra: Explanation ranking datasets for explainable recommendation. In Proceedings of the 44th International ACM SIGIR conference on Research and Development in Information Retrieval . 24632469. [18] Lei Li, Yongfeng Zhang, and Li Chen. 2021. Personalized transformer for explainable recommendation. arXiv preprint arXiv:2105.11601 (2021). [19] Piji Li, Zihao Wang, Zhaochun Ren, Lidong Bing, and Wai Lam. 2017. Neural rating regression with abstractive tips generation for recommendation. In Proceedings of the 40th International ACM SIGIR conference on Research and Development in Information Retrieval . 345-354. [20] Xiang Lisa Li and Percy Liang. 2021. Prefix-tuning: Optimizing continuous prompts for generation. arXiv preprint arXiv:2101.00190 (2021). [21] Zekun Li, Zeyu Cui, Shu Wu, Xiaoyu Zhang, and Liang Wang. 2019. Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction. In Proceedings of the 28th ACM international conference on information and knowledge management . 539-548. [22] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [23] Hanmeng Liu, Ruoxi Ning, Zhiyang Teng, Jian Liu, Qiji Zhou, and Yue Zhang. 2023. Evaluating the logical reasoning ability of chatgpt and gpt-4. arXiv preprint arXiv:2304.03439 (2023). [24] Junling Liu, Chao Liu, Peilin Zhou, Renjie Lv, Kang Zhou, and Yan Zhang. 2023. Is chatgpt a good recommender? a preliminary study. arXiv preprint arXiv:2304.10149 (2023). [25] Andriy Mnih and Russ R Salakhutdinov. 2007. Probabilistic matrix factorization. Advances in neural information processing systems 20 (2007). [26] Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et al. 2022. Training language models to follow instructions with human feedback. Advances in neural information processing systems 35 (2022), 27730-27744. [27] Baolin Peng, Chunyuan Li, Pengcheng He, Michel Galley, and Jianfeng Gao. 2023. Instruction tuning with gpt-4. arXiv preprint arXiv:2304.03277 (2023). [28] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-based neural networks for user response prediction. In 2016 IEEE 16th international conference on data mining (ICDM) . IEEE, 1149-1154. [29] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . IEEE, 995-1000. [30] John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov. 2017. Proximal policy optimization algorithms. arXiv preprint arXiv:1707.06347 (2017). [31] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM international conference on information and knowledge management . 1161-1170. [32] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [33] Jiaxi Tang, Ke Wang, Liqiang Zhang, Shuai Li, Jiajie Yan, and Zheng Zhang. 2016. Personalized Top-N Sequential Recommendation via Convolutional Sequence Embedding. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 427-436. [34] Nava Tintarev. 2007. Explanations of recommendations. In Proceedings of the 2007 ACM conference on Recommender systems . 203-206. [35] Nan Wang, Hongning Wang, Yiling Jia, and Yue Yin. 2018. Explainable recommendation via multi-task learning in opinionated text data. In The 41st international ACMSIGIRconference on research & development in information retrieval . 165-174. [36] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [37] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the web conference 2021 . 1785-1797. [38] Sean Wu, Michael Koo, Lesley Blum, Andy Black, Liyo Kao, Fabien Scalzo, and Ira Kurtz. 2023. A comparative study of open-source large language models, gpt-4 and claude 2: Multiple-choice test taking in nephrology. arXiv preprint arXiv:2308.04709 (2023). [39] Shitao Xiao, Zheng Liu, Peitian Zhang, and Niklas Muennighoff. 2023. C-Pack: Packaged Resources To Advance General Chinese Embedding. arXiv:2309.07597 [cs.CL] [40] Mengyuan Yang, Mengying Zhu, Yan Wang, Linxun Chen, Yilei Zhao, Xiuyuan Wang, Bing Han, Xiaolin Zheng, and Jianwei Yin. 2024. Fine-Tuning Large Language Model Based Explainable Recommendation with Explainable Quality WSDM, March 10-14, 2025, Hannover, Germany Xiaohan yu, Li Zhang, Chong Chen Reward. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 38. 9250-9259. [41] Xiaohan Yu, Li Zhang, Xin Zhao, and Yue Wang. 2024. Break the ID-Language Barrier: An Adaption Framework for Sequential Recommendation. arXiv preprint arXiv:2411.18262 (2024). [42] Xiaohan Yu, Li Zhang, Xin Zhao, Yue Wang, and Zhongrui Ma. 2024. RA-Rec: An Efficient ID Representation Alignment Framework for LLM-based Recommendation. arXiv preprint arXiv:2402.04527 (2024). [43] Jingsen Zhang, Xu Chen, Jiakai Tang, Weiqi Shao, Quanyu Dai, Zhenhua Dong, and Rui Zhang. 2023. Recommendation with causality enhanced natural language explanations. In Proceedings of the ACM Web Conference 2023 . 876-886. [44] Yongfeng Zhang, Xu Chen, et al. 2020. Explainable recommendation: A survey and new perspectives. Foundations and Trends® in Information Retrieval 14, 1 (2020), 1-101. [45] Yongfeng Zhang, Xu Chen, et al. 2020. Explainable recommendation: A survey and new perspectives. Foundations and Trends® in Information Retrieval 14, 1 (2020), 1-101. [46] Wayne Xin Zhao, Shanlei Mu, Yupeng Hou, Zihan Lin, Yushuo Chen, Xingyu Pan, Kaiyuan Li, Yujie Lu, Hui Wang, Changxin Tian, Yingqian Min, Zhichao Feng, Xinyan Fan, Xu Chen, Pengfei Wang, Wendi Ji, Yaliang Li, Xiaoling Wang, and Ji-Rong Wen. 2021. RecBole: Towards a Unified, Comprehensive and Efficient Framework for Recommendation Algorithms. In CIKM . ACM, 4653-4664. [47] Rui Zheng, Shihan Dou, Songyang Gao, Yuan Hua, Wei Shen, Binghai Wang, Yan Liu, Senjie Jin, Qin Liu, Yuhao Zhou, et al. 2023. Secrets of rlhf in large language models part i: Ppo. arXiv preprint arXiv:2307.04964 (2023). [48] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [49] Guorui Zhou, Chengru Song, Xiaoqiang Zhu, Xiao Ma, Yanghui Yan, Han Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for Click-Through Rate Prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1059-1068.",
   "keywords_parsed": [
     "Large Language Models",
-    " Explainability",
-    " Recommendation System"
+    "Explainability",
+    "Recommendation System"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Co-attentive multi-task learning for explainable recommendation."
+    },
+    {
+      "ref_id": "b3",
+      "title": "Uncovering chatgpt's capabilities in recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Are we really making much progress? A worrying analysis of recent neural recommendation approaches"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Explainable recommendation through attentive multi-view learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Chat-rec: Towards interactive and explainable llms-augmented recommender system"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Towards explainable conversational recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Session-based Recommendations with Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Parameter-efficient transfer learning for NLP"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Recommender systems: an introduction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Recexplainer: Aligning large language models for recommendation model interpretability"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Extra: Explanation ranking datasets for explainable recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Personalized transformer for explainable recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Neural rating regression with abstractive tips generation for recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Prefix-tuning: Optimizing continuous prompts for generation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Evaluating the logical reasoning ability of chatgpt and gpt-4"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Is chatgpt a good recommender? a preliminary study"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Probabilistic matrix factorization"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Training language models to follow instructions with human feedback"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Instruction tuning with gpt-4"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Proximal policy optimization algorithms"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Autoint: Automatic feature interaction learning via selfattentive neural networks"
+    },
+    {
+      "ref_id": "b32",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Personalized Top-N Sequential Recommendation via Convolutional Sequence Embedding"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Explanations of recommendations"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Explainable recommendation via multi-task learning in opinionated text data"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b38",
+      "title": "A comparative study of open-source large language models, gpt-4 and claude 2: Multiple-choice test taking in nephrology"
+    },
+    {
+      "ref_id": "b39",
+      "title": "C-Pack: Packaged Resources To Advance General Chinese Embedding"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Fine-Tuning Large Language Model Based Explainable Recommendation with Explainable Quality"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Break the ID-Language Barrier: An Adaption Framework for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "RA-Rec: An Efficient ID Representation Alignment Framework for LLM-based Recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Recommendation with causality enhanced natural language explanations"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Explainable recommendation: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Explainable recommendation: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b46",
+      "title": "RecBole: Towards a Unified, Comprehensive and Efficient Framework for Recommendation Algorithms"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Secrets of rlhf in large language models part i: Ppo"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    }
   ]
 }

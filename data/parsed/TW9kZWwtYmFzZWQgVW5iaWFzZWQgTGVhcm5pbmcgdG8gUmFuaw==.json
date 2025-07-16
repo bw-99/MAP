@@ -29,23 +29,242 @@
   "7 CONCLUSION": "In this work, we propose MULTR, a model-based unbiased learning to rank framework. We first design a context-aware user simulator to produce labels for unobserved ranked lists as supervision signals, which addressed data sparsity for long-tail queries. However,",
   "REFERENCES": "[1] Qingyao Ai, Keping Bi, Jiafeng Guo, and W. Bruce Croft. 2018. Learning a Deep Listwise Context Model for Ranking Refinement. In SIGIR 2018 . [2] Qingyao Ai, Keping Bi, Cheng Luo, Jiafeng Guo, and W. Bruce Croft. 2018. Unbiased Learning to Rank with Unbiased Propensity Estimation. In SIGIR 2018 . [3] Qingyao Ai, Jiaxin Mao, Yiqun Liu, and W. Bruce Croft. [n. d.]. Unbiased Learning to Rank: Theory and Practice. In CIKM 2018 . [4] Olivier Chapelle and Yi Chang. 2011. Yahoo! Learning to Rank Challenge Overview. In Proceedings of the Yahoo! Learning to Rank Challenge, held at ICML 2010, Haifa, Israel, June 25, 2010 (JMLR Proceedings) . [5] Olivier Chapelle, Yi Chang, and Tie-Yan Liu (Eds.). 2011. Proceedings of the Yahoo! Learning to Rank Challenge, held at ICML 2010, Haifa, Israel, June 25, 2010 . JMLR Proceedings, Vol. 14. JMLR.org. [6] Olivier Chapelle, Donald Metlzer, Ya Zhang, and Pierre Grinspan. 2009. Expected reciprocal rank for graded relevance. In CIKM 2009 . [7] Olivier Chapelle and Ya Zhang. 2009. A dynamic bayesian network click model for web search ranking. In WWW2009 . [8] Xiaokai Chu, Jiashu Zhao, Lixin Zou, and Dawei Yin. 2022. H-ERNIE: A MultiGranularity Pre-Trained Language Model for Web Search. In CIKM'22 . WSDM '23, February 27-March 3, 2023, Singapore, Singapore Dan Luo et al. [9] Aleksandr Chuklin, Ilya Markov, and Maarten de Rijke. 2016. Click Models for Web Search and their Applications to IR: WSDM 2016 Tutorial. In WSDM 2016 . [10] Djork-Arné Clevert, Thomas Unterthiner, and Sepp Hochreiter. 2016. Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs). In ICLR 2016 . [11] Nick Craswell, Onno Zoeter, Michael J. Taylor, and Bill Ramsey. 2008. An experimental comparison of click position-bias models. In WSDM 2008 . [12] Xinyi Dai, Jiawei Hou, Qing Liu, Yunjia Xi, Ruiming Tang, Weinan Zhang, Xiuqiang He, Jun Wang, and Yong Yu. 2020. U-rank: Utility-oriented Learning to Rank with Implicit Feedback. In CIKM '20 . [13] Mostafa Dehghani, Hamed Zamani, Aliaksei Severyn, Jaap Kamps, and W. Bruce Croft. 2017. Neural Ranking Models with Weak Supervision. In SIGIR 2017 . [14] John C. Duchi, Elad Hazan, and Yoram Singer. 2011. Adaptive Subgradient Methods for Online Learning and Stochastic Optimization. J. Mach. Learn. Res. 12 (2011), 2121-2159. [15] Georges Dupret and Benjamin Piwowarski. 2008. A user browsing model to predict search engine click data from past observations. In SIGIR 2008 . [16] Huifeng Guo, Jinkai Yu, Qing Liu, Ruiming Tang, and Yuzhou Zhang. 2019. PAL: a position-bias aware learning framework for CTR prediction in live recommender systems. In RecSys 2019 . [17] Siyuan Guo, Lixin Zou, Yiding Liu, Wenwen Ye, Suqi Cheng, Shuaiqiang Wang, Hechang Chen, Dawei Yin, and Yi Chang. 2021. Enhanced Doubly Robust Learning for Debiasing Post-Click Conversion Rate Estimation. In SIGIR 2021 . [18] José Miguel Hernández-Lobato, Neil Houlsby, and Zoubin Ghahramani. 2014. Probabilistic Matrix Factorization with Non-random Missing Data. In ICML 2014 (JMLR Workshop and Conference Proceedings) . [19] Sepp Hochreiter and Jürgen Schmidhuber. 1997. Long Short-Term Memory. Neural Comput. 9, 8 (1997), 1735-1780. [20] Ziniu Hu, Yang Wang, Qu Peng, and Hang Li. 2019. Unbiased LambdaMART: An Unbiased Pairwise Learning-to-Rank Algorithm. In WWW2019 . [21] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated gain-based evaluation of IR techniques. ACM Trans. Inf. Syst. 20, 4 (2002), 422-446. [22] Thorsten Joachims. 2006. Training linear SVMs in linear time. In SIGKDD 2006 . [23] Thorsten Joachims, Laura A. Granka, Bing Pan, Helene Hembrooke, and Geri Gay. 2005. Accurately interpreting clickthrough data as implicit feedback. In SIGIR 2005 . [24] Thorsten Joachims, Laura A. Granka, Bing Pan, Helene Hembrooke, Filip Radlinski, and Geri Gay. 2007. Evaluating the accuracy of implicit feedback from clicks and query reformulations in Web search. ACM Trans. Inf. Syst. 25, 2 (2007), 7. [25] Thorsten Joachims, Adith Swaminathan, and Tobias Schnabel. 2017. Unbiased Learning-to-Rank with Biased Feedback. In WSDM 2017 . [26] Haruka Kiyohara, Yuta Saito, Tatsuya Matsuhiro, Yusuke Narita, Nobuyuki Shimizu, and Yasuo Yamamoto. 2022. Doubly Robust Off-Policy Evaluation for Ranking Policies under the Cascade Behavior Model. In WSDM '22 . [27] Dugang Liu, Pengxiang Cheng, Zhenhua Dong, Xiuqiang He, Weike Pan, and Zhong Ming. 2020. A General Knowledge Distillation Framework for Counterfactual Recommendation via Uniform Data. In SIGIR 2020 . [28] Claudio Lucchese, Franco Maria Nardini, Salvatore Orlando, Raffaele Perego, Fabrizio Silvestri, and Salvatore Trani. 2016. Post-Learning Optimization of Tree Ensembles for Efficient Ranking. In SIGIR 2016 . [29] Jiaxin Mao, Zhumin Chu, Yiqun Liu, Min Zhang, and Shaoping Ma. 2019. Investigating the Reliability of Click Models. In ICTIR 2019 . [30] Jiaxin Mao, Cheng Luo, Min Zhang, and Shaoping Ma. 2018. Constructing Click Models for Mobile Search. In SIGIR 2018 . [31] Harrie Oosterhuis. 2022. Doubly-Robust Estimation for Unbiased Learningto-Rank from Position-Biased Click Feedback. arXiv preprint arXiv:2203.17118 (2022). [32] Zohreh Ovaisi, Ragib Ahsan, Yifan Zhang, Kathryn Vasilaky, and Elena Zheleva. 2020. Correcting for Selection Bias in Learning-to-rank Systems. In WWW2020 . [33] Matthew Richardson, Ewa Dominowska, and Robert Ragno. 2007. Predicting clicks: estimating the click-through rate for new ads. In WWW2007 . [34] Paul R Rosenbaum and Donald B Rubin. 1983. The central role of the propensity score in observational studies for causal effects. Biometrika 70, 1 (1983). [35] Yuta Saito. 2020. Asymmetric Tri-training for Debiasing Missing-Not-AtRandom Explicit Feedback. In SIGIR 2020 . [36] Yuta Saito. 2020. Doubly Robust Estimator for Ranking Metrics with Post-Click Conversions. In RecSys 2020 . [37] Mark Sanderson. 2010. Test Collection Based Evaluation of Information Retrieval Systems. Found. Trends Inf. Retr. 4, 4 (2010), 247-375. [38] Chengyao Shen and Qi Zhao. 2014. Webpage Saliency. In ECCV 2014 . [39] Mark D. Smucker, James Allan, and Ben Carterette. 2007. A comparison of statistical significance tests for information retrieval evaluation. In CIKM 2007 . [40] Nitish Srivastava, Geoffrey E. Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdinov. 2014. Dropout: a simple way to prevent neural networks from overfitting. J. Mach. Learn. Res. 15, 1 (2014), 1929-1958. [41] Adith Swaminathan and Thorsten Joachims. 2015. The Self-Normalized Estimator for Counterfactual Learning. In NeurIPS 2015 . [42] Anh Tran, Tao Yang, and Qingyao Ai. 2021. ULTRA: An Unbiased Learning To Rank Algorithm Toolbox. In CIKM 2021 . [43] Ali Vardasbi, Maarten de Rijke, and Ilya Markov. 2020. Cascade Model-based Propensity Estimation for Counterfactual Learning to Rank. In SIGIR 2020 . [44] Ali Vardasbi, Harrie Oosterhuis, and Maarten de Rijke. 2020. When Inverse Propensity Scoring does not Work: Affine Corrections for Unbiased Learning to Rank. In CIKM '20 . [45] Hongning Wang, ChengXiang Zhai, Anlei Dong, and Yi Chang. 2013. Contentaware click modeling. In WWW2013 . [46] Xuanhui Wang, Michael Bendersky, Donald Metzler, and Marc Najork. 2016. Learning to Rank with Selection Bias in Personal Search. In SIGIR 2016 . [47] Xuanhui Wang, Nadav Golbandi, Michael Bendersky, Donald Metzler, and Marc Najork. 2018. Position Bias Estimation for Unbiased Learning to Rank in Personal Search. In WSDM 2018 . [48] Wenwen Ye, Yiding Liu, Lixin Zou, Hengyi Cai, Suqi Cheng, Shuaiqiang Wang, and Dawei Yin. 2022. Fast semantic matching via flexible contextualized interaction. In WSDM'22 . [49] Bo-Wen Yuan, Jui-Yang Hsia, Meng-Yuan Yang, Hong Zhu, Chih-Yao Chang, Zhenhua Dong, and Chih-Jen Lin. 2019. Improving Ad Click Prediction by Considering Non-displayed Events. In CIKM 2019 . [50] Yisong Yue, Rajan Patel, and Hein Roehrig. 2010. Beyond position bias: examining result attractiveness as a source of presentation bias in clickthrough data. In WWW2010 . [51] Hamed Zamani, Bhaskar Mitra, Xia Song, Nick Craswell, and Saurabh Tiwary. 2018. Neural Ranking Models with Multiple Document Fields. In WSDM 2018 . [52] Junqi Zhang, Yiqun Liu, Jiaxin Mao, Weizhi Ma, Jiazheng Xu, Shaoping Ma, and Qi Tian. 2022. User Behavior Simulation for Search Result Re-Ranking. ACM Transactions on Information Systems (2022). [53] Junqi Zhang, Jiaxin Mao, Yiqun Liu, Ruizhe Zhang, Min Zhang, Shaoping Ma, Jun Xu, and Qi Tian. 2019. Context-Aware Ranking by Constructing a Virtual Environment for Reinforcement Learning. In CIKM 2019 . [54] Honglei Zhuang, Zhen Qin, Xuanhui Wang, Michael Bendersky, Xinyu Qian, Po Hu, and Dan Chary Chen. 2021. Cross-Positional Attention for Debiasing Clicks. In WWW2021 . [55] Lixin Zou, Changying Hao, Hengyi Cai, Shuaiqiang Wang, Suqi Cheng, Zhicong Cheng, Wenwen Ye, Simiu Gu, and Dawei Yin. 2022. Approximated Doubly Robust Search Relevance Estimation. In CIKM '22 . [56] Lixin Zou, Weixue Lu, Yiding Liu, Hengyi Cai, Xiaokai Chu, Dehong Ma, Daiting Shi, Yu Sun, Zhicong Cheng, Simiu Gu, et al. 2022. Pre-trained Language Model based Retrieval and Ranking for Web Search. ACM Transactions on the Web (2022). [57] Lixin Zou, Haitao Mao, Xiaokai Chu, Jiliang Tang, Wenwen Ye, Shuaiqiang Wang, and Dawei Yin. 2022. A Large Scale Search Dataset for Unbiased Learning to Rank. arXiv preprint arXiv:2207.03051 (2022). [58] Lixin Zou, Shengqiang Zhang, Hengyi Cai, Dehong Ma, Suqi Cheng, Shuaiqiang Wang, Daiting Shi, Zhicong Cheng, and Dawei Yin. 2021. Pre-trained language model based ranking in Baidu search. In KDD '21 .",
   "keywords_parsed": [
-    "Unbiased Learning to Rank; Doubly Robust; User Simulator † Corresponding author. ∗ The work was done prior to joining Amazon. This work is licensed under a Creative Commons Attribution International 4.0 License. WSDM '23",
-    " February 27-March 3",
-    " 2023",
-    " Singapore",
-    " Singapore © 2023 Copyright held by the owner/author(s). ACM ISBN 978-1-4503-9407-9/23/02. https://doi.org/10.1145/3539597.3570395 Dan Luo",
-    " Lixin Zou",
-    " Qingyao Ai",
-    " Zhiyu Chen ∗ ",
-    " Dawei Yin † ",
-    " and Brian D. Davison. 2023. Model-based Unbiased Learning to Rank. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (WSDM '23)",
-    " February 27-March 3",
-    " 2023",
-    " Singapore",
-    " Singapore. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 10 pages. https://doi.org/10.1145/3539597.3570395"
+    "Unbiased Learning to Rank",
+    "Doubly Robust",
+    "User Simulator"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning a Deep Listwise Context Model for Ranking Refinement"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Unbiased Learning to Rank with Unbiased Propensity Estimation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Unbiased Learning to Rank: Theory and Practice"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Yahoo! Learning to Rank Challenge Overview"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Proceedings of the Yahoo! Learning to Rank Challenge, held at ICML 2010, Haifa, Israel, June 25, 2010"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Expected reciprocal rank for graded relevance"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A dynamic bayesian network click model for web search ranking"
+    },
+    {
+      "ref_id": "b8",
+      "title": "H-ERNIE: A MultiGranularity Pre-Trained Language Model for Web Search"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Click Models for Web Search and their Applications to IR: WSDM 2016 Tutorial"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)"
+    },
+    {
+      "ref_id": "b11",
+      "title": "An experimental comparison of click position-bias models"
+    },
+    {
+      "ref_id": "b12",
+      "title": "U-rank: Utility-oriented Learning to Rank with Implicit Feedback"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Neural Ranking Models with Weak Supervision"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adaptive Subgradient Methods for Online Learning and Stochastic Optimization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A user browsing model to predict search engine click data from past observations"
+    },
+    {
+      "ref_id": "b16",
+      "title": "PAL: a position-bias aware learning framework for CTR prediction in live recommender systems"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Enhanced Doubly Robust Learning for Debiasing Post-Click Conversion Rate Estimation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Probabilistic Matrix Factorization with Non-random Missing Data"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Long Short-Term Memory"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Unbiased LambdaMART: An Unbiased Pairwise Learning-to-Rank Algorithm"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Training linear SVMs in linear time"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Accurately interpreting clickthrough data as implicit feedback"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Evaluating the accuracy of implicit feedback from clicks and query reformulations in Web search"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Unbiased Learning-to-Rank with Biased Feedback"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Doubly-Robust Estimation for Unbiased Learning-to-Rank from Position-Biased Click Feedback"
+    },
+    {
+      "ref_id": "b27",
+      "title": "A General Knowledge Distillation Framework for Counterfactual Recommendation via Uniform Data"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Post-Learning Optimization of Tree Ensembles for Efficient Ranking"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Investigating the Reliability of Click Models"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Constructing Click Models for Mobile Search"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Doubly-Robust Estimation for Unbiased Learningto-Rank from Position-Biased Click Feedback"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Correcting for Selection Bias in Learning-to-rank Systems"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b34",
+      "title": "The central role of the propensity score in observational studies for causal effects"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Asymmetric Tri-training for Debiasing Missing-Not-At-Random Explicit Feedback"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Doubly Robust Estimator for Ranking Metrics with Post-Click Conversions"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Test Collection Based Evaluation of Information Retrieval Systems"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Webpage Saliency"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A comparison of statistical significance tests for information retrieval evaluation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Dropout: a simple way to prevent neural networks from overfitting"
+    },
+    {
+      "ref_id": "b41",
+      "title": "The Self-Normalized Estimator for Counterfactual Learning"
+    },
+    {
+      "ref_id": "b42",
+      "title": "ULTRA: An Unbiased Learning To Rank Algorithm Toolbox"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Cascade Model-based Propensity Estimation for Counterfactual Learning to Rank"
+    },
+    {
+      "ref_id": "b44",
+      "title": "When Inverse Propensity Scoring does not Work: Affine Corrections for Unbiased Learning to Rank"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Contentaware click modeling"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Learning to Rank with Selection Bias in Personal Search"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Position Bias Estimation for Unbiased Learning to Rank in Personal Search"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Fast semantic matching via flexible contextualized interaction"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Improving Ad Click Prediction by Considering Non-displayed Events"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Beyond position bias: examining result attractiveness as a source of presentation bias in clickthrough data"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Neural Ranking Models with Multiple Document Fields"
+    },
+    {
+      "ref_id": "b52",
+      "title": "User Behavior Simulation for Search Result Re-Ranking"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Context-Aware Ranking by Constructing a Virtual Environment for Reinforcement Learning"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Cross-Positional Attention for Debiasing Clicks"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Approximated Doubly Robust Search Relevance Estimation"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Pre-trained Language Model based Retrieval and Ranking for Web Search"
+    },
+    {
+      "ref_id": "b57",
+      "title": "A Large Scale Search Dataset for Unbiased Learning to Rank"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Pre-trained language model based ranking in Baidu search"
+    }
   ]
 }

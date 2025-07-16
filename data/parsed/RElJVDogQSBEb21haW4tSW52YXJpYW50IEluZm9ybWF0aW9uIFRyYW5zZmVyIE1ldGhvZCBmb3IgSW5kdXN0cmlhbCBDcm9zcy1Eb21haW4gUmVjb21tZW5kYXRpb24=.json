@@ -34,8 +34,194 @@
   "Algorithm 1: Training Process in the period t of DIIT": "input : Number of source domains 𝑁 , the latest source domain 𝑆 𝑡 𝑛 , the latest target domain 𝑇 𝑡 -1 , the latest trainable parameters Θ 𝑡 -1 𝑔𝑎𝑡𝑒 , Θ 𝑡 -1 𝑚𝑎𝑝𝑝𝑒𝑟 , Θ 𝑡 -1 𝑑𝑖𝑠 , the target domain sample 𝑥 𝑇𝑎𝑟,𝑡 ∈ 𝐷 𝑇𝑎𝑟,𝑡 , the mix domain sample 𝑥 𝑀𝑖𝑥,𝑡 ∈ 𝐷 𝑀𝑖𝑥,𝑡 . output: The target domain model 𝑇 𝑡 . // Warm Start 1 if plugging DIIT for the first time then 2 Initialize 𝑇 𝑡 based on 𝑇 𝑡 -1 , Initialize Parameters Θ 𝑔𝑎𝑡𝑒 , Θ 𝑡 𝑚𝑎𝑝𝑝𝑒𝑟 , Θ 𝑡 𝑑𝑖𝑠 randomly; 3 else 4 Initialize 𝑇 𝑡 , Θ 𝑡 𝑔𝑎𝑡𝑒 , Θ 𝑡 𝑚𝑎𝑝𝑝𝑒𝑟 , Θ 𝑡 𝑑𝑖𝑠 based on 𝑇 𝑡 -1 , Θ 𝑡 -1 𝑔𝑎𝑡𝑒 , Θ 𝑡 -1 𝑚𝑎𝑝𝑝𝑒𝑟 , Θ 𝑡 -1 𝑑𝑖𝑠 ; 5 end 6 for each epoch do 7 for each mini-batch do // Domain-invariant Information Extractors 8 Get 𝑡 𝑡 𝑡 𝑇𝑎𝑟,𝑡 𝑡 𝑡 𝑀𝑖𝑥,𝑡 𝑠 , 𝑆 𝑥 𝑆 𝑥 𝑛 𝑠 𝑛 𝑛 𝑎𝑑𝑣 9 Get e 𝑡 𝑆 , e 𝑡 𝑎𝑑𝑣 and ZS 𝑡 by Eq. (1); 10 Get e 𝑡 𝑎𝑑𝑣 by Eq. (3); 11 Calculate 𝐿 𝑎𝑑𝑣 1 by Eq. (5); 12 Update Θ 𝑡 𝑑𝑖𝑠 by using Adam; 13 Calculate 𝐿 𝑎𝑑𝑣 2 by Eq. (6); 14 Get e 𝑡 𝑆 by Eq. (3); // Domain-invariant Information Migrator 15 Calculate 𝐿 𝐾𝐷 by Eq. (9); // Train the Target Model 16 Calculate 𝐿 𝐶𝐸 by Eq. (11); // Overall Optimization 17 Calculate the total loss 18 𝐿 𝑡𝑜𝑡𝑎𝑙 Update Θ , Θ , and 19 end 20 end 21 return 𝑇 𝑡 𝑡 𝑡 𝑡𝑎𝑟𝑔𝑒𝑡 𝑔𝑎𝑡𝑒 Θ e Z ← ( ) , e ← ( ) ; 𝑠𝑛 𝑛 by Eq. (12); 𝑡 𝑚𝑎𝑝𝑝𝑒𝑟 by using Adam",
   "keywords_parsed": [
     "Cross-Domain Recommendation",
-    " Incremental Learning",
-    " Adversarial Learning",
-    " Knowledge Distillation"
+    "Incremental Learning",
+    "Adversarial Learning",
+    "Knowledge Distillation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "On warm-starting neural network training"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Towards Universal Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Cross-Domain Recommendation to Cold-Start Users via Variational Information Bottleneck"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Differential Private Knowledge Transfer for Privacy-Preserving Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Unbiased Knowledge Distillation for Recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Enhancing Cross-Domain Click-Through Rate Prediction via Explicit Feature Augmentation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Scenario-aware and Mutual-based approach for Multi-scenario Recommendation in E-Commerce"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "MADG: Margin-based Adversarial Learning for Domain Generalization"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b11",
+      "title": "CAN: Creative Adversarial Networks, Generating 'Art' by Learning About Styles and Deviating from Style Norms"
+    },
+    {
+      "ref_id": "b12",
+      "title": "PEACE: Prototype lEarning Augmented transferable framework for Cross-domain rEcommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Domain-adversarial training of neural networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Generative adversarial networks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Adversarial Feature Translation for Multi-domain Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Adversarial Personalized Ranking for Recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Distilling the Knowledge in a Neural Network"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Adversarial machine learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "An Incremental Learning framework for Large-scale CTR Prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b22",
+      "title": "HAMUR: Hyper Adapter for Multi-Domain Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Curriculum Temperature for Knowledge Distillation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Continual Transfer Learning for Cross-Domain Click-Through Rate Prediction at Taobao"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Exploiting Variational Domain-Invariant User Embedding for Partially Overlapped Cross Domain Recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "What Knowledge Gets Distilled in Knowledge Distillation?"
+    },
+    {
+      "ref_id": "b27",
+      "title": "MiNet: Mixed Interest Network for Cross-Domain Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "FitNets: Hints for Thin Deep Nets"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Spot-Adaptive Knowledge Distillation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Cross-domain Recommendation via Adversarial Adaptation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Towards More Robust and Accurate Sequential Recommendation with Cascade-guided Adversarial Training"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Contrastive representation distillation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b34",
+      "title": "A Practical Incremental Method to Train Deep CTR Models"
+    },
+    {
+      "ref_id": "b35",
+      "title": "A Survey on Cross-domain Recommendation: Taxonomies, Methods, and Future Directions"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Latent Trajectory Learning for Limited Timestamps under Distribution Shift over Time"
+    },
+    {
+      "ref_id": "b37",
+      "title": "IncMSR: An Incremental Learning Approach for Multi-Scenario Recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Deep learning over multifield categorical data"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A Collaborative Transfer Learning Framework for Cross-domain Recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "KEEP: An Industrial Pre-Training Framework for Online Recommendation via Knowledge Extraction and Plugging"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Hierarchical Invariant Learning for Domain Generalization Recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Beyond the Overlapping Users: Cross-Domain Recommendation via Adaptive Anchor Link Learning"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Domain Generalization: A Survey"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Cross-domain recommendation: challenges, progress, and prospects"
+    },
+    {
+      "ref_id": "b45",
+      "title": "A Unified Framework for Cross-Domain and Cross-System Recommendations"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Ensembled CTR Prediction via Knowledge Distillation"
+    }
   ]
 }

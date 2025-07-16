@@ -24,18 +24,182 @@
   "5 CONCLUSION": "In this paper, we delve into the problem of insufficient utilization of auction signals and first reveal the auction bias for CTR prediction in online advertising. Besides, a novel framework called AIE is proposed to better utilize the posterior auction information, which is lightweight, model-agnostic and latency-friendly. Specifically, AM2 constructs an auxiliary task to learn extra market price information while realizing a fine-grained perception of market prices in different auction scenarios. BCM performs a delicate reweighting method by using posterior bidding information to ease the auction bias and improve the prediction accuracy. Offline experiments are conducted on a public dataset and an industrial dataset to demonstrate its effectiveness and compatibility. Besides, a one-month online A/B test in a large-scale advertising platform shows that AIE improves the base model by 5.76% and 2.44% in terms of eCPM and CTR.",
   "REFERENCES": "[1] 2020. Mindspore. https://www.mindspore.cn. [2] Md Manjurul Ahsan, MA Parvez Mahmud, Pritom Kumar Saha, Kishor Datta Gupta, and Zahed Siddique. 2021. Effect of data scaling methods on machine learning algorithms and model performance. Technologies 9, 3 (2021), 52. [3] Rich Caruana. 1997. Multitask learning. Machine learning 28, 1 (1997), 41-75. [4] Bo Chen, Yichao Wang, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, and Xiuqiang He. 2021. Enhancing explicit and implicit feature interactions via information sharing for parallel deep CTR models. In Proceedings of the 30th ACM international conference on information & knowledge management . 3757-3766. [5] Kristin Fridgeirsdottir and Sami Najafi-Asadolahi. 2018. Cost-per-impression pricing for display advertising. Operations Research 66, 3 (2018), 653-672. [6] Jingtong Gao, Bo Chen, Menghui Zhu, Xiangyu Zhao, Xiaopeng Li, Yuhao Wang, Yichao Wang, Huifeng Guo, and Ruiming Tang. 2023. Scenario-Aware Hierarchical Dynamic Network for Multi-Scenario Recommendation. arXiv preprint arXiv:2309.02061 (2023). [7] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [8] Wei Guo, Chenxu Zhu, Fan Yan, Bo Chen, Weiwen Liu, Huifeng Guo, Hongkun Zheng, Yong Liu, and Ruiming Tang. 2023. DFFM: Domain Facilitated Feature Modeling for CTR Prediction. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 4602-4608. [9] Jie Hu, Li Shen, and Gang Sun. 2018. Squeeze-and-excitation networks. In Proceedings of the IEEE conference on computer vision and pattern recognition . 7132-7141. [10] Yu Hu, Jiwoong Shin, and Zhulei Tang. 2016. Incentive problems in performancebased online advertising pricing: Cost per click vs. cost per action. Management Science 62, 7 (2016), 2022-2038. [11] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM conference on recommender systems . 169-177. [12] Patrick Hummel and R Preston McAfee. 2017. Loss functions for predicted clickthrough rates in auctions for online advertising. Journal of Applied Econometrics 32, 7 (2017), 1314-1328. [13] Yuchen Jiang, Qi Li, Han Zhu, Jinbei Yu, Jin Li, Ziru Xu, Huihui Dong, and Bo Zheng. 2022. Adaptive Domain Interest Network for Multi-domain Recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3212-3221. [14] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [15] Walid Krichene and Steffen Rendle. 2020. On sampled metrics for item recommendation. In Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining . 1748-1757. [16] Hairen Liao, Lingxiao Peng, Zhenchuan Liu, and Xuehua Shen. 2014. iPinYou global rtb bidding algorithm competition dataset. In Proceedings of the Eighth International Workshop on Data Mining for Online Advertising . 1-6. [17] Zhaocheng Liu and Guangxue Yin. 2019. CPM-sensitive AUC for CTR prediction. arXiv preprint arXiv:1904.10272 (2019). [18] Boxiang Lyu, Zhe Feng, Zachary Robertson, and Sanmi Koyejo. 2023. Pairwise ranking losses of click-through rates prediction for welfare maximization in ad auctions. In International Conference on Machine Learning . PMLR, 23239-23263. [19] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In SIGKDD . 1930-1939. [20] Weitong Ou, Bo Chen, Yingxuan Yang, Xinyi Dai, Weiwen Liu, Weinan Zhang, Ruiming Tang, and Yong Yu. 2023. Deep landscape forecasting in multi-slot realtime bidding. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4685-4695. [21] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-based neural networks for user response prediction. In 2016 IEEE 16th international conference on data mining (ICDM) . IEEE, 1149-1154. [22] Matthew Richardson, Ewa Dominowska, and Robert Ragno. 2007. Predicting clicks: estimating the click-through rate for new ads. In Proceedings of the 16th international conference on World Wide Web . 521-530. [23] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM international conference RecSys '24, October 14-18, 2024, Bari, Italy Yang Yang et al. on information and knowledge management . 1161-1170. [24] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In RecSys . 269-278. [25] Hind Taud and Jean-Franccois Mas. 2018. Multilayer perceptron (MLP). Geomatic approaches for modeling land change scenarios (2018), 451-455. [26] Ali Vardasbi, Maarten de Rijke, and Ilya Markov. 2020. Cascade model-based propensity estimation for counterfactual learning to rank. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2089-2092. [27] Flavian Vasile, Damien Lefortier, and Olivier Chapelle. 2017. Cost-sensitive learning for utility optimization in online advertising auctions. In Proceedings of the ADKDD'17 . 1-6. [28] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [29] Ruoxi Wang, Rakesh Shivanna, Derek Zhiyuan Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems. In Proceedings of WWW , Jure Leskovec, Marko Grobelnik, Marc Najork, Jie Tang, and Leila Zia (Eds.). ACM / IW3C2, 1785-1797. [30] Xuanhui Wang, Michael Bendersky, Donald Metzler, and Marc Najork. 2016. Learning to rank with selection bias in personal search. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval . 115-124. [31] Xiaojie Wang, Rui Zhang, Yu Sun, and Jianzhong Qi. 2021. Combating selection biases in recommender systems with a few unbiased ratings. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . 427-435. [32] Yixin Wang, Dawen Liang, Laurent Charlin, and David M Blei. 2018. The deconfounded recommender: A causal inference approach to recommendation. arXiv preprint arXiv:1808.06581 (2018). [33] Liang Wu, Diane Hu, Liangjie Hong, and Huan Liu. 2018. Turning clicks into purchases: Revenue optimization for product search in e-commerce. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 365-374. [34] Ling Yan, Wu-Jun Li, Gui-Rong Xue, and Dingyi Han. 2014. Coupled group lasso for web-scale ctr prediction in display advertising. In International conference on machine learning . PMLR, 802-810. [35] Haizhi Yang, Tengyun Wang, Xiaoli Tang, Qianyu Li, Yueyue Shi, Siyu Jiang, Han Yu, and Hengjie Song. 2021. Multi-task learning for bias-free joint ctr prediction and market price modeling in online advertising. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 2291-2300. [36] Xuanhua Yang, Xiaoyu Peng, Penghui Wei, Shaoguo Liu, Liang Wang, and Bo Zheng. 2022. Adasparse: Learning adaptively sparse structures for multi-domain click-through rate prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 4635-4639. [37] Yanwu Yang and Panyu Zhai. 2022. Click-through rate prediction in online advertising: A literature review. Information Processing & Management 59, 2 (2022), 102853. [38] Tianzi Zang, Yanmin Zhu, Haobing Liu, Ruohan Zhang, and Jiadi Yu. 2022. A survey on cross-domain recommendation: taxonomies, methods, and future directions. ACM Transactions on Information Systems 41, 2 (2022), 1-39. [39] Qianqian Zhang, Xinru Liao, Quan Liu, Jian Xu, and Bo Zheng. 2022. Leaving no one behind: A multi-scenario multi-task meta learning approach for advertiser modeling. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 1368-1376. [40] Weinan Zhang, Shuai Yuan, Jun Wang, and Xuehua Shen. 2014. Real-time bidding benchmarking with ipinyou dataset. arXiv preprint arXiv:1407.7073 (2014). [41] Yu Zheng, Chen Gao, Xiang Li, Xiangnan He, Yong Li, and Depeng Jin. 2021. Disentangling user interest and conformity for recommendation with causal embedding. In Proceedings of the Web Conference 2021 . 2980-2991. [42] Han Zhu, Junqi Jin, Chang Tan, Fei Pan, Yifan Zeng, Han Li, and Kun Gai. 2017. Optimized cost per click in taobao display advertising. In Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining . 2191-2200. [43] Ziwei Zhu, Yun He, Xing Zhao, Yin Zhang, Jianling Wang, and James Caverlee. 2021. Popularity-opportunity bias in collaborative filtering. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . 85-93.",
   "keywords_parsed": [
-    "Click-Through Rate (CTR) prediction is a fundamental technique for online advertising recommendation and the complex online competitive auction process also brings many difficulties to CTR optimization. Recent studies have shown that introducing posterior auction information contributes to the performance of CTR prediction. However",
-    " existing work doesn't fully capitalize on the benefits of auction information and overlooks the data bias brought by the auction",
-    " leading to biased and suboptimal results. To address these limitations",
-    " we propose A uction I nformation E nhanced Framework (AIE) for CTR prediction in online advertising",
-    " which delves into the problem of insufficient utilization of auction signals and first reveals the auction bias. Specifically",
-    " AIE introduces two pluggable modules",
-    " namely Adaptive Market-price Auxiliary Module (AM2) and Bid Calibration Module (BCM)",
-    " which work collaboratively to excavate the posterior auction signals better and enhance the performance of CTR prediction. Furthermore",
-    " the two proposed modules are lightweight",
-    " model-agnostic",
-    " and friendly to inference latency. Extensive experiments are conducted on a public dataset and an industrial dataset to demonstrate the effectiveness and compatibility of AIE. Besides",
-    " a one-month online A/B test in a large-scale advertising platform shows that AIE improves the base model by 5.76% and 2.44% in terms of eCPM and CTR",
-    " respectively."
+    "Online Advertising",
+    "Click-through Rate Prediction",
+    "Posterior Feature Modeling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Mindspore"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Effect of data scaling methods on machine learning algorithms and model performance"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Enhancing explicit and implicit feature interactions via information sharing for parallel deep CTR models"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Cost-per-impression pricing for display advertising"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Scenario-Aware Hierarchical Dynamic Network for Multi-Scenario Recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "DFFM: Domain Facilitated Feature Modeling for CTR Prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Squeeze-and-excitation networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Incentive problems in performancebased online advertising pricing: Cost per click vs. cost per action"
+    },
+    {
+      "ref_id": "b11",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Loss functions for predicted clickthrough rates in auctions for online advertising"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Adaptive Domain Interest Network for Multi-domain Recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "On sampled metrics for item recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "iPinYou global rtb bidding algorithm competition dataset"
+    },
+    {
+      "ref_id": "b17",
+      "title": "CPM-sensitive AUC for CTR prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Pairwise ranking losses of click-through rates prediction for welfare maximization in ad auctions"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Deep landscape forecasting in multi-slot realtime bidding"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Autoint: Automatic feature interaction learning via selfattentive neural networks"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Multilayer perceptron (MLP)"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Cascade model-based propensity estimation for counterfactual learning to rank"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Cost-sensitive learning for utility optimization in online advertising auctions"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b29",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Learning to rank with selection bias in personal search"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Combating selection biases in recommender systems with a few unbiased ratings"
+    },
+    {
+      "ref_id": "b32",
+      "title": "The deconfounded recommender: A causal inference approach to recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Turning clicks into purchases: Revenue optimization for product search in e-commerce"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Coupled group lasso for web-scale ctr prediction in display advertising"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Multi-task learning for bias-free joint ctr prediction and market price modeling in online advertising"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Adasparse: Learning adaptively sparse structures for multi-domain click-through rate prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Click-through rate prediction in online advertising: A literature review"
+    },
+    {
+      "ref_id": "b38",
+      "title": "A survey on cross-domain recommendation: taxonomies, methods, and future directions"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Leaving no one behind: A multi-scenario multi-task meta learning approach for advertiser modeling"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Real-time bidding benchmarking with ipinyou dataset"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Disentangling user interest and conformity for recommendation with causal embedding"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Optimized cost per click in taobao display advertising"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Popularity-opportunity bias in collaborative filtering"
+    }
   ]
 }

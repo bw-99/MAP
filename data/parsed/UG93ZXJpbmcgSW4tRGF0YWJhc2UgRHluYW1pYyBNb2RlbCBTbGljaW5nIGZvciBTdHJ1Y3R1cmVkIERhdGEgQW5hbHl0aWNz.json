@@ -22,7 +22,47 @@
   "7 CONCLUSIONS": "In this paper, we propose a novel SQL-aware dynamic model slicing technique called LEADS. We enhance the general model with the Mixture of Experts (MoE) technique and devise a SQL-aware gating network to dynamically customize a sliced model given the propositional formula in the user's SQL query. We further encapsulate LEADS into an in-database inference extension for PostgreSQL. In the implementation, we incorporate three key optimizations to accelerate the in-database inference process. Extensive experiments on five real-world datasets show that LEADS consistently outperforms four baseline models, and the in-database inference extension significantly reduces inference time compared to traditional approaches. We have integrated LEADS into NeurDB, our ongoing implementation of an AI-powered autonomous data system.",
   "Acknowledgement:": "This research work is supported by Singapore Ministry of Education Academic Research Fund Tier 3 under MOE's official grant number MOE2017-T3-1-007. Yuncheng Wu's work is supported by National Key Research and Development Program of China (Grant No.2023YFB4503600).",
   "REFERENCES": "[1] 2000. Census-Income (KDD). UCI Machine Learning Repository. DOI: https://doi.org/10.24432/C5N30T. [2] 2023. gprx:Framework for developing PostgreSQL extensions in Rust. https: //github.com/pgcentralfoundation/pgrx. Accessed: October 10, 2023. [3] 2023. Machine learning models in BigQuery ML. https://cloud.google.com/ bigquery/docs/create-machine-learning-model. Accessed: October 10, 2023. [4] 2023. Microsoft SQL MLS. https://learn.microsoft.com/en-us/sql/machinelearning/sql-server-machine-learning-services?view=sql-server-2017. Accessed: October 10, 2023. [5] Shun-ichi Amari. 1993. Backpropagation and stochastic gradient descent method. Neurocomputing 5, 4-5 (1993), 185-196. [6] KirillOdintsov Anna Montoya, inversion and Martin Kotek. 2018. Home Credit Default Risk. https://kaggle.com/competitions/home-credit-default-risk [7] Arvind Arasu and Hector Garcia-Molina. 2003. Extracting structured data from web pages. In Proceedings of the 2003 ACM SIGMOD international conference on Management of data . 337-348. [8] Gökhan BakIr. 2007. Predicting structured data . MIT press. [9] Shaofeng Cai, Gang Chen, Beng Chin Ooi, and Jinyang Gao. 2019. Model Slicing for Supporting Complex Analytics with Elastic Inference Cost and Resource Constraints. Proceedings of the VLDB Endowment 13, 2 (2019), 86-99. [10] Shaofeng Cai, Kaiping Zheng, Gang Chen, HV Jagadish, Beng Chin Ooi, and Meihui Zhang. 2021. Arm-net: Adaptive relation modeling network for structured data. In SIGMOD . 207-220. Powering In-Database Dynamic Model Slicing for Structured Data Analytics",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Census-Income (KDD)"
+    },
+    {
+      "ref_id": "b2",
+      "title": "gprx:Framework for developing PostgreSQL extensions in Rust"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Machine learning models in BigQuery ML"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Microsoft SQL MLS"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Backpropagation and stochastic gradient descent method"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Home Credit Default Risk"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Extracting structured data from web pages"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Predicting structured data"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Model Slicing for Supporting Complex Analytics with Elastic Inference Cost and Resource Constraints"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Arm-net: Adaptive relation modeling network for structured data"
+    }
   ]
 }

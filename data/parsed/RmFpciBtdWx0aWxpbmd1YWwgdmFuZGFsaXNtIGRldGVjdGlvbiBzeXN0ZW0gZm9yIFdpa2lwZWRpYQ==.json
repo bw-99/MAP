@@ -26,7 +26,103 @@
   "6 CONCLUSIONS AND FUTURE WORK": "To sum up, this paper presents a new design for a system aimed to help in preventing vandalism on Wikipedia. The model was trained Is_anonymous wiki_db is_editor is_autopatrolled is_mobile_edit bert_title_score is_extendedconfirmed is_sysop is_visualeditor insert Wikilink revision_text_bytes_diff bert_change_pO_max is_patroller change_Table autoreview insert_Template change_Section bert_change_s0_max bert_change_s1 mean 0.00 0.10 0.15 0.20 0.25 mean(ISHAP valuel) (average impact on model output magnitude) Figure 12: Top-20 feature importance based on SHAP values for all users test set. 4 249 3,249 2 249 21 240 0 7514 1 751 2 751 bertinsed mear 21,959 onyrnous Figure 13: SHAP explanation for data sample from Figure 5. using a large dataset of 47 different languages that utilize sophisticated filtering and feature engineering techniques. The presented solution takes advantage of modern NLP techniques that rely on pre-trained multilingual MLMs. It also differs from the previous solution introducing a single model for all languages, making it easier to maintain. The results showed that the system outperformed the current state-of-the-art ORES system in terms of both the number of languages covered and accuracy. This research contributes to the field of multilingual Wikipedia patrolling, making it more efficient and less biased against anonymous users worldwide. Improving model accuracy directly influences the encyclopedia's knowledge integrity because patrollers can cover more damaging pages with the same resources. Moreover, reducing bias against anonymous users aims to help extend the active editors pool, which is the core of the Wikipedia movement. Nevertheless, the current study has several limitations that should be considered when interpreting the results. Data Limitations : Our study focused on analyzing changes in the text content of pages. However, we have observed that only 56% of revisions have at least some changes in the text. We are not considering changes in references, media, tables, etc. Analyzing other types of content can be a great extension of our work in the future. We restricted our data to the most frequent languages, which may not represent the full range of languages used on Wikipedia. Data sampling limitations : We make our analysis on the fixed time frame. We don't consider time-related patterns that could affect the amount of vandalism on Wikipedia and model performance. Modeling limitations : We only tested one language model and did not explore other language models that could potentially provide different results. We leave this for future work.",
   "ACKNOWLEDGMENTS": "This work has been funded by MCIN/AEI /10.13039/501100011033 under the Maria de Maeztu Units of Excellence Programme (CEX2021001195-M) To appear in KDD'23 , Mykola Trokhymovych, Muniza Aslam, Ai-Jou Chou, Ricardo Baeza-Yates, and Diego Saez-Trumper",
   "REFERENCES": "NY, USA, 2899-2905. https://doi.org/10.1145/3366423.3380055 [1] B. Thomas Adler, Luca de Alfaro, Santiago M. Mola-Velasco, Paolo Rosso, and Andrew G. West. 2011. Wikipedia Vandalism Detection: Combining Natural Language, Metadata, and Reputation Features. In Computational Linguistics and Intelligent Text Processing , Alexander Gelbukh (Ed.). Springer Berlin Heidelberg, Berlin, Heidelberg, 277-288. [2] Rachel K. E. Bellamy, Kuntal Dey, Michael Hind, Samuel C. Hoffman, Stephanie Houde, Kalapriya Kannan, Pranay Lohia, Jacquelyn Martino, Sameep Mehta, Aleksandra Mojsilovic, Seema Nagar, Karthikeyan Natesan Ramamurthy, John Richards, Diptikalyan Saha, Prasanna Sattigeri, Moninder Singh, Kush R. Varshney, and Yunfeng Zhang. 2018. AI Fairness 360: An Extensible Toolkit for Detecting, Understanding, and Mitigating Unwanted Algorithmic Bias. https: //arxiv.org/abs/1810.01943 [3] Si-Chi Chin, W. Nick Street, Padmini Srinivasan, and David Eichmann. 2010. Detecting Wikipedia Vandalism with Active Learning and Statistical Language Models. In Proceedings of the 4th Workshop on Information Credibility (Raleigh, North Carolina, USA) (WICOW '10) . Association for Computing Machinery, New York, NY, USA, 3-10. https://doi.org/10.1145/1772938.1772942 [4] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT 2019, Minneapolis, MN, USA, June 2-7, 2019, Volume 1 (Long and Short Papers) , Jill Burstein, Christy Doran, and Thamar Solorio (Eds.). Association for Computational Linguistics, Minneapolis, MN, USA, 4171-4186. https://doi.org/10.18653/v1/n19-1423 [5] Anna Veronika Dorogush, Andrey Gulin, Gleb Gusev, Nikita Kazeev, Liudmila Ostroumova, and Aleksandr Vorobev. 2017. Fighting biases with dynamic boosting. [6] R. Stuart Geiger and David Ribes. 2010. The Work of Sustaining Order in Wikipedia: The Banning of a Vandal. In Proceedings of the 2010 ACM Conference on Computer Supported Cooperative Work (Savannah, Georgia, USA) (CSCW '10) . Association for Computing Machinery, New York, NY, USA, 117-126. https://doi.org/10.1145/1718918.1718941 [7] Aaron Halfaker, R.Stuart Geiger, Jonathan Morgan, and John Riedl. 2013. The Rise and Decline of an Open Collaboration System How Wikipedia's Reaction to Popularity Is Causing Its Decline. American Behavioral Scientist 57 (05 2013), 664-688. https://doi.org/10.1177/0002764212469365 [8] Aaron Halfaker and R Stuart Geiger. 2020. Ores: Lowering barriers with participatory machine learning in wikipedia. Proceedings of the ACM on Human-Computer Interaction 4, CSCW2 (2020), 1-37. [9] Aaron Halfaker, R. Stuart Geiger, Jonathan T. Morgan, and John Riedl. 2013. The Rise and Decline of an Open Collaboration System: How Wikipedia's Reaction to Popularity Is Causing Its Decline. American Behavioral Scientist 57, 5 (2013), 664-688. https://doi.org/10.1177/0002764212469365 arXiv:https://doi.org/10.1177/0002764212469365 [10] Stefan Heindorf, Matthias Potthast, Benno Stein, and Gregor Engels. 2016. Vandalism Detection in Wikidata. In Proceedings of the 25th International Conference on Information and Knowledge Management (CIKM 2016) . Association for Computing Machinery, New York, NY, USA, 327-336. https://doi.org/10.1145/2983323. 2983740 [11] Nikesh Joshi, Francesca Spezzano, Mayson Green, and Elijah Hill. 2020. Detecting Undisclosed Paid Editing in Wikipedia. In Proceedings of The Web Conference 2020 (Taipei, Taiwan) (WWW'20) . Association for Computing Machinery, New York, [12] Florian Lemmerich, Diego Sáez-Trumper, Robert West, and Leila Zia. 2019. Why the World Reads Wikipedia: Beyond English Speakers. In Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining (Melbourne VIC, Australia) (WSDM '19) . Association for Computing Machinery, New York, NY, USA, 618-626. https://doi.org/10.1145/3289600.3291021 [13] Scott M. Lundberg and Su-In Lee. 2017. A Unified Approach to Interpreting Model Predictions. In Proceedings of the 31st International Conference on Neural Information Processing Systems (Long Beach, California, USA) (NIPS'17) . Curran Associates Inc., Red Hook, NY, USA, 4768-4777. [14] Nora McDonald, Benjamin Mako Hill, Rachel Greenstadt, and Andrea Forte. 2019. Privacy, Anonymity, and Perceived Risk in Open Collaboration: A Study of Service Providers. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (Glasgow, Scotland Uk) (CHI '19) . Association for Computing Machinery, New York, NY, USA, 1-12. https://doi.org/10.1145/3290605.3300901 [15] Pascal Neis, Marcus Goetz, and Alexander Zipf. 2012. Towards Automatic Vandalism Detection in OpenStreetMap. ISPRS International Journal of Geo-Information 1, 3 (2012), 315-332. https://doi.org/10.3390/ijgi1030315 [16] Martin Potthast, Benno Stein, and Robert Gerling. 2008. Automatic Vandalism Detection in Wikipedia. In Advances in Information Retrieval , Craig Macdonald, Iadh Ounis, Vassilis Plachouras, Ian Ruthven, and Ryen W. White (Eds.). Springer Berlin Heidelberg, Berlin, Heidelberg, 663-668. [17] Charu Rawat, Arnab Sarkar, Sameer Singh, Rafael Alvarado, and Lane Rasberry. 2019. Automatic Detection of Online Abuse and Analysis of Problematic Users in Wikipedia. In 2019 Systems and Information Engineering Design Symposium (SIEDS) . IEEE, Charlottesville, VA, USA, 1-6. [18] Marco Ribeiro, Sameer Singh, and Carlos Guestrin. 2016. 'Why Should I Trust You?': Explaining the Predictions of Any Classifier. In Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Demonstrations . Association for Computational Linguistics, San Diego, California, 97-101. https://doi.org/10.18653/v1/N16-3020 [19] Thorsten Ruprechter, Tiago Santos, and Denis Helic. 2020. Relating Wikipedia article quality to edit behavior and link structure. Applied Network Science 5 (09 2020), 61. https://doi.org/10.1007/s41109-020-00305-y [20] Diego Saez-Trumper. 2019. Online disinformation and the role of wikipedia. arXiv preprint arXiv:1910.12596 (2019). [21] Diego Sáez-Trumper. 2019. Online Disinformation and the Role of Wikipedia. arXiv:1910.12596 http://arxiv.org/abs/1910.12596 [22] C. Estelle Smith, Bowen Yu, Anjali Srivastava, Aaron Halfaker, Loren Terveen, and Haiyi Zhu. 2020. Keeping Community in the Loop: Understanding Wikipedia Stakeholder Values for Machine Learning-Based Systems. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (Honolulu, HI, USA) (CHI '20) . Association for Computing Machinery, New York, NY, USA, 1-14. https://doi.org/10.1145/3313831.3376783 [23] Nathan TeBlunthuis, Benjamin Mako Hill, and Aaron Halfaker. 2020. The effects of algorithmic flagging on fairness: quasi-experimental evidence from Wikipedia. arXiv:2006.03121 https://arxiv.org/abs/2006.03121 [24] Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi, Pierric Cistac, Tim Rault, Rémi Louf, Morgan Funtowicz, Joe Davison, Sam Shleifer, Patrick von Platen, Clara Ma, Yacine Jernite, Julien Plu, Canwen Xu, Teven Le Scao, Sylvain Gugger, Mariama Drame, Quentin Lhoest, and Alexander M. Rush. 2020. Transformers: State-of-the-Art Natural Language Processing. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations . Association for Computational Linguistics, Online, 38-45. https://www.aclweb.org/anthology/2020.emnlp-demos.6",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Wikipedia Vandalism Detection: Combining Natural Language, Metadata, and Reputation Features"
+    },
+    {
+      "ref_id": "b2",
+      "title": "AI Fairness 360: An Extensible Toolkit for Detecting, Understanding, and Mitigating Unwanted Algorithmic Bias"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Detecting Wikipedia Vandalism with Active Learning and Statistical Language Models"
+    },
+    {
+      "ref_id": "b4",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fighting biases with dynamic boosting"
+    },
+    {
+      "ref_id": "b6",
+      "title": "The Work of Sustaining Order in Wikipedia: The Banning of a Vandal"
+    },
+    {
+      "ref_id": "b7",
+      "title": "The Rise and Decline of an Open Collaboration System How Wikipedia's Reaction to Popularity Is Causing Its Decline"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Ores: Lowering barriers with participatory machine learning in wikipedia"
+    },
+    {
+      "ref_id": "b9",
+      "title": "The Rise and Decline of an Open Collaboration System: How Wikipedia's Reaction to Popularity Is Causing Its Decline"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Vandalism Detection in Wikidata"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Detecting Undisclosed Paid Editing in Wikipedia"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Why the World Reads Wikipedia: Beyond English Speakers"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A Unified Approach to Interpreting Model Predictions"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Privacy, Anonymity, and Perceived Risk in Open Collaboration: A Study of Service Providers"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Towards Automatic Vandalism Detection in OpenStreetMap"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Automatic Vandalism Detection in Wikipedia"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Automatic Detection of Online Abuse and Analysis of Problematic Users in Wikipedia"
+    },
+    {
+      "ref_id": "b18",
+      "title": "'Why Should I Trust You?': Explaining the Predictions of Any Classifier"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Relating Wikipedia article quality to edit behavior and link structure"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Online disinformation and the role of wikipedia"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Online Disinformation and the Role of Wikipedia"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Keeping Community in the Loop: Understanding Wikipedia Stakeholder Values for Machine Learning-Based Systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "The effects of algorithmic flagging on fairness: quasi-experimental evidence from Wikipedia"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Transformers: State-of-the-Art Natural Language Processing"
+    }
   ]
 }

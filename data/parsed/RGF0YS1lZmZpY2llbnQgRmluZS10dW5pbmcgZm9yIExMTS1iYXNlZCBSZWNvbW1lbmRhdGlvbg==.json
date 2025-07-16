@@ -28,7 +28,237 @@
   "REFERENCES": "[2] Sharat Agarwal, Himanshu Arora, Saket Anand, and Chetan Arora. 2020. Contextual diversity for active learning. In ECCV . Springer, 137-153. [1] Naman Agarwal, Brian Bullins, and Elad Hazan. 2016. Second-order stochastic optimization in linear time. stat 1050 (2016), 15. [3] Keqin Bao, Jizhi Zhang, Wenjie Wang, Yang Zhang, Zhengyi Yang, Yancheng Luo, Fuli Feng, Xiangnaan He, and Qi Tian. 2023. A bi-step grounding paradigm for large language models in recommendation systems. arXiv:2308.08434 . [5] Zalán Borsos, Mojmir Mutny, and Andreas Krause. 2020. Coresets via bilevel optimization for continual learning and streaming. NeurIPS 33 (2020), 1487914890. [4] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. Tallrec: An effective and efficient tuning framework to align large language model with recommendation. In RecSys . ACM. [6] Chengliang Chai, Jiayi Wang, Nan Tang, Ye Yuan, Jiabin Liu, Yuhao Deng, and Guoren Wang. 2023. Efficient coreset selection with cluster-based methods. In KDD . ACM, 167-178. [8] R Dennis Cook. 1977. Detection of influential observation in linear regression. Technometrics 19, 1 (1977), 15-18. [7] C Coleman, C Yeh, S Mussmann, B Mirzasoleiman, P Bailis, P Liang, J Leskovec, and M Zaharia. 2020. Selection via Proxy: Efficient Data Selection for Deep Learning. In ICLR . [9] Sunhao Dai, Ninglu Shao, Haiyuan Zhao, Weijie Yu, Zihua Si, Chen Xu, Zhongxiang Sun, Xiao Zhang, and Jun Xu. 2023. Uncovering chatgpt's capabilities in recommender systems. In RecSys . ACM, 1126-1132. [11] Yunfan Gao, Tao Sheng, Youlin Xiang, Yun Xiong, Haofen Wang, and Jiawei Zhang. 2023. Chat-rec: Towards interactive and explainable llms-augmented recommender system. arXiv:2303.14524 . [10] Vitaly Feldman and Chiyuan Zhang. 2020. What neural networks memorize and why: Discovering the long tail via influence estimation. NeurIPS 33 (2020), 2881-2891. [12] Yuqi Gong, Xichen Ding, Yehui Su, Kaiming Shen, Zhongyi Liu, and Guannan Zhang. 2023. An Unified Search and Recommendation Foundation Model for Cold-Start Scenario. In CIKM . 4595-4601. [14] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In IJCAI . 1725-1731. [13] Chengcheng Guo, Bo Zhao, and Yanbing Bai. 2022. Deepcore: A comprehensive library for coreset selection in deep learning. In DEXA . Springer, 181-195. [15] Frank R Hampel. 1974. The influence curve and its role in robust estimation. Journal of the american statistical association 69, 346 (1974), 383-393. [17] Muyang He, Shuo Yang, Tiejun Huang, and Bo Zhao. 2023. Large-scale Dataset Pruning with Dynamic Uncertainty. arXiv:2306.05175 . [16] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep residual learning for image recognition. In CVPR . IEEE, 770-778. [18] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, and Meng Wang. 2020. Lightgcn: Simplifying and powering graph convolution network for recommendation. In SIGIR . 639-648. [20] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In ICDM . IEEE, 197-206. [19] Edward J Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2021. Lora: Low-rank adaptation of large language models. arXiv:2106.09685 . [21] Krishnateja Killamsetty, Sivasubramanian Durga, Ganesh Ramakrishnan, Abir De, and Rishabh Iyer. 2021. Grad-match: Gradient matching based data subset selection for efficient deep model training. In ICML . PMLR, 5464-5474. [23] Krishnateja Killamsetty, Xujiang Zhao, Feng Chen, and Rishabh Iyer. 2021. Retrieve: Coreset selection for efficient and robust semi-supervised learning. NeurIPS 34 (2021), 14488-14501. [22] Krishnateja Killamsetty, Durga Sivasubramanian, Ganesh Ramakrishnan, and Rishabh Iyer. 2021. Glister: Generalization based data subset selection for efficient and robust learning. In AAAI , Vol. 35. 8110-8118. [24] Pang Wei Koh and Percy Liang. 2017. Understanding black-box predictions via influence functions. In ICML . PMLR, 1885-1894. [26] Lei Li, Yongfeng Zhang, and Li Chen. 2023. Prompt distillation for efficient llm-based recommendation. In CIKM . 1348-1357. [25] Suraj Kothawade, Vishal Kaushal, Ganesh Ramakrishnan, Jeff Bilmes, and Rishabh Iyer. 2022. PRISM: A Unified Framework of Parameterized Submodular Information Measures for Targeted Data Subset Selection and Summarization. In AAAI . [27] Xinyu Lin, Wenjie Wang, Yongqi Li, Fuli Feng, See-Kiong Ng, and Tat-Seng Chua. 2023. A multi-facet paradigm to bridge large language model and recommendation. arXiv:2310.06491 . [29] Qijiong Liu, Nuo Chen, Tetsuya Sakai, and Xiao-Ming Wu. 2024. ONCE: Boosting Content-based Recommendation with Both Open- and Closed-source Large Language Models. In WSDM . ACM. [28] Robert F Ling. 1984. Residuals and influence in regression. [30] Sichun Luo, Bowei He, Haohan Zhao, Yinya Huang, Aojun Zhou, Zongpeng Li, Yuanzhang Xiao, Mingjie Zhan, and Linqi Song. 2023. RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation. arXiv:2312.16018 . [32] Zheqi Lv, Wenqiao Zhang, Shengyu Zhang, Kun Kuang, Feng Wang, Yongwei Wang, Zhengyu Chen, Tao Shen, Hongxia Yang, Beng Chin Ooi, et al. 2023. DUET: A Tuning-Free Device-Cloud Collaborative Parameters Generation Framework for Efficient Device Model Generalization. In WWW . ACM, 3077-3085. [31] Zheqi Lv, Wenqiao Zhang, Zhengyu Chen, Shengyu Zhang, and Kun Kuang. 2024. Intelligent Model Update Strategy for Sequential Recommendation. In WWW . ACM. [33] Yongxin Ni, Yu Cheng, Xiangyan Liu, Junchen Fu, Youhua Li, Xiangnan He, Yongfeng Zhang, and Fajie Yuan. 2023. A Content-Driven Micro-Video Recommendation Dataset at Scale. arXiv:2309.15379 (2023). [35] Shashank Rajput, Nikhil Mehta, Anima Singh, Raghunandan H Keshavan, Trung Vu, Lukasz Heldt, Lichan Hong, Yi Tay, Vinh Q Tran, Jonah Samost, et al. 2023. Recommender Systems with Generative Retrieval. In NeurIPS . Curran Associates, Inc. [34] Mansheej Paul, Surya Ganguli, and Gintare Karolina Dziugaite. 2021. Deep learning on a data diet: Finding important examples early in training. NeurIPS 34, 20596-20607. [36] Xubin Ren, Wei Wei, Lianghao Xia, Lixin Su, Suqi Cheng, Junfeng Wang, Dawei Yin, and Chao Huang. 2024. Representation learning with large language models for recommendation. In WWW . ACM. [38] Noveen Sachdeva, Mehak Dhaliwal, Carole-Jean Wu, and Julian McAuley. 2022. Infinite recommendation networks: a data-centric approach. NeurIPS 35, 3129231305. [37] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2009. BPR: Bayesian personalized ranking from implicit feedback. In UAI . AUAI Press, 452-461. [39] Ozan Sener and Silvio Savarese. 2018. Active learning for convolutional neural networks: A core-set approach. (2018). [41] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In CIKM . 1441-1450. [40] Jae-hun Shim, Kyeongbo Kong, and Suk-Ju Kang. 2021. Core-set sampling for efficient neural architecture search. arXiv:2107.06869 . [42] Weiwei Sun, Lingyong Yan, Xinyu Ma, Pengjie Ren, Dawei Yin, and Zhaochun Ren. 2023. Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent. In EMNLP . ACL, 14918-14937. [44] Mariya Toneva, Alessandro Sordoni, Remi Tachet des Combes, Adam Trischler, Yoshua Bengio, and Geoffrey J Gordon. 2018. An empirical study of example forgetting during deep neural network learning. arXiv:1812.05159 . [43] Haoru Tan, Sitong Wu, Fei Du, Yukang Chen, Zhibin Wang, Fan Wang, and Xiaojuan Qi. 2023. Data Pruning via Moving-one-Sample-out. arXiv:2310.14664 . [45] Wenjie Wang, Xinyu Lin, Liuhui Wang, Fuli Feng, Yunshan Ma, and Tat-Seng Chua. 2023. Causal Disentangled Recommendation Against User Preference Shifts. TOIS (2023). [47] Kai Wei, Rishabh Iyer, and Jeff Bilmes. 2015. Submodularity in data subset selection and active learning. In ICML . PMLR, 1954-1963. [46] Wenjie Wang, Xinyu Lin, Liuhui Wang, Fuli Feng, Yinwei Wei, and Tat-Seng Chua. 2023. Equivariant Learning for Out-of-Distribution Cold-start Recommendation. In MM . 903-914. [48] Jiahao Wu, Wenqi Fan, Shengcai Liu, Qijiong Liu, Rui He, Qing Li, and Ke Tang. 2023. Dataset condensation for recommendation. arXiv:2310.01038 . [50] Shuo Yang, Zeke Xie, Hanyu Peng, Min Xu, Mingming Sun, and Ping Li. 2023. Dataset pruning: reducing training data by examining generalization influence. (2023). [49] Jiahao Wu, Qijiong Liu, Hengchang Hu, Wenqi Fan, Shengcai Liu, Qing Li, Xiao-Ming Wu, and Ke Tang. 2023. Leveraging Large Language Models (LLMs) to Empower Training-Free Dataset Condensation for Content-Based Recommendation. arXiv:2310.09874 . [51] Yuhao Yang, Chao Huang, Lianghao Xia, Chunzhen Huang, Da Luo, and Kangyi Lin. 2023. Debiased Contrastive Learning for Sequential Recommendation. In WWW . 1063-1073. [53] Honglei Zhang, Fangyuan Luo, Jun Wu, Xiangnan He, and Yidong Li. 2023. LightFR: Lightweight federated recommendation with privacy-preserving matrix factorization. TOIS 41, 4 (2023), 1-28. [52] Honglei Zhang, He Liu, Haoxuan Li, and Yidong Li. 2024. TransFR: Transferable Federated Recommendation with Pre-trained Language Models. arXiv:2402.01124 . [54] Junjie Zhang, Ruobing Xie, Yupeng Hou, Wayne Xin Zhao, Leyu Lin, and Ji-Rong Wen. 2023. Recommendation as instruction following: A large language model empowered recommendation approach. arXiv:2305.07001 . [56] Bo Zhao, Konda Reddy Mopuri, and Hakan Bilen. 2020. Dataset Condensation with Gradient Matching. In ICLR . [55] Bo Zhao and Hakan Bilen. 2023. Dataset condensation with distribution matching. In WACV . IEEE, 6514-6523. [57] Haizhong Zheng, Rui Liu, Fan Lai, and Atul Prakash. 2022. Coverage-centric Coreset Selection for High Pruning Rates. In ICLR .",
   "keywords_parsed": [
     "Data Pruning",
-    " LLM-based Recommendation",
-    " Efficient Fine-tuning"
+    "LLM-based Recommendation",
+    "Efficient Fine-tuning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b2",
+      "title": "Contextual diversity for active learning"
+    },
+    {
+      "ref_id": "b1",
+      "title": "Second-order stochastic optimization in linear time"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A bi-step grounding paradigm for large language models in recommendation systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Coresets via bilevel optimization for continual learning and streaming"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Efficient coreset selection with cluster-based methods"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Detection of influential observation in linear regression"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Selection via Proxy: Efficient Data Selection for Deep Learning"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Uncovering chatgpt's capabilities in recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Chat-rec: Towards interactive and explainable llms-augmented recommender system"
+    },
+    {
+      "ref_id": "b10",
+      "title": "What neural networks memorize and why: Discovering the long tail via influence estimation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "An Unified Search and Recommendation Foundation Model for Cold-Start Scenario"
+    },
+    {
+      "ref_id": "b14",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deepcore: A comprehensive library for coreset selection in deep learning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "The influence curve and its role in robust estimation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Large-scale Dataset Pruning with Dynamic Uncertainty"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Grad-match: Gradient matching based data subset selection for efficient deep model training"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Retrieve: Coreset selection for efficient and robust semi-supervised learning"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Glister: Generalization based data subset selection for efficient and robust learning"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Understanding black-box predictions via influence functions"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Prompt distillation for efficient llm-based recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "PRISM: A Unified Framework of Parameterized Submodular Information Measures for Targeted Data Subset Selection and Summarization"
+    },
+    {
+      "ref_id": "b27",
+      "title": "A multi-facet paradigm to bridge large language model and recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "ONCE: Boosting Content-based Recommendation with Both Open- and Closed-source Large Language Models"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Residuals and influence in regression"
+    },
+    {
+      "ref_id": "b30",
+      "title": "RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "DUET: A Tuning-Free Device-Cloud Collaborative Parameters Generation Framework for Efficient Device Model Generalization"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Intelligent Model Update Strategy for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "A Content-Driven Micro-Video Recommendation Dataset at Scale"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Recommender Systems with Generative Retrieval"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep learning on a data diet: Finding important examples early in training"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Representation learning with large language models for recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Infinite recommendation networks: a data-centric approach"
+    },
+    {
+      "ref_id": "b37",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Active learning for convolutional neural networks: A core-set approach"
+    },
+    {
+      "ref_id": "b41",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Core-set sampling for efficient neural architecture search"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent"
+    },
+    {
+      "ref_id": "b44",
+      "title": "An empirical study of example forgetting during deep neural network learning"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Data Pruning via Moving-one-Sample-out"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Causal Disentangled Recommendation Against User Preference Shifts"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Submodularity in data subset selection and active learning"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Equivariant Learning for Out-of-Distribution Cold-start Recommendation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Dataset condensation for recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Dataset pruning: reducing training data by examining generalization influence"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Leveraging Large Language Models (LLMs) to Empower Training-Free Dataset Condensation for Content-Based Recommendation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Debiased Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b53",
+      "title": "LightFR: Lightweight federated recommendation with privacy-preserving matrix factorization"
+    },
+    {
+      "ref_id": "b52",
+      "title": "TransFR: Transferable Federated Recommendation with Pre-trained Language Models"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Recommendation as instruction following: A large language model empowered recommendation approach"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Dataset Condensation with Gradient Matching"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Dataset condensation with distribution matching"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Coverage-centric Coreset Selection for High Pruning Rates"
+    }
   ]
 }

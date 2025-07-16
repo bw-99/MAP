@@ -34,8 +34,170 @@
   "A.4 More Ablation and Baseline Results": "We provide the ablation results of ResFlow on AliCCP in Table 14. We provide CTCVR AUC the results of more baselines, including the single-task model, MOE, and MMOE, in Table 15. KDD '24, August 25-29, 2024, Barcelona, Spain Cong Fu et al. CTR ATCR user-query features item features user embedding: generated online item embedding: generated and indexed offline Block Block Block Block Block Block Block Block Block Block Block Block Block Block Block Block Block Block CTCVR (a) Figure 7: ResFlow with more complex architectures. (a) The illustration of ResFlow builds upon the twin-tower architecture. It is adopted as the backbone for all experiments on the Shopee dataset and our online deployment. (b) Another conceptual ResFlow architecture, where task networks have inner branches. Residual connections can be generally applied behind function blocks that have parameters, while we should be cautious about operations that have no or very few parameters (see Section A.1). Block Block Block Block Block Block Block Block Block Block Block Block features features features TASK1 TASK2 TASK3 (b) Figure 8: The uplift of more offline metrics of ResFlow relative to the formerly deployed method (ESMM) during the online A/B test. The curves are smoothed to better show the trend. (a) (b) (c) (d) The Offline NDCG The Offline WR@IOO(log) The Offline WR@lOO(sqrt) The Offline WR@IOO(square) ResFlow-3 targets ResFlow-3 targets ResFlow-3 targets ResFlow-3 targets 3.0 1 ResFlow-2 targets ResFlow-2 targets ResFlow-2 targets ResFlow-2 targets 2.0 1 09-15 2023-10-10 09-15 2023-10-10 09-15 2023-10-10 2023-07-27 2023-10-10 07-27 08-21 2023-07- 2023- 2023- 2023- 2023- 2023- 2023- 2023- 2023- 2023- 2023- 2023- 2023- 2023- 2023- Table 13: Ablation results of the highest-level residual connections in the twin-tower architecture on Shopee-2. Table 15: More AUC results of the CTCVR estimation task on offline e-commercial datasets. Table 14: Ablation results of ResFlow on AliCCP.",
   "keywords_parsed": [
     "Multi-task learning",
-    " ranking system",
-    " e-commerce",
-    " residual learning"
+    "ranking system",
+    "e-commerce",
+    "residual learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A study of the behavior of several methods for balancing machine learning training data"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A comparative analysis of offline and online evaluations and discussion of research paper recommender system evaluation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Special issue on learning from imbalanced data sets"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Bias and debias in recommender system: A survey and future directions"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Clustered Embedding Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Hierarchical Task-aware Multi-Head Attention Network"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Joint optimization of cascade ranking models"
+    },
+    {
+      "ref_id": "b9",
+      "title": "KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b12",
+      "title": "AliExpress LearningTo-Rank: Maximizing online model performance without going online"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Multi-Scale User Behavior Network for Entire Space Multi-Task Learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Residual continual learning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space"
+    },
+    {
+      "ref_id": "b16",
+      "title": "A deep architecture for matching short texts"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Learning when data sets are imbalanced and when costs are unequal and unknown"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Cross-stitch networks for multi-task learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "RankFlow: Joint Optimization of Multi-Stage Cascade Ranking Systems as Flows"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Multitask mixture of sequential experts for user activity streams"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Learning multiple visual domains with residual adapters"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Recommendations as treatments: Debiasing learning and evaluation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Task Aware Feature Extraction Framework for Sequential Dependence Multi-Task Learning"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Escm2: Entire space counterfactual multitask model for post-click conversion rate estimation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "COLD: Towards the Next Generation of Pre-Ranking System"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Aligning boundary in kernel space for learning imbalanced dataset"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Multi-view multi-behavior contrastive learning in recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Modeling the sequential dependence among audience multistep conversions with multi-task learning in targeted display advertising"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Trace Norm Regularised Deep Multi-Task Learning"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Low-rank adaptation of large language model rescoring for parameter-efficient speech recognition"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Adding conditional control to text-to-image diffusion models"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Learning sparse task relations in multi-task learning"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A survey on multi-task learning"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Probabilistic multi-task feature selection"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Rethinking the Role of Pre-ranking in Large-scale E-Commerce Searching System"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A survey of recommender systems with multi-objective optimization"
+    },
+    {
+      "ref_id": "b40",
+      "title": "DCMT: A Direct Entire-Space Causal Multi-Task Framework for Post-Click Conversion Estimation"
+    }
   ]
 }

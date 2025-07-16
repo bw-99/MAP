@@ -21,6 +21,64 @@
   "REFERENCES": "[1] Marc G. Bellemare, Will Dabney, and Rémi Munos. 2017. A distributional perspective on reinforcement learning. In Proceedings of the Thirty-fourth International Conference on Machine Learning . PMLR, Sydney, Australia, 449-458. [2] Minmin Chen, Alex Beutel, Paul Covington, Sagar Jain, Francois Belletti, and Ed H. Chi. 2019. Top-k off-policy correction for a reinforce recommender system. In Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining . Association for Computing Machinery, Melbourne, VIC, Australia, 456-464. [3] Will Dabney, Mark Rowland, Marc G. Bellemare, and Rémi Munos. 2018. Distributional reinforcement learning with quantile regression. In Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence . New Orleans, LA, USA, 2892-2901. [4] Eugene Ie, Vihan Jain, Jing Wang, Sanmit Narvekar, Ritesh Agarwal, Rui Wu, Heng-Tze Cheng, Tushar Chandra, and CraigBoutilier. 2019. Slateq: a tractable decomposition for reinforcement learning with recommendation sets. In Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence . International Joint Conferences on Artificial Intelligence Organization, 2592-2599. [5] Michael L. Littman. 1994. Markov games as a framework for multi-agent reinforcement learning. In Proceedings of the Eleventh International Conference on International Conference on Machine Learning . New Brunswick, NJ, USA, 157163. [6] Volodymyr Mnih et al. 2015. Human-level control through deep reinforcement learning. Nature , 518, 7540, 529-533. [7] Maxim Naumov et al. 2019. Deep learning recommendation model for personalization and recommendation systems. (2019). arXiv: 1906.00091 [cs.IR] . [8] Kai Wang, Zhene Zou, Yue Shang, Qilin Deng, Minghao Zhao, Runze Wu, Xudong Shen, Tangjie Lyu, and Changjie Fan. 2021. Rl4rs: a real-world benchmark for reinforcement learning based recommender system. (2021). arXiv: 2110.11073 [cs.IR] . [9] Martha White. 2017. Unifying task specification in reinforcement learning. In Proceedings of the Thirty-Fourth International Conference on Machine Learning . PMLR, Sydney, Australia, 3742-3750. WWW'23 Companion, April 30-May 4, 2023, Austin, TX, USA On Modeling Long-Term User Engagement from Stochastic Feedback [10] Zhongwen Xu, Hado P van Hasselt, and David Silver. 2018. Meta-gradient reinforcement learning. In Advances in Neural Information Processing Systems . Curran Associates, Inc. [11] Naoto Yoshida, Eiji Uchibe, and Kenji Doya. 2013. Reinforcement learning with state-dependent discount factor. In 2013 IEEE third joint international conference on development and learning and epigenetic robotics . IEEE, 1-6. [12] Xiangyu Zhao, Changsheng Gu, Haoshenglun Zhang, Xiaobing Liu, Xiwang Yang, and Jiliang Tang. 2019. Deep reinforcement learning for online advertising in recommender systems. arXiv preprint arXiv:1909.03602 . [13] Xiangyu Zhao, Long Xia, Liang Zhang, Zhuoye Ding, Dawei Yin, and Jiliang Tang. 2018. Deep reinforcement learning for page-wise recommendations. In Proceedings of the 12th ACM Conference on Recommender Systems . Association for Computing Machinery, Vancouver, BC, Canada, 95-103. [14] Guanjie Zheng, Fuzheng Zhang, Zihan Zheng, Yang Xiang, Nicholas Jing Yuan, Xing Xie, and Zhenhui Li. 2018. Drn: a deep reinforcement learning framework for news recommendation. In Proceedings of the 2018 World Wide Web Conference . International World Wide Web Conferences Steering Committee, Lyon, France, 167-176.",
   "keywords_parsed": [
     "Recommender Systems",
-    " Reinforcement Learning"
+    "Reinforcement Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A distributional perspective on reinforcement learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Top-k off-policy correction for a reinforce recommender system"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Distributional reinforcement learning with quantile regression"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Slateq: a tractable decomposition for reinforcement learning with recommendation sets"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Markov games as a framework for multi-agent reinforcement learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Human-level control through deep reinforcement learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Rl4rs: a real-world benchmark for reinforcement learning based recommender system"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Unifying task specification in reinforcement learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Meta-gradient reinforcement learning"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Reinforcement learning with state-dependent discount factor"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep reinforcement learning for online advertising in recommender systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deep reinforcement learning for page-wise recommendations"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Drn: a deep reinforcement learning framework for news recommendation"
+    }
   ]
 }

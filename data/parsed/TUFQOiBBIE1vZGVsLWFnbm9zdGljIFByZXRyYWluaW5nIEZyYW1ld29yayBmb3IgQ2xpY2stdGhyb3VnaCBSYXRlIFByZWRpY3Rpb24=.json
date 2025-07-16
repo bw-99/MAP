@@ -35,7 +35,241 @@
   "B.2 Joint Pretraining of MFP and RFD": "We conduct ablation experiments to further analyze the effect of joint pretraining of our proposed MFP and RFD, where the loss function for each input 𝑥 𝑖 is:  where 𝛼 is a hyperparameter to balance the loss terms from MFP and RFD. We set other hyperparameters to be the same as the best configuration in the RFD pretrain-finetune scheme for simplicity, MAP: A Model-agnostic Pretraining Framework for Click-through Rate Prediction KDD '23, August 6-10, 2023, Long Beach, CA, USA Table 6: The ablation study on the finetuning strategies ( i.e. . whether freeze the embedding layer and feature interaction layer or not). The best results are given in bold, while the second-best values are underlined. Table 7: The ablation study on the joint pretraining of MFP and RFD. The best results are given in bold, while the secondbest values are underlined. and apply grid search to select 𝛼 from { 0 . 1 , 0 . 3 , 0 . 5 , 0 . 7 , 0 . 9 } . DCNv2, DNN, DeepFM are chosen as the representative base models. The results are reported in Table 7. Our observation and discussion towards the results in Table 7 are in three folds: · The joint method could achieve slightly better (or comparable) performance compared to the best pretraining method RFD. · It is worth noting that the joint pretraining method consistently reaches the best performance with 𝛼 = 0 . 1. This indicates that RFD surpasses MFP and mainly contributes to the performance improvement. · In addition, since the corruption and recovery strategies for MFP and RFD are different, the joint training method requires two forward/backward propagations for each data instance, which greatly increases the training cost ( e.g. , GPU memory usage and run time per epoch). Although the joint training method might achieve better performance with finer-grained hyperparameter search, we think RFD is still a more elegant and practical pretraining method in terms of both effectiveness and efficiency.",
   "keywords_parsed": [
     "CTR Prediction",
-    " Self-supervised Learning",
-    " Model Pretraining"
+    "Self-supervised Learning",
+    "Model Pretraining"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "MindSpore"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Scarf: Selfsupervised contrastive learning using random feature corruption"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Training and testing low-degree polynomial data mappings via linear SVM"
+    },
+    {
+      "ref_id": "b5",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Big self-supervised models are strong semi-supervised learners"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Improved baselines with momentum contrastive learning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Electra: Pre-training text encoders as discriminators rather than generators"
+    },
+    {
+      "ref_id": "b9",
+      "title": "An adversarial imitation click model for information retrieval"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b11",
+      "title": "With a little help from my friends: Nearest-neighbor contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "An F-shape Click Model for Information Retrieval on Multiblock Mobile Pages"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Bootstrap your own latent-a new approach to self-supervised learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Deepfm: a factorization-machine based neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Miss: Multi-interest self-supervised learning framework for click-through rate prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Noise-contrastive estimation: A new estimation principle for unnormalized statistical models"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Pretraining graph neural networks for cold-start users and items representation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "MixGen: A New Multi-Modal Data Augmentation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Masked autoencoders are scalable vision learners"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Momentum contrast for unsupervised visual representation learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Squeeze-and-excitation networks"
+    },
+    {
+      "ref_id": "b24",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Neural Statistics for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Field-aware factorization machines for CTR prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Interpretable click-through rate prediction through hierarchical attention"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b30",
+      "title": "How Can Recommender Systems Benefit from Large Language Models: A Survey"
+    },
+    {
+      "ref_id": "b31",
+      "title": "A Graph-Enhanced Click Model for Web Search"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Feature generation by convolutional neural network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b33",
+      "title": "A Convolutional Click Prediction Model"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Self-supervised learning: Generative or contrastive"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Pre-training graph transformer with multimodal side information for recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Contrastive self-supervised sequential recommendation with robust augmentation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Multi-Modal Contrastive Pre-training for Recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Graph neural pre-training for enhancing recommendations using side information"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Efficient estimation of word representations in vector space"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A fast and simple algorithm for training neural probabilistic language models"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Click-through Rate Prediction with Auto-Quantized Contrastive Learning"
+    },
+    {
+      "ref_id": "b44",
+      "title": "User Behavior Retrieval for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Product-based neural networks for user response prediction over multi-field categorical data"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Factorization machines with libfm"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Autoint: Automatic feature interaction learning via selfattentive neural networks"
+    },
+    {
+      "ref_id": "b51",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Contrastive multiview coding"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Pretraining Graph Neural Network for Cross Domain Recommendation"
+    },
+    {
+      "ref_id": "b55",
+      "title": "CL4CTR: A Contrastive Learning Framework for CTR Prediction"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Enhancing CTR Prediction with Context-Aware Feature Representation Learning"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Masked-field Pre-training for User Intent Prediction"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Deep learning for click-through rate estimation"
+    }
   ]
 }

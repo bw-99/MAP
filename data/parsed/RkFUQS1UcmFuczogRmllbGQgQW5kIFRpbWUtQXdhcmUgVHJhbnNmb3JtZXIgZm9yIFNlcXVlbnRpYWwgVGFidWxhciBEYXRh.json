@@ -23,7 +23,21 @@
   "REFERENCES": "[1] Erik Altman. 2021. Synthesizing credit card transactions. In Proceedings of the Second ACM International Conference on AI in Finance . 1-9. [2] Sercan Ö Arik and Tomas Pfister. 2021. Tabnet: Attentive interpretable tabular learning. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 35. 6679-6687. [3] Gilbert Badaro and Paolo Papotti. 2022. Transformers for tabular data representation: a tutorial on models and applications. Proceedings of the VLDB Endowment 15, 12 (2022), 3746-3749. CIKM '23, October 21-25, 2023, Birmingham, United Kingdom Dongyu Zhang, et al.",
   "keywords_parsed": [
     "transformer",
-    " sequential tabular data",
-    " field and time aware"
+    "sequential tabular data",
+    "field and time aware"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Synthesizing credit card transactions"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Tabnet: Attentive interpretable tabular learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Transformers for tabular data representation: a tutorial on models and applications"
+    }
   ]
 }

@@ -18,7 +18,161 @@
   "REFERENCES": "[1] Mathieu Blondel, Akinori Fujino, Naonori Ueda, and Masakazu Ishihata. Higherorder factorization machines. NeurIPS , 2016. [2] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. Wide & deep learning for recommender systems. In RecSys , 2016. [3] Kaize Ding, Yichuan Li, Jundong Li, Chenghao Liu, and Huan Liu. Feature interaction-aware graph neural networks. arXiv preprint arXiv:1908.07110 , 2019. [4] Kaize Ding, Jianling Wang, James Caverlee, and Huan Liu. Meta propagation networks for few-shot semi-supervised learning on graphs. In AAAI , 2022. [5] Kaize Ding, Jianling Wang, Jundong Li, Dingcheng Li, and Huan Liu. Be more with less: Hypergraph attention networks for inductive text classification. In EMNLP , 2020. [6] Kaize Ding, Yancheng Wang, Yingzhen Yang, and Huan Liu. Eliciting structural and semantic global knowledge in unsupervised graph contrastive learning. In AAAI , 2023. [7] Kaize Ding, Zhe Xu, Hanghang Tong, and Huan Liu. Data augmentation for deep graph learning: A survey. SIGKDD Explorations , 2022. [8] Yifan Feng, Haoxuan You, Zizhao Zhang, Rongrong Ji, and Yue Gao. Hypergraph neural networks. In AAAI , 2019. [9] Wei Guo, Rong Su, Renhao Tan, Huifeng Guo, Yingxue Zhang, Zhirong Liu, Ruiming Tang, and Xiuqiang He. Dual graph enhanced embedding neural network for ctr prediction. In KDD , 2021. [10] Will Hamilton, Zhitao Ying, and Jure Leskovec. Inductive representation learning on large graphs. In NeurIPS , 2017. [11] Xiangnan He and Tat-Seng Chua. Neural factorization machines for sparse predictive analytics. In SIGIR , 2017. [12] Ujun Jeong, Kaize Ding, Lu Cheng, Ruocheng Guo, Kai Shu, and Huan Liu. Nothing stands alone: Relational fake news detection with hypergraph neural networks. In BigData , 2022. [13] Yuchin Juan, Yong Zhuang, Wei-Sheng Chin, and Chih-Jen Lin. Field-aware factorization machines for ctr prediction. In RecSys , 2016. [14] Thomas N Kipf and Max Welling. Semi-supervised classification with graph convolutional networks. arXiv preprint arXiv:1609.02907 , 2016. [15] Johannes Klicpera, Aleksandar Bojchevski, and Stephan Günnemann. Predict then propagate: Graph neural networks meet personalized pagerank. In ICLR , 2019. [16] Zekun Li, Zeyu Cui, Shu Wu, Xiaoyu Zhang, and Liang Wang. Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction. In CIKM , 2019. [17] Zekun Li, Shu Wu, Zeyu Cui, and Xiaoyu Zhang. Graphfm: Graph factorization machines for feature interaction modeling. arXiv preprint arXiv:2105.11866 , 2021. [18] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In KDD , 2018. SIGIR '23, July 23-27, 2023, Taipei, Taiwan [19] Julian McAuley, Christopher Targett, Qinfeng Shi, and Anton Van Den Hengel. Image-based recommendations on styles and substitutes. In SIGIR , 2015. [20] Junwei Pan, Jian Xu, Alfonso Lobos Ruiz, Wenliang Zhao, Shengjun Pan, Yu Sun, and Quan Lu. Field-weighted factorization machines for click-through rate prediction in display advertising. In TheWebConf , 2018. [21] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. Product-based neural networks for user response prediction. In ICDM , 2016. [22] Steffen Rendle. Factorization machines. In ICDM , 2010. [23] Ying Shan, T Ryan Hoens, Jian Jiao, Haijing Wang, Dong Yu, and JC Mao. Deep crossing: Web-scale modeling without manually crafted combinatorial features. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining , pages 255-262, 2016. [24] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. Autoint: Automatic feature interaction learning via self-attentive neural networks. In CIKM , 2019. [25] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. Attention is all you need. NeurIPS , 2017. [26] Petar Veličković, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Lio, and Yoshua Bengio. Graph attention networks. In ICLR , 2018. [27] Jianling Wang, Kaize Ding, Liangjie Hong, Huan Liu, and James Caverlee. Nextitem recommendation with sequential hypergraphs. In SIGIR , 2020. [28] Jianling Wang, Kaize Ding, Ziwei Zhu, and James Caverlee. Session-based recommendation with hypergraph attention networks. In SDM , 2021. [29] Jinpeng Wang, Jieming Zhu, and Xiuqiang He. Cross-batch negative sampling for training two-tower recommenders. In SIGIR , 2021. [30] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. Deep & cross network for ad click predictions. In KDD . 2017. [31] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In TheWebConf , 2021. [32] Tiansheng Yao, Xinyang Yi, Derek Zhiyuan Cheng, Felix Yu, Ting Chen, Aditya Menon, Lichan Hong, Ed H Chi, Steve Tjoa, Jieqi Kang, et al. Self-supervised learning for large-scale item recommendations. In CIKM , 2021. [33] Xinyang Yi, Ji Yang, Lichan Hong, Derek Zhiyuan Cheng, Lukasz Heldt, Aditee Kumthekar, Zhe Zhao, Li Wei, and Ed Chi. Sampling-bias-corrected neural modeling for large corpus item recommendations. In RecSys , 2019. [34] Yantao Yu, Weipeng Wang, Zhoutian Feng, and Daiyue Xue. A dual augmented two-tower model for online large-scale recommendation. DLP-KDD Workshop , 2021. [35] Yin Zhang, Derek Zhiyuan Cheng, Tiansheng Yao, Xinyang Yi, Lichan Hong, and Ed H Chi. A model of two tales: Dual transfer learning framework for improved long-tail item recommendation. In TheWebConf , 2021. [36] Zuowu Zheng, Changwang Zhang, Xiaofeng Gao, and Guihai Chen. Hien: hierarchical intention embedding network for click-through rate prediction. In SIGIR , 2022. [37] Dengyong Zhou, Jiayuan Huang, and Bernhard Schölkopf. Learning with hypergraphs: Clustering, classification, and embedding. NeurIPS , 2006. [38] Cai-Nicolas Ziegler, Sean M McNee, Joseph A Konstan, and Georg Lausen. Improving recommendation lists through topic diversification. In WWW , 2005.",
   "keywords_parsed": [
     "Sparse Features",
-    " Hypergraph",
-    " Graph Neural Networks"
+    "Hypergraph",
+    "Graph Neural Networks"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Higherorder factorization machines"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Feature interaction-aware graph neural networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Meta propagation networks for few-shot semi-supervised learning on graphs"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Be more with less: Hypergraph attention networks for inductive text classification"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Eliciting structural and semantic global knowledge in unsupervised graph contrastive learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Data augmentation for deep graph learning: A survey"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Hypergraph neural networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Dual graph enhanced embedding neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Nothing stands alone: Relational fake news detection with hypergraph neural networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Field-aware factorization machines for ctr prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Predict then propagate: Graph neural networks meet personalized pagerank"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Graphfm: Graph factorization machines for feature interaction modeling"
+    },
+    {
+      "ref_id": "b18",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Image-based recommendations on styles and substitutes"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Field-weighted factorization machines for click-through rate prediction in display advertising"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Deep crossing: Web-scale modeling without manually crafted combinatorial features"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Graph attention networks"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Nextitem recommendation with sequential hypergraphs"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Session-based recommendation with hypergraph attention networks"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Cross-batch negative sampling for training two-tower recommenders"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Self-supervised learning for large-scale item recommendations"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Sampling-bias-corrected neural modeling for large corpus item recommendations"
+    },
+    {
+      "ref_id": "b34",
+      "title": "A dual augmented two-tower model for online large-scale recommendation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "A model of two tales: Dual transfer learning framework for improved long-tail item recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Hien: hierarchical intention embedding network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Learning with hypergraphs: Clustering, classification, and embedding"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Improving recommendation lists through topic diversification"
+    }
   ]
 }

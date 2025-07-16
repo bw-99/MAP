@@ -23,7 +23,157 @@
   "References": "[1] Qingyao Ai, Keping Bi, Jiafeng Guo, and W Bruce Croft. 2018. Learning a deep listwise context model for ranking refinement. In The 41st international ACM SIGIR conference on research & development in information retrieval . 135-144. [2] Qingyao Ai, Keping Bi, Jiafeng Guo, and W Bruce Croft. 2018. Learning a deep listwise context model for ranking refinement. In The 41st international ACM SIGIR conference on research & development in information retrieval . 135-144. [3] Areej Alsini, Du Q Huynh, and Amitava Datta. 2020. Hit ratio: An evaluation metric for hashtag recommendation. arXiv preprint arXiv:2010.01258 (2020). [4] Irwan Bello, Sayali Kulkarni, Sagar Jain, Craig Boutilier, Ed Chi, Elad Eban, Xiyang Luo, Alan Mackey, and Ofer Meshi. 2018. Seq2Slate: Re-ranking and slate optimization with RNNs. arXiv preprint arXiv:1810.02019 (2018). [5] Christopher JC Burges. 2010. From ranknet to lambdarank to lambdamart: An overview. Learning 11, 23-581 (2010), 81. [6] Zhe Cao, Tao Qin, Tie-Yan Liu, Ming-Feng Tsai, and Hang Li. 2007. Learning to rank: from pairwise approach to listwise approach. In Proceedings of the 24th international conference on Machine learning . 129-136. [7] Jianxin Chang, Chenbin Zhang, Zhiyi Fu, Xiaoxue Zang, Lin Guan, Jing Lu, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, et al. 2023. TWIN: TWo-stage interest network for lifelong user behavior modeling in CTR prediction at kuaishou. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3785-3794. [8] Chi Chen, Hui Chen, Kangzhi Zhao, Junsheng Zhou, Li He, Hongbo Deng, Jian Xu, Bo Zheng, Yong Zhang, and Chunxiao Xing. 2022. EXTR: Click-Through Rate Prediction with Externalities in E-Commerce Sponsored Search. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2732-2740. [9] Qiwei Chen, Changhua Pei, Shanshan Lv, Chao Li, Junfeng Ge, and Wenwu Ou. 2021. End-to-end user behavior retrieval in click-through rateprediction model. arXiv preprint arXiv:2108.04468 (2021). [10] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [11] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [12] Yufei Feng, Yu Gong, Fei Sun, Junfeng Ge, and Wenwu Ou. 2021. Revisit recommender system in the permutation prospective. arXiv preprint arXiv:2102.12057 (2021). [13] Yufei Feng, Binbin Hu, Yu Gong, Fei Sun, Qingwen Liu, and Wenwu Ou. 2021. GRN: Generative Rerank Network for Context-wise Recommendation. arXiv preprint arXiv:2104.00860 (2021). [14] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [15] Iris AM Huijben, Wouter Kool, Max B Paulus, and Ruud JG Van Sloun. 2022. A review of the gumbel-max trick and its extensions for discrete stochasticity in machine learning. IEEE transactions on pattern analysis and machine intelligence 45, 2 (2022), 1353-1371. [16] Eugene Ie, Vihan Jain, Jing Wang, Sanmit Narvekar, Ritesh Agarwal, Rui Wu, Heng-Tze Cheng, Tushar Chandra, and Craig Boutilier. 2019. SlateQ: A tractable decomposition for reinforcement learning with recommendation sets. (2019). [17] Eric Jang, Shixiang Gu, and Ben Poole. 2016. Categorical reparameterization with gumbel-softmax. arXiv preprint arXiv:1611.01144 (2016). [18] Ray Jiang, Sven Gowal, Timothy A Mann, and Danilo J Rezende. 2018. Beyond greedy ranking: Slate optimization via list-CVAE. arXiv preprint arXiv:1803.01682 (2018). [19] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [20] Xiao Lin, Xiaokai Chen, Chenyang Wang, Hantao Shu, Linfeng Song, Biao Li, and Peng Jiang. 2024. Discrete conditional diffusion for reranking in recommendation. In Companion Proceedings of the ACM on Web Conference 2024 . 161-169. [21] Shuchang Liu, Qingpeng Cai, Zhankui He, Bowen Sun, Julian McAuley, Dong Zheng, Peng Jiang, and Kun Gai. 2023. Generative flow network for listwise recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 1524-1534. [22] Shuchang Liu, Fei Sun, Yingqiang Ge, Changhua Pei, and Yongfeng Zhang. 2021. Variation control and evaluation for generative slate recommendations. In Proceedings of the Web Conference 2021 . 436-448. [23] Xiangyu Liu, Chuan Yu, Zhilin Zhang, Zhenzhe Zheng, Yu Rong, Hongtao Lv, Da Huo, Yiqing Wang, Dagui Chen, Jian Xu, et al. 2021. Neural auction: End-toend learning of auction mechanisms for e-commerce advertising. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3354-3364. [24] Mark F. Medress, Franklin S Cooper, Jim W. Forgie, CC Green, Dennis H. Klatt, Michael H. O'Malley, Edward P Neuburg, Allen Newell, DR Reddy, B Ritea, et al. 1977. Speech understanding systems: Report of a steering committee. Artificial Intelligence 9, 3 (1977), 307-316. [25] Liang Pang, Jun Xu, Qingyao Ai, Yanyan Lan, Xueqi Cheng, and Jirong Wen. 2020. Setrank: Learning a permutation-invariant ranking model for information retrieval. In Proceedings of the 43rd international ACM SIGIR conference on research and development in information retrieval . 499-508. [26] Changhua Pei, Yi Zhang, Yongfeng Zhang, Fei Sun, Xiao Lin, Hanxiao Sun, Jian Wu, Peng Jiang, Junfeng Ge, Wenwu Ou, et al. 2019. Personalized re-ranking for recommendation. In Proceedings of the 13th ACM conference on recommender systems . 3-11. [27] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. [28] Yuxin Ren, Qiya Yang, Yichun Wu, Wei Xu, Yalong Wang, and Zhiqiang Zhang. 2024. Non-autoregressive generative models for reranking recommendation. In Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 5625-5634. [29] Xiaowen Shi, Fan Yang, Ze Wang, Xiaoxu Wu, Muzhi Guan, Guogang Liao, Wang Yongkang, Xingxing Wang, and Dong Wang. 2023. PIER: Permutation-Level Interest-Based End-to-End Re-ranking Framework in E-commerce. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4823-4831. [30] A Vaswani. 2017. Attention is all you need. Advances in Neural Information Processing Systems (2017). [31] Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly. 2015. Pointer networks. Advances in neural information processing systems 28 (2015). [32] Yunjia Xi, Weiwen Liu, Xinyi Dai, Ruiming Tang, Weinan Zhang, Qing Liu, Xiuqiang He, and Yong Yu. 2021. Context-aware reranking with utility maximization for recommendation. arXiv preprint arXiv:2110.09059 (2021). [33] Yunjia Xi, Weiwen Liu, Jieming Zhu, Xilong Zhao, Xinyi Dai, Ruiming Tang, Weinan Zhang, Rui Zhang, and Yong Yu. 2022. Multi-Level Interaction Reranking with User Behavior History. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1336-1346. [34] Yueqi Xie, Peilin Zhou, and Sunghun Kim. 2022. Decoupled side information fusion for sequential recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1611-1621. [35] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [36] Tao Zhuang, Wenwu Ou, and Zhirong Wang. 2018. Globally optimized mutual influence aware ranking in e-commerce search. arXiv preprint arXiv:1805.08524 (2018). [37] Tao Zhuang, Wenwu Ou, and Zhirong Wang. 2018. Globally optimized mutual influence aware ranking in e-commerce search. arXiv preprint arXiv:1805.08524 (2018).",
   "keywords_parsed": [
     "Recommender Systems",
-    " Reranking",
-    " Generative Model"
+    "Reranking",
+    "Generative Model"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Hit ratio: An evaluation metric for hashtag recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Seq2Slate: Re-ranking and slate optimization with RNNs"
+    },
+    {
+      "ref_id": "b5",
+      "title": "From ranknet to lambdarank to lambdamart: An overview"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b7",
+      "title": "TWIN: TWo-stage interest network for lifelong user behavior modeling in CTR prediction at kuaishou"
+    },
+    {
+      "ref_id": "b8",
+      "title": "EXTR: Click-Through Rate Prediction with Externalities in E-Commerce Sponsored Search"
+    },
+    {
+      "ref_id": "b9",
+      "title": "End-to-end user behavior retrieval in click-through rate prediction model"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Revisit recommender system in the permutation prospective"
+    },
+    {
+      "ref_id": "b13",
+      "title": "GRN: Generative Rerank Network for Context-wise Recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A review of the gumbel-max trick and its extensions for discrete stochasticity in machine learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "SlateQ: A tractable decomposition for reinforcement learning with recommendation sets"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Categorical reparameterization with gumbel-softmax"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Beyond greedy ranking: Slate optimization via list-CVAE"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Discrete conditional diffusion for reranking in recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Generative flow network for listwise recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Variation control and evaluation for generative slate recommendations"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Neural auction: End-to-end learning of auction mechanisms for e-commerce advertising"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Speech understanding systems: Report of a steering committee"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Setrank: Learning a permutation-invariant ranking model for information retrieval"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Non-autoregressive generative models for reranking recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "PIER: Permutation-Level Interest-Based End-to-End Re-ranking Framework in E-commerce"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Pointer networks"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Context-aware reranking with utility maximization for recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Multi-Level Interaction Reranking with User Behavior History"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Decoupled side information fusion for sequential recommendation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Globally optimized mutual influence aware ranking in e-commerce search"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Globally optimized mutual influence aware ranking in e-commerce search"
+    }
   ]
 }

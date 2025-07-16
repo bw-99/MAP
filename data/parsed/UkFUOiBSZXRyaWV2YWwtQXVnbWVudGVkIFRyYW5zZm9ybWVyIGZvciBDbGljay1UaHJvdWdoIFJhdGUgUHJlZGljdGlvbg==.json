@@ -22,12 +22,95 @@
   "ACKNOWLEDGMENTS": "This work is supported in part by the National Natural Science Foundation of China under Grant (62302309, 62171248), Shenzhen Science and Technology Program (JCYJ20220818101012025), and the PCNL KEY project (PCL2023AS6-1). We gratefully acknowledge the support of MindSpore 1 , which is a new deep learning framework for this research.",
   "REFERENCES": "[1] Wenhu Chen, Hexiang Hu, Chitwan Saharia, and William W Cohen. 2023. ReImagen: Retrieval-Augmented Text-to-Image Generator. In ICLR . [2] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & Deep Learning for Recommender Systems. In RecSys . [3] Kounianhua Du, Weinan Zhang, Ruiwen Zhou, Yangkun Wang, Xilong Zhao, Jiarui Jin, Quan Gan, Zheng Zhang, and David Wipf. 2022. Learning Enhanced Representations for Tabular Data via Neighborhood Propagation. In NeurIPS . [4] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction. In IJCAI . [5] Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-wei Chang. 2020. REALM: Retrieval-Augmented Language Model Pre-Training. In ICML . [6] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: Combining Feature Importance and Bilinear Feature Interaction for Click-Through Rate Prediction. In RecSys . [7] Denis Kotkov, Alexandr Maslov, and Mats Neovius. 2021. Revisiting the Tag Relevance Prediction Problem. In SIGIR . [8] Lang Lang, Zhenlong Zhu, Xuanye Liu, Jianxin Zhao, Jixing Xu, and Minghui Shan. 2021. Architecture and Operation Adaptive Network for Online Recommendations. In KDD . [9] Wenjie Li, Zhongren Wang, Jingpeng Wang, Shu-Tao Xia, Jile Zhu, Mingjian Chen, Jiangke Fan, Jia Cheng, and Jun Lei. 2024. ReFer: Retrieval-Enhanced Vertical Federated Recommendation for Full Set User Benefit. In SIGIR . [10] Zeyu Li, Wei Cheng, Yang Chen, Haifeng Chen, and Wei Wang. 2020. Interpretable Click-Through Rate Prediction Through Hierarchical Attention. In WSDM . [11] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems. In KDD . [12] Alexander Long, Wei Yin, Thalaiyasingam Ajanthan, Vu Nguyen, Pulak Purkait, Ravi Garg, Alan Blair, Chunhua Shen, and Anton van den Hengel. 2022. Retrieval Augmented Classification for Long-Tail Visual Recognition. In CVPR . [13] Kelong Mao, Jieming Zhu, Liangcai Su, Guohao Cai, Yuru Li, and Zhenhua Dong. 2023. FinalMLP: An Enhanced Two-Stream MLP Model for CTR Prediction. In AAAI . [14] Jiarui Qin, Weinan Zhang, Rong Su, Zhirong Liu, Weiwen Liu, Ruiming Tang, Xiuqiang He, and Yong Yu. 2021. Retrieval & Interaction Machine for Tabular Data Prediction. In KDD . [15] Steffen Rendle, Zeno Gantner, Christoph Freudenthaler, and Lars Schmidt-Thieme. 2011. Fast Context-Aware Recommendations with Factorization Machines. In SIGIR . [16] Stephen E Robertson, Steve Walker, Susan Jones, Micheline M Hancock-Beaulieu, Mike Gatford, et al. 1995. Okapi at TREC-3. NIST SP (1995). [17] Jinpeng Wang, Ziyun Zeng, Yunxiao Wang, Yuting Wang, Xingyu Lu, Tianxiang Li, Jun Yuan, Rui Zhang, Hai-Tao Zheng, and Shu-Tao Xia. 2023. MISSRec: PreTraining and Transferring Multi-Modal Interest-Aware Sequence Representation for Recommendation. In MM . [18] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. DCN v2: Improved Deep & Cross Network and Practical Lessons for Web-Scale Learning to Rank Systems. In WWW . [19] Lei Zheng, Ning Li, Xianyu Chen, Quan Gan, and Weinan Zhang. 2023. Dense Representation Learning and Retrieval for Tabular Data Prediction. In KDD . [20] Jieming Zhu, Quanyu Dai, Liangcai Su, Rong Ma, Jinyang Liu, Guohao Cai, Xi Xiao, and Rui Zhang. 2022. BARS: Towards Open Benchmarking for Recommender Systems. In SIGIR . [21] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open Benchmarking for Click-Through Rate Prediction. In CIKM . 1 https://www.mindspore.cn",
   "keywords_parsed": [
-    "Predicting click-through rates (CTR) is a fundamental task for Web applications",
-    " where a key issue is to devise effective models for feature interactions. Current methodologies predominantly concentrate on modeling feature interactions within an individual sample",
-    " while overlooking the potential cross-sample relationships that can serve as a reference context to enhance the prediction. To make up for such deficiency",
-    " this paper develops a R etrievalA ugmented T ransformer (RAT)",
-    " aiming to acquire fine-grained feature interactions within and across samples. By retrieving similar samples",
-    " we construct augmented input for each target sample. We then build Transformer layers with cascaded attention to capture both intra- and cross-sample feature interactions",
-    " facilitating comprehensive reasoning for improved CTR prediction while retaining efficiency. Extensive experiments on real-world datasets substantiate the effectiveness of RAT and suggest its advantage in long-tail scenarios. The code has been open-sourced at https://github.com/YushenLi807/WWW24-RAT."
+    "Retrieval-augmented learning",
+    "CTR prediction",
+    "Transformer",
+    "cross-sample interaction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "ReImagen: Retrieval-Augmented Text-to-Image Generator"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Learning Enhanced Representations for Tabular Data via Neighborhood Propagation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "REALM: Retrieval-Augmented Language Model Pre-Training"
+    },
+    {
+      "ref_id": "b6",
+      "title": "FiBiNET: Combining Feature Importance and Bilinear Feature Interaction for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Revisiting the Tag Relevance Prediction Problem"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Architecture and Operation Adaptive Network for Online Recommendations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "ReFer: Retrieval-Enhanced Vertical Federated Recommendation for Full Set User Benefit"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Interpretable Click-Through Rate Prediction Through Hierarchical Attention"
+    },
+    {
+      "ref_id": "b11",
+      "title": "xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Retrieval Augmented Classification for Long-Tail Visual Recognition"
+    },
+    {
+      "ref_id": "b13",
+      "title": "FinalMLP: An Enhanced Two-Stream MLP Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Retrieval & Interaction Machine for Tabular Data Prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Fast Context-Aware Recommendations with Factorization Machines"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Okapi at TREC-3"
+    },
+    {
+      "ref_id": "b17",
+      "title": "MISSRec: PreTraining and Transferring Multi-Modal Interest-Aware Sequence Representation for Recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "DCN v2: Improved Deep & Cross Network and Practical Lessons for Web-Scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Dense Representation Learning and Retrieval for Tabular Data Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "BARS: Towards Open Benchmarking for Recommender Systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Open Benchmarking for Click-Through Rate Prediction"
+    }
   ]
 }

@@ -25,6 +25,282 @@
   "5 CONCLUSIONS": "In this work, we proposed a Personalised Graph-based Prompt Recommendation (PGPRec) framework to enhance the efficiency of conventional fine-tuning in cross-domain recommendation. Specifically, we devised novel personalised graph prompts to further enrich the pre-trained embeddings in the target domain. In particular, we used the neighbouring-items as hard prompts and used randomly initialised embedding vectors as soft prompts. We leveraged the personalised ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2023. graph prompts to enhance the efficiency of the tuning stage. Our results on four cross-domain datasets showed that PGPRec efficiently leverages the prompt-tuning along with the state-of-theart graph recommenders and achieves a competitive performance compared with the strongest baseline (SGL 𝑃𝑇 ). Moreover, we conducted an ablation study investigating different combinations of the personalised graph prompts. We showed that the hard prompts make a key and marked contribution in the tuning stage while the soft prompts can provide limited improvement to top𝑘 recommendation in the target domain. Furthermore, we showed that a PGPRec variant with five hard prompts can markedly reduce the number of the required tuned parameters by a large margin (e.g., a 74% reduction in the number of tunable parameters of the strongest baseline SGL 𝑃𝑇 on the Elec-Cloth dataset). By comparing the tuning time of the existing fine-tuned GNNs with that of several PGPRec variants, we showed that our PGPRec framework tunes faster (e.g., 31% faster on the Elec-Phone dataset), when using only hard prompts, leading to a marked training efficiency. Finally, we conducted a cold-start analysis to investigate whether our proposed PGPRec framework benefits the cold-start users. The results obtained on four datasets showed that PGPRec successfully alleviates the cold-start problem, and achieves effective cross-domain recommendations (e.g. an 11.41% performance improvement on the Sport-Cloth dataset in comparison to the strongest baseline SGL 𝑃𝑇 ) for cold-start users.",
   "REFERENCES": "[1] Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al. 2020. Language models are few-shot learners. In Proc. of NeurIPS . [2] Guanzheng Chen, Fangyu Liu, Zaiqiao Meng, and Shangsong Liang. 2022. Revisiting parameter-efficient tuning: Are we really there yet?. In Proc. of EMNLP . [3] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In Proc. of the ICML . [4] Qiang Cui, Tao Wei, Yafeng Zhang, and Qing Zhang. 2020. HeroGRAPH: A heterogeneous graph framework for multi-target cross-domain recommendation. In Proc. of RecSys . [5] Zeyu Cui, Jianxin Ma, Chang Zhou, Jingren Zhou, and Hongxia Yang. 2022. M6-Rec: Generative pre-trained language models are open-ended recommender systems. arXiv preprint arXiv:2205.08084 (2022). [6] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of deep bidirectional transformers for language understanding. In Proc. of NAACL . [7] Taoran Fang, Yunchao Zhang, Yang Yang, and Chunping Wang. 2022. Prompt tuning for graph neural networks. arXiv preprint arXiv:2209.15240 (2022). [8] Tianyu Gao, Adam Fisch, and Danqi Chen. 2021. Making pre-trained language models better few-shot learners. In Proc. of ACL . [9] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as language processing (RLP): A unified pretrain, personalised prompt & predict paradigm (P5). In Proc. of RecSys . [10] Henry Gouk, Timothy M Hospedales, and Massimiliano Pontil. 2021. Distance-based regularisation of deep networks for fine-Tuning. In Proc. of ICLR . [11] Junxian He, Chunting Zhou, Xuezhe Ma, Taylor Berg-Kirkpatrick, and Graham Neubig. 2022. Towards a unified view of parameter-efficient transfer learning. In Proc. of ICLR . [12] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, and Meng Wang. 2020. LightGCN: Simplifying and powering graph convolution network for recommendation. In Proc. of SIGIR . [13] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proc. of WWW . [14] Guangneng Hu, Yu Zhang, and Qiang Yang. 2018. Conet: Collaborative cross networks for cross-domain recommendation. In Proc of CIKM . [15] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated gain-based evaluation of IR techniques. TOIS 20, 4 (2002). [16] Zhengbao Jiang, Frank F Xu, Jun Araki, and Graham Neubig. 2020. How can we know what language models know? TACL 8 (2020). [17] Chaitanya Joshi. 2020. Transformers are graph neural networks. The Gradient 7 (2020). [18] Saranya KG and G Sudha Sadasivam. 2014. A survey on personalized recommendation techniques. IJRITCC 2, 6 (2014). ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2023. [19] Thomas N Kipf and Max Welling. 2017. Semi-supervised classification with graph convolutional networks. In Proc. of ICLR . [20] Brian Lester, Rami Al-Rfou, and Noah Constant. 2021. The power of scale for parameter-efficient prompt tuning. In Proc. of EMNLP . [21] Xiang Lisa Li and Percy Liang. 2021. Prefix-Tuning: Optimising continuous prompts for generation. In Proc. of ACL . [22] Juncheng Liu, Kenji Kawaguchi, Bryan Hooi, Yiwei Wang, and Xiaokui Xiao. 2021. Eignn: Efficient infinite-depth graph neural networks. In Proc. of NeuIPS . [23] Meng Liu, Jianjun Li, Guohui Li, and Peng Pan. 2020. Cross domain recommendation via bi-directional transfer graph collaborative filtering networks. In Proc. of CIKM . [24] Pengfei Liu, Weizhe Yuan, Jinlan Fu, Zhengbao Jiang, Hiroaki Hayashi, and Graham Neubig. 2022. Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing. Computing Surveys 55, 9 (2022). [25] Xiao Liu, Kaixuan Ji, Yicheng Fu, Zhengxiao Du, Zhilin Yang, and Jie Tang. 2022. P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks. Proc. of ACL . [26] Zhiwei Liu, Yongjun Chen, Jia Li, Philip S Yu, Julian McAuley, and Caiming Xiong. 2021. Contrastive self-supervised sequential recommendation with robust augmentation. arXiv preprint arXiv:2108.06479 (2021). [27] Zhiwei Liu, Ziwei Fan, Yu Wang, and Philip S Yu. 2021. Augmenting sequential recommendation with pseudo-prior items via reversely pre-training transformer. In Proc. of SIGIR . [28] Babak Loni, Yue Shi, Martha Larson, and Alan Hanjalic. 2014. Cross-domain collaborative filtering with factorisation machines. In Proc. of ECIR . [29] Tong Man, Huawei Shen, Xiaolong Jin, and Xueqi Cheng. 2017. Cross-domain recommendation: an embedding and mapping approach.. In Proc. of IJCAI . [30] Jarana Manotumruksa, Dimitrios Rafailidis, Craig Macdonald, and Iadh Ounis. 2019. On cross-domain transfer in venue recommendation. In Proc. of ECIR . [31] Kelong Mao, Jieming Zhu, Xi Xiao, Biao Lu, Zhaowei Wang, and Xiuqiang He. 2021. UltraGCN: ultra simplification of graph convolutional networks for recommendation. In Proc. of CIKM . [32] Zaiqiao Meng, Siwei Liu, Craig Macdonald, and Iadh Ounis. 2023. Graph neural pre-training for enhancing recommendations using side information. TOIS 41, 3 (2023). [33] Nima Mirbakhsh and Charles X Ling. 2015. Improving top-n recommendation for cold-start users via cross-domain information. TKDD 9, 4 (2015). [34] Aaron van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation learning with contrastive predictive coding. arXiv preprint arXiv:1807.03748 (2018). [35] Guanghui Qin and Jason Eisner. 2021. Learning how to ask: Querying lms with mixtures of soft prompts. In Proc. of NAACL . [36] Jiezhong Qiu, Qibin Chen, Yuxiao Dong, Jing Zhang, Hongxia Yang, Ming Ding, Kuansan Wang, and Jie Tang. 2020. GCC: Graph contrastive coding for graph neural network pre-training. In Proc. of KDD . [37] Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever, et al. 2019. Language models are unsupervised multitask learners. OpenAI blog (2019). [38] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2009. BPR: Bayesian personalized ranking from implicit feedback. In Proc. of UAI . [39] Francesco Ricci, Lior Rokach, and Bracha Shapira. 2011. Introduction to recommender systems handbook. In Recommender Systems Handbook . [40] Tetsuya Sakai. 2021. On Fuhr's guideline for IR evaluation. In Proc. of SIGIR Forum . [41] Timo Schick and Hinrich Schütze. 2020. Exploiting cloze questions for few shot text classification and natural language inference. In Proc. of EACL . [42] Donald J Schuirmann. 1987. A comparison of the two one-sided tests procedure and the power approach for assessing the equivalence of average bioavailability. Journal of pharmacokinetics and biopharmaceutics 15 (1987). [43] Taylor Shin, Yasaman Razeghi, Robert L Logan IV, Eric Wallace, and Sameer Singh. 2020. Autoprompt: Eliciting knowledge from language models with automatically generated prompts. arXiv preprint arXiv:2010.15980 (2020). [44] Nina Simmons-Mackie, Linda Worrall, Laura L Murray, Pam Enderby, Miranda L Rose, Eun Jin Paek, and Anu Klippi. 2017. The top ten: best practice recommendations for aphasia. Aphasiology 31, 2 (2017). [45] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proc. of CIKM . [46] Mingchen Sun, Kaixiong Zhou, Xin He, Ying Wang, and Xin Wang. 2022. Gppt: Graph pre-training and prompt tuning to generalize graph neural networks. In Proc. of KDD . [47] Jun Tang, Haiqun Jin, Shoubiao Tan, and Dong Liang. 2016. Cross-domain action recognition via collective matrix factorization with graph Laplacian regularization. Image and Vision Computing 55 (2016). ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2023. [48] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Proc. of NeuIPS . [49] Petar Veličković, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Lio, and Yoshua Bengio. 2018. Graph attention networks. In Proc. of the ICLR . [50] Chen Wang, Yueqing Liang, Zhiwei Liu, Tao Zhang, and S Yu Philip. 2021. Pre-training graph neural network for cross-domain recommendation. In Proc. of CogMI . [51] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural graph collaborative filtering. In Proc. of SIGIR . [52] Yongpeng Wang, Hong Yu, Guoyin Wang, and Yongfang Xie. 2020. Cross-domain recommendation based on sentiment analysis and latent feature mapping. Entropy 22, 4 (2020). [53] Hui Wu and Xiaodong Shi. 2022. Adversarial soft prompt tuning for cross-domain sentiment analysis. In Proc. of ACL . [54] Jiancan Wu, Xiang Wang, Fuli Feng, Xiangnan He, Liang Chen, Jianxun Lian, and Xing Xie. 2021. Self-supervised graph learning for recommendation. In Proc. of SIGIR . [55] Yiqing Wu, Ruobing Xie, Yongchun Zhu, Fuzhen Zhuang, Xu Zhang, Leyu Lin, and Qing He. 2022. Personalized Prompts for Sequential Recommendation. arXiv preprint arXiv:2205.09666 (2022). [56] Chaojun Xiao, Ruobing Xie, Yuan Yao, Zhiyuan Liu, Maosong Sun, Xu Zhang, and Leyu Lin. 2021. UPRec: User-aware pre-training for recommender systems. arXiv preprint arXiv:2102.10989 (2021). [57] Xu Xie, Fei Sun, Zhaoyang Liu, Shiwen Wu, Jinyang Gao, Jiandong Zhang, Bolin Ding, and Bin Cui. 2022. Contrastive learning for sequential recommendation. In Proc. of ICDE . [58] Keyulu Xu, Weihua Hu, Jure Leskovec, and Stefanie Jegelka. 2019. How Powerful are Graph Neural Networks?. In Proc. of ICLR . [59] Zhen Yang, Ming Ding, Bin Xu, Hongxia Yang, and Jie Tang. 2022. STAM: A spatiotemporal aggregation method for graph neural network-based recommendation. In Proc. of WWW . [60] Zixuan Yi, Iadh Ounis, and Craig Macdonald. 2023. Graph contrastive learning with positional representation for recommendation. In Proc. of ECIR . [61] Zixuan Yi, Xi Wang, Iadh Ounis, and Craig Macdonald. 2022. Multi-modal graph contrastive learning for micro-video recommendation. In Proc. of SIGIR . [62] Junliang Yu, Hongzhi Yin, Xin Xia, Tong Chen, Jundong Li, and Zi Huang. 2023. Self-supervised learning for recommender systems: a survey. TKDE (2023). [63] Fajie Yuan, Xiangnan He, Alexandros Karatzoglou, and Liguang Zhang. 2020. Parameter-efficient transfer from sequential behaviours for user modeling and recommendation. In Proc. of the SIGIR . [64] Feng Yuan, Lina Yao, and Boualem Benatallah. 2019. DARec: Deep domain adaptation for cross-domain recommendation via transferring rating patterns. In Proc. of IJCAI . [65] Tianzi Zang, Yanmin Zhu, Haobing Liu, Ruohan Zhang, and Jiadi Yu. 2022. A survey on cross-domain recommendation: taxonomies, methods, and future directions. TOIS 41, 2 (2022). [66] Zheni Zeng, Chaojun Xiao, Yuan Yao, Ruobing Xie, Zhiyuan Liu, Fen Lin, Leyu Lin, and Maosong Sun. 2021. Knowledge transfer via pre-training for recommendation: A review and prospect. Frontiers in Big Data 4 (2021). [67] Cheng Zhao, Chenliang Li, and Cong Fu. 2019. Cross-domain recommendation via preference propagation graphnet. In Proc. of CIKM . [68] Yongchun Zhu, Zhenwei Tang, Yudan Liu, Fuzhen Zhuang, Ruobing Xie, Xu Zhang, Leyu Lin, and Qing He. 2022. Personalized transfer of user preferences for cross-domain recommendation. In Proc. of WSDM . ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2023.",
   "keywords_parsed": [
-    "None"
+    "Personalisation",
+    "Recommender system",
+    "Graph Neural Network"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Revisiting parameter-efficient tuning: Are we really there yet?"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "HeroGRAPH: A heterogeneous graph framework for multi-target cross-domain recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "M6-Rec: Generative pre-trained language models are open-ended recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "BERT: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Prompt tuning for graph neural networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Making pre-trained language models better few-shot learners"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Recommendation as language processing (RLP): A unified pretrain, personalised prompt & predict paradigm (P5)"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Distance-based regularisation of deep networks for fine-Tuning"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Towards a unified view of parameter-efficient transfer learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "LightGCN: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Conet: Collaborative cross networks for cross-domain recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b16",
+      "title": "How can we know what language models know?"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Transformers are graph neural networks"
+    },
+    {
+      "ref_id": "b18",
+      "title": "A survey on personalized recommendation techniques"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b20",
+      "title": "The power of scale for parameter-efficient prompt tuning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Prefix-Tuning: Optimising continuous prompts for generation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Eignn: Efficient infinite-depth graph neural networks"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Cross domain recommendation via bi-directional transfer graph collaborative filtering networks"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing"
+    },
+    {
+      "ref_id": "b25",
+      "title": "P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Contrastive self-supervised sequential recommendation with robust augmentation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Augmenting sequential recommendation with pseudo-prior items via reversely pre-training transformer"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Cross-domain collaborative filtering with factorisation machines"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Cross-domain recommendation: an embedding and mapping approach"
+    },
+    {
+      "ref_id": "b30",
+      "title": "On cross-domain transfer in venue recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "UltraGCN: ultra simplification of graph convolutional networks for recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Graph neural pre-training for enhancing recommendations using side information"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Improving top-n recommendation for cold-start users via cross-domain information"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Learning how to ask: Querying lms with mixtures of soft prompts"
+    },
+    {
+      "ref_id": "b36",
+      "title": "GCC: Graph contrastive coding for graph neural network pre-training"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Language models are unsupervised multitask learners"
+    },
+    {
+      "ref_id": "b38",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Introduction to recommender systems handbook"
+    },
+    {
+      "ref_id": "b40",
+      "title": "On Fuhr's guideline for IR evaluation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Exploiting cloze questions for few shot text classification and natural language inference"
+    },
+    {
+      "ref_id": "b42",
+      "title": "A comparison of the two one-sided tests procedure and the power approach for assessing the equivalence of average bioavailability"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Autoprompt: Eliciting knowledge from language models with automatically generated prompts"
+    },
+    {
+      "ref_id": "b44",
+      "title": "The top ten: best practice recommendations for aphasia"
+    },
+    {
+      "ref_id": "b45",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Gppt: Graph pre-training and prompt tuning to generalize graph neural networks"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Cross-domain action recognition via collective matrix factorization with graph Laplacian regularization"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Graph attention networks"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Pre-training graph neural network for cross-domain recommendation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Cross-domain recommendation based on sentiment analysis and latent feature mapping"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Adversarial soft prompt tuning for cross-domain sentiment analysis"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Self-supervised graph learning for recommendation"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Personalized Prompts for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b56",
+      "title": "UPRec: User-aware pre-training for recommender systems"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Contrastive learning for sequential recommendation"
+    },
+    {
+      "ref_id": "b58",
+      "title": "How Powerful are Graph Neural Networks?"
+    },
+    {
+      "ref_id": "b59",
+      "title": "STAM: A spatiotemporal aggregation method for graph neural network-based recommendation"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Graph contrastive learning with positional representation for recommendation"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Multi-modal graph contrastive learning for micro-video recommendation"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Self-supervised learning for recommender systems: a survey"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Parameter-efficient transfer from sequential behaviours for user modeling and recommendation"
+    },
+    {
+      "ref_id": "b64",
+      "title": "DARec: Deep domain adaptation for cross-domain recommendation via transferring rating patterns"
+    },
+    {
+      "ref_id": "b65",
+      "title": "A survey on cross-domain recommendation: taxonomies, methods, and future directions"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Knowledge transfer via pre-training for recommendation: A review and prospect"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Cross-domain recommendation via preference propagation graphnet"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Personalized transfer of user preferences for cross-domain recommendation"
+    }
   ]
 }

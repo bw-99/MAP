@@ -14,6 +14,167 @@
   "ACKNOWLEDGMENTS": "The work leading to these results received funding from National Research, Development and Innovation Office, Hungary under grant agreement number 2020-1.1.2-PIACI-KFI-2021-00289. The authors would also like to thank Domonkos Tikk for his valuable support as the project leader of the abovementioned R&D grant.",
   "REFERENCES": "[1] Alejandro Bellogin, Pablo Castells, and Ivan Cantador. 2011. Precision-oriented evaluation of recommender systems: an algorithmic comparison. In Proceedings of the fifth ACM conference on Recommender systems . 333-336. [2] Wei Cai, Weike Pan, Jingwen Mao, Zhechao Yu, and Congfu Xu. 2022. Aspect Re-distribution for Learning Better Item Embeddings in Sequential Recommendation. In Proceedings of the 16th ACM Conference on Recommender Systems . 49-58. [3] Rocío Cañamares and Pablo Castells. 2020. On target item sampling in offline recommender system evaluation. In Proceedings of the 14th ACM Conference on Recommender Systems . 259-268. [4] Minmin Chen, Yuyan Wang, Can Xu, Ya Le, Mohit Sharma, Lee Richardson, Su-Lin Wu, and Ed Chi. 2021. Values of User Exploration in Recommender Systems. In Proceedings of the 15th ACM Conference on Recommender Systems (Amsterdam, Netherlands) (RecSys '21) . Association for Computing Machinery, New York, NY, USA, 85-95. https://doi.org/10.1145/3460231.3474236 [5] Alexander Dallmann, Daniel Zoller, and Andreas Hotho. 2021. A case study on sampling strategies for evaluating neural sequential item recommendation models. In Proceedings of the 15th ACM Conference on Recommender Systems . 505-514. [6] Maurizio Ferrari Dacrema, Paolo Cremonesi, and Dietmar Jannach. 2019. Are we really making much progress? A worrying analysis of recent neural recommendation approaches. In Proceedings of the 13th ACM conference on recommender systems . 101-109. [7] Maurizio Ferrari Dacrema, Paolo Cremonesi, Dietmar Jannach, et al. 2020. Methodological issues in recommender systems research. In IJCAI , Vol. 2021. International Joint Conferences on Artificial Intelligence, 4706-4710. [8] João Gama, Indr˙ e Žliobait˙ e, Albert Bifet, Mykola Pechenizkiy, and Abdelhamid Bouchachia. 2014. A survey on concept drift adaptation. ACM computing surveys (CSUR) 46, 4 (2014), 1-37. [9] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [10] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. 9 RecSys '23, September 18-22, 2023, Singapore, Singapore Hidasi and Czapp [11] Xiangnan He, Hanwang Zhang, Min-Yen Kan, and Tat-Seng Chua. 2016. Fast matrix factorization for online recommendation with implicit feedback. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval . 549-558. [12] Balázs Hidasi and Alexandros Karatzoglou. 2018. Recurrent neural networks with top-k gains for session-based recommendations. In Proceedings of the 27th ACM international conference on information and knowledge management . 843-852. Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. [13] arXiv preprint arXiv:1511.06939 (2015). [14] Balázs Hidasi and Domonkos Tikk. 2012. Fast ALS-based tensor factorization for context-aware recommendation from implicit feedback. In Machine Learning and Knowledge Discovery in Databases: European Conference, ECML PKDD 2012, Bristol, UK, September 24-28, 2012. Proceedings, Part II 23 . Springer, 67-82. [15] Yifan Hu, Yehuda Koren, and Chris Volinsky. 2008. Collaborative filtering for implicit feedback datasets. In 2008 Eighth IEEE international conference on data mining . Ieee, 263-272. [16] Jin Huang, Wayne Xin Zhao, Hongjian Dou, Ji-Rong Wen, and Edward Y Chang. 2018. Improving sequential recommendation with knowledgeenhanced memory networks. In The 41st international ACM SIGIR conference on research & development in information retrieval . 505-514. [17] Neil Hurley and Mi Zhang. 2011. Novelty and diversity in top-n recommendation-analysis and evaluation. ACM Transactions on Internet Technology (TOIT) 10, 4 (2011), 1-30. [18] Olivier Jeunen. 2023. A Common Misassumption in Online Experiments with Machine Learning Models. arXiv preprint arXiv:2304.10900 (2023). [19] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [20] Walid Krichene and Steffen Rendle. 2020. On sampled metrics for item recommendation. In Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining . 1748-1757. [21] Jiacheng Li, Yujie Wang, and Julian McAuley. 2020. Time interval aware self-attention for sequential recommendation. In Proceedings of the 13th international conference on web search and data mining . 322-330. [22] Malte Ludewig and Dietmar Jannach. 2018. Evaluation of session-based recommendation algorithms. User Modeling and User-Adapted Interaction 28 (2018), 331-390. [23] James McInerney, Ehtsham Elahi, Justin Basilico, Yves Raimond, and Tony Jebara. 2021. Accordion: a trainable simulator for long-term interactive systems. In Proceedings of the 15th ACM Conference on Recommender Systems . 102-113. [24] Aleksandr Petrov and Craig Macdonald. 2022. A Systematic Review and Replicability Study of BERT4Rec for Sequential Recommendation. In Proceedings of the 16th ACM Conference on Recommender Systems . 436-447. [25] István Pilászy, Dávid Zibriczky, and Domonkos Tikk. 2010. Fast als-based matrix factorization for explicit and implicit feedback datasets. In Proceedings of the fourth ACM conference on Recommender systems . 71-78. [26] Ahmed Rashed, Shereen Elsayed, and Lars Schmidt-Thieme. 2022. Context and Attribute-Aware Sequential Recommendation via Cross-Attention. In Proceedings of the 16th ACM Conference on Recommender Systems . 71-80. [27] Steffen Rendle, Walid Krichene, Li Zhang, and Yehuda Koren. 2022. Revisiting the performance of ials on item recommendation benchmarks. In Proceedings of the 16th ACM Conference on Recommender Systems . 427-435. [28] Borja Requena, Giovanni Cassani, Jacopo Tagliabue, Ciro Greco, and Lucas Lacasa. 2020. Shopper intent prediction from clickstream e-commerce data with minimal browsing information. Scientific reports 10, 1 (2020), 1-23. [29] Marco Rossetti, Fabio Stella, and Markus Zanker. 2016. Contrasting Offline and Online Results When Evaluating Recommendation Algorithms. In Proceedings of the 10th ACM Conference on Recommender Systems (Boston, Massachusetts, USA) (RecSys '16) . Association for Computing Machinery, New York, NY, USA, 31-34. https://doi.org/10.1145/2959100.2959176 [30] Yuta Saito and Thorsten Joachims. 2021. Counterfactual learning and evaluation for recommender systems: Foundations, implementations, and recent advances. In Proceedings of the 15th ACM Conference on Recommender Systems . 828-830. [31] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [32] Yong Kiam Tan, Xinxing Xu, and Yong Liu. 2016. Improved recurrent neural networks for session-based recommendations. In Proceedings of the 1st workshop on deep learning for recommender systems . 17-22. [33] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In Proceedings of the eleventh ACM international conference on web search and data mining . 565-573. [34] Alexey Tsymbal. 2004. The problem of concept drift: definitions and related work. Computer Science Department, Trinity College Dublin 106, 2 (2004), 58. [35] Saúl Vargas and Pablo Castells. 2011. Rank and relevance in novelty and diversity metrics for recommender systems. In Proceedings of the fifth ACM conference on Recommender systems . 109-116. [36] Mengting Wan and Julian McAuley. 2018. Item recommendation on monotonic behavior chains. In Proceedings of the 12th ACM conference on recommender systems . 86-94. [37] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural graph collaborative filtering. In Proceedings of the 42nd international ACM SIGIR conference on Research and development in Information Retrieval . 165-174. 10 Widespread Flaws in Offline Evaluation of Recommender Systems RecSys '23, September 18-22, 2023, Singapore, Singapore [38] Eva Zangerle, Christine Bauer, and Alan Said. 2022. Second Workshop: Perspectives on the Evaluation of Recommender Systems (PERSPECTIVES 2022). In Proceedings of the 16th ACM Conference on Recommender Systems (Seattle, WA, USA) (RecSys '22) . Association for Computing Machinery, New York, NY, USA, 652-653. https://doi.org/10.1145/3523227.3547408 [39] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization. In Proceedings of the 29th ACM international conference on information & knowledge management . 1893-1902. 11",
   "keywords_parsed": [
-    "None"
+    "recommender systems",
+    "offline evaluation",
+    "evaluation setups",
+    "evaluation flaws"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Precision-oriented evaluation of recommender systems: an algorithmic comparison"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Aspect Re-distribution for Learning Better Item Embeddings in Sequential Recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "On target item sampling in offline recommender system evaluation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Values of User Exploration in Recommender Systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "A case study on sampling strategies for evaluating neural sequential item recommendation models"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Are we really making much progress? A worrying analysis of recent neural recommendation approaches"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Methodological issues in recommender systems research"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A survey on concept drift adaptation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Fast matrix factorization for online recommendation with implicit feedback"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Recurrent neural networks with top-k gains for session-based recommendations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Fast ALS-based tensor factorization for context-aware recommendation from implicit feedback"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Collaborative filtering for implicit feedback datasets"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Improving sequential recommendation with knowledgeenhanced memory networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Novelty and diversity in top-n recommendation-analysis and evaluation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "A Common Misassumption in Online Experiments with Machine Learning Models"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "On sampled metrics for item recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Time interval aware self-attention for sequential recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Evaluation of session-based recommendation algorithms"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Accordion: a trainable simulator for long-term interactive systems"
+    },
+    {
+      "ref_id": "b24",
+      "title": "A Systematic Review and Replicability Study of BERT4Rec for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Fast als-based matrix factorization for explicit and implicit feedback datasets"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Context and Attribute-Aware Sequential Recommendation via Cross-Attention"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Revisiting the performance of ials on item recommendation benchmarks"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Shopper intent prediction from clickstream e-commerce data with minimal browsing information"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Contrasting Offline and Online Results When Evaluating Recommendation Algorithms"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Counterfactual learning and evaluation for recommender systems: Foundations, implementations, and recent advances"
+    },
+    {
+      "ref_id": "b31",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Improved recurrent neural networks for session-based recommendations"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b34",
+      "title": "The problem of concept drift: definitions and related work"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Rank and relevance in novelty and diversity metrics for recommender systems"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Item recommendation on monotonic behavior chains"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Second Workshop: Perspectives on the Evaluation of Recommender Systems (PERSPECTIVES 2022)"
+    },
+    {
+      "ref_id": "b39",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    }
   ]
 }

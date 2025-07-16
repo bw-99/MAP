@@ -31,9 +31,327 @@
   "REFERENCES": "[1] Stack  Exchange,  'All  Sites  -  Stack  Exchange.'  https://stackexchange.com,  2019. Archived from the original on 22 November 2019. Retrieved 26 March 2023. [2] Stack  Overflow,  'Duplicate-Detection.'  https://stackoverflowteams.help/en/ articles/8688772-close-and-reopen-questions, 2024.  Taken  from the  official  website of Stack Overflow. [3] L. Wang, L. Zhang, and J. Jiang, 'Duplicate question detection with deep learning in stack overflow,' IEEE Access , vol. 8, pp. 25964-25975, 2020. [4] Y. Zhang, D. Lo, X. Xia, and J.-L. Sun, 'Multi-factor duplicate question detection in stack overflow,' Journal of Computer Science and Technology ,  vol. 30, pp. 981-997, 2015. [5] R. F. Silva, K. Paixão, and M. de Almeida Maia, 'Duplicate question detection in stack overflow: A reproducibility study,' in 2018 IEEE 25th international conference on software analysis, evolution and reengineering (SANER) , pp. 572-581, IEEE, 2018. [6] M. Ahasanuzzaman, M. Asaduzzaman, C. K. Roy, and K. A. Schneider, 'Mining duplicate questions in stack overflow,' in Proceedings of the 13th International Conference on Mining Software Repositories , MSR '16, (New York, NY, USA), p. 402-412, Association for Computing Machinery, 2016. [7] M. Nayebi, 'Eye of the mind: Image processing for social coding,' in Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering: New Ideas and Emerging Results , pp. 49-52, 2020. [8] M. Nayebi and B. Adams, 'Image-based communication on social coding platforms,' Journal of Software: Evolution and Process , p. e2609, 2023. [9] D. Wang, T. Xiao, C. Treude, R. G. Kula, H. Hata, and Y. Kamei, 'Understanding the role of images on stack overflow,' arXiv preprint arXiv:2303.15684 , 2023. [10] D. Wang, T. Xiao, C. Treude, R. G. Kula, H. Hata, and Y. Kamei, 'Understanding the role of images on stack overflow,' in 2023 IEEE/ACM 20th International Conference on Mining Software Repositories (MSR) , pp. 377-388, 2023. [11] S. Mori, H. Nishida, and H. Yamada, Optical character recognition .  John Wiley & Sons, Inc., 1999. [12] A. Chaudhuri, K. Mandaviya, P. Badelia, S. K Ghosh, A. Chaudhuri, K. Mandaviya, P. Badelia, and S. K. Ghosh, Optical character recognition systems .  Springer, 2017. [13] J. Cho, J. Lu, D. Schwenk, H. Hajishirzi, and A. Kembhavi, 'X-lxmert: Paint, caption and answer questions with multi-modal transformers,' arXiv preprint arXiv:2009.11278 , 2020. [14] Z. Liao, W. Li, Y. Zhang, and S. Yu, 'Detecting duplicate questions in stack overflow via semantic and relevance approaches,' in 2021 28th Asia-Pacific Software Engineering Conference (APSEC) , pp. 111-119, IEEE, 2021. [15] A. T. Ying, 'Mining challenge 2015: Comparing and combining different information sources on the stack overflow data set,' in The 12th working conference on mining software repositories , 2015. [16] U. A. Koana, Q. H. Le, S. Rahman, C. Carlson, F. Chew, and M. Nayebi, 'Examining ownership models in software teams: A systematic literature review and a replication study,' arXiv preprint arXiv:2405.15665 , 2024. [17] U. A. Koana, F. Chew, C. Carlson, and M. Nayebi, 'Ownership in the hands of accountability at brightsquid: A case study and a developer survey,' in Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering , pp. 2008-2019, 2023. [18] S. Rahman, F. Ahmed, and M. Nayebi, 'Mining reddit data to elicit students' requirements during covid-19 pandemic,' in 2023 IEEE 31st International Requirements Engineering Conference Workshops (REW) , pp. 76-84, IEEE, 2023. [19] M. Nayebi, K. Kuznetsov, A. Zeller, and G. Ruhe, 'User driven functionality deletion for mobile apps,' in 2023 IEEE 31st International Requirements Engineering Conference (RE) , pp. 6-16, IEEE, 2023. [20] S.  G. Saroar, W. Ahmed, and M. Nayebi, 'Github marketplace for practitioners and researchers to date: A systematic analysis of the knowledge mobilization gap in open source software automation,' arXiv preprint arXiv:2208.00332 , 2022. [21] J.  Perrie, J. Xie, M. Nayebi, M. Fokaefs, K. Lyons, and E. Stroulia, 'City on the river: visualizing temporal collaboration,' in Proceedings of the 29th Annual International Conference on Computer Science and Software Engineering , pp. 82-91, 2019. [22] A. Hemmati, C. Carlson, M. Nayebi, G. Ruhe, and C. Saunders, 'Analysis of software service usage in healthcare communication services,' in 2017 IEEE International Conference on Software Quality, Reliability and Security Companion (QRS-C) , pp. 565-566, IEEE, 2017. [23] S. D. Al Alam, M. Nayebi, D. Pfahl, and G. Ruhe, 'A two-staged survey on release readiness,' in Proceedings of the 21st International Conference on Evaluation and Assessment in Software Engineering , pp. 374-383, 2017. [24] M. Nayebi, 'Data driven requirements engineering: Implications for the community,' in 2018 IEEE 26th International Requirements Engineering Conference (RE) , pp. 439-441, IEEE, 2018. [25] M. Nayebi, Analytical Release Management for Mobile Apps .  PhD thesis, University of Calgary, 2018. [26] A. Dekhtyar, J. H. Hayes, I. Hadar, E. Combs, A. Ferrari, S. Gregory, J. Horkoff, M. Levy, M. Nayebi, B. Paech, et al. , 'Requirements engineering (re) for social good: Re cares [requirements],' IEEE Software , vol. 36, no. 1, pp. 86-94, 2019. [27] M. Nayebi and G. Ruhe, 'An open innovation approach in support of product release  decisions,' in Proceedings of the 7th International Workshop on Cooperative and Human Aspects of Software Engineering , pp. 64-71, 2014. [28] M. Nayebi, G. Ruhe, R. C. Mota, and M. Mufti, 'Analytics for software project management-where are we and where do we go?,' in 2015 30th IEEE/ACM International Conference on Automated Software Engineering Workshop (ASEW) , pp. 18-21, IEEE, 2015. [29] W. Maalej, M. Nayebi, T. Johann, and G. Ruhe, 'Toward data-driven requirements engineering,' IEEE software , vol. 33, no. 1, pp. 48-54, 2015. [30] G. Ruhe and M. Nayebi, 'What counts is decisions, not numbers-toward an analytics design sheet,' in Perspectives on Data Science for Software Engineering , pp. 111-114, Elsevier, 2016. [31] M. Nayebi, G. Ruhe, and T. Zimmermann, 'Mining treatment-outcome constructs from sequential software engineering data,' IEEE Transactions on Software Engineering , vol. 47, no. 2, pp. 393-411, 2019. [32] M. Nayebi, H. Farrahi, A. Lee, H. Cho, and G. Ruhe, 'More insight from being more focused: analysis of clustered market apps,' in Proceedings of the International Workshop on App Market Analytics , pp. 30-36, 2016. [33] Y. Hashemi, M. Nayebi, and G. Antoniol, 'Documentation of machine learning software,' in 2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER) , pp. 666-667, IEEE, 2020. [34] G. Ruhe, M. Nayebi, and C. Ebert, 'The vision: Requirements engineering in society,' in 2017 IEEE 25th International Requirements Engineering Conference (RE) , pp. 478-479, IEEE, 2017. [35] M. Nayebi, K. Kuznetsov, P. Chen, A. Zeller, and G. Ruhe, 'Anatomy of functionality deletion: an exploratory study on mobile apps,' in Proceedings of the 15th International Conference on Mining Software Repositories , pp. 243-253, 2018. [36] M. Nayebi, H. Cho, and G. Ruhe, 'App store mining is not enough for app improvement,' Empirical Software Engineering , vol. 23, pp. 2764-2794, 2018. [37] M. Nayebi, M. Marbouti, R. Quapp, F. Maurer, and G. Ruhe, 'Crowdsourced exploration of mobile app features: A case study of the fort mcmurray wildfire,' in 2017 IEEE/ACM 39th International Conference on Software Engineering: Software Engineering in Society Track (ICSE-SEIS) , pp. 57-66, IEEE, 2017. [38] M. Nayebi and G. Ruhe, 'Analytical product release planning,' in The art and science of analyzing software data , pp. 555-589, Elsevier, 2015. [39] M. Nayebi, H. Cho, H. Farrahi, and G. Ruhe, 'App store mining is not enough,' in 2017 IEEE/ACM 39th International Conference on Software Engineering Companion (ICSE-C) , pp. 152-154, IEEE, 2017. [40] W. Maalej, M. Nayebi, and G. Ruhe, 'Data-driven requirements engineering-an update,' in 2019 IEEE/ACM 41st International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP) , pp. 289-290, IEEE, 2019. [41] M. Nayebi, Y. Cai, R. Kazman, G. Ruhe, Q. Feng, C. Carlson, and F. Chew, 'A longitudinal study of identifying and paying down architecture debt,' in 2019 IEEE/ACM 41st International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP) , pp. 171-180, IEEE, 2019. [42] I. Hargreaves, D. Roth, M. R. Karim, M. Nayebi, and G. Ruhe, 'Effective customer relationship management at atb financial: a case study on industry-academia collaboration in data analytics,' Highlighting the importance of big data management and analysis for various applications , pp. 45-59, 2018. [43] M. Nayebi and G. Ruhe, 'Optimized functionality for super mobile apps,' in 2017 IEEE 25th international requirements engineering conference (RE) , pp. 388-393, IEEE, 2017. [44] M. Nayebi and G. Ruhe, 'Asymmetric release planning: Compromising satisfaction against dissatisfaction,' IEEE Transactions on Software Engineering , vol. 45, Conference'17, July 2017, Washington, DC, USA Faiz Ahmed, Suprakash Datta, and Maleknaz Nayebi no. 9, pp. 839-857, 2018. [45] M. Nayebi, L. Dicke, R. Ittyipe, C. Carlson, and G. Ruhe, 'Essmart way to manage customer requests,' Empirical Software Engineering , vol. 24, pp. 3755-3789, 2019. [46] M. Nayebi, S. J. Kabeer, G. Ruhe, C. Carlson, and F. Chew, 'Hybrid labels are the new measure!,' IEEE Software , vol. 35, no. 1, pp. 54-57, 2017. [47] M. Nayebi and G. Ruhe, 'Analytical open innovation for value-optimized service portfolio  planning,' in Software Business. Towards Continuous Value Delivery: 5th International Conference, ICSOB 2014, Paphos, Cyprus, June 16-18, 2014. Proceedings 5 , pp. 273-288, Springer, 2014. [48] S. J. Kabeer, M. Nayebi, G. Ruhe, C. Carlson, and F. Chew, 'Predicting the vector impact of change-an industrial case study at brightsquid,' in 2017 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM) , pp. 131-140, IEEE, 2017. [49] M. Nayebi and G. Ruhe, 'Trade-off service portfolio planning-a case study on mining the android app market,' tech. rep., PeerJ PrePrints, 2015. [50] P. Willett, 'The porter stemming algorithm: then and now,' Program , vol. 40, no. 3, pp. 219-223, 2006. [51] H. Jelodar, Y. Wang, C. Yuan, X. Feng, X. Jiang, Y. Li, and L. Zhao, 'Latent dirichlet allocation (lda) and topic modeling: models, applications, a survey,' Multimedia Tools and Applications , vol. 78, pp. 15169-15211, 2019. [52] R.  Raina, Y. Shen, A. Mccallum, and A. Ng, 'Classification with hybrid generative/discriminative models,' Advances in neural information processing systems , vol. 16, 2003. [53] Stack  Exchange,  'All  Sites  -  Stack  Exchange.'  https://data.stackexchange.com/ stackoverflow/queries, 2023.  Taken from the official website of Stack Exchange. [54] M. P. LaValley, 'Logistic regression,' Circulation , vol. 117, no. 18, pp. 2395-2399, 2008. [55] M. Geetha, R. Pooja, J. Swetha, N. Nivedha, and T. Daniya, 'Implementation of text recognition and text extraction on formatted bills using deep learning,' Int J Contrl Automat , vol. 13, no. 2, pp. 646-651, 2020. [56] J.  Memon, M. Sami, R. A. Khan, and M. Uddin, 'Handwritten optical character recognition  (ocr):  A  comprehensive  systematic  literature  review  (slr),' IEEE Access , vol. 8, pp. 142642-142668, 2020. [57] Nanonets, 'Nanonets-OCRvsTesseract.' https://nanonets.com/blog/ocr-withtesseract/, 2023. Taken from the official website of Nanonets. [58] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin, 'Attention is all you need,' Advances in neural information processing systems , vol. 30, 2017. [59] K. He, X. Zhang, S. Ren, and J. Sun, 'Deep residual learning for image recognition,' in Proceedings of the IEEE conference on computer vision and pattern recognition , pp. 770-778, 2016. [60] B. A. Kitchenham, S. L. Pfleeger, L. M. Pickard, P. W. Jones, D. C. Hoaglin, K. El Emam, and J. Rosenberg, 'Preliminary guidelines for empirical research in software engineering,' IEEE Transactions on software engineering , vol. 28, no. 8, pp. 721-734, 2002. [61] A. Mlinarić, M. Horvat, and V. Šupak Smolčić, 'Dealing with the positive pub -lication bias: Why you should really publish your negative results,' Biochemia medica , vol. 27, no. 3, pp. 447-452, 2017. [62] D. Fanelli, 'Negative results are disappearing from most disciplines and countries,' Scientometrics , vol. 90, no. 3, pp. 891-904, 2012. [63] T. Menzies, Y. Yang, G. Mathew, B. Boehm, and J. Hihn, 'Negative results for software effort estimation,' Empirical Software Engineering , vol. 22, pp. 2658-2683, 2017. [64] C. Sun, D. Lo, X. Wang, J. Jiang, and S.-C. Khoo, 'A discriminative model approach for accurate duplicate bug report retrieval,' in Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering-Volume 1 , pp. 45-54, 2010. [65] N. Bettenburg, R. Premraj, T. Zimmermann, and S. Kim, 'Duplicate bug reports considered harmful.. .  really?,' in 2008 IEEE International Conference on Software Maintenance , pp. 337-345, IEEE, 2008. [66] Y. Tian, C. Sun, and D. Lo, 'Improved duplicate bug report identification,' in 2012 16th European conference on software maintenance and reengineering , pp. 385-390, IEEE, 2012. [67] T. Zhang, H. Jiang, X. Luo, and A. T. Chan, 'A Literature Review of Research in Bug Resolution: Tasks, Challenges and Future Directions,' The Computer Journal , vol. 59, pp. 741-773, 05 2016. [68] X. Wang, L. Zhang, T. Xie, J. Anvik, and J. Sun, 'An approach to detecting duplicate bug reports using natural language and execution information,' in Proceedings of the 30th international conference on Software engineering , pp. 461-470, 2008. [69] A. Alipour, A. Hindle, and E. Stroulia, 'A contextual approach towards more accurate duplicate bug report detection,' in 2013 10th Working Conference on Mining Software Repositories (MSR) , pp. 183-192, IEEE, 2013. [70] A. Sureka and P. Jalote, 'Detecting duplicate bug report using character n-grambased features,' in 2010 Asia Pacific software engineering conference , pp. 366-374, IEEE, 2010. [71] M. Ellmann, 'Same-same but different: on understanding duplicates in stack overflow,' Informatik Spektrum , vol. 42, no. 4, pp. 266-286, 2019. [72] D. Abric, O. E. Clark, M. Caminiti, K. Gallaba, and S. McIntosh, 'Can duplicate questions on stack overflow benefit the software development community?,' in 2019 IEEE/ACM 16th International Conference on Mining Software Repositories (MSR) , pp. 230-234, IEEE, 2019. [73] N. Semenenko, M. Dumas, and T. Saar, 'Browserbite: Accurate cross-browser testing via machine learning over image features,' in 2013 IEEE International Conference on Software Maintenance , pp. 528-531, 2013. [74] N. Cooper, C. Bernal-Cárdenas, O. Chaparro, K. Moran, and D. Poshyvanyk, 'It takes two to tango: Combining visual and textual information for detecting duplicate video-based bug reports,' in 2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE) , pp. 957-969, IEEE, 2021. [75] T. Ho-Quang, M. R. Chaudron, I. Samúelsson, J. Hjaltason, B. Karasneh, and H. Osman, 'Automatic classification of uml class diagrams from images,' in 2014 21st Asia-Pacific Software Engineering Conference , vol. 1, pp. 399-406, 2014. [76] F. Calefato, F. Lanubile, and N. Novielli, 'How to ask for technical help? evidencebased guidelines for writing questions on stack overflow,' Information and software technology , vol. 94, pp. 186-207, 2018. [77] J. Wu, S. Wang, S. Shen, Y.-H. Peng, J. Nichols, and J. P. Bigham, 'Webui: A dataset for enhancing visual ui understanding with web semantics,' in Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems , pp. 1-14, 2023. [78] S. Feng and C. Chen, 'Gifdroid: Automated replay of visual bug reports for android apps,' in Proceedings of the 44th International Conference on Software Engineering , pp. 1045-1057, 2022. [79] M. Xie, Z. Xing, S. Feng, X. Xu, L. Zhu, and C. Chen, 'Psychologically-inspired, unsupervised inference of perceptual groups of gui widgets from gui images,' in Proceedings of the 30th ACM joint European software engineering conference and symposium on the foundations of software engineering , pp. 332-343, 2022.",
   "keywords_parsed": [
     "Stack Overflow",
-    " Duplicate Questions",
-    " Machine Learning",
-    " Image Analysis",
-    " Software Engineering."
+    "Duplicate Questions",
+    "Machine Learning",
+    "Image Analysis",
+    "Software Engineering"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "All Sites - Stack Exchange"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Duplicate-Detection"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Duplicate question detection with deep learning in stack overflow"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Multi-factor duplicate question detection in stack overflow"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Duplicate question detection in stack overflow: A reproducibility study"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Mining duplicate questions in stack overflow"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Eye of the mind: Image processing for social coding"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Image-based communication on social coding platforms"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Understanding the role of images on stack overflow"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Understanding the role of images on stack overflow"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Optical character recognition"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Optical character recognition systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "X-lxmert: Paint, caption and answer questions with multi-modal transformers"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Detecting duplicate questions in stack overflow via semantic and relevance approaches"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Mining challenge 2015: Comparing and combining different information sources on the stack overflow data set"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Examining ownership models in software teams: A systematic literature review and a replication study"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Ownership in the hands of accountability at brightsquid: A case study and a developer survey"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Mining reddit data to elicit students' requirements during covid-19 pandemic"
+    },
+    {
+      "ref_id": "b19",
+      "title": "User driven functionality deletion for mobile apps"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Github marketplace for practitioners and researchers to date: A systematic analysis of the knowledge mobilization gap in open source software automation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "City on the river: visualizing temporal collaboration"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Analysis of software service usage in healthcare communication services"
+    },
+    {
+      "ref_id": "b23",
+      "title": "A two-staged survey on release readiness"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Data driven requirements engineering: Implications for the community"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Analytical Release Management for Mobile Apps"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Requirements engineering (re) for social good: Re cares [requirements]"
+    },
+    {
+      "ref_id": "b27",
+      "title": "An open innovation approach in support of product release decisions"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Analytics for software project management-where are we and where do we go?"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Toward data-driven requirements engineering"
+    },
+    {
+      "ref_id": "b30",
+      "title": "What counts is decisions, not numbers-toward an analytics design sheet"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Mining treatment-outcome constructs from sequential software engineering data"
+    },
+    {
+      "ref_id": "b32",
+      "title": "More insight from being more focused: analysis of clustered market apps"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Documentation of machine learning software"
+    },
+    {
+      "ref_id": "b34",
+      "title": "The vision: Requirements engineering in society"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Anatomy of functionality deletion: an exploratory study on mobile apps"
+    },
+    {
+      "ref_id": "b36",
+      "title": "App store mining is not enough for app improvement"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Crowdsourced exploration of mobile app features: A case study of the fort mcmurray wildfire"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Analytical product release planning"
+    },
+    {
+      "ref_id": "b39",
+      "title": "App store mining is not enough"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Data-driven requirements engineering-an update"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A longitudinal study of identifying and paying down architecture debt"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Effective customer relationship management at atb financial: a case study on industry-academia collaboration in data analytics"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Optimized functionality for super mobile apps"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Asymmetric release planning: Compromising satisfaction against dissatisfaction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Essmart way to manage customer requests"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Hybrid labels are the new measure!"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Analytical open innovation for value-optimized service portfolio planning"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Predicting the vector impact of change-an industrial case study at brightsquid"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Trade-off service portfolio planning-a case study on mining the android app market"
+    },
+    {
+      "ref_id": "b50",
+      "title": "The porter stemming algorithm: then and now"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Latent dirichlet allocation (lda) and topic modeling: models, applications, a survey"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Classification with hybrid generative/discriminative models"
+    },
+    {
+      "ref_id": "b53",
+      "title": "All Sites - Stack Exchange"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Logistic regression"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Implementation of text recognition and text extraction on formatted bills using deep learning"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Handwritten optical character recognition (ocr): A comprehensive systematic literature review (slr)"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Nanonets-OCRvsTesseract"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Preliminary guidelines for empirical research in software engineering"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Dealing with the positive publication bias: Why you should really publish your negative results"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Negative results are disappearing from most disciplines and countries"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Negative results for software effort estimation"
+    },
+    {
+      "ref_id": "b64",
+      "title": "A discriminative model approach for accurate duplicate bug report retrieval"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Duplicate bug reports considered harmful.. . really?"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Improved duplicate bug report identification"
+    },
+    {
+      "ref_id": "b67",
+      "title": "A Literature Review of Research in Bug Resolution: Tasks, Challenges and Future Directions"
+    },
+    {
+      "ref_id": "b68",
+      "title": "An approach to detecting duplicate bug reports using natural language and execution information"
+    },
+    {
+      "ref_id": "b69",
+      "title": "A contextual approach towards more accurate duplicate bug report detection"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Detecting duplicate bug report using character n-grambased features"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Same-same but different: on understanding duplicates in stack overflow"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Can duplicate questions on stack overflow benefit the software development community?"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Browserbite: Accurate cross-browser testing via machine learning over image features"
+    },
+    {
+      "ref_id": "b74",
+      "title": "It takes two to tango: Combining visual and textual information for detecting duplicate video-based bug reports"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Automatic classification of uml class diagrams from images"
+    },
+    {
+      "ref_id": "b76",
+      "title": "How to ask for technical help? evidencebased guidelines for writing questions on stack overflow"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Webui: A dataset for enhancing visual ui understanding with web semantics"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Gifdroid: Automated replay of visual bug reports for android apps"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Psychologically-inspired, unsupervised inference of perceptual groups of gui widgets from gui images"
+    }
   ]
 }

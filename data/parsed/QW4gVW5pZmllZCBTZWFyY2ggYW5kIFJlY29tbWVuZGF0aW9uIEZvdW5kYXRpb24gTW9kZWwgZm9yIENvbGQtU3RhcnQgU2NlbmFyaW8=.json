@@ -23,27 +23,117 @@
   "REFERENCES": "[1] Qingyao Ai, Yongfeng Zhang, Keping Bi, Xu Chen, and W. Bruce Croft. 2017. Learning a Hierarchical Embedding Model for Personalized Product Search. In Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval (Shinjuku, Tokyo, Japan) (SIGIR '17) . Association for Computing Machinery, New York, NY, USA, 645-654. https: //doi.org/10.1145/3077136.3080813 [2] Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel M. Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei. 2020. Language Models are Few-Shot Learners. In Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual , Hugo Larochelle, Marc'Aurelio Ranzato, Raia Hadsell, Maria-Florina Balcan, and Hsuan-Tien Lin (Eds.). [3] Rich Caruana. 1997. Multitask Learning. Mach. Learn. 28, 1 (1997), 41-75. [4] Zeyu Cui, Jianxin Ma, Chang Zhou, Jingren Zhou, and Hongxia Yang. 2022. M6Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems. CoRR abs/2205.08084 (2022). [5] Zeyu Cui, Jianxin Ma, Chang Zhou, Jingren Zhou, and Hongxia Yang. 2022. M6Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems. arXiv:2205.08084 [cs.IR] [6] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT 2019, Minneapolis, MN, USA, June 2-7, 2019, Volume 1 (Long and Short Papers) , Jill Burstein, Christy Doran, and Thamar Solorio (Eds.). Association for Computational Linguistics, 4171-4186. [7] Xichen Ding, Jie Tang, Tracy Liu, Cheng Xu, Yaping Zhang, Feng Shi, Qixia Jiang, and Dan Shen. 2019. Infer Implicit Contexts in Real-Time Online-toOffline Recommendation. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery Data Mining (Anchorage, AK, USA) (KDD '19) . Association for Computing Machinery, New York, NY, USA, 2336-2346. https://doi.org/10.1145/3292500.3330716 [8] Zhengxiao Du, Yujie Qian, Xiao Liu, Ming Ding, Jiezhong Qiu, Zhilin Yang, and Jie Tang. 2022. GLM: General Language Model Pretraining with Autoregressive Blank Infilling. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . 320-335. [9] Yaroslav Ganin, Evgeniya Ustinova, Hana Ajakan, Pascal Germain, Hugo Larochelle, François Laviolette, Mario Marchand, and Victor Lempitsky. 2016. Domain-Adversarial Training of Neural Networks. J. Mach. Learn. Res. 17, 1 (jan 2016), 2096-2030. [10] Arthur Gretton, Karsten M. Borgwardt, Malte J. Rasch, Bernhard Schölkopf, and Alexander Smola. 2012. A Kernel Two-Sample Test. J. Mach. Learn. Res. 13, null (mar 2012), 723-773. [11] Zhaoxin Huan, Ang Li, Xiaolu Zhang, Xu Min, Jieyu Yang, Yong He, and Jun Zhou. 2023. SAMD: An Industrial Framework for Heterogeneous MultiScenario Recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Long Beach, CA, USA) (KDD '23) . Association for Computing Machinery, New York, NY, USA, 4175-4184. https://doi.org/10.1145/3580305.3599955 [12] Weize Kong, Swaraj Khadanga, Cheng Li, Shaleen Kumar Gupta, Mingyang Zhang, Wensong Xu, and Michael Bendersky. 2022. Multi-Aspect Dense Retrieval. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Washington DC, USA) (KDD '22) . Association for Computing Machinery, New York, NY, USA, 3178-3186. https://doi.org/10.1145/3534678. 3539137 [13] Ningning Li, Qunwei Li, Xichen Ding, Shaohu Chen, and Wenliang Zhong. 2022. Prototypical Contrastive Learning and Adaptive Interest Selection for Candidate Generation in Recommendations. In Proceedings of the 31st ACM International Conference on Information and Knowledge Management (Atlanta, GA, USA) (CIKM '22) . Association for Computing Machinery, New York, NY, USA, 4183-4187. https://doi.org/10.1145/3511808.3557674 [14] Jiongnan Liu, Zhicheng Dou, Qiannan Zhu, and Ji-Rong Wen. 2022. A CategoryAware Multi-Interest Model for Personalized Product Search. In Proceedings of the ACM Web Conference 2022 (Virtual Event, Lyon, France) (WWW '22) . Association for Computing Machinery, New York, NY, USA, 360-368. https: //doi.org/10.1145/3485447.3511964 [15] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H. Chi. 2018. Modeling Task Relationships in Multi-task Learning with Multi-gate Mixtureof-Experts. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2018, London, UK, August 19-23, 2018 . ACM, 1930-1939. [16] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, and Xiaoqiang Zhu. 2021. One Model to Serve All: Star Topology Adaptive Recommender for MultiDomain CTR Prediction. In CIKM '21: The 30th ACM International Conference on Information and Knowledge Management, Virtual Event, Queensland, Australia, November 1 - 5, 2021 , Gianluca Demartini, Guido Zuccon, J. Shane Culpepper, Zi Huang, and Hanghang Tong (Eds.). ACM, 4104-4113. [17] Zihua Si, Xueran Han, Xiao Zhang, Jun Xu, Yue Yin, Yang Song, and Ji-Rong Wen. 2022. A Model-Agnostic Causal Learning Framework for Recommendation Using Search Data. In Proceedings of the ACM Web Conference 2022 (Virtual Event, Lyon, France) (WWW '22) . Association for Computing Machinery, New York, NY, USA, 224-233. https://doi.org/10.1145/3485447.3511951 [18] Zihua Si, Zhongxiang Sun, Xiao Zhang, Jun Xu, Xiaoxue Zang, Yang Song, Kun Gai, and Ji-Rong Wen. 2023. When Search Meets Recommendation: Learning Disentangled Search Representation for Recommendation. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (Taipei, Taiwan) (SIGIR '23) . Association for Computing Machinery, New York, NY, USA, 1313-1323. https://doi.org/10.1145/3539618.3591786 [19] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations. In RecSys 2020: Fourteenth ACM Conference on Recommender Systems, Virtual Event, Brazil, September 22-26, 2020 . ACM, 269-278. [20] Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, Aurélien Rodriguez, Armand Joulin, Edouard Grave, and Guillaume Lample. 2023. LLaMA: Open and Efficient Foundation Language Models. CoRR abs/2302.13971 (2023). [21] Jun Xu, Xiangnan He, and Hang Li. 2018. Deep Learning for Matching in Search and Recommendation. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval (Ann Arbor, MI, USA) (SIGIR '18) . Association for Computing Machinery, New York, NY, USA, 1365-1368. https://doi.org/10.1145/3209978.3210181 [22] Jing Yao, Zhicheng Dou, Ruobing Xie, Yanxiong Lu, Zhiping Wang, and Ji-Rong Wen. 2021. USER: A Unified Information Search and Recommendation Model Based on Integrated Behavior Sequence. In Proceedings of the 30th ACM International Conference on Information and Knowledge Management (Virtual Event, Queensland, Australia) (CIKM '21) . Association for Computing Machinery, New York, NY, USA, 2373-2382. https://doi.org/10.1145/3459637.3482489 [23] Hamed Zamani and W. Bruce Croft. 2018. Joint Modeling and Optimization of Search and Recommendation. In Proceedings of the First Biennial Conference on Design of Experimental Search & Information Retrieval Systems, Bertinoro, Italy, August 28-31, 2018 (CEUR Workshop Proceedings, Vol. 2167) , Omar Alonso and Gianmaria Silvello (Eds.). CEUR-WS.org, 36-41. [24] Hamed Zamani and W. Bruce Croft. 2020. Learning a Joint Search and Recommendation Model from User-Item Interactions. In WSDM '20: The Thirteenth ACM International Conference on Web Search and Data Mining, Houston, TX, USA, February 3-7, 2020 , James Caverlee, Xia (Ben) Hu, Mounia Lalmas, and Wei Wang (Eds.). ACM, 717-725. [25] Aohan Zeng, Xiao Liu, Zhengxiao Du, Zihan Wang, Hanyu Lai, Ming Ding, Zhuoyi Yang, Yifan Xu, Wendi Zheng, Xiao Xia, et al. 2022. Glm-130b: An open bilingual pre-trained model. arXiv preprint arXiv:2210.02414 (2022). [26] Kai Zhao, Yukun Zheng, Tao Zhuang, Xiang Li, and Xiaoyi Zeng. 2022. Joint Learning of E-Commerce Search and Recommendation with a Unified Graph Neural Network. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (Virtual Event, AZ, USA) (WSDM '22) . Association for Computing Machinery, New York, NY, USA, 1461-1469. https://doi.org/10. 1145/3488560.3498414 [27] Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, Yifan Du, Chen Yang, Yushuo Chen, Zhipeng Chen, Jinhao Jiang, Ruiyang Ren, Yifan Li, Xinyu Tang, Zikang Liu, Peiyu Liu, Jian-Yun Nie, and Ji-Rong Wen. 2023. A Survey of Large Language Models. CoRR abs/2303.18223 (2023).",
   "keywords_parsed": [
     "search and recommendation",
-    " LLM",
-    " multi-domain recommendation Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CIKM '23",
-    " October 21-25",
-    " 2023",
-    " Birmingham",
-    " United Kingdom © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0124-5/23/10...$15.00 https://doi.org/10.1145/3583780.3614657 Yuqi Gong",
-    " Xichen Ding",
-    " Yehui Su",
-    " Kaiming Shen",
-    " Zhongyi Liu",
-    " and Guannan Zhang. 2023. An Unified Search and Recommendation Foundation Model for Cold-Start Scenario. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (CIKM '23)",
-    " October 21-25",
-    " 2023",
-    " Birmingham",
-    " United Kingdom. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 7 pages. https: //doi.org/10.1145/3583780.3614657"
+    "LLM",
+    "multi-domain recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning a Hierarchical Embedding Model for Personalized Product Search"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Language Models are Few-Shot Learners"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Multitask Learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "M6Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "M6Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Infer Implicit Contexts in Real-Time Online-to-Offline Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "GLM: General Language Model Pretraining with Autoregressive Blank Infilling"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Domain-Adversarial Training of Neural Networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A Kernel Two-Sample Test"
+    },
+    {
+      "ref_id": "b11",
+      "title": "SAMD: An Industrial Framework for Heterogeneous Multi-Scenario Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Multi-Aspect Dense Retrieval"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Prototypical Contrastive Learning and Adaptive Interest Selection for Candidate Generation in Recommendations"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A Category-Aware Multi-Interest Model for Personalized Product Search"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts"
+    },
+    {
+      "ref_id": "b16",
+      "title": "One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "A Model-Agnostic Causal Learning Framework for Recommendation Using Search Data"
+    },
+    {
+      "ref_id": "b18",
+      "title": "When Search Meets Recommendation: Learning Disentangled Search Representation for Recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations"
+    },
+    {
+      "ref_id": "b20",
+      "title": "LLaMA: Open and Efficient Foundation Language Models"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Deep Learning for Matching in Search and Recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "USER: A Unified Information Search and Recommendation Model Based on Integrated Behavior Sequence"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Joint Modeling and Optimization of Search and Recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Learning a Joint Search and Recommendation Model from User-Item Interactions"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Glm-130b: An open bilingual pre-trained model"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Joint Learning of E-Commerce Search and Recommendation with a Unified Graph Neural Network"
+    },
+    {
+      "ref_id": "b27",
+      "title": "A Survey of Large Language Models"
+    }
   ]
 }

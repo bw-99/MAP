@@ -40,6 +40,283 @@
   "7 CONCLUSION": "This paper systematically investigated session-based recommendation with GNNs and sequential neural networks. Specifically, we first clarify the corresponding definitions, and concepts, analyzing the features of SR. Then, we review more than 150 papers and provide a systematic taxonomy to organize the existing works with regard to their key motivations and typical models. Besides, we conduct a unified framework for SR with GNNs and sequential neural networks respectively. After that, a detailed introduction to the key modules including neighbor session selection, graph construction, embedding, information propagation and aggregation, sequence modeling, session representation, prediction, and loss function, are also provided. Finally, we introduce the challenges and point out new potential directions for the research on SR. It is our hope that this survey can provide readers with a comprehensive understanding of the key aspects, main challenges, and notable progress in this area, and shed some light on future research.",
   "REFERENCES": "[1] Gediminas Adomavicius and Alexander Tuzhilin. 2005. Toward the next generation of recommender systems: A survey of the state-of-the-art and possible extensions. IEEE transactions on knowledge and data engineering (2005). [2] Marko Balabanović and Yoav Shoham. 1997. Fab: content-based, collaborative recommendation. Commun. ACM (1997). [3] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. Tallrec: An effective and efficient tuning framework to align large language model with recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems . 1007-1014. [4] Yoshua Bengio, Réjean Ducharme, and Pascal Vincent. 2000. A neural probabilistic language model. Proc. of NeurIPS (2000). [5] Aleksandar Bojchevski and Stephan Günnemann. 2018. Deep Gaussian Embedding of Graphs: Unsupervised Inductive Learning via Ranking. In Proc. of ICLR . [6] Geoffray Bonnin and Dietmar Jannach. 2014. Automated generation of music playlists: Survey and experiments. ACM Computing Surveys (CSUR) (2014). [7] Antoine Bordes, Nicolas Usunier, Alberto Garcia-Duran, Jason Weston, and Oksana Yakhnenko. 2013. Translating embeddings for modeling multi-relational data. Proc. of NeurIPS (2013). [8] Lucas Bourtoule, Varun Chandrasekaran, Christopher A Choquette-Choo, Hengrui Jia, Adelin Travers, Baiwu Zhang, David Lie, and Nicolas Papernot. 2021. Machine unlearning. In Proc. of SP . 141-159. [9] Diego Carraro and Derek Bridge. 2024. Enhancing Recommendation Diversity by Re-ranking with Large Language Models. arXiv preprint arXiv:2401.11506 (2024). 32 Li et al. [40] Yashar Deldjoo, Zhankui He, Julian McAuley, Anton Korikov, Scott Sanner, Arnau Ramisa, René Vidal, Maheswaran Sathiamoorthy, Atoosa Kasirzadeh, and Silvia Milano. 2024. A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys). arXiv preprint Graph and Sequential Neural Networks in Session-based Recommendation: A Survey 33 arXiv:2404.00579 (2024). [41] Ailin Deng and Bryan Hooi. 2021. Graph neural network-based anomaly detection in multivariate time series. In Proc. of AAAI . [42] Zhi-Hong Deng, Chang-Dong Wang, Ling Huang, Jian-Huang Lai, and S Yu Philip. 2022. Gˆ 3SR: Global Graph Guided Session-Based Recommendation. IEEE Transactions on Neural Networks and Learning Systems (2022). [43] Travis Ebesu, Bin Shen, and Yi Fang. 2018. Collaborative memory network for recommendation systems. In Proc. of SIGIR . [44] Magdalini Eirinaki, Michalis Vazirgiannis, and Dimitris Kapogiannis. 2005. Web path recommendations based on page ranking and markov models. In Proceedings of the 7th annual ACM international workshop on Web information and data management . [45] Ehsan Elahi, Sajid Anwar, Babar Shah, Zahid Halim, Abrar Ullah, Imad Rida, and Muhammad Waqas. 2024. Knowledge Graph Enhanced Contextualized Attention-Based Network for Responsible User-Specific Recommendation. ACM Transactions on Intelligent Systems and Technology (2024). [46] Ziwei Fan, Zhiwei Liu, Shen Wang, Lei Zheng, and Philip S Yu. 2021. Modeling Sequences as Distributions with Uncertainty for Sequential Recommendation. In Proc. of CIKM . [47] Ziwei Fan, Zhiwei Liu, Yu Wang, Alice Wang, Zahra Nazari, Lei Zheng, Hao Peng, and Philip S Yu. 2022. Sequential recommendation via stochastic self-attention. In Proc. of WWW . 2036-2047. [48] Hui Fang, Danning Zhang, Yiheng Shu, and Guibing Guo. 2020. Deep learning for sequential recommendation: Algorithms, influential factors, and evaluations. ACM Transactions on Information Systems (2020). [49] Shanshan Feng, Xutao Li, Yifeng Zeng, Gao Cong, Yeow Meng Chee, and Quan Yuan. 2015. Personalized ranking metric embedding for next new poi recommendation. In Proc. of IJCAI . [50] Rana Forsati, Mohammad Reza Meybodi, and A Ghari Neiat. 2009. Web page personalization based on weighted association rules. In 2009 International Conference on Electronic Computer Technology . [51] Zuohui Fu, Yikun Xian, Ruoyuan Gao, Jieyu Zhao, Qiaoying Huang, Yingqiang Ge, Shuyuan Xu, Shijie Geng, Chirag Shah, Yongfeng Zhang, and Gerard de Melo. 2020. Fairness-Aware Explainable Recommendation over Knowledge Graphs. In Proc. of SIGIR . 69-78. [52] Yunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, Jiawei Sun, and Haofen Wang. 2023. Retrieval-augmented generation for large language models: A survey. arXiv preprint arXiv:2312.10997 (2023). [53] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5). In Proceedings of the 16th ACM Conference on Recommender Systems . 299-315. [54] Alireza Gharahighehi and Celine Vens. 2020. Making session-based news recommenders diversity-aware. In Proceedings of the Workshop on Online Misinformation-and Harm-Aware Recommender Systems . [55] Shansan Gong and Kenny Q Zhu. 2022. Positive, Negative and Neutral: Modeling Implicit Feedback in Session-based News Recommendation. In Proc. of SIGIR . [56] Aditya Grover and Jure Leskovec. 2016. node2vec: Scalable feature learning for networks. In Proc. of KDD . [57] Cheng Guo, Mengfei Zhang, Jinyun Fang, Jiaqi Jin, and Mao Pan. 2020. Session-based recommendation with hierarchical leaping networks. In Proc. of SIGIR . [58] Jiayan Guo, Yaming Yang, Xiangchen Song, Yuan Zhang, Yujing Wang, Jing Bai, and Yan Zhang. 2022. Learning Multi-granularity Consecutive User Intent Unit for Session-based Recommendation. In Proc. of WSDM . [59] Jiayan Guo, Peiyan Zhang, Chaozhuo Li, Xing Xie, Yan Zhang, and Sunghun Kim. 2022. Evolutionary Preference Learning via Graph Nested GRU ODE for Session-based Recommendation. In Proc. of CIKM . [60] Lei Guo, Hongzhi Yin, Qinyong Wang, Tong Chen, Alexander Zhou, and Nguyen Quoc Viet Hung. 2019. Streaming session-based recommendation. In Proc. of KDD . [61] Will Hamilton, Zhitao Ying, and Jure Leskovec. 2017. Inductive representation learning on large graphs. Proc. of NeurIPS (2017). [62] Qilong Han, Chi Zhang, Rui Chen, Riwei Lai, Hongtao Song, and Li Li. 2022. Multi-Faceted Global Item Relation Learning for Session-Based Recommendation. In Proc. of SIGIR . [63] Shizhu He, Kang Liu, Guoliang Ji, and Jun Zhao. 2015. Learning to represent knowledge graphs with gaussian embedding. In Proceedings of the 24th ACM international on conference on information and knowledge management . [64] Balázs Hidasi and Alexandros Karatzoglou. 2018. Recurrent neural networks with top-k gains for session-based recommendations. In Proc. of CIKM . [65] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [66] Yupeng Hou, Binbin Hu, Zhiqiang Zhang, and Wayne Xin Zhao. 2022. Core: simple and effective session-based recommendation within consistent representation space. In Proc. of SIGIR . 1796-1801. [67] Yupeng Hou, Junjie Zhang, Zihan Lin, Hongyu Lu, Ruobing Xie, Julian McAuley, and Wayne Xin Zhao. 2024. Large language models are zero-shot rankers for recommender systems. In European Conference on Information Retrieval . 364-381. [68] Edward J Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2021. Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685 (2021). [69] Liang Hu, Longbing Cao, Shoujin Wang, Guandong Xu, Jian Cao, and Zhiping Gu. 2017. Diversifying Personalized Recommendation with User-session Context.. In Proc. of IJCAI . 34 Li et al. Graph and Sequential Neural Networks in Session-based Recommendation: A Survey 35 [103] Dugang Liu, Pengxiang Cheng, Hong Zhu, Zhenhua Dong, Xiuqiang He, Weike Pan, and Zhong Ming. 2021. Mitigating Confounding Bias in Recommendation via Information Bottleneck. In Proc. of RecSys . [104] Junling Liu, Chao Liu, Renjie Lv, Kang Zhou, and Yan Zhang. 2023. Is chatgpt a good recommender? a preliminary study. ArXiv preprint (2023). [105] Qiao Liu, Yifu Zeng, Refuoe Mokhosi, and Haibin Zhang. 2018. STAMP: short-term attention/memory priority model for session-based recommendation. In Proc. of KDD . [106] Siyi Liu and Yujia Zheng. 2020. Long-tail session-based recommendation. In Proceedings of the 14th ACM conference on recommender systems . 509-514. [107] Yuanxing Liu, Zhaochun Ren, Wei-Nan Zhang, Wanxiang Che, Ting Liu, and Dawei Yin. 2020. Keywords generation improves e-commerce session-based recommendation. In Proc. of WWW . [108] Zhongqi Lu, Zhicheng Dou, Jianxun Lian, Xing Xie, and Qiang Yang. 2015. Content-based collaborative filtering for news topic recommendation. In Proc. of AAAI . [109] Malte Ludewig and Dietmar Jannach. 2018. Evaluation of session-based recommendation algorithms. User Modeling and User-Adapted Interaction (2018). [110] Anjing Luo, Pengpeng Zhao, Yanchi Liu, Fuzhen Zhuang, Deqing Wang, Jiajie Xu, Junhua Fang, and Victor S Sheng. 2020. Collaborative Self-Attention Network for Session-based Recommendation.. In Proc. of IJCAI . [111] Hao Ma, Haixuan Yang, Michael R Lyu, and Irwin King. 2008. Sorec: social recommendation using probabilistic matrix factorization. In Proceedings of the 17th ACM conference on Information and knowledge management . [112] Wenjing Meng, Deqing Yang, and Yanghua Xiao. 2020. Incorporating user micro-behaviors and item knowledge into multi-task learning for session-based recommendation. In Proc. of SIGIR . [113] Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013. Efficient estimation of word representations in vector space. arXiv preprint arXiv:1301.3781 (2013). [114] Koji Miyahara and Michael J Pazzani. 2000. Collaborative filtering with the simple bayesian classifier. In Proc. of PRICAI . [115] Bamshad Mobasher, Honghua Dai, Tao Luo, and Miki Nakagawa. 2001. Effective personalization based on association rule discovery from web usage data. In Proceedings of the 3rd international workshop on Web information and data management . [116] Natwar Modani, Parul A Mittal, Amit A Nanavati, and Biplav Srivastava. 2002. Series of dynamic targeted recommendations. In International Conference on Electronic Commerce and Web Technologies . [117] Natwar Modani, Yogish Sabharwal, and S Karthik. 2005. A framework for session based recommendations. In International Conference on Electronic Commerce and Web Technologies . [118] María N Moreno, Francisco J García, M José Polo, and Vivian F López. 2004. Using association analysis of web data in recommender systems. In International Conference on Electronic Commerce and Web Technologies . [119] Jyoti Narwariya, Priyanka Gupta, Garima Gupta, Lovekesh Vig, and Gautam Shroff. 2023. X4SR: Post-Hoc Explanations for Session-based Recommendations.. In Proc. of SIGIR . [120] Utpala Niranjan, RBV Subramanyam, and V Khanaa. 2010. Developing a web recommendation system based on closed sequential patterns. In International Conference on Advances in Information and Communication Technologies . [121] Kai Ouyang, Xianghong Xu, Miaoxin Chen, Zuotong Xie, Hai-Tao Zheng, Shuangyong Song, and Yu Zhao. 2023. Mining interest trends and adaptively assigning sample weight for session-based recommendation. In Proc. of SIGIR . 2174-2178. [122] Kai Ouyang, Xianghong Xu, Chen Tang, Wang Chen, and Haitao Zheng. 2022. Social-aware Sparse Attention Network for Session-based Social Recommendation. In Proc. of EMNLP Findings . [123] Zhiqiang Pan, Fei Cai, Wanyu Chen, Honghui Chen, and Maarten de Rijke. 2020. Star graph neural networks for session-based recommendation. In Proc. of CIKM . [124] Zhiqiang Pan, Fei Cai, Yanxiang Ling, and Maarten de Rijke. 2020. An intent-guided collaborative machine for session-based recommendation. In Proc. of SIGIR . [125] Yitong Pang, Lingfei Wu, Qi Shen, Yiming Zhang, Zhihua Wei, Fangli Xu, Ethan Chang, Bo Long, and Jian Pei. 2022. Heterogeneous global graph neural networks for personalized session-based recommendation. In Proc. of WSDM . [126] Andreas Peintner, Amir Reza Mohammadi, and Eva Zangerle. 2023. SPARE: Shortest Path Global Item Relations for Efficient Session-based Recommendation. In Proc. of RecSys . [127] Bryan Perozzi, Rami Al-Rfou, and Steven Skiena. 2014. Deepwalk: Online learning of social representations. In Proc. of KDD . [128] Michael Potter, Hamlin Liu, Yash Lala, Christian Loanzon, and Yizhou Sun. 2022. GRU4RecBE: A Hybrid Session-Based Movie Recommendation System (Student Abstract). In Proc. of AAAI . [129] Shutong Qiao, Wei Zhou, Junhao Wen, Hongyu Zhang, and Min Gao. 2023. Bi-channel Multiple Sparse Graph Attention Networks for Session-based Recommendation. In Proc. of CIKM . 2075-2084. [130] Ruihong Qiu, Jingjing Li, Zi Huang, and Hongzhi Yin. 2019. Rethinking the item order in session-based recommendation with graph neural networks. In Proc. of CIKM . [131] Ruihong Qiu, Hongzhi Yin, Zi Huang, and Tong Chen. 2020. Gag: Global attributed graph neural network for streaming session-based recommendation. In Proc. of SIGIR . 36 Li et al. Graph and Sequential Neural Networks in Session-based Recommendation: A Survey 37 38 Li et al. Graph and Sequential Neural Networks in Session-based Recommendation: A Survey 39",
   "keywords_parsed": [
-    "None"
+    "recommendation survey",
+    "session-based recommendation",
+    "graph neural networks",
+    "sequential neural networks"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Toward the next generation of recommender systems: A survey of the state-of-the-art and possible extensions"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Fab: content-based, collaborative recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A neural probabilistic language model"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deep Gaussian Embedding of Graphs: Unsupervised Inductive Learning via Ranking"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Automated generation of music playlists: Survey and experiments"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Translating embeddings for modeling multi-relational data"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Machine unlearning"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Enhancing Recommendation Diversity by Re-ranking with Large Language Models"
+    },
+    {
+      "ref_id": "b40",
+      "title": "A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys)"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Graph neural network-based anomaly detection in multivariate time series"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Gˆ 3SR: Global Graph Guided Session-Based Recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Collaborative memory network for recommendation systems"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Web path recommendations based on page ranking and markov models"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Knowledge Graph Enhanced Contextualized Attention-Based Network for Responsible User-Specific Recommendation"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Modeling Sequences as Distributions with Uncertainty for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Sequential recommendation via stochastic self-attention"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Deep learning for sequential recommendation: Algorithms, influential factors, and evaluations"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Personalized ranking metric embedding for next new poi recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Web page personalization based on weighted association rules"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Fairness-Aware Explainable Recommendation over Knowledge Graphs"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Retrieval-augmented generation for large language models: A survey"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Making session-based news recommenders diversity-aware"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Positive, Negative and Neutral: Modeling Implicit Feedback in Session-based News Recommendation"
+    },
+    {
+      "ref_id": "b56",
+      "title": "node2vec: Scalable feature learning for networks"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Session-based recommendation with hierarchical leaping networks"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Learning Multi-granularity Consecutive User Intent Unit for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Evolutionary Preference Learning via Graph Nested GRU ODE for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Streaming session-based recommendation"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Multi-Faceted Global Item Relation Learning for Session-Based Recommendation"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Learning to represent knowledge graphs with gaussian embedding"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Recurrent neural networks with top-k gains for session-based recommendations"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b66",
+      "title": "CORE: simple and effective session-based recommendation within consistent representation space"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Large language models are zero-shot rankers for recommender systems"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Diversifying Personalized Recommendation with User-session Context"
+    },
+    {
+      "ref_id": "b103",
+      "title": "Mitigating Confounding Bias in Recommendation via Information Bottleneck"
+    },
+    {
+      "ref_id": "b104",
+      "title": "Is chatgpt a good recommender? a preliminary study"
+    },
+    {
+      "ref_id": "b105",
+      "title": "STAMP: short-term attention/memory priority model for session-based recommendation"
+    },
+    {
+      "ref_id": "b106",
+      "title": "Long-tail session-based recommendation"
+    },
+    {
+      "ref_id": "b107",
+      "title": "Keywords generation improves e-commerce session-based recommendation"
+    },
+    {
+      "ref_id": "b108",
+      "title": "Content-based collaborative filtering for news topic recommendation"
+    },
+    {
+      "ref_id": "b109",
+      "title": "Evaluation of session-based recommendation algorithms"
+    },
+    {
+      "ref_id": "b110",
+      "title": "Collaborative Self-Attention Network for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b111",
+      "title": "Sorec: social recommendation using probabilistic matrix factorization"
+    },
+    {
+      "ref_id": "b112",
+      "title": "Incorporating user micro-behaviors and item knowledge into multi-task learning for session-based recommendation"
+    },
+    {
+      "ref_id": "b113",
+      "title": "Efficient estimation of word representations in vector space"
+    },
+    {
+      "ref_id": "b114",
+      "title": "Collaborative filtering with the simple bayesian classifier"
+    },
+    {
+      "ref_id": "b115",
+      "title": "Effective personalization based on association rule discovery from web usage data"
+    },
+    {
+      "ref_id": "b116",
+      "title": "Series of dynamic targeted recommendations"
+    },
+    {
+      "ref_id": "b117",
+      "title": "A framework for session based recommendations"
+    },
+    {
+      "ref_id": "b118",
+      "title": "Using association analysis of web data in recommender systems"
+    },
+    {
+      "ref_id": "b119",
+      "title": "X4SR: Post-Hoc Explanations for Session-based Recommendations"
+    },
+    {
+      "ref_id": "b120",
+      "title": "Developing a web recommendation system based on closed sequential patterns"
+    },
+    {
+      "ref_id": "b121",
+      "title": "Mining interest trends and adaptively assigning sample weight for session-based recommendation"
+    },
+    {
+      "ref_id": "b122",
+      "title": "Social-aware Sparse Attention Network for Session-based Social Recommendation"
+    },
+    {
+      "ref_id": "b123",
+      "title": "Star graph neural networks for session-based recommendation"
+    },
+    {
+      "ref_id": "b124",
+      "title": "An intent-guided collaborative machine for session-based recommendation"
+    },
+    {
+      "ref_id": "b125",
+      "title": "Heterogeneous global graph neural networks for personalized session-based recommendation"
+    },
+    {
+      "ref_id": "b126",
+      "title": "SPARE: Shortest Path Global Item Relations for Efficient Session-based Recommendation"
+    },
+    {
+      "ref_id": "b127",
+      "title": "Deepwalk: Online learning of social representations"
+    },
+    {
+      "ref_id": "b128",
+      "title": "GRU4RecBE: A Hybrid Session-Based Movie Recommendation System (Student Abstract)"
+    },
+    {
+      "ref_id": "b129",
+      "title": "Bi-channel Multiple Sparse Graph Attention Networks for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b130",
+      "title": "Rethinking the item order in session-based recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b131",
+      "title": "Gag: Global attributed graph neural network for streaming session-based recommendation"
+    }
   ]
 }

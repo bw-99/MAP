@@ -37,6 +37,328 @@
   "A.1 Intepretability Frameworks": "The increasing interest in the interpretability of machine learning fostered the development of frameworks implementing classical XAI methods. The LRP Toolbox [69] was launched in 2016 and provides the implementation of the LRP [9] algorithm for artificial neural networks supporting Matlab and Python. Additionally, the LRP toolbox released an extension to be compatible with the Caffe Deep Learning framework. DeepExplain [6] is a framework that implements perturbation and gradient-based attribution methods, including Saliency Maps [132], Gradient * Input [130], Integrated Gradients (IG) [143], DeepLIFT [130], 𝜖 -LRP [9], and DeConvNet [173]. It also supports Tensorflow as well as Keras with Tensorflow backend. Alternatively, iNNvestigate [4] is a more complete toolbox that provides implementations for SmoothGrad [138], DeConvNet [173], Guided-BackProp [141], PatternNet [62], Input * Gradients [130], DeepTaylor [97], PatternAttribution [62], LRP [9] and Integrated Gradients (IG) [143]. It also supports Tensorflow and Keras. With regard to PyTorch frameworks, TorchRay [36] implements several visualization methods, namely Gradient [132], Guided-BackProp [141], Grad-CAM [127] and RISE [107]. TorchRay is considered research-oriented, since it provides code for reproducing results that appear in several papers. Captum [64] is a PyTorch library that provides state-of-the-art algorithms for model interpretability and understanding. It contains general purpose implementations of Integrated Gradients [143], SmoothGrad [138], VarGrad [113] and others for PyTorch models. Table 4 summarizes the aforementioned frameworks alongside the supported XAI methods. Additionally, we refer the reader to the work of Darias et al. [29] in which some other model-agnostic XAI libraries were approached. Table 4. Publicly available interpretability frameworks. , Vol. 1, No. 1, Article . Publication date: September 2023. Explainable Deep Learning Methods in Medical Image Classification: A Survey · 39",
   "A.2 Methods": "Table 5. Summary of the XAI methods categorized by interpretability method employed, image modality and dataset. The spaces marked with a \"-\" mean that explanation is only provided through text sentences. , Vol. 1, No. 1, Article . Publication date: September 2023.",
   "keywords_parsed": [
-    "None"
+    "Explainable AI",
+    "Explainability",
+    "Interpretability",
+    "Deep Learning",
+    "Medical Image Analysis"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "SLIC Superpixels Compared to State-of-the-Art Superpixel Methods"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Sanity Checks for Saliency Maps"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Content-Based Image Retrieval in Radiology: Current Status and Future Directions"
+    },
+    {
+      "ref_id": "b4",
+      "title": "iNNvestigate Neural Networks!"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Supporting Skin Lesion Diagnosis with Content-Based Image Retrieval"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Towards better understanding of gradient-based attribution methods for Deep Neural Networks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI): a completed reference database of lung nodules on CT scans"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Automatic medical image interpretation: State of the art and future directions"
+    },
+    {
+      "ref_id": "b9",
+      "title": "On Pixel-Wise Explanations for Non-Linear Classifier Decisions by Layer-Wise Relevance Propagation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Recent Advances in Adversarial Training for Adversarial Robustness"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deep Attention Model for the Hierarchical Diagnosis of Skin Lesions"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Improving the Explainability of Skin Cancer Diagnosis Using CBIR"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Interpretable Mammographic Image Classification using Case-Based Reasoning and Deep Learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online database"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Bayesian Convolutional Neural Network-based Models for Diagnosis of Blood Cancer"
+    },
+    {
+      "ref_id": "b16",
+      "title": "A histopathological image dataset for grading breast invasive ductal carcinomas"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b18",
+      "title": "PadChest: A large chest x-ray image dataset with multi-label annotated reports"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Explaining Bayesian Neural Networks"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Deep Clustering for Unsupervised Learning of Visual Features"
+    },
+    {
+      "ref_id": "b21",
+      "title": "This Looks Like That: Deep Learning for Interpretable Image Recognition"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Visual-Linguistic Causal Intervention for Radiology Report Generation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Concept Whitening for Interpretable Image Recognition"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Generating Radiology Reports via Memory-driven Transformer"
+    },
+    {
+      "ref_id": "b25",
+      "title": "XAI-CBIR: Explainable AI System for Content based Retrieval of Video Frames from Minimally Invasive Surgery Videos"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Applying Self-Supervised Learning to Medicine: Review of the State of the Art and Medical Implementations"
+    },
+    {
+      "ref_id": "b27",
+      "title": "COVID-19 Image Data Collection"
+    },
+    {
+      "ref_id": "b28",
+      "title": "SkinCon: A skin disease dataset densely annotated by domain experts for fine-grained debugging and analysis"
+    },
+    {
+      "ref_id": "b29",
+      "title": "A Systematic Review on Model-agnostic XAI Libraries"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Light Field Image Dataset of Skin Lesions"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Preparing a collection of radiology examinations for distribution and retrieval"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Deformable ProtoPNet: An Interpretable Image Classifier Using Deformable Prototypes"
+    },
+    {
+      "ref_id": "b33",
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Testing the Robustness of Attribution Methods for Convolutional Neural Networks in MRI-Based Alzheimer's Disease Classification"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Concept-based Explanation for Fine-grained Images and Its Application in Infectious Keratitis Classification"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Understanding Deep Networks via Extremal Perturbations and Smooth Masks"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Producing Radiologist-Quality Reports for Interpretable Deep Learning"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Interpretation of Neural Networks is Fragile"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Towards Automatic Concept-Based Explanations"
+    },
+    {
+      "ref_id": "b41",
+      "title": "European Union Regulations on Algorithmic Decision-Making and a 'Right to Explanation'"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Uncertainty-aware convolutional neural network for COVID-19 X-ray images classification"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Concept attribution: Explaining CNN decisions to physicians"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Evaluating deep neural networks trained on clinical images in dermatology with the fitzpatrick 17k dataset"
+    },
+    {
+      "ref_id": "b45",
+      "title": "A Review of Explainable Deep Learning Cancer Detection Models in Medical Imaging"
+    },
+    {
+      "ref_id": "b46",
+      "title": "DARPA's Explainable Artificial Intelligence (XAI) Program"
+    },
+    {
+      "ref_id": "b47",
+      "title": "IRTEX: Image Retrieval with Textual Explanations"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Fleischner Society: Glossary of Terms for Thoracic Imaging"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Denoising Diffusion Probabilistic Models"
+    },
+    {
+      "ref_id": "b50",
+      "title": "This Looks Like That... Does it? Shortcomings of Latent Space Prototype Interpretability in Deep Networks"
+    },
+    {
+      "ref_id": "b51",
+      "title": "A Benchmark for Interpretability Methods in Deep Neural Networks"
+    },
+    {
+      "ref_id": "b52",
+      "title": "X-MIR: EXplainable Medical Image Retrieval"
+    },
+    {
+      "ref_id": "b53",
+      "title": "CheXpert: A Large Chest Radiograph Dataset with Uncertainty Labels and Expert Comparison"
+    },
+    {
+      "ref_id": "b54",
+      "title": "On the Automatic Generation of Medical Imaging Reports"
+    },
+    {
+      "ref_id": "b55",
+      "title": "MIMIC-CXR, a de-identified publicly available database of chest radiographs with free-text reports"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Seven-Point Checklist and Skin Lesion Classification Using Multitask Multimodal Neural Nets"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Diffusion models for medical image analysis: A comprehensive survey"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Correlations between radiological classification systems and confirmed cartilage loss in severe knee osteoarthritis"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)"
+    },
+    {
+      "ref_id": "b60",
+      "title": "XProtoNet: Diagnosis in Chest Radiography with Global and Local Explanations"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Interpretation of Lesional Detection via Counterfactual Generation"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Learning how to explain neural networks: PatternNet and PatternAttribution"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Concept Bottleneck Models"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Pytorch Captum"
+    },
+    {
+      "ref_id": "b65",
+      "title": "ImageNet Classification with Deep Convolutional Neural Networks"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Attribute and Simile Classifiers for Face Verification"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Learning to Detect Unseen Object Classes by Between-class Attribute Transfer"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Explainable artificial intelligence for breast cancer: A visual case-based reasoning approach"
+    },
+    {
+      "ref_id": "b69",
+      "title": "The LRP Toolbox for Artificial Neural Networks"
+    },
+    {
+      "ref_id": "b70",
+      "title": "METEOR: An Automatic Metric for MT Evaluation with High Levels of Correlation with Human Judgments"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Generation of Multimodal Justification Using Visual Word Constraint Model for Explainable Computer-Aided Diagnosis"
+    },
+    {
+      "ref_id": "b72",
+      "title": "A curated mammography data set for use in computer-aided detection and diagnosis research"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Hybrid Retrieval-Generation Reinforced Agent for Medical Image Report Generation"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Auxiliary signal-guided knowledge encoder-decoder for medical report generation"
+    },
+    {
+      "ref_id": "b75",
+      "title": "ROUGE: A Package for Automatic Evaluation of Summaries"
+    },
+    {
+      "ref_id": "b76",
+      "title": "Covid-19 Chest Radiography Images Analysis Based on Integration of Image Preprocess, Guided Grad-CAM, Machine Learning and Risk Management"
+    },
+    {
+      "ref_id": "b77",
+      "title": "The Doctor Just Won't Accept That!"
+    },
+    {
+      "ref_id": "b78",
+      "title": "1399 H&E-stained sentinel lymph node sections of breast cancer patients: the CAMELYON dataset"
+    },
+    {
+      "ref_id": "b79",
+      "title": "A Survey on Deep Learning in Medical Image Analysis"
+    }
   ]
 }

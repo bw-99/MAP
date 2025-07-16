@@ -32,8 +32,66 @@
   "References": "[1] Alexandr Andoni, Piotr Indyk, Thijs Laarhoven, Ilya Razenshteyn, and Ludwig Schmidt. 2015. Practical and optimal LSH for angular distance. Advances in neural information processing systems 28 (2015). [2] Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. 2016. Layer normalization. arXiv preprint arXiv:1607.06450 (2016). [3] Giorgio Brajnik and Silvia Gabrielli. 2010. A review of online advertising effects on the user experience. International Journal of Human-Computer Interaction 26, 10 (2010), 971-997. [4] Yue Cao, Xiaojiang Zhou, Jiaqi Feng, Peihao Huang, Yao Xiao, Dayao Chen, and Sheng Chen. 2022. Sampling is all you need on modeling long-term user behaviors for CTR prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2974-2983. [5] Jianxin Chang, Chenbin Zhang, Zhiyi Fu, Xiaoxue Zang, Lin Guan, Jing Lu, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, et al. 2023. TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou. arXiv preprint arXiv:2302.02352 (2023). [6] Moses S. Charikar. 2002. Similarity estimation techniques from rounding algorithms. In Proceedings of the Thiry-Fourth Annual ACM Symposium on Theory of KDD '25, August 3-7, 2025, Toronto, ON, Canada Xiang Xu, et al. [50] Chang Zhou, Jinze Bai, Junshuai Song, Xiaofei Liu, Zhengchao Zhao, Xiusi Chen, and Jun Gao. 2018. Atrank: An attention-based user behavior modeling framework for recommendation. In Proceedings of the AAAI conference on artificial intelligence , Vol. 32. Multi-granularity Interest Retrieval and Refinement Network for Long-Term User Behavior Modeling in CTR Prediction KDD '25, August 3-7, 2025, Toronto, ON, Canada [51] Guorui Zhou, Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Na Mou, Xinchen Luo, et al. 2020. CAN: revisiting feature coaction for click-through rate prediction. arXiv preprint arXiv:2011.05625 (2020). [52] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [53] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [54] Haolin Zhou, Junwei Pan, Xinyi Zhou, Xihua Chen, Jie Jiang, Xiaofeng Gao, and Guihai Chen. 2024. Temporal Interest Network for User Response Prediction. In Companion Proceedings of the ACM on Web Conference 2024 . 413-422. [55] Kun Zhou, Hui Yu, Wayne Xin Zhao, and Ji-Rong Wen. 2022. Filter-enhanced MLP is all you need for sequential recommendation. In Proceedings of the ACM web conference 2022 . 2388-2399. [56] Jieming Zhu, Quanyu Dai, Liangcai Su, Rong Ma, Jinyang Liu, Guohao Cai, Xi Xiao, and Rui Zhang. 2022. BARS: Towards Open Benchmarking for Recommender Systems. In SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 , Enrique Amigó, Pablo Castells, Julio Gonzalo, Ben Carterette, J. Shane Culpepper, and Gabriella Kazai (Eds.). ACM, 2912-2923. doi:10.1145/3477495.3531723 [57] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open Benchmarking for Click-Through Rate Prediction. In CIKM '21: The 30th ACM International Conference on Information and Knowledge Management, Virtual Event, Queensland, Australia, November 1 - 5, 2021 , Gianluca Demartini, Guido Zuccon, J. Shane Culpepper, Zi Huang, and Hanghang Tong (Eds.). ACM, 27592769. doi:10.1145/3459637.3482486",
   "keywords_parsed": [
     "Click-Through Rate Prediction",
-    " User Interest Modeling",
-    " Long Sequential User Behavior",
-    " Recommendation System"
+    "User Interest Modeling",
+    "Long Sequential User Behavior",
+    "Recommendation System"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Practical and optimal LSH for angular distance"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Layer normalization"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A review of online advertising effects on the user experience"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Sampling is all you need on modeling long-term user behaviors for CTR prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Similarity estimation techniques from rounding algorithms"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Atrank: An attention-based user behavior modeling framework for recommendation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "CAN: revisiting feature coaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Temporal Interest Network for User Response Prediction"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Filter-enhanced MLP is all you need for sequential recommendation"
+    },
+    {
+      "ref_id": "b56",
+      "title": "BARS: Towards Open Benchmarking for Recommender Systems"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Open Benchmarking for Click-Through Rate Prediction"
+    }
   ]
 }

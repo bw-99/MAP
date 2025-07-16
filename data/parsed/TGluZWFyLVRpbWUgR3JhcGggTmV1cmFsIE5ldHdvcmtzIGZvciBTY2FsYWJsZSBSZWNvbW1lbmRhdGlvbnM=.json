@@ -36,8 +36,230 @@
   "A.3 Additional Experiments": "Comparison to GTN. Despite numerous works being orthogonal to our contributions and not tackling the scalability issue, as highlighted in Section 4.1, we remain receptive to comparing our method with more recent, accuracy-focused baselines in the field. We compare our proposed LTGNN with GTN [12], one of the latest GNNbackbones for recommendations, and the results are presented in Table. 5 and Table. 6. Table 5: Recommendation performance comparison results with extra baseline GTN. Results marked with (*) are obtained in GTN's official settings. . Table 6: Running time comparison results with extra baseline GTN. Results marked with (*) are obtained in GTN's official settings. To ensure a fair comparison, we closely followed the official settings of GTN 4 , which differ from our evaluation settings detailed in Section 4.1 in embedding size and BPR batch size. From the experiment result, we find that our proposed LTGNN shows advantages in both recommendation performance and scalability, even in comparison with one of the latest accuracy-driven GNN backbones for recommendations. Effect of Hyperparameter 𝛼 . Similar to APPNP [19], the teleport factor 𝛼 in LTGNN controls the trade-off between capturing long-range dependencies and graph localities, directly impacting recommendation performance. As shown in Fig. 5, we find that LTGNN is rather robust to 𝛼 , as the performance does not drop sharply in 𝛼 ∈ [ 0 . 35 , 0 . 55 ] . In practice, we can set 𝛼 = 0 . 5, which is the midpoint of capturing long-range dependency and preserving the local structure expressiveness, and conduct a rough grid search to find the optimal setting of 𝛼 . 0.3 0.4 0.5 0.6 0.7 alpha 0.04 0.05 0.06 0.07 0.08 Recall@20 Yelp2018 Alibaba-iFashion 0.06 0.05 0.04 0.03 0.02 0.4 0.5 0.6 alpha Alibaba-iFashion 0.4 0.3 0.4 0.5 0.6 0.7 0.3 0.3 0.5 0.6 0.7 0.7 alpha alpha Figure 5: The effect of hyper-parameter 𝛼 under Recall@20 and NDCG@20 metrics. Effect of Different Variance Reduction Designs . We developed an efficient variance reduction (EVR) mechanism in Section 3.2, which can be applied to both forward and backward computations. To evaluate the impact of different variance reduction designs on the recommendation performance, we compare four variants of LTGNN, namely LTGNN-NS , LTGNN-FVR , LTGNN-BVR , and LTGNNBiVR . LTGNN-NS is the baseline model that uses implicit modeling and vanilla neighbor sampling, while LTGNN-FVR, LTGNN-BVR, and LTGNN-BiVR use forward variance reduction, backward variance reduction, and bidirectional variance reduction, respectively. As can be seen from Table. 7, LTGNN variants with variance reduction outperform LTGNN-NS without variance reduction, demonstrating the effectiveness of our proposed EVR approach. Moreover, we observe that forward variance reduction (FVR) alone is sufficient 4 https://github.com/wenqifan03/GTN-SIGIR2022 Yelp2018 0.07 0.06 0.05 0.04 0.03 0.11 0.10 0.09 0.08 0.07 NDCG@20 NDCG@20 Recall@20 Jiahao Zhang, Rui Xue, Wenqi Fan, Xin Xu, Qing Li, Jian Pei, and Xiaorui Liu WWW'24, May 13-17, 2024, Singapore, Singapore. Table 7: Ablation study on different variance reduction designs. to achieve satisfactory recommendation performance. Surprisingly, bidirectional variance reduction does not outperform forward variance reduction. We intend to investigate the reason behind this phenomenon and explore the potential of bidirectional variance reduction (BiVR) in our future work. Detailed Efficiency Analysis . As discussed in Section 3.2, LTGNN has linear time complexity with respect to the number of edges |E| in the user-item interaction graph, which is comparable to MF. However, as shown in Table. 4, the running time of LTGNN is worse than MF on the large-scale Amazon-Large dataset, which seems to contradict our complexity analysis. To understand this phenomenon and demonstrate LTGNN's scalability advantage, we perform a comprehensive efficiency analysis of LTGNN and MF, which identifies the main source of overhead and suggests potential enhancements. From the results presented in Table. 8, we have the following observations: · For both MF and LTGNN, the computation cost of negative sampling is negligible, which has a minimal impact on the total running time. · For LTGNN, excluding the neighbor sampling time, the model training time is linear in the number of edges |E| , which is similar to MF. This indicates LTGNN's high scalability in large-scale and industrial recommendation scenarios. · Besides, the computational overhead incurred by maintaining and updating the memory spaces for variance reduction is insignificant, which validates the high efficiency of our proposed EVR approach. · For LTGNN, the main source of extra computational overhead is the neighbor sampling process for the target nodes, which accounts for more than 50% of the total running time, preventing LTGNN from achieving a perfect linear scaling behavior. This is an implementation issue that can be improved by better engineering solutions. To further enhance the efficiency of LTGNN, we can adopt some common engineering techniques. For example, we can follow the importance sampling approach in PinSAGE [49], which assigns a fixed neighborhood for each node in the interaction graph, avoiding the expensive random sampling process. We plan to leave this as a future work. Table 8: Detailed efficiency comparison of LTGNN with MF.",
   "keywords_parsed": [
     "Collaborative Filtering",
-    " Recommender Systems",
-    " Graph Neural Networks",
-    " Scalability."
+    "Recommender Systems",
+    "Graph Neural Networks",
+    "Scalability"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Graph convolutional matrix completion"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Macro Graph Neural Networks for Online Billion-Scale Recommender Systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Fastgcn: fast learning with graph convolutional networks via importance sampling"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Stochastic Training of Graph Convolutional Networks with Variance Reduction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fairly adaptive negative sampling for recommendations"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Minimal variance sampling with provable guarantees for fast training of graph neural networks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A comprehensive study on large-scale graph training: Benchmarking and rethinking"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Implicit deep learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A multi-view deep learning approach for cross domain user modeling in recommendation systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deep modeling of social relations for recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Graph trend filtering networks for recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Graph neural networks for social recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A graph neural network framework for social recommendations"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Deep social collaborative filtering"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Untargeted Black-box Attacks for Social Recommendations"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Adversarial Attacks for Black-Box Recommender Systems Via Copying Transferable Cross-Domain User Profiles"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Gnnautoscale: Scalable and expressive graph neural networks via historical embeddings"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Predict then Propagate: Graph Neural Networks meet Personalized PageRank"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Implicit graph neural networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "An attentional recurrent neural network for personalized next location recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "NAIS: Neural attentive item similarity model for recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Combining Label Propagation and Simple Models out-performs Graph Neural Networks"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Mixgcf: An improved training method for graph neural network-based recommender systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Amazon-M2: A Multilingual Multi-locale Shopping Session Dataset for Recommendation and Text Generation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Factorization meets the neighborhood: a multifaceted collaborative filtering model"
+    },
+    {
+      "ref_id": "b32",
+      "title": "The pagerank citation ranking: Bringing order to the web"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Unbiased Stochastic Proximal Solver for Graph Neural Networks with Equilibrium States"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Hierarchical bipartite graph neural networks: Towards large-scale e-commerce applications"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Generative diffusion models on graphs: Methods and applications"
+    },
+    {
+      "ref_id": "b36",
+      "title": "SimpleX: A simple and strong baseline for collaborative filtering"
+    },
+    {
+      "ref_id": "b37",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Scalable algorithms for data and network analysis"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Billion-scale commodity embedding for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Fast graph condensation with structure-based neural tangent kernel"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Kgat: Knowledge graph attention network for recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Disentangled graph collaborative filtering"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Simplifying graph convolutional networks"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Self-supervised graph learning for recommendation"
+    },
+    {
+      "ref_id": "b46",
+      "title": "A comprehensive survey on graph neural networks"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Deep matrix factorization models for recommender systems"
+    },
+    {
+      "ref_id": "b48",
+      "title": "LazyGNN: Large-Scale Graph Neural Networks via Lazy Propagation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Graph convolutional neural networks for web-scale recommender systems"
+    },
+    {
+      "ref_id": "b50",
+      "title": "GraphFM: Improving large-scale GNN training via feature momentum"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Are graph augmentations necessary? simple graph contrastive learning for recommendation"
+    },
+    {
+      "ref_id": "b52",
+      "title": "GraphSAINT: Graph Sampling Based Inductive Learning Method"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Graph attention multi-layer perceptron"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Semi-supervised learning with graphs"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Layer-dependent importance sampling for training deep and large graph convolutional networks"
+    }
   ]
 }

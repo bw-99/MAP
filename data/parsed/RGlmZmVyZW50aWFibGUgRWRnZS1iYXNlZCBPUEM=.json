@@ -19,7 +19,95 @@
   "4.4 Summary of Experimental Results": "The experimental results on both metal and via layers demonstrate DiffOPC's superiority over SOTA ILT, post-MRC ILT and EBOPC methods in terms of printability, manufacturability, and cost-efficiency. On metal layers, DiffOPC consistently outperforms SOTA ILT methods, exhibiting reduced EPE and shot count, along with lower manufacturing costs, while maintaining competitive TAT. The proposed framework eliminates the need for additional postprocessing to address MRC violations, making it an efficient and reliable edge-based OPC solution for large-scale OPC tasks. On via layers, DiffOPC achieves the best performance in L2, EPE, and TAT among EBOPC methods, surpassing even the commercial Calibre tool. Compared to ILT methods, DiffOPC shows the lowest L2 and EPE values while significantly reducing the number of shots, leading to lower manufacturing costs and improved throughput. These results highlight DiffOPC's enhanced printability, pattern fidelity, and computational efficiency.",
   "5 Conclusion": "We propose DiffOPC, a differentiable edge-based OPC framework that bridges the gap between the superior manufacturability of EBOPC and the enhanced performance of ILT. By leveraging a CUDA-accelerated ray casting algorithm, DiffOPC enables a differentiable rasterization process that allows gradients to propagate through the lithography model, facilitating the efficient optimization of edge segment positions. This innovative approach results in significant improvements in key metrics such as L2 and EPE while maintaining an exceptionally low shot count, leading to substantially reduced manufacturing costs. Moreover, DiffOPC incorporates an efficient SRAF generation method, which seamlessly integrates SRAF with the main pattern optimization for a holistic and effective OPC solution. Experimental results highlight DiffOPC's superior performance and efficiency over SOTA EBOPC and ILT methods, making it a promising advancement in semiconductor technologies.",
   "References": "[1] O. W. Otto, J. G. Garofalo, K. K. Low et al. , 'Automated optical proximity correction: a rules-based approach,' in Proc. SPIE , 1994, pp. 278-293. [2] J. Lei, L. Hong, G. Lippincott, and J. Word, 'Model-based opc using the meef matrix ii, ' in Optical Microlithography XXVII , vol. 9052. SPIE, 2014, pp. 170-178. [3] J.-R. Gao, X. Xu, B. Yu, and D. Z. Pan, 'MOSAIC: Mask optimizing solution with process window aware inverse correction,' in Proc. DAC , 2014, pp. 52:1-52:6. [4] T. E. Brist and J. A. Torres, 'Model-assisted placement of subresolution assist features: Experimental results,' in Proc. SPIE , vol. 5042, 2003, pp. 99-106. [5] X. Xu, Y. Lin, M. Li, T. Matsunawa, S. Nojima, C. Kodama, T. Kotani, and D. Z. Pan, 'Subresolution assist feature generation with supervised data learning,' IEEE TCAD , vol. 37, no. 6, pp. 1225-1236, 2017. [6] M. B. Alawieh, Y. Lin, Z. Zhang, M. Li, Q. Huang, and D. Z. Pan, 'GAN-SRAF: Sub-resolution assist feature generation using conditional generative adversarial networks,' in Proc. DAC , 2019, pp. 149:1-149:6. [7] H. Geng, W. Zhong, H. Yang, Y. Ma, J. Mitra, and B. Yu, 'Sraf insertion via supervised dictionary learning,' IEEE TCAD , 2020. [8] H. Yang, S. Li, Y. Ma, B. Yu, and E. F. Young, 'GAN-OPC: Mask optimization with lithography-guided generative adversarial nets,' in Proc. DAC , 2018, pp. 131:1131:6. [9] G. Chen, W. Chen, Y. Ma, H. Yang, and B. Yu, 'DAMO: Deep agile mask optimization for full chip scale, ' in Proc. ICCAD , 2020. [10] B. Jiang, L. Liu, Y. Ma, H. Zhang, E. F. Y. Young, and B. Yu, 'Neural-ILT: Migrating ILT to nerual networks for mask printability and complexity co-optimizaton',' in Proc. ICCAD , 2020. [11] W. Zhao, X. Yao, Z. Yu, G. Chen, Y. Ma, B. Yu, and M. D. F. Wong, 'AdaOPC: A selfadaptive mask optimization framework for real design patterns,' in Proc. ICCAD , 2022. [12] B. Zhu, S. Zheng, Z. Yu, G. Chen, Y. Ma, F. Yang, B. Yu, and M. D. F. Wong, 'L2O-ILT: Learning to optimize inverse lithography techniques,' IEEE TCAD , vol. 43, no. 3, pp. 944-955, 2024. [13] X. Zhang, S. Zheng, G. Chen, B. Zhu, H. Xu, and B. Yu, 'Fracturing-aware curvilinear ilt via circular e-beam mask writer,' 2024. [14] S. Sun, F. Yang, B. Yu, L. Shang, and X. Zeng, 'Efficient ILT via multi-level lithography simulation,' in Proc. DAC , 2023. [15] Z. Yu, G. Chen, Y. Ma, and B. Yu, 'A GPU-enabled level set method for mask optimization,' in Proc. DATE , 2021. [16] G. Chen, Z. Yu, H. Liu, Y. Ma, and B. Yu, 'DevelSet: Deep neural level set for instant mask optimization,' in Proc. ICCAD , 2021. [17] W. Lv, S. Liu, Q. Xia, X. Wu, Y. Shen, and E. Y. Lam, 'Level-set-based inverse lithography for mask synthesis using the conjugate gradient and an optimal time step,' Journal of Vacuum Science & Technology B, Nanotechnology and Microelectronics: Materials, Processing, Measurement, and Phenomena , vol. 31, no. 4, p. 041605, 2013. [18] S. Banerjee, Z. Li, and S. R. Nassif, 'ICCAD-2013 CAD contest in mask optimization and benchmark suite,' in Proc. ICCAD , 2013, pp. 271-274. [19] Z. Yu, P. Liao, Y. Ma, B. Yu, and M. D. F. Wong, 'CTM-SRAF: Continuous transmission mask-based constraint-aware subresolution assist feature generation,' IEEE TCAD , vol. 42, no. 10, pp. 3402-3411, 2023. [20] J. F. Chango, C. A. Navarro, and M. A. González-Montenegro, 'Gpu-accelerated rectangular decomposition for sound propagation modeling in 2d,' in 2019 38th International Conference of the Chilean Computer Science Society (SCCC) , 2019. [21] S. Zheng, H. Yang, B. Zhu, B. Yu, and M. D. Wong, 'LithoBench: Benchmarking AI computational lithography for semiconductor manufacturing,' in Proc. NeurIPS , 2023. [22] 'Calibre Design Solutions, Siemens,' https://eda.sw.siemens.com/en-US/ic/calibredesign/.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Automated optical proximity correction: a rules-based approach"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Model-based opc using the meef matrix ii"
+    },
+    {
+      "ref_id": "b3",
+      "title": "MOSAIC: Mask optimizing solution with process window aware inverse correction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Model-assisted placement of subresolution assist features: Experimental results"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Subresolution assist feature generation with supervised data learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "GAN-SRAF: Sub-resolution assist feature generation using conditional generative adversarial networks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Sraf insertion via supervised dictionary learning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "GAN-OPC: Mask optimization with lithography-guided generative adversarial nets"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DAMO: Deep agile mask optimization for full chip scale"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Neural-ILT: Migrating ILT to nerual networks for mask printability and complexity co-optimizaton"
+    },
+    {
+      "ref_id": "b11",
+      "title": "AdaOPC: A selfadaptive mask optimization framework for real design patterns"
+    },
+    {
+      "ref_id": "b12",
+      "title": "L2O-ILT: Learning to optimize inverse lithography techniques"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Fracturing-aware curvilinear ilt via circular e-beam mask writer"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Efficient ILT via multi-level lithography simulation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A GPU-enabled level set method for mask optimization"
+    },
+    {
+      "ref_id": "b16",
+      "title": "DevelSet: Deep neural level set for instant mask optimization"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Level-set-based inverse lithography for mask synthesis using the conjugate gradient and an optimal time step"
+    },
+    {
+      "ref_id": "b18",
+      "title": "ICCAD-2013 CAD contest in mask optimization and benchmark suite"
+    },
+    {
+      "ref_id": "b19",
+      "title": "CTM-SRAF: Continuous transmission mask-based constraint-aware subresolution assist feature generation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Gpu-accelerated rectangular decomposition for sound propagation modeling in 2d"
+    },
+    {
+      "ref_id": "b21",
+      "title": "LithoBench: Benchmarking AI computational lithography for semiconductor manufacturing"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Calibre Design Solutions, Siemens"
+    }
   ]
 }

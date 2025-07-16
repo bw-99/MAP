@@ -28,7 +28,105 @@
   "REFERENCES": "[1] Norman P Archer and Shouhong Wang. 1993. Application of the back propagation neural network algorithm with monotonicity constraints for two-group classification problems. Decision Sciences 24, 1 (1993), 60-75. [2] Oren Barkan and Noam Koenigstein. 2016. Item2vec: neural item embedding for collaborative filtering. In 2016 IEEE 26th International Workshop on Machine Learning for Signal Processing (MLSP) . IEEE, 1-6. [3] Rajat Bhattacharjee and Ashish Goel. 2006. Incentive based ranking mechanisms. In First Workshop on the Economics of Networked Systems (Netecon'06) . 62-68. [4] Rajat Bhattacharjee, Ashish Goel, and Konstantinos Kollias. 2009. An incentivebased architecture for social recommendations. In Proceedings of the third ACM conference on Recommender systems . 229-232. CIKM '23, October 21-25, 2023, Birmingham, United Kingdom. Quan, et al. [5] K. Canini, A. Cotter, M. R. Gupta, M. Milani Fard, and J. Pfeifer. 2016. Fast and Flexible Monotonic Functions with Ensembles of Lattices. In Proceedings of the 30th International Conference on Neural Information Processing Systems (NIPS'16) . 2927-2935. [6] Rich Caruana. 1997. Multitask learning. Machine learning 28, 1 (1997), 41-75. [7] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2020. Bias and debias in recommender system: A survey and future directions. arXiv preprint arXiv:2010.03240 (2020). [8] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [9] Junyoung Chung, Caglar Gulcehre, KyungHyun Cho, and Yoshua Bengio. 2014. Empirical evaluation of gated recurrent neural networks on sequence modeling. arXiv preprint arXiv:1412.3555 (2014). [10] Guy W Cole and Sinead A Williamson. 2019. Avoiding resentment via monotonic fairness. arXiv preprint arXiv:1909.01251 (2019). [11] Hennie Daniels and Marina Velikova. 2010. Monotone and partially monotone neural networks. IEEE Transactions on Neural Networks 21, 6 (2010), 906-917. [12] Ad J Feelders. 2000. Prior knowledge in economic applications of data mining. In European Conference on Principles of Data Mining and Knowledge Discovery . Springer, 395-400. [13] Matt W Gardner and SR Dorling. 1998. Artificial neural networks (the multilayer perceptron)-a review of applications in the atmospheric sciences. Atmospheric environment 32, 14-15 (1998), 2627-2636. [14] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [15] Akhil Gupta, Naman Shukla, Lavanya Marla, Arinbjörn Kolbeinsson, and Kartik Yellepeddi. 2019. How to incorporate monotonicity in deep networks while preserving flexibility? arXiv preprint arXiv:1909.10662 (2019). [16] Malay Haldar, Mustafa Abdool, Prashant Ramanathan, Tao Xu, Shulin Yang, Huizhong Duan, Qing Zhang, Nick Barrow-Williams, Bradley C Turnbull, Brendan M Collins, et al. 2019. Applying deep learning to airbnb search. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1927-1935. [17] Malay Haldar, Prashant Ramanathan, Tyler Sax, Mustafa Abdool, Lanbo Zhang, Aamir Mansawala, Shulin Yang, Bradley Turnbull, and Junshuo Liao. 2020. Improving deep learning for airbnb search. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2822-2830. [18] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [19] Zai Huang, Mingyuan Tao, and Bufeng Zhang. 2021. Deep Inclusion Relationaware Network for User Response Prediction at Fliggy. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3059-3067. [20] Robert A Jacobs, Michael I Jordan, Steven J Nowlan, and Geoffrey E Hinton. 1991. Adaptive mixtures of local experts. Neural computation 3, 1 (1991), 79-87. [21] Xingchao Liu, Xing Han, Na Zhang, and Qiang Liu. 2020. Certified monotonic neural networks. Advances in Neural Information Processing Systems 33 (2020), 15427-15438. [22] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [23] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [24] Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and Jeff Dean. 2013. Distributed representations of words and phrases and their compositionality.",
   "keywords_parsed": [
     "Hotel Search & Ranking System",
-    " Monotonic Neural Networks",
-    " Hotel Quality"
+    "Monotonic Neural Networks",
+    "Hotel Quality"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Application of the back propagation neural network algorithm with monotonicity constraints for two-group classification problems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Item2vec: neural item embedding for collaborative filtering"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Incentive based ranking mechanisms"
+    },
+    {
+      "ref_id": "b4",
+      "title": "An incentivebased architecture for social recommendations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fast and Flexible Monotonic Functions with Ensembles of Lattices"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Bias and debias in recommender system: A survey and future directions"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Empirical evaluation of gated recurrent neural networks on sequence modeling"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Avoiding resentment via monotonic fairness"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Monotone and partially monotone neural networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Prior knowledge in economic applications of data mining"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Artificial neural networks (the multilayer perceptron)-a review of applications in the atmospheric sciences"
+    },
+    {
+      "ref_id": "b14",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "How to incorporate monotonicity in deep networks while preserving flexibility?"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Applying deep learning to airbnb search"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Improving deep learning for airbnb search"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Deep Inclusion Relationaware Network for User Response Prediction at Fliggy"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Adaptive mixtures of local experts"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Certified monotonic neural networks"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Distributed representations of words and phrases and their compositionality"
+    }
   ]
 }

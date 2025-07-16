@@ -33,8 +33,206 @@
   "A.2 HYPERPARAMETERS SETTING": "We list the hyperparameter details in Table 6 for reproduction. Table 6: The detailed hyperparameters of QT networks",
   "keywords_parsed": [
     "Auto-bidding",
-    " Generative Model",
-    " Search",
-    " Preference Alignment"
+    "Generative Model",
+    "Search",
+    "Preference Alignment"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Is Conditional Generative Modeling all you need for Decision Making?"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Alimama Super Diamond"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A General Theoretical Paradigm to Understand Learning from Human Preferences"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Robust Auction Design in the Auto-bidding World"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Majority systems and the Condorcet jury theorem"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Decision transformer: reinforcement learning via sequence modeling"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Real-time bidding algorithms for performance-based display ad allocation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Towards Efficient Auctions in an Auto-bidding World"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Tutorial on variational autoencoders"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Model Alignment as Prospect Theoretic Optimization"
+    },
+    {
+      "ref_id": "b12",
+      "title": "The online advertising industry: Economics, evolution, and privacy"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Advertising on Facebook"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Off-policy deep reinforcement learning without exploration"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Future-Conditioned Recommendations with Multi-Objective Controllable Decision Transformer"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Generative adversarial networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Google Ads"
+    },
+    {
+      "ref_id": "b18",
+      "title": "AIGB: Generative Auto-bidding via Diffusion Modeling"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A Unified Solution to Constrained Bidding in Online Display Advertising"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Denoising diffusion probabilistic models"
+    },
+    {
+      "ref_id": "b21",
+      "title": "ARGS: Alignment as Reward-Guided Search"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Bandit Based Monte-Carlo Planning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Offline Reinforcement Learning with Implicit Q-Learning"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Conservative Q-learning for offline reinforcement learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Cascade reward sampling for efficient decoding-time alignment"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Auto-bidding Equilibrium in ROIConstrained Online Advertising Markets"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Constrained decision transformer for offline safe reinforcement learning"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Sequential recommendation for optimizing both immediate feedback and long-term retention"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Decoupled Weight Decay Regularization"
+    },
+    {
+      "ref_id": "b30",
+      "title": "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Sustainable online reinforcement learning for auto-bidding"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Biases in Large Language Models: Origins, Inventory, and Discussion"
+    },
+    {
+      "ref_id": "b33",
+      "title": "ChatGPT"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep Landscape Forecasting in Multi-Slot Real-Time Bidding"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Training language models to follow instructions with human feedback"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Training language models to follow instructions with human feedback"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Softmax deep double deterministic policy gradients"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Better Training of GFlowNets with Local Credit and Incomplete Trajectories"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Disentangling Length from Quality in Direct Preference Optimization"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model"
+    },
+    {
+      "ref_id": "b41",
+      "title": "High-Resolution Image Synthesis with Latent Diffusion Models"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Proximal Policy Optimization Algorithms"
+    },
+    {
+      "ref_id": "b43",
+      "title": "AuctionNet: A Novel Benchmark for Decision-Making in Large-Scale Games"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Reinforcement learning: An introduction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Real-Time Bidding: A New Frontier of Computational Advertising Research"
+    },
+    {
+      "ref_id": "b46",
+      "title": "A cooperative-competitive multi-agent framework for auto-bidding in online advertising"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Contrastive Preference Optimization: Pushing the Boundaries of LLM Performance in Machine Translation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Auto-Bidding in Large-Scale Auctions: Learning Decision-Making in Uncertain and Competitive Games"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Online convex optimization with stochastic constraints"
+    }
   ]
 }

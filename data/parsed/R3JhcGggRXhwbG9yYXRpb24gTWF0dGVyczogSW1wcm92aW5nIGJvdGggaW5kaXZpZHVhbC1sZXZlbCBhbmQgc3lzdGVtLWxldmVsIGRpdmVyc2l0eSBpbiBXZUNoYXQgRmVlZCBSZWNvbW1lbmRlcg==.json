@@ -22,7 +22,113 @@
   "REFERENCES": "[1] Azin Ashkan, Branislav Kveton, Shlomo Berkovsky, and Zheng Wen. 2015. Optimal Greedy Diversity for Recommendation. In Proceedings of the Twenty-Fourth International Joint Conference on Artificial Intelligence, IJCAI 2015, Buenos Aires, Argentina, July 25-31, 2015 , Qiang Yang and Michael J. Wooldridge (Eds.). AAAI Press, 1742-1748. http://ijcai.org/Abstract/15/248 [2] Ian Baracskay, Donald J. Baracskay III, Mehtab Iqbal, and Bart Piet Knijnenburg. 2022. The Diversity of Music Recommender Systems. In IUI 2022: 27th International Conference on Intelligent User Interfaces, Helsinki, Finland, March 22 - 25, 2022 - Companion Volume , Giulio Jacucci, Samuel Kaski, Cristina Conati, Simone Stumpf, Tuukka Ruotsalo, and Krzysztof Gajos (Eds.). ACM, 97-100. https://doi.org/10.1145/3490100.3516474 [3] Jaime G. Carbonell and Jade Goldstein. 1998. The Use of MMR, Diversity-Based Reranking for Reordering Documents and Producing Summaries. In SIGIR '98: Proceedings of the 21st Annual International ACM SIGIR Conference on Research and Development in Information Retrieval, August 24-28 1998, Melbourne, Australia , W. Bruce Croft, Alistair Moffat, C. J. van Rijsbergen, Ross Wilkinson, and Justin Zobel (Eds.). ACM, 335-336. https://doi.org/10.1145/290941.291025 [4] Li Chen, Wen Wu, and Liang He. 2013. How personality influences users' needs for recommendation diversity?. In 2013 ACM SIGCHI Conference on Human Factors in Computing Systems, CHI '13, Paris, France, April 27 - May 2, 2013, Extended Abstracts , Wendy E. Mackay, Stephen A. Brewster, and Susanne Bødker (Eds.). ACM, 829-834. https://doi.org/10.1145/2468356.2468505 [5] Li Chen, Wen Wu, and Liang He. 2017. Personality and Recommendation Diversity. In Emotions and Personality in Personalized Services - Models, Evaluation and Applications , Marko Tkalcic, Berardina De Carolis, Marco de Gemmis, Ante Odic, and Andrej Kosir (Eds.). Springer, 201-225. https://doi.org/10.1007/978-3-31931413-6_11 [6] Laming Chen, Guoxin Zhang, and Eric Zhou. 2018. Fast Greedy MAP Inference for Determinantal Point Process to Improve Recommendation Diversity. In Advances in Neural Information Processing Systems 31: Annual Conference on Neural Information Processing Systems 2018, NeurIPS 2018, December 3-8, 2018, Montréal, Canada , Samy Bengio, Hanna M. Wallach, Hugo Larochelle, Kristen Grauman, Nicolò Cesa-Bianchi, and Roman Garnett (Eds.). 5627-5638. https://proceedings. neurips.cc/paper/2018/hash/dbbf603ff0e99629dda5d75b6f75f966-Abstract.html [7] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems, DLRS@RecSys 2016, Boston, MA, USA, September 15, 2016 , Alexandros Karatzoglou, Balázs Hidasi, Domonkos Tikk, Oren Sar Shalom, Haggai Roitman, Bracha Shapira, and Lior Rokach (Eds.). ACM, 7-10. https://doi.org/10.1145/2988450.2988454 [8] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems, Boston, MA, USA, September 15-19, 2016 , Shilad Sen, Werner Geyer, Jill Freyne, and Pablo Castells (Eds.). ACM, 191-198. https://doi.org/10. 1145/2959100.2959190 [9] James Davidson, Benjamin Liebald, Junning Liu, Palash Nandy, Taylor Van Vleet, Ullas Gargi, Sujoy Gupta, Yu He, Mike Lambert, Blake Livingston, and Dasarathi Sampath. 2010. The YouTube video recommendation system. In Proceedings of the 2010 ACM Conference on Recommender Systems, RecSys 2010, Barcelona, Spain, September 26-30, 2010 , Xavier Amatriain, Marc Torrens, Paul Resnick, and Markus Zanker (Eds.). ACM, 293-296. https://doi.org/10.1145/1864708.1864770 [10] Farzad Eskandanian, Bamshad Mobasher, and Robin Burke. 2017. A Clustering Approach for Personalizing Diversity in Collaborative Recommender Systems. In Proceedings of the 25th Conference on User Modeling, Adaptation and Personalization, UMAP 2017, Bratislava, Slovakia, July 09 - 12, 2017 , Mária Bieliková, Eelco Herder, Federica Cena, and Michel C. Desmarais (Eds.). ACM, 280-284. https://doi.org/10.1145/3079628.3079699 [11] Chen Gao, Yu Zheng, Nian Li, Yinfeng Li, Yingrong Qin, Jinghua Piao, Yuhan Quan, Jianxin Chang, Depeng Jin, Xiangnan He, and Yong Li. 2023. A Survey of Graph Neural Networks for Recommender Systems: Challenges, Methods, and Directions. ACM Trans. Recomm. Syst. 1, 1, Article 3 (mar 2023), 51 pages. https://doi.org/10.1145/3568022 [12] Mouzhi Ge, Carla Delgado-Battenfeld, and Dietmar Jannach. 2010. Beyond accuracy: evaluating recommender systems by coverage and serendipity. In Proceedings of the 2010 ACM Conference on Recommender Systems, RecSys 2010, Barcelona, Spain, September 26-30, 2010 , Xavier Amatriain, Marc Torrens, Paul Resnick, and Markus Zanker (Eds.). ACM, 257-260. https://doi.org/10.1145/ 1864708.1864761 [13] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence, IJCAI 2017, Melbourne, Australia, August 19-25, 2017 , Carles Sierra (Ed.). ijcai.org, 1725-1731. https://doi.org/10.24963/ijcai.2017/239 Conference acronym 'XX, June 03-05, 2018, Woodstock, NY [28] Badrul Munir Sarwar, George Karypis, Joseph A. Konstan, and John Riedl. 2001. Item-based collaborative filtering recommendation algorithms. In Proceedings of Conference acronym 'XX, June 03-05, 2018, Woodstock, NY Trovato and Tobin, et al. the Tenth International World Wide Web Conference, WWW 10, Hong Kong, China, May 1-5, 2001 , Vincent Y. Shen, Nobuo Saito, Michael R. Lyu, and Mary Ellen Zurko (Eds.). ACM, 285-295. https://doi.org/10.1145/371920.372071 [29] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural Graph Collaborative Filtering. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2019, Paris, France, July 21-25, 2019 , Benjamin Piwowarski, Max Chevalier, Éric Gaussier, Yoelle Maarek, Jian-Yun Nie, and Falk Scholer (Eds.). ACM, 165-174. https://doi.org/10.1145/3331184.3331267 [30] Yichao Wang, Xiangyu Zhang, Zhirong Liu, Zhenhua Dong, Xinhua Feng, Ruiming Tang, and Xiuqiang He. 2020. Personalized Re-ranking for Improving Diversity in Live Recommender Systems. CoRR abs/2004.06390 (2020). arXiv:2004.06390 https://arxiv.org/abs/2004.06390 [31] Zhe Wang, Liqin Zhao, Biye Jiang, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2020. COLD: Towards the Next Generation of Pre-Ranking System. CoRR abs/2007.16122 (2020). arXiv:2007.16122 https://arxiv.org/abs/2007.16122 [32] Mark Wilhelm, Ajith Ramanathan, Alexander Bonomo, Sagar Jain, Ed H. Chi, and Jennifer Gillenwater. 2018. Practical Diversified Recommendations on YouTube with Determinantal Point Processes. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management, CIKM 2018, Torino, Italy, October 22-26, 2018 , Alfredo Cuzzocrea, James Allan, Norman W. Paton, Divesh Srivastava, Rakesh Agrawal, Andrei Z. Broder, Mohammed J. Zaki, K. Selçuk Candan, Alexandros Labrinidis, Assaf Schuster, and Haixun Wang (Eds.). ACM, 2165-2173. https://doi.org/10.1145/3269206.3272018 [33] Jiancan Wu, Xiangnan He, Xiang Wang, Qifan Wang, Weijian Chen, Jianxun Lian, and Xing Xie. 2022. Graph convolution machine for context-aware recommender system. Frontiers Comput. Sci. 16, 6 (2022), 166614. https://doi.org/10.1007/s11704021-0261-8 [34] Wen Wu, Li Chen, and Yu Zhao. 2018. Personalizing recommendation diversity based on user personality. User Model. User Adapt. Interact. 28, 3 (2018), 237-276. https://doi.org/10.1007/s11257-018-9205-x [35] Ruobing Xie, Qi Liu, Shukai Liu, Ziwei Zhang, Peng Cui, Bo Zhang, and Leyu Lin. 2022. Improving Accuracy and Diversity in Matching of Recommendation With Diversified Preference Network. IEEE Trans. Big Data 8, 4 (2022), 955-967. https://doi.org/10.1109/TBDATA.2021.3103263 [36] Liangwei Yang, Shengjie Wang, Yunzhe Tao, Jiankai Sun, Xiaolong Liu, Philip S. Yu, and Taiqing Wang. 2023. DGRec: Graph Neural Network for Recommendation with Diversified Embedding Generation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining, WSDM 2023, Singapore, 27 February 2023 - 3 March 2023 , Tat-Seng Chua, Hady W. Lauw, Luo Si, Evimaria Terzi, and Panayiotis Tsaparas (Eds.). ACM, 661-669. https://doi.org/10.1145/ 3539597.3570472 [37] Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, William L. Hamilton, and Jure Leskovec. 2018. Graph Convolutional Neural Networks for Web-Scale Recommender Systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2018, London, UK, August 19-23, 2018 , Yike Guo and Faisal Farooq (Eds.). ACM, 974-983. https://doi.org/10. 1145/3219819.3219890 [38] Wenhui Yu, Zixin Zhang, and Zheng Qin. 2022. Low-Pass Graph Convolutional Network for Recommendation. In Thirty-Sixth AAAI Conference on Artificial Intelligence, AAAI 2022, Thirty-Fourth Conference on Innovative Applications of Artificial Intelligence, IAAI 2022, The Twelveth Symposium on Educational Advances in Artificial Intelligence, EAAI 2022 Virtual Event, February 22 - March 1, 2022 . AAAI Press, 8954-8961. https://ojs.aaai.org/index.php/AAAI/article/view/20878 [39] Shengyu Zhang, Lingxiao Yang, Dong Yao, Yujie Lu, Fuli Feng, Zhou Zhao, Tat-Seng Chua, and Fei Wu. 2022. Re4: Learning to Re-contrast, Re-attend, Re-construct for Multi-interest Recommendation. In WWW'22: The ACM Web Conference 2022, Virtual Event, Lyon, France, April 25 - 29, 2022 , Frédérique Laforest, Raphaël Troncy, Elena Simperl, Deepak Agarwal, Aristides Gionis, Ivan Herman, and Lionel Médini (Eds.). ACM, 2216-2226. https://doi.org/10.1145/3485447. 3512094 [40] Yu Zheng, Chen Gao, Liang Chen, Depeng Jin, and Yong Li. 2021. DGCN: Diversified Recommendation with Graph Convolutional Networks. In WWW'21: The Web Conference 2021, Virtual Event / Ljubljana, Slovenia, April 19-23, 2021 , Jure Leskovec, Marko Grobelnik, Marc Najork, Jie Tang, and Leila Zia (Eds.). ACM / IW3C2, 401-412. https://doi.org/10.1145/3442381.3449835",
   "keywords_parsed": [
     "Diversified Recommendation",
-    " Graph-based Retrieval",
-    " Determinantal Point Process"
+    "Graph-based Retrieval",
+    "Determinantal Point Process"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Optimal Greedy Diversity for Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "The Diversity of Music Recommender Systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The Use of MMR, Diversity-Based Reranking for Reordering Documents and Producing Summaries"
+    },
+    {
+      "ref_id": "b4",
+      "title": "How personality influences users' needs for recommendation diversity?"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Personality and Recommendation Diversity"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Fast Greedy MAP Inference for Determinantal Point Process to Improve Recommendation Diversity"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "The YouTube video recommendation system"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A Clustering Approach for Personalizing Diversity in Collaborative Recommender Systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A Survey of Graph Neural Networks for Recommender Systems: Challenges, Methods, and Directions"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Beyond accuracy: evaluating recommender systems by coverage and serendipity"
+    },
+    {
+      "ref_id": "b13",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Item-based collaborative filtering recommendation algorithms"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Neural Graph Collaborative Filtering"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Personalized Re-ranking for Improving Diversity in Live Recommender Systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "COLD: Towards the Next Generation of Pre-Ranking System"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Practical Diversified Recommendations on YouTube with Determinantal Point Processes"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Graph convolution machine for context-aware recommender system"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Personalizing recommendation diversity based on user personality"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Improving Accuracy and Diversity in Matching of Recommendation With Diversified Preference Network"
+    },
+    {
+      "ref_id": "b36",
+      "title": "DGRec: Graph Neural Network for Recommendation with Diversified Embedding Generation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Graph Convolutional Neural Networks for Web-Scale Recommender Systems"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Low-Pass Graph Convolutional Network for Recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Re4: Learning to Re-contrast, Re-attend, Re-construct for Multi-interest Recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "DGCN: Diversified Recommendation with Graph Convolutional Networks"
+    }
   ]
 }

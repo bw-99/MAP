@@ -49,6 +49,336 @@
   "42 · Yujuan Ding, Zhihui Lai, P.Y. Mok, and Tat-Seng Chua": "6 https://tianchi.aliyun.com/dataset/dataDetail?dataId=3326 , Vol. 1, No. 1, Article . Publication date: October 2021.",
   "Computational Technologies for Fashion Recommendation: A Survey · 43": ", Vol. 1, No. 1, Article . Publication date: October 2021.",
   "keywords_parsed": [
-    "None"
+    "Fashion Recommendation",
+    "Fashion Survey",
+    "Personalized Recommendation",
+    "Compatibility Modeling",
+    "Outfit Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Size recommendation system for fashion e-commerce"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Big data, knowledge co-creation and decision making in fashion industry"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Semantically consistent hierarchical text to fashion image synthesis with an enhanced-attentional generative adversarial network"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Survey on the Objectives of Recommender System: Measures, Solutions, Evaluation Methodology, and New Perspectives"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fashion theory: A reader"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Learning feed-forward one-shot learners"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Entity Slot Filling for Visual Captioning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Fashion DNA: merging content and sales data for recommendation and article mapping"
+    },
+    {
+      "ref_id": "b9",
+      "title": "The use of the area under the ROC curve in the evaluation of machine learning algorithms"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Fashion recommendation systems, models and methods: A review"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A comprehensive review on image based style prediction and online fashion recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Dress fashionably: Learn fashion collocation with deep mixed-category metric learning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "POG: Personalized outfit generation for fashion recommendation at alibaba ifashion"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Personalized fashion recommendation with visual explanations based on multimodal attention network: Towards visually explainable recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Visually explainable recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Fashion Meets Computer Vision: A Survey"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Hierarchical Visual-aware Minimax Ranking Based on Co-purchase Data for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Context-aware visual compatibility prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Dressing as a whole: Outfit compatibility learning based on node-wise graph neural networks"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Understanding professional fashion stylists' outfit recommendation process: A qualitative study"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Recommender systems leveraging multimedia content"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Jointly modeling aspects, ratings and sentiments for movie recommendation (JMARS)"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Leveraging Multiple Relations for Fashion Trend Forecasting Based on Social Media"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Leveraging Two Types of Global Graph for Sequential Fashion Recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Modeling Instant User Intent and Content-level Transition for Sequential Fashion Recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Personalized fashion outfit generation with user coordination preference learning"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Modeling Field-Level Factor Interactions for Fashion Recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Fashion outfit style retrieval based on hashing method"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Learning Embeddings for Product Size Recommendations"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Personalized Capsule Wardrobe Creation with Garment and User Modeling"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Fashion Compatibility Modeling through a Multi-modal Try-on-guided Scheme"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Traditional vs. big-data fashion trend forecasting: an examination using WGSN and EDITED"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Fashion marketing"
+    },
+    {
+      "ref_id": "b34",
+      "title": "To Become Fashionable: A Brief Review of Outfit Compatibility"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Interpretable Partitioned Embedding for Intelligent Multi-item Fashion Outfit Composition"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Interpretable partitioned embedding for customized multi-item fashion outfit composition"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Fashion coordinates recommendation based on user behavior and visual clothing style"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Fashion analysis and understanding with artificial intelligence"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Apparel recommendation system evolution: an empirical review"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Enhancing Apparel Data Based on Fashion Theory for Developing a Novel Apparel Style Recommendation System"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A hierarchical bayesian model for size recommendation in fashion"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Learning fashion compatibility with bidirectional lstms"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Vista: A visually, socially, and temporally-aware model for artistic recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Translation-based recommendation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Sherlock: Sparse Hierarchical Embeddings for Visually-Aware One-Class Collaborative Filtering"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b47",
+      "title": "VBPR: Visual Bayesian Personalized Ranking from Implicit Feedback"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Learning compatibility across categories for heterogeneous item recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Body Shape Calculator: Understanding the Type of Body Shapes from Anthropometric Measurements"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Dress With Style: Learning Style From Joint Deep Embedding of Clothing Styles and Body Shapes"
+    },
+    {
+      "ref_id": "b52",
+      "title": "What dress fits me best? Fashion recommendation on the clothing style for personal body shape"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Long short-term memory"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Explainable Fashion Recommendation: A Semantic Attribute Region Guided Approach"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Learning the latent\" look\": Unsupervised discovery of a style-coherent embedding from fashion images"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Creating capsule wardrobes from fashion images"
+    },
+    {
+      "ref_id": "b57",
+      "title": "ViBE: Dressing for Diverse Body Shapes"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Fashion++: Minimal edits for outfit improvement"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Collaborative fashion recommendation: A functional tensor factorization approach"
+    },
+    {
+      "ref_id": "b60",
+      "title": "CRAFT: Complementary Recommendation by Adversarial Feature Transform"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Fashion coordinates recommender system using photographs from fashion magazines"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Large scale visual recommendations from street fashion images"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Text to Image Generation of Fashion Clothing"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Recommender systems: an introduction"
+    },
+    {
+      "ref_id": "b65",
+      "title": "A Survey on Knowledge Graphs: Representation, Acquisition, and Applications"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Outfit Recommendation with Deep Sequence Learning"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Low-rank regularized multi-representation learning for fashion compatibility prediction"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Visually-aware fashion recommendation and design with generative image models"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Complete the look: Scene-based complementary product recommendation"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Recommendation through mixtures of heterogeneous item relationships"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Sizenet: Weakly supervised learning of visual size and fit in fashion images"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Self-supervised Visual Attribute Learning for Fashion Compatibility"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Unifying visual-semantic embeddings with multimodal neural language models"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Advances in collaborative filtering"
+    },
+    {
+      "ref_id": "b76",
+      "title": "On sampled metrics for item recommendation"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Metric learning: A survey"
+    },
+    {
+      "ref_id": "b78",
+      "title": "A Comparative Study of Outfit Recommendation Methods with a Focus on Attention-based Fusion"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Interactive path reasoning on graph for conversational recommendation"
+    },
+    {
+      "ref_id": "b80",
+      "title": "Coherent and Controllable Outfit Generation"
+    },
+    {
+      "ref_id": "b81",
+      "title": "Hierarchical fashion graph network for personalized outfit recommendation"
+    }
   ]
 }

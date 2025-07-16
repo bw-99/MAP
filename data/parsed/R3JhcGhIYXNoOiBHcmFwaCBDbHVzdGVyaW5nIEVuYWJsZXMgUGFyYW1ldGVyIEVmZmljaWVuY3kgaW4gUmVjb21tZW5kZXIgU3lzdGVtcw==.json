@@ -37,8 +37,242 @@
   "D.8 Results on Sparser Graphs": "Sparsity is a common characteristic of real-world graphs. The used datasets in our work are highly sparse with sparsity levels of 99.92%/99.87%/99.94% on Gowalla/Yelp2018/AmazonBook, respectively. To further verify the performance of GraphHash on even sparser graphs, we conduct an additional set of experiments that only use 25%/50% of the training data on Gowalla and test on the same test set. Table 16: Performance Comparison with different training ratios for MF and LightGCN. In Table 16, we can observe that GraphHash still consistently outperforms the strongest baseline, double frequency hashing, across different training ratios, aligning with the results reported in Table 1. When the data/graph is extremely sparse, all recommendation models will suffer from the lack of training data and our results underscore the robustness of GraphHash even in extremely sparse settings. Our method is designed to effectively leverage the limited 6 https://github.com/xurong-liang/LEGCF interactions available in sparse graphs by fully utilizing graph clustering in hashing to preserve meaningful structure and minimize information loss. This capability allows GraphHash to maintain strong performance despite the challenges posed by sparse useritem interaction graphs.",
   "keywords_parsed": [
     "Recommender Systems",
-    " Efficiency",
-    " Hashing Trick",
-    " Graph ML"
+    "Efficiency",
+    "Hashing Trick",
+    "Graph ML"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Recommender Systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Local graph partitioning using pagerank vectors"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Frappe: Understanding the usage and perception of mobile app recommendations in-the-wild"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Modularity and community detection in bipartite networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fast unfolding of communities in large networks"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Recommender systems survey"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Scikit-network: Graph analysis in python"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Maximizing modularity is hard"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Adaptive factorization network: Learning adaptive-order feature interactions"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Friendship and mobility: user movement in location-based social networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Unified embedding: Battle-tested feature representations for webscale ml systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Stability of graph communities across time scales"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Co-clustering documents and words using bipartite spectral graph partitioning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "From local to global: A graph rag approach to query-focused summarization"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Gnnautoscale: Scalable and expressive graph neural networks via historical embeddings"
+    },
+    {
+      "ref_id": "b17",
+      "title": "A survey of graph neural networks for recommender systems: Challenges, methods, and directions"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Learning image and user features for recommendation in social networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Learning to collide: Recommendation system model compression with learned hash functions"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Neural message passing for quantum chemistry"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Deepfm: A factorization-machine based neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Linkless link prediction via relational distillation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "The architectural implications of facebook's dnn-based personalized recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Mlpinit: Embarrassingly simple gnn training acceleration with mlp initialization"
+    },
+    {
+      "ref_id": "b25",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Collaborative filtering for implicit feedback datasets"
+    },
+    {
+      "ref_id": "b30",
+      "title": "How does message passing improve collaborative filtering?"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Learning to embed categorical features without embedding tables for recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Laplacian dynamics and multiscale modular structure in networks"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Lightweight embeddings for graph collaborative filtering"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Monolith: Real time recommendation system with collisionless embedding table"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Deep learning training in facebook data centers: Design of scale-up and scale-out systems"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Modularity and community structure in networks"
+    },
+    {
+      "ref_id": "b41",
+      "title": "On spectral clustering: Analysis and an algorithm"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Graph neural networks exponentially lose expressive power for node classification"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Bpr: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Maps of random walks on complex networks reveal community structure"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Improving out-of-vocabulary handling in recommendation systems"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Graph attention networks"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Towards representation alignment and uniformity in collaborative filtering"
+    },
+    {
+      "ref_id": "b48",
+      "title": "DCN v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Feature hashing for large scale multitask learning"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Demystifying oversmoothing in attention-based graph neural networks"
+    },
+    {
+      "ref_id": "b52",
+      "title": "A non-asymptotic analysis of oversmoothing in graph neural networks"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Link partitioning on simplicial complexes using higher-order laplacians"
+    },
+    {
+      "ref_id": "b54",
+      "title": "How powerful are graph neural networks?"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Model size reduction using frequency based double hashing for recommender systems"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Graph-less neural networks: Teaching old mlps new tricks via distillation"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Deep learning based recommender system: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Learning from graphs beyond message passing neural networks"
+    }
   ]
 }

@@ -25,12 +25,154 @@
   "6 CONCLUSION": "This study introduces an innovative attention-based multimodal fusion method for re-ranking in e-commerce search. By integrating textual and visual information, it overcomes the limitations of traditional re-ranking models that rely solely on unimodal data, providing a more intuitive representation of the content users interact with. Additionally, an auxiliary task designed to predict clickthrough rates aligns closely with the ranking task, ensuring the effective utilization of multimodal information. Empirical results demonstrate that these combined approaches enhance user satisfaction and conversion rates, highlighting significant practical implications for the e-commerce industry and providing a competitive edge in the market. Furthermore, this research opens new avenues for incorporating additional modalities and dynamic ranking objectives, advancing re-ranking technologies and offering practical guidance for e-commerce platforms to enhance personalized shopping experiences. CIKM '24, October 21-25, 2024, Boise, ID, USA Enqiang Xu et al.",
   "REFERENCES": "[1] Qingyao Ai, Keping Bi, Jiafeng Guo, and W Bruce Croft. 2018. Learning a deep listwise context model for ranking refinement. In The 41st international ACM SIGIR conference on research & development in information retrieval . 135-144. [2] Irwan Bello, Sayali Kulkarni, Sagar Jain, Craig Boutilier, Ed Chi, Elad Eban, Xiyang Luo, Alan Mackey, and Ofer Meshi. 2018. Seq2Slate: Re-ranking and slate optimization with RNNs. arXiv preprint arXiv:1810.02019 (2018). [3] Alexey Bochkovskiy, Chien-Yao Wang, and Hong-Yuan Mark Liao. 2020. Yolov4: Optimal speed and accuracy of object detection. arXiv preprint arXiv:2004.10934 (2020). [4] Yue Cao, Xiaojiang Zhou, Jiaqi Feng, Peihao Huang, Yao Xiao, Dayao Chen, and Sheng Chen. 2022. Sampling is all you need on modeling long-term user behaviors for CTR prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2974-2983. [5] Jaime Carbonell and Jade Goldstein. 1998. The use of MMR, diversity-based reranking for reordering documents and producing summaries. In Proceedings of the 21st annual international ACM SIGIR conference on Research and development in information retrieval . 335-336. [6] Chi Chen, Hui Chen, Kangzhi Zhao, Junsheng Zhou, Li He, Hongbo Deng, Jian Xu, Bo Zheng, Yong Zhang, and Chunxiao Xing. 2022. Extr: click-through rate prediction with externalities in e-commerce sponsored search. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2732-2740. [7] Laming Chen, Guoxin Zhang, and Eric Zhou. 2018. Fast greedy map inference for determinantal point process to improve recommendation diversity. Advances in Neural Information Processing Systems 31 (2018). [8] Xi Chen, Yangsiyi Lu, Yuehai Wang, and Jianyi Yang. 2021. CMBF: Cross-modalbased fusion recommendation algorithm. Sensors 21, 16 (2021), 5275. [9] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [10] Yufei Feng, Yu Gong, Fei Sun, Junfeng Ge, and Wenwu Ou. 2021. Revisit recommender system in the permutation prospective. arXiv preprint arXiv:2102.12057 (2021). [11] Yufei Feng, Binbin Hu, Yu Gong, Fei Sun, Qingwen Liu, and Wenwu Ou. 2021. GRN: Generative Rerank Network for Context-wise Recommendation. arXiv preprint arXiv:2104.00860 (2021). [12] Tiezheng Ge, Liqin Zhao, Guorui Zhou, Keyu Chen, Shuying Liu, Huimin Yi, Zelin Hu, Bochao Liu, Peng Sun, Haoyu Liu, et al. 2018. Image matters: Visually modeling user behaviors using advanced model server. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . 2087-2095. [13] Xudong Gong, Qinlin Feng, Yuan Zhang, Jiangling Qin, Weijie Ding, Biao Li, Peng Jiang, and Kun Gai. 2022. Real-time short video recommendation on mobile devices. In Proceedings of the 31st ACM international conference on information & knowledge management . 3103-3112. [14] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . 1725-1731. [15] Songhao Han, Wei Huang, and Xiaotian Luan. 2022. VLSNR: Vision-Linguistics Coordination Time Sequence-aware News Recommendation. arXiv preprint arXiv:2210.02946 (2022). [16] Balázs Hidasi and Alexandros Karatzoglou. 2018. Recurrent neural networks with top-k gains for session-based recommendations. In Proceedings of the 27th ACM international conference on information and knowledge management . 843-852. [17] Taeri Kim, Yeon-Chang Lee, Kijung Shin, and Sang-Wook Kim. 2022. MARIO: modality-aware attention and modality-preserving decoders for multimedia recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 993-1002. [18] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [19] Qidong Liu, Jiaxi Hu, Yutian Xiao, Jingtong Gao, and Xiangyu Zhao. 2023. Multimodal recommender systems: A survey. arXiv preprint arXiv:2302.03883 (2023). [20] Shang Liu, Zhenzhong Chen, Hongyi Liu, and Xinghai Hu. 2019. User-video coattention network for personalized micro-video recommendation. In The World Wide Web Conference . 3020-3026. [21] Zhuang Liu, Yunpu Ma, Matthias Schubert, Yuanxin Ouyang, and Zhang Xiong. 2022. Multi-modal contrastive pre-training for recommendation. In Proceedings of the 2022 International Conference on Multimedia Retrieval . 99-108. [22] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [23] Kaixiang Mo, Bo Liu, Lei Xiao, Yong Li, and Jie Jiang. 2015. Image Feature Learning for Cold Start Problem in Display Advertising. In IJCAI International Joint Conference on Artificial Intelligence , Vol. 2015. 3728. [24] Xingyu Pan, Yushuo Chen, Changxin Tian, Zihan Lin, Jinpeng Wang, He Hu, and Wayne Xin Zhao. 2022. Multimodal meta-learning for cold-start sequential recommendation. In Proceedings of the 31st ACM international conference on information & knowledge management . 3421-3430. [25] Changhua Pei, Yi Zhang, Yongfeng Zhang, Fei Sun, Xiao Lin, Hanxiao Sun, Jian Wu, Peng Jiang, Junfeng Ge, Wenwu Ou, et al. 2019. Personalized re-ranking for recommendation. In Proceedings of the 13th ACM conference on recommender systems . 3-11. [26] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. [27] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, et al. 2021. Learning transferable visual models from natural language supervision. In International conference on machine learning . PMLR, 8748-8763. [28] Tetsuya Sakai, Jin Young Kim, and Inho Kang. 2023. A versatile framework for evaluating ranked lists in terms of group fairness and relevance. ACMTransactions on Information Systems 42, 1 (2023), 1-36. [29] Xiaowen Shi, Fan Yang, Ze Wang, Xiaoxu Wu, Muzhi Guan, Guogang Liao, Wang Yongkang, Xingxing Wang, and Dong Wang. 2023. PIER: Permutation-Level Interest-Based End-to-End Re-ranking Framework in E-commerce. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4823-4831. [30] Yunjia Xi, Weiwen Liu, Xinyi Dai, Ruiming Tang, Weinan Zhang, Qing Liu, Xiuqiang He, and Yong Yu. 2021. Context-aware reranking with utility maximization for recommendation. arXiv preprint arXiv:2110.09059 (2021). [31] Enqiang Xu, Yiming Qiu, Junyang Bai, Ping Zhang, Dadong Miao, Songlin Wang, Guoyu Tang, Lin Liu, and MingMing Li. 2024. Optimizing E-commerce Search: Toward a Generalizable and Rank-Consistent Pre-Ranking Model. In Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2875-2879. [32] Jing Xu, Yu Pan, Xinglin Pan, Steven Hoi, Zhang Yi, and Zenglin Xu. 2022. RegNet: self-regulated network for image classification. IEEE Transactions on Neural Networks and Learning Systems (2022). [33] Zheng Yuan, Fajie Yuan, Yu Song, Youhua Li, Junchen Fu, Fei Yang, Yunzhu Pan, and Yongxin Ni. 2023. Where to go next for recommender systems? idvs. modality-based recommender models revisited. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2639-2649. [34] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [35] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [36] Tao Zhuang, Wenwu Ou, and Zhirong Wang. 2018. Globally optimized mutual influence aware ranking in e-commerce search. In Proceedings of the 27th International Joint Conference on Artificial Intelligence . 3725-3731.",
   "keywords_parsed": [
-    "In the rapidly evolving field of e-commerce",
-    " the effectiveness of search re-ranking models is crucial for enhancing user experience and driving conversion rates. Despite significant advancements in feature representation and model architecture",
-    " the integration of multimodal information remains underexplored. This study addresses this gap by investigating the computation and fusion of textual and visual information in the context of re-ranking. We propose A dvancing R e-Ranking with M ulti m odal Fusion and T argetOriented Auxiliary Tasks (ARMMT)",
-    " which integrates an attentionbased multimodal fusion technique and an auxiliary ranking-aligned task to enhance item representation and improve targeting capabilities. This method not only enriches the understanding of product attributes but also enables more precise and personalized recommendations. Experimental evaluations on JD.com's search platform demonstrate that ARMMT achieves state-of-the-art performance in multimodal information integration",
-    " evidenced by a 0.22% increase in the Conversion Rate (CVR)",
-    " significantly contributing to Gross Merchandise Volume (GMV). This pioneering approach has the potential to revolutionize e-commerce re-ranking",
-    " leading to elevated user satisfaction and business growth."
+    "Multimodal Fusion",
+    "Neural Network",
+    "Information Retrieval"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Seq2Slate: Re-ranking and slate optimization with RNNs"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Yolov4: Optimal speed and accuracy of object detection"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Sampling is all you need on modeling long-term user behaviors for CTR prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "The use of MMR, diversity-based reranking for reordering documents and producing summaries"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Extr: click-through rate prediction with externalities in e-commerce sponsored search"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Fast greedy map inference for determinantal point process to improve recommendation diversity"
+    },
+    {
+      "ref_id": "b8",
+      "title": "CMBF: Cross-modalbased fusion recommendation algorithm"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Revisit recommender system in the permutation prospective"
+    },
+    {
+      "ref_id": "b11",
+      "title": "GRN: Generative Rerank Network for Context-wise Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Image matters: Visually modeling user behaviors using advanced model server"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Real-time short video recommendation on mobile devices"
+    },
+    {
+      "ref_id": "b14",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "VLSNR: Vision-Linguistics Coordination Time Sequence-aware News Recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Recurrent neural networks with top-k gains for session-based recommendations"
+    },
+    {
+      "ref_id": "b17",
+      "title": "MARIO: modality-aware attention and modality-preserving decoders for multimedia recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Multimodal recommender systems: A survey"
+    },
+    {
+      "ref_id": "b20",
+      "title": "User-video coattention network for personalized micro-video recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Multi-modal contrastive pre-training for recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Image Feature Learning for Cold Start Problem in Display Advertising"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Multimodal meta-learning for cold-start sequential recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b28",
+      "title": "A versatile framework for evaluating ranked lists in terms of group fairness and relevance"
+    },
+    {
+      "ref_id": "b29",
+      "title": "PIER: Permutation-Level Interest-Based End-to-End Re-ranking Framework in E-commerce"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Context-aware reranking with utility maximization for recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Optimizing E-commerce Search: Toward a Generalizable and Rank-Consistent Pre-Ranking Model"
+    },
+    {
+      "ref_id": "b32",
+      "title": "RegNet: self-regulated network for image classification"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Where to go next for recommender systems? idvs. modality-based recommender models revisited"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Globally optimized mutual influence aware ranking in e-commerce search"
+    }
   ]
 }

@@ -30,47 +30,129 @@
   "(b) WANDS MMR experiments": "Figure 4: Color Code: ■ LLM2, ■ LLM5 (c) Walmart MMR experiments Walmart 0.54 0.52 0.50 9 0.48 0.416 I",
   "keywords_parsed": [
     "Large Language Models",
-    " Search Relevance",
-    " Information Retrieval",
-    " Data Annotation",
-    " Prompt Engineering",
-    " Retrieval Augmented Generation",
-    " Maximum Marginal Relevance. ∗ Corresponding author † These authors contributed equally to this research. When a customer performs a search on an e-commerce platform like Walmart",
-    " it is essential that the search results show the exact products or relevant products they are looking for",
-    " saving the customer time and effort while providing a positive shopping experience. The product search experience on e-commerce platforms is powered by a collection of machine learning models and algorithms across the stages of pre-retrieval",
-    " retrieval",
-    " and post-retrieval ranking and filtering [20]. Many of these models rely on accurate query-product (Q-P) relevance label data for training and testing. Specifically",
-    " these labels indicate how relevant a given product is to a customer search query. For example",
-    " the product ' Ergonomic PU leather high back office chair with flip-up armrest ' is highly relevant to the search query ' leather chair '",
-    " while the product ' hard floor beveled edge chair mat ' is not relevant to the same query. We have worked with an external data labeling service which employs human labelers. The labelers were given Q-P pairs with detailed instructions and examples to guide labelers. They were not given any information on customer engagement data for Q-P pairs. Typically",
-    " three to five independent assessments are gathered per Q-P pair. Despite the guidelines",
-    " human labelers do not always reach consensus on an annotation",
-    " hence labeled data is often noisy. Furthermore",
-    " external human labeling is expensive and time-consuming",
-    " and hence only Q-P pairs corresponding to a small fraction of all queries can be labeled. Despite these challenges",
-    " external human labelers are considered as the most reliable method of acquiring data annotations",
-    " and is widely used across e-commerce and internet industries. Previously",
-    " Q-P relevance labels were obtained from clickstream data and human annotation as shown in Figure 1(a). Higher engagement of a product given a search query would be considered a positive signal for relevance. However",
-    " cold-start products (such as newly introduced products and tail products that are sold infrequently) may lack sufficient impressions",
-    " click-through-rate (CTR)",
-    " or add-to-cart (ATC) rate information due to their limited exposure to the customers. Furthermore",
-    " some products might get a lot of impressions and clicks even if they are not very relevant to the search query. For example",
-    " the product ' fresh lime ' gets a relatively high number of impressions and clicks for the query ' lemon '",
-    " but it is not a very relevant product. Identifying the strong need for an automated framework Jayant Sachdev",
-    " Sean D Rosario",
-    " Abhijeet Phatak",
-    " He Wen",
-    " Swati Kirti",
-    " and Chittaranjan Tripathy (a) Previous approaches of acquiring Q-P relevance QP Pairs Relevance Labels Customer Engagement Instructions with Examples Relevance Labels Pairs Third-Party Human Annotators (b) Our approach to annotating Q-P relevance Pairs Retrieval Augmentation Shot Examples Examples Few-Shot Exanples Examples Large Language Diversely Models Relevance Labels Sanpled Figure 1: Comparison of pipeline architectures for Q-P relevance annotation for Q-P relevance labeling",
-    " in this work",
-    " we demonstrate that Large Language Models (LLMs) can be used successfully to obtain accurate relevance labels in a fully automated manner and at scale. A schematic of our approach is shown in Figure 1(b)",
-    " which we will detail in the subsequent sections. We have experimented with several LLMs for this task. We have explored different e-commerce search datasets",
-    " as well as ablation studies on the effectiveness of prompt engineering techniques including Chain-of-Thought (CoT) prompting",
-    " In-context Learning (ICL)",
-    " and Retrieval Augmented Generation (RAG) with Maximum Marginal Relevance (MMR). Figure 2 shows Retrieval-Augmented Generation (RAG) architecture",
-    " designed and used in our work",
-    " which contains a retrieval component that retrieves relevant labeled query-product pairs for a given query-product pair. These relevant query-product pairs",
-    " providing the contextual information",
-    " are then used to create prompts which are provided as input to the LLMs."
+    "Search Relevance",
+    "Information Retrieval",
+    "Data Annotation",
+    "Prompt Engineering",
+    "Retrieval Augmented Generation",
+    "Maximum Marginal Relevance"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Improving Relevance Quality in Product Search using High-Precision Query-Product Semantic Similarity"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The use of MMR, diversity-based reranking for reordering documents and producing summaries"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Unleashing the potential of prompt engineering in Large Language Models: a comprehensive review"
+    },
+    {
+      "ref_id": "b5",
+      "title": "WANDS: Dataset for Product Search Relevance Assessment"
+    },
+    {
+      "ref_id": "b6",
+      "title": "A Survey on In-context Learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "GPT-4 Technical Report"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Perspectives on large language models for relevance judgment"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Can Large Language Models Design Accurate Label Functions?"
+    },
+    {
+      "ref_id": "b10",
+      "title": "AnnoLLM: Making Large Language Models to Be Better Crowdsourced Annotators"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Chroma DB"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Mistral 7B"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Mixtral of Experts"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Large Language Models are Zero-Shot Reasoners"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Retrieval-augmented generation for knowledge-intensive nlp tasks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Awq: Activation-aware weight quantization for llm compression and acceleration"
+    },
+    {
+      "ref_id": "b18",
+      "title": "The Llama 3 Herd of Models"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Scikit-learn: Machine Learning in Python"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Pre-training Tasks for User Intent Detection and Embedding Retrieval in E-commerce Search"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Snorkel: Rapid Training Data Creation with Weak Supervision"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Shopping Queries Dataset: A Large-Scale ESCI Benchmark for Improving Product Search"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context"
+    },
+    {
+      "ref_id": "b24",
+      "title": "ChatGPT Goes Shopping: LLMs Can Predict Relevance in eCommerce Search"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Comparing GPT-4 and Open-Source Language Models in Misinformation Mitigation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Want To Reduce Labeling Cost? GPT-3 Can Help"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Complementary explanations for effective in-context learning"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Data-centric Artificial Intelligence: A Survey"
+    }
   ]
 }

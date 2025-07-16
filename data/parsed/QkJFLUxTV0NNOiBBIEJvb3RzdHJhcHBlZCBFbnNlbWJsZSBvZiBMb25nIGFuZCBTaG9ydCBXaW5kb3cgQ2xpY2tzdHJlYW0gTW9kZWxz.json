@@ -18,7 +18,119 @@
   "5 IN-SESSION PROACTIVE INTERVENTIONS": "BBE-LSWCM has been used to build a real-time prediction model for early detection of subscription cancellation in QBO. We have set up the data processing, model training and model inference as an end-to-end (e2e) automated pipeline (see Fig. 4) with following components: (1) batch featurization using daily PySpark jobs scheduled on Kubernetes; (2) Real-time featurization using Spark's Structured Streaming with executors running on Kubernetes; (3) AWS DynamoDB based low latency feature store; (4) AWS SageMaker jobs for LWM, SWM and EMM model training; (5) LWM parallel batch inference on Kubernetes pods; (6) AWS sagemaker Figure 4: BBE-LSWCM production deployment architecture. Spark Structured Streaming Sagemaker Inferece Redlime SVM Fealurizabon Ensemble In'crcace ClickStream Events Featune Store AWS DynamoDB Realime Batch LWM Batch Inlerence Batch Event Store Dalalake / 53 PySpark Jobs AWS Sagemeker Mocel Tra ning ML Framework using Kubeflow AutoScaling inference for real-time SWM and EMM inference; (7) Kubeflow for orchestrating the entire pipeline. This model has been integrated with the in-product intervention platform of QBO to run large-scale retention campaigns with realtime, contextual, and proactive interventions. An evaluation of the model (via an HTTP endpoint) at any given time for a customer provides the churn propensity of the user (High or Low with a probability score) based on the recent and long-window product usage in conjunction with user-profile information. When a model inference returns 'High' risk of churn, a proactive chat window pops up in the product with relevant help and the option to directly chat or call with a CRM agent. If the user accepts the proactive help, the intervention platform in that case evaluates the BBE-LSWCM model for intended task detection and passes the predicted intent of the user also to the CRM agent panel (Salesforce) to facilitate more contextual and personalized assistance. Online Results: We have conducted an A/B test on the QBO first-time users for a complete month to track the effect of BBELSWCM-based real-time proactive interventions. We have observed a ∼ 30% reduction in the FTU churn rate (p-value = 0.0057, power = 0.97) for the treatment group (intervention provided if detected as high risk) as compared to the control group (no intervention provided though detected as high risk). Moreover, the acceptance rate of the interventions at an aggregated user level is 4x as compared to other intervention campaigns which are powered by business rules as opposed to a machine learning system like BBE-LSWCM.",
   "6 CONCLUSION": "We have proposed an efficient (cost-effective and low-latency) and robust (higher predictive accuracy compared to the baselines) clickstream modeling framework for real-time event prediction problems. By using a bootstrapped ensemble of short-window and longwindow user behavior models, BBE-LSWCM has outperformed not only batch models but also other state-of-the-art in-session and survival models. We have also described how BBE-LSWCM has been used in a real industry setting for driving real-time proactive interventions for a large SaaS subscription commerce. One of the immediate future directions is to implement BBE-LSWCM for other real-time event prediction problems. In addition, though the local explainability of LWM can easily be generated through modules such as SHAP, LIME [36, 38], generating explainability based on the embedded in-session clicks through the SWM and the EMM layer is another area to be explored. BBE-LSWCM: A Bootstrapped Ensemble of Long and Short Window Clickstream Models CODS-COMAD 2024, January 4-7, 2024, Bangalore, India",
   "REFERENCES": "[1] David Adedayo Adeniyi, Zhaoqiang Wei, and Yang Yongquan. 2016. Automated web usage data mining and recommendation system using K-Nearest Neighbor (KNN) classification method. Applied Computing and Informatics (2016). [2] Abdelrahim Kasem Ahmad, Assef Jafar, and Kadan Aljoumaa. 2019. Customer churn prediction in telecom using machine learning in big data platform. Journal of Big Data (2019). [3] Shelby D Bernhard, Carson K Leung, Vanessa J Reimer, and Joshua Westlake. 2016. Clickstream prediction using sequential stream mining techniques with Markov chains. In IDEAS . [4] Paul Bertens, Anna Guitart, and África Periáñez. 2017. Games and big data: A scalable multi-dimensional churn prediction model. In 2017 IEEE conference on computational intelligence and games (CIG) . [5] Veronika Bogina and Tsvi Kuflik. 2017. Incorporating Dwell Time in SessionBased Recommendations with Recurrent Neural Networks.. In RecTemp@ RecSys . 57-59. [6] Jonathan Burez and Dirk Van den Poel. 2009. Handling class imbalance in customer churn prediction. Expert Systems with Applications (2009). [7] Bo Chen, Yichao Wang, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, and Xiuqiang He. 2021. Enhancing explicit and implicit feature interactions via information sharing for parallel deep ctr models. In Proceedings of the 30th ACM international conference on information & knowledge management . 3757-3766. [8] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [9] Alexandros Deligiannis and Charalampos Argyriou. 2020. Designing a Real-Time Data-Driven Customer Churn Risk Indicator for Subscription Commerce. IJIEEB (2020). [10] Joana Dias, Pedro Godinho, and Pedro Torres. 2020. Machine Learning for Customer Churn Prediction in Retail Banking. In ICCSA . [11] Amy Wenxuan Ding, Shibo Li, and Patrali Chatterjee. 2015. Learning user realtime intent for optimal dynamic web page transformation. Information Systems Research (2015). [12] Amineh Ghorbani, Fattaneh Taghiyareh, and Caro Lucas. 2009. The application of the locally linear model tree on customer churn prediction. In SoCPaR 2009 . [13] Yulong Gu, Zhuoye Ding, Shuaiqiang Wang, and Dawei Yin. 2020. Hierarchical user profiling for e-commerce recommender systems. In WSDM . [14] Şule Gündüz and M Tamer Özsu. 2003. A web page prediction model based on click-stream tree representation of user behavior. In KDD . 535-540. [15] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [16] Tobias Hatt and Stefan Feuerriegel. 2020. Early detection of user exits from clickstream data: A Markov modulated marked point process model. In The Web Conference . [17] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [18] Yiqing Huang, Fangzhou Zhu, Mingxuan Yuan, Ke Deng, Yanhua Li, Bing Ni, Wenyuan Dai, Qiang Yang, and Jia Zeng. 2015. Telco churn prediction with big data. In SIGMOD . [19] Hemant Ishwaran, Udaya B Kogalur, Eugene H Blackstone, and Michael S Lauer. 2008. Random survival forests. (2008). [20] Porter Jenkins. 2019. Clickgraph: Web page embedding using clickstream data for multitask learning. In WWW . [21] Jared L Katzman, Uri Shaham, Alexander Cloninger, Jonathan Bates, Tingting Jiang, and Yuval Kluger. 2018. DeepSurv: personalized treatment recommender system using a Cox proportional hazards deep neural network. BMC medical research methodology 18, 1 (2018), 1-12. [22] Guolin Ke, Qi Meng, Thomas Finley, Taifeng Wang, Wei Chen, Weidong Ma, Qiwei Ye, and Tie-Yan Liu. 2017. Lightgbm: A highly efficient gradient boosting decision tree. NeurIPS (2017). [23] SN Lahiri. 2003. Resampling methods for dependent data . Springer Science & Business Media. [24] Soumendra N Lahiri. 1999. Theoretical comparisons of block bootstrap methods. Annals of Statistics (1999). [25] Jiayu Li, Hongyu Lu, Chenyang Wang, Weizhi Ma, Min Zhang, Xiangyu Zhao, Wei Qi, Yiqun Liu, and Shaoping Ma. 2021. A Difficulty-Aware Framework for Churn Prediction and Intervention in Games. In KDD 2021 . [26] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. 2017. Neural attentive session-based recommendation. In CIKM . [27] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [50] Yu Zhu, Hao Li, Yikang Liao, Beidou Wang, Ziyu Guan, Haifeng Liu, and Deng Cai. 2017. What to Do Next: Modeling User Behaviors by Time-LSTM.. In IJCAI .",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Automated web usage data mining and recommendation system using K-Nearest Neighbor (KNN) classification method"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Customer churn prediction in telecom using machine learning in big data platform"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Clickstream prediction using sequential stream mining techniques with Markov chains"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Games and big data: A scalable multi-dimensional churn prediction model"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Incorporating Dwell Time in SessionBased Recommendations with Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Handling class imbalance in customer churn prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Enhancing explicit and implicit feature interactions via information sharing for parallel deep ctr models"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Designing a Real-Time Data-Driven Customer Churn Risk Indicator for Subscription Commerce"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Machine Learning for Customer Churn Prediction in Retail Banking"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Learning user realtime intent for optimal dynamic web page transformation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "The application of the locally linear model tree on customer churn prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Hierarchical user profiling for e-commerce recommender systems"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A web page prediction model based on click-stream tree representation of user behavior"
+    },
+    {
+      "ref_id": "b15",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Early detection of user exits from clickstream data: A Markov modulated marked point process model"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Telco churn prediction with big data"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Random survival forests"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Clickgraph: Web page embedding using clickstream data for multitask learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "DeepSurv: personalized treatment recommender system using a Cox proportional hazards deep neural network"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Lightgbm: A highly efficient gradient boosting decision tree"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Resampling methods for dependent data"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Theoretical comparisons of block bootstrap methods"
+    },
+    {
+      "ref_id": "b25",
+      "title": "A Difficulty-Aware Framework for Churn Prediction and Intervention in Games"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Neural attentive session-based recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b50",
+      "title": "What to Do Next: Modeling User Behaviors by Time-LSTM"
+    }
   ]
 }

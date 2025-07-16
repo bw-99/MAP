@@ -12,6 +12,60 @@
   "ACKNOWLEDGMENTS": "We would like to thank Yulia Stolin, Andraž Tori, Jure Ferlež, Robert Dovžan, Chen Weiss, Moran Haham, Or Shoham, Gal Giladi Levi, Danny Kidron, and Yonatan Zusman for their valuable contributions to this project.",
   "REFERENCES": "[1] Rohan Anil, Sandra Gadanho, Da Huang, Nijith Jacob, Zhuoshu Li, Dong Lin, Todd Phillips, Cristina Pop, Kevin Regan, Gil I Shamir, et al. 2022. On the Factory Floor: ML Engineering for Industrial-Scale Ads Recommendation Models. In Proceedings of the 5th Workshop on Online Recommender Systems and User Modeling co-located with the 16th ACM Conference on Recommender Systems . [2] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [3] Jan Hartman and Davorin Kopič. 2021. Scaling TensorFlow to 300 million predictions per second. In Proceedings of the 15th ACM Conference on Recommender Systems . 595-597. [4] Jan Hartman and Davorin Kopič. 2022. Exploration with Model Uncertainty at Extreme Scale in Real-Time Bidding. In Proceedings of the 16th ACM Conference on Recommender Systems . 469-471. [5] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In Proceedings of the Eighth International Workshop on Data Mining for Online Advertising . 1-9. [6] Kurt Hornik, Maxwell Stinchcombe, and Halbert White. 1989. Multilayer feedforward networks are universal approximators. Neural networks 2, 5 (1989), 359-366. [7] Yuchin Juan, Yong Zhuang, Wei-Sheng Chin, and Chih-Jen Lin. 2016. Field-aware factorization machines for CTR prediction. In Proceedings of the 10th ACM conference on recommender systems . 43-50. [8] H Brendan McMahan, Gary Holt, David Sculley, Michael Young, Dietmar Ebner, Julian Grady, Lan Nie, Todd Phillips, Eugene Davydov, Daniel Golovin, et al. 2013. Ad click prediction: a view from the trenches. In Proceedings of the 19th ACM SIGKDD international conference on Knowledge discovery and data mining . 1222-1230. [9] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . IEEE, 995-1000. [10] Jun Wang, Weinan Zhang, Shuai Yuan, et al. 2017. Display advertising with real-time bidding (RTB) and behavioural targeting. Foundations and Trends® in Information Retrieval 11, 4-5 (2017), 297-435. [11] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the web conference 2021 . 1785-1797. [12] Jeonghee Yi, Ye Chen, Jie Li, Swaraj Sett, and Tak W. Yan. 2013. Predictive Model Performance: Offline and Online Evaluations. In Proceedings of the 19th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (Chicago, Illinois, USA) (KDD '13) . 1294-1302. https://doi.org/10.1145/2487575.2488215 5",
   "keywords_parsed": [
-    "None"
+    "machine learning",
+    "big data",
+    "auxiliary model",
+    "context-based model",
+    "click-through rate prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "On the Factory Floor: ML Engineering for Industrial-Scale Ads Recommendation Models"
+    },
+    {
+      "ref_id": "b2",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Scaling TensorFlow to 300 million predictions per second"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Exploration with Model Uncertainty at Extreme Scale in Real-Time Bidding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Multilayer feedforward networks are universal approximators"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Field-aware factorization machines for CTR prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Ad click prediction: a view from the trenches"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Display advertising with real-time bidding (RTB) and behavioural targeting"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Predictive Model Performance: Offline and Online Evaluations"
+    }
   ]
 }

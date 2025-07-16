@@ -30,8 +30,102 @@
   "REFERENCES": "[1] Paul Baltescu, Haoyu Chen, Nikil Pancha, Andrew Zhai, Jure Leskovec, and Charles Rosenberg. 2022. ItemSage: Learning Product Embeddings for Shopping Recommendations at Pinterest. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . Association for Computing Machinery, New York, NY, USA, 2703-2711. [2] Josh Beal, Hao-Yu Wu, Dong Huk Park, Andrew Zhai, and Dmitry Kislyuk. 2022. Billion-Scale Pretraining with Vision Transformers for Multi-task Visual Representations. In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision . 564-573. [3] Piotr Bojanowski, Edouard Grave, Armand Joulin, and Tomas Mikolov. 2017. Enriching Word Vectors with Subword Information. Transactions of the Association for Computational Linguistics 5 (2017), 135-146. [4] Daniel Cer, Yinfei Yang, Sheng-yi Kong, Nan Hua, Nicole Limtiaco, Rhomni St. John, Noah Constant, Mario Guajardo-Cespedes, Steve Yuan, Chris Tar, Brian Strope, and Ray Kurzweil. 2018. Universal Sentence Encoder for English. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing: System Demonstrations . Association for Computational Linguistics, Brussels, Belgium, 169-174. [5] Nurendra Choudhary, Nikhil Rao, Karthik Subbian, and Chandan K. Reddy. 2022. Graph-Based Multilingual Language Model: Leveraging Product Relations for Search Relevance. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . Association for Computing Machinery, New York, NY, USA, 2789-2799. [6] Alexis Conneau, Douwe Kiela, Holger Schwenk, Loïc Barrault, and Antoine Bordes. 2017. Supervised Learning of Universal Sentence Representations from Natural Language Inference Data. In Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing . Association for Computational Linguistics, Copenhagen, Denmark, 670-680. [7] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems . Association for Computing Machinery, New York, NY, USA, 191-198. [8] Miles Efron, Peter Organisciak, and Katrina Fenlon. 2012. Improving Retrieval of Short Texts through Document Expansion. In Proceedings of the 35th International ACM SIGIR Conference on Research and Development in Information Retrieval . Association for Computing Machinery, New York, NY, USA, 911-920. [9] John Giorgi, Osvald Nitski, Bo Wang, and Gary Bader. 2021. DeCLUTR: Deep Contrastive Learning for Unsupervised Textual Representations. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) . Association for Computational Linguistics, Online, 879-895. [10] William L. Hamilton, Rex Ying, and Jure Leskovec. 2017. Inductive Representation Learning on Large Graphs. In Proceedings of the 31st International Conference on Neural Information Processing Systems . Curran Associates Inc., Red Hook, NY, USA, 1025-1035. [11] Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, and Linjun Yang. 2020. EmbeddingBased Retrieval in Facebook Search. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . Association for Computing Machinery, New York, NY, USA, 2553-2561. [12] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning Deep Structured Semantic Models for Web Search using Clickthrough Data. In Proceedings of the 22nd ACM International Conference on Information & Knowledge Management . Association for Computing Machinery, New York, NY, USA, 2333-2338. [13] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning Deep Structured Semantic Models for Web Search Using Clickthrough Data. In Proceedings of the 22nd ACM International Conference on Information & Knowledge Management . Association for Computing Machinery, New York, NY, USA, 2333-2338. [14] Jeff Johnson, Matthijs Douze, and Hervé Jégou. 2019. Billion-Scale Similarity Search with GPUs. IEEE Transactions on Big Data 7, 3 (2019), 535-547. [15] Prannay Khosla, Piotr Teterwak, Chen Wang, Aaron Sarna, Yonglong Tian, Phillip Isola, Aaron Maschinot, Ce Liu, and Dilip Krishnan. 2020. Supervised Contrastive Learning. In Advances in Neural Information Processing Systems , H. Larochelle, M. Ranzato, R. Hadsell, M.F. Balcan, and H. Lin (Eds.), Vol. 33. Curran Associates, Inc., 18661-18673. [16] Kenton Lee, Ming-Wei Chang, and Kristina Toutanova. 2019. Latent Retrieval for Weakly Supervised Open Domain Question Answering. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics . Association for Computational Linguistics, Florence, Italy, 6086-6096. [17] Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi. 2023. BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation. In Proceedings of the 40th International Conference on Machine Learning . JMLR.org, New York, NY, USA, Article 814, 13 pages. WWW'24 Companion, May 13-17, 2024, Singapore, Singapore Prabhat Agarwal et al. [36] Xinyang Yi, Ji Yang, Lichan Hong, Derek Zhiyuan Cheng, Lukasz Heldt, Aditee Kumthekar, Zhe Zhao, Li Wei, and Ed Chi. 2019. Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations. In Proceedings of the 13th ACMConference on Recommender Systems . Association for Computing Machinery, New York, NY, USA, 269-277. [37] Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, William L. Hamilton, and Jure Leskovec. 2018. Graph Convolutional Neural Networks for Web-Scale Recommender Systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . Association for Computing Machinery, New York, NY, USA, 974-983. [38] Licheng Yu, Jun Chen, Animesh Sinha, Mengjiao Wang, Yu Chen, Tamara L. Berg, and Ning Zhang. 2022. CommerceMM: Large-Scale Commerce MultiModal Representation Learning with Omni Retrieval. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . Association for Computing Machinery, New York, NY, USA, 4433-4442. [39] Chuxu Zhang, Dongjin Song, Chao Huang, Ananthram Swami, and Nitesh V. Chawla. 2019. Heterogeneous Graph Neural Network. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . Association for Computing Machinery, New York, NY, USA, 793-803. [40] Jianjin Zhang, Zheng Liu, Weihao Han, Shitao Xiao, Ruicheng Zheng, Yingxia Shao, Hao Sun, Hanqing Zhu, Premkumar Srinivasan, Weiwei Deng, Qi Zhang, and Xing Xie. 2022. Uni-Retriever: Towards Learning the Unified Embedding Based Retriever in Bing Sponsored Search. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . Association for Computing Machinery, New York, NY, USA, 4493-4501. [41] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. Recommending What Video to Watch Next: A Multitask Ranking System. In Proceedings of the 13th ACM Conference on Recommender Systems . Association for Computing Machinery, New York, NY, USA, 43-51.",
   "keywords_parsed": [
     "Multi-Task Learning",
-    " Multimodal Embeddings",
-    " Representation Learning",
-    " Search Recommendation Systems"
+    "Multimodal Embeddings",
+    "Representation Learning",
+    "Search Recommendation Systems"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "ItemSage: Learning Product Embeddings for Shopping Recommendations at Pinterest"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Billion-Scale Pretraining with Vision Transformers for Multi-task Visual Representations"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Enriching Word Vectors with Subword Information"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Universal Sentence Encoder for English"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Graph-Based Multilingual Language Model: Leveraging Product Relations for Search Relevance"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Supervised Learning of Universal Sentence Representations from Natural Language Inference Data"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Improving Retrieval of Short Texts through Document Expansion"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeCLUTR: Deep Contrastive Learning for Unsupervised Textual Representations"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Inductive Representation Learning on Large Graphs"
+    },
+    {
+      "ref_id": "b11",
+      "title": "EmbeddingBased Retrieval in Facebook Search"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Learning Deep Structured Semantic Models for Web Search using Clickthrough Data"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Learning Deep Structured Semantic Models for Web Search Using Clickthrough Data"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Billion-Scale Similarity Search with GPUs"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Supervised Contrastive Learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Latent Retrieval for Weakly Supervised Open Domain Question Answering"
+    },
+    {
+      "ref_id": "b17",
+      "title": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Graph Convolutional Neural Networks for Web-Scale Recommender Systems"
+    },
+    {
+      "ref_id": "b38",
+      "title": "CommerceMM: Large-Scale Commerce MultiModal Representation Learning with Omni Retrieval"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Heterogeneous Graph Neural Network"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Uni-Retriever: Towards Learning the Unified Embedding Based Retriever in Bing Sponsored Search"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Recommending What Video to Watch Next: A Multitask Ranking System"
+    }
   ]
 }

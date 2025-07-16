@@ -23,7 +23,87 @@
   "6 CONCLUSION": "In this paper, we surveyed existing embedding compression methods and proposed a new taxonomy. We modularized the compression pipeline and implemented a unified evaluation framework. We conducted a comprehensive experimental evaluation to analyze the performance of each method under different memory budgets. The experimental results reveal the pros and cons of each method, provide suggestions for method selection in different situations, and shed light on promising research directions.",
   "ACKNOWLEDGMENTS": "This work is supported by National Key R&D Program of China (2022ZD0116315), National Natural Science Foundation of China (U22B2037 and U23B2048), and PKU-Tencent joint research Lab. Yingxia Shao's work is supported by the National Natural Science Foundation of China (Nos. 62272054, 62192784), Beijing Nova Program (No. 20230484319), the Fundamental Research Funds for the Central Universities (No. 2023PY11) and Xiaomi Young Talents Program. Bin Cui and Xupeng Miao are the co-corresponding authors.",
   "REFERENCES": "[1] Sajid Anwar, Kyuyeon Hwang, and Wonyong Sung. 2017. Structured Pruning of Deep Convolutional Neural Networks. ACM Journal on Emerging Technologies in Computing Systems 13, 3 (2017), 32:1-32:18. [2] Ron Banner, Yury Nahshan, and Daniel Soudry. 2019. Post training 4-bit quantization of convolutional networks for rapid-deployment. In Advances in Neural Information Processing Systems 32 (NeurIPS) . [3] Nitin Bansal, Xiaohan Chen, and Zhangyang Wang. 2018. Can We Gain More from Orthogonality Regularizations in Training Deep Networks?. In Advances in Neural Information Processing Systems 31 (NeurIPS) . [4] Sebastian Borgeaud, Arthur Mensch, Jordan Hoffmann, Trevor Cai, Eliza Rutherford, Katie Millican, George van den Driessche, Jean-Baptiste Lespiau, Bogdan Damoc, Aidan Clark, Diego de Las Casas, Aurelia Guy, Jacob Menick, Roman Ring, Tom Hennigan, Saffron Huang, Loren Maggiore, Chris Jones, Albin Cassirer, Andy Brock, Michela Paganini, Geoffrey Irving, Oriol Vinyals, Simon Osindero, Karen Simonyan, Jack W. Rae, Erich Elsen, and Laurent Sifre. 2022. Improving Language Models by Retrieving from Trillions of Tokens. In Proceedings of the 39th International Conference on Machine Learning (ICML) . [5] Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel M. Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei. 2020. Language Models are Few-Shot Learners. In Advances in Neural Information Processing Systems 33 (NeurIPS) . [6] Patrick H. Chen, Si Si, Yang Li, Ciprian Chelba, and Cho-Jui Hsieh. 2018. GroupReduce: Block-Wise Low-Rank Approximation for Neural Language Model Shrinking. In Advances in Neural Information Processing Systems 31 (NeurIPS) . [7] Qi Chen, Bing Zhao, Haidong Wang, Mingqin Li, Chuanjie Liu, Zengzhong Li, Mao Yang, and Jingdong Wang. 2021. SPANN: Highly-efficient Billion-scale Approximate Nearest Neighborhood Search. In Advances in Neural Information Processing Systems 34 (NeurIPS) . [8] Tianyi Chen, Jun Gao, Hedui Chen, and Yaofeng Tu. 2023. LOGER: A Learned Optimizer towards Generating Efficient and Robust Query Execution Plans. Proceedings of the VLDB Endowment 16, 7 (2023), 1777-1789. [9] Ting Chen, Lala Li, and Yizhou Sun. 2020. Differentiable Product Quantization for End-to-End Embedding Compression. In Proceedings of the 37th International Conference on Machine Learning (ICML) . [10] Ting Chen, Martin Renqiang Min, and Yizhou Sun. 2018. Learning K-way D-dimensional Discrete Codes for Compact Embedding Representations. In Proceedings of the 35th International Conference on Machine Learning (ICML) . [11] Tianqi Chen, Thierry Moreau, Ziheng Jiang, Lianmin Zheng, Eddie Q. Yan, Haichen Shen, Meghan Cowan, Leyuan Wang, Yuwei Hu, Luis Ceze, Carlos Guestrin, and Arvind Krishnamurthy. 2018. TVM: An Automated End-toEnd Optimizing Compiler for Deep Learning. In 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI) . [12] Tong Chen, Hongzhi Yin, Yujia Zheng, Zi Huang, Yang Wang, and Meng Wang. 2021. Learning Elastic Embeddings for Customizing On-Device Recommenders. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (KDD) . [13] Xubin Chen, Ning Zheng, Shukun Xu, Yifan Qiao, Yang Liu, Jiangpeng Li, and Tong Zhang. 2021. KallaxDB: A Table-less Hash-based Key-Value Store on Storage Hardware with Built-in Transparent Compression. In Proceedings of the 17th International Workshop on Data Management on New Hardware (DaMoN) . [14] Yizhou Chen, Guangda Huzhang, Anxiang Zeng, Qingtao Yu, Hui Sun, Heng-Yi Li, Jingyi Li, Yabo Ni, Han Yu, and Zhiming Zhou. 2023. Clustered Embedding Learning for Recommender Systems. In Proceedings of the Web Conference (WWW) . [15] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems (DLRS@RecSys) . [16] Weiyu Cheng, Yanyan Shen, and Linpeng Huang. 2020. Differentiable Neural Input Search for Recommender Systems. CoRR abs/2006.04466 (2020). [17] DeepRec. 2021. Adaptive Embedding. https://github.com/alibaba/DeepRec/blo b/main/docs/docs_en/Adaptive-Embedding.md. [18] Wei Deng, Junwei Pan, Tian Zhou, Deguang Kong, Aaron Flores, and Guang Lin. 2021. DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining (WSDM) . [19] Aditya Desai, Li Chou, and Anshumali Shrivastava. 2022. Random Offset Block Embedding (ROBE) for compressed embedding tables in deep learning recommendation systems. In Proceedings of Machine Learning and Systems (MLSys) . [121] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open Benchmarking for Click-Through Rate Prediction. In Proceedings of the 30th ACMInternational Conference on Information & Knowledge Management (CIKM) .",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Structured Pruning of Deep Convolutional Neural Networks"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Post training 4-bit quantization of convolutional networks for rapid-deployment"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Can We Gain More from Orthogonality Regularizations in Training Deep Networks?"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Improving Language Models by Retrieving from Trillions of Tokens"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Language Models are Few-Shot Learners"
+    },
+    {
+      "ref_id": "b6",
+      "title": "GroupReduce: Block-Wise Low-Rank Approximation for Neural Language Model Shrinking"
+    },
+    {
+      "ref_id": "b7",
+      "title": "SPANN: Highly-efficient Billion-scale Approximate Nearest Neighborhood Search"
+    },
+    {
+      "ref_id": "b8",
+      "title": "LOGER: A Learned Optimizer towards Generating Efficient and Robust Query Execution Plans"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Differentiable Product Quantization for End-to-End Embedding Compression"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Learning K-way D-dimensional Discrete Codes for Compact Embedding Representations"
+    },
+    {
+      "ref_id": "b11",
+      "title": "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Learning Elastic Embeddings for Customizing On-Device Recommenders"
+    },
+    {
+      "ref_id": "b13",
+      "title": "KallaxDB: A Table-less Hash-based Key-Value Store on Storage Hardware with Built-in Transparent Compression"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Clustered Embedding Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Differentiable Neural Input Search for Recommender Systems"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Adaptive Embedding"
+    },
+    {
+      "ref_id": "b18",
+      "title": "DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Random Offset Block Embedding (ROBE) for compressed embedding tables in deep learning recommendation systems"
+    },
+    {
+      "ref_id": "b121",
+      "title": "Open Benchmarking for Click-Through Rate Prediction"
+    }
   ]
 }

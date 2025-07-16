@@ -20,7 +20,103 @@
   "REFERENCES": "[1] Mohamed S Abdelfattah, Abhinav Mehrotra, Łukasz Dudziak, and Nicholas D Lane. 2021. Zero-cost proxies for lightweight nas. arXiv preprint arXiv:2101.08134 (2021). [2] Rohan Anil, Sandra Gadanho, Da Huang, Nijith Jacob, Zhuoshu Li, Dong Lin, Todd Phillips, Cristina Pop, Kevin Regan, Gil I Shamir, et al. 2022. On the factory floor: ML engineering for industrial-scale ads recommendation models. arXiv preprint arXiv:2209.05310 (2022). [3] Colby Banbury, Chuteng Zhou, Igor Fedorov, Ramon Matas, Urmish Thakker, Dibakar Gope, Vijay Janapa Reddi, Matthew Mattina, and Paul Whatmough. 2021. MicroNets: Neural Network Architectures for Deploying TinyML Applications on Commodity Microcontrollers. In Proceedings of Machine Learning and Systems , A. Smola, A. Dimakis, and I. Stoica (Eds.), Vol. 3. 517-532. https://proceedings.mlsys.org/paper_files/paper/2021/file/ c4d41d9619462c534b7b61d1f772385e-Paper.pdf [4] Gabriel Bender, Pieter-Jan Kindermans, Barret Zoph, Vijay Vasudevan, and Quoc Le. 2018. Understanding and simplifying one-shot architecture search. In International conference on machine learning . PMLR, 550-559. [5] G. Bender, H. Liu, B. Chen, G. Chu, S. Cheng, P. Kindermans, and Q. V. Le. 2020. Can Weight Sharing Outperform Random Architecture Search? An Investigation With TuNAS. In 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) . IEEE Computer Society, Los Alamitos, CA, USA, 14311-14320. https://doi.org/10.1109/CVPR42600.2020.01433 [6] Gabriel Bender, Hanxiao Liu, Bo Chen, Grace Chu, Shuyang Cheng, Pieter-Jan Kindermans, and Quoc V Le. 2020. Can weight sharing outperform random architecture search? an investigation with tunas. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 14323-14332. [7] Han Cai, Ligeng Zhu, and Song Han. 2018. ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware. In International Conference on Learning Representations . [8] Yufan Cao, Tunhou Zhang, Wei Wen, Feng Yan, Hai Li, and Yiran Chen. 2023. Farthest Greedy Path Sampling for Two-shot Recommender Search. arXiv preprint arXiv:2310.20705 (2023). [9] Xuanyi Dong and Yi Yang. 2019. Searching for a Robust Neural Architecture in Four GPU Hours. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) . [10] Igor Fedorov, Ryan P Adams, Matthew Mattina, and Paul Whatmough. 2019. SpArSe: Sparse Architecture Search for CNNs on Resource-Constrained Microcontrollers. In Advances in Neural Information Processing Systems , H. Wallach, H. Larochelle, A. Beygelzimer, F. d'Alché-Buc, E. Fox, and R. Garnett (Eds.), Vol. 32. Curran Associates, Inc. https://proceedings.neurips.cc/paper_files/paper/2019/ file/044a23cadb567653eb51d4eb40acaa88-Paper.pdf [11] Igor Fedorov, Ramon Matas, Hokchhay Tann, Chuteng Zhou, Matthew Mattina, and Paul Whatmough. 2022. UDC: Unified DNAS for Compressible TinyML Models for Neural Processing Units. In Advances in Neural Information Processing Systems , S. Koyejo, S. Mohamed, A. Agarwal, D. Belgrave, K. Cho, and A. Oh (Eds.), Vol. 35. Curran Associates, Inc., 18456-18471. https://proceedings.neurips.cc/paper_files/paper/2022/file/ 753d9584b57ba01a10482f1ea7734a89-Paper-Conference.pdf [12] Chen Gao, Yinfeng Li, Quanming Yao, Depeng Jin, and Yong Li. 2021. Progressive feature interaction search for deep sparse network. Advances in Neural Information Processing Systems 34 (2021), 392-403. [13] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In Proceedings of the eighth international workshop on data mining for online advertising . 1-9. [14] Kevin Jamieson and Ameet Talwalkar. 2016. Non-stochastic best arm identification and hyperparameter optimization. In Artificial intelligence and statistics . PMLR, 240-248. [15] Eric Jang, Shixiang Gu, and Ben Poole. 2016. Categorical Reparameterization with Gumbel-Softmax. In International Conference on Learning Representations . [16] Diederik P Kingma and Max Welling. 2022. Auto-Encoding Variational Bayes. arXiv:1312.6114 [stat.ML] [17] Nikita Klyuchnikov, Ilya Trofimov, Ekaterina Artemova, Mikhail Salnikov, Maxim Fedorov, Alexander Filippov, and Evgeny Burnaev. 2022. Nas-bench-nlp: neural architecture search benchmark for natural language processing. IEEE Access 10 (2022), 45736-45747. [18] Ravi Krishna, Aravind Kalaiah, Bichen Wu, Maxim Naumov, Dheevatsa Mudigere, Misha Smelyanskiy, and Kurt Keutzer. 2021. Differentiable NAS Framework and Application to Ads CTR Prediction. arXiv preprint arXiv:2110.14812 (2021). [19] Sheng Li, Garrett Andersen, Tao Chen, Liqun Cheng, Julian Grady, Da Huang, Quoc V Le, Andrew Li, Xin Li, Yang Li, et al. 2023. Hyperscale Hardware Optimized Neural Architecture Search. In Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 3 . 343-358. [20] Shen Li, Yanli Zhao, Rohan Varma, Omkar Salpekar, Pieter Noordhuis, Teng Li, Adam Paszke, Jeff Smith, Brian Vaughan, Pritam Damania, and Soumith Chintala. [42] Tunhou Zhang, Dehua Cheng, Yuchen He, Zhengxing Chen, Xiaoliang Dai, Liang Xiong, Feng Yan, Hai Li, Yiran Chen, and Wei Wen. 2023. NASRec: weight sharing neural architecture search for recommender systems. In Proceedings of the ACM WWW'24 Companion, May 13-17, 2024, Singapore Wen and Liu, et al. Web Conference 2023 . 1199-1207. [43] Tunhou Zhang, Wei Wen, Igor Fedorov, Xi Liu, Buyun Zhang, Fangqiu Han, Wen-Yen Chen, Yiping Han, Feng Yan, Hai Li, et al. 2023. DistDNAS: Search Efficient Feature Interactions within 2 Hours. arXiv preprint arXiv:2311.00231 (2023). [44] Xiangyu Zhaok, Haochen Liu, Wenqi Fan, Hui Liu, Jiliang Tang, Chong Wang, Ming Chen, Xudong Zheng, Xiaobing Liu, and Xiwang Yang. 2021. Autoemb: Automated embedding dimensionality search in streaming recommendations. In 2021 IEEE International Conference on Data Mining (ICDM) . IEEE, 896-905. [45] Barret Zoph and Quoc V Le. 2016. Neural architecture search with reinforcement learning. arXiv preprint arXiv:1611.01578 (2016). [46] Barret Zoph, Vijay Vasudevan, Jonathon Shlens, and Quoc V Le. 2018. Learning transferable architectures for scalable image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition . 8697-8710.",
   "APPENDIX": "",
   "A. Ablation study of RL efficient search": "In Section 3.2.2 we proposed 𝑁𝐸 % ( 𝑎 𝑖 ) to reduce noise by an inplace baseline in one-shot method and proposed an on/off-policy PG method to improve RL one-shot NAS sample efficiency. To validate the effectiveness of our proposals we present a detailed ablation study. First, we plot the observed 𝑁𝐸 𝑏𝑎𝑡𝑐ℎ ( 𝑎 𝑖 ) and 𝑁𝐸 % ( 𝑎 𝑖 ) during a supernet training in Figure 8 where we can see that 𝑁𝐸 % ( 𝑎 𝑖 ) has significantly smaller variance compared to 𝑁𝐸 𝑏𝑎𝑡𝑐ℎ ( 𝑎 𝑖 ) . Next, we verify that using the less noisy 𝑁𝐸 % ( 𝑎 𝑖 ) as RL rewards also lead to improved Rankitect RL search. Figure 9 shows the NE gain of supernet when using 𝑁𝐸 % ( 𝑎 𝑖 ) as RL reward versus using 𝑁𝐸 𝑏𝑎𝑡𝑐ℎ ( 𝑎 𝑖 ) ; a negative value indicates that Rankitect with 𝑁𝐸 % ( 𝑎 𝑖 ) reward consistently samples models with better NE performance than when using 𝑁𝐸 𝑏𝑎𝑡𝑐ℎ ( 𝑎 𝑖 ) as reward (note that Figure 9 only optimizes for NE, i.e., 𝛼 = 0). Since computing 𝑁𝐸 % ( 𝑎 𝑖 ) (Eq. (4)) requires additional in-place training a baseline model, a natural question to ask is how does this affects Rankitect training/searching efficiency? We found that using 𝑁𝐸 % ( 𝑎 𝑖 ) as reward does not adversely affect search efficiency (compared to 𝑁𝐸 𝑏𝑎𝑡𝑐ℎ ( 𝑎 𝑖 ) ); our speculation is that the training cost of the baseline model is negligible compared to the much larger supernet training cost. To validate the effectiveness of the proposed on/off-policy PG method, we plot the RL reward convergence of REINFORCE and on/off-policy PG in Figure 10. From Figure 10 we can see that on/offpolicy PG achieves faster learning . Moreover, we found similar Figure 7: Offline training NE-gain of 'model 1' compared against a 31.3 × model tuned by strong human. 0.01 0.01 4 \"0.03 10B 30B 5OB 9OB Training examples search efficiency despite on/off-policy method receives 50 × more policy updates than on-policy REINFORCE. Our speculation is that the computation cost of RL policy update is negligible compared to the much higher supernet training cost. 4 2e-3 Training steps 1e-3 { Training steps Figure 8: Observed NE signal during supernet training (left: 𝑁𝐸 𝑏𝑎𝑡𝑐ℎ ( 𝑎 𝑖 ) , right: 𝑁𝐸 % ( 𝑎 𝑖 ) ) Figure 9: Supernet NE gain of using 𝑁𝐸 % ( 𝑎 𝑖 ) and 𝑁𝐸 𝑏𝑎𝑡𝑐ℎ ( 𝑎 𝑖 ) as reward 0.02 0.04 2 0.06 0.08 2B 4B 6B 8B Training examples Figure 10: RL training comparison (red: on/off-policy PG, blue: on-policy REINFORCE) 3e-3 REINFORCE onloff-policy PG 2e-3 1e-3 2 -1e-3 OB 10B 20B 40B Training examples",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Zero-cost proxies for lightweight nas"
+    },
+    {
+      "ref_id": "b2",
+      "title": "On the factory floor: ML engineering for industrial-scale ads recommendation models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "MicroNets: Neural Network Architectures for Deploying TinyML Applications on Commodity Microcontrollers"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Understanding and simplifying one-shot architecture search"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Can Weight Sharing Outperform Random Architecture Search? An Investigation With TuNAS"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Can weight sharing outperform random architecture search? an investigation with tunas"
+    },
+    {
+      "ref_id": "b7",
+      "title": "ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Farthest Greedy Path Sampling for Two-shot Recommender Search"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Searching for a Robust Neural Architecture in Four GPU Hours"
+    },
+    {
+      "ref_id": "b10",
+      "title": "SpArSe: Sparse Architecture Search for CNNs on Resource-Constrained Microcontrollers"
+    },
+    {
+      "ref_id": "b11",
+      "title": "UDC: Unified DNAS for Compressible TinyML Models for Neural Processing Units"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Progressive feature interaction search for deep sparse network"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Non-stochastic best arm identification and hyperparameter optimization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Categorical Reparameterization with Gumbel-Softmax"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Auto-Encoding Variational Bayes"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Nas-bench-nlp: neural architecture search benchmark for natural language processing"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Differentiable NAS Framework and Application to Ads CTR Prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Hyperscale Hardware Optimized Neural Architecture Search"
+    },
+    {
+      "ref_id": "b20",
+      "title": "NASRec: weight sharing neural architecture search for recommender systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "DistDNAS: Search Efficient Feature Interactions within 2 Hours"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Autoemb: Automated embedding dimensionality search in streaming recommendations"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Neural architecture search with reinforcement learning"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Learning transferable architectures for scalable image recognition"
+    }
   ]
 }

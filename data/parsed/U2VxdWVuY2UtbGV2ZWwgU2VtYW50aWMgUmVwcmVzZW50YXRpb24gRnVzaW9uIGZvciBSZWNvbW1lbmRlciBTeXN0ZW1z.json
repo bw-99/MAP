@@ -19,23 +19,208 @@
   "REFERENCES": "[1] Daqing Chen, Sai Laing Sain, and Kun Guo. 2012. Data mining for the online retail industry: A case study of RFM model-based customer segmentation using data mining. Journal of Database Marketing & Customer Strategy Management 19 (2012), 197-208. [2] Hyung Won Chung, Le Hou, Shayne Longpre, Barret Zoph, Yi Tay, William Fedus, Eric Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha Brahma, et al. 2022. Scaling instruction-finetuned language models. arXiv preprint arXiv:2210.11416 (2022). [3] Zeyu Cui, Jianxin Ma, Chang Zhou, Jingren Zhou, and Hongxia Yang. 2022. M6-rec: Generative pretrained language models are open-ended recommender systems. arXiv preprint arXiv:2205.08084 (2022). [4] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT . Association for Computational Linguistics, 4171-4186. [5] Hao Ding, Yifei Ma, Anoop Deoras, Yuyang Wang, and Hao Wang. 2021. Zeroshot recommender systems. arXiv preprint arXiv:2105.08318 (2021). [6] Xinyu Du, Huanhuan Yuan, Pengpeng Zhao, Jianfeng Qu, Fuzhen Zhuang, Guanfeng Liu, Yanchi Liu, and Victor S Sheng. 2023. Frequency enhanced hybrid attention network for sequential recommendation. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 78-88. [7] Xinyan Fan, Zheng Liu, Jianxun Lian, Wayne Xin Zhao, Xing Xie, and Ji-Rong Wen. 2021. Lighter and better: low-rank decomposed self-attention networks for next-item recommendation. In Proceedings of the 44th international ACM SIGIR conference on research and development in information retrieval . 1733-1737. [8] Jingtong Gao, Xiangyu Zhao, Muyang Li, Minghao Zhao, Runze Wu, Ruocheng Guo, Yiding Liu, and Dawei Yin. 2023. SMLP4Rec: An Efficient all-MLP Architecture for Sequential Recommendations. ACM Transactions on Information Systems (2023). [9] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5). In Proceedings of the 16th ACM Conference on Recommender Systems . 299-315. [10] F Maxwell Harper and Joseph A Konstan. 2015. The movielens datasets: History and context. Acm transactions on interactive intelligent systems (tiis) 5, 4 (2015), 1-19. [11] Michael Heideman, Don Johnson, and Charles Burrus. 1984. Gauss and the history of the fast Fourier transform. IEEE Assp Magazine 1, 4 (1984), 14-21. [12] Balázs Hidasi, Massimo Quadrana, Alexandros Karatzoglou, and Domonkos Tikk. 2016. Parallel recurrent neural network architectures for feature-rich session-based recommendations. In Proceedings of the 10th ACM conference on recommender systems . 241-248. [13] Yupeng Hou, Zhankui He, Julian McAuley, and Wayne Xin Zhao. 2023. Learning vector-quantized item representation for transferable sequential recommenders. In Proceedings of the ACM Web Conference 2023 . 1162-1171. [14] Yupeng Hou, Shanlei Mu, Wayne Xin Zhao, Yaliang Li, Bolin Ding, and Ji-Rong Wen. 2022. Towards universal sequence representation learning for recommender systems. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 585-593. [15] Junjie Huang, Duyu Tang, Wanjun Zhong, Shuai Lu, Linjun Shou, Ming Gong, Daxin Jiang, and Nan Duan. 2021. WhiteningBERT: An Easy Unsupervised Sentence Embedding Approach. In EMNLP (Findings) . Association for Computational Linguistics, 238-244. [16] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated gain-based evaluation of IR techniques. ACM Trans. Inf. Syst. 20, 4 (2002), 422-446. [17] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [18] Alex Krizhevsky, Ilya Sutskever, and Geoffrey E Hinton. 2012. Imagenet classification with deep convolutional neural networks. Advances in neural information processing systems 25 (2012). [19] Bohan Li, Hao Zhou, Junxian He, Mingxuan Wang, Yiming Yang, and Lei Li. 2020. On the Sentence Embeddings from Pre-trained Language Models. In EMNLP (1) . Association for Computational Linguistics, 9119-9130. [20] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. 2017. Neural attentive session-based recommendation. In Proceedings of the 2017 ACM on Conference on Information and Knowledge Management . 1419-1428. [21] Jiacheng Li, Ming Wang, Jin Li, Jinmiao Fu, Xin Shen, Jingbo Shang, and Julian McAuley. 2023. Text Is All You Need: Learning Language Representations for Sequential Recommendation. arXiv preprint arXiv:2305.13731 (2023). [22] Chang Liu, Xiaoguang Li, Guohao Cai, Zhenhua Dong, Hong Zhu, and Lifeng Shang. 2021. Noninvasive self-attention for side information fusion in sequential recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 35. 4249-4256. [23] Haibo Liu, Zhixiang Deng, Liang Wang, Jinjia Peng, and Shi Feng. 2023. Distribution-based Learnable Filters with Side Information for Sequential Recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems . 78-88. [24] Qijiong Liu, Nuo Chen, Tetsuya Sakai, and Xiao-Ming Wu. 2024. ONCE: Boosting Content-based Recommendation with Both Open- and Closed-source Large Language Models. In Proceedings of the ACM International Conference on Web Search and Data Mining . [25] Zhiwei Liu, Lin Meng, Fei Jiang, Jiawei Zhang, and Philip S Yu. 2020. Deoscillated graph collaborative filtering. arXiv preprint arXiv:2011.02100 (2020). [26] Jianmo Ni, Jiacheng Li, and Julian McAuley. 2019. Justifying recommendations using distantly-labeled reviews and fine-grained aspects. In Proceedings of the 2019 conference on empirical methods in natural language processing and the 9th international joint conference on natural language processing (EMNLP-IJCNLP) . 188-197. [27] Zhaopeng Qiu, Xian Wu, Jingyue Gao, and Wei Fan. 2021. U-BERT: Pre-training user representations for improved recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 35. 4320-4327. [28] Lawrence R Rabiner and Bernard Gold. 1975. Theory and application of digital signal processing. Englewood Cliffs: Prentice-Hall (1975). [29] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J Liu. 2020. Exploring the limits of transfer learning with a unified text-to-text transformer. The Journal of Machine Learning Research 21, 1 (2020), 5485-5551. [30] Yehjin Shin, Jeongwhan Choi, Hyowon Wi, and Noseong Park. 2023. An Attentive Inductive Bias for Sequential Recommendation Beyond the Self-Attention. arXiv preprint arXiv:2312.10325 (2023). [31] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [32] Yong Kiam Tan, Xinxing Xu, and Yong Liu. 2016. Improved recurrent neural networks for session-based recommendations. In Proceedings of the 1st workshop on deep learning for recommender systems . 17-22. [33] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In Proceedings of the eleventh ACM international conference on web search and data mining . 565-573. [34] Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et al. 2023. Llama 2: Open foundation and fine-tuned chat models. arXiv preprint arXiv:2307.09288 (2023). [35] Charles Van Loan. 1992. Computational frameworks for the fast Fourier transform . SIAM. [36] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [37] Jianfang Wang, Zhiqiang Wu, Guang Chen, Detao Liu, and Qiuling Zhang. 2021. An Adaptive Multi-pairwise Ranking with Implicit Feedback for Recommendation. In 2021 IEEE 20th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom) . IEEE, 1005-1012. Conference acronym'XX, June 03-05, 2018, Woodstock, NY Anonymous [38] Yan Wang, Zhixuan Chu, Xin Ouyang, Simeng Wang, Hongyan Hao, Yue Shen, Jinjie Gu, Siqiao Xue, James Y Zhang, Qing Cui, et al. 2023. Enhancing recommender systems with large language model reasoning graphs. arXiv preprint arXiv:2308.10835 (2023). [39] Shu Wu, Yuyuan Tang, Yanqiao Zhu, Liang Wang, Xing Xie, and Tieniu Tan. 2019. Session-based recommendation with graph neural networks. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 346-353. [40] Yunjia Xi, Weiwen Liu, Jianghao Lin, Jieming Zhu, Bo Chen, Ruiming Tang, Weinan Zhang, Rui Zhang, and Yong Yu. 2023. Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models. arXiv preprint arXiv:2306.10933 (2023). [41] Xu Xie, Fei Sun, Zhaoyang Liu, Shiwen Wu, Jinyang Gao, Jiandong Zhang, Bolin Ding, and Bin Cui. 2022. Contrastive learning for sequential recommendation. In 2022 IEEE 38th international conference on data engineering (ICDE) . IEEE, 12591273. [42] Yueqi Xie, Peilin Zhou, and Sunghun Kim. 2022. Decoupled side information fusion for sequential recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1611-1621. [43] Chengfeng Xu, Pengpeng Zhao, Yanchi Liu, Victor S Sheng, Jiajie Xu, Fuzhen Zhuang, Junhua Fang, and Xiaofang Zhou. 2019. Graph contextualized selfattention network for session-based recommendation.. In IJCAI , Vol. 19. 39403946. [44] Zheng Yuan, Fajie Yuan, Yu Song, Youhua Li, Junchen Fu, Fei Yang, Yunzhu Pan, and Yongxin Ni. 2023. Where to go next for recommender systems? id-vs. modality-based recommender models revisited. arXiv preprint arXiv:2303.13835 (2023). [45] Song Zhang, Nan Zheng, and Danli Wang. 2022. GBERT: Pre-training User representations for Ephemeral Group Recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2631-2639. [46] Tingting Zhang, Pengpeng Zhao, Yanchi Liu, Victor S Sheng, Jiajie Xu, Deqing Wang, Guanfeng Liu, Xiaofang Zhou, et al. 2019. Feature-level Deeper SelfAttention Network for Sequential Recommendation.. In IJCAI . 4320-4326. [47] Wayne Xin Zhao, Shanlei Mu, Yupeng Hou, Zihan Lin, Yushuo Chen, Xingyu Pan, Kaiyuan Li, Yujie Lu, Hui Wang, Changxin Tian, Yingqian Min, Zhichao Feng, Xinyan Fan, Xu Chen, Pengfei Wang, Wendi Ji, Yaliang Li, Xiaoling Wang, and Ji-Rong Wen. 2021. RecBole: Towards a Unified, Comprehensive and Efficient Framework for Recommendation Algorithms. In CIKM . ACM, 4653-4664. [48] Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, et al. 2023. A survey of large language models. arXiv preprint arXiv:2303.18223 (2023). [49] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization. In Proceedings of the 29th ACM international conference on information & knowledge management . 1893-1902. [50] Kun Zhou, Hui Yu, Wayne Xin Zhao, and Ji-Rong Wen. 2022. Filter-enhanced MLP is all you need for sequential recommendation. In Proceedings of the ACM web conference 2022 . 2388-2399.",
   "keywords_parsed": [
     "Sequential Recommendation",
-    " Textual Representation Fusion /a0 Wayne Xin Zhao (batmanfly@gmail.com) is the corresponding author. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. Conference acronym'XX",
-    " June 03-05",
-    " 2018",
-    " Woodstock",
-    " NY © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-x-xxxx-xxxx-x/YY/MM https://doi.org/10.1145/nnnnnnn.nnnnnnn Lanling Xu 1 ",
-    " Zhen Tian 1 ",
-    " Bingqian Li 1 ",
-    " Junjie Zhang 1 ",
-    " Jinpeng Wang 2 ",
-    " Mingchen Cai 2 ",
-    " Wayne Xin Zhao 1 /a0 . 2024. Sequence-level Semantic Representation Fusion for Recommender Systems. In Proceedings of (Conference acronym'XX). ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 10 pages. https://doi.org/10.1145/ nnnnnnn.nnnnnnn"
+    "Textual Representation Fusion"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Data mining for the online retail industry: A case study of RFM model-based customer segmentation using data mining"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Scaling instruction-finetuned language models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "M6-rec: Generative pretrained language models are open-ended recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Zeroshot recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Frequency enhanced hybrid attention network for sequential recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Lighter and better: low-rank decomposed self-attention networks for next-item recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "SMLP4Rec: An Efficient all-MLP Architecture for Sequential Recommendations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b10",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Gauss and the history of the fast Fourier transform"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Parallel recurrent neural network architectures for feature-rich session-based recommendations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Learning vector-quantized item representation for transferable sequential recommenders"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Towards universal sequence representation learning for recommender systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "WhiteningBERT: An Easy Unsupervised Sentence Embedding Approach"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Imagenet classification with deep convolutional neural networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "On the Sentence Embeddings from Pre-trained Language Models"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Neural attentive session-based recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Text Is All You Need: Learning Language Representations for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Noninvasive self-attention for side information fusion in sequential recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Distribution-based Learnable Filters with Side Information for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "ONCE: Boosting Content-based Recommendation with Both Open- and Closed-source Large Language Models"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deoscillated graph collaborative filtering"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Justifying recommendations using distantly-labeled reviews and fine-grained aspects"
+    },
+    {
+      "ref_id": "b27",
+      "title": "U-BERT: Pre-training user representations for improved recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Theory and application of digital signal processing"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b30",
+      "title": "An Attentive Inductive Bias for Sequential Recommendation Beyond the Self-Attention"
+    },
+    {
+      "ref_id": "b31",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Improved recurrent neural networks for session-based recommendations"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Llama 2: Open foundation and fine-tuned chat models"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Computational frameworks for the fast Fourier transform"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b37",
+      "title": "An Adaptive Multi-pairwise Ranking with Implicit Feedback for Recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Enhancing recommender systems with large language model reasoning graphs"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Session-based recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Contrastive learning for sequential recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Decoupled side information fusion for sequential recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Graph contextualized selfattention network for session-based recommendation."
+    },
+    {
+      "ref_id": "b44",
+      "title": "Where to go next for recommender systems? id-vs. modality-based recommender models revisited"
+    },
+    {
+      "ref_id": "b45",
+      "title": "GBERT: Pre-training User representations for Ephemeral Group Recommendation"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Feature-level Deeper SelfAttention Network for Sequential Recommendation."
+    },
+    {
+      "ref_id": "b47",
+      "title": "RecBole: Towards a Unified, Comprehensive and Efficient Framework for Recommendation Algorithms"
+    },
+    {
+      "ref_id": "b48",
+      "title": "A survey of large language models"
+    },
+    {
+      "ref_id": "b49",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Filter-enhanced MLP is all you need for sequential recommendation"
+    }
   ]
 }

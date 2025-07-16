@@ -40,7 +40,205 @@
   "11.1 Future Works": "For future works, one promising direction is to involve the concept of Kolmogorov complexity in information theory. Different to mutual information and information entropy, Kolmogorov complexity is an asymmetric notion. Based on such a concept, we can develop a causal representation learning method without introducing an intervention network. Another direction is that our proposed method can be generalized to a mixture of anti-causal and causal learning frameworks where observation data contains both parents and descendants of outcome label 𝑌 . The information-theoretic-based sample complexity theorem can inspire the generalization error/risk analysis on causal representation learning and causal structure learning. Lastly, this paper is based on the assumption of the given causal graph Fig. 1. In the future, it is interesting to extend our method to more complex scenarios like sequential prediction, reinforcement learning etc. Specify Robust Causal Representation from Mixed Observations KDD '23, August 6-10, 2023, Long Beach, CA, USA Table 3: Additional overall results with standard error. KDD '23, August 6-10, 2023, Long Beach, CA, USA Mengyue Yang, Xinyu Cai, Furui Liu, Weinan Zhang, & Jun Wang Figure 5: Identify results on synthetic dataset over different range of 𝛽 under robust training. 0.2 0.4 0.6 0.8 Distance Correlation norm = inf | Variable = pa norm = inf | Variable = nd norm = inf | Variable = dc 0.1 0.3 0.5 0.7 1 3 0.2 0.4 0.6 0.8 Distance Correlation norm = 2 | Variable = pa 0.1 0.3 0.5 0.7 1 3 norm = 2 | Variable = nd 0.1 0.3 0.5 0.7 1 3 norm = 2 | Variable = dc Model CaRI Base Figure 6: Identify results on synthetic dataset over different range of 𝛽 under standard training. 0.2 0.4 0.6 0.8 Distance Correlation norm = inf | Variable = pa norm = inf | Variable = nd norm = inf | Variable = dc 0.1 0.3 0.5 0.7 1 3 0.2 0.4 0.6 0.8 Distance Correlation norm = 2 | Variable = pa 0.1 0.3 0.5 0.7 1 3 norm = 2 | Variable = nd 0.1 0.3 0.5 0.7 1 3 norm = 2 | Variable = dc Model CaRI Base Specify Robust Causal Representation from Mixed Observations KDD '23, August 6-10, 2023, Long Beach, CA, USA Figure 7: Identify results on CelebA-anno dataset over different range of 𝛽 during early optimization step. 0.0 0.2 0.4 0.6 0.8 1.0 Distance Correlation norm = inf | = 0.0 norm = inf | = 0.1 norm = inf | = 0.3 norm = inf | = 0.7 pa nd Variable 0.0 0.2 0.4 0.6 0.8 1.0 Distance Correlation norm = 2 | = 0.0 pa nd Variable norm = 2 | = 0.1 pa nd Variable norm = 2 | = 0.3 pa nd Variable norm = 2 | = 0.7 Model CaRI Base Figure 8: Identify results on CelebA-anno dataset over different range of 𝛽 after converging. 0.0 0.1 0.2 0.3 0.4 Distance Correlation norm = inf | = 0.0 norm = inf | = 0.1 norm = inf | = 0.3 norm = inf | = 0.7 pa nd Variable 0.0 0.1 0.2 0.3 0.4 Distance Correlation norm = 2 | = 0.0 pa nd Variable norm = 2 | = 0.1 pa nd Variable norm = 2 | = 0.3 pa nd Variable norm = 2 | = 0.7 Model CaRI Base",
   "keywords_parsed": [
     "Causal representation learning",
-    " Robustness learning",
-    " Learning theory for Causal representation learning."
+    "Robustness learning",
+    "Learning theory for Causal representation learning."
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Deep variational information bottleneck"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Invariant risk minimization"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Information Flows in Causal Networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Mutual Information Neural Estimation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Robust optimization"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wild patterns: Ten years after the rise of adversarial machine learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "CLUB: A Contrastive Log-ratio Upper Bound of Mutual Information"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Club: A contrastive log-ratio upper bound of mutual information"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Elements of information theory"
+    },
+    {
+      "ref_id": "b10",
+      "title": "On the mathematical foundations of theoretical statistics"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Domain adaptation with conditional transferable components"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A survey of accuracy evaluation metrics of recommendation tasks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Causal inference using the algorithmic Markov condition"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Fitness Distance Correlation as a Measure of Problem Difficulty for Genetic Algorithms."
+    },
+    {
+      "ref_id": "b15",
+      "title": "Causalgan: Learning causal implicit generative models with adversarial training"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Completeness, similar regions, and unbiased estimation-Part I"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Domain generalization via conditional invariant representations"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Nonlinear invariant risk minimization: A causal approach"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Towards deep learning models resistant to adversarial attacks"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Domain adaptation by using causal inference to predict invariant conditional distributions"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Causality from a distributional robustness point of view"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Distinguishing cause from effect using observational data: methods and benchmarks"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Embedding-based news recommendation for millions of users"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Statistical aspects of Wasserstein distances"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Learning independent causal mechanisms"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Causality"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Causal inference by using invariant prediction: identification and confidence intervals"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Causal estimation with functional confounders"
+    },
+    {
+      "ref_id": "b29",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Invariant models for causal transfer learning"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Toward causal representation learning"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Understanding machine learning: From theory to algorithms"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Learning and generalization with the information bottleneck"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Disentangled generative causal representation learning"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Towards Out-Of-Distribution Generalization: A Survey"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Heterogeneous information network embedding for recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Learning structured output representation using deep conditional generative models"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Causal curiosity: RL agents discovering self-supervised experiments for causal representation learning"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Causal Markov condition for submodular information measures"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Recurrent knowledge graph embedding for effective recommendation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Robustly disentangled causal mechanisms: Validating deep representations for interventional robustness"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Intriguing properties of neural networks"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Desiderata for Representation Learning: A Causal Perspective"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Top-N Recommendation with Counterfactual User Preference Simulation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "CausalVAE: disentangled representation learning via neural structural causal models"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Multi-source domain adaptation: A causal view"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Joint representation learning for top-n recommendation with heterogeneous information sources"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Domain generalization: A survey"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Focused Context Balancing for Robust Offline Policy Evaluation"
+    }
   ]
 }

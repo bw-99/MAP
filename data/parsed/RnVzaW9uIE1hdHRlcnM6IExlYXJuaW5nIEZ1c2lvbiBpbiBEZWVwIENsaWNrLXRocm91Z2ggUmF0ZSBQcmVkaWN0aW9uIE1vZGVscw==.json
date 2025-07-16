@@ -30,8 +30,154 @@
   "REFERENCES": "[1] Yoshua Bengio, Nicholas Léonard, and Aaron C. Courville. 2013. Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation. CoRR abs/1308.3432 (2013). arXiv:1308.3432 http://arxiv.org/abs/1308.3432 [2] Olivier Chapelle, Eren Manavoglu, and Romer Rosales. 2015. Simple and Scalable Response Prediction for Display Advertising. ACM Trans. Intell. Syst. Technol. 5, 4 (dec 2015), 61. https://doi.org/10.1145/2532128 [3] Bo Chen, Yichao Wang, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, and Xiuqiang He. 2021. Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models. In CIKM '21: The 30th ACM International Conference on Information and Knowledge Management . ACM, Queensland, Australia, 3757-3766. https: //doi.org/10.1145/3459637.3481915 [4] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems, DLRS@RecSys 2016 . ACM, Boston, MA, USA, 7-10. https://doi.org/10.1145/2988450.2988454 [5] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In 26th International Joint Conference on Artificial Intelligence, IJCAI 2017 . ijcai.org, Melbourne, Australia, 1725-1731. https://doi.org/10.24963/IJCAI.2017/239 [6] Wei Guo, Ruiming Tang, Huifeng Guo, Jianhua Han, Wen Yang, and Yuzhou Zhang. 2019. Order-aware Embedding Neural Network for CTR Prediction. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2019 . ACM, Paris, France, 1121-1124. https://doi.org/10.1145/3331184.3331332 [7] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM Conference on Recommender Systems, RecSys 2019 . ACM, Copenhagen, Denmark, 169-177. https://doi.org/10.1145/3298689.3347043 [8] Eric Jang, Shixiang Gu, and Ben Poole. 2017. Categorical Reparameterization with Gumbel-Softmax. In 5th International Conference on Learning Representations, ICLR 2017 . OpenReview.net, Toulon, France. https://openreview.net/forum?id= rkE3y85ee [9] Olivier Chapelle Jean-Baptiste Tien, joycenv. 2014. Display Advertising Challenge. https://kaggle.com/competitions/criteo-display-ad-challenge [10] Manas R. Joglekar, Cong Li, Mei Chen, Taibai Xu, Xiaoming Wang, Jay K. Adams, Pranav Khaitan, Jiahui Liu, and Quoc V. Le. 2020. Neural Input Search for Large Scale Recommendation Models. In KDD '20: The 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . ACM, CA, USA, 2387-2397. https: //doi.org/10.1145/3394486.3403288 [11] Farhan Khawar, Xu Hang, Ruiming Tang, Bin Liu, Zhenguo Li, and Xiuqiang He. 2020. AutoFeature: Searching for Feature Interactions and Their Architectures for Click-through Rate Prediction. In CIKM '20: The 29th ACM International Conference on Information and Knowledge Management . ACM, Ireland, 625-634. https://doi.org/10.1145/3340531.3411912 [12] Diederik P. Kingma and Jimmy Ba. 2015. Adam: A Method for Stochastic Optimization. In 3rd International Conference on Learning Representations, ICLR 2015 . OpenReview.net, San Diego, CA, USA. http://arxiv.org/abs/1412.6980 [13] Yujun Li, Xing Tang, Bo Chen, Yimin Huang, Ruiming Tang, and Zhenguo Li. 2023. AutoOpt: Automatic Hyperparameter Scheduling and Optimization for Deep Click-through Rate Prediction. In Proceedings of the 17th ACM Conference on Recommender Systems, RecSys 2023 . ACM, Singapore, Singapore, 183-194. https://doi.org/10.1145/3604915.3608800 [14] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2018 . ACM, London, UK, 1754-1763. https://doi.org/10.1145/3219819.3220023 [15] Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, and Yuzhou Zhang. 2019. Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction. In The World Wide Web Conference, WWW 2019 . ACM, San Francisco, CA, USA, 1119-1129. https://doi.org/10.1145/3308558.3313497 [16] Bin Liu, Chenxu Zhu, Guilin Li, Weinan Zhang, Jincai Lai, Ruiming Tang, Xiuqiang He, Zhenguo Li, and Yong Yu. 2020. AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction. In KDD '20: The 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . ACM, CA, USA, 2636-2645. https://doi.org/10.1145/3394486.3403314 [17] Dugang Liu, Chaohua Yang, Xing Tang, Yejing Wang, Fuyuan Lyu, Weihong Luo, Xiuqiang He, Zhong Ming, and Xiangyu Zhao. 2024. MultiFS: Automated Multi-Scenario Feature Selection in Deep Recommender Systems. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining, WSDM 2024 . ACM, Merida, Mexico, 434-442. https://doi.org/10.1145/3616855.3635859 [18] Hanxiao Liu, Karen Simonyan, and Yiming Yang. 2019. DARTS: Differentiable Architecture Search. In 7th International Conference on Learning Representations, ICLR 2019 . OpenReview.net, New Orleans, LA, USA. https://openreview.net/ forum?id=S1eYHoC5FX [19] Renqian Luo, Fei Tian, Tao Qin, Enhong Chen, and Tie-Yan Liu. 2018. Neural Architecture Optimization. In Advances in Neural Information Processing Systems 31: Annual Conference on Neural Information Processing Systems 2018, NeurIPS 2018 . Curran Associates, Montreal, Canada, 7827-7838. https://proceedings. neurips.cc/paper/2018/hash/933670f1ac8ba969f32989c312faba75-Abstract.html [20] Fuyuan Lyu, Xing Tang, Huifeng Guo, Ruiming Tang, Xiuqiang He, Rui Zhang, and Xue Liu. 2022. Memorize, Factorize, or be Naive: Learning Optimal Feature Interaction Methods for CTR Prediction. In 38th IEEE International Conference on Data Engineering, ICDE 2022 . IEEE, Kuala Lumpur, Malaysia, 1450-1462. https: //doi.org/10.1109/ICDE53745.2022.00113 [21] Fuyuan Lyu, Xing Tang, Dugang Liu, Liang Chen, Xiuqiang He, and Xue Liu. 2023. Optimizing Feature Set for Click-Through Rate Prediction. In Proceedings of the ACM Web Conference 2023, WWW 2023 . ACM, Austin, TX, USA, 3386-3395. https://doi.org/10.1145/3543507.3583545 [22] Fuyuan Lyu, Xing Tang, Dugang Liu, Chen Ma, Weihong Luo, Liang Chen, Xiuqiang He, and Xue (Steve) Liu. 2023. Towards Hybrid-grained Feature Interaction Selection for Deep Sparse Network. In Advances in Neural Information Processing Systems 36: Annual Conference on Neural Information Processing Systems 2023, NeurIPS 2023 . Curran Associates, New Orleans, LA, USA. http://papers.nips.cc/paper_files/paper/2023/hash/ 9ab8da29b1eb3bec912a06e0879065cd-Abstract-Conference.html [23] Fuyuan Lyu, Xing Tang, Hong Zhu, Huifeng Guo, Yingxue Zhang, Ruiming Tang, and Xue Liu. 2022. OptEmbed: Learning Optimal Embedding Table for Clickthrough Rate Prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . ACM, Atlanta, GA, USA, 1399-1409. https://doi.org/10.1145/3511808.3557411 [24] Kelong Mao, Jieming Zhu, Liangcai Su, Guohao Cai, Yuru Li, and Zhenhua Dong. 2023. FinalMLP: An Enhanced Two-Stream MLP Model for CTR Prediction. In Thirty-Seventh AAAI Conference on Artificial Intelligence, AAAI 2023 . AAAI Press, Washington, DC, USA, 4552-4560. https://doi.org/10.1609/AAAI.V37I4.25577 [25] Ze Meng, Jinnian Zhang, Yumeng Li, Jiancheng Li, Tanchao Zhu, and Lifeng Sun. 2021. A General Method For Automatic Discovery of Powerful Interactions In Click-Through Rate Prediction. In SIGIR '21: The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, Canada, 1298-1307. https://doi.org/10.1145/3404835.3462842 WSDM'25, March 10-14, 2025, Hannover, Germany Kexin Zhang et al. [26] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-Based Neural Networks for User Response Prediction. In 2016 IEEE 16th International Conference on Data Mining (ICDM) . IEEE, Barcelona, Spain, 1149-1154. https://doi.org/10.1109/ICDM.2016.0151 [27] Esteban Real, Sherry Moore, Andrew Selle, Saurabh Saxena, Yutaka I. LeonSuematsu, Jie Tan, Quoc V. Le, and Alexey Kurakin. 2017. Large-Scale Evolution of Image Classifiers. In Proceedings of the 34th International Conference on Machine Learning, ICML 2017 (Proceedings of Machine Learning Research, Vol. 70) . PMLR, Sydney, NSW, Australia, 2902-2911. http://proceedings.mlr.press/v70/real17a. html [28] Steffen Rendle. 2010. Factorization Machines. In ICDM 2010, The 10th IEEE International Conference on Data Mining . IEEE Computer Society, Sydney, Australia, 995-1000. https://doi.org/10.1109/ICDM.2010.127 [29] Matthew Richardson, Ewa Dominowska, and Robert Ragno. 2007. Predicting clicks: estimating the click-through rate for new ads. In 16th International Conference on World Wide Web, WWW 2007 . ACM, Banff, Alberta, Canada, 521-530. https://doi.org/10.1145/1242572.1242643 [30] Michael S. Ryoo, A. J. Piergiovanni, Juhana Kangaspunta, and Anelia Angelova. 2020. AssembleNet++: Assembling Modality Representations via Attention Connections. In Computer Vision - ECCV 2020 - 16th European Conference (Lecture Notes in Computer Science, Vol. 12365) . Springer, Glasgow, UK, 654-671. https://doi.org/10.1007/978-3-030-58565-5_39 [31] Qingquan Song, Dehua Cheng, Hanning Zhou, Jiyan Yang, Yuandong Tian, and Xia Hu. 2020. Towards Automated Neural Interaction Discovery for ClickThrough Rate Prediction. In KDD '20: The 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . ACM, Virtual Event, CA, USA, 945-955. https://doi.org/10.1145/3394486.3403137 [32] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. AutoInt: Automatic Feature Interaction Learning via SelfAttentive Neural Networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management, CIKM 2019 . ACM, Beijing, China, 1161-1170. https://doi.org/10.1145/3357384.3357925 [33] Ruiming Tang, Bo Chen, Yejing Wang, Huifeng Guo, Yong Liu, Wenqi Fan, and Xiangyu Zhao. 2023. AutoML for Deep Recommender Systems: Fundamentals and Advances. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining, WSDM 2023 . ACM, Singapore, 1264-1267. https: //doi.org/10.1145/3539597.3572729 [34] Zhen Tian, Ting Bai, Wayne Xin Zhao, Ji-Rong Wen, and Zhao Cao. 2023. EulerNet: Adaptive Feature Interaction Learning via Euler's Formula for CTR Prediction. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, Taipei, Taiwan, 1376-1385. [35] Fangye Wang, Yingxu Wang, Dongsheng Li, Hansu Gu, Tun Lu, Peng Zhang, and Ning Gu. 2022. Enhancing CTR Prediction with Context-Aware Feature Representation Learning. In SIGIR '22: The 45th International ACM SIGIR Conference on [44] Barret Zoph and Quoc V. Le. 2017. Neural Architecture Search with Reinforcement Learning. In 5th International Conference on Learning Representations, ICLR 2017 . OpenReview.net, Toulon, France. https://openreview.net/forum?id=r1Ue8Hcxg",
   "keywords_parsed": [
     "CTR Prediction",
-    " Fusion Learning",
-    " Connection Learning",
-    " Neural Architecture Search"
+    "Fusion Learning",
+    "Connection Learning",
+    "Neural Architecture Search"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Simple and Scalable Response Prediction for Display Advertising"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Order-aware Embedding Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Categorical Reparameterization with Gumbel-Softmax"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Display Advertising Challenge"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Neural Input Search for Large Scale Recommendation Models"
+    },
+    {
+      "ref_id": "b11",
+      "title": "AutoFeature: Searching for Feature Interactions and Their Architectures for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b13",
+      "title": "AutoOpt: Automatic Hyperparameter Scheduling and Optimization for Deep Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Feature Generation by Convolutional Neural Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "MultiFS: Automated Multi-Scenario Feature Selection in Deep Recommender Systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "DARTS: Differentiable Architecture Search"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Neural Architecture Optimization"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Memorize, Factorize, or be Naive: Learning Optimal Feature Interaction Methods for CTR Prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Optimizing Feature Set for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Towards Hybrid-grained Feature Interaction Selection for Deep Sparse Network"
+    },
+    {
+      "ref_id": "b23",
+      "title": "OptEmbed: Learning Optimal Embedding Table for Clickthrough Rate Prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "FinalMLP: An Enhanced Two-Stream MLP Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "A General Method For Automatic Discovery of Powerful Interactions In Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Product-Based Neural Networks for User Response Prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Large-Scale Evolution of Image Classifiers"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b30",
+      "title": "AssembleNet++: Assembling Modality Representations via Attention Connections"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Towards Automated Neural Interaction Discovery for ClickThrough Rate Prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks"
+    },
+    {
+      "ref_id": "b33",
+      "title": "AutoML for Deep Recommender Systems: Fundamentals and Advances"
+    },
+    {
+      "ref_id": "b34",
+      "title": "EulerNet: Adaptive Feature Interaction Learning via Euler's Formula for CTR Prediction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Enhancing CTR Prediction with Context-Aware Feature Representation Learning"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Neural Architecture Search with Reinforcement Learning"
+    }
   ]
 }

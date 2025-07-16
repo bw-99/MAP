@@ -28,6 +28,282 @@
   "11 CONCLUSION": "Over the past few years, deep recommender systems have become powerful and practical tools for both the academic world and industry applications, and AutoML has emerged as a promising way to automate the design of some components or the entirety of the machine learning pipeline. This survey has conducted a comprehensive review of AutoML methodologies for deep recommender systems and provided a new taxonomy to classify those methods into five categories according to the encountered issues. Finally, we have proposed six potential future research directions.",
   "REFERENCES": "[1] G Anandalingam and Terry L Friesz. 1992. Hierarchical optimization: An introduction. Annals of Operations Research 34, 1 (1992), 1-11. [2] Robert M Bell and Yehuda Koren. 2007. Scalable collaborative filtering with jointly derived neighborhood interpolation weights. In Seventh IEEE international conference on data mining (ICDM 2007) . IEEE, 43-52. [3] JM Bernardo, MJ Bayarri, JO Berger, AP Dawid, D Heckerman, AFM Smith, and M West. 2003. Bayesian factor regression models in the 'large p, small n' paradigm. Bayesian statistics 7 (2003), 733-742. [4] Mathieu Blondel, Akinori Fujino, Naonori Ueda, and Masakazu Ishihata. 2016. Higher-order factorization machines. In Advances in Neural Information Processing Systems , Vol. 29. 3351-3359. ACM Transactions on Information Systems, Vol. 1, No. 1, Article 1. Publication date: January 2021. 1:32 Ruiqi Zheng, et al. ACM Transactions on Information Systems, Vol. 1, No. 1, Article 1. Publication date: January 2021. AutoML for Deep Recommender Systems: A Survey 1:33 [23] Jonathan Frankle and Michael Carbin. 2018. The lottery ticket hypothesis: Finding sparse, trainable neural networks. arXiv preprint arXiv:1803.03635 (2018). [24] Chen Gao, Yinfeng Li, Quanming Yao, Depeng Jin, and Yong Li. 2021. Progressive Feature Interaction Search for Deep Sparse Network. In Advances in Neural Information Processing Systems , M. Ranzato, A. Beygelzimer, Y. Dauphin, P.S. Liang, and J. Wortman Vaughan (Eds.), Vol. 34. Curran Associates, Inc., 392-403. https://proceedings.neurips.cc/ paper/2021/file/03b2ceb73723f8b53cd533e4fba898ee-Paper.pdf [25] Yang Gao, Hong Yang, Peng Zhang, Chuan Zhou, and Yue Hu. 2019. Graphnas: Graph neural architecture search with reinforcement learning. arXiv preprint arXiv:1904.09981 (2019). [26] A.A. Ginart, Maxim Naumov, Dheevatsa Mudigere, Jiyan Yang, and James Zou. 2021. Mixed Dimension Embeddings with Application to Memory-Efficient Recommendation Systems. In 2021 IEEE International Symposium on Information Theory (ISIT) . 2786-2791. https://doi.org/10.1109/ISIT45174.2021.9517710 [27] Xavier Glorot and Yoshua Bengio. 2010. Understanding the difficulty of training deep feedforward neural networks. In Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics (Proceedings of Machine Learning Research, Vol. 9) , Yee Whye Teh and Mike Titterington (Eds.). PMLR, Chia Laguna Resort, Sardinia, Italy, 249-256. https://proceedings.mlr.press/v9/glorot10a.html [28] Emil Julius Gumbel. 1954. Statistical theory of extreme values and some practical applications: a series of lectures . Vol. 33. US Government Printing Office. [29] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (Melbourne, Australia) (IJCAI'17) . AAAI Press, 1725-1731. [30] Lei Guo, Li Tang, Tong Chen, Lei Zhu, Quoc Viet Hung Nguyen, and Hongzhi Yin. 2021. DA-GCN: a domain-aware attentive graph convolution network for shared-account cross-domain sequential recommendation. arXiv preprint arXiv:2105.03300 (2021). [31] F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM Trans. Interact. Intell. Syst. 5, 4, Article 19 (dec 2015), 19 pages. https://doi.org/10.1145/2827872 [32] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition(CVPR'16) . 770-778. [33] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, YongDong Zhang, and Meng Wang. 2020. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (Virtual Event, China) (SIGIR '20) . Association for Computing Machinery, New York, NY, USA, 639-648. https://doi.org/10.1145/3397271.3401063 [34] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural Collaborative Filtering. In Proceedings of the 26th International Conference on World Wide Web (Perth, Australia) (WWW '17) . International World Wide Web Conferences Steering Committee, Republic and Canton of Geneva, CHE, 173-182. https://doi.org/10.1145/3038912.3052569 [35] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, and Joaquin Quiñonero Candela. 2014. Practical Lessons from Predicting Clicks on Ads at Facebook. In Proceedings of the Eighth International Workshop on Data Mining for Online Advertising (New York, NY, USA) (ADKDD'14) . Association for Computing Machinery, New York, NY, USA, 1-9. https://doi.org/10.1145/2648584.2648589 [36] Geoffrey Hinton, Oriol Vinyals, and Jeff Dean. 2015. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531 2, 7 (2015). [37] Geoffrey E. Hinton. 2012. A Practical Guide to Training Restricted Boltzmann Machines . Springer Berlin Heidelberg, Berlin, Heidelberg, 599-619. https://doi.org/10.1007/978-3-642-35289-8_32 [38] Duc Hoang, Haotao Wang, Handong Zhao, Ryan Rossi, Sungchul Kim, Kanak Mahadik, and Zhangyang Wang. 2022. AutoMARS: Searching to Compress Multi-Modality Recommendation Systems. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (Atlanta, GA, USA) (CIKM '22) . Association for Computing Machinery, New York, NY, USA, 727-736. https://doi.org/10.1145/3511808.3557242 [39] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: Combining Feature Importance and Bilinear Feature Interaction for Click-through Rate Prediction. In Proceedings of the 13th ACM Conference on Recommender Systems (Copenhagen, Denmark) (RecSys '19) . Association for Computing Machinery, New York, NY, USA, 169-177. https://doi.org/10.1145/3298689.3347043 [40] Sergey Ioffe and Christian Szegedy. 2015. Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. In Proceedings of the 32nd International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 37) , Francis Bach and David Blei (Eds.). PMLR, Lille, France, 448-456. https: //proceedings.mlr.press/v37/ioffe15.html [41] Eric Jang, Shixiang Gu, and Ben Poole. 2016. Categorical reparameterization with gumbel-softmax. arXiv preprint arXiv:1611.01144 (2016). ACM Transactions on Information Systems, Vol. 1, No. 1, Article 1. Publication date: January 2021. 1:34 Ruiqi Zheng, et al. [42] Manas R. Joglekar, Cong Li, Mei Chen, Taibai Xu, Xiaoming Wang, Jay K. Adams, Pranav Khaitan, Jiahui Liu, and Quoc V. Le. 2020. Neural Input Search for Large Scale Recommendation Models. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (Virtual Event, CA, USA) (KDD '20) . Association for Computing Machinery, New York, NY, USA, 2387-2397. https://doi.org/10.1145/3394486.3403288 [43] Yuchin Juan, Yong Zhuang, Wei-Sheng Chin, and Chih-Jen Lin. 2016. Field-Aware Factorization Machines for CTR Prediction. In Proceedings of the 10th ACM Conference on Recommender Systems (Boston, Massachusetts, USA) (RecSys '16) . Association for Computing Machinery, New York, NY, USA, 43-50. https://doi.org/10.1145/2959100.2959134 [44] Bekir Karlik and A Vehbi Olgac. 2011. Performance analysis of various activation functions in generalized MLP architectures of neural networks. International Journal of Artificial Intelligence and Expert Systems 1, 4 (2011), 111-122. [45] Farhan Khawar, Xu Hang, Ruiming Tang, Bin Liu, Zhenguo Li, and Xiuqiang He. 2020. AutoFeature: Searching for Feature Interactions and Their Architectures for Click-through Rate Prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management (Virtual Event, Ireland) (CIKM '20) . Association for Computing Machinery, New York, NY, USA, 625-634. https://doi.org/10.1145/3340531.3411912 [46] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [47] Diederik P Kingma and Max Welling. 2013. Auto-encoding variational bayes. arXiv preprint arXiv:1312.6114 (2013). [48] Nikita Klyuchnikov, Ilya Trofimov, Ekaterina Artemova, Mikhail Salnikov, Maxim Fedorov, and Evgeny Burnaev. 2020. NAS-Bench-NLP: neural architecture search benchmark for natural language processing. arXiv preprint arXiv:2006.07116 (2020). [49] Tamara G Kolda and Brett W Bader. 2009. Tensor decompositions and applications. SIAM review 51, 3 (2009), 455-500. [50] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix factorization techniques for recommender systems. Computer 42, 8 (2009), 30-37. [51] Yehuda Koren, Steffen Rendle, and Robert Bell. 2022. Advances in Collaborative Filtering . Springer US, New York, NY, 91-142. https://doi.org/10.1007/978-1-0716-2197-4_3 [52] Aditya Kusupati, Vivek Ramanujan, Raghav Somani, Mitchell Wortsman, Prateek Jain, Sham Kakade, and Ali Farhadi. 2020. Soft Threshold Weight Reparameterization for Learnable Sparsity. In Proceedings of the 37th International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 119) , Hal Daumé III and Aarti Singh (Eds.). PMLR, 5544-5555. https://proceedings.mlr.press/v119/kusupati20a.html [53] Yann LeCun, Yoshua Bengio, and Geoffrey Hinton. 2015. Deep learning. nature 521, 7553 (2015), 436-444. [54] Hao Li, Chenxin Tao, Xizhou Zhu, Xiaogang Wang, Gao Huang, and Jifeng Dai. 2020. Auto seg-loss: Searching metric surrogates for semantic segmentation. arXiv preprint arXiv:2010.07930 (2020). [55] Seth Siyuan Li and Elena Karahanna. 2015. Online recommendation systems in a B2C E-commerce context: a review and future directions. Journal of the Association for Information Systems 16, 2 (2015), 2. [56] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. XDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD '18) . Association for Computing Machinery, New York, NY, USA, 1754-1763. https://doi.org/10.1145/3219819.3220023 [57] Weilin Lin, Xiangyu Zhao, Yejing Wang, Tong Xu, and Xian Wu. 2022. AdaFS: Adaptive Feature Selection in Deep Recommender System. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Washington DC, USA) (KDD '22) . Association for Computing Machinery, New York, NY, USA, 3309-3317. https://doi.org/10.1145/3534678.3539204 [58] Greg Linden, Brent Smith, and Jeremy York. 2003. Amazon. com recommendations: Item-to-item collaborative filtering. IEEE Internet computing 7, 1 (2003), 76-80. [59] Bin Liu, Niannan Xue, Huifeng Guo, Ruiming Tang, Stefanos Zafeiriou, Xiuqiang He, and Zhenguo Li. 2020. AutoGroup: Automatic Feature Grouping for Modelling Explicit High-Order Feature Interactions in CTR Prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (Virtual Event, China) (SIGIR '20) . Association for Computing Machinery, New York, NY, USA, 199-208. https://doi.org/10.1145/ 3397271.3401082 [60] Bin Liu, Chenxu Zhu, Guilin Li, Weinan Zhang, Jincai Lai, Ruiming Tang, Xiuqiang He, Zhenguo Li, and Yong Yu. 2020. AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (Virtual Event, CA, USA) (KDD '20) . Association for Computing Machinery, New York, NY, USA, 2636-2645. https://doi.org/10. 1145/3394486.3403314 [61] Hanxiao Liu, Karen Simonyan, Oriol Vinyals, Chrisantha Fernando, and Koray Kavukcuoglu. 2017. Hierarchical representations for efficient architecture search. arXiv preprint arXiv:1711.00436 (2017). [62] Hanxiao Liu, Karen Simonyan, and Yiming Yang. 2018. Darts: Differentiable architecture search. arXiv preprint arXiv:1806.09055 (2018). ACM Transactions on Information Systems, Vol. 1, No. 1, Article 1. Publication date: January 2021. AutoML for Deep Recommender Systems: A Survey 1:35 [63] Haochen Liu, Xiangyu Zhao, Chong Wang, Xiaobing Liu, and Jiliang Tang. 2020. Automated Embedding Size Search in Deep Recommender Systems. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (Virtual Event, China) (SIGIR '20) . Association for Computing Machinery, New York, NY, USA, 2307-2316. https://doi.org/10.1145/3397271.3401436 [64] Qingliang Liu and Jinmei Lai. 2020. Stochastic Loss Function. Proceedings of the AAAI Conference on Artificial Intelligence 34, 04 (Apr. 2020), 4884-4891. https://doi.org/10.1609/aaai.v34i04.5925 [65] Siyi Liu, Chen Gao, Yihong Chen, Depeng Jin, and Yong Li. 2021. Learnable Embedding Sizes for Recommender Systems. arXiv preprint arXiv:2101.07577 (2021). [66] Weiyang Liu, Yandong Wen, Zhiding Yu, and Meng Yang. 2016. Large-Margin Softmax Loss for Convolutional Neural Networks. In Proceedings of The 33rd International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 48) , Maria Florina Balcan and Kilian Q. Weinberger (Eds.). PMLR, New York, New York, USA, 507-516. https://proceedings.mlr.press/v48/liud16.html [67] Jing Long, Tong Chen, Nguyen Quoc Viet Hung, and Hongzhi Yin. 2022. Decentralized Collaborative Learning Framework for Next POI Recommendation. arXiv preprint arXiv:2204.06516 (2022). [68] Linyuan Lü, Matúš Medo, Chi Ho Yeung, Yi-Cheng Zhang, Zi-Ke Zhang, and Tao Zhou. 2012. Recommender systems. Physics reports 519, 1 (2012), 1-49. [69] Zhou Lu, Hongming Pu, Feicheng Wang, Zhiqiang Hu, and Liwei Wang. 2017. The Expressive Power of Neural Networks: A View from the Width. In Advances in Neural Information Processing Systems , I. Guyon, U. Von Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, and R. Garnett (Eds.), Vol. 30. Curran Associates, Inc., 6231-6239. https://proceedings.neurips.cc/paper/2017/file/32cbf687880eb1674a07bf717761dd3a-Paper.pdf [70] Yuanfei Luo, Mengshuo Wang, Hao Zhou, Quanming Yao, Wei-Wei Tu, Yuqiang Chen, Wenyuan Dai, and Qiang Yang. 2019. AutoCross: Automatic Feature Crossing for Tabular Data in Real-World Applications. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (Anchorage, AK, USA) (KDD '19) . Association for Computing Machinery, New York, NY, USA, 1936-1945. https://doi.org/10.1145/3292500.3330679 [71] Fuyuan Lyu, Xing Tang, Huifeng Guo, Ruiming Tang, Xiuqiang He, Rui Zhang, and Xue Liu. 2021. Memorize, Factorize, or be Na \\ \" ive: Learning Optimal Feature Interaction Methods for CTR Prediction. arXiv preprint arXiv:2108.01265 (2021). [72] Chen Ma, Liheng Ma, Yingxue Zhang, Jianing Sun, Xue Liu, and Mark Coates. 2020. Memory augmented graph neural networks for sequential recommendation. In Proceedings of the AAAI conference on artificial intelligence , Vol. 34. 5045-5052. [73] Chris J Maddison, Andriy Mnih, and Yee Whye Teh. 2016. The concrete distribution: A continuous relaxation of discrete random variables. arXiv preprint arXiv:1611.00712 (2016). [74] Ze Meng, Jinnian Zhang, Yumeng Li, Jiancheng Li, Tanchao Zhu, and Lifeng Sun. 2021. A General Method For Automatic Discovery of Powerful Interactions In Click-Through Rate Prediction. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (Virtual Event, Canada) (SIGIR '21) . Association for Computing Machinery, New York, NY, USA, 1298-1307. https://doi.org/10.1145/3404835.3462842 [75] Toby J Mitchell and John J Beauchamp. 1988. Bayesian variable selection in linear regression. Journal of the american statistical association 83, 404 (1988), 1023-1032. [76] Volodymyr Mnih, Adria Puigdomenech Badia, Mehdi Mirza, Alex Graves, Timothy Lillicrap, Tim Harley, David Silver, and Koray Kavukcuoglu. 2016. Asynchronous Methods for Deep Reinforcement Learning. In Proceedings of The 33rd International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 48) , Maria Florina Balcan and Kilian Q. Weinberger (Eds.). PMLR, New York, New York, USA, 1928-1937. https://proceedings.mlr.press/ v48/mniha16.html [77] Boaz Nadler and Ronald R Coifman. 2005. The prediction error in CLS and PLS: the importance of feature selection prior to multivariate calibration. Journal of Chemometrics: A Journal of the Chemometrics Society 19, 2 (2005), 107-118. [78] Shumpei Okura, Yukihiro Tagami, Shingo Ono, and Akira Tajima. 2017. Embedding-Based News Recommendation for Millions of Users. In Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (Halifax, NS, Canada) (KDD '17) . Association for Computing Machinery, New York, NY, USA, 1933-1942. https://doi.org/10.1145/3097983.3098108 [79] Zheyi Pan, Songyu Ke, Xiaodu Yang, Yuxuan Liang, Yong Yu, Junbo Zhang, and Yu Zheng. 2021. AutoSTG: Neural Architecture Search for Predictions of Spatio-Temporal Graph. In Proceedings of the Web Conference 2021 (Ljubljana, Slovenia) (WWW'21) . Association for Computing Machinery, New York, NY, USA, 1846-1855. https://doi.org/10. 1145/3442381.3449816 [80] Yoon-Joo Park and Alexander Tuzhilin. 2008. The Long Tail of Recommender Systems and How to Leverage It. In Proceedings of the 2008 ACM Conference on Recommender Systems (Lausanne, Switzerland) (RecSys '08) . Association for Computing Machinery, New York, NY, USA, 11-18. https://doi.org/10.1145/1454008.1454012 ACM Transactions on Information Systems, Vol. 1, No. 1, Article 1. Publication date: January 2021. 1:36 Ruiqi Zheng, et al. [99] Yixin Su, Rui Zhang, Sarah Erfani, and Zhenghua Xu. 2021. Detecting Beneficial Feature Interactions for Recommender Systems. Proceedings of the AAAI Conference on Artificial Intelligence 35, 5 (May 2021), 4357-4365. https://doi.org/10. ACM Transactions on Information Systems, Vol. 1, No. 1, Article 1. Publication date: January 2021. AutoML for Deep Recommender Systems: A Survey 1:37 ACM Transactions on Information Systems, Vol. 1, No. 1, Article 1. Publication date: January 2021. 1:38 Ruiqi Zheng, et al. ACM Transactions on Information Systems, Vol. 1, No. 1, Article 1. Publication date: January 2021. AutoML for Deep Recommender Systems: A Survey 1:39 [139] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2020. Fuxictr: An open benchmark for click-through rate prediction. arXiv preprint arXiv:2009.05794 (2020). [140] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open Benchmarking for Click-Through Rate Prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management (Virtual Event, Queensland, Australia) (CIKM '21) . Association for Computing Machinery, New York, NY, USA, 2759-2769. https://doi.org/10.1145/3459637.3482486 [141] Cai-Nicolas Ziegler, Sean M. McNee, Joseph A. Konstan, and Georg Lausen. 2005. Improving Recommendation Lists through Topic Diversification. In Proceedings of the 14th International Conference on World Wide Web (Chiba, Japan) (WWW'05) . Association for Computing Machinery, New York, NY, USA, 22-32. https://doi.org/10.1145/1060745. 1060754 [142] Barret Zoph and Quoc V Le. 2016. Neural architecture search with reinforcement learning. arXiv preprint arXiv:1611.01578 (2016). [143] Barret Zoph, Vijay Vasudevan, Jonathon Shlens, and Quoc V Le. 2018. Learning transferable architectures for scalable image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition(CVPR'18) . 8697-8710. ACM Transactions on Information Systems, Vol. 1, No. 1, Article 1. Publication date: January 2021.",
   "keywords_parsed": [
-    "None"
+    "AutoML",
+    "survey",
+    "taxonomy"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Hierarchical optimization: An introduction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Scalable collaborative filtering with jointly derived neighborhood interpolation weights"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Bayesian factor regression models in the 'large p, small n' paradigm"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Higher-order factorization machines"
+    },
+    {
+      "ref_id": "b23",
+      "title": "The lottery ticket hypothesis: Finding sparse, trainable neural networks"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Progressive Feature Interaction Search for Deep Sparse Network"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Graphnas: Graph neural architecture search with reinforcement learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Mixed Dimension Embeddings with Application to Memory-Efficient Recommendation Systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Understanding the difficulty of training deep feedforward neural networks"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Statistical theory of extreme values and some practical applications: a series of lectures"
+    },
+    {
+      "ref_id": "b29",
+      "title": "DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "DA-GCN: a domain-aware attentive graph convolution network for shared-account cross-domain sequential recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "The MovieLens Datasets: History and Context"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b33",
+      "title": "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Neural Collaborative Filtering"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Practical Lessons from Predicting Clicks on Ads at Facebook"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b37",
+      "title": "A Practical Guide to Training Restricted Boltzmann Machines"
+    },
+    {
+      "ref_id": "b38",
+      "title": "AutoMARS: Searching to Compress Multi-Modality Recommendation Systems"
+    },
+    {
+      "ref_id": "b39",
+      "title": "FiBiNET: Combining Feature Importance and Bilinear Feature Interaction for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Categorical reparameterization with gumbel-softmax"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Neural Input Search for Large Scale Recommendation Models"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Field-Aware Factorization Machines for CTR Prediction"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Performance analysis of various activation functions in generalized MLP architectures of neural networks"
+    },
+    {
+      "ref_id": "b45",
+      "title": "AutoFeature: Searching for Feature Interactions and Their Architectures for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Auto-encoding variational bayes"
+    },
+    {
+      "ref_id": "b48",
+      "title": "NAS-Bench-NLP: neural architecture search benchmark for natural language processing"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Tensor decompositions and applications"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Advances in Collaborative Filtering"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Soft Threshold Weight Reparameterization for Learnable Sparsity"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Deep learning"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Auto seg-loss: Searching metric surrogates for semantic segmentation"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Online recommendation systems in a B2C E-commerce context: a review and future directions"
+    },
+    {
+      "ref_id": "b56",
+      "title": "XDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b57",
+      "title": "AdaFS: Adaptive Feature Selection in Deep Recommender System"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Amazon.com recommendations: Item-to-item collaborative filtering"
+    },
+    {
+      "ref_id": "b59",
+      "title": "AutoGroup: Automatic Feature Grouping for Modelling Explicit High-Order Feature Interactions in CTR Prediction"
+    },
+    {
+      "ref_id": "b60",
+      "title": "AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Hierarchical representations for efficient architecture search"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Darts: Differentiable architecture search"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Automated Embedding Size Search in Deep Recommender Systems"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Stochastic Loss Function"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Learnable Embedding Sizes for Recommender Systems"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Large-Margin Softmax Loss for Convolutional Neural Networks"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Decentralized Collaborative Learning Framework for Next POI Recommendation"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Recommender systems"
+    },
+    {
+      "ref_id": "b69",
+      "title": "The Expressive Power of Neural Networks: A View from the Width"
+    },
+    {
+      "ref_id": "b70",
+      "title": "AutoCross: Automatic Feature Crossing for Tabular Data in Real-World Applications"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Memorize, Factorize, or be Naive: Learning Optimal Feature Interaction Methods for CTR Prediction"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Memory augmented graph neural networks for sequential recommendation"
+    },
+    {
+      "ref_id": "b73",
+      "title": "The concrete distribution: A continuous relaxation of discrete random variables"
+    },
+    {
+      "ref_id": "b74",
+      "title": "A General Method For Automatic Discovery of Powerful Interactions In Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Bayesian variable selection in linear regression"
+    },
+    {
+      "ref_id": "b76",
+      "title": "Asynchronous Methods for Deep Reinforcement Learning"
+    },
+    {
+      "ref_id": "b77",
+      "title": "The prediction error in CLS and PLS: the importance of feature selection prior to multivariate calibration"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Embedding-Based News Recommendation for Millions of Users"
+    },
+    {
+      "ref_id": "b79",
+      "title": "AutoSTG: Neural Architecture Search for Predictions of Spatio-Temporal Graph"
+    },
+    {
+      "ref_id": "b80",
+      "title": "The Long Tail of Recommender Systems and How to Leverage It"
+    },
+    {
+      "ref_id": "b99",
+      "title": "Detecting Beneficial Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b139",
+      "title": "Fuxictr: An open benchmark for click-through rate prediction"
+    },
+    {
+      "ref_id": "b140",
+      "title": "Open Benchmarking for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b141",
+      "title": "Improving Recommendation Lists through Topic Diversification"
+    },
+    {
+      "ref_id": "b142",
+      "title": "Neural architecture search with reinforcement learning"
+    },
+    {
+      "ref_id": "b143",
+      "title": "Learning transferable architectures for scalable image recognition"
+    }
   ]
 }

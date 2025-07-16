@@ -21,6 +21,36 @@
   "REFERENCES": "[1] Yunfan Gao, Tao Sheng, Youlin Xiang, Yun Xiong, Haofen Wang, and Jiawei Zhang. 2023. Chat-rec: Towards interactive and explainable llms-augmented recommender system. arXiv preprint arXiv:2303.14524 (2023). [3] Xu Huang, Jianxun Lian, Yuxuan Lei, Jing Yao, Defu Lian, and Xing Xie. 2023. Recommender ai agent: Integrating large language models for interactive recommendations. arXiv preprint arXiv:2308.16505 (2023). [2] Yupeng Hou, Junjie Zhang, Zihan Lin, Hongyu Lu, Ruobing Xie, Julian McAuley, and Wayne Xin Zhao. 2023. Large language models are zero-shot rankers for recommender systems. arXiv preprint arXiv:2305.08845 (2023). [4] Yuxuan Lei, Jianxun Lian, Jing Yao, Xu Huang, Defu Lian, and Xing Xie. 2023. RecExplainer: Aligning Large Language Models for Recommendation Model Interpretability. arXiv preprint arXiv:2311.10947 (2023). [6] Wensheng Lu, Jianxun Lian, Wei Zhang, Guanghua Li, Mingyang Zhou, Hao Liao, and Xing Xie. 2024. Aligning Large Language Models for Controllable Recommendations. arXiv:2403.05063 [cs.IR] [5] Yuxuan Lei, Jianxun Lian, Jing Yao, Mingqi Wu, Defu Lian, and Xing Xie. 2024. Aligning Language Models for Versatile Text-based Item Retrieval. arXiv:2402.18899 [cs.IR] [7] Jing Yao, Wei Xu, Jianxun Lian, Xiting Wang, Xiaoyuan Yi, and Xing Xie. 2023. Knowledge Plugins: Enhancing Large Language Models for Domain-Specific Recommendations. arXiv preprint arXiv:2311.10779 (2023).",
   "keywords_parsed": [
     "Recommender Systems",
-    " Large Language Models"
+    "Large Language Models"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Chat-rec: Towards interactive and explainable llms-augmented recommender system"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Recommender ai agent: Integrating large language models for interactive recommendations"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Large language models are zero-shot rankers for recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "RecExplainer: Aligning Large Language Models for Recommendation Model Interpretability"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Aligning Large Language Models for Controllable Recommendations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Aligning Language Models for Versatile Text-based Item Retrieval"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Knowledge Plugins: Enhancing Large Language Models for Domain-Specific Recommendations"
+    }
   ]
 }

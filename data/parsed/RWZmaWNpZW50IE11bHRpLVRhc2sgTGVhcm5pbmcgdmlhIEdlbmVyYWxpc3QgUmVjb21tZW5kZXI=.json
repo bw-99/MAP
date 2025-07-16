@@ -18,7 +18,105 @@
   "REFERENCES": "[1] T. Brown, B. Mann, N. Ryder, M. Subbiah, J. D. Kaplan, P. Dhariwal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell, et al., Language models are few-shot learners , Advances in neural information processing systems, 33 (2020), pp. 18771901. [2] H.-T. Cheng, L. Koc, J. Harmsen, T. Shaked, T. Chandra, H. Aradhye, G. Anderson, G. Corrado, W. Chai, M. Ispir, et al., Wide & deep learning for recommender systems , in Proceedings of the 1st workshop on deep learning for recommender systems, 2016, pp. 7-10. [3] A. Chowdhery, S. Narang, J. Devlin, M. Bosma, G. Mishra, A. Roberts, P. Barham, H. W. Chung, C. Sutton, S. Gehrmann, et al., Palm: Scaling language modeling with pathways , arXiv preprint arXiv:2204.02311, (2022). [4] J. Dean, G. Corrado, R. Monga, K. Chen, M. Devin, M. Mao, M. Ranzato, A. Senior, P. Tucker, K. Yang, et al., Large scale distributed deep networks , Advances in neural information processing systems, 25 (2012). [5] N. Du, Y. Huang, A. M. Dai, S. Tong, D. Lepikhin, Y. Xu, Y. Krikun, Maxim andd Zhou, A. W. Yu, O. Firat, B. Zoph, L. Fedus, M. Bosma, Z. Zhou, T. Wang, Y. E. Wang, K. Webster, M. Pellat, K. Robinson, K. Meler-Hellstern, T. Duke, L. Dixon, K. Zhang, Q. V. Le, Y. Wu, Z. Chen, and C. Cui, Glam: Efficient scaling of language models with mixture-of-experts , arxiv preprint arXiv:2112.06905, (2021). [6] H. Ehsan, M. A. Sharaf, and P. K. Chrysanthis, Muve: Efficient multi-objective view recommendation for visual data exploration , in 2016 IEEE 32nd International Conference on Data Engineering (ICDE), IEEE, 2016, pp. 731-742. [7] A. M. Elkahky, Y. Song, and X. He, A multi-view deep learning approach for cross domain user modeling in recommendation systems , in Proceedings of the 24th international conference on world wide web, 2015, pp. 278-288. [8] T. Fawcett, An introduction to roc analysis , Pattern recognition letters, 27 (2006), pp. 861-874. [9] R. A. Jacobs, M. I. Jordan, S. J. Nowlan, and G. E. Hinton, Adaptive mixtures of local experts , Neural computation, 3 (1991), pp. 79-87. [10] S. Kudugunta, Y. Huang, A. Bapna, M. Krikun, D. Lepikhin, M.-T. Luong, and O. Firat, Beyond distillation: Task-level mixture-of-experts for efficient inference , arXiv preprint arXiv:2110.03742, (2021). [11] D. Lepikhin, H. Lee, Y. Xu, D. Chen, O. Firat, Y. Huang, M. Krikun, N. Shazeer, and Z. Chen, Gshard: Scaling giant models with conditional computation and automatic sharding , arXiv preprint arXiv:2006.16668, (2020). [12] M. Long, Z. Cao, J. Wang, and P. S. Yu, Learning multiple tasks with multilinear relationship networks , Advances in neural information processing systems, 30 (2017). [13] J. Ma, Z. Zhao, J. Chen, A. Li, L. Hong, and E. H. Chi, Snr: Sub-network routing for flexible parameter sharing in multi-task learning , in Proceedings of the AAAI Conference on Artificial Intelligence, vol. 33, 2019, pp. 216-223. [14] J. Ma, Z. Zhao, X. Yi, J. Chen, L. Hong, and E. H. Chi, Modeling task relationships in multi-task learning with multi-gate mixture-of-experts , in Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining, 2018, pp. 1930-1939. [15] pengcheng Li, R. Li, Q. Da, A.-X. Zeng, and L. Zhang, Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space , in proceedings of the 28th ACM International Conference on Information and Knowledge Management, CIKM 2020, Virtual Event, Ireland, October 19- 23,2019, New York,NY,USA, 2020, ACM. [16] A. Radford, J. W. Kim, C. Hallacy, A. Ramesh, G. Goh, S. Agarwal, G. Sastry, A. Askell, P. Mishkin, J. Clark, et al., Learning transferable visual models from natural language supervision , in International conference on machine learning, PMLR, 2021, pp. 8748-8763. [17] N. Shazeer, A. Mirhoseini, K. Maziarz, A. Davis, Q. Le, G. Hinton, and J. Dean, Outrageously large neural networks: The sparsely-gated mixture-of-experts layer , arXiv preprint arXiv:1701.06538, (2017). [18] H. Touvron, T. Lavril, G. Izacard, X. Martinet, M.-A. Lachaux, T. Lacroix, B. Rozière, N. Goyal, E. Hambro, F. Azhar, et al., Llama: Open and efficient foundation language models , arXiv preprint arXiv:2302.13971, (2023). [19] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin, Attention is all you need , Advances in neural information processing systems, 30 (2017). [20] L. Wang, C. Tang, C. Zhang, J. Ruan, K. Huang, and J. Dai, Bigdlgrec , 2023, https://github.com/intel-analytics/BigDL/tree/main/python/friesian/ example/GRec. [21] N. Wang, H. Wang, Y. Jia, and Y. Yin, Explainable recommendation via multi-task learning in opinionated text data , in The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval, 2018, pp. 165-174. [22] B. Yan, P. Wang, K. Zhang, W. Lin, K.-C. Lee, J. Xu, and B. Zheng, Learning effective and efficient embedding via an adaptively-masked twins-based layer , in Proceedings of the 30th ACM International Conference on Information & Knowledge Management, 2021, pp. 3568-3572. [23] Z. Zhao, L. Hong, L. Wei, J. Chen, A. Nath, S. Andrews, A. Kumthekar, M. Sathiamoorthy, X. Yi, and E. Chi, Recommending what video to watch next: a multitask ranking system , in Proceedings of the 13th ACM Conference on Recommender Systems, 2019, pp. 43-51. [24] Y. Zhu, Y. Liu, R. Xie, F. Zhuang, X. Hao, K. Ge, X. Zhang, L. Lin, and J. Cao, Learning to expand audience via meta hybrid experts and critics for recommendation and advertising , in Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining, 2021, pp. 4005-4013.",
   "keywords_parsed": [
     "Multi-Task Learning",
-    " Recommender Systems",
-    " Real-World Application"
+    "Recommender Systems",
+    "Real-World Application"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Palm: Scaling language modeling with pathways"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Large scale distributed deep networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Glam: Efficient scaling of language models with mixture-of-experts"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Muve: Efficient multi-objective view recommendation for visual data exploration"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A multi-view deep learning approach for cross domain user modeling in recommendation systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "An introduction to roc analysis"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Adaptive mixtures of local experts"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Beyond distillation: Task-level mixture-of-experts for efficient inference"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Gshard: Scaling giant models with conditional computation and automatic sharding"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Learning multiple tasks with multilinear relationship networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Snr: Sub-network routing for flexible parameter sharing in multi-task learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Llama: Open and efficient foundation language models"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Bigdlgrec"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Explainable recommendation via multi-task learning in opinionated text data"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Learning effective and efficient embedding via an adaptively-masked twins-based layer"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Recommending what video to watch next: a multitask ranking system"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Learning to expand audience via meta hybrid experts and critics for recommendation and advertising"
+    }
   ]
 }

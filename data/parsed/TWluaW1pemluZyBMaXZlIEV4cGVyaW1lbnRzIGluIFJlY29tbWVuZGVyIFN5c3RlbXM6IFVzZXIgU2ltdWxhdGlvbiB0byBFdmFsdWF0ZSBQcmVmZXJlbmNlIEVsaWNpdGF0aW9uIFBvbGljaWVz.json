@@ -21,6 +21,231 @@
   "A ASSUMPTIONS FOR SESSION LINEARIZATION": "We should note that the data format for training user session generator in Section 4.1 makes certain simplifying assumptions, since the onboarding UI does not in fact ask about a single artist at a time, but rather displays multiple artists/queries at the same time (with a slate size that varies with device). See Fig. 1. We make a simplifying assumption about user interactions to allow training of more tractable sequence models of user behavior, specifically, adopting something akin to a cascade model [15]: · The user examines artists in a linear fashion when multiple artists are displayed, and scrolls to the next screen when all displayed artists are examined (assuming non-termination); the user never scrolls back to reexamine artists. · Once examined, the user decides whether to select or skip that artist. The user never reverts their decisions (e.g., by deselecting an artist). We also assume the user must examine all artists displayed even if they left the OP immediately. · New artists can be displayed 'on-the-fly' (insertion) given any previous selection. We assume the user examines these new artists immediately after the selection that generated them, even if other artists were displayed with the selected artist. The linearization assumption is less realistic with the YouTube Music desktop app (which shows more artists per screen) than the mobile app; so we confine our attention in this work to mobile users.",
   "B ADDITIONAL RESULTS": "Table 3 shows the policy ordering induced by the three small 'true LEs', the 'Launch', and the simulation. For completeness, Table 4 shows similar results for artist impressions. Notice that none of the three 'true LEs' order the policies in the same way. Indeed, none of the 'true LEs,' nor the simulation test, predict the policy ordering of the 'Launch.' The small LEs are slightly better aligned with the Launch than Simulation for 𝜆 values of 0 . 001 and 0 . 05, in part, due to the variance in simulation results across all device and geo types. We note, however, the the LE and Launch are more correlated in our design than they would be in practice, since each LE is in fact a sample of 1/3 of the Launch traffic.",
   "keywords_parsed": [
-    "None"
+    "User modeling",
+    "Preference elicitation",
+    "Interactive recommender systems",
+    "Simulation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Analyzing user modeling on Twitter for personalized news recommendations"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Facebook's Cyber-Cyber and CyberPhysical Digital Twins"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Finite-time Analysis of the Multiarmed Bandit Problem"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Measuring Recommendation Explanation Quality: The Conflicting Goals of Explanations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Beyond Accuracy: The Role of Mental Models in Human-AI Team Performance"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Transportability from Multiple Environments with Limited Experiments: Completeness Results"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Latent Cross: Making Use of Context in Recurrent Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A collaborative filtering approach to mitigate the new user cold start problem"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A POMDP Formulation of Preference Elicitation Problems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Making Rational Decisions Using Adaptive Utility Elicitation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Use of Discrete Choice Models with Recommender Systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Top-K Off-Policy Correction for a REINFORCE Recommender System"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deep neural networks for YouTube recommendations"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b15",
+      "title": "An experimental comparison of click position-bias models"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Doubly Robust Policy Evaluation and Learning"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Recommended for you: The Netflix Prize and the production of algorithmic culture"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Session-based Recommendations with Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Long Short-Term Memory"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Neural Networks and Physical Systems with Emergent Collective Computational Abilities"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Applying associative retrieval techniques to alleviate the sparsity problem in collaborative filtering"
+    },
+    {
+      "ref_id": "b22",
+      "title": "SlateQ: A Tractable Decomposition for Reinforcement Learning with Recommendation Sets"
+    },
+    {
+      "ref_id": "b23",
+      "title": "RecSim: A Configurable Simulation Platform for Recommender Systems"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Decisions with multiple objectives: preferences and value trade-offs"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Controlled Experiments on the Web: Survey and Practical Guide"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Asymptotically Efficient Adaptive Allocation Rules"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Addressing cold-start problem in recommendation systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Bandit Algorithms"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Amazon.com recommendations: Item-to-item collaborative filtering"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Predictive Representations of State"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Context-Aware Sequential Recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Stated Choice Methods: Analysis and Application"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Interfaces for Eliciting New User Preferences in Recommender Systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Preference Elicitation for Music Recommendations"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Optimizing Long-term Social Welfare in Recommender Systems: A Constrained Matching Approach"
+    },
+    {
+      "ref_id": "b36",
+      "title": "RecSim NG: Toward Principled Uncertainty Modeling for Recommender Ecosystems"
+    },
+    {
+      "ref_id": "b37",
+      "title": "PinnerSage: Multi-modal user embedding framework for recommendations at Pinterest"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Causality: Models, Reasoning and Inference (2nd ed.)"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Elements of Causal Inference: Foundations and Learning Algorithms"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Personalizing Session-based Recommendations with Hierarchical Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b41",
+      "title": "\"I Think You Might Like This\": Exploring Effects of Confidence Signal Patterns on Trust in and Reliance on Conversational Recommender Systems"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Learning preferences of new users in recommender systems: An information theoretic approach"
+    },
+    {
+      "ref_id": "b43",
+      "title": "RecoGym: A Reinforcement Learning Environment for the problem of Product Recommendation in Online Advertising"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Probabilistic Matrix Factorization"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Preference ratios in multiattribute evaluation (PRIME)-elicitation and decision procedures under incomplete information"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Evaluating Recommendation Systems"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Deep content-based music recommendation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Optimal Bayesian Recommendation Sets and Myopically Optimal Choice Query Sets"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Learning from Negative User Feedback and Measuring Responsiveness for Sequential Recommenders"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Mixed Negative Sampling for Learning Two-tower Neural Networks in Recommendations"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Measuring Recommender System Effects with Simulated Users"
+    },
+    {
+      "ref_id": "b54",
+      "title": "A Simple Convolutional Generative Network for Next Item Recommendation"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Deep Reinforcement Learning for Page-wise Recommendations"
+    }
   ]
 }

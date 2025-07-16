@@ -30,12 +30,149 @@
   "REFERENCES": "[1] Martín Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay Ghemawat, Geoffrey Irving, Michael Isard, Manjunath Kudlur, Josh Levenberg, Rajat Monga, Sherry Moore, Derek Gordon Murray, Benoit Steiner, Paul A. Tucker, Vijay Vasudevan, Pete Warden, Martin Wicke, Yuan Yu, and Xiaoqiang Zheng. 2016. TensorFlow: A System for Large-Scale Machine Learning. In 12th USENIX Symposium on Operating Systems Design and Implementation, OSDI 2016, Savannah, GA, USA, November 2-4, 2016 , Kimberly Keeton and Timothy Roscoe (Eds.). USENIX Association, 265-283. https: //www.usenix.org/conference/osdi16/technical-sessions/presentation/abadi [2] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, Xinchen Luo, Shiming Xiang, Guorui Zhou, Xiaoqiang Zhu, and Hongbo Deng. 2022. CAN: Feature Co-Action Network for Click-Through Rate Prediction. In WSDM '22: The Fifteenth ACM International Conference on Web Search and Data Mining, Virtual Event / Tempe, AZ, USA, February 21 - 25, 2022 , K. Selcuk Candan, Huan Liu, Leman Akoglu, Xin Luna Dong, and Jiliang Tang (Eds.). ACM, 57-65. https://doi.org/10.1145/ 3488560.3498435 [3] Yue Cao, Xiaojiang Zhou, Jiaqi Feng, Peihao Huang, Yao Xiao, Dayao Chen, and Sheng Chen. 2022. Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management, Atlanta, GA, USA, October 17-21, 2022 , Mohammad Al Hasan and Li Xiong (Eds.). ACM, 2974-2983. https: //doi.org/10.1145/3511808.3557082 [4] Yin-Wen Chang, Cho-Jui Hsieh, Kai-Wei Chang, Michael Ringgaard, and ChihJen Lin. 2010. Training and Testing Low-degree Polynomial Data Mappings via Linear SVM. J. Mach. Learn. Res. 11 (2010), 1471-1490. https://doi.org/10.5555/ 1756006.1859899 [5] Qiwei Chen, Changhua Pei, Shanshan Lv, Chao Li, Junfeng Ge, and Wenwu Ou. 2021. End-to-End User Behavior Retrieval in Click-Through RatePrediction Model. CoRR abs/2108.04468 (2021). arXiv:2108.04468 https://arxiv.org/abs/2108.04468 [6] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior Sequence Transformer for E-commerce Recommendation in Alibaba. CoRR abs/1905.06874 (2019). arXiv:1905.06874 http://arxiv.org/abs/1905.06874 [7] Xu Chen, Hongteng Xu, Yongfeng Zhang, Jiaxi Tang, Yixin Cao, Zheng Qin, and Hongyuan Zha. 2018. Sequential Recommendation with User Memory Networks. In Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining, WSDM 2018, Marina Del Rey, CA, USA, February 5-9, 2018 , Yi Chang, Chengxiang Zhai, Yan Liu, and Yoelle Maarek (Eds.). ACM, 108-116. https://doi.org/10.1145/3159652.3159668 [8] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems, DLRS@RecSys 2016, Boston, MA, USA, September 15, 2016 , Alexandros Karatzoglou, Balázs Hidasi, Domonkos Tikk, Oren Sar Shalom, Haggai Roitman, Bracha Shapira, and Lior Rokach (Eds.). ACM, 7-10. https://doi.org/10.1145/2988450.2988454 [9] Junyoung Chung, Çaglar Gülçehre, KyungHyun Cho, and Yoshua Bengio. 2014. Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling. CoRR abs/1412.3555 (2014). arXiv:1412.3555 http://arxiv.org/abs/1412.3555 [10] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems, Boston, MA, USA, September 15-19, 2016 , Shilad Sen, Werner Geyer, Jill Freyne, and Pablo Castells (Eds.). ACM, 191-198. https://doi.org/10. 1145/2959100.2959190 [11] Shizhe Diao, Jiaxin Bai, Yan Song, Tong Zhang, and Yonggang Wang. 2020. ZEN: Pre-training Chinese Text Encoder Enhanced by N-gram Representations. In Findings of the Association for Computational Linguistics: EMNLP 2020, Online Event, 16-20 November 2020 (Findings of ACL, Vol. EMNLP 2020) . Association for Computational Linguistics, 4729-4740. https://doi.org/10.18653/V1/2020. FINDINGS-EMNLP.425 [12] Xiaohan Ding, Xiangyu Zhang, Jungong Han, and Guiguang Ding. 2022. Scaling Up Your Kernels to 31×31: Revisiting Large Kernel Design in CNNs. In IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR 2022, New Orleans, LA, USA, June 18-24, 2022 . IEEE, 11953-11965. https://doi.org/10.1109/CVPR52688. Deep Pattern Network for Click-Through Rate Prediction SIGIR '24, July 14-18, 2024, Washington, DC, USA. [29] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2019, Anchorage, AK, USA, August 4-8, 2019 , Ankur Teredesai, Vipin Kumar, Ying Li, Rómer Rosales, Evimaria Terzi, and George Karypis (Eds.). ACM, 2671-2679. https://doi.org/10.1145/3292500.3330666 [30] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction. In CIKM '20: The 29th ACM International Conference on Information and Knowledge Management, Virtual Event, Ireland, October 19-23, 2020 , Mathieu d'Aquin, Stefan Dietze, Claudia Hauff, Edward Curry, and Philippe Cudré-Mauroux (Eds.). ACM, 2685-2692. https://doi.org/10.1145/3340531.3412744 [31] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-Based Neural Networks for User Response Prediction. In IEEE 16th International Conference on Data Mining, ICDM 2016, December 12-15, 2016, Barcelona, Spain , Francesco Bonchi, Josep Domingo-Ferrer, Ricardo Baeza-Yates, Zhi-Hua Zhou, and Xindong Wu (Eds.). IEEE Computer Society, 1149-1154. https://doi.org/10.1109/ICDM.2016.0151 [32] Steffen Rendle. 2010. Factorization Machines. In ICDM 2010, The 10th IEEE International Conference on Data Mining, Sydney, Australia, 14-17 December 2010 , Geoffrey I. Webb, Bing Liu, Chengqi Zhang, Dimitrios Gunopulos, and Xindong Wu(Eds.). IEEE Computer Society, 995-1000. https://doi.org/10.1109/ICDM.2010. 127 [33] Aurko Roy, Rohan Anil, Guangda Lai, Benjamin Lee, Jeffrey Zhao, Shuyuan Zhang, Shibo Wang, Ye Zhang, Shen Wu, Rigel Swavely, Tao Yu, Phuong Dao, Christopher Fifty, Zhifeng Chen, and Yonghui Wu. 2022. N-Grammer: Augmenting Transformers with latent n-grams. CoRR abs/2207.06366 (2022). https://doi.org/10.48550/ARXIV.2207.06366 arXiv:2207.06366 [34] Alexander Shishkin, Anastasia A. Bezzubtseva, Alexey Drutsa, Ilia Shishkov, Ekaterina Gladkikh, Gleb Gusev, and Pavel Serdyukov. 2016. Efficient High-Order Interaction-Aware Feature Selection Based on Conditional Mutual Information. In Advances in Neural Information Processing Systems 29: Annual Conference on Neural Information Processing Systems 2016, December 5-10, 2016, Barcelona, Spain , Daniel D. Lee, Masashi Sugiyama, Ulrike von Luxburg, Isabelle Guyon, and Roman Garnett (Eds.). 4637-4645. https://proceedings.neurips.cc/paper/ 2016/hash/d5e2fbef30a4eb668a203060ec8e5eef-Abstract.html [35] Karen Simonyan and Andrew Zisserman. 2015. Very Deep Convolutional Networks for Large-Scale Image Recognition. In 3rd International Conference on Learning Representations, ICLR 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings , Yoshua Bengio and Yann LeCun (Eds.). http://arxiv.org/abs/1409.1556 [36] Gustavo Sosa-Cabrera, Miguel García-Torres, Santiago Gómez-Guerrero, Christian E. Schaerer, and Federico Divina. 2019. A multivariate approach to the symmetrical uncertainty measure: Application to feature selection problem. Information Sciences 494 (2019), 1-20. https://doi.org/10.1016/j.ins.2019.04.046 [37] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management, CIKM 2019, Beijing, China, November 3-7, 2019 , Wenwu Zhu, Dacheng Tao, Xueqi Cheng, Peng Cui, Elke A. Rundensteiner, David Carmel, Qi He, and Jeffrey Xu Yu (Eds.). ACM, 1441-1450. https://doi.org/10.1145/3357384.3357895 [38] Ilya Sutskever, Oriol Vinyals, and Quoc V. Le. 2014. Sequence to Sequence Learning with Neural Networks. In Advances in Neural Information Processing Systems 27: Annual Conference on Neural Information Processing Systems 2014, December 8-13 2014, Montreal, Quebec, Canada , Zoubin Ghahramani, Max Welling, Corinna Cortes, Neil D. Lawrence, and Kilian Q. Weinberger (Eds.). 3104-3112. https://proceedings.neurips.cc/paper/2014/hash/ a14ac55a4f27472c5d894ec1c3c743d2-Abstract.html [39] Jiaxi Tang and Ke Wang. 2018. Personalized Top-N Sequential Recommendation via Convolutional Sequence Embedding. In Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining, WSDM 2018, Marina Del Rey, CA, USA, February 5-9, 2018 , Yi Chang, Chengxiang Zhai, Yan Liu, and Yoelle Maarek (Eds.). ACM, 565-573. https://doi.org/10.1145/3159652.3159656 [40] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is All you Need. In Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 49, 2017, Long Beach, CA, USA , Isabelle Guyon, Ulrike von Luxburg, Samy Bengio, Hanna M. Wallach, Rob Fergus, S. V. N. Vishwanathan, and Roman Garnett (Eds.). 5998-6008. https://proceedings.neurips.cc/paper/2017/hash/ 3f5ee243547dee91fbd053c1c4a845aa-Abstract.html [41] Wen Wang, Wei Zhang, Shukai Liu, Qi Liu, Bo Zhang, Leyu Lin, and Hongyuan Zha. 2020. Beyond Clicks: Modeling Multi-Relational Item Graph for SessionBased Target Behavior Prediction. In WWW'20: The Web Conference 2020, Taipei, Taiwan, April 20-24, 2020 . ACM / IW3C2, 3056-3062. https://doi.org/10.1145/ 3366423.3380077 [42] Satosi Watanabe. 1960. Information theoretical analysis of multivariate correlation. IBM Journal of research and development 4, 1 (1960), 66-82. SIGIR '24, July 14-18, 2024, Washington, DC, USA. Hengyu Zhang, Junwei Pan, Dapeng Liu, Jie Jiang, and Xiu Li [43] Ling Yan, Wu-Jun Li, Gui-Rong Xue, and Dingyi Han. 2014. Coupled Group Lasso for Web-Scale CTR Prediction in Display Advertising. In Proceedings of the 31th International Conference on Machine Learning, ICML 2014, Beijing, China, 21-26 June 2014 (JMLR Workshop and Conference Proceedings, Vol. 32) . JMLR.org, 802-810. http://proceedings.mlr.press/v32/yan14.html [44] Yi Yang, Baile Xu, Shaofeng Shen, Furao Shen, and Jian Zhao. 2020. Operationaware Neural Networks for user response prediction. Neural Networks 121 (2020), 161-168. https://doi.org/10.1016/j.neunet.2019.09.020 [45] Jiaqi Zhai, Lucy Liao, Xing Liu, Yueming Wang, Rui Li, Xuan Cao, Leon Gao, Zhaojie Gong, Fangda Gu, Michael He, Yinghai Lu, and Yu Shi. 2024. Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations. CoRR abs/2402.17152 (2024). https://doi.org/10.48550/ ARXIV.2402.17152 arXiv:2402.17152 [46] Hengyu Zhang, Enming Yuan, Wei Guo, Zhicheng He, Jiarui Qin, Huifeng Guo, Bo Chen, Xiu Li, and Ruiming Tang. 2022. Disentangling Past-Future Modeling in Sequential Recommendation via Dual Networks. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management, Atlanta, GA, USA, October 17-21, 2022 . ACM, 2549-2558. https://doi.org/10.1145/3511808. 3557289 [47] Weinan Zhang, Jiarui Qin, Wei Guo, Ruiming Tang, and Xiuqiang He. 2021. Deep Learning for Click-Through Rate Estimation. In Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence, IJCAI 2021, Virtual Event / Montreal, Canada, 19-27 August 2021 , Zhi-Hua Zhou (Ed.). ijcai.org, 4695-4703. https://doi.org/10.24963/ijcai.2021/636 [48] Zuowu Zheng, Xiaofeng Gao, Junwei Pan, Qi Luo, Guihai Chen, Dapeng Liu, and Jie Jiang. 2022. Autoattention: automatic field pair selection for attention in user behavior modeling. In 2022 IEEE International Conference on Data Mining (ICDM) . IEEE, 803-812. [49] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep Interest Evolution Network for Click-Through Rate Prediction. In The Thirty-Third AAAI Conference on Artificial Intelligence, AAAI 2019, The Thirty-First Innovative Applications of Artificial Intelligence Conference, IAAI 2019, The Ninth AAAI Symposium on Educational Advances in Artificial Intelligence, EAAI 2019, Honolulu, Hawaii, USA, January 27 - February 1, 2019 . AAAI Press, 5941-5948. https://doi.org/10.1609/aaai.v33i01.33015941 [50] Guorui Zhou, Xiaoqiang Zhu, Chengru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for Click-Through Rate Prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2018, London, UK, August 19-23, 2018 , Yike Guo and Faisal Farooq (Eds.). ACM, 1059-1068. https://doi.org/10.1145/3219819.3219823 [51] Haolin Zhou, Junwei Pan, Xinyi Zhou, Xihua Chen, Jie Jiang, Xiaofeng Gao, and Guihai Chen. 2023. Temporal Interest Network for Click-Through Rate Prediction. CoRR abs/2308.08487 (2023).",
   "keywords_parsed": [
     "User Behavior Pattern",
-    " Click-Through Rate Prediction",
-    " Recommendation System ∗ Corresponding author. This work is licensed under a Creative Commons Attribution International 4.0 License. SIGIR '24",
-    " July 14-18",
-    " 2024",
-    " Washington",
-    " DC",
-    " USA. © 2024 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-0431-4/24/07. https://doi.org/10.1145/3626772.3657777"
+    "Click-Through Rate Prediction",
+    "Recommendation System"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "TensorFlow: A System for Large-Scale Machine Learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "CAN: Feature Co-Action Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Training and Testing Low-degree Polynomial Data Mappings via Linear SVM"
+    },
+    {
+      "ref_id": "b5",
+      "title": "End-to-End User Behavior Retrieval in Click-Through Rate Prediction Model"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Behavior Sequence Transformer for E-commerce Recommendation in Alibaba"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Sequential Recommendation with User Memory Networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b11",
+      "title": "ZEN: Pre-training Chinese Text Encoder Enhanced by N-gram Representations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Scaling Up Your Kernels to 31×31: Revisiting Large Kernel Design in CNNs"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Product-Based Neural Networks for User Response Prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b33",
+      "title": "N-Grammer: Augmenting Transformers with latent n-grams"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Efficient High-Order Interaction-Aware Feature Selection Based on Conditional Mutual Information"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A multivariate approach to the symmetrical uncertainty measure: Application to feature selection problem"
+    },
+    {
+      "ref_id": "b37",
+      "title": "BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Sequence to Sequence Learning with Neural Networks"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Personalized Top-N Sequential Recommendation via Convolutional Sequence Embedding"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Beyond Clicks: Modeling Multi-Relational Item Graph for Session-Based Target Behavior Prediction"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Information theoretical analysis of multivariate correlation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Coupled Group Lasso for Web-Scale CTR Prediction in Display Advertising"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Operation-aware Neural Networks for user response prediction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Disentangling Past-Future Modeling in Sequential Recommendation via Dual Networks"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Deep Learning for Click-Through Rate Estimation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Autoattention: automatic field pair selection for attention in user behavior modeling"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Deep Interest Evolution Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Temporal Interest Network for Click-Through Rate Prediction"
+    }
   ]
 }

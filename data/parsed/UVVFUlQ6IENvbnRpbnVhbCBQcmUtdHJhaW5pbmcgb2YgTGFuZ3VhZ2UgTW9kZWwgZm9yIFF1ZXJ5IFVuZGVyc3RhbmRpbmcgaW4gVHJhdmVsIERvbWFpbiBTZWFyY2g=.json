@@ -23,29 +23,137 @@
   "REFERENCES": "[1] Dogu Araci. 2019. Finbert: Financial sentiment analysis with pre-trained language models. arXiv preprint arXiv:1908.10063 (2019). [2] Tom B Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al. 2020. Language Models are Few-Shot Learners. arXiv preprint arXiv:2005.14165 (2020). [3] Brooke Cowan, Sven Zethelius, Brittany Luk, Teodora Baras, Prachi Ukarde, and Daodao Zhang. 2015. Named entity recognition in travel-related search queries. In Proceedings of the AAAI conference on artificial intelligence , Vol. 29. 3935-3941. [4] Yiming Cui, Wanxiang Che, Ting Liu, Bing Qin, and Ziqing Yang. 2021. Pretraining with whole word masking for chinese bert. IEEE/ACM Transactions on Audio, Speech, and Language Processing 29 (2021), 3504-3514. [5] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers) . Association for Computational Linguistics, Minneapolis, Minnesota, 4171-4186. https://doi.org/10.18653/v1/N19-1423 [6] Li Dong, Nan Yang, Wenhui Wang, Furu Wei, Xiaodong Liu, Yu Wang, Jianfeng Gao, Ming Zhou, and Hsiao-Wuen Hon. 2019. Unified language model pretraining for natural language understanding and generation. Advances in Neural Information Processing Systems 32 (2019). [7] Siddhant Garg and Goutham Ramakrishnan. 2020. BAE: BERT-based Adversarial Examples for Text Classification. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) . 6174-6181. [8] Zheng Gong, Kun Zhou, Wayne Xin Zhao, Jing Sha, Shijin Wang, and Ji-Rong Wen. 2022. Continual Pre-training of Language Models for Math Problem Understanding with Syntax-Aware Memory Network. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . 5923-5933. [9] Suchin Gururangan, Ana Marasović, Swabha Swayamdipta, Kyle Lo, Iz Beltagy, Doug Downey, and Noah A Smith. 2020. Don't Stop Pretraining: Adapt Language Models to Domains and Tasks. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics . 8342-8360. [10] Jizhou Huang, Haifeng Wang, Yibo Sun, Yunsheng Shi, Zhengjie Huang, An Zhuo, and Shikun Feng. 2022. ERNIE-GeoL: A Geography-and-Language Pre- trained Model and its Applications in Baidu Maps. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3029-3039. [11] Mandar Joshi, Danqi Chen, Yinhan Liu, Daniel S Weld, Luke Zettlemoyer, and Omer Levy. 2020. Spanbert: Improving pre-training by representing and predicting spans. Transactions of the Association for Computational Linguistics 8 (2020), 64-77. [12] Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, and Radu Soricut. 2019. ALBERT: A Lite BERT for Self-supervised Learning of Language Representations. In International Conference on Learning Representations . [13] Jinhyuk Lee, Wonjin Yoon, Sungdong Kim, Donghyeon Kim, Sunkyu Kim, Chan Ho So, and Jaewoo Kang. 2020. BioBERT: a pre-trained biomedical language representation model for biomedical text mining. Bioinformatics 36, 4 (2020), 1234-1240. [14] Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Veselin Stoyanov, and Luke Zettlemoyer. 2020. BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics . Association for Computational Linguistics, Online, 7871-7880. https://doi.org/10.18653/v1/2020.acl-main.703 [15] Chen Liang, Yue Yu, Haoming Jiang, Siawpeng Er, Ruijia Wang, Tuo Zhao, and Chao Zhang. 2020. Bond: Bert-assisted open-domain named entity recognition with distant supervision. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1054-1064. [16] Xiao Liu, Juan Hu, Qi Shen, and Huan Chen. 2021. Geo-BERT Pre-training Model for Query Rewriting in POI Search. In Findings of the Association for Computational Linguistics: EMNLP 2021 . 2209-2214. [17] Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019. Roberta: A robustly optimized bert pretraining approach. arXiv preprint arXiv:1907.11692 (2019). [18] Ilya Loshchilov and Frank Hutter. 2018. Decoupled Weight Decay Regularization. In International Conference on Learning Representations . [19] Xinyu Ma, Jiafeng Guo, Ruqing Zhang, Yixing Fan, Xiang Ji, and Xueqi Cheng. 2021. PROP: pre-training with representative words prediction for ad-hoc retrieval. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . 283-291. [20] Xinyu Ma, Jiafeng Guo, Ruqing Zhang, Yixing Fan, Yingyan Li, and Xueqi Cheng. 2021. B-PROP: bootstrapped pre-training with representative words prediction for ad-hoc retrieval. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1513-1522. [21] Martin Müller, Marcel Salathé, and Per E Kummervold. 2020. Covid-twitter-bert: A natural language processing model to analyse covid-19 content on twitter. arXiv preprint arXiv:2005.07503 (2020). [22] Dat Quoc Nguyen, Thanh Vu, and Anh Tuan Nguyen. 2020. BERTweet: A pretrained language model for English Tweets. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations . Association for Computational Linguistics, Online, 9-14. https://doi.org/10. 18653/v1/2020.emnlp-demos.2 [23] Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban Desmaison, Andreas Kopf, Edward Yang, Zachary DeVito, Martin Raison, Alykhan Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu Fang, Junjie Bai, and Soumith Chintala. 2019. PyTorch: An Imperative Style, High-Performance Deep Learning Library. In Advances in Neural Information Processing Systems , H. Wallach, H. Larochelle, A. Beygelzimer, F. d'Alché-Buc, E. Fox, and R. Garnett (Eds.), Vol. 32. Curran Associates, Inc. https://proceedings.neurips.cc/paper/2019/file/ bdbca288fee7f92f2bfa9f7012727740-Paper.pdf [24] Yu Sun, Shuohuan Wang, Yukun Li, Shikun Feng, Xuyi Chen, Han Zhang, Xin Tian, Danxiang Zhu, Hao Tian, and Hua Wu. 2019. ERNIE: Enhanced Representation through Knowledge Integration. arXiv e-prints (2019), arXiv-1904. [25] Laurens Van der Maaten and Geoffrey Hinton. 2008. Visualizing data using t-SNE. Journal of machine learning research 9, 11 (2008). [26] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [27] Wei Wang, Bin Bi, Ming Yan, Chen Wu, Jiangnan Xia, Zuyi Bao, Liwei Peng, and Luo Si. 2019. StructBERT: Incorporating Language Structures into Pre-training for Deep Language Understanding. In International Conference on Learning Representations . [28] Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi, Pierric Cistac, Tim Rault, Remi Louf, Morgan Funtowicz, Joe Davison, Sam Shleifer, Patrick von Platen, Clara Ma, Yacine Jernite, Julien Plu, Canwen Xu, Teven Le Scao, Sylvain Gugger, Mariama Drame, Quentin Lhoest, and Alexander Rush. 2020. Transformers: State-of-the-Art Natural Language Processing. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations . Association for Computational Linguistics, Online, 38-45. https://doi.org/10.18653/v1/2020.emnlp-demos.6 [29] Jia Xu, Fei Xiong, Zulong Chen, Mingyuan Tao, Liangyue Li, and Quan Lu. 2022. G2NET: A General Geography-Aware Representation Network for Hotel Search Ranking. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4237-4247. [30] Zhilin Yang, Zihang Dai, Yiming Yang, Jaime Carbonell, Russ R Salakhutdinov, and Quoc V Le. 2019. Xlnet: Generalized autoregressive pretraining for language understanding. Advances in neural information processing systems 32 (2019). [31] Zhengyan Zhang, Xu Han, Zhiyuan Liu, Xin Jiang, Maosong Sun, and Qun Liu. 2019. ERNIE: Enhanced Language Representation with Informative Entities. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics . 1441-1451. [32] Zhuosheng Zhang, Hanqing Zhang, Keming Chen, Yuhang Guo, Jingyun Hua, Yulong Wang, and Ming Zhou. 2021. Mengzi: Towards lightweight yet ingenious pre-trained models for chinese. arXiv preprint arXiv:2110.06696 (2021).",
   "keywords_parsed": [
     "Continual Pre-training",
-    " Query Understanding",
-    " Travel Domain Search ∗ Work done when interned at Alibaba Group. † Jingping Liu and Yanghua Xiao are corresponding authors. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. KDD '23",
-    " August 6-10",
-    " 2023",
-    " Long Beach",
-    " CA",
-    " USA © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0103-0/23/08...$15.00 https://doi.org/10.1145/3580305.3599891 Jian Xie",
-    " Yidan Liang",
-    " Jingping Liu",
-    " Yanghua Xiao",
-    " Baohua Wu",
-    " and Shenghua Ni. 2023. QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '23)",
-    " August 6-10",
-    " 2023",
-    " Long Beach",
-    " CA",
-    " USA. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 10 pages. https://doi.org/10.1145/3580305.3599891"
+    "Query Understanding",
+    "Travel Domain Search"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Finbert: Financial sentiment analysis with pre-trained language models"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Language Models are Few-Shot Learners"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Named entity recognition in travel-related search queries"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Pretraining with whole word masking for chinese bert"
+    },
+    {
+      "ref_id": "b5",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Unified language model pretraining for natural language understanding and generation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "BAE: BERT-based Adversarial Examples for Text Classification"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Continual Pre-training of Language Models for Math Problem Understanding with Syntax-Aware Memory Network"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Don't Stop Pretraining: Adapt Language Models to Domains and Tasks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "ERNIE-GeoL: A Geography-and-Language Pre-trained Model and its Applications in Baidu Maps"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Spanbert: Improving pre-training by representing and predicting spans"
+    },
+    {
+      "ref_id": "b12",
+      "title": "ALBERT: A Lite BERT for Self-supervised Learning of Language Representations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "BioBERT: a pre-trained biomedical language representation model for biomedical text mining"
+    },
+    {
+      "ref_id": "b14",
+      "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Bond: Bert-assisted open-domain named entity recognition with distant supervision"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Geo-BERT Pre-training Model for Query Rewriting in POI Search"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Decoupled Weight Decay Regularization"
+    },
+    {
+      "ref_id": "b19",
+      "title": "PROP: pre-training with representative words prediction for ad-hoc retrieval"
+    },
+    {
+      "ref_id": "b20",
+      "title": "B-PROP: bootstrapped pre-training with representative words prediction for ad-hoc retrieval"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Covid-twitter-bert: A natural language processing model to analyse covid-19 content on twitter"
+    },
+    {
+      "ref_id": "b22",
+      "title": "BERTweet: A pretrained language model for English Tweets"
+    },
+    {
+      "ref_id": "b23",
+      "title": "PyTorch: An Imperative Style, High-Performance Deep Learning Library"
+    },
+    {
+      "ref_id": "b24",
+      "title": "ERNIE: Enhanced Representation through Knowledge Integration"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b27",
+      "title": "StructBERT: Incorporating Language Structures into Pre-training for Deep Language Understanding"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Transformers: State-of-the-Art Natural Language Processing"
+    },
+    {
+      "ref_id": "b29",
+      "title": "G2NET: A General Geography-Aware Representation Network for Hotel Search Ranking"
+    },
+    {
+      "ref_id": "b30",
+      "title": "XLNet: Generalized autoregressive pretraining for language understanding"
+    },
+    {
+      "ref_id": "b31",
+      "title": "ERNIE: Enhanced Language Representation with Informative Entities"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Mengzi: Towards lightweight yet ingenious pre-trained models for chinese"
+    }
   ]
 }

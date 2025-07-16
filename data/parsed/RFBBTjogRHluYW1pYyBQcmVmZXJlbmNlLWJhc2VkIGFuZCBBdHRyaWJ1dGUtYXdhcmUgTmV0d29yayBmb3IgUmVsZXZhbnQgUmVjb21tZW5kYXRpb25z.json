@@ -22,15 +22,82 @@
   "REFERENCES": "[1] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [2] Yizeng Han, Gao Huang, Shiji Song, Le Yang, Honghui Wang, and Yulin Wang. 2021. Dynamic neural networks: A survey. IEEE Transactions on Pattern Analysis and Machine Intelligence (2021). [3] Ming Li, Naiyin Liu, Xiaofeng Pan, Yang Huang, Ningning Li, Yingmin Su, Chengjun Mao, and Bo Cao. 2023. FAN: Fatigue-Aware Network for ClickThrough Rate Prediction in E-commerce Recommendation. In International Conference on Database Systems for Advanced Applications . Springer, 502-514. [4] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [5] Xiaofeng Pan, Ming Li, Jing Zhang, Keren Yu, Hong Wen, Luping Wang, Chengjun Mao, and Bo Cao. 2022. Metacvr: Conversion rate prediction via meta learning in small-scale recommendation scenarios. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2110-2114. [6] Xiaofeng Pan, Yibin Shen, Jing Zhang, Xu He, Yang Huang, Hong Wen, Chengjun Mao, and Bo Cao. 2023. MOEF: Modeling Occasion Evolution in Frequency Domain for Promotion-Aware Click-Through Rate Prediction. In International Conference on Database Systems for Advanced Applications . Springer, 330-340. [7] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2685-2692. [8] Qijie Shen, Hong Wen, Wanjie Tao, Jing Zhang, Fuyu Lv, Zulong Chen, and Zhao Li. 2022. Deep Interest Highlight Network for Click-Through Rate Prediction in Trigger-Induced Recommendation. In Proceedings of the ACM Web Conference 2022 . 422-430. [9] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [10] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the Web Conference 2021 . 1785-1797. [11] Ruobing Xie, Rui Wang, Shaoliang Zhang, Zhihong Yang, Feng Xia, and Leyu Lin. 2021. Real-time Relevant Recommendation Suggestion. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . 112-120. [12] Weinan Xu, Hengxu He, Minshi Tan, Yunming Li, Jun Lang, and Dongbai Guo. 2020. Deep interest with hierarchical attention network for click-through rate prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1905-1908. [13] Bencheng Yan, Pengjie Wang, Kai Zhang, Feng Li, Jian Xu, and Bo Zheng. 2022. APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction. arXiv preprint arXiv:2203.16218 (2022). [14] Ling Yan, Wu-Jun Li, Gui-Rong Xue, and Dingyi Han. 2014. Coupled group lasso for web-scale ctr prediction in display advertising. In International Conference on Machine Learning . PMLR, 802-810. [15] Xuanhua Yang, Xiaoyu Peng, Penghui Wei, Shaoguo Liu, Liang Wang, and Bo Zheng. 2022. AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction. arXiv preprint arXiv:2206.13108 (2022). [16] Qianqian Zhang, Xinru Liao, Quan Liu, Jian Xu, and Bo Zheng. 2022. Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 1368-1376. [17] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [18] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068.",
   "keywords_parsed": [
     "Click-Through Rate Prediction",
-    " Relevant Recommendation",
-    " Dynamic Neural Network",
-    " Attribute-aware Recommendation 1 https://github.com/DavidNeson/DPAN Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CIKM '23",
-    " October 21-25",
-    " 2023",
-    " Birmingham",
-    " United Kingdom © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0124-5/23/10...$15.00 https://doi.org/10.1145/3583780.3615218 wfwang@njupt.edu.cn Nanjing University of Posts and Telecommunications China"
+    "Relevant Recommendation",
+    "Dynamic Neural Network",
+    "Attribute-aware Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Dynamic neural networks: A survey"
+    },
+    {
+      "ref_id": "b3",
+      "title": "FAN: Fatigue-Aware Network for ClickThrough Rate Prediction in E-commerce Recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Metacvr: Conversion rate prediction via meta learning in small-scale recommendation scenarios"
+    },
+    {
+      "ref_id": "b6",
+      "title": "MOEF: Modeling Occasion Evolution in Frequency Domain for Promotion-Aware Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep Interest Highlight Network for Click-Through Rate Prediction in Trigger-Induced Recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b10",
+      "title": "dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Real-time Relevant Recommendation Suggestion"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep interest with hierarchical attention network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Coupled group lasso for web-scale ctr prediction in display advertising"
+    },
+    {
+      "ref_id": "b15",
+      "title": "AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

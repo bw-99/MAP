@@ -19,8 +19,69 @@
   "(2018).": "[16] Fuyuan Lyu, Xing Tang, Huifeng Guo, Ruiming Tang, Xiuqiang He, Rui Zhang, and Xue Liu. 2022. Memorize, Factorize, or be Naive: Learning Optimal Feature Interaction Methods for CTR Prediction. In 2022 IEEE 38th International Conference on Data Engineering (ICDE) . IEEE, 1450-1462. [17] Fuyuan Lyu, Xing Tang, Dugang Liu, Liang Chen, Xiuqiang He, and Xue Liu. 2023. Optimizing feature set for click-through rate prediction. In Proceedings of the ACM Web Conference 2023 . 3386-3395. [18] Fuyuan Lyu, Xing Tang, Hong Zhu, Huifeng Guo, Yingxue Zhang, Ruiming Tang, and Xue Liu. 2022. OptEmbed: Learning Optimal Embedding Table for Clickthrough Rate Prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 1399-1409. [19] Alexey Natekin and Alois Knoll. 2013. Gradient boosting machines, a tutorial. Frontiers in neurorobotics 7 (2013), 21. [20] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-Based Neural Networks for User Response Prediction. In 2016 IEEE 16th International Conference on Data Mining (ICDM) . 1149-1154. [21] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. 2017. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv preprint arXiv:1701.06538 (2017). [22] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1161-1170. [23] Robert Tibshirani. 1996. Regression shrinkage and selection via the lasso. Journal of the Royal Statistical Society: Series B (Methodological) 58, 1 (1996), 267-288. [24] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [25] Yejing Wang, Xiangyu Zhao, Tong Xu, and Xian Wu. 2022. Autofield: Automating feature selection in deep recommender systems. In Proceedings of the ACM Web Conference 2022 . 1977-1986. [26] Zhikun Wei, Xin Wang, and Wenwu Zhu. 2021. Autoias: Automatic integrated architecture searcher for click-trough rate prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 21012110. [27] Svante Wold, Kim Esbensen, and Paul Geladi. 1987. Principal component analysis. Chemometrics and intelligent laboratory systems 2, 1-3 (1987), 37-52. [28] Yiming Yang and Jan O Pedersen. 1997. A comparative study on feature selection in text categorization. In Icml , Vol. 97. Citeseer, 35. [29] Weinan Zhang, Tianming Du, and Jun Wang. 2016. Deep Learning over Multifield Categorical Data: -A Case Study on User Response Prediction. In Advances in Information Retrieval: 38th European Conference on IR Research, ECIR 2016, Padua, Italy, March 20-23, 2016. Proceedings 38 . Springer, 45-57.",
   "keywords_parsed": [
     "Recommender System",
-    " Feature Selection",
-    " CTR Prediction",
-    ""
+    "Feature Selection",
+    "CTR Prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Correlation-based feature selection for machine learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Ridge regression: Biased estimation for nonorthogonal problems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Adaptive mixtures of local experts"
+    },
+    {
+      "ref_id": "b6",
+      "title": "DERRD: A Knowledge Distillation Framework for Recommender System"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Topology Distillation for Recommender System"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Semisupervised learning for cross-domain recommendation to cold-start users"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Distillation from Heterogeneous Models for Top-K Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Consensus Learning from Heterogeneous Objectives for One-Class Collaborative Filtering"
+    },
+    {
+      "ref_id": "b11",
+      "title": "AdaFS: Adaptive Feature Selection in Deep Recommender System"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Autofis: Automatic feature interaction selection in factorization models for click-through rate prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Darts: Differentiable architecture search"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Mining cross features for financial credit risk assessment"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Neural architecture optimization"
+    }
   ]
 }

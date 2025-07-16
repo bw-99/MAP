@@ -35,7 +35,177 @@
   "B.2 Smoothness of propagated scores": "For both datasets, we visualize the distributions of the corrected hardness scores for both MA-EC and Opt-Sampling methods. Specifically, we divide the instance scores into 50 bins and count the number of instances (both positives and negatives) for each bin. We generate the histograms and visualize them in Figure 10.",
   "keywords_parsed": [
     "Recommender systems",
-    " Data subsampling",
-    " Network analysis"
+    "Data subsampling",
+    "Network analysis"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Fundamentals of electric circuits"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Graph coarsening with neural networks"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The electrical resistance of a graph captures its commute and cover times"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Data mining for imbalanced datasets: An overview"
+    },
+    {
+      "ref_id": "b5",
+      "title": "On sampling strategies for neural network-based collaborative filtering"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Spectral graph theory"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Simplify and robustify negative sampling for implicit collaborative filtering"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Local case-control sampling: Efficient subsampling in imbalanced data sets"
+    },
+    {
+      "ref_id": "b10",
+      "title": "KuaiRec: A Fully-observed Dataset and Insights for Evaluating Recommender Systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Minimizing effective resistance of a graph"
+    },
+    {
+      "ref_id": "b12",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Structure-preserving sparsification methods for social networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Local uncertainty sampling for large-scale multiclass logistic regression"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Some properties of line digraphs"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b17",
+      "title": "A generalization of sampling without replacement from a finite universe"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Embeddingbased retrieval in facebook search"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Combining label propagation and simple models out-performs graph neural networks"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Residual correlation in graph neural network regression"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Edge Sampling Using Local Network Information"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Autofis: Automatic feature interaction selection in factorization models for click-through rate prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Measuring Calibration in Deep Learning"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Untangling hairballs"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Contrastive learning with hard negative samples"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Local graph sparsification for scalable clustering"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Hidden technical debt in machine learning systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Continuous integration, delivery and deployment: a systematic review on approaches, tools, challenges and practices"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Surprise sampling: Improving and extending the local case-control sampling"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Graph sparsification by effective resistances"
+    },
+    {
+      "ref_id": "b31",
+      "title": "NetworKit: A tool suite for large-scale complex network analysis"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Optimal subsampling with influence functions"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Graph sparsification via meta-learning"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Logistic regression for massive data with rare events"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Nonuniform Negative Sampling and Log Odds Correction with Rare Events Data"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Irgan: A minimax game for unifying generative and discriminative information retrieval models"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Mind: A large-scale dataset for news recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Noise contrastive estimation for one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Graph convolutional neural networks for web-scale recommender systems"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Optimizing top-n collaborative filtering via dynamic negative item sampling"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Robust graph representation learning via neural sparsification"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Learning with local and global consistency"
+    }
   ]
 }

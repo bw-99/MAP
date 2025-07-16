@@ -34,7 +34,125 @@
   "REFERENCES": "[1] AmanAgarwal, Kenta Takatsu, Ivan Zaitsev, and Thorsten Joachims. 2019. A General Framework for Counterfactual Learning-to-Rank. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . 5-14. [2] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [3] Yulong Gu, Zhuoye Ding, Shuaiqiang Wang, Lixin Zou, Yiding Liu, and Dawei Yin. 2020. Deep multifaceted transformers for multi-objective ranking in large-scale e-commerce recommender systems. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2493-2500. [4] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [5] Junyou He, Guibao Mei, Feng Xing, Xiaorui Yang, Yongjun Bao, and Weipeng Yan. 2020. DADNN: Multi-Scene CTR Prediction via Domain-Aware Deep Neural Network. arXiv preprint arXiv:2011.11938 (2020). [6] Thorsten Joachims, Adith Swaminathan, and Tobias Schnabel. 2017. Unbiased learning-to-rank with biased feedback. In Proceedings of the tenth ACM international conference on web search and data mining . 781-789. [7] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix factorization techniques for recommender systems. Computer (2009), 30-37. [8] Pengcheng Li, Runze Li, Qing Da, An-Xiang Zeng, and Lijun Zhang. 2020. Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2605-2612. [9] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [10] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [11] Ishan Misra, Abhinav Shrivastava, Abhinav Gupta, and Martial Hebert. 2016. Cross-stitch networks for multi-task learning. In Proceedings of the IEEE conference on computer vision and pattern recognition . 3994-4003. [12] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . 995-1000. [13] Badrul Sarwar, George Karypis, Joseph Konstan, and John Riedl. 2001. Item-based collaborative filtering recommendation algorithms. In Proceedings of the 10th international conference on World Wide Web . 285-295. [14] J Ben Schafer, Dan Frankowski, Jon Herlocker, and Shilad Sen. 2007. Collaborative filtering recommender systems. In The adaptive web . 291-324. [15] Alice Schoenauer-Sebag, Louise Heinrich, Marc Schoenauer, Michele Sebag, Lani F Wu, and Steve J Altschuler. 2019. Multi-domain adversarial learning. arXiv preprint arXiv:1903.09239 (2019). [16] Ozan Sener and Vladlen Koltun. 2018. Multi-task learning as multi-objective optimization. Advances in neural information processing systems 31 (2018). [17] Ying Shan, T Ryan Hoens, Jian Jiao, Haijing Wang, Dong Yu, and JC Mao. 2016. Deep crossing: Web-scale modeling without manually crafted combinatorial features. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining . 255-262. [18] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. 2017. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv preprint arXiv:1701.06538 (2017). [19] Qijie Shen, Wanjie Tao, Jing Zhang, Hong Wen, Zulong Chen, and Quan Lu. 2021. SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4094-4103. [20] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4104-4113. [21] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Fourteenth ACM Conference on Recommender Systems . 269278. [22] Yu Tian, Jianxin Chang, Yanan Niu, Yang Song, and Chenliang Li. 2022. When Multi-Level Meets Multi-Interest: A Multi-Grained Neural Model for Sequential Recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1632-1641. [23] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in neural information processing systems . 5998-6008. [24] Xuanhui Wang, Michael Bendersky, Donald Metzler, and Marc Najork. 2016. Learning to rank with selection bias in personal search. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval . 115-124. [25] Qianqian Zhang, Xinru Liao, Quan Liu, Jian Xu, and Bo Zheng. 2022. Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 1368-1376. [26] Weinan Zhang, Tianming Du, and Jun Wang. 2016. Deep learning over multi-field categorical data. In The 38th European Conference on Information Retrieval . 45-57. [27] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [28] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [29] Xinyu Zou, Zhi Hu, Yiming Zhao, Xuchu Ding, Zhongyi Liu, Chenliang Li, and Aixin Sun. 2022. Automatic Expert Selection for Multi-Scenario and Multi-Task Search. In The 45th International ACM SIGIR Conference on Research & Development in Information Retrieval .",
   "keywords_parsed": [
     "Multi-scenario Learning",
-    " Feature Refinement",
-    " Search and Recommendation"
+    "Feature Refinement",
+    "Search and Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A General Framework for Counterfactual Learning-to-Rank"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep multifaceted transformers for multi-objective ranking in large-scale e-commerce recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "DADNN: Multi-Scene CTR Prediction via Domain-Aware Deep Neural Network"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Unbiased learning-to-rank with biased feedback"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Cross-stitch networks for multi-task learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Item-based collaborative filtering recommendation algorithms"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Collaborative filtering recommender systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Multi-domain adversarial learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Multi-task learning as multi-objective optimization"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deep crossing: Web-scale modeling without manually crafted combinatorial features"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+    },
+    {
+      "ref_id": "b19",
+      "title": "SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios"
+    },
+    {
+      "ref_id": "b20",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b22",
+      "title": "When Multi-Level Meets Multi-Interest: A Multi-Grained Neural Model for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Learning to rank with selection bias in personal search"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Deep learning over multi-field categorical data"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Automatic Expert Selection for Multi-Scenario and Multi-Task Search"
+    }
   ]
 }

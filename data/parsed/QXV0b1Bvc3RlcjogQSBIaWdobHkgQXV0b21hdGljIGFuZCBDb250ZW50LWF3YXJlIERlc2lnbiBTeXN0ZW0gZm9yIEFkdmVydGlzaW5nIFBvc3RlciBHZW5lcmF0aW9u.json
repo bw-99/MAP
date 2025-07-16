@@ -34,17 +34,158 @@
   "C POSTER AND ANNOTATION EXAMPLE.": "Fig. 12 shows some posters of the constructed dataset mentioned in the paper. Additionally, Fig. 13 provides an example of the poster annotations. The annotation encompasses three key aspects: layout, tagline content, and visual style attribute.",
   "D LIMITATIONS": "Our method has two main limitations. Firstly, the available underlays are currently limited in number and exhibit simplistic styles. This issue may be released by constructing a larger and more diverse library of underlays or introducing supplementary embellishments. Secondly, our method can only predict the color and several font typographies of taglines, lacking the ability to generate variable or artistic fonts at the pixel level (e.g. [30]). AutoPoster: A Highly Automatic and Content-aware Design System for Advertising Poster Generation MM'23, October 29-November 3, 2023, Ottawa, ON, Canada Figure 12: Visualization of a subset of posters extracted from the constructed dataset. CHÉRI CHERI ROSE Figure 13: Annotation of an advertising poster. On the left is a poster with Chinese context. The layout of graphic elements on this poster is shown in the middle. And the right part lists the tagline content and visual style attributes of each design element. 𝑃𝑢𝐻𝑢𝑖 is a kind of Chinese font typography. Layout Tagline Content Visual Style Attributes {Clrd (Beautifulsummer, Lycra at your side) T2 {Clra@],Clrs:ø,Clr9:ø,F: Puhui} seeing the world) U1 {Clrd T3 Product image Logo Underlay Tagline",
   "keywords_parsed": [
-    "Advertising posters",
-    " a form of information presentation",
-    " combine visual and linguistic modalities. Creating a poster involves multiple steps and necessitates design experience and creativity. This paper introduces AutoPoster",
-    " a highly automatic and content-aware system for generating advertising posters. With only product images and titles as inputs",
-    " AutoPoster can automatically produce posters of varying sizes through four key stages: image cleaning and retargeting",
-    " layout generation",
-    " tagline generation",
-    " and style attribute prediction. To ensure visual harmony of posters",
-    " two content-aware models are incorporated for layout and tagline generation. Moreover",
-    " we propose a novel multi-task Style Attribute Predictor (SAP) to jointly predict visual style attributes. Meanwhile",
-    " to our knowledge",
-    " we propose the first poster generation dataset that includes visual attribute annotations for over 76k posters. Qualitative and quantitative outcomes from user studies and experiments substantiate the efficacy of our system and the aesthetic superiority of the generated posters compared to other poster generation methods."
+    "advertising poster generation",
+    "automatic system",
+    "design tool"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Seam carving for content-aware image resizing"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Geometry Aligned Variational Transformer for Imageconditioned Layout Generation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Weakly- and Self-Supervised Learning for Content-Aware Deep Image Retargeting"
+    },
+    {
+      "ref_id": "b4",
+      "title": "FontMatcher: Font Image Paring for Harmonious Digital Graphic Design"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Dynamic head: Unifying object detection heads with attentions"
+    },
+    {
+      "ref_id": "b6",
+      "title": "An image is worth 16x16 words: Transformers for image recognition at scale"
+    },
+    {
+      "ref_id": "b7",
+      "title": "CapOnImage: Context-driven Dense-Captioning on Image"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Non-autoregressive neural machine translation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Vinci: An Intelligent Graphic Design System for Generating Advertising Posters"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep Residual Learning for Image Recognition"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Adaptive grid-based document layout"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Recommendation system for automatic design of magazine covers"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Theory of brightness and color contrast in human vision"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Visual font pairing"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Text2Poster: Laying Out Stylized Texts on Retrieved Images"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Boundless: Generative Adversarial Networks for Image Extension"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Bricolage: example-based retargeting for web design"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Focal loss for dense object detection"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Learning to Generate Posters of Scientific Papers by Probabilistic Graphical Models"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Adaptive layout for dynamically aggregated documents"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Sequence to sequence learning with neural networks"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Resolution-Robust Large Mask Inpainting With Fourier Convolutions"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Color design support system considering color harmony"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Harmonized Banner Creation from Multimodal Design Assets"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Enabling hyper-personalisation: Automated ad creative generation and ranking for fashion e-commerce"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Enabling Hyper-Personalisation: Automated Ad Creative Generation and Ranking for Fashion e-Commerce"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Rapid Object Detection using a Boosted Cascade of Simple Features"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Progressive Feature Polishing Network for Salient Object Detection"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Aesthetic Text Logo Synthesis via Content-Aware Layout Inferring"
+    },
+    {
+      "ref_id": "b31",
+      "title": "A Survey on Non-Autoregressive Generation for Neural Machine Translation and Beyond"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Automatic Generation of Visual-Textual Presentation Layout"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Automatic Generation of Visual-Textual Presentation Layout"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Automatic generation of social media snippets for mobile browsing"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Colorful image colorization"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Modeling Fonts in Context: Font Prediction on Web Designs"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Composition-aware Graphic Layout GAN for Visual-Textual Presentation Designs"
+    }
   ]
 }

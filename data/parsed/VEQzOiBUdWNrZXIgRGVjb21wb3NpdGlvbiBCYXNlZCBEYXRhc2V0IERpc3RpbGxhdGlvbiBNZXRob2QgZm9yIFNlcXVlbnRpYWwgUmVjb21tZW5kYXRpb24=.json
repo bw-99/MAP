@@ -27,7 +27,109 @@
   "References": "[1] George Cazenavette, Tongzhou Wang, Antonio Torralba, Alexei A Efros, and Jun-Yan Zhu. Dataset distillation by matching training trajectories. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition , pages 4750-4759, 2022. [2] Stephan Dempe. Bilevel optimization: theory, algorithms, applications and a bibliography. Bilevel optimization: advances and next challenges , pages 581-672, 2020. [3] Jacob Devlin. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 , 2018. [4] P Kingma Diederik. Adam: A method for stochastic optimization. (No Title) , 2014. [5] Qizhang Feng, Zhimeng Stephen Jiang, Ruiquan Li, Yicheng Wang, Na Zou, Jiang Bian, and Xia Hu. Fair graph distillation. Advances in Neural Information Processing Systems , 36:80644-80660, 2023. [6] Yunzhen Feng, Shanmukha Ramakrishna Vedantam, and Julia Kempe. Embarrassingly simple dataset distillation. In The Twelfth International Conference on Learning Representations , 2023. [7] Edward Grefenstette, Brandon Amos, Denis Yarats, Phu Mon Htut, Artem Molchanov, Franziska Meier, Douwe Kiela, Kyunghyun Cho, and Soumith Chintala. Generalized inner loop meta-learning. arXiv preprint arXiv:1910.01727 , 2019. [8] Jianyang Gu, Saeed Vahidian, Vyacheslav Kungurtsev, Haonan Wang, Wei Jiang, Yang You, and Yiran Chen. Efficient dataset distillation via minimax diffusion. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition , pages 15793-15803, 2024. [9] Jianyang Gu, Kai Wang, Wei Jiang, and Yang You. Summarizing stream data for memory-restricted online continual learning. arXiv preprint arXiv:2305.16645 , 2, 2023. [10] Wei Guo, Hao Wang, Luankang Zhang, Jin Yao Chin, Zhongzhou Liu, Kai Cheng, Qiushi Pan, Yi Quan Lee, Wanqi Xue, Tingjia Shen, et al. Scaling new frontiers: Insights into large recommendation models. arXiv preprint arXiv:2412.00714 , 2024. [11] Mridul Gupta, Sahil Manchanda, Sayan Ranu, and Hariprasad Kodamana. Mirage: Model-agnostic graph distillation for graph classification. arXiv preprint arXiv:2310.09486 , 2023. [12] Yongqiang Han, Hao Wang, Kefan Wang, Likang Wu, Zhi Li, Wei Guo, Yong Liu, Defu Lian, and Enhong Chen. End4rec: Efficient noise-decoupling for multibehavior sequential recommendation. arXiv preprint arXiv:2403.17603 , 2024. [13] Yongqiang Han, Likang Wu, Hao Wang, Guifeng Wang, Mengdi Zhang, Zhi Li, Defu Lian, and Enhong Chen. Guesr: A global unsupervised data-enhancement with bucket-cluster sampling for sequential recommendation. In International Conference on Database Systems for Advanced Applications , pages 286-296. Springer, 2023. [14] Jesse Harte, Wouter Zorgdrager, Panos Louridas, Asterios Katsifodimos, Dietmar Jannach, and Marios Fragkoulis. Leveraging large language models for sequential recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems , pages 1096-1102, 2023. [15] Ruining He and Julian McAuley. Fusing similarity models with markov chains for sparse sequential recommendation. In 2016 IEEE 16th international conference on data mining (ICDM) , pages 191-200. IEEE, 2016. [16] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 , 2015. [17] Jun Hu, Wenwen Xia, Xiaolu Zhang, Chilin Fu, Weichang Wu, Zhaoxin Huan, Ang Li, Zuoli Tang, and Jun Zhou. Enhancing sequential recommendation via llm-based semantic embedding learning. In Companion Proceedings of the ACM on Web Conference 2024 , pages 103-111, 2024. [18] Chun-Yin Huang, Kartik Srinivas, Xin Zhang, and Xiaoxiao Li. Overcoming data and model heterogeneities in decentralized federated learning via synthetic anchors. arXiv preprint arXiv:2405.11525 , 2024. [19] Wang-Cheng Kang and Julian McAuley. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) , pages 197-206. IEEE, 2018. [20] Riwei Lai, Li Chen, Rui Chen, and Chi Zhang. A survey on data-centric recommender systems. arXiv preprint arXiv:2401.17878 , 2024. [21] Shiye Lei and Dacheng Tao. A comprehensive survey of dataset distillation. IEEE Transactions on Pattern Analysis and Machine Intelligence , 2023. [22] Hao Li, Zheng Xu, Gavin Taylor, Christoph Studer, and Tom Goldstein. Visualizing the loss landscape of neural nets. Advances in neural information processing systems , 31, 2018. [23] Jiacheng Li, Ming Wang, Jin Li, Jinmiao Fu, Xin Shen, Jingbo Shang, and Julian McAuley. Text is all you need: Learning language representations for sequential recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining , pages 1258-1267, 2023. [24] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. Neural attentive session-based recommendation. In Proceedings of the 2017 ACM on [50] Cheng Wang, Jiacheng Sun, Zhenhua Dong, Ruixuan Li, and Rui Zhang. Gradient matching for categorical data distillation in ctr prediction. In Proceedings of the 17th ACM Conference on Recommender Systems , pages 161-170, 2023. WWW'25, April 28-May 2, 2025, Sydney, NSW, Australia Jiaqing Zhang et al.",
   "keywords_parsed": [
     "Recommender Systems",
-    " Dataset Distillation",
-    " Bi-level Optimization"
+    "Dataset Distillation",
+    "Bi-level Optimization"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Dataset distillation by matching training trajectories"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Bilevel optimization: theory, algorithms, applications and a bibliography"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fair graph distillation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Embarrassingly simple dataset distillation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Generalized inner loop meta-learning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Efficient dataset distillation via minimax diffusion"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Summarizing stream data for memory-restricted online continual learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Scaling new frontiers: Insights into large recommendation models"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Mirage: Model-agnostic graph distillation for graph classification"
+    },
+    {
+      "ref_id": "b12",
+      "title": "End4rec: Efficient noise-decoupling for multibehavior sequential recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Guesr: A global unsupervised data-enhancement with bucket-cluster sampling for sequential recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Leveraging large language models for sequential recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Fusing similarity models with markov chains for sparse sequential recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Enhancing sequential recommendation via llm-based semantic embedding learning"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Overcoming data and model heterogeneities in decentralized federated learning via synthetic anchors"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A survey on data-centric recommender systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "A comprehensive survey of dataset distillation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Visualizing the loss landscape of neural nets"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Text is all you need: Learning language representations for sequential recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Neural attentive session-based recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Gradient matching for categorical data distillation in ctr prediction"
+    }
   ]
 }

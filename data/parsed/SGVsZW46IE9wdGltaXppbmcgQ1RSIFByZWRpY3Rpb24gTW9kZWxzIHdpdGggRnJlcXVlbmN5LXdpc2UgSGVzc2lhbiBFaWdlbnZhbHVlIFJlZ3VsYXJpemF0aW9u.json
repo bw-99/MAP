@@ -45,7 +45,299 @@
   "A.5 CTR Prediction Models Description": "· DNN : DNN [12] pioneers a large-scale recommendation system powered by deep neural networks. In contrast to traditional linear models, DNN employs a fully-connected network to create dense 𝒈 𝐻𝑒𝑙𝑒𝑛 𝑤 𝒘 + ˆ 𝝐 ( 𝒘 ) = ∇ LB( 𝒘 )| vector representations for users. Candidate items are selected via top-N nearest neighbor search, and a neural network, incorporating candidate representations and contextual data, produces the final predictions. · Wide&Deep : Wide&Deep [11] innovatively combines the advantages of traditional shallow linear models and deep neural networks within a unified learning framework. It comprises two integral components: the Wide Component, featuring a generalized linear model with cross-product transformation, and the Deep Component, which is a feed-forward neural network. · PNN : PNN [53] consists of three key elements: an embedding layer for learning distributed representations of categorical features, a product layer for capturing feature interactions, and final fully-connected layers to make the prediction. This streamlined architecture enhances its capacity for handling multi-field categorical data with minimal computational overhead. · DeepFM : DeepFM [20] is a deep learning-based CTR prediction model that combines the power of factorization machines (FM) and deep neural networks (DNN). The FM component of DeepFM is responsible for learning the low-order feature interactions, while the DNN component is responsible for learning the highorder feature interactions. · DCN : The DCN [65] introduces an additional cross-network that explicitly generates feature interactions alongside the standard DNNarchitecture. This approach applies feature crossing at each layer, enabling high-degree interactions across features without the need for manual feature engineering, all while introducing minimal extra complexity to the DNN model. · DLRM : DLRM [47] utilizes an MLP for continuous feature processing, computes second-order interactions between categorical embeddings and dense features, and produces predictions through a sigmoid-activated MLP. It efficiently reduces dimensionality by only considering cross-terms created via dot-products between embedding pairs in the final MLP layer, resembling factorization machines. · DCNv2 : DCNv2 [66] builds upon the straightforward crossnetwork architecture of DCN. It enhances this architecture by integrating it with a deep neural network to facilitate the discovery of complementary implicit interactions. Moreover, DCNv2 incorporates low-rank techniques and adopts the Mixture-ofExpert architecture [27, 61] to enhance computational efficiency and reduce cost.",
   "A.6 Optimizers Description": "We will cover the mentioned seven optimizers in detail in this section. · Adam : Adam [32] is a highly acclaimed optimization algorithm in the field of deep learning, renowned for its robustness and effectiveness. This algorithm combines the advantages of RMSprop [24] and Momentum [51] by tracking the moving averages of both first-order and second-order gradient moments to dynamically adapt the learning rate, making it a pivotal tool in the training of deep neural networks. · Nadam : Nadam [15] is an extension of Adam optimizer, further enhances the Adam optimizer by replacing momentum component with Nesterov's accelerated gradient (NAG) [48], which has WWW'24, May 13-17, 2024, Singapore, Singapore Zirui Zhu, Yong Liu, Zangwei Zheng, Huifeng Guo, and Yang You Table 6: Overall performance on the Taobao dataset. 0 100 200 300 400 Frequency of Features 0.0 0.5 1.0 1.5 Top Eigenvalue max ×10 2 Adam Helen 0 100 200 300 400 500 Frequency of Features 0.0 1.0 2.0 3.0 Top Eigenvalue max ×10 2 Adam Helen 0 500 1000 1500 Frequency of Features 0.0 0.5 1.0 1.5 2.0 Top Eigenvalue max ×10 2 Adam Helen (a) PNN in Avazu (c) PNN in Taobao 0 100 200 300 400 Frequency of Features 0.0 0.2 0.4 0.6 0.8 1.0 Top Eigenvalue max ×10 2 Adam Helen",
   "(b) PNN in Criteo": "0 100 200 300 400 500 Frequency of Features 0.0 0.5 1.0 1.5 2.0 2.5 Top Eigenvalue max ×10 2 Adam Helen (e) DeepFM in Criteo 0 500 1000 1500 Frequency of Features 0.0 0.3 0.6 0.9 1.2 1.5 Top Eigenvalue max ×10 Adam Helen 2 (d) DeepFM in Avazu (f) DeepFM in Taobao Figure 6: Dominate Hessian eigenvalues of PNN and DeepFM in three datasets trained with Adam and Helen. a provably better bound. This adaptation allows Nadam to make more informed updates to model parameters and accelerates convergence, making it a robust and efficient choice for training neural networks. approach is equivalent to optimizing the loss function while concurrently penalizing a measure of the model's sharpness without calculating the Hessian matrix, which is computationally expensive. · Radam : Radam [42], or Rectified Adam, is a variant of Adam optimizer, by introducing a term to rectify the variance of the adaptive learning rate, especially in the early stage of the training process. Its motivation comes from the consistent improvement of the warmup training strategy, which is widely used in the training of deep neural networks. · SAM : SAM [19] represents a recent advance in enhancing the generalization performance of neural networks. SAM takes into account the geometry of the loss landscape by minimizing the loss function with respect to perturbed model parameters. This · ASAM : ASAM [33] stands as an adaptive iteration of SAM, tailored to dynamically fine-tune the perturbation radius for each layer's parameters. ASAM is claimed to possess scale-invariant property, achieved by adjusting the perturbation radius in relation to the weights' scale. This adaptive adjustment consistently yields improved generalization performance across various neural network architectures and tasks. A.6.1 Implementation details. Our experiment is conducted using FuxiCTR 1 [79, 80], an open-source framework for CTR prediction. 1 https://github.com/xue-pai/FuxiCTR Helen: Optimizing CTR Prediction Models with Frequency-wise Hessian Eigenvalue Regularization WWW'24, May 13-17, 2024, Singapore, Singapore We strictly adhere to the benchmark's coding standards for CTR model implementation, data processing, and model evaluation. In our experiment, we rely on the official PyTorch implementations of Adam, Nadam, Radam, and an open-source PyTorch implementation 2 of SAM. For ASAM, we employ the official implementation 3 provided by the authors. Regarding model hyperparameters, we adopt the benchmark settings reported by FuxiCTR and keep them constant for all the optimizers. As for optimizer hyperparameters, the learning rate remains fixed at 𝜂 = 1 × 10 -3 since all the tested optimizers incorporate an adaptive learning rate mechanism and are not particularly sensitive to changes in this parameter. In terms of L2-regularization coefficients, we explore values from the set { 1 × 10 -4 , 1 × 10 -5 , 0 } , maintaining consistency with the search space employed in BARS. For SAM, ASAM, and Helen, we perform tuning on the perturbation radius 𝜌 , considering values from the set { 0 . 05 , 0 . 01 , 0 . 005 , 0 . 001 } . In the case of Helen, the lower bound 𝜉 is varied within { 0 , 0 . 5 } . 2 https://github.com/davda54/sam 3 https://github.com/SamsungLabs/ASAM",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Sharp-MAML: Sharpness-Aware Model-Agnostic Meta Learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Controlling popularity bias in learning-to-rank recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The unfairness of popularity bias in recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Avazu Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Causal embeddings for recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Stochastic gradient learning in neural networks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Pepnet: Parameter and embedding personalized network for infusing with personalized prior information"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Entropy-sgd: Biasing gradient descent into wide valleys"
+    },
+    {
+      "ref_id": "b9",
+      "title": "When vision transformers outperform resnets without pre-training or strong data augmentations"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Symbolic discovery of optimization algorithms"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Sharp minima can generalize for deep nets"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Incorporating Nesterov Momentum into Adam"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Efficient sharpness-aware minimization for improved training of neural networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Adaptive Subgradient Methods for Online Learning and Stochastic Optimization"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Computing nonvacuous generalization bounds for deep (stochastic) neural networks with many more parameters than training data"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Sharpness-aware Minimization for Efficiently Improving Generalization"
+    },
+    {
+      "ref_id": "b20",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Asymmetric Valleys: Beyond Sharp and Flat Local Minima"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Neural networks for machine learning lecture 6a overview of mini-batch gradient descent"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Coursera: Neural networks for machine learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Flat minima"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Averaging weights leads to wider optima and better generalization"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Adaptive mixtures of local experts"
+    },
+    {
+      "ref_id": "b28",
+      "title": "On the local minima of the empirical risk"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Correcting Popularity Bias by Enhancing Recommendation Neutrality"
+    },
+    {
+      "ref_id": "b30",
+      "title": "On the Maximum Hessian Eigenvalue and Generalization"
+    },
+    {
+      "ref_id": "b31",
+      "title": "On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Asam: Adaptive sharpness-aware minimization for scale-invariant learning of deep neural networks"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Display Advertising Challenge"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Gradient descent only converges to minimizers"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Visualizing the loss landscape of neural nets"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Interpretable Click-Through Rate Prediction through Hierarchical Attention"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Model ensemble for click prediction in bing search ads"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A general knowledge distillation framework for counterfactual recommendation via uniform data"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Category-Specific CNN for Visual-aware CTR Prediction at JD.com"
+    },
+    {
+      "ref_id": "b42",
+      "title": "On the Variance of the Adaptive Learning Rate and Beyond"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Towards efficient and scalable sharpness-aware minimization"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Decoupled Weight Decay Regularization"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Second order online collaborative filtering"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Ad click prediction: a view from the trenches"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Deep Learning Recommendation Model for Personalization and Recommendation Systems"
+    },
+    {
+      "ref_id": "b48",
+      "title": "A method for unconstrained convex minimization problem with the rate of convergence O (1/k2)"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Recommendation networks and the long tail of electronic commerce"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Nonconvergence to unstable points in urn models and stochastic approximations"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Some methods of speeding up the convergence of iteration methods"
+    },
+    {
+      "ref_id": "b52",
+      "title": "On the momentum term in gradient descent learning algorithms"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Product-Based Neural Networks for User Response Prediction"
+    },
+    {
+      "ref_id": "b54",
+      "title": "On the convergence of adam and beyond"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b56",
+      "title": "A stochastic approximation method"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Internet advertising effectiveness: the effect of design on click-through rates for banner ads"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Post-click conversion modeling and analysis for non-guaranteed delivery display advertising"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Empirical analysis of the hessian of over-parametrized neural networks"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Recommendations as Treatments: Debiasing Learning and Evaluation"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+    },
+    {
+      "ref_id": "b62",
+      "title": "A bayesian perspective on generalization and stochastic gradient descent"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Alibaba Ad Display/Click Data Prediction"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Normalized flat minima: Exploring scale invariant definition of flat minima for neural networks using pac-bayesian analysis"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b66",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b67",
+      "title": "How Sharpness-Aware Minimization Minimizes Sharpness?"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Kraken: memory-efficient continual learning for large-scale real-time recommendations"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Coupled group lasso for web-scale ctr prediction in display advertising"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Positively scale-invariant flatness of relu neural networks"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Challenging the long tail recommendation"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Why are adaptive methods good for attention models?"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Surrogate gap minimization improves sharpness-aware training"
+    }
   ]
 }

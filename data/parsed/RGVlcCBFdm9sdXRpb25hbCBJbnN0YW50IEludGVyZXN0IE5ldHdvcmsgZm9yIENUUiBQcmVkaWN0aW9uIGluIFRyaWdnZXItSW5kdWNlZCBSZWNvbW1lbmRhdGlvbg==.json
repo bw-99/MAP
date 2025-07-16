@@ -28,25 +28,103 @@
   "6 CONCLUSIONS": "In this paper, we have proposed a novel method, Deep Evolutional Instant Interest Network (DEI2N), to model user instant interest for click-through rate prediction in TIR scenarios. DEI2N applies a User Instant Interest Modeling Layer to predict the dynamic change of the intensity of instant interest when the user scrolls down in order to extract the user's evolutional instant interests. Temporal information is utilized in modeling layers related to user historical behaviors for better user interest representation. An Interaction Layer is used to explicitly learn better interactions between the trigger and target items. Offline experimental results show that our proposed DEI2N achieves the best performance among various state-of-the-art methods in CTR prediction tasks. DEI2N has been deployed in real-world industrial production environments, and the results of online A/B testing demonstrate the superiority over the existing baseline. Improving the conversion rate by several percents, DEI2N has been launched in five industrial TIR scenarios. In the future, we will apply graph learning and contrastive learning to model user's instant interest by considering the trigger item and user historical behaviors simultaneously, and capture better interactions between the trigger and target items. Deep Evolutional Instant Interest Network for CTR Prediction in Trigger-Induced Recommendation WSDM'24, March 4-8, 2024, Merida, Mexico",
   "REFERENCES": "[1] Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. 2016. Layer normalization. In arXiv preprint arXiv:1607.06450 . [2] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In the 1st workshop on deep learning for recommender systems . 7-10. [3] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep session interest network for click-through rate prediction. In Proceedings of the 28th International Joint Conference on Artificial Intelligence (IJCAI) . [4] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (IJCAI) . [5] Wei Guo, Rong Su, Renhao Tan, Huifeng Guo, Yingxue Zhang, Zhirong Liu, Ruiming Tang, and Xiuqiang He. 2021. Dual Graph enhanced Embedding Neural Network for CTR Prediction. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (KDD) . [6] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep residual learning for image recognition. In Proceedings of the 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . [7] Geoffrey E Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, and Ruslan R Salakhutdinov. 2012. Improving neural networks by preventing coadaptation of feature detectors. arXiv preprint arXiv:1207.0580 (2012). [8] Xiang Li, Chao Wang, Bin Tong, Jiwei Tan, Xiaoyi Zeng, and Tao Zhuang. 2020. Deep time-aware item evolution network for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management (CIKM) . [9] Zekun Li, Zeyu Cui, Shu Wu, Xiaoyu Zhang, and Liang Wang. 2019. Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management (CIKM) . [10] Zekun Li, Shu Wu, Zeyu Cui, and Xiaoyu Zhang. 2021. GraphFM: Graph Factorization Machines for Feature Interaction Modeling. arXiv preprint arXiv:2105.11866 (2021). [11] Fernando B Pérez Maurera, Maurizio Ferrari Dacrema, Lorenzo Saule, Mario Scriminaci, and Paolo Cremonesi. 2020. Contentwise impressions: An industrial dataset with impressions included. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management (CIKM) . 3093-3100. [12] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management (CIKM) . [13] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International Conference on Data Mining (ICDM) . 995-1000. [14] Ying Shan, T Ryan Hoens, Jian Jiao, Haijing Wang, Dong Yu, and JC Mao. 2016. Deep crossing: Web-scale modeling without manually crafted combinatorial features. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) . [15] Qijie Shen, Hong Wen, Wanjie Tao, Jing Zhang, Fuyu Lv, Zulong Chen, and Zhao Li. 2022. Deep Interest Highlight Network for Click-Through Rate Prediction in Trigger-Induced Recommendation. In The World Wide Web Conference (WWW) . [16] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management (CIKM) . [17] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in neural information processing systems (NeurIPS) . 5998-6008. [18] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [19] Yaxian Xia, Yi Cao, Sihao Hu, Tong Liu, and Lingling Lu. 2023. Deep IntentionAware Network for Click-Through Rate Prediction. In The World Wide Web Conference (WWW) . [20] Zhibo Xiao, Luwei Yang, Wen Jiang, Yi Wei, Yi Hu, and Hao Wang. 2020. Deep multi-interest network for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management (CIKM) . [21] Ruobing Xie, Rui Wang, Shaoliang Zhang, Zhihong Yang, Feng Xia, and Leyu Lin. 2021. Real-time Relevant Recommendation Suggestion. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining (WSDM) . [22] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI Conference on Artificial Intelligence (AAAI) , Vol. 33. 5941-5948. [23] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD) . 1059-1068.",
   "keywords_parsed": [
-    "The recommendation has been playing a key role in many industries",
-    " e.g.",
-    " e-commerce",
-    " streaming media",
-    " social media",
-    " etc. Recently",
-    " a new recommendation scenario",
-    " called Trigger-Induced Recommendation (TIR)",
-    " where users are able to explicitly express their instant interests via trigger items",
-    " is emerging as an essential role in many e-commerce platforms",
-    " e.g.",
-    " Alibaba.com and Amazon. Without explicitly modeling the user's instant interest",
-    " traditional recommendation methods usually obtain sub-optimal results in TIR. Even though there are a few methods considering the trigger and target items simultaneously to solve this problem",
-    " they still haven't taken into account temporal information of user behaviors",
-    " the dynamic change of user instant interest when the user scrolls down and the interactions between the trigger and target items. To tackle these problems",
-    " we propose a novel method - Deep Evolutional Instant Interest Network (DEI2N)",
-    " for click-through rate prediction in TIR scenarios. Specifically",
-    " we design a User Instant Interest Modeling Layer to predict the dynamic change of the intensity of instant interest when the user scrolls down. Temporal information is utilized in user behavior modeling. Moreover",
-    " an Interaction Layer is introduced to learn better interactions between the trigger and target items. We evaluate our method on several offline and real-world industrial datasets. Experimental results show that our proposed DEI2N outperforms state-of-the-art baselines. In addition",
-    " online A/B testing demonstrates the superiority over the existing baseline in real-world production environments."
+    "Recommender Systems",
+    "Click-Through Rate Prediction",
+    "User Instant Interests",
+    "Trigger-Induced Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Layer normalization"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Dual Graph enhanced Embedding Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Improving neural networks by preventing coadaptation of feature detectors"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep time-aware item evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "GraphFM: Graph Factorization Machines for Feature Interaction Modeling"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Contentwise impressions: An industrial dataset with impressions included"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Deep crossing: Web-scale modeling without manually crafted combinatorial features"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Deep Interest Highlight Network for Click-Through Rate Prediction in Trigger-Induced Recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Deep IntentionAware Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Deep multi-interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Real-time Relevant Recommendation Suggestion"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

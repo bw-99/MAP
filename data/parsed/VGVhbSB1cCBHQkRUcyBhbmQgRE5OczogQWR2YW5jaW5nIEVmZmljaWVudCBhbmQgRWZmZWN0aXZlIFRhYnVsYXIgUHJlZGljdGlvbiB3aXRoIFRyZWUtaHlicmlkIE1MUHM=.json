@@ -30,8 +30,286 @@
   "C.3 Hyperparameters of Baselines": "For all the baselines on the FT-T and T2G benchmarks, we follow the given hyperparameter spaces and iteration times from the original benchmark papers to estimate the training costs. KDD '24, August 25-29, 2024, Barcelona, Spain Jiahuan Yan, Jintai Chen, Qianxing Wang, Danny Z. Chen, & Jian Wu Table 8: AUC scores (the higher the better) of the baselines on the binary classification datasets in the SAINT benchmark. Table 9: Accuracy scores (the higher the better) of the baselines on the multi-class classification datasets in the SAINT benchmark. Team up GBDTs and DNNs: Advancing Efficient and Effective Tabular Prediction with Tree-hybrid MLPs KDD '24, August 25-29, 2024, Barcelona, Spain Table 10: RMSE scores (the lower the better) of the baselines on the regression datasets in the SAINT benchmark. Table 11: Accuracy scores (the higher the better) of the baselines for the binary classification tasks on the TabBen numerical datasets. Table 12: R-Squared scores (the higher the better) of the baselines for the regression tasks on the TabBen numerical datasets. KDD '24, August 25-29, 2024, Barcelona, Spain Jiahuan Yan, Jintai Chen, Qianxing Wang, Danny Z. Chen, & Jian Wu Table 13: Accuracy scores (the higher the better) of the baselines for the binary classification tasks on the TabBen categorical datasets. Table 14: R-Squared scores (the higher the better) of the baselines for the regression tasks on the TabBen categorical datasets.",
   "keywords_parsed": [
     "classification and regression",
-    " tabular data",
-    " green AI",
-    " AutoML"
+    "tabular data",
+    "green AI",
+    "AutoML"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "An introduction to kernel and nearest-neighbor nonparametric regression"
+    },
+    {
+      "ref_id": "b2",
+      "title": "TabNet: Attentive interpretable tabular learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Machine learning in finance: A topic modeling approach"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Gradient boosting neural networks: GrowNet"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Searching for exotic particles in highenergy physics with deep learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "The million song dataset"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep neural networks and tabular data: A survey"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Language Models are Realistic Tabular Data Generators"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Random forests"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Strip-MLP: Efficient Token Interaction for Vision MLP"
+    },
+    {
+      "ref_id": "b12",
+      "title": "TabCaps: A Capsule Neural Network for Tabular Data Classification with BoW Routing"
+    },
+    {
+      "ref_id": "b13",
+      "title": "DANets: Deep abstract networks for tabular data classification and regression"
+    },
+    {
+      "ref_id": "b14",
+      "title": "ExcelFormer: A Neural Network Surpassing GBDTs on Tabular Data"
+    },
+    {
+      "ref_id": "b15",
+      "title": "TSMixer: An All-MLP architecture for time series forecasting"
+    },
+    {
+      "ref_id": "b16",
+      "title": "XGBoost: A scalable tree boosting system"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deep neural networks for YouTube recommendations"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Greedy function approximation: A gradient boosting machine"
+    },
+    {
+      "ref_id": "b19",
+      "title": "pNLPMixer: An Efficient all-MLP Architecture for Language"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Extremely randomized trees"
+    },
+    {
+      "ref_id": "b21",
+      "title": "On embeddings for numerical features in tabular deep learning"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Revisiting deep learning models for tabular data"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Why do tree-based models still outperform deep learning on typical tabular data?"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Hire-MLP: Vision MLP via hierarchical rearrangement"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Practical lessons from predicting clicks on ads at Facebook"
+    },
+    {
+      "ref_id": "b26",
+      "title": "DynaBERT: Dynamic BERT with adaptive width and depth"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Fastai: A layered API for deep learning"
+    },
+    {
+      "ref_id": "b28",
+      "title": "TabTransformer: Tabular data modeling using contextual embeddings"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Welltuned simple nets excel on tabular datasets"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Net-DNF: Effective deep modeling of tabular data"
+    },
+    {
+      "ref_id": "b31",
+      "title": "LightGBM: A highly efficient gradient boosting decision tree"
+    },
+    {
+      "ref_id": "b32",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Self-normalizing neural networks"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Scaling up the accuracy of Naive-Bayes classifiers: A decision-tree hybrid"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Classification and regression trees (CART)"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Pay attention to MLPs"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Learning Sparse Neural Networks through L_0 Regularization"
+    },
+    {
+      "ref_id": "b38",
+      "title": "LLM-Pruner: On the Structural Pruning of Large Language Models"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Efficient estimation of word representations in vector space"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Sparse spatial autoregressions"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Scikit-learn: Machine Learning in Python"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Neural Oblivious Decision Ensembles for Deep Learning on Tabular Data"
+    },
+    {
+      "ref_id": "b43",
+      "title": "CatBoost: Unbiased boosting with categorical features"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Enabling tabular deep learning when 𝑑 ≫ 𝑛 with an auxiliary knowledge graph"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Interpretable convolutional neural networks with dual local and global attention for review rating prediction"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Tabular data: Deep learning is not all you need"
+    },
+    {
+      "ref_id": "b48",
+      "title": "SAINT: Improved Neural Networks for Tabular Data via Row Attention and Contrastive Pre-Training"
+    },
+    {
+      "ref_id": "b49",
+      "title": "AutoInt: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b50",
+      "title": "A Simple and Effective Pruning Approach for Large Language Models"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Sparse MLP for image recognition: Is self-attention really necessary?"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results"
+    },
+    {
+      "ref_id": "b53",
+      "title": "MLP-Mixer: An all-MLP architecture for vision"
+    },
+    {
+      "ref_id": "b54",
+      "title": "MAXIM: Multi-Axis MLP for image processing"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Comparing different supervised machine learning algorithms for disease prediction"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b57",
+      "title": "DCN V2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b58",
+      "title": "TransTab: Learning transferable tabular Transformers across tables"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Structured Pruning of Large Language Models"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Model soups: Averaging weights of multiple finetuned models improves accuracy without increasing inference time"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Structured Pruning Learns Compact and Accurate Models"
+    },
+    {
+      "ref_id": "b62",
+      "title": "T2GFormer: Organizing tabular features into relation graphs promotes heterogeneous feature interaction"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Making Pre-trained Language Models Great on Tabular Prediction"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Locally sparse neural networks for tabular biomedical data"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Learning from attribute value taxonomies and partially specified instances"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Learning accurate and concise Naïve Bayes classifiers from attribute value taxonomies and data"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Generative Table Pre-training Empowers Models for Tabular Prediction"
+    },
+    {
+      "ref_id": "b68",
+      "title": "A survey of large language models"
+    },
+    {
+      "ref_id": "b69",
+      "title": "XTab: Cross-table Pretraining for Tabular Transformers"
+    }
   ]
 }

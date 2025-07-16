@@ -26,6 +26,104 @@
   "References": "[1] Odd Aalen, Ornulf Borgan, and Hakon Gjessing. 2008. Survival and event history analysis: a process point of view . Springer Science & Business Media. [2] Aman Agarwal, Kenta Takatsu, Ivan Zaitsev, and Thorsten Joachims. 2019. A General Framework for Counterfactual Learning-to-Rank. In ACM Conference on Research and Development in Information Retrieval (SIGIR) . [3] Irwan Bello, Sayali Kulkarni, Sagar Jain, Craig Boutilier, Ed Chi, Elad Eban, Xiyang Luo, Alan Mackey, and Ofer Meshi. 2018. Seq2slate: Re-ranking and slate optimization with rnns. arXiv preprint arXiv:1810.02019 (2018). [4] Christopher JC Burges. 2010. From ranknet to lambdarank to lambdamart: An overview. Learning 11, 23-581 (2010), 81. [5] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [6] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [7] Weicong Ding, Dinesh Govindaraj, and SVN Vishwanathan. 2019. Whole Page Optimization with Global Constraints. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 31533161. [8] Alan G Hawkes. 1971. Spectra of some self-exciting and mutually exciting point processes. Biometrika 58, 1 (1971), 83-90. [9] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [10] JooWon Lee and Jae-Hyeon Ahn. 2012. Attention to Banner Ads and Their Effectiveness: An Eye-Tracking Approach. International Journal of Electronic Commerce 17, 1 (2012), 119-137. https://doi.org/10.2753/JEC1086-4415170105 [11] Houssam Nassif, Kemal Oral Cansizlar, Mitchell Goodman, and SVN Vishwanathan. 2018. Diversifying music recommendations. arXiv preprint arXiv:1810.01482 (2018). [12] Yosihiko Ogata. 1998. Space-time point-process models for earthquake occurrences. Annals of the Institute of Statistical Mathematics 50, 2 (1998), 379-402. [13] Changhua Pei, Yi Zhang, Yongfeng Zhang, Fei Sun, Xiao Lin, Hanxiao Sun, Jian Wu, Peng Jiang, Junfeng Ge, Wenwu Ou, et al. 2019. Personalized re-ranking for recommendation. In Proceedings of the 13th ACM Conference on Recommender Systems . ACM, 3-11. [14] Tao Qin and Tie-Yan Liu. 2013. Introducing LETOR 4.0 datasets. arXiv preprint arXiv:1306.2597 (2013). [15] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2009. BPR: Bayesian Personalized Ranking from Implicit Feedback. In Proceedings of the Twenty-Fifth Conference on Uncertainty in Artificial Intelligence (Montreal, Quebec, Canada) (UAI '09) . AUAI Press, Arlington, Virginia, USA, 452-461. [16] Harald Steck. 2018. Calibrated recommendations. In Proceedings of the 12th ACM conference on recommender systems . 154-162. [17] Choon Hui Teo, Houssam Nassif, Daniel Hill, Sriram Srinivasan, Mitchell Goodman, Vijai Mohan, and SVN Vishwanathan. 2016. Adaptive, personalized diversity for visual discovery. In Proceedings of the 10th ACM conference on recommender systems . 35-38. [18] Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly. 2015. Pointer networks. In Advances in neural information processing systems . 2692-2700. [19] Yingfei Wang, Hua Ouyang, Chu Wang, Jianhui Chen, Tsvetan Asamov, and Yi Chang. 2017. Efficient ordered combinatorial semi-bandits for whole-page recommendation. In Thirty-First AAAI Conference on Artificial Intelligence . [20] Yue Wang, Dawei Yin, Luo Jie, Pengyuan Wang, Makoto Yamada, Yi Chang, and Qiaozhu Mei. 2016. Beyond ranking: Optimizing whole-page presentation. In Proceedings of the Ninth ACM International Conference on Web Search and Data Mining . ACM, 103-112. [21] Mark Wilhelm, Ajith Ramanathan, Alexander Bonomo, Sagar Jain, Ed H Chi, and Jennifer Gillenwater. 2018. Practical diversified recommendations on youtube with determinantal point processes. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . 2165-2173. [22] Ronald J Williams. 1992. Simple statistical gradient-following algorithms for connectionist reinforcement learning. Machine learning 8, 3-4 (1992), 229-256. [23] Shuang-Hong Yang, Bo Long, Alexander J. Smola, Hongyuan Zha, and Zhaohui Zheng. 2011. Collaborative Competitive Filtering: Learning Recommender Using Context of User Choice. In Proceedings of the 34th International ACM SIGIR Conference on Research and Development in Information Retrieval (Beijing, China) (SIGIR '11) . Association for Computing Machinery, New York, NY, USA, 295-304. https://doi.org/10.1145/2009916.2009959 [24] Xiangyu Zhao, Long Xia, Liang Zhang, Zhuoye Ding, Dawei Yin, and Jiliang Tang. 2018. Deep reinforcement learning for page-wise recommendations. In Proceedings of the 12th ACM Conference on Recommender Systems . ACM, 95-103.",
   "keywords_parsed": [
     "Sequential Recommendation",
-    " Diversity"
+    "Diversity"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Survival and event history analysis: a process point of view"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A General Framework for Counterfactual Learning-to-Rank"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Seq2slate: Re-ranking and slate optimization with rnns"
+    },
+    {
+      "ref_id": "b4",
+      "title": "From ranknet to lambdarank to lambdamart: An overview"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Whole Page Optimization with Global Constraints"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Spectra of some self-exciting and mutually exciting point processes"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Attention to Banner Ads and Their Effectiveness: An Eye-Tracking Approach"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Diversifying music recommendations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Space-time point-process models for earthquake occurrences"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Introducing LETOR 4.0 datasets"
+    },
+    {
+      "ref_id": "b15",
+      "title": "BPR: Bayesian Personalized Ranking from Implicit Feedback"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Calibrated recommendations"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Adaptive, personalized diversity for visual discovery"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Pointer networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Efficient ordered combinatorial semi-bandits for whole-page recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Beyond ranking: Optimizing whole-page presentation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Practical diversified recommendations on youtube with determinantal point processes"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Simple statistical gradient-following algorithms for connectionist reinforcement learning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Collaborative Competitive Filtering: Learning Recommender Using Context of User Choice"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Deep reinforcement learning for page-wise recommendations"
+    }
   ]
 }

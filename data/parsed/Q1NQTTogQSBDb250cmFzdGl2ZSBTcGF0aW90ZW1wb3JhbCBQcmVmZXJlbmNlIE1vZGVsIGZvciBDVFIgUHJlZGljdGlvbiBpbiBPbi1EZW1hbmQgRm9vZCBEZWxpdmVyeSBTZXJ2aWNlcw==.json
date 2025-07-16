@@ -19,24 +19,73 @@
   "REFERENCES": "[1] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [2] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [3] Qiang Cui, Chenrui Zhang, Yafeng Zhang, Jinpeng Wang, and Mingchen Cai. 2021. St-pil: Spatial-temporal periodic interest learning for next point-of-interest recommendation. In Proceedings of the 30th ACM International conference on information & knowledge management . 2960-2964. [4] Boya Du, Shaochuan Lin, Jiong Gao, Xiyu Ji, Mengya Wang, Taotao Zhou, Hengxu He, Jia Jia, and Ning Hu. 2022. BASM: A Bottom-up Adaptive Spatiotemporal Model for Online Food Ordering Service. arXiv preprint arXiv:2211.12033 (2022). [5] John Duchi, Elad Hazan, and Yoram Singer. 2011. Adaptive subgradient methods for online learning and stochastic optimization. Journal of machine learning research 12, 7 (2011). [6] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [7] Tongwen Huang, Qingyun She, Zhiqiang Wang, and Junlin Zhang. 2020. GateNet: gating-enhanced deep network for click-through rate prediction. arXiv preprint arXiv:2007.03519 (2020). [8] Shaochuan Lin, Yicong Yu, Xiyu Ji, Taotao Zhou, Hengxu He, Zisen Sang, Jia Jia, Guodong Cao, and Ning Hu. 2022. Spatiotemporal-Enhanced Network for Click-Through Rate Prediction in Location-based Services. arXiv preprint arXiv:2209.09427 (2022). [9] Yi Qi, Ke Hu, Bo Zhang, Jia Cheng, and Jun Lei. 2021. Trilateral spatiotemporal attention network for user behavior modeling in location-based search. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 3373-3377. [10] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via self- attentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1161-1170. [11] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [12] Daheng Wang, Meng Jiang, Munira Syed, Oliver Conway, Vishal Juneja, Sriram Subramanian, and Nitesh V Chawla. 2020. Calendar graph neural networks for modeling time structures in spatiotemporal user behaviors. In Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining . 2581-2589. [13] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [14] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-Scale Learning to Rank Systems. In Proceedings of the Web Conference 2021 (Ljubljana, Slovenia) (WWW'21) . Association for Computing Machinery, New York, NY, USA, 1785-1797. https://doi.org/10.1145/3442381.3450078 [15] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [16] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068.",
   "keywords_parsed": [
     "Click-through Rate Prediction",
-    " On-demand Food Delivery",
-    " Spatiotemporal Preference Modeling *These authors contributed equally to this work. † Corresponding author. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CIKM'23",
-    " October 10-21",
-    " 2023",
-    " Birmingham",
-    " UK © 2023 Association for Computing Machinery. ACM ISBN 978-x-xxxx-xxxx-x/YY/MM...$15.00 https://doi.org/XX.XX Guyu Jiang ∗ ",
-    " Xiaoyun Li ∗ ",
-    " Rongrong Jing",
-    " Ruoqi Zhao",
-    " Xingliang Ni † ",
-    " Guodong Cao",
-    " Ning Hu. 2023. CSPM: A Contrastive Spatiotemporal Preference Model for CTR Prediction in On-Demand Food Delivery Services. In Proceedings of 32nd ACM Conference on Information and Knowledge Management (CIKM'23). ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 5 pages. https://doi.org/XX.XX"
+    "On-demand Food Delivery",
+    "Spatiotemporal Preference Modeling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b3",
+      "title": "St-pil: Spatial-temporal periodic interest learning for next point-of-interest recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "BASM: A Bottom-up Adaptive Spatiotemporal Model for Online Food Ordering Service"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Adaptive subgradient methods for online learning and stochastic optimization"
+    },
+    {
+      "ref_id": "b6",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "GateNet: gating-enhanced deep network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Spatiotemporal-Enhanced Network for Click-Through Rate Prediction in Location-based Services"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Trilateral spatiotemporal attention network for user behavior modeling in location-based search"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Calendar graph neural networks for modeling time structures in spatiotemporal user behaviors"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b14",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-Scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

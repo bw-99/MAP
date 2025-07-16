@@ -22,7 +22,85 @@
   "PRESENTER PROFILES": "Enqiang Xu is a researcher in the Department of Search and Recommendation at JD.com Beijing. He received his master degree in School of Mathematical Sciences, Peking University. His research focuses on information retrieval and natural language processing. Yiming Qiu is a researcher in the Department of Search and Recommendation at JD.com Beijing. He received his master degree in School of Computing and Information System, the University of Melbourne. His research focuses on information retrieval and natural language processing. Mingming Li is a researcher in the Department of Search and Recommendation at JD.com Beijing. He received his doctor degree in Institute of Automation, Chinese Academy of Sciences. His research focuses on information retrieval and natural language processing.",
   "keywords_parsed": [
     "Embedding index",
-    " neural network",
-    " information retrieval"
+    "neural network",
+    "information retrieval"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Adaptive Hyper-parameter Learning for Deep Semantic Retrieval"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Warm up cold-start advertisements: Improving ctr predictions via learning to learn id embeddings"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "RankFlow: Joint Optimization of MultiStage Cascade Ranking Systems as Flows"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Query Rewriting via Cycle-Consistent Translation for E-Commerce Search"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Pre-training Tasks for User Intent Detection and Embedding Retrieval in E-commerce Search"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Learning Multi-Stage Multi-Grained Semantic Embeddings for E-Commerce Search"
+    },
+    {
+      "ref_id": "b14",
+      "title": "COLD: Towards the Next Generation of Pre-Ranking System"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Privileged features distillation at taobao recommendations"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Dimension relation modeling for click-through rate prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "COPR: Consistency-Oriented Pre-Ranking for Online Advertising"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Learning to warm up cold item embeddings for coldstart recommendation with meta scaling and shifting networks"
+    }
   ]
 }

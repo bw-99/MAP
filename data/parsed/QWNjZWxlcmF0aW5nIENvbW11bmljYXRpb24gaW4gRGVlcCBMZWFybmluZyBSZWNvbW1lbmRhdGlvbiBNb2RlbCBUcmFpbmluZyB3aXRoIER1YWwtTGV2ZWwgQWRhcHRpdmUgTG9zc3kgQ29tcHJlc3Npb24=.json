@@ -21,7 +21,135 @@
   "VI. Conclusion and Future Work": "In this paper, we introduce a method that employs errorbounded lossy compression to reduce the communication data size and accelerate DLRM training. We develop a novel errorbounded lossy compression algorithm to achieve hybrid by hybridizing our optimized LZ encoder and entropy encoder on GPU. Moreover, we introduce a dual-level adaptive strategy for error-bound adjustment, spanning both table-wise and iteration-wise aspects, to balance the compression benefits with the potential impacts on accuracy. We further optimize our compressor for PyTorch tensors on GPUs, minimizing compression overhead. The evaluation shows that our method achieves an 8.6 × all-to-all communication speedup and 1.38 × end-toend training speedup with a minimal accuracy impact. In the future, we plan to further refine our system to reduce compression overhead by employing strategies like kernel fusion on GPUs and seamlessly integrating (de)compression processes with communication libraries such as NCCL. Additionally, we aim to develop a more advanced and automated approach for offline selection of a fixed global error-bound and for online error-bound adjustments.",
   "Acknowledgment": "The work is supported by the Meta Research Award for 'AI System Hardware/Software Codesign.' Hao Feng, Boyuan Zhang, Fanjiang Ye, and Dingwen Tao's work on this project was supported by the National Science Foundation (Grant Nos. 2312673, 2247080, 2303064, 2326494, and 2326495). Dingwen Tao was also supported by the National Natural Science Foundation of China (Grant Nos. 62032023 and T2125013) and the Innovation Funding of ICT, CAS (Grant No. E461050).",
   "References": "[1] M. Naumov, D. Mudigere, H.-J. M. Shi, J. Huang, N. Sundaraman, J. Park, X. Wang, U. Gupta, C.-J. Wu, A. G. Azzolini, et al. , 'Deep learning recommendation model for personalization and recommendation systems,' arXiv preprint arXiv:1906.00091 , 2019. [2] Y. Ma, B. Narayanaswamy, H. Lin, and H. Ding, 'Temporalcontextual recommendation in real-time,' in Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining , 2020, pp. 2291-2299. [3] H.-T. Cheng, L. Koc, J. Harmsen, T. Shaked, T. Chandra, H. Aradhye, G. Anderson, G. Corrado, W. Chai, M. Ispir, et al. , 'Wide & deep learning for recommender systems,' in Proceedings of the 1st workshop on deep learning for recommender systems , 2016, pp. 7-10. [4] J. Wang, P. Huang, H. Zhao, Z. Zhang, B. Zhao, and D. L. Lee, 'Billion-scale commodity embedding for e-commerce recommendation in alibaba,' in Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining , 2018, pp. 839-848. [5] D. D. Sensi, S. D. Girolamo, K. H. McMahon, D. Roweth, and T. Hoefler, 'An in-depth analysis of the slingshot interconnect,' in Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis, SC 2020, Virtual Event / Atlanta, Georgia, USA, November 9-19, 2020 , C. Cuicchi, I. Qualters, and W. T. Kramer, Eds., IEEE/ACM, 2020, p. 35. doi : 10 . 1109 / SC41405.2020.00039. [Online]. Available: https://doi.org/ 10.1109/SC41405.2020.00039. [6] J. A. Yang, J. Huang, J. Park, P. T. P. Tang, and A. Tulloch, 'Mixed-precision embedding using a cache,' CoRR , vol. abs/2010.11305, 2020. arXiv: 2010 . 11305. [Online]. Available: https://arxiv.org/abs/2010.11305. [7] H. Guan, A. Malevich, J. Yang, J. Park, and H. Yuen, 'Posttraining 4-bit quantization on embedding tables,' arXiv preprint arXiv:1911.02079 , 2019. [8] S. Pumma and A. Vishnu, 'Semantic-aware lossless data compression for deep learning recommendation model (DLRM),' in IEEE/ACM Workshop on Machine Learning in High Performance Computing Environments, MLHPC@SC 2021, St. Louis, MO, USA, November 15, 2021 , IEEE, 2021, pp. 1-8. doi : 10.1109/MLHPC54614.2021.00006. [Online]. Available: https://doi.org/10.1109/MLHPC54614.2021. 00006. [9] S. Di and F. Cappello, 'Fast error-bounded lossy hpc data compression with sz,' in 2016 IEEE International Parallel and Distributed Processing Symposium (IPDPS) , 2016, pp. 730-739. doi : 10.1109/IPDPS.2016.11. [10] P. Lindstrom, 'Fixed-rate compressed floating-point arrays,' IEEE Transactions on Visualization and Computer Graphics , vol. 20, Aug. 2014. doi : 10.1109/TVCG.2014.2346458. [11] G. Wallace, 'The jpeg still picture compression standard,' IEEE Transactions on Consumer Electronics , vol. 38, no. 1, pp. xviii-xxxiv, 1992. doi : 10.1109/30.125072. [12] D. Le Gall, 'The mpeg video compression standard,' in COMPCON Spring '91 Digest of Papers , 1991, pp. 334-335. doi : 10.1109/CMPCON.1991.128827. [13] D. Tao, S. Di, Z. Chen, and F. Cappello, 'Significantly improving lossy compression for scientific data sets based on multidimensional prediction and error-controlled quantization,' in 2017 IEEE International Parallel and Distributed Processing Symposium (IPDPS) , 2017, pp. 1129-1139. doi : 10.1109/IPDPS.2017.115. [14] X. Liang, K. Zhao, S. Di, S. Li, R. Underwood, A. M. Gok, J. Tian, J. Deng, J. C. Calhoun, D. Tao, Z. Chen, and F. Cappello, 'Sz3: A modular framework for composing prediction-based error-bounded lossy compressors,' IEEE Transactions on Big Data , vol. 9, no. 2, pp. 485-498, 2023. doi : 10.1109/TBDATA.2022.3201176. [15] R. Ballester-Ripoll, P. Lindstrom, and R. Pajarola, 'Tthresh: Tensor compression for multidimensional visual data,' IEEE Transaction on Visualization and Computer Graphics , vol. 26, pp. 2891-2903, 9 2019. [16] J. Tian, S. Di, K. Zhao, C. Rivera, M. H. Fulp, R. Underwood, S. Jin, X. Liang, J. Calhoun, D. Tao, and F. Cappello, 'Cusz: An efficient gpu-based error-bounded lossy compression framework for scientific data,' in Proceedings of the ACM International Conference on Parallel Architectures and Compilation Techniques , ser. PACT '20, Virtual Event, GA, USA: Association for Computing Machinery, 2020, 3-15, isbn : 9781450380751. doi : 10.1145/3410463.3414624. [Online]. Available: https://doi.org/10.1145/3410463.3414624. [17] B. Zhang, J. Tian, S. Di, X. Yu, M. Swany, D. Tao, and F. Cappello, 'Gpulz: Optimizing lzss lossless compression for multi-byte data on modern gpus,' in Proceedings of the 37th International Conference on Supercomputing , 2023, pp. 348359. [18] Https://lz4.org/ . [19] D. A. Huffman, 'A method for the construction of minimumredundancy codes,' Proceedings of the IRE , vol. 40, no. 9, pp. 1098-1101, 1952. doi : 10.1109/JRPROC.1952.273898. [20] Z. Wang, Y. Wang, B. Feng, D. Mudigere, B. Muthiah, and Y. Ding, 'El-rec: Efficient large-scale recommendation model training via tensor-train embedding table,' in Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis , ser. SC '22, Dallas, Texas: IEEE Press, 2022, isbn : 9784665454445. [21] L. Ibarria, P. Lindstrom, J. Rossignac, and A. Szymczak, 'Out-of-core compression and decompression of large ndimensional scalar fields,' in Computer Graphics Forum , Wiley Online Library, vol. 22, 2003, pp. 343-348. [22] Https://ailab.criteo.com/ressources/ . [23] Https://www.kaggle.com/c/criteo-display-ad-challenge . [24] P. Micikevicius, D. Stosic, N. Burgess, M. Cornea, P. Dubey, R. Grisenthwaite, S. Ha, A. Heinecke, P. Judd, J. Kamalu, N. Mellempudi, S. Oberman, M. Shoeybi, M. Siu, and H. Wu, Fp8 formats for deep learning , 2022. arXiv: 2209.05433 [cs.LG] . [25] H. Shen, N. Mellempudi, X. He, Q. Gao, C. Wang, and M. Wang, Efficient post-training quantization with fp8 formats , 2023. arXiv: 2309.14592 [cs.LG] . [26] Nvidia, Https://developer.nvidia.com/nvcomp , 2024. [27] B. Darvish Rouhani, R. Zhao, V. Elango, R. Shafipour, M. Hall, M. Mesmakhosroshahi, A. More, L. Melnick, M. Golub, G. Varatkar, L. Shao, G. Kolhe, D. Melts, J. Klar, R. L'Heureux, M. Perry, D. Burger, E. Chung, Z. S. Deng, S. Naghshineh, J. Park, and M. Naumov, 'With shared microexponents, a little shifting goes a long way,' in Proceedings of the 50th Annual International Symposium on Computer Architecture , ser. ISCA '23, Orlando, FL, USA: Association for Computing Machinery, 2023, isbn : 9798400700958. doi : 10.1145/3579371.3589351. [Online]. Available: https: //doi.org/10.1145/3579371.3589351. [28] B. Zhang, J. Tian, S. Di, X. Yu, Y. Feng, X. Liang, D. Tao, and F. Cappello, 'Fz-gpu: A fast and high-ratio lossy compressor for scientific computing applications on gpus,' in Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing , 2023, pp. 129-142. [29] C. Yin, B. Acun, X. Liu, and C.-J. Wu, Tt-rec: Tensor train compression for deep learning recommendation models , 2021. arXiv: 2101.11714 [cs.LG] . [30] J. He, S. Chen, and J. Zhai, 'Poster: Pattern-aware sparse communication for scalable recommendation model training,' in Proceedings of the 29th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming , 2024, pp. 466-468. [31] K. Balasubramanian, A. Alshabanah, J. D. Choe, and M. Annavaram, 'Cdlrm: Look ahead caching for scalable training of recommendation models,' in Proceedings of the 15th ACM Conference on Recommender Systems , ser. RecSys '21, Amsterdam, Netherlands: Association for Computing Machinery, 2021, 263-272, isbn : 9781450384582. doi : 10 . 1145/3460231.3474246. [Online]. Available: https://doi.org/ 10.1145/3460231.3474246. [32] A. Guo, Y. Hao, C. Wu, P. Haghi, Z. Pan, M. Si, D. Tao, A. Li, M. Herbordt, and T. Geng, 'Software-hardware co-design of heterogeneous smartnic system for recommendation models inference and training,' in Proceedings of the 37th International Conference on Supercomputing , 2023, pp. 336-347. [33] J. A. Yang, J. Huang, J. Park, P. T. P. Tang, and A. Tulloch, Mixed-precision embedding using a cache , 2020. arXiv: 2010. 11305 [cs.LG] . [34] Q. Zhou, Q. Anthony, L. Xu, A. Shafi, M. Abduljabbar, H. Subramoni, and D. K. Panda, 'Accelerating distributed deep learning training with compression assisted allgather and reduce-scatter communication,' in IEEE International Parallel and Distributed Processing Symposium, IPDPS 2023, St. Petersburg, FL, USA, May 15-19, 2023 , IEEE, 2023, pp. 134-144. doi : 10.1109/IPDPS54959.2023.00023. [Online]. Available: https://doi.org/10.1109/IPDPS54959.2023. 00023. [35] Q. Zhou, Q. Anthony, A. Shafi, H. Subramoni, and D. K. Panda, 'Accelerating broadcast communication with GPU compression for deep learning workloads,' in 29th IEEE International Conference on High Performance Computing, Data, and Analytics, HiPC 2022, Bengaluru, India, December 18-21, 2022 , IEEE, 2022, pp. 22-31. doi : 10 . 1109 / HIPC56025.2022.00016. [Online]. Available: https://doi. org/10.1109/HiPC56025.2022.00016. [36] B. Ramesh, Q. Zhou, A. Shafi, M. Abduljabbar, H. Subramoni, and D. K. Panda, 'Designing efficient pipelined communication schemes using compression in MPI libraries,' in 29th IEEE International Conference on High Performance Computing, Data, and Analytics, HiPC 2022, Bengaluru, India, December 18-21, 2022 , IEEE, 2022, pp. 95-99. doi : 10.1109/HIPC56025.2022.00024. [Online]. Available: https: //doi.org/10.1109/HiPC56025.2022.00024.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Temporalcontextual recommendation in real-time"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Billion-scale commodity embedding for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b5",
+      "title": "An in-depth analysis of the slingshot interconnect"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Mixed-precision embedding using a cache"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Posttraining 4-bit quantization on embedding tables"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Semantic-aware lossless data compression for deep learning recommendation model (DLRM)"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Fast error-bounded lossy hpc data compression with sz"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Fixed-rate compressed floating-point arrays"
+    },
+    {
+      "ref_id": "b11",
+      "title": "The jpeg still picture compression standard"
+    },
+    {
+      "ref_id": "b12",
+      "title": "The mpeg video compression standard"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Significantly improving lossy compression for scientific data sets based on multidimensional prediction and error-controlled quantization"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Sz3: A modular framework for composing prediction-based error-bounded lossy compressors"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Tthresh: Tensor compression for multidimensional visual data"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Cusz: An efficient gpu-based error-bounded lossy compression framework for scientific data"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Gpulz: Optimizing lzss lossless compression for multi-byte data on modern gpus"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A method for the construction of minimum-redundancy codes"
+    },
+    {
+      "ref_id": "b20",
+      "title": "El-rec: Efficient large-scale recommendation model training via tensor-train embedding table"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Out-of-core compression and decompression of large n-dimensional scalar fields"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Fp8 formats for deep learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Efficient post-training quantization with fp8 formats"
+    },
+    {
+      "ref_id": "b27",
+      "title": "With shared microexponents, a little shifting goes a long way"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Fz-gpu: A fast and high-ratio lossy compressor for scientific computing applications on gpus"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Tt-rec: Tensor train compression for deep learning recommendation models"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Poster: Pattern-aware sparse communication for scalable recommendation model training"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Cdlrm: Look ahead caching for scalable training of recommendation models"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Software-hardware co-design of heterogeneous smartnic system for recommendation models inference and training"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Mixed-precision embedding using a cache"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Accelerating distributed deep learning training with compression assisted allgather and reduce-scatter communication"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Accelerating broadcast communication with GPU compression for deep learning workloads"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Designing efficient pipelined communication schemes using compression in MPI libraries"
+    }
   ]
 }

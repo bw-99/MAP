@@ -41,7 +41,157 @@
   "REFERENCES": "[1] Josh Achiam, Steven Adler, Sandhini Agarwal, Lama Ahmad, Ilge Akkaya, Florencia Leoni Aleman, Diogo Almeida, Janko Altenschmidt, Sam Altman, Shyamal Anadkat, et al. 2023. Gpt-4 technical report. arXiv preprint arXiv:2303.08774 (2023). [2] Lada A Adamic and Bernardo A Huberman. 2002. Zipf's law and the Internet. Glottometrics 3, 1 (2002), 143-150. [3] Sophia Althammer, Guido Zuccon, Sebastian Hofstätter, Suzan Verberne, and Allan Hanbury. 2023. Annotating Data for Fine-Tuning a Neural Ranker? Current Active Learning Strategies are not Better than Random Selection. In Proceedings SIGIR '24, July 14-18, 2024, Washington, DC, USA Yan Fang et al. of the Annual International ACM SIGIR Conference on Research and Development in Information Retrieval in the Asia Pacific Region . 139-149. [4] Newsha Ardalani, Carole-Jean Wu, Zeliang Chen, Bhargav Bhushanam, and Adnan Aziz. 2022. Understanding Scaling Laws for Recommendation Models. arXiv preprint arXiv:2208.08489 (2022). [5] Yinqiong Cai, Yixing Fan, Jiafeng Guo, Fei Sun, Ruqing Zhang, and Xueqi Cheng. 2021. Semantic Models for the First-Stage Retrieval: A Comprehensive Review. ACM Transactions on Information Systems (TOIS) 40 (2021), 1 - 42. https://api. semanticscholar.org/CorpusID:232147859 [6] Aidan Clark, Diego De Las Casas, Aurelia Guy, Arthur Mensch, Michela Paganini, Jordan Hoffmann, Bogdan Damoc, Blake Hechtman, Trevor Cai, Sebastian Borgeaud, et al. 2022. Unified scaling laws for routed language models. In International Conference on Machine Learning . PMLR, 4057-4086. [7] Kevin Clark, Minh-Thang Luong, Quoc V. Le, and Christopher D. Manning. 2020. ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators. In ICLR . https://openreview.net/pdf?id=r1xMH1BtvB [8] Mostafa Dehghani, Josip Djolonga, Basil Mustafa, Piotr Padlewski, Jonathan Heek, Justin Gilmer, Andreas Peter Steiner, Mathilde Caron, Robert Geirhos, Ibrahim Alabdulmohsin, et al. 2023. Scaling vision transformers to 22 billion parameters. In International Conference on Machine Learning . PMLR, 7480-7512. [9] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. Bert: Pre-training of deep bidirectional transformers for language understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers) . Association for Computational Linguistics, Minneapolis, Minnesota, 4171-4186. https://doi.org/10.18653/v1/N19-1423 [10] Zhengxiao Du, Aohan Zeng, Yuxiao Dong, and Jie Tang. 2024. Understanding emergent abilities of language models from the loss perspective. arXiv preprint arXiv:2403.15796 (2024). [11] Thibault Formal, Carlos Lassance, Benjamin Piwowarski, and Stéphane Clinchant. 2021. SPLADE v2: Sparse lexical and expansion model for information retrieval. arXiv preprint arXiv:2109.10086 (2021). [12] Thibault Formal, Benjamin Piwowarski, and Stéphane Clinchant. 2021. SPLADE: Sparse lexical and expansion model for first stage ranking. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2288-2292. [13] Luyu Gao and Jamie Callan. 2021. Condenser: a Pre-training Architecture for Dense Retrieval. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing . Association for Computational Linguistics, Online and Punta Cana, Dominican Republic, 981-993. https://doi.org/10.18653/v1/2021. emnlp-main.75 [14] Luyu Gao and Jamie Callan. 2022. Unsupervised corpus aware language model pre-training for dense passage retrieval. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . Association for Computational Linguistics, Dublin, Ireland, 2843-2853. https://doi.org/10.18653/v1/2022.acl-long.203 [15] Leo Gao, John Schulman, and Jacob Hilton. 2023. Scaling laws for reward model overoptimization. In International Conference on Machine Learning . PMLR, 1083510866. [16] Alexander Gelbukh and Grigori Sidorov. 2001. Zipf and Heaps laws' coefficients depend on language. In Computational Linguistics and Intelligent Text Processing: Second International Conference, CICLing 2001 Mexico City, Mexico, February 18-24, 2001 Proceedings 2 . Springer, 332-335. [17] Joel Hestness, Sharan Narang, Newsha Ardalani, Gregory Diamos, Heewoo Jun, Hassan Kianinejad, Md Mostofa Ali Patwary, Yang Yang, and Yanqi Zhou. 2017. Deep learning scaling is predictable, empirically. arXiv preprint arXiv:1712.00409 (2017). [18] Jordan Hoffmann, Sebastian Borgeaud, Arthur Mensch, Elena Buchatskaya, Trevor Cai, Eliza Rutherford, Diego de las Casas, Lisa Anne Hendricks, Johannes Welbl, Aidan Clark, Tom Hennigan, Eric Noland, Katherine Millican, George van den Driessche, Bogdan Damoc, Aurelia Guy, Simon Osindero, Karen Simonyan, Erich Elsen, Oriol Vinyals, Jack William Rae, and Laurent Sifre. 2022. An empirical analysis of compute-optimal large language model training. In Advances in Neural Information Processing Systems , Alice H. Oh, Alekh Agarwal, Danielle Belgrave, and Kyunghyun Cho (Eds.). https://openreview.net/forum? id=iBBcRUlOAPR [19] Sebastian Hofstätter, Sheng-Chieh Lin, Jheng-Hong Yang, Jimmy Lin, and Allan Hanbury. 2021. Efficiently teaching an effective dense retriever with balanced topic aware sampling. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 113-122. [20] Gautier Izacard, Mathilde Caron, Lucas Hosseini, Sebastian Riedel, Piotr Bojanowski, Armand Joulin, and Edouard Grave. 2022. Unsupervised Dense Information Retrieval with Contrastive Learning. Transactions on Machine Learning Research (2022). https://openreview.net/forum?id=jKN1pXi7b0 [21] Chao Jia, Yinfei Yang, Ye Xia, Yi-Ting Chen, Zarana Parekh, Hieu Pham, Quoc Le, Yun-Hsuan Sung, Zhen Li, and Tom Duerig. 2021. Scaling up visual and visionlanguage representation learning with noisy text supervision. In International conference on machine learning . PMLR, 4904-4916. [42] Nils Reimers and Iryna Gurevych. 2021. The Curse of Dense Low-Dimensional Information Retrieval for Large Index Sizes. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Scaling Laws For Dense Retrieval SIGIR '24, July 14-18, 2024, Washington, DC, USA Conference on Natural Language Processing (Volume 2: Short Papers) , Chengqing Zong, Fei Xia, Wenjie Li, and Roberto Navigli (Eds.). Association for Computational Linguistics, Online, 605-611. https://doi.org/10.18653/v1/2021.acl-short.77 [43] Stephen E Robertson and Steve Walker. 1994. Some simple effective approximations to the 2-poisson model for probabilistic weighted retrieval. In SIGIR'94 . Springer, 232-241. [44] Guilherme Moraes Rosa, Luiz Bonifacio, Vitor Jeronymo, Hugo Abonizio, Marzieh Fadaee, Roberto Lotufo, and Rodrigo Nogueira. 2022. No parameter left behind: How distillation and model size affect zero-shot retrieval. arXiv preprint arXiv:2206.02873 (2022). [45] Keshav Santhanam, Omar Khattab, Jon Saad-Falcon, Christopher Potts, and Matei Zaharia. 2022. ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction. In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies . Association for Computational Linguistics, Seattle, United States, 3715-3734. https://doi.org/10.18653/v1/2022.naacl-main.272 [46] Yunqiu Shao, Yueyue Wu, Yiqun Liu, Jiaxin Mao, and Shaoping Ma. 2023. Understanding Relevance Judgments in Legal Case Retrieval. ACM Transactions on Information Systems 41, 3 (2023), 1-32. [47] EmmaStrubell, Ananya Ganesh, and Andrew McCallum. 2019. Energy and Policy Considerations for Deep Learning in NLP. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics , Anna Korhonen, David Traum, and Lluís Màrquez (Eds.). Association for Computational Linguistics, Florence, Italy, 3645-3650. https://doi.org/10.18653/v1/P19-1355 [48] Yu Sun, Shuohuan Wang, Yukun Li, Shikun Feng, Xuyi Chen, Han Zhang, Xin Tian, Danxiang Zhu, Hao Tian, and Hua Wu. 2019. Ernie: Enhanced representation through knowledge integration. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics . Association for Computational Linguistics, Florence, Italy, 1441-1451. https://doi.org/10.18653/v1/P19-1139 [49] Kexin Wang, Nandan Thakur, Nils Reimers, and Iryna Gurevych. 2022. Gpl: Generative pseudo labeling for unsupervised domain adaptation of dense retrieval. In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies . Association for Computational Linguistics, Seattle, United States, 2345-2360. https://doi.org/10.18653/v1/2022.naacl-main.168 [50] Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, Maarten Bosma, Denny Zhou, Donald Metzler, Ed H. Chi, Tatsunori Hashimoto, Oriol Vinyals, Percy Liang, Jeff Dean, and William Fedus. 2022. Emergent Abilities of Large Language Models. Transactions on Machine Learning Research (2022). https://openreview.net/forum?id=yzkSU5zdwD Survey Certification. [51] Shitao Xiao, Zheng Liu, Yingxia Shao, and Zhao Cao. 2022. RetroMAE: PreTraining Retrieval-oriented Language Models Via Masked Auto-Encoder. In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing . Association for Computational Linguistics, Abu Dhabi, United Arab Emirates, 538-548. https://doi.org/10.18653/v1/2022.emnlp-main.35 [52] Xiaohui Xie, Qian Dong, Bingning Wang, Feiyang Lv, Ting Yao, Weinan Gan, Zhijing Wu, Xiangsheng Li, Haitao Li, Yiqun Liu, and Jin Ma. 2023. T2Ranking: A Large-scale Chinese Benchmark for Passage Ranking. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (, Taipei, Taiwan,) (SIGIR '23) . Association for Computing Machinery, New York, NY, USA, 2681-2690. https://doi.org/10.1145/3539618.3591874 [53] Lee Xiong, Chenyan Xiong, Ye Li, Kwok-Fung Tang, Jialin Liu, Paul N. Bennett, Junaid Ahmed, and Arnold Overwijk. 2021. Approximate Nearest Neighbor Negative Contrastive Learning for Dense Text Retrieval. In International Conference on Learning Representations . https://openreview.net/forum?id=zeFrfgyZln [54] Aohan Zeng, Xiao Liu, Zhengxiao Du, Zihan Wang, Hanyu Lai, Ming Ding, Zhuoyi Yang, Yifan Xu, Wendi Zheng, Xiao Xia, Weng Lam Tam, Zixuan Ma, Yufei Xue, Jidong Zhai, Wenguang Chen, Zhiyuan Liu, Peng Zhang, Yuxiao Dong, and Jie Tang. 2023. GLM-130B: An Open Bilingual Pre-trained Model. In The Eleventh International Conference on Learning Representations . https: //openreview.net/forum?id=-Aw0rrrPUF [55] Xiaohua Zhai, Alexander Kolesnikov, Neil Houlsby, and Lucas Beyer. 2022. Scaling vision transformers. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 12104-12113. [56] Jingtao Zhan, Jiaxin Mao, Yiqun Liu, Jiafeng Guo, Min Zhang, and Shaoping Ma. 2021. Optimizing dense retrieval model training with hard negatives. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1503-1512. [57] Gaowei Zhang, Yupeng Hou, Hongyu Lu, Yu Chen, Wayne Xin Zhao, and Ji-Rong Wen. 2023. Scaling Law of Large Sequential Recommendation Models. arXiv preprint arXiv:2311.11351 (2023).",
   "keywords_parsed": [
     "Dense retrieval",
-    " Neural scaling law",
-    " Large language models"
+    "Neural scaling law",
+    "Large language models"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gpt-4 technical report"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Zipf's law and the Internet"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Annotating Data for Fine-Tuning a Neural Ranker? Current Active Learning Strategies are not Better than Random Selection"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Understanding Scaling Laws for Recommendation Models"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Semantic Models for the First-Stage Retrieval: A Comprehensive Review"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Unified scaling laws for routed language models"
+    },
+    {
+      "ref_id": "b7",
+      "title": "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Scaling vision transformers to 22 billion parameters"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Understanding emergent abilities of language models from the loss perspective"
+    },
+    {
+      "ref_id": "b11",
+      "title": "SPLADE v2: Sparse lexical and expansion model for information retrieval"
+    },
+    {
+      "ref_id": "b12",
+      "title": "SPLADE: Sparse lexical and expansion model for first stage ranking"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Condenser: a Pre-training Architecture for Dense Retrieval"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Unsupervised corpus aware language model pre-training for dense passage retrieval"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Scaling laws for reward model overoptimization"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Zipf and Heaps laws' coefficients depend on language"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deep learning scaling is predictable, empirically"
+    },
+    {
+      "ref_id": "b18",
+      "title": "An empirical analysis of compute-optimal large language model training"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Efficiently teaching an effective dense retriever with balanced topic aware sampling"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Unsupervised Dense Information Retrieval with Contrastive Learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Scaling up visual and vision-language representation learning with noisy text supervision"
+    },
+    {
+      "ref_id": "b42",
+      "title": "The Curse of Dense Low-Dimensional Information Retrieval for Large Index Sizes"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Some simple effective approximations to the 2-poisson model for probabilistic weighted retrieval"
+    },
+    {
+      "ref_id": "b44",
+      "title": "No parameter left behind: How distillation and model size affect zero-shot retrieval"
+    },
+    {
+      "ref_id": "b45",
+      "title": "ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Understanding Relevance Judgments in Legal Case Retrieval"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Energy and Policy Considerations for Deep Learning in NLP"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Ernie: Enhanced representation through knowledge integration"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Gpl: Generative pseudo labeling for unsupervised domain adaptation of dense retrieval"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Emergent Abilities of Large Language Models"
+    },
+    {
+      "ref_id": "b51",
+      "title": "RetroMAE: PreTraining Retrieval-oriented Language Models Via Masked Auto-Encoder"
+    },
+    {
+      "ref_id": "b52",
+      "title": "T2Ranking: A Large-scale Chinese Benchmark for Passage Ranking"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Approximate Nearest Neighbor Negative Contrastive Learning for Dense Text Retrieval"
+    },
+    {
+      "ref_id": "b54",
+      "title": "GLM-130B: An Open Bilingual Pre-trained Model"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Scaling vision transformers"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Optimizing dense retrieval model training with hard negatives"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Scaling Law of Large Sequential Recommendation Models"
+    }
   ]
 }

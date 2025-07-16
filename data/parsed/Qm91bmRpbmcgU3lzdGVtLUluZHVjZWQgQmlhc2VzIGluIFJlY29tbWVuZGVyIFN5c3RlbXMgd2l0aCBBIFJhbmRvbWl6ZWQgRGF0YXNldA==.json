@@ -29,6 +29,143 @@
   "ACKNOWLEDGMENTS": "We thank the anonymous reviewers for their expert and constructive comments and suggestions, and the support of National Natural Science Foundation of China Nos. 61836005, 62272315 and 62172283.",
   "REFERENCES": "[1] Martín Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay Ghemawat, Geoffrey Irving, Michael Isard, et al. 2016. TensorFlow: A system for large-scale machine learning. In Proceedings of the 12th Symposium on Operating Systems Design and Implementation . USENIX Association, Berkeley, CA, USA, 265-283. [2] Himan Abdollahpouri, Robin Burke, and Bamshad Mobasher. 2017. Controlling popularity bias in learning-to-rank recommendation. In Proceedings of the 11th ACM Conference on Recommender Systems . ACM, Como, Italy, 42-46. [3] Aman Agarwal, Xuanhui Wang, Cheng Li, Michael Bendersky, and Marc Najork. 2019. Addressing trust bias for unbiased learning-to-rank. In Proceedings of the Web Conference 2019 . ACM, San Francisco, CA, USA, 4-14. ACM Transactions on Information Systems, Vol. 99, No. 99, Article 99. Publication date: January 2023. Bounding System-Induced Biases in Recommender Systems with A Randomized Dataset 99:25 [4] Aman Agarwal, Ivan Zaitsev, Xuanhui Wang, Cheng Li, Marc Najork, and Thorsten Joachims. 2019. Estimating position bias without intrusive interventions. In Proceedings of the 12th ACM International Conference on Web Search and Data Mining . ACM, Melbourne, Australia, 474-482. [5] Stephen Bonner and Flavian Vasile. 2018. Causal embeddings for recommendation. In Proceedings of the 12th ACM Conference on Recommender Systems . ACM, Vancouver, BC, Canada, 104-112. [6] Rocío Cañamares and Pablo Castells. 2018. Should I follow the crowd?: A probabilistic analysis of the effectiveness of popularity in recommender systems. In Proceedings of the 41st International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, Ann Arbor, MI, USA, 415-424. [7] Jiawei Chen, Hande Dong, Yang Qiu, Xiangnan He, Xin Xin, Liang Chen, Guli Lin, and Keping Yang. 2021. AutoDebias: Learning to debias for recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, Montréal, QC, Canada, 21-30. [8] Nicolas Courty, Rémi Flamary, Amaury Habrard, and Alain Rakotomamonjy. 2017. Joint distribution optimal transportation for domain adaptation. In Proceedings of the 31st International Conference on Neural Information Processing Systems . Curran Associates Inc., Long Beach, CA, USA, 3730-3739. [9] Prem Gopalan, Jake M Hofman, and David M Blei. 2015. Scalable recommendation with hierarchical Poisson factorization. In Proceedings of the 31st Conference on Uncertainty in Artificial Intelligence . AUAI Press, Arlington, VA, USA, 326-335. [10] Siyuan Guo, Lixin Zou, Yiding Liu, Wenwen Ye, Suqi Cheng, Shuaiqiang Wang, Hechang Chen, Dawei Yin, and Yi Chang. 2021. Enhanced doubly robust learning for debiasing post-click conversion rate estimation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, Montréal, QC, Canada, 275-284. [11] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the Web Conference 2017 . ACM, Perth, Australia, 173-182. [12] Wassily Hoeffding. 1994. Probability inequalities for sums of bounded random variables. In The Collected Works of Wassily Hoeffding . Springer, New York, NY, 409-426. [13] Alexandre Kaspar, Tae-Hyun Oh, Liane Makatura, Petr Kellnhofer, and Wojciech Matusik. 2019. Neural inverse knitting: From images to manufacturing instructions. In Proceedings of the 36th International Conference on Machine Learning . PMLR, Long Beach, CA, USA, 3272-3281. [14] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). https://arxiv.org/abs/1412.6980 [15] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix factorization techniques for recommender systems. Computer 42, 8 (2009), 30-37. [16] Jongyeong Lee, Nontawat Charoenphakdee, Seiichi Kuroki, and Masashi Sugiyama. 2019. Domain discrepancy measure for complex models in unsupervised domain adaptation. arXiv preprint arXiv:1901.10654 (2019). https://arxiv.org/abs/1901.10654 [17] Jae-woong Lee, Seongmin Park, and Jongwuk Lee. 2021. Dual unbiased recommender learning for implicit feedback. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, Montréal, QC, Canada, 1647-1651. [18] DawenLiang, Laurent Charlin, James McInerney, and David M Blei. 2016. Modeling user exposure in recommendation. In Proceedings of the Web Conference 2016 . ACM, Montréal, QC, Canada, 951-961. [19] Chen Lin, Dugang Liu, Hanghang Tong, and Yanghua Xiao. 2022. Spiral of silence and its application in recommender systems. IEEE Transactions on Knowledge and Data Engineering 34, 6 (2022), 2934-2947. [20] Dugang Liu, Pengxiang Cheng, Zhenhua Dong, Xiuqiang He, Weike Pan, and Zhong Ming. 2020. A general knowledge distillation framework for counterfactual recommendation via uniform data. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, Xi'an, China, 831-840. [21] Dugang Liu, Pengxiang Cheng, Zinan Lin, Jinwei Luo, Zhenhua Dong, Xiuqiang He, Weike Pan, and Zhong Ming. 2022. KDCRec: Knowledge distillation for counterfactual recommendation via uniform data. IEEE Transactions on Knowledge and Data Engineering (2022). https://doi.org/10.1109/TKDE.2022.3199585 [22] Dugang Liu, Pengxiang Cheng, Hong Zhu, Zhenhua Dong, Xiuqiang He, Weike Pan, and Zhong Ming. 2021. Mitigating confounding bias in recommendation via information bottleneck. In Proceedings of the 15th ACM Conference on Recommender Systems . ACM, Amsterdam, Netherlands, 351-360. [23] Dugang Liu, Pengxiang Cheng, Hong Zhu, Zhenhua Dong, Xiuqiang He, Weike Pan, and Zhong Ming. 2022. Debiased representation learning in recommendation via information bottleneck. ACM Transactions on Recommender Systems 1, 1 (2022), 5. [24] Dugang Liu, Chen Lin, Zhilin Zhang, Yanghua Xiao, and Hanghang Tong. 2019. Spiral of silence in recommender systems. In Proceedings of the 12th ACM International Conference on Web Search and Data Mining . ACM, Melbourne, Australia, 222-230. ACM Transactions on Information Systems, Vol. 99, No. 99, Article 99. Publication date: January 2023. 99:26 Liu, et al. ACM Transactions on Information Systems, Vol. 99, No. 99, Article 99. Publication date: January 2023. Bounding System-Induced Biases in Recommender Systems with A Randomized Dataset 99:27 [45] Himank Yadav, Zhengxiao Du, and Thorsten Joachims. 2021. Policy-gradient training of fair and unbiased ranking functions. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, Montréal, QC, Canada, 1044-1053. [46] Haiqin Yang, Guang Ling, Yuxin Su, Michael R Lyu, and Irwin King. 2015. Boosting response aware model-based collaborative filtering. IEEE Transactions on Knowledge and Data Engineering 27, 8 (2015), 2064-2077. [47] Jiangxing Yu, Hong Zhu, Chih-Yao Chang, Xinhua Feng, Bowen Yuan, Xiuqiang He, and Zhenhua Dong. 2020. Influence function for unbiased recommendation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, Xi'an, China, 1929-1932. [48] Bowen Yuan, Jui-Yang Hsia, Meng-Yuan Yang, Hong Zhu, Chih-Yao Chang, Zhenhua Dong, and Chih-Jen Lin. 2019. Improving ad click prediction by considering non-displayed events. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . ACM, Beijing, China, 329-338. [49] Shuxi Zeng, Murat Ali Bayir, Joseph J Pfeiffer III, Denis Charles, and Emre Kiciman. 2021. Causal transfer random forest: Combining logged data and randomized experiments for robust prediction. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . ACM, Jerusalem, Israel, 211-219. [50] Wenhao Zhang, Wentian Bao, Xiao-Yang Liu, Keping Yang, Quan Lin, Hong Wen, and Ramin Ramezani. 2020. Largescale causal approaches to debiasing post-click conversion rate estimation with multi-task learning. In Proceedings of the Web Conference 2020 . ACM, Taipei, Taiwan, 2775-2781. [51] Xiaoying Zhang, Junzhou Zhao, and John CS Lui. 2017. Modeling the assimilation-contrast effects in online product rating systems: Debiasing and recommendations. In Proceedings of the 11th ACM Conference on Recommender Systems . ACM, Como, Italy, 98-106. [52] Yu Zheng, Chen Gao, Xiang Li, Xiangnan He, Yong Li, and Depeng Jin. 2021. Disentangling user interest and conformity for recommendation with causal embedding. In Proceedings of the Web Conference 2021 . ACM, Ljubljana, Slovenia, 2980-2991. [53] Ziwei Zhu, Yun He, Xing Zhao, Yin Zhang, Jianling Wang, and James Caverlee. 2021. Popularity-opportunity bias in collaborative filtering. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . ACM, Jerusalem, Israel, 85-93. ACM Transactions on Information Systems, Vol. 99, No. 99, Article 99. Publication date: January 2023.",
   "keywords_parsed": [
-    "None"
+    "System-induced bias",
+    "Recommender systems",
+    "Randomized dataset",
+    "Upper bound minimization"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "TensorFlow: A system for large-scale machine learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Controlling popularity bias in learning-to-rank recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Addressing trust bias for unbiased learning-to-rank"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Estimating position bias without intrusive interventions"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Causal embeddings for recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Should I follow the crowd?: A probabilistic analysis of the effectiveness of popularity in recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "AutoDebias: Learning to debias for recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Joint distribution optimal transportation for domain adaptation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Scalable recommendation with hierarchical Poisson factorization"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Enhanced doubly robust learning for debiasing post-click conversion rate estimation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Probability inequalities for sums of bounded random variables"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Neural inverse knitting: From images to manufacturing instructions"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Domain discrepancy measure for complex models in unsupervised domain adaptation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Dual unbiased recommender learning for implicit feedback"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Modeling user exposure in recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Spiral of silence and its application in recommender systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A general knowledge distillation framework for counterfactual recommendation via uniform data"
+    },
+    {
+      "ref_id": "b21",
+      "title": "KDCRec: Knowledge distillation for counterfactual recommendation via uniform data"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Mitigating confounding bias in recommendation via information bottleneck"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Debiased representation learning in recommendation via information bottleneck"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Spiral of silence in recommender systems"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Policy-gradient training of fair and unbiased ranking functions"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Boosting response aware model-based collaborative filtering"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Influence function for unbiased recommendation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Improving ad click prediction by considering non-displayed events"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Causal transfer random forest: Combining logged data and randomized experiments for robust prediction"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Largescale causal approaches to debiasing post-click conversion rate estimation with multi-task learning"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Modeling the assimilation-contrast effects in online product rating systems: Debiasing and recommendations"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Disentangling user interest and conformity for recommendation with causal embedding"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Popularity-opportunity bias in collaborative filtering"
+    }
   ]
 }

@@ -26,7 +26,187 @@
   "REFERENCES": "[1] Anastasios Andronidis and Cristian Cadar. Snapfuzz: High-throughput fuzzing of network applications. In International Symposium on Software Testing and Analysis (ISSTA) , 2022. [2] Cornelius Aschermann, Sergej Schumilo, Tim Blazytko, Robert Gawlik, and Thorsten Holz. REDQUEEN: Fuzzing with Input-to-State Correspondence. In Symposium on Network and Distributed System Security (NDSS) , 2019. [3] Jinsheng Ba, Marcel Böhme, Zahra Mirzamomen, and Abhik Roychoudhury. Stateful Greybox Fuzzing. In USENIX Security Symposium , 2022. [4] Nils Bars, Moritz Schloegel, Tobias Scharnowski, Nico Schiller, and Thorsten Holz. Fuzztruction: Using Fault Injection-based Fuzzing to Leverage Implicit Domain Knowledge. In USENIX Security Symposium , 2023. [5] Sergej Bratus, Michael E. Locasto, Meredith L. Patterson, Len Sassaman, and Anna Shubina. Exploit Programming: From Buffer Overflows to 'Weird Machines'' and Theory of Computation. Usenix; Login , 2011. [6] Marcel Böhme, Valentin J. M. Manès, and Sang Kil Cha. Boosting Fuzzer Efficiency: An Information Theoretic Perspective. In ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) , 2020. [7] Marcel Böhme, László Szekeres, and Jonathan Metzman. On the Reliability of Coverage-Based Fuzzer Benchmarking. In ACM/IEEE International Conference on Automated Software Engineering (ASE) , 2022. [8] Merlin Chlosta, David Rupprecht, and Thorsten Holz. On the Challenges of Automata Reconstruction in LTE Networks. In ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec) , 2021. [9] Lesly-Ann Daniel, Erik Poll, and Joeri de Ruiter. Inferring OpenVPN State Machines Using Protocol State Fuzzing. In IEEE European Symposium on Security and Privacy Workshops (EuroS&PW) , 2018. [10] Cristian Daniele, Seyed Behnam Andarzian, and Erik Poll. Fuzzers for Stateful Systems: Survey and Research Directions. ACM Computing Surveys (CSUR) , 56(9), 2024. [11] Joeri De Ruiter and Erik Poll. Protocol State Fuzzing of TLS Implementations. In USENIX Security Symposium , 2015. [12] Michael Eddington. Peach Fuzzer: Discover Unknown Vulnerabilities. https: //peachtech.gitlab.io/peach-fuzzer-community/, 2004. [13] Xiaotao Feng, Ruoxi Sun, Xiaogang Zhu, Minhui Xue, Sheng Wen, Dongxi Liu, Surya Nepal, and Yang Xiang. Snipuzz: Black-box Fuzzing of IoT Firmware via Message Snippet Inference. In ACMConference on Computer and Communications Security (CCS) , 2021. [14] Andrea Fioraldi, Dominik Maier, Heiko Eißfeldt, and Marc Heuse. AFL++ : Combining Incremental Steps of Fuzzing Research. In USENIX Workshop on Offensive Technologies (WOOT) , 2020. [15] Andrea Fioraldi, Dominik Christian Maier, Dongjia Zhang, and Davide Balzarotti. LibAFL: A Framework to Build Modular and Reusable Fuzzers. In ACMConference on Computer and Communications Security (CCS) , 2022. [16] Paul Fiterau-Brostean, Bengt Jonsson, Robert Merget, Joeri de Ruiter, Konstantinos Sagonas, and Juraj Somorovsky. Analysis of DTLS Implementations Using 13 Protocol State Fuzzing. In USENIX Security Symposium , 2020. [17] Paul Fiterau-Brostean, Bengt Jonsson, Robert Merget, Joeri De Ruiter, Konstantinos Sagonas, and Juraj Somorovsky. Analysis of DTLS Implementations Using Protocol State Fuzzing. In USENIX Security Symposium , 2020. [18] Google. Honggfuzz. [19] Google. OSS-Fuzz: Continuous Fuzzing for Open Source Software. [20] Google. Fuzzer-Test-Suite, 2016. [21] Ahmad Hazimeh, Adrian Herrera, and Mathias Payer. Magma: A Ground-Truth Fuzzing Benchmark. ACM on Measurement and Analysis of Computing Systems (POMACS) , 4(3):49:1-49:29, 2020. [22] Robert M Hierons, Kirill Bogdanov, Jonathan P Bowen, Rance Cleaveland, John Derrick, Jeremy Dick, Marian Gheorghe, Mark Harman, Kalpesh Kapoor, Paul Krause, et al. Using Formal Specifications to Support Testing. ACM Computing Surveys (CSUR) , 41(2), 2009. [23] Zu-Ming Jiang, Jia-Ju Bai, Kangjie Lu, and Shi-Min Hu. Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection. In USENIX Security Symposium , 2020. [24] Joshua Pereyda et al. boofuzz: Network Protocol Fuzzing for Humans. https: //github.com/jtpereyda/boofuzz. [25] George Klees, Andrew Ruef, Benji Cooper, Shiyi Wei, and Michael Hicks. Evaluating Fuzz Testing. In ACM Conference on Computer and Communications Security (CCS) , 2018. [26] lafintel. laf-intel - Circumventing Fuzzing Roadblocks with Compiler Transformations. https://lafintel.wordpress.com. [27] Peiyu Liu, Shouling Ji, Xuhong Zhang, Qinming Dai, Kangjie Lu, Lirong Fu, Wenzhi Chen, Peng Cheng, Wenhai Wang, and Raheem Beyah. IFIZZ: Deep-State and Efficient Fault-Scenario Generation to Test IoT Firmware. In ACM/IEEE International Conference on Automated Software Engineering (ASE) , 2021. [28] Zhengxiong Luo, Junze Yu, Feilong Zuo, Jianzhong Liu, Yu Jiang, Ting Chen, Abhik Roychoudhury, and Jiaguang Sun. Bleem: Packet Sequence Oriented Fuzzing for Protocol Implementations. In USENIX Security Symposium , 2023. [29] Chenyang Lyu, Shouling Ji, Chao Zhang, Yuwei Li, Wei-Han Lee, Yu Song, and Raheem Beyah. MOPT: Optimized Mutation Scheduling for Fuzzers. In USENIX Security Symposium , 2019. [30] Jonathan Metzman, László Szekeres, Laurent Simon, Read Sprabery, and Abhishek Arya. FuzzBench: An Open Fuzzer Benchmarking Platform and Service. In ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) , 2021. [31] Roberto Natella. StateAFL: Greybox Fuzzing for Stateful Network Servers. Empirical Software Engineering , 27(7):191, 2022. [32] Roberto Natella and Van-Thuan Pham. ProFuzzBench: A Benchmark for Stateful Protocol Fuzzing. In International Symposium on Software Testing and Analysis (ISSTA) , 2021. [33] Van-Thuan Pham, Marcel Böhme, and Abhik Roychoudhury. AFLNet: A Greybox Fuzzer for Network Protocols. In IEEE International Conference on Software Testing, Validation and Verification (ICST) , 2020. [34] Moritz Schloegel, Nils Bars, Nico Schiller, Lukas Bernhard, Tobias Scharnowski, Addison Crump, Arash Ale-Ebrahim, Nicolai Bissantz, Marius Muench, and Thorsten Holz. SoK: Prudent Evaluation Practices for Fuzzing. In IEEE Symposium on Security and Privacy (S&P) , 2024. [35] Sergej Schumilo, Cornelius Aschermann, Andrea Jemmett, Ali Abbasi, and Thorsten Holz. Nyx-Net: Network Fuzzing with Incremental Snapshots. In European Conference on Computer Systems (EuroSys) , 2022. [36] Shashank Sharma, Sai Ritvik Tanksalkar, Sourag Cherupattamoolayil, and Aravind Machiry. Fuzzing API Error Handling Behaviors using Coverage Guided Fault Injection. In ACM Symposium on Information, Computer and Communications Security (ASIACCS) , 2024. [37] Rifaat Shekh-Yusef. HTTP Digest Access Authentication, 2015. [38] M. Shudrak. NetAFL: WinAFL Patch. https://github.com/intelpt/winafl-intelpt, 2018. [39] Juraj Somorovsky. Systematic Fuzzing and Testing of TLS Libraries. In ACM Conference on Computer and Communications Security (CCS) , 2016. [40] Bernhard Steffen, Falk Howar, and Maik Merten. Introduction to Active Automata Learning from a Practical Perspective . 2011. [41] András Vargha and Harold D Delaney. A Critique and Improvement of the CL Common Language Effect Size Statistics of McGraw and Wong. Journal of Educational and Behavioral Statistics , 25(2):101-132, 2000. [42] Insu Yun, Sangho Lee, Meng Xu, Yeongjin Jang, and Taesoo Kim. QSYM: A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing. In USENIX Security Symposium , 2018. [43] Michał Zalewski. American Fuzzy Lop. https://lcamtuf.coredump.cx/afl/, 2013. [44] Bodong Zhao, Zheming Li, Shisong Qin, Zheyu Ma, Ming Yuan, Wenyu Zhu, Zhihong Tian, and Chao Zhang. StateFuzz: System Call-Based State-Aware Linux Driver Fuzzing. In USENIX Security Symposium , 2022. [45] Xiaogang Zhu, Sheng Wen, Seyit Camtepe, and Yang Xiang. Fuzzing: A Survey for Roadmap. ACM Computing Surveys (CSUR) , 54(11s):1-36, 2022. Figure 5: Coverage results for all fuzzers when enabling TLS support, as is often the case in practice. We compute coverage only for the target but not the TLS implementation. 00:00 03:00 06:00 09:00 12:00 15:00 18:00 21:00 Time [hh:mm] 0 500 1,000 1,500 2,000 #Covered Branches enabled disabled TLS Fuzzer mosquitto S FT-Net AflNet StateAFL SGFuzz Figure 6: Coverage results when enabling HTTP Digest Access Authentication [37] for live555 S . We provided all fuzzers with a recording of one successful authentication (HTTP plain-text). 00:00 03:00 06:00 09:00 12:00 15:00 18:00 21:00 Time [hh:mm] 0 500 1,000 1,500 #Covered Branches enabled disabled Authentication Fuzzer live555 S FT-Net AflNet StateAFL SGFuzz",
   "A TARGET CONFIGURATION": "To enable reproducibility, we list the exact commandline parameters for our targets in Table 5. 14 Table 5: Target configurations used during the evaluation.",
   "B MOSQUITTO AND LIVE555": "When enabling TLS support for mosquitto S , only FuzztructionNet manages to effectively explore it. In Figure 3, we compared Fuzztruction-Net only to SGFuzz for readability reasons, and we provide the full data in Figure 5. We observe similar results for live555 S when using HTTP basic authentication, with the comparison of Fuzztruction-Net and SGFuzz in Figure 4 and the full data in Figure 6. 15",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Snapfuzz: High-throughput fuzzing of network applications"
+    },
+    {
+      "ref_id": "b2",
+      "title": "REDQUEEN: Fuzzing with Input-to-State Correspondence"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Stateful Greybox Fuzzing"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Fuzztruction: Using Fault Injection-based Fuzzing to Leverage Implicit Domain Knowledge"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Exploit Programming: From Buffer Overflows to 'Weird Machines' and Theory of Computation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Boosting Fuzzer Efficiency: An Information Theoretic Perspective"
+    },
+    {
+      "ref_id": "b7",
+      "title": "On the Reliability of Coverage-Based Fuzzer Benchmarking"
+    },
+    {
+      "ref_id": "b8",
+      "title": "On the Challenges of Automata Reconstruction in LTE Networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Inferring OpenVPN State Machines Using Protocol State Fuzzing"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Fuzzers for Stateful Systems: Survey and Research Directions"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Protocol State Fuzzing of TLS Implementations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Peach Fuzzer: Discover Unknown Vulnerabilities"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Snipuzz: Black-box Fuzzing of IoT Firmware via Message Snippet Inference"
+    },
+    {
+      "ref_id": "b14",
+      "title": "AFL++ : Combining Incremental Steps of Fuzzing Research"
+    },
+    {
+      "ref_id": "b15",
+      "title": "LibAFL: A Framework to Build Modular and Reusable Fuzzers"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Analysis of DTLS Implementations Using 13 Protocol State Fuzzing"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Analysis of DTLS Implementations Using Protocol State Fuzzing"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Honggfuzz"
+    },
+    {
+      "ref_id": "b19",
+      "title": "OSS-Fuzz: Continuous Fuzzing for Open Source Software"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Fuzzer-Test-Suite"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Magma: A Ground-Truth Fuzzing Benchmark"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Using Formal Specifications to Support Testing"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Fuzzing Error Handling Code using Context-Sensitive Software Fault Injection"
+    },
+    {
+      "ref_id": "b24",
+      "title": "boofuzz: Network Protocol Fuzzing for Humans"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Evaluating Fuzz Testing"
+    },
+    {
+      "ref_id": "b26",
+      "title": "laf-intel - Circumventing Fuzzing Roadblocks with Compiler Transformations"
+    },
+    {
+      "ref_id": "b27",
+      "title": "IFIZZ: Deep-State and Efficient Fault-Scenario Generation to Test IoT Firmware"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Bleem: Packet Sequence Oriented Fuzzing for Protocol Implementations"
+    },
+    {
+      "ref_id": "b29",
+      "title": "MOPT: Optimized Mutation Scheduling for Fuzzers"
+    },
+    {
+      "ref_id": "b30",
+      "title": "FuzzBench: An Open Fuzzer Benchmarking Platform and Service"
+    },
+    {
+      "ref_id": "b31",
+      "title": "StateAFL: Greybox Fuzzing for Stateful Network Servers"
+    },
+    {
+      "ref_id": "b32",
+      "title": "ProFuzzBench: A Benchmark for Stateful Protocol Fuzzing"
+    },
+    {
+      "ref_id": "b33",
+      "title": "AFLNet: A Greybox Fuzzer for Network Protocols"
+    },
+    {
+      "ref_id": "b34",
+      "title": "SoK: Prudent Evaluation Practices for Fuzzing"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Nyx-Net: Network Fuzzing with Incremental Snapshots"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Fuzzing API Error Handling Behaviors using Coverage Guided Fault Injection"
+    },
+    {
+      "ref_id": "b37",
+      "title": "HTTP Digest Access Authentication"
+    },
+    {
+      "ref_id": "b38",
+      "title": "NetAFL: WinAFL Patch"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Systematic Fuzzing and Testing of TLS Libraries"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Introduction to Active Automata Learning from a Practical Perspective"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A Critique and Improvement of the CL Common Language Effect Size Statistics of McGraw and Wong"
+    },
+    {
+      "ref_id": "b42",
+      "title": "QSYM: A Practical Concolic Execution Engine Tailored for Hybrid Fuzzing"
+    },
+    {
+      "ref_id": "b43",
+      "title": "American Fuzzy Lop"
+    },
+    {
+      "ref_id": "b44",
+      "title": "StateFuzz: System Call-Based State-Aware Linux Driver Fuzzing"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Fuzzing: A Survey for Roadmap"
+    }
   ]
 }

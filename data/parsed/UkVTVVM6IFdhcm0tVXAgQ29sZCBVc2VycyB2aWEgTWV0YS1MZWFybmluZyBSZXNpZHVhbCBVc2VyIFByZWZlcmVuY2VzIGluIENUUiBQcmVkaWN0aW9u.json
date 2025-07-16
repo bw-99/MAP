@@ -29,6 +29,114 @@
   "ACKNOWLEDGEMENTS": "The authors would like to thank the anonymous reviewers for their insightful reviews. This work is supported by the National Key Research and Development Program of China (2022YFE0200500), Shanghai Municipal Science and Technology Major Project (2021SHZDZX0102), the Tencent Wechat Rhino-Bird Focused Research Program, and SJTU Global Strategic Partnership Fund (2021 SJTUHKUST).",
   "REFERENCES": "[1] 2014. Avazu Dataset . https://www.kaggle.com/c/avazu-ctr-prediction [2] 2014. Criteo Dataset . https://www.kaggle.com/c/criteo-display-ad-challenge [3] Karan Aggarwal, Pranjul Yadav, and S. Sathiya Keerthi. 2019. Domain adaptation in display advertising: an application for partner cold-start. In RecSys . 178-186. [4] Linas Baltrunas, Karen Church, Alexandros Karatzoglou, and Nuria Oliver. 2015. Frappe: Understanding the usage and perception of mobile app recommendations in-the-wild. arXiv preprint arXiv:1505.03014 (2015). [5] Oren Barkan, Noam Koenigstein, Eylon Yogev, and Ori Katz. 2019. CB2CF: a neural multiview content-to-collaborative filtering model for completely cold item recommendations. In RecSys . 228-236. [6] Luca Bertinetto, João F. Henriques, Philip H. S. Torr, and Andrea Vedaldi. 2019. Meta-learning with differentiable closed-form solvers. In ICLR . [7] Homanga Bharadhwaj. 2019. Meta-Learning for User Cold-Start Recommendation. In IJCNN . 1-8. [8] Ye Bi, Liqiang Song, Mengqiu Yao, Zhenyu Wu, Jianming Wang, and Jing Xiao. 2020. A Heterogeneous Information Network based Cross Domain Insurance Recommendation System for Cold Start Users. In SIGIR . 2211-2220. [9] Da Cao, Xiangnan He, Liqiang Nie, Xiaochi Wei, Xia Hu, Shunxiang Wu, and Tat-Seng Chua. 2017. Cross-Platform App Recommendation by Jointly Modeling Ratings and Texts. ACM Trans. Inf. Syst. 35, 4, Article 37 (July 2017), 27 pages. https://doi.org/10.1145/3017429 [10] Dong-Kyu Chae, Jin-Soo Kang, Sang-Wook Kim, and Jaeho Choi. 2019. Rating Augmentation with Generative Adversarial Networks towards Accurate Collaborative Filtering. In TheWebConf . 2616-2622. [11] Dong-Kyu Chae, Jihoo Kim, Duen Horng Chau, and Sang-Wook Kim. 2020. AR-CF: Augmenting Virtual Users and Items in Collaborative Filtering for Addressing Cold-Start Problems. In SIGIR . 1251-1260. [12] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems, DLRS@RecSys . 7-10. [13] Weiyu Cheng, Yanyan Shen, and Linpeng Huang. 2020. Adaptive Factorization Network: Learning Adaptive-Order Feature Interactions. In AAAI . 3609-3616. [14] Manqing Dong, Feng Yuan, Lina Yao, Xiwei Xu, and Liming Zhu. 2020. MAMO: Memory-Augmented Meta-Optimization for Cold-start Recommendation. In SIGKDD . 688-697. [15] Chelsea Finn, Pieter Abbeel, and Sergey Levine. 2017. Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks. In ICML . 1126-1135. [16] Jerome H Friedman. 2001. Greedy function approximation: a gradient boosting machine. Annals of statistics (2001), 1189-1232. [17] Wenjing Fu, Zhaohui Peng, Senzhang Wang, Yang Xu, and Jin Li. 2019. Deeply Fusing Reviews and Contents for Cold Start Users in Cross-Domain Recommendation Systems. In AAAI . 94-101. [18] Hossein Gholamalinezhad and Hossein Khosravi. 2020. Pooling Methods in Deep Neural Networks, a Review. arXiv preprint arXiv:2009.07485 (2020). [19] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In IJCAI . 1725-1731. [20] Casper Hansen, Christian Hansen, Jakob Grue Simonsen, Stephen Alstrup, and Christina Lioma. 2020. Content-aware Neural Hashing for Cold-start Recommendation. In SIGIR . 971-980. [21] F. Maxwell Harper and Joseph A. Konstan. 2016. The MovieLens Datasets: History and Context. ACM Trans. Interact. Intell. Syst. 5, 4 (2016), 19:1-19:19. [22] Timothy Hospedales, Antreas Antoniou, Paul Micaelli, and Amos Storkey. 2020. Meta-learning in neural networks: A survey. arXiv preprint arXiv:2004.05439 (2020). [23] Liang Hu, Longbing Cao, Jian Cao, Zhiping Gu, Guandong Xu, and Dingyu Yang. 2016. Learning Informative Priors from Heterogeneous Domains to Improve Recommendation in Cold-Start User Domains. ACM Trans. Inf. Syst. 35, 2, Article 13 (Dec. 2016), 37 pages. https://doi.org/10.1145/2976737 J. ACM, Vol. 37, No. 4, Article 1. Publication date: September 2022. 1:26 Shen, et al. J. ACM, Vol. 37, No. 4, Article 1. Publication date: September 2022. RESUS: Warm-Up Cold Users via Meta-Learning Residual User Preferences in CTR Prediction 1:27 [51] Guorui Zhou, Xiaoqiang Zhu, Chengru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for Click-Through Rate Prediction. In SIGKDD . 1059-1068. [52] Zhi-Hua Zhou. 2019. Ensemble methods: foundations and algorithms . Chapman and Hall/CRC. [53] Yongchun Zhu, Ruobing Xie, Fuzhen Zhuang, Kaikai Ge, Ying Sun, Xu Zhang, Leyu Lin, and Juan Cao. 2021. Learning to Warm Up Cold Item Embeddings for Cold-start Recommendation with Meta Scaling and Shifting Networks. arXiv preprint arXiv:2105.04790 (2021). J. ACM, Vol. 37, No. 4, Article 1. Publication date: September 2022.",
   "keywords_parsed": [
-    "None"
+    "Cold-start recommendation",
+    "CTR prediction",
+    "Few-shot Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Avazu Dataset"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Criteo Dataset"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Domain adaptation in display advertising: an application for partner cold-start"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Frappe: Understanding the usage and perception of mobile app recommendations in-the-wild"
+    },
+    {
+      "ref_id": "b5",
+      "title": "CB2CF: a neural multiview content-to-collaborative filtering model for completely cold item recommendations"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Meta-learning with differentiable closed-form solvers"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Meta-Learning for User Cold-Start Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A Heterogeneous Information Network based Cross Domain Insurance Recommendation System for Cold Start Users"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Cross-Platform App Recommendation by Jointly Modeling Ratings and Texts"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Rating Augmentation with Generative Adversarial Networks towards Accurate Collaborative Filtering"
+    },
+    {
+      "ref_id": "b11",
+      "title": "AR-CF: Augmenting Virtual Users and Items in Collaborative Filtering for Addressing Cold-Start Problems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Adaptive Factorization Network: Learning Adaptive-Order Feature Interactions"
+    },
+    {
+      "ref_id": "b14",
+      "title": "MAMO: Memory-Augmented Meta-Optimization for Cold-start Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Greedy function approximation: a gradient boosting machine"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deeply Fusing Reviews and Contents for Cold Start Users in Cross-Domain Recommendation Systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Pooling Methods in Deep Neural Networks, a Review"
+    },
+    {
+      "ref_id": "b19",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Content-aware Neural Hashing for Cold-start Recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "The MovieLens Datasets: History and Context"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Meta-learning in neural networks: A survey"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Learning Informative Priors from Heterogeneous Domains to Improve Recommendation in Cold-Start User Domains"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Ensemble methods: foundations and algorithms"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Learning to Warm Up Cold Item Embeddings for Cold-start Recommendation with Meta Scaling and Shifting Networks"
+    }
   ]
 }

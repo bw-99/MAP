@@ -29,8 +29,162 @@
   "REFERENCES": "[1] Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. 2016. Layer normalization. arXiv preprint arXiv:1607.06450 (2016). [2] Rianne van den Berg, Thomas N Kipf, and Max Welling. 2017. Graph convolutional matrix completion. arXiv preprint arXiv:1706.02263 (2017). [3] Jiangxia Cao, Xin Cong, Jiawei Sheng, Tingwen Liu, and Bin Wang. 2022. Contrastive Cross-Domain Sequential Recommendation. In Proceedings of the 31st ACMInternational Conference on Information & Knowledge Management . 138-147. [4] Xinyan Fan, Zheng Liu, Jianxun Lian, Wayne Xin Zhao, Xing Xie, and Ji-Rong Wen. 2021. Lighter and better: low-rank decomposed self-attention networks for next-item recommendation. In Proceedings of the 44th international ACM SIGIR conference on research and development in information retrieval . 1733-1737. [5] Sheng Gao, Hao Luo, Da Chen, Shantao Li, Patrick Gallinari, and Jun Guo. 2013. Cross-domain recommendation via cluster-level latent factor model. In Machine Learning and Knowledge Discovery in Databases: European Conference, ECML PKDD 2013, Prague, Czech Republic, September 23-27, 2013, Proceedings, Part II 13 . Springer, 161-176. [6] Ruining He, Wang-Cheng Kang, and Julian McAuley. 2017. Translation-based recommendation. In Proceedings of the eleventh ACM conference on recommender systems . 161-169. [7] Dan Hendrycks and Kevin Gimpel. 2016. Gaussian error linear units (gelus). arXiv preprint arXiv:1606.08415 (2016). [8] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [9] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [10] Lingpeng Kong, Cyprien de Masson d'Autume, Wang Ling, Lei Yu, Zihang Dai, and Dani Yogatama. 2019. A mutual information maximization perspective of language representation learning. arXiv preprint arXiv:1910.08350 (2019). [11] Chenglin Li, Yuanzhen Xie, Chenyun Yu, Bo Hu, Zang Li, Guoqiang Shu, Xiaohu Qie, and Di Niu. 2023. One for All, All for One: Learning and Transferring User Embeddings for Cross-Domain Recommendation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 366-374. [12] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. 2017. Neural attentive session-based recommendation. In Proceedings of the 2017 ACM on Conference on Information and Knowledge Management . 1419-1428. [13] Guanyu Lin, Chen Gao, Yu Zheng, Jianxin Chang, Yanan Niu, Yang Song, Kun Gai, Zhiheng Li, Depeng Jin, Yong Li, et al. 2023. Mixed Attention Network for Cross-domain Sequential Recommendation. arXiv preprint arXiv:2311.08272 (2023). [14] Meng Liu, Jianjun Li, Guohui Li, and Peng Pan. 2020. Cross domain recommendation via bi-directional transfer graph collaborative filtering networks. In Proceedings of the 29th ACM international conference on information & knowledge management . 885-894. [15] Qiao Liu, Yifu Zeng, Refuoe Mokhosi, and Haibin Zhang. 2018. STAMP: shortterm attention/memory priority model for session-based recommendation. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1831-1839. [16] Muyang Ma, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Lifan Zhao, Peiyu Liu, Jun Ma, and Maarten de Rijke. 2022. Mixed information flow for cross-domain sequential recommendations. ACM Transactions on Knowledge Discovery from Data (TKDD) 16, 4 (2022), 1-32. [17] Muyang Ma, Pengjie Ren, Yujie Lin, Zhumin Chen, Jun Ma, and Maarten de Rijke. 2019. 𝜋 -net: A parallel information-sharing network for shared-account crossdomain sequential recommendations. In Proceedings of the 42nd international ACM SIGIR conference on research and development in information retrieval . 685694. [18] Julian McAuley, Christopher Targett, Qinfeng Shi, and Anton Van Den Hengel. 2015. Image-based recommendations on styles and substitutes. In Proceedings of the 38th international ACM SIGIR conference on research and development in information retrieval . 43-52. [19] Aaron van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation learning with contrastive predictive coding. arXiv preprint arXiv:1807.03748 (2018). [20] Chung Park, Taesan Kim, Taekyoon Choi, Junui Hong, Yelim Yu, Mincheol Cho, Kyunam Lee, Sungil Ryu, Hyungjun Yoon, Minsung Choi, et al. 2023. Cracking the Code of Negative Transfer: A Cooperative Game Theoretic Approach for Cross-Domain Sequential Recommendation. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 2024-2033. [21] Zhen Qin, Yicheng Cheng, Zhe Zhao, Zhe Chen, Donald Metzler, and Jingzheng Qin. 2020. Multitask mixture of sequential experts for user activity streams. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 3083-3091. [22] Ahmed Rashed, Shereen Elsayed, and Lars Schmidt-Thieme. 2022. Context and attribute-aware sequential recommendation via cross-attention. In Proceedings of the 16th ACM Conference on Recommender Systems . 71-80. [23] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2012. BPR: Bayesian personalized ranking from implicit feedback. arXiv preprint arXiv:1205.2618 (2012). [24] Ajit P Singh and Geoffrey J Gordon. 2008. Relational learning via collective matrix factorization. In Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining . 650-658. [25] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [26] Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jon Shlens, and Zbigniew Wojna. 2016. Rethinking the inception architecture for computer vision. In Proceedings of the IEEE conference on computer vision and pattern recognition . 2818-2826. [27] Qiaoyu Tan, Jianwei Zhang, Jiangchao Yao, Ninghao Liu, Jingren Zhou, Hongxia Yang, and Xia Hu. 2021. Sparse-interest network for sequential recommendation. In Proceedings of the 14th ACM international conference on web search and data mining . 598-606. [28] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in neural information processing systems . 5998-6008. [29] Zirui Wang, Zihang Dai, Barnabás Póczos, and Jaime Carbonell. 2019. Characterizing and avoiding negative transfer. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 11293-11302. [30] Huan Yan, Xiangning Chen, Chen Gao, Yong Li, and Depeng Jin. 2019. Deepapf: Deep attentive probabilistic factorization for multi-site video recommendation. TC 2, 130 (2019), 17-883. [31] Fajie Yuan, Alexandros Karatzoglou, Ioannis Arapakis, Joemon M Jose, and Xiangnan He. 2019. A simple convolutional generative network for next item recommendation. In Proceedings of the twelfth ACM international conference on web search and data mining . 582-590. [32] Tingting Zhang, Pengpeng Zhao, Yanchi Liu, Victor S Sheng, Jiajie Xu, Deqing Wang, Guanfeng Liu, Xiaofang Zhou, et al. 2019. Feature-level Deeper SelfAttention Network for Sequential Recommendation.. In IJCAI . 4320-4326. [33] Wei Zhang, Pengye Zhang, Bo Zhang, Xingxing Wang, and Dong Wang. 2023. A Collaborative Transfer Learning Framework for Cross-domain Recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 5576-5585. [34] Wayne Xin Zhao, Yupeng Hou, Xingyu Pan, Chen Yang, Zeyu Zhang, Zihan Lin, Jingsen Zhang, Shuqing Bian, Jiakai Tang, Wenqi Sun, et al. 2022. RecBole 2.0: Towards a More Up-to-Date Recommendation Library. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 4722-4726. [35] Wayne Xin Zhao, Shanlei Mu, Yupeng Hou, Zihan Lin, Kaiyuan Li, Yushuo Chen, Yujie Lu, Hui Wang, Changxin Tian, Xingyu Pan, Yingqian Min, Zhichao Feng, Xinyan Fan, Xu Chen, Pengfei Wang, Wendi Ji, Yaliang Li, Xiaoling Wang, and Ji-Rong Wen. 2021. Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms. In CIKM . [36] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization. In Proceedings of the 29th ACM international conference on information & knowledge management . 1893-1902. [37] Feng Zhu, Chaochao Chen, Yan Wang, Guanfeng Liu, and Xiaolin Zheng. 2019. Dtcdr: A framework for dual-target cross-domain recommendation. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1533-1542. [38] Feng Zhu, Yan Wang, Chaochao Chen, Jun Zhou, Longfei Li, and Guanfeng Liu. 2021. Cross-domain recommendation: challenges, progress, and prospects. arXiv preprint arXiv:2103.01696 (2021).",
   "keywords_parsed": [
     "Cross-Domain Sequential Recommendation",
-    " Asymmetric Cooperative Network",
-    " Negative Transfer",
-    " Multi-Gate Mixture-of-Experts"
+    "Asymmetric Cooperative Network",
+    "Negative Transfer",
+    "Multi-Gate Mixture-of-Experts"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Layer normalization"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Graph convolutional matrix completion"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Contrastive Cross-Domain Sequential Recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Lighter and better: low-rank decomposed self-attention networks for next-item recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Cross-domain recommendation via cluster-level latent factor model"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Translation-based recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Gaussian error linear units (gelus)"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A mutual information maximization perspective of language representation learning"
+    },
+    {
+      "ref_id": "b11",
+      "title": "One for All, All for One: Learning and Transferring User Embeddings for Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Neural attentive session-based recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Mixed Attention Network for Cross-domain Sequential Recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Cross domain recommendation via bi-directional transfer graph collaborative filtering networks"
+    },
+    {
+      "ref_id": "b15",
+      "title": "STAMP: shortterm attention/memory priority model for session-based recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Mixed information flow for cross-domain sequential recommendations"
+    },
+    {
+      "ref_id": "b17",
+      "title": "𝜋 -net: A parallel information-sharing network for shared-account crossdomain sequential recommendations"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Image-based recommendations on styles and substitutes"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Cracking the Code of Negative Transfer: A Cooperative Game Theoretic Approach for Cross-Domain Sequential Recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Multitask mixture of sequential experts for user activity streams"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Context and attribute-aware sequential recommendation via cross-attention"
+    },
+    {
+      "ref_id": "b23",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Relational learning via collective matrix factorization"
+    },
+    {
+      "ref_id": "b25",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Rethinking the inception architecture for computer vision"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Sparse-interest network for sequential recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Characterizing and avoiding negative transfer"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Deepapf: Deep attentive probabilistic factorization for multi-site video recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "A simple convolutional generative network for next item recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Feature-level Deeper SelfAttention Network for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "A Collaborative Transfer Learning Framework for Cross-domain Recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "RecBole 2.0: Towards a More Up-to-Date Recommendation Library"
+    },
+    {
+      "ref_id": "b35",
+      "title": "recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms"
+    },
+    {
+      "ref_id": "b36",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Dtcdr: A framework for dual-target cross-domain recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Cross-domain recommendation: challenges, progress, and prospects"
+    }
   ]
 }

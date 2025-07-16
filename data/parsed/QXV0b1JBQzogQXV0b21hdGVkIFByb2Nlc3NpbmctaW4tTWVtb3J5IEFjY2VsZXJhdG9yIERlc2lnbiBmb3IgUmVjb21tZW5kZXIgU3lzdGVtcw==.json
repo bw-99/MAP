@@ -20,13 +20,80 @@
   "References": "[1] Rajeev Balasubramonian, Andrew B. Kahng, Naveen Muralimanohar, Ali Shafiee, and Vaishnav Srinivas. 2017. CACTI 7: New Tools for Interconnect Exploration in Innovative Off-Chip Memories. ACM Trans. Archit. Code Optim. 14, 2 (2017), 14:1-14:25. [3] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (Melbourne, Australia) (IJCAI'17) . AAAI Press, 1725-1731. [2] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems (Boston, MA, USA) (DLRS 2016) . Association for Computing Machinery, New York, NY, USA, 7-10. https://doi.org/10.1145/2988450.2988454 [4] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural Collaborative Filtering. In Proceedings of the 26th International Conference on World Wide Web (Perth, Australia) (WWW'17) . International World Wide Web Conferences Steering Committee, Republic and Canton of Geneva, CHE, 173-182. https://doi.org/10.1145/3038912.3052569 [6] Kaggle. 2012. KDD Cup 2012 Track2. https://www.kaggle.com/c/kddcup2012track2/data. [5] Miao Hu et al. 2014. Memristor crossbar-based neuromorphic computing system: A case study. IEEE transactions on neural networks and learning systems 25, 10 (2014), 1864-1878. [7] Kaggle. 2014. Avazu CTR Prediction. https://www.kaggle.com/c/avazu-ctrprediction/data. [9] Liu Ke, Udit Gupta, Carole-Jean Wu, Benjamin Youngjae Cho, Mark Hempstead, Brandon Reagen, Xuan Zhang, David Brooks, Vikas Chandra, Utku Diril, Amin Firoozshahian, Kim Hazelwood, Bill Jia, Hsien-Hsin S. Lee, Meng Li, Bert Maher, Dheevatsa Mudigere, Maxim Naumov, Martin Schatz, Mikhail Smelyanskiy, and Xiaodong Wang. 2019. RecNMP: Accelerating Personalized Recommendation with Near-Memory Processing. arXiv:1912.12953 [cs.DC] [8] Kaggle. 2014. Criteo Display Ad Challenge. https://www.kaggle.com/c/criteodisplay-ad-challenge. [10] Zelong Li, Jianchao Ji, Yingqiang Ge, and Yongfeng Zhang. 2022. AutoLossGen: Automatic Loss Function Generation for Recommender Systems. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (Madrid, Spain) (SIGIR '22) . Association for Computing Machinery, New York, NY, USA, 1304-1315. https://doi.org/10.1145/3477495. 3531941 [12] Yujun Lin, Mengtian Yang, and Song Han. 2022. NAAS: Neural Accelerator Architecture Search. In Proceedings of the 58th Annual ACM/IEEE Design Automation Conference (San Francisco, California, United States) (DAC '21) . IEEE Press, 1051-1056. https://doi.org/10.1109/DAC18074.2021.9586250 [11] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD '18) . Association for Computing Machinery, New York, NY, USA, 1754-1763. https://doi.org/10.1145/3219819.3220023 [13] Bin Liu, Chenxu Zhu, Guilin Li, Weinan Zhang, Jincai Lai, Ruiming Tang, Xiuqiang He, Zhenguo Li, and Yong Yu. 2020. AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (Virtual Event, CA, USA) (KDD '20) . Association for Computing Machinery, New York, NY, USA, 2636-2645. https://doi.org/10.1145/ 3394486.3403314 [15] Maxim Naumov et al. 2019. Deep learning recommendation model for personalization and recommendation systems. arXiv preprint arXiv:1906.00091 (2019). [14] Hanxiao Liu, Karen Simonyan, and Yiming Yang. 2018. Darts: Differentiable architecture search. arXiv preprint arXiv:1806.09055 (2018). [16] Steffen Rendle. 2012. Factorization machines with libfm. ACM Transactions on Intelligent Systems and Technology (TIST) 3, 3 (2012), 1-22. [17] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, and Xiaoqiang Zhu. 2021. One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management (Virtual Event, Queensland, Australia) (CIKM '21) . Association for Computing Machinery, New York, NY, USA, 4104-4113. https://doi.org/10.1145/3459637.3481941",
   "keywords_parsed": [
     "AutoML",
-    " Deep Neural Networks",
-    " Hardware-Software Co-design",
-    " Processing in Memory",
-    " Recommender Systems",
-    " ReRAM This work is licensed under a Creative Commons Attribution 4.0 International License. GLSVLSI '25",
-    " New Orleans",
-    " LA",
-    " USA © 2025 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-1496-2/2025/06 https://doi.org/10.1145/3716368.3735229"
+    "Deep Neural Networks",
+    "Hardware-Software Co-design",
+    "Processing in Memory",
+    "Recommender Systems",
+    "ReRAM"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "CACTI 7: New Tools for Interconnect Exploration in Innovative Off-Chip Memories"
+    },
+    {
+      "ref_id": "b3",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Neural Collaborative Filtering"
+    },
+    {
+      "ref_id": "b6",
+      "title": "KDD Cup 2012 Track2"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Memristor crossbar-based neuromorphic computing system: A case study"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Avazu CTR Prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "RecNMP: Accelerating Personalized Recommendation with Near-Memory Processing"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Criteo Display Ad Challenge"
+    },
+    {
+      "ref_id": "b10",
+      "title": "AutoLossGen: Automatic Loss Function Generation for Recommender Systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "NAAS: Neural Accelerator Architecture Search"
+    },
+    {
+      "ref_id": "b11",
+      "title": "xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Darts: Differentiable architecture search"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Factorization machines with libfm"
+    },
+    {
+      "ref_id": "b17",
+      "title": "One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction"
+    }
   ]
 }

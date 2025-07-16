@@ -18,6 +18,214 @@
   "7 CONCLUSION": "This paper introduces WannaLaugh, a configurable open-source ransomware emulator designed to generate IO traces in a safe and controlled environment. By leveraging heuristic algorithms to explore the emulator's extensive design space, WannaLaugh can produce realistic IO traces that either resemble known ransomware behaviors or not. This novel tool enables researchers to develop, evaluate, and refine ML-based ransomware detection techniques, addressing the everevolving threat landscape. The highly customizable and extensible nature of WannaLaugh ensures its continued relevance and applicability in the rapidly changing field of cybersecurity, paving the way for more robust and efficient ransomware detection and prevention strategies.",
   "REFERENCES": "[1] IBM-Security. X-Force threat intelligence index, 2023. URL https://www.ibm.com/reports/threat-intelligence. Accessed: 18.03.2023. [2] Timothy McIntosh, ASM Kayes, Yi-Ping Phoebe Chen, Alex Ng, and Paul Watters. Ransomware mitigation in the modern era: A comprehensive review, research challenges, and future directions. ACM Computing Surveys (CSUR) , 54 (9):1-36, 2021. doi: 10.1145/3479393. URL https://doi.org/10.1145/3479393. [3] Pedro Miguel Sánchez Sánchez, Jose Maria Jorquera Valero, Alberto Huertas Celdrán, Gérôme Bovet, Manuel Gil Pérez, and Gregorio Martínez Pérez. A survey on device behavior fingerprinting: Data sources, techniques, application scenarios, and datasets. IEEE Communications Surveys and Tutorials , 23:1048-1077, 2021. [4] Alberto Huertas Celdrán, Pedro Miguel Sánchez, Miguel Azorín Castillo, Gérôme Bovet, Gregorio Martínez Pérez, and Burkhard Stiller. Intelligent and behavioral-based detection of malware in IoT spectrum sensors. International Journal of Information Security , 23:541-561, 2023. doi: 10.1007/s10207-022-00602-w. [5] Manabu Hirano and Ryotaro Kobayashi. Machine learning based ransomware detection using storage access patterns obtained from live-forensic hypervisor. In 2019 Sixth International Conference on Internet of Things: Systems, Management and Security (IOTSMS) , pages 1-6, 2019. doi: 10.1109/IOTSMS48152.2019.8939214. URL https://doi.org/10.1109/ IOTSMS48152.2019.8939214. [6] Ali HeydariGorji, Siavash Rezaei, Mahdi Torabzadehkashi, Hossein Bobarshad, Vladimir Alves, and Pai H. Chou. Leveraging computational storage for power-efficient distributed data analytics. ACM Trans. Embed. Comput. Syst. , 21 (6), oct 2022. doi: 10.1145/3528577. URL https://doi.org/10.1145/3528577. [7] Apoorve Mohan, Shripad Nadgowda, Bhautik Pipaliya, Sona Varma, Sahil Suneja, Canturk Isci, Gene Cooperman, Peter Desnoyers, Orran Krieger, and Ata Turk. Towards non-intrusive software introspection and beyond. In 2020 IEEE International Conference on Cloud Engineering (IC2E) , pages 173-184, 2020. doi: 10.1109/IC2E48712.2020.00025. URL https://doi.org/10.1109/IC2E48712.2020.00025. [8] M. Zubair Rafique and Juan Caballero. FIRMA: Malware clustering and network signature generation with mixed network behaviors. In Research in Attacks, Intrusions, and Defenses , pages 144-163, 2013. ISBN 978-3-642-41284-4. doi: 10.1007/978-3-642-41284-4_8. URL https://doi.org/10.1007/978-3-642-41284-4_8. [9] Daniele Sgandurra, Luis Muñoz-González, Rabih Mohsen, and Emil C. Lupu. Automated dynamic analysis of ransomware: Benefits, limitations and use for detection. ArXiv.org , September 2016. doi: 10.48550/arXiv.1609.03020. URL https://doi.org/10.48550/arXiv.1609.03020. [10] Umara Urooj, Bander Ali Saleh Al-rimy, Anazida Zainal, Fuad A. Ghaleb, and Murad A. Rassam. Ransomware detection using the dynamic analysis and machine learning: A survey and research directions. Applied Sciences , 12(1), 2022. ISSN 2076-3417. doi: 10.3390/app12010172. URL https://www.mdpi.com/2076-3417/12/1/172. [11] Andrea Saracino, Daniele Sgandurra, Gianluca Dini, and Fabio Martinelli. MADAM: Effective and efficient behaviorbased android malware detection and prevention. IEEE Transactions on Dependable and Secure Computing , 15(1):83-97, 2018. doi: 10.1109/TDSC.2016.2536605. URL https://doi.org/10.1109/TDSC.2016.2536605. [12] Umme Zahoora, Asifullah Khan, Muttukrishnan Rajarajan, Saddam Hussain Khan, Muhammad Asam, and Tauseef Jamal. Ransomware detection using deep learning based unsupervised feature extraction and a cost sensitive pareto ensemble classifier. Scientific reports , 12(1):15647, September 2022. ISSN 2045-2322. doi: 10.1038/s41598-022-19443-7. URL https://europepmc.org/articles/PMC9485118. [13] Zhi-Guo Chen, Ho-Seok Kang, Shang-Nan Yin, and Sung-Ryul Kim. Automatic ransomware detection and analysis based on dynamic API calls flow graph. In Proceedings of the International Conference on Research in Adaptive and Convergent Systems , pages 196--201, 2017. ISBN 9781450350273. doi: 10.1145/3129676.3129704. URL https: //doi.org/10.1145/3129676.3129704. [14] Yoshiro Fukushima, Akihiro Sakai, Yoshiaki Hori, and Kouichi Sakurai. A behavior based malware detection scheme for avoiding false positive. In 2010 6th IEEE Workshop on Secure Network Protocols , pages 79-84, 2010. doi: 10.1109/ , Vol. 1, No. 1, Article . Publication date: June 2024. WannaLaugh: A Configurable Ransomware Emulator 21 NPSEC.2010.5634444. URL https://doi.org/10.1109/NPSEC.2010.5634444. [15] Jaehyun Han, Zhiqiang Lin, and Donald E. Porter. On the effectiveness of behavior-based ransomware detection. In Security and Privacy in Communication Networks (SecureComm) , pages 120-140, 2020. doi: 10.1007/978-3-030-63095-9_7. URL https://doi.org/10.1007/978-3-030-63095-9_7. [16] G. Usha, P. Madhavan, Meenalosini Vimal Cruz, N A S Vinoth, Veena, and Maria Nancy. Enhanced ransomware detection techniques using machine learning algorithms. In 2021 4th International Conference on Computing and Communications Technologies (ICCCT) , pages 52-58, 2021. doi: 10.1109/ICCCT53315.2021.9711906. URL https://doi.org/ 10.1109/ICCCT53315.2021.9711906. [17] Christine Bukola Asaju, David Otoo-Arthur, Richard Ojochegbe Orah, and Felix Sekyi-Dadson. Development of a machine learning model for detecting and classifying ransomware. In 2021 1st International Conference on Multidisciplinary Engineering and Applied Science (ICMEAS) , pages 1-5, 2021. doi: 10.1109/ICMEAS52683.2021.9692402. URL https://doi.org/10.1109/ICMEAS52683.2021.9692402. [18] Mohammad Masum, Md Jobair Hossain Faruk, Hossain Shahriar, Kai Qian, Dan Lo, and Muhaiminul Islam Adnan. Ransomware classification and detection with machine learning algorithms. In 2022 IEEE 12th Annual Computing and Communication Workshop and Conference (CCWC) , pages 0316-0322, 2022. doi: 10.1109/CCWC54503.2022.9720869. URL https://doi.org/10.1109/CCWC54503.2022.9720869. [19] Abdullah Alqahtani and Frederick T. Sheldon. A survey of crypto ransomware attack detection methodologies: An evolving outlook. Sensors , 22(5), 2022. ISSN 1424-8220. doi: 10.3390/s22051837. URL https://www.mdpi.com/14248220/22/5/1837. [20] Gopinath M. and Sibi Chakkaravarthy Sethuraman. A comprehensive survey on deep learning based malware detection techniques. Computer Science Review , 47:100529, 2023. ISSN 1574-0137. doi: 10.1016/j.cosrev.2022.100529. URL https://doi.org/10.1016/j.cosrev.2022.100529. [21] Manabu Hirano, Ryo Hodota, and Ryotaro Kobayashi. RanSAP: An open dataset of ransomware storage access patterns for training machine learning models. Forensic Science International: Digital Investigation , 40:301314, 2022. ISSN 2666-2817. doi: 10.1016/j.fsidi.2021.301314. URL https://doi.org/10.1016/j.fsidi.2021.301314. [22] Nextronsystems quickbuck. URL https://github.com/NextronSystems/ransomware-simulator. Accessed: 29.01.2024. [23] leomatias ransomware-simulator. URL https://github.com/leomatias/Ransomware-Simulator. Accessed: 29.01.2024. [24] Joelgmsec psransom. URL https://github.com/JoelGMSec/PSRansom. Accessed: 29.01.2024. [25] Tarcísio Marinho. Python gonnacry. URL https://github.com/tarcisio-marinho/GonnaCry. Accessed: 25.03.2023. [26] lawndoc. Ransim. URL https://github.com/lawndoc/RanSim. Accessed: 25.03.2023. [27] Shinolocker. URL https://shinolocker.com. Accessed: 29.01.2024. [28] Carbonsec ransomware readiness. URL https://www.carbonsec.com/services/ransomware-readiness. Accessed: 29.01.2024. [29] spin.ai ransomware-simulator. URL https://spin.ai/ransomware-simulator. Accessed: 29.01.2024. [30] KnowBe4 Inc. Knowbe4 ransim simulator. URL https://www.knowbe4.com/ransomware-simulator. Accessed: 29.01.2024. [31] Acronis. Taking a deep dive into Sodinokibi ransomware. URL https://www.acronis.com/en-us/cyber-protectioncenter/posts/sodinokibi-ransomware/. Accessed: 25.03.2023. [32] Trend Micro Research. Ransomware spotlight - Black Basta. URL https://www.trendmicro.com/vinfo/us/security/ news/ransomware-spotlight/ransomware-spotlight-blackbasta. Accessed: 15.03.2023. [33] Unit42. LockBit 2.0: How this RaaS operates and how to protect against it. URL https://unit42.paloaltonetworks.com/ lockbit-2-ransomware/. Accessed: 20.03.2023. [34] IBM Security. X-Force threat intelligence index malware analysis report LockFile malware profile. 2022. URL https://exchange.xforce.ibmcloud.com/malware-analysis/guid:674f5949970a487028354a309492ac0c. [35] Secureworks. WCry ransomware analysis. URL https://www.secureworks.com/research/wcry-ransomware-analysis. Accessed: 20.03.2023. [36] Packt SecurityPro. Decoding Conti. URL https://security.packt.com/conti/. Accessed: 15.03.2023. [37] Vasily Tarasov, Erez Zadok, and Spencer Shepler. Filebench: A flexible framework for file system benchmarking. login Usenix Mag. , 41(1), 2016. URL https://www.usenix.org/publications/login/spring2016/tarasov. [38] Philipp Moritz, Robert Nishihara, Stephanie Wang, Alexey Tumanov, Richard Liaw, Eric Liang, Melih Elibol, Zongheng Yang, William Paul, Michael I. Jordan, and Ion Stoica. Ray: A distributed framework for emerging AI applications. In 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI 18) , pages 561-577, Carlsbad, CA, October 2018. USENIX Association. ISBN 978-1-939133-08-3. URL https://www.usenix.org/conference/osdi18/ presentation/moritz. [39] PyCryptodome, 2023. URL https://pycryptodome.readthedocs.io/en/latest/index.html. Accessed: 30.03.2023. [40] Qml (qt modeling language). URL https://doc.qt.io/qt-6/qtqml-index.html. Accessed: 15.01.2024. , Vol. 1, No. 1, Article . Publication date: June 2024. 22 [41] Simson Garfinkel, Paul Farrell, Vassil Roussev, and George Dinolt. Bringing science to digital forensics with standardized forensic corpora. Digit. Investig. , 6:S2--S11, sep 2009. ISSN 1742-2876. doi: 10.1016/j.diin.2009.06.016. URL https: //doi.org/10.1016/j.diin.2009.06.016. [42] Vara Prasad, William Cohen, Frank Ch. Eigler, Martin Hunt, and Brad Chen Jim Keniston. Locating system problems using dynamic instrumentation. In Proceedings of Ottawa Linux Symposium (OLS , 2005. URL https://sourceware.org/ systemtap/systemtap-ols.pdf. [43] Sourabh Katoch, Sumit Singh Chauhan, and Vijay Kumar. A review on genetic algorithm: past, present, and future. Multimedia Tools and Applications , 80:8091-8126, 2021. doi: 10.1007/s11042-020-10139-6. URL https://doi.org/10.1007/ s11042-020-10139-6. [44] Daniel Delahaye, Supatcha Chaimatanan, and Marcel Mongeau. Simulated annealing: From basics to applications. Handbook of metaheuristics , pages 1-35, 2019. doi: 10.1007/978-3-319-91086-4_1. URL https://doi.org/10.1007/978-3319-91086-4_1. [45] K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan. A fast and elitist multiobjective genetic algorithm: NSGA-II. IEEE Transactions on Evolutionary Computation , 6(2):182-197, 2002. doi: 10.1109/4235.996017. URL https://doi.org/10.1109/ 4235.996017. [46] Mithilesh Kumar and Chandan Guria. The elitist non-dominated sorting genetic algorithm with inheritance (i-NSGA-II) and its jumping gene adaptations for multi-objective optimization. Information Sciences , 382-383:15-37, 2017. ISSN 0020-0255. doi: 10.1016/j.ins.2016.12.003. URL https://doi.org/10.1016/j.ins.2016.12.003. [47] Xueqin Zhang, Jiyuan Wang, and Shinan Zhu. Dual generative adversarial networks based unknown encryption ransomware attack detection. IEEE Access , 10:900-913, 2021. doi: 10.1109/ACCESS.2021.3128024. URL https://doi.org/ 10.1109/ACCESS.2021.3128024. [48] Raúl Gracia-Tinedo, Danny Harnik, Dalit Naor, Dmitry Sotnikov, Sivan Toledo, and Aviad Zuck. SDGen: Mimicking datasets for content generation in storage benchmarks. In 13th USENIX Conference on File and Storage Technologies (FAST 15) , pages 317-330, February 2015. ISBN 978-1-931971-201. URL https://www.usenix.org/conference/fast15/technicalsessions/presentation/gracia-tinedo. [49] Yannis Sfakianakis, Eleni Kanellou, Manolis Marazakis, and Angelos Bilas. Trace-based workload generation and execution. In Euro-Par 2021: Parallel Processing: 27th International Conference on Parallel and Distributed Computing, Lisbon, Portugal, September 1-3, 2021, Proceedings , pages 37--54, 2021. ISBN 978-3-030-85664-9. doi: 10.1007/978-3030-85665-6_3. URL https://doi.org/10.1007/978-3-030-85665-6_3. [50] Sysbench: a scriptable multi-threaded benchmark tool. URL https://github.com/akopytov/sysbench. Accessed: 30.01.2024. [51] Li Chen, Chih-Yuan Yang, Anindya Paul, and Ravi Sahita. Towards resilient machine learning for ransomware detection. arXiv preprint arXiv:1812.09400 , 2018. , Vol. 1, No. 1, Article . Publication date: June 2024.",
   "keywords_parsed": [
-    "None"
+    "Ransomware",
+    "simulator",
+    "storage"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "X-Force threat intelligence index"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Ransomware mitigation in the modern era: A comprehensive review, research challenges, and future directions"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A survey on device behavior fingerprinting: Data sources, techniques, application scenarios, and datasets"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Intelligent and behavioral-based detection of malware in IoT spectrum sensors"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Machine learning based ransomware detection using storage access patterns obtained from live-forensic hypervisor"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Leveraging computational storage for power-efficient distributed data analytics"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Towards non-intrusive software introspection and beyond"
+    },
+    {
+      "ref_id": "b8",
+      "title": "FIRMA: Malware clustering and network signature generation with mixed network behaviors"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Automated dynamic analysis of ransomware: Benefits, limitations and use for detection"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Ransomware detection using the dynamic analysis and machine learning: A survey and research directions"
+    },
+    {
+      "ref_id": "b11",
+      "title": "MADAM: Effective and efficient behavior-based android malware detection and prevention"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Ransomware detection using deep learning based unsupervised feature extraction and a cost sensitive pareto ensemble classifier"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Automatic ransomware detection and analysis based on dynamic API calls flow graph"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A behavior based malware detection scheme for avoiding false positive"
+    },
+    {
+      "ref_id": "b15",
+      "title": "On the effectiveness of behavior-based ransomware detection"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Enhanced ransomware detection techniques using machine learning algorithms"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Development of a machine learning model for detecting and classifying ransomware"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Ransomware classification and detection with machine learning algorithms"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A survey of crypto ransomware attack detection methodologies: An evolving outlook"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A comprehensive survey on deep learning based malware detection techniques"
+    },
+    {
+      "ref_id": "b21",
+      "title": "RanSAP: An open dataset of ransomware storage access patterns for training machine learning models"
+    },
+    {
+      "ref_id": "b22",
+      "title": "quickbuck"
+    },
+    {
+      "ref_id": "b23",
+      "title": "ransomware-simulator"
+    },
+    {
+      "ref_id": "b24",
+      "title": "psransom"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Python gonnacry"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Ransim"
+    },
+    {
+      "ref_id": "b27",
+      "title": "shinolocker"
+    },
+    {
+      "ref_id": "b28",
+      "title": "ransomware readiness"
+    },
+    {
+      "ref_id": "b29",
+      "title": "ransomware-simulator"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Knowbe4 ransim simulator"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Taking a deep dive into Sodinokibi ransomware"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Ransomware spotlight - Black Basta"
+    },
+    {
+      "ref_id": "b33",
+      "title": "LockBit 2.0: How this RaaS operates and how to protect against it"
+    },
+    {
+      "ref_id": "b34",
+      "title": "X-Force threat intelligence index malware analysis report LockFile malware profile"
+    },
+    {
+      "ref_id": "b35",
+      "title": "WCry ransomware analysis"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Decoding Conti"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Filebench: A flexible framework for file system benchmarking"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Ray: A distributed framework for emerging AI applications"
+    },
+    {
+      "ref_id": "b39",
+      "title": "PyCryptodome"
+    },
+    {
+      "ref_id": "b40",
+      "title": "qt modeling language"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Bringing science to digital forensics with standardized forensic corpora"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Locating system problems using dynamic instrumentation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "A review on genetic algorithm: past, present, and future"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Simulated annealing: From basics to applications"
+    },
+    {
+      "ref_id": "b45",
+      "title": "A fast and elitist multiobjective genetic algorithm: NSGA-II"
+    },
+    {
+      "ref_id": "b46",
+      "title": "The elitist non-dominated sorting genetic algorithm with inheritance (i-NSGA-II) and its jumping gene adaptations for multi-objective optimization"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Dual generative adversarial networks based unknown encryption ransomware attack detection"
+    },
+    {
+      "ref_id": "b48",
+      "title": "SDGen: Mimicking datasets for content generation in storage benchmarks"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Trace-based workload generation and execution"
+    },
+    {
+      "ref_id": "b50",
+      "title": "sysbench: a scriptable multi-threaded benchmark tool"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Towards resilient machine learning for ransomware detection"
+    }
   ]
 }

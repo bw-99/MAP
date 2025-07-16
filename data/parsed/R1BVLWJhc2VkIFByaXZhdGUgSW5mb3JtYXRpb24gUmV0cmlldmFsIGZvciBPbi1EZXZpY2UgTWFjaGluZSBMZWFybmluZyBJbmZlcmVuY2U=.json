@@ -25,6 +25,333 @@
   "7 Conclusion": "We present a system for efficiently and privately serving embeddings for on-device ML application. Our system on a single V100 GPU can serve up to 100 , 000 queries per second-a > 100 × speedup over naive system, enabling practical deployment for privacy-sensitive applications.",
   "References": "[1] 4G network throughput. https://en.wikipedia.org/wiki/4G . [2] Agrawal, R., de Castro, L., Yang, G., Juvekar, C., Yazicigil, R., Chandrakasan, A., Vaikuntanathan, V., and Joshi, A. FAB: An FPGA-based accelerator for bootstrappable fully homomorphic encryption. In 2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA) (2023). 14 [3] Ahmad, I., Yang, Y., Agrawal, D., Abbadi, A. E., and Gupta, T. Addra: Metadata-private voice communication over fully untrusted infrastructure. In 15th USENIX Symposium on Operating Systems Design and Implementation (OSDI 21) (2021). [4] Ali, A., Lepoint, T., Patel, S., Raykova, M., Schoppmann, P., Seth, K., and Yeo, K. Communication-Computation trade-offs in PIR. In 30th USENIX Security Symposium (USENIX Security 21) (2021). [5] Amazon MPC using enclaves. https://d1.awsstatic.com/events/ Summits/reinvent2022/CMP403_Enabling-multi-party-analysis-ofsensitive-data-using-AWS-Nitro-Enclaves-.pdf . [6] Amazon on device speech recognition. https://www.amazon.science/ blog/how-to-make-on-device-speech-recognition-practical . [7] AMD SEV. https://developer.amd.com/sev/ . [8] Angel, S., Chen, H., Laine, K., and Setty, S. PIR with compressed queries and amortized query processing. In 2018 IEEE Symposium on Security and Privacy (2018). [9] Apple app tracking transparency. https://developer.apple.com/ documentation/apptrackingtransparency . [10] ARM trustzone. https://www.arm.com/technologies/trustzone-forcortex-a . [11] Boyle, E., Gilboa, N., and Ishai, Y. Function secret sharing. In International Conference on the Theory and Application of Cryptographic Techniques (2015). [12] Boyle, E., Gilboa, N., and Ishai, Y. Secure computation with preprocessing via function secret sharing. Cryptology ePrint Archive, Paper 2019/1095, 2019. [13] Cao, D., Zhang, M., Lu, H., Ye, X., Fan, D., Che, Y., and Wang, R. Streamline ring ORAM accesses through spatial and temporal optimization. In 2021 IEEE International Symposium on High-Performance Computer Architecture (HPCA) (2021). [14] Case, B., Jain, R., Koshelev, A., Leiserson, A., Masny, D., Sandberg, T., Savage, B., Taubeneck, E., Thomson, M., and Yamaguchi, T. Interoperable private attribution: A distributed attribution and aggregation protocol. Cryptology ePrint Archive, Paper 2023/437, 2023. [15] CCPA. https://www.oag.ca.gov/privacy/ccpa . [16] Chacha20 in TLS. https://www.rfc-editor.org/rfc/rfc7905 . [17] Chor, B., Goldreich, O., Kushilevitz, E., and Sudan, M. Private information retrieval. In Proceedings of IEEE 36th Annual Foundations of Computer Science (1995). [18] Colombo, S., Nikitin, K., Corrigan-Gibbs, H., Wu, D. J., and Ford, B. Authenticated private information retrieval. Cryptology ePrint Archive, Paper 2023/297, 2023. [19] Corrigan-Gibbs, H., Boneh, D., and Mazières, D. Riposte: An anonymous messaging system handling millions of users. In 2015 IEEE Symposium on Security and Privacy (2015). [20] Corrigan-Gibbs, H., Henzinger, A., and Kogan, D. Single-server private information retrieval with sublinear amortized time. In Advances in Cryptology - EUROCRYPT 2022 (2022). [21] Dagan, I., Pereira, F., and Lee, L. Similarity-based estimation of word cooccurrence probabilities. In Proceedings of the 32nd Annual Meeting on Association for Computational Linguistics (1994). [22] Deep learning recommendation model. https://www.adityaagrawal. net/blog/dnn/dlrm . [23] Doerner, J., and Shelat, A. Scaling ORAM for secure computation. In Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security (2017). [24] Dufter, P., Zhao, M., Schmitt, M., Fraser, A., and Schütze, H. Embedding learning through multilingual concept induction, 2018. arXiv:1801.06807. [25] Fan, S., Wang, Z., Xu, W., Hou, R., Meng, D., and Zhang, M. TensorFHE: Achieving practical computation on encrypted data using GPGPU, 2022. arXiv:2212.14191. [26] Feldmann, A., Samardzic, N., Krastev, A., Devadas, S., Dreslinski, R., Eldefrawy, K., Genise, N., Peikert, C., and Sanchez, D. F1: A fast and programmable accelerator for fully homomorphic encryption (extended version), 2021. arXiv:2109.05371. [27] Fletcher, C. W., Ren, L., Kwon, A., Van Dijk, M., and Devadas, S. Freecursive ORAM: [nearly] free recursion and integrity verification for position-based oblivious RAM. In Proceedings of the Twentieth International Conference on Architectural Support for Programming Languages and Operating Systems (2015). [28] Forbes multiparty computation adoption. https://www.forbes. com/sites/forbestechcouncil/2021/10/26/multi-party-computationprivate-inputs-public-outputs/?sh=2e2abccd1bb0 . [29] GDPR. https://gdpr.eu/what-is-gdpr/ . [30] Gentry, C. Fully homomorphic encryption using ideal lattices. In Proceedings of the Forty-First Annual ACM Symposium on Theory of Computing (2009). [31] Gentry, C., and Halevi, S. Compressible FHE with applications to PIR. IACR Cryptol. ePrint Arch. (2019). [32] Gilboa, N., and Ishai, Y. Distributed point functions and their applications. In EUROCRYPT (2014). [33] Goldreich, O., Goldwasser, S., and Micali, S. How to construct random functions. J. ACM (1986). [34] Goldreich, O., and Ostrovsky, R. Software protection and simulation on oblivious RAMs. J. ACM (1996). [35] Gong, Y., Jiang, Z., Zhao, K., Liu, Q., and Ou, W. EdgeRec: Recommender system on edge in mobile taobao. Proceedings of the 29th ACM International Conference on Information & Knowledge Management (2020). [36] Google confidential computing. https://cloud.google.com/confidentialcomputing . [37] Google cross to restrict cross app tracking. https://www.pcmag.com/ news/google-to-restrict-cross-app-tracking-of-users-on-android . [38] Google research distributed point function. https://github.com/google/ distributed_point_functions . [39] Google secure multiparty computation. https://security.googleblog. com/2019/06/helping-organizations-do-more-without-collectingmore-data.html . [40] Gupta, U., Hsia, S., Saraph, V., Wang, X., Reagen, B., Wei, G.-Y., Lee, H.-H. S., Brooks, D., and Wu, C.-J. DeepRecSys: A system for optimizing end-to-end at-scale neural recommendation inference. In Proceedings of the ACM/IEEE 47th Annual International Symposium on Computer Architecture (2020). [41] Gupta, U., Wu, C., Wang, X., Naumov, M., Reagen, B., Brooks, D., Cottel, B., Hazelwood, K. M., Hempstead, M., Jia, B., Lee, H. S., Malevich, A., Mudigere, D., Smelyanskiy, M., Xiong, L., and Zhang, X. The architectural implications of Facebook's DNN-based personalized recommendation. In 2020 IEEE International Symposium on HighPerformance Computer Architecture (HPCA) (2020). [42] Harper, F. M., and Konstan, J. A. The MovieLens datasets: History and context. ACM Trans. Interact. Intell. Syst. (2015). [43] Hejazinia, M., Huba, D., Leontiadis, I., Maeng, K., Malek, M., Melis, L., Mironov, I., Nasr, M., Wang, K., and Wu, C.-J. Fel: High capacity learning for recommendation and ranking via federated ensemble learning, 2022. arXiv:2206.03852. [44] Henry, R. Polynomial batch codes for efficient IT-PIR. Proceedings on Privacy Enhancing Technologies (2016). [45] Henzinger, A., Hong, M. M., Corrigan-Gibbs, H., Meiklejohn, S., and Vaikuntanathan, V. One server for the price of two: Simple and fast single-server private information retrieval. In 32nd USENIX Security Symposium (USENIX Security 23) (2023). [46] Hua, W., Umar, M., Zhang, Z., and Suh, G. E. GuardNN: Secure accelerator architecture for privacy-preserving deep learning. In Proceedings of the 59th ACM/IEEE Design Automation Conference (2022). [47] Hua, W., Umar, M., Zhang, Z., and Suh, G. E. MGX: Near-zero overhead memory protection for data-intensive accelerators. In Proceedings 15 [67] Mishra, P., Lehmkuhl, R., Srinivasan, A., Zheng, W., and Popa, R. A. Delphi: A cryptographic inference service for neural networks. In 29th USENIX Security Symposium (USENIX Security 20) (2020). [68] Mobile application average file size. https://sweetpricing.com/blog/ index.html%3Fp=4250.html#:~:text=Average%20Android%20and% 20iOS%20file%20size&text=And%20the%20average%20iOS%20app% 20file%20size%20is%2034.3MB. [69] MPC alliance. https://www.mpcalliance.org/ . [70] Mudigere, D., Hao, Y., Huang, J., Jia, Z., Tulloch, A., Sridharan, S., Liu, X., Ozdal, M., Nie, J., Park, J., Luo, L., Yang, J. A., Gao, L., Ivchenko, D., Basant, A., Hu, Y., Yang, J., Ardestani, E. K., Wang, X., Komuravelli, R., Chu, C.-H., Yilmaz, S., Li, H., Qian, J., Feng, Z., Ma, Y., Yang, J., Wen, E., Li, H., Yang, L., Sun, C., Zhao, W., Melts, D., Dhulipala, K., Kishore, K., Graf, T., Eisenman, A., Matam, K. K., Gangidi, A., Chen, G. J., Krishnan, M., Nayak, A., Nair, K., Muthiah, B., khorashadi, M., Bhattacharya, P., Lapukhov, P., Naumov, M., Mathews, A., Qiao, L., Smelyanskiy, M., Jia, B., and Rao, V. Software-hardware co-design for fast and scalable training of deep learning recommendation models. In Proceedings of the 49th Annual International Symposium on Computer Architecture (2022). [71] Mughees, M. H., Chen, H., and Ren, L. OnionPIR: Response efficient single-server PIR. In Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security (2021). [72] Naumov, M., Mudigere, D., Shi, H. M., Huang, J., Sundaraman, N., Park, J., Wang, X., Gupta, U., Wu, C., Azzolini, A. G., Dzhulgakov, D., Mallevich, A., Cherniavskii, I., Lu, Y., Krishnamoorthi, R., Yu, A., Kondratenko, V., Pereira, S., Chen, X., Chen, W., Rao, V., Jia, B., Xiong, L., and Smelyanskiy, M. Deep learning recommendation model for personalization and recommendation systems. arXiv:1906.00091. [73] NLLB Team, Costa-jussà, M. R., Cross, J., Çelebi, O., Elbayad, M., Heafield, K., Heffernan, K., Kalbassi, E., Lam, J., Licht, D., Maillard, J., Sun, A., Wang, S., Wenzek, G., Youngblood, A., Akula, B., Barrault, L., Gonzalez, G. M., Hansanti, P., Hoffman, J., Jarrett, S., Sadagopan, K. R., Rowe, D., Spruit, S., Tran, C., Andrews, P., Ayan, N. F., Bhosale, S., Edunov, S., Fan, A., Gao, C., Goswami, V., Guzmán, F., Koehn, P., Mourachko, A., Ropers, C., Saleem, S., Schwenk, H., and Wang, J. No language left behind: Scaling humancentered machine translation, 2022. arXiv:2207.04672. [74] NVIDIA cooperative groups. https://developer.nvidia.com/blog/ cooperative-groups/ . [75] Rajat, R., Wang, Y., and Annavaram, M. LAORAM: A look ahead ORAMarchitecture for training large embedding tables. In Proceedings of the 50th Annual International Symposium on Computer Architecture (2023). [76] Raoufi, M., Zhang, Y., and Yang, J. IR-ORAM: Path access type based memory intensity reduction for Path-ORAM. In 2022 IEEE International Symposium on High-Performance Computer Architecture (HPCA) (2022). [77] Reagen, B., Choi, W.-S., Ko, Y., Lee, V. T., Lee, H.-H. S., Wei, G.-Y., and Brooks, D. Cheetah: Optimizing and accelerating homomorphic encryption for private inference. In 2021 IEEE International Symposium on High-Performance Computer Architecture (HPCA) (2021). [78] Ren, L., Yu, X., Fletcher, C. W., Van Dijk, M., and Devadas, S. Design space exploration and optimization of path oblivious RAM in secure processors. In Proceedings of the 40th Annual International Symposium on Computer Architecture (2013). [79] Riazi, M. S., Laine, K., Pelton, B., and Dai, W. HEAX: An architecture for computing on encrypted data. In Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems (2020). [80] Ryffel, T., Tholoniat, P., Pointcheval, D., and Bach, F. R. AriaNN: Low-interaction privacy-preserving deep learning via function secret sharing. Proceedings on Privacy Enhancing Technologies (2020). 16 [81] Samardzic, N., Feldmann, A., Krastev, A., Manohar, N., Genise, N., Devadas, S., Eldefrawy, K., Peikert, C., and Sanchez, D. CraterLake: A hardware accelerator for efficient unbounded computation on encrypted data. In Proceedings of the 49th Annual International Symposium on Computer Architecture (2022). [82] Servan-Schreiber, S., Langowski, S., and Devadas, S. Private approximate nearest neighbor search with sublinear communication. In 2022 IEEE Symposium on Security and Privacy (2022). [83] Shamir, A. How to share a secret. Commun. ACM (1979). [84] Stefanov, E., van Dijk, M., Shi, E., Fletcher, C., Ren, L., Yu, X., and Devadas, S. Path oram: An extremely simple oblivious ram protocol. In Proceedings of the 2013 ACM SIGSAC Conference on Computer & Communications Security (2013). [85] Suh, G. E., Clarke, D., Gassend, B., van Dijk, M., and Devadas, S. AEGIS: Architecture for tamper-evident and tamper-resistant processing. In Proceedings of the 17th Annual International Conference on Supercomputing (2003). [86] Tan, S., Knott, B., Tian, Y., and Wu, D. J. CryptGPU: Fast privacypreserving machine learning on the GPU. In 2021 IEEE Symposium on Security and Privacy (SP) (2021). [87] Tan, Z., Yang, Z., Zhang, M., Liu, Q., Sun, M., and Liu, Y. Dynamic multi-branch layers for on-device neural machine translation. IEEE/ACM Transactions on Audio, Speech, and Language Processing (2022). [88] Taobao ad dataset. https://www.kaggle.com/datasets/ pavansanagapati/ad-displayclick-data-on-taobaocom . [89] Wagh, S., Tople, S., Benhamouda, F., Kushilevitz, E., Mittal, P., and Rabin, T. FALCON: Honest-majority maliciously secure framework for private deep learning, 2020. arXiv:2004.02229. [90] Wang, R., Zhang, Y., and Yang, J. Cooperative Path-ORAM for effective memory bandwidth sharing in server settings. In 2017 IEEE International Symposium on High-Performance Computer Architecture (HPCA) (2017). [91] Wang, R., Zhang, Y., and Yang, J. D-ORAM: Path-ORAM delegation for low execution interference on cloud servers with untrusted memory. In 2018 IEEE International Symposium on High-Performance Computer Architecture (HPCA) (2018). [92] Wang, X., Chan, H., and Shi, E. Circuit ORAM: On tightness of the goldreich-ostrovsky lower bound. In Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security (2015). [93] Xiong, W., Ke, L., Jankov, D., Kounavis, M., Wang, X., Northup, E., Yang, J. A., Acun, B., Wu, C.-J., Peter Tang, P. T., Edward Suh, G., Zhang, X., and Lee, H.-H. S. SecNDP: Secure near-data processing with untrusted memory. In 2022 IEEE International Symposium on High-Performance Computer Architecture (HPCA) (2022). [94] Xiong, W., Ke, L., Jankov, D., Kounavis, M., Wang, X., Northup, E., Yang, J. A., Acun, B., Wu, C.-J., Tang, P. T. P., et al. SecNDP: Secure near-data processing with untrusted memory. In 2022 IEEE International Symposium on High-Performance Computer Architecture (HPCA) (2022). [95] Yang, Y., Zhang, H., Fan, S., Lu, H., Zhang, M., and Li, X. Poseidon: Practical homomorphic encryption accelerator. In 2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA) (2023). [96] Zhao, W., Xie, D., Jia, R., Qian, Y., Ding, R., Sun, M., and Li, P. Distributed hierarchical GPU parameter server for massive scale deep learning ads systems. In Proceedings of Machine Learning and Systems 2020, MLSys 2020, Austin, TX, USA, March 2-4, 2020 (2020). [97] Zhou, G., Zhu, X., Song, C., Fan, Y., Zhu, H., Ma, X., Yan, Y., Jin, J., Li, H., and Gai, K. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery Data Mining (2018). [98] Zhu, Y., Wang, X., Ju, L., and Guo, S. FxHENN: Fpga-based acceleration framework for homomorphic encrypted CNN inference. In 2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA) (2023). [99] Zipf's law. https://en.wikipedia.org/wiki/Zipf%27s_law . 17",
   "keywords_parsed": [
-    "None"
+    "privacy",
+    "security",
+    "cryptography",
+    "machine learning",
+    "GPU",
+    "performance"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "4G network throughput."
+    },
+    {
+      "ref_id": "b2",
+      "title": "FAB: An FPGA-based accelerator for bootstrappable fully homomorphic encryption."
+    },
+    {
+      "ref_id": "b3",
+      "title": "Addra: Metadata-private voice communication over fully untrusted infrastructure."
+    },
+    {
+      "ref_id": "b4",
+      "title": "Communication-Computation trade-offs in PIR."
+    },
+    {
+      "ref_id": "b5",
+      "title": "Amazon MPC using enclaves."
+    },
+    {
+      "ref_id": "b6",
+      "title": "Amazon on device speech recognition."
+    },
+    {
+      "ref_id": "b7",
+      "title": "AMD SEV."
+    },
+    {
+      "ref_id": "b8",
+      "title": "PIR with compressed queries and amortized query processing."
+    },
+    {
+      "ref_id": "b9",
+      "title": "Apple app tracking transparency."
+    },
+    {
+      "ref_id": "b10",
+      "title": "ARM trustzone."
+    },
+    {
+      "ref_id": "b11",
+      "title": "Function secret sharing."
+    },
+    {
+      "ref_id": "b12",
+      "title": "Secure computation with preprocessing via function secret sharing."
+    },
+    {
+      "ref_id": "b13",
+      "title": "Streamline ring ORAM accesses through spatial and temporal optimization."
+    },
+    {
+      "ref_id": "b14",
+      "title": "Interoperable private attribution: A distributed attribution and aggregation protocol."
+    },
+    {
+      "ref_id": "b15",
+      "title": "CCPA."
+    },
+    {
+      "ref_id": "b16",
+      "title": "Chacha20 in TLS."
+    },
+    {
+      "ref_id": "b17",
+      "title": "Private information retrieval."
+    },
+    {
+      "ref_id": "b18",
+      "title": "Authenticated private information retrieval."
+    },
+    {
+      "ref_id": "b19",
+      "title": "Riposte: An anonymous messaging system handling millions of users."
+    },
+    {
+      "ref_id": "b20",
+      "title": "Single-server private information retrieval with sublinear amortized time."
+    },
+    {
+      "ref_id": "b21",
+      "title": "Similarity-based estimation of word cooccurrence probabilities."
+    },
+    {
+      "ref_id": "b22",
+      "title": "Deep learning recommendation model."
+    },
+    {
+      "ref_id": "b23",
+      "title": "Scaling ORAM for secure computation."
+    },
+    {
+      "ref_id": "b24",
+      "title": "Embedding learning through multilingual concept induction."
+    },
+    {
+      "ref_id": "b25",
+      "title": "TensorFHE: Achieving practical computation on encrypted data using GPGPU."
+    },
+    {
+      "ref_id": "b26",
+      "title": "F1: A fast and programmable accelerator for fully homomorphic encryption (extended version)."
+    },
+    {
+      "ref_id": "b27",
+      "title": "Freecursive ORAM: [nearly] free recursion and integrity verification for position-based oblivious RAM."
+    },
+    {
+      "ref_id": "b28",
+      "title": "Forbes multiparty computation adoption."
+    },
+    {
+      "ref_id": "b29",
+      "title": "GDPR."
+    },
+    {
+      "ref_id": "b30",
+      "title": "Fully homomorphic encryption using ideal lattices."
+    },
+    {
+      "ref_id": "b31",
+      "title": "Compressible FHE with applications to PIR."
+    },
+    {
+      "ref_id": "b32",
+      "title": "Distributed point functions and their applications."
+    },
+    {
+      "ref_id": "b33",
+      "title": "How to construct random functions."
+    },
+    {
+      "ref_id": "b34",
+      "title": "Software protection and simulation on oblivious RAMs."
+    },
+    {
+      "ref_id": "b35",
+      "title": "EdgeRec: Recommender system on edge in mobile taobao."
+    },
+    {
+      "ref_id": "b36",
+      "title": "Google confidential computing."
+    },
+    {
+      "ref_id": "b37",
+      "title": "Google cross to restrict cross app tracking."
+    },
+    {
+      "ref_id": "b38",
+      "title": "Google research distributed point function."
+    },
+    {
+      "ref_id": "b39",
+      "title": "Google secure multiparty computation."
+    },
+    {
+      "ref_id": "b40",
+      "title": "DeepRecSys: A system for optimizing end-to-end at-scale neural recommendation inference."
+    },
+    {
+      "ref_id": "b41",
+      "title": "The architectural implications of Facebook's DNN-based personalized recommendation."
+    },
+    {
+      "ref_id": "b42",
+      "title": "The MovieLens datasets: History and context."
+    },
+    {
+      "ref_id": "b43",
+      "title": "Fel: High capacity learning for recommendation and ranking via federated ensemble learning."
+    },
+    {
+      "ref_id": "b44",
+      "title": "Polynomial batch codes for efficient IT-PIR."
+    },
+    {
+      "ref_id": "b45",
+      "title": "One server for the price of two: Simple and fast single-server private information retrieval."
+    },
+    {
+      "ref_id": "b46",
+      "title": "GuardNN: Secure accelerator architecture for privacy-preserving deep learning."
+    },
+    {
+      "ref_id": "b47",
+      "title": "MGX: Near-zero overhead memory protection for data-intensive accelerators."
+    },
+    {
+      "ref_id": "b67",
+      "title": "Delphi: A cryptographic inference service for neural networks."
+    },
+    {
+      "ref_id": "b68",
+      "title": "Mobile application average file size."
+    },
+    {
+      "ref_id": "b69",
+      "title": "MPC alliance."
+    },
+    {
+      "ref_id": "b70",
+      "title": "Software-hardware co-design for fast and scalable training of deep learning recommendation models."
+    },
+    {
+      "ref_id": "b71",
+      "title": "OnionPIR: Response efficient single-server PIR."
+    },
+    {
+      "ref_id": "b72",
+      "title": "Deep learning recommendation model for personalization and recommendation systems."
+    },
+    {
+      "ref_id": "b73",
+      "title": "No language left behind: Scaling human-centered machine translation."
+    },
+    {
+      "ref_id": "b74",
+      "title": "NVIDIA cooperative groups."
+    },
+    {
+      "ref_id": "b75",
+      "title": "LAORAM: A look ahead ORAM architecture for training large embedding tables."
+    },
+    {
+      "ref_id": "b76",
+      "title": "IR-ORAM: Path access type based memory intensity reduction for Path-ORAM."
+    },
+    {
+      "ref_id": "b77",
+      "title": "Cheetah: Optimizing and accelerating homomorphic encryption for private inference."
+    },
+    {
+      "ref_id": "b78",
+      "title": "Design space exploration and optimization of path oblivious RAM in secure processors."
+    },
+    {
+      "ref_id": "b79",
+      "title": "HEAX: An architecture for computing on encrypted data."
+    },
+    {
+      "ref_id": "b80",
+      "title": "AriaNN: Low-interaction privacy-preserving deep learning via function secret sharing."
+    },
+    {
+      "ref_id": "b81",
+      "title": "CraterLake: A hardware accelerator for efficient unbounded computation on encrypted data."
+    },
+    {
+      "ref_id": "b82",
+      "title": "Private approximate nearest neighbor search with sublinear communication."
+    },
+    {
+      "ref_id": "b83",
+      "title": "How to share a secret."
+    },
+    {
+      "ref_id": "b84",
+      "title": "Path oram: An extremely simple oblivious ram protocol."
+    },
+    {
+      "ref_id": "b85",
+      "title": "AEGIS: Architecture for tamper-evident and tamper-resistant processing."
+    },
+    {
+      "ref_id": "b86",
+      "title": "CryptGPU: Fast privacy-preserving machine learning on the GPU."
+    },
+    {
+      "ref_id": "b87",
+      "title": "Dynamic multi-branch layers for on-device neural machine translation."
+    },
+    {
+      "ref_id": "b88",
+      "title": "Taobao ad dataset."
+    },
+    {
+      "ref_id": "b89",
+      "title": "FALCON: Honest-majority maliciously secure framework for private deep learning."
+    },
+    {
+      "ref_id": "b90",
+      "title": "Cooperative Path-ORAM for effective memory bandwidth sharing in server settings."
+    },
+    {
+      "ref_id": "b91",
+      "title": "D-ORAM: Path-ORAM delegation for low execution interference on cloud servers with untrusted memory."
+    },
+    {
+      "ref_id": "b92",
+      "title": "Circuit ORAM: On tightness of the Goldreich-Ostrovsky lower bound."
+    },
+    {
+      "ref_id": "b93",
+      "title": "SecNDP: Secure near-data processing with untrusted memory."
+    },
+    {
+      "ref_id": "b94",
+      "title": "SecNDP: Secure near-data processing with untrusted memory."
+    },
+    {
+      "ref_id": "b95",
+      "title": "Poseidon: Practical homomorphic encryption accelerator."
+    },
+    {
+      "ref_id": "b96",
+      "title": "Distributed hierarchical GPU parameter server for massive scale deep learning ads systems."
+    },
+    {
+      "ref_id": "b97",
+      "title": "Deep interest network for click-through rate prediction."
+    },
+    {
+      "ref_id": "b98",
+      "title": "FxHENN: Fpga-based acceleration framework for homomorphic encrypted CNN inference."
+    },
+    {
+      "ref_id": "b99",
+      "title": "Zipf's law."
+    }
   ]
 }

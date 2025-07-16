@@ -33,7 +33,137 @@
   "A.2 Case Study": "Here are two concrete cases on the Criteo dataset with MLP as the backbone. For each test sample, we find the ten most similar samples in the training set, as the label correctness of these training samples might have a strong impact on the prediction of the test sample. We calculate similarity using the L2 distance of sample embeddings in our model. As shown in Table 5 and 6, it can be found that our method effectively corrects the labels of false negative samples without wrongly categorizing true negative samples as positive ones. Consequently, the prediction accuracy of the test sample is enhanced. Table 5: The first concrete case on the Criteo dataset with MLP as the backbone. The false negatives are in boldface. Our method effectively corrects the labels of false negative samples (5063626, 5630493). Meanwhile, the true negative samples (1738500, 904961, 3478664) are not corrected to positive samples. Table 6: The second concrete case on the Criteo dataset with MLP as the backbone. The false negatives are in boldface. Our method effectively corrects the labels of false negative samples (5782400, 5796674, 5801703). Meanwhile, the true negative samples (remaining part) are not corrected to positive samples.",
   "keywords_parsed": [
     "CVR prediction",
-    " Delayed Feedback",
-    " Feedback Label Correction"
+    "Delayed Feedback",
+    "Feedback Label Correction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "GMCM: Graph-Based Micro-Behavior Conversion Model for Post-Click Conversion Rate Estimation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Modeling Delayed Feedback in Display Advertising"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Asymptotically Unbiased Estimation for Delayed Feedback Modeling via Label Correction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Real Negatives Matter: Continuous Training with Real Negatives for Delayed Feedback Modeling"
+    },
+    {
+      "ref_id": "b5",
+      "title": "DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Enhanced Doubly Robust Learning for Debiasing Post-Click Conversion Rate Estimation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Calibrated Conversion Rate Prediction via Knowledge Distillation under Delayed Feedback in Online Advertising"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Conversion Prediction Using Multi-Task Conditional Attention Networks to Support the Creation of Effective Ad Creatives"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Addressing Delayed Feedback for Continuous Training with Neural Networks in CTR Prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Follow the Prophet: Accurate Online Conversion Rate Prediction in the Face of Delayed Feedback"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Modeling Task Relationships in Multi-Task Learning with Multi-Gate Mixture-of-Experts"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Predicting Different Types of Conversions with Multi-Task Learning in Online Advertising"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Doubly Robust Estimator for Ranking Metrics with Post-Click Conversions"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Dual Learning Algorithm for Delayed Conversions"
+    },
+    {
+      "ref_id": "b17",
+      "title": "AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks"
+    },
+    {
+      "ref_id": "b18",
+      "title": "An Attention-Based Model for Conversion Rate Prediction with Delayed Feedback via Post-Click Calibration"
+    },
+    {
+      "ref_id": "b19",
+      "title": "ESCM2: Entire Space Counterfactual Multi-Task Model for Post-Click Conversion Rate Estimation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-Scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Delayed Feedback Modeling for the Entire Space Conversion Rate Prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Hierarchically Modeling Micro and Macro Behaviors via Multi-Task Learning for Conversion Rate Prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Entire Space Multi-Task Modeling via Post-Click Behavior Decomposition for Conversion Rate Prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Capturing Delayed Feedback in Conversion Rate Prediction via Elapsed-Time Sampling"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Generalized Delayed Feedback Model with Post-Click Information in Recommender Systems"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Learning Classifiers under Delayed Feedback with a Time Window Assumption"
+    },
+    {
+      "ref_id": "b27",
+      "title": "A Feedback Shift Correction in Predicting Conversion Rates under Delayed Feedback"
+    },
+    {
+      "ref_id": "b28",
+      "title": "A Nonparametric Delayed Feedback Model for Conversion Rate Prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Large-Scale Causal Approaches to Debiasing Post-Click Conversion Rate Estimation with Multi-Task Learning"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Deep Learning for Click-Through Rate Estimation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Counterfactual Reward Modification for Streaming Recommendation with Delayed Feedback"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    }
   ]
 }

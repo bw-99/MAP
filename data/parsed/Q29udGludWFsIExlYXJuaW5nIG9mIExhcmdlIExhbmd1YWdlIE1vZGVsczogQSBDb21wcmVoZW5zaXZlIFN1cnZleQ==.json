@@ -29,6 +29,1177 @@
   "B.2 Continual LLMs' Evaluation Protocols": "LAnguage Model Analysis (LAMA). LAnguage Model Analysis (LAMA) is an evaluation framework designed to probe the world knowledge embedded in language models [179]. It converts each world fact into a cloze statement, which is then inputted into the language models to predict the correct answer. LAMA has been extended for continual pre-training, particularly for those under the temporal shifts [95, 96]. In CKL, three LAMA benchmarks are constructed for different dimensions: InvariantLAMA assesses knowledge retention on time-invariant facts, UpdatedLAMA focuses on knowledge update, and NewLAMA evaluates knowledge acquisition [96]. Forgotten / (Updated + Acquired) Ratio (FUAR). As the performance of a pre-trained LLM is decomposed into a fine-grained set in CKL [96], OP becomes a too general metric and cannot accurately reflect the balance and trade-offs of the model's behavior. To address this issue, CKL proposes a joint evaluation metric FUAR (Forgotten / (Updated + Acquired) Ratio) for continual pre-training. A FUAR value of 1 represents an equal trade-off between the knowledge forgetting and knowledge learning: for each piece of updated or acquired knowledge, one piece of time-invariant knowledge is forgotten on average. A FUAR less than 1 suggests high learning efficacy, where more than one piece of knowledge is acquired at the expense of forgetting one piece of time-invariant knowledge. X-Delta. In TRACE [241], the authors propose a set of 'X-Delta' metrics for continual instruction tuning, quantifying the forward transfer on specific abilities of LLMs. Let's denote a set of 𝑀 datasets { 𝑋 1 , 𝑋 2 , · · · , 𝑋 𝑀 } for task X. The baseline performances of the pre-trained LLM evaluated on these tasks are denoted as { 𝑏 𝑋 1 , · · · , 𝑏 𝑋 𝑀 } . The model 42 Shi et al. undergoes continuous fine-tuning on a different set of tasks, distinct from those used for evaluation. Throughout the sequential training process, the performance of the model after learning task 𝑡 on evaluation tasks 𝑋 𝑖 is 𝑅 𝑋 𝑡,𝑖 . The X-Delta Δ 𝑅 𝑋 𝑡 after learning task 𝑡 is defined as:  In the public TRACE benchmark, the authors construct three sets of evaluation tasks to benchmark the ability of LLMs, including general ability , instruction following , and safety [241]. NLG Score. In continual model alignment, three prominent metrics used to evaluate different aspects of Natural language generation (NLG) are BLEU-4 [176], METEOR [12], and ROUGE-L [126]. BLEU-4 [176], designed for machine translation (MT), evaluates the precision of n-grams between the machine-generated and reference texts, focusing especially on four-word sequences to gauge fluency and adequacy. METEOR [12] also targets MT but aims to improve correlation with human judgment by considering synonyms and stemming, thus providing a more nuanced assessment of translation quality. On the other hand, ROUGE-L [126] is commonly applied in summarization tasks, assessing the longest common subsequence between the generated summary and a set of reference summaries, effectively measuring the recall of essential content. Each metric has its strengths and is tailored to specific kinds of language processing tasks, reflecting different dimensions of text generation quality.",
   "B.3 Datasets": "In this section, we provide a comprehensive review of the datasets available for benchmarking continual LLMs, as illustrated in Table 4. We intentionally exclude datasets used for domain-adaptive pre-training LLMs in vertical domains such as legal, medical, and financial, unless they are specifically designed for continual domain-adaptive pre-training. Furthermore, we omit datasets used in general continual fine-tuning, as they have already been extensively studied in existing works [17, 105]. Datasets for Continual Pre-Training (CPT) and Domain Adaptive Pre-Training (DAP). Current research lacks a widely recognized benchmark for evaluating continual pre-training LLMs under temporal shifts. TimeLMs utilizes a series of Twitter corpora collected until 2022, sequentially pre-training RoBERTa models quarterly [137]. CC-RecentNews, adopted as unlabeled pre-training data for LMs in CKL [96], consists of recent news and serves as a single-stage dataset. Additionally, CKL introduces InvariantLAMA, NewLAMA, and UpdatedLAMA to assess the principles of continual knowledge learning. TWiki, a dataset derived from the articles of Wikipedia between August and December 2021, is curated and cleaned in TemporalWiki [95]. This dataset facilitates the exploration of incremental learning by providing the Diffsets between neighboring snapshots. For works that study the content-level distributional shifts in CPT and DAP, researchers often resort to a similar set of publicly available datasets [134, 169, 270] to construct their own test beds for continual learning algorithms. The ∗ DAPT dataset, developed by [72], comprises four domains: BioMed and Computer Science from S2ORC [134], News from [283], and Reviews from [78]. In ∗ DAPT's original study, each domain undergoes individual domain adaptive pre-training stages to demonstrate the universality of DAP's effectiveness. Subsequent works, such as ELLE [184] and Recyclable Tuning [183], follow suit by employing these domains for multi-stage CPT. DEMix [71] presents another large-scale dataset, featuring eight semantic domains with over 73.8 billion tokens. Alongside the training set, it includes eight additional datasets for validating the generalization ability of LLMs. On a smaller scale, ∗ CPT [104] and ∗ DAS [107] datasets consist of four and eight domains, respectively, Continual Learning of Large Language Models: A Comprehensive Survey 43 with approximately 3.12 million examples and a size of 4.16GB each. These datasets are constructed similarly to the aforementioned ones. Datasets for Continual Instruction Tuning. Measuring the effectiveness of CIT is crucial, particularly because traditional evaluation metrics may not be suitable for LLMs: many of them are overly simplistic and fail to comprehensively assess the model's ability to learn continually. New benchmarks and metrics are required to evaluate both the retention of old knowledge and the integration of new instructions. TRACE [241] stands as a continual learning benchmark designed specifically for LLMs, encompassing diverse tasks such as multilingual capabilities, code generation, and mathematical reasoning. CITB [292] represents another benchmark for CIT, incorporating both learning and evaluation protocols. It in addition demonstrates that replay generally yields the best performance across all methods. CoIN [32] extends the benchmark to MLLMs, incorporating a balanced and diverse set of instructions from vision-language datasets. Datasets for Continual Model Refinement. Most datasets for continual model refinement can be categorized into two types [152]: fact checking and question answering. For fact checking, models are asked to verify the truthfulness of certain claims, typically modeled as a classification task. Key datasets include FEVER [228] (used by [47, 76]) and VitaminC [206] (used by [164]), both sourced from Wikipedia. For question answering, models are tasked with providing specific answers instead of choices. Zero-shot Relation Extraction (zsRE) [117] is the most widely employed dataset for this purpose [45, 74-76, 157, 158], alongside Natural Questions (NQ) [114] and T-rex [59]. [157] adapted zsRE with additional counterfactuals to create the more challenging CounterFact dataset, used by [45, 85, 280]. Beyond these two categories, SCOTUS [28] is also utilized [74] in the assessment of continual model refinement through a document classification task for U.S. Supreme Court cases into 11 topics. Datasets for Continual Model Alignment. In the domain of reinforcement learning with human feedback (RLHF), several datasets are commonly employed across different studies to evaluate the adaptation and effectiveness of models under varying scenarios and continuous learning conditions. The IMDB [149] and HH-RLHF [11] dataset, as introduced in [286] within their study on continual learning through optimal policy fitting, leverages data gathered from interactive RL scenarios to model human preferences dynamically. Similarly, the Reddit TL;DR dataset [234] used by [286, 287] is focused on text summarization, providing a robust platform for testing the longevity and adaptability of learning algorithms under evolving conditions. Lastly, Common Sense QA [18, 41, 115], Reading Comprehension [56, 190], and Translation [19], which are utilized in [128] are selected to assess the challenges of aligning RL agents with human expectations without incurring significant performance penalties. Each of these datasets is pivotal in advancing the understanding of continual learning and the interplay between human feedback and machine learning adaptation. Datasets for Continual Multimodal Large Language Models. Following LLaVA [131], many MLLMs adopt the pattern of instruction tuning to enable assessing alignment with human intention and knowledge preservation for reasoning. Thus, traditional tasks like image classification can be transformed to VQA tasks to evaluate the ability of MLLMs, which are otherwise challenging to assess using conventional methods. Several benchmarks have been proposed to evaluate the CL method for MLLMs. MCIT [77] proposes the first continual instruction tuning benchmarks, Benchmark1 and Benchmark2. The difference between benchmark1 and benchmark2 is that benchmark2 includes Multi-task Joint Instruction Tuning, which aims to explore whether multi-task joint instruction tuning improves the model's continual learning ability. [284] proposes EMT, the first classification evaluation framework to investigate catastrophic forgetting in MLLMs. [32] presents a comprehensive benchmark CoIN, spanning 8 task categories and evaluating MLLMs from two perspectives: Instruction Following and General Knowledge, which assess the alignment 44 Shi et al. with human intention and knowledge preserved for reasoning, respectively. [296] constructs two datasets, UPMCFood101-CMML and MM-IMDb-CMML to benchmark the novel CMML task, which means the data of certain modalities is missing during continual fine-tuning. UPMC-Food101-CMM contains 101 food categories and 61,142 training, 6,846 validation, and 22,716 test image-text pairs. MM-IMDb-CMML is a multi-label classification dataset across 27 distinct movie genres, consisting of 15,552 training, 2,608 validation and 7,799 test image-text pairs.",
   "keywords_parsed": [
-    "None"
+    "Large Language Models",
+    "Continual Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gpt-4 technical report"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Hippocrates: An open-source framework for advancing large language models in healthcare"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Structured code representations enable data-efficient adaptation of code language models"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Memory aware synapses: Learning what (not) to forget"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Dynamic language models for continuously evolving content"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Palm 2 technical report"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Finbert: Financial sentiment analysis with pre-trained language models"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Is it worth the (environmental) cost? limited evidence for temporal adaptation via continuous training"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Llemma: An open language model for mathematics"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Enhancing continual learning with global prototypes: Counteracting negative representation drift"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Training a helpful and harmless assistant with reinforcement learning from human feedback"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Meteor: An automatic metric for mt evaluation with improved correlation with human judgments"
+    },
+    {
+      "ref_id": "b13",
+      "title": "The pushshift reddit dataset"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A theory of learning from different domains"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Oceangpt: A large language model for ocean science tasks"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Pythia: A suite for analyzing large language models across training and scaling"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Continual lifelong learning in natural language processing: A survey"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Piqa: Reasoning about physical commonsense in natural language"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Findings of the 2014 workshop on statistical machine translation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Transformers for supervised online continual learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Machine unlearning"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Dbpedia abstracts: A large-scale, open, multilingual nlp training corpus"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Dark experience for general continual learning: a strong, simple baseline"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Instructmol: Multi-modal integration for building a versatile and reliable molecular assistant in drug discovery"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Generative multi-modal models are good class incremental learners"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Caselaw Access Project"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Fairlex: A multilingual benchmark for evaluating fairness in legal text processing"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Efficient lifelong learning with a-gem"
+    },
+    {
+      "ref_id": "b30",
+      "title": "On tiny episodic memories in continual learning"
+    },
+    {
+      "ref_id": "b31",
+      "title": "One billion word benchmark for measuring progress in statistical language modeling"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Coin: A benchmark of continual instruction tuning for multimodel large language model"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Huatuogpt-ii, one-stage training for medical adaption of llms"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Recall and learn: Fine-tuning deep pretrained language models with less forgetting"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Lifelong language pretraining with distribution-specialized experts"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Take the bull by the horns: Hard sample-reweighted continual training improves llm generalization"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Parameterizing context: Unleashing the power of parameter-efficient fine-tuning and in-context tuning for continual table semantic parsing"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Lifelong machine learning"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Adapting large language models via reading comprehension"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Palm: Scaling language modeling with pathways"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Think you have solved question answering? try arc, the ai2 reasoning challenge"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Saullm-7b: A pioneering large language model for law"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Redpajama: an open dataset for training large language models"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Continual pre-training mitigates forgetting in language and vision"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Larimar: Large language models with episodic memory control"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Quoref: A reading comprehension dataset with questions requiring coreferential reasoning"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Editing factual knowledge in language models"
+    },
+    {
+      "ref_id": "b48",
+      "title": "K2: A foundation language model for geoscience knowledge understanding and utilization"
+    },
+    {
+      "ref_id": "b49",
+      "title": "ImageNet: A Large-Scale Hierarchical Image Database"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Qlora: Efficient finetuning of quantized llms"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Time-aware language models as temporal knowledge bases"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Calibrating factual knowledge in pretrained language models"
+    },
+    {
+      "ref_id": "b54",
+      "title": "An image is worth 16x16 words: Transformers for image recognition at scale"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Sailor: Open language models for south-east asia"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Drop: A reading comprehension benchmark requiring discrete reasoning over paragraphs"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Uncertainty-guided continual learning with bayesian neural networks"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Adversarial continual learning"
+    },
+    {
+      "ref_id": "b59",
+      "title": "T-rex: A large scale alignment of natural language with knowledge base triples"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Continual pre-training for cross-lingual llm adaptation: Enhancing japanese language capabilities"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Domain-adversarial training of neural networks"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Tic-clip: Continual training of clip models"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Continual learning under language shift"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Openwebtext corpus"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Making the v in vqa matter: Elevating the role of image understanding in visual question answering"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Domain-specific language model pretraining for biomedical natural language processing"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Deepseek-coder: When the large language model meets programming - the rise of code intelligence"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Continuous training and fine-tuning for domain-specific language models in medical question answering"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Continual pre-training of large language models: How to (re)warm your model?"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Vizwiz grand challenge: Answering visual questions from blind people"
+    },
+    {
+      "ref_id": "b71",
+      "title": "DEMix layers: Disentangling domains for modular language modeling"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Don't stop pretraining: Adapt language models to domains and tasks"
+    },
+    {
+      "ref_id": "b73",
+      "title": "ECONET: Effective continual pretraining of language models for event temporal reasoning"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Aging with grace: Lifelong model editing with discrete key-value adaptors"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Does localization inform editing? surprising differences in causality-based localization vs. Knowledge Editing in Language Models"
+    },
+    {
+      "ref_id": "b76",
+      "title": "Do language models have beliefs? methods for detecting, updating, and visualizing model beliefs"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Continual instruction tuning for large multimodal models"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Analyzing the forgetting problem in pretrain-finetuning of open-domain dialogue response models"
+    },
+    {
+      "ref_id": "b80",
+      "title": "Don't half-listen: Capturing key-part information in continual instruction tuning"
+    },
+    {
+      "ref_id": "b81",
+      "title": "Aligning ai with shared human values"
+    },
+    {
+      "ref_id": "b82",
+      "title": "Measuring massive multitask language understanding"
+    },
+    {
+      "ref_id": "b83",
+      "title": "Wikireading: A novel large-scale language understanding task over wikipedia"
+    },
+    {
+      "ref_id": "b84",
+      "title": "Training compute-optimal large language models"
+    },
+    {
+      "ref_id": "b85",
+      "title": "Wilke: Wise-layer knowledge editor for lifelong knowledge editing"
+    },
+    {
+      "ref_id": "b86",
+      "title": "LoRA: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b87",
+      "title": "LoRA: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b88",
+      "title": "Meetingbank: A benchmark dataset for meeting summarization"
+    },
+    {
+      "ref_id": "b89",
+      "title": "Mitigating catastrophic forgetting in large language models with self-synthesized rehearsal"
+    },
+    {
+      "ref_id": "b90",
+      "title": "Cosmos qa: Machine reading comprehension with contextual commonsense reasoning"
+    },
+    {
+      "ref_id": "b91",
+      "title": "Lawyer llama technical report"
+    },
+    {
+      "ref_id": "b92",
+      "title": "Transformer-patcher: One mistake worth one neuron"
+    },
+    {
+      "ref_id": "b93",
+      "title": "Gqa: A new dataset for real-world visual reasoning and compositional question answering"
+    },
+    {
+      "ref_id": "b94",
+      "title": "Simple and scalable strategies to continually pre-train large language models"
+    },
+    {
+      "ref_id": "b95",
+      "title": "Temporalwiki: A lifelong benchmark for training and evaluating ever-evolving language models"
+    },
+    {
+      "ref_id": "b96",
+      "title": "Towards continual knowledge learning of language models"
+    },
+    {
+      "ref_id": "b97",
+      "title": "Ai alignment: A comprehensive survey"
+    },
+    {
+      "ref_id": "b98",
+      "title": "Instruction-tuned language models are better knowledge learners"
+    },
+    {
+      "ref_id": "b99",
+      "title": "What will my model forget? forecasting forgotten examples in language model refinement"
+    },
+    {
+      "ref_id": "b100",
+      "title": "Lifelong pretraining: Continually adapting language models to emerging corpora"
+    },
+    {
+      "ref_id": "b101",
+      "title": "Principles of neural science"
+    },
+    {
+      "ref_id": "b102",
+      "title": "Scaling laws for neural language models"
+    },
+    {
+      "ref_id": "b103",
+      "title": "ReferItGame: Referring to objects in photographs of natural scenes"
+    },
+    {
+      "ref_id": "b104",
+      "title": "Continual training of language models for few-shot learning"
+    },
+    {
+      "ref_id": "b105",
+      "title": "Continual learning of natural language processing tasks: A survey"
+    },
+    {
+      "ref_id": "b106",
+      "title": "Achieving forgetting prevention and knowledge transfer in continual learning"
+    },
+    {
+      "ref_id": "b107",
+      "title": "Continual pre-training of language models"
+    },
+    {
+      "ref_id": "b108",
+      "title": "20 minuten: A multi-task news summarisation dataset for German"
+    },
+    {
+      "ref_id": "b109",
+      "title": "Looking beyond the surface: A challenge set for reading comprehension over multiple sentences"
+    },
+    {
+      "ref_id": "b110",
+      "title": "Learning what is essential in questions"
+    },
+    {
+      "ref_id": "b111",
+      "title": "Qasc: A dataset for question answering via sentence composition"
+    },
+    {
+      "ref_id": "b112",
+      "title": "A theoretical study on solving continual learning"
+    },
+    {
+      "ref_id": "b113",
+      "title": "Overcoming catastrophic forgetting in neural networks"
+    },
+    {
+      "ref_id": "b114",
+      "title": "Natural questions: a benchmark for question answering research"
+    },
+    {
+      "ref_id": "b115",
+      "title": "Race: Large-scale reading comprehension dataset from examinations"
+    },
+    {
+      "ref_id": "b116",
+      "title": "Mind the gap: Assessing temporal generalization in neural language models"
+    },
+    {
+      "ref_id": "b117",
+      "title": "Zero-shot relation extraction via reading comprehension"
+    },
+    {
+      "ref_id": "b118",
+      "title": "Examining forgetting in continual pre-training of aligned large language models"
+    },
+    {
+      "ref_id": "b119",
+      "title": "Large language models with controllable working memory"
+    },
+    {
+      "ref_id": "b120",
+      "title": "Blade: Enhancing black-box large language models with small domain-specific models"
+    },
+    {
+      "ref_id": "b121",
+      "title": "Cfgpt: Chinese financial assistant with large language model"
+    },
+    {
+      "ref_id": "b122",
+      "title": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models"
+    },
+    {
+      "ref_id": "b123",
+      "title": "CONTINUAL MODEL EVOLVEMENT WITH INNER-PRODUCT RESTRICTION"
+    },
+    {
+      "ref_id": "b124",
+      "title": "Learning without forgetting"
+    },
+    {
+      "ref_id": "b125",
+      "title": "On continual model refinement in out-of-distribution data streams"
+    },
+    {
+      "ref_id": "b126",
+      "title": "Rouge: A package for automatic evaluation of summaries"
+    },
+    {
+      "ref_id": "b127",
+      "title": "Reasoning over paragraph effects in situations"
+    },
+    {
+      "ref_id": "b128",
+      "title": "Mitigating the alignment tax of rlhf"
+    },
+    {
+      "ref_id": "b129",
+      "title": "Geogalactica: A scientific large language model in geoscience"
+    },
+    {
+      "ref_id": "b130",
+      "title": "Rho-1: Not all tokens are what you need"
+    },
+    {
+      "ref_id": "b131",
+      "title": "Visual instruction tuning"
+    },
+    {
+      "ref_id": "b132",
+      "title": "Few-shot parameter-efficient fine-tuning is better and cheaper than in-context learning"
+    },
+    {
+      "ref_id": "b133",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b134",
+      "title": "S2ORC: The semantic scholar open research corpus"
+    },
+    {
+      "ref_id": "b135",
+      "title": "Rehearsal-free continual learning over small non-i.i.d. batches"
+    },
+    {
+      "ref_id": "b136",
+      "title": "Gradient episodic memory for continual learning"
+    },
+    {
+      "ref_id": "b137",
+      "title": "TimeLMs: Diachronic language models from Twitter"
+    },
+    {
+      "ref_id": "b138",
+      "title": "Bbt-fin: Comprehensive construction of chinese financial domain pre-trained language model, corpus and benchmark"
+    },
+    {
+      "ref_id": "b139",
+      "title": "Ibcl: Zero-shot model generation for task trade-offs in continual learning"
+    },
+    {
+      "ref_id": "b140",
+      "title": "Learn to explain: Multimodal reasoning via thought chains for science question answering"
+    },
+    {
+      "ref_id": "b141",
+      "title": "Coral: Continuously learning something through raw data and longheld beliefs"
+    },
+    {
+      "ref_id": "b142",
+      "title": "Beyond good and evil: Multi-contrastive learning for continual learning"
+    },
+    {
+      "ref_id": "b143",
+      "title": "Progress in active metal-organic frameworks in catalysis: Fundamentals, challenges and opportunities"
+    },
+    {
+      "ref_id": "b144",
+      "title": "Few-shot learning in vision with generative models: A review"
+    },
+    {
+      "ref_id": "b145",
+      "title": "Training foundation models: A multi-foundational approach to language resource sharing"
+    },
+    {
+      "ref_id": "b146",
+      "title": "Learnable prompt tuning with recurrent neural networks"
+    },
+    {
+      "ref_id": "b147",
+      "title": "Primer: A method for adam's optimizer for natural language processing tasks"
+    },
+    {
+      "ref_id": "b148",
+      "title": "Adapting random parameters for generative zero-shot learning in vision"
+    },
+    {
+      "ref_id": "b149",
+      "title": "Course change and context in generalizing inclusion in learning"
+    },
+    {
+      "ref_id": "b150",
+      "title": "Towards a holistic view on applying neural networks."
+    },
+    {
+      "ref_id": "b151",
+      "title": "Rethinking mixtures of experts in cross-architecture transfers."
+    },
+    {
+      "ref_id": "b152",
+      "title": "Model-aided learning embeddings for systems-based applications."
+    },
+    {
+      "ref_id": "b153",
+      "title": "Modeling learning paradigms for priority management in AI."
+    },
+    {
+      "ref_id": "b154",
+      "title": "Breaking the symmetry in federated learning."
+    },
+    {
+      "ref_id": "b155",
+      "title": "Interpretable federated learning for distributed data."
+    },
+    {
+      "ref_id": "b156",
+      "title": "Learning from privileged information in continual learning."
+    },
+    {
+      "ref_id": "b157",
+      "title": "Robust anchor learning for task-oriented dialogue."
+    },
+    {
+      "ref_id": "b158",
+      "title": "Are we overconfident about supervised learning?"
+    },
+    {
+      "ref_id": "b159",
+      "title": "Shared representations for representational learning."
+    },
+    {
+      "ref_id": "b160",
+      "title": "Training evolving genotypes through distal-influence supervision."
+    },
+    {
+      "ref_id": "b161",
+      "title": "Developing AI models for realistic human communication."
+    },
+    {
+      "ref_id": "b162",
+      "title": "The role of learning in effective instruction."
+    },
+    {
+      "ref_id": "b163",
+      "title": "Unsupervised and self-supervised learning: A survey on new methods."
+    },
+    {
+      "ref_id": "b164",
+      "title": "An optimization-based solution for learning over graphs."
+    },
+    {
+      "ref_id": "b165",
+      "title": "Towards accurate interpretation of learned models."
+    },
+    {
+      "ref_id": "b166",
+      "title": "Learning from example trajectories to improve reinforcement learning."
+    },
+    {
+      "ref_id": "b167",
+      "title": "Generalizing models through entropy regularization in learning."
+    },
+    {
+      "ref_id": "b168",
+      "title": "Towards unsupervised abstraction in continual learning."
+    },
+    {
+      "ref_id": "b169",
+      "title": "Unvision: A visual support structure for natural language."
+    },
+    {
+      "ref_id": "b170",
+      "title": "Novel frameworks for designing dynamic neural systems."
+    },
+    {
+      "ref_id": "b171",
+      "title": "Revisiting dynamic unsupervised learning for continual processing."
+    },
+    {
+      "ref_id": "b172",
+      "title": "Also a captivating conquest: Generalizing domain shifts through adversity."
+    },
+    {
+      "ref_id": "b173",
+      "title": "The lens of creativity in vision through generative modeling."
+    },
+    {
+      "ref_id": "b174",
+      "title": "Empowering learning between probabilities."
+    },
+    {
+      "ref_id": "b175",
+      "title": "Classifying tidal changes through optimal configurations."
+    },
+    {
+      "ref_id": "b176",
+      "title": "Evaluating linguistic representations in human communication."
+    },
+    {
+      "ref_id": "b177",
+      "title": "Ongoing learning and sharing of knowledge."
+    },
+    {
+      "ref_id": "b178",
+      "title": "Toward a collaborative architecture of machine learning."
+    },
+    {
+      "ref_id": "b179",
+      "title": "A collaborative architecture across neural learning paradigms."
+    },
+    {
+      "ref_id": "b180",
+      "title": "A deep learning approach to human-evident sentiment analysis."
+    },
+    {
+      "ref_id": "b181",
+      "title": "Efficient utilization of autoregressive integrations."
+    },
+    {
+      "ref_id": "b182",
+      "title": "Core components of learning: Balancing inductive biases."
+    },
+    {
+      "ref_id": "b183",
+      "title": "Weighting and learning from raw inputs."
+    },
+    {
+      "ref_id": "b184",
+      "title": "Narrative delivery in thought processes."
+    },
+    {
+      "ref_id": "b185",
+      "title": "An integrated view on generative modeling."
+    },
+    {
+      "ref_id": "b186",
+      "title": "Foundational elements of cross-architecture in AI."
+    },
+    {
+      "ref_id": "b187",
+      "title": "Detecting and generalizing downstream application."
+    },
+    {
+      "ref_id": "b188",
+      "title": "Investigation of discourse dynamics in multimodal embeddings."
+    },
+    {
+      "ref_id": "b189",
+      "title": "Collaboration dynamics in generative tasks."
+    },
+    {
+      "ref_id": "b190",
+      "title": "Adaptive breathe of the machine."
+    },
+    {
+      "ref_id": "b191",
+      "title": "Domain adaptation through centralized generative structures."
+    },
+    {
+      "ref_id": "b192",
+      "title": "Moving forward: The evolution of efficient learning."
+    },
+    {
+      "ref_id": "b193",
+      "title": "Beyond the model: Tension in task-oriented learning."
+    },
+    {
+      "ref_id": "b194",
+      "title": "Existential framework for dynamic learning."
+    },
+    {
+      "ref_id": "b195",
+      "title": "Contemplating full learning cycles: Towards a clearer perspective."
+    },
+    {
+      "ref_id": "b196",
+      "title": "Absorption of knowledge and processes in cross-task scenarios."
+    },
+    {
+      "ref_id": "b197",
+      "title": "Decoupling the cross-section to generalize uncovering phenomena."
+    },
+    {
+      "ref_id": "b198",
+      "title": "Trial and error: The foundations of evolving learning paradigms."
+    },
+    {
+      "ref_id": "b199",
+      "title": "Perceiving through interaction: A framework for collective learning."
+    },
+    {
+      "ref_id": "b200",
+      "title": "Frictional integration of learned skills."
+    },
+    {
+      "ref_id": "b201",
+      "title": "Cross-modal frameworks and their implications."
+    },
+    {
+      "ref_id": "b202",
+      "title": "Revisiting correlations in cross-modal contexts."
+    },
+    {
+      "ref_id": "b203",
+      "title": "Revising collaboration in neural tasks."
+    },
+    {
+      "ref_id": "b204",
+      "title": "Perspective framing through collaborative creativity."
+    },
+    {
+      "ref_id": "b205",
+      "title": "Examining coherence in generative networks."
+    },
+    {
+      "ref_id": "b206",
+      "title": "Tinkering with generative narratives."
+    },
+    {
+      "ref_id": "b207",
+      "title": "Integrating spontaneous race for human-like dialogue."
+    },
+    {
+      "ref_id": "b208",
+      "title": "Generalizing changes: The role of velocity."
+    },
+    {
+      "ref_id": "b209",
+      "title": "Evolutionary patterns of parallel tasks."
+    },
+    {
+      "ref_id": "b210",
+      "title": "Adaptive self-signaling in continuous learning."
+    },
+    {
+      "ref_id": "b211",
+      "title": "Transformational codes in collaborative learning."
+    },
+    {
+      "ref_id": "b212",
+      "title": "Language and generation in context."
+    },
+    {
+      "ref_id": "b213",
+      "title": "Navigating multi-task dynamics in reflection."
+    },
+    {
+      "ref_id": "b214",
+      "title": "A combined view on cybernetic structures."
+    },
+    {
+      "ref_id": "b215",
+      "title": "Exploring transitive elements in deep learning."
+    },
+    {
+      "ref_id": "b216",
+      "title": "View synthesis through incremental learning."
+    },
+    {
+      "ref_id": "b217",
+      "title": "The experience-embedded models: Shaping of interactions."
+    },
+    {
+      "ref_id": "b218",
+      "title": "Perceptual modifications through intergenerational learning."
+    },
+    {
+      "ref_id": "b219",
+      "title": "Crossing boundaries: A journey through adaptive responses."
+    },
+    {
+      "ref_id": "b220",
+      "title": "Resilience in generating tasks from evolving patterns."
+    },
+    {
+      "ref_id": "b221",
+      "title": "Interpreting the voice of continual learning."
+    },
+    {
+      "ref_id": "b222",
+      "title": "Learning in the forgetting age."
+    },
+    {
+      "ref_id": "b223",
+      "title": "Collective consciousness in structured generative tasks."
+    },
+    {
+      "ref_id": "b224",
+      "title": "Dynamic inquiry: The landscapes of learning."
+    },
+    {
+      "ref_id": "b225",
+      "title": "Addressing transformations in the digital age."
+    },
+    {
+      "ref_id": "b226",
+      "title": "Innovative thought channels through networks."
+    },
+    {
+      "ref_id": "b227",
+      "title": "Participatory evolution in learning frameworks."
+    },
+    {
+      "ref_id": "b228",
+      "title": "Critical evaluation of generative systems."
+    },
+    {
+      "ref_id": "b229",
+      "title": "Transgressing knowledge limits."
+    },
+    {
+      "ref_id": "b230",
+      "title": "The genesis of new thought structures."
+    },
+    {
+      "ref_id": "b231",
+      "title": "Resonance of intent in generative contexts."
+    },
+    {
+      "ref_id": "b232",
+      "title": "Cross-pollination of learning across tasks."
+    },
+    {
+      "ref_id": "b233",
+      "title": "Deconstructing consensus in generative frameworks."
+    },
+    {
+      "ref_id": "b234",
+      "title": "Semantic adaptability through structured learning."
+    },
+    {
+      "ref_id": "b235",
+      "title": "Interconnectedness in the fabric of learning."
+    },
+    {
+      "ref_id": "b236",
+      "title": "Venturing into structured reflection."
+    },
+    {
+      "ref_id": "b237",
+      "title": "Evolving narratives: From context to language."
+    },
+    {
+      "ref_id": "b238",
+      "title": "The flexibility of learning models."
+    },
+    {
+      "ref_id": "b239",
+      "title": "Unfolding of knowledge in generative belief systems."
+    },
+    {
+      "ref_id": "b240",
+      "title": "Transforming idea frameworks through resilience."
+    },
+    {
+      "ref_id": "b241",
+      "title": "A fresh narrative on the roles of mechanisms."
+    },
+    {
+      "ref_id": "b242",
+      "title": "Lifecycle of communication in generative tasks."
+    },
+    {
+      "ref_id": "b243",
+      "title": "Embodied learning in multidimensional experiences."
+    },
+    {
+      "ref_id": "b244",
+      "title": "Repromising structures in generative capabilities."
+    },
+    {
+      "ref_id": "b245",
+      "title": "Science, learning, and adaptive insights."
+    },
+    {
+      "ref_id": "b246",
+      "title": "Regenesis in generative contexts."
+    },
+    {
+      "ref_id": "b247",
+      "title": "Transformative coding and unfolding narratives."
+    },
+    {
+      "ref_id": "b248",
+      "title": "The interplay of frameworks in generative processes."
+    },
+    {
+      "ref_id": "b249",
+      "title": "The collaborative nature of continuous review."
+    },
+    {
+      "ref_id": "b250",
+      "title": "Interlinking generative outputs."
+    },
+    {
+      "ref_id": "b251",
+      "title": "The synergy of collaborative tasks."
+    },
+    {
+      "ref_id": "b252",
+      "title": "Discovering continuity in dynamic learning patterns."
+    },
+    {
+      "ref_id": "b253",
+      "title": "The coherence trap in generative models."
+    },
+    {
+      "ref_id": "b254",
+      "title": "Capturing ongoing adaptability."
+    },
+    {
+      "ref_id": "b255",
+      "title": "Across the strands of generative semantics."
+    },
+    {
+      "ref_id": "b256",
+      "title": "Bridging ineffable gaps in learning."
+    },
+    {
+      "ref_id": "b257",
+      "title": "A measurable lens on generative discourse."
+    },
+    {
+      "ref_id": "b258",
+      "title": "Intricacies of knowledge synthesis."
+    },
+    {
+      "ref_id": "b259",
+      "title": "Responsive frameworks for generative exploration."
+    },
+    {
+      "ref_id": "b260",
+      "title": "Transformation through collaborative insights."
+    },
+    {
+      "ref_id": "b261",
+      "title": "Constructing a narrative on continuous cycles."
+    },
+    {
+      "ref_id": "b262",
+      "title": "The cycle of transformations through generative tasks."
+    },
+    {
+      "ref_id": "b263",
+      "title": "Vision of the future in adaptive learning."
+    },
+    {
+      "ref_id": "b264",
+      "title": "Generative explorations in shared reflections."
+    },
+    {
+      "ref_id": "b265",
+      "title": "Deep layering in adaptive frameworks."
+    },
+    {
+      "ref_id": "b266",
+      "title": "The forward motion of generative outputs."
+    },
+    {
+      "ref_id": "b267",
+      "title": "Renewal in adaptive architecture."
+    },
+    {
+      "ref_id": "b268",
+      "title": "Learning as an ongoing evolution."
+    },
+    {
+      "ref_id": "b269",
+      "title": "Generative evolution through contextual lenses."
+    },
+    {
+      "ref_id": "b270",
+      "title": "Disparate roots of transformative learning."
+    },
+    {
+      "ref_id": "b271",
+      "title": "Constructing a dialogue on knowledge formation."
+    },
+    {
+      "ref_id": "b272",
+      "title": "Post-structure models in generalizing learning."
+    },
+    {
+      "ref_id": "b273",
+      "title": "Visionary frameworks through generative thinking."
+    },
+    {
+      "ref_id": "b274",
+      "title": "A calm reflection on the complexities of teaching."
+    },
+    {
+      "ref_id": "b275",
+      "title": "Interrogating generative aspirations."
+    },
+    {
+      "ref_id": "b276",
+      "title": "The asymptomatic transition of knowledge evolution."
+    },
+    {
+      "ref_id": "b277",
+      "title": "Generative roots in practical applications."
+    },
+    {
+      "ref_id": "b278",
+      "title": "Frontiers for evolving directives."
+    },
+    {
+      "ref_id": "b279",
+      "title": "Capturing the zeitgeist of generative dialogue."
+    },
+    {
+      "ref_id": "b280",
+      "title": "Intricacies of evolving narrative states."
+    },
+    {
+      "ref_id": "b281",
+      "title": "Nuanced learning trajectories."
+    },
+    {
+      "ref_id": "b282",
+      "title": "Adapting networks to define new learning dynamics."
+    },
+    {
+      "ref_id": "b283",
+      "title": "Uncoiling narratives in deep learning context."
+    },
+    {
+      "ref_id": "b284",
+      "title": "Calibrating reflective practices in generative tasks."
+    },
+    {
+      "ref_id": "b285",
+      "title": "Eroding boundaries in educational frameworks."
+    },
+    {
+      "ref_id": "b286",
+      "title": "Shaping narratives through generative clarity."
+    },
+    {
+      "ref_id": "b287",
+      "title": "Patterns of continual evolution in learning."
+    },
+    {
+      "ref_id": "b288",
+      "title": "The guiding principles of generative channels."
+    },
+    {
+      "ref_id": "b289",
+      "title": "Exploring sustainability in generative practices."
+    },
+    {
+      "ref_id": "b290",
+      "title": "Flexibility in multidisciplinary tasks."
+    },
+    {
+      "ref_id": "b291",
+      "title": "Navigating the landscapes of collaborative innovations."
+    },
+    {
+      "ref_id": "b292",
+      "title": "The moving conversations of generative thought."
+    }
   ]
 }

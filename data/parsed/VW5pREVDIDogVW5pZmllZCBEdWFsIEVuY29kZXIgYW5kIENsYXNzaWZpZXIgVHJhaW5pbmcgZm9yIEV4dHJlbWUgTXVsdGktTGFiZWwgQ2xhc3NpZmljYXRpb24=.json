@@ -28,30 +28,168 @@
   "A.3 Additional Results": "Table 8: Results on Short and Long Text Datasets",
   "keywords_parsed": [
     "multi-label classification",
-    " extreme classification",
-    " dual-encoders",
-    " extreme classifiers",
-    " contrastive learning",
-    " hard-negative mining This work is licensed under a Creative Commons Attribution International 4.0 License. WWW'25",
-    " April 28-May 2",
-    " 2025",
-    " Sydney",
-    " NSW",
-    " Australia © 2025 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-1274-6/25/04 https://doi.org/10.1145/3696410.3714704 Siddhant Kharbanda † ",
-    " Devaansh Gupta † ",
-    " Gururaj K",
-    " Pankaj Malhotra",
-    " Amit Singh",
-    " Cho-Jui Hsieh",
-    " and Rohit Babbar. 2025. UniDEC : Unified Dual Encoder and Classifier Training for Extreme Multi-Label Classification. In Proceedings of the ACM Web Conference 2025 (WWW '25)",
-    " April 28May 2",
-    " 2025",
-    " Sydney",
-    " NSW",
-    " Australia. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 10 pages. https://doi.org/10.1145/3696410.3714704"
+    "extreme classification",
+    "dual-encoders",
+    "extreme classifiers",
+    "contrastive learning",
+    "hard-negative mining"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Zipf's law and the internet"
+    },
+    {
+      "ref_id": "b2",
+      "title": "DiSMEC: Distributed Sparse Machines for Extreme Multi-label Classification"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Data scarcity, robustness and extreme multi-label classification"
+    },
+    {
+      "ref_id": "b4",
+      "title": "The extreme classification repository: Multi-label datasets and code"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Taming Pretrained Transformers for Extreme Multi-label Text Classification"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Siamesexml: Siamese networks meet extreme classifiers with 100m labels"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Ngame: Negative mining-aware mini-batching for extreme classification"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deepxml: A deep extreme multi-label learning framework applied to short text documents"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep encoders with auxiliary parameters for extreme classification"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Fast training for large-scale one-versus-all linear classifiers using tree-structured initialization"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Supervised contrastive learning for pre-trained language model fine-tuning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Dualencoders for extreme multi-label classification"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Extreme multi-label loss functions for recommendation, tagging, ranking & other missing label applications"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Renee: End-to-end training of extreme classification models"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Extreme F-measure Maximization using Sparse Probability Estimates"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Lightxml: Transformer with dynamic negative sampling for high-performance extreme multi-label text classification"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Dense passage retrieval for open-domain question answering"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Bonsai: diverse and shallow trees for extreme multi-label classification"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Inceptionxml: A lightweight framework with synchronized negative sampling for short text extreme classification"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Cascadexml: Rethinking transformers for end-to-end multi-resolution training in extreme multi-label classification"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Gandalf : Data augmentation is all you need for extreme classification"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Supervised contrastive learning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Multilabel reductions: what is my loss optimising?"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Decaf: Deep extreme classification with label features"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Eclare: Extreme classification with label graph correlations"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Extreme multi-label learning with label features for warm-start tagging, ranking and recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Parabel: Partitioned label trees for extreme classification with application to dynamic search advertising"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Convex surrogates for unbiased loss functions in extreme classification with missing labels"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Rocketqa: An optimized training approach to dense passage retrieval for open-domain question answering"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Stochastic Negative Mining for Learning with Large Output Spaces"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Speeding-up one-vs-all training for extreme classification via smart initialization"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Unbiased loss functions for multilabel classification with missing labels"
+    },
+    {
+      "ref_id": "b34",
+      "title": "On missing labels, long-tails and propensities in extreme multi-label classification"
+    },
+    {
+      "ref_id": "b35",
+      "title": "A no-regret generalization of hierarchical softmax to extreme multi-label classification"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Propensityscored probabilistic label trees"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Approximate nearest neighbor negative contrastive learning for dense text retrieval"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Attentionxml: Label tree-based attention-aware deep model for high-performance extreme multi-label text classification"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Fast multi-resolution transformer fine-tuning for extreme multi-label text classification"
+    }
   ]
 }

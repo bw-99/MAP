@@ -20,8 +20,118 @@
   "REFERENCES": "[1] Amol Agrawal. 2016. Clickbait detection using deep learning. In Proceedings of NGCT . [2] Jingwu Chen, Fuzhen Zhuang, Tianxin Wang, Leyu Lin, Feng Xia, Lihuan Du, and Qing He. 2019. Follow the Title Then Read the Article: Click-Guide Network for Dwell Time Prediction. TKDE (2019). [3] Yimin Chen, Niall J Conroy, and Victoria L Rubin. 2015. Misleading online content: recognizing clickbait as\" false news\". In Proceedings of the 2015 ACM on workshop on multimodal deception detection . [4] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In Proceedings of IJCAI . [5] Ahmed Hassan. 2012. A semi-supervised approach to modeling web search satisfaction. In Proceedings of SIGIR . [6] Sawinder Kaur, Parteek Kumar, and Ponnurangam Kumaraguru. 2020. Detecting clickbaits using two-phase hybrid CNN-LSTM biterm model. Expert Systems with Applications (2020). [7] Youngho Kim, Ahmed Hassan, Ryen W White, and Imed Zitouni. 2014. Modeling dwell time to predict click-level satisfaction. In Proceedings of WSDM . [8] Bin Liu, Chenxu Zhu, Guilin Li, Weinan Zhang, Jincai Lai, Ruiming Tang, Xiuqiang He, Zhenguo Li, and Yong Yu. 2020. AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction. (2020). [9] Yiqun Liu, Xiaohui Xie, Chao Wang, Jian-Yun Nie, Min Zhang, and Shaoping Ma. 2016. Time-aware click model. TOIS (2016). [10] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of KDD . [11] Martin Potthast, Sebastian Köpsel, Benno Stein, and Matthias Hagen. 2016. Clickbait detection. In Proceedings of ECIR . [12] Lanyu Shang, Daniel Yue Zhang, Michael Wang, Shuyue Lai, and Dong Wang. 2019. Towards reliable online clickbait video detection: A content-agnostic approach. Knowledge-Based Systems (2019). [13] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of CIKM . WWW'23 Companion, April 30-May 4, 2023, Austin, TX, USA [14] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer. In Proceedings of CIKM . [15] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Proceedings of RecSys . [16] Tianxin Wang, Jingwu Chen, Fuzhen Zhuang, Leyu Lin, Feng Xia, Lihuan Du, and Qing He. 2020. Capturing Attraction Distribution: Sequential Attentive Network for Dwell Time Prediction. In Proceedings of 2020 . [17] Wenjie Wang, Fuli Feng, Xiangnan He, Hanwang Zhang, and Tat-Seng Chua. 2021. Clicks can be cheating: Counterfactual recommendation for mitigating clickbait issue. In Proceedings of SIGIR . [18] Chuhan Wu, Fangzhao Wu, Tao Qi, and Yongfeng Huang. 2020. User Modeling with Click Preference and Reading Satisfaction for News Recommendation.. In Proceedings of IJCAI . [19] Ruobing Xie, Cheng Ling, Yalong Wang, Rui Wang, Feng Xia, and Leyu Lin. 2020. Deep feedback network for recommendation. In Proceedings of IJCAI . [20] Ruobing Xie, Cheng Ling, Shaoliang Zhang, Feng Xia, and Leyu Lin. 2022. Multigranularity Fatigue in Recommendation. In Proceedings of CIKM . [21] Ruobing Xie, Qi Liu, Liangdong Wang, Shukai Liu, Bo Zhang, and Leyu Lin. 2022. Contrastive cross-domain recommendation in matching. In Proceedings of KDD . [22] Ruobing Xie, Yanlei Liu, Shaoliang Zhang, Rui Wang, Feng Xia, and Leyu Lin. 2021. Personalized approximate pareto-efficient recommendation. In Proceedings of WWW . [23] Ruobing Xie, Yalong Wang, Rui Wang, Yuanfu Lu, Yuanhang Zou, Feng Xia, and Leyu Lin. 2022. Long short-term temporal meta-learning in online recommendation. In Proceedings of WSDM . [24] Xing Yi, Liangjie Hong, Erheng Zhong, Nanthan Nan Liu, and Suju Rajan. 2014. Beyond clicks: dwell time for personalization. In Proceedings of RecSys . [25] Yu Zheng, Chen Gao, Jingtao Ding, Lingling Yi, Depeng Jin, Yong Li, and Meng Wang. 2022. DVR: Micro-Video Recommendation Optimizing Watch-Time-Gain under Duration Bias. In MM . [26] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of KDD . [27] Tengfei Zhou, Hui Qian, Zebang Shen, Chao Zhang, Chengwei Wang, Shichen Liu, and Wenwu Ou. 2018. Jump: A joint predictor for user click and dwell time. In Proceedings of IJCAI .",
   "keywords_parsed": [
     "recommendation",
-    " valid read",
-    " dwell time",
-    " click reweighting"
+    "valid read",
+    "dwell time",
+    "click reweighting"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Clickbait detection using deep learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Follow the Title Then Read the Article: Click-Guide Network for Dwell Time Prediction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Misleading online content: recognizing clickbait as \"false news\""
+    },
+    {
+      "ref_id": "b4",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "A semi-supervised approach to modeling web search satisfaction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Detecting clickbaits using two-phase hybrid CNN-LSTM biterm model"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Modeling dwell time to predict click-level satisfaction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "AutoFIS: Automatic Feature Interaction Selection in Factorization Models for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Time-aware click model"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of experts"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Clickbait detection"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Towards reliable online clickbait video detection: A content-agnostic approach"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Capturing Attraction Distribution: Sequential Attentive Network for Dwell Time Prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Clicks can be cheating: Counterfactual recommendation for mitigating clickbait issue"
+    },
+    {
+      "ref_id": "b18",
+      "title": "User Modeling with Click Preference and Reading Satisfaction for News Recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Deep feedback network for recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Multigranularity Fatigue in Recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Contrastive cross-domain recommendation in matching"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Personalized approximate pareto-efficient recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Long short-term temporal meta-learning in online recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Beyond clicks: dwell time for personalization"
+    },
+    {
+      "ref_id": "b25",
+      "title": "DVR: Micro-Video Recommendation Optimizing Watch-Time-Gain under Duration Bias"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Jump: A joint predictor for user click and dwell time"
+    }
   ]
 }

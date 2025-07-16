@@ -25,17 +25,194 @@
   "ACKNOWLEDGMENTS": "This work was supported by the National Natural Science Foundation of China (NSFC) under Grants 62172106 and 61932007. CL4CTR: A Contrastive Learning Framework for CTR Prediction WSDM'23, February 27-March 3, 2023, Singapore, Singapore.",
   "REFERENCES": "[1] Bo Chen, Yichao Wang, Zhirong Liu, Ruiming Tang, Wei Guo, Hongkun Zheng, Weiwei Yao, Muyu Zhang, and Xiuqiang He. 2021. Enhancing explicit and implicit feature interactions via information sharing for parallel deep CTR models. In CIKM . 3757-3766. [3] Zekai Chen, Fangtian Zhong, Zhumin Chen, Xiao Zhang, Robert Pless, and Xiuzhen Cheng. 2021. DCAP: Deep Cross Attentional Product Network for User Response Prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 221-230. [2] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In International conference on machine learning . PMLR, 1597-1607. [4] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [6] Tianyu Gao, Xingcheng Yao, and Danqi Chen. 2021. SimCSE: Simple Contrastive Learning of Sentence Embeddings. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing . 6894-6910. [5] Weiyu Cheng, Yanyan Shen, and Linpeng Huang. 2020. Adaptive factorization network: Learning adaptive-order feature interactions. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 3609-3616. [7] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . [9] Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick. 2020. Momentum contrast for unsupervised visual representation learning. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 9729-9738. [8] Wei Guo, Can Zhang, Zhicheng He, Jiarui Qin, Huifeng Guo, Bo Chen, Ruiming Tang, Xiuqiang He, and Rui Zhang. 2022. Miss: Multi-interest self-supervised learning framework for click-through rate prediction. In 2022 IEEE 38th International Conference on Data Engineering (ICDE) . IEEE, 727-740. [10] Xiangnan He and Tat-Seng Chua. 2017. Neural factorization machines for sparse predictive analytics. In Proceedings of the 40th International ACM SIGIR conference on Research and Development in Information Retrieval . 355-364. [12] Tongwen Huang, Qingyun She, Zhiqiang Wang, and Junlin Zhang. 2020. GateNet: Gating-Enhanced Deep Network for Click-Through Rate Prediction. arXiv preprint arXiv:2007.03519 (2020). [11] Geoffrey E Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, and Ruslan R Salakhutdinov. 2012. Improving neural networks by preventing coadaptation of feature detectors. arXiv preprint arXiv:1207.0580 (2012). [13] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM Conference on Recommender Systems . 169-177. [15] Dongha Lee, SeongKu Kang, Hyunjun Ju, Chanyoung Park, and Hwanjo Yu. 2021. Bootstrapping user and item representations for one-class collaborative filtering. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 317-326. [14] Yuchin Juan, Yong Zhuang, Wei-Sheng Chin, and Chih-Jen Lin. 2016. Fieldaware factorization machines for CTR prediction. In Proceedings of the 10th ACM Conference on Recommender Systems . 43-50. [16] Zeyu Li, Wei Cheng, Yang Chen, Haifeng Chen, and Wei Wang. 2020. Interpretable click-through rate prediction through hierarchical attention. In Proceedings of the 13th International Conference on Web Search and Data Mining . 313-321. [18] Bin Liu, Ruiming Tang, Yingzhi Chen, Jinkai Yu, Huifeng Guo, and Yuzhou Zhang. 2019. Feature generation by convolutional neural network for click-through rate prediction. In The World Wide Web Conference . 1119-1129. [17] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1754-1763. [19] Wantong Lu, Yantao Yu, Yongzhe Chang, Zhen Wang, Chenhui Li, and Bo Yuan. 2020. A Dual Input-aware Factorization Machine for CTR Prediction. In IJCAI . 3139-3145. [21] Ze Meng, Jinnian Zhang, Yumeng Li, Jiancheng Li, Tanchao Zhu, and Lifeng Sun. 2021. A general method for automatic discovery of powerful interactions in click-through rate prediction. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1298-1307. [20] Yuanfei Luo, Hao Zhou, Wei-Wei Tu, Yuqiang Chen, Wenyuan Dai, and Qiang Yang. 2020. Network on network for tabular data classification in real-world applications. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2317-2326. [22] Junwei Pan, Jian Xu, Alfonso Lobos Ruiz, Wenliang Zhao, Shengjun Pan, Yu Sun, and Quan Lu. 2018. Field-weighted factorization machines for click-through rate prediction in display advertising. In Proceedings of the 2018 World Wide Web Conference . 1349-1357. [23] Yujie Pan, Jiangchao Yao, Bo Han, Kunyang Jia, Ya Zhang, and Hongxia Yang. 2021. Click-through Rate Prediction with Auto-Quantized Contrastive Learning. arXiv preprint arXiv:2109.13921 (2021). [25] Yanru Qu, Bohui Fang, Weinan Zhang, Ruiming Tang, Minzhe Niu, Huifeng Guo, Yong Yu, and Xiuqiang He. 2018. Product-based neural networks for user response prediction over multi-field categorical data. ACM Transactions on Information Systems (TOIS) 37, 1 (2018), 1-35. [24] Jiarui Qin, Weinan Zhang, Xin Wu, Jiarui Jin, Yuchen Fang, and Yong Yu. 2020. User behavior retrieval for click-through rate prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2347-2356. [26] Steffen Rendle. 2012. Factorization machines with libfm. ACM Transactions on Intelligent Systems and Technology (TIST) 3, 3 (2012), 1-22. [28] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1161-1170. [27] Matthew Richardson, Ewa Dominowska, and Robert Ragno. 2007. Predicting clicks: estimating the click-through rate for new ads. In Proceedings of the 16th international conference on World Wide Web . 521-530. [29] Yang Sun, Junwei Pan, Alex Zhang, and Aaron Flores. 2021. Fm2: Field-matrixed factorization machines for recommender systems. In Proceedings of the Web Conference 2021 . 2828-2837. [31] Vikas Verma, Thang Luong, Kenji Kawaguchi, Hieu Pham, and Quoc Le. 2021. Towards domain-agnostic contrastive learning. In International Conference on Machine Learning . PMLR, 10530-10541. [30] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in neural information processing systems . 5998-6008. [32] Feng Wang and Huaping Liu. 2021. Understanding the behaviour of contrastive loss. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 2495-2504. [34] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [33] Fangye Wang, Yingxu Wang, Dongsheng Li, Hansu Gu, Tun Lu, Peng Zhang, and Ning Gu. 2022. Enhancing CTR Prediction with Context-Aware Feature Representation Learning. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . [35] Ruoxi Wang, Rakesh Shivanna, Derek Z Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed H Chi. 2020. DCN-M: Improved Deep & Cross Network for Feature Cross Learning in Web-scale Learning to Rank Systems. arXiv preprint arXiv:2008.13535 (2020). [37] Zhiqiang Wang, Qingyun She, and Junlin Zhang. 2021. MaskNet: introducing feature-wise multiplication to CTR ranking models by instance-guided mask. arXiv preprint arXiv:2102.07619 (2021). [36] Tongzhou Wang and Phillip Isola. 2020. Understanding contrastive representation learning through alignment and uniformity on the hypersphere. In International Conference on Machine Learning . PMLR, 9929-9939. [38] Shu Wu, Feng Yu, Xueli Yu, Qiang Liu, Liang Wang, Tieniu Tan, Jie Shao, and Fan Huang. 2020. TFNet: Multi-Semantic Feature Interaction for CTR Prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1885-1888. [40] Xu Xie, Fei Sun, Zhaoyang Liu, Shiwen Wu, Jinyang Gao, Jiandong Zhang, Bolin Ding, and Bin Cui. 2022. Contrastive learning for sequential recommendation. In 2022 IEEE 38th International Conference on Data Engineering (ICDE) . IEEE. [39] Jun Xiao, Hao Ye, Xiangnan He, Hanwang Zhang, Fei Wu, and Tat-Seng Chua. 2017. Attentional Factorization Machines: Learning the Weight of Feature Interactions via Attention Networks. In IJCAI . [41] Junliang Yu, Hongzhi Yin, Xin Xia, Tong Chen, Jundong Li, and Zi Huang. 2022. Self-Supervised Learning for Recommender Systems: A Survey. arXiv preprint arXiv:2203.15876 (2022). [43] Weinan Zhang, Jiarui Qin, Wei Guo, Ruiming Tang, and Xiuqiang He. 2021. Deep learning for click-through rate estimation. In IJCAI . [42] Yantao Yu, Zhen Wang, and Bo Yuan. 2019. An Input-aware Factorization Machine for Sparse Prediction. In IJCAI . 1466-1472. [44] Zihao Zhao, Zhiwei Fang, Yong Li, Changping Peng, Yongjun Bao, and Weipeng Yan. 2020. Dimension Relation Modeling for Click-Through Rate Prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2333-2336. [46] Xin Zhou, Aixin Sun, Yong Liu, Jie Zhang, and Chunyan Miao. 2021. SelfCF: A Simple Framework for Self-supervised Collaborative Filtering. arXiv preprint arXiv:2107.03019 (2021). [45] Zhishan Zhao, Sen Yang, Guohui Liu, Dawei Feng, and Kele Xu. 2022. FINT: Field-Aware Interaction Neural Network for Click-Through Rate Prediction. In ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) . IEEE, 3913-3917.",
   "keywords_parsed": [
-    "Many Click-Through Rate (CTR) prediction works focused on designing advanced architectures to model complex feature interactions but neglected the importance of feature representation learning",
-    " e.g.",
-    " adopting a plain embedding layer for each feature",
-    " which results in sub-optimal feature representations and thus inferior CTR prediction performance. For instance",
-    " low frequency features",
-    " which account for the majority of features in many CTR tasks",
-    " are less considered in standard supervised learning settings",
-    " leading to sub-optimal feature representations. In this paper",
-    " we introduce self-supervised learning to produce high-quality feature representations directly and propose a model-agnostic Contrastive Learning for CTR (CL4CTR) framework consisting of three selfsupervised learning signals to regularize the feature representation learning: contrastive loss",
-    " feature alignment",
-    " and field uniformity. The contrastive module first constructs positive feature pairs by data augmentation and then minimizes the distance between the representations of each positive feature pair by the contrastive loss. The feature alignment constraint forces the representations of features from the same field to be close",
-    " and the field uniformity constraint forces the representations of features from different fields to be distant. Extensive experiments verify that CL4CTR achieves the best performance on four datasets and has excellent effectiveness and compatibility with various representative baselines."
+    "Contrastive Learning",
+    "Representation Learning",
+    "CTR Prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Enhancing explicit and implicit feature interactions via information sharing for parallel deep CTR models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "DCAP: Deep Cross Attentional Product Network for User Response Prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Adaptive factorization network: Learning adaptive-order feature interactions"
+    },
+    {
+      "ref_id": "b7",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Momentum contrast for unsupervised visual representation learning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Miss: Multi-interest self-supervised learning framework for click-through rate prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b12",
+      "title": "GateNet: Gating-Enhanced Deep Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Improving neural networks by preventing coadaptation of feature detectors"
+    },
+    {
+      "ref_id": "b13",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Bootstrapping user and item representations for one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Field-aware factorization machines for CTR prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Interpretable click-through rate prediction through hierarchical attention"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Feature generation by convolutional neural network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A Dual Input-aware Factorization Machine for CTR Prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "A general method for automatic discovery of powerful interactions in click-through rate prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Network on network for tabular data classification in real-world applications"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Field-weighted factorization machines for click-through rate prediction in display advertising"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Click-through Rate Prediction with Auto-Quantized Contrastive Learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Product-based neural networks for user response prediction over multi-field categorical data"
+    },
+    {
+      "ref_id": "b24",
+      "title": "User behavior retrieval for click-through rate prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Factorization machines with libfm"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Fm2: Field-matrixed factorization machines for recommender systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Towards domain-agnostic contrastive learning"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Understanding the behaviour of contrastive loss"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Enhancing CTR Prediction with Context-Aware Feature Representation Learning"
+    },
+    {
+      "ref_id": "b35",
+      "title": "DCN-M: Improved Deep & Cross Network for Feature Cross Learning in Web-scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b37",
+      "title": "MaskNet: introducing feature-wise multiplication to CTR ranking models by instance-guided mask"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Understanding contrastive representation learning through alignment and uniformity on the hypersphere"
+    },
+    {
+      "ref_id": "b38",
+      "title": "TFNet: Multi-Semantic Feature Interaction for CTR Prediction"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Contrastive learning for sequential recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Attentional Factorization Machines: Learning the Weight of Feature Interactions via Attention Networks"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Self-Supervised Learning for Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Deep learning for click-through rate estimation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "An Input-aware Factorization Machine for Sparse Prediction"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Dimension Relation Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b46",
+      "title": "SelfCF: A Simple Framework for Self-supervised Collaborative Filtering"
+    },
+    {
+      "ref_id": "b45",
+      "title": "FINT: Field-Aware Interaction Neural Network for Click-Through Rate Prediction"
+    }
   ]
 }

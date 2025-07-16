@@ -24,8 +24,218 @@
   "REFERENCES": "[1] Shuqing Bian, Wayne Xin Zhao, Jinpeng Wang, and Ji-Rong Wen. 2022. A Relevant and Diverse Retrieval-enhanced Data Augmentation Framework for Sequential Recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2923-2932. [2] Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al. 2020. Language models are few-shot learners. Advances in neural information processing systems 33 (2020), 1877-1901. [3] Chenwei Cai, Ruining He, and Julian McAuley. 2017. SPMC: socially-aware personalized markov chains for sparse sequential recommendation. arXiv preprint arXiv:1708.04497 (2017). [4] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In International conference on machine learning . PMLR, 1597-1607. [5] Xinlei Chen and Kaiming He. 2021. Exploring simple siamese representation learning. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 15750-15758. [6] Mingyue Cheng, Fajie Yuan, Qi Liu, Xin Xin, and Enhong Chen. 2021. Learning Transferable User Representations with Sequential Behaviors via Contrastive Pre-training. In 2021 IEEE International Conference on Data Mining (ICDM) . IEEE, 51-60. [7] Ge Cui, Jun Luo, and Xin Wang. 2018. Personalized travel route recommendation using collaborative filtering based on GPS trajectories. IJED 11, 3 (2018), 284-307. [8] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [9] Jean-Bastien Grill, Florian Strub, Florent Altché, Corentin Tallec, Pierre Richemond, Elena Buchatskaya, Carl Doersch, Bernardo Avila Pires, Zhaohan Guo, Mohammad Gheshlaghi Azar, et al. 2020. Bootstrap your own latent-a new approach to self-supervised learning. Advances in neural information processing systems 33 (2020), 21271-21284. [10] Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Mingwei Chang. 2020. Retrieval augmented language model pre-training. In International Conference on Machine Learning . PMLR, 3929-3938. [11] Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick. 2020. Momentum contrast for unsupervised visual representation learning. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 9729-9738. [12] Ruining He and Julian McAuley. 2016. Fusing similarity models with markov chains for sparse sequential recommendation. In 2016 IEEE 16th international conference on data mining (ICDM) . IEEE, 191-200. [13] Balázs Hidasi and Alexandros Karatzoglou. 2018. Recurrent neural networks with top-k gains for session-based recommendations. In Proceedings of the 27th ACM international conference on information and knowledge management . 843-852. [14] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [15] Balázs Hidasi, Massimo Quadrana, Alexandros Karatzoglou, and Domonkos Tikk. 2016. Parallel recurrent neural network architectures for feature-rich session-based recommendations. In Proceedings of the 10th ACM conference on recommender systems . 241-248. [16] Dietmar Jannach and Malte Ludewig. 2017. When recurrent neural networks meet the neighborhood for session-based recommendation. In Proceedings of the eleventh ACM conference on recommender systems . 306-310. [17] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [18] Diederik P Kingma and Jimmy Ba. 2015. Adam: A method for stochastic optimization. In ICLR'15 . [19] Takeshi Kurashima, Tomoharu Iwata, Go Irie, and Ko Fujimura. 2010. Travel route recommendation using geotags in photo sharing sites. In CIKM . ACM, 579-588. [20] Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, and Radu Soricut. 2019. Albert: A lite bert for self-supervised learning of language representations. arXiv preprint arXiv:1909.11942 (2019). [21] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. 2017. Neural attentive session-based recommendation. In Proceedings of the 2017 ACM on Conference on Information and Knowledge Management . 1419-1428. [22] Defu Lian, Yongji Wu, Yong Ge, Xing Xie, and Enhong Chen. 2020. Geographyaware sequential location recommendation. In Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining . 20092019. [23] Kwan Hui Lim, Jeffrey Chan, Christopher Leckie, and Shanika Karunasekera. 2015. Personalized Tour Recommendation Based on User Interests and Points of Interest Visit Durations.. In IJCAI , Vol. 15. 1778-1784. [24] Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019. Roberta: A robustly optimized bert pretraining approach. arXiv preprint arXiv:1907.11692 (2019). [25] Zhiwei Liu, Yongjun Chen, Jia Li, Philip S Yu, Julian McAuley, and Caiming Xiong. 2021. Contrastive self-supervised sequential recommendation with robust augmentation. arXiv preprint arXiv:2108.06479 (2021). [26] Aaron van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation learning with contrastive predictive coding. arXiv preprint arXiv:1807.03748 (2018). [27] Jiezhong Qiu, Qibin Chen, Yuxiao Dong, Jing Zhang, Hongxia Yang, Ming Ding, Kuansan Wang, and Jie Tang. 2020. Gcc: Graph contrastive coding for graph neural network pre-training. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1150-1160. [28] Ruihong Qiu, Zi Huang, and Hongzhi Yin. 2021. Memory Augmented MultiInstance Contrastive Predictive Coding for Sequential Recommendation. In 2021 IEEE International Conference on Data Mining (ICDM) . IEEE, 519-528. [29] Ruihong Qiu, Zi Huang, Hongzhi Yin, and Zijian Wang. 2022. Contrastive learning for representation degeneration problem in sequential recommendation. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 813-823. [30] Yingqi Qu, Yuchen Ding, Jing Liu, Kai Liu, Ruiyang Ren, Wayne Xin Zhao, Daxiang Dong, Hua Wu, and Haifeng Wang. 2021. RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering. In NAACL-HLT . Association for Computational Linguistics, 5835-5847. [31] Massimo Quadrana, Alexandros Karatzoglou, Balázs Hidasi, and Paolo Cremonesi. 2017. Personalizing session-based recommendations with hierarchical recurrent neural networks. In proceedings of the Eleventh ACM Conference on Recommender Systems . 130-137. [32] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J Liu, et al. 2020. Exploring the limits of transfer learning with a unified text-to-text transformer. J. Mach. Learn. Res. 21, 140 (2020), 1-67. [33] Ruiyang Ren, Yingqi Qu, Jing Liu, Wayne Xin Zhao, Qiaoqiao She, Hua Wu, Haifeng Wang, and Ji-Rong Wen. 2021. RocketQAv2: A Joint Training Method for Dense Passage Retrieval and Passage Re-ranking. In EMNLP (1) . Association for Computational Linguistics, 2825-2835. [34] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2012. BPR: Bayesian personalized ranking from implicit feedback. arXiv preprint arXiv:1205.2618 (2012). [35] Steffen Rendle, Christoph Freudenthaler, and Lars Schmidt-Thieme. 2010. Factorizing personalized markov chains for next-basket recommendation. In Proceedings of the 19th international conference on World wide web . 811-820. [36] Zihua Si, Xueran Han, Xiao Zhang, Jun Xu, Yue Yin, Yang Song, and Ji-Rong Wen. 2022. A Model-Agnostic Causal Learning Framework for Recommendation using Search Data. In Proceedings of the ACM Web Conference 2022 . 224-233. [37] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [38] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In Proceedings of the eleventh ACM international conference on web search and data mining . 565-573. [39] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [40] Chenyang Wang, Weizhi Ma, and Chong Chen. 2022. Sequential Recommendation with Multiple Contrast Signals. ACM Transactions on Information Systems (TOIS) (2022). [41] Hongwei Wang, Fuzheng Zhang, Jialin Wang, Miao Zhao, Wenjie Li, Xing Xie, and Minyi Guo. 2018. Ripplenet: Propagating user preferences on the knowledge graph for recommender systems. In Proceedings of the 27th ACM international conference on information and knowledge management . 417-426. [42] Xiaolong Wang, Ross Girshick, Abhinav Gupta, and Kaiming He. 2018. Non-local neural networks. In Proceedings of the IEEE conference on computer vision and pattern recognition . 7794-7803. [43] Xiang Wang, Xiangnan He, Yixin Cao, Meng Liu, and Tat-Seng Chua. 2019. Kgat: Knowledge graph attention network for recommendation. In Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining . 950-958. [44] Ling Yin Wei, Yu Zheng, and Wen Chih Peng. 2012. Constructing popular routes from uncertain trajectories. In SIGKDD . 195-203. [45] Chuhan Wu, Fangzhao Wu, Mingxiao An, Tao Qi, Jianqiang Huang, Yongfeng Huang, and Xing Xie. 2019. Neural news recommendation with heterogeneous user behavior. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) . 4874-4883. [46] Jiancan Wu, Xiang Wang, Fuli Feng, Xiangnan He, Liang Chen, Jianxun Lian, and Xing Xie. 2021. Self-supervised graph learning for recommendation. In Proceedings of the 44th international ACM SIGIR conference on research and development in information retrieval . 726-735. Ning Wu, Ming Gong, Linjun Shou, Jian Pei, and Daxin Jiang CIKM '23, October 21-25, 2023, Birmingham, United Kingdom [47] Xu Xie, Fei Sun, Zhaoyang Liu, Shiwen Wu, Jinyang Gao, Bolin Ding, and Bin Cui. 2020. Contrastive learning for sequential recommendation. arXiv preprint arXiv:2010.14395 (2020). [48] Zhilin Yang, Zihang Dai, Yiming Yang, Jaime Carbonell, Russ R Salakhutdinov, and Quoc V Le. 2019. Xlnet: Generalized autoregressive pretraining for language understanding. Advances in neural information processing systems 32 (2019). [49] Jing Yao, Zhicheng Dou, Ruobing Xie, Yanxiong Lu, Zhiping Wang, and Ji-Rong Wen. 2021. USER: A Unified Information Search and Recommendation Model based on Integrated Behavior Sequence. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 2373-2382. [50] Wayne Xin Zhao, Gaole He, Kunlin Yang, Hongjian Dou, Jin Huang, Siqi Ouyang, and Ji-Rong Wen. 2019. Kb4rec: A data set for linking knowledge bases with recommender systems. Data Intelligence 1, 2 (2019), 121-136. [51] Wayne Xin Zhao, Shanlei Mu, Yupeng Hou, Zihan Lin, Yushuo Chen, Xingyu Pan, Kaiyuan Li, Yujie Lu, Hui Wang, Changxin Tian, et al. 2021. Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4653-4664. [52] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 1893-1902.",
   "keywords_parsed": [
     "User Browsing Log",
-    " Sequential Recommendation",
-    " Dense Retrieval",
-    " Contrastive Learning"
+    "Sequential Recommendation",
+    "Dense Retrieval",
+    "Contrastive Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A Relevant and Diverse Retrieval-enhanced Data Augmentation Framework for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b3",
+      "title": "SPMC: socially-aware personalized markov chains for sparse sequential recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Exploring simple siamese representation learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Learning Transferable User Representations with Sequential Behaviors via Contrastive Pre-training"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Personalized travel route recommendation using collaborative filtering based on GPS trajectories"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Bootstrap your own latent-a new approach to self-supervised learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Retrieval augmented language model pre-training"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Momentum contrast for unsupervised visual representation learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Fusing similarity models with markov chains for sparse sequential recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Recurrent neural networks with top-k gains for session-based recommendations"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Parallel recurrent neural network architectures for feature-rich session-based recommendations"
+    },
+    {
+      "ref_id": "b16",
+      "title": "When recurrent neural networks meet the neighborhood for session-based recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Travel route recommendation using geotags in photo sharing sites"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Albert: A lite bert for self-supervised learning of language representations"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Neural attentive session-based recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Geographyaware sequential location recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Personalized Tour Recommendation Based on User Interests and Points of Interest Visit Durations"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Contrastive self-supervised sequential recommendation with robust augmentation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Gcc: Graph contrastive coding for graph neural network pre-training"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Memory Augmented MultiInstance Contrastive Predictive Coding for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Contrastive learning for representation degeneration problem in sequential recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Personalizing session-based recommendations with hierarchical recurrent neural networks"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b33",
+      "title": "RocketQAv2: A Joint Training Method for Dense Passage Retrieval and Passage Re-ranking"
+    },
+    {
+      "ref_id": "b34",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Factorizing personalized markov chains for next-basket recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A Model-Agnostic Causal Learning Framework for Recommendation using Search Data"
+    },
+    {
+      "ref_id": "b37",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Sequential Recommendation with Multiple Contrast Signals"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Ripplenet: Propagating user preferences on the knowledge graph for recommender systems"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Non-local neural networks"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Kgat: Knowledge graph attention network for recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Constructing popular routes from uncertain trajectories"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Neural news recommendation with heterogeneous user behavior"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Self-supervised graph learning for recommendation"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Contrastive learning for sequential recommendation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Xlnet: Generalized autoregressive pretraining for language understanding"
+    },
+    {
+      "ref_id": "b49",
+      "title": "USER: A Unified Information Search and Recommendation Model based on Integrated Behavior Sequence"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Kb4rec: A data set for linking knowledge bases with recommender systems"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms"
+    },
+    {
+      "ref_id": "b52",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    }
   ]
 }

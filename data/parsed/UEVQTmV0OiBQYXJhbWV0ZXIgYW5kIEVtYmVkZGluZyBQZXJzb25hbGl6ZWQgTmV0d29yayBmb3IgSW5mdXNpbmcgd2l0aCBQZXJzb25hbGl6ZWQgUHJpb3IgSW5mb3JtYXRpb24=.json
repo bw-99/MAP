@@ -24,8 +24,158 @@
   "REFERENCES": "[1] Martín Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay Ghemawat, Geoffrey Irving, Michael Isard, et al. 2016. Tensorflow: A system for large-scale machine learning. In 12th { USENIX } symposium on operating systems design and implementation ( { OSDI } 16) . [2] Andreas Argyriou, Theodoros Evgeniou, and Massimiliano Pontil. 2008. Convex multi-task feature learning. Machine Learning 73, 3 (2008), 243-272. [3] Shai Ben-David, John Blitzer, Koby Crammer, Alex Kulesza, Fernando Pereira, and Jennifer Wortman Vaughan. 2010. A theory of learning from different domains. Machine learning 79, 1 (2010), 151-175. [4] Shai Ben-David, John Blitzer, Koby Crammer, Fernando Pereira, et al. 2007. Analysis of representations for domain adaptation. Advances in neural information processing systems 19 (2007), 137. [5] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems . ACM, 7-10. [6] Hal Daume III and Daniel Marcu. 2006. Domain adaptation for statistical classifiers. Journal of artificial Intelligence research 26 (2006), 101-126. [7] Xavier Glorot and Yoshua Bengio. 2010. Understanding the difficulty of training deep feedforward neural networks. In Proceedings of the thirteenth international conference on artificial intelligence and statistics . 249-256. [8] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. Deepfm: a factorization-machine based neural network for ctr prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . Melbourne, Australia., 2782-2788. [9] Tongwen Huang, Qingyun She, Zhiqiang Wang, and Junlin Zhang. 2020. GateNet: Gating-Enhanced Deep Network for Click-Through Rate Prediction. arXiv preprint arXiv:2007.03519 (2020). [10] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM Conference on Recommender Systems . 169-177. [11] Robert A Jacobs, Michael I Jordan, Steven J Nowlan, and Geoffrey E Hinton. 1991. Adaptive mixtures of local experts. Neural computation 3, 1 (1991), 79-87. [12] Diederik P. Kingma and Jimmy Ba. 2015. Adam: A Method for Stochastic Optimization. In ICLR . [13] Pan Li and Alexander Tuzhilin. 2020. Ddtcdr: Deep dual transfer cross domain recommendation. In Proceedings of the 13th International Conference on Web Search and Data Mining . 331-339. [14] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems. arXiv preprint arXiv:1803.05170 (2018). [15] Shikun Liu, Edward Johns, and Andrew J Davison. 2019. End-to-end multi-task learning with attention. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 1871-1880. [16] Yichao Lu, Ruihai Dong, and Barry Smyth. 2018. Why I like it: multi-task learning for recommendation and explanation. In Proceedings of the 12th ACM Conference on Recommender Systems . 4-12. [17] Chen Ma, Peng Kang, and Xue Liu. 2019. Hierarchical gating networks for sequential recommendation. In Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining . 825-833. [18] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1930-1939. [19] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [20] Ishan Misra, Abhinav Shrivastava, Abhinav Gupta, and Martial Hebert. 2016. Cross-Stitch Networks for Multi-task Learning. 3994-4003. [21] Xingchao Peng, Qinxun Bai, Xide Xia, Zijun Huang, Kate Saenko, and Bo Wang. 2019. Moment matching for multi-source domain adaptation. In Proceedings of the IEEE/CVF international conference on computer vision . 1406-1415. [22] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction. In Proceeding of The 29th ACM International Conference on Information and Knowledge Management . 2685-2692. [23] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-based neural networks for user response prediction. In Proceedings of the16th International Conference on Data Mining . IEEE, 1149-1154. [24] Sebastian Ruder, Joachim Bingel, Isabelle Augenstein, and Anders Søgaard. 2017. Sluice networks: Learning what to share between loosely related tasks. arXiv preprint arXiv:1705.08142 2 (2017). [25] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4104-4113. [26] Pawel Swietojanski, Jinyu Li, and Steve Renals. 2016. Learning hidden unit contributions for unsupervised acoustic model adaptation. IEEE/ACM Transactions on Audio, Speech, and Language Processing 24, 8 (2016), 1450-1463. [27] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Fourteenth ACM Conference on Recommender Systems . [28] Jialei Wang, Steven CH Hoi, Peilin Zhao, and Zhi-Yong Liu. 2013. Online multitask collaborative filtering for on-the-fly recommender systems. In Proceedings of the 7th ACM conference on Recommender systems . 237-244. [29] Nan Wang, Hongning Wang, Yiling Jia, and Yue Yin. 2018. Explainable recommendation via multi-task learning in opinionated text data. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 165174. [30] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . ACM, 12. [31] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. DCN V2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the Web Conference 2021 . 1785-1797. [32] Weinan Zhang, Tianming Du, and Jun Wang. 2016. Deep learning over multi-field categorical data. In European conference on information retrieval . Springer. [33] Sicheng Zhao, Bo Li, Pengfei Xu, and Kurt Keutzer. 2020. Multi-source domain adaptation in the deep learning era: A systematic survey. arXiv preprint arXiv:2002.12169 (2020). [34] Sicheng Zhao, Bo Li, Xiangyu Yue, Yang Gu, Pengfei Xu, Runbo Hu, Hua Chai, and Kurt Keutzer. 2019. Multi-source domain adaptation for semantic segmentation. arXiv preprint arXiv:1910.12181 (2019). [35] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep Interest Evolution Network for Click-Through Rate Prediction. In Proceedings of the 33rd AAAI Conference on Artificial Intelligence . Honolulu, Hawaii, USA, 5941-5948. [36] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 1059-1068. [37] Yongchun Zhu, Fuzhen Zhuang, and Deqing Wang. 2019. Aligning domainspecific distribution and classifier for cross-domain classification from multiple sources. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 5989-5996.",
   "keywords_parsed": [
     "Multi-Domain Learning",
-    " Multi-Task Learning",
-    " Personalization",
-    " Recommender System"
+    "Multi-Task Learning",
+    "Personalization",
+    "Recommender System"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Tensorflow: A system for large-scale machine learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Convex multi-task feature learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A theory of learning from different domains"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Analysis of representations for domain adaptation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Domain adaptation for statistical classifiers"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Understanding the difficulty of training deep feedforward neural networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deepfm: a factorization-machine based neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "GateNet: Gating-Enhanced Deep Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Adaptive mixtures of local experts"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b13",
+      "title": "DDTCRD: Deep dual transfer cross domain recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "End-to-end multi-task learning with attention"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Why I like it: multi-task learning for recommendation and explanation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Hierarchical gating networks for sequential recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Cross-Stitch Networks for Multi-task Learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Moment matching for multi-source domain adaptation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Sluice networks: Learning what to share between loosely related tasks"
+    },
+    {
+      "ref_id": "b25",
+      "title": "One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Learning hidden unit contributions for unsupervised acoustic model adaptation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Online multitask collaborative filtering for on-the-fly recommender systems"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Explainable recommendation via multi-task learning in opinionated text data"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b31",
+      "title": "DCN V2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Deep learning over multi-field categorical data"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Multi-source domain adaptation in the deep learning era: A systematic survey"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Multi-source domain adaptation for semantic segmentation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep Interest Evolution Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Aligning domain-specific distribution and classifier for cross-domain classification from multiple sources"
+    }
   ]
 }

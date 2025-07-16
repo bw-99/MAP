@@ -28,6 +28,219 @@
   "REFERENCES": "[1] S. Zhang, L. Yao, A. Sun, and Y. Tay, 'Deep learning based recommender system: A survey and new perspectives,' ACM Computing Surveys (CSUR), vol. 52, no. 1, pp. 1-38, 2019. [2] Y. Zhang and X. Chen, 'Explainable recommendation: A survey and new perspectives,' Foundations and Trends in Information Retrieval, vol. 14, no. 1, pp. 1-101, 2020. [3] G. Linden, B. Smith, and J. York, 'Amazon.com recommendations: itemto-item collaborative filtering,' IEEE Internet Computing, vol. 7, no. 1, pp. 76-80, 2003. [4] P. Covington, J. Adams, and E. Sargin, 'Deep neural networks for youtube recommendations,' in Proceedings of the 10th ACM conference on recommender systems, 2016, pp. 191-198. [5] X. Wang, X. He, F. Feng, L. Nie, and T.-S. Chua, TEM: Tree-Enhanced Embedding Model for Explainable Recommendation. Republic and Canton of Geneva, CHE: International World Wide Web Conferences Steering Committee, 2018, p. 1543-1552. [Online]. Available: https://doi.org/10.1145/3178876.3186066 [6] J. Ma, C. Zhou, P. Cui, H. Yang, and W. Zhu, 'Learning disentangled representations for recommendation,' arXiv preprint arXiv:1910.14238, 2019. [7] Y. Cen, J. Zhang, X. Zou, C. Zhou, H. Yang, and J. Tang, 'Controllable multi-interest framework for recommendation,' in Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, 2020, pp. 2942-2951. [8] M. Tennenholtz and O. Kurland, 'Rethinking search engines and recommendation systems: a game theoretic perspective,' Communications of the ACM, vol. 62, no. 12, pp. 66-75, 2019. [9] R. Baeza-Yates, C. Hurtado, and M. Mendoza, 'Query recommendation using query logs in search engines,' in International conference on extending database technology. Springer, 2004, pp. 588-596. [10] S. Bouraga, I. Jureta, S. Faulkner, and C. Herssens, 'Knowledge-based recommendation systems: a survey,' International Journal of Intelligent Information Technologies (IJIIT), vol. 10, no. 2, pp. 1-19, 2014. [11] Y. Koren, R. Bell, and C. Volinsky, 'Matrix factorization techniques for recommender systems,' Computer, vol. 42, no. 8, pp. 30-37, 2009. [12] A. Mnih and R. R. Salakhutdinov, 'Probabilistic matrix factorization,' Advances in neural information processing systems, vol. 20, pp. 12571264, 2007. [13] X. He, L. Liao, H. Zhang, L. Nie, X. Hu, and T.-S. Chua, 'Neural collaborative filtering,' in Proceedings of the 26th international conference on world wide web, 2017, pp. 173-182. [14] M. Jamali and M. Ester, 'A matrix factorization technique with trust propagation for recommendation in social networks,' in Proceedings of the fourth ACM conference on Recommender systems, 2010, pp. 135142. [15] H. Steck, 'Item popularity and recommendation accuracy,' in Proceedings of the fifth ACM conference on Recommender systems, 2011, pp. 125-132. IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS, SUBMITTED 11 [16] W. Wang, F. Feng, X. He, H. Zhang, and T.-S. Chua, '' click' is not equal to' like': Counterfactual recommendation for mitigating clickbait issue,' arXiv preprint arXiv:2009.09945, 2020. [17] J. Chen, H. Dong, X. Wang, F. Feng, M. Wang, and X. He, 'Bias and debias in recommender system: A survey and future directions,' arXiv preprint arXiv:2010.03240, 2020. [18] C. Song, Y. Ge, T. Ge, H. Wu, Z. Lin, H. Kang, and X. Yuan, 'Similar but foreign: Link recommendation across communities,' Information Sciences, vol. 552, pp. 142-166, 2021. [19] Z. Ovaisi, R. Ahsan, Y. Zhang, K. Vasilaky, and E. Zheleva, 'Correcting for selection bias in learning-to-rank systems,' in Proceedings of The Web Conference 2020, 2020, pp. 1863-1873. [20] T. Schnabel, A. Swaminathan, A. Singh, N. Chandak, and T. Joachims, 'Recommendations as treatments: Debiasing learning and evaluation,' in international conference on machine learning. PMLR, 2016, pp. 1670-1679. [21] X. Wang, M. Bendersky, D. Metzler, and M. Najork, 'Learning to rank with selection bias in personal search,' in Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval, 2016, pp. 115-124. [22] D. Liang, L. Charlin, and D. M. Blei, 'Causal inference for recommendation,' in Causation: Foundation to Application, Workshop at UAI. AUAI, 2016. [23] S. Bonner and F. Vasile, 'Causal embeddings for recommendation,' in Proceedings of the 12th ACM conference on recommender systems, 2018, pp. 104-112. [24] W. Wang, F. Feng, X. He, X. Wang, and T.-S. Chua, 'Deconfounded recommendation for alleviating bias amplification,' arXiv preprint arXiv:2105.10648, 2021. [25] T. Wei, F. Feng, J. Chen, C. Shi, Z. Wu, J. Yi, and X. He, 'Modelagnostic counterfactual reasoning for eliminating popularity bias in recommender system,' arXiv preprint arXiv:2010.15363, 2020. [26] Y. Zhang, F. Feng, X. He, T. Wei, C. Song, G. Ling, and Y. Zhang, 'Causal intervention for leveraging popularity bias in recommendation,' arXiv preprint arXiv:2105.06067, 2021. [27] C. Louizos, U. Shalit, J. Mooij, D. Sontag, R. Zemel, and M. Welling, 'Causal effect inference with deep latent-variable models,' in Proceedings of the 31st International Conference on Neural Information Processing Systems, 2017, pp. 6449-6459. [28] A. Sharma, J. M. Hofman, and D. J. Watts, 'Estimating the causal impact of recommendation systems from observational data,' in Proceedings of the Sixteenth ACM Conference on Economics and Computation, 2015, pp. 453-470. [29] Q. Ai, K. Bi, C. Luo, J. Guo, and W. B. Croft, 'Unbiased learning to rank with unbiased propensity estimation,' in The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval, 2018, pp. 385-394. [30] X. Wang, R. Zhang, Y. Sun, and J. Qi, 'Doubly robust joint learning for recommendation on data missing not at random,' in International Conference on Machine Learning. PMLR, 2019, pp. 6638-6647. [31] Z. Wang, X. Chen, R. Wen, S.-L. Huang, E. E. Kuruoglu, and Y. Zheng, 'Information theoretic counterfactual learning from missingnot-at-random feedback,' arXiv preprint arXiv:2009.02623, 2020. [32] D. Xu, C. Ruan, E. Korpeoglu, S. Kumar, and K. Achan, 'Adversarial counterfactual learning and evaluation for recommender system,' Advances in Neural Information Processing Systems, vol. 33, 2020. [33] H. Ma, H. Yang, M. R. Lyu, and I. King, 'Sorec: social recommendation using probabilistic matrix factorization,' in Proceedings of the 17th ACM conference on Information and knowledge management, 2008, pp. 931-940. [34] B. Yang, Y. Lei, J. Liu, and W. Li, 'Social collaborative filtering by trust,' IEEE transactions on pattern analysis and machine intelligence, vol. 39, no. 8, pp. 1633-1647, 2017. [35] S. Deng, L. Huang, G. Xu, X. Wu, and Z. Wu, 'On deep learning for trust-aware recommendations in social networks,' IEEE transactions on neural networks and learning systems, vol. 28, no. 5, pp. 1164-1177, 2016. [36] W. Fan, T. Derr, Y. Ma, J. Wang, J. Tang, and Q. Li, 'Deep adversarial social recommendation,' arXiv preprint arXiv:1905.13160, 2019. [37] F. Zhou, Y. Mo, G. Trajcevski, K. Zhang, J. Wu, and T. Zhong, 'Recommendation via collaborative autoregressive flows,' Neural Networks, vol. 126, pp. 52-64, 2020. [38] G. Papamakarios, E. Nalisnick, D. J. Rezende, S. Mohamed, and B. Lakshminarayanan, 'Normalizing flows for probabilistic modeling and inference,' arXiv preprint arXiv:1912.02762, 2019. [39] D. Liang, R. G. Krishnan, M. D. Hoffman, and T. Jebara, 'Variational autoencoders for collaborative filtering,' in Proceedings of the 2018 world wide web conference, 2018, pp. 689-698. [40] D. P. Kingma and M. Welling, 'Auto-encoding variational bayes,' arXiv preprint arXiv:1312.6114, 2013. [41] H. Liu, L. Jing, J. Wen, Z. Wu, X. Sun, J. Wang, L. Xiao, and J. Yu, 'Deep global and local generative model for recommendation,' in Proceedings of The Web Conference 2020, 2020, pp. 551-561. [42] J. Yu, H. Yin, J. Li, M. Gao, Z. Huang, and L. Cui, 'Enhance social recommendation with adversarial graph convolutional networks,' IEEE Transactions on Knowledge and Data Engineering, 2020. [43] J. Pearl, Causality. Cambridge university press, 2009. [44] P. Veliˇ ckovi´ c, G. Cucurull, A. Casanova, A. Romero, P. Lio, and Y. Bengio, 'Graph attention networks,' arXiv preprint arXiv:1710.10903, 2017. [45] U. Shalit, F. D. Johansson, and D. Sontag, 'Estimating individual treatment effect: generalization bounds and algorithms,' in International Conference on Machine Learning. PMLR, 2017, pp. 3076-3085. [46] E. Jang, S. Gu, and B. Poole, 'Categorical reparameterization with gumbel-softmax,' arXiv preprint arXiv:1611.01144, 2016. [47] T. N. Kipf and M. Welling, 'Variational graph auto-encoders,' arXiv preprint arXiv:1611.07308, 2016. [48] S. Rendle, C. Freudenthaler, Z. Gantner, and L. Schmidt-Thieme, 'Bpr: Bayesian personalized ranking from implicit feedback,' in Proceedings of the Twenty-Fifth Conference on Uncertainty in Artificial Intelligence, 2009, pp. 452-461. [49] W. Fan, Y. Ma, Q. Li, Y. He, E. Zhao, J. Tang, and D. Yin, 'Graph neural networks for social recommendation,' in The World Wide Web Conference, 2019, pp. 417-426. [50] X. He, K. Deng, X. Wang, Y. Li, Y. Zhang, and M. Wang, 'Lightgcn: Simplifying and powering graph convolution network for recommendation,' in Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval, 2020, pp. 639648. [51] X. Wang, X. He, M. Wang, F. Feng, and T.-S. Chua, 'Neural graph collaborative filtering,' in Proceedings of the 42nd international ACM SIGIR conference on Research and development in Information Retrieval, 2019, pp. 165-174. [52] I. Shenbin, A. Alekseev, E. Tutubalina, V. Malykh, and S. I. Nikolenko, 'Recvae: A new variational autoencoder for top-n recommendations with implicit feedback,' in Proceedings of the 13th International Conference on Web Search and Data Mining, 2020, pp. 528-536. IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS, SUBMITTED 12",
   "APPENDIX": "The proofs of evidence lower bound (ELBO)  Proof. The proof of the ELBO is composed of three steps. First, we factorize the conditional distribution according to the Bayes theorem.  Second, we add the expectation operator on both sides of the equation and reformalize the equation as follows:   Third, we obtain the last equality with the help of D KL ( ·||· ) ≥ 0",
   "keywords_parsed": [
-    "None"
+    "Recommendation System",
+    "Social Recommendation System",
+    "Causal Effect",
+    "Variational Auto-Encoder"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Deep learning based recommender system: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Explainable recommendation: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Amazon.com recommendations: item-to-item collaborative filtering"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "TEM: Tree-Enhanced Embedding Model for Explainable Recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Learning disentangled representations for recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Controllable multi-interest framework for recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Rethinking search engines and recommendation systems: a game theoretic perspective"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Query recommendation using query logs in search engines"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Knowledge-based recommendation systems: a survey"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Probabilistic matrix factorization"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A matrix factorization technique with trust propagation for recommendation in social networks"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Item popularity and recommendation accuracy"
+    },
+    {
+      "ref_id": "b16",
+      "title": "'click' is not equal to 'like': Counterfactual recommendation for mitigating clickbait issue"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Bias and debias in recommender system: A survey and future directions"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Similar but foreign: Link recommendation across communities"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Correcting for selection bias in learning-to-rank systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Recommendations as treatments: Debiasing learning and evaluation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Learning to rank with selection bias in personal search"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Causal inference for recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Causal embeddings for recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Deconfounded recommendation for alleviating bias amplification"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Model-agnostic counterfactual reasoning for eliminating popularity bias in recommender system"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Causal intervention for leveraging popularity bias in recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Causal effect inference with deep latent-variable models"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Estimating the causal impact of recommendation systems from observational data"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Unbiased learning to rank with unbiased propensity estimation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Doubly robust joint learning for recommendation on data missing not at random"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Information theoretic counterfactual learning from missing-not-at-random feedback"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Adversarial counterfactual learning and evaluation for recommender system"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Sorec: social recommendation using probabilistic matrix factorization"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Social collaborative filtering by trust"
+    },
+    {
+      "ref_id": "b35",
+      "title": "On deep learning for trust-aware recommendations in social networks"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Deep adversarial social recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Recommendation via collaborative autoregressive flows"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Normalizing flows for probabilistic modeling and inference"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Variational autoencoders for collaborative filtering"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Auto-encoding variational bayes"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep global and local generative model for recommendation"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Enhance social recommendation with adversarial graph convolutional networks"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Causality"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Graph attention networks"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Estimating individual treatment effect: generalization bounds and algorithms"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Categorical reparameterization with gumbel-softmax"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Variational graph auto-encoders"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Bpr: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Graph neural networks for social recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Recvae: A new variational autoencoder for top-n recommendations with implicit feedback"
+    }
   ]
 }

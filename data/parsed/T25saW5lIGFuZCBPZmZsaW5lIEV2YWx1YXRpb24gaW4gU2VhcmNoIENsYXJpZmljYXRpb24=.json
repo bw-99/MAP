@@ -18,7 +18,319 @@
   "5 DISCUSSION": "We showed that the evaluation of retrieval quality through online and offline assessments often produces contrasting results, as observed in previous studies on this topic [16, 18, 22, 56]. Specifically, the findings of our current research differ from those of a prior study focused on search clarification [74]. Zamani et al. [74] examined the MIMICS dataset and investigated correlations between online and offline evaluations using a single offline label. They concluded that no correlation was observed between the two evaluation methods. In contrast, the current study analysed the MIMICS-Duo dataset utilising various online and offline labels. We observed a relationship between online and offline evaluations in the context of search clarification when the aim is to identify the most engaging clarification pane among multiple generated panes for a given query. However, our research supports previous studies by revealing a discrepancy between online and offline evaluations regarding ranking clarification panes for a given query. We manually examined various panes to understand why users might engage more with lower-quality clarification panes. We observed that while the human annotation was carried out accurately based on the available information, it does not always guarantee that the annotators can accurately capture the user's intent. This finding helps to explain the contradictions observed between online and offline evaluations. In attempting to explain these discrepancies, we consider two explanations proposed by Teevan et al. [63] and Liu et al. [44]. Teevan et al. [63] suggested that different users who issue the same textual query may have distinct information needs or intentions, leading to varying evaluations. This implies that users' subjective preferences and expectations play a significant role in assessing the quality of clarification panes. Liu et al. [44], on the other hand, proposed that there may be notable disparities between assessors' judgements and users' assessments due to differences between satisfaction prediction and document relevancy prediction. To some extent, satisfaction is subjective, as different users may have varying opinions on what constitutes a satisfying experience. Apart from the reasons mentioned here, it is essential to acknowledge that the information provided to annotators can impact the correlation between online and offline evaluations. When determining the MECPs, it is essential to assess the SERP and clarification pane quality as well as their relation to each other. Evaluating either component independently may lead to misleading conclusions in certain scenarios. This study demonstrates the value of using collected offline labels for predicting online user behaviour and identifying the MECP within generated panes for a query, particularly when employing Language Models for task formulation. Despite having identical input features, we observed different performances between the GPT-3.5 and LTR models. The observations can be attributed to several factors: 22 Tavakoli et al. · Model Complexity and Training Data: GPT-3.5 is a highly complex language model with 175 billion parameters. It has been trained on a large and diverse corpus of text from the internet, which gives it a broad understanding of natural language. This extensive training data allows it to make nuanced judgements about relevance [19]. However, the LTR model had no access to such a vast and diverse dataset. Moreover, The LTR model might have been trained on a dataset that introduced some biases or limitations that affected its performance. GPT-3.5's extensive pre-training on diverse internet text might have helped it overcome some of these biases. · Contextual Understanding: GPT-3.5, with its deep transformer architecture, has been trained to generate humanlike text based on context. It can learn from vast amounts of data and this context awareness might enable it to better understand the relationship between queries, clarification questions, options, relevance labels and user engagement. · Model Architecture: GPT-3.5 and LTR models have different architectures and underlying principles. GPT-3.5 is a transformer-based language model that excels at capturing semantic and contextual information in text. On the other hand, LTR models, such as AdaRank or RankBoost, are specifically designed for learning to rank tasks and may have different assumptions and optimisations. · Learning Approaches: GPT-3.5 utilises unsupervised learning through language modelling objectives, which allows it to capture a wide range of language patterns and contexts. In contrast, LTR models often rely on supervised learning techniques with explicit relevance labels or features specific to ranking tasks. · Evaluation Metric: The metric used to evaluate performance might favour GPT-3.5's capabilities. If the task relies heavily on natural language understanding and generation, GPT-3.5's strengths would be more pronounced. · Generalisation Ability: GPT-3.5 is designed to generalise well across a wide range of tasks without task-specific fine-tuning. This means it can handle a diverse set of queries and situations effectively, including those it wasn't explicitly trained for. The observations and findings in this research have several theoretical and practical implications as following: · By investigating the relationship between online and offline evaluations specifically in the context of search clarification, we contribute to a deeper theoretical understanding of how offline assessments relate to real-time user engagement. · By understanding which characteristics contribute most to engagement, developers can tailor their approaches to better meet user needs and preferences. · Insights from our study can inform the development of evaluation methods for search systems. By considering both online and offline evaluation approaches and understanding their relationship, researchers and practitioners can design more comprehensive evaluation frameworks that capture the nuanced aspects of user engagement. · The finding that Large Language Models outperform Learning-to-Rank models and individual offline labels suggests practical implications for model selection and integration in search systems. Integrating human labels into model training can enhance the performance of LLMs, leading to more accurate identification of engaging clarification questions from the user's perspective.",
   "6 CONCLUSIONS AND FUTURE WORK": "How well online and offline evaluations correspond to each other in search clarification is the knowledge gap that was addressed in this study by answering the research questions below: RQ1 : How well do offline evaluations correspond with online evaluations in search clarification? Online and Offline Evaluation in Search Clarification 23 Offline evaluations can complement online evaluations in identifying the most engaging clarification pane for a given query. This suggests that offline evaluation methodologies can be useful for assessing the effectiveness of search clarification models in terms of user engagement. We have demonstrated that clarification panes must excel in multiple aspects to be considered engaging from a user's perspective. Merely having high Coverage or Diversity does not guarantee engagement. However, when ranking multiple clarification panes for a given query, offline evaluations do not outperform a Random Ranker. This implies that current offline evaluation methodologies may not be well-suited for evaluating the ranking performance of search clarification models. We also showed that some offline labels, in particular, Overall Quality and Coverage perform better than others in corresponding with user engagement. We automated the ranking of clarification panes to identify the MECP from a user's perspective for a given query using GPT-3.5 and LTR models. We utilised the offline labels as the input for the models and compared the performance of the models with the offline labels. The LTR models did not demonstrate advantages over individual offline labels. On the other hand, GPT-3.5 surpassed both the LTR models and offline labels in successfully placing the MECP in the top position for a given query, showcasing its superior performance in this task when the offline labels were used the the model input. However, we observed that in the absence of the offline labels as the input for GPT-3.5, its performance dropped dramatically. This highlights that despite the recent advancements in LLMs, they are still unable to completely substitute human evaluations in all circumstances. The impact of query length on the relationship between online and offline evaluations in search clarification is minimal. The evaluation metrics obtained from offline evaluations remain in the same order regardless of query length. However, the highest-performing offline label differs between short and long queries, indicating that different evaluation criteria may be more relevant depending on query length. RQ2 : How does uncertainty in the online evaluation impact the relationship between online and offline evaluation? The reliability of online evaluation data influences the strength of the relationship between online and offline evaluation. When online data is more reliable, a stronger correspondence with offline evaluation is expected. This suggests that ensuring the quality of online evaluation data is crucial for obtaining meaningful insights. Furthermore, we employed six distinct evaluation metrics and found that the specific choice of metrics can influence the relationship between online and offline evaluations in search clarification. Suppose the goal is to examine both online and offline evaluations to identify the most engaging clarification for a given query. In that case, we suggest focusing on the Precision at Rank 1 (P@1) and Mean Reciprocal Rank (MRR) metrics as top priorities. Metrics such as RBO and RBP that consider binary relevance are inappropriate for comparing online and offline evaluations in search clarification. Despite the valuable insights provided by this study, certain limitations should be acknowledged. The limitations include: · It was shown that offline evaluations may not always align fully with online evaluations in certain instances. Enhancing the information given to annotators can improve the consistency between online and offline assessments. · The study primarily focused on five specific offline evaluation approaches. While these approaches provided valuable insights, other potential methodologies or variations of existing approaches may exist that were not explored in this study. · The study's findings were based on specific evaluation metrics. Moreover, the observations were based on the experiments conducted on the MIMICS-Duo dataset. MIMICS-Duo is the only publicly available search 24 Tavakoli et al. clarification dataset containing online and offline evaluations. Larger and more diverse datasets are required to expand the conclusions. The generalisability of the results to other domains or search clarification scenarios also requires additional investigation. · User engagement is subjective, and users may have varying preferences. While the study considered multiple aspects of user engagement, individual preferences and subjective interpretations of engagement may not be fully captured. In our study, while acknowledging the potential influence of dataset size, the statistically significant differences we observed in our analysis provide a solid basis for drawing trustworthy conclusions. We have employed rigorous statistical methods to ensure the reliability of our findings, and the observed effects are unlikely to have occurred by chance alone. Based on the conclusions drawn from this study, here are some potential directions for future work: · Expand and refine offline labels and evaluation metrics: This study focused on five offline evaluation methodologies, but there is room for exploring additional aspects. Future work could also involve developing and testing new evaluation metrics or adapting existing metrics from related fields. This would help in obtaining a more comprehensive understanding of search clarification models. · Investigate other factors: While the study addressed the impact of query length on the relationship between online and offline evaluation, other factors are worth exploring. Future research could investigate how query intent, topic, or clarity/difficulty influence the relationship between online and offline evaluations. Understanding these factors would provide deeper insights into the effectiveness of search clarification models. · Apply the Wizard of Oz approach: Conducting experiments using the Wizard of Oz approach [24], where clarification questions are directly asked from users, can provide valuable insights into what factors contribute to making a clarification engaging. This approach involves simulating the functionality of search clarification models through human operators. By studying user interactions and preferences in this setup, researchers can better understand the key elements that make clarifications effective and engaging. · Improve annotation guidelines: Providing more information to annotators can enhance the correspondence between online and offline evaluations. Future work should focus on developing improved annotation guidelines that provide clearer instructions and examples to annotators. Well-defined guidelines would help ensure consistent and reliable annotations, leading to more accurate offline evaluations. · Explore other user engagement metrics: We focused on evaluating the effectiveness of search clarification models based on a click-through measurement, future research could explore additional metrics. For instance, sentiment analysis could assess user satisfaction or frustration levels. Integrating such metrics into the evaluation framework would provide a more comprehensive understanding of the impact of search clarification on user experience. By focusing on these areas of future work, researchers can further advance the understanding of search clarification systems, leading to improved user experiences and more effective communication in various domains.",
   "REFERENCES": "[1] Rakesh Agrawal, Alan Halverson, Krishnaram Kenthapadi, Nina Mishra, and Panayiotis Tsaparas. 2009. Generating labels from clicks. In Proceedings of the Second ACM International Conference on Web Search and Data Mining . 172-181. [2] Azzah Al-Maskari and Mark Sanderson. 2011. The effect of user characteristics on search effectiveness in information retrieval. Information Processing & Management 47, 5 (2011), 719-729. [3] Mohammad Aliannejadi, Julia Kiseleva, Aleksandr Chuklin, Jeff Dalton, and Mikhail Burtsev. 2020. ConvAI3: Generating Clarifying Questions for Open-Domain Dialogue Systems (ClariQ). arXiv preprint arXiv:2009.11352 (2020). Online and Offline Evaluation in Search Clarification 25 [4] Mohammad Aliannejadi, Julia Kiseleva, Aleksandr Chuklin, Jeff Dalton, and Mikhail Burtsev. 2021. Building and Evaluating Open-Domain Dialogue Corpora with Clarifying Questions. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing . 4473-4484. [5] Mohammad Aliannejadi, Hamed Zamani, Fabio Crestani, and W Bruce Croft. 2019. Asking clarifying questions in open-domain information-seeking conversations. In Proceedings of the 42nd international acm sigir conference on research and development in information retrieval . 475-484. [6] Alexandros Bampoulidis, João Palotti, Mihai Lupu, Jon Brassey, and Allan Hanbury. 2017. Does online evaluation correspond to offline evaluation in query auto completion?. In European Conference on Information Retrieval . Springer, 713-719. [7] Joeran Beel and Stefan Langer. 2015. A comparison of offline evaluations, online evaluations, and user studies in the context of research-paper recommender systems. In International conference on theory and practice of digital libraries . Springer, 153-168. [8] Joeran Beel, Stefan Langer, Marcel Genzmehr, Bela Gipp, Corinna Breitinger, and Andreas Nürnberger. 2013. Research paper recommender system evaluation: a quantitative literature survey. In Proceedings of the International Workshop on Reproducibility and Replication in Recommender Systems Evaluation . 15-22. [9] Michael Bendersky and W Bruce Croft. 2009. Analysis of long queries in a large scale search log. In Proceedings of the 2009 workshop on Web Search Click Data . 8-14. [10] Pavel Braslavski, Denis Savenkov, Eugene Agichtein, and Alina Dubatovka. 2017. What do you mean exactly? Analyzing clarification questions in CQA. In Proceedings of the 2017 Conference on Conference Human Information Interaction and Retrieval . 345-348. [11] Olivier Chapelle, Thorsten Joachims, Filip Radlinski, and Yisong Yue. 2012. Large-scale validation and analysis of interleaved search evaluation. ACM Transactions on Information Systems (TOIS) 30, 1 (2012), 1-41. [12] Olivier Chapelle and Ya Zhang. 2009. A dynamic bayesian network click model for web search ranking. In Proceedings of the 18th international conference on World wide web . 1-10. [13] Ye Chen, Ke Zhou, Yiqun Liu, Min Zhang, and Shaoping Ma. 2017. Meta-evaluation of online and offline web search evaluation metrics. In Proceedings of the 40th international ACM SIGIR conference on research and development in information retrieval . 15-24. [14] Aleksandr Chuklin, Pavel Serdyukov, and Maarten De Rijke. 2013. Click model-based information retrieval metrics. In Proceedings of the 36th international ACM SIGIR conference on Research and development in information retrieval . 493-502. [15] Cyril Cleverdon, Jack Mills, and Michael Keen. 1966. Factors determining the performance of indexing systems. (1966). [16] Paolo Cremonesi, Franca Garzotto, and Roberto Turrin. 2012. Investigating the persuasion potential of recommender systems from a quality perspective: An empirical study. ACM Transactions on Interactive Intelligent Systems (TiiS) 2, 2 (2012), 1-41. [17] V. Dang. 2013. The Lemur Project-Wiki-RankLib. Lemur Project (2013). Available at https://sourceforge.net/p/lemur/wiki/RankLib. [18] Michael D Ekstrand, F Maxwell Harper, Martijn C Willemsen, and Joseph A Konstan. 2014. User perception of differences in recommender algorithms. In Proceedings of the 8th ACM Conference on Recommender systems . 161-168. [19] Mehmet Firat. 2023. What ChatGPT means for universities: Perceptions of scholars and students. Journal of Applied Learning and Teaching 6, 1 (2023). [20] Steve Fox, Kuldeep Karnawat, Mark Mydland, Susan Dumais, and Thomas White. 2005. Evaluating implicit measures to improve web search. ACM Transactions on Information Systems (TOIS) 23, 2 (2005), 147-168. [21] Malte Gabsdil. 2003. Clarification in spoken dialogue systems. In Proceedings of the 2003 AAAI Spring Symposium. Workshop on Natural Language Generation in Spoken and Written Dialogue . 28-35. [22] Florent Garcin, Boi Faltings, Olivier Donatsch, Ayar Alazzawi, Christophe Bruttin, and Amr Huber. 2014. Offline and online evaluation of news recommender systems at swissinfo. ch. In Proceedings of the 8th ACM Conference on Recommender systems . 169-176. [23] Bo Geng, Linjun Yang, Chao Xu, Xian-Sheng Hua, and Shipeng Li. 2011. The role of attractiveness in web image search. In Proceedings of the 19th ACM international conference on Multimedia . 63-72. [24] Bruce Hanington and Bella Martin. 2019. Universal methods of design expanded and revised: 125 Ways to research complex problems, develop innovative ideas, and design effective solutions . Rockport publishers. [25] Samuel Huston and W Bruce Croft. 2010. Evaluating verbose query processing techniques. In Proceedings of the 33rd international ACM SIGIR conference on Research and development in information retrieval . 291-298. [26] Osman Ali Sadek Ibrahim and Eman MG Younis. 2022. Hybrid online-offline learning to rank using simulated annealing strategy based on dependent click model. Knowledge and Information Systems (2022), 1-15. [27] Amir Ingber, Liane Lewin-Eytan, Alexander Libov, Yoelle Maarek, and Eliyahu Osherovich. 2018. Offline vs. Online Evaluation in Voice Product Search. In Proc. 1st International Workshop on Generalization in Information Retrieval (GLARE 2018). http://glare2018. dei. unipd. it/paper/glare2018-paper4. pdf . [28] Jiepu Jiang, Ahmed Hassan Awadallah, Xiaolin Shi, and Ryen W White. 2015. Understanding and predicting graded search satisfaction. In Proceedings of the Eighth ACM International Conference on Web Search and Data Mining . 57-66. [29] Thorsten Joachims. 2002. Optimizing search engines using clickthrough data. In Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining . 133-142. [30] Thorsten Joachims. 2006. Training Linear SVMs in Linear Time. In Proceedings of the 12th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 217-226. [31] Thorsten Joachims et al. 2003. Evaluating Retrieval Performance Using Clickthrough Data. 26 Tavakoli et al. [32] Thorsten Joachims, Laura Granka, Bing Pan, Helene Hembrooke, and Geri Gay. 2017. Accurately interpreting clickthrough data as implicit feedback. In Acm Sigir Forum , Vol. 51. Acm New York, NY, USA, 4-11. [33] Thorsten Joachims, Laura Granka, Bing Pan, Helene Hembrooke, Filip Radlinski, and Geri Gay. 2007. Evaluating the accuracy of implicit feedback from clicks and query reformulations in web search. ACM Transactions on Information Systems (TOIS) 25, 2 (2007), 7-es. [34] Diane Kelly and Jaime Teevan. 2003. Implicit feedback for inferring user preference: a bibliography. In Acm Sigir Forum , Vol. 37. ACM New York, NY, USA, 18-28. [35] Maurice George Kendall. 1948. Rank correlation methods. (1948). [36] Kyung-Sun Kim. 2008. Effects of emotion control and task on web searching behavior. Information Processing & Management 44, 1 (2008), 373-385. [37] Youngho Kim, Ahmed Hassan, Ryen W White, and Imed Zitouni. 2014. Comparing client and server dwell time estimates for click-level satisfaction prediction. In Proceedings of the 37th international ACM SIGIR conference on Research & development in information retrieval . 895-898. [38] Ron Kohavi, Roger Longbotham, Dan Sommerfield, and Randal M Henne. 2009. Controlled experiments on the web: survey and practical guide. Data mining and knowledge discovery 18, 1 (2009), 140-181. [39] Antonios Minas Krasakis, Mohammad Aliannejadi, Nikos Voskarides, and Evangelos Kanoulas. 2020. Analysing the effect of clarifying questions on document ranking in conversational search. In Proceedings of the 2020 ACM SIGIR on International Conference on Theory of Information Retrieval . 129-132. [40] Vaibhav Kumar, Vikas Raunak, and Jamie Callan. 2020. Ranking Clarification Questions via Natural Language Inference. In 29th ACM International Conference on Information and Knowledge Management (CIKM) . [41] Shuai Li, Yasin Abbasi-Yadkori, Branislav Kveton, Shan Muthukrishnan, Vishwa Vinay, and Zheng Wen. 2018. Offline evaluation of ranking policies with click models. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1685-1694. [42] Jiqun Liu, Yiwei Wang, Soumik Mandal, and Chirag Shah. 2019. Exploring the immediate and short-term effects of peer advice and cognitive authority on Web search behavior. Information Processing & Management 56, 3 (2019), 1010-1025. [43] Jiqun Liu and Ran Yu. 2021. State-aware meta-evaluation of evaluation metrics in interactive information retrieval. In Proceedings of the 30th ACM international conference on information & knowledge management . 3258-3262. [44] Yiqun Liu, Ye Chen, Jinhui Tang, Jiashen Sun, Min Zhang, Shaoping Ma, and Xuan Zhu. 2015. Different users, different opinions: Predicting search satisfaction with mouse movement information. In Proceedings of the 38th international ACM SIGIR conference on research and development in information retrieval . 493-502. [45] Yiqun Liu, Yupeng Fu, Min Zhang, Shaoping Ma, and Liyun Ru. 2007. Automatic search engine performance evaluation with click-through data analysis. In Proceedings of the 16th international conference on World Wide Web . 1133-1134. [46] Alistair Moffat and Justin Zobel. 2008. Rank-biased precision for measurement of retrieval effectiveness. ACM Transactions on Information Systems (TOIS) 27, 1 (2008), 1-27. [47] Heather L O'Brien, Jaime Arguello, and Rob Capra. 2020. An empirical study of interest, task complexity, and search behaviour on user engagement. Information Processing & Management 57, 3 (2020), 102226. [48] Wenjie Ou and Yue Lin. 2020. A Clarifying Question Selection System from NTES_ALONG in Convai3 Challenge. arXiv preprint arXiv:2010.14202 (2020). [49] Maeve O'Brien and Mark T Keane. 2006. Modeling result-list searching in the World Wide Web: The role of relevance topologies and trust bias. In Proceedings of the 28th annual conference of the cognitive science society , Vol. 28. Citeseer, 1881-1886. [50] Karl Pearson. 1896. VII. Mathematical contributions to the theory of evolution.-III. Regression, heredity, and panmixia. Philosophical Transactions of the Royal Society of London. Series A, containing papers of a mathematical or physical character 187 (1896), 253-318. [51] Gustavo Penha, Alexandru Balan, and Claudia Hauff. 2019. Introducing MANtIS: a novel Multi-Domain Information Seeking Dialogues Dataset. arXiv preprint arXiv:1912.04639 (2019). [52] Silvia Quarteroni and Suresh Manandhar. 2007. A chatbot-based interactive question answering system. Decalog 2007 83 (2007). [53] Sudha Rao and Hal Daumé III. 2018. Learning to ask good questions: Ranking clarification questions using neural expected value of perfect information. arXiv preprint arXiv:1805.04655 (2018). [54] Sudha Rao and Hal Daumé III. 2019. Answer-based adversarial training for generating clarification questions. arXiv preprint arXiv:1904.02281 (2019). [55] Marco Rossetti, Fabio Stella, and Markus Zanker. 2016. Contrasting offline and online results when evaluating recommendation algorithms. In Proceedings of the 10th ACM conference on recommender systems . 31-34. [56] Alan Said and Alejandro Bellogín. 2014. Comparative recommender system evaluation: benchmarking recommendation frameworks. In Proceedings of the 8th ACM Conference on Recommender systems . 129-136. [57] Ivan Sekulić, Mohammad Aliannejadi, and Fabio Crestani. 2021. User Engagement Prediction for Clarification in Search. arXiv preprint arXiv:2102.04163 (2021). [58] Vered Shwartz, Peter West, Ronan Le Bras, Chandra Bhagavatula, and Yejin Choi. 2020. Unsupervised Commonsense Question Answering with Self-Talk. In Conference on Empirical Methods in Natural Language Processing (EMNLP) . [59] AStoll. 2017. Post hoc tests: Tukey honestly significant difference test. The SAGE encyclopedia of communication research methods (2017), 1306-1307. [60] Adith Swaminathan and Thorsten Joachims. 2015. Counterfactual risk minimization: Learning from logged bandit feedback. In International Conference on Machine Learning . PMLR, 814-823. Online and Offline Evaluation in Search Clarification 27 [61] Leila Tavakoli, Johanne R. Trippas, Hamed Zamani, Falk Scholer, and Mark Sanderson. 2022. MIMICS-Duo: Offline & Online Evaluation of Search Clarification. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (Madrid, Spain) (SIGIR '22) . Association for Computing Machinery, New York, NY, USA, 3198-3208. https://doi.org/10.1145/3477495.3531750 [62] Leila Tavakoli, Hamed Zamani, Falk Scholer, William Bruce Croft, and Mark Sanderson. 2022. Analyzing clarification in asynchronous informationseeking conversations. Journal of the Association for Information Science and Technology 73, 3 (2022), 449-471. [63] Jaime Teevan, Susan T Dumais, and Eric Horvitz. 2007. Characterizing the value of personalizing search. In Proceedings of the 30th annual international ACM SIGIR conference on Research and development in information retrieval . 757-758. [64] John W Tukey. 1949. Comparing individual means in the analysis of variance. Biometrics (1949), 99-114. [65] Ellen M Voorhees, Donna K Harman, et al. 2005. TREC: Experiment and evaluation in information retrieval . Vol. 63. Citeseer. [66] Xuanhui Wang, Michael Bendersky, Donald Metzler, and Marc Najork. 2016. Learning to rank with selection bias in personal search. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval . 115-124. [67] William Webber, Alistair Moffat, and Justin Zobel. 2010. A similarity measure for indefinite rankings. ACM Transactions on Information Systems (TOIS) 28, 4 (2010), 1-38. [68] Clark Wissler. 1905. The Spearman correlation formula. Science 22, 558 (1905), 309-311. [69] Jingjing Xu, Yuechen Wang, Duyu Tang, Nan Duan, Pengcheng Yang, Qi Zeng, Ming Zhou, and SUN Xu. 2019. Asking clarification questions in knowledge-based question answering. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) . 1618-1629. [70] Jeonghee Yi, Ye Chen, Jie Li, Swaraj Sett, and Tak W Yan. 2013. Predictive model performance: Offline and online evaluations. In Proceedings of the 19th ACM SIGKDD international conference on Knowledge discovery and data mining . 1294-1302. [71] Emine Yilmaz, Manisha Verma, Nick Craswell, Filip Radlinski, and Peter Bailey. 2014. Relevance and effort: An analysis of document utility. In Proceedings of the 23rd ACM International Conference on Conference on Information and Knowledge Management . 91-100. [72] Hamed Zamani, Susan Dumais, Nick Craswell, Paul Bennett, and Gord Lueck. 2020. Generating clarifying questions for information retrieval. In Proceedings of The Web Conference 2020 . 418-428. [73] Hamed Zamani, Susan Dumais, Nick Craswell, Paul Bennett, and Gord Lueck. 2020. Generating Clarifying Questions for Information Retrieval. In Proceedings of The Web Conference 2020 (Taipei, Taiwan) (WWW '20) . Association for Computing Machinery, New York, NY, USA, 418-428. https://doi.org/10.1145/3366423.3380126 [74] Hamed Zamani, Gord Lueck, Everest Chen, Rodolfo Quispe, Flint Luu, and Nick Craswell. 2020. Mimics: A large-scale data collection for search clarification. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 3189-3196. [75] Hamed Zamani, Bhaskar Mitra, Everest Chen, Gord Lueck, Fernando Diaz, Paul N Bennett, Nick Craswell, and Susan T Dumais. 2020. Analyzing and Learning from User Interactions for Search Clarification. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1181-1190. [76] Fan Zhang, Ke Zhou, Yunqiu Shao, Cheng Luo, Min Zhang, and Shaoping Ma. 2018. How Well do Offline and Online Evaluation Metrics Measure User Satisfaction in Web Image Search?. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 615-624. [77] Hua Zheng, Dong Wang, Qi Zhang, Hang Li, and Tinghao Yang. 2010. Do clicks measure recommendation relevancy? An empirical user study. In Proceedings of the fourth ACM conference on Recommender systems . 249-252. [78] Jie Zou, Aixin Sun, Cheng Long, Mohammad Aliannejadi, and Evangelos Kanoulas. 2023. Asking Clarifying Questions: To benefit or to disturb users in Web search? Information Processing & Management 60, 2 (2023), 103176.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Generating labels from clicks"
+    },
+    {
+      "ref_id": "b2",
+      "title": "The effect of user characteristics on search effectiveness in information retrieval"
+    },
+    {
+      "ref_id": "b3",
+      "title": "ConvAI3: Generating Clarifying Questions for Open-Domain Dialogue Systems (ClariQ)"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Building and Evaluating Open-Domain Dialogue Corpora with Clarifying Questions"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Asking clarifying questions in open-domain information-seeking conversations"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Does online evaluation correspond to offline evaluation in query auto completion?"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A comparison of offline evaluations, online evaluations, and user studies in the context of research-paper recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Research paper recommender system evaluation: a quantitative literature survey"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Analysis of long queries in a large scale search log"
+    },
+    {
+      "ref_id": "b10",
+      "title": "What do you mean exactly? Analyzing clarification questions in CQA"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Large-scale validation and analysis of interleaved search evaluation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A dynamic bayesian network click model for web search ranking"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Meta-evaluation of online and offline web search evaluation metrics"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Click model-based information retrieval metrics"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Factors determining the performance of indexing systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Investigating the persuasion potential of recommender systems from a quality perspective: An empirical study"
+    },
+    {
+      "ref_id": "b17",
+      "title": "The Lemur Project-Wiki-RankLib"
+    },
+    {
+      "ref_id": "b18",
+      "title": "User perception of differences in recommender algorithms"
+    },
+    {
+      "ref_id": "b19",
+      "title": "What ChatGPT means for universities: Perceptions of scholars and students"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Evaluating implicit measures to improve web search"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Clarification in spoken dialogue systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Offline and online evaluation of news recommender systems at swissinfo.ch"
+    },
+    {
+      "ref_id": "b23",
+      "title": "The role of attractiveness in web image search"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Universal methods of design expanded and revised: 125 Ways to research complex problems, develop innovative ideas, and design effective solutions"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Evaluating verbose query processing techniques"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Hybrid online-offline learning to rank using simulated annealing strategy based on dependent click model"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Offline vs. Online Evaluation in Voice Product Search"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Understanding and predicting graded search satisfaction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Optimizing search engines using clickthrough data"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Training Linear SVMs in Linear Time"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Evaluating Retrieval Performance Using Clickthrough Data"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Accurately interpreting clickthrough data as implicit feedback"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Evaluating the accuracy of implicit feedback from clicks and query reformulations in web search"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Implicit feedback for inferring user preference: a bibliography"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Rank correlation methods"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Effects of emotion control and task on web searching behavior"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Comparing client and server dwell time estimates for click-level satisfaction prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Controlled experiments on the web: survey and practical guide"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Analysing the effect of clarifying questions on document ranking in conversational search"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Ranking Clarification Questions via Natural Language Inference"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Offline evaluation of ranking policies with click models"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Exploring the immediate and short-term effects of peer advice and cognitive authority on Web search behavior"
+    },
+    {
+      "ref_id": "b43",
+      "title": "State-aware meta-evaluation of evaluation metrics in interactive information retrieval"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Different users, different opinions: Predicting search satisfaction with mouse movement information"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Automatic search engine performance evaluation with click-through data analysis"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Rank-biased precision for measurement of retrieval effectiveness"
+    },
+    {
+      "ref_id": "b47",
+      "title": "An empirical study of interest, task complexity, and search behaviour on user engagement"
+    },
+    {
+      "ref_id": "b48",
+      "title": "A Clarifying Question Selection System from NTES_ALONG in Convai3 Challenge"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Modeling result-list searching in the World Wide Web: The role of relevance topologies and trust bias"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Mathematical contributions to the theory of evolution.-III. Regression, heredity, and panmixia"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Introducing MANtIS: a novel Multi-Domain Information Seeking Dialogues Dataset"
+    },
+    {
+      "ref_id": "b52",
+      "title": "A chatbot-based interactive question answering system"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Learning to ask good questions: Ranking clarification questions using neural expected value of perfect information"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Answer-based adversarial training for generating clarification questions"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Contrasting offline and online results when evaluating recommendation algorithms"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Comparative recommender system evaluation: benchmarking recommendation frameworks"
+    },
+    {
+      "ref_id": "b57",
+      "title": "User Engagement Prediction for Clarification in Search"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Unsupervised Commonsense Question Answering with Self-Talk"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Post hoc tests: Tukey honestly significant difference test"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Counterfactual risk minimization: Learning from logged bandit feedback"
+    },
+    {
+      "ref_id": "b61",
+      "title": "MIMICS-Duo: Offline & Online Evaluation of Search Clarification"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Analyzing clarification in asynchronous information-seeking conversations"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Characterizing the value of personalizing search"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Comparing individual means in the analysis of variance"
+    },
+    {
+      "ref_id": "b65",
+      "title": "TREC: Experiment and evaluation in information retrieval"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Learning to rank with selection bias in personal search"
+    },
+    {
+      "ref_id": "b67",
+      "title": "A similarity measure for indefinite rankings"
+    },
+    {
+      "ref_id": "b68",
+      "title": "The Spearman correlation formula"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Asking clarification questions in knowledge-based question answering"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Predictive model performance: Offline and online evaluations"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Relevance and effort: An analysis of document utility"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Generating clarifying questions for information retrieval"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Generating Clarifying Questions for Information Retrieval"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Mimics: A large-scale data collection for search clarification"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Analyzing and Learning from User Interactions for Search Clarification"
+    },
+    {
+      "ref_id": "b76",
+      "title": "How Well do Offline and Online Evaluation Metrics Measure User Satisfaction in Web Image Search?"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Do clicks measure recommendation relevancy? An empirical user study"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Asking Clarifying Questions: To benefit or to disturb users in Web search?"
+    }
   ]
 }

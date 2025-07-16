@@ -44,10 +44,176 @@
   "A.3 Annotating YouTube channels for partisan bias": "Our dataset of unique videos came from a large number of YouTube channels ( ∼ 17.5K) devoted to both news and non-news content. We coded the leaning of the channel on a 5-point Likert scale (far-left, center-left, neutral, center-right, and far-right) using computational methods and several heuristics. First, to identify news-related channels, we used several pattern-matching techniques (e.g., finding keyword news in the channel's name, etc.) and discovered a total of 802 news channels. Then we used existing datasets on media bias from mediabiasfactcheck.com and allsides.com for annotating the channels. For channels whose annotations were not available in the datasets, we manually went through their title, description, sample videos, and related information from their website, Wikipedia, and/or google search to identify their leaning or the leaning of their affiliations. Many local news channels such as KHOU 19 or 19 https://www.youtube.com/c/KHOU 20 https://www.youtube.com/c/KPRC2Click2Houston",
   "keywords_parsed": [
     "misinformation",
-    " elections",
-    " voter fraud",
-    " algorithm audit",
-    " fairness",
-    " recommendations"
+    "elections",
+    "voter fraud",
+    "algorithm audit",
+    "fairness",
+    "recommendations"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "VoterFraud2020: a Multi-modal Dataset of Election Fraud Claims on Twitter"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Social media and fake news in the 2016 election"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Auditing race and gender discrimination in online housing markets"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Problematic Machine Behavior: A Systematic Literature Review of Algorithm Audits"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Auditing news curation systems: A case study examining algorithmic and editorial logic in Apple News"
+    },
+    {
+      "ref_id": "b6",
+      "title": "More accounts, fewer links: How algorithmic curation impacts media exposure in Twitter timelines"
+    },
+    {
+      "ref_id": "b7",
+      "title": "US Primaries: Election Deniers Go Door-to-Door to Confront Voters After Losses"
+    },
+    {
+      "ref_id": "b8",
+      "title": "OtherTube: Facilitating Content Discovery and Reflection by Exchanging YouTube Recommendations with Strangers"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Election Fraud, YouTube, and Public Perception of the Legitimacy of President Biden"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Are filter bubbles real?"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Filter bubble"
+    },
+    {
+      "ref_id": "b12",
+      "title": "The unique role of Fox News in the misinformation universe"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Gender shades: Intersectional accuracy disparities in commercial gender classification"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Is there personalization in twitter search? a study on polarized opinions about the brazilian welfare reform"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Unveiling and quantifying facebook exploitation of sensitive personal data for advertising purposes"
+    },
+    {
+      "ref_id": "b16",
+      "title": "SMOTE: synthetic minority over-sampling technique"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Subscriptions and external links help drive resentful users to alternative and extremist YouTube videos"
+    },
+    {
+      "ref_id": "b18",
+      "title": "A critical review of filter bubbles and a comparison with selective exposure"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Quantifying A post hoc crowd-sourced audit of election misinformation on YouTube"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Towards Continuous Automatic Audits of Social Media Adaptive Behavior and its Role in Misinformation Spreading"
+    },
+    {
+      "ref_id": "b64",
+      "title": "With 10 weeks until midterms, election deniers are hampering some election preparations"
+    },
+    {
+      "ref_id": "b65",
+      "title": "How will social media platforms respond to election misinformation? It isn't clear"
+    },
+    {
+      "ref_id": "b66",
+      "title": "The psychological meaning of words: LIWC and computerized text analysis methods"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Managing harmful conspiracy theories on YouTube"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Supporting the 2020 U.S. election"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Trump deploys YouTube as his secret weapon in 2020"
+    },
+    {
+      "ref_id": "b70",
+      "title": "An Audit of Misinformation Filter Bubbles on YouTube: Bubble Bursting and Recent Behavior Changes"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Search as news curator: The role of Google in shaping attention to news information"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Auditing Offline Data Brokers via Facebook's Advertising Platform"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Learn about watch history on YouTube"
+    },
+    {
+      "ref_id": "b74",
+      "title": "It's complicated: Facebook users' political participation in the 2008 election"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Election misinformation continues staying up on YouTube"
+    },
+    {
+      "ref_id": "b76",
+      "title": "A similarity measure for indefinite rankings"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Recommender systems and the amplification of extremist content"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Occam's razor - Wikipedia, The Free Encyclopedia"
+    },
+    {
+      "ref_id": "b79",
+      "title": "The Promise and Peril of Algorithm Audits for Increasing Transparency and Accountability of Donated Datasets"
+    },
+    {
+      "ref_id": "b80",
+      "title": "Lateral reading: Reading less and learning more when evaluating digital information"
+    },
+    {
+      "ref_id": "b81",
+      "title": "Beyond personalization: Social content recommendation for creator equality and consumer satisfaction"
+    },
+    {
+      "ref_id": "b82",
+      "title": "View or delete search history - Computer - YouTube Help"
+    },
+    {
+      "ref_id": "b83",
+      "title": "Elections misinformation policies - YouTube Help"
+    },
+    {
+      "ref_id": "b84",
+      "title": "Browse YouTube while incognito on mobile devices - YouTube Help"
+    }
   ]
 }

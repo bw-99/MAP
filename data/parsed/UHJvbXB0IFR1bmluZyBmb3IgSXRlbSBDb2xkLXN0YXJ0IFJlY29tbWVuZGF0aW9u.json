@@ -30,6 +30,196 @@
   "REFERENCES": "[1] Talha Mahboob Alam and Mazhar Javed Awan. 2018. Domain analysis of information extraction techniques. Int. J. Multidiscip. Sci. Eng 9, 6 (2018). [2] Talha Mahboob Alam, Kamran Shaukat, Mubbashar Mushtaq, Yasir Ali, Matloob Khushi, Suhuai Luo, and Abdul Wahab. 2021. Corporate bankruptcy prediction: Anapproach towards better corporate world. Comput. J. 64, 11 (2021), 1731-1746. [3] Oren Barkan, Noam Koenigstein, Eylon Yogev, and Ori Katz. 2019. CB2CF: a neural multiview content-to-collaborative filtering model for completely cold item recommendations. In Proceedings of the 13th ACM Conference on Recommender Systems . 228-236. [4] Dmitry Bogdanov, Martín Haro, Ferdinand Fuhrmann, Anna Xambó, Emilia Gómez, and Perfecto Herrera. 2013. Semantic audio content-based music recommendation and visualization based on user preference examples. Information Processing & Management 49, 1 (2013), 13-33. [5] Yuwei Cao, Liangwei Yang, Chen Wang, Zhiwei Liu, Hao Peng, Chenyu You, and Philip S Yu. 2023. Multi-task item-attribute graph pre-training for strict cold-start item recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems . 322-333. [6] Gaode Chen, Xinghua Zhang, Yijun Su, Yantong Lai, Ji Xiang, Junbo Zhang, and Yu Zheng. 2023. Win-win: a privacy-preserving federated framework for dual-target cross-domain recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 37. 4149-4156. [7] Gaode Chen, Xinghua Zhang, Yanyan Zhao, Cong Xue, and Ji Xiang. 2021. Exploring Periodicity and Interactivity in Multi-Interest Framework for Sequential Recommendation. In Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence . 1426-1433. [8] Ke Chen, Beici Liang, Xiaoshuan Ma, and Minwei Gu. 2021. Learning audio embeddings with user listening data for content-based music recommendation. In ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) . IEEE, 3015-3019. [9] Yifan Chen, Devamanyu Hazarika, Mahdi Namazifar, Yang Liu, Di Jin, and Dilek Hakkani-Tur. 2022. Inducer-tuning: Connecting Prefix-tuning and Adaptertuning. arXiv preprint arXiv:2210.14469 (2022). [10] Yashar Deldjoo, Markus Schedl, Paolo Cremonesi, Gabirella Pasi, et al. 2018. Content-based multimedia recommendation systems: definition and application domains. In Italian Information Retrieval Workshop . 1-4. [11] Ning Ding, Shengding Hu, Weilin Zhao, Yulin Chen, Zhiyuan Liu, Hai-Tao Zheng, and Maosong Sun. 2021. Openprompt: An open-source framework for promptlearning. arXiv preprint arXiv:2111.01998 (2021). [12] Chongming Gao, Shijun Li, Yuan Zhang, Jiawei Chen, Biao Li, Wenqiang Lei, Peng Jiang, and Xiangnan He. 2022. KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3953-3957. [13] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5). In Proceedings of the 16th ACM Conference on Recommender Systems . 299-315. [14] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [15] Bowen Hao, Hongzhi Yin, Jing Zhang, Cuiping Li, and Hong Chen. 2023. A multi-strategy-based pre-training method for cold-start recommendation. ACM Transactions on Information Systems 41, 2 (2023), 1-24. [16] Bowen Hao, Jing Zhang, Hongzhi Yin, Cuiping Li, and Hong Chen. 2021. Pretraining graph neural networks for cold-start users and items representation. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . 265-273. [17] F Maxwell Harper and Joseph A Konstan. 2015. The movielens datasets: History and context. Acm transactions on interactive intelligent systems (tiis) 5, 4 (2015), 1-19. [18] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning deep structured semantic models for web search using clickthrough data. In Proceedings of the 22nd ACM international conference on Information & Knowledge Management . 2333-2338. [19] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [20] James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei A Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka Grabska-Barwinska, et al. 2017. Overcoming catastrophic forgetting in neural networks. Proceedings of the national academy of sciences 114, 13 (2017), 35213526. [21] Brian Lester, Rami Al-Rfou, and Noah Constant. 2021. The power of scale for parameter-efficient prompt tuning. arXiv preprint arXiv:2104.08691 (2021). [22] Lei Li, Yongfeng Zhang, and Li Chen. 2023. Personalized prompt learning for explainable recommendation. ACM Transactions on Information Systems 41, 4 (2023), 1-26. [23] Xiang Lisa Li and Percy Liang. 2021. Prefix-tuning: Optimizing continuous prompts for generation. arXiv preprint arXiv:2101.00190 (2021). [24] Taichi Liu, Chen Gao, Zhenyu Wang, Dong Li, Jianye Hao, Depeng Jin, and Yong Li. 2023. Uncertainty-aware Consistency Learning for Cold-Start Item Recommendation. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2466-2470. [25] Xiao Liu, Kaixuan Ji, Yicheng Fu, Weng Tam, Zhengxiao Du, Zhilin Yang, and Jie Tang. 2022. P-tuning: Prompt tuning can be comparable to fine-tuning across scales and tasks. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers) . 61-68. [26] Yuanfu Lu, Yuan Fang, and Chuan Shi. 2020. Meta-learning on heterogeneous information networks for cold-start recommendation. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1563-1573. [27] Bonan Min, Hayley Ross, Elior Sulem, Amir Pouran Ben Veyseh, Thien Huu Nguyen, Oscar Sainz, Eneko Agirre, Ilana Heintz, and Dan Roth. 2023. Recent advances in natural language processing via large pre-trained language models: A survey. Comput. Surveys 56, 2 (2023), 1-40. [28] Feiyang Pan, Shuokai Li, Xiang Ao, Pingzhong Tang, and Qing He. 2019. Warm up cold-start advertisements: Improving ctr predictions via learning to learn id embeddings. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . 695-704. [29] Suvash Sedhain, Scott Sanner, Darius Braziunas, Lexing Xie, and Jordan Christensen. 2014. Social collaborative filtering for cold-start recommendations. In Proceedings of the 8th ACM Conference on Recommender systems . 345-348. [30] The TMall Team. [n. d.]. The Tmall Dataset. https://tianchi.aliyun.com/dataset/ 42. [31] Aaron Van den Oord, Sander Dieleman, and Benjamin Schrauwen. 2013. Deep content-based music recommendation. Advances in neural information processing systems 26 (2013). [32] Laurens Van der Maaten and Geoffrey Hinton. 2008. Visualizing data using t-SNE. Journal of machine learning research 9, 11 (2008). [33] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [34] Maksims Volkovs, Guangwei Yu, and Tomi Poutanen. 2017. Dropoutnet: Addressing cold start in recommender systems. Advances in neural information processing systems 30 (2017). [35] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [36] Xiaolei Wang, Kun Zhou, Ji-Rong Wen, and Wayne Xin Zhao. 2022. Towards unified conversational recommender systems via knowledge-enhanced prompt learning. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 1929-1937. [37] Yuhao Wang, Xiangyu Zhao, Bo Chen, Qidong Liu, Huifeng Guo, Huanshuo Liu, Yichao Wang, Rui Zhang, and Ruiming Tang. 2023. PLATE: A PromptEnhanced Paradigm for Multi-Scenario Recommendations. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1498-1507. [38] Jian Wei, Jianhua He, Kai Chen, Yi Zhou, and Zuoyin Tang. 2017. Collaborative filtering and deep learning based recommendation system for cold start items. Expert Systems with Applications 69 (2017), 29-39. [39] Xuansheng Wu, Huachi Zhou, Wenlin Yao, Xiao Huang, and Ninghao Liu. 2023. Towards Personalized Cold-Start Recommendation with Prompts. arXiv preprint arXiv:2306.17256 (2023). [40] Yiqing Wu, Ruobing Xie, Yongchun Zhu, Fuzhen Zhuang, Xu Zhang, Leyu Lin, and Qing He. 2024. Personalized Prompt for Sequential Recommendation. IEEE Transactions on Knowledge and Data Engineering (2024). [41] Chaojun Xiao, Ruobing Xie, Yuan Yao, Zhiyuan Liu, Maosong Sun, Xu Zhang, and Leyu Lin. 2021. Uprec: User-aware pre-training for recommender systems. arXiv preprint arXiv:2102.10989 (2021). [42] Lanling Xu, Junjie Zhang, Bingqian Li, Jinpeng Wang, Mingchen Cai, Wayne Xin Zhao, and Ji-Rong Wen. 2024. Prompting Large Language Models for Recommender Systems: A Comprehensive Framework and Empirical Analysis. arXiv preprint arXiv:2401.04997 (2024). [43] Zixuan Yi, Iadh Ounis, and Craig Macdonald. 2023. Contrastive graph prompttuning for cross-domain recommendation. ACM Transactions on Information Systems 42, 2 (2023), 1-28. [44] Jianyang Zhai, Xiawu Zheng, Chang-Dong Wang, Hui Li, and Yonghong Tian. 2023. Knowledge Prompt-tuning for Sequential Recommendation. In Proceedings of the 31st ACM International Conference on Multimedia . 6451-6461. [45] Yin Zhang, Derek Zhiyuan Cheng, Tiansheng Yao, Xinyang Yi, Lichan Hong, and Ed H Chi. 2021. A model of two tales: Dual transfer learning framework for improved long-tail item recommendation. In Proceedings of the web conference 2021 . 2220-2231. [46] Yin Zhang, Ruoxi Wang, Derek Zhiyuan Cheng, Tiansheng Yao, Xinyang Yi, Lichan Hong, James Caverlee, and Ed H Chi. 2023. Empowering Long-tail Item RecSys '24, October 14-18, 2024, Bari, Italy Prompt Tuning for Item Cold-start Recommendation Recommendation through Cross Decoupling Network (CDN). In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 5608-5617. [47] Yongchun Zhu, Ruobing Xie, Fuzhen Zhuang, Kaikai Ge, Ying Sun, Xu Zhang, Leyu Lin, and Juan Cao. 2021. Learning to warm up cold item embeddings for cold- start recommendation with meta scaling and shifting networks. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1167-1176.",
   "keywords_parsed": [
     "Prompt Learning",
-    " Cold-start Recommendation"
+    "Cold-start Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Domain analysis of information extraction techniques"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Corporate bankruptcy prediction: An approach towards better corporate world"
+    },
+    {
+      "ref_id": "b3",
+      "title": "CB2CF: a neural multiview content-to-collaborative filtering model for completely cold item recommendations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Semantic audio content-based music recommendation and visualization based on user preference examples"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Multi-task item-attribute graph pre-training for strict cold-start item recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Win-win: a privacy-preserving federated framework for dual-target cross-domain recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Exploring Periodicity and Interactivity in Multi-Interest Framework for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning audio embeddings with user listening data for content-based music recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Inducer-tuning: Connecting Prefix-tuning and Adaptertuning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Content-based multimedia recommendation systems: definition and application domains"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Openprompt: An open-source framework for prompt learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b14",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A multi-strategy-based pre-training method for cold-start recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Pretraining graph neural networks for cold-start users and items representation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Overcoming catastrophic forgetting in neural networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "The power of scale for parameter-efficient prompt tuning"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Personalized prompt learning for explainable recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Prefix-tuning: Optimizing continuous prompts for generation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Uncertainty-aware Consistency Learning for Cold-Start Item Recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "P-tuning: Prompt tuning can be comparable to fine-tuning across scales and tasks"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Meta-learning on heterogeneous information networks for cold-start recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Recent advances in natural language processing via large pre-trained language models: A survey"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Warm up cold-start advertisements: Improving ctr predictions via learning to learn id embeddings"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Social collaborative filtering for cold-start recommendations"
+    },
+    {
+      "ref_id": "b30",
+      "title": "The Tmall Dataset"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Deep content-based music recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Dropoutnet: Addressing cold start in recommender systems"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Towards unified conversational recommender systems via knowledge-enhanced prompt learning"
+    },
+    {
+      "ref_id": "b37",
+      "title": "PLATE: A Prompt-Enhanced Paradigm for Multi-Scenario Recommendations"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Collaborative filtering and deep learning based recommendation system for cold start items"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Towards Personalized Cold-Start Recommendation with Prompts"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Personalized Prompt for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Uprec: User-aware pre-training for recommender systems"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Prompting Large Language Models for Recommender Systems: A Comprehensive Framework and Empirical Analysis"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Contrastive graph prompt-tuning for cross-domain recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Knowledge Prompt-tuning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "A model of two tales: Dual transfer learning framework for improved long-tail item recommendation"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Empowering Long-tail Item Recommendation through Cross Decoupling Network (CDN)"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Learning to warm up cold item embeddings for cold-start recommendation with meta scaling and shifting networks"
+    }
   ]
 }

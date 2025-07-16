@@ -41,7 +41,181 @@
   "REFERENCES": "[1] Giuseppe Aceto, Valerio Persico, and Antonio Pescapé. 2020. Industry 4.0 and health: Internet of things, big data, and cloud computing for healthcare 4.0. Journal of Industrial Information Integration 18 (2020), 100129. [2] MMehdi Afsar, Trafford Crump, and Behrouz Far. 2021. Reinforcement learning based recommender systems: A survey. ACM Computing Surveys (CSUR) (2021). [3] Shalabh Bhatnagar, Mohammad Ghavamzadeh, Mark Lee, and Richard S Sutton. 2007. Incremental natural actor-critic algorithms. Advances in neural information processing systems 20 (2007). [4] Qingpeng Cai, Shuchang Liu, Xueliang Wang, Tianyou Zuo, Wentao Xie, Bin Yang, Dong Zheng, Peng Jiang, and Kun Gai. 2023. Reinforcing User Retention in a Billion Scale Short Video Recommender System. In Companion Proceedings of the ACM Web Conference 2023 . 421-426. [5] Qingpeng Cai, Zhenghai Xue, Chi Zhang, Wanqi Xue, Shuchang Liu, Ruohan Zhan, Xueliang Wang, Tianyou Zuo, Wentao Xie, Dong Zheng, et al. 2023. TwoStage Constrained Actor-Critic for Short Video Recommendation. In Proceedings of the ACM Web Conference 2023 . 865-875. [6] Haokun Chen, Xinyi Dai, Han Cai, Weinan Zhang, Xuejian Wang, Ruiming Tang, Yuzhou Zhang, and Yong Yu. 2019. Large-scale interactive recommendation with tree-structured policy gradient. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 3312-3320. [7] Jingfan Chen, Wenqi Fan, Guanghui Zhu, Xiangyu Zhao, Chunfeng Yuan, Qing Li, and Yihua Huang. 2022. Knowledge-enhanced black-box attacks for recommendations. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 108-117. [8] Lili Chen, Kevin Lu, Aravind Rajeswaran, Kimin Lee, Aditya Grover, Misha Laskin, Pieter Abbeel, Aravind Srinivas, and Igor Mordatch. 2021. Decision transformer: Reinforcement learning via sequence modeling. Advances in neural information processing systems 34 (2021), 15084-15097. [9] Minmin Chen, Alex Beutel, Paul Covington, Sagar Jain, Francois Belletti, and Ed H Chi. 2019. Top-k off-policy correction for a REINFORCE recommender system. In Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining . 456-464. [10] Xinshi Chen, Shuang Li, Hui Li, Shaohua Jiang, Yuan Qi, and Le Song. 2019. Generative adversarial user model for reinforcement learning based recommendation system. In International Conference on Machine Learning . PMLR, 1052-1061. [11] Xiaocong Chen, Lina Yao, Julian McAuley, Guanglin Zhou, and Xianzhi Wang. 2021. A survey of deep reinforcement learning in recommender systems: A systematic review and future directions. arXiv preprint arXiv:2109.03540 (2021). [12] Xiaocong Chen, Lina Yao, Aixin Sun, Xianzhi Wang, Xiwei Xu, and Liming Zhu. 2021. Generative inverse deep reinforcement learning for online recommendation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 201-210. [13] Xiong-Hui Chen, Bowei He, Yang Yu, Qingyang Li, Zhiwei Qin, Wenjie Shang, Jieping Ye, and Chen Ma. 2023. Sim2rec: A simulator-based decision-making approach to optimize real-world long-term user engagement in sequential recommender systems. In 2023 IEEE 39th International Conference on Data Engineering (ICDE) . IEEE, 3389-3402. [14] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [15] Kyunghyun Cho, Bart Van Merriënboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, and Yoshua Bengio. 2014. Learning phrase representations using RNN encoder-decoder for statistical machine translation. arXiv preprint arXiv:1406.1078 (2014). [16] Thomas Degris, Patrick M Pilarski, and Richard S Sutton. 2012. Model-free reinforcement learning with continuous action in practice. In 2012 American Control Conference (ACC) . IEEE, 2177-2182. [17] Tim Donkers, Benedikt Loepp, and Jürgen Ziegler. 2017. Sequential user-based recurrent neural network recommendations. In Proceedings of the eleventh ACM conference on recommender systems . 152-160. [18] Gabriel Dulac-Arnold, Richard Evans, Hado van Hasselt, Peter Sunehag, Timothy Lillicrap, Jonathan Hunt, Timothy Mann, Theophane Weber, Thomas Degris, and Ben Coppin. 2015. Deep reinforcement learning in large discrete action spaces. arXiv preprint arXiv:1512.07679 (2015). [19] Long Duong, Trevor Cohn, Steven Bird, and Paul Cook. 2015. Low resource dependency parsing: Cross-lingual parameter sharing in a neural network parser. In Proceedings of the 53rd annual meeting of the Association for Computational Linguistics and the 7th international joint conference on natural language processing (volume 2: short papers) . 845-850. [20] Jingtong Gao, Xiangyu Zhao, Muyang Li, Minghao Zhao, Runze Wu, Ruocheng Guo, Yiding Liu, and Dawei Yin. 2024. SMLP4Rec: An Efficient all-MLP Architecture for Sequential Recommendations. ACM Transactions on Information Systems 42, 3 (2024), 1-23. [21] Guy Hadash, Oren Sar Shalom, and Rita Osadchy. 2018. Rank and rate: multi-task learning for recommender systems. In Proceedings of the 12th ACM Conference on Recommender Systems . 451-454. [22] Balázs Hidasi, Massimo Quadrana, Alexandros Karatzoglou, and Domonkos Tikk. 2016. Parallel recurrent neural network architectures for feature-rich session-based recommendations. In Proceedings of the 10th ACM conference on recommender systems . 241-248. [23] Eugene Ie, Vihan Jain, Jing Wang, Sanmit Narvekar, Ritesh Agarwal, Rui Wu, Heng-Tze Cheng, Tushar Chandra, and Craig Boutilier. 2019. SlateQ: A Tractable Decomposition for Reinforcement Learning with Recommendation Sets. In Proceedings of the Twenty-eighth International Joint Conference on Artificial Intelligence (IJCAI-19) . Macau, China, 2592-2599. See arXiv:1905.12767 for a related and expanded paper (with additional material and authors).. [24] Eugene Ie, Vihan Jain, Jing Wang, Sanmit Narvekar, Ritesh Agarwal, Rui Wu, Heng-Tze Cheng, Tushar Chandra, and Craig Boutilier. 2019. SlateQ: A tractable decomposition for reinforcement learning with recommendation sets. (2019). [25] Eugene Ie, Chih wei Hsu, Martin Mladenov, Vihan Jain, Sanmit Narvekar, Jing Wang, Rui Wu, and Craig Boutilier. 2019. RecSim: A Configurable Simulation Platform for Recommender Systems. (2019). arXiv:1909.04847 [cs.LG] [26] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 197-206. [27] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix factorization techniques for recommender systems. Computer 42, 8 (2009), 30-37. [28] Muyang Li, Xiangyu Zhao, Chuan Lyu, Minghao Zhao, Runze Wu, and Ruocheng Guo. 2022. MLP4Rec: A pure MLP architecture for sequential recommendations. arXiv preprint arXiv:2204.11510 (2022). [29] Chin-Yew Lin. 2004. ROUGE: A Package for Automatic Evaluation of Summaries. In Text Summarization Branches Out . Association for Computational Linguistics, Barcelona, Spain, 74-81. https://aclanthology.org/W04-1013 [30] Feng Liu, Ruiming Tang, Xutao Li, Weinan Zhang, Yunming Ye, Haokun Chen, Huifeng Guo, and Yuzhou Zhang. 2018. Deep reinforcement learning based recommendation with explicit user-item interactions modeling. arXiv preprint arXiv:1810.12027 (2018). [31] Feng Liu, Ruiming Tang, Xutao Li, Weinan Zhang, Yunming Ye, Haokun Chen, Huifeng Guo, Yuzhou Zhang, and Xiuqiang He. 2020. State representation modeling for deep reinforcement learning based recommendation. Knowledge-Based Systems 205 (2020), 106170. [32] Langming Liu, Liu Cai, Chi Zhang, Xiangyu Zhao, Jingtong Gao, Wanyu Wang, Yifu Lv, Wenqi Fan, Yiqi Wang, Ming He, et al. 2023. Linrec: Linear attention mechanism for long-term sequential recommender systems. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 289-299. [33] Qidong Liu, Fan Yan, Xiangyu Zhao, Zhaocheng Du, Huifeng Guo, Ruiming Tang, and Feng Tian. 2023. Diffusion augmentation for sequential recommendation. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 1576-1586. [34] Ziru Liu, Kecheng Chen, Fengyi Song, Bo Chen, Xiangyu Zhao, Huifeng Guo, and Ruiming Tang. 2024. AutoAssign+: Automatic Shared Embedding Assignment in streaming recommendation. Knowledge and Information Systems 66, 1 (2024), 89-113. [35] Ziru Liu, Jiejie Tian, Qingpeng Cai, Xiangyu Zhao, Jingtong Gao, Shuchang Liu, Dayou Chen, Tonghao He, Dong Zheng, Peng Jiang, et al. 2023. Multi-Task Recommendations with Reinforcement Learning. In Proceedings of the ACM Web Conference 2023 . 1273-1282. [36] Yichao Lu, Ruihai Dong, and Barry Smyth. 2018. Coevolutionary recommendation model: Mutual learning between ratings and reviews. In Proceedings of the 2018 World Wide Web Conference . 773-782. [37] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [38] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [39] Tariq Mahmood and Francesco Ricci. 2007. Learning and adaptivity in interactive recommender systems. In Proceedings of the ninth international conference on Electronic commerce . 75-84. [40] Ishan Misra, Abhinav Shrivastava, Abhinav Gupta, and Martial Hebert. 2016. Cross-stitch networks for multi-task learning. In Proceedings of the IEEE conference on computer vision and pattern recognition . 3994-4003. [41] Omar Moling, Linas Baltrunas, and Francesco Ricci. 2012. Optimal radio channel recommendations with explicit and implicit feedback. In Proceedings of the sixth ACM conference on Recommender systems . 75-82. [42] Raymond J Mooney and Loriene Roy. 2000. Content-based book recommending using learning for text categorization. In Proceedings of the fifth ACM conference on Digital libraries . 195-204. [43] Huashan Pan, Xiulin Li, and Zhiqiang Huang. 2019. A Mandarin Prosodic Boundary Prediction Model Based on Multi-Task Learning.. In Interspeech . 4485-4488. Sequential Recommendation for Optimizing Both Immediate Feedback and Long-term Retention SIGIR '24, July 14-18, 2024, Washington, DC, USA",
   "keywords_parsed": [
     "Recommender Systems",
-    " Decision Transformer",
-    " Multi-task Learning"
+    "Decision Transformer",
+    "Multi-task Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Industry 4.0 and health: Internet of things, big data, and cloud computing for healthcare 4.0"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Reinforcement learning based recommender systems: A survey"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Incremental natural actor-critic algorithms"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Reinforcing User Retention in a Billion Scale Short Video Recommender System"
+    },
+    {
+      "ref_id": "b5",
+      "title": "TwoStage Constrained Actor-Critic for Short Video Recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Large-scale interactive recommendation with tree-structured policy gradient"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Knowledge-enhanced black-box attacks for recommendations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Decision transformer: Reinforcement learning via sequence modeling"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Top-k off-policy correction for a REINFORCE recommender system"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Generative adversarial user model for reinforcement learning based recommendation system"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A survey of deep reinforcement learning in recommender systems: A systematic review and future directions"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Generative inverse deep reinforcement learning for online recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Sim2rec: A simulator-based decision-making approach to optimize real-world long-term user engagement in sequential recommender systems"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Learning phrase representations using RNN encoder-decoder for statistical machine translation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Model-free reinforcement learning with continuous action in practice"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Sequential user-based recurrent neural network recommendations"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Deep reinforcement learning in large discrete action spaces"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Low resource dependency parsing: Cross-lingual parameter sharing in a neural network parser"
+    },
+    {
+      "ref_id": "b20",
+      "title": "SMLP4Rec: An Efficient all-MLP Architecture for Sequential Recommendations"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Rank and rate: multi-task learning for recommender systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Parallel recurrent neural network architectures for feature-rich session-based recommendations"
+    },
+    {
+      "ref_id": "b23",
+      "title": "SlateQ: A Tractable Decomposition for Reinforcement Learning with Recommendation Sets"
+    },
+    {
+      "ref_id": "b24",
+      "title": "SlateQ: A tractable decomposition for reinforcement learning with recommendation sets"
+    },
+    {
+      "ref_id": "b25",
+      "title": "RecSim: A Configurable Simulation Platform for Recommender Systems"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "MLP4Rec: A pure MLP architecture for sequential recommendations"
+    },
+    {
+      "ref_id": "b29",
+      "title": "ROUGE: A Package for Automatic Evaluation of Summaries"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Deep reinforcement learning based recommendation with explicit user-item interactions modeling"
+    },
+    {
+      "ref_id": "b31",
+      "title": "State representation modeling for deep reinforcement learning based recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Linrec: Linear attention mechanism for long-term sequential recommender systems"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Diffusion augmentation for sequential recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "AutoAssign+: Automatic Shared Embedding Assignment in streaming recommendation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Multi-Task Recommendations with Reinforcement Learning"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Coevolutionary recommendation model: Mutual learning between ratings and reviews"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Learning and adaptivity in interactive recommender systems"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Cross-stitch networks for multi-task learning"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Optimal radio channel recommendations with explicit and implicit feedback"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Content-based book recommending using learning for text categorization"
+    },
+    {
+      "ref_id": "b43",
+      "title": "A Mandarin Prosodic Boundary Prediction Model Based on Multi-Task Learning"
+    }
   ]
 }

@@ -33,8 +33,198 @@
   "REFERENCES": "[1] Aijun Bai, Rolf Jagerman, Zhen Qin, Le Yan, Pratyush Kar, Bing-Rong Lin, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2023. Regression Compatible Listwise Objectives for Calibrated Ranking with Binary Relevance. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 4502-4508. [2] Christopher Burges, Robert Ragno, and Quoc Le. 2006. Learning to rank with nonsmooth cost functions. Advances in neural information processing systems 19 (2006). [3] Chris Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole Hamilton, and Greg Hullender. 2005. Learning to rank using gradient descent. In Proceedings of the 22nd international conference on Machine learning . 89-96. [4] Zhe Cao, Tao Qin, Tie-Yan Liu, Ming-Feng Tsai, and Hang Li. 2007. Learning to rank: from pairwise approach to listwise approach. In Proceedings of the 24th international conference on Machine learning . 129-136. [5] Nilotpal Chakravarti. 1989. Isotonic median regression: a linear programming approach. Mathematics of operations research 14, 2 (1989), 303-308. [6] Olivier Chapelle, Eren Manavoglu, and Romer Rosales. 2014. Simple and scalable response prediction for display advertising. ACM Transactions on Intelligent Systems and Technology (TIST) 5, 4 (2014), 1-34. [7] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In International conference on machine learning . PMLR, 1597-1607. [8] Ian J Goodfellow, Oriol Vinyals, and Andrew M Saxe. 2014. Qualitatively characterizing neural network optimization problems. arXiv preprint arXiv:1412.6544 (2014). [9] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In International Joint Conference on Artificial Intelligence (IJCAI) . 1725-1731. [10] Xingzhuo Guo, Junwei Pan, Ximei Wang, Baixu Chen, Jie Jiang, and Mingsheng Long. 2024. On the Embedding Collapse when Scaling up Recommendation Models. International Conference on Machine Learning (ICML) (2024). [11] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In International Workshop on Data Mining for Online Advertising (ADKDD) . 1-9. [12] Thorsten Joachims. 2002. Optimizing search engines using clickthrough data. In Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining . 133-142. [13] Yuchin Juan, Damien Lefortier, and Olivier Chapelle. 2017. Field-aware factorization machines in a real-world online advertising system. In International Conference on World Wide Web (WWW) . 680-688. [14] Prannay Khosla, Piotr Teterwak, Chen Wang, Aaron Sarna, Yonglong Tian, Phillip Isola, Aaron Maschinot, Ce Liu, and Dilip Krishnan. 2020. Supervised contrastive learning. Advances in neural information processing systems 33 (2020), 1866118673. [15] Jen-Wei Kuo, Pu-Jen Cheng, and Hsin-Min Wang. 2009. Learning to rank from bayesian decision inference. In Proceedings of the 18th ACM conference on Information and knowledge management . 827-836. [16] Criteo Labs. 2014. Display Advertising Challenge . https://www.kaggle.com/c/ criteo-display-ad-challenge [17] Jan de Leeuw, Kurt Hornik, and Patrick Mair. 2009. Isotone optimization in R: pool-adjacent-violators algorithm (PAVA) and active set methods. (2009). [18] Cheng Li, Yue Lu, Qiaozhu Mei, Dong Wang, and Sandeep Pandey. 2015. Clickthrough prediction for advertising in twitter timeline. In Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 1959-1968. [19] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xDeepFM: Combining explicit and implicit feature interactions for recommender systems. In ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD) . 1754-1763. [20] Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, and Piotr Dollár. 2017. Focal loss for dense object detection. In Proceedings of the IEEE international conference on computer vision . 2980-2988. [21] Tie-Yan Liu et al. 2009. Learning to rank for information retrieval. Foundations and Trends® in Information Retrieval 3, 3 (2009), 225-331. [22] Kelong Mao, Jieming Zhu, Liangcai Su, Guohao Cai, Yuru Li, and Zhenhua Dong. 2023. FinalMLP: An Enhanced Two-Stream MLP Model for CTR Prediction. arXiv preprint arXiv:2304.00902 (2023). [23] H Brendan McMahan, Gary Holt, David Sculley, Michael Young, Dietmar Ebner, Julian Grady, Lan Nie, Todd Phillips, Eugene Davydov, Daniel Golovin, et al. 2013. Ad click prediction: a view from the trenches. In ACM SIGKDD International conference on Knowledge Discovery & Data Mining (KDD) . 1222-1230. [24] Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and Jeff Dean. 2013. Distributed representations of words and phrases and their compositionality. Advances in neural information processing systems 26 (2013). [25] Junwei Pan, Jian Xu, Alfonso Lobos Ruiz, Wenliang Zhao, Shengjun Pan, Yu Sun, and Quan Lu. 2018. Field-weighted factorization machines for click-through rate prediction in display advertising. In Proceedings of the 2018 World Wide Web Conference . 1349-1357. [26] Junwei Pan, Jian Xu, Alfonso Lobos Ruiz, Wenliang Zhao, Shengjun Pan, Yu Sun, and Quan Lu. 2018. Field-weighted factorization machines for click-through rate prediction in display advertising. In World Wide Web Conference (WWW) . 1349-1357. [27] Junwei Pan, Wei Xue, Ximei Wang, Haibin Yu, Xun Liu, Shijie Quan, Xueming Qiu, Dapeng Liu, Lei Xiao, and Jie Jiang. 2024. Ads Recommendation in a Collapsed and Entangled World. ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD) (2024). [28] Changhua Pei, Yi Zhang, Yongfeng Zhang, Fei Sun, Xiao Lin, Hanxiao Sun, Jian Wu, Peng Jiang, Junfeng Ge, Wenwu Ou, et al. 2019. Personalized re-ranking for recommendation. In Proceedings of the 13th ACM conference on recommender systems . 3-11. [29] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-based neural networks for user response prediction. In 2016 IEEE 16th International Conference on Data Mining (ICDM) . IEEE, 1149-1154. [31] Steffen Rendle. 2010. Factorization machines. In IEEE International Conference on Data Mining (ICDM) . 995-1000. [30] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . IEEE, 995-1000. [32] David Sculley. 2010. Combined regression and ranking. In Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining . 979-988. [33] Lili Shan, Lei Lin, and Chengjie Sun. 2018. Combined regression and tripletwise learning for conversion rate prediction in real-time bidding advertising. In The 41st international ACM SIGIR conference on research & development in information retrieval . 115-123. [34] Xiang-Rong Sheng, Jingyue Gao, Yueyao Cheng, Siran Yang, Shuguang Han, Hongbo Deng, Yuning Jiang, Jian Xu, and Bo Zheng. 2023. Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4813-4822. [35] Liangcai Su, Junwei Pan, Ximei Wang, Xi Xiao, Shijie Quan, Xihua Chen, and Jie Jiang. 2024. STEM: Unleashing the Power of Embeddings for Multi-task Recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 38. 9002-9010. [36] Yang Sun, Junwei Pan, Alex Zhang, and Aaron Flores. 2021. FM2: field-matrixed factorization machines for recommender systems. In Proceedings of the Web Conference 2021 . 2828-2837. [37] Robin Swezey, Aditya Grover, Bruno Charron, and Stefano Ermon. 2021. Pirank: Scalable learning to rank via differentiable sorting. Advances in Neural Information Processing Systems 34 (2021), 21644-21654. [38] Yukihiro Tagami, Shingo Ono, Koji Yamamoto, Koji Tsukamoto, and Akira Tajima. 2013. Ctr prediction for contextual advertising: Learning-to-rank approach. In Proceedings of the Seventh International Workshop on Data Mining for Online Advertising . 1-8. [39] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In International Workshop on Data Mining for Online Advertising (ADKDD) . 1-7. [40] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the web conference 2021 . 1785-1797. [41] Fen Xia, Tie-Yan Liu, Jue Wang, Wensheng Zhang, and Hang Li. 2008. Listwise approach to learning to rank: theory and algorithm. In Proceedings of the 25th international conference on Machine learning . 1192-1199. [42] Le Yan, Zhen Qin, Xuanhui Wang, Michael Bendersky, and Marc Najork. 2022. Scale calibration of deep ranking models. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4300-4309. [43] Yuguang Yue, Yuanpu Xie, Huasen Wu, Haofeng Jia, Shaodan Zhai, Wenzhe Shi, and Jonathan J Hunt. 2022. Learning to Rank For Push Notifications Using Pairwise Expected Regret. arXiv preprint arXiv:2201.07681 (2022). [44] Zhaohui Zheng, Keke Chen, Gordon Sun, and Hongyuan Zha. 2007. A regression framework for learning ranking functions using relative relevance judgments. In Proceedings of the 30th annual international ACM SIGIR conference on Research and development in information retrieval . 287-294. [45] Haolin Zhou, Junwei Pan, Xinyi Zhou, Xihua Chen, Jie Jiang, Xiaofeng Gao, and Guihai Chen. 2024. Temporal Interest Network for User Response Prediction. In Companion Proceedings of the ACM on Web Conference 2024 . 413-422. [46] Jieming Zhu, Quanyu Dai, Liangcai Su, Rong Ma, Jinyang Liu, Guohao Cai, Xi Xiao, and Rui Zhang. 2022. BARS: towards open benchmarking for recommender systems. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2912-2923. [47] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open benchmarking for click-through rate prediction. In Proceedings of the 30th ACM international conference on information & knowledge management . 2759-2769.",
   "keywords_parsed": [
     "Recommendation Systems",
-    " CTR Prediction",
-    " Gradient Vanishing",
-    " Ranking Loss"
+    "CTR Prediction",
+    "Gradient Vanishing",
+    "Ranking Loss"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Regression Compatible Listwise Objectives for Calibrated Ranking with Binary Relevance"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Learning to rank with nonsmooth cost functions"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Learning to rank using gradient descent"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Isotonic median regression: a linear programming approach"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Simple and scalable response prediction for display advertising"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Qualitatively characterizing neural network optimization problems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "On the Embedding Collapse when Scaling up Recommendation Models"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Optimizing search engines using clickthrough data"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Field-aware factorization machines in a real-world online advertising system"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Supervised contrastive learning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Learning to rank from bayesian decision inference"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Display Advertising Challenge"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Isotone optimization in R: pool-adjacent-violators algorithm (PAVA) and active set methods"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Clickthrough prediction for advertising in twitter timeline"
+    },
+    {
+      "ref_id": "b19",
+      "title": "xDeepFM: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Focal loss for dense object detection"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Learning to rank for information retrieval"
+    },
+    {
+      "ref_id": "b22",
+      "title": "FinalMLP: An Enhanced Two-Stream MLP Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Ad click prediction: a view from the trenches"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Distributed representations of words and phrases and their compositionality"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Field-weighted factorization machines for click-through rate prediction in display advertising"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Field-weighted factorization machines for click-through rate prediction in display advertising"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Ads Recommendation in a Collapsed and Entangled World"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Combined regression and ranking"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Combined regression and tripletwise learning for conversion rate prediction in real-time bidding advertising"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model"
+    },
+    {
+      "ref_id": "b35",
+      "title": "STEM: Unleashing the Power of Embeddings for Multi-task Recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "FM2: field-matrixed factorization machines for recommender systems"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Pirank: Scalable learning to rank via differentiable sorting"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Ctr prediction for contextual advertising: Learning-to-rank approach"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Listwise approach to learning to rank: theory and algorithm"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Scale calibration of deep ranking models"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Learning to Rank For Push Notifications Using Pairwise Expected Regret"
+    },
+    {
+      "ref_id": "b44",
+      "title": "A regression framework for learning ranking functions using relative relevance judgments"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Temporal Interest Network for User Response Prediction"
+    },
+    {
+      "ref_id": "b46",
+      "title": "BARS: towards open benchmarking for recommender systems"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Open benchmarking for click-through rate prediction"
+    }
   ]
 }

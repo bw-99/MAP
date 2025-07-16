@@ -16,8 +16,78 @@
   "REFERENCES": "[1] Alexis Conneau, Kartikay Khandelwal, Naman Goyal, Vishrav Chaudhary, Guillaume Wenzek, Francisco Guzmán, Edouard Grave, Myle Ott, Luke Zettlemoyer, and Veselin Stoyanov. 2019. Unsupervised cross-lingual representation learning at scale. arXiv preprint arXiv:1911.02116 (2019). [2] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies . Association for Computational Linguistics, Minneapolis, Minnesota, 4171-4186. [3] Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, et al. 2020. An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929 (2020). [4] Dehong Gao, Linbo Jin, Ben Chen, Minghui Qiu, Peng Li, Yi Wei, Yi Hu, and Hao Wang. 2020. Fashionbert: Text and image matching with adaptive loss for crossmodal retrieval. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2251-2260. [5] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition . 770-778. [6] Gen Li, Nan Duan, Yuejian Fang, Ming Gong, and Daxin Jiang. 2020. Unicodervl: A universal encoder for vision and language by cross-modal pre-training. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 11336-11344. [7] Junnan Li, Dongxu Li, Caiming Xiong, and Steven Hoi. 2022. Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation. arXiv preprint arXiv:2201.12086 (2022). [8] Junnan Li, Ramprasaath Selvaraju, Akhilesh Gotmare, Shafiq Joty, Caiming Xiong, and Steven Chu Hong Hoi. 2021. Align before fuse: Vision and language representation learning with momentum distillation. Advances in Neural Information Processing Systems (2021). [9] Xiujun Li, Xi Yin, Chunyuan Li, Pengchuan Zhang, Xiaowei Hu, Lei Zhang, Lijuan Wang, Houdong Hu, Li Dong, Furu Wei, Yejin Choi, and Jianfeng Gao. 2020. Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks. In Computer Vision - ECCV 2020 . Springer International Publishing, Cham, 121-137. [10] Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019. Roberta: A robustly optimized bert pretraining approach. arXiv preprint arXiv:1907.11692 (2019). [11] Jiasen Lu, Dhruv Batra, Devi Parikh, and Stefan Lee. 2019. ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks. In Advances in Neural Information Processing Systems , Vol. 32. Curran Associates, Inc. [12] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, et al. 2021. Learning transferable visual models from natural language supervision. In International Conference on Machine Learning . PMLR, 8748-8763. [13] Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun. 2015. Faster r-cnn: Towards real-time object detection with region proposal networks. Advances in neural information processing systems 28 (2015). [14] Weijie Su, Xizhou Zhu, Yue Cao, Bin Li, Lewei Lu, Furu Wei, and Jifeng Dai. 2019. Vl-bert: Pre-training of generic visual-linguistic representations. arXiv preprint arXiv:1908.08530 (2019). [15] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Ł ukasz Kaiser, and Illia Polosukhin. 2017. Attention is All you Need. In Advances in Neural Information Processing Systems , Vol. 30. Curran Associates, Inc. https://proceedings.neurips.cc/paper/2017/file/ 3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf [16] Licheng Yu, Jun Chen, Animesh Sinha, Mengjiao MJ Wang, Hugo Chen, Tamara L Berg, and Ning Zhang. 2022. CommerceMM: Large-Scale Commerce MultiModal Representation Learning with Omni Retrieval. arXiv preprint arXiv:2202.07247 (2022). [17] Tan Yu, Xiaokang Li, Jianwen Xie, Ruiyang Yin, Qing Xu, and Ping Li. 2021. MixBERT for image-ad relevance scoring in advertising. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 3597-3602.",
   "keywords_parsed": [
     "Same-style products retrieval",
-    " Vision-language representation",
-    " Contrastive loss",
-    " User interactive search"
+    "Vision-language representation",
+    "Contrastive loss",
+    "User interactive search"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Unsupervised cross-lingual representation learning at scale"
+    },
+    {
+      "ref_id": "b2",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b3",
+      "title": "An image is worth 16x16 words: Transformers for image recognition at scale"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Fashionbert: Text and image matching with adaptive loss for crossmodal retrieval"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Unicodervl: A universal encoder for vision and language by cross-modal pre-training"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Align before fuse: Vision and language representation learning with momentum distillation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b11",
+      "title": "ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Faster r-cnn: Towards real-time object detection with region proposal networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Vl-bert: Pre-training of generic visual-linguistic representations"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b16",
+      "title": "CommerceMM: Large-Scale Commerce MultiModal Representation Learning with Omni Retrieval"
+    },
+    {
+      "ref_id": "b17",
+      "title": "MixBERT for image-ad relevance scoring in advertising"
+    }
   ]
 }

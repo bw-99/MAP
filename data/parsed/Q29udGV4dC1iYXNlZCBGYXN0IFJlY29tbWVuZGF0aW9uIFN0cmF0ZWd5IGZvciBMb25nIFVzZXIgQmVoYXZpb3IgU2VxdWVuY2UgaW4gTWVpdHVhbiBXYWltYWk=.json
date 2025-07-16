@@ -27,7 +27,169 @@
   "REFERENCES": "[1] Yue Cao, Xiaojiang Zhou, Jiaqi Feng, Peihao Huang, Yao Xiao, Dayao Chen, and Sheng Chen. 2022. Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction. In CIKM . ACM, 2974-2983. [2] Jianxin Chang, Chen Gao, Yu Zheng, Yiqun Hui, Yanan Niu, Yang Song, Depeng Jin, and Yong Li. 2021. Sequential Recommendation with Graph Neural Networks. In SIGIR . ACM, 378-387. [3] Jianxin Chang, Chenbin Zhang, Zhiyi Fu, Xiaoxue Zang, Lin Guan, Jing Lu, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, and Kun Gai. 2023. TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou. In KDD . ACM, 3785-3794. [4] Qiwei Chen, Changhua Pei, Shanshan Lv, Chao Li, Junfeng Ge, and Wenwu Ou. 2021. End-to-End User Behavior Retrieval in Click-Through RatePrediction Model. abs/2108.04468 (2021). [5] Weiyu Cheng, Yanyan Shen, and Linpeng Huang. 2020. Adaptive Factorization Network: Learning Adaptive-Order Feature Interactions. In AAAI . AAAI Press, 3609-3616. [6] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In RecSys . ACM, 191-198. [7] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2016. Session-based Recommendations with Recurrent Neural Networks. In ICLR . [8] J. Wesley Hines. 1996. A logarithmic neural network architecture for unbounded non-linear function approximation. In ICNN . IEEE, 1245-1250. [9] Fuxing Hong, Dongbo Huang, and Ge Chen. 2019. Interaction-Aware Factorization Machines for Recommender Systems. In AAAI . AAAI Press, 3804-3811. [10] Eric Jang, Shixiang Gu, and Ben Poole. 2017. Categorical Reparameterization with Gumbel-Softmax. In ICLR (Poster) . OpenReview.net. [11] Yu-Chin Juan, Yong Zhuang, Wei-Sheng Chin, and Chih-Jen Lin. 2016. Fieldaware Factorization Machines for CTR Prediction. In RecSys . ACM, 43-50. Wang-Cheng Kang and Julian J. McAuley. 2018. Self-Attentive Sequential Rec- [12] ommendation. In ICDM . 197-206. [13] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. 2017. Neural Attentive Session-based Recommendation. In CIKM . ACM, 1419-1428. [14] Junnan Li, Pan Zhou, Caiming Xiong, and Steven C. H. Hoi. 2021. Prototypical Contrastive Learning of Unsupervised Representations. In ICLR . OpenReview.net. [15] Xiaochen Li, Jian Liang, Xialong Liu, and Yu Zhang. 2022. Adversarial Filtering Modeling on Long-term User Behavior Sequences for Click-Through Rate Prediction. In SIGIR . ACM, 1969-1973. [16] Yang Li, Tong Chen, Peng-Fei Zhang, and Hongzhi Yin. 2021. Lightweight SelfAttentive Sequential Recommendation. In CIKM . ACM, 967-977. [17] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems. In KDD . ACM, 1754-1763. [18] Chang Liu, Xiaoguang Li, Guohao Cai, Zhenhua Dong, Hong Zhu, and Lifeng Shang. 2021. Non-invasive Self-attention for Side Information Fusion in Sequential Recommendation. CoRR abs/2103.03578 (2021). [19] Wantong Lu, Yantao Yu, Yongzhe Chang, Zhen Wang, Chenhui Li, and Bo Yuan. 2020. A Dual Input-aware Factorization Machine for CTR Prediction. In IJCAI . ijcai.org, 3139-3145. [20] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction. In KDD . ACM, 2671-2679. [21] Qi Pi, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, Xiaoqiang Zhu, and Kun Gai. 2020. Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction. In CIKM . ACM, 2685-2692. [22] Yuqi Qin, Pengfei Wang, and Chenliang Li. 2021. The World is Binary: Contrastive Learning for Denoising Next Basket Recommendation. In SIGIR . 859-868. [23] Ahmed Rashed, Shereen Elsayed, and Lars Schmidt-Thieme. 2022. Context and Attribute-Aware Sequential Recommendation via Cross-Attention. In RecSys . ACM, 71-80. [24] Kan Ren, Jiarui Qin, Yuchen Fang, Weinan Zhang, Lei Zheng, Weijie Bian, Guorui Zhou, Jian Xu, Yong Yu, Xiaoqiang Zhu, and Kun Gai. 2019. Lifelong Sequential Modeling with Personalized Memorization for User Response Prediction. In SIGIR . ACM, 565-574. [25] Ruiyang Ren, Zhaoyang Liu, Yaliang Li, Wayne Xin Zhao, Hui Wang, Bolin Ding, and Ji-Rong Wen. 2020. Sequential Recommendation with Self-Attentive Multi-Adversarial Network. In SIGIR . ACM, 89-98. [26] Steffen Rendle. 2010. Factorization Machines. In ICDM . IEEE Computer Society, 995-1000. [27] Uriel Singer, Haggai Roitman, Yotam Eshel, Alexander Nus, Ido Guy, Or Levi, Idan Hasson, and Eliyahu Kiperwasser. 2022. Sequential Modeling with Multiple Attributes for Watchlist Recommendation in E-Commerce. In WSDM . ACM, 937-946. [28] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer. In CIKM . 1441-1450. [29] Zhen Tian, Ting Bai, Wayne Xin Zhao, Ji-Rong Wen, and Zhao Cao. 2023. EulerNet: Adaptive Feature Interaction Learning via Euler's Formula for CTR Prediction. In SIGIR . ACM, 1376-1385. [30] Xiaohai Tong, Pengfei Wang, Chenliang Li, Long Xia, and Shaozhang Niu. 2021. Pattern-enhanced Contrastive Policy Learning Network for Sequential Recommendation. In IJCAI . ijcai.org, 1593-1599. [31] Petar Velickovic, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Liò, and Yoshua Bengio. 2018. Graph Attention Networks. In ICLR . OpenReview.net. [32] Norha M. Villegas, Cristian Sánchez, Javier Díaz-Cely, and Gabriel Tamura. 2018. Characterizing context-aware recommender systems: A systematic literature review. Knowl. Based Syst. 140 (2018), 173-200. [33] Ruoxi Wang, Rakesh Shivanna, Derek Zhiyuan Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed H. Chi. 2021. DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems. In WWW . ACM / IW3C2, 1785-1797. [34] Shu Wu, Yuyuan Tang, Yanqiao Zhu, Liang Wang, Xing Xie, and Tieniu Tan. 2019. Session-Based Recommendation with Graph Neural Networks. In AAAI . AAAI Press, 346-353. [35] Yongji Wu, Lu Yin, Defu Lian, Mingyang Yin, Neil Zhenqiang Gong, Jingren Zhou, and Hongxia Yang. 2021. Rethinking Lifelong Sequential Recommendation with Incremental Multi-Interest Attention. CoRR abs/2105.14060 (2021). [36] Tingting Zhang, Pengpeng Zhao, Yanchi Liu, Victor S. Sheng, Jiajie Xu, Deqing Wang, Guanfeng Liu, and Xiaofang Zhou. 2019. Feature-level Deeper Self-Attention Network for Sequential Recommendation. In IJCAI . ijcai.org, 43204326. [37] Yuren Zhang, Enhong Chen, Binbin Jin, Hao Wang, Min Hou, Wei Huang, and Runlong Yu. 2022. Clustering based Behavior Sampling with Long Sequential Data for CTR Prediction. In SIGIR . ACM, 2195-2200. [38] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep Interest Evolution Network for Click-Through Rate Prediction. In AAAI . AAAI Press, 5941-5948. [39] Guorui Zhou, Xiaoqiang Zhu, Chengru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for Click-Through Rate Prediction. In KDD . ACM, 1059-1068. [40] Fuzhen Zhuang, Zhiyuan Qi, Keyu Duan, Dongbo Xi, Yongchun Zhu, Hengshu Zhu, Hui Xiong, and Qing He. 2021. A Comprehensive Survey on Transfer Learning. Proc. IEEE 109, 1 (2021), 43-76.",
   "keywords_parsed": [
     "Click-Through Rate Prediction",
-    " User Preference Modeling",
-    " Long Sequential User Behavior Data"
+    "User Preference Modeling",
+    "Long Sequential User Behavior Data"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Sequential Recommendation with Graph Neural Networks"
+    },
+    {
+      "ref_id": "b3",
+      "title": "TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou"
+    },
+    {
+      "ref_id": "b4",
+      "title": "End-to-End User Behavior Retrieval in Click-Through RatePrediction Model"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Adaptive Factorization Network: Learning Adaptive-Order Feature Interactions"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Session-based Recommendations with Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A logarithmic neural network architecture for unbounded non-linear function approximation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Interaction-Aware Factorization Machines for Recommender Systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Categorical Reparameterization with Gumbel-Softmax"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Field-aware Factorization Machines for CTR Prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Self-Attentive Sequential Recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Neural Attentive Session-based Recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Prototypical Contrastive Learning of Unsupervised Representations"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Adversarial Filtering Modeling on Long-term User Behavior Sequences for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Lightweight Self-Attentive Sequential Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Non-invasive Self-attention for Side Information Fusion in Sequential Recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A Dual Input-aware Factorization Machine for CTR Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "The World is Binary: Contrastive Learning for Denoising Next Basket Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Context and Attribute-Aware Sequential Recommendation via Cross-Attention"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Lifelong Sequential Modeling with Personalized Memorization for User Response Prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Sequential Recommendation with Self-Attentive Multi-Adversarial Network"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Sequential Modeling with Multiple Attributes for Watchlist Recommendation in E-Commerce"
+    },
+    {
+      "ref_id": "b28",
+      "title": "BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer"
+    },
+    {
+      "ref_id": "b29",
+      "title": "EulerNet: Adaptive Feature Interaction Learning via Euler's Formula for CTR Prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Pattern-enhanced Contrastive Policy Learning Network for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Graph Attention Networks"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Characterizing context-aware recommender systems: A systematic literature review"
+    },
+    {
+      "ref_id": "b33",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Session-Based Recommendation with Graph Neural Networks"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Rethinking Lifelong Sequential Recommendation with Incremental Multi-Interest Attention"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Feature-level Deeper Self-Attention Network for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Clustering based Behavior Sampling with Long Sequential Data for CTR Prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Deep Interest Evolution Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b40",
+      "title": "A Comprehensive Survey on Transfer Learning"
+    }
   ]
 }

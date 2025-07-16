@@ -18,7 +18,45 @@
   "REFERENCES": "[1] Finn V Jensen and Thomas Dyhre Nielsen. 2007. Bayesian networks and decision graphs . Vol. 2. Springer. [2] Douwe Kiela, Suvrat Bhooshan, Hamed Firooz, and Davide Testuggine. 2019. Supervised Multimodal Bitransformers for Classifying Images and Text. In NeurIPS Workshop . [3] Feng-Lin Li, Hehong Chen, Guohai Xu, Tian Qiu, Feng Ji, Ji Zhang, and Haiqing Chen. 2020. AliMe KG: Domain Knowledge Graph Construction and Application in E-commerce. In CIKM . [4] Fanchao Qi, Chenghao Yang, Zhiyuan Liu, Qiang Dong, Maosong Sun, and Zhendong Dong. 2019. OpenHowNet: An Open Sememe-based Lexical Knowledge Base. CoRR (2019). [5] Chen Qu, Liu Yang, W Bruce Croft, Yongfeng Zhang, Johanne R Trippas, and Minghui Qiu. 2019. User intent prediction in information-seeking conversations. In CHIIR . [6] Tal Ridnik, Emanuel Ben-Baruch, Nadav Zamir, Asaf Noy, Itamar Friedman, Matan Protter, and Lihi Zelnik-Manor. 2021. Asymmetric Loss for Multi-Label Classification. In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) . 82-91. [7] Xiaobin Tang, Jing Zhang, Bo Chen, Yang Yang, Hong Chen, and Cuiping Li. 2020. BERT-INT:A BERT-based Interaction Model For Knowledge Graph Alignment. In IJCAI . [8] Wei Wang, Bin Bi, Ming Yan, Chen Wu, Jiangnan Xia, Zuyi Bao, Liwei Peng, and Luo Si. 2020. StructBERT: Incorporating Language Structures into Pre-training for Deep Language Understanding. In ICLR . [9] Haoyi Zhou, Shanghang Zhang, Jieqi Peng, Shuai Zhang, Jianxin Li, Hui Xiong, and Wancai Zhang. 2021. Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting. In AAAI .",
   "keywords_parsed": [
     "Knowledge Graph",
-    " Intent Prediction",
-    " Graph Embedding"
+    "Intent Prediction",
+    "Graph Embedding"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Bayesian networks and decision graphs"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Supervised Multimodal Bitransformers for Classifying Images and Text"
+    },
+    {
+      "ref_id": "b3",
+      "title": "AliMe KG: Domain Knowledge Graph Construction and Application in E-commerce"
+    },
+    {
+      "ref_id": "b4",
+      "title": "OpenHowNet: An Open Sememe-based Lexical Knowledge Base"
+    },
+    {
+      "ref_id": "b5",
+      "title": "User intent prediction in information-seeking conversations"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Asymmetric Loss for Multi-Label Classification"
+    },
+    {
+      "ref_id": "b7",
+      "title": "BERT-INT:A BERT-based Interaction Model For Knowledge Graph Alignment"
+    },
+    {
+      "ref_id": "b8",
+      "title": "StructBERT: Incorporating Language Structures into Pre-training for Deep Language Understanding"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting"
+    }
   ]
 }

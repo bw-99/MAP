@@ -29,8 +29,182 @@
   "C MODEL EFFICIENCY": "Table 9 shows more detailed information on the efficiency of our model, including number of flops, model forward latency per batch (batch size = 256), and serving cost. The serving cost is not linearly correlated with model forward latency because it is also related to server configurations such as time out limit, batch size, etc. GPU serving optimization is important to maintain low latency and serving cost. Table 9: Model Efficiency Numbers from Serving Optimization",
   "keywords_parsed": [
     "Personalization",
-    " Recommender Systems",
-    " Sequential Recommendation",
-    " User Interest Modeling"
+    "Recommender Systems",
+    "Sequential Recommendation",
+    "User Interest Modeling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Search serving and ranking at Pinterest"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Neural machine translation by jointly learning to align and translate"
+    },
+    {
+      "ref_id": "b3",
+      "title": "3 Innovations While Unifying Pinterest's Key-Value Storage"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Behavior Sequence Transformer for E-Commerce Recommendation in Alibaba"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Sequential user-based recurrent neural network recommendations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Fusing similarity models with markov chains for sparse sequential recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Long Short-Term Memory"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Modeling personalized item frequency information for next-basket recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "An Automatic Weighting Scheme for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Pin2Interest: A scalable system for content classification"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Time interval aware self-attention for sequential recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Related Pins at Pinterest: The Evolution of a Real-World Recommender System"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Effective Missing Data Prediction for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Resolving data sparsity and cold start problem in collaborative filtering recommender system using linked open data"
+    },
+    {
+      "ref_id": "b20",
+      "title": "PinnerFormer: Sequence Modeling for User Representation at Pinterest"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Item-based collaborative filtering recommendation algorithms"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Bidirectional recurrent neural networks"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Hidden Technical Debt in Machine Learning Systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b28",
+      "title": "BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Efficient processing of deep neural networks: A tutorial and survey"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Improved recurrent neural networks for session-based recommendations"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b32",
+      "title": "3D convolutional networks for session-based recommendation with content features"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b35",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-Scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Surrogate for Long-Term User Experience in Recommender Systems"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Rethinking Personalized Ranking at Pinterest: An End-to-End Approach"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Graph Convolutional Neural Networks for Web-Scale Recommender Systems"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Next item recommendation with self-attentive metric learning"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Convolutional neural networks for time series classification"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Notification Volume Control and Optimization System at Pinterest"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    }
   ]
 }

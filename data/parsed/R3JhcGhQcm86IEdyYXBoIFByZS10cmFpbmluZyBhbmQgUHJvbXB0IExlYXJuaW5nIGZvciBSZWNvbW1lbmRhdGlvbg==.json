@@ -22,7 +22,239 @@
   "A APPENDIX": "",
   "A.1 Hyper-parameter Sensitivity": "Our research focuses on investigating the response of GraphPro to hyper-parameter adjustments, using three distinct datasets. We conduct a meticulous analysis of the primary hyperparameters that play a crucial role in the operation of GraphPro. These hyperparameters include the temporal prompt interval 𝜏 , the updating window 𝜔 , which determines the intervals for model updates, and the sampling decay 𝜙 , which influences the emphasis on past interactions. To ensure a comprehensive evaluation, we carefully select ranges of values for each hyperparameter that are tailored to the unique characteristics of each experimental dataset utilized. · 𝜏 : Taobao-[ 0 . 5 , 1 , 4 , 12 ] ; Koubei and Amazon-[ 24 , 48 , 72 , 96 ] · 𝜔 : Taobao and Koubei-[ 1 , 2 , 3 ] ; Amazon-[ 2 , 4 , 6 ] · 𝜙 : [ 0 . 05 , 0 . 1 , -0 . 05 , -0 . 1 ] Our analysis of hyper-parameter sensitivity in GraphPro is presented in Figure 8, from which we derive several observations: 1) GraphPro exhibits a greater degree of sensitivity to hyperparameter changes when applied to the Amazon data in comparison to those of Taobao and Koubei. This heightened sensitivity on Amazon is likely due to its considerably longer fine-tuning and prediction period, which spans an entire 9 weeks. This duration is substantial when contrasted with the other datasets and suggests a correlation between the span of fine-tuning and the impact of hyperparameters on the model's long-term performance. For enhanced long-term accuracy, we need to be careful when picking these settings. 2) When examining the details, it becomes evident that GraphPro is notably more affected by the updating window 𝜔 compared to other hyperparameters in its configuration. The size of the updating window requires careful consideration, as it is crucial to strike a delicate balance. If the window is too narrow, the model may fail to incorporate important updates that contribute to the evolving representations of users and items. On the other hand, if the window is too wide, the model may become burdened with irrelevant noise, thus obscuring the current representation learning process. 3) Moreover, our findings reveal a reassuring aspect of GraphPro's design: its resilience. Minor modifications in the hyper-parameter settings do not precipitate substantial declines in the model's performance. We emphasize the significance of customizing hyperparameter choices to align with the intrinsic characteristics and unique aspects of the dataset being utilized. hp1 hp2 hp3 hp4 98.6% 98.8% 99.0% 99.2% 99.4% 99.6% 99.8% 100.0% Change in Recall taobao koubei amazon hp1 hp2 hp3 88.0% 90.0% 92.0% 94.0% 96.0% 98.0% 100.0% taobao koubei amazon Change in Recall (a) Time Interval 𝜏 hp1 hp2 hp3 hp4 99.0% 99.2% 99.4% 99.6% 99.8% 100.0% Change in Recall taobao koubei amazon (b) Updating Window 𝜔 (c) Sampling Decay 𝜙 Figure 8: Performance change w.r.t. key hyperparameters. 0 1 2 3 Snapshot 0.020 0.025 0.030 0.035 0.040 Recall 10 2 10 3 Epoch Time (s) 1200s 20s 360s 15s taobao koubei full Ours (a) Taobao & Koubei (b) Amazon 0 1 2 3 4 5 6 7 Snapshot 0.010 0.015 0.020 0.025 0.030 0.035 Recall 10 0 10 1 Epoch Time (s) 22s 0.27s full Ours Figure 7: GraphPro v.s. full-data training using LightGCN. The results with the average training time for a single epoch are being depicted by a horizontal line on the right Y-axis.",
   "A.2 Comparsion with Full-Data Training": "In this section, our primary objective is to conduct a comprehensive performance comparison between our GraphPro and the traditional full-data training approach (FULL). Our aim is to determine if GraphPro can match or exceed the performance of FULL. To achieve this, we conduct a meticulous comparison using three distinct datasets, with a keen focus on Recall and average epoch time. The results of our analysis are visually represented in Figure 7. Our findings can be summarized into two key observations: 1) In our study, GraphPro stands out on both the Taobao and Koubei datasets, surpassing FULL's performance at every testing point. This underscores GraphPro's robust capability in processing time-sensitive data to yield more precise recommendations. With the Amazon dataset, the two approaches are closely matched, but GraphPro shows a distinct advantage in the initial phases. This suggests that GraphPro's dynamic method can be immediately beneficial, improving performance from the start without losing ground to FULL as the evaluation progresses over time. 2) Furthermore, a significant aspect of GraphPro's appeal lies in its exceptional efficiency. When compared to the FULL approach, GraphPro cuts down the average training time dramatically, achieving astonishing efficiency gains. Specifically, we observe an impressive 60-fold increase in speed on the Taobao dataset, a 24-fold increase on the Koubei dataset, and an unparalleled 81-fold increase on the Amazon dataset. These improvements in training efficiency can be attributed to the innovative architecture of GraphPro, which seamlessly integrates pre-training and prompt learning techniques. This strategic integration significantly accelerates the learning process, enabling GraphPro to rapidly assimilate and adeptly apply new data to generate accurate and timely recommendations.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Graph convolutional matrix completion"
+    },
+    {
+      "ref_id": "b2",
+      "title": "LightGCL: Simple Yet Effective Graph Contrastive Learning for Recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Ensemble-in-One: Ensemble Learning within Random Gated Networks for Enhanced Adversarial Robustness"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Sequential recommendation with graph neural networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Revisiting graph based collaborative filtering: A linear residual graph convolutional network approach"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Revisiting graph based collaborative filtering: A linear residual graph convolutional network approach"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Intent contrastive learning for sequential recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b9",
+      "title": "An image is worth 16x16 words: Transformers for image recognition at scale"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Universal Prompt Tuning for Graph Neural Networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A survey of graph neural networks for recommender systems: Challenges, methods, and directions"
+    },
+    {
+      "ref_id": "b12",
+      "title": "dyngraph2vec: Capturing network dynamics using dynamic graph representation learning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Pre-training graph neural networks for cold-start users and items representation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Graphmae: Self-supervised masked graph autoencoders"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Retagnn: Relational temporal attentive graph neural networks for holistic sequential recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Strategies for pre-training graph neural networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Gpt-gnn: Generative pre-training of graph neural networks"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Mixgcf: An improved training method for graph neural network-based recommender systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "A critical study on data leakage in recommender system offline evaluation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Self-Supervised Group Graph Collaborative Filtering for Group Recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Dynamic graph collaborative filtering"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Enhancing hypergraph neural networks with intent disentanglement for session-based recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Graph neural pre-training for recommendation with side information"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Graphprompt: Unifying pre-training and downstream tasks for graph neural networks"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Dynamic graph convolutional networks"
+    },
+    {
+      "ref_id": "b29",
+      "title": "UltraGCN: ultra simplification of graph convolutional networks for recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Evolvegcn: Evolving graph convolutional networks for dynamic graphs"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "SSLRec: A Self-Supervised Learning Library for Recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Disentangled Contrastive Collaborative Filtering"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Exploiting cloze questions for few shot text classification and natural language inference"
+    },
+    {
+      "ref_id": "b36",
+      "title": "How powerful is graph convolution for recommendation?"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Autoprompt: Eliciting knowledge from language models with automatically generated prompts"
+    },
+    {
+      "ref_id": "b38",
+      "title": "A review-aware graph contrastive learning framework for recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding"
+    },
+    {
+      "ref_id": "b40",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b41",
+      "title": "InfoGraph: Unsupervised and Semi-supervised Graph-Level Representation Learning via Mutual Information Maximization"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Gppt: Graph pre-training and prompt tuning to generalize graph neural networks"
+    },
+    {
+      "ref_id": "b43",
+      "title": "All in One: Multi-Task Prompting for Graph Neural Networks"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Deep graph infomax"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Disentangled contrastive learning for social recommendation"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Self-supervised graph learning for recommendation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Automated Self-Supervised Learning for Recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Reconsidering Learning Objectives in Unbiased Recommendation: A Distribution Shift Perspective"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Debiased Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Multi-behavior hypergraph-enhanced transformer for sequential recommendation"
+    },
+    {
+      "ref_id": "b52",
+      "title": "A Generic Learning Framework for Sequential Recommendation with Distribution Shifts"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Graph convolutional neural networks for web-scale recommender systems"
+    },
+    {
+      "ref_id": "b54",
+      "title": "ROLAND: graph learning framework for dynamic graphs"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Graph contrastive learning with augmentations"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Are graph augmentations necessary? simple graph contrastive learning for recommendation"
+    },
+    {
+      "ref_id": "b57",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    },
+    {
+      "ref_id": "b58",
+      "title": "WinGNN: Dynamic Graph Neural Networks with Random Gradient Aggregation Window"
+    }
   ]
 }

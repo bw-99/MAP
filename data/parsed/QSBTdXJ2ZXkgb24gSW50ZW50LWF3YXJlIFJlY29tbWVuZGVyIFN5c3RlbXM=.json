@@ -22,6 +22,350 @@
   "6 SUMMARY": "Weargue that intent-awareness can be a key building block for the next generation of recommender systems. With this paper, our aim is to provide an overview of the existing literature on IARS, which shall serve as a starting point for researchers working in this area. We have therefore searched the literature for relevant papers and proposed a categorization into different dimensions. Our analyses points to a number of open research gaps, for instance related to the so far limited evaluation of current IARS with humans in the loop. Finally, we outlined a number of possible research directions, which include a stronger focus on domain specifics and the use of additional types of information to infer the current intent of users.",
   "REFERENCES": "[1] Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato. 2020. Multistakeholder Recommendation: Survey and Research Directions. User Modeling and User-Adapted Interaction 30 (2020), 127-158. [2] Gediminas Adomavicius and Alexander Tuzhilin. 2015. Context-Aware Recommender Systems. In Recommender Systems Handbook , Francesco Ricci, Lior Rokach, and Bracha Shapira (Eds.). Springer US, Boston, MA, 191-226. https://doi.org/10.1007/978-1-4899-7637-6_6 ACM Trans. Recomm. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2024. 1:24 Dietmar Jannach and Markus Zanker [3] Gediminas Adomavicius and Jingjing Zhang. 2012. Impact of data characteristics on recommender systems performance. ACM Trans. Manag. Inf. Syst. 3, 1 (2012), 3:1-3:17. https://doi.org/10.1145/2151163.2151166 [4] Rakesh Agrawal, Sreenivas Gollapudi, Alan Halverson, and Samuel Ieong. 2009. Diversifying search results. In Proceedings of the Second ACM International Conference on Web Search and Data Mining (WSDM '09) . 5-14. [5] Yoshua Bengio, Aaron Courville, and Pascal Vincent. 2013. Representation Learning: A Review and New Perspectives. IEEE Trans. Pattern Anal. Mach. Intell. 35, 8 (2013), 1798-1828. https://doi.org/10.1109/TPAMI.2013.50 [6] Cesare Bernardis, Maurizio Ferrari Dacrema, Fernando Benjamin Perez Maurera, Massimo Quadrana, Mario Scriminaci, and Paolo Cremonesi. 2022. From Data Analysis to Intent-Based Recommendation: An Industrial Case Study in the Video Domain. IEEE Access 10 (2022), 14779-14796. https://doi.org/10.1109/ACCESS.2022.3148434 [7] Biswarup Bhattacharya, Iftikhar Burhanuddin, Abhilasha Sancheti, and Kushal Satya. 2017. Intent-Aware Contextual Recommendation System. In 2017 IEEE International Conference on Data Mining Workshops (ICDMW) . 1-8. https: //doi.org/10.1109/ICDMW.2017.8 [8] Veronika Bogina, Tsvi Kuflik, Dietmar Jannach, Maria Bielikova, Michal Kompan, and Christoph Trattner. 2022. Considering Temporal Aspects in Recommender Systems: A Survey. User Modeling and User-Adapted Interaction 33, 1 (2022), 81 - 119. [9] Antoine Bordes, Nicolas Usunier, Alberto Garcia-Durán, Jason Weston, and Oksana Yakhnenko. 2013. Translating embeddings for modeling multi-relational data. In Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 2 (NIPS'13) . 2787-2795. [10] Andrei Broder. 2002. A taxonomy of web search. SIGIR Forum 36, 2 (2002), 3-10. https://doi.org/10.1145/792550.792552 [11] Gabriel Bénédict, Daan Odijk, and Maarten De Rijke. 2023. Intent-Satisfaction Modeling: From Music to Video Streaming. ACM Transactions on Recommender Systems 1, 3 (Sept. 2023), 1-23. https://doi.org/10.1145/3606375 [12] Renqin Cai, Jibang Wu, Aidan San, Chong Wang, and Hongning Wang. 2021. Category-aware Collaborative Sequential Recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 388-397. https://doi.org/10.1145/3404835.3462832 [13] Pedro G. Campos, Fernando Díez, and Iván Cantador. 2014. Time-aware recommender systems: a comprehensive survey and analysis of existing evaluation protocols. User Modeling and User-Adapted Interaction 24, 1-2 (2014), 67-119. [14] Yukuo Cen, Jianwei Zhang, Xu Zou, Chang Zhou, Hongxia Yang, and Jie Tang. 2020. Controllable Multi-Interest Framework for Recommendation. http://arxiv.org/abs/2005.09347 [15] Bo Chang, Alexandros Karatzoglou, Yuyan Wang, Can Xu, Ed H. Chi, and Minmin Chen. 2023. Latent User Intent Modeling for Sequential Recommenders. In Companion Proceedings of the ACM Web Conference 2023 . 427-431. https://doi.org/10.1145/3543873.3584641 [16] Benu Madhab Changmai, Divija Nagaraju, Debi Prasanna Mohanty, Kriti Singh, Kunal Bansal, and Sukumar Moharana. 2019. On-Device User Intent Prediction for Context and Sequence Aware Recommendation. http://arxiv.org/abs/ 1909.12756 [17] Jinpeng Chen, Yuan Cao, Fan Zhang, Pengfei Sun, and Kaimin Wei. 2022. Sequential Intention-aware Recommender based on User Interaction Graph. In Proceedings of the 2022 International Conference on Multimedia Retrieval . 118-126. https://doi.org/10.1145/3512527.3531390 [18] Rui Chen, Dongxue Chen, Riwei Lai, Hongtao Song, and Yichen Wang. 2023. MISRec: Multi-Intention Sequential Recommendation. In Web and Big Data , Bohan Li, Lin Yue, Chuanqi Tao, Xuming Han, Diego Calvanese, and Toshiyuki Amagasa (Eds.). Vol. 13423. Springer Nature Switzerland, Cham, 191-198. https://doi.org/10.1007/978-3-031-25201-3_15 Series Title: Lecture Notes in Computer Science. [19] Tong Chen, Hongzhi Yin, Hongxu Chen, Rui Yan, Quoc Viet Hung Nguyen, and Xue Li. 2019. AIR: Attentional Intention-Aware Recommender Systems. In 2019 IEEE 35th International Conference on Data Engineering (ICDE) . 304-315. https://doi.org/10.1109/ICDE.2019.00035 [20] Wanyu Chen, Pengjie Ren, Fei Cai, Fei Sun, and Maarten de Rijke. 2020. Improving End-to-End Sequential Recommendations with Intent-aware Diversification. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 175-184. https://doi.org/10.1145/3340531.3411897 [21] Yongjun Chen, Zhiwei Liu, Jia Li, Julian McAuley, and Caiming Xiong. 2022. Intent Contrastive Learning for Sequential Recommendation. In Proceedings of the ACM Web Conference 2022 . 2172-2182. https://doi.org/10.1145/3485447.3512090 [22] Justin Cheng, Caroline Lo, and Jure Leskovec. 2017. Predicting Intent Using Activity Logs: How Goal Specificity and Temporal Range Affect User Behavior. In Proceedings of the 26th International Conference on World Wide Web Companion (WWW '17 Companion) . 593-601. https://doi.org/10.1145/3041021.3054198 [23] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems (RecSys '16) . 191-198. [24] Alvise De Biasio, Nicolò Navarin, and Dietmar Jannach. 2023. Economic Recommender Systems - A Systematic Review. Electronic Commerce Research and Applications 63 (2023), 101352. ACM Trans. Recomm. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2024. A Survey on Intent-aware Recommender Systems 1:25 ACM Trans. Recomm. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2024. 1:26 Dietmar Jannach and Markus Zanker [46] Dietmar Jannach and Markus Zanker. 2021. Impact and Value of Recommender Systems. In Recommender Systems Handbook , Francesco Ricci, Bracha Shapira, and Lior Rokach (Eds.). Springer US. [47] Dietmar Jannach, Markus Zanker, Mouzhi Ge, and Marian Gröning. 2012. Recommender Systems in Computer Science and Information Systems - A Landscape of Research. In 13th International Conference on Electronic Commerce and Web Technologies (EC-Web 2012) . 76-87. https://doi.org/10.1007/978-3-642-32273-0_7 [48] Wei Jiang, Fangquan Lin, Jihai Zhang, Cheng Yang, Hanwei Zhang, and Ziqiang Cui. 2021. Dynamic Sequential Recommendation: Decoupling User Intent from Temporal Context. In 2021 International Conference on Data Mining Workshops (ICDMW) . 18-26. https://doi.org/10.1109/ICDMW53433.2021.00010 [49] Di Jin, Luzhi Wang, Yizhen Zheng, Guojie Song, Fei Jiang, Xiang Li, Wei Lin, and Shirui Pan. 2023. Dual Intent Enhanced Graph Neural Network for Session-based New Item Recommendation. In Proceedings of the ACM Web Conference 2023 . 684-693. https://doi.org/10.1145/3543507.3583526 [50] Michael Jugovac, Dietmar Jannach, and Lukas Lerche. 2017. Efficient Optimization of Multiple Recommendation Quality Factors According to Individual User Tendencies. Expert Systems With Applications 81 (2017), 321-331. [51] Marius Kaminskas and Derek Bridge. 2016. Diversity, Serendipity, Novelty, and Coverage: A Survey and Empirical Analysis of Beyond-Accuracy Objectives in Recommender Systems. ACM Transactions on Interactive Intelligent Systems 7, 1 (2016), 2:1-2:42. [52] Jie Kang, Kyle Condiff, Shuo Chang, Joseph A. Konstan, Loren Terveen, and F. Maxwell Harper. 2017. Understanding How People Use Natural Language to Ask for Recommendations. In Proceedings of the Eleventh ACM Conference on Recommender Systems . 229-237. https://doi.org/10.1145/3109859.3109873 [53] W. Kang and J. McAuley. 2018. Self-Attentive Sequential Recommendation. In 2018 IEEE International Conference on Data Mining (ICDM) . 197-206. https://doi.org/10.1109/ICDM.2018.00035 [54] Komal Kapoor, Vikas Kumar, Loren Terveen, Joseph A. Konstan, and Paul Schrater. 2015. \"I like to explore sometimes\": Adapting to Dynamic User Novelty Preferences. In Proceedings of the 9th ACM Conference on Recommender Systems . 19-26. https://doi.org/10.1145/2792838.2800172 [55] Mesut Kaya and Derek Bridge. 2019. A comparison of calibrated and intent-aware recommendations. In Proceedings of the 13th ACM Conference on Recommender Systems . 151-159. https://doi.org/10.1145/3298689.3347045 [56] Mesut Kaya and Derek Bridge. 2019. Subprofile-aware diversification of recommendations. User Modeling and User-Adapted Interaction 29, 3 (2019), 661-700. https://doi.org/10.1007/s11257-019-09235-6 [57] Mesut Kaya and Derek G. Bridge. 2018. Accurate and Diverse Recommendations Using Item-Based SubProfiles. In Proceedings of the Thirty-First International Florida Artificial Intelligence Research Society Conference, FLAIRS 2018 . 462-467. https://aaai.org/ocs/index.php/FLAIRS/FLAIRS18/paper/view/17600 [58] Barbara Kitchenham and Pearl Brereton. 2013. A systematic review of systematic review process research in software engineering. Inf. Softw. Technol. 55, 12 (2013), 2049-2075. https://doi.org/10.1016/j.infsof.2013.07.010 [59] Barbara Kitchenham, Pearl Brereton, David Budgen, Mark Turner, John Bailey, and Stephen Linkman. 2009. Systematic literature reviews in software engineering - A systematic literature review. Information and Software Technology 51, 1 (2009), 7-15. https://doi.org/10.1016/j.infsof.2008.09.009 [60] Anton Klenitskiy, Anna Volodkevich, Anton Pembek, and Alexey Vasilev. 2024. Does It Look Sequential? An Analysis of Datasets for Evaluation of Sequential Recommendations. arXiv:2408.12008 [cs.IR] [61] Anastasiia Klimashevskaia, Dietmar Jannach, Mehdi Elahi, and Christoph Trattner. 2023. A Survey on Popularity Bias in Recommender Systems. arXiv:2308.01118 [cs.IR] [62] Bart P. Knijnenburg, Saadhika Sivakumar, and Daricia Wilkinson. 2016. Recommender Systems for Self-Actualization. In Proceedings of the 10th ACM Conference on Recommender Systems (RecSys '16) . 11-14. https://doi.org/10.1145/ 2959100.2959189 [63] Christoph Kofler, Martha Larson, and Alan Hanjalic. 2017. User Intent in Multimedia Search: A Survey of the State of the Art and Future Challenges. Comput. Surveys 49, 2 (June 2017), 1-37. https://doi.org/10.1145/2954930 [64] Marek Koniew. 2020. Classification of the User's Intent Detection in Ecommerce systems - Survey and Recommendations. International Journal of Information Engineering and Electronic Business 12, 6 (Dec. 2020), 1-12. https://doi.org/10.5815/ijieeb.2020.06.01 [65] Wei-Po Lee and Ke-Han Lee. 2014. Making smartphone service recommendations by predicting users' intentions: A context-aware approach. Information Sciences 277 (Sept. 2014), 21-35. https://doi.org/10.1016/j.ins.2014.04.033 [66] Lukas Lerche, Dietmar Jannach, and Malte Ludewig. 2016. On the Value of Reminders Within E-Commerce Recommendations. In Proceedings of the 2016 Conference on User Modeling Adaptation and Personalization (UMAP '16) . 27-35. [67] Chao Li, Zhiyuan Liu, Mengmeng Wu, Yuchi Xu, Huan Zhao, Pipei Huang, Guoliang Kang, Qiwei Chen, Wei Li, and Dik Lun Lee. 2019. Multi-Interest Network with Dynamic Routing for Recommendation at Tmall. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 2615-2623. https://doi.org/10. 1145/3357384.3357814 ACM Trans. Recomm. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2024. A Survey on Intent-aware Recommender Systems 1:27 [68] Chen Li, Yuanfu Lu, Wei Wang, Chuan Shi, Ruobing Xie, Haili Yang, Cheng Yang, Xu Zhang, and Leyu Lin. 2021. Package Recommendation with Intra- and Inter-Package Attention Networks. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 595-604. https://doi.org/10.1145/ 3404835.3462841 [69] Haoyang Li, Xin Wang, Ziwei Zhang, Jianxin Ma, Peng Cui, and Wenwu Zhu. 2022. Intention-Aware Sequential Recommendation With Structured Intent Transition. IEEE Transactions on Knowledge and Data Engineering 34, 11 (Nov. 2022), 5403-5414. https://doi.org/10.1109/TKDE.2021.3050571 [70] Jing Li, Pengjie Ren, Zhumin Chen, Zhaochun Ren, Tao Lian, and Jun Ma. 2017. Neural Attentive Session-based Recommendation. In Proceedings of the 2017 ACM on Conference on Information and Knowledge Management . 1419-1428. https://doi.org/10.1145/3132847.3132926 [71] Qiming Li, Zhao Zhang, Fuzhen Zhuang, Yongjun Xu, and Chao Li. 2023. Topic-aware Intention Network for Explainable Recommendation with Knowledge Enhancement. ACM Transactions on Information Systems 41, 4 (Oct. 2023), 1-23. https://doi.org/10.1145/3579993 [72] Shaosong Li, Bo Yang, and Dongsheng Li. 2023. Entity-driven user intent inference for knowledge graph-based recommendation. Applied Intelligence 53, 9 (May 2023), 10734-10750. https://doi.org/10.1007/s10489-022-04048-4 [73] Xuewei Li, Aitong Sun, Mankun Zhao, Jian Yu, Kun Zhu, Di Jin, Mei Yu, and Ruiguo Yu. 2023. Multi-Intention Oriented Contrastive Learning for Sequential Recommendation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 411-419. https://doi.org/10.1145/3539597.3570411 [74] Yinfeng Li, Chen Gao, Xiaoyi Du, Huazhou Wei, Hengliang Luo, Depeng Jin, and Yong Li. 2022. Automatically Discovering User Consumption Intents in Meituan. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3259-3269. https://doi.org/10.1145/3534678.3539122 [75] Yinfeng Li, Chen Gao, Xiaoyi Du, Huazhou Wei, Hengliang Luo, Depeng Jin, and Yong Li. 2022. Spatiotemporal-aware Session-based Recommendation with Graph Neural Networks. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 1209-1218. https://doi.org/10.1145/3511808.3557458 [76] Yinfeng Li, Chen Gao, Hengliang Luo, Depeng Jin, and Yong Li. 2022. Enhancing Hypergraph Neural Networks with Intent Disentanglement for Session-based Recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1997-2002. https://doi.org/10.1145/3477495.3531794 [77] Jianxun Lian, Iyad Batal, Zheng Liu, Akshay Soni, Eun Yong Kang, Yajun Wang, and Xing Xie. 2021. Multi-InterestAware User Modeling for Large-Scale Sequential Recommendations. http://arxiv.org/abs/2102.09211 [78] Jianghao Lin, Xinyi Dai, Yunjia Xi, Weiwen Liu, Bo Chen, Hao Zhang, Yong Liu, Chuhan Wu, Xiangyang Li, Chenxu Zhu, Huifeng Guo, Yong Yu, Ruiming Tang, and Weinan Zhang. 2024. How Can Recommender Systems Benefit from Large Language Models: A Survey. ACM Trans. Inf. Syst. (2024). https://doi.org/10.1145/3678004 [79] Zhuoyi Lin, Sheng Zang, Rundong Wang, Zhu Sun, J. Senthilnath, Chi Xu, and Chee Keong Kwoh. 2023. Attention Over Self-Attention: Intention-Aware Re-Ranking With Dynamic Transformer Encoders for Recommendation. IEEE Transactions on Knowledge & Data Engineering 35, 08 (2023), 7782-7795. https://doi.org/10.1109/TKDE.2022.3208633 [80] Qiao Liu, Yifu Zeng, Refuoe Mokhosi, and Haibin Zhang. 2018. STAMP: Short-Term Attention/Memory Priority Model for Session-based Recommendation. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1831-1839. https://doi.org/10.1145/3219819.3219950 [81] Yanan Liu, Yun Tian, Yang Xu, Shifeng Zhao, Yapei Huang, Yachun Fan, Fuqing Duan, and Ping Guo. 2021. TPGN: A Time-Preference Gate Network for e-commerce purchase intention recognition. Knowledge-Based Systems 220 (May 2021), 106920. https://doi.org/10.1016/j.knosys.2021.106920 [82] Zhaoyang Liu, Haokun Chen, Fei Sun, Xu Xie, Jinyang Gao, Bolin Ding, and Yanyan Shen. 2020. Intent Preference Decoupling for User Representation on Online Recommender System. In Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence . 2575-2582. https://doi.org/10.24963/ijcai.2020/357 [83] Zhiwei Liu, Xiaohan Li, Ziwei Fan, Stephen Guo, Kannan Achan, and Philip S. Yu. 2020. Basket Recommendation with Multi-Intent Translation Graph Neural Network. In 2020 IEEE International Conference on Big Data (Big Data) . 728-737. https://doi.org/10.1109/BigData50022.2020.9377917 [84] Zheng Liu, Jianxun Lian, Junhan Yang, Defu Lian, and Xing Xie. 2020. Octopus: Comprehensive and Elastic User Representation for the Generation of Recommendation Candidates. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 289-298. https://doi.org/10.1145/3397271.3401088 [85] Benedikt Loepp. 2023. Multi-list interfaces for recommender systems: survey and future directions. Frontiers in Big Data 6 (2023). https://doi.org/10.3389/fdata.2023.1239705 [86] Pablo Loyola, Chen Liu, and Yu Hirate. 2017. Modeling User Session and Intent with an Attention-based EncoderDecoder Architecture. In Proceedings of the Eleventh ACM Conference on Recommender Systems . 147-151. https: //doi.org/10.1145/3109859.3109917 [87] Jianxin Ma, Peng Cui, Kun Kuang, Xin Wang, and Wenwu Zhu. 2019. Disentangled Graph Convolutional Networks. In Proceedings of the 36th International Conference on Machine Learning (Proceedings of Machine Learning Research, ACM Trans. Recomm. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2024. 1:28 Dietmar Jannach and Markus Zanker ACM Trans. Recomm. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2024. A Survey on Intent-aware Recommender Systems 1:29 ACM Trans. Recomm. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2024. [147] Daniel Woolridge, Sean Wilner, and Madeleine Glick. 2021. Sequence or Pseudo-Sequence? An Analysis of Sequential Recommendation Datasets. In Proceedings of the Perspectives on the Evaluation of Recommender Systems Workshop ACM Trans. Recomm. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2024. A Survey on Intent-aware Recommender Systems 1:31 2021 co-located with the 15th ACM Conference on Recommender Systems (RecSys 2021) (CEUR Workshop Proceedings, Vol. 2955) . CEUR-WS.org. [148] Haolun Wu, Yingxue Zhang, Chen Ma, Wei Guo, Ruiming Tang, Xue Liu, and Mark Coates. 2022. Intent-aware Multi-source Contrastive Alignment for Tag-enhanced Recommendation. http://arxiv.org/abs/2211.06370 [149] Likang Wu, Zhi Zheng, Zhaopeng Qiu, Hao Wang, Hongchao Gu, Tingjia Shen, Chuan Qin, Chen Zhu, Hengshu Zhu, Qi Liu, Hui Xiong, and Enhong Chen. 204. A survey on large language models for recommendation. World Wide Web 27, 5 (204). https://doi.org/10.1007/s11280-024-01291-2 [150] Shu Wu, Yuyuan Tang, Yanqiao Zhu, Liang Wang, Xing Xie, and Tieniu Tan. 2019. Session-Based Recommendation with Graph Neural Networks. In Proceedings of the Thirty-Third AAAI Conference on Artificial Intelligence, AAAI . 346-353. https://doi.org/10.1609/aaai.v33i01.3301346 [151] Yanan Xu, Yanmin Zhu, and Jiadi Yu. 2021. Modeling Multiple Coexisting Category-Level Intentions for Next Item Recommendation. 39, 3 (July 2021), 1-24. https://doi.org/10.1145/3441642 ACM Transactions on Information Systems [152] Longqi Yang, Michael Sobolev, Yu Wang, Jenny Chen, Drew Dunne, Christina Tsangouri, Nicola Dell, Mor Naaman, and Deborah Estrin. 2019. How Intention Informed Recommendations Modulate Choices: A Field Study of Spoken Word Content. In The World Wide Web Conference . 2169-2180. https://doi.org/10.1145/3308558.3313540 [153] Yatao Yang, Biyu Ma, Jun Tan, Hongbo Deng, Haikuan Huang, and Zibin Zheng. 2021. FINN: Feedback Interactive Neural Network for Intent Recommendation. In Proceedings of the Web Conference 2021 . 1949-1958. https://doi.org/ 10.1145/3442381.3450105 [154] Peiyan Zhang, Jiayan Guo, Chaozhuo Li, Yueqi Xie, Jae Boum Kim, Yan Zhang, Xing Xie, Haohan Wang, and Sunghun Kim. 2023. Efficiently Leveraging Multi-level User Intent for Session-based Recommendation via Atten-Mixer Network. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 168-176. https://doi.org/10.1145/3539597.3570445 [155] Ruoyi Zhang, Huifang Ma, Qingfeng Li, Zhixin Li, and Yike Wang. 2022. A Knowledge Graph Recommendation Model via High-order Feature Interaction and Intent Decomposition. In 2022 International Joint Conference on Neural Networks (IJCNN) . 1-7. https://doi.org/10.1109/IJCNN55064.2022.9892593 [156] Ruoyi Zhang, Huifang Ma, Qingfeng Li, Yike Wang, and Zhixin Li. 2022. FIRE: knowledge-enhanced recommendation with feature interaction and intent-aware attention networks. Applied Intelligence (Dec. 2022). https://doi.org/10. 1007/s10489-022-04300-x [157] Shuai Zhang, Yi Tay, Lina Yao, and Aixin Sun. 2018. Next Item Recommendation with Self-Attention. http: //arxiv.org/abs/1808.06414 [158] Shuai Zhang, Yi Tay, Lina Yao, and Aixin Sun. 2019. Next Item Recommendation with Self-Attentive Metric Learning. In AAAI-19 Workshop on Recommender Systems and Natural Language Processing (RecNLP) . http://arxiv.org/abs/1808. 06414 [159] Yin Zhang, Ziwei Zhu, Yun He, and James Caverlee. 2020. Content-Collaborative Disentanglement Representation Learning for Enhanced Recommendation. In Proceedings of the Fourteenth ACM Conference on Recommender Systems . 43-52. https://doi.org/10.1145/3383313.3412239 [160] Sen Zhao, Wei Wei, Ding Zou, and Xianling Mao. 2022. Multi-View Intent Disentangle Graph Networks for Bundle Recommendation. Proceedings of the AAAI Conference on Artificial Intelligence 36, 4 (June 2022), 4379-4387. https: //doi.org/10.1609/aaai.v36i4.20359 [161] Z. Zhao, W. Fan, J. Li, Y. Liu, X. Mei, Y. Wang, Z. Wen, F. Wang, X. Zhao, J. Tang, and Q. Li. 2024. Recommender Systems in the Era of Large Language Models (LLMs). IEEE Transactions on Knowledge & Data Engineering (2024). https://doi.org/10.1109/TKDE.2024.3392335 [162] Nengjun Zhu, Jian Cao, Yanchi Liu, Yang Yang, Haochao Ying, and Hui Xiong. 2020. Sequential Modeling of Hierarchical User Intention and Preference for Next-item Recommendation. In Proceedings of the 13th International Conference on Web Search and Data Mining . 807-815. https://doi.org/10.1145/3336191.3371840 [163] Nengjun Zhu, Jian Cao, Xinjiang Lu, and Hui Xiong. 2022. Learning a Hierarchical Intent Model for Next-Item Recommendation. ACM Transactions on Information Systems 40, 2 (April 2022), 1-28. https://doi.org/10.1145/3473972 [164] X. Zhu, C. Bu, B. Dong, S. Ji, Y. He, and X. Wu. 2023. IKGN: Intention-aware Knowledge Graph Network for POI Recommendation. In 2023 IEEE International Conference on Data Mining (ICDM) . 908-917. https://doi.org/10.1109/ ICDM58522.2023.00100 [165] Xiaoyu Zhu, Chenyang Bu, Bingbing Dong, Shengwei Ji, Yi He, and Xindong Wu. 2023. IKGN: Intention-aware Knowledge Graph Network for POI Recommendation. In 2023 IEEE International Conference on Data Mining (ICDM) . 908-917. https://doi.org/10.1109/ICDM58522.2023.00100 ACM Trans. Recomm. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2024.",
   "keywords_parsed": [
-    "None"
+    "Recommender Systems",
+    "Intent-Awareness",
+    "Survey"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Multistakeholder Recommendation: Survey and Research Directions"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Context-Aware Recommender Systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Impact of data characteristics on recommender systems performance"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Diversifying search results"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Representation Learning: A Review and New Perspectives"
+    },
+    {
+      "ref_id": "b6",
+      "title": "From Data Analysis to Intent-Based Recommendation: An Industrial Case Study in the Video Domain"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Intent-Aware Contextual Recommendation System"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Considering Temporal Aspects in Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Translating embeddings for modeling multi-relational data"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A taxonomy of web search"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Intent-Satisfaction Modeling: From Music to Video Streaming"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Category-aware Collaborative Sequential Recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Time-aware recommender systems: a comprehensive survey and analysis of existing evaluation protocols"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Controllable Multi-Interest Framework for Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Latent User Intent Modeling for Sequential Recommenders"
+    },
+    {
+      "ref_id": "b16",
+      "title": "On-Device User Intent Prediction for Context and Sequence Aware Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Sequential Intention-aware Recommender based on User Interaction Graph"
+    },
+    {
+      "ref_id": "b18",
+      "title": "MISRec: Multi-Intention Sequential Recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "AIR: Attentional Intention-Aware Recommender Systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Improving End-to-End Sequential Recommendations with Intent-aware Diversification"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Intent Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Predicting Intent Using Activity Logs: How Goal Specificity and Temporal Range Affect User Behavior"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Economic Recommender Systems - A Systematic Review"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Impact and Value of Recommender Systems"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Recommender Systems in Computer Science and Information Systems - A Landscape of Research"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Dynamic Sequential Recommendation: Decoupling User Intent from Temporal Context"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Dual Intent Enhanced Graph Neural Network for Session-based New Item Recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Efficient Optimization of Multiple Recommendation Quality Factors According to Individual User Tendencies"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Diversity, Serendipity, Novelty, and Coverage: A Survey and Empirical Analysis of Beyond-Accuracy Objectives in Recommender Systems"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Understanding How People Use Natural Language to Ask for Recommendations"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Self-Attentive Sequential Recommendation"
+    },
+    {
+      "ref_id": "b54",
+      "title": "I like to explore sometimes: Adapting to Dynamic User Novelty Preferences"
+    },
+    {
+      "ref_id": "b55",
+      "title": "A comparison of calibrated and intent-aware recommendations"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Subprofile-aware diversification of recommendations"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Accurate and Diverse Recommendations Using Item-Based SubProfiles"
+    },
+    {
+      "ref_id": "b58",
+      "title": "A systematic review of systematic review process research in software engineering"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Systematic literature reviews in software engineering - A systematic literature review"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Does It Look Sequential? An Analysis of Datasets for Evaluation of Sequential Recommendations"
+    },
+    {
+      "ref_id": "b61",
+      "title": "A Survey on Popularity Bias in Recommender Systems"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Recommender Systems for Self-Actualization"
+    },
+    {
+      "ref_id": "b63",
+      "title": "User Intent in Multimedia Search: A Survey of the State of the Art and Future Challenges"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Classification of the User's Intent Detection in Ecommerce systems - Survey and Recommendations"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Making smartphone service recommendations by predicting users' intentions: A context-aware approach"
+    },
+    {
+      "ref_id": "b66",
+      "title": "On the Value of Reminders Within E-Commerce Recommendations"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Multi-Interest Network with Dynamic Routing for Recommendation at Tmall"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Package Recommendation with Intra- and Inter-Package Attention Networks"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Intention-Aware Sequential Recommendation With Structured Intent Transition"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Neural Attentive Session-based Recommendation"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Topic-aware Intention Network for Explainable Recommendation with Knowledge Enhancement"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Entity-driven user intent inference for knowledge graph-based recommendation"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Multi-Intention Oriented Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Automatically Discovering User Consumption Intents in Meituan"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Spatiotemporal-aware Session-based Recommendation with Graph Neural Networks"
+    },
+    {
+      "ref_id": "b76",
+      "title": "Enhancing Hypergraph Neural Networks with Intent Disentanglement for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Multi-InterestAware User Modeling for Large-Scale Sequential Recommendations"
+    },
+    {
+      "ref_id": "b78",
+      "title": "How Can Recommender Systems Benefit from Large Language Models: A Survey"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Attention Over Self-Attention: Intention-Aware Re-Ranking With Dynamic Transformer Encoders for Recommendation"
+    },
+    {
+      "ref_id": "b80",
+      "title": "STAMP: Short-Term Attention/Memory Priority Model for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b81",
+      "title": "TPGN: A Time-Preference Gate Network for e-commerce purchase intention recognition"
+    },
+    {
+      "ref_id": "b82",
+      "title": "Intent Preference Decoupling for User Representation on Online Recommender System"
+    },
+    {
+      "ref_id": "b83",
+      "title": "Basket Recommendation with Multi-Intent Translation Graph Neural Network"
+    },
+    {
+      "ref_id": "b84",
+      "title": "Octopus: Comprehensive and Elastic User Representation for the Generation of Recommendation Candidates"
+    },
+    {
+      "ref_id": "b85",
+      "title": "Multi-list interfaces for recommender systems: survey and future directions"
+    },
+    {
+      "ref_id": "b86",
+      "title": "Modeling User Session and Intent with an Attention-based Encoder-Decoder Architecture"
+    },
+    {
+      "ref_id": "b87",
+      "title": "Disentangled Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b147",
+      "title": "Sequence or Pseudo-Sequence? An Analysis of Sequential Recommendation Datasets"
+    },
+    {
+      "ref_id": "b148",
+      "title": "Intent-aware Multi-source Contrastive Alignment for Tag-enhanced Recommendation"
+    },
+    {
+      "ref_id": "b149",
+      "title": "A survey on large language models for recommendation"
+    },
+    {
+      "ref_id": "b150",
+      "title": "Session-Based Recommendation with Graph Neural Networks"
+    },
+    {
+      "ref_id": "b151",
+      "title": "Modeling Multiple Coexisting Category-Level Intentions for Next Item Recommendation"
+    },
+    {
+      "ref_id": "b152",
+      "title": "How Intention Informed Recommendations Modulate Choices: A Field Study of Spoken Word Content"
+    },
+    {
+      "ref_id": "b153",
+      "title": "FINN: Feedback Interactive Neural Network for Intent Recommendation"
+    },
+    {
+      "ref_id": "b154",
+      "title": "Efficiently Leveraging Multi-level User Intent for Session-based Recommendation via Atten-Mixer Network"
+    },
+    {
+      "ref_id": "b155",
+      "title": "A Knowledge Graph Recommendation Model via High-order Feature Interaction and Intent Decomposition"
+    },
+    {
+      "ref_id": "b156",
+      "title": "FIRE: knowledge-enhanced recommendation with feature interaction and intent-aware attention networks"
+    },
+    {
+      "ref_id": "b157",
+      "title": "Next Item Recommendation with Self-Attention"
+    },
+    {
+      "ref_id": "b158",
+      "title": "Next Item Recommendation with Self-Attentive Metric Learning"
+    },
+    {
+      "ref_id": "b159",
+      "title": "Content-Collaborative Disentanglement Representation Learning for Enhanced Recommendation"
+    },
+    {
+      "ref_id": "b160",
+      "title": "Multi-View Intent Disentangle Graph Networks for Bundle Recommendation"
+    },
+    {
+      "ref_id": "b161",
+      "title": "Recommender Systems in the Era of Large Language Models (LLMs)"
+    },
+    {
+      "ref_id": "b162",
+      "title": "Sequential Modeling of Hierarchical User Intention and Preference for Next-item Recommendation"
+    },
+    {
+      "ref_id": "b163",
+      "title": "Learning a Hierarchical Intent Model for Next-Item Recommendation"
+    },
+    {
+      "ref_id": "b164",
+      "title": "IKGN: Intention-aware Knowledge Graph Network for POI Recommendation"
+    },
+    {
+      "ref_id": "b165",
+      "title": "IKGN: Intention-aware Knowledge Graph Network for POI Recommendation"
+    }
   ]
 }

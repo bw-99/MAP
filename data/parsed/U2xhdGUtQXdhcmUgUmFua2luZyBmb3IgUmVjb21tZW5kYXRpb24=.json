@@ -23,13 +23,198 @@
   "5 CONCLUSION": "In this paper, we propose an algorithm for the ranking stage of recommender systems to predict user behaviors more accurately by implicitly modelling the contextual items' impact. We perform thorough offline experiments and online A/B testing to prove that it significantly enhances the recommendation relevance and diversity by ensuring the quality of the re-ranking stage's candidates. Moreover, additional experiments are carried out to study the similarity loss weight's impact and understand why 𝑆𝐴𝑅 works. In future, we will try to further improve the recommendation performance by designing more effective models in the ranking and re-ranking stage to tackle the issue of cross item influence. Furthermore, though the matching and pre-ranking stage care more about coverage than precision, it is interesting to investigate whether addressing the aforementioned issue in these two layers can boost the overall recommendation quality. Finally, as it is essential to properly handle position bias for precise user preference modelling [2, 20, 28], we plan to study how to more accurately estimate the context items' impact on target items at different positions. Slate-Aware Ranking for Recommendation WSDM'23, February 27-March 3, 2023, Singapore, Singapore",
   "REFERENCES": "[1] Qingyao Ai, Keping Bi, Jiafeng Guo, and W Bruce Croft. 2018. Learning a deep listwise context model for ranking refinement. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 135-144. [2] Qingyao Ai, Keping Bi, Cheng Luo, Jiafeng Guo, and W Bruce Croft. 2018. Unbiased learning to rank with unbiased propensity estimation. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 385-394. [3] Qingyao Ai, Xuanhui Wang, Sebastian Bruch, Nadav Golbandi, Michael Bendersky, and Marc Najork. 2019. Learning groupwise multivariate scoring functions using deep neural networks. In Proceedings of the 2019 ACM SIGIR International Conference on Theory of Information Retrieval . 85-92. [4] Irwan Bello, Sayali Kulkarni, Sagar Jain, Craig Boutilier, Ed Chi, Elad Eban, Xiyang Luo, Alan Mackey, and Ofer Meshi. 2018. Seq2slate: Re-ranking and slate optimization with rnns. arXiv preprint arXiv:1810.02019 (2018). [5] Cristian Buciluˇ a, Rich Caruana, and Alexandru Niculescu-Mizil. 2006. Model compression. In Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining . 535-541. [6] Xiaoshuang Chen, Yin Zheng, Jiaxing Wang, Wenye Ma, and Junzhou Huang. 2019. RaFM: rank-aware factorization machines. In International Conference on Machine Learning . PMLR, 1132-1140. [7] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [8] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [9] Paolo Cremonesi, Yehuda Koren, and Roberto Turrin. 2010. Performance of recommender algorithms on top-n recommendation tasks. In Proceedings of the fourth ACM conference on Recommender systems . 39-46. [10] Weiwei Deng, Xiaoliang Ling, Yang Qi, Tunzi Tan, Eren Manavoglu, and Qi Zhang. 2018. Ad click prediction in sequence with long short-term memory networks: an externality-aware model. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1065-1068. [11] Yufei Feng, Yu Gong, Fei Sun, Junfeng Ge, and Wenwu Ou. 2021. Revisit Recommender System in the Permutation Prospective. arXiv preprint arXiv:2102.12057 (2021). [12] Yufei Feng, Binbin Hu, Yu Gong, Fei Sun, Qingwen Liu, and Wenwu Ou. 2021. GRN: Generative Rerank Network for Context-wise Recommendation. arXiv preprint arXiv:2104.00860 (2021). [13] Peter A Flach, José Hernández-Orallo, and Cèsar Ferri Ramirez. 2011. A coherent interpretation of AUC as a measure of aggregated classification performance. In ICML . [14] Yu Gong, Yu Zhu, Lu Duan, Qingwen Liu, Ziyu Guan, Fei Sun, Wenwu Ou, and Kenny Q Zhu. 2019. Exact-k recommendation via maximal clique optimization. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 617-626. [15] Klaus Greff, Rupesh K Srivastava, Jan Koutník, Bas R Steunebrink, and Jürgen Schmidhuber. 2016. LSTM: A search space odyssey. IEEE transactions on neural networks and learning systems 28, 10 (2016), 2222-2232. [16] Xiangnan He and Tat-Seng Chua. 2017. Neural factorization machines for sparse predictive analytics. In Proceedings of the 40th International ACM SIGIR conference on Research and Development in Information Retrieval . 355-364. [17] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [18] Geoffrey Hinton, Oriol Vinyals, and Jeff Dean. 2015. Distilling the knowledge in a neural network (2015). arXiv preprint arXiv:1503.02531 2 (2015). [19] Ray Jiang, Sven Gowal, Timothy A Mann, and Danilo J Rezende. 2018. Beyond greedy ranking: Slate optimization via list-CVAE. arXiv preprint arXiv:1803.01682 (2018). [20] Thorsten Joachims, Adith Swaminathan, and Tobias Schnabel. 2017. Unbiased learning-to-rank with biased feedback. In Proceedings of the tenth ACM international conference on web search and data mining . 781-789. [21] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [22] Shuchang Liu, Fei Sun, Yingqiang Ge, Changhua Pei, and Yongfeng Zhang. 2021. Variation Control and Evaluation for Generative Slate Recommendations. In Proceedings of the Web Conference 2021 . 436-448. [23] David Lopez-Paz, Léon Bottou, Bernhard Schölkopf, and Vladimir Vapnik. 2015. Unifying distillation and privileged information. arXiv preprint arXiv:1511.03643 (2015). [24] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1930-1939. [25] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [26] Liang Pang, Jun Xu, Qingyao Ai, Yanyan Lan, Xueqi Cheng, and Jirong Wen. 2020. Setrank: Learning a permutation-invariant ranking model for information retrieval. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 499-508. [27] Changhua Pei, Yi Zhang, Yongfeng Zhang, Fei Sun, Xiao Lin, Hanxiao Sun, Jian Wu, Peng Jiang, Junfeng Ge, Wenwu Ou, et al. 2019. Personalized re-ranking for recommendation. In Proceedings of the 13th ACM Conference on Recommender Systems . 3-11. [28] Yi Ren, Hongyan Tang, and Siwen Zhu. 2022. Unbiased Learning to Rank with Biased Continuous Feedback. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 1716-1725. [29] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . IEEE, 995-1000. [30] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Fourteenth ACM Conference on Recommender Systems . 269278. [31] Laurens Van der Maaten and Geoffrey Hinton. 2008. Visualizing data using t-SNE. Journal of machine learning research 9, 11 (2008). [32] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in neural information processing systems . 5998-6008. [33] Fan Wang, Xiaomin Fang, Lihang Liu, Yaxue Chen, Jiucheng Tao, Zhiming Peng, Cihang Jin, and Hao Tian. 2019. Sequential evaluation and generation framework for combinatorial recommender system. arXiv preprint arXiv:1902.00245 (2019). [34] Yining Wang, Liwei Wang, Yuanzhi Li, Di He, Wei Chen, and Tie-Yan Liu. 2013. A theoretical analysis of NDCG ranking measures. In Proceedings of the 26th annual conference on learning theory (COLT 2013) , Vol. 8. 6. [35] Zhe Wang, Liqin Zhao, Biye Jiang, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2020. Cold: Towards the next generation of pre-ranking system. arXiv preprint arXiv:2007.16122 (2020). [36] Jianxiong Wei, Anxiang Zeng, Yueqiu Wu, Peng Guo, Qingsong Hua, and Qingpeng Cai. 2020. Generator and Critic: A Deep Reinforcement Learning Approach for Slate Re-ranking in E-commerce. arXiv preprint arXiv:2005.12206 (2020). [37] Wikipedia contributors. 2022. Evaluation measures (information retrieval) Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/w/index.php?title= Evaluation_measures_(information_retrieval)&oldid=1095286224. [Online; accessed 9-August-2022]. [38] Wikipedia contributors. 2022. Gini coefficient - Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/w/index.php?title=Gini_coefficient&oldid= 1101796604. [Online; accessed 9-August-2022]. [39] Wikipedia contributors. 2022. Mean absolute error - Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/w/index.php?title=Mean_absolute_error& oldid=1087554218. [Online; accessed 9-August-2022]. [40] Jun Xiao, Hao Ye, Xiangnan He, Hanwang Zhang, Fei Wu, and Tat-Seng Chua. 2017. Attentional factorization machines: Learning the weight of feature interactions via attention networks. arXiv preprint arXiv:1708.04617 (2017). [41] Chen Xu, Quan Li, Junfeng Ge, Jinyang Gao, Xiaoyong Yang, Changhua Pei, Fei Sun, Jian Wu, Hanxiao Sun, and Wenwu Ou. 2020. Privileged features distillation at Taobao recommendations. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2590-2598. [42] Xiangyu Zhao, Liang Zhang, Long Xia, Zhuoye Ding, Dawei Yin, and Jiliang Tang. 2017. Deep reinforcement learning for list-wise recommendations. arXiv preprint arXiv:1801.00209 (2017). [43] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. Recommending what video to watch next: a multitask ranking system. In Proceedings of the 13th ACM Conference on Recommender Systems . 43-51. [44] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [45] Han Zhu, Xiang Li, Pengye Zhang, Guozheng Li, Jie He, Han Li, and Kun Gai. 2018. Learning tree-based deep model for recommender systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1079-1088. [46] Tao Zhuang, Wenwu Ou, and Zhirong Wang. 2018. Globally optimized mutual influence aware ranking in e-commerce search. arXiv preprint arXiv:1805.08524 (2018).",
   "keywords_parsed": [
-    "Slate Recommendation; Ranking; Re-Ranking; Recommender Systems; Multi-Task Learning; Privileged Information; Distillation ∗ Both authors contributed equally to this research. † Corresponding author. 1 Code link is: https://github.com/BestActionNow/Slate_Aware_Ranking Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. WSDM '23",
-    " February 27-March 3",
-    " 2023",
-    " Singapore",
-    " Singapore © 2023 Association for Computing Machinery. ACM ISBN 978-1-4503-9407-9/23/02...$15.00 https://doi.org/10.1145/3539597.3570380"
+    "Slate Recommendation",
+    "Ranking",
+    "Re-Ranking",
+    "Recommender Systems",
+    "Multi-Task Learning",
+    "Privileged Information",
+    "Distillation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Unbiased learning to rank with unbiased propensity estimation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Learning groupwise multivariate scoring functions using deep neural networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Seq2slate: Re-ranking and slate optimization with rnns"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Model compression"
+    },
+    {
+      "ref_id": "b6",
+      "title": "RaFM: rank-aware factorization machines"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Performance of recommender algorithms on top-n recommendation tasks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Ad click prediction in sequence with long short-term memory networks: an externality-aware model"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Revisit Recommender System in the Permutation Prospective"
+    },
+    {
+      "ref_id": "b12",
+      "title": "GRN: Generative Rerank Network for Context-wise Recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A coherent interpretation of AUC as a measure of aggregated classification performance"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Exact-k recommendation via maximal clique optimization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "LSTM: A search space odyssey"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Beyond greedy ranking: Slate optimization via list-CVAE"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Unbiased learning-to-rank with biased feedback"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Variation Control and Evaluation for Generative Slate Recommendations"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Unifying distillation and privileged information"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Setrank: Learning a permutation-invariant ranking model for information retrieval"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Unbiased Learning to Rank with Biased Continuous Feedback"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Sequential evaluation and generation framework for combinatorial recommender system"
+    },
+    {
+      "ref_id": "b34",
+      "title": "A theoretical analysis of NDCG ranking measures"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Cold: Towards the next generation of pre-ranking system"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Generator and Critic: A Deep Reinforcement Learning Approach for Slate Re-ranking in E-commerce"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Evaluation measures (information retrieval)"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Gini coefficient - Wikipedia"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Mean absolute error - Wikipedia"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Attentional factorization machines: Learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Privileged features distillation at Taobao recommendations"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Deep reinforcement learning for list-wise recommendations"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Recommending what video to watch next: a multitask ranking system"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Learning tree-based deep model for recommender systems"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Globally optimized mutual influence aware ranking in e-commerce search"
+    }
   ]
 }

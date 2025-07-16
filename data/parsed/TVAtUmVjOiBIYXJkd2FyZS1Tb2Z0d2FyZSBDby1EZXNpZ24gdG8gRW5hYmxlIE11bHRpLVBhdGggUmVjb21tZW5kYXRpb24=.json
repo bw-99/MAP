@@ -45,7 +45,203 @@
   "A.4. Installation": "Use pip , conda , or your choice of Python package manager to install requirements listed above in Software dependencies subsection (also in dlrm_mprec/requirements.txt ).",
   "A.5. Evaluation and expected results": "python dlrm_s_pytorch.py -mini-batch-size=2 -data-size=6 should be your first command to ensure within installation works. If the aforementioned command works, you should try running the other embedding representations with commands listed in: dlrm_mprec/configurations.txt . You should see profiled timing information.",
   "A.6. Experiment customization": "Listed in dlrm_mprec/configurations.txt are DHE stack hyperparameters relevant to the characterization and discussion in the paper. We list ranges for number of encoder hash functions and decoder MLP shapes. 18",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Understanding training efficiency of deep learning recommendation models at scale"
+    },
+    {
+      "ref_id": "b2",
+      "title": "High-performance training by exploiting hotembeddings in recommendation systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "First-generation inference accelerator deployment at facebook"
+    },
+    {
+      "ref_id": "b4",
+      "title": "On the factory floor: Ml engineering for industrial-scale ads recommendation models"
+    },
+    {
+      "ref_id": "b5",
+      "title": "CDLRM: Look Ahead Caching for Scalable Training of Recommendation Models"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Low-precision hardware architectures meet recommendation model inference at scale"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Random offset block embedding (robe) for compressed embedding tables in deep learning recommendation systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Bandana: Using non-volatile memory for storing deep learning models"
+    },
+    {
+      "ref_id": "b10",
+      "title": "The graphcore second generation ipu"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Ai and memory wall"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Mixed dimension embeddings with application to memory-efficient recommendation systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deeprecsys: A system for optimizing endto-end at-scale neural recommendation inference"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Recpipe: Co-designing models and hardware to jointly optimize recommendation quality and performance"
+    },
+    {
+      "ref_id": "b15",
+      "title": "The architectural implications of facebook's dnn-based personalized recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Training recommender systems at scale: Communication-efficient model and data parallelism"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Recnmp: Accelerating personalized recommendation with near-memory processing"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Hercules: Heterogeneity-aware inference serving for at-scale personalized recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Near-memory processing in action: Accelerating personalized recommendation with axdimm"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Fbgemm: Enabling high-performance low-precision deep learning inference"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Tensordimm: A practical near-memory processing architecture for embeddings and tensor operations in deep learning"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Tensor casting: Co-designing algorithm-architecture for personalized recommendation training"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Understanding capacity-driven scale-out neural recommendation inference"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Software-hardware co-design for fast and scalable training of deep learning recommendation models"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Trim: Enhancing processor-memory interfaces with scalable tensor reduction in memory"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Deep learning inference in facebook data centers: Characterization, performance optimizations and hardware implications"
+    },
+    {
+      "ref_id": "b41",
+      "title": "PyTorch: An Imperative Style, High-Performance Deep Learning Library"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Mlperf inference benchmark"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Recshard: Statistical feature-based memory optimization for industry-scale neural recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Flexshard: Flexible sharding for industry-scale sequence recommendation models"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Compositional embeddings using complementary partitions for memory-efficient recommendation systems"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Criteo terabyte click logs"
+    },
+    {
+      "ref_id": "b47",
+      "title": "FlashEmbedding: Storing Embedding Tables in SSD for Large-Scale Recommender Systems"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Billion-scale commodity embedding for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Recssd: Near data processing for solid state drive based recommendation inference"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Developing a recommendation benchmark for mlperf training and inference"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Sustainable ai: Environmental implications, challenges and opportunities"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Kraken: Memory-efficient continual learning for large-scale realtime recommendations"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Factorized deep retrieval and distributed tensorflow serving"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Ttrec: Tensor train compression for deep learning recommendation models"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Autoshard: Automated embedding table sharding for recommender systems"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Dreamshard: Generalizable embedding table placement for recommender systems"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Distributed hierarchical gpu parameter server for massive scale deep learning ads systems"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Distributed hierarchical gpu parameter server for massive scale deep learning ads systems"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Aibox: Ctr prediction model training on a single node"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Recommending what video to watch next: A multitask ranking system"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

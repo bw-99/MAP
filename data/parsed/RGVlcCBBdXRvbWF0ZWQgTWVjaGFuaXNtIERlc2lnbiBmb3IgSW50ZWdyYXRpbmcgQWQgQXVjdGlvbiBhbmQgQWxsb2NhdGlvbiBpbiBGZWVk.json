@@ -23,8 +23,146 @@
   "REFERENCES": "[1] Chi Chen, Hui Chen, Kangzhi Zhao, Junsheng Zhou, Li He, Hongbo Deng, Jian Xu, Bo Zheng, Yong Zhang, and Chunxiao Xing. 2022. EXTR: Click-Through Rate Prediction with Externalities in E-Commerce Sponsored Search. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2732-2740. [2] Dagui Chen, Qi Yan, Chunjie Chen, Zhenzhe Zheng, Yangsu Liu, Zhenjia Ma, Chuan Yu, Jian Xu, and Bo Zheng. 2022. Hierarchically Constrained Adaptive Ad Exposure in Feeds. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3003-3012. [3] Chao Deng, Hao Wang, Qing Tan, Jian Xu, and Kun Gai. 2021. Calibrating user response predictions in online advertising. In Machine Learning and Knowledge Discovery in Databases: Applied Data Science Track: European Conference, ECML PKDD 2020, Ghent, Belgium, September 14-18, 2020, Proceedings, Part IV . Springer, 208-223. [4] Georges E Dupret and Benjamin Piwowarski. 2008. A user browsing model to predict search engine click data from past observations.. In Proceedings of the 31st annual international ACM SIGIR conference on Research and development in information retrieval . 331-338. [5] Benjamin Edelman, Michael Ostrovsky, and Michael Schwarz. 2007. Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords. American economic review 97, 1 (2007), 242-259. [6] Gabriele Farina and Nicola Gatti. 2016. Ad auctions and cascade model: GSP inefficiency and algorithms. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 30. [7] Dimitris Fotakis, Piotr Krysta, and Orestis Telelis. 2011. Externalities among advertisers in sponsored search. In International Symposium on Algorithmic Game Theory . Springer, 105-116. [8] Nicola Gatti, Alessandro Lazaric, and Francesco Trovò. 2012. A truthful learning mechanism for contextual multi-slot sponsored search auctions with externalities. In Proceedings of the 13th ACM Conference on Electronic Commerce . 605-622. [9] Arpita Ghosh and Mohammad Mahdian. 2008. Externalities in online advertising. In Proceedings of the 17th international conference on World Wide Web . 161-168. [10] Jianqiang Huang, Ke Hu, Qingtao Tang, Mingjian Chen, Yi Qi, Jia Cheng, and Jun Lei. 2021. Deep Position-wise Interaction Network for CTR Prediction. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1885-1889. [11] David Kempe and Mohammad Mahdian. 2008. A cascade model for externalities in sponsored search. In International Workshop on Internet and Network Economics . Springer, 585-596. [12] Ron Lavi, Ahuva Mu'Alem, and Noam Nisan. 2003. Towards a characterization of truthful combinatorial auctions. In 44th Annual IEEE Symposium on Foundations of Computer Science, 2003. Proceedings. IEEE, 574-583. [13] Ningyuan Li, Yunxuan Ma, Yang Zhao, Zhijian Duan, Yurong Chen, Zhilin Zhang, Jian Xu, Bo Zheng, and Xiaotie Deng. 2023. Learning-Based Ad Auction Design with Externalities: The Framework and A Matching-Based Approach. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 1291-1302. [14] Weian Li, Qi Qi, Changjun Wang, and Changyuan Yu. 2023. Optimally integrating ad auction into E-commerce platforms. Theoretical Computer Science 976 (2023), 114141. [15] Guogang Liao, Xuejian Li, Ze Wang, Fan Yang, Muzhi Guan, Bingqi Zhu, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. NMA: Neural Multi-slot Auctions with Externalities for Online Advertising. arXiv preprint arXiv:2205.10018 (2022). [16] Guogang Liao, Xiaowen Shi, Ze Wang, Xiaoxu Wu, Chuheng Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. Deep Page-Level Interest Network in Reinforcement Learning for Ads Allocation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2292-2296. [17] Guogang Liao, Ze Wang, Xiaoxu Wu, Xiaowen Shi, Chuheng Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2021. Cross DQN: Cross Deep Q Network for Ads Allocation in Feed. arXiv preprint arXiv:2109.04353 (2021). [18] Xiangyu Liu, Chuan Yu, Zhilin Zhang, Zhenzhe Zheng, Yu Rong, Hongtao Lv, Da Huo, Yiqing Wang, Dagui Chen, Jian Xu, et al. 2021. Neural auction: End-toend learning of auction mechanisms for e-commerce advertising. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3354-3364. [19] Pavel Metrikov, Fernando Diaz, Sebastien Lahaie, and Justin Rao. 2014. Whole page optimization: how page elements interact with the position auction. In Proceedings of the fifteenth ACM conference on Economics and computation . 583600. [20] Roger B Myerson. 1981. Optimal auction design. Mathematics of operations research 6, 1 (1981), 58-73. [21] Tao Qin, Wei Chen, and Tie-Yan Liu. 2015. Sponsored search auctions: Recent advances and future directions. ACM Transactions on Intelligent Systems and Technology (TIST) 5, 4 (2015), 1-34. [22] Kevin Roberts. 1979. The characterization of implementable choice rules. Aggregation and revelation of preferences 12, 2 (1979), 321-348. [23] Tuomas Sandholm and Anton Likhodedov. 2015. Automated design of revenuemaximizing combinatorial auctions. Operations Research 63, 5 (2015), 1000-1025. [24] Xiaowen Shi, Ze Wang, Yuanying Cai, Xiaoxu Wu, Fan Yang, Guogang Liao, Yongkang Wang, Xingxing Wang, and Dong Wang. 2023. MDDL: A Framework for Reinforcement Learning-based Position Allocation in Multi-Channel Feed. arXiv preprint arXiv:2304.09087 (2023). [25] Hal R Varian. 2007. Position auctions. international Journal of industrial Organization 25, 6 (2007), 1163-1178. [26] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. arXiv preprint arXiv:1706.03762 (2017). [27] Ze Wang, Guogang Liao, Xiaowen Shi, Xiaoxu Wu, Chuheng Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. Learning List-wise Representation in Reinforcement Learning for Ads Allocation with Multiple Auxiliary Tasks. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3555-3564. [28] Ze Wang, Guogang Liao, Xiaowen Shi, Xiaoxu Wu, Chuheng Zhang, Bingqi Zhu, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. Hybrid Transfer in Deep Reinforcement Learning for Ads Allocation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 4560-4564. [29] Ruobing Xie, Shaoliang Zhang, Rui Wang, Feng Xia, and Leyu Lin. 2021. Hierarchical Reinforcement Learning for Integrated Recommendation. In Proceedings of AAAI . [30] Yue Xu, Qijie Shen, Jianwen Yin, Zengde Deng, Dimin Wang, Hao Chen, Lixiang Lai, Tao Zhuang, and Junfeng Ge. 2023. Multi-channel Integrated Recommendation with Exposure Constraints. arXiv preprint arXiv:2305.12319 (2023). [31] Jinyun Yan, Zhiyuan Xu, Birjodh Tiwana, and Shaunak Chatterjee. 2020. Ads allocation in feed via constrained optimization. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 33863394. [32] Weiru Zhang, Chao Wei, Xiaonan Meng, Yi Hu, and Hao Wang. 2018. The wholepage optimization via dynamic ad allocation. In Companion Proceedings of the The Web Conference . 1407-1411. [33] Xiangyu Zhao, Changsheng Gu, Haoshenglun Zhang, Xiwang Yang, Xiaobing Liu, Hui Liu, and Jiliang Tang. 2021. DEAR: Deep Reinforcement Learning for Online Advertising Impression in Recommender Systems. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 35. 750-758. [34] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1059-1068.",
   "keywords_parsed": [
     "Automated Mechanism Design",
-    " Ad Auction",
-    " Externalities",
-    " Ad Allocation"
+    "Ad Auction",
+    "Externalities",
+    "Ad Allocation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "EXTR: Click-Through Rate Prediction with Externalities in E-Commerce Sponsored Search"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Hierarchically Constrained Adaptive Ad Exposure in Feeds"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Calibrating user response predictions in online advertising"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A user browsing model to predict search engine click data from past observations."
+    },
+    {
+      "ref_id": "b5",
+      "title": "Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Ad auctions and cascade model: GSP inefficiency and algorithms"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Externalities among advertisers in sponsored search"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A truthful learning mechanism for contextual multi-slot sponsored search auctions with externalities"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Externalities in online advertising"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep Position-wise Interaction Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A cascade model for externalities in sponsored search"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Towards a characterization of truthful combinatorial auctions"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Learning-Based Ad Auction Design with Externalities: The Framework and A Matching-Based Approach"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Optimally integrating ad auction into E-commerce platforms"
+    },
+    {
+      "ref_id": "b15",
+      "title": "NMA: Neural Multi-slot Auctions with Externalities for Online Advertising"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Deep Page-Level Interest Network in Reinforcement Learning for Ads Allocation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Cross DQN: Cross Deep Q Network for Ads Allocation in Feed"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Neural auction: End-to-end learning of auction mechanisms for e-commerce advertising"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Whole page optimization: how page elements interact with the position auction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Optimal auction design"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Sponsored search auctions: Recent advances and future directions"
+    },
+    {
+      "ref_id": "b22",
+      "title": "The characterization of implementable choice rules"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Automated design of revenue-maximizing combinatorial auctions"
+    },
+    {
+      "ref_id": "b24",
+      "title": "MDDL: A Framework for Reinforcement Learning-based Position Allocation in Multi-Channel Feed"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Position auctions"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Learning List-wise Representation in Reinforcement Learning for Ads Allocation with Multiple Auxiliary Tasks"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Hybrid Transfer in Deep Reinforcement Learning for Ads Allocation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Hierarchical Reinforcement Learning for Integrated Recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Multi-channel Integrated Recommendation with Exposure Constraints"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Ads allocation in feed via constrained optimization"
+    },
+    {
+      "ref_id": "b32",
+      "title": "The whole-page optimization via dynamic ad allocation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "DEAR: Deep Reinforcement Learning for Online Advertising Impression in Recommender Systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

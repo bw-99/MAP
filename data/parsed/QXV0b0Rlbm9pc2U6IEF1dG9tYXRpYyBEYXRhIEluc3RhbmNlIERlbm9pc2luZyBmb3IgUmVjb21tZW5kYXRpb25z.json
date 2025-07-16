@@ -25,15 +25,189 @@
   "REFERENCES": "[1] Henry Brighton and Chris Mellish. 2002. Advances in instance selection for instance-based learning algorithms. Data mining and knowledge discovery 6, 2 (2002), 153-172. [2] Qingqiang Chen, Fuyuan Cao, Ying Xing, and Jiye Liang. 2022. Instance Selection: A Bayesian Decision Theory Perspective. Proceedings of the AAAI Conference on Artificial Intelligence 36, 6, 6287-6294. https://doi.org/10.1609/aaai.v36i6.20578 [3] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [4] Chien-Hsing Chou, Bo-Han Kuo, and Fu Chang. 2006. The generalized condensed nearest neighbor rule as a data reduction method. In 18th international conference on pattern recognition (ICPR'06) , Vol. 2. IEEE, 556-559. [5] James Davidson, Benjamin Liebald, Junning Liu, Palash Nandy, Taylor Van Vleet, Ullas Gargi, Sujoy Gupta, Yu He, Mike Lambert, Blake Livingston, et al. 2010. The YouTube video recommendation system. In Proceedings of the fourth ACM conference on Recommender systems . 293-296. [6] Jingtao Ding, Guanghui Yu, Xiangnan He, Fuli Feng, Yong Li, and Depeng Jin. 2019. Sampler design for bayesian personalized ranking by leveraging view data. IEEE transactions on knowledge and data engineering 33, 2 (2019), 667-681. [7] Zeno Gantner, Lucas Drumond, Christoph Freudenthaler, and Lars SchmidtThieme. 2012. Personalized ranking for non-uniformly sampled items. In Proceedings of KDD Cup 2011 . PMLR, 231-247. [8] Zhabiz Gharibshah, Xingquan Zhu, Arthur Hainline, and Michael Conway. 2020. Deep learning for user interest and response prediction in online display advertising. Data Science and Engineering 5, 1 (2020), 12-26. [9] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In Proc. of IJCAI . [10] Peter Hart. 1968. The condensed nearest neighbor rule (corresp.). IEEE transactions on information theory 14, 3 (1968), 515-516. [11] Kaixi Hu, Lin Li, Qing Xie, Jianquan Liu, and Xiaohui Tao. 2021. What is Next when Sequential Prediction Meets Implicitly Hard Interaction?. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 710-719. [12] Yifan Hu, Yehuda Koren, and Chris Volinsky. 2008. Collaborative filtering for implicit feedback datasets. In 2008 Eighth IEEE international conference on data mining . Ieee, 263-272. [13] PN Vijaya Kumar and V Raghunatha Reddy. 2014. A survey on recommender systems (RSS) and its applications. International Journal of Innovative Research in Computer and Communication Engineering 2, 8 (2014), 5254-5260. [14] Dongha Lee, SeongKu Kang, Hyunjun Ju, Chanyoung Park, and Hwanjo Yu. 2021. Bootstrapping user and item representations for one-class collaborative filtering. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 317-326. [15] Enrique Leyva, Antonio González, and Raúl Pérez. 2015. Three new instance selection methods based on local sets: A comparative study with several approaches from a bi-objective perspective. Pattern Recognition 48, 4 (2015), 1523-1537. [16] Tzu-Heng Lin, Chen Gao, and Yong Li. 2019. Cross: Cross-platform recommendation for social e-commerce. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . 515-524. [17] Weilin Lin, Xiangyu Zhao, Yejing Wang, Tong Xu, and Xian Wu. 2022. AdaFS: Adaptive Feature Selection in Deep Recommender System. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3309-3317. [18] Haochen Liu, Xiangyu Zhao, Chong Wang, Xiaobing Liu, and Jiliang Tang. 2020. Automated embedding size search in deep recommender systems. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 2307-2316. [19] Kunpeng Liu, Yanjie Fu, Pengfei Wang, Le Wu, Rui Bo, and Xiaolin Li. 2019. Automating feature subspace exploration via multi-agent reinforcement learning. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 207-215. [20] J Arturo Olvera-López, J Ariel Carrasco-Ochoa, J Martínez-Trinidad, and Josef Kittler. 2010. A review of instance selection methods. Artificial Intelligence Review 34, 2 (2010), 133-143. [21] J Arturo Olvera-López, J Ariel Carrasco-Ochoa, and J Fco Martínez-Trinidad. 2008. Prototype selection via prototype relevance. In Iberoamerican congress on pattern recognition . Springer, 153-160. [22] Thanapant Raicharoen and Chidchanok Lursinsap. 2005. A divide-and-conquer approach to the pairwise opposite class-nearest neighbor (POC-NN) algorithm. Pattern recognition letters 26, 10 (2005), 1554-1567. [23] Hassan Ramchoun, Youssef Ghanou, Mohamed Ettaouil, and Mohammed Amine Janati Idrissi. 2016. Multilayer perceptron: Architecture optimization and training. (2016). [24] Steffen Rendle. 2010. Factorization machines. In 2010 IEEE International conference on data mining . IEEE, 995-1000. [25] Francesco Ricci, Lior Rokach, and Bracha Shapira. 2011. Introduction to recommender systems handbook. In Recommender systems handbook . Springer, 1-35. [26] José C Riquelme, Jesús S Aguilar-Ruiz, and Miguel Toro. 2003. Finding representative patterns with ordered projections. pattern recognition 36, 4 (2003), 1009-1018. [27] Jian Wang and Yi Zhang. 2013. Opportunity model for e-commerce recommendation: right product; right time. In Proceedings of the 36th international ACM SIGIR conference on Research and development in information retrieval . 303-312. [28] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [29] Wenjie Wang, Fuli Feng, Xiangnan He, Liqiang Nie, and Tat-Seng Chua. 2021. Denoising implicit feedback for recommendation. In Proceedings of the 14th ACM international conference on web search and data mining . 373-381. [30] Yu Wang, Xin Xin, Zaiqiao Meng, Joemon M Jose, Fuli Feng, and Xiangnan He. 2022. Learning Robust Recommenders through Cross-Model Agreement. In Proceedings of the ACM Web Conference 2022 . 2015-2025. [31] Yejing Wang, Xiangyu Zhao, Tong Xu, and Xian Wu. 2022. Autofield: Automating feature selection in deep recommender systems. In Proceedings of the ACM Web Conference 2022 . 1977-1986. [32] Zitai Wang, Qianqian Xu, Zhiyong Yang, Xiaochun Cao, and Qingming Huang. 2021. Implicit Feedbacks are Not Always Favorable: Iterative Relabeled One-Class Collaborative Filtering against Noisy Interactions. In Proceedings of the 29th ACM International Conference on Multimedia . 3070-3078. [33] Ronald J Williams. 1992. Simple statistical gradient-following algorithms for connectionist reinforcement learning. Machine learning 8, 3 (1992), 229-256. [34] D Randall Wilson and Tony R Martinez. 2000. Reduction techniques for instancebased learning algorithms. Machine learning 38, 3 (2000), 257-286. [35] Wenhui Yu and Zheng Qin. 2020. Sampler design for implicit feedback data by noisy-label robust learning. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 861-870. [36] Fajie Yuan, Xin Xin, Xiangnan He, Guibing Guo, Weinan Zhang, Chua Tat-Seng, and Joemon M Jose. 2018. fBGD: Learning embeddings from positive unlabeled data with BGD. (2018). [37] Chi Zhang, Yantong Du, Xiangyu Zhao, Qilong Han, Rui Chen, and Li Li. 2022. Hierarchical Item Inconsistency Signal Learning for Sequence Denoising in Sequential Recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2508-2518. [38] Xiangyu Zhao. 2022. Adaptive and automated deep recommender systems. ACM SIGWEB Newsletter Spring (2022), 1-4. [39] Xiangyu Zhao, Changsheng Gu, Haoshenglun Zhang, Xiwang Yang, Xiaobing Liu, Hui Liu, and Jiliang Tang. 2021. DEAR: Deep Reinforcement Learning for Online Advertising Impression in Recommender Systems. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 35. 750-758. [40] Xiangyu Zhao, Haochen Liu, Wenqi Fan, Hui Liu, Jiliang Tang, and Chong Wang. 2021. AutoLoss: Automated Loss Function Search in Recommendations. In Proceedings of the 27th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 3959-3967. [41] Xiangyu Zhao, Long Xia, Jiliang Tang, and Dawei Yin. 2019. Deep reinforcement learning for search, recommendation, and online advertising: a survey. ACM SIGWEB Newsletter Spring (2019), 1-15. [42] Xiangyu Zhao, Long Xia, Liang Zhang, Zhuoye Ding, Dawei Yin, and Jiliang Tang. 2018. Deep Reinforcement Learning for Page-wise Recommendations. In Proceedings of the 12th ACM Recommender Systems Conference . ACM, 95-103. [43] Xiangyu Zhao, Liang Zhang, Zhuoye Ding, Long Xia, Jiliang Tang, and Dawei Yin. 2018. Recommendations with Negative Feedback via Pairwise Deep Reinforcement Learning. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . ACM, 1040-1048. [44] Xiangyu Zhao, Liang Zhang, Zhuoye Ding, Dawei Yin, Yihong Zhao, and Jiliang Tang. 2017. Deep Reinforcement Learning for List-wise Recommendations. arXiv preprint arXiv:1801.00209 (2017). [45] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068.",
   "keywords_parsed": [
     "Instance Denoising",
-    " Recommender System",
-    " Reinforcement learning ∗ Xiangyu Zhao is the corresponding author. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. WWW'23",
-    " April 30-May 4",
-    " 2023",
-    " Austin",
-    " TX",
-    " USA © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-9416-1/23/04...$15.00 https://doi.org/10.1145/3543507.3583339"
+    "Recommender System",
+    "Reinforcement learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Advances in instance selection for instance-based learning algorithms"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Instance Selection: A Bayesian Decision Theory Perspective"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "The generalized condensed nearest neighbor rule as a data reduction method"
+    },
+    {
+      "ref_id": "b5",
+      "title": "The YouTube video recommendation system"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Sampler design for bayesian personalized ranking by leveraging view data"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Personalized ranking for non-uniformly sampled items"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep learning for user interest and response prediction in online display advertising"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "The condensed nearest neighbor rule (corresp.)"
+    },
+    {
+      "ref_id": "b11",
+      "title": "What is Next when Sequential Prediction Meets Implicitly Hard Interaction?"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Collaborative filtering for implicit feedback datasets"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A survey on recommender systems (RSS) and its applications"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Bootstrapping user and item representations for one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Three new instance selection methods based on local sets: A comparative study with several approaches from a bi-objective perspective"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Cross: Cross-platform recommendation for social e-commerce"
+    },
+    {
+      "ref_id": "b17",
+      "title": "AdaFS: Adaptive Feature Selection in Deep Recommender System"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Automated embedding size search in deep recommender systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Automating feature subspace exploration via multi-agent reinforcement learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A review of instance selection methods"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Prototype selection via prototype relevance"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A divide-and-conquer approach to the pairwise opposite class-nearest neighbor (POC-NN) algorithm"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Multilayer perceptron: Architecture optimization and training"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Introduction to recommender systems handbook"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Finding representative patterns with ordered projections"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Opportunity model for e-commerce recommendation: right product; right time"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Denoising implicit feedback for recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Learning Robust Recommenders through Cross-Model Agreement"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Autofield: Automating feature selection in deep recommender systems"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Implicit Feedbacks are Not Always Favorable: Iterative Relabeled One-Class Collaborative Filtering against Noisy Interactions"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Simple statistical gradient-following algorithms for connectionist reinforcement learning"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Reduction techniques for instance-based learning algorithms"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Sampler design for implicit feedback data by noisy-label robust learning"
+    },
+    {
+      "ref_id": "b36",
+      "title": "fBGD: Learning embeddings from positive unlabeled data with BGD"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Hierarchical Item Inconsistency Signal Learning for Sequence Denoising in Sequential Recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Adaptive and automated deep recommender systems"
+    },
+    {
+      "ref_id": "b39",
+      "title": "DEAR: Deep Reinforcement Learning for Online Advertising Impression in Recommender Systems"
+    },
+    {
+      "ref_id": "b40",
+      "title": "AutoLoss: Automated Loss Function Search in Recommendations"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep reinforcement learning for search, recommendation, and online advertising: a survey"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Deep Reinforcement Learning for Page-wise Recommendations"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Recommendations with Negative Feedback via Pairwise Deep Reinforcement Learning"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Deep Reinforcement Learning for List-wise Recommendations"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

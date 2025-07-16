@@ -40,8 +40,162 @@
   "REFERENCES": "[1] Joseph Berkson. 1944. Application of the logistic function to bio-assay. Journal of the American statistical association 39, 227 (1944), 357-365. [2] Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al. 2020. Language models are few-shot learners. Advances in neural information processing systems 33 (2020), 1877-1901. [3] Jianxin Chang, Chenbin Zhang, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, and Kun Gai. 2023. Pepnet: Parameter and embedding personalized network for infusing with personalized prior information. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3795-3804. [4] Shouyuan Chen, Sherman Wong, Liangjian Chen, and Yuandong Tian. 2023. Extending context window of large language models via positional interpolation. arXiv preprint arXiv:2306.15595 (2023). [5] Yukang Chen, Shengju Qian, Haotian Tang, Xin Lai, Zhijian Liu, Song Han, and Jiaya Jia. 2023. Longlora: Efficient fine-tuning of long-context large language models. arXiv preprint arXiv:2309.12307 (2023). [6] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [7] Qiang Cui, Tao Wei, Yafeng Zhang, and Qing Zhang. 2020. HeroGRAPH: A Heterogeneous Graph Framework for Multi-Target Cross-Domain Recommendation.. In ORSUM@ RecSys . [8] Zeyu Cui, Jianxin Ma, Chang Zhou, Jingren Zhou, and Hongxia Yang. 2022. M6-rec: Generative pretrained language models are open-ended recommender systems. arXiv preprint arXiv:2205.08084 (2022). [9] Zhengxiao Du, Yujie Qian, Xiao Liu, Ming Ding, Jiezhong Qiu, Zhilin Yang, and Jie Tang. 2022. GLM: General Language Model Pretraining with Autoregressive Blank Infilling. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . 320-335. [10] Wenqi Fan, Zihuai Zhao, Jiatong Li, Yunqing Liu, Xiaowei Mei, Yiqi Wang, Jiliang Tang, and Qing Li. 2023. Recommender systems in the era of large language models (llms). arXiv preprint arXiv:2307.02046 (2023). [11] Jingtong Gao, Bo Chen, Menghui Zhu, Xiangyu Zhao, Xiaopeng Li, Yuhao Wang, Yichao Wang, Huifeng Guo, and Ruiming Tang. 2023. Scenario-Aware Hierarchical Dynamic Network for Multi-Scenario Recommendation. arXiv preprint arXiv:2309.02061 (2023). [12] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5). In Proceedings of the 16th ACM Conference on Recommender Systems . 299-315. [13] Yuqi Gong, Xichen Ding, Yehui Su, Kaiming Shen, Zhongyi Liu, and Guannan Zhang. 2023. An Unified Search and Recommendation Foundation Model for Cold-Start Scenario. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 4595-4601. [14] Robert A Jacobs, Michael I Jordan, Steven J Nowlan, and Geoffrey E Hinton. 1991. Adaptive mixtures of local experts. Neural computation 3, 1 (1991), 79-87. [15] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv:1412.6980 (2014). [16] Xiangyang Li, Bo Chen, Lu Hou, and Ruiming Tang. 2023. CTRL: Connect Tabular and Language Model for CTR Prediction. arXiv preprint arXiv:2306.02841 (2023). [17] Jianghao Lin, Bo Chen, Hangyu Wang, Yunjia Xi, Yanru Qu, Xinyi Dai, Kangning Zhang, Ruiming Tang, Yong Yu, and Weinan Zhang. 2023. ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction. arXiv preprint arXiv:2310.09234 (2023). [18] Junling Liu, Chao Liu, Renjie Lv, Kang Zhou, and Yan Zhang. 2023. Is chatgpt a good recommender? a preliminary study. arXiv preprint arXiv:2304.10149 (2023). [19] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [20] Jianmo Ni, Jiacheng Li, and Julian McAuley. 2019. Justifying recommendations using distantly-labeled reviews and fine-grained aspects. In Proceedings of the 2019 conference on empirical methods in natural language processing and the 9th international joint conference on natural language processing (EMNLP-IJCNLP) . 188-197. [21] Xiangrong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4104-4113. [22] Liangcai Su, Junwei Pan, Ximei Wang, Xi Xiao, Shijie Quan, Xihua Chen, and Jie Jiang. 2023. STEM: Unleashing the Power of Embeddings for Multi-task Recommendation. arXiv preprint arXiv:2308.13537 (2023). [23] Zhongxiang Sun, Zihua Si, Xiaoxue Zang, Dewei Leng, Yanan Niu, Yang Song, Xiao Zhang, and Jun Xu. 2023. KuaiSAR: A Unified Search And Recommendation Dataset. (2023). https://doi.org/10.1145/3583780.3615123 [24] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Fourteenth ACM Conference on Recommender Systems . 269278. [25] Hangyu Wang, Jianghao Lin, Xiangyang Li, Bo Chen, Chenxu Zhu, Ruiming Tang, Weinan Zhang, and Yong Yu. 2023. ALT: Towards Fine-grained Alignment between Language and CTR Models for Click-Through Rate Prediction. arXiv preprint arXiv:2310.19453 (2023). [26] Thomas Wang, Adam Roberts, Daniel Hesslow, Teven Le Scao, Hyung Won Chung, Iz Beltagy, Julien Launay, and Colin Raffel. 2022. What language model architecture and pretraining objective works best for zero-shot generalization?. In International Conference on Machine Learning . PMLR, 22964-22984. [27] Yichao Wang, Huifeng Guo, Bo Chen, Weiwen Liu, Zhirong Liu, Qi Zhang, Zhicheng He, Hongkun Zheng, Weiwei Yao, Muyu Zhang, et al. 2022. Causalint: Causal inspired intervention for multi-scenario recommendation. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4090-4099. [28] Yuhao Wang, Ha Tsz Lam, Yi Wong, Ziru Liu, Xiangyu Zhao, Yichao Wang, Bo Chen, Huifeng Guo, and Ruiming Tang. 2023. Multi-Task Deep Recommender Systems: A Survey. arXiv preprint arXiv:2302.03525 (2023). LLM4MSR: An LLM-Enhanced Paradigm for Multi-Scenario Recommendation Conference'17, July 2017, Washington, DC, USA [29] Yuhao Wang, Xiangyu Zhao, Bo Chen, Qidong Liu, Huifeng Guo, Huanshuo Liu, Yichao Wang, Rui Zhang, and Ruiming Tang. 2023. PLATE: A PromptEnhanced Paradigm for Multi-Scenario Recommendations. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1498-1507. [30] Dongbo Xi, Zhen Chen, Peng Yan, Yinger Zhang, Yongchun Zhu, Fuzhen Zhuang, and Yu Chen. 2021. Modeling the sequential dependence among audience multistep conversions with multi-task learning in targeted display advertising. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3745-3755. [31] Yunjia Xi, Weiwen Liu, Jianghao Lin, Jieming Zhu, Bo Chen, Ruiming Tang, Weinan Zhang, Rui Zhang, and Yong Yu. 2023. Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models. arXiv preprint arXiv:2306.10933 (2023). [32] Bencheng Yan, Pengjie Wang, Kai Zhang, Feng Li, Hongbo Deng, Jian Xu, and Bo Zheng. 2022. Apg: Adaptive parameter generation network for click-through rate prediction. Advances in Neural Information Processing Systems 35 (2022), 24740-24752. [33] Bin Yin, Junjie Xie, Yu Qin, Zixiang Ding, Zhichao Feng, Xiang Li, and Wei Lin. 2023. Heterogeneous knowledge fusion: A novel approach for personalized recommendation via llm. In Proceedings of the 17th ACM Conference on Recommender Systems . 599-601. [34] Rizgar Zebari, Adnan Abdulazeez, Diyar Zeebaree, Dilovan Zebari, and Jwan Saeed. 2020. A comprehensive review of dimensionality reduction techniques for feature selection and feature extraction. Journal of Applied Science and Technology Trends 1, 2 (2020), 56-70. [35] Qianqian Zhang, Xinru Liao, Quan Liu, Jian Xu, and Bo Zheng. 2022. Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 1368-1376. [36] Xiangyu Zhao, Haochen Liu, Hui Liu, Jiliang Tang, Weiwei Guo, Jun Shi, Sida Wang, Huiji Gao, and Bo Long. 2021. Autodim: Field-aware embedding dimension searchin recommender systems. In Proceedings of the Web Conference 2021 . 30153022. [37] Bowen Zheng, Yupeng Hou, Hongyu Lu, Yu Chen, Wayne Xin Zhao, and JiRong Wen. 2023. Adapting large language models by integrating collaborative semantics for recommendation. arXiv preprint arXiv:2311.09049 (2023). [38] Feng Zhu, Yan Wang, Chaochao Chen, Jun Zhou, Longfei Li, and Guanfeng Liu. 2021. Cross-domain recommendation: challenges, progress, and prospects. arXiv preprint arXiv:2103.01696 (2021).",
   "keywords_parsed": [
     "Large Language Model",
-    " Multi-Domain",
-    " Multi-Scenario Recommendation",
-    " Click-Through Rate Prediction"
+    "Multi-Domain",
+    "Multi-Scenario Recommendation",
+    "Click-Through Rate Prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Application of the logistic function to bio-assay"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Pepnet: Parameter and embedding personalized network for infusing with personalized prior information"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Extending context window of large language models via positional interpolation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Longlora: Efficient fine-tuning of long-context large language models"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "HeroGRAPH: A Heterogeneous Graph Framework for Multi-Target Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "M6-rec: Generative pretrained language models are open-ended recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "GLM: General Language Model Pretraining with Autoregressive Blank Infilling"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Recommender systems in the era of large language models (llms)"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Scenario-Aware Hierarchical Dynamic Network for Multi-Scenario Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b13",
+      "title": "An Unified Search and Recommendation Foundation Model for Cold-Start Scenario"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adaptive mixtures of local experts"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b16",
+      "title": "CTRL: Connect Tabular and Language Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Is chatgpt a good recommender? a preliminary study"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Justifying recommendations using distantly-labeled reviews and fine-grained aspects"
+    },
+    {
+      "ref_id": "b21",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "STEM: Unleashing the Power of Embeddings for Multi-task Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "KuaiSAR: A Unified Search And Recommendation Dataset"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b25",
+      "title": "ALT: Towards Fine-grained Alignment between Language and CTR Models for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "What language model architecture and pretraining objective works best for zero-shot generalization?"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Causalint: Causal inspired intervention for multi-scenario recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Multi-Task Deep Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b29",
+      "title": "PLATE: A PromptEnhanced Paradigm for Multi-Scenario Recommendations"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Modeling the sequential dependence among audience multistep conversions with multi-task learning in targeted display advertising"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Apg: Adaptive parameter generation network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Heterogeneous knowledge fusion: A novel approach for personalized recommendation via llm"
+    },
+    {
+      "ref_id": "b34",
+      "title": "A comprehensive review of dimensionality reduction techniques for feature selection and feature extraction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Autodim: Field-aware embedding dimension searchin recommender systems"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Adapting large language models by integrating collaborative semantics for recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Cross-domain recommendation: challenges, progress, and prospects"
+    }
   ]
 }

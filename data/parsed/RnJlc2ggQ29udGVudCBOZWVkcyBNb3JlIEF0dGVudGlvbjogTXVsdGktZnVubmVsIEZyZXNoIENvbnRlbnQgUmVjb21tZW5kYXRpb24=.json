@@ -20,8 +20,238 @@
   "REFERENCES": "[1] Charu C Aggarwal et al. 2016. Recommender systems . Vol. 1. Springer. [2] Oren Barkan, Noam Koenigstein, Eylon Yogev, and Ori Katz. 2019. CB2CF: a neural multiview content-to-collaborative filtering model for completely cold item recommendations. In RecSys . 228-236. [3] Alex Beutel, Ed H Chi, Zhiyuan Cheng, Hubert Pham, and John Anderson. 2017. Beyond globally optimal: Focused learning for improved recommendations. In TheWebConf . [4] Youtube Official Blog. 2023. YouTube by the Number. (2023). Retrieved January, 2023 from https://blog.youtube/press/ [5] Robin Burke. 2002. Hybrid recommender systems: Survey and experiments. User modeling and user-adapted interaction (2002). [6] Francis Buttle. 2004. Customer relationship management . Routledge. [7] Allison JB Chaney, Brandon M Stewart, and Barbara E Engelhardt. 2018. How algorithmic confounding in recommendation systems increases homogeneity and decreases utility. In RecSys . [8] Minmin Chen. 2021. Exploration in recommender systems. In RecSys . [9] Minmin Chen, Yuyan Wang, Can Xu, Ya Le, Mohit Sharma, Lee Richardson, SuLin Wu, and Ed Chi. 2021. Values of User Exploration in Recommender Systems. In RecSys . [10] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In RecSys . [11] Tiago Cunha, Carlos Soares, and André CPLF de Carvalho. 2016. Selecting collaborative filtering algorithms using metalearning. In ECML-PKDD . [12] Kaize Ding, Dingcheng Li, Alexander Hanbo Li, Xing Fan, Chenlei Guo, Yang Liu, and Huan Liu. 2021. Learning to Selectively Learn for Weakly-supervised Paraphrase Generation. In EMNLP . [13] Xiaoyu Du, Xiang Wang, Xiangnan He, Zechao Li, Jinhui Tang, and Tat-Seng Chua. 2020. How to learn item representation for cold-start multimedia recommendation?. In MM . [14] Michael Ekstrand and John Riedl. 2012. When recommenders fail: predicting recommender failure for algorithm selection and combination. In RecSys . [15] Andres Ferraro, Dmitry Bogdanov, Jisang Yoon, KwangSeob Kim, and Xavier Serra. 2018. Automatic playlist continuation using a hybrid recommender system combining features from text and audio. In RecSys Challenge . [16] G Geetha, M Safa, C Fancy, and D Saranya. 2018. A hybrid approach using collaborative filtering and content based filtering for recommender system. In Journal of Physics: Conference Series . [17] Jyotirmoy Gope and Sanjay Kumar Jain. 2017. A survey on solving cold start problem in recommender systems. In ICCCA . [18] Qingyu Guo, Fuzhen Zhuang, Chuan Qin, Hengshu Zhu, Xing Xie, Hui Xiong, and Qing He. 2020. A survey on knowledge graph-based recommender systems. TKDE . [19] Ruiqi Guo, Sanjiv Kumar, Krzysztof Choromanski, and David Simcha. 2016. Quantization based fast inner product search. In Artificial intelligence and statistics . PMLR, 482-490. [20] James Hale. 2019. More Than 500 Hours Of Content Are Now Being Uploaded To YouTube Every Minute. (May 2019). Retrieved January, 2023 from https://www.tubefilter.com/2019/05/07/ number-hours-video-uploaded-to-youtube-per-minute/ [21] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In WWW . [22] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning deep structured semantic models for web search using clickthrough data. In CIKM . [23] Tim Ingham. 2023. Over 60,000 Tracks are Now Uploaded to Spotify Every Day. That's Nearly One per Second. (2023). Retrieved January, 2023 from https://www.musicbusinessworldwide.com/ over-60000-tracks-are-now-uploaded-to-spotify-daily-thats-nearly-one-per-second/ [24] Amir H Jadidinejad, Craig Macdonald, and Iadh Ounis. 2020. Using Exploration to Alleviate Closed Loop Effects in Recommender Systems. In SIGIR . [25] Ray Jiang, Silvia Chiappa, Tor Lattimore, András György, and Pushmeet Kohli. 2019. Degenerate feedback loops in recommender systems. In AIES . [26] Kyung-Yong Jung, Dong-Hyun Park, and Jung-Hyun Lee. 2004. Hybrid collaborative filtering and content-based filtering for improved recommender system. In Computational Science-ICCS . Springer. [27] Hoyeop Lee, Jinbae Im, Seongwon Jang, Hyunsouk Cho, and Sehee Chung. 2019. MeLU: Meta-Learned User Preference Estimator for Cold-Start Recommendation. In KDD . [28] Joonseok Lee and Sami Abu-El-Haija. 2017. Large-scale content-only video recommendation. In Proceedings of the IEEE International Conference on Computer Vision Workshops . 987-995. [29] Jingjing Li, Mengmeng Jing, Ke Lu, Lei Zhu, Yang Yang, and Zi Huang. 2019. From zero-shot learning to cold-start recommendation. In AAAI . [30] Allen Lin, Jianling Wang, Ziwei Zhu, and James Caverlee. 2022. Quantifying and mitigating popularity bias in conversational recommender systems. In CIKM . [31] Siwei Liu, Iadh Ounis, Craig Macdonald, and Zaiqiao Meng. 2020. A heterogeneous graph neural model for cold-start recommendation. In SIGIR . [32] Mi Luo, Fei Chen, Pengxiang Cheng, Zhenhua Dong, Xiuqiang He, Jiashi Feng, and Zhenguo Li. 2020. Metaselector: Meta-learning for recommendation with user-level adaptive model selection. In TheWebConf . [33] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Ji Yang, Minmin Chen, Jiaxi Tang, Lichan Hong, and Ed H Chi. 2020. Off-policy learning in two-stage recommender systems. In TheWebConf . [34] Feiyang Pan, Shuokai Li, Xiang Ao, Pingzhong Tang, and Qing He. 2019. Warm up cold-start advertisements: Improving ctr predictions via learning to learn id embeddings. In SIGIR . [35] Oleg Rybakov, Vijai Mohan, Avishkar Misra, Scott LeGrand, Rejith Joseph, Kiuk Chung, Siddharth Singh, Qian You, Eric Nalisnick, and Runfei Luo. 2018. The effectiveness of a two-layer neural network for recommendations. (2018). [36] Tobias Schnabel, Mengting Wan, and Longqi Yang. 2022. Situating Recommender Systems in Practice: Towards Inductive Learning and Incremental Updates. arXiv preprint arXiv:2211.06365 (2022). [37] Aleksandrs Slivkins. 2019. Introduction to multi-armed bandits. arXiv preprint arXiv:1904.07272 (2019). [38] Liang Tang, Yexi Jiang, Lei Li, and Tao Li. 2014. Ensemble contextual bandits for personalized recommendation. In RecSys . [39] Aaron Van den Oord, Sander Dieleman, and Benjamin Schrauwen. 2013. Deep content-based music recommendation. In NeurIPS . [40] Manasi Vartak, Arvind Thiagarajan, Conrado Miranda, Jeshua Bratman, and Hugo Larochelle. 2017. A meta-learning perspective on cold-start recommendations for items. In NeurIPS . [41] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In NeurIPS . [42] Maksims Volkovs, Guangwei Yu, and Tomi Poutanen. 2017. Dropoutnet: Addressing cold start in recommender systems. In NeurIPS . [43] Jianling Wang, Kaize Ding, and James Caverlee. 2021. Sequential Recommendation for Cold-start Users with Meta Transitional Learning. In SIGIR . [44] Jianling Wang, Ya Le, Bo Chang, Yuyan Wang, Ed H Chi, and Minmin Chen. 2022. Learning to Augment for Casual User Recommendation. In TheWebConf . [45] Jianling Wang, Ainur Yessenalina, and Alireza Roshan-Ghias. 2021. Exploring Heterogeneous Metadata for Video Recommendation with Two-tower Model. arXiv preprint arXiv:2109.11059 (2021). [46] Shoujin Wang, Longbing Cao, Yan Wang, Quan Z Sheng, Mehmet A Orgun, and Defu Lian. 2021. A survey on session-based recommender systems. CSUR (2021). [47] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural graph collaborative filtering. In SIGIR . [48] Yinwei Wei, Xiang Wang, Qi Li, Liqiang Nie, Yan Li, Xuanping Li, and Tat-Seng Chua. 2021. Contrastive learning for cold-start recommendation. In MM . [49] Xiang Wu, Ruiqi Guo, Ananda Theertha Suresh, Sanjiv Kumar, Daniel N Holtmann-Rice, David Simcha, and Felix Yu. 2017. Multiscale quantization for fast similarity search. Advances in neural information processing systems 30 (2017). [50] Ji Yang, Xinyang Yi, Derek Zhiyuan Cheng, Lichan Hong, Yang Li, Simon Xiaoming Wang, Taibai Xu, and Ed H Chi. 2020. Mixed negative sampling for learning two-tower neural networks in recommendations. In Companion Proceedings of the Web Conference 2020 . [51] Xinyang Yi, Ji Yang, Lichan Hong, Derek Zhiyuan Cheng, Lukasz Heldt, Aditee Kumthekar, Zhe Zhao, Li Wei, and Ed Chi. 2019. Sampling-bias-corrected neural modeling for large corpus item recommendations. In RecSys . [52] Chenrui Zhang and Xueqi Cheng. 2016. An ensemble method for job recommender systems. In RecSys Challenge . [53] Shuai Zhang, Lina Yao, Aixin Sun, and Yi Tay. 2019. Deep learning based recommender system: A survey and new perspectives. CSUR (2019). [54] Xu Zhao, Yi Ren, Ying Du, Shenzheng Zhang, and Nian Wang. 2022. Improving Item Cold-start Recommendation via Model-agnostic Conditional Variational Autoencoder. arXiv preprint arXiv:2205.13795 (2022). [55] Yujia Zheng, Siyi Liu, Zekun Li, and Shu Wu. 2020. Cold-start Sequential Recommendation via Meta Learner. In AAAI . [56] Yongchun Zhu, Ruobing Xie, Fuzhen Zhuang, Kaikai Ge, Ying Sun, Xu Zhang, Leyu Lin, and Juan Cao. 2021. Learning to warm up cold item embeddings for cold-start recommendation with meta scaling and shifting networks. In SIGIR . [57] Ziwei Zhu, Shahin Sefati, Parsa Saadatpanah, and James Caverlee. 2020. Recommendation for New Users and New Items via Randomized Training and Mixture-of-Experts Transformation. In SIGIR .",
   "keywords_parsed": [
     "Hybrid Recommendation Systems",
-    " Cold-start Recommendation",
-    " Real-time Learning",
-    " Content Generalization"
+    "Cold-start Recommendation",
+    "Real-time Learning",
+    "Content Generalization"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Recommender systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "CB2CF: a neural multiview content-to-collaborative filtering model for completely cold item recommendations"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Beyond globally optimal: Focused learning for improved recommendations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "YouTube by the Number"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Hybrid recommender systems: Survey and experiments"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Customer relationship management"
+    },
+    {
+      "ref_id": "b7",
+      "title": "How algorithmic confounding in recommendation systems increases homogeneity and decreases utility"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Exploration in recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Values of User Exploration in Recommender Systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Selecting collaborative filtering algorithms using metalearning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Learning to Selectively Learn for Weakly-supervised Paraphrase Generation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "How to learn item representation for cold-start multimedia recommendation?"
+    },
+    {
+      "ref_id": "b14",
+      "title": "When recommenders fail: predicting recommender failure for algorithm selection and combination"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Automatic playlist continuation using a hybrid recommender system combining features from text and audio"
+    },
+    {
+      "ref_id": "b16",
+      "title": "A hybrid approach using collaborative filtering and content based filtering for recommender system"
+    },
+    {
+      "ref_id": "b17",
+      "title": "A survey on solving cold start problem in recommender systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "A survey on knowledge graph-based recommender systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Quantization based fast inner product search"
+    },
+    {
+      "ref_id": "b20",
+      "title": "More Than 500 Hours Of Content Are Now Being Uploaded To YouTube Every Minute"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Over 60,000 Tracks are Now Uploaded to Spotify Every Day"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Using Exploration to Alleviate Closed Loop Effects in Recommender Systems"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Degenerate feedback loops in recommender systems"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Hybrid collaborative filtering and content-based filtering for improved recommender system"
+    },
+    {
+      "ref_id": "b27",
+      "title": "MeLU: Meta-Learned User Preference Estimator for Cold-Start Recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Large-scale content-only video recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "From zero-shot learning to cold-start recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Quantifying and mitigating popularity bias in conversational recommender systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "A heterogeneous graph neural model for cold-start recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Metaselector: Meta-learning for recommendation with user-level adaptive model selection"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Off-policy learning in two-stage recommender systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Warm up cold-start advertisements: Improving ctr predictions via learning to learn id embeddings"
+    },
+    {
+      "ref_id": "b35",
+      "title": "The effectiveness of a two-layer neural network for recommendations"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Situating Recommender Systems in Practice: Towards Inductive Learning and Incremental Updates"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Introduction to multi-armed bandits"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Ensemble contextual bandits for personalized recommendation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Deep content-based music recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "A meta-learning perspective on cold-start recommendations for items"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Dropoutnet: Addressing cold start in recommender systems"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Sequential Recommendation for Cold-start Users with Meta Transitional Learning"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Learning to Augment for Casual User Recommendation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Exploring Heterogeneous Metadata for Video Recommendation with Two-tower Model"
+    },
+    {
+      "ref_id": "b46",
+      "title": "A survey on session-based recommender systems"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Contrastive learning for cold-start recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Multiscale quantization for fast similarity search"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Mixed negative sampling for learning two-tower neural networks in recommendations"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Sampling-bias-corrected neural modeling for large corpus item recommendations"
+    },
+    {
+      "ref_id": "b52",
+      "title": "An ensemble method for job recommender systems"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Deep learning based recommender system: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Improving Item Cold-start Recommendation via Model-agnostic Conditional Variational Autoencoder"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Cold-start Sequential Recommendation via Meta Learner"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Learning to warm up cold item embeddings for cold-start recommendation with meta scaling and shifting networks"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Recommendation for New Users and New Items via Randomized Training and Mixture-of-Experts Transformation"
+    }
   ]
 }

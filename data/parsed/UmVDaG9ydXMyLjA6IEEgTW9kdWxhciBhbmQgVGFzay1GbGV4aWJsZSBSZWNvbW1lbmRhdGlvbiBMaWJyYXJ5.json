@@ -31,8 +31,206 @@
   "REFERENCES": "[1] Qingyao Ai, Keping Bi, Jiafeng Guo, and W. Bruce Croft. 2018. Learning a Deep Listwise Context Model for Ranking Refinement. In SIGIR . ACM, Ann Arbor MI USA, 135-144. [2] Vito Walter Anelli, Alejandro Bellogín, Antonio Ferrara, Daniele Malitesta, Felice Antonio Merra, Claudio Pomo, Francesco Maria Donini, and Tommaso Di Noia. 2021. Elliot: A Comprehensive and Rigorous Framework for Reproducible Recommender Systems Evaluation. In SIGIR '21: The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval, Virtual Event, Canada, July 11-15, 2021 , Fernando Diaz, Chirag Shah, Torsten Suel, Pablo Castells, Rosie Jones, and Tetsuya Sakai (Eds.). ACM, 2405-2414. https://doi.org/10.1145/3404835.3463245 [3] Andreas Argyriou, Miguel González-Fierro, and Le Zhang. 2020. Microsoft recommenders: best practices for production-ready recommendation systems. In Companion Proceedings of the Web Conference 2020 . 50-51. [4] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, et al. 2022. CAN: feature co-action network for click-through rate prediction. In Proceedings of the fifteenth ACM international conference on web search and data mining . 57-65. [5] Yue Cao, Xiaojiang Zhou, Jiaqi Feng, Peihao Huang, Yao Xiao, Dayao Chen, and Sheng Chen. 2022. Sampling is all you need on modeling long-term user behaviors for CTR prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2974-2983. [6] Zhe Cao, Tao Qin, Tie-Yan Liu, Ming-Feng Tsai, and Hang Li. 2007. Learning to rank: from pairwise approach to listwise approach. In International Conference on Machine Learning . https://api.semanticscholar.org/CorpusID:207163577 [7] Yukuo Cen, Jianwei Zhang, Xu Zou, Chang Zhou, Hongxia Yang, and Jie Tang. 2020. Controllable multi-interest framework for recommendation. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2942-2951. [8] Qiwei Chen, Changhua Pei, Shanshan Lv, Chao Li, Junfeng Ge, and Wenwu Ou. 2021. End-to-end user behavior retrieval in click-through rateprediction model. arXiv preprint arXiv:2108.04468 (2021). [9] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [10] Yuan Cheng and Yanbo Xue. 2021. Looking at CTR Prediction Again: Is Attention All You Need?. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1279-1287. [11] Patrick John Chia, Jacopo Tagliabue, Federico Bianchi, Chloe He, and Brian Ko. 2022. Beyond NDCG: Behavioral Testing of Recommender Systems with RecList (WWW'22 Companion) . Association for Computing Machinery, New York, NY, USA, 99-104. https://doi.org/10.1145/3487553.3524215 [12] Michael D Ekstrand. 2020. Lenskit for python: Next-generation software for recommender systems experiments. In Proceedings of the 29th ACM international conference on information & knowledge management . 2999-3006. [13] Yufei Feng, Binbin Hu, Yu Gong, Fei Sun, Qingwen Liu, and Wenwu Ou. 2021. GRN: Generative Rerank Network for Context-wise Recommendation. arXiv (April 2021). arXiv. [14] Maurizio Ferrari Dacrema, Simone Boglio, Paolo Cremonesi, and Dietmar Jannach. 2021. A troubling analysis of reproducibility and progress in recommender systems research. ACM Transactions on Information Systems (TOIS) 39, 2 (2021), 1-49. [15] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [16] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, and Meng Wang. 2020. Lightgcn: Simplifying and powering graph convolution network for recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 639-648. [17] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [18] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [19] Guangda Huzhang, Zhen-Jia Pang, Yongqing Gao, Yawen Liu, Weijie Shen, WenJi Zhou, Qing Da, An-Xiang Zeng, Han Yu, Yang Yu, and Zhi-Hua Zhou. 2020. AliExpress Learning-To-Rank: Maximizing Online Model Performance without Going Online. arXiv (Dec. 2020). [20] Andreea Iana, Goran Glavaš, and Heiko Paulheim. 2023. NewsRecLib: A PyTorchLightning Library for Neural News Recommendation. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations . 296-310. [21] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated gain-based evaluation of IR techniques. ACM Transactions on Information Systems (TOIS) 20, 4 (2002), [44] Aghiles Salah, Quoc-Tuan Truong, and Hady W Lauw. 2020. Cornac: A Comparative Framework for Multimodal Recommender Systems. Journal of Machine RecSys'24, October 14-18, 2024, Bari, Italy Li et al. Learning Research 21, 95 (2020), 1-5. [45] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM international conference on information and knowledge management . 1161-1170. [46] Aixin Sun. 2023. On Challenges of Evaluating Recommender Systems in an Offline Setting. In Proceedings of the 17th ACM Conference on Recommender Systems . 1284-1285. [47] Aixin Sun. 2023. Take a Fresh Look at Recommender Systems from an Evaluation Standpoint. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2629-2638. [48] Peijie Sun, Le Wu, Kun Zhang, Xiangzhi Chen, and Meng Wang. 2023. Neighborhood-Enhanced Supervised Contrastive Learning for Collaborative Filtering. IEEE Transactions on Knowledge and Data Engineering (2023). [49] Zhu Sun, Hui Fang, Jie Yang, Xinghua Qu, Hongyang Liu, Di Yu, Yew-Soon Ong, and Jie Zhang. 2022. DaisyRec 2.0: Benchmarking Recommendation for Rigorous Evaluation. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) (2022). [50] Zhu Sun, Di Yu, Hui Fang, Jie Yang, Xinghua Qu, Jie Zhang, and Cong Geng. 2020. Are we evaluating rigorously? benchmarking recommendation for reproducible evaluation and fair comparison. In Proceedings of the 14th ACM Conference on Recommender Systems . 23-32. [51] Jiaxi Tang and Ke Wang. 2018. Personalized top-n sequential recommendation via convolutional sequence embedding. In Proceedings of the eleventh ACM international conference on web search and data mining . 565-573. [52] Chenyang Wang, Weizhi Ma, Chong Chen, Min Zhang, Yiqun Liu, and Shaoping Ma. 2023. Sequential recommendation with multiple contrast signals. ACM Transactions on Information Systems 41, 1 (2023), 1-27. [53] Chenyang Wang, Weizhi Ma, Min Zhang, Chong Chen, Yiqun Liu, and Shaoping Ma. 2020. Toward dynamic user intention: Temporal evolutionary effects of item relations in sequential recommendation. ACM Transactions on Information Systems (TOIS) 39, 2 (2020), 1-33. [54] Chenyang Wang, Zhefan Wang, Yankai Liu, Yang Ge, Weizhi Ma, Min Zhang, Yiqun Liu, Junlan Feng, Chao Deng, and Shaoping Ma. 2022. Target interest distillation for multi-interest recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2007-2016. [55] Chenyang Wang, Yuanqing Yu, Weizhi Ma, Min Zhang, Chong Chen, Yiqun Liu, and Shaoping Ma. 2022. Towards representation alignment and uniformity in collaborative filtering. In Proceedings of the 28th ACM SIGKDD conference on knowledge discovery and data mining . 1816-1825. [56] Chenyang Wang, Min Zhang, Weizhi Ma, Yiqun Liu, and Shaoping Ma. 2019. Modeling item-specific temporal dynamics of repeat consumption for recommender systems. In The world wide web conference . 1977-1987. [57] Chenyang Wang, Min Zhang, Weizhi Ma, Yiqun Liu, and Shaoping Ma. 2020. Make it a chorus: knowledge-and time-aware item modeling for sequential recommendation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 109-118. [58] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [59] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the web conference 2021 . 1785-1797. [60] Yifan Wang, Peijie Sun, Min Zhang, Qinglin Jia, Jingjie Li, and Shaoping Ma. 2023. Unbiased Delayed Feedback Label Correction for Conversion Rate Prediction. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2456-2466. [61] Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu, et al. 2020. Mind: A large-scale dataset for news recommendation. In Proceedings of the 58th annual meeting of the association for computational linguistics . 3597-3606. [62] Yunjia Xi, Weiwen Liu, Xinyi Dai, Ruiming Tang, Weinan Zhang, Qing Liu, Xiuqiang He, and Yong Yu. 2022. Context-aware Reranking with Utility Maximization for Recommendation. arXiv (Feb. 2022). [63] Yunjia Xi, Weiwen Liu, Jieming Zhu, Xilong Zhao, Xinyi Dai, Ruiming Tang, Weinan Zhang, Rui Zhang, and Yong Yu. 2022. Multi-Level Interaction Reranking with User Behavior History. [64] Jun Xiao, Hao Ye, Xiangnan He, Hanwang Zhang, Fei Wu, and Tat-Seng Chua. 2017. Attentional factorization machines: Learning the weight of feature interactions via attention networks. arXiv preprint arXiv:1708.04617 (2017). [65] Yanwu Yang and Panyu Zhai. 2022. Click-through rate prediction in online advertising: A literature review. Information Processing & Management 59, 2 (2022), 102853. [66] Yuanqing Yu, Chongming Gao, Jiawei Chen, Heng Tang, Yuefeng Sun, Qian Chen, Weizhi Ma, and Min Zhang. 2024. EasyRL4Rec: A User-Friendly Code Library for Reinforcement Learning Based Recommender Systems. arXiv preprint arXiv:2402.15164 (2024). [67] Yongfeng Zhang, Qingyao Ai, Xu Chen, and Pengfei Wang. 2018. Learning over knowledge-base embeddings for recommendation. arXiv preprint arXiv:1803.06540 (2018). [68] Wayne Xin Zhao, Yupeng Hou, Xingyu Pan, Chen Yang, Zeyu Zhang, Zihan Lin, Jingsen Zhang, Shuqing Bian, Jiakai Tang, Wenqi Sun, Yushuo Chen, Lanling Xu, Gaowei Zhang, Zhen Tian, Changxin Tian, Shanlei Mu, Xinyan Fan, Xu Chen, and Ji-Rong Wen. 2022. RecBole 2.0: Towards a More Up-to-Date Recommendation Library. In CIKM . ACM, 4722-4726. [69] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [70] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [71] Jieming Zhu, Quanyu Dai, Liangcai Su, Rong Ma, Jinyang Liu, Guohao Cai, Xi Xiao, and Rui Zhang. 2022. BARS: Towards Open Benchmarking for Recommender Systems. In SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 , Enrique Amigó, Pablo Castells, Julio Gonzalo, Ben Carterette, J. Shane Culpepper, and Gabriella Kazai (Eds.). ACM, 2912-2923. https://doi.org/10.1145/ 3477495.3531723",
   "keywords_parsed": [
     "Recommendation library",
-    " Reproducibility",
-    " Reranking",
-    " CTR"
+    "Reproducibility",
+    "Reranking",
+    "CTR"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning a Deep Listwise Context Model for Ranking Refinement"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Elliot: A Comprehensive and Rigorous Framework for Reproducible Recommender Systems Evaluation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Microsoft recommenders: best practices for production-ready recommendation systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "CAN: feature co-action network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Sampling is all you need on modeling long-term user behaviors for CTR prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Controllable multi-interest framework for recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "End-to-end user behavior retrieval in click-through rate prediction model"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Looking at CTR Prediction Again: Is Attention All You Need?"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Beyond NDCG: Behavioral Testing of Recommender Systems with RecList (WWW'22 Companion)"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Lenskit for python: Next-generation software for recommender systems experiments"
+    },
+    {
+      "ref_id": "b13",
+      "title": "GRN: Generative Rerank Network for Context-wise Recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A troubling analysis of reproducibility and progress in recommender systems research"
+    },
+    {
+      "ref_id": "b15",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "AliExpress Learning-To-Rank: Maximizing Online Model Performance without Going Online"
+    },
+    {
+      "ref_id": "b20",
+      "title": "NewsRecLib: A PyTorchLightning Library for Neural News Recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Cornac: A Comparative Framework for Multimodal Recommender Systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b24",
+      "title": "On Challenges of Evaluating Recommender Systems in an Offline Setting"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Take a Fresh Look at Recommender Systems from an Evaluation Standpoint"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Neighborhood-Enhanced Supervised Contrastive Learning for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b27",
+      "title": "DaisyRec 2.0: Benchmarking Recommendation for Rigorous Evaluation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Are we evaluating rigorously? benchmarking recommendation for reproducible evaluation and fair comparison"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Sequential recommendation with multiple contrast signals"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Toward dynamic user intention: Temporal evolutionary effects of item relations in sequential recommendation"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Target interest distillation for multi-interest recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Towards representation alignment and uniformity in collaborative filtering"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Modeling item-specific temporal dynamics of repeat consumption for recommender systems"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Make it a chorus: knowledge-and time-aware item modeling for sequential recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b37",
+      "title": "DCN V2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Unbiased Delayed Feedback Label Correction for Conversion Rate Prediction"
+    },
+    {
+      "ref_id": "b39",
+      "title": "MIND: A large-scale dataset for news recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Context-aware Reranking with Utility Maximization for Recommendation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Multi-Level Interaction Reranking with User Behavior History"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Attentional factorization machines: Learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Click-through rate prediction in online advertising: A literature review"
+    },
+    {
+      "ref_id": "b44",
+      "title": "EasyRL4Rec: A User-Friendly Code Library for Reinforcement Learning Based Recommender Systems"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Learning over knowledge-base embeddings for recommendation"
+    },
+    {
+      "ref_id": "b46",
+      "title": "RecBole 2.0: Towards a More Up-to-Date Recommendation Library"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b49",
+      "title": "BARS: Towards Open Benchmarking for Recommender Systems"
+    }
   ]
 }

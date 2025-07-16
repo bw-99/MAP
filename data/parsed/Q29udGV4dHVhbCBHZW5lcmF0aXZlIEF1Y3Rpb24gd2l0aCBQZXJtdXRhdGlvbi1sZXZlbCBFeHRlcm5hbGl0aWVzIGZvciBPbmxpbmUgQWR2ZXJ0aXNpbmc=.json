@@ -32,7 +32,189 @@
   "A.1 Proof of Lemma 1": "Denote 𝑨 ∗ as the allocation that maximizes the expected virtual welfare (select randomly if there exist multiple optimal allocation), i.e. ,  which can be obtained through enumeration. W.l.o.g. , suppose 𝑎𝑑 𝑡 ∈ 𝑨 ∗ , and the other ads in 𝑨 ∗ constitute the set 𝑨 ∗ -𝒕 , then the virtual welfare of 𝑨 ∗ can be written as:  Whenthebid of 𝑎𝑑 𝑡 rises to 𝑏 ′ 𝑡 > 𝑏 𝑡 , suppose the resulting allocation maximizing virtual welfare is 𝑨 ′ , i.e. ,  Contextual Generative Auction with Permutation-level Externalities for Online Advertising KDD '25, August 3-7, 2025, Toronto, Canada We can directly obtain that 𝑎𝑑 𝑡 ∈ 𝑨 ′ ; otherwise, suppose 𝑎𝑑 𝑡 ∉ 𝑨 ′ , then we have ˜ Φ ( 𝑨 ′ ; 𝑏 ′ 𝑡 ) = ˜ Φ ( 𝑨 ′ ; 𝑏 𝑡 ) . Since 𝑨 ∗ maximizes virtual welfare when 𝑎𝑑 𝑡 bids 𝑏 𝑡 and 𝜙 ( 𝑏, 𝐹 ) is monotone non-decreasing in 𝑏 [26], it follows that ˜ Φ ( 𝑨 ′ ; 𝑏 𝑡 ) ≤ ˜ Φ ( 𝑨 ∗ , 𝑏 𝑡 ) ≤ ˜ Φ ( 𝑨 ∗ ; 𝑏 ′ 𝑡 ) . If the first ' ≤ ' holds as equality, meaning when 𝑎𝑑 𝑡 bids 𝑏 ′ 𝑡 , both allocations 𝑨 ′ and 𝑨 ∗ have equal and maximized virtual welfare, we choose 𝑨 ∗ as the allocation result w.l.o.g . Thus, when 𝑎𝑑 𝑡 increases its bid, the allocation remains unchanged, and so does the CTR of 𝑎𝑑 𝑡 , validating the proposition. Otherwise, ˜ Φ ( 𝑨 ′ ; 𝑏 𝑡 ) < ˜ Φ ( 𝑨 ∗ , 𝑏 𝑡 ) , hence, ˜ Φ ( 𝑨 ′ ; 𝑏 ′ 𝑡 ) < ˜ Φ ( 𝑨 ∗ ; 𝑏 ′ 𝑡 ) , contradicting the definition of 𝑨 ′ . Therefore, we have 𝑎𝑑 𝑡 ∈ 𝑨 ′ . Similarly, the virtual welfare of 𝑨 ′ can be written as:  Based on the maximized virtual welfare property of 𝑨 ∗ and 𝑨 ′ , we can deduce the following two inequalities:   By subtracting Inequality (12) from Inequality (11), we obtain:  Since ˜ 𝜙 ( 𝑡, 𝐹 𝑡 ) is monotone non-decreasing in 𝑡 and 𝑏 𝑡 < 𝑏 ′ 𝑡 , we have:    Θ ( 𝒙 𝒕 ; A( 𝑏 𝑡 , 𝒃 -𝒕 ; 𝑿 , 𝒖 ) , 𝑿 , 𝒖 ) ≤ Θ ( 𝒙 𝒕 ; A( 𝑏 ′ 𝑡 , 𝒃 -𝒕 ; 𝑿 ) , 𝑿 , 𝒖 ) , demonstrating that the allocation rule A is monotone. · Case 2: ˜ 𝜙 ( 𝑏 𝑡 , 𝐹 𝑡 ) -˜ 𝜙 ( 𝑏 ′ 𝑡 , 𝐹 𝑡 ) = 0. By swapping the LHS and RHS of Inequality (12) and then adding it to Inequality (11), we obtain:  Substituting ˜ 𝜙 ( 𝑏 𝑡 , 𝐹 𝑡 ) = ˜ 𝜙 ( 𝑏 ′ 𝑡 , 𝐹 𝑡 ) into Equation (15), we have, the ' ≥ ' in Inequality (15) holds as equality. Therefore, both Inequality (11) and Inequality (12) hold as equalities, which means that both 𝑨 ∗ and 𝑨 ′ are the allocations that maximize virtual welfare after 𝑎𝑑 𝑡 increases her bid to 𝑏 ′ 𝑡 . Therefore, w.l.o.g , we choose 𝑨 ∗ as the final allocation result, indicating that the allocation outcome remains unchanged after the increase in 𝑎𝑑 𝑡 's bid. Consequently, the CTR of 𝑎𝑑 𝑡 also remains unchanged. Thus, the allocation rule A is monotone.",
   "keywords_parsed": [
     "Learning-Based Mechanism Design",
-    " Externalities",
-    " Generative Auction"
+    "Externalities",
+    "Generative Auction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Optimising trade-offs among stakeholders in ad auctions"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The landscape of auto-bidding auctions: Value versus utility maximization"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A study of autoregressive decoders for multi-tasking in computer vision"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Extr: click-through rate prediction with externalities in e-commerce sponsored search"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Estimation of standard auction models"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A datadriven metric of incentive compatibility"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Towards efficient auctions in an auto-bidding world"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Gate-variants of gated recurrent unit (GRU) neural networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A scalable neural network for dsic affine maximizer auction design"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Optimal auctions through deep learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords"
+    },
+    {
+      "ref_id": "b13",
+      "title": "GRN: Generative Rerank Network for Context-wise Recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A truthful learning mechanism for contextual multi-slot sponsored search auctions with externalities"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Externalities in online advertising"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Long short-term memory"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Position auctions with externalities"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Optimal-er auctions through attention"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Sponsored search: an overview of the concept, history, and technology"
+    },
+    {
+      "ref_id": "b20",
+      "title": "What makes them click: Empirical analysis of consumer demand for search advertising"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Estimating bidders' valuation distributions in online auctions"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Learning-Based Ad Auction Design with Externalities: The Framework and A Matching-Based Approach"
+    },
+    {
+      "ref_id": "b23",
+      "title": "NMA: Neural Multi-slot Auctions with Externalities for Online Advertising"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Generative flow network for listwise recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Neural auction: End-to-end learning of auction mechanisms for ecommerce advertising"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Optimal auction design"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Bid prediction in repeated auctions with learning"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Reserve prices in internet advertising auctions: A field experiment"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Benefits of permutation-equivariance in auction mechanisms"
+    },
+    {
+      "ref_id": "b31",
+      "title": "A permutation-equivariant neural network architecture for auction design"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Non-autoregressive Generative Models for Reranking Recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "EdgeNet: Encoder-decoder generative Network for Auction Design in E-commerce Online Advertising"
+    },
+    {
+      "ref_id": "b34",
+      "title": "PIER: Permutation-Level Interest-Based End-to-End Re-ranking Framework in E-commerce"
+    },
+    {
+      "ref_id": "b35",
+      "title": "The VCG auction in theory and practice"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Diffusion recommender model"
+    },
+    {
+      "ref_id": "b38",
+      "title": "On designing a two-stage auction for online advertising"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Context-aware reranking with utility maximization for recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Context-aware reranking with utility maximization for recommendation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Truthful auctions for automated bidding in online advertising"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Deep sets"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Constructing a comparison-based click model for web search"
+    },
+    {
+      "ref_id": "b44",
+      "title": "A survey of online auction mechanism design using deep learning approaches"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Optimizing multiple performance metrics with deep GSP auctions for e-commerce advertising"
+    }
   ]
 }

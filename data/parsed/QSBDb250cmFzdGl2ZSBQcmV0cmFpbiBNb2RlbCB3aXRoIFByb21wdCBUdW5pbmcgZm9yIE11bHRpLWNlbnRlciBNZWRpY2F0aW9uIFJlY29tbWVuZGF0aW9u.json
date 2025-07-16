@@ -29,6 +29,60 @@
   "7 ACKNOWLEDGEMENTS": "This research was partially supported by Research Impact Fund (No.R1015-23), APRC - CityU New Research Initiatives (No.9610565, Start-up Grant for New Faculty of CityU), CityU - HKIDS Early Career Research Grant (No.9360163), Hong Kong ITC Innovation and Technology Fund Midstream Research Programme for Universities Project (No.ITS/034/22MS), Hong Kong Environmental and Conservation Fund (No. 88/2022), and SIRG - CityU Strategic Interdisciplinary Research Grant (No.7020046), Huawei (Huawei Innovation Research Program), Tencent (CCF-Tencent Open Fund, Tencent Rhino-Bird Focused Research Program), Ant Group (CCF-Ant Research Fund, Ant Group Research Fund), Alibaba (CCF-Alimama Tech Kangaroo Fund No. 2024002), CCF-BaiChuan-Ebtech Foundation Model Fund, and Kuaishou, National Natural Science Foundation of China (No.62192781, No.62177038, No.62293551, No.62277042, No.62137002, No.61721002, No.61937001, No.62377038), Project of China Knowledge Centre for Engineering Science and Technology, 'LENOVO-XJTU' Intelligent Industry Joint Laboratory Project.",
   "REFERENCES": "[1] Zafar Ali, Yi Huang, Irfan Ullah, Junlan Feng, Chao Deng, Nimbeshaho Thierry, Asad Khan, Asim Ullah Jan, Xiaoli Shen, Wu Rui, et al. 2023. Deep learning for medication recommendation: a systematic survey. Data Intelligence 5, 2 (2023), 303-354. [2] Parham Abed Azad and Hamid Beigy. 2024. Multi-BERT: Leveraging Adapters and Prompt Tuning for Low-Resource Multi-Domain Adaptation. arXiv preprint arXiv:2404.02335 (2024). [3] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. Tallrec: An effective and efficient tuning framework to align large language model with recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems . 1007-1014. [4] Nick Barber, M Rawlins, and B Dean Franklin. 2003. Reducing prescribing error: competence, control, and culture. BMJ Quality & Safety 12, suppl 1 (2003), i29-i32. [5] Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al. 2020. Language models are few-shot learners. Advances in neural information processing systems 33 (2020), 1877-1901. [6] Jiangxia Cao, Xixun Lin, Xin Cong, Jing Ya, Tingwen Liu, and Bin Wang. 2022. DisenCDR: Learning Disentangled Representations for Cross-Domain Recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 267-277. [7] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In International conference on machine learning . PMLR, 1597-1607. 24 A Contrastive Pretrain Model with Prompt Tuning for Multi-center Medication Recommendation XX, June 03-05,2018, Woodstock, NY 25 XX, June 03-05,2018, Woodstock, NY Qidong Liu et al. 26 A Contrastive Pretrain Model with Prompt Tuning for Multi-center Medication Recommendation 27 XX, June 03-05,2018, Woodstock, NY Qidong Liu et al. [90] Zijian Zhang, Xiangyu Zhao, Qidong Liu, Chunxu Zhang, Qian Ma, Wanyu Wang, Hongwei Zhao, Yiqi Wang, and Zitao Liu. 2023. PromptST: Prompt-Enhanced Spatio-Temporal Multi-Attribute Prediction. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 3195-3205. 28 A Contrastive Pretrain Model with Prompt Tuning for Multi-center Medication Recommendation XX, June 03-05,2018, Woodstock, NY [91] Zhi Zheng, Zhaopeng Qiu, Hui Xiong, Xian Wu, Tong Xu, Enhong Chen, and Xiangyu Zhao. 2022. Ddr: Dialogue based doctor recommendation for online medical service. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 4592-4600. [92] Zhi Zheng, Zhaopeng Qiu, Tong Xu, Xian Wu, Xiangyu Zhao, Enhong Chen, and Hui Xiong. 2022. CBR: context bias aware recommendation for debiasing user modeling and click prediction. In Proceedings of the ACM Web Conference 2022 . 2268-2276. [93] Zhi Zheng, Chao Wang, Tong Xu, Dazhong Shen, Penggang Qin, Xiangyu Zhao, Baoxing Huai, Xian Wu, and Enhong Chen. 2022. Interaction-aware Drug Package Recommendation via Policy Gradient. ACM Transactions on Information Systems (TOIS) (2022). [94] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 1893-1902. Received xx xxxx; revised xx xxxx; accepted xx xxxx 29",
   "keywords_parsed": [
-    "None"
+    "Multi-Center",
+    "Medication Recommendation",
+    "Electronic Health Record",
+    "Contrastive Learning",
+    "Prompt Tuning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Deep learning for medication recommendation: a systematic survey"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Multi-BERT: Leveraging Adapters and Prompt Tuning for Low-Resource Multi-Domain Adaptation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Reducing prescribing error: competence, control, and culture"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b6",
+      "title": "DisenCDR: Learning Disentangled Representations for Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b90",
+      "title": "PromptST: Prompt-Enhanced Spatio-Temporal Multi-Attribute Prediction"
+    },
+    {
+      "ref_id": "b91",
+      "title": "Ddr: Dialogue based doctor recommendation for online medical service"
+    },
+    {
+      "ref_id": "b92",
+      "title": "CBR: context bias aware recommendation for debiasing user modeling and click prediction"
+    },
+    {
+      "ref_id": "b93",
+      "title": "Interaction-aware Drug Package Recommendation via Policy Gradient"
+    },
+    {
+      "ref_id": "b94",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    }
   ]
 }

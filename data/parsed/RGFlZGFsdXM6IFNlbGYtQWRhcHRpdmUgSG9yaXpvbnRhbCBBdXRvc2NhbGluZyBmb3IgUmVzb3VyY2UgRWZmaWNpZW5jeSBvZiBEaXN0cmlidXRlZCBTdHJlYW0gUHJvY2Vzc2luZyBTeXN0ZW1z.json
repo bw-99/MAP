@@ -28,10 +28,108 @@
   "REFERENCES": "[1] Maycon Viana Bordin, Dalvan Griebler, Gabriele Mencagli, Cláudio Fernando Resin Geyer, and Luiz Gustavo Fernandes. 2020. DSPBench: A Suite of Benchmark Applications for Distributed Data Stream Processing Systems. IEEE Access 8 (2020). [2] Michael Borkowski, Christoph Hochreiner, and Stefan Schulte. 2019. Minimizing Cost by Reducing Scaling Operations in Distributed Stream Processing. Proc. VLDB Endow. 12 (2019). [3] Paris Carbone, Asterios Katsifodimos, Stephan Ewen, Volker Markl, Seif Haridi, and Kostas Tzoumas. 2015. Apache flink: Stream and batch processing in a single engine. Data Engineering Bulletin (2015). [4] Valeria Cardellini, Francesco Lo Presti, Matteo Nardelli, and Gabriele Russo Russo. 2022. Run-time Adaptation of Data Stream Processing Systems: The State of the Art. ACM Computing Surveys (CSUR) (2022). [5] Tao Chen, Rami Bahsoon, Shuo Wang, and Xin Yao. 2018. To Adapt or Not to Adapt?: Technical Debt and Learning Driven Self-Adaptation for Managing Runtime Performance. In ICPE . ACM. [6] Sanket Chintapalli, Derek Dagit, Bobby Evans, Reza Farivar, Thomas Graves, Mark Holderbaugh, Zhuo Liu, Kyle Nusbaum, Kishorkumar Patil, Boyang Peng, and Paul Poulosky. 2016. Benchmarking Streaming Computation Engines: Storm, Flink and Spark Streaming. In IPDPS . IEEE Computer Society. [7] John M. Ewing and Daniel A. Menascé. 2014. A meta-controller method for improving run-time self-architecting in SOA systems. In ICPE . ACM. [8] Avrilia Floratou, Ashvin Agrawal, Bill Graham, Sriram Rao, and Karthikeyan Ramasamy. 2017. Dhalion: Self-Regulating Stream Processing in Heron. Proc. VLDB Endow. 10 (2017). [9] Morgan Geldenhuys, Benjamin J. J. Pfister, Dominik Scheinert, Lauritz Thamsen, and Odej Kao. 2022. Khaos: Dynamically Optimizing Checkpointing for Dependable Distributed Stream Processing. In FedCSIS . [10] Morgan K. Geldenhuys, Dominik Scheinert, Odej Kao, and Lauritz Thamsen. 2022. Phoebe: QoS-Aware Distributed Stream Processing through Anticipating Dynamic Workloads. In ICWS . IEEE. [11] Kordian Gontarska, Morgan K. Geldenhuys, Dominik Scheinert, Philipp Wiesner, Andreas Polze, and Lauritz Thamsen. 2021. Evaluation of Load Prediction Techniques for Distributed Stream Processing. In IC2E . IEEE. [12] Thomas Heinze, Valerio Pappalardo, Zbigniew Jerzak, and Christof Fetzer. 2014. Auto-scaling techniques for elastic data stream processing. In DEBS . ACM. [13] Vasiliki Kalavri, John Liagouris, Moritz Hoffmann, Desislava C. Dimitrova, Matthew Forshaw, and Timothy Roscoe. 2018. Three steps is all you need: fast, accurate, automatic scaling decisions for distributed streaming dataflows. In OSDI . USENIX Association. [14] Faria Kalim et al. 2019. Caladrius: A Performance Modelling Service for Distributed Stream Processing Systems. In ICDE . IEEE. [15] André Martin, Tiaraju Smaneoto, Tobias Dietze, Andrey Brito, and Christof Fetzer. 2015. User-Constraint and Self-Adaptive Fault Tolerance for Event Stream Processing Systems. In DSN . IEEE Computer Society. [16] Diego Perez-Palacin and Raffaela Mirandola. 2014. Uncertainties in the modeling of self-adaptive systems: a taxonomy and an example of availability evaluation. In ICPE . ACM. [17] Jason Porter, Daniel A. Menascé, Hassan Gomaa, and Emad Albassam. 2018. TESS: Automated Performance Evaluation of Self-Healing and Self-Adaptive Distributed Software Systems. In ICPE . ACM. [18] Henriette Röger and Ruben Mayer. 2019. A Comprehensive Survey on Parallelization and Elasticity in Stream Processing. ACM Computing Surveys (CSUR) 52 (2019). [19] Matthias J. Sax, Guozhang Wang, Matthias Weidlich, and Johann-Christoph Freytag. 2018. Streams and Tables: Two Sides of the Same Coin. In BIRTE . ACM. [20] G. van Dongen and D. Van den Poel. 2020. Evaluation of Stream Processing Frameworks. IEEE Transactions on Parallel and Distributed Systems 31, 8 (2020). [21] Adriano Vogel, Dalvan Griebler, Marco Danelutto, and Luiz Gustavo Fernandes. 2022. Self-adaptation on parallel stream processing: A systematic review. Concurrency and Computation: Practice and Experience 34 (2022). [22] B. P. Welford. 1962. Note on a Method for Calculating Corrected Sums of Squares and Products. Technometrics 4 (1962). [23] Matei Zaharia, Reynold S. Xin, Patrick Wendell, Tathagata Das, Michael Armbrust, Ankur Dave, Xiangrui Meng, Josh Rosen, Shivaram Venkataraman, Michael J. Franklin, Ali Ghodsi, Joseph Gonzalez, Scott Shenker, and Ion Stoica. 2016. Apache Spark: A Unified Engine for Big Data Processing. Commun. ACM (2016). [24] Liang Zhang, Wenli Zheng, Chao Li, Yao Shen, and Minyi Guo. 2021. AuTraScale: An Automated and Transfer Learning Solution for Streaming System AutoScaling. In IPDPS . IEEE.",
   "keywords_parsed": [
     "Distributed Stream Processing",
-    " Autoscaling",
-    " System Tuning",
-    " Performance Modeling",
-    " Resource Management",
-    " Cloud Computing"
+    "Autoscaling",
+    "System Tuning",
+    "Performance Modeling",
+    "Resource Management",
+    "Cloud Computing"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "DSPBench: A Suite of Benchmark Applications for Distributed Data Stream Processing Systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Minimizing Cost by Reducing Scaling Operations in Distributed Stream Processing"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Apache flink: Stream and batch processing in a single engine"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Run-time Adaptation of Data Stream Processing Systems: The State of the Art"
+    },
+    {
+      "ref_id": "b5",
+      "title": "To Adapt or Not to Adapt?: Technical Debt and Learning Driven Self-Adaptation for Managing Runtime Performance"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Benchmarking Streaming Computation Engines: Storm, Flink and Spark Streaming"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A meta-controller method for improving run-time self-architecting in SOA systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Dhalion: Self-Regulating Stream Processing in Heron"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Khaos: Dynamically Optimizing Checkpointing for Dependable Distributed Stream Processing"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Phoebe: QoS-Aware Distributed Stream Processing through Anticipating Dynamic Workloads"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Evaluation of Load Prediction Techniques for Distributed Stream Processing"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Auto-scaling techniques for elastic data stream processing"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Three steps is all you need: fast, accurate, automatic scaling decisions for distributed streaming dataflows"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Caladrius: A Performance Modelling Service for Distributed Stream Processing Systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "User-Constraint and Self-Adaptive Fault Tolerance for Event Stream Processing Systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Uncertainties in the modeling of self-adaptive systems: a taxonomy and an example of availability evaluation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "TESS: Automated Performance Evaluation of Self-Healing and Self-Adaptive Distributed Software Systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "A Comprehensive Survey on Parallelization and Elasticity in Stream Processing"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Streams and Tables: Two Sides of the Same Coin"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Evaluation of Stream Processing Frameworks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Self-adaptation on parallel stream processing: A systematic review"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Note on a Method for Calculating Corrected Sums of Squares and Products"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Apache Spark: A Unified Engine for Big Data Processing"
+    },
+    {
+      "ref_id": "b24",
+      "title": "AuTraScale: An Automated and Transfer Learning Solution for Streaming System AutoScaling"
+    }
   ]
 }

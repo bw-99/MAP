@@ -27,7 +27,105 @@
   "REFERENCES": "[1] Javad Rahimipour Anaraki and Hamid Usefi. 2019. A feature selection based on perturbation theory. Expert Systems with Applications 127 (2019), 1-8. [2] Paul Baltescu, Haoyu Chen, Nikil Pancha, Andrew Zhai, Jure Leskovec, and Charles Rosenberg. 2022. ItemSage: Learning Product Embeddings for Shopping Recommendations at Pinterest. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Washington DC, USA) (KDD '22). Association for Computing Machinery, New York, NY, USA, 2703-2711. https://doi.org/10.1145/3534678.3539170 [3] Walid Bendada, Guillaume Salha-Galvan, Romain Hennequin, Thomas Bouabça, and Tristan Cazenave. 2023. On the Consistency of Average Embeddings for Item Recommendation. arXiv:2308.12767 [cs.IR] [4] John S. Breese, David Heckerman, and Carl Kadie. 1998. Empirical Analysis of Predictive Algorithms for Collaborative Filtering. In Proceedings of the Fourteenth Conference on Uncertainty in Artificial Intelligence (Madison, Wisconsin) (UAI'98). Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 43-52. [5] Haibin Cheng and Erick Cantú-Paz. 2010. Personalized Click Prediction in Sponsored Search. In Proceedings of the Third ACM International Conference on Web Search and Data Mining (New York, New York, USA) (WSDM '10). Association for Computing Machinery, New York, NY, USA, 351-360. https: //doi.org/10.1145/1718487.1718531 [6] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems (Boston, MA, USA) WWW'24 Companion, May 13-17, 2024, Singapore, Singapore Wei Zhang et al. (DLRS 2016). Association for Computing Machinery, New York, NY, USA, 7-10. https://doi.org/10.1145/2988450.2988454 [7] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems (Boston, Massachusetts, USA) (RecSys '16). Association for Computing Machinery, New York, NY, USA, 191-198. https://doi.org/10. 1145/2959100.2959190 [8] Tim Donkers, Benedikt Loepp, and Jürgen Ziegler. 2017. Sequential UserBased Recurrent Neural Network Recommendations. In Proceedings of the Eleventh ACM Conference on Recommender Systems (Como, Italy) (RecSys '17). Association for Computing Machinery, New York, NY, USA, 152-160. https: //doi.org/10.1145/3109859.3109877 [9] Ahmed El-Kishky, Thomas Markovich, Serim Park, Chetan Verma, Baekjin Kim, Ramy Eskander, Yury Malkov, Frank Portman, Sofía Samaniego, Ying Xiao, and Aria Haghighi. 2022. TwHIN: Embedding the Twitter Heterogeneous Information Network for Personalized Recommendation. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Washington DC, USA) (KDD '22). Association for Computing Machinery, New York, NY, USA, 2842-2850. https://doi.org/10.1145/3534678.3539080 [10] Mihajlo Grbovic and Haibin Cheng. 2018. Real-Time Personalization Using Embeddings for Search Ranking at Airbnb. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD '18). Association for Computing Machinery, New York, NY, USA, 311-320. https://doi.org/10.1145/3219819.3219885 [11] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (Melbourne, Australia) (IJCAI'17). AAAI Press, 1725-1731. [12] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep Residual Learning for Image Recognition. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR). [13] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural Collaborative Filtering. In Proceedings of the 26th International Conference on World Wide Web (Perth, Australia) (WWW '17). International World Wide Web Conferences Steering Committee, Republic and Canton of Geneva, CHE, 173-182. https://doi.org/10.1145/3038912.3052569 [14] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural Collaborative Filtering. In Proceedings of the 26th International Conference on World Wide Web (Perth, Australia) (WWW '17). International World Wide Web Conferences Steering Committee, Republic and Canton of Geneva, CHE, 173-182. https://doi.org/10.1145/3038912.3052569 [15] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In Proceedings of the eighth international workshop on data mining for online advertising. 1-9. [16] Yehuda Koren. 2008. Factorization Meets the Neighborhood: A Multifaceted Collaborative Filtering Model. In Proceedings of the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (Las Vegas, Nevada, USA) (KDD '08). Association for Computing Machinery, New York, NY, USA, 426-434. https://doi.org/10.1145/1401890.1401944 [17] Maxim Naumov, Dheevatsa Mudigere, Hao-Jun Michael Shi, Jianyu Huang, Narayanan Sundaraman, Jongsoo Park, Xiaodong Wang, Udit Gupta, Carole-Jean Wu, Alisson G. Azzolini, Dmytro Dzhulgakov, Andrey Mallevich, Ilia Cherniavskii, Yinghai Lu, Raghuraman Krishnamoorthi, Ansha Yu, Volodymyr Kondratenko, Stephanie Pereira, Xianjie Chen, Wenlin Chen, Vijay Rao, Bill Jia, Liang Xiong, and Misha Smelyanskiy. 2019. Deep Learning Recommendation Model for Personalization and Recommendation Systems. arXiv:1906.00091 [cs.IR] [18] Nikil Pancha, Andrew Zhai, Jure Leskovec, and Charles Rosenberg. 2022. PinnerFormer: Sequence Modeling for User Representation at Pinterest. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Washington DC, USA) (KDD '22). Association for Computing Machinery, New York, NY, USA, 3702-3712. https://doi.org/10.1145/3534678.3539156 [19] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (Anchorage, AK, USA) (KDD '19). Association for Computing Machinery, New York, NY, USA, 2671-2679. https://doi.org/10.1145/ 3292500.3330666 [20] Massimo Quadrana, Alexandros Karatzoglou, Balázs Hidasi, and Paolo Cremonesi. 2017. Personalizing Session-Based Recommendations with Hierarchical Recurrent Neural Networks. In Proceedings of the Eleventh ACM Conference on Recommender Systems (Como, Italy) (RecSys '17). Association for Computing Machinery, New York, NY, USA, 130-137. https://doi.org/10.1145/3109859. 3109896 [21] Steffen Rendle. 2010. Factorization Machines. In 2010 IEEE International Conference on Data Mining. 995-1000. https://doi.org/10.1109/ICDM.2010.127 [22] Steffen Rendle. 2012. Factorization Machines with LibFM. 3, 3, Article 57 (may 2012), 22 pages. https://doi.org/10.1145/2168752.2168771 Scaling User Modeling: Large-scale Online User Representations for Ads Personalization in Meta WWW'24 Companion, May 13-17, 2024, Singapore, Singapore Badr, Jongsoo Park, Jiyan Yang, Dheevatsa Mudigere, and Ellie Wen. 2022. DHEN: A Deep and Hierarchical Ensemble Network for Large-Scale Click-Through Rate Prediction. arXiv:2203.11014 [cs.IR] [37] Junqi Zhang, Bing Bai, Ye Lin, Jian Liang, Kun Bai, and Fei Wang. 2020. GeneralPurpose User Embeddings Based on Mobile App Usage. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (Virtual Event, CA, USA) (KDD '20). Association for Computing Machinery, New York, NY, USA, 2831-2840. https://doi.org/10.1145/3394486.3403334 [38] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep Interest Evolution Network for Click-through Rate Prediction. In Proceedings of the Thirty-Third AAAI Conference on Artificial Intelligence and Thirty-First Innovative Applications of Artificial Intelligence Conference and Ninth AAAI Symposium on Educational Advances in Artificial Intelligence (Honolulu, Hawaii, USA) (AAAI'19/IAAI'19/EAAI'19). AAAI Press, Article 729, 8 pages. https://doi.org/10.1609/aaai.v33i01.33015941",
   "keywords_parsed": [
     "user representation",
-    " personalization",
-    " online advertising"
+    "personalization",
+    "online advertising"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A feature selection based on perturbation theory"
+    },
+    {
+      "ref_id": "b2",
+      "title": "ItemSage: Learning Product Embeddings for Shopping Recommendations at Pinterest"
+    },
+    {
+      "ref_id": "b3",
+      "title": "On the Consistency of Average Embeddings for Item Recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Empirical Analysis of Predictive Algorithms for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Personalized Click Prediction in Sponsored Search"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Sequential User-Based Recurrent Neural Network Recommendations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "TwHIN: Embedding the Twitter Heterogeneous Information Network for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Real-Time Personalization Using Embeddings for Search Ranking at Airbnb"
+    },
+    {
+      "ref_id": "b11",
+      "title": "DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep Residual Learning for Image Recognition"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Neural Collaborative Filtering"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Neural Collaborative Filtering"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Factorization Meets the Neighborhood: A Multifaceted Collaborative Filtering Model"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deep Learning Recommendation Model for Personalization and Recommendation Systems"
+    },
+    {
+      "ref_id": "b18",
+      "title": "PinnerFormer: Sequence Modeling for User Representation at Pinterest"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Personalizing Session-Based Recommendations with Hierarchical Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Factorization Machines with LibFM"
+    },
+    {
+      "ref_id": "b37",
+      "title": "DHEN: A Deep and Hierarchical Ensemble Network for Large-Scale Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Deep Interest Evolution Network for Click-through Rate Prediction"
+    }
   ]
 }

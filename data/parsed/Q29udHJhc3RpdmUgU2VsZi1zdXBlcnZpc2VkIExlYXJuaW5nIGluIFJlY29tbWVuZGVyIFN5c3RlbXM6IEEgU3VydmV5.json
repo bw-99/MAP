@@ -30,6 +30,60 @@
   "ACKNOWLEDGMENTS": "This research is supported in part by National Science Foundation of China (No. 62072304), Shanghai Municipal Science and Technology Commission (No. 21511104700), the Shanghai East Talents Program, the Oceanic Interdisciplinary Program of Shanghai Jiao Tong University (No. SL2020MS032), and Zhejiang Aoxin Co. Ltd.",
   "REFERENCES": "[1] Gediminas Adomavicius and Alexander Tuzhilin. 2005. Toward the Next Generation of Recommender Systems: A Survey of the State-of-the-Art and Possible Extensions. IEEE Trans. Knowl. Data Eng. 17, 6 (2005), 734-749. [2] Immanuel Bayer, Xiangnan He, Bhargav Kanagal, and Steffen Rendle. 2017. A generic coordinate descent framework for learning from implicit feedback. In Proceedings of the 26th International Conference on World Wide Web . 1341-1350. [3] Mohamed Ishmael Belghazi, Aristide Baratin, Sai Rajeshwar, Sherjil Ozair, Yoshua Bengio, Aaron Courville, and Devon Hjelm. 2018. Mutual information neural estimation. In International conference on machine learning . PMLR, 531-540. [4] Yoshua Bengio, Jérôme Louradour, Ronan Collobert, and Jason Weston. 2009. Curriculum learning. In Proceedings of the 26th annual international conference on machine learning . 41-48. [5] Shuqing Bian, Wayne Xin Zhao, Kun Zhou, Jing Cai, Yancheng He, Cunxiang Yin, and Ji-Rong Wen. 2021. Contrastive curriculum learning for sequential user behavior modeling via data augmentation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 3737-3746. [6] Desheng Cai, Shengsheng Qian, Quan Fang, Jun Hu, Wenkui Ding, and Changsheng Xu. 2023. Heterogeneous Graph Contrastive Learning Network for Personalized Micro-Video Recommendation. IEEE Transactions on Multimedia 25 (2023), 2761-2773. [7] Xuheng Cai, Chao Huang, Lianghao Xia, and Xubin Ren. 2023. LightGCL: Simple Yet Effective Graph Contrastive Learning for Recommendation. In The Eleventh International Conference on Learning Representations, ICLR 2023 . OpenReview.net. [8] Jiangxia Cao, Xin Cong, Jiawei Sheng, Tingwen Liu, and Bin Wang. 2022. Contrastive Cross-Domain Sequential Recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management, Atlanta, GA, USA, October 17-21, 2022 , Mohammad Al Hasan and Li Xiong (Eds.). ACM, 138-147. [9] Jiangxia Cao, Xixun Lin, Shu Guo, Luchen Liu, Tingwen Liu, and Bin Wang. 2021. Bipartite graph embedding via mutual information maximization. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . 635-643. [10] Gang Chen, Jiawei Chen, Fuli Feng, Sheng Zhou, and Xiangnan He. 2023. Unbiased Knowledge Distillation for Recommendation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining, WSDM 2023 . ACM, 976-984. [11] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2023. Bias and Debias in Recommender System: A Survey and Future Directions. ACM Trans. Inf. Syst. 41, 3 (2023), 67:1-67:39. [12] Mengru Chen, Chao Huang, Lianghao Xia, Wei Wei, Yong Xu, and Ronghua Luo. 2023. Heterogeneous Graph Contrastive Learning for Recommendation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 544-552. J. ACM, Vol. 37, No. 4, Article 111. Publication date: August 2018. 111:34 M. Jing et al. J. ACM, Vol. 37, No. 4, Article 111. Publication date: August 2018. Contrastive Self-supervised Learning in Recommender Systems: A Survey 111:35 [58] Zhiwei Liu, Yongjun Chen, Jia Li, Man Luo, S Yu Philip, and Caiming Xiong. 2021. Self-supervised Learning for Sequential Recommendation with Model Augmentation. (2021). J. ACM, Vol. 37, No. 4, Article 111. Publication date: August 2018. 111:36 M. Jing et al. J. ACM, Vol. 37, No. 4, Article 111. Publication date: August 2018. Contrastive Self-supervised Learning in Recommender Systems: A Survey 111:37 J. ACM, Vol. 37, No. 4, Article 111. Publication date: August 2018. 111:38 M. Jing et al. J. ACM, Vol. 37, No. 4, Article 111. Publication date: August 2018. Contrastive Self-supervised Learning in Recommender Systems: A Survey 111:39 J. ACM, Vol. 37, No. 4, Article 111. Publication date: August 2018.",
   "keywords_parsed": [
-    "None"
+    "contrastive learning",
+    "self-supervised learning",
+    "unsupervised learning",
+    "survey",
+    "deep learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Toward the Next Generation of Recommender Systems: A Survey of the State-of-the-Art and Possible Extensions"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A generic coordinate descent framework for learning from implicit feedback"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Mutual information neural estimation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Curriculum learning"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Contrastive curriculum learning for sequential user behavior modeling via data augmentation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Heterogeneous Graph Contrastive Learning Network for Personalized Micro-Video Recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "LightGCL: Simple Yet Effective Graph Contrastive Learning for Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Contrastive Cross-Domain Sequential Recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Bipartite graph embedding via mutual information maximization"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Unbiased Knowledge Distillation for Recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Bias and Debias in Recommender System: A Survey and Future Directions"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Heterogeneous Graph Contrastive Learning for Recommendation"
+    }
   ]
 }

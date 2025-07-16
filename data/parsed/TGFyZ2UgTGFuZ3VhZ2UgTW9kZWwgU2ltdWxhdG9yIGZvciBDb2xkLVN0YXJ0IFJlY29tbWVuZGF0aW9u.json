@@ -28,15 +28,190 @@
   "Ethical Considerations": "Our paper focuses on leveraging LLMs to simulate the behaviors of cold items. We believe that pursuing this direction is essential, as it not only reveals the untapped potential of LLMs for a large amount of newly occurred items in recommender systems, while concurrently exhibiting the potential ethical considerations. Here we list two main considerations as follows: (1) Industrial Scenario : We discuss the application in an industrial scenario, which will benefit industrial users and inspire communication between industrial researchers and academic researchers. Nevertheless, it may also pose computational and storage challenges for academic researchers. (2) LLMResource Cost : LLMs' training and deployment require significant computational power, potentially leading to higher energy consumption and environmental impact. Additionally, a minimum of one GTX 3090 GPU may be required for the experiments.",
   "References": "[1] Haoyue Bai, Min Hou, Le Wu, Yonghui Yang, Kun Zhang, Richang Hong, and Meng Wang. 2023. Gorec: a generative cold-start recommendation framework. In Proceedings of the 31st ACM international conference on multimedia . 1004-1012. [2] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. Tallrec: An effective and efficient tuning framework to align large language model with recommendation. arXiv preprint arXiv:2305.00447 (2023). [3] Desheng Cai, Shengsheng Qian, Quan Fang, Jun Hu, and Changsheng Xu. 2023. User cold-start recommendation via inductive heterogeneous graph neural network. ACM Transactions on Information Systems (TOIS) (2023). [4] Yupeng Chang, Xu Wang, Jindong Wang, Yuan Wu, Linyi Yang, Kaijie Zhu, Hao Chen, Xiaoyuan Yi, Cunxiang Wang, Yidong Wang, et al. 2024. A survey on evaluation of large language models. ACM Transactions on Intelligent Systems and Technology 15, 3 (2024), 1-45. [5] Hao Chen, Yuanchen Bei, Qijie Shen, Yue Xu, Sheng Zhou, Wenbing Huang, Feiran Huang, Senzhang Wang, and Xiao Huang. 2024. Macro graph neural networks for online billion-scale recommender systems. In International World Wide Web Conference (WWW) . [6] Hao Chen, Zefan Wang, Feiran Huang, Xiao Huang, Yue Xu, Yishi Lin, Peng He, and Zhoujun Li. 2022. Generative adversarial framework for cold-start item recommendation. In Conference on Information Retrieval (SIGIR) . [7] Hao Chen, Yu Yang, Yuanchen Bei, Zefan Wang, Yue Xu, and Feiran Huang. 2025. Graph Neural Patching for Cold-Start Recommendations. In Australasian Database Conference . Springer, 334-346. [8] Xiaoyu Du, Xiang Wang, Xiangnan He, Zechao Li, Jinhui Tang, and Tat-Seng Chua. 2020. How to learn item representation for cold-start multimedia recommendation?. In International Conference on Multimedia (MM) . [9] Mingqi Gao, Xinyu Hu, Jie Ruan, Xiao Pu, and Xiaojun Wan. 2024. Llm-based nlg evaluation: Current status and challenges. arXiv preprint arXiv:2402.01383 (2024). [10] F Maxwell Harper and Joseph A Konstan. 2015. The movielens datasets: History and context. ACM Transactions on Interactive Intelligent Systems (TIIS) (2015). [11] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, and Meng Wang. 2020. Lightgcn: Simplifying and powering graph convolution network for recommendation. In Conference on Information Retrieval (SIGIR) . [12] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In International World Wide Web Conference (WWW) . [13] Edward J Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2021. Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685 (2021). [14] Feiran Huang, Zefan Wang, Xiao Huang, Yufeng Qian, Zhetao Li, and Hao Chen. 2023. Aligning Distillation For Cold-Start Item Recommendation. In Conference on Information Retrieval (SIGIR) . [15] Jeff Johnson, Matthijs Douze, and Hervé Jégou. 2019. Billion-scale similarity search with GPUs. IEEE Transactions on Big Data (2019). [16] Lei Li, Yongfeng Zhang, Dugang Liu, and Li Chen. 2023. Large language models for generative recommendation: A survey and visionary discussions. arXiv preprint arXiv:2309.01157 (2023). [17] Jianghao Lin, Xinyi Dai, Yunjia Xi, Weiwen Liu, Bo Chen, Xiangyang Li, Chenxu Zhu, Huifeng Guo, Yong Yu, Ruiming Tang, et al. 2023. How Can Recommender Systems Benefit from Large Language Models: A Survey. arXiv preprint arXiv:2306.05817 (2023). [18] Ruochen Liu, Hao Chen, Yuanchen Bei, Qijie Shen, Fangwei Zhong, Senzhang Wang, and Jianxin Wang. 2024. Fine Tuning Out-of-Vocabulary Item Recommendation with User Sequence Imagination. In The Thirty-eighth Annual Conference on Neural Information Processing Systems . [19] Taichi Liu, Chen Gao, Zhenyu Wang, Dong Li, Jianye Hao, Depeng Jin, and Yong Li. 2023. Uncertainty-aware Consistency Learning for Cold-Start Item Recommendation. In Conference on Information Retrieval (SIGIR) . [20] Feiyang Pan, Shuokai Li, Xiang Ao, Pingzhong Tang, and Qing He. 2019. Warm up cold-start advertisements: Improving ctr predictions via learning to learn id embeddings. In Conference on Information Retrieval (SIGIR) . [21] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2009. BPR: Bayesian personalized ranking from implicit feedback. In Conference on Uncertainty in Artificial Intelligence (UAI) . [22] Scott Sanner, Krisztian Balog, Filip Radlinski, Ben Wedin, and Lucas Dixon. 2023. Large language models are competitive near cold-start recommenders for language-and item-based preferences. In Conference on Recommender Systems (RecSys) . [23] Shaoyun Shi, Min Zhang, Xinxing Yu, Yongfeng Zhang, Bin Hao, Yiqun Liu, and Shaoping Ma. 2019. Adaptive feature sampling for recommendation with missing content feature values. In International Conference on Information and Knowledge Management (CIKM) . [24] Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdinov. 2014. Dropout: a simple way to prevent neural networks from overfitting. The Journal of Machine Learning Research (JMLR) (2014). [25] Aaron Van den Oord, Sander Dieleman, and Benjamin Schrauwen. 2013. Deep content-based music recommendation. In Advances in Neural Information Processing Systems (NeurIPS) . [26] Maksims Volkovs, Guangwei Yu, and Tomi Poutanen. 2017. Dropoutnet: Addressing cold start in recommender systems. In Advances in Neural Information Processing Systems (NeurIPS) . [27] Hao Wang, Binyi Chen, and Wu-Jun Li. 2013. Collaborative topic regression with social regularization for tag recommendation. In Conference on Artificial Intelligence (AAAI) . [28] Jianling Wang, Haokai Lu, James Caverlee, Ed H Chi, and Minmin Chen. 2024. Large Language Models as Data Augmenters for Cold-Start Item Recommendation. In International World Wide Web Conference (WWW) . [29] Wenbo Wang, Ben Chen, Bingquan Liu, Xinxin Wang, Luwei Yang, Wen Jiang, Wei Ning, and Jian Guan. 2024. Mutual Information Assisted Graph Convolution Network for Cold-Start Recommendation. In International Conference on Acoustics, Speech and Signal Processing (ICASSP) . [30] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural graph collaborative filtering. In Conference on Information Retrieval (SIGIR) . [31] Jian Wei, Jianhua He, Kai Chen, Yi Zhou, and Zuoyin Tang. 2017. Collaborative filtering and deep learning based recommendation system for cold start items. Expert Systems with Applications (2017). [32] Wei Wei, Xubin Ren, Jiabin Tang, Qinyong Wang, Lixin Su, Suqi Cheng, Junfeng Wang, Dawei Yin, and Chao Huang. 2023. Llmrec: Large language models with graph augmentation for recommendation. arXiv preprint arXiv:2311.00423 (2023). [33] Yinwei Wei, Xiang Wang, Qi Li, Liqiang Nie, Yan Li, Xuanping Li, and Tat-Seng Chua. 2021. Contrastive learning for cold-start recommendation. In International Conference on Multimedia (MM) . [34] Likang Wu, Zhi Zheng, Zhaopeng Qiu, Hao Wang, Hongchao Gu, Tingjia Shen, Chuan Qin, Chen Zhu, Hengshu Zhu, Qi Liu, et al. 2024. A survey on large language models for recommendation. World Wide Web 27, 5 (2024), 60. [35] Zhibo Xiao, Luwei Yang, Wen Jiang, Yi Wei, Yi Hu, and Hao Wang. 2020. Deep multi-interest network for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2265-2268. [36] Xiaoxiao Xu, Chen Yang, Qian Yu, Zhiwei Fang, Jiaxing Wang, Chaosheng Fan, Yang He, Changping Peng, Zhangang Lin, and Jingping Shao. 2022. Alleviating Cold-start Problem in CTR Prediction with A Variational Embedding Learning Framework. In International World Wide Web Conference (WWW) . [37] Jingkang Yang, Kaiyang Zhou, Yixuan Li, and Ziwei Liu. 2024. Generalized out-of-distribution detection: A survey. International Journal of Computer Vision (IJCV) (2024). [38] Yijie Zhang, Yuanchen Bei, Hao Chen, Qijie Shen, Zheng Yuan, Huan Gong, Senzhang Wang, Feiran Huang, and Xiao Huang. 2024. Multi-behavior collaborative filtering with partial order graph convolutional networks. In Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 6257-6268. [39] Zihuai Zhao, Wenqi Fan, Jiatong Li, Yunqing Liu, Xiaowei Mei, Yiqi Wang, Zhen Wen, Fei Wang, Xiangyu Zhao, Jiliang Tang, et al. 2024. Recommender systems in the era of large language models (llms). IEEE Transactions on Knowledge and Data Engineering (2024). [40] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Conference on Artificial Intelligence (AAAI) . Feiran Huang, et al. WSDM'25, March 10-14, 2025, Hannover, Germany. [41] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Conference on Knowledge Discovery and Data Mining (KDD) . [42] Yongchun Zhu, Kaikai Ge, Fuzhen Zhuang, Ruobing Xie, Dongbo Xi, Xu Zhang, Leyu Lin, and Qing He. 2021. Transfer-meta framework for cross-domain recommendation to cold-start users. In Conference on Information Retrieval (SIGIR) . [43] Yongchun Zhu, Ruobing Xie, Fuzhen Zhuang, Kaikai Ge, Ying Sun, Xu Zhang, Leyu Lin, and Juan Cao. 2021. Learning to warm up cold item embeddings for coldstart recommendation with meta scaling and shifting networks. In Conference on Information Retrieval (SIGIR) . [44] Ziwei Zhu, Jingu Kim, Trung Nguyen, Aish Fenton, and James Caverlee. 2021. Fairness among new items in cold start recommender systems. In Conference on Information Retrieval (SIGIR) . [45] Ziwei Zhu, Shahin Sefati, Parsa Saadatpanah, and James Caverlee. 2020. Recommendation for new users and new items via randomized training and mixture-ofexperts transformation. In Conference on Information Retrieval (SIGIR) .",
   "keywords_parsed": [
-    "Recommending cold items remains a significant challenge in billionscale online recommendation systems. While warm items benefit from historical user behaviors",
-    " cold items rely solely on content features",
-    " limiting their recommendation performance and impacting user experience and revenue. Current models generate synthetic behavioral embeddings from content features but fail to address the core issue: the absence of historical behavior data. To tackle this",
-    " we introduce the LLMSimulator framework",
-    " which leverages large language models to simulate user interactions for cold items",
-    " fundamentally addressing the cold-start problem. However",
-    " simply using LLM to traverse all users can introduce significant complexity in billion-scale systems. To manage the computational complexity",
-    " we propose a coupled funnel ColdLLM framework for online recommendation. ColdLLM efficiently reduces the number of candidate users from billions to hundreds using a trained coupled filter",
-    " allowing the LLM to operate efficiently and effectively on the filtered set. Extensive experiments show that ColdLLM significantly surpasses baselines in cold-start recommendations",
-    " including Recall and NDCG metrics. A two-week A/B test also validates that ColdLLM can effectively increase the cold-start period GMV."
+    "cold-start recommendation",
+    "large language models",
+    "data mining"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gorec: a generative cold-start recommendation framework"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "User cold-start recommendation via inductive heterogeneous graph neural network"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A survey on evaluation of large language models"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Macro graph neural networks for online billion-scale recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Generative adversarial framework for cold-start item recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Graph Neural Patching for Cold-Start Recommendations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "How to learn item representation for cold-start multimedia recommendation?"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Llm-based nlg evaluation: Current status and challenges"
+    },
+    {
+      "ref_id": "b10",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Aligning Distillation For Cold-Start Item Recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Billion-scale similarity search with GPUs"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Large language models for generative recommendation: A survey and visionary discussions"
+    },
+    {
+      "ref_id": "b17",
+      "title": "How Can Recommender Systems Benefit from Large Language Models: A Survey"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Fine Tuning Out-of-Vocabulary Item Recommendation with User Sequence Imagination"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Uncertainty-aware Consistency Learning for Cold-Start Item Recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Warm up cold-start advertisements: Improving ctr predictions via learning to learn id embeddings"
+    },
+    {
+      "ref_id": "b21",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Large language models are competitive near cold-start recommenders for language-and item-based preferences"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Adaptive feature sampling for recommendation with missing content feature values"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Dropout: a simple way to prevent neural networks from overfitting"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deep content-based music recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Dropoutnet: Addressing cold start in recommender systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Collaborative topic regression with social regularization for tag recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Large Language Models as Data Augmenters for Cold-Start Item Recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Mutual Information Assisted Graph Convolution Network for Cold-Start Recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Collaborative filtering and deep learning based recommendation system for cold start items"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Llmrec: Large language models with graph augmentation for recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Contrastive learning for cold-start recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "A survey on large language models for recommendation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep multi-interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Alleviating Cold-start Problem in CTR Prediction with A Variational Embedding Learning Framework"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Generalized out-of-distribution detection: A survey"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Multi-behavior collaborative filtering with partial order graph convolutional networks"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Recommender systems in the era of large language models (llms)"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Transfer-meta framework for cross-domain recommendation to cold-start users"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Learning to warm up cold item embeddings for coldstart recommendation with meta scaling and shifting networks"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Fairness among new items in cold start recommender systems"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Recommendation for new users and new items via randomized training and mixture-ofexperts transformation"
+    }
   ]
 }

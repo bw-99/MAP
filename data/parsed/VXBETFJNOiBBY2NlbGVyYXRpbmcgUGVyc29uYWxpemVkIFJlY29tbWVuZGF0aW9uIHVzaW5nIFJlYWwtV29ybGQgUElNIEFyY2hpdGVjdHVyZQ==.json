@@ -20,7 +20,87 @@
   "6 CONCLUSION": "This paper proposes UpDLRM , which utilizes real-world processingin-memory (PIM) hardware, UPMEM DPU, to boost the memory bandwidth and reduce recommendation latency. The parallel nature of the DPU memory can provide high aggregated bandwidth for the large number of irregular memory accesses in embedding lookups, thus offering great potential to reduce the inference latency of DLRMs. To fully utilize the DPU memory bandwidth, we further studied the embedding table partitioning problem to achieve good workload-balance and efficient data caching. Evaluations using realworld datasets show that, UpDLRM achieves up to 4.6x speedup in terms of inference performance compared to both CPU-only and CPU-GPU hybrid counterparts. In the future, we plan to work on designing a DPU-GPU heterogeneous system to further optimize the inference time of DLRM systems.",
   "ACKNOWLEDGEMENT": "This work is supported by National Natural Science Foundation of China (62172282, 62293510, 62293513, 62272252, 62272253), Guangdong Natural Science Foundation 2022A1515010122, Shenzhen Science and Technology Foundation RCYX20221008092908029, and a startup grant of HKBU.",
   "REFERENCES": "[1] 2022. Meta Research. Embedding Lookup Synthetic Dataset. https://github.com/ facebookresearch/dlrm_datasets. [3] 2023. UPMEM User Manual. https://sdk.upmem.com/2023.1.0/index.html. [2] 2023. Introducing the most advanced Processing In Memory product. https: //www.upmem.com/. [4] Muhammad Adnan et al. 2021. Accelerating recommendation system training by leveraging popular choices. arXiv preprint arXiv:2103.00686 (2021). [6] Fabrice Devaux. 2019. The true processing in memory accelerator. In HCS'19 . IEEE Computer Society, 1-24. [5] Paul Covington et al. 2016. Deep neural networks for youtube recommendations. In RecSys'16 . 191-198. [7] Udit Gupta et al. 2020. The architectural implications of facebook's dnn-based personalized recommendation. In HPCA'20 . IEEE, 488-501. [9] Hongju Kal et al. 2021. Space: locality-aware processing in heterogeneous memory for personalized recommendations. In ISCA'21 . IEEE, 679-691. [8] Rishabh Jain et al. 2023. Optimizing CPU Performance for Recommendation Systems At-Scale. In ISCA'23 . Article 77, 15 pages. [10] Liu Ke et al. 2020. Recnmp: Accelerating personalized recommendation with near-memory processing. In ISCA'20 . IEEE, 790-803. [12] Daniar H Kurniawan et al. 2023. EVStore: Storage and Caching Capabilities for Scaling Embedding Tables in Deep Recommendation Systems. In Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2 . 281-294. [11] Heewoo Kim et al. 2023. RecPIM: A PIM-Enabled DRAM-RRAM Hybrid Memory System For Recommendation Models. In ISLPED'23 . 1-6. [13] Maxim Naumov et al. 2019. Deep learning recommendation model for personalization and recommendation systems. arXiv preprint arXiv:1906.00091 (2019). [15] Jianmo Ni et al. 2019. Justifying recommendations using distantly-labeled reviews and fine-grained aspects. In EMNLP-IJCNLP'19 . 188-197. [14] Maxim Naumov et al. 2020. Deep learning training in facebook data centers: Design of scale-up and scale-out systems. arXiv preprint arXiv:2003.09518 (2020). [16] Jérémie Rappaz et al. 2021. Recommendation on live-streaming platforms: Dynamic availability and repeat consumption. In RecSys'21 . 390-399. [18] Mengting Wan et al. 2019. Fine-grained spoiler detection from large-scale review corpora. arXiv preprint arXiv:1905.13416 (2019). [17] Mengting Wan et al. 2018. Item recommendation on monotonic behavior chains. In RecSys'18 . 86-94. [19] Tao Yang et al. 2023. PIMPR: PIM-based Personalized Recommendation with Heterogeneous Memory Hierarchy. In DATE'23 . 1-6. [20] Haojie Ye et al. 2023. GRACE: A Scalable Graph-Based Approach to Accelerating Recommendation Model Inference. In ASPLOS'23 . 282-301.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Embedding Lookup Synthetic Dataset"
+    },
+    {
+      "ref_id": "b3",
+      "title": "UPMEM User Manual"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Introducing the most advanced Processing In Memory product"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Accelerating recommendation system training by leveraging popular choices"
+    },
+    {
+      "ref_id": "b6",
+      "title": "The true processing in memory accelerator"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "The architectural implications of facebook's dnn-based personalized recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Space: locality-aware processing in heterogeneous memory for personalized recommendations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Optimizing CPU Performance for Recommendation Systems At-Scale"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Recnmp: Accelerating personalized recommendation with near-memory processing"
+    },
+    {
+      "ref_id": "b12",
+      "title": "EVStore: Storage and Caching Capabilities for Scaling Embedding Tables in Deep Recommendation Systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "RecPIM: A PIM-Enabled DRAM-RRAM Hybrid Memory System For Recommendation Models"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Justifying recommendations using distantly-labeled reviews and fine-grained aspects"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Deep learning training in facebook data centers: Design of scale-up and scale-out systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Recommendation on live-streaming platforms: Dynamic availability and repeat consumption"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Fine-grained spoiler detection from large-scale review corpora"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Item recommendation on monotonic behavior chains"
+    },
+    {
+      "ref_id": "b19",
+      "title": "PIMPR: PIM-based Personalized Recommendation with Heterogeneous Memory Hierarchy"
+    },
+    {
+      "ref_id": "b20",
+      "title": "GRACE: A Scalable Graph-Based Approach to Accelerating Recommendation Model Inference"
+    }
   ]
 }

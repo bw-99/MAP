@@ -37,8 +37,146 @@
   "Product": "",
   "keywords_parsed": [
     "CTR-Driven",
-    " Advertising Image Generation",
-    " Online Advertising",
-    " Multimodal Large Language Models"
+    "Advertising Image Generation",
+    "Online Advertising",
+    "Multimodal Large Language Models"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "GPT-4V(ision) System Card"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Claude3.5-sonnet"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Gpt-4 technical report"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Training a helpful and harmless assistant with reinforcement learning from human feedback"
+    },
+    {
+      "ref_id": "b5",
+      "title": "VirtualModel: Generating Object-ID-retentive Human-object Interaction Image by Diffusion Model for E-commerce Marketing"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Automated Creative Optimization for E-Commerce Advertising"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep reinforcement learning from human preferences"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Towards Reliable Advertising Image Generation Using Human Feedback"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Image matters: Visually modeling user behaviors using advanced model server"
+    },
+    {
+      "ref_id": "b11",
+      "title": "ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Generative adversarial"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Personalizing Reinforcement Learning from Human Feedback with Variational Preference Learning"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Direct preference optimization: Your language model is secretly a reward model"
+    },
+    {
+      "ref_id": "b38",
+      "title": "High-resolution image synthesis with latent diffusion models"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Proximal policy optimization algorithms"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Distributional preference learning: Understanding and accounting for hidden context in RLHF"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Denoising diffusion implicit models"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Learning to summarize with human feedback"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Llama: Open and efficient foundation language models"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Generate E-commerce Product Background by Integrating Category Commonality and Personalized Style"
+    },
+    {
+      "ref_id": "b45",
+      "title": "A hybrid bandit model with visual priors for creative ranking in display advertising"
+    },
+    {
+      "ref_id": "b46",
+      "title": "CreaGAN: An Automatic Creative Generation Framework for Display Advertising"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Towards personalized bundle creative generation with contrastive nonautoregressive decoding"
+    },
+    {
+      "ref_id": "b48",
+      "title": "CREATER: CTR-driven advertising text generation with controlled pre-training and contrastive fine-tuning"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Better aligning text-to-image models with human preference"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Qwen2 technical report"
+    },
+    {
+      "ref_id": "b51",
+      "title": "ANewCreative Generation Pipeline for Click-Through Rate with Stable Diffusion Model"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Contextual object detection with multimodal large language models"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Adding conditional control to text-to-image diffusion models"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Enhancing Baidu Multimodal Advertisement with Chinese Text-to-Image Generation via Bilingual Alignment and Caption Synthesis"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Beyond one-preference-for-all: Multi-objective direct preference optimization"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Fine-tuning language models from human preferences"
+    }
   ]
 }

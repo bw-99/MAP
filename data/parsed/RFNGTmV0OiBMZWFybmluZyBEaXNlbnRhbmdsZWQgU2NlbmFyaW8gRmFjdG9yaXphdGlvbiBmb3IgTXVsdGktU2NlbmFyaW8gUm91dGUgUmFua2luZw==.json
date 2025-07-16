@@ -21,28 +21,156 @@
   "A PROOF OF LEMMA 3.1": "Proof. First, we prove the second ' ⇔ ' with ∀ 𝑖 ≠ 𝑗 𝜽 ( 𝑖,𝑗 ) = arccos ( -1 𝑁 -1 ) ⇔∀ 𝑖 ≠ 𝑗 ∥ 𝜽 ( 𝑖,𝑗 ) -arccos ( 1 1 -𝑁 )∥ 2 = 0 ⇔ max 𝑖 ≠ 𝑗 ∥ 𝜽 ( 𝑖,𝑗 ) -arccos ( 1 1 -𝑁 )∥ 2 = 0 ⇔ minmax 𝑖 ≠ 𝑗 ∥ 𝜽 ( 𝑖,𝑗 ) -arccos (-1 𝑁 -1 )∥ 2 . Then, we use Ψ 1, Ψ 2 to denote Ψ 1 : minmax 𝑖 ≠ 𝑗 ¯ w ( 𝑖 ) · ¯ w ( 𝑗 ) and Ψ 2 : ∀ 𝑖 ≠ 𝑗 𝜽 ( 𝑖,𝑗 ) = arccos (-1 𝑁 -1 ) , respectively, and we prove Ψ 1 ⇔ Ψ 2 as follows. Since ∀ 𝑖 ∥ ¯ w ( 𝑖 ) ∥ = 1, we have 𝑁 ( 𝑁 -1 ) max 𝑖 ≠ 𝑗 ¯ w ( 𝑖 ) · ¯ w ( 𝑗 ) ≥ ˝ 𝑖 ≠ 𝑗 ¯ w ( 𝑖 ) · ¯ w ( 𝑗 ) = ∥ ˝ 𝑁 𝑖 = 1 ¯ w ( 𝑖 ) ∥ 2 -˝ 𝑁 𝑖 = 1 ∥ ¯ w ( 𝑖 ) ∥ 2 = ∥ ˝ 𝑁 𝑖 = 1 ¯ w ( 𝑖 ) ∥ 2 -𝑁 ≥ -𝑁 , which indicates that min max 𝑖 ≠ 𝑗 ¯ w ( 𝑖 ) · ¯ w ( 𝑗 ) = 1 1 -𝑁 and the minimum is reached when ∀ 𝑘 ≠ 𝑙 ¯ w ( 𝑘 ) · ¯ w ( 𝑙 ) = 1 1 -𝑁 . Thus, we have Ψ 2 ⇒∀ 𝑘 ≠ 𝑙 ¯ w ( 𝑘 ) · ¯ w ( 𝑙 ) = 1 1 -𝑁 ⇒ Ψ 1. But to prove Ψ 1 ⇒ Ψ 2, we still need to prove that ∀ 𝑘 ≠ 𝑙 ¯ w ( 𝑘 ) · ¯ w ( 𝑙 ) = 1 1 -𝑁 can be achieved in the 𝑑 -dimensional space as ¯ w ( 𝑖 ) ∈ R 𝑑 . It is equivalent to ∃ ¯ W s . t . ¯ W 𝑇 ¯ W = P , where ¯ W is the concatenated matrix of { ¯ w ( 𝑖 ) } 𝑁 𝑖 = 1 and P is an 𝑁 × 𝑁 matrix where the diagonal is 1 and the remaining values are 1 1 -𝑁 . According to [1], P is a semi-positive definite matrix whose rank is 𝑁 -1, thus ¯ W can be obtained through the eigendecomposition of P when 𝑑 ≥ 𝑁 -1, which proves Ψ 1 ⇒ Ψ 2. □",
   "REFERENCES": "[2] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, Xinchen Luo, Shiming Xiang, Guorui Zhou, Xiaoqiang Zhu, and Hongbo Deng. 2022. CAN: Feature Co-Action Network for Click-Through Rate Prediction. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (Virtual Event, AZ, USA) (WSDM '22) . Association for Computing Machinery, New York, NY, USA, 57-65. https://doi.org/10.1145/3488560.3498435 [1] Sheldon Jay Axler. 1997. Linear algebra done right . Springer. [3] Rich Caruana. 1997. Multitask Learning. Machine Learning 28 (07 1997). https: //doi.org/10.1023/A:1007379606734 [5] David Eigen, Marc'Aurelio Ranzato, and Ilya Sutskever. 2013. Learning factored representations in a deep mixture of experts. arXiv preprint arXiv:1312.4314 (2013). [4] Brian Donovan and Dan Work. 2016. New York City Taxi Trip Data (2010-2013). https://doi.org/10.13012/J8PN93H8. Accessed: 2023-07-25. [6] Tongwen Huang, Qingyun She, Zhiqiang Wang, and Junlin Zhang. 2020. GateNet: Gating-Enhanced Deep Network for Click-Through Rate Prediction. CoRR abs/2007.03519 (2020). arXiv:2007.03519 https://arxiv.org/abs/2007.03519 [8] Robert A. Jacobs, Michael I. Jordan, Steven J. Nowlan, and Geoffrey E. Hinton. 1991. Adaptive Mixtures of Local Experts. Neural Computation 3, 1 (1991), 79-87. https://doi.org/10.1162/neco.1991.3.1.79 [7] Sergey Ioffe and Christian Sze. 2015. Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. In Proceedings of the 32nd International Conference on Machine Learning , Vol. 37. 448-456. [9] Diederik P. Kingma and Jimmy Ba. 2015. Adam: A Method for Stochastic Optimization. In 3rd International Conference on Learning Representations, ICLR 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings , Yoshua Bengio and Yann LeCun (Eds.). http://arxiv.org/abs/1412.6980 [10] Feifan Li, Lun Du, Qiang Fu, Shi Han, Yushu Du, Guangming Lu, and Zi Li. 2023. DIGMN: Dynamic Intent Guided Meta Network for Differentiated User Engagement Forecasting in Online Professional Social Platforms. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (Singapore, Singapore) (WSDM '23) . Association for Computing Machinery, New York, NY, USA, 384-392. https://doi.org/10.1145/3539597.3570420 [12] Pengcheng Li, Runze Li, Qing Da, An-Xiang Zeng, and Lijun Zhang. 2020. Improving Multi-Scenario Learning to Rank in E-Commerce by Exploiting Task Relationships in the Label Space. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management (Virtual Event, Ireland) (CIKM '20) . Association for Computing Machinery, New York, NY, USA, 2605-2612. https://doi.org/10.1145/3340531.3412713 [11] Junnan Li, Pan Zhou, Caiming Xiong, and Steven C. H. Hoi. 2021. Prototypical Contrastive Learning of Unsupervised Representations. arXiv:2005.04966 [cs.CV] [13] Weiyang Liu, Rongmei Lin, Zhen Liu, Lixin Liu, Zhiding Yu, Bo Dai, and Le Song. 2018. Learning towards Minimum Hyperspherical Energy. In Advances in Neural Information Processing Systems , S. Bengio, H. Wallach, H. Larochelle, K. Grauman, N. Cesa-Bianchi, and R. Garnett (Eds.), Vol. 31. Curran Associates, Inc., 6222-6233. https://proceedings.neurips.cc/paper_files/paper/2018/file/ 177540c7bcb8db31697b601642eac8d4-Paper.pdf [15] Marco Tulio Ribeiro, Sameer Singh, and Carlos Guestrin. 2016. \"Why Should I Trust You?\": Explaining the Predictions of Any Classifier. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (San Francisco, California, USA) (KDD '16) . Association for Computing Machinery, New York, NY, USA, 1135-1144. https://doi.org/10.1145/2939672. 2939778 [14] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H. Chi. 2018. Modeling Task Relationships in Multi-Task Learning with Multi-Gate Mixtureof-Experts. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD '18) . Association for Computing Machinery, New York, NY, USA, 1930-1939. https: //doi.org/10.1145/3219819.3220007 [16] Leonardo Solé Rodrigues, Matteo Sammarco, Marcin Detyniecki, and Miguel Elias M. Campista. 2022. CRAWDAD ufrj/london-trajectories. https://dx.doi.org/ 10.15783/ejej-de94. Accessed: 2023-07-25. [18] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. 2017. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv preprint arXiv:1701.06538 (2017). [17] Aruni RoyChowdhury, Prakhar Sharma, and Erik G. Learned-Miller. 2017. Reducing Duplicate Filters in Deep Neural Networks. In NIPS workshop on Deep Learning: Bridging Theory and Practice . [19] Qijie Shen, Wanjie Tao, Jing Zhang, Hong Wen, Zulong Chen, and Quan Lu. 2021. SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management (Virtual Event, Queensland, Australia) (CIKM '21) . Association for Computing Machinery, New York, NY, USA, 4094-4103. https://doi.org/10.1145/3459637.3481948 [21] Luigi Libero Lucio Starace. 2020. Porto taxi trajectories. https://figshare.com/ articles/dataset/Porto_taxi_trajectories/12302165. Accessed: 2023-07-25. [20] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, and Xiaoqiang Zhu. 2021. One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management (Virtual Event, Queensland, Australia) (CIKM '21) . Association for Computing Machinery, New York, NY, USA, 4104-4113. https://doi.org/10.1145/3459637.3481941 [22] Pieter Merkus Lambertus Tammes. 1930. Onthe origin of number and arrangement of the places of exit on the surface of pollen-grains . Ph. D. Dissertation. University of Groningen. Relation: http://www.rug.nl/ Rights: De Bussy. [24] Yichao Wang, Huifeng Guo, Bo Chen, Weiwen Liu, Zhirong Liu, Qi Zhang, Zhicheng He, Hongkun Zheng, Weiwei Yao, Muyu Zhang, Zhenhua Dong, and Ruiming Tang. 2022. CausalInt: Causal Inspired Intervention for MultiScenario Recommendation. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (Washington DC, USA) (KDD '22) . Association for Computing Machinery, New York, NY, USA, 4090-4099. https://doi.org/10.1145/3534678.3539221 [23] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations. In Proceedings of the 14th ACM Conference on Recommender Systems (Virtual Event, Brazil) (RecSys '20) . Association for Computing Machinery, New York, NY, USA, 269-278. https://doi.org/10.1145/3383313. 3412236 [25] Zhennan Wang, Canqun Xiang, Wenbin Zou, and Chen Xu. 2020. MMA Regularization: Decorrelating Weights of Neural Networks by Maximizing the Minimal Angles. In Advances in Neural Information Processing Systems , H. Larochelle, M. Ranzato, R. Hadsell, M.F. Balcan, and H. Lin (Eds.), Vol. 33. Curran Associates, Inc., 19099-19110. https://proceedings.neurips.cc/paper_files/paper/2020/file/ dcd2f3f312b6705fb06f4f9f1b55b55c-Paper.pdf [26] Senrong Xu, Liangyue Li, Yuan Yao, Zulong Chen, Han Wu, Quan Lu, and Hanghang Tong. 2023. MUSENET: Multi-Scenario Learning for Repeat-Aware DSFNet: Learning Disentangled Scenario Factorization for Multi-Scenario Route Ranking Personalized Recommendation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (Singapore, Singapore) (WSDM '23) . Association for Computing Machinery, New York, NY, USA, 517-525. https: //doi.org/10.1145/3539597.3570414 [28] Ling Yan and Wu-Jun Li. 2014. Coupled Group Lasso for Web-Scale CTR Prediction in Display Advertising. In Proceedings of the 31st International Conference on International Conference on Machine Learning - Volume 32 (Beijing, China) (ICML'14) . JMLR.org, II-802-II-810. [27] Bencheng Yan, Pengjie Wang, Kai Zhang, Feng Li, Hongbo Deng, Jian Xu, and Bo Zheng. 2022. APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction. In Advances in Neural Information Processing Systems , S. Koyejo, S. Mohamed, A. Agarwal, D. Belgrave, K. Cho, and A. Oh (Eds.), Vol. 35. Curran Associates, Inc., 24740-24752. https://proceedings.neurips.cc/paper_files/paper/ 2022/file/9cd0c57170f48520749d5ae62838241f-Paper-Conference.pdf [29] Xuanhua Yang, Xiaoyu Peng, Penghui Wei, Shaoguo Liu, Liang Wang, and Bo Zheng. 2022. AdaSparse: Learning Adaptively Sparse Structures for MultiDomain Click-Through Rate Prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (Atlanta, GA, USA) (CIKM '22) . Association for Computing Machinery, New York, NY, USA, 4635-4639. https://doi.org/10.1145/3511808.3557541 [30] Qianqian Zhang, Xinru Liao, Quan Liu, Jian Xu, and Bo Zheng. 2022. Leaving No OneBehind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (Virtual Event, AZ, USA) (WSDM '22) . Association for Computing Machinery, New York, NY, USA, 1368-1376. https://doi.org/10.1145/ 3488560.3498479 [31] Yifan Zhang, Bingyi Kang, Bryan Hooi, Shuicheng Yan, and Jiashi Feng. 2023. Deep Long-Tailed Learning: A Survey. arXiv:2110.04596 [cs.CV] [33] Yu Zheng. 2011. T-Drive trajectory data sample. https://www.microsoft.com/en- [32] Yuanliang Zhang, Xiaofeng Wang, Jinxin Hu, Ke Gao, Chenyi Lei, and Fei Fang. 2022. Scenario-Adaptive and Self-Supervised Model for Multi-Scenario Personalized Recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (Atlanta, GA, USA) (CIKM '22) . Association for Computing Machinery, New York, NY, USA, 3674-3683. https://doi.org/10.1145/3511808.3557154 us/research/publication/t-drive-trajectory-data-sample/ T-Drive sample dataset. [34] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui [35] Jie Zhou, Xianshuai Cao, Wenhao Li, Lin Bo, Kun Zhang, Chuan Luo, and Qian Yu. 2023. Hinet: Novel multi-scenario & multi-task learning with hierarchical information extraction. In 2023 IEEE 39th International Conference on Data Engineering (ICDE) . IEEE, 2969-2975. Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for ClickThrough Rate Prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (London, United Kingdom) (KDD'18) . Association for Computing Machinery, New York, NY, USA, 1059-1068. https://doi.org/10.1145/3219819.3219823 [36] Xinyu Zou, Zhi Hu, Yiming Zhao, Xuchu Ding, Zhongyi Liu, Chenliang Li, and Aixin Sun. 2022. Automatic Expert Selection for Multi-Scenario and Multi-Task Search. In SIGIR '22: The 45th International ACM SIGIR Conference on Research and Development in Information Retrieval, Madrid, Spain, July 11 - 15, 2022 , Enrique Amigó, Pablo Castells, Julio Gonzalo, Ben Carterette, J. Shane Culpepper, and Gabriella Kazai (Eds.). ACM, 1535-1544. https://doi.org/10.1145/3477495.3531942",
   "keywords_parsed": [
-    "Multi-scenario route ranking (MSRR) is crucial in many industrial mapping systems. However",
-    " the industrial community mainly adopts interactive interfaces to encourage users to select pre-defined scenarios",
-    " which may hinder the downstream ranking performance. In addition",
-    " in the academic community",
-    " the multi-scenario ranking works only come from other fields",
-    " and there are no works specifically focusing on route data due to lacking a publicly available MSRR dataset. Moreover",
-    " all the existing multi-scenario works still fail to address the three specific challenges of MSRR simultaneously",
-    " i.e. explosion of scenario number",
-    " high entanglement",
-    " and high-capacity demand. Different from the prior",
-    " to address MSRR",
-    " our key idea is to factorize the complicated scenario in route ranking into several disentangled factor scenario patterns. Accordingly",
-    " we propose a novel method",
-    " D isentangled S cenario F actorization Net work (DSFNet)",
-    " which flexibly composes scenario-dependent parameters based on a high-capacity multi-factor-scenario-branch structure. Then",
-    " a novel regularization is proposed to induce the disentanglement of factor scenarios. Furthermore",
-    " two extra novel techniques",
-    " i.e. scenario-aware batch normalization and scenarioaware feature filtering",
-    " are developed to improve the network awareness of scenario representation. Additionally",
-    " to facilitate MSRR research in the academic community",
-    " we propose MSDR",
-    " the first large-scale publicly available annotated industrial M ultiS cenario D riving R oute dataset. Comprehensive experimental results demonstrate the superiority of our DSFNet",
-    " which has been successfully deployed in AMap to serve the major online traffic."
+    "Multi-Scenario Learning",
+    "Route Ranking",
+    "Recommender System",
+    "Route Recommendation",
+    "Scenario Disentanglement"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b2",
+      "title": "CAN: Feature Co-Action Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b1",
+      "title": "Linear algebra done right"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Multitask Learning"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Learning factored representations in a deep mixture of experts"
+    },
+    {
+      "ref_id": "b4",
+      "title": "New York City Taxi Trip Data (2010-2013)"
+    },
+    {
+      "ref_id": "b6",
+      "title": "GateNet: Gating-Enhanced Deep Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Adaptive Mixtures of Local Experts"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DIGMN: Dynamic Intent Guided Meta Network for Differentiated User Engagement Forecasting in Online Professional Social Platforms"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Improving Multi-Scenario Learning to Rank in E-Commerce by Exploiting Task Relationships in the Label Space"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Prototypical Contrastive Learning of Unsupervised Representations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Learning towards Minimum Hyperspherical Energy"
+    },
+    {
+      "ref_id": "b15",
+      "title": "\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Modeling Task Relationships in Multi-Task Learning with Multi-Gate Mixture-of-Experts"
+    },
+    {
+      "ref_id": "b16",
+      "title": "CRAWDAD ufrj/london-trajectories"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Reducing Duplicate Filters in Deep Neural Networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Porto taxi trajectories"
+    },
+    {
+      "ref_id": "b20",
+      "title": "One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Onthe origin of number and arrangement of the places of exit on the surface of pollen-grains"
+    },
+    {
+      "ref_id": "b24",
+      "title": "CausalInt: Causal Inspired Intervention for MultiScenario Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations"
+    },
+    {
+      "ref_id": "b25",
+      "title": "MMA Regularization: Decorrelating Weights of Neural Networks by Maximizing the Minimal Angles"
+    },
+    {
+      "ref_id": "b26",
+      "title": "MUSENET: Multi-Scenario Learning for Repeat-Aware DSFNet: Learning Disentangled Scenario Factorization for Multi-Scenario Route Ranking Personalized Recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Coupled Group Lasso for Web-Scale CTR Prediction in Display Advertising"
+    },
+    {
+      "ref_id": "b27",
+      "title": "APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "AdaSparse: Learning Adaptively Sparse Structures for MultiDomain Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Deep Long-Tailed Learning: A Survey"
+    },
+    {
+      "ref_id": "b33",
+      "title": "T-Drive trajectory data sample"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Scenario-Adaptive and Self-Supervised Model for Multi-Scenario Personalized Recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Hinet: Novel multi-scenario & multi-task learning with hierarchical information extraction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Automatic Expert Selection for Multi-Scenario and Multi-Task Search"
+    }
   ]
 }

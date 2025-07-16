@@ -25,7 +25,29 @@
   "REFERENCES": "[1] Jianghao Lin, Yanru Qu, Wei Guo, Xinyi Dai, Ruiming Tang, Yong Yu, and Weinan Zhang. 2023. MAP: A Model-agnostic Pretraining Framework for Click-through Rate Prediction. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 1384-1395. [2] Fangye Wang, Yingxu Wang, Dongsheng Li, Hansu Gu, Tun Lu, Peng Zhang, and Ning Gu. 2022. Enhancing CTR prediction with context-aware feature representation learning. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 343-352. [3] Kaifu Zheng, Lu Wang, Yu Li, Xusong Chen, Hu Liu, Jing Lu, Xiwei Zhao, Changping Peng, Zhangang Lin, and Jingping Shao. 2022. Implicit User Awareness Modeling via Candidate Items for CTR Prediction in Search Ads. In Proceedings of the ACM Web Conference 2022 . 246-255. [4] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open benchmarking for click-through rate prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 2759-2769. [5] Jieming Zhu, Kelong Mao, Quanyu Dai, Liangcai Su, Rong Ma, Jinyang Liu, Guohao Cai, Zhicheng Dou, Xi Xiao, and Rui Zhang. 2022. BARS: Towards Open Benchmarking for Recommender Systems. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . 2 https://www.mindspore.cn/",
   "keywords_parsed": [
     "Recommender systems",
-    " Cross-stage",
-    " CTR prediction"
+    "Cross-stage",
+    "CTR prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "MAP: A Model-agnostic Pretraining Framework for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Enhancing CTR prediction with context-aware feature representation learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Implicit User Awareness Modeling via Candidate Items for CTR Prediction in Search Ads"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Open benchmarking for click-through rate prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "BARS: Towards Open Benchmarking for Recommender Systems"
+    }
   ]
 }

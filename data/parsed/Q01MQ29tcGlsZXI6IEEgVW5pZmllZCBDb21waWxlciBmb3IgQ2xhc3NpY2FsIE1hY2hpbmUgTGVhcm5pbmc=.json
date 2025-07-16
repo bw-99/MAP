@@ -38,7 +38,85 @@
   "REFERENCES": "[1] Martín Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay Ghemawat, Geoffrey Irving, Michael Isard, Manjunath Kudlur, Josh Levenberg, Rajat Monga, Sherry Moore, Derek G. Murray, Benoit Steiner, Paul Tucker, Vijay Vasudevan, Pete Warden, Martin Wicke, Yuan Yu, and Xiaoqiang Zheng. Tensorflow: A system for large-scale machine learning. In Proceedings of the 12th USENIX Conference on Operating Systems Design and Implementation , OSDI'16, page 265-283, USA, 2016. USENIX Association. [3] Prajjwal Bhargava, Aleksandr Drozd, and Anna Rogers. Generalization in nli: Ways (not) to go beyond simple heuristics, 2021. [2] Amazon. The total cost of ownership (tco) of amazon sagemaker. https://pages. awscloud.com/rs/112-TZM-766/images/Amazon_SageMaker_TCO_uf.pdf, 2020. [4] Leo Breiman. Random forests. Machine learning , 45(1):5-32, 2001. [6] Tianqi Chen and Carlos Guestrin. Xgboost: A scalable tree boosting system. In Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining , pages 785-794, 2016. [5] Chih-Chung Chang and Chih-Jen Lin. Libsvm: a library for support vector machines. ACM transactions on intelligent systems and technology (TIST) , 2(3):127, 2011. [7] Tianqi Chen, Thierry Moreau, Ziheng Jiang, Lianmin Zheng, Eddie Yan, Meghan Cowan, Haichen Shen, Leyuan Wang, Yuwei Hu, Luis Ceze, Carlos Guestrin, and Arvind Krishnamurthy. Tvm: An automated end-to-end optimizing compiler for deep learning. In Proceedings of the 13th USENIX Conference on Operating Systems Design and Implementation , OSDI'18, page 579-594, USA, 2018. USENIX Association. [9] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. Wide&deeplearning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems , pages 7-10, 2016. [8] Tianqi Chen, Lianmin Zheng, Eddie Yan, Ziheng Jiang, Thierry Moreau, Luis Ceze, Carlos Guestrin, and Arvind Krishnamurthy. Learning to optimize tensor programs. Advances in Neural Information Processing Systems , 31, 2018. [10] Scott Cyphers, Arjun K. Bansal, Anahita Bhiwandiwalla, Jayaram Bobba, Matthew Brookhart, Avijit Chakraborty, William Constable, Christian Convey, Leona Cook, Omar Kanawi, Robert Kimball, Jason Knight, Nikolay Korovaiko, Varun Kumar Vijay, Yixing Lao, Christopher R. Lishka, Jaikrishnan Menon, Jennifer Myers, Sandeep Aswath Narayana, Adam Procter, and Tristan J. Webb. Intel ngraph: An intermediate representation, compiler, and executor for deep learning. CoRR , abs/1801.08058, 2018. [12] Dheeru Dua and Casey Graff. UCI machine learning repository, 2017. [11] Jeffrey Dean and Sanjay Ghemawat. Mapreduce: simplified data processing on large clusters. Communications of the ACM , 51(1):107-113, 2008. [13] EasonLiao. Cudatree. https://github.com/EasonLiao/CudaTree, 2022. [15] Jerome H Friedman. Greedy function approximation: a gradient boosting machine. Annals of statistics , pages 1189-1232, 2001. [14] Rong-En Fan, Kai-Wei Chang, Cho-Jui Hsieh, Xiang-Rui Wang, and Chih-Jen Lin. Liblinear: A library for large linear classification. the Journal of machine Learning research , 9:1871-1874, 2008. [16] Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial nets. Advances in neural information processing systems , 27, 2014. [18] Kim Hazelwood, Sarah Bird, David Brooks, Soumith Chintala, Utku Diril, Dmytro Dzhulgakov, Mohamed Fawzy, Bill Jia, Yangqing Jia, Aditya Kalro, James Law, Kevin Lee, Jason Lu, Pieter Noordhuis, Misha Smelyanskiy, Liang Xiong, and Xiaodong Wang. Applied machine learning at facebook: A datacenter infrastructure perspective. In 2018 IEEE International Symposium on High Performance [17] H2O.ai. H2o: Scalable machine learning platform. https://github.com/h2oai/h2o-3, 2022. 11 Xu Wen, Wanling Gao, Anzheng Li, Lei Wang, Zihan Jiang, and Jianfeng Zhan [34] Susmita Ray. A quick review of machine learning algorithms. In 2019 International conference on machine learning, big data, cloud and parallel computing 12",
   "keywords_parsed": [
     "Classical Machine Learning",
-    " Deep Learning",
-    " Compiler"
+    "Deep Learning",
+    "Compiler"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Tensorflow: A system for large-scale machine learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Generalization in nli: Ways (not) to go beyond simple heuristics"
+    },
+    {
+      "ref_id": "b2",
+      "title": "The total cost of ownership (tco) of amazon sagemaker"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Random forests"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Xgboost: A scalable tree boosting system"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Libsvm: a library for support vector machines"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Tvm: An automated end-to-end optimizing compiler for deep learning"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Wide&deeplearning for recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning to optimize tensor programs"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Intel ngraph: An intermediate representation, compiler, and executor for deep learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "UCI machine learning repository"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Mapreduce: simplified data processing on large clusters"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Cudatree"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Greedy function approximation: a gradient boosting machine"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Liblinear: A library for large linear classification"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Generative adversarial nets"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Applied machine learning at facebook: A datacenter infrastructure perspective"
+    },
+    {
+      "ref_id": "b17",
+      "title": "H2o: Scalable machine learning platform"
+    },
+    {
+      "ref_id": "b34",
+      "title": "A quick review of machine learning algorithms"
+    }
   ]
 }

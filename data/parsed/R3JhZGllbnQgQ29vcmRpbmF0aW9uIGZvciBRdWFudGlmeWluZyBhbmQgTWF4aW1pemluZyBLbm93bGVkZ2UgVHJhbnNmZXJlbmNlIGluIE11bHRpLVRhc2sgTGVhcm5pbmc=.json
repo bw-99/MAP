@@ -17,7 +17,83 @@
   "4.4 Online A/B Test": "We conduct online experiments on our advertising system for 15 days compared to a well-trained MTL model. We use metrics including 𝐶𝑇𝑅 = #click #impression , 𝐶𝑃𝐶 = cost of advertisers #click , 𝐶𝑉𝑅 = #view #click , and 𝐶𝑃𝐴 = cost of advertisers #view . A higher CTR/CVR and a lower CPC/CPA indicate better performance. In large-scale industrial applications, achieving 1% gains is a significant improvement. CoGrad increases CTR and CVR by 2.03% and 4.75% , respectively, and reduces CPC and CPA by 1.64% and 5.23% . verifying its effectiveness in industry.",
   "5 CONCLUSION": "We propose CoGrad , a transference-driven approach that can automatically maximize inter-task transfer via coordinated gradient modification. It quantifies the transference and performs an optimization by maximizing this quantification and simultaneously minimizing task-specific losses, harmonizing both general and specific knowledge in shared modules to improve overall performance. Both offline and online experiments verify its effectiveness.",
   "REFERENCES": "[1] Rich Caruana. 1997. Multitask learning. Machine learning 28, 1 (1997), 41-75. [2] Zhao Chen, Vijay Badrinarayanan, Chen-Yu Lee, and Andrew Rabinovich. 2018. Gradnorm: Gradient normalization for adaptive loss balancing in deep multitask networks. In International conference on machine learning . PMLR, 794-803. [3] Christopher Fifty, Ehsan Amid, Zhe Zhao, Tianhe Yu, Rohan Anil, and Chelsea Finn. 2021. Efficiently Identifying Task Groupings for Multi-Task Learning. In Neural Information Processing Systems . [4] Ruining He and Julian McAuley. 2016. Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering. In proceedings of the 25th international conference on world wide web . 507-517. [5] Yun He, Xue Feng, Cheng Cheng, Geng Ji, Yunsong Guo, and James Caverlee. 2022. Metabalance: improving multi-task recommendations via adapting gradient magnitudes of auxiliary tasks. In Proceedings of the ACM Web Conference 2022 . 2205-2215. [6] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [7] Seanie Lee, Hae Beom Lee, Juho Lee, and Sung Ju Hwang. 2021. Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning. arXiv preprint arXiv:2110.02600 (2021). [8] Zihan Lin, Xuanhua Yang, Shaoguo Liu, Xiaoyu Peng, Wayne Xin Zhao, Liang Wang, and Bo Zheng. 2022. Personalized Inter-Task Contrastive Learning for CTR&CVR Joint Estimation. arXiv preprint arXiv:2208.13442 (2022). [9] Bo Liu, Xingchao Liu, Xiaojie Jin, Peter Stone, and Qiang Liu. 2021. Conflictaverse gradient descent for multi-task learning. Advances in Neural Information Processing Systems 34 (2021), 18878-18890. [10] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [11] Xiao Ma, Liqin Zhao, Guan Huang, Zhi Wang, Zelin Hu, Xiaoqiang Zhu, and Kun Gai. 2018. Entire space multi-task model: An effective approach for estimating post-click conversion rate. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 1137-1140. [12] Sebastian Ruder. 2017. An overview of multi-task learning in deep neural networks. arXiv preprint arXiv:1706.05098 (2017). [13] Ozan Sener and Vladlen Koltun. 2018. Multi-task learning as multi-objective optimization. Advances in neural information processing systems 31 (2018). [14] Zirui Wang, Zachary C Lipton, and Yulia Tsvetkov. 2020. On negative interference in multilingual models: Findings and a meta-learning treatment. arXiv preprint arXiv:2010.03017 (2020). [15] Zirui Wang, Yulia Tsvetkov, Orhan Firat, and Yuan Cao. 2020. Gradient vaccine: Investigating and improving multi-task optimization in massively multilingual models. arXiv preprint arXiv:2010.05874 (2020). [16] Penghui Wei, Weimin Zhang, Zixuan Xu, Shaoguo Liu, Kuang-chih Lee, and Bo Zheng. 2021. AutoHERI: Automated Hierarchical Representation Integration for Post-Click Conversion Rate Estimation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 3528-3532. [17] Hong Wen, Jing Zhang, Fuyu Lv, Wentian Bao, Tianyi Wang, and Zulong Chen. 2021. Hierarchically modeling micro and macro behaviors via multi-task learning for conversion rate prediction. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2187-2191. [18] Tianhe Yu, Saurabh Kumar, Abhishek Gupta, Sergey Levine, Karol Hausman, and Chelsea Finn. 2020. Gradient surgery for multi-task learning. Advances in Neural Information Processing Systems 33 (2020), 5824-5836. [19] Shuxin Zheng, Qi Meng, Taifeng Wang, Wei Chen, Nenghai Yu, Zhi-Ming Ma, and Tie-Yan Liu. 2017. Asynchronous stochastic gradient descent with delay compensation. In International Conference on Machine Learning . PMLR, 41204129.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Gradnorm: Gradient normalization for adaptive loss balancing in deep multitask networks"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Efficiently Identifying Task Groupings for Multi-Task Learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Metabalance: improving multi-task recommendations via adapting gradient magnitudes of auxiliary tasks"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Personalized Inter-Task Contrastive Learning for CTR&CVR Joint Estimation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Conflictaverse gradient descent for multi-task learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b12",
+      "title": "An overview of multi-task learning in deep neural networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Multi-task learning as multi-objective optimization"
+    },
+    {
+      "ref_id": "b14",
+      "title": "On negative interference in multilingual models: Findings and a meta-learning treatment"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Gradient vaccine: Investigating and improving multi-task optimization in massively multilingual models"
+    },
+    {
+      "ref_id": "b16",
+      "title": "AutoHERI: Automated Hierarchical Representation Integration for Post-Click Conversion Rate Estimation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Hierarchically modeling micro and macro behaviors via multi-task learning for conversion rate prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Gradient surgery for multi-task learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Asynchronous stochastic gradient descent with delay compensation"
+    }
   ]
 }

@@ -34,16 +34,143 @@
   "A.4 Aggregation strategies": "In our experiments, we score the latest sample for each task with the fine-tuned meta block to produce meta embeddings. Alternatively, we also tried the following strategies (Max, Mean, Cos) to produce these embeddings. : · Max: Max pooling across all samples for each task. · Mean: Mean pooling across all samples for each task. · Cos: Cosine similarity weighted mean pooling, where we take a weighted mean across all the samples for each task with the weights set to the cosine similarity between that sample and the latest sample for the task. As we can see from Table 14, all these aggregation strategies performed poorer in comparison to deriving the meta embeddings from the latest sample for each task. Table 14: AUC Gains using different pooling methods for Meta Embedding Generation.",
   "keywords_parsed": [
     "Recommendation systems",
-    " Meta learning",
-    " Hyper-personalization",
-    " Deployment",
-    " Few-shot learning Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. KDD'24",
-    " August 25-29",
-    " 2024",
-    " Barcelona",
-    " Spain © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-XXXX-X/18/06 https://doi.org/XXXXXXX.XXXXXXX"
+    "Meta learning",
+    "Hyper-personalization",
+    "Deployment",
+    "Few-shot learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "KDD Cup 2012, Track 2"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Sequential scenario-specific meta learner for online recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Accurate, large minibatch sgd: Training imagenet in 1 hour"
+    },
+    {
+      "ref_id": "b6",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Meta-Learning Online Adaptation of Language Models"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Hybrid Meta-Learning for Cold-Start Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Meta-learning for online update of recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Meta-Learning with Adaptive Weighted Loss for Imbalanced Cold-Start Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Melu: Meta-learned user preference estimator for cold-start recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Metaselector: Meta-learning for recommendation with user-level adaptive model selection"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A dynamic meta-learning model for time-sensitive cold-start recommendations"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Learning graph meta embeddings for cold-start ads in click-through rate prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Warm up cold-start advertisements: Improving ctr predictions via learning to learn id embeddings"
+    },
+    {
+      "ref_id": "b18",
+      "title": "PNMTA: A pretrained network modulation and task adaptation approach for user cold-start recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Learning an adaptive meta model-generator for incrementally updating recommender systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Multi-objective Optimization of Notifications Using Offline Reinforcement Learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Rapid learning or feature reuse? towards understanding the effectiveness of maml"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Meta-learning with implicit gradients"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Meta-learning with memory-augmented neural networks"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Prototypical networks for few-shot learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "A meta-learning perspective on cold-start recommendations for items"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Deep Meta-learning in Recommendation Systems: A Survey"
+    },
+    {
+      "ref_id": "b29",
+      "title": "DCN v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b30",
+      "title": "G-Meta: Distributed Meta Learning in GPU Clusters for Large-Scale Recommender Systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Personalized adaptive meta learning for cold-start user preference prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Learning and transferring ids representation in e-commerce"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Improving recommendation lists through topic diversification"
+    }
   ]
 }

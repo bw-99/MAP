@@ -18,7 +18,73 @@
   "REFERENCES": "[1] Lei Chen, Fajie Yuan, Jiaxi Yang, Xiangnan He, Chengming Li, and Min Yang. 2023. User-specific Adaptive Fine-tuning for Cross-domain Recommendations. IEEE Transactions on Knowledge and Data Engineering (2023). [2] Qiwei Chen, Yue Xu, Changhua Pei, Shanshan Lv, Tao Zhuang, and Junfeng Ge. 2022. Efficient Long Sequential User Data Modeling for Click-Through Rate Prediction. In 4th Workshop on Deep Learning Practice and Theory for HighDimensional Sparse and Imbalanced Data (DLP-KDD) . [3] Y. N. Dauphin, A. Fan, M. Auli, and D. Grangier. 2016. Language Modeling with Gated Convolutional Networks. In Proceedings of the 34th International Conference on Machine Learning (ICML) . [4] Chen et al. 2020. Behavior sequence transformer for e-commerce recommendation in alibaba. In International Workshop on Deep Learning Practice for HighDimensional Sparse Data (DLP-KDD) . [5] Heng-Tze Cheng et al. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems (DLRS) . arXiv:1606.07792 [6] J. Kirkpatrick et al. 2017. Overcoming catastrophic forgetting in neural networks. Proceedings of the National Academy of Sciences (PNAS) (2017). [7] Rui Gong, Wen Li, Yuhua Chen, and Luc Van Gool. 2019. Dlow: Domain flow for adaptation and generalization. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) . [8] H. Guo, B. Chen, R. Tang, Z. Li, and X. He. 2021. AutoDis: Automatic Discretization for Embedding Numerical Features in CTR Prediction. In ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD) . [9] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In International Joint Conference on Artificial Intelligence (IJCAI) . [10] Guangneng Hu, Yu Zhang, and Qiang Yang. 2018. Conet: Collaborative cross networks for cross-domain recommendation. In Proceedings of the ACM International Conference on Information & Knowledge Management (CIKM) . [11] Xisen Jin, Dejiao Zhang, Henghui Zhu, Wei Xiao, Shang-Wen Li, Xiaokai Wei, Andrew Arnold, and Xiang Ren. 2021. Lifelong Pretraining: Continually Adapting Language Models to Emerging Corpora. arXiv preprint arXiv:2110.08534 (2021). [12] M. Lange, R. Aljundi, M. Masana, S. Parisot, X. Jia, and A. et al. Leonardis. 2021. A continual learning survey: Defying forgetting in classification tasks. IEEE Transactions on Pattern Analysis and Machine Intelligence (2021). [13] Pan Li, Zhichao Jiang, Maofei Que, Yao Hu, and Alexander Tuzhilin. 2021. Dual Attentive Sequential Learning for Cross-Domain Click-Through Rate Prediction. In Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD) . [14] Pan Li and Alexander Tuzhilin. 2020. Ddtcdr: Deep dual transfer cross domain recommendation. In Proceedings of the International Conference on Web Search and Data Mining (ICDM) . [15] Hong Liu, Mingsheng Long, Jianmin Wang, and Yu Wang. 2020. Learning to Adapt to Evolving Domains.. In Advances in Neural Information Processing Systems (NeurIPS) . [16] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD International Conference on",
   "keywords_parsed": [
     "Continual Transfer Learning",
-    " CTR Prediction",
-    " Cross-Domain"
+    "CTR Prediction",
+    "Cross-Domain"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "User-specific Adaptive Fine-tuning for Cross-domain Recommendations"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Efficient Long Sequential User Data Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Language Modeling with Gated Convolutional Networks"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Overcoming catastrophic forgetting in neural networks"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Dlow: Domain flow for adaptation and generalization"
+    },
+    {
+      "ref_id": "b8",
+      "title": "AutoDis: Automatic Discretization for Embedding Numerical Features in CTR Prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Conet: Collaborative cross networks for cross-domain recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Lifelong Pretraining: Continually Adapting Language Models to Emerging Corpora"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A continual learning survey: Defying forgetting in classification tasks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Dual Attentive Sequential Learning for Cross-Domain Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Ddtcdr: Deep dual transfer cross domain recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Learning to Adapt to Evolving Domains."
+    },
+    {
+      "ref_id": "b16",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    }
   ]
 }

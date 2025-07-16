@@ -26,6 +26,276 @@
   "6 CONCLUSION": "The recent advancements in RL4RS pave the way for efficiently capturing users' dynamic interests. However, the nature of online interactions necessitates costly trajectory collection procedures, posing a significant hurdle for researchers interested in this field. In this survey, our goal is to provide a comprehensive overview of offline RL4RS, a novel paradigm that eliminates the need for an expensive data collection process. Alongside reviewing recent works, we also offer insights into potential future opportunities. Specifically, we've compiled and analyzed recent progress in offline RL4RS, organized into two distinct categories: off-policy learning utilizing logged data and offline RL4RS techniques. Furthermore, we address several prevailing challenges in this domain: offline data quality, distribution shift, bias and variance, and explainability. Additionally, we present potential avenues for future exploration in this rapidly evolving field, such as crossdomain recommendation, LLMs, causality, and robustness. Being an emerging topic, offline RL4RS introduces fresh possibilities for integrating pre-existing offline datasets into the realm of RL4RS. This survey can also be perceived as a visionary paper, offering potential benefits to researchers who are newcomers to this field.",
   "REFERENCES": "[1] M Mehdi Afsar, Trafford Crump, and Behrouz Far. 2022. Reinforcement learning based recommender systems: A survey. Comput. Surveys 55, 7 (2022), 1-38. [2] Yuanjiang Cao, Xiaocong Chen, Lina Yao, Xianzhi Wang, and Wei Emma Zhang. 2020. Adversarial attacks and detection on reinforcement learning-based interactive recommender systems. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . Association for Computing Machinery, New York, NY, USA, 1669-1672. [3] Thomas Carta, Clément Romac, Thomas Wolf, Sylvain Lamprier, Olivier Sigaud, and Pierre-Yves Oudeyer. 2023. Grounding large language models in interactive environments with online reinforcement learning. arXiv preprint arXiv:2302.02662 (2023). [4] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2023. Bias and debias in recommender system: A survey and future directions. ACM Transactions on Information Systems 41, 3 (2023), 1-39. [5] Minmin Chen, Alex Beutel, Paul Covington, Sagar Jain, Francois Belletti, and Ed H Chi. 2019. Top-k off-policy correction for a REINFORCE recommender system. In Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining . Association for Computing Machinery, New York, NY, USA, 456-464. [6] Minmin Chen, Can Xu, Vince Gatto, Devanshu Jain, Aviral Kumar, and Ed Chi. 2022. Off-policy actor-critic for recommender systems. In Proceedings of the 16th ACM Conference on Recommender Systems . Association for Computing Machinery, New York, NY, USA, 338-349. [7] Xiaocong Chen, Chaoran Huang, Lina Yao, Xianzhi Wang, Wenjie Zhang, et al. 2020. Knowledge-guided deep reinforcement learning for interactive recommendation. In 2020 International Joint Conference on Neural Networks (IJCNN) . IEEE, 1-8. [8] Xiaocong Chen, Siyu Wang, Lianyong Qi, Yong Li, and Lina Yao. 2023. Intrinsically motivated reinforcement learning based recommendation with counterfactual data augmentation. World Wide Web (2023), 1-22. [9] Xiaocong Chen, Lina Yao, Xiaojun Chang, and Siyu Wang. 2022. Empowerment-driven Policy Gradient Learning with Counterfactual Augmentation in Recommender Systems. In 2022 IEEE International Conference on Data Mining (ICDM) . IEEE, 885-890. J. ACM, Vol. 37, No. 4, Article 111. Publication date: August 2023. 111:22 Chen et al. [10] Xiaocong Chen, Lina Yao, Julian McAuley, Weili Guan, Xiaojun Chang, and Xianzhi Wang. 2022. Locality-sensitive state-guided experience replay optimization for sparse rewards in online recommendation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1316-1325. [11] Xiaocong Chen, Lina Yao, Julian McAuley, Guanglin Zhou, and Xianzhi Wang. 2023. Deep reinforcement learning in recommender systems: A survey and new perspectives. Knowledge-Based Systems 264 (2023), 110335. [12] Thomas Degris, Martha White, and Richard S. Sutton. 2012. Off-Policy Actor-Critic. In Proceedings of the 29th International Coference on International Conference on Machine Learning (Edinburgh, Scotland) (ICML'12) . Omnipress, Madison, WI, USA, 179-186. [13] Yashar Deldjoo, Tommaso Di Noia, and Felice Antonio Merra. 2021. A survey on adversarial recommender systems: from attack/defense strategies to generative adversarial networks. ACM Computing Surveys (CSUR) 54, 2 (2021), 1-38. [14] Yuqing Du, Olivia Watkins, Zihan Wang, Cédric Colas, Trevor Darrell, Pieter Abbeel, Abhishek Gupta, and Jacob Andreas. 2023. Guiding pretraining in reinforcement learning with large language models. arXiv preprint arXiv:2302.06692 (2023). [15] Chongming Gao, Kexin Huang, Jiawei Chen, Yuan Zhang, Biao Li, Peng Jiang, Shiqi Wang, Zhong Zhang, and Xiangnan He. 2023. Alleviating Matthew Effect of Offline Reinforcement Learning in Interactive Recommendation. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (Taipei, Taiwan) (SIGIR '23) . Association for Computing Machinery, New York, NY, USA, 238-248. https://doi.org/10.1145/3539618. 3591636 [16] Yue He, Zimu Wang, Peng Cui, Hao Zou, Yafeng Zhang, Qiang Cui, and Yong Jiang. 2022. Causpref: Causal preference learning for out-of-distribution recommendation. In Proceedings of the ACM Web Conference 2022 . Association for Computing Machinery, New York, NY, USA, 410-421. [17] Alexandre Heuillet, Fabien Couthouis, and Natalia Díaz-Rodríguez. 2021. Explainability in deep reinforcement learning. Knowledge-Based Systems 214 (2021), 106685. [18] William Hoiles and Mihaela Schaar. 2016. Bounded Off-Policy Evaluation with Missing Data for Course Recommendation and Curriculum Design. In Proceedings of The 33rd International Conference on Machine Learning (Proceedings of Machine Learning Research, Vol. 48) , Maria Florina Balcan and Kilian Q. Weinberger (Eds.). PMLR, New York, New York, USA, 1596-1604. [19] Joey Hong, Branislav Kveton, Manzil Zaheer, Sumeet Katariya, and Mohammad Ghavamzadeh. 2023. Multi-task off-policy learning from bandit feedback. In International Conference on Machine Learning (Proceedings of Machine Learning Research) . PMLR, New York, New York, USA, 13157-13173. [20] Rolf Jagerman, Ilya Markov, and Maarten de Rijke. 2019. When people change their mind: Off-policy evaluation in non-stationary recommendation environments. In Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining . Association for Computing Machinery, New York, NY, USA, 447-455. [21] Olivier Jeunen and Bart Goethals. 2021. Pessimistic reward models for off-policy learning in recommendation. In Proceedings of the 15th ACM Conference on Recommender Systems . Association for Computing Machinery, New York, NY, USA, 63-74. [22] Olivier Jeunen and Bart Goethals. 2023. Pessimistic Decision-Making for Recommender Systems. ACM Transactions on Recommender Systems 1, 1 (2023), 1-27. [23] Olivier Jeunen, David Rohde, Flavian Vasile, and Martin Bompaire. 2020. Joint policy-value learning for recommendation. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . Association for Computing Machinery, New York, NY, USA, 1223-1233. [24] Jiechuan Jiang, Chen Dun, Tiejun Huang, and Zongqing Lu. 2018. Graph convolutional reinforcement learning. arXiv preprint arXiv:1810.09202 (2018). [25] Nan Jiang and Lihong Li. 2016. Doubly robust off-policy value evaluation for reinforcement learning. In International Conference on Machine Learning . PMLR, 652-661. [26] Vijay R Konda and John N Tsitsiklis. 2000. Actor-critic algorithms. In Advances in neural information processing systems . Citeseer, 1008-1014. [27] Sergey Levine, Aviral Kumar, George Tucker, and Justin Fu. 2020. Offline reinforcement learning: Tutorial, review, and perspectives on open problems. arXiv preprint arXiv:2005.01643 (2020). [28] Yuxi Li. 2017. Deep reinforcement learning: An overview. arXiv preprint arXiv:1701.07274 (2017). [29] Luofeng Liao, Zuyue Fu, Zhuoran Yang, Yixin Wang, Mladen Kolar, and Zhaoran Wang. 2021. Instrumental variable value iteration for causal offline reinforcement learning. arXiv preprint arXiv:2102.09907 (2021). [30] Yen-Chen Lin, Zhang-Wei Hong, Yuan-Hong Liao, Meng-Li Shih, Ming-Yu Liu, and Min Sun. 2017. Tactics of adversarial attack on deep reinforcement learning agents. arXiv preprint arXiv:1703.06748 (2017). [31] Jinxin Liu, Ziqi Zhang, Zhenyu Wei, Zifeng Zhuang, Yachen Kang, Sibo Gai, and Donglin Wang. 2023. Beyond ood state actions: Supported cross-domain offline reinforcement learning. arXiv preprint arXiv:2306.12755 (2023). J. ACM, Vol. 37, No. 4, Article 111. Publication date: August 2023. On the Opportunities and Challenges of Offline Reinforcement Learning for Recommender Systems 111:23 [32] Jie Lu, Dianshuang Wu, Mingsong Mao, Wei Wang, and Guangquan Zhang. 2015. Recommender system application developments: a survey. Decision Support Systems 74 (2015), 12-32. [33] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Ji Yang, Minmin Chen, Jiaxi Tang, Lichan Hong, and Ed H Chi. 2020. Off-policy learning in two-stage recommender systems. In Proceedings of The Web Conference 2020 . 463-473. [34] Sephora Madjiheurem and Laura Toni. 2019. Representation learning on graphs: A reinforcement learning application. In The 22nd International Conference on Artificial Intelligence and Statistics . PMLR, 3391-3399. [35] Bogdan Mazoure, Ilya Kostrikov, Ofir Nachum, and Jonathan J Tompson. 2022. Improving zero-shot generalization in offline reinforcement learning using generalized similarity functions. Advances in Neural Information Processing Systems 35 (2022), 25088-25101. [36] Robert K Merton. 1988. The Matthew effect in science, II: Cumulative advantage and the symbolism of intellectual property. isis 79, 4 (1988), 606-623. [37] Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013. Efficient estimation of word representations in vector space. arXiv preprint arXiv:1301.3781 (2013). [38] Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Andrei A Rusu, Joel Veness, Marc G Bellemare, Alex Graves, Martin Riedmiller, Andreas K Fidjeland, Georg Ostrovski, et al. 2015. Human-level control through deep reinforcement learning. nature 518, 7540 (2015), 529-533. [39] Yusuke Narita, Shota Yasui, and Kohei Yata. 2021. Debiased off-policy evaluation for recommendation systems. In Proceedings of the 15th ACM Conference on Recommender Systems . 372-379. [40] Kishan Panaganti, Zaiyan Xu, Dileep Kalathil, and Mohammad Ghavamzadeh. 2022. Robust reinforcement learning using offline data. Advances in neural information processing systems 35 (2022), 32211-32224. [41] OtmaneSakhi, Stephen Bonner, David Rohde, and Flavian Vasile. 2020. BLOB: A probabilistic model for recommendation that combines organic and bandit signals. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 783-793. [42] John Schulman, Sergey Levine, Pieter Abbeel, Michael Jordan, and Philipp Moritz. 2015. Trust region policy optimization. In International conference on machine learning . PMLR, 1889-1897. [43] Fei Sun, Jun Liu, Jian Wu, Changhua Pei, Xiao Lin, Wenwu Ou, and Peng Jiang. 2019. BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In Proceedings of the 28th ACM international conference on information and knowledge management . 1441-1450. [44] Richard S Sutton and Andrew G Barto. 2018. Reinforcement learning: An introduction . MIT press. [45] Adith Swaminathan, Akshay Krishnamurthy, Alekh Agarwal, Miro Dudik, John Langford, Damien Jose, and Imed Zitouni. 2017. Off-policy evaluation for slate recommendation. Advances in Neural Information Processing Systems 30 (2017). [46] Chengwei Wang, Tengfei Zhou, Chen Chen, Tianlei Hu, and Gang Chen. 2020. Off-policy recommendation system without exploration. In Advances in Knowledge Discovery and Data Mining: 24th Pacific-Asia Conference, PAKDD 2020, Singapore, May 11-14, 2020, Proceedings, Part I 24 . Springer, 16-27. [47] Siyu Wang, Xiaocong Chen, Dietmar Jannach, and Lina Yao. 2023. Causal Decision Transformer for Recommender Systems via Offline Reinforcement Learning. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (Taipei, Taiwan) (SIGIR '23) . Association for Computing Machinery, New York, NY, USA, 1599-1608. https://doi.org/10.1145/3539618.3591648 [48] Wenjie Wang, Xinyu Lin, Fuli Feng, Xiangnan He, Min Lin, and Tat-Seng Chua. 2022. Causal representation learning for out-of-distribution recommendation. In Proceedings of the ACM Web Conference 2022 . Association for Computing Machinery, New York, NY, USA, 3562-3571. [49] Xiting Wang, Yiru Chen, Jie Yang, Le Wu, Zhengtao Wu, and Xing Xie. 2018. A reinforcement learning framework for explainable recommendation. In 2018 IEEE international conference on data mining (ICDM) . IEEE, 587-596. [50] Yanan Wang, Yong Ge, Li Li, Rui Chen, and Tong Xu. 2020. Offline meta-level model-based reinforcement learning approach for cold-start recommendation. arXiv preprint arXiv:2012.02476 (2020). [51] Christopher JCH Watkins and Peter Dayan. 1992. Q-learning. Machine learning 8, 3-4 (1992), 279-292. [52] Ronald J Williams. 1992. Simple statistical gradient-following algorithms for connectionist reinforcement learning. Machine learning 8, 3-4 (1992), 229-256. [53] Shiwen Wu, Fei Sun, Wentao Zhang, Xu Xie, and Bin Cui. 2022. Graph neural networks in recommender systems: a survey. Comput. Surveys 55, 5 (2022), 1-37. [54] Teng Xiao and Donglin Wang. 2021. A general offline reinforcement learning framework for interactive recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 35. 4512-4520. [55] Teng Xiao and Suhang Wang. 2022. Towards off-policy learning for ranking policies with logged feedback. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 36. 8700-8707. [56] Wenhan Xiong, Thien Hoang, and William Yang Wang. 2017. Deeppath: A reinforcement learning method for knowledge graph reasoning. arXiv preprint arXiv:1707.06690 (2017). J. ACM, Vol. 37, No. 4, Article 111. Publication date: August 2023. 111:24 Chen et al. [57] Yiping Yuan, Ajith Muralidharan, Preetam Nandy, Miao Cheng, and Prakruthi Prabhakar. 2022. Offline reinforcement learning for mobile notifications. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3614-3623. [58] Junjie Zhang, Ruobing Xie, Yupeng Hou, Wayne Xin Zhao, Leyu Lin, and Ji-Rong Wen. 2023. Recommendation as instruction following: A large language model empowered recommendation approach. arXiv preprint arXiv:2305.07001 (2023). [59] Ruiyi Zhang, Tong Yu, Yilin Shen, and Hongxia Jin. 2022. Text-Based Interactive Recommendation via Offline Reinforcement Learning. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 36. 11694-11702. [60] Ruiyi Zhang, Tong Yu, Yilin Shen, Hongxia Jin, and Changyou Chen. 2019. Text-based interactive recommendation via constraint-augmented reinforcement learning. Advances in neural information processing systems 32 (2019). [61] Shuai Zhang, Lina Yao, Aixin Sun, and Yi Tay. 2019. Deep learning based recommender system: A survey and new perspectives. ACM Computing Surveys (CSUR) 52, 1 (2019), 1-38. [62] Xuezhou Zhang, Yiding Chen, Xiaojin Zhu, and Wen Sun. 2022. Corruption-robust offline reinforcement learning. In International Conference on Artificial Intelligence and Statistics . PMLR, 5757-5773. [63] Yongfeng Zhang, Xu Chen, et al. 2020. Explainable recommendation: A survey and new perspectives. Foundations and Trends® in Information Retrieval 14, 1 (2020), 1-101. [64] Kangzhi Zhao, Xiting Wang, Yuren Zhang, Li Zhao, Zheng Liu, Chunxiao Xing, and Xing Xie. 2020. Leveraging Demonstrations for Reinforcement Recommendation Reasoning over Knowledge Graphs. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 239-248. [65] Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, et al. 2023. A survey of large language models. arXiv preprint arXiv:2303.18223 (2023). [66] Guanjie Zheng, Fuzheng Zhang, Zihan Zheng, Yang Xiang, Nicholas Jing Yuan, Xing Xie, and Zhenhui Li. 2018. DRN: A deep reinforcement learning framework for news recommendation. In Proceedings of the 2018 world wide web conference . Association for Computing Machinery, New York, NY, USA, 167-176. [67] Zheng-Mao Zhu, Xiong-Hui Chen, Hong-Long Tian, Kun Zhang, and Yang Yu. 2022. Offline reinforcement learning with causal structured world models. arXiv preprint arXiv:2206.01474 (2022). Received 20 February 2007; revised 12 March 2009; accepted 5 June 2009 J. ACM, Vol. 37, No. 4, Article 111. Publication date: August 2023.",
   "keywords_parsed": [
-    "None"
+    "Offline Reinforcement Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Reinforcement learning based recommender systems: A survey"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Adversarial attacks and detection on reinforcement learning-based interactive recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Grounding large language models in interactive environments with online reinforcement learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Bias and debias in recommender system: A survey and future directions"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Top-k off-policy correction for a REINFORCE recommender system"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Off-policy actor-critic for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Knowledge-guided deep reinforcement learning for interactive recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Intrinsically motivated reinforcement learning based recommendation with counterfactual data augmentation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Empowerment-driven Policy Gradient Learning with Counterfactual Augmentation in Recommender Systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Locality-sensitive state-guided experience replay optimization for sparse rewards in online recommendation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deep reinforcement learning in recommender systems: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Off-Policy Actor-Critic"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A survey on adversarial recommender systems: from attack/defense strategies to generative adversarial networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Guiding pretraining in reinforcement learning with large language models"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Alleviating Matthew Effect of Offline Reinforcement Learning in Interactive Recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Causpref: Causal preference learning for out-of-distribution recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Explainability in deep reinforcement learning"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Bounded Off-Policy Evaluation with Missing Data for Course Recommendation and Curriculum Design"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Multi-task off-policy learning from bandit feedback"
+    },
+    {
+      "ref_id": "b20",
+      "title": "When people change their mind: Off-policy evaluation in non-stationary recommendation environments"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Pessimistic reward models for off-policy learning in recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Pessimistic Decision-Making for Recommender Systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Joint policy-value learning for recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Graph convolutional reinforcement learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Doubly robust off-policy value evaluation for reinforcement learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Actor-critic algorithms"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Offline reinforcement learning: Tutorial, review, and perspectives on open problems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Deep reinforcement learning: An overview"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Instrumental variable value iteration for causal offline reinforcement learning"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Tactics of adversarial attack on deep reinforcement learning agents"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Beyond ood state actions: Supported cross-domain offline reinforcement learning"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Recommender system application developments: a survey"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Off-policy learning in two-stage recommender systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Representation learning on graphs: A reinforcement learning application"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Improving zero-shot generalization in offline reinforcement learning using generalized similarity functions"
+    },
+    {
+      "ref_id": "b36",
+      "title": "The Matthew effect in science, II: Cumulative advantage and the symbolism of intellectual property"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Efficient estimation of word representations in vector space"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Human-level control through deep reinforcement learning"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Debiased off-policy evaluation for recommendation systems"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Robust reinforcement learning using offline data"
+    },
+    {
+      "ref_id": "b41",
+      "title": "BLOB: A probabilistic model for recommendation that combines organic and bandit signals"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Trust region policy optimization"
+    },
+    {
+      "ref_id": "b43",
+      "title": "BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Reinforcement learning: An introduction"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Off-policy evaluation for slate recommendation"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Off-policy recommendation system without exploration"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Causal Decision Transformer for Recommender Systems via Offline Reinforcement Learning"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Causal representation learning for out-of-distribution recommendation"
+    },
+    {
+      "ref_id": "b49",
+      "title": "A reinforcement learning framework for explainable recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Offline meta-level model-based reinforcement learning approach for cold-start recommendation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Q-learning"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Simple statistical gradient-following algorithms for connectionist reinforcement learning"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Graph neural networks in recommender systems: a survey"
+    },
+    {
+      "ref_id": "b54",
+      "title": "A general offline reinforcement learning framework for interactive recommendation"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Towards off-policy learning for ranking policies with logged feedback"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Deeppath: A reinforcement learning method for knowledge graph reasoning"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Offline reinforcement learning for mobile notifications"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Recommendation as instruction following: A large language model empowered recommendation approach"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Text-Based Interactive Recommendation via Offline Reinforcement Learning"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Text-based interactive recommendation via constraint-augmented reinforcement learning"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Deep learning based recommender system: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Corruption-robust offline reinforcement learning"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Explainable recommendation: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Leveraging Demonstrations for Reinforcement Recommendation Reasoning over Knowledge Graphs"
+    },
+    {
+      "ref_id": "b65",
+      "title": "A survey of large language models"
+    },
+    {
+      "ref_id": "b66",
+      "title": "DRN: A deep reinforcement learning framework for news recommendation"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Offline reinforcement learning with causal structured world models"
+    }
   ]
 }

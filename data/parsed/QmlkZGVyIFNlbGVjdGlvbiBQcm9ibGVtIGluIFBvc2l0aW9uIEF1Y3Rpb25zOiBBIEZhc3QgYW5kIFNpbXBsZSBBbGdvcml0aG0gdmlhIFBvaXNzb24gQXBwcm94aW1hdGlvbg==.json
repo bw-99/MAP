@@ -30,7 +30,113 @@
   "D.2 Notes on the Discretization": "Recall that in Section 5, we discretized each generated distribution to a common, finite support { 0 } ∪ { 1 + 𝑖 50 | 𝑖 = 0 , 1 , . . . , 49 } by moving probability mass on each discretized interval inside [ 0 , 2 ] to its left point and by redistributing the mass on ( 2 , +∞) to the discrete points, proportional to their respective probabilities. We picked this unusual discretization to make instances more challenging for Greedy, as without it Greedy and other heuristics like our algorithm produce solutions with nearly optimal approximation efficiency (over 99% for both algorithms). Indeed, two distributions in Table 2: Experimental results of Local Search, Greedy, and both the modified version and the theoretical version of our algorithm. For each algorithm, we show the average relative quality of the produced solution to that of the best-performing algorithm that terminated in 1 week. Error bars denote the standard deviation. Bidder Selection Problem in Position Auctions WWW'24, May 13-17, 2024, Singapore, Singapore a well-structured family of log-normal distributions are likely to have strong dominance relation: a distribution 𝐷 1 = Lognormal ( 𝜇 1 , 𝜎 2 1 ) is always preferable to 𝐷 2 = Lognormal ( 𝜇 2 , 𝜎 2 2 ) , whenever 𝜇 1 ≥ 𝜇 2 and 𝜎 1 ≥ 𝜎 2 . Our choice of discretization was solely based on the comparison between Greedy and Local Search, i.e., after a few empirical trials of different discretizations we simply stopped once the average efficiency of Greedy was less than 99% that of the Local Search.",
   "keywords_parsed": [
     "Bidder Selection",
-    " Submodular Maximization",
-    " Position Auctions"
+    "Submodular Maximization",
+    "Position Auctions"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "The MOSEK optimization toolbox for MATLAB manual"
+    },
+    {
+      "ref_id": "b2",
+      "title": "The Santa Claus Problem"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Bidder Subset Selection Problem in Auction Design"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A Utility Equivalence Theorem for Concave Functions"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Efficient Query Evaluation Using a Two-Level Retrieval Process"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Combinatorial Multi-Armed Bandit with General Reward Functions"
+    },
+    {
+      "ref_id": "b7",
+      "title": "An introduction to the theory of point processes"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Internet Advertising and the Generalized Second-Price Auction: Selling Billions of Dollars Worth of Keywords"
+    },
+    {
+      "ref_id": "b9",
+      "title": "How to probe for an extreme value"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Eligibility Mechanisms: Auctions Meet Information Retrieval"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Gurobi Optimizer Reference Manual"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Mechanism Design and Approximation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Off-Policy Learning-to-Bid with AuctionGym"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Team Performance with Test Scores"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Maximizing Expected Utility for Stochastic Combinatorial Optimization Problems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Stochastic Combinatorial Optimization via Poisson Approximation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Hitting the high notes: Subset selection for maximizing expected order statistics"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Extreme Value Methods with Applications to Finance"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Poisson approximation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A Maximum Likelihood Approach For Selecting Sets of Alternatives"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Two-stage procurement auction with bidders of asymmetric capacity"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Efficient Approximation Schemes for Stochastic Probing and Prophet Problems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Entry and R & D in procurement contracting"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Position auctions"
+    },
+    {
+      "ref_id": "b25",
+      "title": "The VCG Auction in Theory and Practice"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Maximizing expected utility over a knapsack constraint"
+    }
   ]
 }

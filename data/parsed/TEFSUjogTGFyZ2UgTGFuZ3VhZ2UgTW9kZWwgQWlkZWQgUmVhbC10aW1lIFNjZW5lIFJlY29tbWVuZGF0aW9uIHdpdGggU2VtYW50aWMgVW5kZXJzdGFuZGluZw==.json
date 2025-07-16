@@ -27,27 +27,165 @@
   "REFERENCES": "[1] Josh Achiam, Steven Adler, Sandhini Agarwal, Lama Ahmad, Ilge Akkaya, Florencia Leoni Aleman, Diogo Almeida, Janko Altenschmidt, Sam Altman, Shyamal Anadkat, et al. 2023. Gpt-4 technical report. arXiv preprint arXiv:2303.08774 (2023). [2] Sanjeev Arora, Hrishikesh Khandeparkar, Mikhail Khodak, Orestis Plevrakis, and Nikunj Saunshi. 2019. A theoretical analysis of contrastive unsupervised representation learning. In 36th International Conference on Machine Learning, ICML 2019 . International Machine Learning Society (IMLS), 9904-9923. [3] Baichuan. 2023. Baichuan 2: Open Large-scale Language Models. arXiv preprint arXiv:2309.10305 (2023). https://arxiv.org/abs/2309.10305 [4] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. Tallrec: An effective and efficient tuning framework to align large language model with recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems . 1007-1014. [5] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [6] Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung Won Chung, Charles Sutton, Sebastian Gehrmann, et al. 2023. Palm: Scaling language modeling with pathways. Journal of Machine Learning Research 24, 240 (2023), 1-113. [7] Zeyu Cui, Jianxin Ma, Chang Zhou, Jingren Zhou, and Hongxia Yang. 2022. M6-rec: Generative pretrained language models are open-ended recommender systems. arXiv preprint arXiv:2205.08084 (2022). [8] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [9] Zhengxiao Du, Yujie Qian, Xiao Liu, Ming Ding, Jiezhong Qiu, Zhilin Yang, and Jie Tang. 2022. GLM: General Language Model Pretraining with Autoregressive Blank Infilling. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) . 320-335. [10] Zhichao Feng, Junjiie Xie, Kaiyuan Li, Yu Qin, Pengfei Wang, Qianzhong Li, Bin Yin, Xiang Li, Wei Lin, and Shangguang Wang. 2024. Context-based Fast Recommendation Strategy for Long User Behavior Sequence in Meituan Waimai. arXiv preprint arXiv:2403.12566 (2024). [11] Shijie Geng, Shuchang Liu, Zuohui Fu, Yingqiang Ge, and Yongfeng Zhang. 2022. Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5). In 16th ACM Conference on Recommender Systems, RecSys 2022 . Association for Computing Machinery, Inc, 299-315. [12] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. [n. d.]. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. ([n. d.]). [13] Zhankui He, Zhouhang Xie, Rahul Jha, Harald Steck, Dawen Liang, Yesu Feng, Bodhisattwa Prasad Majumder, Nathan Kallus, and Julian McAuley. 2023. Large language models as zero-shot conversational recommenders. In Proceedings of the 32nd ACM international conference on information and knowledge management . 720-730. [14] Wenyue Hua, Lei Li, Shuyuan Xu, Li Chen, and Yongfeng Zhang. 2023. Tutorial on large language models for recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems . 1281-1283. RecSys '24, October 14-18, 2024, Bari, Italy [15] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM conference on recommender systems . 169-177. [16] Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoyanov, and Luke Zettlemoyer. 2019. Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension. arXiv preprint arXiv:1910.13461 (2019). [17] Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi. 2023. Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models. In International conference on machine learning . PMLR, 19730-19742. [18] Junnan Li, Dongxu Li, Caiming Xiong, and Steven Hoi. 2022. Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation. In International conference on machine learning . PMLR, 12888-12900. [19] Xiangyang Li, Bo Chen, Lu Hou, and Ruiming Tang. 2023. Ctrl: Connect tabular and language model for ctr prediction. arXiv preprint arXiv:2306.02841 (2023). [20] Xinhang Li, Chong Chen, Xiangyu Zhao, Yong Zhang, and Chunxiao Xing. 2023. E4SRec: An elegant effective efficient extensible solution of large language models for sequential recommendation. arXiv preprint arXiv:2312.02443 (2023). [21] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [22] Junyang Lin, Rui Men, An Yang, Chang Zhou, Ming Ding, Yichang Zhang, Peng Wang, Ang Wang, Le Jiang, Xianyan Jia, et al. 2021. M6: A chinese multimodal pretrainer. arXiv preprint arXiv:2103.00823 (2021). [23] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [24] Arvind Neelakantan, Tao Xu, Raul Puri, Alec Radford, Jesse Michael Han, Jerry Tworek, Qiming Yuan, Nikolas Tezak, Jong Wook Kim, Chris Hallacy, et al. 2022. Text and code embeddings by contrastive pre-training. arXiv preprint arXiv:2201.10005 (2022). [25] Junyan Qiu, Haitao Wang, Zhaolin Hong, Yiping Yang, Qiang Liu, and Xingxing Wang. 2023. ControlRec: Bridging the semantic gap between language model and personalized recommendation. arXiv preprint arXiv:2311.16441 (2023). [26] XiPeng QIU, TianXiang SUN, YiGe XU, YunFan SHAO, Ning DAI, and XuanJing HUANG. 2017. Pre-trained models for natural language processing: A survey. SCIENCE CHINA Information Sciences 60 (2017), 110100. [27] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J Liu. 2020. Exploring the limits of transfer learning with a unified text-to-text transformer. Journal of machine learning research 21, 140 (2020), 1-67. [28] Xubin Ren, Wei Wei, Lianghao Xia, Lixin Su, Suqi Cheng, Junfeng Wang, Dawei Yin, and Chao Huang. 2023. Representation learning with large language models for recommendation. arXiv preprint arXiv:2310.15950 (2023). [29] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Proceedings of the 14th ACM Conference on Recommender Systems . 269-278. [30] Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, et al. 2023. Llama: Open and efficient foundation language models. arXiv preprint arXiv:2302.13971 (2023). [31] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [32] Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, Maarten Bosma, Denny Zhou, Donald Metzler, et al. 2022. Emergent abilities of large language models. arXiv preprint arXiv:2206.07682 (2022). [33] Wei Wei, Xubin Ren, Jiabin Tang, Qinyong Wang, Lixin Su, Suqi Cheng, Junfeng Wang, Dawei Yin, and Chao Huang. 2024. Llmrec: Large language models with graph augmentation for recommendation. In Proceedings of the 17th ACM International Conference on Web Search and Data Mining . 806-815. [34] Zhiheng Xi, Wenxiang Chen, Xin Guo, Wei He, Yiwen Ding, Boyang Hong, Ming Zhang, Junzhe Wang, Senjie Jin, Enyu Zhou, et al. 2023. The rise and potential of large language model based agents: A survey. arXiv preprint arXiv:2309.07864 (2023). [35] Sha Yuan, Hanyu Zhao, Zhengxiao Du, Ming Ding, Xiao Liu, Yukuo Cen, Xu Zou, Zhilin Yang, and Jie Tang. 2021. Wudaocorpora: A super large-scale chinese corpora for pre-training language models. AI Open 2 (2021), 65-68. [36] Yichi Zhang, Guisheng Yin, and Yuxin Dong. 2023. Contrastive learning with frequency-domain interest trends for sequential recommendation. In Proceedings of the 17th ACM Conference on Recommender Systems . 141-150. [37] Zhengyan Zhang, Xu Han, Zhiyuan Liu, Xin Jiang, Maosong Sun, and Qun Liu. 2019. ERNIE: Enhanced language representation with informative entities. arXiv preprint arXiv:1905.07129 (2019). Zhizhong Wan, Bin Yin, Junjie Xie, Fei Jiang, Xiang Li, and Wei Lin [38] Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, et al. 2023. A survey of large language models. arXiv preprint arXiv:2303.18223 (2023). [39] Yaochen Zhu, Liang Wu, Qi Guo, Liangjie Hong, and Jundong Li. 2023. Collaborative large language model for recommender systems. arXiv preprint arXiv:2311.01343 (2023). Received 29 April 2024; revised 22 July 2024; accepted 19 August 2024",
   "keywords_parsed": [
     "Recommendation System",
-    " Large Language Model",
-    " Contrastive Learning Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. RecSys '24",
-    " October 14-18",
-    " 2024",
-    " Bari",
-    " Italy © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0505-2/24/10...$15.00 https://doi.org/10.1145/3640457.3688135 Zhizhong Wan",
-    " Bin Yin",
-    " Junjie Xie",
-    " Fei Jiang",
-    " Xiang Li",
-    " and Wei Lin. 2024. LARR: Large Language Model Aided Real-time Scene Recommendation with Semantic Understanding. In 18th ACM Conference on Recommender Systems (RecSys '24)",
-    " October 14-18",
-    " 2024",
-    " Bari",
-    " Italy. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 10 pages. https://doi.org/10.1145/3640457.3688135"
+    "Large Language Model",
+    "Contrastive Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gpt-4 technical report"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A theoretical analysis of contrastive unsupervised representation learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Baichuan 2: Open Large-scale Language Models"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Palm: Scaling language modeling with pathways"
+    },
+    {
+      "ref_id": "b7",
+      "title": "M6-rec: Generative pretrained language models are open-ended recommender systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b9",
+      "title": "GLM: General Language Model Pretraining with Autoregressive Blank Infilling"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Context-based Fast Recommendation Strategy for Long User Behavior Sequence in Meituan Waimai"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)"
+    },
+    {
+      "ref_id": "b12",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Large language models as zero-shot conversational recommenders"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Tutorial on large language models for recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Ctrl: Connect tabular and language model for ctr prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "E4SRec: An elegant effective efficient extensible solution of large language models for sequential recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "M6: A chinese multimodal pretrainer"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Text and code embeddings by contrastive pre-training"
+    },
+    {
+      "ref_id": "b25",
+      "title": "ControlRec: Bridging the semantic gap between language model and personalized recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Pre-trained models for natural language processing: A survey"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Representation learning with large language models for recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Llama: Open and efficient foundation language models"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Emergent abilities of large language models"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Llmrec: Large language models with graph augmentation for recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "The rise and potential of large language model based agents: A survey"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Wudaocorpora: A super large-scale chinese corpora for pre-training language models"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Contrastive learning with frequency-domain interest trends for sequential recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "ERNIE: Enhanced language representation with informative entities"
+    },
+    {
+      "ref_id": "b38",
+      "title": "A survey of large language models"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Collaborative large language model for recommender systems"
+    }
   ]
 }

@@ -18,10 +18,256 @@
   "C Evaluation metrics": "· Impression Yield or IY = Relevant Ads impressed Total number of queries × 100 · Click through rate or CTR = Number of Clicks Number of Impressions × 100 For more information about Precision@K (P@K) and nDCG@K (N@K) and their propensity scored variants, please refer to [3]. Table 10: Hyper-parameter values for RAMEN on all datasets to enable reproducibility. RAMEN code will be released publicly. Most hyperparameters were set to their default values across all datasets. LR is learning rate. Multiple clusters were chosen to form a batch hence 𝐵 > 𝐶 . Clusters were refreshed after 5 epochs. Cluster size 𝐶 was doubled after every 25 epochs. Margin 𝛾 = 0 . 3 was used for contrastive loss. For training M2 number of positive samples and negative samples were kept at 2 and 12 respectively. A cell containing the symbol ↑ indicates that that cell contains the same hyperparameter value present in the cell directly above it.",
   "keywords_parsed": [
     "Extreme classification",
-    " Large scale recommendation",
-    " Metadata",
-    " Sponsored search",
-    " ads",
-    " intelligent advertisement"
+    "Large scale recommendation",
+    "Metadata",
+    "Sponsored search",
+    "ads",
+    "intelligent advertisement"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Efficient large scale language modeling with mixtures of experts"
+    },
+    {
+      "ref_id": "b2",
+      "title": "DiSMEC: Distributed Sparse Machines for Extreme Multi-label Classification"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The Extreme Classification Repository: Multi-label Datasets & Code"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Extreme Multi-Label Legal Text Classification: A case study in EU Legislation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "A Modular Deep Learning Approach for Extreme Multi-label Text Classification"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Taming Pretrained Transformers for Extreme Multi-label Text Classification"
+    },
+    {
+      "ref_id": "b7",
+      "title": "FastGCN: Fast Learning with Graph Convolutional Networks via Importance Sampling"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "PINA: Leveraging side information in eXtreme multi-label classification via predicted instance neighborhood aggregation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "SiameseXML: Siamese Networks meet Extreme Classifiers with 100M Labels"
+    },
+    {
+      "ref_id": "b12",
+      "title": "DeepXML: A Deep Extreme Multi-Label Learning Framework Applied to Short Text Documents"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Ngame: Negative mining-aware mini-batching for extreme classification"
+    },
+    {
+      "ref_id": "b14",
+      "title": "VSE++: Improving Visual-Semantic Embeddings with Hard Negatives"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Breaking the Glass Ceiling for Embedding-Based Classifiers for Large Output Spaces"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Efficacy of dual-encoders for extreme multi-label classification"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Dualencoders for extreme multi-label classification"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Distributional Semantics Meets Multi-Label Learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Inductive Representation Learning on Large Graphs"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Momentum contrast for unsupervised visual representation learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Efficiently Teaching an Effective Dense Retriever with Balanced Topic Aware Sampling"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Adaptive Sampling Towards Fast Graph Representation Learning"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Extreme Multi-label Loss Functions for Recommendation, Tagging, Ranking and Other Missing Label Applications"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Slice: Scalable Linear Extreme Classifiers trained on 100 Million Labels for Related Searches"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Extreme F-measure Maximization using Sparse Probability Estimates"
+    },
+    {
+      "ref_id": "b27",
+      "title": "LightXML: Transformer with Dynamic Negative Sampling for High-Performance Extreme Multilabel Text Classification"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Dense passage retrieval for open-domain question answering"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Bonsai: diverse and shallow trees for extreme multi-label classification"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Cascadexml: Rethinking transformers for end-to-end multi-resolution training in extreme multi-label classification"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Latent retrieval for weakly supervised open domain question answering"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Deep Learning for Extreme Multi-label Text Classification"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Multi-Task Deep Neural Networks for Natural Language Understanding"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b35",
+      "title": "TwinBERT: Distilling Knowledge to Twin-Structured Compressed BERT Models for Large-Scale Retrieval"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Sparse, Dense, and Attentional Representations for Text Retrieval"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Extreme Classification in Log Memory using Count-Min Sketch: A Case Study of Amazon Search with 50M Products"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Distributed Representations of Words and Phrases and Their Compositionality"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Fast Label Embeddings via Randomized Linear Algebra"
+    },
+    {
+      "ref_id": "b40",
+      "title": "DECAF: Deep Extreme Classification with Label Features"
+    },
+    {
+      "ref_id": "b41",
+      "title": "ECLARE: Extreme Classification with Label Graph Correlations"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Multimodal extreme classification"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Enriching Document Representations using Auxiliary Knowledge for Extreme Classification"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Automatic differentiation in PyTorch"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Parabel: Partitioned label trees for extreme classification with application to dynamic search advertising"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Rocketqa: An optimized training approach to dense passage retrieval for opendomain question answering"
+    },
+    {
+      "ref_id": "b47",
+      "title": "GalaXC: Graph Neural Networks with Labelwise Attention for Extreme Classification"
+    },
+    {
+      "ref_id": "b48",
+      "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter"
+    },
+    {
+      "ref_id": "b49",
+      "title": "CRAFTML, an Efficient Clustering-based Random Forest for Extreme Multi-label Learning"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Learning for Tail Label Data: A Label-Specific Feature Approach"
+    },
+    {
+      "ref_id": "b51",
+      "title": "A no-regret generalization of hierarchical softmax to extreme multi-label classification"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Approximate nearest neighbor negative contrastive learning for dense text retrieval"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Graphformers: Gnn-nested transformers for representation learning on textual graph"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Knowledge graph contrastive learning for recommendation"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Pretrained Generalized Autoregressive Model with Adaptive Probabilistic Label Clusters for Extreme Multi-label Text Classification"
+    },
+    {
+      "ref_id": "b56",
+      "title": "PPDSparse: A Parallel Primal-Dual Sparse Method for Extreme Classification"
+    },
+    {
+      "ref_id": "b57",
+      "title": "AttentionXML: Extreme MultiLabel Text Classification with Multi-Label Attention Based Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b58",
+      "title": "GraphSAINT: Graph Sampling Based Inductive Learning Method"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Fast multi-resolution transformer fine-tuning for extreme multi-label text classification"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Textgnn: Improving text encoder via graph neural network in sponsored search"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Layer-Dependent Importance Sampling for Training Deep and Large Graph Convolutional Networks"
+    }
   ]
 }

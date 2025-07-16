@@ -29,7 +29,53 @@
   "C Parameter Settings": "In this section, we elaborate on the parameter settings for the implementation of our algorithm. To ensure computational manageability, we limit the length of user behavior sequences to 10 for the Amazon Review dataset, 32 for the Pixel-Rec dataset and 64 for the Industrial dataset. The training process is implemented using a distributed TensorFlow[1] platform, consisting of 10 parameter servers and 40 workers with 12 CPUs per worker. It is worth noting that the performance of our method can be further enhanced as the sampling scale increases, as shown in Table 5. To ensure fairness between our ESANS and the baseline models, in the negative sampling process, for each in-batch positive sample, we randomly select 𝑚 𝑐 = 2 clusters and then draw 𝑚 𝑜 = 5 negative samples from each of these clusters. In contrast, the baseline models select 10 negative samples randomly for each positive sample. These negatives are sampled based on an online sampling framework in the training process and shared across the batch. Additionally, the interpolation coefficient 𝜆 of hard negatives is set to 0.1 for harder interpolation and -0.1 for easier interpolation. The rest of the hyperparameters settings are demonstrated in Table 6. Table 5: Sampling scale experiments for ESANS on #A2. Table 6: Hyper-parameter settings of Our ESANS. 761 760 762 C.3. SMAC 763 765 764 766 768 767 769 In StarCraft II, for CORD, we use a learning rate of 5 10 4 causal inference in role λ role heterogeneity × - . The hyperparameters of c and λ the implementation of CORD is the same as it in MPE. For AQMIX and REFIL, we implement the default configurations d are fixed as 0.0025 throughout the 6M training timesteps for all maps. Except the above three parameters, for each scenario. Our implementation of CORD and COPA derives from REFIL (Iqbal et al., 2021) with the MIT license. with 4 Nvidia GPUs (A100) and 224 Intel CPU cores. The environment and model are configured in Python. All models are constructed utilizing PyTorch and trained on a system 14",
   "keywords_parsed": [
     "Recommendation systems",
-    " Embedding-based retrieval",
-    " Negative sampling"
+    "Embedding-based retrieval",
+    "Negative sampling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "TensorFlow: a system for Large-Scale machine learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Ask the gru: Multitask learning for deep text recommendations"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Controllable multi-interest framework for recommendation"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Irgan: A minimax game for unifying generative and discriminative information retrieval models"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Cross-batch negative sampling for training two-tower recommenders"
+    },
+    {
+      "ref_id": "b55",
+      "title": "MMGCN: Multi-modal graph convolution network for personalized recommendation of micro-video"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Mixed negative sampling for learning two-tower neural networks in recommendations"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Sampling-bias-corrected neural modeling for large corpus item recommendations"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Optimizing top-n collaborative filtering via dynamic negative item sampling"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Autoloss: Automated loss function search in recommendations"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Bootstrap latent representations for multimodal recommendation"
+    }
   ]
 }

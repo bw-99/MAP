@@ -43,8 +43,146 @@
   "8.1 Partial Display of Prompt Template for RTBAgent": "Due to space limitations, only a portion of the prompt templates for RTBAgent is displayed. We will organize and publish the remaining codes and prompt templates soon. Profile Definition Template of Insight Reasoning. 1 \"\"\" 2 # YOUR ROLE 3 -You are a senior data analyst specializing in in-depth research and strategy development in the field of real -time bidding (RTB) advertising placement. 4 -You use advanced data analysis tools and algorithms to guide advertisers to gain an advantage in fierce market competition. 5 -Your goal is to maximize the number of clicks through data analysis and algorithm adjustments given the budget for the day. WWWCompanion '25, April 28-May 2, 2025, Sydney, NSW, Australia Leng Cai, Junxuan He, Yikai Li, Junjie Liang, Yuanping Lin, Ziming Quan, Yawen Zeng & Jin Xu 6 -You need to regularly adjust the bidding factor based on historical decision -making , current environmental conditions , and algorithmic bidding recommendations. 7 8 # CONTEXT 9 {history} 10 11 # THE REFERENCE GIVEN BY THE BIDDING ALGORITHM FOR ADVERTISER 12 {bidding_reference} 13 # ENVIRONMENT STATUS 14 {environment_status} 15 # NOW YOUR ACTION IS 16 The bidding factor for this period = the bidding factor given by the algorithm * (1+adjustment) 17 Now, you need to analyze the advantages and disadvantages of each \"adjustment range\" based on historical decisions , current environmental conditions , and algorithm suggestions. 18 The selection space for \"adjustment range\" is from {{[-0.5,-0.4), [-0.4,-0.3), [-0.3,-0.2), [-0.2,-0.1), [-0.1,0.0), [0.0,0.1), [0.1,0.2), [0.2,0.3), [0.3,0.4), [0.4,0.5]}}. 19 While making your analysis , consider the following: 20 1. **Historical Performance**: Adjustments that have previously optimized budget usage and improved click volume without significantly impacting the win rate are valuable. 21 2. **Exploration of New Adjustments**: Exploring new adjustment ranges , especially positive adjustments range like [0.0,0.1), [0.1,0.2), and [0.2,0.3), can potentially uncover more effective strategies. Increasing the bid may improve visibility and click volume , particularly in competitive environments. 22 3. **Balancing Stability and Innovation**: Strive to balance between maintaining strategies that have shown consistent performance and exploring new adjustments. A mix of historical strategy and new exploration , with a focus on positive adjustments , could provide a balanced approach to ensure cost efficiency , maximize clicks , and adapt to market changes. 23 Please output a JSON in the following format for all analyses: 24 ``` json 25 {{ 26 \"adjustment range for [-0.5,-0.4)\": str = xx, 27 \"adjustment range for [-0.4,-0.3)\": str = xx, 28 \"adjustment range for [-0.3,-0.2)\": str = xx, 29 \"adjustment range for [-0.2,-0.1)\": str = xx, 30 \"adjustment range for [-0.1,0.0)\": str = xx, 31 \"adjustment range for [0.0,0.1)\": str = xx, 32 \"adjustment range for [0.1,0.2)\": str = xx, 33 \"adjustment range for [0.2,0.3)\": str = xx, 34 \"adjustment range for [0.3,0.4)\": str = xx, 35 \"adjustment range for [0.4,0.5]\": str = xx 36 }} 37 \"\"\" Profile Definition Template of History Bidding Summary. 1 \"\"\" 2 You are an advanced history summary tool specializing in big data insights. Your task is to analyze recent trends and evaluate the effectiveness of decision -making behaviors over the selected time window. 3 Please summarize the following information with a focus on recent changes , highlighting any new patterns , shifts , or significant deviations from past behavior. Pay particular attention to the current environment information provided at the end of this document. Use concise language to ensure the summary is clear and actionable. 4 Summarize and return the output strictly in the following JSON format , without any additional text or explanations: 5 ``` json 6 {{ 7 \"summary\": str = xx 8 }} 9 ``` 10 \"\"\"",
   "keywords_parsed": [
     "Real-Time Bidding",
-    " Bid Optimization",
-    " Large Language Models",
-    " Bidding Agents"
+    "Bid Optimization",
+    "Large Language Models",
+    "Bidding Agents"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Budget optimization for sponsored search: Censored learning in mdps"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Real-time bidding by reinforcement learning in display advertising"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Soulchat: Improving llms' empathy, listening, and comfort abilities through fine-tuning with multi-turn empathy conversations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Linear programming"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Challenges of reinforcement learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Generative Auto-bidding via Conditional Diffusion Modeling"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A real-world webagent with planning, long context understanding, and program synthesis"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A unified solution to constrained bidding in online display advertising"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Metagpt: Meta programming for multi-agent collaborative framework"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Agentcoder: Multi-agent-based code generation with iterative testing and optimisation"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Internet Advertising Revenue Report 2022"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Estimating conversion rate in display advertising from past performance data"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Agent hospital: A simulacrum of hospital with evolvable medical agents"
+    },
+    {
+      "ref_id": "b14",
+      "title": "iPinYou global rtb bidding algorithm competition dataset"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Fingpt: Democratizing internet-scale data for financial large language models"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Do LLMs Possess a Personality? Making the MBTI Test an Amazing Evaluation for Large Language Models"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Generative agents: Interactive simulacra of human behavior"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Bid optimizing and inventory scoring in targeted online advertising"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Algorithmic game theory"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Real-time bidding: A new frontier of computational advertising research"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Display advertising with real-time bidding (RTB) and behavioural targeting"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Budget constrained bidding by model-free reinforcement learning in display advertising"
+    },
+    {
+      "ref_id": "b24",
+      "title": "EduAgent: Generative Student Agents in Learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Auto-gpt for online decision making: Benchmarks and additional opinions"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Online convex optimization with stochastic constraints"
+    },
+    {
+      "ref_id": "b27",
+      "title": "A low complexity algorithm with 𝑂 ( 𝑇 ) regret and 𝑂 ( 1 ) constraint violations for online convex optimization with long term constraints"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Self-rewarding language models"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Huatuogpt, towards taming language model to be a doctor"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Optimal real-time bidding frameworks discussion"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Optimal real-time bidding for display advertising"
+    },
+    {
+      "ref_id": "b32",
+      "title": "FinAgent: A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Deep reinforcement learning for sponsored search real-time bidding"
+    },
+    {
+      "ref_id": "b34",
+      "title": "LawGPT: A Chinese Legal Knowledge-Enhanced Large Language Model"
+    }
   ]
 }

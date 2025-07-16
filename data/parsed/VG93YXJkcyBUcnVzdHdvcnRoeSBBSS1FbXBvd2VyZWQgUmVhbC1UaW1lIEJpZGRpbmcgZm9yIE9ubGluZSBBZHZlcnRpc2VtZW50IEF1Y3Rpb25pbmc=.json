@@ -39,6 +39,45 @@
   "111:26 · Tang and Yu": "Towards Trustworthy AI-Empowered Real-Time Bidding for Online Advertisement Auctioning · 111:27",
   "111:28 · Tang and Yu": "Towards Trustworthy AI-Empowered Real-Time Bidding for Online Advertisement Auctioning · 111:29 111:30 · Tang and Yu [114] Yifan Wang, Weizhi Ma, Min Zhang, Yiqun Liu, and Shaoping Ma. 2022. A Survey on the Fairness of Recommender Systems. arXiv:2206.03761 (2022). [115] Yanshi Wang, Jie Zhang, Qing Da, and Anxiang Zeng. 2020. Delayed feedback modeling for the entire space conversion rate prediction. arXiv:2011.11826 (2020). [116] Penghui Wei, Weimin Zhang, Zixuan Xu, Shaoguo Liu, Kuang-chih Lee, and Bo Zheng. 2021. AutoHERI: Automated Hierarchical Representation Integration for Post-Click Conversion Rate Estimation. In CIKM . 3528-3532. [117] Hong Wen, Jing Zhang, Fuyu Lv, Wentian Bao, Tianyi Wang, and Zulong Chen. 2021. Hierarchically modeling micro and macro behaviors via multi-task learning for conversion rate prediction. In SIGIR . 2187-2191. [118] Hong Wen, Jing Zhang, Yuan Wang, Fuyu Lv, Wentian Bao, Quan Lin, and Keping Yang. 2020. Entire space multi-task modeling via post-click behavior decomposition for conversion rate prediction. In SIGIR . 2377-2386. [119] David H Wolpert and William G Macready. 1997. No free lunch theorems for optimization. IEEE transactions on evolutionary computation 1, 1 (1997), 67-82. [120] Wush Wu, Mi-Yen Yeh, and Ming-Syan Chen. 2018. Deep censored learning of the winning price in the real time bidding. In KDD . 2526-2535. [121] Wush Chi-Hsuan Wu, Mi-Yen Yeh, and Ming-Syan Chen. 2015. Predicting winning price in real time bidding with censored data. In KDD . 1305-1314. [122] Yongkai Wu, Lu Zhang, and Xintao Wu. 2019. Counterfactual fairness: Unidentification, bound and algorithm. In IJCAI . 1438-1444. [123] Haitao Xu, Daiping Liu, Aaron Koehl, Haining Wang, and Angelos Stavrou. 2014. Click fraud detection on the advertiser side. In ESORICS . 419-438. [124] Haizhi Yang, Tengyun Wang, Xiaoli Tang, Qianyu Li, Yueyue Shi, Siyu Jiang, Han Yu, and Hengjie Song. 2021. Multi-task Learning for Bias-Free Joint CTR Prediction and Market Price Modeling in Online Advertising. In CIKM . 2291-2300. [125] Bianca Zadrozny. 2004. Learning and evaluating classifiers under sample selection bias. In ICML . 114. [126] Wenhao Zhang, Wentian Bao, Xiao-Yang Liu, Keping Yang, Quan Lin, Hong Wen, and Ramin Ramezani. 2020. Large-scale causal approaches to debiasing post-click conversion rate estimation with multi-task learning. In WWW . 2775-2781. [127] Weinan Zhang, Tianxiong Zhou, Jun Wang, and Jian Xu. 2016. Bid-aware gradient descent for unbiased learning with censored data in display advertising. In KDD . 665-674. [128] Tian Zhou, Hao He, Shengjun Pan, Niklas Karlsson, Bharatbhushan Shetty, Brendan Kitts, Djordje Gligorijevic, San Gultekin, Tingyu Mao, Junwei Pan, et al. 2021. An efficient deep distribution network for bid shading in first-price auctions. In KDD . 3996-4004. [129] Shitong Zhu, Xunchao Hu, Zhiyun Qian, Zubair Shafiq, and Heng Yin. 2018. Measuring and disrupting anti-adblockers using differential execution analysis. In NDSS . 1-15. [130] Wen-Yuan Zhu, Wen-Yueh Shih, Ying-Hsuan Lee, Wen-Chih Peng, and Jiun-Long Huang. 2017. A gamma-based regression for winning price estimation in real-time bidding advertising. In Big Data . 1610-1619. [131] Xingquan Zhu, Haicheng Tao, Zhiang Wu, Jie Cao, Kristopher Kalish, and Jeremy Kayne. 2017. Fraud prevention in online digital advertising . Springer.",
   "keywords_parsed": [
-    "None"
+    "trustworthy artificial intelligence",
+    "real-time bidding",
+    "auction",
+    "security",
+    "robustness",
+    "fairness"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Knowing your enemy: understanding and detecting malicious web advertising"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Smart mobile bot detection through behavioral analysis"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Discrimination through optimization: How Facebook's Ad delivery can lead to biased outcomes"
+    },
+    {
+      "ref_id": "b4",
+      "title": "On the security of pay-per-click and other web advertising schemes"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Sold for more than you should have paid"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Click fraud detection in mobile ads served in programmatic inventory"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Gmcm: Graph-based micro-behavior conversion model for post-click conversion rate estimation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Learning from automatically labeled data: case study on click fraud prediction"
+    }
   ]
 }

@@ -19,28 +19,93 @@
   "REFERENCES": "[1] Chris Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole Hamilton, and Greg Hullender. 2005. Learning to rank using gradient descent. In Proceedings of the 22nd international conference on Machine learning . 89-96. [2] Giannis Christoforidis, Pavlos Kefalas, Apostolos Papadopoulos, and Yannis Manolopoulos. 2018. Recommendation of points-of-interest using graph embeddings. In 2018 IEEE 5th International Conference on Data Science and Advanced Analytics (DSAA) . IEEE, 31-40. [3] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [4] Qiang Cui, Chenrui Zhang, Yafeng Zhang, Jinpeng Wang, and Mingchen Cai. 2021. ST-PIL: Spatial-Temporal Periodic Interest Learning for Next Point-of-Interest Recommendation. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 2960-2964. [5] Yuxiao Dong, Nitesh V Chawla, and Ananthram Swami. 2017. metapath2vec: Scalable representation learning for heterogeneous networks. In Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining . 135-144. [6] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep session interest network for click-through rate prediction. In Proceedings of the 28th International Joint Conference on Artificial Intelligence . 2301-2307. [7] Will Hamilton, Zhitao Ying, and Jure Leskovec. 2017. Inductive representation learning on large graphs. Advances in neural information processing systems 30 (2017). [8] Haoyu Han, Mengdi Zhang, Min Hou, Fuzheng Zhang, Zhongyuan Wang, Enhong Chen, Hongwei Wang, Jianhui Ma, and Qi Liu. 2020. STGCN: A SpatialTemporal Aware Graph Learning Method for POI Recommendation. In 2020 IEEE International Conference on Data Mining (ICDM) . IEEE, 1052-1057. [9] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [10] Jui-Ting Huang, Ashish Sharma, Shuying Sun, Li Xia, David Zhang, Philip Pronin, Janani Padmanabhan, Giuseppe Ottaviano, and Linjun Yang. 2020. Embeddingbased retrieval in facebook search. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2553-2561. CIKM '23, October 21-25, 2023, Birmingham, United Kingdom [11] Md Ashraful Islam, Mir Mahathir Mohammad, Sarkar Snigdha Sarathi Das, and Mohammed Eunus Ali. 2022. A survey on deep learning based Point-of-Interest (POI) recommendations. Neurocomputing 472 (2022), 306-325. [12] Thomas N Kipf and Max Welling. 2015. Semi-Supervised Classification with Graph Convolutional Networks. In International Conference on Learning Representations . [13] Thomas N Kipf and Max Welling. 2017. Semi-Supervised Classification with Graph Convolutional Networks. In International Conference on Learning Representations . [14] Nicholas Lim, Bryan Hooi, See-Kiong Ng, Xueou Wang, Yong Liang Goh, Renrong Weng, and Jagannadan Varadarajan. 2020. STP-UDGAT: Spatial-temporalpreference user dimensional graph attention network for next POI recommendation. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 845-854. [15] Fuyu Lv, Taiwei Jin, Changlong Yu, Fei Sun, Quan Lin, Keping Yang, and Wilfred Ng. 2019. SDM: Sequential deep matching model for online large-scale recommender system. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 2635-2643. [16] Vinod Nair and Geoffrey E Hinton. 2010. Rectified linear units improve restricted boltzmann machines. In Proceedings of the 27th international conference on machine learning (ICML-10) . 807-814. [17] Ke Sun, Tieyun Qian, Tong Chen, Yile Liang, Quoc Viet Hung Nguyen, and Hongzhi Yin. 2020. Where to go next: Modeling long-and short-term user preferences for point-of-interest recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 214-221. [18] Petar Veličković, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Lio, and Yoshua Bengio. 2018. Graph attention networks. In Proceedings of International Conference on Learning Representations . [19] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural graph collaborative filtering. In Proceedings of the 42nd international ACM SIGIR conference on Research and development in Information Retrieval . 165-174. [20] Min Xie, Hongzhi Yin, Hao Wang, Fanjiang Xu, Weitong Chen, and Sen Wang. 2016. Learning graph-based poi embedding for location-based recommendation. In Proceedings of the 25th ACM international on conference on information and knowledge management . 15-24. [21] Fuqiang Yu, Lizhen Cui, Wei Guo, Xudong Lu, Qingzhong Li, and Hua Lu. 2020. A category-aware deep model for successive POI recommendation on sparse check-in data. In Proceedings of the web conference 2020 . 1264-1274.",
   "keywords_parsed": [
     "POI recommendation",
-    " spatial-temporal",
-    " graph neural network ∗ These authors contributed equally to this research. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CIKM '23",
-    " October 21-25",
-    " 2023",
-    " Birmingham",
-    " United Kingdom © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0124-5/23/10...$15.00 https://doi.org/10.1145/xxxxxxx.xxxxxxx Shaohua Liu",
-    " Yu Qi",
-    " Gen Li",
-    " Mingjian Chen",
-    " Teng Zhang",
-    " Jia Cheng",
-    " and Jun Lei. 2023. STGIN: Spatial-Temporal Graph Interaction Network for Largescale POI Recommendation. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (CIKM '23)",
-    " October 21-25",
-    " 2023",
-    " Birmingham",
-    " United Kingdom. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 5 pages. https://doi.org/10.1145/xxxxxxx.xxxxxxx"
+    "spatial-temporal",
+    "graph neural network"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning to rank using gradient descent"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Recommendation of points-of-interest using graph embeddings"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b4",
+      "title": "ST-PIL: Spatial-Temporal Periodic Interest Learning for Next Point-of-Interest Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "metapath2vec: Scalable representation learning for heterogeneous networks"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b8",
+      "title": "STGCN: A Spatial-Temporal Aware Graph Learning Method for POI Recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Embedding-based retrieval in facebook search"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A survey on deep learning based Point-of-Interest (POI) recommendations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "STP-UDGAT: Spatial-temporal preference user dimensional graph attention network for next POI recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "SDM: Sequential deep matching model for online large-scale recommender system"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Rectified linear units improve restricted boltzmann machines"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Where to go next: Modeling long-and short-term user preferences for point-of-interest recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Graph attention networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Learning graph-based poi embedding for location-based recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "A category-aware deep model for successive POI recommendation on sparse check-in data"
+    }
   ]
 }

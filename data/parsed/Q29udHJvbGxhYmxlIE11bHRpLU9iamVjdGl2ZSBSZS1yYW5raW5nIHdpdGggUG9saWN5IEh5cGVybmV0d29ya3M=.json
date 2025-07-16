@@ -21,7 +21,205 @@
   "REFERENCES": "[1] Irwan Bello, Sayali Kulkarni, Sagar Jain, Craig Boutilier, Ed Chi, Elad Eban, Xiyang Luo, Alan Mackey, and Ofer Meshi. 2018. Seq2slate: Re-ranking and slate optimization with rnns. arXiv preprint arXiv:1810.02019 (2018). [2] John R Birge and Francois Louveaux. 2011. Introduction to stochastic programming . Springer Science & Business Media. [3] Fedor Borisyuk, Krishnaram Kenthapadi, David Stein, and Bo Zhao. 2016. CaSMoS: A framework for learning candidate selection models over structured queries and documents. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 441-450. [4] Christopher JC Burges. 2010. From ranknet to lambdarank to lambdamart: An overview. Learning 11, 23-581 (2010), 81. [5] Jaime Carbonell and Jade Goldstein. 1998. The use of MMR, diversity-based reranking for reordering documents and producing summaries. In Proceedings of the 21st annual international ACM SIGIR conference on Research and development in information retrieval . 335-336. [6] Yoav Goldberg. 2017. Neural network methods for natural language processing. Synthesis lectures on human language technologies 10, 1 (2017), 1-309. [7] Yu Gong, Yu Zhu, Lu Duan, Qingwen Liu, Ziyu Guan, Fei Sun, Wenwu Ou, and Kenny Q Zhu. 2019. Exact-k recommendation via maximal clique optimization. In Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining . 617-626. [8] Qi Hao, Tianze Luo, and Guangda Huzhang. 2021. Re-ranking with constraints on diversified exposures for homepage recommender system. arXiv preprint arXiv:2112.07621 (2021). [9] Guangda Huzhang, Zhenjia Pang, Yongqing Gao, Yawen Liu, Weijie Shen, Wen-Ji Zhou, Qing Da, Anxiang Zeng, Han Yu, Yang Yu, et al. 2021. AliExpress LearningTo-Rank: Maximizing online model performance without going online. IEEE Transactions on Knowledge and Data Engineering (2021). [10] Dietmar Jannach. 2022. Multi-objective recommendation: Overview and challenges. In Proceedings of the 2nd Workshop on Multi-Objective Recommender Systems co-located with 16th ACM Conference on Recommender Systems (RecSys 2022) , Vol. 3268. [11] Zhengbao Jiang, Ji-Rong Wen, Zhicheng Dou, Wayne Xin Zhao, Jian-Yun Nie, and Ming Yue. 2017. Learning to diversify search results via subtopic attention. In Proceedings of the 40th international ACM SIGIR Conference on Research and Development in Information Retrieval . 545-554. [12] Chen Karako and Putra Manggala. 2018. Using image fairness representations in diversity-based re-ranking for recommendations. In Adjunct Publication of the 26th Conference on User Modeling, Adaptation and Personalization . 23-28. [13] George Karypis, Eui-Hong Han, and Vipin Kumar. 2005. Item-based top-n recommendation algorithms. ACM Transactions on Information Systems (TOIS) 22, 1 (2005), 143-177. [14] Yehuda Koren. 2009. Matrix factorization techniques for recommender systems. Computer 42, 8 (2009), 30-37. [15] Denis Kotkov, Shuaiqiang Wang, and Jari Veijalainen. 2016. A survey of serendipity in recommender systems. Knowledge-Based Systems 111 (2016), 180-192. [16] Yann LeCun, Yoshua Bengio, and Geoffrey Hinton. 2015. Deep learning. nature 521, 7553 (2015), 436-444. [17] Dingcheng Li, Xu Li, Jun Wang, and Ping Li. 2020. Video recommendation with multi-gate mixture of experts soft actor critic. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1553-1556. [18] Xi Lin, Zhiyuan Yang, Qingfu Zhang, and Sam Kwong. 2020. Controllable pareto multi-task learning. arXiv preprint arXiv:2010.06313 (2020). [19] Xi Lin, Hui-Ling Zhen, Zhenhua Li, Qing-Fu Zhang, and Sam Kwong. 2019. Pareto multi-task learning. Advances in neural information processing systems 32 (2019). [20] Jiongnan Liu, Zhicheng Dou, Xiaojie Wang, Shuqi Lu, and Ji-Rong Wen. 2020. DVGAN: a minimax game for search result diversification combining explicit and implicit features. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 479-488. [21] Weiwen Liu, Yunjia Xi, Jiarui Qin, Fei Sun, Bo Chen, Weinan Zhang, Rui Zhang, and Ruiming Tang. 2022. Neural Re-ranking in Multi-stage Recommender Systems: A Review. arXiv preprint arXiv:2202.06602 (2022). [22] Mingsheng Long, Zhangjie Cao, Jianmin Wang, and Philip S Yu. 2017. Learning multiple tasks with multilinear relationship networks. Advances in neural information processing systems 30 (2017). [23] Debabrata Mahapatra and Vaibhav Rajan. 2020. Multi-task learning with user preferences: Gradient descent with controlled ascent in pareto optimization. In International Conference on Machine Learning . PMLR, 6597-6607. [24] Mehdi Mirza and Simon Osindero. 2014. Conditional generative adversarial nets. arXiv preprint arXiv:1411.1784 (2014). [25] Ishan Misra, Abhinav Shrivastava, Abhinav Gupta, and Martial Hebert. 2016. Cross-stitch networks for multi-task learning. In Proceedings of the IEEE conference on computer vision and pattern recognition . 3994-4003. [26] Aviv Navon, Aviv Shamsian, Gal Chechik, and Ethan Fetaya. 2020. Learning the pareto front with hypernetworks. arXiv preprint arXiv:2010.04104 (2020). [27] Harrie Oosterhuis. 2021. Computationally efficient optimization of plackett-luce ranking models for relevance and fairness. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1023-1032. [28] Dripta S Raychaudhuri, Yumin Suh, Samuel Schulter, Xiang Yu, Masoud Faraki, Amit K Roy-Chowdhury, and Manmohan Chandraker. 2022. Controllable Dynamic Multi-Task Architectures. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 10955-10964. [29] Sebastian Ruder. 2017. An overview of multi-task learning in deep neural networks. arXiv preprint arXiv:1706.05098 (2017). [30] John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov. 2017. Proximal policy optimization algorithms. arXiv preprint arXiv:1707.06347 (2017). [31] Choon Hui Teo, Houssam Nassif, Daniel Hill, Sriram Srinivasan, Mitchell Goodman, Vijai Mohan, and SVN Vishwanathan. 2016. Adaptive, personalized diversity for visual discovery. In Proceedings of the 10th ACM conference on recommender systems . 35-38. [32] Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly. 2015. Pointer networks. Advances in neural information processing systems 28 (2015). [33] Fan Wang, Xiaomin Fang, Lihang Liu, Yaxue Chen, Jiucheng Tao, Zhiming Peng, Cihang Jin, and Hao Tian. 2019. Sequential evaluation and generation framework for combinatorial recommender system. arXiv preprint arXiv:1902.00245 (2019). [34] Mark Wilhelm, Ajith Ramanathan, Alexander Bonomo, Sagar Jain, Ed H Chi, and Jennifer Gillenwater. 2018. Practical diversified recommendations on youtube with determinantal point processes. In Proceedings of the 27th ACM International Conference on Information and Knowledge Management . 2165-2173. [35] Long Xia, Jun Xu, Yanyan Lan, Jiafeng Guo, and Xueqi Cheng. 2016. Modeling document novelty with neural tensor network for search result diversification. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval . 395-404. [36] Long Xia, Jun Xu, Yanyan Lan, Jiafeng Guo, Wei Zeng, and Xueqi Cheng. 2017. Adapting Markov decision process for search result diversification. In Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval . 535-544. [37] Ruobing Xie, Yanlei Liu, Shaoliang Zhang, Rui Wang, Feng Xia, and Leyu Lin. 2021. Personalized approximate pareto-efficient recommendation. In Proceedings of the Web Conference 2021 . 3839-3849. [38] ChenXu,Sirui Chen, Jun Xu, Weiran Shen, Xiao Zhang, Gang Wang, and Zhenhua Dong. 2023. P-MMF: Provider Max-min Fairness Re-ranking in Recommender System. In Proceedings of the ACM Web Conference 2023 . 3701-3711. [39] Le Yan, Zhen Qin, Rama Kumar Pasumarthi, Xuanhui Wang, and Michael Bendersky. 2021. Diversification-aware learning to rank using distributed representation. In Proceedings of the Web Conference 2021 . 127-136. [40] Yongxin Yang and Timothy Hospedales. 2016. Deep multi-task representation learning: A tensor factorisation approach. arXiv preprint arXiv:1605.06391 (2016). [41] Xinyang Yi, Ji Yang, Lichan Hong, Derek Zhiyuan Cheng, Lukasz Heldt, Aditee Kumthekar, Zhe Zhao, Li Wei, and Ed Chi. 2019. Sampling-bias-corrected neural modeling for large corpus item recommendations. In Proceedings of the 13th ACM Conference on Recommender Systems . 269-277. [42] Manzil Zaheer, Satwik Kottur, Siamak Ravanbakhsh, Barnabas Poczos, Russ R Salakhutdinov, and Alexander J Smola. 2017. Deep sets. Advances in neural information processing systems 30 (2017). [43] Xiao Zhang, Sunhao Dai, Jun Xu, Zhenhua Dong, Quanyu Dai, and Ji-Rong Wen. 2022. Counteracting user attention bias in music streaming recommendation via reward modification. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2504-2514. [44] Xiao Zhang, Haonan Jia, Hanjing Su, Wenhan Wang, Jun Xu, and Ji-Rong Wen. 2021. Counterfactual reward modification for streaming recommendation with delayed feedback. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 41-50. [45] Yu Zhang and Qiang Yang. 2021. A survey on multi-task learning. IEEE Transactions on Knowledge and Data Engineering (2021). [46] Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. Recommending what video to watch next: a multitask ranking system. In Proceedings of the 13th ACM Conference on Recommender Systems . 43-51. [47] Yong Zheng and David Xuejun Wang. 2022. A survey of recommender systems with multi-objective optimization. Neurocomputing 474 (2022), 141-153. [48] Ziwei Zhu, Jingu Kim, Trung Nguyen, Aish Fenton, and James Caverlee. 2021. Fairness among new items in cold start recommender systems. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 767-776. [49] Tao Zhuang, Wenwu Ou, and Zhirong Wang. 2018. Globally optimized mutual influence aware ranking in e-commerce search. arXiv preprint arXiv:1805.08524 (2018).",
   "keywords_parsed": [
     "multi-objective learning",
-    " re-ranking",
-    " reinforcement learning"
+    "re-ranking",
+    "reinforcement learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Seq2slate: Re-ranking and slate optimization with rnns"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Introduction to stochastic programming"
+    },
+    {
+      "ref_id": "b3",
+      "title": "CaSMoS: A framework for learning candidate selection models over structured queries and documents"
+    },
+    {
+      "ref_id": "b4",
+      "title": "From ranknet to lambdarank to lambdamart: An overview"
+    },
+    {
+      "ref_id": "b5",
+      "title": "The use of MMR, diversity-based reranking for reordering documents and producing summaries"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Neural network methods for natural language processing"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Exact-k recommendation via maximal clique optimization"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Re-ranking with constraints on diversified exposures for homepage recommender system"
+    },
+    {
+      "ref_id": "b9",
+      "title": "AliExpress LearningTo-Rank: Maximizing online model performance without going online"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Multi-objective recommendation: Overview and challenges"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Learning to diversify search results via subtopic attention"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Using image fairness representations in diversity-based re-ranking for recommendations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Item-based top-n recommendation algorithms"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A survey of serendipity in recommender systems"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Deep learning"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Video recommendation with multi-gate mixture of experts soft actor critic"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Controllable pareto multi-task learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Pareto multi-task learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "DVGAN: a minimax game for search result diversification combining explicit and implicit features"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Neural Re-ranking in Multi-stage Recommender Systems: A Review"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Learning multiple tasks with multilinear relationship networks"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Multi-task learning with user preferences: Gradient descent with controlled ascent in pareto optimization"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Conditional generative adversarial nets"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Cross-stitch networks for multi-task learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Learning the pareto front with hypernetworks"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Computationally efficient optimization of plackett-luce ranking models for relevance and fairness"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Controllable Dynamic Multi-Task Architectures"
+    },
+    {
+      "ref_id": "b29",
+      "title": "An overview of multi-task learning in deep neural networks"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Proximal policy optimization algorithms"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Adaptive, personalized diversity for visual discovery"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Pointer networks"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Sequential evaluation and generation framework for combinatorial recommender system"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Practical diversified recommendations on youtube with determinantal point processes"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Modeling document novelty with neural tensor network for search result diversification"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Adapting Markov decision process for search result diversification"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Personalized approximate pareto-efficient recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "P-MMF: Provider Max-min Fairness Re-ranking in Recommender System"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Diversification-aware learning to rank using distributed representation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Deep multi-task representation learning: A tensor factorisation approach"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Sampling-bias-corrected neural modeling for large corpus item recommendations"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Deep sets"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Counteracting user attention bias in music streaming recommendation via reward modification"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Counterfactual reward modification for streaming recommendation with delayed feedback"
+    },
+    {
+      "ref_id": "b45",
+      "title": "A survey on multi-task learning"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Recommending what video to watch next: a multitask ranking system"
+    },
+    {
+      "ref_id": "b47",
+      "title": "A survey of recommender systems with multi-objective optimization"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Fairness among new items in cold start recommender systems"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Globally optimized mutual influence aware ranking in e-commerce search"
+    }
   ]
 }

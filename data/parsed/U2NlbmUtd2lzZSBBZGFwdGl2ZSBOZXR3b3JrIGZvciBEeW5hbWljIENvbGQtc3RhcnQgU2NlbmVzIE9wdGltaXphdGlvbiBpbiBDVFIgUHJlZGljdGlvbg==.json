@@ -27,19 +27,134 @@
   "Acknowledgments": "This work was supported in part by the National Key Research and Development Program of China under Grant 2023YFB3307503, in part by the National Natural Science Foundation of China under Grant 62202025, in part by the Young Elite Scientist Sponsorship Program by CAST under Grant YESS20230566, in part by the CCFHuawei Populus Grove Fund, in part by the Frontier Cross Fund Project of Beihang University, and in part by the Fundamental Research Fund Project of Beihang University. RecSys '24, October 14-18, 2024, Bari, Italy Wenhao Li et al.",
   "References": "[1] Jianxin Chang, Chenbin Zhang, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, and Kun Gai. 2023. Pepnet: Parameter and embedding personalized network for infusing with personalized prior information. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3795-3804. [2] Yuting Chen, Yanshi Wang, Yabo Ni, An-Xiang Zeng, and Lanfen Lin. 2020. Scenario-aware and Mutual-based approach for Multi-scenario Recommendation in E-Commerce. In 2020 International Conference on Data Mining Workshops (ICDMW) . IEEE, 127-135. [3] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [4] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [5] Zhengxiao Du, Xiaowei Wang, Hongxia Yang, Jingren Zhou, and Jie Tang. 2019. Sequential scenario-specific meta learner for online recommendation. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2895-2904. [6] Jyotirmoy Gope and Sanjay Kumar Jain. 2017. A survey on solving cold start problem in recommender systems. In 2017 International Conference on Computing, Communication and Automation (ICCCA) . IEEE, 133-138. [7] Yulong Gu, Wentian Bao, Dan Ou, Xiang Li, Baoliang Cui, Biyu Ma, Haikuan Huang, Qingwen Liu, and Xiaoyi Zeng. 2021. Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 3828-3837. [8] Sepp Hochreiter and Jürgen Schmidhuber. 1997. Long short-term memory. Neural computation 9, 8 (1997), 1735-1780. [9] Yang Hu, Adriane Chapman, Guihua Wen, and Dame Wendy Hall. 2022. What can knowledge bring to machine learning?-a survey of low-shot learning for structured data. ACM Transactions on Intelligent Systems and Technology (TIST) 13, 3 (2022), 1-45. [10] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). [11] Pengcheng Li, Runze Li, Qing Da, An-Xiang Zeng, and Lijun Zhang. 2020. Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2605-2612. [12] Wenhao Li, Haiou Zhang, Guilan Wang, Gang Xiong, Meihua Zhao, Guokuan Li, and Runsheng Li. 2023. Deep learning based online metallic surface defect detection method for wire and arc additive manufacturing. Robotics and ComputerIntegrated Manufacturing 80 (2023), 102470. [13] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [14] Greg Linden, Brent Smith, and Jeremy York. 2003. Amazon. com recommendations: Item-to-item collaborative filtering. IEEE Internet computing 7, 1 (2003), 76-80. [15] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1930-1939. [16] Kiran Rama, Pradeep Kumar, and Bharat Bhasker. 2019. Deep learning to address candidate generation and cold start challenges in recommender systems: A research survey. arXiv preprint arXiv:1907.08674 (2019). [17] Omer Sagi and Lior Rokach. 2018. Ensemble learning: A survey. Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery 8, 4 (2018), e1249. [18] J Ben Schafer, Dan Frankowski, Jon Herlocker, and Shilad Sen. 2007. Collaborative filtering recommender systems. The adaptive web: methods and strategies of web personalization (2007), 291-324. [19] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management . 4104-4113. [20] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Proceedings of the 14th ACM Conference on Recommender Systems . 269-278. [21] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [22] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the web conference 2021 . 1785-1797. [23] Zheni Zeng, Chaojun Xiao, Yuan Yao, Ruobing Xie, Zhiyuan Liu, Fen Lin, Leyu Lin, and Maosong Sun. 2021. Knowledge transfer via pre-training for recommendation: A review and prospect. Frontiers in big Data 4 (2021), 602071. [24] Shuai Zhang, Lina Yao, Aixin Sun, and Yi Tay. 2019. Deep learning based recommender system: A survey and new perspectives. ACM computing surveys (CSUR) 52, 1 (2019), 1-38. [25] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [26] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [27] Jie Zhou, Xianshuai Cao, Wenhao Li, Lin Bo, Kun Zhang, Chuan Luo, and Qian Yu. 2023. Hinet: Novel multi-scenario & multi-task learning with hierarchical information extraction. In 2023 IEEE 39th International Conference on Data Engineering (ICDE) . IEEE, 2969-2975. [28] Jie Zhou, Qian Yu, Chuan Luo, and Jing Zhang. 2023. Feature decomposition for reducing negative transfer: a novel multi-task learning method for recommender system. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 37. [29] Feng Zhu, Yan Wang, Chaochao Chen, Jun Zhou, Longfei Li, and Guanfeng Liu. 2021. Cross-domain recommendation: challenges, progress, and prospects. arXiv preprint arXiv:2103.01696 (2021). [30] Yongchun Zhu, Zhenwei Tang, Yudan Liu, Fuzhen Zhuang, Ruobing Xie, Xu Zhang, Leyu Lin, and Qing He. 2022. Personalized transfer of user preferences for cross-domain recommendation. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 1507-1515. [31] Yongchun Zhu, Ruobing Xie, Fuzhen Zhuang, Kaikai Ge, Ying Sun, Xu Zhang, Leyu Lin, and Juan Cao. 2021. Learning to warm up cold item embeddings for coldstart recommendation with meta scaling and shifting networks. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1167-1176.",
   "keywords_parsed": [
-    "In the realm of modern mobile E-commerce",
-    " providing users with nearby commercial service recommendations through locationbased online services has become increasingly vital. While machine learning approaches have shown promise in multi-scene recommendation",
-    " existing methodologies often struggle to address cold-start problems in unprecedented scenes: the increasing diversity of commercial choices",
-    " along with the short online lifespan of scenes",
-    " give rise to the complexity of effective recommendations in online and dynamic scenes. In this work",
-    " we propose S cenew ise A daptive N etwork (SwAN 1 )",
-    " a novel approach that emphasizes high-performance cold-start online recommendations for new scenes. Our approach introduces several crucial capabilities",
-    " including scene similarity learning",
-    " user-specific scene transition cognition",
-    " scene-specific information construction for the new scene",
-    " and enhancing the diverged logical information between scenes. We demonstrate SwAN's potential to optimize dynamic multi-scene recommendation problems by effectively online handling cold-start recommendations for any newly arrived scenes. More encouragingly",
-    " SwAN has been successfully deployed in Meituan's online catering recommendation service",
-    " which serves millions of customers per day",
-    " and SwAN has achieved a 5.64% CTR index improvement relative to the baselines and a 5.19% increase in daily order volume proportion."
+    "Recommendation",
+    "Multi-Scene",
+    "Cold-Start"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Pepnet: Parameter and embedding personalized network for infusing with personalized prior information"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Scenario-aware and Mutual-based approach for Multi-scenario Recommendation in E-Commerce"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Sequential scenario-specific meta learner for online recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "A survey on solving cold start problem in recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Long short-term memory"
+    },
+    {
+      "ref_id": "b9",
+      "title": "What can knowledge bring to machine learning?-a survey of low-shot learning for structured data"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Improving multi-scenario learning to rank in e-commerce by exploiting task relationships in the label space"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep learning based online metallic surface defect detection method for wire and arc additive manufacturing"
+    },
+    {
+      "ref_id": "b13",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Amazon. com recommendations: Item-to-item collaborative filtering"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Deep learning to address candidate generation and cold start challenges in recommender systems: A research survey"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Ensemble learning: A survey"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Collaborative filtering recommender systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Knowledge transfer via pre-training for recommendation: A review and prospect"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Deep learning based recommender system: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Hinet: Novel multi-scenario & multi-task learning with hierarchical information extraction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Feature decomposition for reducing negative transfer: a novel multi-task learning method for recommender system"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Cross-domain recommendation: challenges, progress, and prospects"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Personalized transfer of user preferences for cross-domain recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Learning to warm up cold item embeddings for coldstart recommendation with meta scaling and shifting networks"
+    }
   ]
 }

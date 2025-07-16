@@ -24,7 +24,157 @@
   "REFERENCES": "[1] Martín Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay Ghemawat, Geoffrey Irving, Michael Isard, et al. 2016. Tensorflow: A system for large-scale machine learning. In 12th USENIX symposium on operating systems design and implementation (OSDI 16) . [2] Alex Beutel, Paul Covington, Sagar Jain, Can Xu, Jia Li, Vince Gatto, and Ed H. Chi. 2018. Latent Cross: Making Use of Context in Recurrent Recommender Systems. In Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining (WSDM) . (Feb. 2018), 46-54. [3] Yichao Wang, Huifeng Guo , Bo Chen, Weiwen Liu, Zhirong Liu, Qi Zhang, Zhicheng He, Hongkun Zhen, Weiwei Yao, Muyu Zhang, Zhenhua Dong, and Ruiming Tang. 2022. CausalInt: Causal Inspired Intervention for Multi-Scenario Recommendation. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) . (Aug. 2022), 4090-4099. [4] Jianxin Chang, Chenbin Zhang, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, and Kun Gai. 2023. PEPNet: Parameter and Embedding Personalized Network for Infusing with Personalized Prior Information. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) . (Aug. 2023), 3795-3804. [5] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. Deepfm: a factorization-machine based neural network for ctr prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence (IJCAI) . Melbourne, Australia., 2782-2788. [6] Wei Guo, Chenxu Zhu, Fan Yan, Bo Chen, Weiwen Liu, Huifeng Guo, Hongkun Zheng, Yong Liu, and Ruiming Tang. 2023. DFFM: Domain Facilitated Feature Modeling for CTR Prediction. In Proceedings of the Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (CIKM) . (Oct. 2023), 4602-4608. [7] Xavier Glorot and Yoshua Bengio. 2010. Understanding the difficulty of training deep feedforward neural networks. In Proceedings of the thirteenth international conference on artificial intelligence and statistics . 249-256. [8] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep Residual Learning for Image Recognition. In 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) . (Jun. 2016), 770-778. [9] Zhaoxin Huan, Ang Li, Xiaolu Zhang, Xu Min, Jieyu Yang, Yong He, and Jun Zhou. 2023. SAMD: An Industrial Framework for Heterogeneous Multi- Scenario Recommendation. In Proceedings of the 29th ACM SIGKDD Con- ference on Knowledge Discovery and Data Mining (KDD) . (Aug. 2023), 4175-4184. [10] Alex Kendall, Yarin Gal, and Roberto Cipolla. 2018. Multi-task learning using uncertainty to weight losses for scene geometry and semantics. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition . UT, USA, 7482-7491. [11] Diederik P. Kingma and Jimmy Ba. 2015. Adam: A Method for Stochastic Optimization. In ICLR. [12] Jinyun Li, Huiwen Zheng, Yuanlin Liu, Minfang Lu, Lixia Wu, and Haoyuan Hu. 2023. ADL: Adaptive Distribution Learning Framework for Multi-Scenario CTR Prediction. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . (Jul. 2023), 1786-1790. [13] Pengcheng Li, Runze Li, Qing Da, An-Xiang Zeng, and Lijun Zhang. 2020. Improving Multi-Scenario Learning to Rank in E-commerce by Exploiting Task Relationships in the Label Space. In Proceedings of the 29th ACM International Conference on Information and Knowledge Management (CIKM) . (Oct. 2020), 26052612. [14] Pengfei Liu, Xipeng Qiu, and Xuanjing Huang. 2017. Adversarial Multi-task Learning for Text Classification. In Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics . Vancouver, Canada, 1-10. [15] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD) . London, UK, 1930-1939. [16] Simon J Mason and Nicholas E Graham. 2002. Areas beneath the relative operating characteristics (ROC) and relative operating levels (ROL) curves: Statistical significance and interpretation. Quarterly Journal of the Royal Meteorological Society: A journal of the atmospheric sciences, applied meteorology and physical oceanography . 128, 584 (2002), 2145-2166. [17] Shanlei Mu, Penghui Wei, Wayne Xin Zhao, Shaoguo Liu, Liang Wang, Bo Zheng. 2023. Hybrid Contrastive Constraints for Multi-Scenario Ad Ranking. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (CIKM) . (Oct. 2023), 1857-1866. [18] Badrul Sarwar, George Karypis, Joseph Konstan, and John Riedl. 2001. Item-based collaborative filtering recommendation algorithms. In Proceedings of the 10th international conference on World Wide Web . 285-295. [19] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. 2017. Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer. In Proceedings of the 5th International Conference on Learning Representations (ICLR) . (Apr. 2017). [20] Qijie Shen, Wanjie Tao, Jing Zhang, Hong Wen, Zulong Chen, and Quan Lu. 2021. SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios. In Proceedings of the 30th ACM International Conference on Information and Knowledge Management (CIKM) . (Nov. 2021), 4094-4103. [21] Pawel Swietojanski, Jinyu Li, and Steve Renals. 2016. Learning hidden unit contributions for unsupervised acoustic model adaptation. IEEE/ACM Transactions on Audio, Speech, and Language Processing . 24, 8 (2016), 1450-1463. [22] Xiang-Rong Sheng, Liqin Zhao, Guorui Zhou, Xinyao Ding, Binding Dai, Qiang Luo, Siran Yang, Jingshan Lv, Chi Zhang, Hongbo Deng, et al. 2021. One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management (CIKM) . 4104-4113. [23] Hongyan Tang, Junning Liu, Ming Zhao, and Xudong Gong. 2020. Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations. In Fourteenth ACM Conference on Recommender Systems . 269278. [24] Yu Tian, Bofang Li, Si Chen, Xubin Li, Hongbo Deng, Jian Xu, Bo Zheng, Qian Wang, and Chenliang Li. 2023. Multi-Scenario Ranking with Adaptive Feature Learning. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . (Jul. 2023), 517-526. [25] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser and Illia Polosukhin. 2017. Attention is All you Need. In Proceedings of 30th Conference on Advances in Neural Information Processing Systems (NIPS) . (Dec. 2017), 5998-6008. [26] Hong Wen, Jing Zhang, Fuyu Lv, Wentian Bao, Tianyi Wang, and Zulong Chen. 2021. Hierarchically Modeling Micro and Macro Behaviors via Multi-Task Learning for Conversion Rate Prediction. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . [27] Hong Wen, Jing Zhang, Yuan Wang, Fuyu Lv, Wentian Bao, Quan Lin, and Keping Yang. 2020. Entire space multi-task modeling via post-click behavior decomposition for conversion rate prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval Scenario-Adaptive Fine-Grained Personalization Network: Tailoring User Behavior Representation to the Scenario Context Woodstock '18, June 03-05, 2018, Woodstock, NY (SIGIR) . 2377-2386. [28] Yuhao Wang, Xiangyu Zhao, Bo Chen, Qidong Liu, Huifeng Guo, Huan-shuo Liu, Yichao Wang, Rui Zhang, and Ruiming Tang. 2023. PLATE: A Prompt-Enhanced Paradigm for Multi-Scenario Recommendations. In Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . (Jul. 2023), 1498-1507. [29] Xuanhua Yang, Xiaoyu Peng, Penghui Wei, Shaoguo Liu, Liang Wang and Bo Zheng. 2022. AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction. In Proceedings of the 31st ACM International Conference on Information and Knowledge Management (CIKM) . (Oct. 2022), 46354639. [30] Jing Zhang and Dacheng Tao. 2021. Empowering Things With Intelligence: A Survey of the Progress, Challenges, and Opportunities in Artificial Intelligence of Things. IEEE Internet of Things Journal . 8(10), 7789-7817. [31] Qianqian Zhang, Xinru Liao, Quan Liu, Jian Xu, Bo Zheng. 2022. Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (WSDM) . (Feb. 2022), 1368-1376. [32] Pengyu Zhao, Xin Gao, Chunxu Xu, and Liang Chen. 2023. M5: Multi-Modal Multi-Interest Multi-Scenario Matching for Over-the-Top Recommendation. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) . (Aug. 2023), 5650-5659. [33] Yifei Zhang, Hua Hua, Hui Guo, Shuangyang Wang, Chongyu Zhong, and Shijie Zhang. 2023. 3MN: Three Meta Networks for Multi-Scenario and Multi-Task Learning in Online Advertising Recommender Systems. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (CIKM) . (Oct. 2023), 4945-4951. [34] Yuanliang Zhang, Xiaofeng Wang, Jinxin Hu, Ke Gao, Chenyi Lei, and Fei Fang. 2022. Scenario-Adaptive and Self-Supervised Model for Multi-Scenario Personalized Recommendation. In Proceedings of the 31st ACM International Conference on Information and Knowledge Management (CIKM) . (Oct. 2022), 3674-3683. [35] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD) . 1059-1068. [36] Jie Zhou, Xianshuai Cao, Wenhao Li, Lin Bo, Kun Zhang, Chuan Luo, and Qian Yu. 2023. HiNet: Novel Multi-Scenario & Multi-Task Learning with Hierarchical Information Extraction. In Proceedings of the 39th IEEE International Conference on Data Engineering (ICDE) . (Apr. 2023), 2969-2975. [37] Xinyu Zou, Zhi Hu, Yiming Zhao, Xuchu Ding, Zhongyi Liu, Chenliang Li, Aixin Sun. 2022. Automatic Expert Selection for Multi-Scenario and Multi- Task Search. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . (Jul. 2022), 1535-1544.",
   "keywords_parsed": [
     "Multi-Scenario Recommendation",
-    " Scenario-Specific Behavior Representation",
-    " Recommender System"
+    "Scenario-Specific Behavior Representation",
+    "Recommender System"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Tensorflow: A system for large-scale machine learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Latent Cross: Making Use of Context in Recurrent Recommender Systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "CausalInt: Causal Inspired Intervention for Multi-Scenario Recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "PEPNet: Parameter and Embedding Personalized Network for Infusing with Personalized Prior Information"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deepfm: a factorization-machine based neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "DFFM: Domain Facilitated Feature Modeling for CTR Prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Understanding the difficulty of training deep feedforward neural networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep Residual Learning for Image Recognition"
+    },
+    {
+      "ref_id": "b9",
+      "title": "SAMD: An Industrial Framework for Heterogeneous Multi- Scenario Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Multi-task learning using uncertainty to weight losses for scene geometry and semantics"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b12",
+      "title": "ADL: Adaptive Distribution Learning Framework for Multi-Scenario CTR Prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Improving Multi-Scenario Learning to Rank in E-commerce by Exploiting Task Relationships in the Label Space"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Adversarial Multi-task Learning for Text Classification"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Areas beneath the relative operating characteristics (ROC) and relative operating levels (ROL) curves: Statistical significance and interpretation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Hybrid Contrastive Constraints for Multi-Scenario Ad Ranking"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Item-based collaborative filtering recommendation algorithms"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
+    },
+    {
+      "ref_id": "b20",
+      "title": "SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Learning hidden unit contributions for unsupervised acoustic model adaptation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Multi-Scenario Ranking with Adaptive Feature Learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Hierarchically Modeling Micro and Macro Behaviors via Multi-Task Learning for Conversion Rate Prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Entire space multi-task modeling via post-click behavior decomposition for conversion rate prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "PLATE: A Prompt-Enhanced Paradigm for Multi-Scenario Recommendations"
+    },
+    {
+      "ref_id": "b29",
+      "title": "AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Empowering Things With Intelligence: A Survey of the Progress, Challenges, and Opportunities in Artificial Intelligence of Things"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling"
+    },
+    {
+      "ref_id": "b32",
+      "title": "M5: Multi-Modal Multi-Interest Multi-Scenario Matching for Over-the-Top Recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "3MN: Three Meta Networks for Multi-Scenario and Multi-Task Learning in Online Advertising Recommender Systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Scenario-Adaptive and Self-Supervised Model for Multi-Scenario Personalized Recommendation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "HiNet: Novel Multi-Scenario & Multi-Task Learning with Hierarchical Information Extraction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Automatic Expert Selection for Multi-Scenario and Multi-Task Search"
+    }
   ]
 }

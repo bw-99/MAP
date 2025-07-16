@@ -25,7 +25,279 @@
   "6.4 Neural Architecture Search": "Neural architecture search (NAS) could be another relevant line of our work, aiming to automatically design an architecture instead of handcrafting one. Typical NAS includes evolution-based [48,60], and reinforcement-learning-based [3] methods. However, the resources RL or evolution-based methods leveraged are often very expensive and still unaffordable in practice. More recently, DARTS [36] relaxes the search space to make it continuous so that the search processes can be performed based on the gradient. Differentiable NAS approaches can significantly reduce the computational cost. Our search method is based on PC-DARTS [62], a stability improved variant of DARTS by introducing a partially connected mechanism. The purpose of repairing and NAS is very different. The former intends to fix the buggy behaviors that follow some patterns with generalization capability, while NAS is to design general architecture automatically for better performance ( e.g ., energy efficiency). In this paper, we formulate the block-level joint architecture and weight repairing as a NAS problem, which demonstrates the possibilities and chances for DNN repair along this direction.",
   "7 Conclusion": "In this work, we have proposed ArchRepair , an architecture-oriented DNN repair at block level, which offers a good trade-off between repaired network accuracy ArchRepair : Block-Level Architecture-Oriented Repairing for DNNs 29 and time consumption, compared to neuron-level, layer-level, and network-level (data augmentation) repairing. To achieve this, two key problems are identified and solved sequentially, i.e ., block localization , and joint architecture and weights repairing . By jointly repairing both architecture and weights on the candidate block for repairing, ArchRepair is able to achieve better repairing performance compared with 6 SOTA techniques. Our extensive evaluation have also demonstrated that our method could not only enhance the accuracy but also the robustness across various corruption patterns while being cost-effective. To the best of our knowledge, this is the very first attempt about DNN repair by considering adjusting both the architecture and weights at the 'block-level'. Our research also initiates a promising direction for further DNN repair research, towards addressing the current urgent industrial demands for reliable and trustworthy DNN deployment in diverse real-world environments.",
   "References": "1. Abreu, R., Zoeteweij, P., Golsteijn, R., van Gemund, A.J.C.: A practical evaluation of spectrum-based fault localization. Journal of Systems and Software 82 (11), 1780-1792 (Nov 2009) 2. Alves, E., Gligoric, M., Jagannath, V., d'Amorim, M.: Fault-localization using dynamic slicing and change impact analysis. In: 2011 26th IEEE/ACM International Conference on Automated Software Engineering (ASE 2011). pp. 520-523 (Nov 2011), iSSN: 1938-4300 3. Baker, B., Gupta, O., Naik, N., Raskar, R.: Designing Neural Network Architectures using Reinforcement Learning. arXiv:1611.02167 [cs] (Mar 2017), arXiv: 1611.02167 4. Birch, G., Fischer, B., Poppleton, M.: Fast test suite-driven model-based fault localisation with application to pinpointing defects in student programs. Software & Systems Modeling 18 (1), 445-471 (Feb 2019) 5. Chen, Y., Rong, F., Duggal, S., Wang, S., Yan, X., Manivasagam, S., Xue, S., Yumer, E., Urtasun, R.: Geosim: Realistic video simulation via geometry-aware composition for self-driving. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). pp. 7230-7240 (June 2021) 6. Cheng, Y., Guo, Q., Juefei-Xu, F., Xie, X., Lin, S.W., Lin, W., Feng, W., Liu, Y.: Pasadena: Perceptually Aware and Stealthy Adversarial Denoise Attack. IEEE Transactions on Multimedia (TMM) (2021) 7. Cheng, Y., Juefei-Xu, F., Guo, Q., Fu, H., Xie, X., Lin, S.W., Lin, W., Liu, Y.: Adversarial exposure attack on diabetic retinopathy imagery. arXiv preprint arXiv:2009.09231 (2020) 8. Choi, C., Choi, J.H., Li, J., Malla, S.: Shared cross-modal trajectory prediction for autonomous driving. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). pp. 244-253 (June 2021) 9. Christakis, M., Heizmann, M., Mansur, M.N., Schilling, C., Wüstholz, V.: Semantic Fault Localization and Suspiciousness Ranking. In: Vojnar, T., Zhang, L. (eds.) Tools and Algorithms for the Construction and Analysis of Systems. pp. 226-243. Lecture Notes in Computer Science, Springer International Publishing, Cham (2019) 10. Dolhansky, B., Bitton, J., Pflaum, B., Lu, J., Howes, R., Wang, M., Canton Ferrer, C.: The deepfake detection challenge dataset. arXiv e-prints pp. arXiv-2006 (2020) 30 H. Qi, Z. Wang, Q. Guo, J. Chen, F. Juefei-Xu, L. Ma, and J. Zhao 11. Du, X., Xie, X., Li, Y., Ma, L., Liu, Y., Zhao, J.: Deepstellar: Model-based quantitative analysis of stateful deep learning systems. In: Proceedings of the 2019 27th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering. p. 477-487. ESEC/FSE 2019, Association for Computing Machinery, New York, NY, USA (2019) 12. Eniser, H.F., Gerasimou, S., Sen, A.: Deepfault: Fault localization for deep neural networks. In: Hähnle, R., van der Aalst, W. (eds.) Fundamental Approaches to Software Engineering. p. v. Springer International Publishing, Cham (2019) 13. Fan, D.P., Zhou, T., Ji, G.P., Zhou, Y., Chen, G., Fu, H., Shen, J., Shao, L.: Inf-net: Automatic covid-19 lung infection segmentation from ct images. IEEE Transactions on Medical Imaging 39 (8), 2626-2637 (2020) 14. Gao, R., Guo, Q., Juefei-Xu, F., Yu, H., Feng, W.: AdvHaze: Adversarial Haze Attack. arXiv preprint arXiv:2104.13673 (2021) 15. Gao, R., Guo, Q., Juefei-Xu, F., Yu, H., Ren, X., Feng, W., Wang, S.: Making images undiscoverable from co-saliency detection. arXiv preprint arXiv:2009.09258 (2020) 16. Gao, R., Guo, Q., Zhang, Q., Juefei-Xu, F., Yu, H., Feng, W.: Adversarial Relighting against Face Recognition. arXiv preprint arXiv:2108.07920 (2021) 17. Gao, X., Saha, R.K., Prasad, M.R., Roychoudhury, A.: Fuzz testing based data augmentation to improve robustness of deep neural networks. In: Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering. p. 1147-1158. ICSE '20, Association for Computing Machinery, New York, NY, USA (2020) 18. Gazzola, L., Micucci, D., Mariani, L.: Automatic software repair: A survey. IEEE Transactions on Software Engineering 45 (1), 34-67 (2017) 19. Guo, Q., Cheng, Z., Juefei-Xu, F., Ma, L., Xie, X., Liu, Y., Zhao, J.: Learning to Adversarially Blur Visual Object Tracking. In: Proceedings of the IEEE International Conference on Computer Vision (ICCV). IEEE (October 2021) 20. Guo, Q., Juefei-Xu, F., Xie, X., Ma, L., Wang, J., Yu, B., Feng, W., Liu, Y.: Watch out! Motion is Blurring the Vision of Your Deep Neural Networks. In: Advances in Neural Information Processing Systems (NeurIPS) (2020) 21. Guo, Q., Xie, X., Juefei-Xu, F., Ma, L., Li, Z., Xue, W., Feng, W., Liu, Y.: SPARK: Spatial-aware Online Incremental Attack Against Visual Tracking. In: Proceedings of the European Conference on Computer Vision (ECCV) (Aug 2020) 22. Harel-Canada, F., Wang, L., Gulzar, M.A., Gu, Q., Kim, M.: Is neuron coverage a meaningful measure for testing deep neural networks? In: Proceedings of the 28th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering. ACM (2020) 23. He, K., Zhang, X., Ren, S., Sun, J.: Deep residual learning for image recognition. In: 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR). pp. 770-778. IEEE Computer Society, Los Alamitos, CA, USA (jun 2016) 24. Hendrycks, D., Dietterich, T.: Benchmarking neural network robustness to common corruptions and perturbations. Proceedings of the International Conference on Learning Representations (2019) 25. Huang, G., Liu, Z., van der Maaten, L., Weinberger, K.Q.: Densely connected convolutional networks. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (2017) 26. Huang, Y., Juefei-Xu, F., Guo, Q., Miao, W., Liu, Y., Pu, G.: Advbokeh: Learning to adversarially defocus blur. arXiv preprint (2021) 27. Jones, J.A., Harrold, M.J.: Empirical evaluation of the tarantula automatic faultlocalization technique. In: Proceedings of the 20th IEEE/ACM International Con- ArchRepair : Block-Level Architecture-Oriented Repairing for DNNs 31 ference on Automated Software Engineering. p. 273-282. ASE '05, Association for Computing Machinery, New York, NY, USA (2005) 28. Juefei-Xu, F., Wang, R., Huang, Y., Guo, Q., Ma, L., Liu, Y.: Countering malicious deepfakes: Survey, battleground, and horizon. arXiv preprint arXiv:2103.00218 (2021) 29. Kim, J., Feldt, R., Yoo, S.: Guiding deep learning system testing using surprise adequacy. In: 2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE). pp. 1039-1049. IEEE (2019) 30. Krizhevsky, A.: Learning multiple layers of features from tiny images. University of Toronto pp. 32-33 (2009) 31. Landsberg, D., Chockler, H., Kroening, D., Lewis, M.: Evaluation of Measures for Statistical Fault Localisation and an Optimising Scheme. In: Egyed, A., Schaefer, I. (eds.) Fundamental Approaches to Software Engineering. pp. 115-129. Lecture Notes in Computer Science, Springer, Berlin, Heidelberg (2015) 32. Landsberg, D., Sun, Y., Kroening, D.: Optimising Spectrum Based Fault Localisation for Single Fault Programs Using Specifications. In: Russo, A., Schürr, A. (eds.) Fundamental Approaches to Software Engineering. pp. 246-263. Lecture Notes in Computer Science, Springer International Publishing, Cham (2018) 33. Le, Y., Yang, X.: Tiny imagenet visual recognition challenge. In: Stanford CS 231N (2015) 34. Li, Y., Wen, C., Juefei-Xu, F., Feng, C.: Fooling lidar perception via adversarial trajectory perturbation. In: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) (October 2021) 35. Li, Y., Wen, C., Juefei-Xu, F., Feng, C.: Fooling LiDAR Perception via Adversarial Trajectory Perturbation. In: Proceedings of the IEEE International Conference on Computer Vision (ICCV). IEEE (October 2021) 36. Liu, H., Simonyan, K., Yang, Y.: Darts: Differentiable architecture search. arXiv preprint arXiv:1806.09055 (2018) 37. Luo, C., Yang, X., Yuille, A.: Self-supervised pillar motion learning for autonomous driving. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). pp. 3183-3192 (June 2021) 38. Ma, L., Juefei-Xu, F., Xue, M., Hu, Q., Chen, S., Li, B., Liu, Y., Zhao, J., Yin, J., See, S.: Secure Deep Learning Engineering: A Software Quality Assurance Perspective. arXiv preprint arXiv:1810.04538 (2018) 39. Ma, L., Juefei-Xu, F., Xue, M., Li, B., Li, L., Liu, Y., Zhao, J.: Deepct: Tomographic combinatorial testing for deep learning systems. In: 2019 IEEE 26th International Conference on Software Analysis, Evolution and Reengineering (SANER). pp. 614-618. IEEE (2019) 40. Ma, L., Juefei-Xu, F., Zhang, F., Sun, J., Xue, M., Li, B., Chen, C., Su, T., Li, L., Liu, Y., et al.: Deepgauge: Multi-granularity testing criteria for deep learning systems. In: Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering. pp. 120-131 (2018) 41. Ma, L., Zhang, F., Sun, J., Xue, M., Li, B., Juefei-Xu, F., Xie, C., Li, L., Liu, Y., Zhao, J., et al.: Deepmutation: Mutation testing of deep learning systems. In: 2018 IEEE 29th International Symposium on Software Reliability Engineering (ISSRE). pp. 100-111. IEEE (2018) 42. Ma, S., Liu, Y., Lee, W.C., Zhang, X., Grama, A.: Mode: automated neural network model debugging via state differential analysis and input selection. In: Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering. pp. 175-186 (2018) 32 H. Qi, Z. Wang, Q. Guo, J. Chen, F. Juefei-Xu, L. Ma, and J. Zhao 43. Naish, L., Lee, H.J., Ramamohanarao, K.: A model for spectra-based software diagnosis. ACM Transactions on Software Engineering and Methodology 20 (3), 11:1-11:32 (Aug 2011) 44. Odena, A., Goodfellow, I.: Tensorfuzz: Debugging neural networks with coverageguided fuzzing. In: Proceedings of the Thirty-sixth International Conference on Machine Learning (2019) 45. Pei, K., Cao, Y., Yang, J., Jana, S.: Deepxplore: Automated whitebox testing of deep learning systems. In: proceedings of the 26th Symposium on Operating Systems Principles. pp. 1-18 (2017) 46. Perez, A., Abreu, R., van Deursen, A.: A Test-Suite Diagnosability Metric for Spectrum-Based Fault Localization Approaches. In: 2017 IEEE/ACM 39th International Conference on Software Engineering (ICSE). pp. 654-664 (May 2017), iSSN: 1558-1225 47. Prakash, A., Chitta, K., Geiger, A.: Multi-modal fusion transformer for end-to-end autonomous driving. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). pp. 7077-7087 (June 2021) 48. Real, E., Aggarwal, A., Huang, Y., Le, Q.V.: Regularized Evolution for Image Classifier Architecture Search. arXiv:1802.01548 [cs] (Feb 2019), arXiv: 1802.01548 49. Ren, X., Yu, B., Qi, H., Juefei-Xu, F., Li, Z., Xue, W., Ma, L., Zhao, J.: Few-shot guided mix for dnn repairing. In: 2020 IEEE International Conference on Software Maintenance and Evolution (ICSME). pp. 717-721 (2020) 50. S. Alves, E.H.d., Cordeiro, L.C., L. Filho, E.B.d.: A method to localize faults in concurrent C programs. Journal of Systems and Software 132 , 336-352 (Oct 2017) 51. Sekhon, J., Fleming, C.: Towards improved testing for deep learning. In: 2019 IEEE/ACM 41st International Conference on Software Engineering: New Ideas and Emerging Results (ICSE-NIER). pp. 85-88. IEEE (2019) 52. Simonyan, K., Zisserman, A.: Very deep convolutional networks for large-scale image recognition. In: Bengio, Y., LeCun, Y. (eds.) 3rd International Conference on Learning Representations, ICLR 2015 (2015) 53. Sohn, J., Kang, S., Yoo, S.: Search based repair of deep neural networks. arXiv preprint arXiv:1912.12463 (2019) 54. Tian, B., Guo, Q., Juefei-Xu, F., Chan, W.L., Cheng, Y., Li, X., Xie, X., Qin, S.: Bias Field Poses a Threat to DNN-Based X-Ray Recognition. In: IEEE International Conference on Multimedia and Expo (ICME) (2021) 55. Tian, B., Juefei-Xu, F., Guo, Q., Xie, X., Li, X., Liu, Y.: AVA: Adversarial Vignetting Attack against Visual Recognition. In: Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI) (2021) 56. Tian, Y.: Repairing confusion and bias errors for DNN-based image classifiers. In: Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering. pp. 16991700 (2020) 57. Tian, Y., Pei, K., Jana, S., Ray, B.: Deeptest: Automated testing of deep-neuralnetwork-driven autonomous cars. In: Proceedings of the 40th international conference on software engineering. pp. 303-314 (2018) 58. Wang, J., Pun, A., Tu, J., Manivasagam, S., Sadat, A., Casas, S., Ren, M., Urtasun, R.: Advsim: Generating safety-critical scenarios for self-driving vehicles. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). pp. 9909-9918 (June 2021) 59. Wang, R., Juefei-Xu, F., Guo, Q., Huang, Y., Xie, X., Ma, L., Liu, Y.: Amora: Black-box Adversarial Morphing Attack. In: Proceedings of the ACM International Conference on Multimedia (ACM MM) (2020) ArchRepair : Block-Level Architecture-Oriented Repairing for DNNs 33 60. Xie, L., Yuille, A.: Genetic CNN. arXiv:1703.01513 [cs] (Mar 2017), arXiv: 1703.01513 61. Xie, X., Ma, L., Juefei-Xu, F., Xue, M., Chen, H., Liu, Y., Zhao, J., Li, B., Yin, J., See, S.: Deephunter: A coverage-guided fuzz testing framework for deep neural networks. In: Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis. pp. 146-157 (2019) 62. Xu, Y., Xie, L., Zhang, X., Chen, X., Qi, G.J., Tian, Q., Xiong, H.: PCDARTS: Partial Channel Connections for Memory-Efficient Architecture Search. arXiv:1907.05737 [cs] (Apr 2020), arXiv: 1907.05737 63. Yim, J., Chopra, R., Spitz, T., Winkens, J., Obika, A., Kelly, C., Askham, H., Lukic, M., Huemer, J., Fasler, K., et al.: Predicting conversion to wet age-related macular degeneration using deep learning. Nature Medicine 26 (6), 892-899 (2020) 64. Yu, B., Qi, H., Guo, Q., Juefei-Xu, F., Xie, X., Ma, L., Zhao, J.: Deeprepair: Styleguided repairing for deep neural networks in the real-world operational environment. IEEE Transactions on Reliability pp. 1-16 (2021) 65. Zhai, L., Juefei-Xu, F., Guo, Q., Xie, X., Ma, L., Feng, W., Qin, S., Liu, Y.: It's raining cats or dogs? adversarial rain attack on dnn perception. arXiv preprint arXiv:2009.09205 (2020) 66. Zhang, H., Chan, W.: Apricot: A weight-adaptation approach to fixing deep learning models. In: 2019 34th IEEE/ACM International Conference on Automated Software Engineering (ASE). pp. 376-387 (2019) 67. Zhang, J.M., Harman, M., Ma, L., Liu, Y.: Machine learning testing: Survey, landscapes and horizons. IEEE Transactions on Software Engineering (2020) 68. Zhang, L., Yan, L., Zhang, Z., Zhang, J., Chan, W.K., Zheng, Z.: A theoretical analysis on cloning the failed test cases to improve spectrum-based fault localization. Journal of Systems and Software 129 , 35-57 (Jul 2017)",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A practical evaluation of spectrum-based fault localization"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Fault-localization using dynamic slicing and change impact analysis"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Designing Neural Network Architectures using Reinforcement Learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Fast test suite-driven model-based fault localisation with application to pinpointing defects in student programs"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Geosim: Realistic video simulation via geometry-aware composition for self-driving"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Pasadena: Perceptually Aware and Stealthy Adversarial Denoise Attack"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Adversarial exposure attack on diabetic retinopathy imagery"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Shared cross-modal trajectory prediction for autonomous driving"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Semantic Fault Localization and Suspiciousness Ranking"
+    },
+    {
+      "ref_id": "b10",
+      "title": "The deepfake detection challenge dataset"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deepstellar: Model-based quantitative analysis of stateful deep learning systems"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deepfault: Fault localization for deep neural networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Inf-net: Automatic covid-19 lung infection segmentation from ct images"
+    },
+    {
+      "ref_id": "b14",
+      "title": "AdvHaze: Adversarial Haze Attack"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Making images undiscoverable from co-saliency detection"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Adversarial Relighting against Face Recognition"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Fuzz testing based data augmentation to improve robustness of deep neural networks"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Automatic software repair: A survey"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Learning to Adversarially Blur Visual Object Tracking"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Watch out! Motion is Blurring the Vision of Your Deep Neural Networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "SPARK: Spatial-aware Online Incremental Attack Against Visual Tracking"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Is neuron coverage a meaningful measure for testing deep neural networks?"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Benchmarking neural network robustness to common corruptions and perturbations"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Densely connected convolutional networks"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Advbokeh: Learning to adversarially defocus blur"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Empirical evaluation of the tarantula automatic fault localization technique"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Countering malicious deepfakes: Survey, battleground, and horizon"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Guiding deep learning system testing using surprise adequacy"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Learning multiple layers of features from tiny images"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Evaluation of Measures for Statistical Fault Localisation and an Optimising Scheme"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Optimising Spectrum Based Fault Localisation for Single Fault Programs Using Specifications"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Tiny imagenet visual recognition challenge"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Fooling lidar perception via adversarial trajectory perturbation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Fooling LiDAR Perception via Adversarial Trajectory Perturbation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Darts: Differentiable architecture search"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Self-supervised pillar motion learning for autonomous driving"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Secure Deep Learning Engineering: A Software Quality Assurance Perspective"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Deepct: Tomographic combinatorial testing for deep learning systems"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Deepgauge: Multi-granularity testing criteria for deep learning systems"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Deepmutation: Mutation testing of deep learning systems"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Mode: automated neural network model debugging via state differential analysis and input selection"
+    },
+    {
+      "ref_id": "b43",
+      "title": "A model for spectra-based software diagnosis"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Tensorfuzz: Debugging neural networks with coverage-guided fuzzing"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Deepxplore: Automated whitebox testing of deep learning systems"
+    },
+    {
+      "ref_id": "b46",
+      "title": "A Test-Suite Diagnosability Metric for Spectrum-Based Fault Localization Approaches"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Multi-modal fusion transformer for end-to-end autonomous driving"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Regularized Evolution for Image Classifier Architecture Search"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Few-shot guided mix for dnn repairing"
+    },
+    {
+      "ref_id": "b50",
+      "title": "A method to localize faults in concurrent C programs"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Towards improved testing for deep learning"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Very deep convolutional networks for large-scale image recognition"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Search based repair of deep neural networks"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Bias Field Poses a Threat to DNN-Based X-Ray Recognition"
+    },
+    {
+      "ref_id": "b55",
+      "title": "AVA: Adversarial Vignetting Attack against Visual Recognition"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Repairing confusion and bias errors for DNN-based image classifiers"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Deeptest: Automated testing of deep-neural-network-driven autonomous cars"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Advsim: Generating safety-critical scenarios for self-driving vehicles"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Amora: Black-box Adversarial Morphing Attack"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Genetic CNN"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Deephunter: A coverage-guided fuzz testing framework for deep neural networks"
+    },
+    {
+      "ref_id": "b62",
+      "title": "PCDARTS: Partial Channel Connections for Memory-Efficient Architecture Search"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Predicting conversion to wet age-related macular degeneration using deep learning"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Deeprepair: Style-guided repairing for deep neural networks in the real-world operational environment"
+    },
+    {
+      "ref_id": "b65",
+      "title": "It's raining cats or dogs? adversarial rain attack on dnn perception"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Apricot: A weight-adaptation approach to fixing deep learning models"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Machine learning testing: Survey, landscapes and horizons"
+    },
+    {
+      "ref_id": "b68",
+      "title": "A theoretical analysis on cloning the failed test cases to improve spectrum-based fault localization"
+    }
   ]
 }

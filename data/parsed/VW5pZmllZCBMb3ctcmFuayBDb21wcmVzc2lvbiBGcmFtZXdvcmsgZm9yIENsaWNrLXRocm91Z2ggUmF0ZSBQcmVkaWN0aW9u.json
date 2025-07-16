@@ -35,8 +35,134 @@
   "A.10 The Order of Compressing Embedding and MLP Layers.": "In previous experiments, we first compress the MLP layers and then continue to reduce the embedding dimensions. In this subsection, we research the influence of the compression order. Table 21 shows the influence of different compression orders on the DLRMs' performances. The first four lines represent that we compress MLP first and then reduce the embedding dimension. Correspondingly, the last four lines represent that we first compress embedding. It can be seen that the final AUC difference between the two strategies is not large, and each strategy does not show a sustained lead over the other strategy.",
   "keywords_parsed": [
     "Recommendation Systems",
-    " CTR Prediction",
-    " Model Compression",
-    " Low-rank Approximation"
+    "CTR Prediction",
+    "Model Compression",
+    "Low-rank Approximation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "On the factory floor: ML engineering for industrial-scale ads recommendation models"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Adaptive factorization network: Learning adaptive-order feature interactions"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Random Offset Block Embedding (ROBE) for compressed embedding tables in deep learning recommendation systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Mixed dimension embeddings with application to memory-efficient recommendation systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Matrix computations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "DeepFM: A factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Optimal Brain Surgeon and general network pruning"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Tensorized embedding layers"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Squeeze-and-excitation networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "FiBiNET: Combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Product quantization for nearest neighbor search"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Learnable embedding sizes for recommender systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Multi-epoch learning for deep Click-Through Rate prediction models"
+    },
+    {
+      "ref_id": "b16",
+      "title": "ThiNet: A filter level pruning method for deep neural network compression"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Rectified linear units improve restricted Boltzmann machines"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Single-shot embedding dimension search in recommender system"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b20",
+      "title": "UMEC: Unified model and embedding compression for efficient recommendation systems"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Compositional embeddings using complementary partitions for memory-efficient recommendation systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "AutoInt: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Towards deeper, lighter and interpretable cross network for CTR prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deep & Cross Network for ad click predictions"
+    },
+    {
+      "ref_id": "b26",
+      "title": "DCN V2: Improved Deep & Cross Network and practical lessons for Web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Essentials of pattern recognition: An accessible approach"
+    },
+    {
+      "ref_id": "b28",
+      "title": "On-device next-item recommendation with self-supervised knowledge distillation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Binary code based hash embedding for Web-scale applications"
+    },
+    {
+      "ref_id": "b30",
+      "title": "TT-Rec: Tensor train compression for deep learning recommendation models"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Compressing Transformers: Features are low-rank, but weights are not!"
+    }
   ]
 }

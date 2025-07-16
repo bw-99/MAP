@@ -22,16 +22,162 @@
   "A.1 Different Sparse Data": "In order to investigate how CDAnet performs under more sparse conditions, we conduct an experiment to see the model performance at different sparsity levels of the training data. In particular, fixing the validation and test set, we vary the ratio of the original train data to the new train set. The results are shown in Figure 3, where we can see that CDAnet can achieve better results at almost all sparsity levels compared to other cross-domain CTR methods. CDAnet has a better way to transfer knowledge, so that it can show more generalized performance. Conference WWW 2024, May 13-17, 2024, Singapore Xu Chen et al. Figure 3: The effects of different sparsity levels on Amazon and Taobao. Train ratio means the ratio of the original train data. We take CDAnet+MMOE here as an example. (a) Amazon-movie (b) Amazon-book (c) Taobao-ad (d) Taobao-rec 0.66 Train Ratio Train Ratio STAR DDICDR 2 0.56 DOTCDR MHOE Train Ratio Train Ratio Figure 4: The effects of hyper-parameters on different datasets. 𝛼 and 𝛽 are loss weights on different loss parts. We take CDAnet+MMOE here as an example. (a) 𝛼 on Amazon-movie (b) 𝛼 on Taobao-ad (c) 𝛽 on Amazon-movie (d) 𝛽 on Taobao-ad 0/220 07160 06192 76500 0.5800 2 06000 0.5500",
   "A.2 Parameter Sensitivity": "In CDAnet, 𝛼 and 𝛽 control the loss weight on cross-supervision loss and orthogonal constraint loss, respectively. Here, we study the parameter sensitivity of these hyper-parameters to investigate their effects on model performance. The results are shown in Figure 4. In this figure, 𝛼 controls the strength of cross-supervision on learning the translators. Too large 𝛼 may dominate the learning of L 𝑣𝑎𝑛𝑖 and cause bad effects on learning cross-supervised translators. 𝛽 controls the weight of L 𝑜𝑟𝑡ℎ and too large 𝛽 may limit the learning flexibility of the translators. These two hyper-parameters could be selected according to the validation set performance on different datasets. accepted 1 February 2024",
   "keywords_parsed": [
-    "Cross-domain CTR (CDCTR) prediction is an important research topic that studies how to leverage meaningful data from a related domain to help CTR prediction in target domain. Most existing CDCTR works design implicit ways to transfer knowledge across domains such as parameter-sharing that regularizes the model training in target domain. More effectively",
-    " recent researchers propose explicit techniques to extract user interest knowledge and transfer this knowledge to target domain. However",
-    " the proposed method mainly faces two issues: 1) it usually requires a super domain",
-    " i.e. an extremely large source domain",
-    " to cover most users or items of target domain",
-    " and 2) the extracted user interest knowledge is static no matter what the context is in target domain. These limitations motivate us to develop a more flexible and efficient technique to explicitly transfer knowledge. In this work",
-    " we propose a cross-domain augmentation network (CDAnet) being able to perform explicit knowledge transfer between two domains. Specifically",
-    " CDAnet contains a designed translation network and an augmentation network which are trained sequentially. The translation network computes latent features from two domains and learns meaningful cross-domain knowledge of each input in target domain by using a designed cross-supervised feature translator. Later the augmentation network employs the explicit cross-domain knowledge as augmented information to boost the target domain CTR prediction. Through extensive experiments on two public benchmarks and one industrial production dataset",
-    " we show CDAnet can learn meaningful translated features and largely improve the performance of CTR prediction. CDAnet has been conducted online A/B test in image2product retrieval at Taobao app",
-    " bringing an absolute 0.11 point CTR improvement",
-    " a relative 0.64% deal growth and a relative 1.26% GMV increase."
+    "feature translation",
+    "cross-domain CTR prediction",
+    "explicit feature augmentation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "User-specific Adaptive Fine-tuning for Cross-domain Recommendations"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Towards equivalent transformation of user preferences in cross domain recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "DeepFM: A Factorization-Machine Based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Deep Context Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Conet: Collaborative cross networks for cross-domain recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "SAMD: An Industrial Framework for Heterogeneous MultiScenario Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Image-to-image translation with conditional adversarial networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Learning to discover cross-domain relations with generative adversarial networks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Clickthrough prediction for advertising in twitter timeline"
+    },
+    {
+      "ref_id": "b11",
+      "title": "DDTCDR: Deep Dual Transfer Cross Domain Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Continual Transfer Learning for Cross-Domain Click-Through Rate Prediction at Taobao"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Unsupervised image-to-image translation networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Mixture of experts: a literature survey"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Deep spatio-temporal neural networks for click-through rate prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Minet: Mixed interest network for cross-domain click-through rate prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Image-to-image translation: Methods and applications"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Multi-task learning as multi-objective optimization"
+    },
+    {
+      "ref_id": "b22",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Multi-task learning for dense prediction tasks: A survey"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Enhancing CTR prediction with context-aware feature representation learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b27",
+      "title": "DCN v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Gradient vaccine: Investigating and improving multi-task optimization in massively multilingual models"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Click-through rate prediction using transfer learning with fine-tuned parameters"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Dualgan: Unsupervised dual learning for image-to-image translation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Gradient surgery for multi-task learning"
+    },
+    {
+      "ref_id": "b32",
+      "title": "DARec: Deep Domain Adaptation for Cross-Domain Recommendation via Transferring Rating Patterns"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Twenty years of mixture of experts"
+    },
+    {
+      "ref_id": "b34",
+      "title": "A Collaborative Transfer Learning Framework for Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b35",
+      "title": "KEEP: An Industrial Pre-Training Framework for Online Recommendation via Knowledge Extraction and Plugging"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Unpaired image-to-image translation using cycle-consistent adversarial networks"
+    }
   ]
 }

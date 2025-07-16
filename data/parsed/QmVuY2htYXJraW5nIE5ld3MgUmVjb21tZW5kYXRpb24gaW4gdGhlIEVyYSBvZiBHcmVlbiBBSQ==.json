@@ -18,7 +18,115 @@
   "4 CONCLUSION": "We have established the first standardized Green AI benchmark for news recommendation. Through extensive experiments over 30 base models and their variants, we conclude that the OLEO training paradigm successfully strikes a balance between accuracy and efficiency. We encourage other researchers to explore the OLEO paradigm and make contributions to environmental conservation.",
   "ACKNOWLEDGEMENT": "Qijiong Liu would like to thank Dr. Guanliang Chen and Mr. Haoxiang Shi for their insightful input during the brainstorming process of our paper. Additionally, the authors would like to thank the anonymous reviewers for their valuable feedback.",
   "REFERENCES": "[1] Mingxiao An, Fangzhao Wu, Chuhan Wu, Kun Zhang, Zheng Liu, and Xing Xie. 2019. Neural news recommendation with long-and short-term user representations. In ACL . 336-345. WWW'24 Companion, May 13-17, 2024, Singapore, Singapore Qijiong Liu, Jieming Zhu, Quanyu Dai, & Xiao-Ming Wu Table 3: Comparison of variants of different recommenders. 'ApC Imp' represents the environmental sustainability growth rate of PREC variants compared to the SOTA PLM-NR variants. We bold the best results and underline the second-best results. [2] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior sequence transformer for e-commerce recommendation in alibaba. In DLP4Rec . [15] Steven Wilson, Walid Magdy, Barbara McGillivray, Kiran Garimella, and Gareth Tyson. 2020. Urban dictionary embeddings for slang NLP applications. In LREC . [3] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv (2018). [4] Dmytro Ivchenko, Dennis Van Der Staay, Colin Taylor, Xing Liu, Will Feng, Rahul Kindi, Anirudh Sudarshan, and Shahin Sefati. 2022. Torchrec: a pytorch domain library for recommendation systems. In RecSys . [5] Yoon Kim. 2014. Convolutional Neural Networks for Sentence Classification. In EMNLP . Association for Computational Linguistics, Doha, Qatar. [6] Alexandre Lacoste, Alexandra Luccioni, Victor Schmidt, and Thomas Dandres. 2019. Quantifying the Carbon Emissions of Machine Learning. arXiv (2019). [7] Jian Li, Jieming Zhu, Qiwei Bi, Guohao Cai, Lifeng Shang, Zhenhua Dong, Xin Jiang, and Qun Liu. 2022. MINER: Multi-Interest Matching Network for News Recommendation. In ACL Findings 2022 . 343-352. [8] Qijiong Liu, Jieming Zhu, Quanyu Dai, and Xiaoming Wu. 2022. Boosting Deep CTR Prediction with a Plug-and-Play Pre-trainer for News Recommendation. In COLING . International Committee on Computational Linguistics. [9] Piotr Przybyła and Matthew Shardlow. 2022. Using NLP to quantify the environmental cost and diversity benefits of in-person NLP conferences. In ACL Findings . [10] Roy Schwartz, Jesse Dodge, Noah A Smith, and Oren Etzioni. 2020. Green ai. Commun. ACM (2020). [11] Weichen Shen. 2017. DeepCTR: Easy-to-use,Modular and Extendible package of deep-learning based CTR models. [12] Giuseppe Spillo, Allegra De Filippo, Cataldo Musto, Michela Milano, and Giovanni Semeraro. 2023. Towards Sustainability-aware Recommender Systems: Analyzing the Trade-off Between Algorithms Performance and Carbon Footprint. In RecSys . [13] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. arXiv (2017). [14] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In ADKDD . [16] Chuhan Wu, Fangzhao Wu, Mingxiao An, Jianqiang Huang, Yongfeng Huang, and Xing Xie. 2019. Neural news recommendation with attentive multi-view learning. IJCAI (2019). [17] Chuhan Wu, Fangzhao Wu, Mingxiao An, Jianqiang Huang, Yongfeng Huang, and Xing Xie. 2019. NPA: neural news recommendation with personalized attention. In SIGKDD . [18] Chuhan Wu, Fangzhao Wu, Suyu Ge, Tao Qi, Yongfeng Huang, and Xing Xie. 2019. Neural news recommendation with multi-head self-attention. In EMNLP-IJCNLP . [19] Chuhan Wu, Fangzhao Wu, Tao Qi, and Yongfeng Huang. 2021. Empowering News Recommendation with Pre-trained Language Models. SIGIR (2021). [20] Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu, et al. 2020. Mind: A large-scale dataset for news recommendation. In ACL . [21] Zheng Yuan, Fajie Yuan, Yu Song, Youhua Li, Junchen Fu, Fei Yang, Yunzhu Pan, and Yongxin Ni. 2023. Where to go next for recommender systems? id-vs. modality-based recommender models revisited. arXiv (2023). [22] Qi Zhang, Jingjie Li, Qinglin Jia, Chuyuan Wang, Jieming Zhu, Zhaowei Wang, and Xiuqiang He. 2021. UNBERT: User-News Matching BERT for News Recommendation. In IJCAI . [23] Shuai Zhang, Yi Tay, Lina Yao, Bin Wu, and Aixin Sun. 2019. Deeprec: An open-source toolkit for deep learning based recommendation. arXiv (2019). [24] Wayne Xin Zhao, Yupeng Hou, Xingyu Pan, Chen Yang, Zeyu Zhang, Zihan Lin, Jingsen Zhang, Shuqing Bian, Jiakai Tang, Wenqi Sun, et al. 2022. RecBole 2.0: towards a more up-to-date recommendation library. In CIKM . [25] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In SIGKDD . [26] Jieming Zhu, Quanyu Dai, Liangcai Su, Rong Ma, Jinyang Liu, Guohao Cai, Xi Xiao, and Rui Zhang. 2022. Bars: Towards open benchmarking for recommender systems. In SIGIR . [27] Jieming Zhu, Jinyang Liu, Shuai Yang, Qi Zhang, and Xiuqiang He. 2021. Open benchmarking for click-through rate prediction. In CIKM .",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Neural news recommendation with long-and short-term user representations"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Urban dictionary embeddings for slang NLP applications"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Torchrec: a pytorch domain library for recommendation systems"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Convolutional Neural Networks for Sentence Classification"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Quantifying the Carbon Emissions of Machine Learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "MINER: Multi-Interest Matching Network for News Recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Boosting Deep CTR Prediction with a Plug-and-Play Pre-trainer for News Recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Using NLP to quantify the environmental cost and diversity benefits of in-person NLP conferences"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Green ai"
+    },
+    {
+      "ref_id": "b11",
+      "title": "DeepCTR: Easy-to-use, Modular and Extendible package of deep-learning based CTR models"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Towards Sustainability-aware Recommender Systems: Analyzing the Trade-off Between Algorithms Performance and Carbon Footprint"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Neural news recommendation with attentive multi-view learning"
+    },
+    {
+      "ref_id": "b17",
+      "title": "NPA: neural news recommendation with personalized attention"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Neural news recommendation with multi-head self-attention"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Empowering News Recommendation with Pre-trained Language Models"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Mind: A large-scale dataset for news recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Where to go next for recommender systems? id-vs. modality-based recommender models revisited"
+    },
+    {
+      "ref_id": "b22",
+      "title": "UNBERT: User-News Matching BERT for News Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Deeprec: An open-source toolkit for deep learning based recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "RecBole 2.0: towards a more up-to-date recommendation library"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Bars: Towards open benchmarking for recommender systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Open benchmarking for click-through rate prediction"
+    }
   ]
 }

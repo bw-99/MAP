@@ -30,9 +30,143 @@
   "F GPT4 EVALUATION PROMPT": "The prompt framework for guiding GPT4 to evaluate the quality of answer SELL is shown in Figure 7. Table 9: Logic template for answer generation.",
   "keywords_parsed": [
     "User Targeting",
-    " Large Language Models",
-    " Analogical Reasoning",
-    " Knowledge Distillation",
-    " Chain of Thought"
+    "Large Language Models",
+    "Analogical Reasoning",
+    "Knowledge Distillation",
+    "Chain of Thought"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Baichuan 2: Open Large-scale Language Models"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Ratcliff/Obershelp pattern recognition"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b4",
+      "title": "LGESQL: Line Graph Enhanced Text-to-SQL Model with Mixed Local and NonLocal Relations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "GLM: General Language Model Pretraining with Autoregressive Blank Infilling"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Structure-mapping: A theoretical framework for analogy"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Few-shot Text-to-SQL Translation using Structure and Content Prompt Learning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "LLaMA Factory"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Distilling step-by-step! outperforming larger language models with less training data and smaller model sizes"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Lora: Low-rank adaptation of large language models"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Dynamic Hybrid Relation Exploration Network for Cross-Domain Context-Dependent Semantic Parsing"
+    },
+    {
+      "ref_id": "b12",
+      "title": "The CoT Collection: Improving Zero-shot and Few-shot Learning of Language Models via Chain-of-Thought Fine-Tuning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Large language models are zero-shot reasoners"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Binary codes capable of correcting deletions, insertions, and reversals"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A comprehensive evaluation of ChatGPT's zero-shot Text-to-SQL capability"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Audience expansion for online social network advertising"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Parsing Natural Language into Propositional and First-Order Logic with Dual Reinforcement Learning"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Score look-alike audiences"
+    },
+    {
+      "ref_id": "b19",
+      "title": "A feature-pair-based associative classification approach to look-alike modeling for conversion-oriented user targeting in tail campaigns"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A Call for Clarity in Reporting BLEU Scores"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Learning to retrieve prompts for in-context learning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Effective audience extension in online advertising"
+    },
+    {
+      "ref_id": "b24",
+      "title": "The latent relation mapping engine: Algorithm and experiments"
+    },
+    {
+      "ref_id": "b25",
+      "title": "RAT-SQL: Relation-Aware Schema Encoding and Linking for Text-to-SQL Parsers"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Chain-of-thought prompting elicits reasoning in large language models"
+    },
+    {
+      "ref_id": "b27",
+      "title": "C-Pack: Packaged Resources To Advance General Chinese Embedding"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Who Would be Interested in Services? An Entity Graph Learning System for User Targeting"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Harnessing the Power of Large Language Models for Natural Language to First-Order Logic Translation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Analogical inference enhanced knowledge graph embedding"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Retrieve Anything To Augment Large Language Models"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Learning to Expand Audience via Meta Hybrid Experts and Critics for Recommendation and Advertising"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Hubble: An industrial system for audience expansion in mobile marketing"
+    }
   ]
 }

@@ -26,6 +26,58 @@
   "Algorithm 1: run_CST": "Input : D , D 𝐶𝐹 , 𝑘 Output: [ 𝑝 𝑐 -𝑝 𝑡 ] 𝑝𝑟𝑜𝑡 _ 𝑐𝑜𝑛𝑑𝑖𝑡𝑖𝑜𝑛 ← D[ : , 𝑝𝑟𝑜𝑡 _ 𝑎𝑡𝑡𝑟𝑖𝑏𝑢𝑡𝑒 ] == 𝑝𝑟𝑜𝑡 _ 𝑣𝑎𝑙𝑢𝑒 D 𝑐 ← D[ 𝑝𝑟𝑜𝑡 _ 𝑐𝑜𝑛𝑑𝑖𝑡𝑖𝑜𝑛 ] D 𝑡 ← D[¬ 𝑝𝑟𝑜𝑡 _ 𝑐𝑜𝑛𝑑𝑖𝑡𝑖𝑜𝑛 ] 𝑝𝑟𝑜𝑡 _ 𝑖𝑑𝑥 ← D 𝑐 .𝑖𝑛𝑑𝑒𝑥.𝑡𝑜 _ 𝑙𝑖𝑠𝑡 ( ) ; 𝑑𝑖𝑓 𝑓 _ 𝑙𝑖𝑠𝑡 = [ ] for 𝑐, 𝑟𝑜𝑤 ∈ 𝑝𝑟𝑜𝑡 _ 𝑖𝑑𝑥 do 𝑟𝑒𝑠 _1 ← 𝑔𝑒𝑡 _ 𝑡𝑜𝑝 _ 𝑘 ( D [ 𝑐, : ] , D 𝑐 , 𝑘 ) ; // get protected (control) search space // get non-protected (test) search space // get idx for all complainants // idx of the top-k tuples for control group 𝑟𝑒𝑠 _2 ← 𝑔𝑒𝑡 _ 𝑡𝑜𝑝 _ 𝑘 ( D 𝐶𝐹 [ 𝑐, : ] , D 𝑡 , 𝑘 ) ; // idx of the top-k tuples for test group 𝑝 𝑐 ← 𝑠𝑢𝑚 ( D[ 𝑟𝑒𝑠 1 , 𝑡𝑎𝑟𝑔𝑒𝑡 _ 𝑎𝑡𝑡𝑟𝑖𝑏𝑢𝑡𝑒 ] == 𝑛𝑒𝑔𝑎𝑡𝑖𝑣𝑒 _ 𝑜𝑢𝑡𝑐𝑜𝑚𝑒 ) / 𝑙𝑒𝑛 ( 𝑟𝑒𝑠 _1 ) 𝑝 𝑡 ← 𝑠𝑢𝑚 ( D[ 𝑟𝑒𝑠 2 , 𝑡𝑎𝑟𝑔𝑒𝑡 _ 𝑎𝑡𝑡𝑟𝑖𝑏𝑢𝑡𝑒 ] == 𝑛𝑒𝑔𝑎𝑡𝑖𝑣𝑒 _ 𝑜𝑢𝑡𝑐𝑜𝑚𝑒 ) / 𝑙𝑒𝑛 ( 𝑟𝑒𝑠 _2 ) 𝑑𝑖𝑓 𝑓 _ 𝑙𝑖𝑠𝑡 [ 𝑐 ] ← 𝑝 𝑐 -𝑝 𝑡 end return 𝑑𝑖𝑓 𝑓 _ 𝑙𝑖𝑠𝑡",
   "Algorithm 2: get_top_k": "Input : 𝑡 , 𝑡 _ 𝑠𝑒𝑡 , 𝑘 Output: [ 𝑖𝑛𝑑𝑖𝑐𝑒𝑠 ] ( 𝑖𝑑𝑥,𝑑𝑖𝑠𝑡 ) ← 𝑘 _ 𝑁𝑁 ( 𝑡, 𝑡 _ 𝑠𝑒𝑡, 𝑘 + 1 ) ; if without search centers then 𝑟𝑒𝑚𝑜𝑣𝑒 ( 𝑡, 𝑖𝑑𝑥, 𝑑𝑖𝑠𝑡 ) ; end 𝑖𝑑𝑥 ′ ← 𝑠𝑜𝑟𝑡 ( 𝑖𝑑𝑥,𝑑𝑖𝑠𝑡 ) ; return 𝑖𝑑𝑥 ′ // run k-NN algorithm with 𝑘 + 1 // remove the center t from idx // sort idx by the distance Received 10 May 2023; revised 5 September 2023; accepted 20 September 2023 18",
   "keywords_parsed": [
-    "None"
+    "discrimination discovery",
+    "structural causal models",
+    "counterfactual fairness"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Murder in New Orleans: the creation of Jim Crow policing"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Automated Test Generation to Detect Individual Discrimination in AI Models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Mostly Harmless Econometrics"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Machine Bias"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Machine learning methods that economists should know about"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Big data's disparate impact"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Situation Testing for Employment Discrimination in the United States of America"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Field Experiments on Discrimination"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Are Emily and Greg More Employable than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination"
+    },
+    {
+      "ref_id": "b10",
+      "title": "FlipTest: fairness testing via optimal transport"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Rethinking Racism: Toward a structural interpretation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "The Causal Fairness Field Guide: Perspectives From Social and Formal Sciences"
+    }
   ]
 }

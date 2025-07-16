@@ -29,7 +29,267 @@
   "B HYPERPARAMETER ANALYSIS": "",
   "B.1 The Impact of Contrastive Learning Temperature Coefficient": "To explore the effect of different temperature parameters in the cross-modal knowledge alignment contrastive learning, we implement experiments on MovieLens and Amazon datasets, and the results are in Figure 8(a). From the results we can get the following observations: 1) The temperature coefficient in contrastive learning has an obvious impact on the performance. As the temperature coefficient increases, the performance will have a tendency to improve first and then decrease, indicating that increasing the coefficient within a certain range is beneficial to improve the performance. 2) For both MovieLens and Amazon datasets, the optimal temperature coefficient is below 1 in our experiments, which has also been verified in previous work [46, 57].",
   "B.2 The Impact of First Stage Batch Size": "We also explore the impact of different batch sizes, and the results are shown in Figure 8(b). We can observe that as the batch size increases, the performance is also improved on both datasets, which indicates that increasing the batch size during the contrastive 4 https://jmcauley.ucsd.edu/data/amazon/ 5 https://tianchi.aliyun.com/dataset/dataDetail?dataId=56 Conference'17, July 2017, Washington, DC, USA CTRL: Connect Collaborative and Language Model for CTR Prediction learning pre-training is conducive to achieving better cross-modal knowledge alignment effect and improving the prediction accuracy. 0.815 0.82 0.825 0.83 0.835 0.84 0.69 0.692 0.694 0.696 0.698 0.7 0.702 0.704 0.706 0.708 0.1 0.5 0.7 1 1.2 1.5 AUC AUC Amazon Movielens 0.815 0.82 0.825 0.83 0.835 0.84 0.69 0.692 0.694 0.696 0.698 0.7 0.702 0.704 0.706 0.708 200 400 800 1600 3200 6400 AUC AUC Amazon Movielens (a) Temperature Coefficient (b) Batch sizes Figure 8: Influence of different contrastive learning temperature coefficient and batch sizes.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Language Models are Few-Shot Learners"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "PALR: Personalization Aware LLMs for Recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "The regression analysis of binary sequences"
+    },
+    {
+      "ref_id": "b8",
+      "title": "M6Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b10",
+      "title": "GLM: General Language Model Pretraining with Autoregressive Blank Infilling"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Jensen-Shannon divergence and Hilbert space embedding"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Learning piecewise linear models from large scale data for ad click prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Web-scale bayesian click-through rate prediction for sponsored search advertising in microsoft's bing search engine"
+    },
+    {
+      "ref_id": "b16",
+      "title": "An embedding learning framework for numerical features in ctr prediction"
+    },
+    {
+      "ref_id": "b17",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Noise-contrastive estimation: A new estimation principle for unnormalized statistical models"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Aspect-based sentiment analysis using bert"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Large Language Models are Zero-Shot Rankers for Recommender Systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Text style transfer: A review and experimental evaluation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "FiBiNET"
+    },
+    {
+      "ref_id": "b25",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Tinybert: Distilling bert for natural language understanding"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Learning the parts of objects by non-negative matrix factorization"
+    },
+    {
+      "ref_id": "b30",
+      "title": "IntTower: the Next Generation of Two-Tower Model for Pre-Ranking System"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Low Resource Style Transfer via Domain Adaptive Meta Learning"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Exploring texttransformers in aaai 2021 shared task: Covid-19 fake news detection in english"
+    },
+    {
+      "ref_id": "b33",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Feature generation by convolutional neural network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b35",
+      "title": "PTab: Using the Pre-trained Language Model for Modeling Tabular Data"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Is ChatGPT a Good Recommender? A Preliminary Study"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Decoupled weight decay regularization"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Meta-learning on heterogeneous information networks for cold-start recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Ad click prediction: a view from the trenches"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A recent overview of the state-of-the-art elements of text classification"
+    },
+    {
+      "ref_id": "b42",
+      "title": "CTR-BERT: Cost-effective knowledge distillation for billion-parameter teacher models"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Justifying recommendations using distantly-labeled reviews and fine-grained aspects"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Training language models to follow instructions with human feedback"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Autoint: Automatic feature interaction learning via selfattentive neural networks"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Dropout: a simple way to prevent neural networks from overfitting"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Visualizing data using t-SNE"
+    },
+    {
+      "ref_id": "b53",
+      "title": "SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b55",
+      "title": "CFM: Convolutional Factorization Machines for Context-Aware Recommendation"
+    },
+    {
+      "ref_id": "b56",
+      "title": "BERT post-training for review reading comprehension and aspect-based sentiment analysis"
+    },
+    {
+      "ref_id": "b57",
+      "title": "FILIP: fine-grained interactive language-image pre-training"
+    },
+    {
+      "ref_id": "b58",
+      "title": "A Dual Augmented Two-tower Model for Online Large-scale Recommendation"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Adaptive User Modeling with Long and Short-Term Preferences for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Is ChatGPT Fair for Recommendation? Evaluating Fairness in Large Language Model Recommendation"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Recommendation as instruction following: A large language model empowered recommendation approach"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Deep learning over multi-field categorical data"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Optimal real-time bidding for display advertising"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Language models as recommender systems: Evaluations and limitations"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

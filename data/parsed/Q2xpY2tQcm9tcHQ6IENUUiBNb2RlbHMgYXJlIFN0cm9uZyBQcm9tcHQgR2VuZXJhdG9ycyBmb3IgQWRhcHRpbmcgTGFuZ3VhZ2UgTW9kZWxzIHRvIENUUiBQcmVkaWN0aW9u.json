@@ -43,6 +43,172 @@
   "C.3 Generalization": "We conduct the following additional compatibility experiments to further validate the model compatibility of our proposed ClickPrompt in terms of PLM architecture. We select DCNv2 as the backbone CTR model, and choose GPT2 (decoder-only) and BART (encoder-decoder) as the backbone PLMs. The compatibility experiment is conducted on MovieLens-1M, BookCrossing, and AmazonToys datasets. We also apply the layer-wise prompting strategy to GPT2 and BART. For GPT2, the pretraining objective switches from prompt-augmented masked language modeling (PA-MLM) to prompt-augmented causal language modeling (PA-CLM). The results are given in Table ?? . ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction WWW'24, May 13-17, 2024, Singapore, Singapore WWW'24, May 13-17, 2024, Singapore, Singapore Jianghao Lin et al.",
   "keywords_parsed": [
     "Pretrained Language Models",
-    " CTR Prediction"
+    "CTR Prediction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "MindSpore"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "PADA: Example-based Prompt Learning for on-the-fly Adaptation to Unseen Domains"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Language models are realistic tabular data generators"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Training and testing low-degree polynomial data mappings via linear SVM"
+    },
+    {
+      "ref_id": "b6",
+      "title": "DCAP: Deep Cross Attentional Product Network for User Response Prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "M6Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "An adversarial imitation click model for information retrieval"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b10",
+      "title": "An F-shape Click Model for Information Retrieval on Multiblock Mobile Pages"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized"
+    },
+    {
+      "ref_id": "b36",
+      "title": "MAP: A Model-agnostic Pretraining Framework for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "ReLLa: Retrieval-enhanced Large Language Models for Lifelong Sequential Behavior Comprehension in Recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Feature generation by convolutional neural network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b39",
+      "title": "PTab: Using the Pre-trained Language Model for Modeling Tabular Data"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Is chatgpt a good recommender? a preliminary study"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A Convolutional Click Prediction Model"
+    },
+    {
+      "ref_id": "b42",
+      "title": "P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks"
+    },
+    {
+      "ref_id": "b43",
+      "title": "GPT understands, too"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Roberta: A robustly optimized bert pretraining approach"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Decoupled weight decay regularization"
+    },
+    {
+      "ref_id": "b46",
+      "title": "UniTRec: A Unified Text-to-Text Transformer and Joint Contrastive Learning Framework for Text-based Recommendation"
+    },
+    {
+      "ref_id": "b47",
+      "title": "CTR-BERT: Cost-effective knowledge distillation for billion-parameter teacher models"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Learning how to ask: Querying LMs with mixtures of soft prompts"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Product-based neural networks for user response prediction over multi-field categorical data"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Enhancing CTR Prediction with Context-Aware Feature Representation Learning"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b58",
+      "title": "A Survey on Large Language Models for Recommendation"
+    },
+    {
+      "ref_id": "b59",
+      "title": "A Bird's-eye View of Reranking: from List Level to Page Level"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Attentional factorization machines: Learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b62",
+      "title": "A survey on model compression and acceleration for pretrained language models"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Recommendation as instruction following: A large language model empowered recommendation approach"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Deep learning for click-through rate estimation"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Prompt learning for news recommendation"
+    }
   ]
 }

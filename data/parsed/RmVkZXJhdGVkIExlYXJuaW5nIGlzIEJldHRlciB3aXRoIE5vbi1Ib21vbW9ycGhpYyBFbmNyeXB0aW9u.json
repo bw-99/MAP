@@ -53,6 +53,290 @@
   "L REPRODUCIBILITY": "To ensure reproducibility, we use the following FL_PyTorch simulator [15] features: random seeds were fixed for data reshuffling, and random seeds were fixed for the runtime pseudo-random generators involved in variants of DCGD for randomized compressors. The source code of our experiments is a part of our submission to \"4th International Workshop on Distributed Machine Learning, co-located with CoNEXT 2023\" . If you are interested in the source code for experiments, please either find this publication and supplementary materials on a dedicated conference website 8 9 or contact the authors. 8 https://distributedml.org/ 9 https://conferences2.sigcomm.org/co-next/2023/ 55",
   "M LIMITATIONS AND FUTURE RESEARCH": "One limitation of our work is the assumption that clients trust each other. However, it is also presented in HE . The second limitation is that our work studies the case 𝑑 > 𝑛 . Our paper did not provide a rigorous theoretical analysis and focused on practical aspects of the proposed framework. Our method achieves strong privacy guarantees without compromising efficiency or accuracy via leveraging existing Cryptography protocols. For future research, in addition to developing rigorous theory and developing strategy for 𝑑 > 𝑛 , we believe that our work provides a bridge to utilizing other fields of science that work only on the level of bits. In addition to Cryptography another class of methods that operate on a bitwise representation of information is lossless data compression. This line can be investigated within DCGD/PermK framework in future research. Next, as we have described in Appendix I our work potentially opens an extra degree of freedom for research in Systems and Compilers for Deep Learning that investigates different parallelism scheduling strategies for optimize gradient oracles ∇ 𝑓 𝑖 ( 𝑥 ) . Our work opens the opportunity to refine Parameter Parallelism schedulers (see Appendix I.3). 56",
   "keywords_parsed": [
-    "None"
+    "Federated Learning",
+    "Privacy Preserving Machine Learning",
+    "Asynchronous Training",
+    "Security",
+    "Optimization",
+    "AES",
+    "CKKS"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "PyCryptodome"
+    },
+    {
+      "ref_id": "b2",
+      "title": "TensorFlow: A System for Large-Scale Machine Learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "QSGD: Communication-efficient SGD via gradient quantization and encoding"
+    },
+    {
+      "ref_id": "b4",
+      "title": "The convergence of sparsified gradient methods"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Privacy-preserving deep learning via additively homomorphic encryption"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Reveal: Single-trace side-channel leakage of the seal homomorphic encryption library"
+    },
+    {
+      "ref_id": "b7",
+      "title": "On the (im) possibility of obfuscating programs"
+    },
+    {
+      "ref_id": "b8",
+      "title": "The EAX Mode of Operation (A Two-Pass Authenticated Encryption Scheme Optimized for Simplicity and Efficiency)"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Tenseal: A library for encrypted tensor operations using homomorphic encryption"
+    },
+    {
+      "ref_id": "b10",
+      "title": "The Salsa20 family of stream ciphers"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Protection against reconstruction and its applications in private federated learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Noise-tolerant learning, the parity problem, and the statistical query model"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Biclique cryptanalysis of the full AES"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A graduate course in applied cryptography"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Fl_pytorch: optimization research simulator for federated learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Simple encrypted arithmetic library-SEAL v2.1"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Understanding gradient clipping in private sgd: A geometric perspective"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Homomorphic encryption for arithmetic of approximate numbers"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Linear program reconstruction in practice"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Intel SGX explained"
+    },
+    {
+      "ref_id": "b21",
+      "title": "AES proposal: Rijndael"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Reijndael: The advanced encryption standard"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Revealing information while preserving privacy"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Our data, ourselves: Privacy via distributed noise generation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Calibrating noise to sensitivity in private data analysis"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Graphviz-open source graph drawing tools"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Somewhat practical fully homomorphic encryption"
+    },
+    {
+      "ref_id": "b28",
+      "title": "On the IND-CCA1 security of FHE schemes"
+    },
+    {
+      "ref_id": "b29",
+      "title": "A fully homomorphic encryption scheme"
+    },
+    {
+      "ref_id": "b30",
+      "title": "MARINA: Faster non-convex distributed learning with compression"
+    },
+    {
+      "ref_id": "b31",
+      "title": "An Efficient Side-Channel Protected AES Implementation with Arbitrary Protection Order"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Deep Residual Learning for Image Recognition"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b34",
+      "title": "1.1 computing's energy problem (and what we can do about it)"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Natural compression for distributed deep learning"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Revisiting Fully Homomorphic Encryption Schemes"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Quantum analysis of aes"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Beyond Data and Model Parallelism for Deep Neural Networks"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Flashe: Additively symmetric homomorphic encryption for cross-silo federated learning"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Advances and open problems in federated learning"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Secure, privacy-preserving and federated machine learning in medical imaging"
+    },
+    {
+      "ref_id": "b42",
+      "title": "The power of linear reconstruction attacks"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Distributed learning with compressed gradients"
+    },
+    {
+      "ref_id": "b44",
+      "title": "On Circuit Private, Multikey and Threshold Approximate Homomorphic Encryption"
+    },
+    {
+      "ref_id": "b45",
+      "title": "One weird trick for parallelizing convolutional neural networks"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Learning multiple layers of features from tiny images"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Protecting Privacy Through Homomorphic Encryption"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Priority-based PCIe scheduling for multi-tenant multi-GPU systems"
+    },
+    {
+      "ref_id": "b49",
+      "title": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Secure model fusion for distributed learning using partial homomorphic encryption"
+    },
+    {
+      "ref_id": "b51",
+      "title": "On privacy and personalization in cross-silo federated learning"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Mersenne twister: a 623-dimensionally equidistributed uniform pseudo-random number generator"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Communication-efficient learning of deep networks from decentralized data"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Microsoft SEAL"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Pytorch: An imperative style, high-performance deep learning library"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Demystifying arm trustzone: A comprehensive survey"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Side channel attack prevention for AES smart card"
+    },
+    {
+      "ref_id": "b58",
+      "title": "On lattices, learning with errors, random linear codes, and cryptography"
+    },
+    {
+      "ref_id": "b59",
+      "title": "EF21: A new, simpler, theoretically better, and practically faster error feedback"
+    },
+    {
+      "ref_id": "b60",
+      "title": "On data banks and privacy homomorphisms"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Learning representations by back-propagating errors"
+    },
+    {
+      "ref_id": "b62",
+      "title": "On stochastic sign descent methods"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Ethernet: the definitive guide"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Permutation compressors for provably faster distributed nonconvex optimization"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Gradient sparsification for communication-efficient distributed optimization"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Terngrad: Ternary gradients to reduce communication in distributed deep learning"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Batchcrypt: Efficient homomorphic encryption for cross-silo federated learning"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Secure multi-party computation: theory, practice and applications"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Faster rates for compressed federated learning with client-variance reduction"
+    }
   ]
 }

@@ -46,6 +46,152 @@
   "A.8 Jobs Recommendations Ranking Model Architecture": "As shown in the Figure ?? , the jobs recommendation ranking model employs a multi-tasks training framework that unifies Job Search (JS) and Jobs You Might be Interested In (JYMBII) tasks in a single model. The id embedding matrices are added into the bottom layer to be shared by the two tasks, followed by a task-specific 2-layer DCNv2 to learn feature interactions. We conducted various experiments to apply different architectures of feature interactions, and the 2-layer DCN performs best among all. The results on the JYMBII task are demonstrated in the Table 10. KDD '24, August 25-29, 2024, Barcelona, Spain Fedor Borisyuk et al. LiRank: Industrial Large Scale Ranking Models at LinkedIn KDD '24, August 25-29, 2024, Barcelona, Spain",
   "keywords_parsed": [
     "Large Scale Ranking",
-    " Deep Neural Networks"
+    "Deep Neural Networks"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Personalizing LinkedIn Feed"
+    },
+    {
+      "ref_id": "b2",
+      "title": "On the Factory Floor: ML Engineering for Industrial-Scale Ads Recommendation Models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Fast and Scalable Minimal Perfect Hashing for Massive Key Sets"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Adaptive Factorization Network: Learning Adaptive-Order Feature Interactions"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Apache Commons Codec"
+    },
+    {
+      "ref_id": "b8",
+      "title": "An empirical investigation of catastrophic forgetting in gradient-based neural networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Post-training 4-bit quantization on embedding tables"
+    },
+    {
+      "ref_id": "b10",
+      "title": "On Calibration of Modern Neural Networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Soft Calibration Objectives for Neural Networks"
+    },
+    {
+      "ref_id": "b12",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Applying Deep Learning to Airbnb Search"
+    },
+    {
+      "ref_id": "b14",
+      "title": "GateNet: Gating-Enhanced Deep Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Generalized Deep Mixed Models"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Overcoming catastrophic forgetting in neural networks"
+    },
+    {
+      "ref_id": "b17",
+      "title": "An Unbiased Offline Evaluation of Contextual Bandit Algorithms with Generalized Linear Models"
+    },
+    {
+      "ref_id": "b18",
+      "title": "xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b20",
+      "title": "FinalMLP: An Enhanced Two-Stream MLP Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Deep Learning Recommendation Model for Personalization and Recommendation Systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "PinnerFormer: Sequence Modeling for User Representation at Pinterest"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Revisiting natural gradient for deep networks"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Deep Bayesian Bandits Showdown: An Empirical Comparison of Bayesian Deep Networks for Thompson Sampling"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b31",
+      "title": "fastutil"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b35",
+      "title": "TransAct: Transformer-based Realtime User Action Model for Recommendation at Pinterest"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Scale Calibration of Deep Ranking Models"
+    }
   ]
 }

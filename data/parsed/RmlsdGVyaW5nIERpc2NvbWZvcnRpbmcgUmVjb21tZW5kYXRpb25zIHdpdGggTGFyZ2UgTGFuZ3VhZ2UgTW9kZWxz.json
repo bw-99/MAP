@@ -40,17 +40,213 @@
   "E.3 LLMs as Personal Assistants": "LLMs possess semantic understanding and reasoning capabilities, enabling them to engage in human-like conversations and act as decision-making proxies [98]. They not only help users efficiently obtain information and complete tasks but also provide more intelligent, convenient, and enriched interactions [46]. Some of them Filtering Discomforting Recommendations with Large Language Models WWW'25, April 28-May 2, 2025, Sydney, NSW, Australia are closely integrated with personal data and devices, functioning as personal assistants [46]. Several commercial products, such as Microsoft's Copilot, New Bing, Google's Bard, and Gemini, as well as offerings from smartphone manufacturers, have integrated LLMs to boost productivity and enhance web and on-device experiences [1, 61, 62]. In the area of human-centered recommender systems, the RAH framework [78], an LLM-based multi-agent system, analyzes user preferences by observing ratings and reviews and incorporates a reflection mechanism to improve the accuracy.",
   "F More Discussion": "Here are some discussions that help readers gain a deeper understanding of our work. F.0.1 Generalizability to non-text-based items. Expanding to nontext scenarios is a natural progression, requiring the use of multimodal models to understand such content. However, the efficiency of processing, especially for videos, remains a concern. Preprocessing non-text content offline may offer a viable solution. F.0.2 Differences between discomforting and disliked items. We believe this primarily manifests in the impact perceived by users, with 'discomforting' items having a greater impact. For uninteresting or disliked items, users may simply choose to ignore them. However, as we mentioned in the introduction, discomforting recommendations may not only fail to engage users but also lead to negative emotional consequences, such as anxiety, unease, or distress. This is a highly subjective matter and has a dynamic nature. For example, as illustrated in our formative study (Section 3.1, F1), one participant mentioned that he might search for horror content to watch during the day, but encountering the same horror content at night would make him feel very uncomfortable, even to the extent of affecting his sleep. In our formative study, we observed that most users do not express strong hostility toward uninteresting (disliked) content but are more averse to 'discomforting' content. Thus, from the users' perspective, filtering discomforting content is a more pressing issue than merely addressing disinterest, and this study focuses on addressing the former. F.0.3 Discussion of critiquing-based recommender systems. Critiquingbased systems [84, 91] adjust recommendations end-to-end based on feedback, whereas our work adopts a plug-and-play filtering approach, enabling immediate real-world applicability. As noted in Section 6.2, our work complements algorithmic designs like critiquing systems. F.0.4 Computational overhead and scalability. There are three areas where LLMs are needed: (1) to determine whether an item should be filtered, (2) for conversational agents, and (3) to build preference profiles. Among these, (1) and (3) have higher real-time requirements. For (1), assume a user has 𝑚 filtering rules. Processing each item requires 1 + 𝑚 LLM calls, including one call for analyzing the item and 𝑚 calls to check individually whether the item should be filtered according to each filtering rule. In the user study, we recruited 24 participants, and they did not notice any significant delay with the LLM service during their use. For (3), suppose the algorithm recommends 𝑁 items, and a user clicks on 𝑛 of them ( 𝑁 ≫ 𝑛 ). One direct way to construct a user's preference profile is to analyze all the items recommended by the algorithm, treating the clicked items as positive samples and the unclicked ones as negative samples. This process is similar to pointwise matrix factorization in collaborative filtering, with a complexity of 𝑂 ( 𝑁 ) . However, we adopted the pairwise ranking approach, where for each positive sample clicked by the user, a negative sample is sampled, reducing the complexity to 𝑂 ( 2 𝑛 ) (with 𝑛 positive samples and corresponding 𝑛 negative samples). This process is similar to the matrix factorization of BPR Loss in collaborative filtering with a negative sampling ratio equal to 1. Additionally, in the user study, we found that users could smoothly use the tool without experiencing delays, indicating good real-time performance. We are working hard to publish our work to the extension store of the Chrome browser, where users can access commercial LLM services through a private API Key. Meanwhile, we are exploring collaborations with commercial partners, and when our work is applied to real-world applications, certain engineering designs will be considered, such as processing items offline and using different sizes of LLMs for different tasks. In the future, we believe that all our services, including LLM services, have the potential to run entirely on mobile devices. This is also why we chose to conduct offline experiments with the Phi series LLM, which has 3.8 billion parameters. From its inception, the Phi series model was designed with running on mobile devices in mind, and we believe that LLMs on user devices will become a reality in the near future. F.0.5 Discussion on the echo chamber problem. Our work provides users with understandable and editable preference profiles, giving them greater agency over the recommended content. In this context, if systems similar to the critiquing-based recommender systems can effectively capture users' preferences in real time and then deliver diverse recommendations, it becomes possible to prevent the formation of information silos. This discussion further underscores why we believe our human-centered approach complements algorithmcentered work in the research and development of recommender systems. F.0.6 Comparison with recommendation unlearning. Recommendation unlearning emphasizes the model's capability, with a primary focus on the model's completeness, efficiency, and performance after forgetting. These methods typically predefine which interactions should be forgotten, assess the completeness of forgetting through Membership Inference Attacks (MIA), measure the efficiency of forgetting through runtime analysis, and evaluate post-forgetting performance through recommendation accuracy. In contrast, DiscomfortFilter filters interactions from the perspective of user needs-due to its subjectivity, it is difficult to clearly define which interactions should be filtered in advance. Therefore, it is hard to make a quantitative comparison with recommendation unlearning, as current unlearning methods cannot handle subjective user inputs. We believe that these two types of work focus on model design and human-centered design, respectively, and are complementary to each other. F.0.7 The effect of ephemeral filtering criteria. We first selected filtering rules with more than 600 items processed. For each group of WWW'25, April 28-May 2, 2025, Sydney, NSW, Australia Jiahao Liu et al. 30 items, we calculated the filtering burden of the rules. The results showed that the average filtering burden of the rules decreased in oscillations, and the corresponding fitted curve yielded conclusions similar to those from the analysis at a daily granularity. F.0.8 Only the MIND dataset was used in the offline experiment. DiscomfortFilter constructs positive and negative sample pairs by observing the content recommended by the algorithm and the user's click behavior on that content. Specifically, our negative sampling is not performed randomly from the entire item set; instead, it is selected from items that appeared alongside the clicked content but were not clicked. This approach places high demands on the dataset and is often difficult to satisfy. Among commonly used datasets, we found that only the MIND dataset provides both unclicked items that appeared alongside the clicked ones and side information for those items. Additionally, some less common datasets, such as the ZhihuRec-Dataset, provide unclicked items but lack detailed side information, offering only token vectors. Furthermore, while classic CTR datasets include labels indicating whether a user clicked on an item, they are not suitable for our purpose, as their features are anonymous and do not contain textual information. F.0.9 Insufficient diversity of platform and user in user study. During the user study, we ceased recruiting participants when we observed that additional participants were no longer providing new insights. Due to the substantial time investment required for user research (including interviews, transcription, coding, and analysis), it became challenging to expand the study further. For instance, two related studies recruited 15 and 12 participants, respectively [27, 82]. We are currently trying to collaborate with industry partners to implement the DiscomfortFilter concept in real-world recommender systems, which will allow for broader research in this area. F.0.10 Can DiscomfortFilter be used to capture interest? We believe the process can be understood as re-ranking algorithmically recommended content on the user side. We agree that the DiscomfortFilter could indeed be applied for such purposes and believe this might be a very promising direction for the future. F.0.11 Is it possible to use the 'Not Interested' button to enhance the feedback? While we agree that the 'Not Interested' button can enhance feedback, we find it inappropriate for our goals. In the formative study, we identified drawbacks of the 'Not Interested' button, such as its lack of personalization, which prevents users from providing nuanced feedback, and its lack of flexibility, which can result in content disappearing permanently even if the disinterest is temporary. Including such a button could introduce uncontrollability and potentially harm users. F.0.12 DiscomfortFilter or DisinterestFilter? In our formative study, we observed that most users do not have strong hostility toward uninteresting content but are more averse to 'discomforting' content. Thus, from users' perspective, filtering discomforting content is a more pressing issue than merely addressing disinterest, and the study focuses on the former. That said, DiscomfortFilter could also be used to filter uninteresting content-the tool's functionality depends on the user. F.0.13 The A/B test for the control group. Our findings revealed that DiscomfortFilter's design inherently accounts for contestability, ensuring transparency and user control over its decisions. For instance, users can review filtering log and understand the rationale behind each filtering record, with the ability to make adjustments if the filtering records do not meet their expectations. Consequently, when we presented users with a mock filtering interface-where no actual or only random filtering occurred-they quickly discerned they were part of the control group, leading to immediate expressions of dissatisfaction. Moreover, during the user study in current version, participants expressed satisfaction with the performance of the functionalities, not just their design. In summary, we posit that the mere presence of a filtering interface is unlikely to enhance user satisfaction. Instead, satisfaction levels are significantly influenced by the efficacy of the actual filtering performance. Regarding other design elements, such as explanations of preference profiles and filtering rules, these strategies emerged from our participatory design process as necessities identified by participants. Furthermore, during the evaluation phase, these features garnered high satisfaction in both questionnaires and interviews with regards to their effects and design. Therefore, we believe that our current conclusions sufficiently demonstrate the effectiveness of these designs without necessitating a control group experiment. In conclusion, the results of the A/B test do not alter our original conclusions.",
   "keywords_parsed": [
-    "Personalized algorithms can inadvertently expose users to discomforting recommendations",
-    " potentially triggering negative consequences. The subjectivity of discomfort and the black-box nature of these algorithms make it challenging to effectively identify and filter such content. To address this",
-    " we first conducted a formative study to understand users' practices and expectations regarding discomforting recommendation filtering. Then",
-    " we designed a Large Language Model (LLM)-based tool named DiscomfortFilter",
-    " which constructs an editable preference profile for a user and helps the user express filtering needs through conversation to mask discomforting preferences within the profile. Based on the edited profile",
-    " DiscomfortFilter facilitates the discomforting recommendations filtering in a plug-and-play manner",
-    " maintaining flexibility and transparency. The constructed preference profile improves LLM reasoning and simplifies user alignment",
-    " enabling a 3.8B opensource LLM to rival top commercial models in an offline proxy task. A one-week user study with 24 participants demonstrated the effectiveness of DiscomfortFilter",
-    " while also highlighting its potential impact on platform recommendation outcomes. We conclude by discussing the ongoing challenges",
-    " highlighting its relevance to broader research",
-    " assessing stakeholder impact",
-    " and outlining future research directions."
+    "discomforting recommendation filtering",
+    "large language model"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gpt-4 technical report"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Context-aware recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Tangible privacy: Towards user-centric sensor designs for bystander privacy"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A safer youtube kids: An extra layer of content filtering using automated multimodal analysis"
+    },
+    {
+      "ref_id": "b5",
+      "title": "An approach to controlling user models and personalization effects in recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Curating quality? How Twitter's timeline algorithm treats different types of news"
+    },
+    {
+      "ref_id": "b7",
+      "title": "# FuckTheAlgorithm: algorithmic imaginaries and political resistance"
+    },
+    {
+      "ref_id": "b8",
+      "title": "TasteWeights: a visual interactive hybrid recommender system"
+    },
+    {
+      "ref_id": "b9",
+      "title": "What should i read next? a personalized visual publication recommender system"
+    },
+    {
+      "ref_id": "b10",
+      "title": "The algorithmic imaginary: Exploring the ordinary affects of Facebook algorithms"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Crossmod: A cross-community learning-based system to assist reddit moderators"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Bias and debias in recommender system: A survey and future directions"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Personalized interventions for online moderation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Technology acceptance model: TAM"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Values (mis) alignment: Exploring tensions between platform and LGBTQ+ community design values"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Overcoming algorithm aversion: People will use imperfect algorithms if they can (even slightly) modify them"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Algorithms of Anxiety: Fear in the Digital Age"
+    },
+    {
+      "ref_id": "b18",
+      "title": "First I\" like\" it, then I hide it: Folk Theories of Social Feeds"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Music cold-start and long-tail recommendation: bias in deep representations"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Analyzing the use of large language models for content moderation with chatgpt examples"
+    },
+    {
+      "ref_id": "b21",
+      "title": "The distressing ads that persist: Uncovering the harms of targeted weight-loss ads among users with histories of disordered eating"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A survey on trustworthy recommender systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Does the user have a theory of the recommender? a grounded theory study"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Custodians of the Internet: Platforms, content moderation, and the hidden decisions that shape social media"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Society and the internet: How networks of information and communication are changing our lives"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Algorithm awareness as an important internet skill: the case of voice assistants"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Understanding user sensemaking in machine learning fairness assessment systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Personalized Content Moderation and Emergent Outcomes"
+    },
+    {
+      "ref_id": "b29",
+      "title": "How content and co-viewers elicit emotional discomfort in moviegoing experiences"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Interactive recommender systems: A survey of the state of the art and future research challenges and opportunities"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Automated content moderation increases adherence to community guidelines"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Human-machine collaboration for content regulation: The case of reddit automoderator"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Designing word filter tools for creator-led comment moderation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Personalizing content moderation on social media: User perspectives on moderation choices, interface design, and labor"
+    },
+    {
+      "ref_id": "b35",
+      "title": "A tradeoff-centered framework of content moderation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Degenerate feedback loops in recommender systems"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Go with the flow: effects of transparency and user control on targeted advertising using flow charts"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Improving controllability and predictability of interactive recommendation interfaces for exploratory search"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Algorithmic folk theories and identity: How TikTok users co-produce Knowledge of identity and engage in algorithmic resistance"
+    },
+    {
+      "ref_id": "b40",
+      "title": "'It's like learning a whole other language': The role of algorithmic skills in the curation of creative goods"
+    },
+    {
+      "ref_id": "b41",
+      "title": "LLM-Mod: Can Large Language Models Assist Content Moderation?"
+    },
+    {
+      "ref_id": "b42",
+      "title": "The effects of personalization and familiarity on trust and adoption of recommendation agents"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Watch your language: large language models and content moderation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Diversity in recommender systems-A survey"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Selective and collaborative influence function for efficient recommendation unlearning"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Personal llm agents: Insights and survey about the capability, efficiency and security"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Recommendation unlearning via matrix correction"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Parameter-free dynamic graph embedding for link prediction"
+    },
+    {
+      "ref_id": "b96",
+      "title": "Recommendation unlearning via influence function"
+    },
+    {
+      "ref_id": "b97",
+      "title": "See Widely, Think Wisely: Toward Designing a Generative Multi-agent System to Burst Filter Bubbles"
+    },
+    {
+      "ref_id": "b98",
+      "title": "A survey of large language models"
+    }
   ]
 }

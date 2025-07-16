@@ -31,8 +31,182 @@
   "REFERENCES": "[1] 2020. MindSpore. https://www.mindspore.cn/ [2] Keqin Bao, Jizhi Zhang, Yang Zhang, Wenjie Wang, Fuli Feng, and Xiangnan He. 2023. Tallrec: An effective and efficient tuning framework to align large language model with recommendation. arXiv preprint arXiv:2305.00447 (2023). [3] Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al. 2020. Language models are few-shot learners. Advances in neural information processing systems 33 (2020), 1877-1901. [4] Peter Bühlmann. 2012. Bagging, boosting and ensemble methods. Handbook of computational statistics: Concepts and methods (2012), 985-1022. [5] Yin-Wen Chang, Cho-Jui Hsieh, Kai-Wei Chang, Michael Ringgaard, and Chih-Jen Lin. 2010. Training and testing low-degree polynomial data mappings via linear SVM. Journal of Machine Learning Research 11, 4 (2010). [6] Junyi Chen. 2023. A Survey on Large Language Models for Personalized and Explainable Recommendations. arXiv e-prints , Article arXiv:2311.12338 (Nov. 2023), arXiv:2311.12338 pages. arXiv:2311.12338 [cs.IR] [7] Jin Chen, Zheng Liu, Xu Huang, Chenwang Wu, Qi Liu, Gangwei Jiang, Yuanhao Pu, Yuxuan Lei, Xiaolong Chen, Xingmei Wang, et al. 2023. When large language models meet personalization: Perspectives of challenges and opportunities. arXiv preprint arXiv:2307.16376 (2023). [8] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In International conference on machine learning . PMLR, 1597-1607. [9] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. RecSys '24, October 14-18, 2024, Bari, Italy Hangyu Wang et al. [55] Yanru Qu, Han Cai, Kan Ren, Weinan Zhang, Yong Yu, Ying Wen, and Jun Wang. 2016. Product-based neural networks for user response prediction. In 2016 IEEE FLIP: Fine-grained Alignment between ID-based Models and Pretrained Language Models for CTR Prediction RecSys '24, October 14-18, 2024, Bari, Italy 16th international conference on data mining (ICDM) . IEEE, 1149-1154. [56] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, et al. 2021. Learning transferable visual models from natural language supervision. In International conference on machine learning . PMLR, 8748-8763. [57] Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever, et al. 2018. Improving language understanding by generative pre-training. (2018). [58] Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever, et al. 2019. Language models are unsupervised multitask learners. OpenAI blog 1, 8 (2019), 9. [59] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J Liu. 2020. Exploring the limits of transfer learning with a unified text-to-text transformer. The Journal of Machine Learning Research 21, 1 (2020), 5485-5551. [60] Xubin Ren, Wei Wei, Lianghao Xia, Lixin Su, Suqi Cheng, Junfeng Wang, Dawei Yin, and Chao Huang. 2023. Representation Learning with Large Language Models for Recommendation. arXiv preprint arXiv:2310.15950 (2023). [61] Steffen Rendle. 2010. Factorization machines. In ICDM . [62] Robert E Schapire. 2013. Explaining adaboost. In Empirical Inference: Festschrift in Honor of Vladimir N. Vapnik . Springer, 37-52. [63] Andrew I Schein, Alexandrin Popescul, Lyle H Ungar, and David M Pennock. 2002. Methods and metrics for cold-start recommendations. In Proceedings of the 25th annual international ACM SIGIR conference on Research and development in information retrieval . 253-260. [64] Yaya Shi, Xu Yang, Haiyang Xu, Chunfeng Yuan, Bing Li, Weiming Hu, and Zheng-Jun Zha. 2022. EMScore: Evaluating video captioning via coarse-grained and fine-grained embedding matching. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition . 17929-17938. [65] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1161-1170. [66] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in neural information processing systems . 5998-6008. [67] Mengting Wan and Julian McAuley. 2018. Item recommendation on monotonic behavior chains. In Proceedings of the 12th ACM conference on recommender systems . 86-94. [68] Mengting Wan, Rishabh Misra, Ndapandula Nakashole, and Julian McAuley. 2019. Fine-Grained Spoiler Detection from Large-Scale Review Corpora. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics . 26052610. [69] Feng Wang and Huaping Liu. 2021. Understanding the behaviour of contrastive loss. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition . 2495-2504. [70] Hangyu Wang, Jianghao Lin, Bo Chen, Yang Yang, Ruiming Tang, Weinan Zhang, and Yong Yu. 2024. Towards Efficient and Effective Unlearning of Large Language Models for Recommendation. arXiv preprint arXiv:2403.03536 (2024). [71] Lei Wang and Ee-Peng Lim. 2023. Zero-Shot Next-Item Recommendation using Large Pretrained Language Models. arXiv preprint arXiv:2304.03153 (2023). [72] Peng Wang, Jiang Xu, Chunyi Liu, Hao Feng, Zang Li, and Jieping Ye. 2020. Masked-field Pre-training for User Intent Prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 27892796. [73] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [74] Ruoxi Wang, Rakesh Shivanna, Derek Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed Chi. 2021. Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems. In Proceedings of the Web Conference 2021 . 1785-1797. [75] Wei Wei, Xubin Ren, Jiabin Tang, Qinyong Wang, Lixin Su, Suqi Cheng, Junfeng Wang, Dawei Yin, and Chao Huang. 2023. LLMRec: Large Language Models with Graph Augmentation for Recommendation. arXiv preprint arXiv:2311.00423 (2023). [76] Likang Wu, Zhi Zheng, Zhaopeng Qiu, Hao Wang, Hongchao Gu, Tingjia Shen, Chuan Qin, Chen Zhu, Hengshu Zhu, Qi Liu, et al. 2023. A Survey on Large Language Models for Recommendation. arXiv preprint arXiv:2305.19860 (2023). [77] Yunjia Xi, Jianghao Lin, Weiwen Liu, Xinyi Dai, Weinan Zhang, Rui Zhang, Ruiming Tang, and Yong Yu. 2023. A Bird's-eye View of Reranking: from List Level to Page Level. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining . 1075-1083. [78] Yunjia Xi, Weiwen Liu, Jianghao Lin, Jieming Zhu, Bo Chen, Ruiming Tang, Weinan Zhang, Rui Zhang, and Yong Yu. 2023. Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models. arXiv preprint arXiv:2306.10933 (2023). [79] Jun Xiao, Hao Ye, Xiangnan He, Hanwang Zhang, Fei Wu, and Tat-Seng Chua. 2017. Attentional factorization machines: learning the weight of feature interactions via attention networks. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . 3119-3125. [80] Xin Xin, Bo Chen, Xiangnan He, Dong Wang, Yue Ding, and Joemon M Jose. 2019. CFM: Convolutional Factorization Machines for Context-Aware Recommendation.. In IJCAI , Vol. 19. 3926-3932. [81] Zheng Yuan, Fajie Yuan, Yu Song, Youhua Li, Junchen Fu, Fei Yang, Yunzhu Pan, and Yongxin Ni. 2023. Where to go next for recommender systems? id-vs. modality-based recommender models revisited. arXiv preprint arXiv:2303.13835 (2023). [82] Shuai Zhang, Lina Yao, and Aixin Sun. 2017. Deep learning based recommender system: A survey and new perspectives. arXiv preprint arXiv:1707.07435 (2017). [83] Wenxuan Zhang, Hongzhi Liu, Yingpeng Du, Chen Zhu, Yang Song, Hengshu Zhu, and Zhonghai Wu. 2023. Bridging the Information Gap Between DomainSpecific Model and General LLM for Personalized Recommendation. arXiv preprint arXiv:2311.03778 (2023). [84] Weinan Zhang, Jiarui Qin, Wei Guo, Ruiming Tang, and Xiuqiang He. 2021. Deep learning for click-through rate estimation. IJCAI (2021). [85] Yang Zhang, Fuli Feng, Jizhi Zhang, Keqin Bao, Qifan Wang, and Xiangnan He. 2023. Collm: Integrating collaborative embeddings into large language models for recommendation. arXiv preprint arXiv:2310.19488 (2023). [86] Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, et al. 2023. A survey of large language models. arXiv preprint arXiv:2303.18223 (2023). [87] Yutao Zhu, Huaying Yuan, Shuting Wang, Jiongnan Liu, Wenhan Liu, Chenlong Deng, Zhicheng Dou, and Ji-Rong Wen. 2023. Large language models for information retrieval: A survey. arXiv preprint arXiv:2308.07107 (2023). [88] Cai-Nicolas Ziegler, Sean M McNee, Joseph A Konstan, and Georg Lausen. 2005. Improving recommendation lists through topic diversification. In Proceedings of the 14th international conference on World Wide Web . 22-32.",
   "keywords_parsed": [
     "Fine-grained Alignment",
-    " Pretrained Language Model",
-    " CTR prediction",
-    " Recommender Systems"
+    "Pretrained Language Model",
+    "CTR prediction",
+    "Recommender Systems"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "MindSpore"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Tallrec: An effective and efficient tuning framework to align large language model with recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Bagging, boosting and ensemble methods"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Training and testing low-degree polynomial data mappings via linear SVM"
+    },
+    {
+      "ref_id": "b6",
+      "title": "A Survey on Large Language Models for Personalized and Explainable Recommendations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "When large language models meet personalization: Perspectives of challenges and opportunities"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Learning transferable visual models from natural language supervision"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Improving language understanding by generative pre-training"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Language models are unsupervised multitask learners"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Representation Learning with Large Language Models for Recommendation"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Factorization machines"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Explaining adaboost"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Methods and metrics for cold-start recommendations"
+    },
+    {
+      "ref_id": "b64",
+      "title": "EMScore: Evaluating video captioning via coarse-grained and fine-grained embedding matching"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Item recommendation on monotonic behavior chains"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Fine-Grained Spoiler Detection from Large-Scale Review Corpora"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Understanding the behaviour of contrastive loss"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Towards Efficient and Effective Unlearning of Large Language Models for Recommendation"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Zero-Shot Next-Item Recommendation using Large Pretrained Language Models"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Masked-field Pre-training for User Intent Prediction"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Dcn v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+    },
+    {
+      "ref_id": "b75",
+      "title": "LLMRec: Large Language Models with Graph Augmentation for Recommendation"
+    },
+    {
+      "ref_id": "b76",
+      "title": "A Survey on Large Language Models for Recommendation"
+    },
+    {
+      "ref_id": "b77",
+      "title": "A Bird's-eye View of Reranking: from List Level to Page Level"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Attentional factorization machines: learning the weight of feature interactions via attention networks"
+    },
+    {
+      "ref_id": "b80",
+      "title": "CFM: Convolutional Factorization Machines for Context-Aware Recommendation"
+    },
+    {
+      "ref_id": "b81",
+      "title": "Where to go next for recommender systems? id-vs. modality-based recommender models revisited"
+    },
+    {
+      "ref_id": "b82",
+      "title": "Deep learning based recommender system: A survey and new perspectives"
+    },
+    {
+      "ref_id": "b83",
+      "title": "Bridging the Information Gap Between Domain-Specific Model and General LLM for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b84",
+      "title": "Deep learning for click-through rate estimation"
+    },
+    {
+      "ref_id": "b85",
+      "title": "Collm: Integrating collaborative embeddings into large language models for recommendation"
+    },
+    {
+      "ref_id": "b86",
+      "title": "A survey of large language models"
+    },
+    {
+      "ref_id": "b87",
+      "title": "Large language models for information retrieval: A survey"
+    },
+    {
+      "ref_id": "b88",
+      "title": "Improving recommendation lists through topic diversification"
+    }
   ]
 }

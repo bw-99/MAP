@@ -44,20 +44,190 @@
   "7 CONCLUSION": "In the era of data explosion, recommendation systems play a crucial role in people's access to information. However, information systems often seek to maximize delivery accuracy for higher user satisfaction and duration times, leaving relatively less attention on designing item-side fair exposure mechanisms, resulting in resource allocation issues such as the Snowball Effect. In this paper, we first investigate the exposure situation between items uploaded at different times and name it as the time-sensitive exposure issues. Analyses point out the Snowball Effect may be caused by the time-sensitive unfair exposure and items in feed scenarios have diverse timeliness patterns. Then, we propose to explicitly model the item-level customized timeliness distribution, namely Global Residual Value, and introduce the designed GRV module into recommendations with the Timeliness-aware Fair Recommendation Framework, TaFR, aiming to alleviate time-sensitive unfair exposures with minimal negative or positive impacts on recommendation accuracy. Abundant experiments are conducted with three types of backbone models on the two datasets, validating the ability of the TaFR for simultaneous improvements in both time-sensitive exposure fairness and recommendation quality. SIGIR '23, July 23-27, 2023, Taipei, Taiwan Jiayin Wang, et al.",
   "REFERENCES": "[1] Himan Abdollahpouri, Robin Burke, and Bamshad Mobasher. 2019. Managing popularity bias in recommender systems with personalized re-ranking. In The thirty-second international flairs conference . [2] Deepak Agarwal, Bee-Chung Chen, and Pradheep Elango. 2010. Fast online learning through offline initialization for time-sensitive recommendation. In Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining . 703-712. [3] Mohammad Aliannejadi, Dimitrios Rafailidis, and Fabio Crestani. 2019. A joint two-phase time-sensitive regularized collaborative ranking model for point of interest recommendation. IEEE Transactions on Knowledge and Data Engineering 32, 6 (2019), 1050-1063. [4] Mingxiao An, Fangzhao Wu, Chuhan Wu, Kun Zhang, Zheng Liu, and Xing Xie. 2019. Neural news recommendation with long-and short-term user representations. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics . 336-345. [5] Asia J Biega, Krishna P Gummadi, and Gerhard Weikum. 2018. Equity of attention: Amortizing individual fairness in rankings. In The 41st international acm sigir conference on research & development in information retrieval . 405-414. [6] Pedro G. Campos, Fernando Díez, and Iván Cantador. 2014. Time-aware recommender systems: a comprehensive survey and analysis of existing evaluation protocols. User Model User-Adap Inter 24, 1-2 (Feb. 2014), 67-119. https: //doi.org/10.1007/s11257-012-9136-x [7] DB Davison and W Baoning. 2006. Propagating trust and distrust to demote web spam. (2006). [8] Nan Du, Yichen Wang, Niao He, Jimeng Sun, and Le Song. 2015. Time-sensitive recommendation from recurrent user activities. Advances in neural information processing systems 28 (2015). [9] Michael D Ekstrand, Mucun Tian, Ion Madrazo Azpiazu, Jennifer D Ekstrand, Oghenemaro Anuyah, David McNeill, and Maria Soledad Pera. 2018. All the cool kids, how do they fit in?: Popularity and demographic biases in recommender evaluation and effectiveness. In Conference on fairness, accountability and transparency . PMLR, 172-186. [10] Zuohui Fu, Yikun Xian, Ruoyuan Gao, Jieyu Zhao, Qiaoying Huang, Yingqiang Ge, Shuyuan Xu, Shijie Geng, Chirag Shah, Yongfeng Zhang, et al. 2020. Fairnessaware explainable recommendation over knowledge graphs. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 69-78. [11] Zeno Gantner, Steffen Rendle, and Lars Schmidt-thieme. 2010. Factorization models for context-/time-aware movie recommendations. In In Challenge on Context-aware Movie Recommendation (CAMRa2010). ACM . [12] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [13] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. (2015). [14] Jin Huang, Harrie Oosterhuis, and Maarten de Rijke. 2022. It Is Different When Items Are Older: Debiasing Recommendations When Selection Bias and User Preferences Are Dynamic. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 381-389. [15] Stephen P Jenkins. 2005. Survival analysis. Unpublished manuscript, Institute for Social and Economic Research, University of Essex, Colchester, UK 42 (2005), 54-56. [16] Stephen P Jenkins. 2005. Survival analysis. Unpublished manuscript, Institute for Social and Economic Research, University of Essex, Colchester, UK 42 (2005), 54-56. [17] Wang Jiayin, Ma Weizhi, Li Jiayu, Lu Hongyu, Zhang Min, Li Biao, Liu Yiqun, Jiang Peng, and Shaoping Ma. 2022. Make Fairness More Fair: Fair Item Utility Estimation and Exposure Re-distribution. (2022). [18] Jiayu Li, Hongyu Lu, Chenyang Wang, Weizhi Ma, Min Zhang, Xiangyu Zhao, Wei Qi, Yiqun Liu, and Shaoping Ma. 2021. A Difficulty-Aware Framework for Churn Prediction and Intervention in Games. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery Data Mining . 943-952. [19] Jiacheng Li, Yujie Wang, and Julian McAuley. 2020. Time interval aware selfattention for sequential recommendation. In Proceedings of the 13th international conference on web search and data mining . 322-330. [20] Yunqi Li, Hanxiong Chen, Shuyuan Xu, Yingqiang Ge, Juntao Tan, Shuchang Liu, and Yongfeng Zhang. 2022. Fairness in Recommendation: A Survey. arXiv preprint arXiv:2205.13619 (2022). [21] Masoud Mansoury, Himan Abdollahpouri, Mykola Pechenizkiy, Bamshad Mobasher, and Robin Burke. 2020. Fairmatch: A graph-based approach for improving aggregate diversity in recommender systems. In Proceedings of the 28th ACM conference on user modeling, adaptation and personalization . 154-162. [22] Koji Matsuo, Sanjay Purushotham, Bo Jiang, Rachel S Mandelbaum, Tsuyoshi Takiuchi, Yan Liu, and Lynda D Roman. 2019. Survival outcome prediction in cervical cancer: Cox models vs deep-learning model. American journal of obstetrics and gynecology 220, 4 (2019), 381-e1. [23] Suresh H Moolgavkar, Ellen T Chang, Heather N Watson, and Edmund C Lau. 2018. An assessment of the Cox proportional hazards regression model for epidemiologic studies. Risk Analysis 38, 4 (2018), 777-794. [24] Marco Morik, Ashudeep Singh, Jessica Hong, and Thorsten Joachims. [n. d.]. Controlling Fairness and Bias in Dynamic Learning-to-Rank. In SIGIR 20 . 10. [25] Shumpei Okura, Yukihiro Tagami, Shingo Ono, and Akira Tajima. 2017. Embedding-based news recommendation for millions of users. In Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining . 1933-1942. [26] Liang Pang, Jun Xu, Qingyao Ai, Yanyan Lan, Xueqi Cheng, and Jirong Wen. 2020. Setrank: Learning a permutation-invariant ranking model for information retrieval. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 499-508. [27] Changhua Pei, Yi Zhang, Yongfeng Zhang, Fei Sun, Xiao Lin, Hanxiao Sun, Jian Wu, Peng Jiang, Junfeng Ge, Wenwu Ou, et al. 2019. Personalized re-ranking for recommendation. In Proceedings of the 13th ACM conference on recommender systems . 3-11. [28] Evaggelia Pitoura, Kostas Stefanidis, and Georgia Koutrika. 2021. Fairness in rankings and recommendations: an overview. The VLDB Journal (2021), 1-28. [29] Bashir Rastegarpanah, Krishna P Gummadi, and Mark Crovella. 2019. Fighting fire with fire: Using antidote data to improve polarization and fairness of recommender systems. In Proceedings of the twelfth ACM international conference on web search and data mining . 231-239. [30] Harald Steck. 2011. Item popularity and recommendation accuracy. In Proceedings of the fifth ACM conference on Recommender systems . 125-132. [31] Mats J Stensrud and Miguel A Hernán. 2020. Why test for proportional hazards? Jama 323, 14 (2020), 1401-1402. [32] Limei Sun, Ejike Ifeanyi Michael, Shen Wang, and Yue Li. 2016. A Time-Sensitive Collaborative Filtering Model in Recommendation Systems. In 2016 IEEE International Conference on Internet of Things (iThings) and IEEE Green Computing and Communications (GreenCom) and IEEE Cyber, Physical and Social Computing (CPSCom) and IEEE Smart Data (SmartData) . IEEE, 340-344. [33] Terry M Therneau and Patricia M Grambsch. 2000. The cox model. In Modeling survival data: extending the Cox model . Springer, 39-77. [34] Mengting Wan, Jianmo Ni, Rishabh Misra, and Julian McAuley. 2020. Addressing marketing bias in product recommendations. In Proceedings of the 13th international conference on web search and data mining . 618-626. [35] Chenyang Wang, Min Zhang, Weizhi Ma, Yiqun Liu, and Shaoping Ma. 2020. Make It a Chorus: Knowledge- and Time-aware Item Modeling for Sequential Recommendation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . ACM, Virtual Event China, 109-118. https://doi.org/10.1145/3397271.3401131 [36] Dongjing Wang, Dengwei Xu, Dongjin Yu, and Guandong Xu. 2021. Time-aware sequence model for next-item recommendation. Appl Intell 51, 2 (Feb. 2021), 906-920. https://doi.org/10.1007/s10489-020-01820-2 [37] Jiayin Wang, Weizhi Ma, Jiayu Li, Hongyu Lu, Min Zhang, Biao Li, Yiqun Liu, Peng Jiang, and Shaoping Ma. 2022. Make Fairness More Fair: Fair Item Utility Estimation and Exposure Re-Distribution. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 1868-1877. [38] Jian Wang and Yi Zhang. 2013. Opportunity model for e-commerce recommendation: right product; right time. In Proceedings of the 36th international ACM SIGIR conference on Research and development in information retrieval . 303-312. [39] Ping Wang, Yan Li, and Chandan K Reddy. 2019. Machine learning for survival analysis: A survey. ACM Computing Surveys (CSUR) 51, 6 (2019), 1-36. [40] Shoujin Wang, Liang Hu, Yan Wang, Quan Z Sheng, Mehmet Orgun, and Longbing Cao. 2019. Modeling multi-purpose sessions for next-item recommendations via mixture-channel purpose routing networks. In International Joint Conference on Artificial Intelligence . International Joint Conferences on Artificial Intelligence. [41] Yifan Wang, Weizhi Ma, Min Zhang*, Yiqun Liu, and Shaoping Ma. 2022. A Survey on the Fairness of Recommender Systems. ACM Journal of the ACM (JACM) (2022). [42] Chuhan Wu, Fangzhao Wu, Tao Qi, Qi Liu, Xuan Tian, Jie Li, Wei He, Yongfeng Huang, and Xing Xie. 2022. Feedrec: News feed recommendation with various user feedbacks. In Proceedings of the ACM Web Conference 2022 . 2088-2097. [43] Fangzhao Wu, Ying Qiao, Jiun-Hung Chen, Chuhan Wu, Tao Qi, Jianxun Lian, Danyang Liu, Xing Xie, Jianfeng Gao, Winnie Wu, et al. 2020. Mind: A large-scale dataset for news recommendation. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics . 3597-3606. [44] Xinwei Wu, Hechang Chen, Jiashu Zhao, Li He, Dawei Yin, and Yi Chang. 2021. Unbiased learning to rank in feeds recommendation. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining . 490-498. [45] Yang Zhang, Fuli Feng, Xiangnan He, Tianxin Wei, Chonggang Song, Guohui Ling, and Yongdong Zhang. 2021. Causal intervention for leveraging popularity bias in recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 11-20.",
   "keywords_parsed": [
-    "In the era of information explosion",
-    " numerous items emerge every day",
-    " especially in feed scenarios. Due to the limited system display slots and user browsing attention",
-    " various recommendation systems are designed not only to satisfy users' personalized information needs but also to allocate items' exposure. However",
-    " recent recommendation studies mainly focus on modeling user preferences to present satisfying results and maximize user interactions",
-    " while paying little attention to developing item-side fair exposure mechanisms for rational information delivery. This may lead to serious resource allocation problems on the item side",
-    " such as the Snowball Effect. Furthermore",
-    " unfair exposure mechanisms may hurt recommendation performance. In this paper",
-    " we call for a shift of attention from modeling user preferences to developing fair exposure mechanisms for items. We first conduct empirical analyses of feed scenarios to explore exposure problems between items with distinct uploaded times. This points out that unfair exposure caused by the time factor may be the major cause of the Snowball Effect. Then",
-    " we propose to explicitly model item-level customized timeliness distribution",
-    " Global Residual Value (GRV)",
-    " for fair resource allocation. This GRV module is introduced into recommendations with the designed Timeliness-aware Fair Recommendation Framework (TaFR). Extensive experiments on two datasets demonstrate that TaFR achieves consistent improvements with various backbone recommendation models. By modeling item-side customized Global Residual Value",
-    " we achieve a fairer distribution of resources and",
-    " at the same time",
-    " improve recommendation performance."
+    "Recommendation system",
+    "Item Fairness",
+    "Timeliness Distribution."
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Managing popularity bias in recommender systems with personalized re-ranking"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Fast online learning through offline initialization for time-sensitive recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A joint two-phase time-sensitive regularized collaborative ranking model for point of interest recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Neural news recommendation with long-and short-term user representations"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Equity of attention: Amortizing individual fairness in rankings"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Time-aware recommender systems: a comprehensive survey and analysis of existing evaluation protocols"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Propagating trust and distrust to demote web spam"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Time-sensitive recommendation from recurrent user activities"
+    },
+    {
+      "ref_id": "b9",
+      "title": "All the cool kids, how do they fit in?: Popularity and demographic biases in recommender evaluation and effectiveness"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Fairness-aware explainable recommendation over knowledge graphs"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Factorization models for context-/time-aware movie recommendations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "It Is Different When Items Are Older: Debiasing Recommendations When Selection Bias and User Preferences Are Dynamic"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Survival analysis"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Survival analysis"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Make Fairness More Fair: Fair Item Utility Estimation and Exposure Re-distribution"
+    },
+    {
+      "ref_id": "b18",
+      "title": "A Difficulty-Aware Framework for Churn Prediction and Intervention in Games"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Time interval aware self-attention for sequential recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Fairness in Recommendation: A Survey"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Fairmatch: A graph-based approach for improving aggregate diversity in recommender systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Survival outcome prediction in cervical cancer: Cox models vs deep-learning model"
+    },
+    {
+      "ref_id": "b23",
+      "title": "An assessment of the Cox proportional hazards regression model for epidemiologic studies"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Controlling Fairness and Bias in Dynamic Learning-to-Rank"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Embedding-based news recommendation for millions of users"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Setrank: Learning a permutation-invariant ranking model for information retrieval"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Fairness in rankings and recommendations: an overview"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Fighting fire with fire: Using antidote data to improve polarization and fairness of recommender systems"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Item popularity and recommendation accuracy"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Why test for proportional hazards?"
+    },
+    {
+      "ref_id": "b32",
+      "title": "A Time-Sensitive Collaborative Filtering Model in Recommendation Systems"
+    },
+    {
+      "ref_id": "b33",
+      "title": "The cox model"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Addressing marketing bias in product recommendations"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Make It a Chorus: Knowledge- and Time-aware Item Modeling for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Time-aware sequence model for next-item recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Make Fairness More Fair: Fair Item Utility Estimation and Exposure Re-Distribution"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Opportunity model for e-commerce recommendation: right product; right time"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Machine learning for survival analysis: A survey"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Modeling multi-purpose sessions for next-item recommendations via mixture-channel purpose routing networks"
+    },
+    {
+      "ref_id": "b41",
+      "title": "A Survey on the Fairness of Recommender Systems"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Feedrec: News feed recommendation with various user feedbacks"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Mind: A large-scale dataset for news recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Unbiased learning to rank in feeds recommendation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Causal intervention for leveraging popularity bias in recommendation"
+    }
   ]
 }

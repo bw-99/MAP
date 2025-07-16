@@ -35,7 +35,209 @@
   "H LIMITATIONS AND FUTURE WORK": "Even though our SIMT mechanism shows the incentive properties theoretically and the accuracy empirically, we acknowledge certain limitations that offer avenues for future research. · This paper addresses issues related to pre-purchase inspections. However, there are concerns about privacy breaches, as the raw data shared with data brokers and the trained models returned to data consumers could expose private information of the data owners. Future work could enhance the SIMT mechanism by incorporating considerations of these privacy issues · In the design of the SIMT mechanism, we assess the structural importance once and subsequently make a single purchasing decision for all data owners. An alternative approach could involve an adaptive purchasing method, where data points are bought in several times, each time reassessing the structural importance in light of newly acquired data. The primary rationale for the existing design is efficiency compared to this adaptive method. Nonetheless, developing Table 10: Node classification performance under different budgets using GCN architecture for 𝑛 𝑖 = 1 Table 11: Node classification performance under different budgets using GIN architecture for 𝑛 𝑖 = 1 Table 12: Node classification performance under different budgets using GraphSage architecture for 𝑛 𝑖 = 1 an efficient adaptive model training mechanism presents an exciting avenue for future research. · The efficacy of the SIMT mechanism heavily depends on the quality of clustering; more accurate structural importance assessment is achieved when clusters are closer to the true classes. Our SIMT mechanism employs a classical VGAE model [19] as the Clustering . However, our findings indicate that this approach is not always robust. Exploring a broader range of GNN models for clustering might yield more stable results and enhance the performance of the SIMT mechanism, although such investigations fall outside the scope of this paper Table 13: Node classification performance under different budgets using GAT architecture for 𝑛 𝑖 = 1",
   "keywords_parsed": [
     "Model marketplaces",
-    " data pricing",
-    " structural entropy"
+    "data pricing",
+    "structural entropy"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Lowcost learning via active data procurement"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A marketplace for data: An algorithmic solution"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Data-driven secure, resilient and sustainable supply chains: gaps, opportunities, and a new generalised data sharing and data monetisation framework"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Random graphs"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Data-driven science and engineering: Machine learning, dynamical systems, and control"
+    },
+    {
+      "ref_id": "b6",
+      "title": "The truncated normal distribution"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Active learning for graph embedding"
+    },
+    {
+      "ref_id": "b8",
+      "title": "On initial pools for deep active learning"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A VCG-based Fair Incentive Mechanism for Federated Learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Privacy auctions for recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Data shapley: Equitable valuation of data for machine learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Selling privacy at auction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A pricing model for data markets"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Trading data for learning: Incentive mechanism for on-device federated learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Privacy and pricing personal information"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Efficient Task-Specific Data Valuation for Nearest Neighbor Algorithms"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Variational graph auto-encoders"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Pricing for data markets"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Complex networks: principles, methods and applications"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Structural information and dynamical complexity of networks"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Take it or leave it: Running a survey when privacy comes at a cost"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Dealer: end-to-end data marketplace with model-based pricing"
+    },
+    {
+      "ref_id": "b25",
+      "title": "REM: From structural entropy to community structure deception"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Bringing PageRank to the citation analysis"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Birds of a feather: Homophily in social networks"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Collaborative machine learning markets with data-replication-robust payments"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Representation learning with contrastive predictive coding"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Optimized, direct sale of privacy in personal data marketplaces"
+    },
+    {
+      "ref_id": "b31",
+      "title": "A survey of deep active learning"
+    },
+    {
+      "ref_id": "b32",
+      "title": "On the unreasonable effectiveness of feature propagation in learning on graphs with missing node features"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Conducting truthful surveys, cheaply"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Notes on the n-person game-ii: The value of an n-person game"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Pitfalls of graph neural network evaluation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Collaborative machine learning with incentive-aware model rewards"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Budget feasible mechanisms"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Missing data imputation with adversarially-trained graph convolutional networks"
+    },
+    {
+      "ref_id": "b39",
+      "title": "A profit-maximizing model marketplace with differentially private federated learning"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Graph convolutional networks for graphs containing missing features"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Generalized heterophily graph data augmentation for node classification"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Graph attention networks"
+    },
+    {
+      "ref_id": "b43",
+      "title": "User: Unsupervised structural entropy-based robust graph neural network"
+    },
+    {
+      "ref_id": "b44",
+      "title": "How powerful are graph neural networks?"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Privacy or Utility in Data Collection? A Contract Theoretic Approach"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Gradient driven rewards to guarantee fairness in collaborative machine learning"
+    },
+    {
+      "ref_id": "b47",
+      "title": "A survey on federated learning"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Incentive mechanism for horizontal federated learning based on reputation and reverse auction"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Selling Data at an Auction under Privacy Constraints"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Alg: Fast and accurate active learning framework for graph convolutional networks"
+    }
   ]
 }

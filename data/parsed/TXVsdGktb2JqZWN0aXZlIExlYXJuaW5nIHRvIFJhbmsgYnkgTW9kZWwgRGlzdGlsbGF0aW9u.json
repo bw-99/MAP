@@ -28,8 +28,126 @@
   "8.1 A.1": "Short proof that we could simplify (11) to (12)   9",
   "keywords_parsed": [
     "Search Ranking",
-    " Multi-objective optimization",
-    " learning to rank",
-    " model distillation"
+    "Multi-objective optimization",
+    "learning to rank",
+    "model distillation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "About attribution models"
+    },
+    {
+      "ref_id": "b2",
+      "title": "On the Factory Floor: ML Engineering for Industrial-Scale Ads Recommendation Models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Learning to rank using gradient descent"
+    },
+    {
+      "ref_id": "b4",
+      "title": "From RankNet to LambdaRank to LambdaMART: An Overview"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Learning to rank: from pairwise approach to listwise approach"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Multi-Objective Ranking Optimization for Product Search Using Stochastic Label Aggregation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Born-Again Neural Networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Distilling the Knowledge in a Neural Network"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep Multifaceted Transformers for Multi-objective Ranking in Large-Scale E-commerce Recommender Systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Rank and rate: multi-task learning for recommender systems"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A Pareto-Eficient Algorithm for Multiple Objective Optimization in E-Commerce Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Multi-Label Learning to Rank through Multi-Objective Optimization"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Ad Click Prediction: a View from the Trenches"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Nonlinear multiobjective optimization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Multi-objective Relevance Ranking"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Distilled Neural Networks for Efficient Learning to Rank"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Born again neural rankers"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Pareto-efficient hybridization for multi-objective recommender systems"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Multiple objective optimization in recommender systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Multi-Task Learning as Multi-Objective Optimization"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Optimizing Airbnb Search Journey with Multi-task Learning"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Ranking Distillation: Learning Compact Ranking Models With High Performance for Recommender System"
+    },
+    {
+      "ref_id": "b23",
+      "title": "An Efficient Combinatorial Optimization Model Using Learning-to-Rank Distillation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Personalized Approximate Pareto-Efficient Recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Revisiting Knowledge Distillation via Label Smoothing Regularization"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Ensemble Distillation for BERT-Based Ranking Models"
+    },
+    {
+      "ref_id": "b27",
+      "title": "COPR: Consistency-Oriented Pre-Ranking for Online Advertising"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Recommending what video to watch next: a multitask ranking system"
+    },
+    {
+      "ref_id": "b29",
+      "title": "A survey of recommender systems with multi-objective optimization"
+    }
   ]
 }

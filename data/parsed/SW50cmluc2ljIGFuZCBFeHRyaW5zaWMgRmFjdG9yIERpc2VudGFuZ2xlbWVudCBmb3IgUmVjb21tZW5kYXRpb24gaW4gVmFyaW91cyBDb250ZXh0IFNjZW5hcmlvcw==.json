@@ -39,7 +39,239 @@
   "Algorithm 1 Batch stochastic gradient descent training of IEDR.": "1: Input: D = {( 𝑢 𝑖 , 𝑣 𝑖 , 𝑐 𝑖 )} 𝑖 = 1: 𝑁 with the corresponding true label 𝑦 𝑖 for each data sample. 2: Hyperparameters: 𝐵 : batch size; 𝐿 : negative sample number for the context-invariant contrastive learning component; 𝐿 𝑑𝑖𝑠 : negative sample number for the disentangling component. 3: Parameters: 𝜽 𝑢 1 , 𝜽 𝑢 2 , 𝜽 𝑣 1 , 𝜽 𝑣 2 : parameters for 𝑞 𝑢 1 , 𝑞 𝑢 2 , 𝑞 𝑣 2 , 𝑞 𝑣 2 , respectively; 𝝎 : parameters of IEDR except for 𝜽 𝑢 1 , 𝜽 𝑢 2 , 𝜽 𝑣 1 , 𝜽 𝑣 2 . 4: function ContrastiveLearning_User( {( 𝒖 𝑖 , 𝒄 𝑖 )} 𝑖 = 1: 𝐵 ) 5: for 𝑖 = 1 , ..., 𝐵 do 6: 𝑢 𝑢 𝑖𝑛 𝑖𝑒 𝒄 𝒐 𝒖 𝑖 𝑖 𝑖𝑖 ( ( ← ) ) 𝑓 , 7: 𝐶𝑜𝑛𝑡𝑒𝑥𝑡𝐺𝑒𝑛 ← 𝑅𝑎𝑛𝑑𝑜𝑚𝐶ℎ𝑜𝑖𝑐𝑒 ( 𝑁𝑒𝑔𝐺𝑒𝑛 1 , 𝑁𝑒𝑔𝐺𝑒𝑛 2 ) 8: 𝑐 𝑗 ← 𝐶𝑜𝑛𝑡𝑒𝑥𝑡𝐺𝑒𝑛 ( 𝑐 𝑖 ) 9: ( 𝒐 𝑢 𝑖𝑛 ) 𝑖 𝑗 ← 𝑓 𝑢 𝑖𝑒 ( 𝒖 𝑖 , 𝒄 𝑗 ) 10: for ℓ = 1 , ..., 𝐿 do 11: 𝑢 ℓ 1 ← 𝑟𝑎𝑛𝑑𝑜𝑚𝐶ℎ𝑜𝑖𝑐𝑒 ({ 𝑢 𝑖 } 𝑖 = 1: 𝐵 ) , ( 𝒐 𝑢 𝑖𝑛 ) ℓ 1 𝑖 = 𝑓 𝑢 𝑖𝑒 ( 𝒖 ℓ 1 , 𝒄 𝑖 ) 12: 𝑢 ℓ 2 ← 𝑟𝑎𝑛𝑑𝑜𝑚𝐶ℎ𝑜𝑖𝑐𝑒 ({ 𝑢 𝑖 } 𝑖 = 1: 𝐵 ) , ( 𝒐 𝑢 𝑖𝑛 ) ℓ 2 𝑗 = 𝑓 𝑢 𝑖𝑒 ( 𝒖 ℓ 2 , 𝒄 𝑗 ) 13: end for 14: L 𝐶𝐼𝐶𝐿 ( 𝑢 𝑖 , 𝑐 𝑖 ) ← Equation (4) based on the above positive and negative samples 15: 16: 17: 18: end for return 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 ({L 𝐶𝐼𝐶𝐿 ( 𝑢 𝑖 , 𝑐 𝑖 )} 𝑖 = 1: 𝐵 ) end function function ContrastiveLearning_Item( {( 𝒗 𝑖 , 𝒄 𝑖 )} 𝑖 = 1: 𝐵 ) 19: Symmetric to ContrastiveLearning_User.",
   "20: end function": "21: function Disentanglement_User( {( 𝒖 𝑖 , 𝒄 𝑖 )} 𝑖 = 1: 𝐵 ) 22: 23: 24: 25: 26: 27: 28: 29: 30: for 𝑖 = 1 , ..., 𝐵 do ( 𝒐 𝑢 𝑖𝑛 ) 𝑖𝑖 , ( 𝒐 𝑢 𝑒𝑥 ) 𝑖𝑖 ← 𝑓 𝑢 𝑖𝑒 ( 𝒖 𝑖 , 𝒄 𝑖 ) ( 𝑢 𝑢 𝑝𝑟𝑒𝑑 𝑒𝑥 𝒐 𝒐 𝒐 ) ← ( ) ) (( → 𝑝𝑜𝑠 𝑎 𝑎 → 𝑛𝑒𝑔 for 𝑖𝑖 ← ← 𝑗 = ( 𝒐 ( 𝒐 𝑢 𝑖𝑛 𝑢 𝑒𝑥 𝑎 → 𝑛𝑒𝑔 31: 𝜃 1 (( 𝑀𝑆𝐸 0 , 𝑎 𝑢 𝑒𝑥 𝒐 ← 𝑛𝑒𝑔 1 ← , ..., 𝐿 ) 𝑑𝑖𝑠 , 𝒐 ( 𝑢 𝑟 ) 𝑝𝑟𝑒𝑑 𝑟 ← ← 𝑖𝑛 ) 𝑖𝑖 𝑢 𝑝𝑟𝑒𝑑 𝑖𝑛 𝑖𝑖 , 𝑖𝑖 ) ← ( 𝑢 𝑝𝑟𝑒𝑑 , 0 do ← ) 𝑒𝑥 𝑟 = 𝑎 𝑎 𝑟𝑎𝑛𝑑𝑜𝑚𝐶ℎ𝑜𝑖𝑐𝑒 (( 𝜃 𝑞 𝑞 𝜃 ← 𝑒𝑥 𝑖𝑖 ) ) 𝒐 𝑝𝑜𝑠 , 𝑎 GLYPH<0> 𝒐 𝑢 𝑢 1 + + 𝑝𝑟𝑒𝑑 𝑖𝑛 ) 𝒐 ) ) ( 𝑀𝑆𝐸 𝑟 (( 𝑀𝑆𝐸 𝒐 (( 𝒐 , 𝑢 𝑒𝑥 𝑖𝑛 ) 𝑢 𝑖𝑛 𝑖𝑖 𝑖𝑖 ) → 𝑛𝑒𝑔 ← 𝑛𝑒𝑔 ← 𝑛𝑒𝑔 𝑎 32: end for 33: (L 𝑏𝑖 -𝑎𝑝𝑝𝑟 ) 𝑖 ← 1 2 ( 𝑎 → 𝑝𝑜𝑠 + 𝑎 ← 𝑝𝑜𝑠 ) → ← (L 𝑎 + 𝑎 𝑁 ( - ( ) ← 𝑑𝑖𝑠 → 𝑛𝑒𝑔 𝑛𝑒𝑔 1 34: 𝐷𝑖𝑠 𝑖 𝑝𝑜𝑠 2 𝑟 ( , , 𝒐 ( 𝑢 𝑒𝑥 𝒐 + 𝑢 𝑖𝑛 ← 𝑢 2 𝑒𝑥 (( 𝒐 𝑀𝑆𝐸 { ( ) (( 𝒐 , ) 𝑢 𝑖𝑛 = ) ) 𝑎 𝜃 2 𝑝𝑟𝑒𝑑 𝑟 𝑝𝑟𝑒𝑑 𝑟 ← 𝑝𝑜𝑠 35: end for 36: return 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 ({(L 𝑏𝑖 -𝑎𝑝𝑝𝑟 ) 𝑖 } 𝑖 = 1: 𝐵 ) , 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 ({(L 𝐷𝑖𝑠 ) 𝑖 } 𝑖 = 1: 𝐵 ) 37: end function 38: function Disentanglement_Item( {( 𝒗 𝑖 , 𝒄 𝑖 )} 𝑖 = 1: 𝐵 ) 39: Symmetric to Disentanglement_User. 40: end function 41: )) ) ) 𝑞 𝑖𝑖 (( 𝑖𝑖 𝒐 ( ) 𝑢 𝑖𝑛 𝒐 𝒐 𝑢 𝑒𝑥 𝑢 𝑒𝑥 ) ) 𝑖𝑖 ) 𝑟 ) 𝑖𝑖 , GLYPH<1> GLYPH<0> 𝑎 𝑞 ( 𝒐 } 𝑖 = 𝑢 𝑖𝑛 ⊲ Generate positive samples. ) ) 𝑝𝑟𝑒𝑑 𝑖𝑖 ⊲ Generate negative samples. 1: 𝐵 GLYPH<1> ⊲ Generate positive samples. ⊲ Generate negative samples. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2025. Intrinsic and Extrinsic Factor Disentanglement for Recommendation in Various Context Scenarios 1:5",
   "Algorithm 1 Batch stochastic gradient descent training of IEDR (continued).": "42: 𝑠ℎ𝑢𝑓 𝑓 𝑙𝑒 ({( 𝑢 𝑖 , 𝑣 𝑖 , 𝑐 𝑖 )} 𝑖 = 1: 𝑁 ) 43: for each batch {( 𝑢 𝑖 , 𝑣 𝑖 , 𝑐 𝑖 )} 𝑖 = 1: 𝐵 do 44: for 𝑖 = 1 , ..., 𝐵 do ⊲ Line 45-47 are the recommendation prediction module. 45: 𝒖 𝑖 ← 𝑓 𝑢 ( 𝑢 𝑖 ) , 𝒗 𝑖 ← 𝑓 𝑣 ( 𝑣 𝑖 ) , 𝒄 𝑖 ← 𝑓 𝑐 ( 𝑐 𝑖 ) 46: ( 𝒐 𝑢 𝑖𝑛 ) 𝑖𝑖 , ( 𝒐 𝑢 𝑒𝑥 ) 𝑖𝑖 ← 𝑓 𝑢 𝑖𝑒 ( 𝒖 𝑖 , 𝒄 𝑖 ) , ( 𝒐 𝑣 𝑖𝑛 ) 𝑖𝑖 , ( 𝒐 𝑣 𝑒𝑥 ) 𝑖𝑖 ← 𝑓 𝑣 𝑖𝑒 ( 𝒗 𝑖 , 𝒄 𝑖 ) 47: 𝑦 ′ 𝑖 ← 𝑓 𝑝𝑟𝑒𝑑 (( 𝒐 𝑢 𝑖𝑛 ) 𝑖𝑖 , ( 𝒐 𝑢 𝑒𝑥 ) 𝑖𝑖 , ( 𝒐 𝑣 𝑖𝑛 ) 𝑖𝑖 , ( 𝒐 𝑣 𝑒𝑥 ) 𝑖𝑖 ) 48: (L 𝑅𝑃 ) 𝑖 ← 𝐶𝑟𝑜𝑠𝑠𝐸𝑛𝑡𝑟𝑜𝑝𝑦 ( 𝑦 ′ 𝑖 , 𝑦 𝑖 ) 49: end for 50: L 𝑅𝑃 ← 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 ({L 𝑅𝑃 ) 𝑖 } 𝑖 = 1: 𝐵 51: L 𝑢 𝐶𝐼𝐶𝐿 ← ContrastiveLearning_User ({( 𝒖 𝑖 , 𝒄 𝑖 )} 𝑖 = 1: 𝐵 ) 52: L 𝑣 𝐶𝐼𝐶𝐿 ← ContrastiveLearning_Item ({( 𝒗 𝑖 , 𝒄 𝑖 )} 𝑖 = 1: 𝐵 ) 53: L 𝑢 𝑏𝑖 -𝑎𝑝𝑝𝑟 , L 𝑢 𝐷𝑖𝑠 ← Disentanglement_User ({( 𝒖 𝑖 , 𝒄 𝑖 )} 𝑖 = 1: 𝐵 ) 54: L 𝑣 𝑏𝑖 -𝑎𝑝𝑝𝑟 , L 𝑣 𝐷𝑖𝑠 ← Disentanglement_Item ({( 𝒗 𝑖 , 𝒄 𝑖 )} 𝑖 = 1: 𝐵 ) 55: Freeze 𝝎 , update 𝜽 𝑢 1 , 𝜽 𝑢 2 , 𝜽 𝑣 1 , 𝜽 𝑣 2 through minimizing R( 𝜽 𝑢 1 , 𝜽 𝑢 2 , 𝜽 𝑣 1 , 𝜽 𝑣 2 ) ⊲ Step 1 56: Freeze 𝜽 𝑢 1 , 𝜽 𝑢 2 , 𝜽 𝑣 1 , 𝜽 𝑣 2 , update 𝝎 through minimizing R( 𝝎 ) ⊲ Step 2 57: end for ACM Trans. Inf. Syst., Vol. 1, No. 1, Article 1. Publication date: January 2025.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Frappe: Understanding the Usage and Perception of Mobile App Recommendations In-the-wild"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Mutual Information Neural Estimation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Intrinsic and Extrinsic Motivation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "LightGCL: Simple Yet Effective Hraph Contrastive Learning for Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "CSGCL: Community-strengthenhanced Graph Contrastive Learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "A Simple Framework for Contrastive Learning of Visual Representations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Club: A Contrastive Log-ratio Upper Bound of Mutual Information"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Long Short-term Enhanced Memory for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings"
+    },
+    {
+      "ref_id": "b11",
+      "title": "DeepFM: a Factorization-machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Neural Factorization Machines for Sparse Predictive Analytics"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Session-based Recommendations with Recurrent Neural Networks"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Learning Deep Representations by Mutual Information Estimation and Maximization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Self-Attentive Sequential Recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Learning User's Intrinsic and Extrinsic Interests for Point-of-Interest Recommendation: A Unified Approach."
+    },
+    {
+      "ref_id": "b17",
+      "title": "CETN: Contrast-enhanced Through Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Automlp: Automated MLP for Sequential Recommendations"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Improving Graph Collaborative Filtering with Neighborhood-enriched Contrastive Learning"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Multimodal Pretraining, Adaptation, and Generation for Recommendation: A Survey"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Learning Disentangled Representations for Recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Image-based Recommendations on Styles and Substitutes"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Multi-domain Recommendation with Embedding Disentangling and Domain Alignment"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Representation Learning with Contrastive Predictive Coding"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Factorization Machines"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Intrinsic and Extrinsic Motivations: Classic Definitions and New Directions"
+    },
+    {
+      "ref_id": "b27",
+      "title": "PMG: Personalized Multimodal Generation with Large Language Models"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Autoint: Automatic Feature Interaction Learning via Self-attentive Neural Networks"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Detecting Statistical Interactions with Additive Groves of Trees"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Detecting Beneficial Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Neural graph matching based collaborative filtering"
+    },
+    {
+      "ref_id": "b32",
+      "title": "BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer"
+    },
+    {
+      "ref_id": "b33",
+      "title": "EulerNet: Adaptive Feature Interaction Learning via Euler's Formula for CTR Prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Neural Interaction Transparency (NIT): Disentangling Learned Interactions for Improved Interpretability"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Toward a Hierarchical Model of Intrinsic and Extrinsic Motivation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Sequential Recommendation with Multiple Contrast Signals"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Cl4ctr: A Contrastive Learning Framework for CTR Prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Time to Shop for Valentine's Day: Shopping Occasions and Sequential Recommendation in E-commerce"
+    },
+    {
+      "ref_id": "b39",
+      "title": "MISSRec: Pre-training and Transferring Multi-modal Interest-aware Sequence Representation for Recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Causal Disentangled Recommendation Against User Preference Shifts"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Disentangled Graph Collaborative Filtering"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Graph Convolution Machine for Context-aware Recommender System"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Self-supervised Graph Learning for Recommendation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Personalized Long-and Short-term Preference Learning for Next POI Recommendation"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Attentional Factorization Machines: Learning the Weight of Feature Interactions via Attention Networks"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Contrastive Learning with Positive-negative Frame Mask for Music Representation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Self-supervised Learning for Large-scale Item Recommendations"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Towards Robust Neural Graph Collaborative Filtering via Structure Denoising and Embedding Perturbation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "XSimGCL: Towards Extremely Simple Graph Contrastive Learning for Recommendation"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Are Graph Augmentations Necessary? Simple Graph Contrastive Learning for Recommendation"
+    },
+    {
+      "ref_id": "b52",
+      "title": "An Input-aware Factorization Machine for Sparse Prediction"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Adaptive User Modeling with Long and Short-Term Preferences for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Empowering Collaborative Filtering with Principled Adversarial Contrastive Loss"
+    },
+    {
+      "ref_id": "b55",
+      "title": "A Benchmark and Comprehensive Survey on Knowledge Graph Entity Alignment via Representation Learning"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Disentangling Long and Short-Term Interests for Recommendation"
+    },
+    {
+      "ref_id": "b57",
+      "title": "S3-rec: Self-supervised Learning for Sequential Recommendation with Mutual Information Maximization"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Bars: Towards open Benchmarking for Recommender Systems"
+    }
   ]
 }

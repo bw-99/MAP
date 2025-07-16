@@ -22,8 +22,82 @@
   "REFERENCES": "[1] Martín Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay Ghemawat, Geoffrey Irving, Michael Isard, et al. CIKM '23, October 21-25, 2023, Birmingham, United Kingdom Wentao Ouyang et al. 2016. Tensorflow: A system for large-scale machine learning. In 12th USENIX Symposium on Operating Systems Design and Implementation (OSDI) . USENIX, 265-283. [2] Deepak Agarwal, Rahul Agrawal, Rajiv Khanna, and Nagaraj Kota. 2010. Estimating rates of rare events with multiple hierarchies through scalable log-linear models. In Proceedings of the 16th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) . 213-222. [3] Wentian Bao, Hong Wen, Sha Li, Xiao-Yang Liu, Quan Lin, and Keping Yang. 2020. GMCM:Graph-based micro-behavior conversion model for post-click conversion rate estimation. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . 2201-2210. [4] Jiangxia Cao, Shaoshuai Li, Bowen Yu, Xiaobo Guo, Tingwen Liu, and Bin Wang. 2023. Towards Universal Cross-Domain Recommendation. In Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining (WSDM) . 78-86. [5] Rich Caruana. 1997. Multitask learning. Machine learning 28, 1 (1997), 41-75. [6] Olivier Chapelle. 2014. Modeling delayed feedback in display advertising. In Proceedings of the 20th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) . 1097-1105. [7] Olivier Chapelle, Eren Manavoglu, and Romer Rosales. 2014. Simple and scalable response prediction for display advertising. ACM Transactions on Intelligent Systems and Technology (TIST) 5, 4 (2014), 1-34. [8] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems (DLRS) . ACM, 7-10. [9] Mark Dredze, Alex Kulesza, and Koby Crammer. 2010. Multi-domain learning by confidence-weighted parameter combination. Machine Learning 79, 1 (2010), 123-149. [10] John Duchi, Elad Hazan, and Yoram Singer. 2011. Adaptive subgradient methods for online learning and stochastic optimization. Journal of Machine Learning Research 12, Jul (2011), 2121-2159. [11] Yuchen Jiang, Qi Li, Han Zhu, Jinbei Yu, Jin Li, Ziru Xu, Huihui Dong, and Bo Zheng. 2022. Adaptive Domain Interest Network for Multi-domain Recommendation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management (CIKM) . 3212-3221. [12] Mahesh Joshi, Mark Dredze, William Cohen, and Carolyn Rose. 2012. Multidomain learning: when do domains matter?. In Proceedings of the 2012 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning . 1302-1312. [13] Kuang-chih Lee, Burkay Orten, Ali Dasdan, and Wentong Li. 2012. Estimating conversion rate in display advertising from past erformance data. In Proceedings of the 18th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) . 768-776. [14] Ziru Liu, Jiejie Tian, Qingpeng Cai, Xiangyu Zhao, Jingtong Gao, Shuchang Liu, Dayou Chen, Tonghao He, Dong Zheng, Peng Jiang, et al. 2023. Multi-Task Recommendations with Reinforcement Learning. In Proceedings of the ACM Web Conference 2023 (WWW) . 1273-1282. [15] Quan Lu, Shengjun Pan, Liang Wang, Junwei Pan, Fengdan Wan, and Hongxia Yang. 2017. A practical framework of conversion rate prediction for online display advertising. In Proceedings of the International Workshop on Data Mining for Online Advertising (ADKDD) . 1-9. [16] Jiaqi Ma, Zhe Zhao, Jilin Chen, Ang Li, Lichan Hong, and Ed H Chi. 2019. SNR: Sub-network routing for flexible parameter sharing in multi-task learning. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 33. 216-223. [17] Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed H Chi. 2018. Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts. In Proceedings of the 24th ACM SIGKDD International Conference on [32] Han Zhu, Junqi Jin, Chang Tan, Fei Pan, Yifan Zeng, Han Li, and Kun Gai. 2017. Optimized cost per click in taobao display advertising. In Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) . 2191-2200.",
   "keywords_parsed": [
     "Online advertising",
-    " CVR prediction",
-    " Multiple conversion types",
-    " Multiple display scenarios"
+    "CVR prediction",
+    "Multiple conversion types",
+    "Multiple display scenarios"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Tensorflow: A system for large-scale machine learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Estimating rates of rare events with multiple hierarchies through scalable log-linear models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "GMCM:Graph-based micro-behavior conversion model for post-click conversion rate estimation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Towards Universal Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Modeling delayed feedback in display advertising"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Simple and scalable response prediction for display advertising"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Multi-domain learning by confidence-weighted parameter combination"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Adaptive subgradient methods for online learning and stochastic optimization"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Adaptive Domain Interest Network for Multi-domain Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Multidomain learning: when do domains matter?"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Estimating conversion rate in display advertising from past performance data"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Multi-Task Recommendations with Reinforcement Learning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "A practical framework of conversion rate prediction for online display advertising"
+    },
+    {
+      "ref_id": "b16",
+      "title": "SNR: Sub-network routing for flexible parameter sharing in multi-task learning"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Optimized cost per click in taobao display advertising"
+    }
   ]
 }

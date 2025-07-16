@@ -21,7 +21,125 @@
   "REFERENCES": "[1] Qingyao Ai, Keping Bi, Jiafeng Guo, and W Bruce Croft. 2018. Learning a deep listwise context model for ranking refinement. In The 41st international ACM SIGIR conference on research & development in information retrieval . 135-144. [2] Areej Alsini, Du Q Huynh, and Amitava Datta. 2020. Hit ratio: An evaluation metric for hashtag recommendation. arXiv preprint arXiv:2010.01258 (2020). [3] Irwan Bello, Sayali Kulkarni, Sagar Jain, Craig Boutilier, Ed Chi, Elad Eban, Xiyang Luo, Alan Mackey, and Ofer Meshi. 2018. Seq2slate: Re-ranking and slate optimization with rnns. arXiv preprint arXiv:1810.02019 (2018). [4] Yue Cao, Xiaojiang Zhou, Jiaqi Feng, Peihao Huang, Yao Xiao, Dayao Chen, and Sheng Chen. 2022. Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2974-2983. [5] Moses S Charikar. 2002. Similarity estimation techniques from rounding algorithms. In Proceedings of the 34th annual ACM symposium on Theory of computing . 380-388. [6] Chi Chen, Hui Chen, Kangzhi Zhao, Junsheng Zhou, Li He, Hongbo Deng, Jian Xu, Bo Zheng, Yong Zhang, and Chunxiao Xing. 2022. EXTR: Click-Through Rate Prediction with Externalities in E-Commerce Sponsored Search. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2732-2740. [7] Dagui Chen, Qi Yan, Chunjie Chen, Zhenzhe Zheng, Yangsu Liu, Zhenjia Ma, Chuan Yu, Jian Xu, and Bo Zheng. 2022. Hierarchically Constrained Adaptive Ad Exposure in Feeds. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3003-3012. [8] Qiwei Chen, Changhua Pei, Shanshan Lv, Chao Li, Junfeng Ge, and Wenwu Ou. 2021. End-to-End User Behavior Retrieval in Click-Through Rate Prediction Model. arXiv preprint arXiv:2108.04468 (2021). [9] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [10] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [11] Yufei Feng, Yu Gong, Fei Sun, Junfeng Ge, and Wenwu Ou. 2021. Revisit recommender system in the permutation prospective. arXiv preprint arXiv:2102.12057 (2021). [12] Yufei Feng, Binbin Hu, Yu Gong, Fei Sun, Qingwen Liu, and Wenwu Ou. 2021. GRN: Generative Rerank Network for Context-wise Recommendation. arXiv preprint arXiv:2104.00860 (2021). [13] Xudong Gong, Qinlin Feng, Yuan Zhang, Jiangling Qin, Weijie Ding, Biao Li, Peng Jiang, and Kun Gai. 2022. Real-time Short Video Recommendation on Mobile Devices. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3103-3112. [14] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . 1725-1731. [15] Xiang Li, Shuwei Chen, Jian Dong, Jin Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2023. Decision-Making Context Interaction Network for ClickThrough Rate Prediction. arXiv preprint arXiv:2301.12402 (2023). [16] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [17] Guogang Liao, Xuejian Li, Ze Wang, Fan Yang, Muzhi Guan, Bingqi Zhu, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. NMA: Neural Multi-slot Auctions with Externalities for Online Advertising. arXiv preprint arXiv:2205.10018 (2022). [18] Guogang Liao, Ze Wang, Xiaoxu Wu, Xiaowen Shi, Chuheng Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. Cross dqn: Cross deep q network for ads allocation in feed. In Proceedings of the ACM Web Conference 2022 . 401409. [19] Gurmeet Singh Manku, Arvind Jain, and Anish Das Sarma. 2007. Detecting NearDuplicates for Web Crawling. In Proceedings of the 16th International Conference on World Wide Web . https://doi.org/10.1145/1242572.1242592 [20] Changhua Pei, Yi Zhang, Yongfeng Zhang, Fei Sun, Xiao Lin, Hanxiao Sun, Jian Wu, Peng Jiang, Junfeng Ge, Wenwu Ou, et al. 2019. Personalized re-ranking for recommendation. In Proceedings of the 13th ACM conference on recommender systems . 3-11. [21] D Raj Reddy et al. 1977. Speech understanding systems: A summary of results of the five-year research effort. Department of Computer Science. Camegie-Mell University, Pittsburgh, PA 17 (1977), 138. [22] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [23] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [24] Zhe Wang, Liqin Zhao, Biye Jiang, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2020. Cold: Towards the next generation of pre-ranking system. arXiv preprint arXiv:2007.16122 (2020). [25] Yunjia Xi, Weiwen Liu, Xinyi Dai, Ruiming Tang, Weinan Zhang, Qing Liu, Xiuqiang He, and Yong Yu. 2021. Context-aware reranking with utility maximization for recommendation. arXiv preprint arXiv:2110.09059 (2021). [26] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [27] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1059-1068. [28] Han Zhu, Xiang Li, Pengye Zhang, Guozheng Li, Jie He, Han Li, and Kun Gai. 2018. Learning tree-based deep model for recommender systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1079-1088. [29] Tao Zhuang, Wenwu Ou, and Zhirong Wang. 2018. Globally optimized mutual influence aware ranking in e-commerce search. In Proceedings of the 27th International Joint Conference on Artificial Intelligence . 3725-3731.",
   "keywords_parsed": [
     "Re-ranking",
-    " End-to-End Learning",
-    " Recommender Systems"
+    "End-to-End Learning",
+    "Recommender Systems"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Learning a deep listwise context model for ranking refinement"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Hit ratio: An evaluation metric for hashtag recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Seq2slate: Re-ranking and slate optimization with rnns"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Similarity estimation techniques from rounding algorithms"
+    },
+    {
+      "ref_id": "b6",
+      "title": "EXTR: Click-Through Rate Prediction with Externalities in E-Commerce Sponsored Search"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Hierarchically Constrained Adaptive Ad Exposure in Feeds"
+    },
+    {
+      "ref_id": "b8",
+      "title": "End-to-End User Behavior Retrieval in Click-Through Rate Prediction Model"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Revisit recommender system in the permutation prospective"
+    },
+    {
+      "ref_id": "b12",
+      "title": "GRN: Generative Rerank Network for Context-wise Recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Real-time Short Video Recommendation on Mobile Devices"
+    },
+    {
+      "ref_id": "b14",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Decision-Making Context Interaction Network for ClickThrough Rate Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b17",
+      "title": "NMA: Neural Multi-slot Auctions with Externalities for Online Advertising"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Cross dqn: Cross deep q network for ads allocation in feed"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Detecting NearDuplicates for Web Crawling"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Personalized re-ranking for recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Speech understanding systems: A summary of results of the five-year research effort"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Cold: Towards the next generation of pre-ranking system"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Context-aware reranking with utility maximization for recommendation"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Learning tree-based deep model for recommender systems"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Globally optimized mutual influence aware ranking in e-commerce search"
+    }
   ]
 }

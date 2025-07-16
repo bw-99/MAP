@@ -52,6 +52,236 @@
   "ACKNOWLEDGMENTS": "This work was supported by the National Natural Science Foundation of China under Grant numbers U1936208, U1936216, 61862002, and U1705261. , Vol. 1, No. 1, Article . Publication date: February 2021. Personalized News Recommendation: Methods and Challenges 41",
   "REFERENCES": "[1] Himan Abdollahpouri, Edward C Malthouse, Joseph A Konstan, Bamshad Mobasher, and Jeremy Gilbert. 2021. Toward the next generation of news recommender systems. In Companion Proceedings of WWW . 402-406. [2] Mingxiao An, Fangzhao Wu, Chuhan Wu, Kun Zhang, Zheng Liu, and Xing Xie. 2019. Neural news recommendation with long-and short-term user representations. In ACL . 336-345. [3] Xiao Bai, B Barla Cambazoglu, Francesco Gullo, Amin Mantrach, and Fabrizio Silvestri. 2017. Exploiting search history of users for news personalization. Information Science 385 (2017), 125-137. [4] Michele Banko, Brendon MacKeen, and Laurie Ray. 2020. A unified taxonomy of harmful content. In WOAH@EMNLP . 125-137. [5] Mariella Bastian, Natali Helberger, and Mykola Makhortykh. 2021. Safeguarding the Journalistic DNA: Attitudes towards the Role of Professional Values in Algorithmic News Recommender Designs. Digital Journalism 9, 6 (2021), 835-863. [6] Abraham Bernstein, Claes de Vreese, Natali Helberger, Wolfgang Schulz, Katharina Zweig, Christian Baden, Michael A Beam, Marc P Hauer, Lucien Heitz, Pascal Jürgens, et al. 2020. Diversity in news recommendations. arXiv preprint arXiv:2005.09495 (2020). [7] Daniel Billsus and Michael J Pazzani. 2000. User modeling for adaptive news access. User Modeling and User-adapted Interaction 10, 2-3 (2000), 147-180. [8] Toine Bogers and Antal Van den Bosch. 2007. Comparing and evaluating information retrieval algorithms for news recommendation. In Recsys . 141-144. [9] Antoine Bordes, Nicolas Usunier, Alberto Garcia-Duran, Jason Weston, and Oksana Yakhnenko. 2013. Translating embeddings for modeling multi-relational data. In NIPS . 1-9. [10] Hugo L Borges and Ana C Lorena. 2010. A survey on recommender systems for news data. In Smart Information and Knowledge Management . Springer, 129-151. [11] Emma Brocken, Aron Hartveld, Emma de Koning, Thomas van Noort, Frederik Hogenboom, Flavius Frasincar, and Tarmo Robal. 2019. Bing-CF-IDF+: A Semantics-Driven News Recommender System. In CAiSE . Springer, 32-47. [12] Robin Burke. 2017. Multisided fairness for recommendation. arXiv preprint arXiv:1707.00093 (2017). [13] Sirian Caldarelli, Davide Feltoni Gurini, Alessandro Micarelli, and Giuseppe Sansonetti. 2016. A Signal-Based Approach to News Recommendation.. In UMAP (Extended Proceedings) . [14] Iván Cantador and Pablo Castells. 2009. Semantic contextualisation in a news recommender system. (2009). [15] Iván Cantador, Pablo Castells, and Alejandro Bellogín. 2011. An enhanced semantic layer for hybrid recommender systems: Application to news recommendation. Int. Journal on Semantic Web and Inf. Syst. 7, 1 (2011), 44-78. [16] Michel Capelle, Flavius Frasincar, Marnix Moerland, and Frederik Hogenboom. 2012. Semantics-based news recommendation. In WIMS . 1-9. [17] Michel Capelle, Frederik Hogenboom, Alexander Hogenboom, and Flavius Frasincar. 2013. Semantic news recommendation using wordnet and bing similarities. In SAC . 296-302. [18] Michel Capelle, Marnix Moerland, Frederik Hogenboom, Flavius Frasincar, and Damir Vandic. 2015. Bing-SF-IDF+ a hybrid semantics-driven news recommender. In SAC . 732-739. [19] Ines Chami, Adva Wolf, Da-Cheng Juan, Frederic Sala, Sujith Ravi, and Christopher Ré. 2020. Low-Dimensional Hyperbolic Knowledge Graph Embeddings. In ACL . 6901-6914. [20] Ines Chami, Zhitao Ying, Christopher Ré, and Jure Leskovec. 2019. Hyperbolic graph convolutional neural networks. NeurIPS 32 (2019), 4868-4879. [21] Cheng Chen, Xiangwu Meng, Zhenghua Xu, and Thomas Lukasiewicz. 2017. Location-aware personalized news recommendation with deep semantic analysis. IEEE Access 5 (2017), 1624-1638. [22] Wei Chen, Li-jun Zhang, Chun Chen, and Jia-jun Bu. 2009. A hybrid phonic web news recommender system for pervasive access. In Proc. of the WRI Int. Conf. on Commun. and Mobile Comput. , Vol. 3. IEEE, 122-126. [23] Sungmin Cho, Hongjun Lim, Keunchan Park, Sungjoo Yoo, and Eunhyeok Park. 2021. On the Overlooked Significance of Underutilized Contextual Features in Recent News Recommendation Models. arXiv preprint arXiv:2112.14370 (2021). [24] Qianfeng Chu, Gongshen Liu, Huanrong Sun, and Cheng Zhou. 2019. Next News Recommendation via KnowledgeAware Sequential Model. In CCL . Springer, 221-232. [25] Wei Chu and Seung-Taek Park. 2009. Personalized recommendation on dynamic content using predictive bilinear models. In WWW . 691-700. [26] Mark Claypool, Anuja Gokhale, Tim Miranda, Paul Murnikov, Dmitry Netes, and Matthew Sartin. 1999. Combing content-based and collaborative filters in an online newspaper. In Recommender Systems@SIGIR . [27] F Corsini and MA Larson. 2016. CLEF NewsREEL 2016: Image based Recommendation. In CLEF . 593-605. [28] Asghar Darvishy, Hamidah Ibrahim, Fatimah Sidi, and Aida Mustapha. 2020. HYPNER: A Hybrid Approach for Personalized News Recommendation. IEEE Access 8 (2020), 46877-46894. , Vol. 1, No. 1, Article . Publication date: February 2021. 42 Wu et al. , Vol. 1, No. 1, Article . Publication date: February 2021. Personalized News Recommendation: Methods and Challenges 43 [57] Alireza Gharahighehi, Celine Vens, and Konstantinos Pliakos. 2021. Fair multi-stakeholder news recommender system with hypergraph ranking. Information Processing & Management 58, 5 (2021), 102663. [58] Frank Goossen, Wouter IJntema, Flavius Frasincar, Frederik Hogenboom, and Uzay Kaymak. 2011. News personalization using the CF-IDF semantic recommender. In WIMS . 1-12. [59] Wanrong Gu, Shoubin Dong, Zhizhao Zeng, and Jinchao He. 2014. An effective news recommendation method for microblog user. The Scientific World Journal 2014 (2014). [60] Caglar Gulcehre, Misha Denil, Mateusz Malinowski, Ali Razavi, Razvan Pascanu, Karl Moritz Hermann, Peter Battaglia, Victor Bapst, David Raposo, Adam Santoro, et al. 2018. Hyperbolic attention networks. arXiv preprint arXiv:1805.09786 (2018). [61] Jon Atle Gulla, Lemei Zhang, Peng Liu, Özlem Özgöbek, and Xiaomeng Su. 2017. The Adressa dataset for news recommendation. In WI . 1042-1048. [62] Kunni Han. 2020. Personalized News Recommendation and Simulation Based on Improved Collaborative Filtering Algorithm. Complexity 2020 (2020). [63] Songqiao Han, Hailiang Huang, and Jiangwei Liu. 2021. Neural news recommendation with event extraction. arXiv preprint arXiv:2111.05068 (2021). [64] Mahboobeh Harandi and Jon Atle Gulla. 2015. Survey of User Profiling in News Recommender Systems. In INRA@ECML PKDD . 20-26. [65] Jonathan Hendrickx, Annelien Smets, and Pieter Ballon. 2021. News Recommender Systems and News Diversity, Two of a Kind? A Case Study from a Small Media Market. Journalism and Media 2, 3 (2021), 515-528. [66] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and D Tikk. 2016. Session-based recommendations with recurrent neural networks. In ICLR . [67] Frederik Hogenboom, Michel Capelle, and Marnix Moerland. 2013. News Recommendation using Semantics with the Bing-SF-IDF Approach. In ER . Springer, 160-169. [68] Frederik Hogenboom, Michel Capelle, Marnix Moerland, and Flavius Frasincar. 2014. Bing-SF-IDF+ semantics-driven news recommendation. In WWW . 291-292. [69] Cheng-Kang Hsieh, Longqi Yang, Honghao Wei, Mor Naaman, and Deborah Estrin. 2016. Immersive recommendation: News and event recommendations using personal digital traces. In WWW . 51-62. [70] Linmei Hu, Chen Li, Chuan Shi, Cheng Yang, and Chao Shao. 2020. Graph neural news recommendation with long-term and short-term interest modeling. Information Processing & Management 57, 2 (2020), 102142. [71] Linmei Hu, Siyong Xu, Chen Li, Cheng Yang, Chuan Shi, Nan Duan, Xing Xie, and Ming Zhou. 2020. Graph neural news recommendation with unsupervised preference disentanglement. In ACL . 4255-4264. [72] Po-Sen Huang, Xiaodong He, Jianfeng Gao, Li Deng, Alex Acero, and Larry Heck. 2013. Learning deep structured semantic models for web search using clickthrough data. In CIKM . 2333-2338. [73] Clayton Hutto and Eric Gilbert. 2014. Vader: A parsimonious rule-based model for sentiment analysis of social media text. In ICWSM , Vol. 8. [74] Andreea Iana, Mehwish Alam, and Heiko Paulheim. 2021. A Survey On Knowledge-Aware News Recommender Systems. (2021). [75] Ilija Ilievski and Sujoy Roy. 2013. Personalized news recommendation based on implicit feedback. In Proceedings of the international news recommender systems workshop and challenge . 10-15. [76] Rania Islambouli, Sandy Ingram, and Denis Gillet. 2021. A User Centered News Recommendation System. In Proceedings of the 4th Workshop on Human Factors in Hypertext . 15-16. [77] Guoliang Ji, Shizhu He, Liheng Xu, Kang Liu, and Jun Zhao. 2015. Knowledge graph embedding via dynamic mapping matrix. In ACL-IJCNLP . 687-696. [78] Youchun Ji, Wenxing Hong, Yali Shangguan, Huan Wang, and Jing Ma. 2016. Regularized singular value decomposition in news recommendation system. In ICCSE . IEEE, 621-626. [79] Zhenyan Ji, Mengdan Wu, Jirui Liu, and José Enrique Armendáriz Íñigo. 2021. Attention-Based Graph Neural Network for News Recommendation. In IJCNN . IEEE, 1-8. [80] Zhenyan Ji, Mengdan Wu, Hong Yang, and José Enrique Armendáriz Íñigo. 2021. Temporal sensitive heterogeneous graph neural network for news recommendation. Future Generation Computer Systems (2021). [81] Qinglin Jia, Jingjie Li, Qi Zhang, Xiuqiang He, and Jieming Zhu. 2021. RMBERT: News Recommendation via Recurrent Reasoning Memory Network over BERT. In SIGIR . 1773-1777. [82] Nirmal Jonnalagedda and Susan Gauch. 2013. Personalized news recommendation using twitter. In WI-IAT , Vol. 3. IEEE, 21-25. [83] Nirmal Jonnalagedda, Susan Gauch, Kevin Labille, and Sultan Alfarhood. 2016. Incorporating popularity in a personalized news recommender system. PeerJ 2 (2016). [84] Kevin Joseph and Hui Jiang. 2019. Content based News Recommendation via Shortest Entity Distance over Knowledge Graphs. In Companion Proceedings of WWW . 690-699. , Vol. 1, No. 1, Article . Publication date: February 2021. 44 Wu et al. , Vol. 1, No. 1, Article . Publication date: February 2021. Personalized News Recommendation: Methods and Challenges 45 , Vol. 1, No. 1, Article . Publication date: February 2021. 46 Wu et al. , Vol. 1, No. 1, Article . Publication date: February 2021. Personalized News Recommendation: Methods and Challenges 47 , Vol. 1, No. 1, Article . Publication date: February 2021. 48 Wu et al. , Vol. 1, No. 1, Article . Publication date: February 2021. Personalized News Recommendation: Methods and Challenges 49 , Vol. 1, No. 1, Article . Publication date: February 2021.",
   "keywords_parsed": [
-    "None"
+    "news recommendation",
+    "personalization",
+    "survey",
+    "user modeling",
+    "natural language processing"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Toward the next generation of news recommender systems"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Neural news recommendation with long-and short-term user representations"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Exploiting search history of users for news personalization"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A unified taxonomy of harmful content"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Safeguarding the Journalistic DNA: Attitudes towards the Role of Professional Values in Algorithmic News Recommender Designs"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Diversity in news recommendations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "User modeling for adaptive news access"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Comparing and evaluating information retrieval algorithms for news recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Translating embeddings for modeling multi-relational data"
+    },
+    {
+      "ref_id": "b10",
+      "title": "A survey on recommender systems for news data"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Bing-CF-IDF+: A Semantics-Driven News Recommender System"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Multisided fairness for recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A Signal-Based Approach to News Recommendation."
+    },
+    {
+      "ref_id": "b14",
+      "title": "Semantic contextualisation in a news recommender system"
+    },
+    {
+      "ref_id": "b15",
+      "title": "An enhanced semantic layer for hybrid recommender systems: Application to news recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Semantics-based news recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Semantic news recommendation using wordnet and bing similarities"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Bing-SF-IDF+ a hybrid semantics-driven news recommender"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Low-Dimensional Hyperbolic Knowledge Graph Embeddings"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Hyperbolic graph convolutional neural networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Location-aware personalized news recommendation with deep semantic analysis"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A hybrid phonic web news recommender system for pervasive access"
+    },
+    {
+      "ref_id": "b23",
+      "title": "On the Overlooked Significance of Underutilized Contextual Features in Recent News Recommendation Models"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Next News Recommendation via Knowledge-Aware Sequential Model"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Personalized recommendation on dynamic content using predictive bilinear models"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Combing content-based and collaborative filters in an online newspaper"
+    },
+    {
+      "ref_id": "b27",
+      "title": "CLEF NewsREEL 2016: Image based Recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "HYPNER: A Hybrid Approach for Personalized News Recommendation"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Fair multi-stakeholder news recommender system with hypergraph ranking"
+    },
+    {
+      "ref_id": "b58",
+      "title": "News personalization using the CF-IDF semantic recommender"
+    },
+    {
+      "ref_id": "b59",
+      "title": "An effective news recommendation method for microblog user"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Hyperbolic attention networks"
+    },
+    {
+      "ref_id": "b61",
+      "title": "The Adressa dataset for news recommendation"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Personalized News Recommendation and Simulation Based on Improved Collaborative Filtering Algorithm"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Neural news recommendation with event extraction"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Survey of User Profiling in News Recommender Systems"
+    },
+    {
+      "ref_id": "b65",
+      "title": "News Recommender Systems and News Diversity, Two of a Kind? A Case Study from a Small Media Market"
+    },
+    {
+      "ref_id": "b66",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b67",
+      "title": "News Recommendation using Semantics with the Bing-SF-IDF Approach"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Bing-SF-IDF+ semantics-driven news recommendation"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Immersive recommendation: News and event recommendations using personal digital traces"
+    },
+    {
+      "ref_id": "b70",
+      "title": "Graph neural news recommendation with long-term and short-term interest modeling"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Graph neural news recommendation with unsupervised preference disentanglement"
+    },
+    {
+      "ref_id": "b72",
+      "title": "Learning deep structured semantic models for web search using clickthrough data"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Vader: A parsimonious rule-based model for sentiment analysis of social media text"
+    },
+    {
+      "ref_id": "b74",
+      "title": "A Survey On Knowledge-Aware News Recommender Systems"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Personalized news recommendation based on implicit feedback"
+    },
+    {
+      "ref_id": "b76",
+      "title": "A User Centered News Recommendation System"
+    },
+    {
+      "ref_id": "b77",
+      "title": "Knowledge graph embedding via dynamic mapping matrix"
+    },
+    {
+      "ref_id": "b78",
+      "title": "Regularized singular value decomposition in news recommendation system"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Attention-Based Graph Neural Network for News Recommendation"
+    },
+    {
+      "ref_id": "b80",
+      "title": "Temporal sensitive heterogeneous graph neural network for news recommendation"
+    },
+    {
+      "ref_id": "b81",
+      "title": "RMBERT: News Recommendation via Recurrent Reasoning Memory Network over BERT"
+    },
+    {
+      "ref_id": "b82",
+      "title": "Personalized news recommendation using twitter"
+    },
+    {
+      "ref_id": "b83",
+      "title": "Incorporating popularity in a personalized news recommender system"
+    },
+    {
+      "ref_id": "b84",
+      "title": "Content based News Recommendation via Shortest Entity Distance over Knowledge Graphs"
+    }
   ]
 }

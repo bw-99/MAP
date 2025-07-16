@@ -26,8 +26,246 @@
   "REFERENCES": "[1] Oded Berman and Dmitry Krass. 2002. The generalized maximal covering location problem. Comput. Oper. Res. 29, 6 (2002), 563-581. [2] Erin J. Bredensteiner and Kristin P. Bennett. 1999. Multicategory Classification by Support Vector Machines. Comput. Optim. Appl. 12, 1-3 (1999), 53-79. [3] Christopher J. C. Burges, Tal Shaked, Erin Renshaw, Ari Lazier, Matt Deeds, Nicole Hamilton, and Gregory N. Hullender. 2005. Learning to rank using gradient descent. In Machine Learning, Proceedings of the Twenty-Second International Conference (ICML 2005), Bonn, Germany, August 7-11, 2005 (ACM International Conference Proceeding Series) , Vol. 119. ACM, 89-96. [4] Gregory S. Carpenter and Kent Nakamoto. 1990. Competitive Strategies for Late Entry into a Market with a Dominant Brand. Management Science 36 (1990), 1268-1278. [5] Buru Chang, Gwanghoon Jang, Seoyoon Kim, and Jaewoo Kang. 2020. Learning Graph-Based Geographical Latent Representation for Point-of-Interest Recommendation. In CIKM '20: The 29th ACM International Conference on Information and Knowledge Management, Virtual Event, Ireland, October 19-23, 2020 . ACM, 135-144. [6] Longbiao Chen, Daqing Zhang, Gang Pan, Xiaojuan Ma, Dingqi Yang, Kostadin Kushlev, Wangsheng Zhang, and Shijian Li. 2015. Bike sharing station placement leveraging heterogeneous urban open data. In Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing, UbiComp 2015, Osaka, Japan, September 7-11, 2015 . ACM, 571-575. [7] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, Rohan Anil, Zakaria Haque, Lichan Hong, Vihan Jain, Xiaobing Liu, and Hemal Shah. 2016. Wide & Deep Learning for Recommender Systems. In Proceedings of the 1st Workshop on Deep Learning for Recommender Systems, DLRS@RecSys 2016, Boston, MA, USA, September 15, 2016 . ACM, 7-10. [8] Richard L. Church and Alan T. Murray. 2008. Business Site Selection, Location Analysis and GIS. [9] William W. Cohen, Pradeep Ravikumar, and Stephen E. Fienberg. 2003. A Comparison of String Distance Metrics for Name-Matching Tasks. In Proceedings of IJCAI-03 Workshop on Information Integration on the Web (IIWeb-03), August 9-10, 2003, Acapulco, Mexico . 73-78. [10] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep Neural Networks for YouTube Recommendations. In Proceedings of the 10th ACM Conference on Recommender Systems, Boston, MA, USA, September 15-19, 2016 . ACM, 191-198. [11] Wenqi Fan, Yao Ma, Qing Li, Yuan He, Yihong Eric Zhao, Jiliang Tang, and Dawei Yin. 2019. Graph Neural Networks for Social Recommendation. In The World Wide Web Conference, WWW 2019, San Francisco, CA, USA, May 13-17, 2019 . ACM, 417-426. [12] Jerome H. Friedman. 2001. Greedy function approximation: A gradient boosting machine. Annals of Statistics 29 (2001), 1189-1232. [13] Bin Guo, Jing Li, Vincent W. Zheng, Zhu Wang, and Zhiwen Yu. 2017. CityTransfer: Transferring Inter- and Intra-City Knowledge for Chain Store Site Recommendation based on Multi-Source Urban Data. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 1, 4 (2017), 135:1-135:23. [14] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence, IJCAI 2017, Melbourne, Australia, August 19-25, 2017 . ijcai.org, 17251731. [15] Mordechai (Muki) Haklay and Patrick Weber. 2008. OpenStreetMap: UserGenerated Street Maps. IEEE Pervasive Comput. 7, 4 (2008), 12-18. [16] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yong-Dong Zhang, and Meng Wang. 2020. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval, SIGIR 2020, Virtual Event, China, July 25-30, 2020 . ACM, 639-648. [17] Xiangnan He, Zhankui He, Jingkuan Song, Zhenguang Liu, Yu-Gang Jiang, and Tat-Seng Chua. 2018. NAIS: Neural Attentive Item Similarity Model for Recommendation. IEEE Trans. Knowl. Data Eng. 30, 12 (2018), 2354-2366. [18] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural Collaborative Filtering. In Proceedings of the 26th International Conference on World Wide Web, WWW 2017, Perth, Australia, April 3-7, 2017 . ACM, 173-182. [19] Tony Hernández and David J. Bennison. 2000. The art and science of retail location decisions. International Journal of Retail & Distribution Management 28 (2000), 357-367. [20] David W. Hosmer and Stanley Lemeshow. 1991. Applied Logistic Regression. [21] David L. Huff. 1966. A Programmed Solution for Approximating an Optimum Retail Location. Land Economics 42 (1966), 293-303. [22] Matthew A. Jaro. 1989. Advances in Record-Linkage Methodology as Applied to Matching the 1985 Census of Tampa, Florida. J. Amer. Statist. Assoc. 84 (1989), 414-420. [23] Pablo Jensen. 2006. Network-based predictions of retail store commercial categories and optimal locations. Physical review. E, Statistical, nonlinear, and soft matter physics 74 3 Pt 2 (2006), 035101. [24] Pablo Jensen. 2009. Analyzing the Localization of Retail Stores with Complex Systems Tools. In Advances in Intelligent Data Analysis VIII, 8th International Symposium on Intelligent Data Analysis, IDA 2009, Lyon, France, August 31 September 2, 2009. Proceedings (Lecture Notes in Computer Science) , Vol. 5772. Springer, 10-20. [25] Santosh Kabbur, Xia Ning, and George Karypis. 2013. FISM: factored item similarity models for top-N recommender systems. In The 19th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD 2013, Chicago, IL, USA, August 11-14, 2013 . ACM, 659-667. [26] Dmytro Karamshuk, Anastasios Noulas, Salvatore Scellato, Vincenzo Nicosia, and Cecilia Mascolo. 2013. Geo-spotting: mining online location-based services for optimal retail store placement. In The 19th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD 2013, Chicago, IL, USA, August 11-14, 2013 . ACM, 793-801. [27] Diederik P. Kingma and Jimmy Ba. 2015. Adam: A Method for Stochastic Optimization. In 3rd International Conference on Learning Representations, ICLR 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings . [28] Yehuda Koren, Robert M. Bell, and Chris Volinsky. 2009. Matrix Factorization Techniques for Recommender Systems. Computer 42, 8 (2009), 30-37. [29] Prof Vikas Kumar and Kiran Karande. 2000. The Effect of Retail Store Environment on Retailer Performance. Journal of Business Research 49 (2000), 167-181. [30] Donald R. Lehmann and Yigang Pan. 1994. Context Effects, New Brand Entry, and Consideration Sets. Journal of Marketing Research 31 (1994), 364 - 374. [31] Yuhong Li, Yu Zheng, Shenggong Ji, Wenjun Wang, Leong Hou U, and Zhiguo Gong. 2015. Location selection for ambulance stations: a data-driven approach. In Proceedings of the 23rd SIGSPATIAL International Conference on Advances in Geographic Information Systems, Bellevue, WA, USA, November 3-6, 2015 . ACM, 85:1-85:4. [32] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2018, London, UK, August 19-23, 2018 . ACM, 1754-1763. [33] Hao Liu, Qiyu Wu, Fuzhen Zhuang, Xinjiang Lu, Dejing Dou, and Hui Xiong. 2021. Community-Aware Multi-Task Transportation Demand Prediction. In Thirty-Fifth AAAI Conference on Artificial Intelligence, AAAI 2021, Thirty-Third Conference on Innovative Applications of Artificial Intelligence, IAAI 2021, The Eleventh Symposium on Educational Advances in Artificial Intelligence, EAAI 2021, Virtual Event, February 2-9, 2021 . AAAI Press, 320-327. [34] Yu Liu, Jingtao Ding, and Yong Li. 2021. Knowledge-driven Site Selection via Urban Knowledge Graph. CoRR abs/2111.00787 (2021). [35] Yu Liu, Jingtao Ding, and Yong Li. 2022. Developing knowledge graph based system for urban computing. Proceedings of the 1st ACM SIGSPATIAL International Workshop on Geospatial Knowledge Graphs (2022). [36] Yan Liu, Bin Guo, Nuo Li, Jing Zhang, Jingmin Chen, Daqing Zhang, Yinxiao Liu, Zhiwen Yu, Sizhe Zhang, and Lina Yao. 2019. DeepStore: An Interaction-Aware Conference acronym 'XX, June 03-05, 2018, Woodstock, NY Xinhang Li et al. Wide&Deep Model for Store Site Recommendation With Attentional Spatial Embeddings. IEEE Internet Things J. 6, 4 (2019), 7319-7333. [37] Yan Liu, Bin Guo, Daqing Zhang, Djamal Zeghlache, Jingmin Chen, Ke Hu, Sizhe Zhang, Dan Zhou, and Zhiwen Yu. 2021. Knowledge Transfer with Weighted Adversarial Network for Cold-Start Store Site Recommendation. ACM Trans. Knowl. Discov. Data 15, 3 (2021), 47:1-47:27. [38] Hui Luo, Jingbo Zhou, Zhifeng Bao, Shuangli Li, J. Shane Culpepper, Haochao Ying, Hao Liu, and Hui Xiong. 2020. Spatial Object Recommendation with Hints: When Spatial Granularity Matters. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval, SIGIR 2020, Virtual Event, China, July 25-30, 2020 . ACM, 781-790. [39] Stijn Maesen and Lien Lamey. 2022. The Impact of Organic Specialist Store Entry on Category Performance at Incumbent Stores. Journal of Marketing 87 (2022), 97 - 113. [40] Michael T. Marsh and David A. Schilling. 1994. Equity measurement in facility location analysis: A review and framework. European Journal of Operational Research 74 (1994), 1-17. [41] Daniel McFadden. 1977. Modelling the Choice of Residential Location. Transportation Research Record (1977). [42] Yansong Ning, Hao Liu, Hao Wang, Zhenyu Zeng, and Hui Xiong. 2023. UUKG: Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction. CoRR abs/2306.11443 (2023). [43] Yigang Pan and Donald R. Lehmann. 1993. The Influence of New Brand Entry on Subjective Brand Judgments. Journal of Consumer Research 20 (1993), 76-86. [44] Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban Desmaison, Andreas Köpf, Edward Z. Yang, Zachary DeVito, Martin Raison, Alykhan Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu Fang, Junjie Bai, and Soumith Chintala. 2019. PyTorch: An Imperative Style, High-Performance Deep Learning Library. In Advances in Neural Information Processing Systems 32: Annual Conference on Neural Information Processing Systems 2019, NeurIPS 2019, December 8-14, 2019, Vancouver, BC, Canada . 8024-8035. [45] Koen H. Pauwels and Shuba Srinivasan. 2004. Who Benefits from Store Brand Entry. Marketing Science 23 (2004), 364-390. [46] F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Cournapeau, M. Brucher, M. Perrot, and E. Duchesnay. 2011. Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research 12 (2011), 2825-2830. [47] Sergio Porta, Vito Latora, Fahui Wang, Salvador Rueda, Emanuele Strano, Salvatore Scellato, Allessio Cardillo, Eugenio Belli, Francisco Cardenas, Berta Cormenzana, and Laura Latora. 2012. Street Centrality and the Location of Economic Activities in Barcelona. Urban Studies 49 (2012), 1471 - 1488. [48] Sergio Porta, Emanuele Strano, Valentino Iacoviello, Roberto Messora, Vito Latora, Alessio Cardillo, Fahui Wang, and Salvatore Scellato. 2009. Street Centrality and Densities of Retail and Services in Bologna, Italy. Environment and Planning B: Planning and Design 36 (2009), 450 - 465. [49] M. Mazhar Rathore, Awais Ahmad, Anand Paul, and Seungmin Rho. 2016. Urban planning and building smart cities based on the Internet of Things using Big Data analytics. Comput. Networks 101 (2016), 63-80. [50] Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2009. BPR: Bayesian Personalized Ranking from Implicit Feedback. In UAI 2009, Proceedings of the Twenty-Fifth Conference on Uncertainty in Artificial Intelligence, Montreal, QC, Canada, June 18-21, 2009 . AUAI Press, 452-461. [51] Charles S. Revelle and Horst A. Eiselt. 2005. Location analysis: A synthesis and survey. Eur. J. Oper. Res. 165 (2005), 1-19. [52] Matthew Richardson, Ewa Dominowska, and Robert Ragno. 2007. Predicting clicks: estimating the click-through rate for new ads. In Proceedings of the 16th International Conference on World Wide Web, WWW 2007, Banff, Alberta, Canada, May 8-12, 2007 . ACM, 521-530. [53] Badrul Munir Sarwar, George Karypis, Joseph A. Konstan, and John Riedl. 2001. Item-based collaborative filtering recommendation algorithms. In Proceedings of the Tenth International World Wide Web Conference, WWW 10, Hong Kong, China, May 1-5, 2001 . ACM, 285-295. [54] Satheesh Seenivasan and Debabrata Talukdar. 2016. Competitive Effects of WalMart Supercenter Entry: Moderating Roles of Category and Brand Characteristics. Journal of Retailing 92 (2016), 218-225. [55] Meng Shao, Zhi Han, Jin Wei Sun, Chengsi Xiao, Shu lei Zhang, and Yuan xu Zhao. 2020. A review of multi-criteria decision making applications for renewable energy site selection. Renewable Energy 157 (2020), 377-403. [56] Rianne van den Berg, Thomas N. Kipf, and Max Welling. 2017. Graph Convolutional Matrix Completion. CoRR abs/1706.02263 (2017). [57] Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, and Tat-Seng Chua. 2019. Neural Graph Collaborative Filtering. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2019, Paris, France, July 21-25, 2019 . ACM, 165-174. [58] Yunna Wu, Chao Xie, Chuanbo Xu, and Fang Li. 2017. A Decision Framework for Electric Vehicle Charging Station Site Selection for Residential Communities under an Intuitionistic Fuzzy Environment: A Case of Beijing. Energies 10 (2017), [71] Tezcan Kaşmer Şahin, Saffet Ocak, and Mehmet Top. 2019. Analytic hierarchy process for hospital site selection. Health Policy and Technology (2019).",
   "keywords_parsed": [
     "site recommendation",
-    " dataset",
-    " heterogeneous graph",
-    " benchmark"
+    "dataset",
+    "heterogeneous graph",
+    "benchmark"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "The generalized maximal covering location problem"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Multicategory Classification by Support Vector Machines"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Learning to rank using gradient descent"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Competitive Strategies for Late Entry into a Market with a Dominant Brand"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Learning Graph-Based Geographical Latent Representation for Point-of-Interest Recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Bike sharing station placement leveraging heterogeneous urban open data"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Wide & Deep Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Business Site Selection, Location Analysis and GIS"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A Comparison of String Distance Metrics for Name-Matching Tasks"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Deep Neural Networks for YouTube Recommendations"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Graph Neural Networks for Social Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Greedy function approximation: A gradient boosting machine"
+    },
+    {
+      "ref_id": "b13",
+      "title": "CityTransfer: Transferring Inter- and Intra-City Knowledge for Chain Store Site Recommendation based on Multi-Source Urban Data"
+    },
+    {
+      "ref_id": "b14",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "OpenStreetMap: UserGenerated Street Maps"
+    },
+    {
+      "ref_id": "b16",
+      "title": "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "NAIS: Neural Attentive Item Similarity Model for Recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Neural Collaborative Filtering"
+    },
+    {
+      "ref_id": "b19",
+      "title": "The art and science of retail location decisions"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Applied Logistic Regression"
+    },
+    {
+      "ref_id": "b21",
+      "title": "A Programmed Solution for Approximating an Optimum Retail Location"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Advances in Record-Linkage Methodology as Applied to Matching the 1985 Census of Tampa, Florida"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Network-based predictions of retail store commercial categories and optimal locations"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Analyzing the Localization of Retail Stores with Complex Systems Tools"
+    },
+    {
+      "ref_id": "b25",
+      "title": "FISM: factored item similarity models for top-N recommender systems"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Geo-spotting: mining online location-based services for optimal retail store placement"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Matrix Factorization Techniques for Recommender Systems"
+    },
+    {
+      "ref_id": "b29",
+      "title": "The Effect of Retail Store Environment on Retailer Performance"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Context Effects, New Brand Entry, and Consideration Sets"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Location selection for ambulance stations: a data-driven approach"
+    },
+    {
+      "ref_id": "b32",
+      "title": "xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Community-Aware Multi-Task Transportation Demand Prediction"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Knowledge-driven Site Selection via Urban Knowledge Graph"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Developing knowledge graph based system for urban computing"
+    },
+    {
+      "ref_id": "b36",
+      "title": "DeepStore: An Interaction-Aware Conference acronym 'XX, June 03-05, 2018, Woodstock, NY Xinhang Li et al. Wide&Deep Model for Store Site Recommendation With Attentional Spatial Embeddings"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Knowledge Transfer with Weighted Adversarial Network for Cold-Start Store Site Recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Spatial Object Recommendation with Hints: When Spatial Granularity Matters"
+    },
+    {
+      "ref_id": "b39",
+      "title": "The Impact of Organic Specialist Store Entry on Category Performance at Incumbent Stores"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Equity measurement in facility location analysis: A review and framework"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Modelling the Choice of Residential Location"
+    },
+    {
+      "ref_id": "b42",
+      "title": "UUKG: Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction"
+    },
+    {
+      "ref_id": "b43",
+      "title": "The Influence of New Brand Entry on Subjective Brand Judgments"
+    },
+    {
+      "ref_id": "b44",
+      "title": "PyTorch: An Imperative Style, High-Performance Deep Learning Library"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Who Benefits from Store Brand Entry"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Scikit-learn: Machine Learning in Python"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Street Centrality and the Location of Economic Activities in Barcelona"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Street Centrality and Densities of Retail and Services in Bologna, Italy"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Urban planning and building smart cities based on the Internet of Things using Big Data analytics"
+    },
+    {
+      "ref_id": "b50",
+      "title": "BPR: Bayesian Personalized Ranking from Implicit Feedback"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Location analysis: A synthesis and survey"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Item-based collaborative filtering recommendation algorithms"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Competitive Effects of WalMart Supercenter Entry: Moderating Roles of Category and Brand Characteristics"
+    },
+    {
+      "ref_id": "b55",
+      "title": "A review of multi-criteria decision making applications for renewable energy site selection"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Graph Convolutional Matrix Completion"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Neural Graph Collaborative Filtering"
+    },
+    {
+      "ref_id": "b58",
+      "title": "A Decision Framework for Electric Vehicle Charging Station Site Selection for Residential Communities under an Intuitionistic Fuzzy Environment: A Case of Beijing"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Analytic hierarchy process for hospital site selection"
+    }
   ]
 }

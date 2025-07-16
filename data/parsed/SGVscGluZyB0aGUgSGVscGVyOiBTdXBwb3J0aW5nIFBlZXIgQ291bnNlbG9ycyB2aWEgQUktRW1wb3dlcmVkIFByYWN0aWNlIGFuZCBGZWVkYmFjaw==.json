@@ -45,6 +45,134 @@
   "Table 10. Script for Relationship Stress 1": "Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 2, Article CSCW095. Publication date: April 2025. Helping the Helper CSCW095:45",
   "Table 11. Script for Relationship Stress 2": "Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 2, Article CSCW095. Publication date: April 2025.",
   "keywords_parsed": [
-    "None"
+    "Human-AI collaboration",
+    "online support platforms",
+    "peer counseling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Perceptions and opinions of patients about mental health chatbots: scoping review"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Impact of artificial intelligence on human loss in decision making, laziness and safety in education"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Online peer-to-peer support for young people with mental health problems: a systematic review"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Large-scale analysis of counseling conversations: An application of natural language processing to mental health"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Social support, reciprocity, and anonymity in responses to sexual abuse disclosures on social media"
+    },
+    {
+      "ref_id": "b6",
+      "title": "How effective are minimally trained/experienced volunteer mental health counsellors? Evaluation of CORE outcome data"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Scaling up the evaluation of psychotherapy: evaluating motivational interviewing fidelity via statistical text classification"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Emotional support and suicide prevention through the Internet: A field project report"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Online emotional support delivered by trained volunteers: users' satisfaction and their perception of the service compared to psychotherapy"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Adjusting an available online peer support platform in a program to supplement the treatment of perinatal depression and anxiety"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Therapist skills: A cognitive model of their acquisition and refinement"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A webdisseminated self-help and peer support program could fill gaps in mental health care: Lessons from a consumer survey"
+    },
+    {
+      "ref_id": "b13",
+      "title": "ChatGPT and mental healthcare: balancing benefits with risks of harms"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Examining dimensions of self-efficacy for writing"
+    },
+    {
+      "ref_id": "b16",
+      "title": "To trust or to think: cognitive forcing functions can reduce overreliance on AI in AI-assisted decision-making"
+    },
+    {
+      "ref_id": "b17",
+      "title": "The efficacy of motivational interviewing: a meta-analysis of controlled clinical trials"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Mind your Ps and Qs: the impact of politeness and rudeness in online communities"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Membership claims and requests: Conversation-level newcomer socialization strategies in online groups"
+    },
+    {
+      "ref_id": "b20",
+      "title": "A case study: Detecting counselor reflections in psychotherapy for addictions using linguistic features"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Extracting training data from large language models"
+    },
+    {
+      "ref_id": "b22",
+      "title": "HateBERT: Retraining BERT for Abusive Language Detection in English"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Human-in-the-loop Abstractive Dialogue Summarization"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Evaluating large language models trained on code"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Use of the Chatbot 'Vivibot' to Deliver Positive Psychology Skills and Promote Well-Being Among Young People After Cancer Treatment: Randomized Controlled Feasibility Trial"
+    },
+    {
+      "ref_id": "b50",
+      "title": "An overview of chatbot-based mobile mental health apps: insights from app description and user reviews"
+    },
+    {
+      "ref_id": "b63",
+      "title": "AI-Mediated Communication: How the Perception That Profile Text Was Written by AI Affects Trustworthiness"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Effectiveness of motivational interviewing interventions for adolescent substance use behavior change: a meta-analytic review"
+    },
+    {
+      "ref_id": "b67",
+      "title": "Perceived barriers and facilitators of mental health service utilization in adult trauma survivors: A systematic review"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Search engine liability for autocomplete suggestions: personality, privacy and the power of the algorithm"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Rebooting psychotherapy research and practice to reduce the burden of mental illness"
+    }
   ]
 }

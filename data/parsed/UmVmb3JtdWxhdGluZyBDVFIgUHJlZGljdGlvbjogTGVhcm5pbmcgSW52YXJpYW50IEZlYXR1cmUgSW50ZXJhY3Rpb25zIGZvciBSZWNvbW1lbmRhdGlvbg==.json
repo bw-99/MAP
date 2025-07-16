@@ -26,7 +26,85 @@
   "REFERENCES": "[1] Kartik Ahuja, Karthikeyan Shanmugam, Kush Varshney, and Amit Dhurandhar. 2020. Invariant Risk Minimization Games. In International Conference on Machine Learning . PMLR, 145-155. [2] Martin Arjovsky, Léon Bottou, Ishaan Gulrajani, and David Lopez-Paz. 2019. Invariant risk minimization. arXiv preprint arXiv:1907.02893 (2019). [3] Jun-Hyun Bae, Inchul Choi, and Minho Lee. 2021. Meta-Learned Invariant Risk Minimization. arXiv preprint arXiv:2103.12947 (2021). [4] Weijie Bian, Kailun Wu, Lejian Ren, Qi Pi, Yujing Zhang, Can Xiao, Xiang-Rong Sheng, Yong-Nan Zhu, Zhangming Chan, Na Mou, et al. 2022. CAN: Feature Co-Action Network for Click-Through Rate Prediction. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 57-65. [5] Elliot Creager, Jörn-Henrik Jacobsen, and Richard Zemel. 2021. Environment Inference for Invariant Learning. In International Conference on Machine Learning . 2189-2200. [6] Xiaoyu Du, Zike Wu, Fuli Feng, Xiangnan He, and Jinhui Tang. 2022. Invariant Representation Learning for Multimedia Recommendation. In Proceedings of the 30th ACM International Conference on Multimedia . 619-628. [7] Chelsea Finn, Pieter Abbeel, and Sergey Levine. 2017. Model-Agnostic MetaLearning for Fast Adaptation of Deep Networks. In Proceedings of the 34th International Conference on Machine Learning . 1126-1135. [8] Chen Gao, Yinfeng Li, Quanming Yao, Depeng Jin, and Yong Li. 2021. Progressive Feature Interaction Search for Deep Sparse Network. Advances in Neural Information Processing Systems 34 (2021). [9] Chen Gao, Yu Zheng, Wenjie Wang, Fuli Feng, Xiangnan He, and Yong Li. 2022. Causal Inference in Recommender Systems: A Survey and Future Directions. arXiv preprint arXiv:2208.12397 (2022). [10] Clark Glymour, Kun Zhang, and Peter Spirtes. 2019. Review of causal discovery methods based on graphical models. Frontiers in genetics 10 (2019), 524. [11] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence . 1725-1731. [12] Wei Guo, Rong Su, Renhao Tan, Huifeng Guo, Yingxue Zhang, Zhirong Liu, Ruiming Tang, and Xiuqiang He. 2021. Dual graph enhanced embedding neural network for ctr prediction. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 496-504. [13] F Maxwell Harper and Joseph A Konstan. 2015. The movielens datasets: History and context. Acm Transactions on Interactive Intelligent Systems 5, 4 (2015), 1-19. [14] Xiangnan He and Tat-Seng Chua. 2017. Neural factorization machines for sparse predictive analytics. In Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval . 355-364. [15] Yue He, Peng Cui, Jianxin Ma, Hao Zou, Xiaowei Wang, Hongxia Yang, and Philip S Yu. 2020. Learning Stable Graphs from Multiple Environments with Selection Bias. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2194-2202. [16] Yue He, Zimu Wang, Peng Cui, Hao Zou, Yafeng Zhang, Qiang Cui, and Yong Jiang. 2022. CausPref: Causal Preference Learning for Out-of-Distribution Recommendation. In Proceedings of the ACM Web Conference 2022 . 410-421. [17] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014). Reformulating CTR Prediction: Learning Invariant Feature Interactions for Recommendation SIGIR '23, July 23-27, 2023, Taipei, Taiwan [33] Shiori Sagawa, Pang Wei Koh, Tatsunori B Hashimoto, and Percy Liang. 2019. Distributionally Robust Neural Networks. In International Conference on Learning [48] Guanghui Zhu, Feng Cheng, Defu Lian, Chunfeng Yuan, and Yihua Huang. 2022. NAS-CTR: Efficient Neural Architecture Search for Click-Through Rate Prediction. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 332-342.",
   "keywords_parsed": [
     "Factorization Machine",
-    " Recommender System",
-    " Invariant Learning"
+    "Recommender System",
+    "Invariant Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Invariant Risk Minimization Games"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Invariant risk minimization"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Meta-Learned Invariant Risk Minimization"
+    },
+    {
+      "ref_id": "b4",
+      "title": "CAN: Feature Co-Action Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Environment Inference for Invariant Learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Invariant Representation Learning for Multimedia Recommendation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Progressive Feature Interaction Search for Deep Sparse Network"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Causal Inference in Recommender Systems: A Survey and Future Directions"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Review of causal discovery methods based on graphical models"
+    },
+    {
+      "ref_id": "b11",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Dual graph enhanced embedding neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "The movielens datasets: History and context"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Learning Stable Graphs from Multiple Environments with Selection Bias"
+    },
+    {
+      "ref_id": "b16",
+      "title": "CausPref: Causal Preference Learning for Out-of-Distribution Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Adam: A method for stochastic optimization"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Distributionally Robust Neural Networks"
+    },
+    {
+      "ref_id": "b48",
+      "title": "NAS-CTR: Efficient Neural Architecture Search for Click-Through Rate Prediction"
+    }
   ]
 }

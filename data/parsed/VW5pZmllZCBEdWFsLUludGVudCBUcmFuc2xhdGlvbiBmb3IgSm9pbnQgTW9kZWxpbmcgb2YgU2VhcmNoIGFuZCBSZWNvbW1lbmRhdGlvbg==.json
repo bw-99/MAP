@@ -33,8 +33,86 @@
   "REFERENCES": "[1] Qingyao Ai, Daniel N Hill, SVN Vishwanathan, and W Bruce Croft. 2019. A zero attention model for personalized product search. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 379-388. [2] Nicholas J Belkin and W Bruce Croft. 1992. Information filtering and information retrieval: Two sides of the same coin? Commun. ACM 35, 12 (1992), 29-38. [3] Keping Bi, Qingyao Ai, and W Bruce Croft. 2020. A transformer-based embedding model for personalized product search. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 1521-1524. [4] Antoine Bordes, Nicolas Usunier, Alberto Garcia-Duran, Jason Weston, and Oksana Yakhnenko. 2013. Translating embeddings for modeling multi-relational data. Advances in neural information processing systems 26 (2013). [5] Tong Chen, Hongzhi Yin, Hongxu Chen, Rui Yan, Quoc Viet Hung Nguyen, and Xue Li. 2019. Air: Attentional intention-aware recommender systems. In 2019 IEEE 35th International Conference on Data Engineering (ICDE) . IEEE, 304-315. [6] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [7] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [8] Tyler Derr, Yao Ma, and Jiliang Tang. 2018. Signed graph convolutional networks. In 2018 IEEE International Conference on Data Mining (ICDM) . IEEE, 929-934. [9] Jeff Donahue, Yangqing Jia, Oriol Vinyals, Judy Hoffman, Ning Zhang, Eric Tzeng, and Trevor Darrell. 2014. Decaf: A deep convolutional activation feature for generic visual recognition. In International conference on machine learning . PMLR, 647-655. [10] Lu Fan, Qimai Li, Bo Liu, Xiao-Ming Wu, Xiaotong Zhang, Fuyu Lv, Guli Lin, Sen Li, Taiwei Jin, and Keping Yang. 2022. Modeling user behavior with graph convolution for personalized product search. In Proceedings of the ACM Web Conference 2022 . 203-212. [11] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep session interest network for click-through rate prediction. In Proceedings of the 28th International Joint Conference on Artificial Intelligence . 2301-2307. [12] Cesar Ferri, José Hernández-Orallo, and Peter A Flach. 2011. A coherent interpretation of AUC as a measure of aggregated classification performance. In Proceedings of the 28th International Conference on Machine Learning (ICML-11) . 657-664. [13] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . 1725-1731. [14] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, and Meng Wang. 2020. Lightgcn: Simplifying and powering graph convolution network for recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 639-648. [15] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In Proceedings of the 26th international conference on world wide web . 173-182. [16] Yifan Hu, Yehuda Koren, and Chris Volinsky. 2008. Collaborative filtering for implicit feedback datasets. In 2008 Eighth IEEE international conference on data mining . Ieee, 263-272. [17] Kalervo Järvelin and Jaana Kekäläinen. 2002. Cumulated gain-based evaluation of IR techniques. ACM Transactions on Information Systems (TOIS) 20, 4 (2002), 422-446. [18] Thomas N Kipf and Max Welling. 2016. Semi-Supervised Classification with Graph Convolutional Networks. In International Conference on Learning Representations . KDD '24, August 25-29, 2024, Barcelona, Spain Yuting Zhang et al. [50] Nengjun Zhu, Jian Cao, Yanchi Liu, Yang Yang, Haochao Ying, and Hui Xiong. 2020. Sequential modeling of hierarchical user intention and preference for next-item recommendation. In Proceedings of the 13th international conference on web search and data mining . 807-815.",
   "keywords_parsed": [
     "Joint learning",
-    " Search and recommendation",
-    " Dual intent modeling",
-    " Intent translation"
+    "Search and recommendation",
+    "Dual intent modeling",
+    "Intent translation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "A zero attention model for personalized product search"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Information filtering and information retrieval: Two sides of the same coin?"
+    },
+    {
+      "ref_id": "b3",
+      "title": "A transformer-based embedding model for personalized product search"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Translating embeddings for modeling multi-relational data"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Air: Attentional intention-aware recommender systems"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Signed graph convolutional networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Decaf: A deep convolutional activation feature for generic visual recognition"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Modeling user behavior with graph convolution for personalized product search"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "A coherent interpretation of AUC as a measure of aggregated classification performance"
+    },
+    {
+      "ref_id": "b13",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Collaborative filtering for implicit feedback datasets"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Cumulated gain-based evaluation of IR techniques"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Sequential modeling of hierarchical user intention and preference for next-item recommendation"
+    }
   ]
 }

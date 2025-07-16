@@ -28,19 +28,171 @@
   "6 CONCLUSION AND FUTURE WORKS": "The prediction of the conversion rate is of the utmost importance in an online advertising platform. We proposed applying an ensemble approach for the ad conversion rate prediction with an auxilary selfsupervised future action prediction task for the input sequences, biased to the applied data science perspective on what factors are most effective for the final model's performance. We conducted a detailed ablation study on both hyperparameters and user-side features. The proposed modeling approach achieved great offline On the Practice of Deep Hierarchical Ensemble Network for Ad Conversion Rate Prediction WWWCompanion '25, April 28-May 2, 2025, Sydney, NSW, Australia gains and online business metric gains. Looking into the future, there are four important areas that call for cutting-edge applied science and techniques. 1) Entire space optimization: the CVR prediction is orthogonal to the engagement models in reality. It is shown that CVR can increase while CTR drops. Optimize engagement tasks such as CTR, gCTR30, favorite, etc. can probably improve the performance on the CVR. 2) Better sequence modeling: The user behavior sequence turns out to be the most important user-side feature. It deserves more exploration on how to maximize its effect, including even longer sequences, a generative AI modeling approach, and enriching the items in sequence. 3) Delayed feedback of conversion: CVR labels depend on the measurement of conversion in the third-party data. It usually has a delay in collecting this data. 4) Privacy-preserving machine learning: a trend in industry is to protect user data which will have a clear negative impact on the quantity and quality of training data. How to optimize models while respecting users' privacy is an important topic for oCPM ads.",
   "REFERENCES": "[1] Yue Cao, Xiaojiang Zhou, Jiaqi Feng, Peihao Huang, Yao Xiao, Dayao Chen, and Sheng Chen. 2022. Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction. CoRR abs/2205.10249 (2022). arXiv:2205.10249 https://doi.org/10.48550/arXiv.2205.10249 [2] Jianxin Chang, Chenbin Zhang, Zhiyi Fu, Xiaoxue Zang, Lin Guan, Jing Lu, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, and Kun Gai. 2023. TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou. In DKK . 3785-3794. [3] Jesse Davis and Mark Goadrich. 2006. The relationship between Precision-Recall and ROC curves. In ICML , Vol. 148. 233-240. [4] Stephanie deWet and Jiafan Ou. 2019. Finding Users Who Act Alike: Transfer Learning for Expanding Advertiser Audiences. In KDD . 2251-2259. [5] Zhifang Fan, Dan Ou, Yulong Gu, Bairan Fu, Xiang Li, Wentian Bao, Xin-Yu Dai, Xiaoyi Zeng, Tao Zhuang, and Qingwen Liu. 2022. Modeling Users' Contextualized Page-wise Feedback for Click-Through Rate Prediction in E-commerce Search. In WSDM . 262-270. [6] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep Session Interest Network for Click-Through Rate Prediction. In IJCAI . 2301-2307. [7] Mihajlo Grbovic and Haibin Cheng. 2018. Real-time Personalization using Embeddings for Search Ranking at Airbnb. In KDD , Yike Guo and Faisal Farooq (Eds.). ACM, 311-320. [8] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In IJCAI , Carles Sierra (Ed.). 1725-1731. [9] William L. Hamilton, Zhitao Ying, and Jure Leskovec. 2017. Inductive Representation Learning on Large Graphs. In NeurIPS . 1024-1034. [10] James A. Hanley and Barbara J. McNeil. 1982. The meaning and use of the area under a receiver operating characteristic (ROC) curve. Radiology 143(1) (1982), 29-36. [11] Yi-Ping Hsu, Po-Wei Wang, Chantat Eksombatchai, and Jiajing Xu. 2024. Taming the One-Epoch Phenomenon in Online Recommendation System by Two-stage Contrastive ID Pre-training. In Proceedings of the 18th ACM Conference on Recommender Systems . 838-840. [12] Jie Hu, Li Shen, and Gang Sun. 2018. Squeeze-and-Excitation Networks. In CVPR . 7132-7141. [13] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM conference on recommender systems . 169-177. [14] Ashish Jaiswal, Ashwin Ramesh Babu, Mohammad Zaki Zadeh, Debapriya Banerjee, and Fillia Makedon. 2020. A Survey on Contrastive Self-supervised Learning. CoRR abs/2011.00362 (2020). arXiv:2011.00362 [15] Wensen Jiang, Yizhu Jiao, Qingqin Wang, Chuanming Liang, Lijie Guo, Yao Zhang, Zhijun Sun, Yun Xiong, and Yangyong Zhu. 2022. Triangle Graph Interest Network for Click-through Rate Prediction. In WSDM . 401-409. [16] Kungang Li, Xiangyi Chen, Ling Leng, Jiajing Xu, Jiankai Sun, and Behnam Rezaei. 2024. Privacy Preserving Conversion Modeling in Data Clean Room. In Proceedings of the 18th ACM Conference on Recommender Systems . 819-822. [17] Aditya Pal, Chantat Eksombatchai, Yitong Zhou, Bo Zhao, Charles Rosenberg, and Jure Leskovec. 2020. PinnerSage: Multi-Modal User Embedding Framework for Recommendations at Pinterest. In KDD . 2311-2320. [18] Nikil Pancha, Andrew Zhai, Jure Leskovec, and Charles Rosenberg. 2022. PinnerFormer: Sequence Modeling for User Representation at Pinterest. In KDD . ACM, 3702-3712. [19] Qi Pi, Weijie Bian, Guorui Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction. CoRR abs/1905.09248 (2019). arXiv:1905.09248 [20] Qi Pi, Xiaoqiang Zhu, Guorui Zhou, Yujing Zhang, Zhe Wang, Lejian Ren, Ying Fan, and Kun Gai. 2020. Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction. CoRR abs/2006.05639 (2020). arXiv:2006.05639 [21] F. Rosenblatt. 1958. The perceptron: A probabilistic model for information storage and organization in the brain. Psychological Review 65, 6 (1958), 386-408. https://doi.org/10.1037/h0042519 [22] Aäron van den Oord, Yazhe Li, and Oriol Vinyals. 2018. Representation Learning with Contrastive Predictive Coding. CoRR abs/1807.03748 (2018). arXiv:1807.03748 [23] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is All you Need. In NeurIPS . 6000-6010. [24] Fangye Wang, Hansu Gu, Dongsheng Li, Tun Lu, Peng Zhang, and Ning Gu. 2023. Towards deeper, lighter and interpretable cross network for ctr prediction. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 2523-2533. [25] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & Cross Network for Ad Click Predictions. In ADKDD . 12:1-12:7. [26] Ruoxi Wang, Rakesh Shivanna, Derek Zhiyuan Cheng, Sagar Jain, Dong Lin, Lichan Hong, and Ed H. Chi. 2021. DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems. In WWW . 17851797. [27] Yuhao Wang, Ha Tsz Lam, Yi Wong, Ziru Liu, Xiangyu Zhao, Yichao Wang, Bo Chen, Huifeng Guo, and Ruiming Tang. 2023. Multi-Task Deep Recommender Systems: A Survey. CoRR abs/2302.03525 (2023). arXiv:2302.03525 [28] Zhiqiang Wang, Qingyun She, and Junlin Zhang. 2021. MaskNet: Introducing Feature-Wise Multiplication to CTR Ranking Models by Instance-Guided Mask. CoRR abs/2102.07619 (2021). arXiv:2102.07619 [29] Xue Xia, Pong Eksombatchai, Nikil Pancha, Dhruvil Deven Badani, Po-Wei Wang, Neng Gu, Saurabh Vishwas Joshi, Nazanin Farahpour, Zhiyuan Zhang, and Andrew Zhai. 2023. TransAct: Transformer-based Realtime User Action Model for Recommendation at Pinterest. In KDD . ACM, 5249-5259. [30] Jiajing Xu, Andrew Zhai, and Charles Rosenberg. 2022. Rethinking Personalized Ranking at Pinterest: An End-to-End Approach. In RecSys '22 . ACM, 502-505. [31] Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, William L. Hamilton, and Jure Leskovec. 2018. Graph Convolutional Neural Networks for WebScale Recommender Systems. In KDD . 974-983. https://doi.org/10.1145/3219819. 3219890 [32] Junliang Yu, Hongzhi Yin, Xin Xia, Tong Chen, Jundong Li, and Zi Huang. 2024. Self-Supervised Learning for Recommender Systems: A Survey. IEEE Trans. Knowl. Data Eng. 36, 1 (2024), 335-355. [33] Andrew Zhai, Hao-Yu Wu, Eric Tzeng, Dong Huk Park, and Charles Rosenberg. 2019. Learning a Unified Embedding for Visual Search at Pinterest. In KDD . 2412-2420. [34] Jiaqi Zhai, Lucy Liao, Xing Liu, Yueming Wang, Rui Li, Xuan Cao, Leon Gao, Zhaojie Gong, Fangda Gu, Michael He, Yinghai Lu, and Yu Shi. 2024. Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations. CoRR abs/2402.17152 (2024). https://doi.org/10.48550/ ARXIV.2402.17152 arXiv:2402.17152 [35] Buyun Zhang, Liang Luo, Yuxin Chen, Jade Nie, Xi Liu, Daifeng Guo, Yanli Zhao, Shen Li, Yuchen Hao, Yantao Yao, et al. 2024. Wukong: Towards a Scaling Law for Large-Scale Recommendation. arXiv preprint arXiv:2403.02545 (2024). [36] Buyun Zhang, Liang Luo, Xi Liu, Jay Li, Zeliang Chen, Weilin Zhang, Xiaohan Wei, Yuchen Hao, Michael Tsang, Wenjun Wang, Yang Liu, Huayu Li, Yasmine Badr, Jongsoo Park, Jiyan Yang, Dheevatsa Mudigere, and Ellie Wen. 2022. DHEN: A Deep and Hierarchical Ensemble Network for Large-Scale Click-Through Rate Prediction. CoRR abs/2203.11014 (2022). [37] Pengtao Zhang, Zheng Zheng, and Junlin Zhang. 2023. FiBiNet++: Reducing model size by low rank feature interaction layer for CTR prediction. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management . 4425-4429. [38] Zuowu Zheng, Changwang Zhang, Xiaofeng Gao, and Guihai Chen. 2022. HIEN: Hierarchical Intention Embedding Network for Click-Through Rate Prediction. In SIGIR . ACM, 322-331. [39] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2018. Deep Interest Evolution Network for Click-Through Rate Prediction. CoRR abs/1809.03672 (2018). arXiv:1809.03672 http://arxiv.org/abs/ 1809.03672 [40] Guorui Zhou, Xiaoqiang Zhu, Chengru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep Interest Network for WWWCompanion '25, April 28-May 2, 2025, Sydney, NSW, Australia Jinfeng Zhuang et al. Table 4: Hyperparameters of the three type of featurecrossing modules (MLP, MaskNet, Transformer) in DHEN. MaskNet #MaskBlock=2, horizontal MaskBlock layout #HiddenSize=256, Dropout=0.005 Transformer #Layer=2, #Head=4 #HiddenSize=256, #Forward MLP Size=512 DropOut=0 MLP Both MLP have the same output size 1024 Click-Through Rate Prediction. In KDD . 1059-1068. [41] Jinfeng Zhuang and Yu Liu. 2019. PinText: A Multitask Text Embedding System in Pinterest. In KDD . 2653-2661. https://doi.org/10.1145/3292500.3330671",
   "A HYPERPARAMETERS OF THE DEPLOYED DHEN MODEL": "A significant amount of time was spent trying to determine which feature-crossing module to use in DHEN and what the parameters are for each module. In case it helps the audience, we list the parameters of each module in Table 4. We list the important parameter choices used in production below: · DHEN has two layers and each layer has 2 feature-crossing modules, where the ensemble modes are both sum; · The final MLP module has 3 sequential layers [ 128 , 128 , 128 ] ; · The unified dimension projection module maps each feature to an embedding with dimension 64; · User behavior sequence length is cut off at 500; · The total number of model parameters is 340M; · Training is by AWS p4d.24xlarge with 8 Nvidia Tesla A100 GPUs. PyTorch DistributedDataParallel is used in the trainer. Training data is randomly shuffled; · All models performance are sensitive to Learning Rate in training; The exact value is algorithm dependent.",
-  "keywords_parsed": [
-    "Conversion Ads Ranking",
-    " Multi-task Neural Networks",
-    " Sequence Modeling",
-    " Personalization",
-    " Future Action Prediction Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. WWWCompanion '25",
-    " April 28-May 2",
-    " 2025",
-    " Sydney",
-    " NSW",
-    " Australia © 2025 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-1331-6/2025/04...$15.00 https://doi.org/10.1145/3701716.3715252"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou"
+    },
+    {
+      "ref_id": "b3",
+      "title": "The relationship between Precision-Recall and ROC curves"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Finding Users Who Act Alike: Transfer Learning for Expanding Advertiser Audiences"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Modeling Users' Contextualized Page-wise Feedback for Click-Through Rate Prediction in E-commerce Search"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Deep Session Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Real-time Personalization using Embeddings for Search Ranking at Airbnb"
+    },
+    {
+      "ref_id": "b8",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Inductive Representation Learning on Large Graphs"
+    },
+    {
+      "ref_id": "b10",
+      "title": "The meaning and use of the area under a receiver operating characteristic (ROC) curve"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Taming the One-Epoch Phenomenon in Online Recommendation System by Two-stage Contrastive ID Pre-training"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Squeeze-and-Excitation Networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b14",
+      "title": "A Survey on Contrastive Self-supervised Learning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Triangle Graph Interest Network for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Privacy Preserving Conversion Modeling in Data Clean Room"
+    },
+    {
+      "ref_id": "b17",
+      "title": "PinnerSage: Multi-Modal User Embedding Framework for Recommendations at Pinterest"
+    },
+    {
+      "ref_id": "b18",
+      "title": "PinnerFormer: Sequence Modeling for User Representation at Pinterest"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "The perceptron: A probabilistic model for information storage and organization in the brain"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Representation Learning with Contrastive Predictive Coding"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Towards deeper, lighter and interpretable cross network for ctr prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Deep & Cross Network for Ad Click Predictions"
+    },
+    {
+      "ref_id": "b26",
+      "title": "DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Multi-Task Deep Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b28",
+      "title": "MaskNet: Introducing Feature-Wise Multiplication to CTR Ranking Models by Instance-Guided Mask"
+    },
+    {
+      "ref_id": "b29",
+      "title": "TransAct: Transformer-based Realtime User Action Model for Recommendation at Pinterest"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Rethinking Personalized Ranking at Pinterest: An End-to-End Approach"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Graph Convolutional Neural Networks for Web-Scale Recommender Systems"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Self-Supervised Learning for Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Learning a Unified Embedding for Visual Search at Pinterest"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Wukong: Towards a Scaling Law for Large-Scale Recommendation"
+    },
+    {
+      "ref_id": "b36",
+      "title": "DHEN: A Deep and Hierarchical Ensemble Network for Large-Scale Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "FiBiNet++: Reducing model size by low rank feature interaction layer for CTR prediction"
+    },
+    {
+      "ref_id": "b38",
+      "title": "HIEN: Hierarchical Intention Embedding Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Deep Interest Evolution Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b41",
+      "title": "PinText: A Multitask Text Embedding System in Pinterest"
+    }
   ]
 }

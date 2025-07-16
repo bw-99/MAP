@@ -27,8 +27,82 @@
   "REFERENCES": "[1] Mathieu Blondel, Akinori Fujino, Naonori Ueda, and Masakazu Ishihata. 2016. Higher-order factorization machines. Advances in Neural Information Processing Systems 29 (2016). [2] Yifan Chen, Pengjie Ren, Yang Wang, and Maarten de Rijke. 2019. Bayesian personalized feature interaction selection for factorization machines. In Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval . 665-674. [3] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [4] Andrew Dudzik and Petar Veličković. 2022. Graph Neural Networks are Dynamic Programmers. arXiv preprint arXiv:2203.15544 (2022). [5] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [6] Wei Guo, Rong Su, Renhao Tan, Huifeng Guo, Yingxue Zhang, Zhirong Liu, Ruiming Tang, and Xiuqiang He. 2021. Dual Graph enhanced Embedding Neural Network for CTR Prediction. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 496-504. [7] Xiangnan He and Tat-Seng Chua. 2017. Neural factorization machines for sparse predictive analytics. In Proceedings of the 40th International ACM SIGIR conference on Research and Development in Information Retrieval . 355-364. [8] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, and Meng Wang. 2020. Lightgcn: Simplifying and powering graph convolution network for recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 639-648. [9] Geoffrey Hinton, Oriol Vinyals, Jeff Dean, et al. 2015. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531 2, 7 (2015). [10] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM Conference on Recommender Systems . 169-177. [11] Farhan Khawar, Xu Hang, Ruiming Tang, Bin Liu, Zhenguo Li, and Xiuqiang He. 2020. Autofeature: Searching for feature interactions and their architectures for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 625-634. [12] Feng Li, Bencheng Yan, Qingqing Long, Pengjie Wang, Wei Lin, Jian Xu, and Bo Zheng. 2021. Explicit Semantic Cross Feature Learning via Pre-trained Graph Neural Networks for CTR Prediction. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2161-2165. [13] Zeyu Li, Wei Cheng, Yang Chen, Haifeng Chen, and Wei Wang. 2020. Interpretable click-through rate prediction through hierarchical attention. In Proceedings of the 13th International Conference on Web Search and Data Mining . 313-321. [14] Zekun Li, Zeyu Cui, Shu Wu, Xiaoyu Zhang, and Liang Wang. 2019. Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 539-548. [15] Zekun Li, Shu Wu, Zeyu Cui, and Xiaoyu Zhang. 2021. GraphFM: Graph Factorization Machines for Feature Interaction Modeling. arXiv preprint arXiv:2105.11866 (2021). [16] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1754-1763. [17] Bin Liu, Niannan Xue, Huifeng Guo, Ruiming Tang, Stefanos Zafeiriou, Xiuqiang He, and Zhenguo Li. 2020. AutoGroup: Automatic feature grouping for modelling explicit high-order feature interactions in CTR prediction. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 199-208. [18] Bin Liu, Chenxu Zhu, Guilin Li, Weinan Zhang, Jincai Lai, Ruiming Tang, Xiuqiang He, Zhenguo Li, and Yong Yu. 2020. Autofis: Automatic feature interaction selection in factorization models for click-through rate prediction. In Proceedings",
   "keywords_parsed": [
     "Graph Factorization Machine",
-    " Knowledge Distillation",
-    " CTR Prediction",
-    " Recommender Systems"
+    "Knowledge Distillation",
+    "CTR Prediction",
+    "Recommender Systems"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Higher-order factorization machines"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Bayesian personalized feature interaction selection for factorization machines"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Graph Neural Networks are Dynamic Programmers"
+    },
+    {
+      "ref_id": "b5",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Dual Graph enhanced Embedding Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b10",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Autofeature: Searching for feature interactions and their architectures for click-through rate prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Explicit Semantic Cross Feature Learning via Pre-trained Graph Neural Networks for CTR Prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Interpretable click-through rate prediction through hierarchical attention"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Fi-gnn: Modeling feature interactions via graph neural networks for ctr prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "GraphFM: Graph Factorization Machines for Feature Interaction Modeling"
+    },
+    {
+      "ref_id": "b16",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b17",
+      "title": "AutoGroup: Automatic feature grouping for modelling explicit high-order feature interactions in CTR prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Autofis: Automatic feature interaction selection in factorization models for click-through rate prediction"
+    }
   ]
 }

@@ -25,34 +25,129 @@
   "REFERENCES": "[1] Ari Benjamin, David Rolnick, and Konrad Kording. 2018. Measuring and regularizing networks in function space. In International Conference on Learning Representations . [2] Guohao Cai, Jieming Zhu, Quanyu Dai, Zhenhua Dong, Xiuqiang He, Ruiming Tang, and Rui Zhang. 2022. ReLoop: A Self-Correction Continual Learning Loop for Recommender Systems. Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (2022). [3] Ermei Cao, Difeng Wang, Jiacheng Huang, and Wei Hu. 2020. Open knowledge enrichment for long-tail entities. In Proceedings of The Web Conference 2020 . 384-394. [4] Yixin Cao, Jun Kuang, Ming Gao, Aoying Zhou, Yonggang Wen, and Tat-Seng Chua. 2021. Learning relation prototype from unlabeled texts for long-tail relation extraction. IEEE Transactions on Knowledge and Data Engineering (2021). [5] Jin Chen, Defu Lian, Binbin Jin, Xu Huang, Kai Zheng, and Enhong Chen. 2022. Fast variational autoencoder with inverted multi-index for collaborative filtering. In Proceedings of the ACM Web Conference 2022 . 1944-1954. [6] Jin Chen, Defu Lian, Binbin Jin, Kai Zheng, and Enhong Chen. 2022. Learning Recommenders for Implicit Feedback with Importance Resampling. In Proceedings of the ACM Web Conference 2022 . 1997-2005. [7] Jin Chen, Defu Lian, Yucheng Li, Baoyun Wang, Kai Zheng, and Enhong Chen. 2022. Cache-Augmented Inbatch Importance Resampling for Training Recommender Retriever. Advances in Neural Information Processing Systems 35 (2022), 34817-34830. [8] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [9] Renchu Guan, Haoyu Pang, Fausto Giunchiglia, Ximing Li, Xuefeng Yang, and Xiaoyue Feng. 2022. Deployable and Continuable Meta-learning-Based Recommender System with Fast User-Incremental Updates. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1423-1433. [10] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: A Factorization-Machine based Neural Network for CTR Prediction. In IJCAI . [11] Diederik P Kingma and Jimmy Ba. 2015. Adam: A Method for Stochastic Optimization. In ICLR (Poster) . [12] James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei A Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka Grabska-Barwinska, et al. 2017. Overcoming catastrophic forgetting in neural networks. Proceedings of the national academy of sciences 114, 13 (2017), 35213526. [13] Defu Lian, Qi Liu, and Enhong Chen. 2020. Personalized ranking with importance sampling. In Proceedings of The Web Conference 2020 . 1093-1103. [14] Xiaoliang Ling, Weiwei Deng, Chen Gu, Hucheng Zhou, Cui Li, and Feng Sun. 2017. Model ensemble for click prediction in bing search ads. In Proceedings of the 26th international conference on world wide web companion . 689-698. [15] Bin Liu, Chenxu Zhu, Guilin Li, Weinan Zhang, Jincai Lai, Ruiming Tang, Xiuqiang He, Zhenguo Li, and Yong Yu. 2020. Autofis: Automatic feature interaction selection in factorization models for click-through rate prediction. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2636-2645. [16] Fei Mi, Xiaoyu Lin, and Boi Faltings. 2020. Ader: Adaptively distilled exemplar replay towards continual learning for session-based recommendation. In Fourteenth ACM Conference on Recommender Systems . 408-413. [17] Boaz Nadler and Ronald R Coifman. 2005. The prediction error in CLS and PLS: the importance of feature selection prior to multivariate calibration. Journal of Chemometrics: A Journal of the Chemometrics Society 19, 2 (2005), 107-118. [18] Junwei Pan, Jian Xu, Alfonso Lobos Ruiz, Wenliang Zhao, Shengjun Pan, Yu Sun, and Quan Lu. 2018. Field-weighted factorization machines for click-through rate prediction in display advertising. In Proceedings of the 2018 World Wide Web Conference . 1349-1357. [19] Danni Peng, Sinno Jialin Pan, Jie Zhang, and Anxiang Zeng. 2021. Learning an Adaptive Meta Model-Generator for Incrementally Updating Recommender Systems. In Fifteenth ACM Conference on Recommender Systems . 411-421. [20] Weiping Song, Chence Shi, Zhiping Xiao, Zhijian Duan, Yewen Xu, Ming Zhang, and Jian Tang. 2019. Autoint: Automatic feature interaction learning via selfattentive neural networks. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management . 1161-1170. [21] Ruoxi Wang, Bin Fu, Gang Fu, and Mingliang Wang. 2017. Deep & cross network for ad click predictions. In Proceedings of the ADKDD'17 . 1-7. [22] Weitao Wang, Meng Wang, Sen Wang, Guodong Long, Lina Yao, Guilin Qi, and Yang Chen. 2020. One-shot learning for long-tail visual relation detection. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 34. 12225-12232. [23] Yichao Wang, Huifeng Guo, Ruiming Tang, Zhirong Liu, and Xiuqiang He. 2020. A practical incremental method to train deep ctr models. arXiv preprint arXiv:2009.02147 (2020). [24] Yejing Wang, Xiangyu Zhao, Tong Xu, and Xian Wu. 2022. Autofield: Automating feature selection in deep recommender systems. In Proceedings of the ACM Web Conference 2022 . 1977-1986. [25] Ashia C Wilson, Rebecca Roelofs, Mitchell Stern, Nati Srebro, and Benjamin Recht. 2017. The marginal value of adaptive gradient methods in machine learning. Advances in neural information processing systems 30 (2017). [26] Kailun Wu, Weijie Bian, Zhangming Chan, Lejian Ren, Shiming Xiang, Shuguang Han, Hongbo Deng, and Bo Zheng. 2021. Adversarial Gradient Driven Exploration for Deep Click-Through Rate Prediction. arXiv preprint arXiv:2112.11136 (2021). [27] Jiafeng Xia, Dongsheng Li, Hansu Gu, Jiahao Liu, Tun Lu, and Ning Gu. 2022. FIRE: Fast Incremental Recommendation with Graph Signal Processing. In Proceedings of the ACM Web Conference 2022 . 2360-2369. [28] Guorui Zhou, Na Mou, Ying Fan, Qi Pi, Weijie Bian, Chang Zhou, Xiaoqiang Zhu, and Kun Gai. 2019. Deep interest evolution network for click-through rate prediction. In Proceedings of the AAAI conference on artificial intelligence , Vol. 33. 5941-5948. [29] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery & data mining . 1059-1068. [30] Yongchun Zhu, Ruobing Xie, Fuzhen Zhuang, Kaikai Ge, Ying Sun, Xu Zhang, Leyu Lin, and Juan Cao. 2021. Learning to warm up cold item embeddings for coldstart recommendation with meta scaling and shifting networks. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1167-1176.",
   "keywords_parsed": [
     "CTR Prediction",
-    " Incremental Update",
-    " Data-Driven Prior Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than the author(s) must be honored. Abstracting with credit is permitted. To copy otherwise",
-    " or republish",
-    " to post on servers or to redistribute to lists",
-    " requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. CIKM '23",
-    " October 21-25",
-    " 2023",
-    " Birmingham",
-    " United Kingdom © 2023 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 979-8-4007-0124-5/23/10...$15.00 https://doi.org/10.1145/3583780.3615456 ChenYang",
-    " Jin Chen B ",
-    " Qian Yu",
-    " Xiangdong Wu",
-    " Kui Ma",
-    " Zihao Zhao",
-    " Zhiwei Fang",
-    " Wenlong Chen",
-    " Chaosheng Fan",
-    " Jie He",
-    " Changping Peng",
-    " Zhangang Lin",
-    " and Jingping Shao. 2023. An Incremental Update Framework for Online Recommenders with Data-Driven Prior. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (CIKM '23)",
-    " October 21-25",
-    " 2023",
-    " Birmingham",
-    " United Kingdom. ACM",
-    " New York",
-    " NY",
-    " USA",
-    " 7 pages. https://doi.org/10.1145/3583780.3615456"
+    "Incremental Update",
+    "Data-Driven Prior"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Measuring and regularizing networks in function space"
+    },
+    {
+      "ref_id": "b2",
+      "title": "ReLoop: A Self-Correction Continual Learning Loop for Recommender Systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Open knowledge enrichment for long-tail entities"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Learning relation prototype from unlabeled texts for long-tail relation extraction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Fast variational autoencoder with inverted multi-index for collaborative filtering"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Learning Recommenders for Implicit Feedback with Importance Resampling"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Cache-Augmented Inbatch Importance Resampling for Training Recommender Retriever"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deployable and Continuable Meta-learning-Based Recommender System with Fast User-Incremental Updates"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Overcoming catastrophic forgetting in neural networks"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Personalized ranking with importance sampling"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Model ensemble for click prediction in bing search ads"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Autofis: Automatic feature interaction selection in factorization models for click-through rate prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Ader: Adaptively distilled exemplar replay towards continual learning for session-based recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "The prediction error in CLS and PLS: the importance of feature selection prior to multivariate calibration"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Field-weighted factorization machines for click-through rate prediction in display advertising"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Learning an Adaptive Meta Model-Generator for Incrementally Updating Recommender Systems"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Autoint: Automatic feature interaction learning via selfattentive neural networks"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b22",
+      "title": "One-shot learning for long-tail visual relation detection"
+    },
+    {
+      "ref_id": "b23",
+      "title": "A practical incremental method to train deep ctr models"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Autofield: Automating feature selection in deep recommender systems"
+    },
+    {
+      "ref_id": "b25",
+      "title": "The marginal value of adaptive gradient methods in machine learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Adversarial Gradient Driven Exploration for Deep Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "FIRE: Fast Incremental Recommendation with Graph Signal Processing"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Learning to warm up cold item embeddings for coldstart recommendation with meta scaling and shifting networks"
+    }
   ]
 }

@@ -31,7 +31,151 @@
   "B.1 Setting of Compared Methods": "CPF [8]: We adopt a mixture of two log-normal distribution. The density function is 𝑔 ( 𝑥 ; 𝜇 1 , 𝜎 1 , 𝜇 2 , 𝜎 2 , 𝑝 ) = ( 1 -𝑝 ) 𝑓 ( 𝑥 ; 𝜇 1 , 𝜎 1 ) + 𝑝𝑓 ( 𝑥 ; 𝜇 2 , 𝜎 2 ) and we set 𝑝 as 0.1. We train a Factorization-Machine [34] on the feature embeddings introduced in App. A.2 to estimate 𝜇 1 , 𝜎 1 , 𝜇 2 , 𝜎 2. We adopt the classical XGBoost model [5] to predict the pCTR/pCVR. We use the accumulated yield and cost as the final campaign performance. GMIF [29]: For the impression forecasting part, we train a DLM for each user attribute at the hour level. We follow the original recursive function in the paper but change its parameters to 𝑊 = 5 , 𝑉 = 15 , 𝐶 0 = 20. To estimate the threshold price of winning the auction, we train a Bayes net to estimate the conditional probability between input variables. Here, each variable corresponds to one feature domain, such as age, gender, location, etc. Its paper omits the model design of pCTR/pCVR, so we use DeepFM [15] trained on the feature embeddings introduced in App. A.2. We use the accumulated yield and cost as the final campaign performance. MTLN [4]: We train a DeepFM to estimate the pCTR/pCVR for each auction and multiply the result with the bid price to obtain the eCPM. We compare the calculated eCPM with the threshold price of each auction record and accumulate the yield. We feed the accumulated yield and campaign-level statistics into an MMoE model consisting of four Expert-MLPs of [128, 64], four Tower-MLPs of [64, 32, 1] with ReLU activation, and one gate model of MLP [64, 4]. The four Tower-MLPs correspond to the cost, impression, click, and conversion volumes. DLF [33]: We discretize the scale of bid price into 100 subintervals. As the number of candidate ads varies, we feed our auction representation as the DLF's input. We stack two layers of LSTM with a hidden dimension of 512 to predict the conditional win-rate for each auction. The pCTR and pCVR are estimated using the same DeepFM model as MTLN. We use the accumulated yield and cost as the final campaign performance. MTAE [51]: We feed our auction representation as the MTAE's input. MTAE adopts a multi-task paradigm and two top-models share the input: one consists of MLPs as our 𝑓 (· ; 𝜃 𝐶𝑇𝑅 ) and 𝑓 (· ; 𝜃 𝐶𝑉𝑅 ) , and the other is an MLP of [256, 100] for estimating a discrete distribution over threshold price. Here, we again evenly divide the scale of the bid price into 100 sub-intervals. MTAE further superimposes the DLF model over the bid price model as an auxiliary task. We use the accumulated yield and cost as the final campaign performance.",
   "B.2 Setting of Ablation Study": "RNN -variant stacks three layers of LSTM with a hidden dimension of 512. Transformer -variant stacks three encoder layers with four heads and a hidden dimension of 1024 (expansion = 4). S4 -variant stacks three layers of SSM with 𝑁 = 16 using the authors' opensource code.",
   "B.3 Setting of Further Investigation": "We follow the original structure of Wide&Deep [6], where the deep model is an MLP of [128, 64, 32] on our auction representation, and the wide model is a generalized linear model on the one-hot vector in App. A.2. For the DIEN [56] model, we employ a two-layer Gated Recurrent Network (GRN) with a hidden dimension of 512 to capture the interest evolution. The obtained interest vector is concatenated with user features, context, and target ad embedding. Then we feed it into an MLP of [256, 128, 1] to predict the pCTR. For the FAN [24] model, we set the length of N -point FFT as 300 and keep the other settings unchanged as the original paper. 12",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Flamingo: a Visual Language Model for Few-shot Learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Layer normalization"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Prefix sums and their applications"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A Unified Framework for Campaign Performance Forecasting in Online Display Advertising"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Xgboost: A scalable tree boosting system"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Learning phrase representations using RNN encoder-decoder for statistical machine translation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Campaign Performance Forecasting for Non-guaranteed Delivery Advertising"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Flashattention: Fast and memory-efficient exact attention with io-awareness"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Global Ad Spend Forecast"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Hungry Hungry Hippos: Towards Language Modeling with State Space Models"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Mamba: Linear-time sequence modeling with selective state spaces"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Efficiently Modeling Long Sequences with Structured State Spaces"
+    },
+    {
+      "ref_id": "b15",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Query-dominant User Interest Network for Large-Scale Search Ranking"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Long short-term memory"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Transformer quality in linear time"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Predicting the Performance of an Advertising Campaign"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Method and system for forecasting a campaign performance using predictive modeling"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Deephit: A deep learning approach to survival analysis with competing risks"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Time interval aware self-attention for sequential recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "FAN: Fatigue-Aware Network for Click-Through Rate Prediction in E-commerce Recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Entire space multi-task model: An effective approach for estimating"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Predicting winning price in real time bidding with censored data"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Efficient Ad-level Impression Forecasting based on Monotonicity and Sampling"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Predicting advertiser bidding behaviors in sponsored search by rationality modeling"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Multi-task learning for bias-free joint ctr prediction and market price modeling in online advertising"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Metaformer is Actually What You Need for Vision"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Effectively Modeling Time Series with Simple Discrete State Spaces"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Bid-aware gradient descent for unbiased learning with censored data in display advertising"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

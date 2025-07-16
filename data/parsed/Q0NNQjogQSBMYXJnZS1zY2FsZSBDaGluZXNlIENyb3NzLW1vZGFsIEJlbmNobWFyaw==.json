@@ -30,6 +30,96 @@
   "Figure B: Image-text examples of ICM, IQM, ICR and IQR from left to right.": "Flickr30k: A little girl covered in paint sits in front of a painted rainbow with her hands in a bowl. Flickr30k-CN: 一个小女孩在油漆前坐在一个彩虹的前面双手在碗里。 Flickr30k-CNA: 一个涂满染料的小女孩坐在画好的彩虹前，把她的手放在一个装颜料的碗里。 Flickr30k: A man with reflective safety  clothes and ear protection drives a John Deere tractor on a road. Flickr30k-CN: 一个男人用反光安全服装和耳朵保护驱动的道路上约翰迪尔拖拉机。 Flickr30k-CNA: 一个穿着反光安全服，带着耳护的男子在路上开着一辆约翰迪尔拖拉机。 Flickr30k: A black dog and a white dog with brown spots are staring at each other in the street. Flickr30k-CN: 一只黑色的狗和一只棕色的白色狗在街上盯着对方。 Flickr30k-CNA: 一只黑狗和一只带有棕色斑点的白狗站在街上，互相盯着对方。 Figure C: Comparisons of Flickr30k, Flickr30k-CN and our proposed Flickr30k-CNA. MM'23, October 29-November 3, 2023, Ottawa, ON, Canada CCMB: A Large-scale Chinese Cross-modal Benchmark 一只黑色的狗 (A black dog) 一只狗在水里 (A dog in water) 苍鹭 (Heron) 坏了的马桶 (A broken toilet) 一头 (A bull) 拿着滑板的人 (A man with a surfboard) 飞机 (Airplane) 香蕉 (Banana) 一辆火车 (A train) 键盘 (Keyboard) 肉 (Meat) 消防栓 (Fire hydrant) Figure D: More Examples of entity-conditioned image visualization. Figure E: Bad cases of entity-conditioned image visualization. 狗 (Dog) 停车标志 (Stop sign) 摩托车 (Motobike) 橘子 (Orange) STOP 'IDED HIGHWAY",
   "keywords_parsed": [
     "large-scale datasets",
-    " vision-language pre-training"
+    "vision-language pre-training"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Conceptual 12m: Pushing web-scale image-text pre-training to recognize long-tail visual concepts"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Microsoft coco captions: Data collection and evaluation server"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Uniter: Universal image-text representation learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Unifying vision-and-language tasks via text generation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Revisiting Pre-Trained Models for Chinese Natural Language Processing"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Imagenet: A large-scale hierarchical image database"
+    },
+    {
+      "ref_id": "b7",
+      "title": "RedCaps: Web-curated image-text data created by the people, for the people"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b9",
+      "title": "An image is worth 16x16 words: Transformers for image recognition at scale"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Vse++: Improving visual-semantic embeddings with hard negatives"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Towards artificial general intelligence via a multimodal foundation model"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Wukong: 100 Million Largescale Chinese Cross-modal Pre-training Dataset and A Foundation Framework"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Momentum contrast for unsupervised visual representation learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Scaling up visual and vision-language representation learning with noisy text supervision"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Visual genome: Connecting language and vision using crowdsourced dense image annotations"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Fluency-guided cross-lingual image captioning"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Unicoder-vl: A universal encoder for vision and language by cross-modal pre-training"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Align before fuse: Vision and language representation learning with momentum distillation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Visual semantic reasoning for image-text matching"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Visualbert: A simple and performant baseline for vision and language"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Unimo: Towards unified-modal understanding and generation via cross-modal contrastive learning"
+    }
   ]
 }

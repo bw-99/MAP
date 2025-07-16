@@ -20,7 +20,73 @@
   "REFERENCES": "[1] Yoram Bachrach, Sofia Ceppi, Ian A Kash, Peter Key, and David Kurokawa. 2014. Optimising trade-offs among stakeholders in ad auctions. In EC . 75-92. [2] Vincent Conitzer and Tuomas Sandholm. 2002. Complexity of mechanism design. In UAI . 103-110. [3] Vincent Conitzer and Tuomas Sandholm. 2004. Self-interested automated mechanism design and implications for optimal combinatorial auctions. In Proceedings of the 5th ACM Conference on Electronic Commerce . 132-141. [4] Rahul Dey and Fathi M Salem. 2017. Gate-variants of gated recurrent unit (GRU) neural networks. In 2017 IEEE 60th international midwest symposium on circuits and systems (MWSCAS) . IEEE, 1597-1600. [5] Paul Dütting, Zhe Feng, Harikrishna Narasimhan, David Parkes, and Sai Srivatsa Ravindranath. 2019. Optimal Auctions through Deep Learning. In ICML . 17061715. [6] Benjamin Edelman, Michael Ostrovsky, and Michael Schwarz. 2007. Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords. American economic review 97, 1 (2007), 242-259. [7] Zhe Feng, Okke Schrijvers, and Eric Sodomka. 2019. Online learning for measuring incentive compatibility in ad auctions. In WWW . 2729-2735. [8] Sébastien Lahaie and David M Pennock. 2007. Revenue analysis of a family of ranking rules for keyword auctions. In EC . 50-56. [9] Guogang Liao, Xuejian Li, Ze Wang, Fan Yang, Muzhi Guan, Bingqi Zhu, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. NMA: Neural Multi-slot Auctions with Externalities for Online Advertising. arXiv preprint arXiv:2205.10018 (2022). [10] Xiangyu Liu, Chuan Yu, Zhilin Zhang, Zhenzhe Zheng, Yu Rong, Hongtao Lv, Da Huo, Yiqing Wang, Dagui Chen, Jian Xu, et al. 2021. Neural auction: End-toend learning of auction mechanisms for e-commerce advertising. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 3354-3364. [11] Roger B Myerson. 1981. Optimal auction design. Mathematics of operations research 6, 1 (1981), 58-73. [12] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing systems 30 (2017). [13] William Vickrey. 1961. Counterspeculation, auctions, and competitive sealed tenders. The Journal of finance 16, 1 (1961), 8-37. [14] Yiqing Wang, Xiangyu Liu, Zhenzhe Zheng, Zhilin Zhang, Miao Xu, Chuan Yu, and Fan Wu. 2022. On Designing a Two-stage Auction for Online Advertising. In Proceedings of the ACM Web Conference 2022 . 90-99. [15] Zhilin Zhang, Xiangyu Liu, Zhenzhe Zheng, Chenrui Zhang, Miao Xu, Junwei Pan, Chuan Yu, Fan Wu, Jian Xu, and Kun Gai. 2021. Optimizing Multiple Performance Metrics with Deep GSP Auctions for E-commerce Advertising. In WSDM . 993-1001. [16] Guorui Zhou, Xiaoqiang Zhu, Chenru Song, Ying Fan, Han Zhu, Xiao Ma, Yanghui Yan, Junqi Jin, Han Li, and Kun Gai. 2018. Deep interest network for click-through rate prediction. In KDD . 1059-1068. Received 20 February 2007; revised 12 March 2009; accepted 5 June 2009",
   "keywords_parsed": [
     "Online Advertising",
-    " Auction Design",
-    " Data-driven Auction"
+    "Auction Design",
+    "Data-driven Auction"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Optimising trade-offs among stakeholders in ad auctions"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Complexity of mechanism design"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Self-interested automated mechanism design and implications for optimal combinatorial auctions"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Gate-variants of gated recurrent unit (GRU) neural networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Optimal Auctions through Deep Learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Online learning for measuring incentive compatibility in ad auctions"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Revenue analysis of a family of ranking rules for keyword auctions"
+    },
+    {
+      "ref_id": "b9",
+      "title": "NMA: Neural Multi-slot Auctions with Externalities for Online Advertising"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Neural auction: End-to-end learning of auction mechanisms for e-commerce advertising"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Optimal auction design"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Counterspeculation, auctions, and competitive sealed tenders"
+    },
+    {
+      "ref_id": "b14",
+      "title": "On Designing a Two-stage Auction for Online Advertising"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Optimizing Multiple Performance Metrics with Deep GSP Auctions for E-commerce Advertising"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Deep interest network for click-through rate prediction"
+    }
   ]
 }

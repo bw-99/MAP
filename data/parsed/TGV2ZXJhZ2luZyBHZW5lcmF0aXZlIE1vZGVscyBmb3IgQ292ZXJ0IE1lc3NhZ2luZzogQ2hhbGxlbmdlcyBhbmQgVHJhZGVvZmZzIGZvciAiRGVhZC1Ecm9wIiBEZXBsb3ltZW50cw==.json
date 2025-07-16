@@ -35,7 +35,87 @@
   "11 LIMITATIONS & FUTURE DIRECTIONS": "The focus of our paper is on the challenges that arise when building a model-based covert messaging system from a steganographic construction. We explicate these challenges, discuss potential solutions, and surface various performance-security tradeoffs. Like all prior works, we do not address some deployment issues associated with rendezvous, key exchange, or link parameter agreement. In addition to the above omissions, this is a rapidly evolving field, and future work should re-examine several topics in their time frame. For instance, this work was done using GPT-2, but future work should consider switching to more advanced models such as GPT-3/4 to get more accurate comparisons against nongenerated text. Additionally, MBFTE and other systems that use large-language models for covert messaging are currently unsuitable for low-end or legacy mobile devices, because those devices may lack the resources (e.g. memory) to support such models. Note that while our focus is embedding information into covertext using a generative model, there has been research on embedding information in other channels on public platforms [18, 23, 38]. For instance, using the liking of certain posts, or posting behavior to communicate small amounts of information. While the capacity of such methods is small, many of the techniques and security considerations could be applied to future work. There are other channels that adversaries could use to detect covert-messaging users that we have not discussed. An example is usage pattern analysis; the average user of the platform and a user of the covert-messaging system could have different posting frequencies or patterns. An adversary could examine post content, such as ensuring posts are coherent with each other, or fit the expected demographics of the poster. Alternatively, the adversary could use means other than looking at the platform messages (e.g., correlating IP addresses). A system such as ours could be misused by bad actors. However, the same concerns apply to any other covert/anonymous communication systems such as Tor. Unfortunately, even good faith use may spread misinformation, as the generated posts may be taken as truth. Care should be taken to choose overt signals and finetunings that minimize the effect of potential misinformation.",
   "ACKNOWLEDGMENTS": "We would like to thank researchers from Galois Inc., especially Dave Archer and Alex Malozemoff, for helpful feedback on an early version of this work. This work was supported in part by Galois, Inc. and an award under DARPA BAA #HR001118S0052. The views, opinions, and/or findings expressed are those of the author(s) and should not be interpreted as representing the official views or policies of the Department of Defense or the U.S. Government.",
   "REFERENCES": "[1] Stefan Axelsson. The base-rate fallacy and the difficulty of intrusion detection. ACM Transactions on Information and System Security (TISSEC) , 3(3):186-205, 2000. [2] Sam Burnett, Nick Feamster, and Santosh S Vempala. Chipping away at censorship firewalls with user-generated content. In USENIX Security Symposium , pages 463-468. Washington, DC, 2010. [3] Christian Cachin. An information-theoretic model for steganography. In David Aucsmith, editor, Information Hiding , pages 306-318, Berlin, Heidelberg, 1998. Springer Berlin Heidelberg. [4] Christian Cachin. An information-theoretic model for steganography. Inf. Comput. , 192(1):41-56, July 2004. [5] Yi Cao, Zhili Zhou, Chinmay Chakraborty, Meimin Wang, QM Jonathan Wu, Xingming Sun, and Keping Yu. Generative steganography based on long readable text generation. IEEE Transactions on Computational Social Systems , 2022. [6] Zhili Chen, Liusheng Huang, Zhenshan Yu, Wei Yang, Lingjun Li, Xueling Zheng, and Xinxin Zhao. Linguistic steganography detection using statistical characteristics of correlations between words. In International Workshop on Information Hiding , pages 224-235. Springer, 2008. [7] Elizabeth Clark, Tal August, Sofia Serrano, Nikita Haduong, Suchin Gururangan, and Noah A Smith. All that's 'human'is not gold: Evaluating human evaluation of generated text. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers) , pages 7282-7296, 2021. [8] Falcon Dai and Zheng Cai. Towards near-imperceptible steganographic text. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics , pages 4303-4308, 2019. [9] Christian Schroeder de Witt, Samuel Sokota, J Zico Kolter, Jakob Foerster, and Martin Strohmeier. Perfectly secure steganography using minimum entropy coupling. arXiv preprint arXiv:2210.14889 , 2022. [10] Jinyang Ding, Kejiang Chen, Yaofei Wang, Na Zhao, Weiming Zhang, and Nenghai Yu. Discop: Provably secure steganography in practice based on 'distribution copies'. In 2023 IEEE Symposium on Security and Privacy (SP) , pages 2238-2255. IEEE Computer Society, 2023. [11] Philip Gage. A new algorithm for data compression. C Users Journal , 12(2):23-38, 1994. [12] Odd Erik Gundersen, Kevin Coakley, Christine Kirkpatrick, and Yolanda Gil. Sources of irreproducibility in machine learning: A review. arXiv preprint arXiv:2204.07610 , 2022. [13] Halcy. halcy/mastodon.py. https://github.com/halcy/Mastodon.py. [14] Nicholas Hopper, Luis von Ahn, and John Langford. Provably secure steganography. IEEE Transactions on Computers , 58(5):662-676, 2008. [15] Nicholas J. Hopper, John Langford, and Luis von Ahn. Provably secure steganography. In Proceedings of the 22nd Annual International Cryptology Conference on Advances in Cryptology , CRYPTO '02, pages 77-92, Berlin, Heidelberg, 2002. Springer-Verlag. [16] Paul G Howard and Jeffrey Scott Vitter. Practical implementations of arithmetic coding. In Image and text compression , pages 85-112. Springer, 1992. [17] James K Howes, Marios Georgiou, Alex J Malozemoff, and Thomas Shrimpton. Security foundations for application-based covert communication channels. In 2022 IEEE Symposium on Security and Privacy (SP) , pages 1527-1527. IEEE Computer Society, 2022. [18] Yinghong Hu, Zichi Wang, and Xinpeng Zhang. Steganography in social networks based on behavioral correlation. IETE Technical Review , 38(1):93-99, 2021. [19] Gabriel Kaptchuk, Tushar M Jois, Matthew Green, and Aviel D Rubin. Meteor: Cryptographically secure steganography for realistic distributions. In Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security , pages 1529-1548, 2021. Leveraging Generative Models for Covert Messaging: Challenges and Tradeoffs for 'Dead-Drop' Deployments [45] Jan Zöllner, Hannes Federrath, Herbert Klimant, Andreas Pfitzmann, Rudi Piotraschke, Andreas Westfeld, Guntram Wicke, and Gritta Wolf. Modeling the security of steganographic systems. In International Workshop on Information Hiding , pages 344-354. Springer, 1998.",
-  "keywords_parsed": [
-    "None"
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "The base-rate fallacy and the difficulty of intrusion detection"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Chipping away at censorship firewalls with user-generated content"
+    },
+    {
+      "ref_id": "b3",
+      "title": "An information-theoretic model for steganography"
+    },
+    {
+      "ref_id": "b4",
+      "title": "An information-theoretic model for steganography"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Generative steganography based on long readable text generation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Linguistic steganography detection using statistical characteristics of correlations between words"
+    },
+    {
+      "ref_id": "b7",
+      "title": "All that's 'human'is not gold: Evaluating human evaluation of generated text"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Towards near-imperceptible steganographic text"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Perfectly secure steganography using minimum entropy coupling"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Discop: Provably secure steganography in practice based on 'distribution copies'"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A new algorithm for data compression"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Sources of irreproducibility in machine learning: A review"
+    },
+    {
+      "ref_id": "b13",
+      "title": "halcy/mastodon.py"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Provably secure steganography"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Provably secure steganography"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Practical implementations of arithmetic coding"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Security foundations for application-based covert communication channels"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Steganography in social networks based on behavioral correlation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Meteor: Cryptographically secure steganography for realistic distributions"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Modeling the security of steganographic systems"
+    }
   ]
 }

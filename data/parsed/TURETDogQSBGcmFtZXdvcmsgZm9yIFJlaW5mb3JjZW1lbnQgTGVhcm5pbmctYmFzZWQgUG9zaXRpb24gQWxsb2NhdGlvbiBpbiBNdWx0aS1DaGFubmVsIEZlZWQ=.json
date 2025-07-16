@@ -15,7 +15,101 @@
   "REFERENCES": "[1] Chi Chen, Hui Chen, Kangzhi Zhao, Junsheng Zhou, Li He, Hongbo Deng, Jian Xu, Bo Zheng, Yong Zhang, and Chunxiao Xing. 2022. EXTR: Click-Through Rate Prediction with Externalities in E-Commerce Sponsored Search. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 2732-2740. [2] Xinyue Chen, Che Wang, Zijian Zhou, and Keith Ross. 2021. Randomized ensembled double q-learning: Learning fast without a model. arXiv preprint arXiv:2101.05982 (2021). [3] Andrea Cini, Carlo D'Eramo, Jan Peters, and Cesare Alippi. 2020. Deep reinforcement learning with weighted Q-Learning. arXiv preprint arXiv:2003.09280 (2020). [4] Jonathan Ho and Stefano Ermon. 2016. Generative adversarial imitation learning. Advances in neural information processing systems 29 (2016). [5] Jiang Hua, Liangcai Zeng, Gongfa Li, and Zhaojie Ju. 2021. Learning for a robot: Deep reinforcement learning, imitation learning, transfer learning. Sensors 21, 4 (2021), 1278. [6] Aviral Kumar, Aurick Zhou, George Tucker, and Sergey Levine. 2020. Conservative q-learning for offline reinforcement learning. Advances in Neural Information Processing Systems 33 (2020), 1179-1191. [7] Qingfeng Lan, Yangchen Pan, Alona Fyshe, and Martha White. 2020. Maxmin q-learning: Controlling the estimation bias of q-learning. arXiv preprint arXiv:2002.06487 (2020). [8] Xiang Li, Chao Wang, Bin Tong, Jiwei Tan, Xiaoyi Zeng, and Tao Zhuang. 2020. Deep Time-Aware Item Evolution Network for Click-Through Rate Prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 785-794. [9] Guogang Liao, Xiaowen Shi, Ze Wang, Xiaoxu Wu, Chuheng Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. Deep Page-Level Interest Network in Reinforcement Learning for Ads Allocation. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval . 2292-2296. [10] Guogang Liao, Ze Wang, Xiaoxu Wu, Xiaowen Shi, Chuheng Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. Cross dqn: Cross deep q network for ads allocation in feed. In Proceedings of the ACM Web Conference 2022 . 401409. [11] Lingheng Meng, Rob Gorbet, and Dana Kulić. 2021. The effect of multi-step methods on overestimation in deep reinforcement learning. In 2020 25th International Conference on Pattern Recognition (ICPR) . IEEE, 347-353. [12] Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Andrei A Rusu, Joel Veness, Marc G Bellemare, Alex Graves, Martin Riedmiller, Andreas K Fidjeland, Georg Ostrovski, et al. 2015. Human-level control through deep reinforcement learning. nature 518, 7540 (2015), 529-533. [13] Takayuki Osa, Joni Pajarinen, Gerhard Neumann, J Andrew Bagnell, Pieter Abbeel, Jan Peters, et al. 2018. An algorithmic perspective on imitation learning. Foundations and Trends® in Robotics 7, 1-2 (2018), 1-179. [14] Wentao Ouyang, Xiuwu Zhang, Lei Zhao, Jinmei Luo, Yu Zhang, Heng Zou, Zhaojie Liu, and Yanlong Du. 2020. MiNet: Mixed Interest Network for Cross-Domain Click-Through Rate Prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management . 2669-2676. [15] Richard S Sutton, Andrew G Barto, et al. 1998. Introduction to reinforcement learning . Vol. 135. MIT press Cambridge. [16] Hado Van Hasselt, Arthur Guez, and David Silver. 2016. Deep reinforcement learning with double q-learning. In Proceedings of the AAAI conference on artificial intelligence , Vol. 30. [17] Xiangmeng Wang, Qian Li, Dianer Yu, and Guandong Xu. 2022. Off-policy Learning over Heterogeneous Information for Recommendation. In Proceedings of the ACM Web Conference 2022 . 2348-2359. [18] Ze Wang, Guogang Liao, Xiaowen Shi, Xiaoxu Wu, Chuheng Zhang, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. Learning List-wise Representation in Reinforcement Learning for Ads Allocation with Multiple Auxiliary Tasks. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 3555-3564. [19] Ze Wang, Guogang Liao, Xiaowen Shi, Xiaoxu Wu, Chuheng Zhang, Bingqi Zhu, Yongkang Wang, Xingxing Wang, and Dong Wang. 2022. Hybrid Transfer in Deep Reinforcement Learning for Ads Allocation. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 4560-4564. [20] Wei Xia, Weiwen Liu, Yifan Liu, and Ruiming Tang. 2022. Balancing Utility and Exposure Fairness for Integrated Ranking with Reinforcement Learning. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 4590-4594. [21] Ruobing Xie, Shaoliang Zhang, Rui Wang, Feng Xia, and Leyu Lin. 2021. Hierarchical Reinforcement Learning for Integrated Recommendation. In Proceedings of AAAI . [22] Xiangyu Zhao, Changsheng Gu, Haoshenglun Zhang, Xiwang Yang, Xiaobing Liu, Hui Liu, and Jiliang Tang. 2021. DEAR: Deep Reinforcement Learning for Online Advertising Impression in Recommender Systems. In Proceedings of the AAAI Conference on Artificial Intelligence , Vol. 35. 750-758. [23] Xiangyu Zhao, Xudong Zheng, Xiwang Yang, Xiaobing Liu, and Jiliang Tang. 2020. Jointly learning to recommend and advertise. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 3319-3327.",
   "keywords_parsed": [
     "Reinforcement Learning",
-    " Multi-Distribution Data Learning",
-    " Position Allocation"
+    "Multi-Distribution Data Learning",
+    "Position Allocation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "EXTR: Click-Through Rate Prediction with Externalities in E-Commerce Sponsored Search"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Randomized ensembled double q-learning: Learning fast without a model"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep reinforcement learning with weighted Q-Learning"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Generative adversarial imitation learning"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Learning for a robot: Deep reinforcement learning, imitation learning, transfer learning"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Conservative q-learning for offline reinforcement learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Maxmin q-learning: Controlling the estimation bias of q-learning"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Deep Time-Aware Item Evolution Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deep Page-Level Interest Network in Reinforcement Learning for Ads Allocation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Cross dqn: Cross deep q network for ads allocation in feed"
+    },
+    {
+      "ref_id": "b11",
+      "title": "The effect of multi-step methods on overestimation in deep reinforcement learning"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Human-level control through deep reinforcement learning"
+    },
+    {
+      "ref_id": "b13",
+      "title": "An algorithmic perspective on imitation learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "MiNet: Mixed Interest Network for Cross-Domain Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Introduction to reinforcement learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Deep reinforcement learning with double q-learning"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Off-policy Learning over Heterogeneous Information for Recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Learning List-wise Representation in Reinforcement Learning for Ads Allocation with Multiple Auxiliary Tasks"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Hybrid Transfer in Deep Reinforcement Learning for Ads Allocation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Balancing Utility and Exposure Fairness for Integrated Ranking with Reinforcement Learning"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Hierarchical Reinforcement Learning for Integrated Recommendation"
+    },
+    {
+      "ref_id": "b22",
+      "title": "DEAR: Deep Reinforcement Learning for Online Advertising Impression in Recommender Systems"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Jointly learning to recommend and advertise"
+    }
   ]
 }

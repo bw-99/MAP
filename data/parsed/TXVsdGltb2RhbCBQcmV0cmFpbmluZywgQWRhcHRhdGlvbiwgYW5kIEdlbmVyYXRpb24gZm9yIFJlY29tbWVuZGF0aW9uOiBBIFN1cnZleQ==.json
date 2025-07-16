@@ -26,8 +26,74 @@
   "REFERENCES": "[1] Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Iain Barr, Yana Hasson, Karel Lenc, Arthur Mensch, Katherine Millican, Malcolm Reynolds, et al. 2022. Flamingo: a visual language model for few-shot learning. Advances in Neural Information Processing Systems (NeurIPS) (2022), 23716-23736. [3] Xiang Ao, Xiting Wang, Ling Luo, Ying Qiao, Qing He, and Xing Xie. 2021. PENS: A Dataset and Generic Framework for Personalized News Headline Generation. In Proceedings of ACL/IJCNLP . 82-92. [2] Xiang Ao, Ling Luo, Xiting Wang, Zhao Yang, Jiun-Hung Chen, Ying Qiao, Qing He, and Xing Xie. 2023. Put Your Voice on Stage: Personalized Headline Generation for News Articles. TKDD 18, 3 (2023). [4] Paul Baltescu, Haoyu Chen, Nikil Pancha, Andrew Zhai, Jure Leskovec, and Charles Rosenberg. 2022. Itemsage: Learning product embeddings for shopping recommendations at pinterest. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) . 2703-2711. [6] Shuqing Bian, Xingyu Pan, Wayne Xin Zhao, Jinpeng Wang, Chuyuan Wang, and Ji-Rong Wen. 2023. Multi-modal Mixture of Experts Represetation Learning for Sequential Recommendation. In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (CIKM) . 110-119. [5] Dor Bank, Noam Koenigstein, and Raja Giryes. 2020. Autoencoders. CoRR abs/2003.05991 (2020). [7] Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et al. 2020. Language models are few-shot learners. Advances in Neural Information Processing Systems (NeurIPS) (2020), 1877-1901. [9] Jin Chen, Ju Xu, Gangwei Jiang, Tiezheng Ge, Zhiqiang Zhang, Defu Lian, and Kai Zheng. 2021. Automated Creative Optimization for E-Commerce Advertising. In The ACM Web Conference (WWW) . 2304-2313. [8] Pengshan Cai, Kaiqiang Song, Sangwoo Cho, Hongwei Wang, Xiaoyang Wang, HongYu,Fei Liu, and Dong Yu. 2023. Generating User-Engaging News Headlines. In Proceedings of ACL . 3265-3280. [10] Ke Chen, Beici Liang, Xiaoshuan Ma, and Minwei Gu. 2021. Learning audio embeddings with user listening data for content-based music recommendation. In IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) . IEEE, 3015-3019. [12] Xin Chen, Qingtao Tang, Ke Hu, Yue Xu, Shihang Qiu, Jia Cheng, and Jun Lei. 2022. Hybrid CNN Based Attention with Category Prior for User Image Behavior Modeling. In Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) . 2336-2340. [11] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey E. Hinton. 2020. A Simple Framework for Contrastive Learning of Visual Representations. In Proceedings of the 37th International Conference on Machine Learning (ICML) . 1597-1607. [13] Yashar Deldjoo, Fatemeh Nazary, Arnau Ramisa, Julian J. McAuley, Giovanni Pellegrini, Alejandro Bellogín, and Tommaso Di Noia. 2024. A Review of Modern Fashion Recommender Systems. ACM Comput. Surv. 56, 4 (2024), 87:1-87:37. [15] Yashar Deldjoo, Markus Schedl, and Peter Knees. 2021. Content-driven Music Recommendation: Evolution, State of the Art, and Challenges. CoRR [14] Yashar Deldjoo, Markus Schedl, Paolo Cremonesi, and Gabriella Pasi. 2020. Recommender systems leveraging multimedia content. Comput. Surveys 53, 5 (2020), 1-38. KDD '24, August 25-29, 2024, Barcelona, Spain Qijiong Liu et al. Multimodal Pretraining, Adaptation, and Generation for Recommendation: A Survey KDD '24, August 25-29, 2024, Barcelona, Spain KDD '24, August 25-29, 2024, Barcelona, Spain Qijiong Liu et al. [126] Wei Wei, Chao Huang, Lianghao Xia, and Chuxu Zhang. 2023. Multi-modal self-supervised learning for recommendation. In Proceedings of the ACM Web Multimodal Pretraining, Adaptation, and Generation for Recommendation: A Survey KDD '24, August 25-29, 2024, Barcelona, Spain",
   "keywords_parsed": [
     "Recommender Systems",
-    " Multimodal Pretraining",
-    " Multimodal Adaptation",
-    " Multimodal Generation"
+    "Multimodal Pretraining",
+    "Multimodal Adaptation",
+    "Multimodal Generation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Flamingo: a visual language model for few-shot learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "PENS: A Dataset and Generic Framework for Personalized News Headline Generation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Put Your Voice on Stage: Personalized Headline Generation for News Articles"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Itemsage: Learning product embeddings for shopping recommendations at pinterest"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Multi-modal Mixture of Experts Represetation Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Autoencoders"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Language models are few-shot learners"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Automated Creative Optimization for E-Commerce Advertising"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Generating User-Engaging News Headlines"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Learning audio embeddings with user listening data for content-based music recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Hybrid CNN Based Attention with Category Prior for User Image Behavior Modeling"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A Simple Framework for Contrastive Learning of Visual Representations"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A Review of Modern Fashion Recommender Systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Content-driven Music Recommendation: Evolution, State of the Art, and Challenges"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Recommender systems leveraging multimedia content"
+    },
+    {
+      "ref_id": "b126",
+      "title": "Multi-modal self-supervised learning for recommendation"
+    }
   ]
 }

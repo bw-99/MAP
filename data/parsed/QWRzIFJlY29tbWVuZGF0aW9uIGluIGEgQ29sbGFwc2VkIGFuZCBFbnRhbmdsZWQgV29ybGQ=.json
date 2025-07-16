@@ -32,15 +32,176 @@
   "ACKNOWLEDGMENTS": "We want to express our sincere gratitude to the following individuals (alphabetical order) for their invaluable contributions: Chen Cai, Chengfei Cai, Genbao Chen, Rong Chen, Xihua Chen, Junwen Cheng, Xi Cheng, Chang Cui, Chao Deng, Guihe Deng, Huiting Deng, Yiming Deng, Zhixiang Feng, Haijie Gu, Weibo Gu, Chaonan Guo, Xian Hu, Ronggeng Huang, Shudong Huang, Renjie Jiang, Tingyu Jiang, Junfeng Kang, Kai Kang, Weijie Kong, Biao Li, Cong Li, Kaixin Li, Lingling Li, Rui Li, Xiaobo Li, Yi Li, Yuxiong Li, Zhaohua Li, Liwei Lin, Wenbo Liu, Yue Liu, Zijun Liu, Hua Lu, Feiheng Luo, Chao Lv, Lei Mu, Zhen Ouyang, Shuai Ren, Xueyu Shi, Xun Song, Jiayu Sun, Yan Tan, Hui Tang, Henghuan Wang, Hongfa Wang, Shaoying Wang, Xiaochen Wang, Yuan Wang, Shifeng Wen, Gengyu Weng, Haiyang Wu, Qinchen Wu, Ruiqian Wu, Zhengtao Wu, Zhiyuan Wu, Datian Xing, Tengfei Xiong, Sheng Xu, Zeen Xu, Yuekui Yang, Zhaohuan Yang, Changan Ye, Chengguo Yin, Qiufang Ying, Jiulong You, Ming Yue, Difei Zeng, Zijian Zeng, Junjie Zhai, Anran Zhang, Haoran Zhang, Jihong Zhang, Kuo Zhang, Linghan Zhang, Ruifeng Zhang, Shangyu Zhang, Tianjin Zhang, Yaqian Zhang, Wenzhe Zhao, Yufei Zheng, Erheng Zhong, Longsha Zhou and Qi Zhou.",
   "REFERENCES": "[1] Josh Achiam, Steven Adler, Sandhini Agarwal, Lama Ahmad, Ilge Akkaya, Florencia Leoni Aleman, Diogo Almeida, Janko Altenschmidt, Sam Altman, Shyamal Anadkat, et al. 2023. Gpt-4 technical report. arXiv preprint arXiv:2303.08774 (2023). [2] Newsha Ardalani, Carole-Jean Wu, Zeliang Chen, Bhargav Bhushanam, and Adnan Aziz. 2022. Understanding Scaling Laws for Recommendation Models. arXiv preprint arXiv:2208.08489 (2022). [3] Yoshua Bengio, Aaron Courville, and Pascal Vincent. 2013. Representation learning: A review and new perspectives. IEEE transactions on pattern analysis and machine intelligence 35, 8 (2013), 1798-1828. [4] Yoshua Bengio and Olivier Delalleau. 2011. On the expressive power of deep architectures. In International conference on algorithmic learning theory . Springer, 18-36. [5] Yoshua Bengio, Olivier Delalleau, and Nicolas Roux. 2005. The curse of highly variable functions for local kernel machines. Advances in neural information processing systems 18 (2005). [6] Rich Caruana. 1997. Multitask learning. Machine learning 28, 1 (1997), 41-75. [7] Jianxin Chang, Chenbin Zhang, Yiqun Hui, Dewei Leng, Yanan Niu, Yang Song, and Kun Gai. 2023. Pepnet: Parameter and embedding personalized network for infusing with personalized prior information. In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 3795-3804. [8] Olivier Chapelle. 2014. Modeling delayed feedback in display advertising. In Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining . 1097-1105. [9] Bo Chen, Huifeng Guo, Weiwen Liu, Yue Ding, Yunzhe Li, Wei Guo, Yichao Wang, Zhicheng He, Ruiming Tang, and Rui Zhang. 2022. Numerical Feature Representation with Hybrid N-ary Encoding. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management . 2984-2993. [10] Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, and Wenwu Ou. 2019. Behavior sequence transformer for e-commerce recommendation in alibaba. In Proceedings of the 1st International Workshop on Deep Learning Practice for High-Dimensional Sparse Data . 1-4. [11] Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. In International conference on machine learning . PMLR, 1597-1607. [12] Heng-Tze Cheng, Levent Koc, Jeremiah Harmsen, Tal Shaked, Tushar Chandra, Hrishi Aradhye, Glen Anderson, Greg Corrado, Wei Chai, Mustafa Ispir, et al. 2016. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems . 7-10. [13] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In Proceedings of the 10th ACM conference on recommender systems . 191-198. [14] Daniel Crankshaw, Xin Wang, Guilio Zhou, Michael J Franklin, Joseph E Gonzalez, and Ion Stoica. 2017. Clipper: A { Low-Latency } online prediction serving system. In 14th USENIX Symposium on Networked Systems Design and Implementation (NSDI 17) . 613-627. [15] James Davidson, Benjamin Liebald, Junning Liu, Palash Nandy, Taylor Van Vleet, Ullas Gargi, Sujoy Gupta, Yu He, Mike Lambert, Blake Livingston, et al. 2010. The YouTube video recommendation system. In Proceedings of the fourth ACM conference on Recommender systems . 293-296. [16] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805 (2018). [17] Yufei Feng, Fuyu Lv, Weichen Shen, Menghan Wang, Fei Sun, Yu Zhu, and Keping Yang. 2019. Deep session interest network for click-through rate prediction. In International Joint Conference on Artificial Intelligence (IJCAI) . 2301-2307. [18] Tao Gong, Chengqi Lyu, Shilong Zhang, Yudong Wang, Miao Zheng, Qian Zhao, Kuikun Liu, Wenwei Zhang, Ping Luo, and Kai Chen. 2023. Multimodalgpt: A vision and language model for dialogue with humans. arXiv preprint arXiv:2305.04790 (2023). [19] Huifeng Guo, Bo Chen, Ruiming Tang, Weinan Zhang, Zhenguo Li, and Xiuqiang He. 2021. An embedding learning framework for numerical features in ctr prediction. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining . 2910-2918. [20] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 (2017). [21] Xingzhuo Guo, Junwei Pan, Ximei Wang, Baixu Chen, Jie Jiang, and Mingsheng Long. 2024. On the Embedding Collapse when Scaling up Recommendation Models. International Conference on Machine Learning (ICML) (2024). [22] Will Hamilton, Zhitao Ying, and Jure Leskovec. 2017. Inductive representation learning on large graphs. Advances in neural information processing systems 30 (2017). [23] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition . 770-778. [24] Xinran He, Junfeng Pan, Ou Jin, Tianbing Xu, Bo Liu, Tao Xu, Yanxin Shi, Antoine Atallah, Ralf Herbrich, Stuart Bowers, et al. 2014. Practical lessons from predicting clicks on ads at facebook. In International Workshop on Data Mining for Online Advertising (ADKDD) . 1-9. [25] Balázs Hidasi, Alexandros Karatzoglou, Linas Baltrunas, and Domonkos Tikk. 2015. Session-based recommendations with recurrent neural networks. arXiv preprint arXiv:1511.06939 (2015). [26] Yupeng Hou, Zhankui He, Julian McAuley, and Wayne Xin Zhao. 2023. Learning vector-quantized item representation for transferable sequential recommenders. In Proceedings of the ACM Web Conference 2023 . 1162-1171. [27] Yupeng Hou, Shanlei Mu, Wayne Xin Zhao, Yaliang Li, Bolin Ding, and Ji-Rong Wen. 2022. Towards universal sequence representation learning for recommender systems. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 585-593. [28] Tianyu Hua, Wenxiao Wang, Zihui Xue, Sucheng Ren, Yue Wang, and Hang Zhao. 2021. On feature decorrelation in self-supervised learning. In Proceedings of the IEEE/CVF International Conference on Computer Vision . 9598-9608. [29] Tongwen Huang, Zhiqi Zhang, and Junlin Zhang. 2019. FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction. In Proceedings of the 13th ACM Conference on Recommender Systems . 169-177. [30] Li Jing, Pascal Vincent, Yann LeCun, and Yuandong Tian. 2021. Understanding Dimensional Collapse in Contrastive Self-supervised Learning. In ICLR . [31] Yuchin Juan, Yong Zhuang, Wei-Sheng Chin, and Chih-Jen Lin. 2016. Fieldaware factorization machines for CTR prediction. In Proceedings of the 10th ACM Conference on Recommender Systems (RecSys) . 43-50. [32] Wang-Cheng Kang and Julian McAuley. 2018. Self-attentive sequential recommendation. In 2018 IEEE International Conference on Data Mining (ICDM) . IEEE, 197-206. [33] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix factorization techniques for recommender systems. Computer 42, 8 (2009), 30-37. [34] Alex Krizhevsky, Ilya Sutskever, and Geoffrey E Hinton. 2012. Imagenet classification with deep convolutional neural networks. In NeurIPS . [35] Cheng Li, Yue Lu, Qiaozhu Mei, Dong Wang, and Sandeep Pandey. 2015. Clickthrough prediction for advertising in twitter timeline. In Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining . 1959-1968. [36] Xiangyang Li, Bo Chen, Lu Hou, and Ruiming Tang. 2023. CTRL: Connect Tabular and Language Model for CTR Prediction. arXiv preprint arXiv:2306.02841 (2023). [37] Jianxun Lian, Xiaohuan Zhou, Fuzheng Zhang, Zhongxia Chen, Xing Xie, and Guangzhong Sun. 2018. xdeepfm: Combining explicit and implicit feature interactions for recommender systems. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD) . 1754-1763. [38] Jianghao Lin, Bo Chen, Hangyu Wang, Yunjia Xi, Yanru Qu, Xinyi Dai, Kangning Zhang, Ruiming Tang, Yong Yu, and Weinan Zhang. 2024. ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction. In Proceedings of the ACM on Web Conference 2024 . 3319-3330. Ads Recommendation in a Collapsed and Entangled World KDD '24, August 25-29, 2024, Barcelona, Spain KDD '24, August 25-29, 2024, Barcelona, Spain Junwei, et al. [82] Haolin Zhou, Junwei Pan, Xinyi Zhou, Xihua Chen, Jie Jiang, Xiaofeng Gao, and Guihai Chen. 2024. Temporal Interest Network for User Response Prediction. In Companion Proceedings of the ACM on Web Conference 2024 . 413-422. [83] Jie Zhou, Xianshuai Cao, Wenhao Li, Kun Zhang, Chuan Luo, and Qian Yu. 2023. HiNet: A Novel Multi-Scenario & Multi-Task Learning Approach with Hierarchical Information Extraction. arXiv preprint arXiv:2303.06095 (2023). [84] Kun Zhou, Hui Wang, Wayne Xin Zhao, Yutao Zhu, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. 2020. S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization. In Proceedings of the 29th ACM international conference on information & knowledge management . 1893-1902.",
   "keywords_parsed": [
-    "We present Tencent's ads recommendation system and examine the challenges and practices of learning appropriate recommendation representations. Our study begins by showcasing our approaches to preserving prior knowledge when encoding features of diverse types into embedding representations. We specifically address sequence features",
-    " numeric features",
-    " and pre-trained embedding features. Subsequently",
-    " we delve into two crucial challenges related to feature representation: the dimensional collapse of embeddings and the interest entanglement across different tasks or scenarios. We propose several practical approaches to address these challenges that result in robust and disentangled recommendation representations. We then explore several training techniques to facilitate model optimization",
-    " reduce bias",
-    " and enhance exploration. Additionally",
-    " we introduce three analysis tools that enable us to study feature correlation",
-    " dimensional collapse",
-    " and interest entanglement. This work builds upon the continuous efforts of Tencent's ads recommendation team over the past decade. It summarizes general design principles and presents a series of readily applicable solutions and analysis tools. The reported performance is based on our online advertising platform",
-    " which handles hundreds of billions of requests daily and serves millions of ads to billions of users."
+    "Recommendation Systems",
+    "Representation Learning",
+    "Dimensional Collapse",
+    "Disentangled Learning",
+    "User Interest Modeling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gpt-4 technical report"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Understanding Scaling Laws for Recommendation Models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Representation learning: A review and new perspectives"
+    },
+    {
+      "ref_id": "b4",
+      "title": "On the expressive power of deep architectures"
+    },
+    {
+      "ref_id": "b5",
+      "title": "The curse of highly variable functions for local kernel machines"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Multitask learning"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Pepnet: Parameter and embedding personalized network for infusing with personalized prior information"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Modeling delayed feedback in display advertising"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Numerical Feature Representation with Hybrid N-ary Encoding"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Behavior sequence transformer for e-commerce recommendation in alibaba"
+    },
+    {
+      "ref_id": "b11",
+      "title": "A simple framework for contrastive learning of visual representations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Clipper: A { Low-Latency } online prediction serving system"
+    },
+    {
+      "ref_id": "b15",
+      "title": "The YouTube video recommendation system"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Multimodalgpt: A vision and language model for dialogue with humans"
+    },
+    {
+      "ref_id": "b19",
+      "title": "An embedding learning framework for numerical features in ctr prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b21",
+      "title": "On the Embedding Collapse when Scaling up Recommendation Models"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Deep residual learning for image recognition"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Learning vector-quantized item representation for transferable sequential recommenders"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Towards universal sequence representation learning for recommender systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "On feature decorrelation in self-supervised learning"
+    },
+    {
+      "ref_id": "b29",
+      "title": "FiBiNET: combining feature importance and bilinear feature interaction for click-through rate prediction"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Understanding Dimensional Collapse in Contrastive Self-supervised Learning"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Fieldaware factorization machines for CTR prediction"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Imagenet classification with deep convolutional neural networks"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Clickthrough prediction for advertising in twitter timeline"
+    },
+    {
+      "ref_id": "b36",
+      "title": "CTRL: Connect Tabular and Language Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b37",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b38",
+      "title": "ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction"
+    },
+    {
+      "ref_id": "b82",
+      "title": "Temporal Interest Network for User Response Prediction"
+    },
+    {
+      "ref_id": "b83",
+      "title": "HiNet: A Novel Multi-Scenario & Multi-Task Learning Approach with Hierarchical Information Extraction"
+    },
+    {
+      "ref_id": "b84",
+      "title": "S3-rec: Self-supervised learning for sequential recommendation with mutual information maximization"
+    }
   ]
 }

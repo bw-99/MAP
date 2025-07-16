@@ -22,6 +22,314 @@
   "ACKNOWLEDGMENT": "This work is supported in part by National Key Research and Development Program of China under 2020AAA0106000, and by National Natural Science Foundation of China under 62272262 and U23B2030. This work is also supported by grant from the Guoqiang Institute, Tsinghua University.",
   "REFERENCES": "[1] Junzhe Zhang and Elias Bareinboim . 2018. Fairness in Decision-Making - The Causal Explanation Formula. In AAAI 2018 . [2] Aman Agarwal, Soumya Basu, Tobias Schnabel, and Thorsten Joachims. 2017. Effective evaluation using logged bandit feedback from multiple loggers. In Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining . 687-696. [3] Xavier Amatriain, Josep M Pujol, and Nuria Oliver. 2009. I like it... i like it not: Evaluating user ratings noise in recommender systems. In International Conference on User Modeling, Adaptation, and Personalization . Springer, 247-258. [4] Elias Bareinboim, Andrew Forney, and Judea Pearl. 2015. Bandits with unobserved confounders: A causal approach. Advances in Neural Information Processing Systems 28 (2015), 1342-1350. [5] Léon Bottou, Jonas Peters, Joaquin Quiñonero-Candela, Denis X Charles, D Max Chickering, Elon Portugaly, Dipankar Ray, Patrice Simard, and Ed Snelson. 2013. Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising. Journal of Machine Learning Research 14, 11 (2013). [6] Engin Bozdag, Qi Gao, Geert Jan Houben, and Martijn Warnier. 2014. Does Offline Political Segregation Affect the Filter Bubble? An Empirical Analysis of Information Diversity for Dutch and Turkish Twitter Users. Computers in Human Behavior 41, C (2014), 405-415. [7] Robin Burke. 2017. Multisided fairness for recommendation. arXiv preprint arXiv:1707.00093 (2017). [8] Jianxin Chang, Chen Gao, Yu Zheng, Yiqun Hui, Yanan Niu, Yang Song, Depeng Jin, and Yong Li. 2021. Sequential Recommendation with Graph Neural Networks. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 378-387. [9] Jiawei Chen, Hande Dong, Yang Qiu, Xiangnan He, Xin Xin, Liang Chen, Guli Lin, and Keping Yang. 2021. AutoDebias: Learning to Debias for Recommendation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 21-30. [10] Jiawei Chen, Hande Dong, Xiang Wang, Fuli Feng, Meng Wang, and Xiangnan He. 2023. Bias and debias in recommender system: A survey and future directions. ACM Transactions on Information Systems 41, 3 (2023), 1-39. [11] Tong Chen, Hongzhi Yin, Guanhua Ye, Zi Huang, Yang Wang, and Ming-Chieh Wang. 2020. Try This Instead: Personalized and Interpretable Substitute Recommendation. Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (2020). [12] Yongjun Chen, Zhiwei Liu, Jia Li, Julian McAuley, and Caiming Xiong. 2022. Intent Contrastive Learning for Sequential Recommendation. In Proceedings of the ACM Web Conference 2022 . 2172-2182. [13] David Maxwell Chickering. 2002. Optimal structure identification with greedy search. Journal of machine learning research 3, Nov (2002), 507-554. [14] Dan Cosley, Shyong K Lam, Istvan Albert, Joseph A Konstan, and John Riedl. 2003. Is seeing believing? How recommender system interfaces affect users' opinions. In Proceedings of the SIGCHI conference on Human factors in computing systems . 585-592. [15] Paul Covington, Jay Adams, and Emre Sargin. 2016. Deep neural networks for youtube recommendations. In RecSys . 191-198. [16] Sihao Ding, Peng Wu, Fuli Feng, Yitong Wang, Xiangnan He, Yong Liao, and Yongdong Zhang. 2022. Addressing unmeasured confounder for recommendation with sensitivity analysis. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 305-315. [17] Wenqi Fan, Yao Ma, Qing Li, Yuan He, Eric Zhao, Jiliang Tang, and Dawei Yin. 2019. Graph neural networks for social recommendation. In The world wide web conference . 417-426. [18] Wenqi Fan, Yao Ma, Qing Li, Yuan He, Eric Zhao, Jiliang Tang, and Dawei Yin. 2019. Graph neural networks for social recommendation. In The World Wide Web Conference . 417-426. [19] Tsu-Jui Fu, Xin Eric Wang, Matthew F Peterson, Scott T Grafton, Miguel P Eckstein, and William Yang Wang. 2020. Counterfactual vision-and-language navigation via adversarial path sampler. In European Conference on Computer ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023. Causal Inference in Recommender Systems: A Survey and Future Directions 27 Vision . Springer, 71-86. [20] Chen Gao, Xiangning Chen, Fuli Feng, Kai Zhao, Xiangnan He, Yong Li, and Depeng Jin. 2019. Cross-domain recommendation without sharing user-relevant data. In The world wide web conference . 491-502. [21] Chen Gao, Xiangnan He, Dahua Gan, Xiangning Chen, Fuli Feng, Yong Li, Tat-Seng Chua, and Depeng Jin. 2019. Neural multi-task recommendation from multi-behavior data. In 2019 IEEE 35th international conference on data engineering (ICDE) . IEEE, 1554-1557. [22] Chongming Gao, Shiqi Wang, Shijun Li, Jiawei Chen, Xiangnan He, Wenqiang Lei, Biao Li, Yuan Zhang, and Peng Jiang. 2023. CIRS: Bursting filter bubbles by counterfactual interactive recommender system. ACM Transactions on Information Systems 42, 1 (2023), 1-27. [23] Alois Gruson, Praveen Chandar, Christophe Charbuillet, James McInerney, Samantha Hansen, Damien Tardieu, and Ben Carterette. 2019. Offline Evaluation to Make Decisions About PlaylistRecommendation Algorithms. Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining (2019). [24] Huifeng Guo, Ruiming Tang, Yunming Ye, Zhenguo Li, and Xiuqiang He. 2017. DeepFM: a factorization-machine based neural network for CTR prediction. In Proceedings of the 26th International Joint Conference on Artificial Intelligence . 1725-1731. [25] Qingyu Guo, Fuzhen Zhuang, Chuan Qin, Hengshu Zhu, Xing Xie, Hui Xiong, and Qing He. 2020. A survey on knowledge graph-based recommender systems. IEEE Transactions on Knowledge and Data Engineering (2020). [26] Ruocheng Guo, Lu Cheng, Jundong Li, P Richard Hahn, and Huan Liu. 2020. A survey of learning causality with data: Problems and methods. ACM Computing Surveys (CSUR) 53, 4 (2020), 1-37. [27] Siyuan Guo, Lixin Zou, Yiding Liu, Wenwen Ye, Suqi Cheng, Shuaiqiang Wang, Hechang Chen, Dawei Yin, and Yi Chang. 2021. Enhanced Doubly Robust Learning for Debiasing Post-Click Conversion Rate Estimation. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 275-284. [28] Moritz Hardt, Eric Price, and Nathan Srebro. 2016. Equality of Opportunity in Supervised Learning. In NIPS . [29] Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, and Meng Wang. 2020. Lightgcn: Simplifying and powering graph convolution network for recommendation. In Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval . 639-648. [30] Xiangnan He, Kuan Deng, Xiang Wang, Yaliang Li, Yongdong Zhang, and Meng Wang. 2020. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation. Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (2020). [31] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. Neural collaborative filtering. In WWW . 173-182. [32] Xiangnan He, Yang Zhang, Fuli Feng, Chonggang Song, Lingling Yi, Guohui Ling, and Yongdong Zhang. 2023. Addressing confounding feature issue for causal recommendation. ACM Transactions on Information Systems 41, 3 (2023), 1-23. [33] Yue He, Zimu Wang, Peng Cui, Hao Zou, Yafeng Zhang, Qiang Cui, and Yong Jiang. 2022. Causpref: Causal preference learning for out-of-distribution recommendation. In Proceedings of the ACM Web Conference 2022 . 410-421. [34] David Heckerman, Dan Geiger, and David M Chickering. 1995. Learning Bayesian networks: The combination of knowledge and statistical data. Machine learning 20, 3 (1995), 197-243. [35] Keisuke Hirano, Guido W Imbens, and Geert Ridder. 2003. Efficient estimation of average treatment effects using the estimated propensity score. Econometrica 71, 4 (2003), 1161-1189. [36] Jonathan Ho and Stefano Ermon. 2016. Generative adversarial imitation learning. Advances in neural information processing systems 29 (2016). [37] Guangneng Hu, Yu Zhang, and Qiang Yang. 2018. Conet: Collaborative cross networks for cross-domain recommendation. In Proceedings of the 27th ACM international conference on information and knowledge management . 667-676. [38] Yifan Hu, Yehuda Koren, and Chris Volinsky. 2008. Collaborative filtering for implicit feedback datasets. In ICDM . 263-272. [39] Eugene Ie, Chih-wei Hsu, Martin Mladenov, Vihan Jain, Sanmit Narvekar, Jing Wang, Rui Wu, and Craig Boutilier. 2019. Recsim: A configurable simulation platform for recommender systems. arXiv preprint arXiv:1909.04847 (2019). [40] Dominik Janzing. 2019. Causal Regularization. Advances in Neural Information Processing Systems 32 (2019), 1270412714. [41] Bowen Jin, Chen Gao, Xiangnan He, Depeng Jin, and Yong Li. 2020. Multi-behavior recommendation with graph convolutional networks. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval . 659-668. [42] Fredrik Johansson, Uri Shalit, and David Sontag. 2016. Learning representations for counterfactual inference. In International conference on machine learning . PMLR, 3020-3029. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023. 28 Gao et al. [43] Nicolas Jones, Armelle Brun, and Anne Boyer. 2011. Comparisons instead of ratings: Towards more stable preferences. In 2011 IEEE/WIC/ACM International Conferences on Web Intelligence and Intelligent Agent Technology , Vol. 1. IEEE, 451-456. [44] Junzhe Zhang and Elias Bareinboim. 2018. Equality of Opportunity in Classification: A Causal Approach. In NeurIPS . [45] Aria Khademi, Sanghack Lee, David Foley, and Vasant G Honavar. 2019. Fairness in Algorithmic Decision Making: An Excursion Through the Lens of Causality. The World Wide Web Conference (2019). [46] Haruka Kiyohara, Yuta Saito, Tatsuya Matsuhiro, Yusuke Narita, Nobuyuki Shimizu, and Yasuo Yamamoto. 2022. Doubly robust off-policy evaluation for ranking policies under the cascade behavior model. In Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining . 487-497. [47] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix factorization techniques for recommender systems. Computer 42, 8 (2009). [48] Matt J. Kusner, Joshua R. Loftus, Chris Russell, and Ricardo Silva. 2017. Counterfactual Fairness. In NIPS . [49] Finnian Lattimore, Tor Lattimore, and Mark D Reid. 2016. Causal bandits: learning good interventions via causal inference. In Proceedings of the 30th International Conference on Neural Information Processing Systems . 1189-1197. [50] Sergey Levine, Aviral Kumar, George Tucker, and Justin Fu. 2020. Offline reinforcement learning: Tutorial, review, and perspectives on open problems. arXiv preprint arXiv:2005.01643 (2020). [51] Dongsheng Li, Chao Chen, Zhilin Gong, Tun Lu, Stephen M Chu, and Ning Gu. 2019. Collaborative filtering with noisy ratings. In Proceedings of the 2019 SIAM International Conference on Data Mining . SIAM, 747-755. [52] Qian Li, Xiangmeng Wang, Zhichao Wang, and Guandong Xu. 2023. Be causal: De-biasing social network confounding in recommendation. ACM Transactions on Knowledge Discovery from Data 17, 1 (2023), 1-23. [53] Shuai Li, Yasin Abbasi-Yadkori, Branislav Kveton, Shan Muthukrishnan, Vishwa Vinay, and Zheng Wen. 2018. Offline evaluation of ranking policies with click models. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1685-1694. [54] Yunqi Li, Hanxiong Chen, Shuyuan Xu, Yingqiang Ge, and Yongfeng Zhang. 2021. Towards Personalized Fairness Based on Causal Notion. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 1054-1063. [55] Chen Lin, Xinyi Liu, Guipeng Xv, and Hui Li. 2021. Mitigating sentiment bias for recommender systems. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval . 31-40. [56] Roderick JA Little and Donald B Rubin. 2019. Statistical analysis with missing data . Vol. 793. John Wiley & Sons. [57] Chang Liu, Xinwei Sun, Jindong Wang, Haoyue Tang, Tao Li, Tao Qin, Wei Chen, and Tie-Yan Liu. 2020. Learning causal semantic representation for out-of-distribution prediction. arXiv preprint arXiv:2011.01681 (2020). [58] Yaxu Liu, Jui-Nan Yen, Bowen Yuan, Rundong Shi, Peng Yan, and Chih-Jen Lin. 2022. Practical counterfactual policy learning for Top-K recommendations. In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining . 1141-1151. [59] Christos Louizos, Uri Shalit, Joris Mooij, David Sontag, Richard Zemel, and Max Welling. 2017. Causal effect inference with deep latent-variable models. In Proceedings of the 31st International Conference on Neural Information Processing Systems . 6449-6459. [60] Hongyu Lu, Min Zhang, and Shaoping Ma. 2018. Between clicks and satisfaction: Study on multi-phase user preferences and satisfaction for online news reading. In The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval . 435-444. [61] G. M. Lunardi, G. M. Machado, V. Maran, and JPMD Oliveira. 2020. A metric for Filter Bubble measurement in recommender algorithms considering the news domain. Applied Soft Computing 97, Part A (2020). [62] James McInerney, Brian Brost, Praveen Chandar, Rishabh Mehrotra, and Benjamin Carterette. 2020. Counterfactual evaluation of slate recommendations with sequential reward interactions. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 1779-1788. [63] Raha Moraffah, Mansooreh Karami, Ruocheng Guo, Adrienne Raglin, and Huan Liu. 2020. Causal interpretability for machine learning-problems, methods and evaluation. ACM SIGKDD Explorations Newsletter 22, 1 (2020), 18-33. [64] Shanlei Mu, Yaliang Li, Wayne Xin Zhao, Jingyuan Wang, Bolin Ding, and Ji-Rong Wen. 2022. Alleviating Spurious Correlations in Knowledge-aware Recommendations through Counterfactual Generator. In SIGIR . [65] Michael P. O'Mahony, Neil J. Hurley, and Guénolé C.M. Silvestre. 2006. Detecting Noise in Recommender System Databases. In Proceedings of the 11th International Conference on Intelligent User Interfaces (IUI '06) . Association for Computing Machinery, New York, NY, USA, 109-115. [66] Eli Pariser. 2011. The filter bubble: What the Internet is hiding from you . penguin UK. [67] E. Pariser. 2011. The Filter Bubble: What the Internet Is Hiding from You . The Filter Bubble: What the Internet Is Hiding from You. [68] J. Passe, C. Drake, and L. Mayger. 2017. Homophily, echo chambers, & selective exposure in social networks: What should civic educators do? Journal of Social Studies Research (2017). ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023. Causal Inference in Recommender Systems: A Survey and Future Directions 29 ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023. 30 Gao et al. ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023. Causal Inference in Recommender Systems: A Survey and Future Directions 31 ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023. 32 Gao et al. [138] Yang Zhang, Fuli Feng, Xiangnan He, Tianxin Wei, Chonggang Song, Guohui Ling, and Yongdong Zhang. 2021. Causal Intervention for Leveraging Popularity Bias in Recommendation. In SIGIR '21: The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval, Virtual Event, Canada, July 11-15, 2021 . 11-20. [139] Yongfeng Zhang, Guokun Lai, Min Zhang, Yi Zhang, Yiqun Liu, and Shaoping Ma. 2014. Explicit factor models for explainable recommendation based on phrase-level sentiment analysis. Proceedings of the 37th international ACM SIGIR conference on Research & development in information retrieval (2014). [140] Yu Zheng, Chen Gao, Jianxin Chang, Yanan Niu, Yang Song, Depeng Jin, and Yong Li. 2022. Disentangling Long and Short-Term Interests for Recommendation. In Proceedings of the ACM Web Conference 2022 . 2256-2267. [141] Yu Zheng, Chen Gao, Xiang Li, Xiangnan He, Yong Li, and Depeng Jin. 2021. Disentangling User Interest and Conformity for Recommendation with Causal Embedding. In WWW . ACM, 2980-2991. [142] Shengyu Zhu, Ignavier Ng, and Zhitang Chen. 2019. Causal discovery with reinforcement learning. arXiv preprint arXiv:1906.04477 (2019). [143] Tianyu Zhu, Leilei Sun, and Guoqing Chen. 2021. Graph-based Embedding Smoothing for Sequential Recommendation. IEEE Transactions on Knowledge and Data Engineering (2021). [144] Xinyuan Zhu, Yang Zhang, Fuli Feng, Xun Yang, Dingxian Wang, and Xiangnan He. 2022. Mitigating Hidden Confounding Effects for Causal Recommendation. arXiv preprint arXiv:2205.07499 (2022). [145] Ran Zmigrod, Sabrina J Mielke, Hanna Wallach, and Ryan Cotterell. 2019. Counterfactual data augmentation for mitigating gender stereotypes in languages with rich morphology. arXiv preprint arXiv:1906.04571 (2019). ACM Trans. Inf. Syst., Vol. 1, No. 1, Article . Publication date: December 2023.",
   "keywords_parsed": [
-    "None"
+    "Recommender Systems",
+    "Causal Inference",
+    "Information Retrieval"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Fairness in Decision-Making - The Causal Explanation Formula"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Effective evaluation using logged bandit feedback from multiple loggers"
+    },
+    {
+      "ref_id": "b3",
+      "title": "I like it... i like it not: Evaluating user ratings noise in recommender systems"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Bandits with unobserved confounders: A causal approach"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Does Offline Political Segregation Affect the Filter Bubble? An Empirical Analysis of Information Diversity for Dutch and Turkish Twitter Users"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Multisided fairness for recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Sequential Recommendation with Graph Neural Networks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "AutoDebias: Learning to Debias for Recommendation"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Bias and debias in recommender system: A survey and future directions"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Try This Instead: Personalized and Interpretable Substitute Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Intent Contrastive Learning for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Optimal structure identification with greedy search"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Is seeing believing? How recommender system interfaces affect users' opinions"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Addressing unmeasured confounder for recommendation with sensitivity analysis"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Graph neural networks for social recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Graph neural networks for social recommendation"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Counterfactual vision-and-language navigation via adversarial path sampler"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Cross-domain recommendation without sharing user-relevant data"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Neural multi-task recommendation from multi-behavior data"
+    },
+    {
+      "ref_id": "b22",
+      "title": "CIRS: Bursting filter bubbles by counterfactual interactive recommender system"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Offline Evaluation to Make Decisions About PlaylistRecommendation Algorithms"
+    },
+    {
+      "ref_id": "b24",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b25",
+      "title": "A survey on knowledge graph-based recommender systems"
+    },
+    {
+      "ref_id": "b26",
+      "title": "A survey of learning causality with data: Problems and methods"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Enhanced Doubly Robust Learning for Debiasing Post-Click Conversion Rate Estimation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Equality of Opportunity in Supervised Learning"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Addressing confounding feature issue for causal recommendation"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Causpref: Causal preference learning for out-of-distribution recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Learning Bayesian networks: The combination of knowledge and statistical data"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Efficient estimation of average treatment effects using the estimated propensity score"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Generative adversarial imitation learning"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Conet: Collaborative cross networks for cross-domain recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Collaborative filtering for implicit feedback datasets"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Recsim: A configurable simulation platform for recommender systems"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Causal Regularization"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Multi-behavior recommendation with graph convolutional networks"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Learning representations for counterfactual inference"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Comparisons instead of ratings: Towards more stable preferences"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Equality of Opportunity in Classification: A Causal Approach"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Fairness in Algorithmic Decision Making: An Excursion Through the Lens of Causality"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Doubly robust off-policy evaluation for ranking policies under the cascade behavior model"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Matrix factorization techniques for recommender systems"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Counterfactual Fairness"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Causal bandits: learning good interventions via causal inference"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Offline reinforcement learning: Tutorial, review, and perspectives on open problems"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Collaborative filtering with noisy ratings"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Be causal: De-biasing social network confounding in recommendation"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Offline evaluation of ranking policies with click models"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Towards Personalized Fairness Based on Causal Notion"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Mitigating sentiment bias for recommender systems"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Statistical analysis with missing data"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Learning causal semantic representation for out-of-distribution prediction"
+    },
+    {
+      "ref_id": "b58",
+      "title": "Practical counterfactual policy learning for Top-K recommendations"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Causal effect inference with deep latent-variable models"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Between clicks and satisfaction: Study on multi-phase user preferences and satisfaction for online news reading"
+    },
+    {
+      "ref_id": "b61",
+      "title": "A metric for Filter Bubble measurement in recommender algorithms considering the news domain"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Counterfactual evaluation of slate recommendations with sequential reward interactions"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Causal interpretability for machine learning-problems, methods and evaluation"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Alleviating Spurious Correlations in Knowledge-aware Recommendations through Counterfactual Generator"
+    },
+    {
+      "ref_id": "b65",
+      "title": "Detecting Noise in Recommender System Databases"
+    },
+    {
+      "ref_id": "b66",
+      "title": "The filter bubble: What the Internet is hiding from you"
+    },
+    {
+      "ref_id": "b67",
+      "title": "The Filter Bubble: What the Internet Is Hiding from You"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Homophily, echo chambers, & selective exposure in social networks: What should civic educators do?"
+    },
+    {
+      "ref_id": "b138",
+      "title": "Causal Intervention for Leveraging Popularity Bias in Recommendation"
+    },
+    {
+      "ref_id": "b139",
+      "title": "Explicit factor models for explainable recommendation based on phrase-level sentiment analysis"
+    },
+    {
+      "ref_id": "b140",
+      "title": "Disentangling Long and Short-Term Interests for Recommendation"
+    },
+    {
+      "ref_id": "b141",
+      "title": "Disentangling User Interest and Conformity for Recommendation with Causal Embedding"
+    },
+    {
+      "ref_id": "b142",
+      "title": "Causal discovery with reinforcement learning"
+    },
+    {
+      "ref_id": "b143",
+      "title": "Graph-based Embedding Smoothing for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b144",
+      "title": "Mitigating Hidden Confounding Effects for Causal Recommendation"
+    },
+    {
+      "ref_id": "b145",
+      "title": "Counterfactual data augmentation for mitigating gender stereotypes in languages with rich morphology"
+    }
   ]
 }

@@ -46,7 +46,189 @@
   "E.1 Evaluation On Another Simulation Environment": "A possible evaluation method is to establish an environment on the test set to evaluate the algorithm. Different from testing in the same environment, we emphasize the establishment of environment model on test set according to the evaluation framework of supervised learning. In many recommendation scenarios, the training set and test set need to be divided according to time, which makes this more important. Another popular evaluation method adopted by most current works is to divide users before policy training. Although the training and test data are not overlapped, they are sharing the same environment. This method still exists a risk of over-fitting, because the estimated reward of the test set will be affected by the train set through the shared environment. According to the method described in Section 5.1, we construct the environment model on the training set and the test set respectively. We use the most strict dataset dividing setting, that is, Dataset-SL as the train set and Dataset-RL as the test set. Not Conference acronym 'XX, June 03-05, 2018, Woodstock, NY Wang, et al. Table 16: Performance comparison between batch RL algorithms on different experiment settings (setting 1, 2, 3, and 4 represent the setting of building environment and training on all datasets then test on Dataset-RL, building environment on all datasets and training on Dataset-SL then test on Dataset-RL, building environment and training on DatasetSL then test on Dataset-RL, and building environment and training on Dataset-SL then test on the environment built from Dataset-RL respectively). On-going experiments. Table 15: Reward estimation performance comparison of DIEN-based environment simulator between different environment simulation settings (setting 1, 2, 3, and 4 represent the setting of training on all dataset then testing on DatasetSL, training on all dataset then testing on Dataset-RL, training on Dataset-RL then testing on Dataset-SL, and training on Dataset-SL then testing on Dataset-RL respectively). Ongoing experiments. only they are not overlapped on time, but also there are considerable differences in data distribution between them. For model-free RL and batch RL, we compare the performance of the following three settings: (1) constructing environment model on Dataset-SL plus Dataset-RL, training the policy on Dataset-SL, evaluating on Dataset-SL; (2) constructing environment model on Dataset-SL, training the policy on Dataset-SL, evaluating on Dataset-RL; (3) constructing environment model on Dataset-SL, training the policy on Dataset-SL, evaluating on the environment model built from Dataset-RL. For environment simulation, we provide the result of the following two settings: (1) constructing environment model on Dataset-SL, and then evaluating on Dataset-RL; and (2) constructing environment model on Dataset-RL, and then evaluating on Dataset-SL; The results of training on all dataset and evaluate on Dataset-SL and Dataset-RL are also provided as a baseline. The results are as follows. Table 16 shows the results of the three batch RL algorithms under the three experimental settings mentioned above and the baseline experimental settings (setting 1). Because the experiments are timeconsuming, only a few rounds of experiments have been done at present. We will provide the averaged results of more rounds in the future. From the comparison between setting 3/4 and setting 2, the choice of environment construction dataset has a great impact on the final result. Compared with setting 2 and setting 1, the results do not show much difference (except CQL algorithm). It may be because they both use all dataset to construct the environment model. Although setting 2 only trains on Dataset-SL, it also learns a lot from Dataset-RL. From Table 15, it can be found that comparing setting 3/4 and setting 1/2, there is basically a 10% increase in the absolute mean indicator and a 5% increase in the standard deviation indicator on RL4RS-Slate dataset. On RL4RS-SeqSlate dataset, the indicator difference widens further, especially with setting 4 versus setting 2. Since the initial error of environment construction is already large, the impact of dataset division is difficult to measure directly. It needs to be further revealed by the results of the RL algorithms.",
   "keywords_parsed": [
     "Datasets",
-    " Recommender Systems",
-    " Applied Reinforcement Learning"
+    "Recommender Systems",
+    "Applied Reinforcement Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Model-based reinforcement learning with adversarial training for online recommendation"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Top-k off-policy correction for a reinforce recommender system"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Decision transformer: Reinforcement learning via sequence modeling"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Generative adversarial user model for reinforcement learning based recommendation system"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Doubly robust policy evaluation and learning"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep reinforcement learning in large discrete action spaces"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Addressing function approximation error in actor-critic methods"
+    },
+    {
+      "ref_id": "b8",
+      "title": "D4rl: Datasets for deep data-driven reinforcement learning"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Off-policy deep reinforcement learning without exploration"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Datasheets for datasets"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Horizon: Facebook's open source applied reinforcement learning platform"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Exact-k recommendation via maximal clique optimization"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Rainbow: Combining improvements in deep reinforcement learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Rl unplugged: Benchmarks for offline reinforcement learning"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Reinforcement learning to rank in ecommerce search engine: Formalization, analysis, and application"
+    },
+    {
+      "ref_id": "b17",
+      "title": "A generalization of sampling without replacement from a finite universe"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Aliexpress learning-to-rank: Maximizing online model performance without going online"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Slateq: A tractable decomposition for reinforcement learning with recommendation sets"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Recsim: A configurable simulation platform for recommender systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Reinforcement learning as one big sequence modeling problem"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Conservative q-learning for offline reinforcement learning"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Doubly robust off-policy value evaluation for reinforcement learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "RLlib: Abstractions for distributed reinforcement learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Continuous control with deep reinforcement learning"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Accordion: a trainable simulator for long-term interactive systems"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Asynchronous methods for deep reinforcement learning"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Playing atari with deep reinforcement learning"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Improving language understanding by generative pre-training"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Recogym: A reinforcement learning environment for the problem of product recommendation in online advertising"
+    },
+    {
+      "ref_id": "b31",
+      "title": "The md5 message-digest algorithm"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Proximal policy optimization algorithms"
+    },
+    {
+      "ref_id": "b35",
+      "title": "An mdp-based recommender system"
+    },
+    {
+      "ref_id": "b34",
+      "title": "d3rlpy: An offline deep reinforcement library"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Virtual-taobao: Virtualizing real-world online retail environment for reinforcement learning"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Deepmind control suite"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Policy gradient methods for reinforcement learning with function approximation"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Data-efficient off-policy policy evaluation for reinforcement learning"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Mopo: Model-based offline policy optimization"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Combo: Conservative offline model-based policy optimization"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Drn: A deep reinforcement learning framework for news recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Deep reinforcement learning for list-wise recommendations"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    }
   ]
 }
