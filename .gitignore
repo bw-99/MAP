@@ -12,3 +12,4 @@ onepiece_rag/*
 !onepiece_rag/prompts
 
 results/*
+ds.py
