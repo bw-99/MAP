@@ -107,7 +107,7 @@ async def workflow(
     )
 
     if interpretation_enabled:
-        log.info("Sentence reconstruction is enabled")
+        log.info("Equation interpretation is enabled")
         output = await interpret_equation(
             output,
             callbacks,
