@@ -27,6 +27,9 @@ from pydantic import validate_call
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.logger.print_progress import PrintProgressLogger
 from graphrag.evaluate.factory import get_evaluate_search_engine
+from util.process_paper.const import PARSED_DIR
+from glob import glob
+from util.fileio import decode_paper_title
 
 from graphrag.query.indexer_adapters import (
     read_indexer_communities,
@@ -39,6 +42,23 @@ if TYPE_CHECKING:
 
 logger = PrintProgressLogger("")
 
+
+@validate_call(config={"arbitrary_types_allowed": True})
+async def evaluate_keyword(
+    config: GraphRagConfig,
+    nodes: pd.DataFrame,
+    entities: pd.DataFrame,
+    communities: pd.DataFrame,
+    community_reports: pd.DataFrame,
+    viztree: pd.DataFrame,
+    response_type: str,
+) -> tuple[str | dict[str, Any] | list[dict[str, Any]], str | list[pd.DataFrame] | dict[str, pd.DataFrame]]:
+    eval_paper_paths = glob(f"{PARSED_DIR}/*.json")
+    eval_paper_titles = [decode_paper_title(Path(paper_path).stem).strip().upper() for paper_path in eval_paper_paths]
+
+    extracted_entities = entities[entities["title"].isin(eval_paper_titles)]
+
+    pass
 
 @validate_call(config={"arbitrary_types_allowed": True})
 async def evaluate_graph(

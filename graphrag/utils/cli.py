@@ -21,7 +21,6 @@ def file_exist(path):
         raise argparse.ArgumentTypeError(msg)
     return path
 
-
 def dir_exist(path):
     """Check for directory existence."""
     if not Path(path).is_dir():
