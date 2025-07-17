@@ -114,7 +114,7 @@ community_reports:
   max_input_length: 8000
 
 viztree:
-  include_concept: false
+  include_concept: true
 
 core_concept_extraction:
   prompt: "prompts/core_concept_extraction.txt"
