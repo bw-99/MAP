@@ -123,5 +123,4 @@ async def evaluate_response(user_input, response, context, config_filepath: Path
         f"Faithfulness: {faithfulness_score}"
     )
 
-
     return evaluation
