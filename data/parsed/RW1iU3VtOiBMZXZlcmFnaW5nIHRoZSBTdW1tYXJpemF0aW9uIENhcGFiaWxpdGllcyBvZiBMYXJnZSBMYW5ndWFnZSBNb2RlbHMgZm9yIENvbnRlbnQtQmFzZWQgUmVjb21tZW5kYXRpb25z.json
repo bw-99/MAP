@@ -158,6 +158,10 @@
     {
       "ref_id": "b33",
       "title": "UNBERT: User-News Matching BERT for News Recommendation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "EmbSum: Leveraging the Summarization Capabilities of Large Language Models for Content-Based Recommendations"
     }
   ]
 }

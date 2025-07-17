@@ -72,86 +72,90 @@
     },
     {
       "ref_id": "b8",
-      "title": "Auction design for roi-constrained buyers"
+      "title": "Dynamic incentive-aware learning: Robust pricing in contextual auctions"
     },
     {
       "ref_id": "b9",
-      "title": "Online page migration with ml advice"
+      "title": "Auction design for roi-constrained buyers"
     },
     {
       "ref_id": "b10",
-      "title": "Estimating the confidence interval for prediction errors of support vector machine classifiers"
+      "title": "Online page migration with ml advice"
     },
     {
       "ref_id": "b11",
-      "title": "Dynamic reserve prices for repeated auctions: Learning from bids"
+      "title": "Estimating the confidence interval for prediction errors of support vector machine classifiers"
     },
     {
       "ref_id": "b12",
-      "title": "Sponsored search auctions"
+      "title": "Dynamic reserve prices for repeated auctions: Learning from bids"
     },
     {
       "ref_id": "b13",
-      "title": "Estimating conversion rate in display advertising from past performance data"
+      "title": "Sponsored search auctions"
     },
     {
       "ref_id": "b14",
-      "title": "Competitive caching with machine learned advice"
+      "title": "Estimating conversion rate in display advertising from past performance data"
     },
     {
       "ref_id": "b15",
-      "title": "Ad click prediction: a view from the trenches"
+      "title": "Competitive caching with machine learned advice"
     },
     {
       "ref_id": "b16",
-      "title": "Auction design in an auto-bidding setting: Randomization improves efficiency beyond vcg"
+      "title": "Ad click prediction: a view from the trenches"
     },
     {
       "ref_id": "b17",
-      "title": "Revenue optimization with approximate bid predictions"
+      "title": "Auction design in an auto-bidding setting: Randomization improves efficiency beyond vcg"
     },
     {
       "ref_id": "b18",
-      "title": "Introductory lectures on convex optimization: A basic course"
+      "title": "Revenue optimization with approximate bid predictions"
     },
     {
       "ref_id": "b19",
-      "title": "A field guide to personalized reserve prices"
+      "title": "Introductory lectures on convex optimization: A basic course"
     },
     {
       "ref_id": "b20",
-      "title": "Optimal auctions with financially constrained buyers"
+      "title": "A field guide to personalized reserve prices"
     },
     {
       "ref_id": "b21",
-      "title": "Predicting clicks: estimating the click-through rate for new ads"
+      "title": "Optimal auctions with financially constrained buyers"
     },
     {
       "ref_id": "b22",
-      "title": "Intrinsic robustness of the price of anarchy"
+      "title": "Predicting clicks: estimating the click-through rate for new ads"
     },
     {
       "ref_id": "b23",
-      "title": "Machine learning approaches for estimation of prediction interval for the model output"
+      "title": "Intrinsic robustness of the price of anarchy"
     },
     {
       "ref_id": "b24",
-      "title": "A predictive model for advertiser value-per-click in sponsored search"
+      "title": "Machine learning approaches for estimation of prediction interval for the model output"
     },
     {
       "ref_id": "b25",
-      "title": "Position auctions"
+      "title": "A predictive model for advertiser value-per-click in sponsored search"
     },
     {
       "ref_id": "b26",
-      "title": "Online algorithms for multi-shop ski rental with machine learned advice"
+      "title": "Position auctions"
     },
     {
       "ref_id": "b27",
-      "title": "Click-through rate prediction in online advertising: A literature review"
+      "title": "Online algorithms for multi-shop ski rental with machine learned advice"
     },
     {
       "ref_id": "b28",
+      "title": "Click-through rate prediction in online advertising: A literature review"
+    },
+    {
+      "ref_id": "b29",
       "title": "An empirical study of reserve price optimisation in real-time bidding"
     }
   ]

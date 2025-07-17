@@ -36,5 +36,171 @@
     "Task Dependence",
     "Hybrid Targets",
     "Recommendation"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Multitask Learning"
+    },
+    {
+      "ref_id": "b2",
+      "title": "A Model-Agnostic Approach to Mitigate Gradient Interference for Multi-Task Learning"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Exploring Logically Dependent Multi-task Learning with Causal Inference"
+    },
+    {
+      "ref_id": "b4",
+      "title": "GradNorm: Gradient Normalization for Adaptive Loss Balancing in Deep Multitask Networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Neural Multi-task Recommendation from Multi-behavior Data"
+    },
+    {
+      "ref_id": "b6",
+      "title": "KuaiRand: An Unbiased Sequential Recommendation Dataset with Randomly Exposed Videos"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Understanding the difficulty of training deep feedforward neural networks"
+    },
+    {
+      "ref_id": "b8",
+      "title": "MetaBalance: Improving Multi-Task Recommendations via Adapting Gradient Magnitudes of Auxiliary Tasks"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Categorical Reparameterization with Gumbel-Softmax"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Adam: A Method for Stochastic Optimization"
+    },
+    {
+      "ref_id": "b11",
+      "title": "AdaTT: Adaptive Task-to-Task Fusion Network for Multitask Learning in Recommendations"
+    },
+    {
+      "ref_id": "b12",
+      "title": "RevMan: Revenue-aware Multi-task Online Insurance Recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A Scale-Invariant Task Balancing Approach for Multi-Task Learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Dual-balancing for multi-task learning"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Tree Based Progressive Regression Model for Watch-Time Prediction in Short-Video Recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Cross-Stitch Networks for Multi-task Learning"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Mobile App Cross-Domain Recommendation with Multi-Graph Neural Network"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Improving Training Stability for Multitask Ranking Models in Recommender Systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Predicting individual retweet behavior by user similarity: A multi-task learning approach"
+    },
+    {
+      "ref_id": "b23",
+      "title": "OptMSM: Optimizing Multi-Scenario Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Task Aware Feature Extraction Framework for Sequential Dependence Multi-Task Learning"
+    },
+    {
+      "ref_id": "b25",
+      "title": "A deep probabilistic model for customer lifetime value prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Multi-Task Deep Recommender Systems: A Survey"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Entire Space Multi-Task Modeling via Post-Click Behavior Decomposition for Conversion Rate Prediction"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Curriculum Modeling the Dependence among Targets with Multi-task Learning for Financial Marketing"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Turning Clicks into Purchases: Revenue Optimization for Product Search in E-Commerce"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Understanding and Improving Information Transfer in Multi-Task Learning"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Modeling the Sequential Dependence among Audience Multistep Conversions with Multi-task Learning in Targeted Display Advertising"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Neural Hierarchical Factorization Machines for User's Event Sequence Analysis"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Learning Reliable User Representations from Volatile and Sparse Data to Accurately Predict Customer Lifetime Value"
+    },
+    {
+      "ref_id": "b34",
+      "title": "AdaTask: A Task-Aware Adaptive Learning Rate Approach to Multi-Task Learning"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Gradient Surgery for Multi-Task Learning"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Deconfounding Duration Bias in Watch-Time Prediction for Video Recommendation"
+    },
+    {
+      "ref_id": "b37",
+      "title": "CTnoCVR: A Novelty Auxiliary Task Making the Lower-CTR-Higher-CVR Upper"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Advances and Challenges of Multi-task Learning Method in Recommender System: A Survey"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Deep Learning Based Recommender System: A Survey and New Perspectives"
+    },
+    {
+      "ref_id": "b40",
+      "title": "DCMT: A Direct Entire-Space Causal Multi-Task Framework for Post-Click Conversion Estimation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Touch the Core: Exploring Task Dependence Among Hybrid Targets for Recommendation"
+    }
   ]
 }

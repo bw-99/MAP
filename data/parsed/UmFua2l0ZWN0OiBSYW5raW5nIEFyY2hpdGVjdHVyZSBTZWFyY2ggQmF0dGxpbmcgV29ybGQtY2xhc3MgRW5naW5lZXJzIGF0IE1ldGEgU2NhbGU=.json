@@ -99,23 +99,23 @@
       "title": "Hyperscale Hardware Optimized Neural Architecture Search"
     },
     {
-      "ref_id": "b20",
+      "ref_id": "b42",
       "title": "NASRec: weight sharing neural architecture search for recommender systems"
     },
     {
-      "ref_id": "b21",
+      "ref_id": "b43",
       "title": "DistDNAS: Search Efficient Feature Interactions within 2 Hours"
     },
     {
-      "ref_id": "b22",
+      "ref_id": "b44",
       "title": "Autoemb: Automated embedding dimensionality search in streaming recommendations"
     },
     {
-      "ref_id": "b23",
+      "ref_id": "b45",
       "title": "Neural architecture search with reinforcement learning"
     },
     {
-      "ref_id": "b24",
+      "ref_id": "b46",
       "title": "Learning transferable architectures for scalable image recognition"
     }
   ]

@@ -32,5 +32,195 @@
     "Click bias",
     "Outliers",
     "Counterfactual learning to rank"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Controlling Popularity Bias in Learning-to-rank Recommendation"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Addressing Trust Bias for Unbiased Learning-to-rank"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Estimating Position Bias without Intrusive Interventions"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Is Font Size a Big Deal? A Transaction-Acquisition Utility Perspective on Comparative Price Promotions"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Diversifying Search Results"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Unbiased Learning to Rank with Unbiased Propensity Estimation"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Unbiased Learning to Rank: Online or Offline?"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Internal, External, and Ecological Validity in Research Design, Conduct, and Evaluation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Equity of Attention: Amortizing Individual Fairness in Rankings"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Yahoo! Learning to Rank Challenge Overview"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Correcting for Recency Bias in Job Recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Click Models for Web Search"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Intervention Harvesting for Context-dependent Examination-bias Estimation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Fairness of Exposure in Light of Incomplete Exposure Estimation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "To Model or to Intervene: A Comparison of Counterfactual and Online Learning to Rank from User Interactions"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Ranking Outliers Using Symmetric Neighborhood Relationship"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Accurately Interpreting Clickthrough Data as Implicit Feedback"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Evaluating the Accuracy of Implicit Feedback from Clicks and Query Reformulations in Web Search"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Unbiased Learning-to-rank with Biased Feedback"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Effects of Cue Congruence and Perceived Cue Authenticity in Online Group Buying"
+    },
+    {
+      "ref_id": "b21",
+      "title": "The Concept of Ecological Validity: What Are Its Limitations and Is It Bad to Be Invalid?"
+    },
+    {
+      "ref_id": "b22",
+      "title": "COPOD: Copula-based Outlier Detection"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Whole Page Optimization: How Page Elements Interact with the Position Auction"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Controlling Fairness and Bias in Dynamic Learning-to-rank"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Differentiable Unbiased Online Learning to Rank"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Policy-aware Unbiased Learning to Rank for Top-k Rankings"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Correcting for Selection Bias in Learning-to-rank Systems"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Context-Aware Learning to Rank with Self-Attention"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Data Annotation"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Introducing LETOR 4.0 datasets"
+    },
+    {
+      "ref_id": "b31",
+      "title": "XM"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Efficient Algorithms for Mining Outliers from Large Data Sets"
+    },
+    {
+      "ref_id": "b33",
+      "title": "A Fast Algorithm for the Minimum Covariance Determinant Estimator"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Understanding and Mitigating the Effect of Outliers in Fair Ranking"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Estimating the Support of a High-dimensional Distribution"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Fairness of Exposure in Rankings"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Mixture-Based Correction for Position and Trust Bias in Counterfactual Learning to Rank"
+    },
+    {
+      "ref_id": "b38",
+      "title": "When Inverse Propensity Scoring does not Work: Affine Corrections for Unbiased Learning to Rank"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Probabilistic Permutation Graph Search: Black-Box Optimization for Fairness in Ranking"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Progress in Outlier Detection Techniques: A Survey"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Efficient Exploration of Gradient Space for Online Learning to Rank"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Learning to Rank with Selection Bias in Personal Search"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Position Bias Estimation for Unbiased Learning to Rank in Personal Search"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Unbiased learning to rank in feeds recommendation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Interactively Optimizing Information Retrieval Systems as A Dueling Bandits Problem"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Beyond Position Bias: Examining Result Attractiveness as a Source of Presentation Bias in Clickthrough Data"
+    },
+    {
+      "ref_id": "b47",
+      "title": "LSCP: Locally Selective Combination in Parallel Outlier Ensembles"
+    }
   ]
 }

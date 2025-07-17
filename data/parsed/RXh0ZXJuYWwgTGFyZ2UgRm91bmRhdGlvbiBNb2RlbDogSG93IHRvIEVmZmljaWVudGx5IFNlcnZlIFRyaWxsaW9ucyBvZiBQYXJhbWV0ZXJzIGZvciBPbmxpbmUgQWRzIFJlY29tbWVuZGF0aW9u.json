@@ -28,5 +28,63 @@
   "A.1 Details of models and training configurations": "We use the BARS benchmark Zhu et al. (2022) and the FuxiCTR Zhu et al. (2021) to implement all the public models. We follow the default training and model configurations (e.g., learning rate, training epoch, etc.) in BARS for each public dataset and model used for experiments.",
   "A.2 Proof of Theorem 3.1": "We consider a linear model to prove Theorem 3.1 by construction. Let x ∈ R D , where D denotes the input dimension. x will be first linearly mapped to a vector of d ≪ D dimension by a matrix Z ∈ R d × D . We assume that the ground-truth label y is given by y = u ⊤ 1 Zx , where u 1 ∈ R d . For convenience of discussion, let's assume that we have d -1 teacher models: for an input x , they output d -1 soft labels as w ⊤ k Zx,k = 2 , . . . , d . For simplicity, we assume that w k = u 1 + µu k , k ∈ [ d ] , with µ > 0 being a small weight and u 1 , . . . , u d form an orthonormal basis for the space of R d . Proof. Let ( α 1 , . . . , α d ) ∈ ∆ d be the weights to linearly combine the ground-truth labels with teacher labels, where ∆ is a simplex in R d . For a given input x , its smoothed label is ˜ y ( x ) = ( u 1 + µ ∑ d k =2 α k u k ) ⊤ Zx . We fit ˜ y ( x ) by a two-layer linear model, i.e., min v ∈ R d ,H ∈ R d × D 1 T ∑ T t =1 ∣ ∣ v ⊤ Hx t -˜ y ( x t ) ∣ ∣ 2 , where T denotes the number of training samples. According to the theory of deep linear model Bartlett et al. (2018), the resulting model, trained by gradient descent, will be able to find a solution with zero loss, i.e., H ⊤ v = Z ⊤ ( u 1 + µ ∑ d k =2 α k u k ) , if E [ xx ⊤ ] is non-singular, and we have enough number of training examples. The linear prediction model H ⊤ v is different from Z ⊤ u 1 , and the difference between the two linear prediction models arises from the bias introduced by the label-smoothing. Now we denote w 1 t , t = 1 , . . . , T the solution for the prediction head for the ground-truth labels evolving over time (i.e., each training sample), and by w k t , k = 2 , . . . the dynamic solutions for the d -1 teacher labels. By the gradient descent method, we have  By assuming x t ∼ N (0 , I ) , E t [ Z t +1 ] = ( I -2 η ∑ d k =1 w k t [ w k t ] ⊤ ) Z t +2 η ∑ d k =1 w k t w ⊤ k Z . As w k t is updated much more frequently than Z t , we have  implying that when Z t is close to Z , we will have all w k t being close to w t . As a result, we have  where A = ∑ d k =1 w k w ⊤ k is a full rank matrix, indicating that Z t will converge to Z and thus all w k t will converge to w k . This result indicates that by using auxiliary heads, we will guarantee to find the optimal solution w 1 and Z for predicting the ground-truth labels. 17",
   "A.3 Proof of Theorem 3.2": "We consider the standard regression problem for analysis. Let { x i ∈ R d , i = 1 , . . . , N } be the input sampled from a normal distribution N (0 , I ) . Let the observed output y i = x ⊤ i ( w + z i ) , where w is the underlying regression model and z i ∼ N ( 0 , γ 2 I ) is an independently sampled vector from a normal distribution that leads to the noise in the observed output value y i . In this study, we assume γ ≫ 1 . If we learn a regression model directly from the training data, the resulting solution w 1 is given by  Based on the Matrix Chernoff bound, with probability 1 -δ , we have ∣ ∣ ∣ 1 N ∑ N i =1 x i x ⊤ i -I ∣ ∣ ∣ 2 ≤ O (√ d N log 1 δ ) ,   implying that to achieve a recovery error ϵ , we need at least Ω ( γ 2 d ε 2 log 1 δ ) number of training samples. Now we provide the complete proof. Proof. As the teacher model will be equipped with the student adapter, i.e., an MLP, to adapt its prediction, we assume the teacher model is parameterized as ̂ y = ̂ w ⊤ x + u ⊤ Hx , where H ∈ R s × d is a given orthonormal matrix (i.e., H i, ∗ H ⊤ j, ∗ = δ i,j , ∀ i, j ∈ [ s ] ) with s ≪ d . For simplicity, we assume that w -̂ w lies in the subspace spanned by the row vectors of H , i.e., w -̂ w = P H ( w -̂ w ) , where P H = ∑ s i =1 H ⊤ i, ∗ H i, ∗ is a projection matrix. The overall objective function is given by  where sg denotes the stop gradient. We first examine the convergence of u , whose expression is given as follows  Following the standard concentration inequality, with a probability 1 -δ , we have | v | ≤ O ( γ √ s N log 1 δ ) . Thus ∣ ∣ H ⊤ u -( w -̂ w ) ∣ ∣ 2 ≤ O ( γ √ s N log 1 δ ) . Using the result of u , we obtain the optimal solution as w V = w + α ( ̂ w + H ⊤ u -w ) 1+ α + 1 1+ α ( ∑ N i =1 x i x ⊤ i ) -1 ∑ N i =1 x i x ⊤ i z i . Following the matrix Bernstein inequality, with an appropriate choice of α , we have, with a probability 1 -δ ,  Compared to the bound for the standard regression model, i.e., | w 1 -w | 2 , the bound is reduced by the factor ( d/s ) 1 / 4 . 18",
-  "keywords_parsed": []
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gpt-4 technical report"
+    },
+    {
+      "ref_id": "b2",
+      "title": "On the factory floor: Ml engineering for industrial-scale ads recommendation models"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Zookeeper"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Gradient descent with identity initialization efficiently learns positive definite linear transformations by deep residual networks"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Unbiased knowledge distillation for recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Scaling laws for dense retrieval"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Knowledge distillation: A survey"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Deepfm: a factorization-machine based neural network for ctr prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Practical lessons from predicting clicks on ads at facebook"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Distilling the knowledge in a neural network"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Item-side ranking regularized distillation for recommender system"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Distillation from heterogeneous models for top-k recommendation"
+    }
+  ]
 }

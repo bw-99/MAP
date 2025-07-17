@@ -161,7 +161,7 @@
     },
     {
       "ref_id": "b32",
-      "title": "AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks"
+      "title": "AutoInt: Automatic Feature Interaction Learning via SelfAttentive Neural Networks"
     },
     {
       "ref_id": "b33",
@@ -176,7 +176,7 @@
       "title": "Enhancing CTR Prediction with Context-Aware Feature Representation Learning"
     },
     {
-      "ref_id": "b44",
+      "ref_id": "b36",
       "title": "Neural Architecture Search with Reinforcement Learning"
     }
   ]

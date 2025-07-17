@@ -100,7 +100,7 @@
     },
     {
       "ref_id": "b17",
-      "title": "𝜋 -net: A parallel information-sharing network for shared-account crossdomain sequential recommendations"
+      "title": "𝜋-net: A parallel information-sharing network for shared-account cross-domain sequential recommendations"
     },
     {
       "ref_id": "b18",
@@ -160,7 +160,7 @@
     },
     {
       "ref_id": "b32",
-      "title": "Feature-level Deeper SelfAttention Network for Sequential Recommendation"
+      "title": "Feature-level Deeper Self-Attention Network for Sequential Recommendation"
     },
     {
       "ref_id": "b33",
@@ -172,7 +172,7 @@
     },
     {
       "ref_id": "b35",
-      "title": "recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms"
+      "title": "Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms"
     },
     {
       "ref_id": "b36",

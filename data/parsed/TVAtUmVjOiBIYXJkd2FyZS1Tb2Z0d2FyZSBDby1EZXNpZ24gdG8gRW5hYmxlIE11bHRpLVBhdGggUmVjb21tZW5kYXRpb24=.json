@@ -112,10 +112,6 @@
       "title": "Training recommender systems at scale: Communication-efficient model and data parallelism"
     },
     {
-      "ref_id": "b30",
-      "title": "Recnmp: Accelerating personalized recommendation with near-memory processing"
-    },
-    {
       "ref_id": "b31",
       "title": "Hercules: Heterogeneity-aware inference serving for at-scale personalized recommendation"
     },

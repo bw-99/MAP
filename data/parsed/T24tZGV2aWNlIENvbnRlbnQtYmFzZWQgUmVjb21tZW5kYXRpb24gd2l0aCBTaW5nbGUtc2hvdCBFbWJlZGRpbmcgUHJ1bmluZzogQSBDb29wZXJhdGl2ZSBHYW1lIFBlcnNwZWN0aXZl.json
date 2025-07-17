@@ -84,7 +84,7 @@
     },
     {
       "ref_id": "b11",
-      "title": "Improving kernels shap: Practical shapley value estimation via linear regression"
+      "title": "Improving kernelshap: Practical shapley value estimation via linear regression"
     },
     {
       "ref_id": "b12",
@@ -148,7 +148,7 @@
     },
     {
       "ref_id": "b27",
-      "title": "AdaEmbed: Adaptive Embedding for Large-Scale Recommendation Models"
+      "title": "{AdaEmbed}: Adaptive Embedding for {Large-Scale} Recommendation Models"
     },
     {
       "ref_id": "b28",
@@ -244,7 +244,7 @@
     },
     {
       "ref_id": "b52",
-      "title": "Compositional Embeddings Using Complementary Partitions for Memory Efficient Recommendation Systems"
+      "title": "Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems"
     },
     {
       "ref_id": "b53",
@@ -264,7 +264,7 @@
     },
     {
       "ref_id": "b57",
-      "title": "DCN v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+      "title": "DCN V2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
     },
     {
       "ref_id": "b58",

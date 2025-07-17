@@ -336,7 +336,7 @@
     },
     {
       "ref_id": "b75",
-      "title": "ica-proto: Iterative cross alignment prototypical network for incremental few-shot relation classification"
+      "title": "Ica-proto: Iterative cross alignment prototypical network for incremental few-shot relation classification"
     },
     {
       "ref_id": "b76",
@@ -420,7 +420,7 @@
     },
     {
       "ref_id": "b96",
-      "title": "Plug-and-Play Adaptation for Continuouslyupdated QA"
+      "title": "Plug-and-Play Adaptation for Continuously-updated QA"
     },
     {
       "ref_id": "b97",
@@ -675,40 +675,12 @@
       "title": "Incremental Sequence Labeling: A Tale of Two Shifts"
     },
     {
-      "ref_id": "b266",
-      "title": "Distilling Causal Effect from Miscellaneous Other-Class for Continual Named Entity Recognition"
+      "ref_id": "b160",
+      "title": "Task-Incremental Learning from Data with Multiple Sources"
     },
     {
-      "ref_id": "b267",
-      "title": "Beyond Anti-Forgetting: Multimodal Continual Instruction Tuning with Positive Forward Transfer"
-    },
-    {
-      "ref_id": "b268",
-      "title": "Preserving Commonsense Knowledge from Pre-trained Language Models via Causal Inference"
-    },
-    {
-      "ref_id": "b269",
-      "title": "Learn or Recall? Revisiting Incremental Learning with Pre-trained Language Models"
-    },
-    {
-      "ref_id": "b270",
-      "title": "Concept-1K: A Novel Benchmark for Instance Incremental Learning"
-    },
-    {
-      "ref_id": "b271",
-      "title": "Balancing the Causal Effects in Class-Incremental Learning"
-    },
-    {
-      "ref_id": "b272",
-      "title": "Continual Learning with Pre-Trained Models: A Survey"
-    },
-    {
-      "ref_id": "b273",
-      "title": "Continual Prompt Tuning for Dialog State Tracking"
-    },
-    {
-      "ref_id": "b274",
-      "title": "Parameterefficient Continual Learning Framework in Industrial Real-time Text Classification System"
+      "ref_id": "b161",
+      "title": "A Hybrid Approach for Recurrent Neural Networks in Spoken Language Processing"
     }
   ]
 }

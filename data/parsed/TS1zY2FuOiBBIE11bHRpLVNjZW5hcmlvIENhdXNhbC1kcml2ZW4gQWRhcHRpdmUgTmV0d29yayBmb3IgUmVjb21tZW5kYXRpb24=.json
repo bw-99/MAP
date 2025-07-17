@@ -36,5 +36,215 @@
     "Multi-scenario Recommendation",
     "Causal Inference",
     "Counterfactual"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Unifying collaborative and contentbased filtering"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Cross-domain recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Multitask learning: A knowledge-based source of inductive bias1"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Bias and debias in recommender system: A survey and future directions"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Sequential scenario-specific meta learner for online recommendation"
+    },
+    {
+      "ref_id": "b9",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Addressing confounding feature issue for causal recommendation"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Local and global information fusion for top-n recommendation in heterogeneous information network"
+    },
+    {
+      "ref_id": "b13",
+      "title": "A time-aware and data sparsity tolerant approach for web service recommendation"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Neural attentive session-based recommendation"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Causal inference for recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "ClickPrompt: CTR Models are Strong Prompt Generators for Adapting Language Models to CTR Prediction"
+    },
+    {
+      "ref_id": "b18",
+      "title": "How Can Recommender Systems Benefit from Large Language Models: A Survey"
+    },
+    {
+      "ref_id": "b19",
+      "title": "MAP: A Model-agnostic Pretraining Framework for Click-through Rate Prediction"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Hierarchical question-image co-attention for visual question answering"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Entire space multi-task model: An effective approach for estimating post-click conversion rate"
+    },
+    {
+      "ref_id": "b23",
+      "title": "A framework for collaborative, content-based and demographic filtering"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Causality"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b26",
+      "title": "User behavior retrieval for click-through rate prediction"
+    },
+    {
+      "ref_id": "b27",
+      "title": "RankFlow: Joint Optimization of Multi-Stage Cascade Ranking Systems as Flows"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Learning to Distinguish Multi-User Coupling Behaviors for TV Recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Recommender systems"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Item-based collaborative filtering recommendation algorithms"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Collaborative filtering recommender systems"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Methods and metrics for cold-start recommendations"
+    },
+    {
+      "ref_id": "b33",
+      "title": "Recommendations as treatments: Debiasing learning and evaluation"
+    },
+    {
+      "ref_id": "b34",
+      "title": "SAR-Net: A scenario-aware ranking network for personalized fair recommendation in hundreds of travel scenarios"
+    },
+    {
+      "ref_id": "b35",
+      "title": "One model to serve all: Star topology adaptive recommender for multi-domain ctr prediction"
+    },
+    {
+      "ref_id": "b36",
+      "title": "A survey of collaborative filtering techniques"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Progressive layered extraction (ple): A novel multi-task learning (mtl) model for personalized recommendations"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Survey on collaborative filtering, content-based filtering and hybrid recommendation system"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Using content-based filtering for recommendation"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Sequential recommender systems: challenges, progress and prospects"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Clicks can be cheating: Counterfactual recommendation for mitigating clickbait issue"
+    },
+    {
+      "ref_id": "b43",
+      "title": "CausalInt: Causal Inspired Intervention for Multi-Scenario Recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "APractical Incremental Method to Train Deep CTR Models"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Model-agnostic counterfactual reasoning for eliminating popularity bias in recommender system"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Modeling the sequential dependence among audience multistep conversions with multi-task learning in targeted display advertising"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Leaving no one behind: A multi-scenario multi-task meta learning approach for advertiser modeling"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Counterfactual reward modification for streaming recommendation with delayed feedback"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Causal intervention for leveraging popularity bias in recommendation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Deep interest evolution network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Automatic Expert Selection for Multi-Scenario and Multi-Task Search"
+    }
   ]
 }

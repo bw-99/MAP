@@ -85,11 +85,11 @@
     },
     {
       "ref_id": "b10",
-      "title": "Infogcn: Representation learning for human skeletonbased action recognition"
+      "title": "Infogcn: Representation learning for human skeleton-based action recognition"
     },
     {
       "ref_id": "b11",
-      "title": "Mixformer: Endto-end tracking with iterative mixed attention"
+      "title": "Mixformer: End-to-end tracking with iterative mixed attention"
     },
     {
       "ref_id": "b12",
@@ -141,7 +141,7 @@
     },
     {
       "ref_id": "b64",
-      "title": "Neural Koopman pooling: Controlinspired temporal dynamics encoding for skeleton-based action recognition"
+      "title": "Neural Koopman pooling: Control-inspired temporal dynamics encoding for skeleton-based action recognition"
     }
   ]
 }

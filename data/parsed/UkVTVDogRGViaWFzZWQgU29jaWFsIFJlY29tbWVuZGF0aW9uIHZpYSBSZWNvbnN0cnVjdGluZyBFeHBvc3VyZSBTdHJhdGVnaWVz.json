@@ -224,7 +224,7 @@
     },
     {
       "ref_id": "b48",
-      "title": "Bpr: Bayesian personalized ranking from implicit feedback"
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
     },
     {
       "ref_id": "b49",
@@ -232,7 +232,7 @@
     },
     {
       "ref_id": "b50",
-      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+      "title": "LightGCN: Simplifying and powering graph convolution network for recommendation"
     },
     {
       "ref_id": "b51",
@@ -240,7 +240,7 @@
     },
     {
       "ref_id": "b52",
-      "title": "Recvae: A new variational autoencoder for top-n recommendations with implicit feedback"
+      "title": "RecVAE: A new variational autoencoder for top-n recommendations with implicit feedback"
     }
   ]
 }

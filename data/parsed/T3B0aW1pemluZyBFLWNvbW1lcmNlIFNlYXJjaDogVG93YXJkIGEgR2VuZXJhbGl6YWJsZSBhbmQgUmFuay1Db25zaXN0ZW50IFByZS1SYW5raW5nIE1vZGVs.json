@@ -40,7 +40,7 @@
     },
     {
       "ref_id": "b4",
-      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-of-experts"
     },
     {
       "ref_id": "b5",
@@ -100,7 +100,7 @@
     },
     {
       "ref_id": "b19",
-      "title": "Learning to warm up cold item embeddings for coldstart recommendation with meta scaling and shifting networks"
+      "title": "Learning to warm up cold item embeddings for cold-start recommendation with meta scaling and shifting networks"
     }
   ]
 }

@@ -36,84 +36,84 @@
       "title": "DAGCN: dual attention graph convolutional networks"
     },
     {
-      "ref_id": "b2",
-      "title": "Neural feature-aware recommendation with signed hypergraph convolutional network"
-    },
-    {
       "ref_id": "b3",
       "title": "Scenario-aware and Mutual-based approach for Multi-scenario Recommendation in E-Commerce"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Neural feature-aware recommendation with signed hypergraph convolutional network"
     },
     {
       "ref_id": "b4",
       "title": "You are AllSet: AMultiset Function Framework for Hypergraph Neural Networks"
     },
     {
-      "ref_id": "b5",
-      "title": "Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce"
-    },
-    {
       "ref_id": "b6",
       "title": "Inductive representation learning on large graphs"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce"
     },
     {
       "ref_id": "b7",
       "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
     },
     {
-      "ref_id": "b8",
-      "title": "UniGNN: a Unified Framework for Graph and Hypergraph Neural Networks"
-    },
-    {
       "ref_id": "b9",
       "title": "Dual channel hypergraph collaborative filtering"
+    },
+    {
+      "ref_id": "b8",
+      "title": "UniGNN: a Unified Framework for Graph and Hypergraph Neural Networks"
     },
     {
       "ref_id": "b10",
       "title": "Multibehavior recommendation with graph convolutional networks"
     },
     {
-      "ref_id": "b11",
-      "title": "Adam: A method for stochastic optimization"
-    },
-    {
       "ref_id": "b12",
       "title": "Semi-supervised classification with graph convolutional networks"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Adam: A method for stochastic optimization"
     },
     {
       "ref_id": "b13",
       "title": "Cross Domain Recommendation via Bi-Directional Transfer Graph Collaborative Filtering Networks"
     },
     {
-      "ref_id": "b14",
-      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
+      "ref_id": "b15",
+      "title": "Your Tweets Reveal What You Like: Introducing Cross-media Content Information into Multi-domain Recommendation"
     },
     {
-      "ref_id": "b15",
-      "title": "Your Tweets Reveal What You Like: Introducing Cross-media Content Information into Multi-domain Recommendation."
+      "ref_id": "b14",
+      "title": "Modeling task relationships in multi-task learning with multi-gate mixture-ofexperts"
     },
     {
       "ref_id": "b16",
       "title": "Justifying recommendations using distantly-labeled reviews and fine-grained aspects"
     },
     {
-      "ref_id": "b17",
-      "title": "Representation learning with contrastive predictive coding"
-    },
-    {
       "ref_id": "b18",
       "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Representation learning with contrastive predictive coding"
     },
     {
       "ref_id": "b19",
       "title": "Dual Autoencoder Network with Swap Reconstruction for Cold-Start Recommendation"
     },
     {
-      "ref_id": "b20",
-      "title": "Pretraining Graph Neural Network for Cross Domain Recommendation"
-    },
-    {
       "ref_id": "b21",
       "title": "Next-item recommendation with sequential hypergraphs"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Pretraining Graph Neural Network for Cross Domain Recommendation"
     },
     {
       "ref_id": "b22",
@@ -124,40 +124,40 @@
       "title": "Self-supervised hypergraph convolutional networks for sessionbased recommendation"
     },
     {
-      "ref_id": "b24",
-      "title": "Internal and Contextual Attention Network for Cold-start Multi-channel Matching in Recommendation."
-    },
-    {
       "ref_id": "b25",
       "title": "Do transformers really perform badly for graph representation?"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Internal and Contextual Attention Network for Cold-start Multi-channel Matching in Recommendation"
     },
     {
       "ref_id": "b26",
       "title": "Graph convolutional neural networks for web-scale recommender systems"
     },
     {
-      "ref_id": "b27",
-      "title": "Self-supervised multi-channel hypergraph convolutional network for social recommendation"
-    },
-    {
       "ref_id": "b28",
       "title": "Double-Scale Self-Supervised Hypergraph Learning for Group Recommendation"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Self-supervised multi-channel hypergraph convolutional network for social recommendation"
     },
     {
       "ref_id": "b29",
       "title": "Multiplex Graph Neural Networks for Multi-Behavior Recommendation"
     },
     {
-      "ref_id": "b30",
-      "title": "Multi-domain collaborative filtering"
-    },
-    {
       "ref_id": "b31",
       "title": "Cross-Domain Recommendation via Preference Propagation GraphNet"
     },
     {
+      "ref_id": "b30",
+      "title": "Multi-domain collaborative filtering"
+    },
+    {
       "ref_id": "b32",
-      "title": "A Graphical and Attentional Framework for Dual-Target Cross-Domain Recommendation."
+      "title": "A Graphical and Attentional Framework for Dual-Target Cross-Domain Recommendation"
     }
   ]
 }

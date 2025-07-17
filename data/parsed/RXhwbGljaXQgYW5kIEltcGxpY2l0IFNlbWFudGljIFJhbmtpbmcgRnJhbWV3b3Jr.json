@@ -50,7 +50,7 @@
     },
     {
       "ref_id": "b6",
-      "title": "Generating Medical Reports from PatientDoctor Conversations Using Sequence-to-Sequence Models"
+      "title": "Generating Medical Reports from Patient-Doctor Conversations Using Sequence-to-Sequence Models"
     },
     {
       "ref_id": "b7",
@@ -74,7 +74,7 @@
     },
     {
       "ref_id": "b12",
-      "title": "Dense passage retrieval for opendomain question answering"
+      "title": "Dense passage retrieval for open-domain question answering"
     },
     {
       "ref_id": "b13",

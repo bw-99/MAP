@@ -28,12 +28,12 @@
       "title": "Create, store, and share features with Amazon SageMaker Feature Store"
     },
     {
-      "ref_id": "b3",
-      "title": "Robin hood hashing"
-    },
-    {
       "ref_id": "b2",
       "title": "Open-sourcing F14 for faster, more memoryefficient hash tables"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Robin hood hashing"
     },
     {
       "ref_id": "b4",
@@ -44,72 +44,72 @@
       "title": "Palette Meta Store Journey"
     },
     {
-      "ref_id": "b7",
-      "title": "The YouTube video recommendation system"
-    },
-    {
       "ref_id": "b6",
       "title": "Deep neural networks for youtube recommendations"
+    },
+    {
+      "ref_id": "b7",
+      "title": "The YouTube video recommendation system"
     },
     {
       "ref_id": "b8",
       "title": "FlashStore: High throughput persistent key-value store"
     },
     {
-      "ref_id": "b10",
-      "title": "etcd"
-    },
-    {
       "ref_id": "b9",
       "title": "Rocksdb: Evolution of development priorities in a key-value store serving large-scale applications"
+    },
+    {
+      "ref_id": "b10",
+      "title": "etcd"
     },
     {
       "ref_id": "b11",
       "title": "RocksDB"
     },
     {
-      "ref_id": "b13",
+      "ref_id": "b12",
       "title": "LevelDB"
     },
     {
-      "ref_id": "b12",
-      "title": "Interleaved multivectorizing"
+      "ref_id": "b13",
+      "title": "LevelDB"
     },
     {
       "ref_id": "b14",
       "title": "Abseil"
     },
     {
-      "ref_id": "b16",
-      "title": "The architectural implications of facebook's dnn-based personalized recommendation"
-    },
-    {
       "ref_id": "b15",
       "title": "Mesa: Georeplicated, near real-time, scalable data warehousing"
+    },
+    {
+      "ref_id": "b16",
+      "title": "The architectural implications of facebook's dnn-based personalized recommendation"
     },
     {
       "ref_id": "b17",
       "title": "Hopscotch hashing"
     },
     {
-      "ref_id": "b19",
-      "title": "Asynchronous memory access chaining"
-    },
-    {
       "ref_id": "b18",
       "title": "F2: Designing a Key-Value Store for Large Skewed Workloads"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Asynchronous memory access chaining"
     },
     {
       "ref_id": "b20",
       "title": "EVStore: Storage and Caching Capabilities for Scaling Embedding Tables in Deep Recommendation Systems"
     },
     {
-      "ref_id": "b22",
-      "title": "Parameter server for distributed machine learning"
-    },
-    {
       "ref_id": "b21",
       "title": "Scaling distributed machine learning with the parameter server"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Parameter server for distributed machine learning"
     },
     {
       "ref_id": "b23",

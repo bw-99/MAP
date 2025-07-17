@@ -117,10 +117,6 @@
       "title": "Uncovering ChatGPT's Capabilities in Recommender Systems"
     },
     {
-      "ref_id": "b17",
-      "title": "An adversarial imitation"
-    },
-    {
       "ref_id": "b67",
       "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
     },
@@ -202,7 +198,7 @@
     },
     {
       "ref_id": "b87",
-      "title": "CFM: Convolutional Factorization Machines for Context-Aware Recommendation."
+      "title": "CFM: Convolutional Factorization Machines for Context-Aware Recommendation"
     },
     {
       "ref_id": "b88",
@@ -226,7 +222,7 @@
     },
     {
       "ref_id": "b93",
-      "title": "Memory-augmented llm personalization with short-and long-term memory coordination"
+      "title": "Memoryaugmented llm personalization with short-and long-term memory coordination"
     },
     {
       "ref_id": "b94",

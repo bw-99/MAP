@@ -90,7 +90,7 @@
     },
     {
       "ref_id": "b12",
-      "title": "Structureaware transformer for graph representation learning"
+      "title": "Structure-aware transformer for graph representation learning"
     },
     {
       "ref_id": "b13",
@@ -238,7 +238,7 @@
     },
     {
       "ref_id": "b87",
-      "title": "Fnng: A high-performance fpgabased accelerator for k-nearest neighbor graph construction"
+      "title": "Fnng: A high-performance fpga-based accelerator for k-nearest neighbor graph construction"
     },
     {
       "ref_id": "b88",
@@ -270,7 +270,7 @@
     },
     {
       "ref_id": "b95",
-      "title": "A weighted patient networkbased framework for predicting chronic diseases using graph neural networks"
+      "title": "A weighted patient network-based framework for predicting chronic diseases using graph neural networks"
     },
     {
       "ref_id": "b96",
@@ -302,7 +302,7 @@
     },
     {
       "ref_id": "b103",
-      "title": "STUNT: Few-shot tabular learning with selfgenerated tasks from unlabeled tables"
+      "title": "STUNT: Few-shot tabular learning with self-generated tasks from unlabeled tables"
     },
     {
       "ref_id": "b104",
@@ -342,7 +342,7 @@
     },
     {
       "ref_id": "b113",
-      "title": "On proximity and structural rolebased embeddings in networks: Misconceptions, techniques, and applications"
+      "title": "On proximity and structural role-based embeddings in networks: Misconceptions, techniques, and applications"
     },
     {
       "ref_id": "b114",
@@ -406,7 +406,7 @@
     },
     {
       "ref_id": "b129",
-      "title": "NBDT : Neural-backed decision tree"
+      "title": "{ NBDT } : Neural-backed decision tree"
     },
     {
       "ref_id": "b130",

@@ -29,7 +29,7 @@
     },
     {
       "ref_id": "b2",
-      "title": "Temporalcontextual recommendation in real-time"
+      "title": "Temporal-contextual recommendation in real-time"
     },
     {
       "ref_id": "b3",
@@ -49,7 +49,7 @@
     },
     {
       "ref_id": "b7",
-      "title": "Posttraining 4-bit quantization on embedding tables"
+      "title": "Post-training 4-bit quantization on embedding tables"
     },
     {
       "ref_id": "b8",

@@ -110,7 +110,7 @@
     },
     {
       "ref_id": "b17",
-      "title": "Sequential modelbased optimization for general algorithm configuration"
+      "title": "Sequential model-based optimization for general algorithm configuration"
     },
     {
       "ref_id": "b18",
@@ -247,10 +247,6 @@
     {
       "ref_id": "b51",
       "title": "Neural architecture search with reinforcement learning"
-    },
-    {
-      "ref_id": "b52",
-      "title": "Efficient and Joint Hyperparameter and Architecture Search for Collaborative Filtering"
     }
   ]
 }

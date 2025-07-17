@@ -78,7 +78,7 @@
     },
     {
       "ref_id": "b11",
-      "title": "Beyond NDCG: Behavioral Testing of Recommender Systems with RecList (WWW'22 Companion)"
+      "title": "Beyond NDCG: Behavioral Testing of Recommender Systems with RecList"
     },
     {
       "ref_id": "b12",
@@ -126,7 +126,7 @@
     },
     {
       "ref_id": "b23",
-      "title": "Automatic feature interaction learning via self-attentive neural networks"
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
     },
     {
       "ref_id": "b24",
@@ -182,7 +182,7 @@
     },
     {
       "ref_id": "b37",
-      "title": "DCN V2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
+      "title": "DCN v2: Improved deep & cross network and practical lessons for web-scale learning to rank systems"
     },
     {
       "ref_id": "b38",

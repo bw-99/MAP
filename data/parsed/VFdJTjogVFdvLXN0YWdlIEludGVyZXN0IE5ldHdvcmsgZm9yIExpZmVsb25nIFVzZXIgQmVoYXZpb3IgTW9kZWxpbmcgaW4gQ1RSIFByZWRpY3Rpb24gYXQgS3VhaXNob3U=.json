@@ -44,7 +44,7 @@
     },
     {
       "ref_id": "b3",
-      "title": "End-to-End User Behavior Retrieval in Click-Through Rate Prediction Model"
+      "title": "End-to-End User Behavior Retrieval in Click-Through RatePrediction Model"
     },
     {
       "ref_id": "b4",
@@ -80,7 +80,7 @@
     },
     {
       "ref_id": "b12",
-      "title": "Field-aware factorization machines for CTR prediction"
+      "title": "Fieldaware factorization machines for CTR prediction"
     },
     {
       "ref_id": "b13",
@@ -160,7 +160,7 @@
     },
     {
       "ref_id": "b32",
-      "title": "Field-aware neural factorization machine for click-through rate prediction"
+      "title": "Fieldaware neural factorization machine for click-through rate prediction"
     },
     {
       "ref_id": "b33",

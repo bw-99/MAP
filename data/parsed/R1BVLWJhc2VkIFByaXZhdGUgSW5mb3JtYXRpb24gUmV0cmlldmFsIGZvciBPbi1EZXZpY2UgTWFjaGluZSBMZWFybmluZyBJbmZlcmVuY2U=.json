@@ -35,323 +35,319 @@
   "references_parsed": [
     {
       "ref_id": "b1",
-      "title": "4G network throughput."
+      "title": "4G network throughput"
     },
     {
       "ref_id": "b2",
-      "title": "FAB: An FPGA-based accelerator for bootstrappable fully homomorphic encryption."
+      "title": "FAB: An FPGA-based accelerator for bootstrappable fully homomorphic encryption"
     },
     {
       "ref_id": "b3",
-      "title": "Addra: Metadata-private voice communication over fully untrusted infrastructure."
+      "title": "Addra: Metadata-private voice communication over fully untrusted infrastructure"
     },
     {
       "ref_id": "b4",
-      "title": "Communication-Computation trade-offs in PIR."
+      "title": "Communication-Computation trade-offs in PIR"
     },
     {
       "ref_id": "b5",
-      "title": "Amazon MPC using enclaves."
+      "title": "Amazon MPC using enclaves"
     },
     {
       "ref_id": "b6",
-      "title": "Amazon on device speech recognition."
+      "title": "Amazon on device speech recognition"
     },
     {
       "ref_id": "b7",
-      "title": "AMD SEV."
+      "title": "AMD SEV"
     },
     {
       "ref_id": "b8",
-      "title": "PIR with compressed queries and amortized query processing."
+      "title": "PIR with compressed queries and amortized query processing"
     },
     {
       "ref_id": "b9",
-      "title": "Apple app tracking transparency."
+      "title": "Apple app tracking transparency"
     },
     {
       "ref_id": "b10",
-      "title": "ARM trustzone."
+      "title": "ARM trustzone"
     },
     {
       "ref_id": "b11",
-      "title": "Function secret sharing."
+      "title": "Function secret sharing"
     },
     {
       "ref_id": "b12",
-      "title": "Secure computation with preprocessing via function secret sharing."
+      "title": "Secure computation with preprocessing via function secret sharing"
     },
     {
       "ref_id": "b13",
-      "title": "Streamline ring ORAM accesses through spatial and temporal optimization."
+      "title": "Streamline ring ORAM accesses through spatial and temporal optimization"
     },
     {
       "ref_id": "b14",
-      "title": "Interoperable private attribution: A distributed attribution and aggregation protocol."
+      "title": "Interoperable private attribution: A distributed attribution and aggregation protocol"
     },
     {
       "ref_id": "b15",
-      "title": "CCPA."
+      "title": "CCPA"
     },
     {
       "ref_id": "b16",
-      "title": "Chacha20 in TLS."
+      "title": "Chacha20 in TLS"
     },
     {
       "ref_id": "b17",
-      "title": "Private information retrieval."
+      "title": "Private information retrieval"
     },
     {
       "ref_id": "b18",
-      "title": "Authenticated private information retrieval."
+      "title": "Authenticated private information retrieval"
     },
     {
       "ref_id": "b19",
-      "title": "Riposte: An anonymous messaging system handling millions of users."
+      "title": "Riposte: An anonymous messaging system handling millions of users"
     },
     {
       "ref_id": "b20",
-      "title": "Single-server private information retrieval with sublinear amortized time."
+      "title": "Single-server private information retrieval with sublinear amortized time"
     },
     {
       "ref_id": "b21",
-      "title": "Similarity-based estimation of word cooccurrence probabilities."
+      "title": "Similarity-based estimation of word cooccurrence probabilities"
     },
     {
       "ref_id": "b22",
-      "title": "Deep learning recommendation model."
+      "title": "Deep learning recommendation model"
     },
     {
       "ref_id": "b23",
-      "title": "Scaling ORAM for secure computation."
+      "title": "Scaling ORAM for secure computation"
     },
     {
       "ref_id": "b24",
-      "title": "Embedding learning through multilingual concept induction."
+      "title": "Embedding learning through multilingual concept induction"
     },
     {
       "ref_id": "b25",
-      "title": "TensorFHE: Achieving practical computation on encrypted data using GPGPU."
+      "title": "TensorFHE: Achieving practical computation on encrypted data using GPGPU"
     },
     {
       "ref_id": "b26",
-      "title": "F1: A fast and programmable accelerator for fully homomorphic encryption (extended version)."
+      "title": "F1: A fast and programmable accelerator for fully homomorphic encryption (extended version)"
     },
     {
       "ref_id": "b27",
-      "title": "Freecursive ORAM: [nearly] free recursion and integrity verification for position-based oblivious RAM."
+      "title": "Freecursive ORAM: [nearly] free recursion and integrity verification for position-based oblivious RAM"
     },
     {
       "ref_id": "b28",
-      "title": "Forbes multiparty computation adoption."
+      "title": "Forbes multiparty computation adoption"
     },
     {
       "ref_id": "b29",
-      "title": "GDPR."
+      "title": "GDPR"
     },
     {
       "ref_id": "b30",
-      "title": "Fully homomorphic encryption using ideal lattices."
+      "title": "Fully homomorphic encryption using ideal lattices"
     },
     {
       "ref_id": "b31",
-      "title": "Compressible FHE with applications to PIR."
+      "title": "Compressible FHE with applications to PIR"
     },
     {
       "ref_id": "b32",
-      "title": "Distributed point functions and their applications."
+      "title": "Distributed point functions and their applications"
     },
     {
       "ref_id": "b33",
-      "title": "How to construct random functions."
+      "title": "How to construct random functions"
     },
     {
       "ref_id": "b34",
-      "title": "Software protection and simulation on oblivious RAMs."
+      "title": "Software protection and simulation on oblivious RAMs"
     },
     {
       "ref_id": "b35",
-      "title": "EdgeRec: Recommender system on edge in mobile taobao."
+      "title": "EdgeRec: Recommender system on edge in mobile taobao"
     },
     {
       "ref_id": "b36",
-      "title": "Google confidential computing."
+      "title": "Google confidential computing"
     },
     {
       "ref_id": "b37",
-      "title": "Google cross to restrict cross app tracking."
+      "title": "Google cross to restrict cross app tracking"
     },
     {
       "ref_id": "b38",
-      "title": "Google research distributed point function."
+      "title": "Google research distributed point function"
     },
     {
       "ref_id": "b39",
-      "title": "Google secure multiparty computation."
+      "title": "Google secure multiparty computation"
     },
     {
       "ref_id": "b40",
-      "title": "DeepRecSys: A system for optimizing end-to-end at-scale neural recommendation inference."
+      "title": "DeepRecSys: A system for optimizing end-to-end at-scale neural recommendation inference"
     },
     {
       "ref_id": "b41",
-      "title": "The architectural implications of Facebook's DNN-based personalized recommendation."
+      "title": "The architectural implications of Facebook's DNN-based personalized recommendation"
     },
     {
       "ref_id": "b42",
-      "title": "The MovieLens datasets: History and context."
+      "title": "The MovieLens datasets: History and context"
     },
     {
       "ref_id": "b43",
-      "title": "Fel: High capacity learning for recommendation and ranking via federated ensemble learning."
+      "title": "Fel: High capacity learning for recommendation and ranking via federated ensemble learning"
     },
     {
       "ref_id": "b44",
-      "title": "Polynomial batch codes for efficient IT-PIR."
+      "title": "Polynomial batch codes for efficient IT-PIR"
     },
     {
       "ref_id": "b45",
-      "title": "One server for the price of two: Simple and fast single-server private information retrieval."
+      "title": "One server for the price of two: Simple and fast single-server private information retrieval"
     },
     {
       "ref_id": "b46",
-      "title": "GuardNN: Secure accelerator architecture for privacy-preserving deep learning."
+      "title": "GuardNN: Secure accelerator architecture for privacy-preserving deep learning"
     },
     {
       "ref_id": "b47",
-      "title": "MGX: Near-zero overhead memory protection for data-intensive accelerators."
-    },
-    {
-      "ref_id": "b67",
-      "title": "Delphi: A cryptographic inference service for neural networks."
+      "title": "MGX: Near-zero overhead memory protection for data-intensive accelerators"
     },
     {
       "ref_id": "b68",
-      "title": "Mobile application average file size."
+      "title": "Delphi: A cryptographic inference service for neural networks"
     },
     {
       "ref_id": "b69",
-      "title": "MPC alliance."
+      "title": "Mobile application average file size"
     },
     {
       "ref_id": "b70",
-      "title": "Software-hardware co-design for fast and scalable training of deep learning recommendation models."
+      "title": "MPC alliance"
     },
     {
       "ref_id": "b71",
-      "title": "OnionPIR: Response efficient single-server PIR."
+      "title": "OnionPIR: Response efficient single-server PIR"
     },
     {
       "ref_id": "b72",
-      "title": "Deep learning recommendation model for personalization and recommendation systems."
+      "title": "Deep learning recommendation model for personalization and recommendation systems"
     },
     {
       "ref_id": "b73",
-      "title": "No language left behind: Scaling human-centered machine translation."
+      "title": "No language left behind: Scaling human-centered machine translation"
     },
     {
       "ref_id": "b74",
-      "title": "NVIDIA cooperative groups."
+      "title": "NVIDIA cooperative groups"
     },
     {
       "ref_id": "b75",
-      "title": "LAORAM: A look ahead ORAM architecture for training large embedding tables."
+      "title": "LAORAM: A look ahead ORAM architecture for training large embedding tables"
     },
     {
       "ref_id": "b76",
-      "title": "IR-ORAM: Path access type based memory intensity reduction for Path-ORAM."
+      "title": "IR-ORAM: Path access type based memory intensity reduction for Path-ORAM"
     },
     {
       "ref_id": "b77",
-      "title": "Cheetah: Optimizing and accelerating homomorphic encryption for private inference."
+      "title": "Cheetah: Optimizing and accelerating homomorphic encryption for private inference"
     },
     {
       "ref_id": "b78",
-      "title": "Design space exploration and optimization of path oblivious RAM in secure processors."
+      "title": "Design space exploration and optimization of path oblivious RAM in secure processors"
     },
     {
       "ref_id": "b79",
-      "title": "HEAX: An architecture for computing on encrypted data."
+      "title": "HEAX: An architecture for computing on encrypted data"
     },
     {
       "ref_id": "b80",
-      "title": "AriaNN: Low-interaction privacy-preserving deep learning via function secret sharing."
+      "title": "AriaNN: Low-interaction privacy-preserving deep learning via function secret sharing"
     },
     {
       "ref_id": "b81",
-      "title": "CraterLake: A hardware accelerator for efficient unbounded computation on encrypted data."
+      "title": "CraterLake: A hardware accelerator for efficient unbounded computation on encrypted data"
     },
     {
       "ref_id": "b82",
-      "title": "Private approximate nearest neighbor search with sublinear communication."
+      "title": "Private approximate nearest neighbor search with sublinear communication"
     },
     {
       "ref_id": "b83",
-      "title": "How to share a secret."
+      "title": "How to share a secret"
     },
     {
       "ref_id": "b84",
-      "title": "Path oram: An extremely simple oblivious ram protocol."
+      "title": "Path oram: An extremely simple oblivious ram protocol"
     },
     {
       "ref_id": "b85",
-      "title": "AEGIS: Architecture for tamper-evident and tamper-resistant processing."
+      "title": "AEGIS: Architecture for tamper-evident and tamper-resistant processing"
     },
     {
       "ref_id": "b86",
-      "title": "CryptGPU: Fast privacy-preserving machine learning on the GPU."
+      "title": "CryptGPU: Fast privacy-preserving machine learning on the GPU"
     },
     {
       "ref_id": "b87",
-      "title": "Dynamic multi-branch layers for on-device neural machine translation."
+      "title": "Dynamic multi-branch layers for on-device neural machine translation"
     },
     {
       "ref_id": "b88",
-      "title": "Taobao ad dataset."
+      "title": "Taobao ad dataset"
     },
     {
       "ref_id": "b89",
-      "title": "FALCON: Honest-majority maliciously secure framework for private deep learning."
+      "title": "FALCON: Honest-majority maliciously secure framework for private deep learning"
     },
     {
       "ref_id": "b90",
-      "title": "Cooperative Path-ORAM for effective memory bandwidth sharing in server settings."
+      "title": "Cooperative Path-ORAM for effective memory bandwidth sharing in server settings"
     },
     {
       "ref_id": "b91",
-      "title": "D-ORAM: Path-ORAM delegation for low execution interference on cloud servers with untrusted memory."
+      "title": "D-ORAM: Path-ORAM delegation for low execution interference on cloud servers with untrusted memory"
     },
     {
       "ref_id": "b92",
-      "title": "Circuit ORAM: On tightness of the Goldreich-Ostrovsky lower bound."
+      "title": "Circuit ORAM: On tightness of the goldreich-ostrovsky lower bound"
     },
     {
       "ref_id": "b93",
-      "title": "SecNDP: Secure near-data processing with untrusted memory."
+      "title": "SecNDP: Secure near-data processing with untrusted memory"
     },
     {
       "ref_id": "b94",
-      "title": "SecNDP: Secure near-data processing with untrusted memory."
+      "title": "SecNDP: Secure near-data processing with untrusted memory"
     },
     {
       "ref_id": "b95",
-      "title": "Poseidon: Practical homomorphic encryption accelerator."
+      "title": "Poseidon: Practical homomorphic encryption accelerator"
     },
     {
       "ref_id": "b96",
-      "title": "Distributed hierarchical GPU parameter server for massive scale deep learning ads systems."
+      "title": "Distributed hierarchical GPU parameter server for massive scale deep learning ads systems"
     },
     {
       "ref_id": "b97",
-      "title": "Deep interest network for click-through rate prediction."
+      "title": "Deep interest network for click-through rate prediction"
     },
     {
       "ref_id": "b98",
-      "title": "FxHENN: Fpga-based acceleration framework for homomorphic encrypted CNN inference."
+      "title": "FxHENN: Fpga-based acceleration framework for homomorphic encrypted CNN inference"
     },
     {
       "ref_id": "b99",
-      "title": "Zipf's law."
+      "title": "Zipf's law"
     }
   ]
 }

@@ -14,5 +14,59 @@
   "3.3 Online A/B Testing": "We implemented and deployed the proposed DIAN for Juhusuan mini-app in Taobao App. From Sep. 16 to Oct. 15, 2022, a strict online A/B test is conducted to compare DIAN against the previous online model SIM. Table 3 shows the comparison results w.r.t. Page View (PV), Item Page View (IPV) and CTR, where PV and IPV are the average numbers of items that users browse and click after they enter the mini-app. It is obvious that DIAN outperforms SIM with a large margin: DIAN contributes up to 4 . 74% lift for CTR, 4 . 10% lift for PV and 9 . 39% lift for IPV, which indicates that users not only browse more but also more likely to click items recommended by DIAN. Deep Intention-Aware Network for Click-Through Rate Prediction Conference'23, April 2023, Austin,Texas, USA",
   "4 CONCLUSION": "In this paper, we define a new task dubbed Trigger-Induced Recommendation in mini-App (TIRA) and identify the key to TIRA is to accurately estimate user's intention when they enter the mini-app. A novel Deep Intention-Aware Network is proposed to achieve this goal. Experiments on a large industrial dataset and online A/B testing verify its effectiveness for the real-world application. Currently, DIAN has been deployed on Taobao App to serve for the full volume traffic of Juhusuan.",
   "REFERENCES": "[1] Y. Cao, S. Hu, Y. Gong, Z. Li, Y. Yang, Q. Liu, and S. Ji. Gift: Graph-guided feature transfer for cold-start video click-through rate prediction. In Proceedings of the 31st ACM International Conference on Information & Knowledge Management , pages 2964-2973, 2022. [2] H.-T. Cheng, L. Koc, J. Harmsen, T. Shaked, et al. Wide & deep learning for recommender systems. In Proceedings of the 1st workshop on deep learning for recommender systems , 2016. [3] Y. Feng, F. Lv, W. Shen, M. Wang, F. Sun, Y. Zhu, and K. Yang. Deep session interest network for click-through rate prediction. In S. Kraus, editor, Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, IJCAI 2019, Macao, China, August 10-16, 2019 , pages 2301-2307. ijcai.org, 2019. [4] X. Li, C. Wang, J. Tan, X. Zeng, D. Ou, and B. Zheng. Adversarial multimodal representation learning for click-through rate prediction. In Y. Huang, I. King, T. Liu, and M. van Steen, editors, WWW'20: The Web Conference 2020, Taipei, Taiwan, April 20-24, 2020 , pages 827-836. ACM / IW3C2, 2020. [5] Z. Lin, H. Wang, J. Mao, W. X. Zhao, C. Wang, P. Jiang, and J. Wen. Feature-aware diversified re-ranking with disentangled representations for relevant recommendation. In A. Zhang and H. Rangwala, editors, KDD '22: The 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Washington, DC, USA, August 14 - 18, 2022 , pages 3327-3335. ACM, 2022. [6] Q. Pi, G. Zhou, Y. Zhang, Z. Wang, L. Ren, Y. Fan, X. Zhu, and K. Gai. Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management , pages 2685-2692, 2020. [7] Q. Shen, H. Wen, W. Tao, J. Zhang, F. Lv, Z. Chen, and Z. Li. Deep interest highlight network for click-through rate prediction in trigger-induced recommendation. In F. Laforest, R. Troncy, E. Simperl, D. Agarwal, A. Gionis, I. Herman, and L. Médini, editors, WWW'22: The ACM Web Conference 2022, Virtual Event, Lyon, France, April 25 - 29, 2022 , pages 422-430. ACM, 2022. [8] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, et al. Attention is all you need. arXiv:1706.03762 , 2017. [9] R. Xie, R. Wang, S. Zhang, Z. Yang, F. Xia, and L. Lin. Real-time relevant recommendation suggestion. In L. Lewin-Eytan, D. Carmel, E. Yom-Tov, E. Agichtein, and E. Gabrilovich, editors, WSDM '21, The Fourteenth ACM International Conference on Web Search and Data Mining, Virtual Event, Israel, March 8-12, 2021 , pages 112-120. ACM, 2021. [10] R. Xie, R. Wang, S. Zhang, Z. Yang, F. Xia, and L. Lin. Real-time relevant recommendation suggestion. In Proceedings of the 14th ACM International Conference on Web Search and Data Mining , WSDM '21, page 112-120, New York, NY, USA, 2021. Association for Computing Machinery. [11] S. Yao, J. Tan, X. Chen, K. Yang, R. Xiao, H. Deng, and X. Wan. Learning a product relevance model from click-through data in e-commerce. In J. Leskovec, M. Grobelnik, M. Najork, J. Tang, and L. Zia, editors, WWW'21: The Web Conference 2021, Virtual Event / Ljubljana, Slovenia, April 19-23, 2021 , pages 2890-2899. ACM / IW3C2, 2021. [12] G. Zhou, N. Mou, Y. Fan, Q. Pi, et al. Deep interest evolution network for clickthrough rate prediction. In AAAI , 2019. [13] G. Zhou, X. Zhu, C. Song, Y. Fan, et al. Deep interest network for click-through rate prediction. In SIGKDD , 2018.",
-  "keywords_parsed": []
+  "keywords_parsed": [],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Gift: Graph-guided feature transfer for cold-start video click-through rate prediction"
+    },
+    {
+      "ref_id": "b2",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Deep session interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Adversarial multimodal representation learning for click-through rate prediction"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Feature-aware diversified re-ranking with disentangled representations for relevant recommendation"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Search-based user interest modeling with lifelong sequential behavior data for click-through rate prediction"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Deep interest highlight network for click-through rate prediction in trigger-induced recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Attention is all you need"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Real-time relevant recommendation suggestion"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Real-time relevant recommendation suggestion"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Learning a product relevance model from click-through data in e-commerce"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Deep interest evolution network for clickthrough rate prediction"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Deep interest network for click-through rate prediction"
+    }
+  ]
 }

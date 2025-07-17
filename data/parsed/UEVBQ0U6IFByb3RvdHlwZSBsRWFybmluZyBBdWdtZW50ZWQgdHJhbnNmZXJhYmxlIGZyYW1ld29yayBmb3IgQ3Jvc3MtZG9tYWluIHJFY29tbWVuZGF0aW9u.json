@@ -32,5 +32,263 @@
     "Service Platforms",
     "Cross-domain Recommendation",
     "Prototype Learning"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Data Clustering: Algorithms and Applications"
+    },
+    {
+      "ref_id": "b2",
+      "title": "K-Means++: The Advantages of Careful Seeding"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Controllable multi-interest framework for recommendation"
+    },
+    {
+      "ref_id": "b4",
+      "title": "Blurring-Sharpening Process Models for Collaborative Filtering"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Visualizing Data using t-SNE"
+    },
+    {
+      "ref_id": "b6",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+    },
+    {
+      "ref_id": "b7",
+      "title": "Graph neural networks for social recommendation"
+    },
+    {
+      "ref_id": "b8",
+      "title": "Leveraging Transferable Knowledge Concept Graph Embedding for Cold-Start Cognitive Diagnosis"
+    },
+    {
+      "ref_id": "b9",
+      "title": "Self-Supervised Learning on Users' Spontaneous Behaviors for Multi-Scenario Ranking in E-commerce"
+    },
+    {
+      "ref_id": "b10",
+      "title": "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Masked Autoencoders Are Scalable Vision Learners"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Neural Collaborative Filtering"
+    },
+    {
+      "ref_id": "b14",
+      "title": "Towards Universal Sequence Representation Learning for Recommender Systems"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Leveraging meta-path based context for top-n recommendation with a neural co-attention model"
+    },
+    {
+      "ref_id": "b16",
+      "title": "M2GNN: Metapath and Multi-Interest Aggregated Graph Neural Network for Tag-Based Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Knowledge-aware coupled graph neural network for social recommendation"
+    },
+    {
+      "ref_id": "b18",
+      "title": "SemiSupervised Learning for Cross-Domain Recommendation to Cold-Start Users"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Transfer Learning via Contextual Invariants for One-to-Many CrossDomain Recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "Neural Architectures for Named Entity Recognition"
+    },
+    {
+      "ref_id": "b22",
+      "title": "Disentangled Graph Neural Networks for Session-based Recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "One for All, All for One: Learning and Transferring User Embeddings for Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b24",
+      "title": "DDTCDR: Deep Dual Transfer Cross Domain Recommendation"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Cross Domain Recommendation via Bi-Directional Transfer Graph Collaborative Filtering Networks"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Pre-train, prompt and recommendation: A comprehensive survey of language modelling paradigm adaptations in recommender systems"
+    },
+    {
+      "ref_id": "b27",
+      "title": "A Three-Layer Attentional Framework Based on Similar Users for Dual-Target Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Meta-learning on heterogeneous information networks for cold-start recommendation"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Disentangled self-supervision in sequential recommenders"
+    },
+    {
+      "ref_id": "b30",
+      "title": "Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Cross-Domain Recommendation: An Embedding and Mapping Approach"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b33",
+      "title": "BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Representation Learning with Contrastive Predictive Coding"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Attention is All you Need"
+    },
+    {
+      "ref_id": "b36",
+      "title": "Graph Attention Networks"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Pretraining graph neural network for cross domain recommendation"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Understanding the Behaviour of Contrastive Loss"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Tag-informed collaborative topic modeling for cross domain recommendations"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Kgat: Knowledge graph attention network for recommendation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Neural graph collaborative filtering"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Learning intents behind interactions with knowledge graph for recommendation"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Explainable reasoning over knowledge graphs for recommendation"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Characterizing and Avoiding Negative Transfer"
+    },
+    {
+      "ref_id": "b45",
+      "title": "LightGT: A Light Graph Transformer for Multimedia Recommendation"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Entire Space Multi-Task Modeling via Post-Click Behavior Decomposition for Conversion Rate Prediction"
+    },
+    {
+      "ref_id": "b47",
+      "title": "Self-supervised graph learning for recommendation"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Graph neural networks in recommender systems: a survey"
+    },
+    {
+      "ref_id": "b49",
+      "title": "A comprehensive survey on graph neural networks"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Self-supervised learning for large-scale item recommendations"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Self-supervised multi-channel hypergraph convolutional network for social recommendation"
+    },
+    {
+      "ref_id": "b52",
+      "title": "Are Graph Augmentations Necessary?"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Parameter-Efficient Transfer from Sequential Behaviors for User Modeling and Recommendation"
+    },
+    {
+      "ref_id": "b54",
+      "title": "A Survey on Cross-Domain Recommendation: Taxonomies, Methods, and Future Directions"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Commonsense Knowledge Graph towards Super APP and Its Applications in Alipay"
+    },
+    {
+      "ref_id": "b56",
+      "title": "Multi-sparse-domain collaborative recommendation via enhanced comprehensive aspect preference learning"
+    },
+    {
+      "ref_id": "b57",
+      "title": "Contrastive learning for debiased candidate generation in large-scale recommender systems"
+    },
+    {
+      "ref_id": "b58",
+      "title": "DTCDR:AFrameworkfor Dual-Target Cross-Domain Recommendation"
+    },
+    {
+      "ref_id": "b59",
+      "title": "Cross-Domain Recommendation: Challenges, Progress, and Prospects"
+    },
+    {
+      "ref_id": "b60",
+      "title": "Graph Neural Networks with Generated Parameters for Relation Extraction"
+    },
+    {
+      "ref_id": "b61",
+      "title": "Transfer-Meta Framework for Cross-Domain Recommendation to Cold-Start Users"
+    },
+    {
+      "ref_id": "b62",
+      "title": "Progressive Self-Attention Network with Unsymmetrical Positional Encoding for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b63",
+      "title": "Personalized Transfer of User Preferences for Cross-domain Recommendation"
+    },
+    {
+      "ref_id": "b64",
+      "title": "Tiger: Transferable Interest Graph Embedding for Domain-Level Zero-Shot Recommendation"
+    }
   ]
 }

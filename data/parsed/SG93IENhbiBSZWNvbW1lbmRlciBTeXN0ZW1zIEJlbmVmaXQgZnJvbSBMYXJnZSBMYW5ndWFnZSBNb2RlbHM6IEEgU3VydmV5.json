@@ -125,512 +125,608 @@
       "title": "Leveraging large language models for pre-trained recommender systems"
     },
     {
-      "ref_id": "b24",
+      "ref_id": "b43",
       "title": "Leveraging Large Language Models in Conversational Recommender Systems"
     },
     {
-      "ref_id": "b25",
+      "ref_id": "b44",
       "title": "Exploring Adapter-based Transfer Learning for Recommender Systems: Empirical Studies and Practical Insights"
     },
     {
-      "ref_id": "b26",
+      "ref_id": "b45",
       "title": "Codeapex: A bilingual programming evaluation benchmark for large language models"
     },
     {
-      "ref_id": "b27",
+      "ref_id": "b46",
       "title": "An F-shape Click Model for Information Retrieval on Multi-block Mobile Pages"
     },
     {
-      "ref_id": "b28",
+      "ref_id": "b47",
       "title": "A Unified Framework for Multi-Domain CTR Prediction via Large Language Models"
     },
     {
-      "ref_id": "b29",
+      "ref_id": "b48",
       "title": "Chat-rec: Towards interactive and explainable llms-augmented recommender system"
     },
     {
-      "ref_id": "b30",
+      "ref_id": "b49",
       "title": "Recommendation as language processing (rlp): A unified pretrain, personalized prompt & predict paradigm (p5)"
     },
     {
-      "ref_id": "b31",
+      "ref_id": "b50",
       "title": "VIP5: Towards Multimodal Foundation Models for Recommendation"
     },
     {
-      "ref_id": "b32",
+      "ref_id": "b51",
       "title": "JobRecoGPT-Explainable job recommendations using LLMs"
     },
     {
-      "ref_id": "b33",
+      "ref_id": "b52",
       "title": "An Unified Search and Recommendation Foundation Model for Cold-Start Scenario"
     },
     {
-      "ref_id": "b34",
+      "ref_id": "b53",
       "title": "A review of movie recommendation system: Limitations, Survey and Challenges"
     },
     {
-      "ref_id": "b35",
+      "ref_id": "b54",
       "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
     },
     {
-      "ref_id": "b36",
+      "ref_id": "b55",
       "title": "A survey on large language models: Applications, challenges, limitations, and practical usage"
     },
     {
-      "ref_id": "b37",
+      "ref_id": "b56",
       "title": "Leveraging large language models for sequential recommendation"
     },
     {
-      "ref_id": "b38",
+      "ref_id": "b57",
       "title": "PTM4Tag: sharpening tag recommendation of stack overflow posts with pre-trained models"
     },
     {
-      "ref_id": "b39",
+      "ref_id": "b58",
       "title": "Lightgcn: Simplifying and powering graph convolution network for recommendation"
     },
     {
-      "ref_id": "b40",
+      "ref_id": "b59",
       "title": "Neural collaborative filtering"
     },
     {
-      "ref_id": "b41",
+      "ref_id": "b60",
       "title": "Large language models as zero-shot conversational recommenders"
     },
     {
-      "ref_id": "b42",
+      "ref_id": "b61",
       "title": "Tabllm: Few-shot classification of tabular data with large language models"
     },
     {
-      "ref_id": "b43",
+      "ref_id": "b62",
       "title": "Denoising diffusion probabilistic models"
     },
     {
-      "ref_id": "b44",
+      "ref_id": "b63",
       "title": "BTRec: BERT-Based Trajectory Recommendation for Personalized Tours"
     },
     {
-      "ref_id": "b45",
+      "ref_id": "b64",
       "title": "Utilizing Language Models for Tour Itinerary Recommendation"
     },
     {
-      "ref_id": "b46",
+      "ref_id": "b65",
       "title": "Training compute-optimal large language models"
     },
     {
-      "ref_id": "b47",
+      "ref_id": "b66",
       "title": "Learning vector-quantized item representation for transferable sequential recommenders"
     },
     {
-      "ref_id": "b48",
+      "ref_id": "b67",
       "title": "Towards Universal Sequence Representation Learning for Recommender Systems"
     },
     {
-      "ref_id": "b49",
+      "ref_id": "b68",
       "title": "Large language models are zero-shot rankers for recommender systems"
     },
     {
-      "ref_id": "b50",
-      "title": "Low-rank adaptation of large language models"
-    },
-    {
-      "ref_id": "b51",
-      "title": "Unbiased Foundation Model for Fairness-aware Recommendation"
-    },
-    {
-      "ref_id": "b52",
-      "title": "How to Index Item IDs for Recommendation Foundation Models"
-    },
-    {
-      "ref_id": "b53",
-      "title": "Foundation Models for Recommender Systems: A Survey and New Perspectives"
-    },
-    {
-      "ref_id": "b54",
-      "title": "Towards Reasoning in Large Language Models: A Survey"
-    },
-    {
-      "ref_id": "b55",
-      "title": "Recommender ai agent: Integrating large language models for interactive recommendations"
-    },
-    {
-      "ref_id": "b56",
-      "title": "A Survey on Conversational Recommender Systems"
-    },
-    {
-      "ref_id": "b57",
-      "title": "Factual and Personalized Recommendations using Language Models and Reinforcement Learning"
-    },
-    {
-      "ref_id": "b58",
-      "title": "Large language model for generative recommendation"
-    },
-    {
-      "ref_id": "b59",
-      "title": "Text based Large Language Model for Recommendation"
-    },
-    {
-      "ref_id": "b60",
-      "title": "Social-LLM: Modeling User Behavior at Scale using Language Models and Social Network Data"
-    },
-    {
-      "ref_id": "b61",
-      "title": "Reformulating Sequential Recommendation: Learning Dynamic User Interest with Content-enriched Language Modeling"
-    },
-    {
-      "ref_id": "b62",
-      "title": "Tinybert: Distilling bert for natural language understanding"
-    },
-    {
-      "ref_id": "b63",
-      "title": "Language Models As Semantic Indexers"
-    },
-    {
-      "ref_id": "b64",
-      "title": "Lending Interaction Wings to Recommender Systems with Conversational Agents"
-    },
-    {
-      "ref_id": "b65",
-      "title": "Unlocking Potentials of LLM-Based Recommender Systems for Software Purchase"
-    },
-    {
-      "ref_id": "b66",
-      "title": "Self-attentive sequential recommendation"
-    },
-    {
-      "ref_id": "b67",
-      "title": "Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction"
-    },
-    {
-      "ref_id": "b68",
-      "title": "Scaling laws for neural language models"
-    },
-    {
       "ref_id": "b69",
-      "title": "Aligning Large Language Models for Recommendation Model Interpretability"
+      "title": "Lora: Low-rank adaptation of large language models"
     },
     {
       "ref_id": "b70",
-      "title": "The power of scale for parameter-efficient prompt tuning"
+      "title": "UP5: Unbiased Foundation Model for Fairness-aware Recommendation"
     },
     {
       "ref_id": "b71",
-      "title": "Synthetic Data Generation for Conversational Music Recommendation"
+      "title": "How to Index Item IDs for Recommendation Foundation Models"
     },
     {
       "ref_id": "b72",
-      "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension"
+      "title": "Foundation Models for Recommender Systems: A Survey and New Perspectives"
     },
     {
       "ref_id": "b73",
-      "title": "TagGPT: Large Language Models are Zero-shot Multimodal Taggers"
-    },
-    {
-      "ref_id": "b74",
-      "title": "Halueval: A large-scale hallucination evaluation benchmark for large language models"
-    },
-    {
-      "ref_id": "b75",
-      "title": "Text Is All You Need: Learning Language Representations for Sequential Recommendation"
-    },
-    {
-      "ref_id": "b76",
-      "title": "GPT4Rec: A Generative Framework for Personalized Recommendation and User Interests Interpretation"
-    },
-    {
-      "ref_id": "b77",
-      "title": "Prompt distillation for efficient llm-based recommendation"
-    },
-    {
-      "ref_id": "b78",
-      "title": "Prompt Tuning Large Language Models on Personalized Aspect Extraction for Recommendations"
-    },
-    {
-      "ref_id": "b79",
-      "title": "Adapting Large Language Models for Education: Foundational Capabilities, Potentials, and Challenges"
-    },
-    {
-      "ref_id": "b80",
-      "title": "Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights"
-    },
-    {
-      "ref_id": "b81",
-      "title": "Towards Deep Conversational Recommendations"
-    },
-    {
-      "ref_id": "b82",
-      "title": "CTRL: Connect Tabular and Language Model for CTR Prediction"
-    },
-    {
-      "ref_id": "b83",
-      "title": "E4SRec: An Elegant Effective Efficient Extensible Solution of Large Language Models for Sequential Recommendation"
-    },
-    {
-      "ref_id": "b84",
-      "title": "Semantic Robust Ranking via Personalized Query Rewriting Using Multi-agent LLM"
-    },
-    {
-      "ref_id": "b85",
-      "title": "Exploring Fine-tuning ChatGPT for News Recommendation"
-    },
-    {
-      "ref_id": "b86",
-      "title": "A multi-facet paradigm to bridge large language model and recommendation"
-    },
-    {
-      "ref_id": "b87",
-      "title": "Mamba4rec: Towards efficient sequential recommendation with selective state space models"
-    },
-    {
-      "ref_id": "b88",
-      "title": "RecPrompt: A Prompt Tuning Framework for News Recommendation Using Large Language Models"
-    },
-    {
-      "ref_id": "b89",
-      "title": "Understanding Before Recommendation: Semantic Aspect-Aware Review Exploitation via Large Language Models"
-    },
-    {
-      "ref_id": "b90",
-      "title": "Using the Pre-trained Language Model for Modeling Tabular Data"
-    },
-    {
-      "ref_id": "b91",
-      "title": "Is ChatGPT a Good Recommender? A Preliminary Study"
-    },
-    {
-      "ref_id": "b92",
-      "title": "LLMRec: Benchmarking large language models on recommendation task"
-    },
-    {
-      "ref_id": "b93",
-      "title": "Pre-train, prompt and recommendation: A comprehensive survey of language modelling paradigm adaptations in recommender systems"
-    },
-    {
-      "ref_id": "b94",
-      "title": "A First Look at LLM-Powered Generative News Recommendation"
-    },
-    {
-      "ref_id": "b95",
-      "title": "Boosting Deep CTR Prediction with a Plug-and-Play Pre-trainer for News Recommendation"
-    },
-    {
-      "ref_id": "b96",
-      "title": "Personalized fairness-aware re-ranking for microlending"
-    },
-    {
-      "ref_id": "b97",
-      "title": "CR-SoRec: BERT driven Consistency Regularization for Social Recommendation"
-    },
-    {
-      "ref_id": "b98",
-      "title": "Inductive teaching and learning methods: Definitions, comparisons, and research bases"
-    },
-    {
-      "ref_id": "b99",
-      "title": "A BERT based Ensemble Approach for Sentiment Classification of Customer Reviews and its Application to Nudge Marketing in e-Commerce"
-    },
-    {
-      "ref_id": "b100",
-      "title": "Profairrec: Provider fairness-aware news recommendation"
-    },
-    {
-      "ref_id": "b101",
-      "title": "ControlRec: Bridging the Semantic Gap between Language Model and Personalized Recommendation"
-    },
-    {
-      "ref_id": "b102",
-      "title": "U-BERT: Pre-training user representations for improved recommendation"
-    },
-    {
-      "ref_id": "b103",
-      "title": "Product-based neural networks for user response prediction"
-    },
-    {
-      "ref_id": "b104",
-      "title": "Thoroughly Modeling Multi-domain Pre-trained Recommendation as Language"
-    },
-    {
-      "ref_id": "b105",
-      "title": "The Problem of Coherence in Natural Language Explanations of Recommendations"
-    },
-    {
-      "ref_id": "b106",
-      "title": "Language models are unsupervised multitask learners"
-    },
-    {
-      "ref_id": "b107",
-      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
-    },
-    {
-      "ref_id": "b108",
       "title": "Towards Reasoning in Large Language Models: A Survey"
     },
     {
-      "ref_id": "b109",
-      "title": "Logic-Scaffolding: Personalized Aspect-Instructed Recommendation Explanation Generation using LLMs"
+      "ref_id": "b74",
+      "title": "Recommender ai agent: Integrating large language models for interactive recommendations"
     },
     {
-      "ref_id": "b110",
-      "title": "Improving Code Example Recommendations on Informal Documentation Using BERT and Query-Aware LSH: A Comparative Study"
+      "ref_id": "b75",
+      "title": "A Survey on Conversational Recommender Systems"
     },
     {
-      "ref_id": "b111",
-      "title": "Recommender Systems with Generative Retrieval"
+      "ref_id": "b76",
+      "title": "Factual and Personalized Recommendations using Language Models and Reinforcement Learning"
     },
     {
-      "ref_id": "b112",
-      "title": "Multi-Task End-to-End Training Improves Conversational Recommendation"
+      "ref_id": "b77",
+      "title": "Genrec: Large language model for generative recommendation"
     },
     {
-      "ref_id": "b113",
-      "title": "Explicit Knowledge Graph Reasoning for Conversational Recommendation"
+      "ref_id": "b78",
+      "title": "Text based Large Language Model for Recommendation"
     },
     {
-      "ref_id": "b114",
-      "title": "Representation Learning with Large Language Models for Recommendation"
+      "ref_id": "b79",
+      "title": "Social-LLM: Modeling User Behavior at Scale using Language Models and Social Network Data"
     },
     {
-      "ref_id": "b115",
-      "title": "Lkpnr: Llm and kg for personalized news recommendation framework"
+      "ref_id": "b80",
+      "title": "Reformulating Sequential Recommendation: Learning Dynamic User Interest with Content-enriched Language Modeling"
     },
     {
-      "ref_id": "b116",
-      "title": "Learning-to-Rank with Nested Feedback"
+      "ref_id": "b81",
+      "title": "Tinybert: Distilling bert for natural language understanding"
     },
     {
-      "ref_id": "b117",
-      "title": "Unveiling Bias in Fairness Evaluations of Large Language Models: A Critical Literature Review of Music and Movie Recommendation Systems"
+      "ref_id": "b82",
+      "title": "Language Models As Semantic Indexers"
     },
     {
-      "ref_id": "b118",
-      "title": "The unequal opportunities of large language models: Revealing demographic bias through job recommendations"
+      "ref_id": "b83",
+      "title": "Lending Interaction Wings to Recommender Systems with Conversational Agents"
     },
     {
-      "ref_id": "b119",
-      "title": "Large language models are competitive near cold-start recommenders for language-and item-based preferences"
+      "ref_id": "b84",
+      "title": "LLMRS: Unlocking Potentials of LLM-Based Recommender Systems for Software Purchase"
     },
     {
-      "ref_id": "b120",
-      "title": "E-commerce recommendation applications"
+      "ref_id": "b85",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b86",
+      "title": "Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction"
+    },
+    {
+      "ref_id": "b87",
+      "title": "Scaling laws for neural language models"
+    },
+    {
+      "ref_id": "b88",
+      "title": "RecExplainer: Aligning Large Language Models for Recommendation Model Interpretability"
+    },
+    {
+      "ref_id": "b89",
+      "title": "The power of scale for parameter-efficient prompt tuning"
+    },
+    {
+      "ref_id": "b90",
+      "title": "Talk the Walk: Synthetic Data Generation for Conversational Music Recommendation"
+    },
+    {
+      "ref_id": "b91",
+      "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension"
+    },
+    {
+      "ref_id": "b92",
+      "title": "TagGPT: Large Language Models are Zero-shot Multimodal Taggers"
+    },
+    {
+      "ref_id": "b93",
+      "title": "Halueval: A large-scale hallucination evaluation benchmark for large language models"
+    },
+    {
+      "ref_id": "b94",
+      "title": "Text Is All You Need: Learning Language Representations for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b95",
+      "title": "GPT4Rec: A Generative Framework for Personalized Recommendation and User Interests Interpretation"
+    },
+    {
+      "ref_id": "b96",
+      "title": "Prompt distillation for efficient llm-based recommendation"
+    },
+    {
+      "ref_id": "b97",
+      "title": "Large Language Models for Generative Recommendation: A Survey and Visionary Discussions"
+    },
+    {
+      "ref_id": "b98",
+      "title": "Prompt Tuning Large Language Models on Personalized Aspect Extraction for Recommendations"
+    },
+    {
+      "ref_id": "b99",
+      "title": "Adapting Large Language Models for Education: Foundational Capabilities, Potentials, and Challenges"
+    },
+    {
+      "ref_id": "b100",
+      "title": "Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights"
+    },
+    {
+      "ref_id": "b101",
+      "title": "Towards Deep Conversational Recommendations"
+    },
+    {
+      "ref_id": "b102",
+      "title": "CTRL: Connect Tabular and Language Model for CTR Prediction"
+    },
+    {
+      "ref_id": "b103",
+      "title": "E4SRec: An Elegant Effective Efficient Extensible Solution of Large Language Models for Sequential Recommendation"
+    },
+    {
+      "ref_id": "b104",
+      "title": "Agent4Ranking: Semantic Robust Ranking via Personalized Query Rewriting Using Multi-agent LLM"
+    },
+    {
+      "ref_id": "b105",
+      "title": "Exploring Fine-tuning ChatGPT for News Recommendation"
     },
     {
       "ref_id": "b121",
-      "title": "LLaMA-E: Empowering E-commerce Authoring with Multi-Aspect Instruction Following"
+      "title": "A multi-facet paradigm to bridge large language model and recommendation"
     },
     {
       "ref_id": "b122",
-      "title": "Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems"
+      "title": "Mamba4rec: Towards efficient sequential recommendation with selective state space models"
     },
     {
       "ref_id": "b123",
-      "title": "RAH! RecSys-Assistant-Human: A Human-Central Recommendation Framework with Large Language Models"
+      "title": "RecPrompt: A Prompt Tuning Framework for News Recommendation Using Large Language Models"
     },
     {
       "ref_id": "b124",
-      "title": "Zero-Shot Recommendation as Language Modeling"
+      "title": "Understanding Before Recommendation: Semantic Aspect-Aware Review Exploitation via Large Language Models"
     },
     {
       "ref_id": "b125",
-      "title": "Transrec: Learning transferable recommendation from mixture-of-modality feedback"
+      "title": "PTab: Using the Pre-trained Language Model for Modeling Tabular Data"
     },
     {
       "ref_id": "b126",
-      "title": "MISSRec: Pre-training and Transferring Multi-modal Interest-aware Sequence Representation for Recommendation"
+      "title": "Is ChatGPT a Good Recommender? A Preliminary Study"
     },
     {
       "ref_id": "b127",
-      "title": "Evaluation and analysis of hallucination in large vision-language models"
+      "title": "Llmrec: Benchmarking large language models on recommendation task"
     },
     {
       "ref_id": "b128",
-      "title": "A unified framework for conversational recommendation with pretrained language models"
+      "title": "Pre-train, prompt and recommendation: A comprehensive survey of language modelling paradigm adaptations in recommender systems"
     },
     {
       "ref_id": "b129",
-      "title": "Zero-Shot Next-Item Recommendation using Large Pretrained Language Models"
+      "title": "A First Look at LLM-Powered Generative News Recommendation"
     },
     {
       "ref_id": "b130",
-      "title": "A survey on large language model based autonomous agents"
+      "title": "Boosting Deep CTR Prediction with a Plug-and-Play Pre-trainer for News Recommendation"
     },
     {
       "ref_id": "b131",
-      "title": "Towards Unified Conversational Recommender Systems via Knowledge-Enhanced Prompt Learning"
+      "title": "Personalized fairness-aware re-ranking for microlending"
     },
     {
-      "ref_id": "b132",
+      "ref_id": "b159",
+      "title": "CR-SoRec: BERT driven Consistency Regularization for Social Recommendation"
+    },
+    {
+      "ref_id": "b160",
+      "title": "Inductive teaching and learning methods: Definitions, comparisons, and research bases"
+    },
+    {
+      "ref_id": "b161",
+      "title": "A BERT based Ensemble Approach for Sentiment Classification of Customer Reviews and its Application to Nudge Marketing in e-Commerce"
+    },
+    {
+      "ref_id": "b162",
+      "title": "Profairrec: Provider fairness-aware news recommendation"
+    },
+    {
+      "ref_id": "b163",
+      "title": "ControlRec: Bridging the Semantic Gap between Language Model and Personalized Recommendation"
+    },
+    {
+      "ref_id": "b164",
+      "title": "U-BERT: Pre-training user representations for improved recommendation"
+    },
+    {
+      "ref_id": "b165",
+      "title": "Product-based neural networks for user response prediction"
+    },
+    {
+      "ref_id": "b166",
+      "title": "Thoroughly Modeling Multi-domain Pre-trained Recommendation as Language"
+    },
+    {
+      "ref_id": "b167",
+      "title": "The Problem of Coherence in Natural Language Explanations of Recommendations"
+    },
+    {
+      "ref_id": "b168",
+      "title": "Language models are unsupervised multitask learners"
+    },
+    {
+      "ref_id": "b169",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer"
+    },
+    {
+      "ref_id": "b170",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+    },
+    {
+      "ref_id": "b171",
+      "title": "Logic-Scaffolding: Personalized Aspect-Instructed Recommendation Explanation Generation using LLMs"
+    },
+    {
+      "ref_id": "b172",
+      "title": "Improving Code Example Recommendations on Informal Documentation Using BERT and Query-Aware LSH: A Comparative Study"
+    },
+    {
+      "ref_id": "b173",
+      "title": "Recommender Systems with Generative Retrieval"
+    },
+    {
+      "ref_id": "b174",
+      "title": "Multi-Task End-to-End Training Improves Conversational Recommendation"
+    },
+    {
+      "ref_id": "b176",
+      "title": "Explicit Knowledge Graph Reasoning for Conversational Recommendation"
+    },
+    {
+      "ref_id": "b177",
+      "title": "Representation Learning with Large Language Models for Recommendation"
+    },
+    {
+      "ref_id": "b178",
+      "title": "Learning-to-Rank with Nested Feedback"
+    },
+    {
+      "ref_id": "b179",
+      "title": "Unveiling Bias in Fairness Evaluations of Large Language Models: A Critical Literature Review of Music and Movie Recommendation Systems"
+    },
+    {
+      "ref_id": "b180",
+      "title": "The unequal opportunities of large language models: Revealing demographic bias through job recommendations"
+    },
+    {
+      "ref_id": "b181",
+      "title": "Large language models are competitive near cold-start recommenders for language-and item-based preferences"
+    },
+    {
+      "ref_id": "b182",
+      "title": "E-commerce recommendation applications"
+    },
+    {
+      "ref_id": "b183",
+      "title": "LLaMA-E: Empowering E-commerce Authoring with Multi-Aspect Instruction Following"
+    },
+    {
+      "ref_id": "b184",
+      "title": "Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems"
+    },
+    {
+      "ref_id": "b185",
+      "title": "RAH! RecSys-Assistant-Human: A Human-Central Recommendation Framework with Large Language Models"
+    },
+    {
+      "ref_id": "b186",
+      "title": "Zero-Shot Recommendation as Language Modeling"
+    },
+    {
+      "ref_id": "b213",
+      "title": "Transrec: Learning transferable recommendation from mixture-of-modality feedback"
+    },
+    {
+      "ref_id": "b214",
+      "title": "MISSRec: Pre-training and Transferring Multi-modal Interest-aware Sequence Representation for Recommendation"
+    },
+    {
+      "ref_id": "b215",
+      "title": "Evaluation and analysis of hallucination in large vision-language models"
+    },
+    {
+      "ref_id": "b216",
+      "title": "RecInDial: A Unified Framework for Conversational Recommendation with Pretrained Language Models"
+    },
+    {
+      "ref_id": "b217",
+      "title": "Zero-Shot Next-Item Recommendation using Large Pretrained Language Models"
+    },
+    {
+      "ref_id": "b218",
+      "title": "A survey on large language model based autonomous agents"
+    },
+    {
+      "ref_id": "b219",
+      "title": "BARCOR: Towards A Unified Framework for Conversational Recommendation Systems"
+    },
+    {
+      "ref_id": "b220",
       "title": "Generative recommendation: Towards next-generation recommender paradigm"
     },
     {
-      "ref_id": "b133",
+      "ref_id": "b221",
       "title": "Neural graph collaborative filtering"
     },
     {
-      "ref_id": "b134",
+      "ref_id": "b222",
       "title": "Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models"
     },
     {
-      "ref_id": "b135",
-      "title": "Cluster based collaborative filtering model"
+      "ref_id": "b223",
+      "title": "Towards Unified Conversational Recommender Systems via KnowledgeEnhanced Prompt Learning"
     },
     {
-      "ref_id": "b136",
-      "title": "Scalable Factorization Machines for RecSys"
+      "ref_id": "b224",
+      "title": "Enhancing recommender systems with large language model reasoning graphs"
     },
     {
-      "ref_id": "b137",
-      "title": "Multi-channel collaborative filtering for item recommendation"
+      "ref_id": "b225",
+      "title": "RecMind: Large Language Model Powered Agent For Recommendation"
     },
     {
-      "ref_id": "b138",
-      "title": "Graph neural networks for recommendation"
+      "ref_id": "b226",
+      "title": "DRDT: Dynamic Reflection with Divergent Thinking for LLM-based Sequential Recommendation"
     },
     {
-      "ref_id": "b139",
-      "title": "Multimodal models for recommendations in E-commerce"
+      "ref_id": "b227",
+      "title": "AnyPredict: Foundation Model for Tabular Prediction"
     },
     {
-      "ref_id": "b140",
-      "title": "Collaborative models for recommendation"
+      "ref_id": "b228",
+      "title": "Multi-passage bert: A globally normalized bert model for open-domain question answering"
     },
     {
-      "ref_id": "b141",
-      "title": "Noisy and Outdated Items in Recommendation — The Good and the Bad"
+      "ref_id": "b229",
+      "title": "Emergent abilities of large language models"
     },
     {
-      "ref_id": "b142",
-      "title": "Cross-domain recommender systems"
+      "ref_id": "b230",
+      "title": "Chain-of-thought prompting elicits reasoning in large language models"
     },
     {
-      "ref_id": "b143",
-      "title": "Research on generative and collaborative recommendation"
+      "ref_id": "b231",
+      "title": "Towards unified multi-modal personalization: Large vision-language models for generative recommendation and beyond"
     },
     {
-      "ref_id": "b144",
-      "title": "Modeling User Preferences for Procedural Recommendation"
+      "ref_id": "b232",
+      "title": "llmrec: Large language models with graph augmentation for recommendation"
     },
     {
-      "ref_id": "b145",
-      "title": "Collaborative Filtering Algorithms"
+      "ref_id": "b233",
+      "title": "Empowering news recommendation with pre-trained language models"
     },
     {
-      "ref_id": "b146",
-      "title": "Recommendation and Tagging in Knowledge Graphs"
+      "ref_id": "b234",
+      "title": "MM-Rec: Visiolinguistic Model Empowered Multimodal News Recommendation"
     },
     {
-      "ref_id": "b147",
-      "title": "Frequencies of Interactions in E-commerce"
+      "ref_id": "b235",
+      "title": "Leveraging Large Language Models (LLMs) to Empower Training-Free Dataset Condensation for Content-Based Recommendation"
     },
     {
-      "ref_id": "b148",
-      "title": "The Convergence of Social Networks and Recommendation"
+      "ref_id": "b236",
+      "title": "Exploring large language model for graph data understanding in online job recommendations"
     },
     {
-      "ref_id": "b149",
-      "title": "Robustness Evaluation for Recommendation Systems"
+      "ref_id": "b237",
+      "title": "A Survey on Large Language Models for Recommendation"
     },
     {
-      "ref_id": "b150",
-      "title": "Ethics of recommendation and advertising technologies"
+      "ref_id": "b238",
+      "title": "BloombergGPT: A Large Language Model for Finance"
+    },
+    {
+      "ref_id": "b267",
+      "title": "Agentcf: Collaborative learning with autonomous language agents for recommender systems"
+    },
+    {
+      "ref_id": "b268",
+      "title": "Recommendation as instruction following: A large language model empowered recommendation approach"
+    },
+    {
+      "ref_id": "b269",
+      "title": "UNBERT: User-News Matching BERT for News Recommendation"
+    },
+    {
+      "ref_id": "b270",
+      "title": "Bridging the Information Gap Between Domain-Specific Model and General LLM for Personalized Recommendation"
+    },
+    {
+      "ref_id": "b271",
+      "title": "Deep learning for click-through rate estimation"
+    },
+    {
+      "ref_id": "b272",
+      "title": "TwHIN-BERT: A Socially-Enriched Pre-trained Language Model for Multilingual Tweet Representations"
+    },
+    {
+      "ref_id": "b273",
+      "title": "Variational Reasoning over Incomplete Knowledge Graphs for Conversational Recommendation"
+    },
+    {
+      "ref_id": "b274",
+      "title": "Language models as recommender systems: Evaluations and limitations"
+    },
+    {
+      "ref_id": "b275",
+      "title": "Collm: Integrating collaborative embeddings into large language models for recommendation"
+    },
+    {
+      "ref_id": "b276",
+      "title": "Prompt Learning for News Recommendation"
+    },
+    {
+      "ref_id": "b277",
+      "title": "A survey of large language models"
+    },
+    {
+      "ref_id": "b278",
+      "title": "Adapting large language models by integrating collaborative semantics for recommendation"
+    },
+    {
+      "ref_id": "b279",
+      "title": "Generative job recommendations with large language model"
+    },
+    {
+      "ref_id": "b280",
+      "title": "BookGPT: A General Framework for Book Recommendation Empowered by Large Language Model"
+    },
+    {
+      "ref_id": "b281",
+      "title": "Lima: Less is more for alignment"
+    },
+    {
+      "ref_id": "b282",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b283",
+      "title": "Improving Conversational Recommender Systems via Knowledge Graph Based Semantic Fusion"
+    },
+    {
+      "ref_id": "b284",
+      "title": "Towards Topic-Guided Conversational Recommender System"
+    },
+    {
+      "ref_id": "b285",
+      "title": "Exploring recommendation capabilities of gpt-4v (ision): A preliminary case study"
+    },
+    {
+      "ref_id": "b286",
+      "title": "Collaborative large language model for recommender systems"
+    },
+    {
+      "ref_id": "b287",
+      "title": "Large Language Models for Information Retrieval: A Survey"
+    },
+    {
+      "ref_id": "b288",
+      "title": "Beyond yes and no: Improving zero-shot llm rankers via scoring fine-grained relevance labels"
+    },
+    {
+      "ref_id": "b289",
+      "title": "A setwise approach for effective and highly efficient zero-shot ranking with large language models"
+    },
+    {
+      "ref_id": "b290",
+      "title": "Pre-trained language model based ranking in Baidu search"
     }
   ]
 }

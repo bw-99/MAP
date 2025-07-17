@@ -34,135 +34,135 @@
   "references_parsed": [
     {
       "ref_id": "b1",
-      "title": "Learning invariant representations of social media users"
+      "title": "Learning invariant representations of social media users."
     },
     {
       "ref_id": "b2",
-      "title": "Item2vec: neural item embedding for collaborative filtering"
+      "title": "Item2vec: neural item embedding for collaborative filtering."
     },
     {
       "ref_id": "b3",
-      "title": "Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction"
+      "title": "Sampling Is All You Need on Modeling Long-Term User Behaviors for CTR Prediction."
     },
     {
       "ref_id": "b4",
-      "title": "A simple framework for contrastive learning of visual representations"
+      "title": "A simple framework for contrastive learning of visual representations."
     },
     {
       "ref_id": "b5",
-      "title": "Transformer-xl: Attentive language models beyond a fixed-length context"
+      "title": "Transformer-xl: Attentive language models beyond a fixed-length context."
     },
     {
       "ref_id": "b6",
-      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding"
+      "title": "Bert: Pre-training of deep bidirectional transformers for language understanding."
     },
     {
       "ref_id": "b7",
-      "title": "Multi-view unsupervised user feature embedding for social media-based substance use prediction"
+      "title": "Multi-view unsupervised user feature embedding for social media-based substance use prediction."
     },
     {
       "ref_id": "b8",
-      "title": "A user browsing model to predict search engine click data from past observations"
+      "title": "A user browsing model to predict search engine click data from past observations."
     },
     {
       "ref_id": "b9",
-      "title": "A multi-view deep learning approach for cross domain user modeling in recommendation systems"
+      "title": "A multi-view deep learning approach for cross domain user modeling in recommendation systems."
     },
     {
       "ref_id": "b10",
-      "title": "A bayesian hierarchical model for learning natural scene categories"
+      "title": "A bayesian hierarchical model for learning natural scene categories."
     },
     {
       "ref_id": "b11",
-      "title": "Exploiting Behavioral Consistence for Universal User Representation"
+      "title": "Exploiting Behavioral Consistence for Universal User Representation."
     },
     {
       "ref_id": "b12",
-      "title": "Distributional structure"
+      "title": "Distributional structure."
     },
     {
       "ref_id": "b13",
-      "title": "Practical lessons from predicting clicks on ads at facebook"
+      "title": "Practical lessons from predicting clicks on ads at facebook."
     },
     {
       "ref_id": "b14",
-      "title": "Two-stage Sequential Recommendation via Bidirectional Attentive Behavior Embedding and Long/Short-term Integration"
+      "title": "Two-stage Sequential Recommendation via Bidirectional Attentive Behavior Embedding and Long/Short-term Integration."
     },
     {
       "ref_id": "b15",
-      "title": "Ask me anything: Dynamic memory networks for natural language processing"
+      "title": "Ask me anything: Dynamic memory networks for natural language processing."
     },
     {
       "ref_id": "b16",
-      "title": "Visualizing Data using t-SNE"
+      "title": "Visualizing Data using t-SNE."
     },
     {
       "ref_id": "b17",
-      "title": "Distributed representations of words and phrases and their compositionality"
+      "title": "Distributed representations of words and phrases and their compositionality."
     },
     {
       "ref_id": "b18",
-      "title": "Justifying recommendations using distantly-labeled reviews and fine-grained aspects"
+      "title": "Justifying recommendations using distantly-labeled reviews and fine-grained aspects."
     },
     {
       "ref_id": "b19",
-      "title": "Perceive your users in depth: Learning universal user representations from multiple e-commerce tasks"
+      "title": "Perceive your users in depth: Learning universal user representations from multiple e-commerce tasks."
     },
     {
       "ref_id": "b20",
-      "title": "Representation learning with contrastive predictive coding"
+      "title": "Representation learning with contrastive predictive coding."
     },
     {
       "ref_id": "b21",
-      "title": "Practice on long sequential user behavior modeling for click-through rate prediction"
+      "title": "Practice on long sequential user behavior modeling for click-through rate prediction."
     },
     {
       "ref_id": "b22",
-      "title": "Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction"
+      "title": "Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction."
     },
     {
       "ref_id": "b23",
-      "title": "Lifelong sequential modeling with personalized memorization for user response prediction"
+      "title": "Lifelong sequential modeling with personalized memorization for user response prediction."
     },
     {
       "ref_id": "b24",
-      "title": "Understanding inverse document frequency: on theoretical arguments for IDF"
+      "title": "Understanding inverse document frequency: on theoretical arguments for IDF."
     },
     {
       "ref_id": "b25",
-      "title": "Scaling Law for Recommendation Models: Towards General-purpose User Representations"
+      "title": "Scaling Law for Recommendation Models: Towards General-purpose User Representations."
     },
     {
       "ref_id": "b26",
-      "title": "Interest-oriented Universal User Representation via Contrastive Learning"
+      "title": "Interest-oriented Universal User Representation via Contrastive Learning."
     },
     {
       "ref_id": "b27",
-      "title": "UserBERT: Pretraining User Model with Contrastive Self-supervision"
+      "title": "UserBERT: Pretraining User Model with Contrastive Self-supervision."
     },
     {
       "ref_id": "b28",
-      "title": "PTUM: Pre-training User Model from Unlabeled User Behaviors via Self-supervision"
+      "title": "PTUM: Pre-training User Model from Unlabeled User Behaviors via Self-supervision."
     },
     {
       "ref_id": "b29",
-      "title": "Xlnet: Generalized autoregressive pretraining for language understanding"
+      "title": "XLNet: Generalized autoregressive pretraining for language understanding."
     },
     {
       "ref_id": "b30",
-      "title": "A single-pass algorithm for efficiently recovering sparse cluster centers of high-dimensional data"
+      "title": "A single-pass algorithm for efficiently recovering sparse cluster centers of high-dimensional data."
     },
     {
       "ref_id": "b31",
-      "title": "Sequential recommender system based on hierarchical attention network"
+      "title": "Sequential recommender system based on hierarchical attention network."
     },
     {
       "ref_id": "b32",
-      "title": "A dynamic recurrent model for next basket recommendation"
+      "title": "A dynamic recurrent model for next basket recommendation."
     },
     {
       "ref_id": "b33",
-      "title": "Adaptive User Modeling with Long and Short-Term Preferences for Personalized Recommendation"
+      "title": "Adaptive User Modeling with Long and Short-Term Preferences for Personalized Recommendation."
     }
   ]
 }

@@ -83,7 +83,7 @@
     },
     {
       "ref_id": "b12",
-      "title": "Context-Aware Semantic Type Identification for Relational Attributes"
+      "title": "ContextAware Semantic Type Identification for Relational Attributes"
     },
     {
       "ref_id": "b13",
@@ -163,146 +163,214 @@
     },
     {
       "ref_id": "b32",
-      "title": "CAFE: Towards Compact, Adaptive, and Fast Embedding for Large-scale Recommendation Models"
+      "title": "Counting Sketch: a Better Power of Two Choices"
     },
     {
       "ref_id": "b33",
-      "title": "Deep Learning Training in Facebook Data Centers: Design of Scale-up and Scale-out Systems"
+      "title": "Embedding-based Efficient Query Processing for Aggregation Queries"
     },
     {
       "ref_id": "b34",
-      "title": "Deep Learning Recommendation Model for Personalization and Recommendation Systems"
+      "title": "Scalable Click-Through Rate Prediction with Attention Mechanism"
     },
     {
       "ref_id": "b35",
-      "title": "Learning Compressed Embeddings for On-Device Inference"
+      "title": "Bounding Heavy Hitters in Data Streams"
     },
     {
       "ref_id": "b36",
-      "title": "Count-Min-Log sketch: Approximately counting with approximate counters"
+      "title": "Modeling Large Scale Deep Learning for Recommender Systems: A Survey"
     },
     {
       "ref_id": "b37",
-      "title": "MLPerf Benchmark"
+      "title": "Weighting the Fusion of Multiple Content-Based Knowledge Sources for Recommendations"
     },
     {
       "ref_id": "b38",
-      "title": "Augmented Sketch: Faster and More Accurate Stream Processing"
+      "title": "Recent Trends in Recommendation Systems: Challenges, Current Directions, and Future Directions"
     },
     {
       "ref_id": "b39",
-      "title": "FairCF: fairness-aware collaborative filtering"
+      "title": "Findings from the Workshop on Multi-layer Recommender Systems"
     },
     {
       "ref_id": "b40",
-      "title": "At-the-time and Back-in-time Persistent Sketches"
+      "title": "The importance of user satisfaction in recommender systems"
     },
     {
       "ref_id": "b41",
-      "title": "Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems"
+      "title": "Context-aware Recommendation for Large-scale Systems: An Empirical Survey"
     },
     {
       "ref_id": "b42",
-      "title": "Data Sketches for Disaggregated Subset Sum and Frequent Item Estimation"
+      "title": "XGBoost: A Scalable Tree Boosting System"
     },
     {
       "ref_id": "b43",
-      "title": "Use cases of recommendation systems in business-current applications and methods"
+      "title": "Attention Mechanism for Ensembles of Models"
     },
     {
       "ref_id": "b44",
-      "title": "Deep & Cross Network for Ad Click Predictions"
+      "title": "Personalized Recommendation Systems with Distributed Representation Learning"
     },
     {
       "ref_id": "b45",
-      "title": "Avazu Click-Through Rate Prediction"
+      "title": "Privacy-aware Personalized Recommendation Systems: Survey and Future Directions"
     },
     {
       "ref_id": "b46",
-      "title": "Merlin HugeCTR: GPU-accelerated Recommender System Training and Inference"
+      "title": "Recommender Systems in the Context of Current Business Applications"
     },
     {
       "ref_id": "b47",
-      "title": "Feature hashing for large scale multitask learning"
+      "title": "Complexity of Data Stream Algorithms in Recommender Systems"
     },
     {
       "ref_id": "b48",
-      "title": "Kraken: memory-efficient continual learning for large-scale real-time recommendations"
+      "title": "Resource-efficient mobile computing for deep learning application: A survey"
     },
     {
       "ref_id": "b49",
-      "title": "Personalized recommendation systems: Five hot research topics you must know"
+      "title": "Big Data Analytics and Techniques for Online Recommender Systems"
     },
     {
       "ref_id": "b50",
-      "title": "Agile and Accurate CTR Prediction Model Training for Massive-Scale Online Advertising Systems"
+      "title": "Deep Learning Training in Facebook Data Centers: Design of Scale-up and Scale-out Systems"
     },
     {
       "ref_id": "b51",
-      "title": "Binary Code based Hash Embedding for Web-scale Applications"
+      "title": "Deep Learning Recommendation Model for Personalization and Recommendation Systems"
     },
     {
       "ref_id": "b52",
-      "title": "Scaling Attributed Network Embedding to Massive Graphs"
+      "title": "Learning Compressed Embeddings for On-Device Inference"
     },
     {
       "ref_id": "b53",
-      "title": "HeavyGuardian: Separate and Guard Hot Items in Data Streams"
+      "title": "Count-Min-Log sketch: Approximately counting with approximate counters"
     },
     {
       "ref_id": "b54",
-      "title": "Elastic sketch: adaptive and fast network-wide measurements"
+      "title": "MLPerf Benchmark"
     },
     {
       "ref_id": "b55",
-      "title": "TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models"
+      "title": "Augmented Sketch: Faster and More Accurate Stream Processing"
     },
     {
       "ref_id": "b56",
-      "title": "Evolving Interest with Feature Co-action Network for CTR Prediction"
+      "title": "FairCF: fairness-aware collaborative filtering"
     },
     {
       "ref_id": "b57",
-      "title": "Model Size Reduction Using Frequency Based Double Hashing for Recommender Systems"
+      "title": "At-the-time and Back-in-time Persistent Sketches"
     },
     {
       "ref_id": "b58",
-      "title": "Source codes related to CAFE"
+      "title": "Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems"
     },
     {
       "ref_id": "b59",
-      "title": "Experimental Analysis of Large-scale Learnable Vector Storage Compression"
+      "title": "Data Sketches for Disaggregated Subset Sum and Frequent Item Estimation"
     },
     {
       "ref_id": "b60",
-      "title": "GeoSoCa: Exploiting Geographical, Social and Categorical Correlations for Point-of-Interest Recommendations"
+      "title": "Use cases of recommendation systems in business-current applications and methods"
     },
     {
       "ref_id": "b61",
-      "title": "CocoSketch: high-performance sketch-based measurement over arbitrary partial key query"
+      "title": "Deep & Cross Network for Ad Click Predictions"
     },
     {
       "ref_id": "b62",
-      "title": "Distributed Hierarchical GPU Parameter Server for Massive Scale Deep Learning Ads Systems"
+      "title": "Avazu Click-Through Rate Prediction"
     },
     {
       "ref_id": "b63",
-      "title": "AIBox: CTR Prediction Model Training on a Single Node"
+      "title": "Merlin HugeCTR: GPU-accelerated Recommender System Training and Inference"
     },
     {
       "ref_id": "b64",
-      "title": "AutoDim: Field-aware Embedding Dimension Search in Recommender Systems"
+      "title": "Feature hashing for large scale multitask learning"
     },
     {
       "ref_id": "b65",
-      "title": "QueryFormer: A Tree Transformer Model for Query Plan Representation"
+      "title": "Kraken: memory-efficient continual learning for large-scale real-time recommendations"
     },
     {
       "ref_id": "b66",
-      "title": "Deep Interest Network for Click-Through Rate Prediction"
+      "title": "Personalized recommendation systems: Five hot research topics you must know"
     },
     {
       "ref_id": "b67",
+      "title": "Agile and Accurate CTR Prediction Model Training for Massive-Scale Online Advertising Systems"
+    },
+    {
+      "ref_id": "b68",
+      "title": "Binary Code based Hash Embedding for Web-scale Applications"
+    },
+    {
+      "ref_id": "b69",
+      "title": "Scaling Attributed Network Embedding to Massive Graphs"
+    },
+    {
+      "ref_id": "b70",
+      "title": "HeavyGuardian: Separate and Guard Hot Items in Data Streams"
+    },
+    {
+      "ref_id": "b71",
+      "title": "Elastic sketch: adaptive and fast network-wide measurements"
+    },
+    {
+      "ref_id": "b72",
+      "title": "TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models"
+    },
+    {
+      "ref_id": "b73",
+      "title": "Evolving Interest with Feature Co-action Network for CTR Prediction"
+    },
+    {
+      "ref_id": "b74",
+      "title": "Model Size Reduction Using Frequency Based Double Hashing for Recommender Systems"
+    },
+    {
+      "ref_id": "b75",
+      "title": "Source codes related to CAFE"
+    },
+    {
+      "ref_id": "b76",
+      "title": "Experimental Analysis of Large-scale Learnable Vector Storage Compression"
+    },
+    {
+      "ref_id": "b77",
+      "title": "GeoSoCa: Exploiting Geographical, Social and Categorical Correlations for Point-of-Interest Recommendations"
+    },
+    {
+      "ref_id": "b78",
+      "title": "CocoSketch: high-performance sketch-based measurement over arbitrary partial key query"
+    },
+    {
+      "ref_id": "b79",
+      "title": "Distributed Hierarchical GPU Parameter Server for Massive Scale Deep Learning Ads Systems"
+    },
+    {
+      "ref_id": "b80",
+      "title": "AIBox: CTR Prediction Model Training on a Single Node"
+    },
+    {
+      "ref_id": "b81",
+      "title": "AutoDim: Field-aware Embedding Dimension Search in Recommender Systems"
+    },
+    {
+      "ref_id": "b82",
+      "title": "QueryFormer: A Tree Transformer Model for Query Plan Representation"
+    },
+    {
+      "ref_id": "b83",
+      "title": "Deep Interest Network for Click-Through Rate Prediction"
+    },
+    {
+      "ref_id": "b84",
       "title": "Open Benchmarking for Click-Through Rate Prediction"
     }
   ]

@@ -192,46 +192,90 @@
     },
     {
       "ref_id": "b37",
-      "title": "Neural Texture Extraction and Distribution for Controllable Person Image Synthesis"
+      "title": "Learning Transferable Visual Models From Natural Language Supervision"
     },
     {
       "ref_id": "b38",
-      "title": "Fashion-VDM: Video Diffusion Model for Virtual Try-On"
+      "title": "Neural Texture Extraction and Distribution for Controllable Person Image Synthesis"
     },
     {
       "ref_id": "b39",
-      "title": "MagicAnimate: Temporally Consistent Human Image Animation using Diffusion Model"
+      "title": "High-Resolution Image Synthesis With Latent Diffusion Models"
     },
     {
       "ref_id": "b40",
-      "title": "Towards Photo-Realistic Virtual Try-On by Adaptively Generating-Preserving Image Content"
+      "title": "Progressive Distillation for Fast Sampling of Diffusion Models"
     },
     {
       "ref_id": "b41",
-      "title": "Vtnfp: An image-based virtual try-on network with body and clothing feature preservation"
+      "title": "LAION-5B: An open large-scale dataset for training next generation image-text models"
     },
     {
       "ref_id": "b42",
-      "title": "DwNet: Dense warp-based network for pose-guided human video generation"
+      "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics"
     },
     {
       "ref_id": "b43",
-      "title": "PISE: Person Image Synthesis and Editing With Decoupled GAN"
+      "title": "Denoising Diffusion Implicit Models"
     },
     {
       "ref_id": "b44",
-      "title": "WarpDiffusion: Efficient Diffusion Model for High-Fidelity Virtual Try-on"
+      "title": "Generative Modeling by Estimating Gradients of the Data Distribution"
     },
     {
       "ref_id": "b45",
-      "title": "MVTON: Memory-based Video Virtual Try-on network"
+      "title": "Towards Accurate Generative Models of Video: A New Metric & Challenges"
     },
     {
       "ref_id": "b46",
-      "title": "M&M VTO: Multi-Garment Virtual Try-On and Editing"
+      "title": "Gen-L-Video: Multi-Text to Long Video Generation via Temporal CoDenoising"
     },
     {
       "ref_id": "b47",
+      "title": "LAVIE: High-Quality Video Generation with Cascaded Latent Diffusion Models"
+    },
+    {
+      "ref_id": "b48",
+      "title": "Attention-based Video Virtual Try-On"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Clothflow: A flow-based model for clothed person generation"
+    },
+    {
+      "ref_id": "b50",
+      "title": "MagicAnimate: Temporally Consistent Human Image Animation using Diffusion Model"
+    },
+    {
+      "ref_id": "b51",
+      "title": "Towards Photo-Realistic Virtual Try-On by Adaptively Generating-Preserving Image Content"
+    },
+    {
+      "ref_id": "b52",
+      "title": "An image-based virtual try-on network with body and clothing feature preservation"
+    },
+    {
+      "ref_id": "b53",
+      "title": "Dense warp-based network for pose-guided human video generation"
+    },
+    {
+      "ref_id": "b54",
+      "title": "Person Image Synthesis and Editing With Decoupled GAN"
+    },
+    {
+      "ref_id": "b55",
+      "title": "Efficient Diffusion Model for High-Fidelity Virtual Try-on"
+    },
+    {
+      "ref_id": "b56",
+      "title": "A Memory-based Video Virtual Try-on network"
+    },
+    {
+      "ref_id": "b57",
+      "title": "M&M VTO: Multi-Garment Virtual Try-On and Editing"
+    },
+    {
+      "ref_id": "b58",
       "title": "TryOnDiffusion: A Tale of Two UNets"
     }
   ]

@@ -51,7 +51,7 @@
   "references_parsed": [
     {
       "ref_id": "b1",
-      "title": "Vicreg: Varianceinvariance-covariance regularization for self-supervised learning"
+      "title": "Vicreg: Variance-invariance-covariance regularization for self-supervised learning"
     },
     {
       "ref_id": "b2",
@@ -142,39 +142,39 @@
       "title": "Self-Supervised Learning with Data Augmentations Provably Isolates Content from Style"
     },
     {
-      "ref_id": "b47",
+      "ref_id": "b24",
       "title": "Barlow twins: Self-supervised learning via redundancy reduction"
     },
     {
-      "ref_id": "b48",
+      "ref_id": "b25",
       "title": "How Does SimSiam Avoid Collapse Without Negative Samples? A Unified Understanding with Self-supervised Contrastive Learning"
     },
     {
-      "ref_id": "b49",
+      "ref_id": "b26",
       "title": "DropConn: Dropout Connection Based Random GNNs for Molecular Property Prediction"
     },
     {
-      "ref_id": "b50",
+      "ref_id": "b27",
       "title": "ApeGNN: Node-Wise Adaptive Aggregation in GNNs for Recommendation"
     },
     {
-      "ref_id": "b51",
+      "ref_id": "b28",
       "title": "Zero-CL: Instance and Feature decorrelation for negative-free symmetric contrastive learning"
     },
     {
-      "ref_id": "b52",
+      "ref_id": "b29",
       "title": "Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms"
     },
     {
-      "ref_id": "b53",
+      "ref_id": "b30",
       "title": "Contrastive learning for debiased candidate generation in large-scale recommender systems"
     },
     {
-      "ref_id": "b54",
+      "ref_id": "b31",
       "title": "SelfCF: A Simple Framework for Self-supervised Collaborative Filtering"
     },
     {
-      "ref_id": "b55",
+      "ref_id": "b32",
       "title": "Recommending Learning Objects Through Attentive Heterogeneous Graph Convolution and Operation-Aware Neural Network"
     }
   ]

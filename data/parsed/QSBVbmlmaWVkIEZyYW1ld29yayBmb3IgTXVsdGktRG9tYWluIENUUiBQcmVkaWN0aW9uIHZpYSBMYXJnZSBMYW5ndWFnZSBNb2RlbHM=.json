@@ -160,7 +160,7 @@
     },
     {
       "ref_id": "b31",
-      "title": "Dadnn: Multi-scene CTR prediction via domain-aware deep neural network"
+      "title": "DADNN: Multiscene CTR prediction via domain-aware deep neural network"
     },
     {
       "ref_id": "b32",
@@ -188,7 +188,7 @@
     },
     {
       "ref_id": "b38",
-      "title": "Roberta: A robustly optimized bert pretraining approach"
+      "title": "Roberta: A robustly optimized BERT pretraining approach"
     },
     {
       "ref_id": "b39",
@@ -196,7 +196,7 @@
     },
     {
       "ref_id": "b40",
-      "title": "Deberta: decoding-enhanced bert with disentangled attention"
+      "title": "Deberta: decoding-enhanced BERT with disentangled attention"
     },
     {
       "ref_id": "b41",
@@ -216,7 +216,7 @@
     },
     {
       "ref_id": "b45",
-      "title": "DCAFBERT: A distilled cachable adaptable factorized model for improved ads CTR prediction"
+      "title": "DCAF-BERT: A distilled cachable adaptable factorized model for improved ads CTR prediction"
     },
     {
       "ref_id": "b46",
@@ -232,7 +232,7 @@
     },
     {
       "ref_id": "b49",
-      "title": "FLIP: Towards fine-grained alignment between id-based models and pretrained language models for CTR prediction"
+      "title": "FLIP: Towards fine-grained alignment between ID-based models and pretrained language models for CTR prediction"
     },
     {
       "ref_id": "b50",
@@ -312,7 +312,7 @@
     },
     {
       "ref_id": "b69",
-      "title": "SAR-Net: A scenario-aware ranking network for personalized fair recommendation in hundreds of travel scenarios"
+      "title": "SAR-NET: A scenario-aware ranking network for personalized fair recommendation in hundreds of travel scenarios"
     },
     {
       "ref_id": "b70",
@@ -348,7 +348,7 @@
     },
     {
       "ref_id": "b78",
-      "title": "DebertaV3: Improving DeBERTa using ELECTRA-style pre-training with gradient-disentangled embedding sharing"
+      "title": "DeBERTaV3: Improving DeBERTa using ELECTRA-style pre-training with gradient-disentangled embedding sharing"
     },
     {
       "ref_id": "b79",

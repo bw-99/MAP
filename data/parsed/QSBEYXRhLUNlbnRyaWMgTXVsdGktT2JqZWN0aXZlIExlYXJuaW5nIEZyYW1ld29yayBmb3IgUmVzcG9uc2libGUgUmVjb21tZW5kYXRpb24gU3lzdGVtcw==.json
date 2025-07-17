@@ -29,5 +29,207 @@
     "Recommender System",
     "Multi-objective Learning",
     "Data Sampling"
+  ],
+  "references_parsed": [
+    {
+      "ref_id": "b1",
+      "title": "Advanced PID control"
+    },
+    {
+      "ref_id": "b2",
+      "title": "PID control"
+    },
+    {
+      "ref_id": "b3",
+      "title": "Putting fairness principles into practice: Challenges, metrics, and improvements"
+    },
+    {
+      "ref_id": "b4",
+      "title": "A hybrid recommendation system with many-objective evolutionary algorithm"
+    },
+    {
+      "ref_id": "b5",
+      "title": "Multiobjective decision making: theory and methodology"
+    },
+    {
+      "ref_id": "b6",
+      "title": "Wide & deep learning for recommender systems"
+    },
+    {
+      "ref_id": "b7",
+      "title": "A novel multi-objective evolutionary algorithm for recommendation systems"
+    },
+    {
+      "ref_id": "b8",
+      "title": "A closer look at drawbacks of minimizing weighted sums of objectives for Pareto set generation in multicriteria optimization problems"
+    },
+    {
+      "ref_id": "b9",
+      "title": "A fast and elitist multiobjective genetic algorithm: NSGA-II"
+    },
+    {
+      "ref_id": "b10",
+      "title": "Multiple-gradient descent algorithm (MGDA) for multiobjective optimization"
+    },
+    {
+      "ref_id": "b11",
+      "title": "Mathematical psychics: An essay on the application of mathematics to the moral sciences"
+    },
+    {
+      "ref_id": "b12",
+      "title": "Multiobjective genetic algorithms"
+    },
+    {
+      "ref_id": "b13",
+      "title": "Toward Pareto efficient fairness-utility tradeoff in recommendation through reinforcement learning"
+    },
+    {
+      "ref_id": "b14",
+      "title": "DeepFM: a factorization-machine based neural network for CTR prediction"
+    },
+    {
+      "ref_id": "b15",
+      "title": "Neural factorization machines for sparse predictive analytics"
+    },
+    {
+      "ref_id": "b16",
+      "title": "Neural collaborative filtering"
+    },
+    {
+      "ref_id": "b17",
+      "title": "Session-based recommendations with recurrent neural networks"
+    },
+    {
+      "ref_id": "b18",
+      "title": "Multi-objective recommendation: Overview and challenges"
+    },
+    {
+      "ref_id": "b19",
+      "title": "Logistic matrix factorization for implicit feedback data"
+    },
+    {
+      "ref_id": "b20",
+      "title": "Self-attentive sequential recommendation"
+    },
+    {
+      "ref_id": "b21",
+      "title": "xdeepfm: Combining explicit and implicit feature interactions for recommender systems"
+    },
+    {
+      "ref_id": "b22",
+      "title": "A pareto-efficient algorithm for multiple objective optimization in e-commerce recommendation"
+    },
+    {
+      "ref_id": "b23",
+      "title": "Pareto multi-task learning"
+    },
+    {
+      "ref_id": "b24",
+      "title": "Joint Optimization of Profit and Relevance for Recommendation Systems in E-commerce"
+    },
+    {
+      "ref_id": "b25",
+      "title": "Efficient continuous pareto exploration in multi-task learning"
+    },
+    {
+      "ref_id": "b26",
+      "title": "Multi-task learning with user preferences: Gradient descent with controlled ascent in pareto optimization"
+    },
+    {
+      "ref_id": "b27",
+      "title": "Probabilistic matrix factorization"
+    },
+    {
+      "ref_id": "b28",
+      "title": "Using multi-objective optimization to solve the long tail problem in recommender system"
+    },
+    {
+      "ref_id": "b29",
+      "title": "Improving pairwise learning for item recommendation from implicit feedback"
+    },
+    {
+      "ref_id": "b30",
+      "title": "BPR: Bayesian personalized ranking from implicit feedback"
+    },
+    {
+      "ref_id": "b31",
+      "title": "Pareto-efficient hybridization for multi-objective recommender systems"
+    },
+    {
+      "ref_id": "b32",
+      "title": "Multiobjective pareto-efficient approaches for recommender systems"
+    },
+    {
+      "ref_id": "b33",
+      "title": "FairBatch: Batch Selection for Model Fairness"
+    },
+    {
+      "ref_id": "b34",
+      "title": "Multiple objective optimization with vector evaluated genetic algorithms"
+    },
+    {
+      "ref_id": "b35",
+      "title": "Multi-task learning as multi-objective optimization"
+    },
+    {
+      "ref_id": "b36",
+      "title": "ControlVAE: Controllable Variational Autoencoder"
+    },
+    {
+      "ref_id": "b37",
+      "title": "Autoint: Automatic feature interaction learning via self-attentive neural networks"
+    },
+    {
+      "ref_id": "b38",
+      "title": "Personalized top-n sequential recommendation via convolutional sequence embedding"
+    },
+    {
+      "ref_id": "b39",
+      "title": "Deep & cross network for ad click predictions"
+    },
+    {
+      "ref_id": "b40",
+      "title": "Multiobjective optimization for long tail recommendation"
+    },
+    {
+      "ref_id": "b41",
+      "title": "Recommendation algorithms for optimizing hit rate, user satisfaction and website revenue"
+    },
+    {
+      "ref_id": "b42",
+      "title": "Graph neural networks in recommender systems: a survey"
+    },
+    {
+      "ref_id": "b43",
+      "title": "Fairness-aware group recommendation with pareto-efficiency"
+    },
+    {
+      "ref_id": "b44",
+      "title": "Personalized approximate pareto-efficient recommendation"
+    },
+    {
+      "ref_id": "b45",
+      "title": "Do Current Multi-Task Optimization Methods in Deep Learning Even Help?"
+    },
+    {
+      "ref_id": "b46",
+      "title": "Graph convolutional neural networks for web-scale recommender systems"
+    },
+    {
+      "ref_id": "b47",
+      "title": "A class of solutions for group decision problems"
+    },
+    {
+      "ref_id": "b48",
+      "title": "A survey of recommender systems with multi-objective optimization"
+    },
+    {
+      "ref_id": "b49",
+      "title": "Deep interest network for click-through rate prediction"
+    },
+    {
+      "ref_id": "b50",
+      "title": "Personalized recommendation based on evolutionary multi-objective optimization"
+    }
   ]
 }
