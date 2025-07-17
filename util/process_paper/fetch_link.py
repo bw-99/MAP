@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from difflib import SequenceMatcher
 import re
 import time
-import base64
+from util.fileio import encode_paper_title
 from util.process_paper.fetch_title import fetch_titles
 
 logger = logging.getLogger(__name__)
@@ -49,7 +49,7 @@ def _fetch_arxiv_links(titles: list[str]) -> pd.DataFrame:
                 doi = href
             if txt == 'pdf':
                 pdf_link = href
-        hashed = base64.urlsafe_b64encode(at.encode()).decode()
+        hashed = encode_paper_title(at)
         records.append({
             'Title': at,
             'DOI': doi,
