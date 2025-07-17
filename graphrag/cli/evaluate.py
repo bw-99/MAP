@@ -38,11 +38,26 @@ def evaluate_index(
     root = root_ctl.resolve()
     config_ctl = load_config(root, config_filepath)
 
-    exp_dict, ctl_dict = read_graph(config_exp, evaluate_files), read_graph(config_ctl, evaluate_files)
-
     if dry_run:
         logger.success("Dry run complete, exiting...")
         sys.exit(0)
+
+    # 1. Evaluating via keyword matching
+    response, context_data = asyncio.run(
+        api.evaluate_keyword(
+            config=(config_exp, config_ctl),
+            nodes=(exp_dict["create_final_nodes"], ctl_dict["create_final_nodes"]),
+            entities=(exp_dict["create_final_entities"], ctl_dict["create_final_entities"]),
+            communities=(exp_dict["create_final_communities"], ctl_dict["create_final_communities"]),
+            community_reports=(exp_dict["create_final_community_reports"], ctl_dict["create_final_community_reports"]),
+            response_type=response_type,
+        )
+    )
+
+    logger.success(f"Evaluate Response: \n{response}")
+
+    # 2. Evaluating via graph
+    exp_dict, ctl_dict = read_graph(config_exp, evaluate_files), read_graph(config_ctl, evaluate_files)
 
     response, context_data = asyncio.run(
         api.evaluate_graph(
