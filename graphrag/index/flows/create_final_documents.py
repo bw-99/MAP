@@ -29,7 +29,7 @@ def create_final_token2doc(
             json.load(open(f"{PARSED_DIR}/{fname}.json"))[REFERENCE_KEY]
             + [{
                 "ref_id": "b0",
-                "title": decode_paper_title(fname).strip().upper()
+                "title": decode_paper_title(fname).strip()
             }]
         ).assign(doc_id=doc_id)
         .assign(ref_id=lambda x: x["ref_id"].str.upper())
