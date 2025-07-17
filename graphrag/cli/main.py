@@ -580,3 +580,46 @@ def _evaluate_cli(
                 response_type=response_type,
                 dry_run=dry_run,
             )
+
+@app.command("testset-gen")
+def _testset_gen_cli(
+    config: Annotated[
+        Path | None,
+        typer.Option(
+            help="The configuration to use.", exists=True, file_okay=True, readable=True
+        ),
+    ] = None,
+    root: Annotated[
+        Path,
+        typer.Option(
+            help="The project root directory.",
+            exists=True,
+            dir_okay=True,
+            writable=True,
+            resolve_path=True,
+            autocompletion=path_autocomplete(
+                file_okay=False, dir_okay=True, match_wildcard="*"
+            ),
+        ),
+    ] = Path(),  # set default to current directory
+    dry_run: Annotated[
+        bool,
+        typer.Option(
+            help="Run the indexing pipeline without executing any steps to inspect and validate the configuration."
+        ),
+    ] = False,
+    testset_size: Annotated[
+        int,
+        typer.Option(
+            help="Size of the test set."
+        ),
+    ] = 10,
+):
+    from graphrag.cli.test import testset_gen
+
+    testset_gen(
+        config_filepath=config,
+        root=root,
+        dry_run=dry_run,
+        testset_size=testset_size,
+    )
