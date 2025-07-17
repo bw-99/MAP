@@ -435,6 +435,9 @@ def _query_cli(
     streaming: Annotated[
         bool, typer.Option(help="Print response in a streaming manner.")
     ] = False,
+    do_eval: Annotated[
+        bool, typer.Option(help="Evaluate")
+    ] = False,
 ):
     """Query a knowledge graph index."""
     from graphrag.cli.query import run_drift_search, run_global_search, run_local_search
@@ -490,8 +493,13 @@ def _query_cli(
 
         case _:
             raise ValueError(INVALID_METHOD_ERROR)
+    
+    if do_eval:
+        from graphrag.cli.test import evaluate_response
+        import asyncio
 
-    return response, context
+        evaluation = asyncio.run(evaluate_response(user_input=query, response=response, context=context, config_filepath=config, root=root))
+        typer.echo(f"\nEvaluation Result: {evaluation}")
 
 @app.command("evaluate")
 def _evaluate_cli(
