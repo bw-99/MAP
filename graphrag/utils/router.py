@@ -1,7 +1,8 @@
-import asyncio
 from enum import Enum
 from pathlib import Path
+import asyncio
 
+from pydantic import BaseModel
 from datashaper import NoopVerbCallbacks
 
 from graphrag.config.load_config import load_config
@@ -16,6 +17,10 @@ class SearchType(str, Enum):
     GLOBAL = "global"
 
 
+class RouteLLMOutput(BaseModel):
+    decision: SearchType
+
+
 @with_latency_logger("query_router_llm")
 def route_query_with_llm(
     query: str,
@@ -23,13 +28,11 @@ def route_query_with_llm(
     config_path: Path | None,
     root_dir: Path,
 ) -> SearchType:
-    """Route a user query to either Local or Global search using an LLM decision."""
-    
-    # 1) Load config
+    # 1) Config load
     cfg = load_config(root_dir, config_path)
     resolve_paths(cfg)
 
-    # 2) Load LLM instance
+    # 2) LLM load
     llm = load_llm(
         name="router_llm",
         config=cfg.llm,
@@ -38,42 +41,25 @@ def route_query_with_llm(
         chat_only=True,
     )
 
-    # 3) Build prompt
+    # 3) Prompt
     prompt = ROUTER_SYSTEM_PROMPT.format(query=query.strip())
 
-    # 4) Call LLM (sync or async depending on implementation)
+    # 4) Call
     if hasattr(llm, "acall"):
-        raw = asyncio.run(llm.acall(prompt, temperature=0, max_tokens=1))
-    elif hasattr(llm, "call"):
-        raw = llm.call(prompt, temperature=0, max_tokens=1)
+        llm_output = asyncio.run(llm.acall(prompt, temperature=0))
     else:
-        raw = llm(prompt, temperature=0, max_tokens=1)
-        if asyncio.iscoroutine(raw):
-            raw = asyncio.run(raw)
+        result = llm(prompt, temperature=0)
+        llm_output = asyncio.run(result) if asyncio.iscoroutine(result) else result
 
-    # 5) Extract result
-    if hasattr(raw, "output") and hasattr(raw.output, "content"):
-        text = raw.output.content
-    elif hasattr(raw, "raw_output") and hasattr(raw.raw_output, "content"):
-        text = raw.raw_output.content
-    elif hasattr(raw, "text"):
-        text = raw.text
-    elif isinstance(raw, (list, tuple)) and raw:
-        cand = raw[0]
-        text = cand.content if hasattr(cand, "content") else str(cand)
-    else:
-        s = str(raw).lower()
-        if "local" in s:
-            text = "local"
-        elif "global" in s:
-            text = "global"
-        else:
-            text = s
+    # 5) Extract text
+    text = llm_output.output.content
 
-    decision = text.strip().lower()
+    # 6) parse output
+    try:
+        parsed = RouteLLMOutput.parse_raw(text)
+    except Exception as e:
+        raise RuntimeError(f"Fail to parse LLM output:\n{text}") from e
 
-    if decision not in (SearchType.LOCAL.value, SearchType.GLOBAL.value):
-        raise ValueError(f"[router] Unexpected decision: {decision!r}")
-
-    print(f"[router] decision={decision}")
-    return SearchType(decision)
+    decision = parsed.decision
+    print(f"[router] decision={decision.value}")
+    return decision
