@@ -44,6 +44,7 @@ REFERENCE_SYSTEM_PROMPT = """
 
     --Example--
     [
+        [51] Zhengxiao Du, Xiaowei Wang, Hongxia Yang, Jingren Zhou, and Jie Tang. 2019. Sequential scenario-specific meta learner for online recommendation. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining . 2895-2904.
         [52] Wei-Lin Chiang, Zhuohan Li, Zi Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph E. Gonzalez, Ion Stoica, and Eric P. Xing. 2023. Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality. https://lmsys.org/blog/2023-03-30-vicuna/,
         [53] Xiang Ao, Linli Xu, Peng Zhang, Qing He. 2021. Disentangled Sequence Completion for Session-based Recommendation. WWW 2021.
     ]
@@ -51,9 +52,13 @@ REFERENCE_SYSTEM_PROMPT = """
     --Output--
     [
         {
+            "ref_id": 51,
+            "title": "Sequential scenario-specific meta learner for online recommendation"
+        }
+        {
             "ref_id": 52,
             "title": "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
-        }
+        },
         {
             "ref_id": 53,
             "title": "Disentangled Sequence Completion for Session-based Recommendation"
