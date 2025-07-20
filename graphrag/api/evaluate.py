@@ -57,22 +57,42 @@ def get_all_parents(node_id: str, parent_dict: dict[str, any]) -> list[str]:
 async def evaluate_keyword(
     entities: pd.DataFrame,
     viztree: pd.DataFrame,
-) -> tuple[str | dict[str, Any] | list[dict[str, Any]], str | list[pd.DataFrame] | dict[str, pd.DataFrame]]:
+) -> float:
     eval_paper_paths = glob(f"{PARSED_DIR}/*.json")
     eval_paper_titles = [decode_paper_title(Path(paper_path).stem).strip().upper() for paper_path in eval_paper_paths]
-    parent_dict = viztree.groupby("id").agg({"parent": list}).to_dict()["parent"]
 
+    # get the extracted entities from the eval papers
     extracted_entities = entities[entities["title"].isin(eval_paper_titles)][["id", "title"]]
-    extracted_entities.to_csv("extracted_entities.csv", index=False)
-    extracted_entities["all_parents"] = extracted_entities["id"].apply(get_all_parents, parent_dict=parent_dict)
+
+    # get the parents of the extracted entities
+    num_iter = 0
+    extracted_entities[f"parents_{num_iter}"] = extracted_entities["id"]
+    while not extracted_entities[f"parents_{num_iter}"].apply(lambda x: (any(pd.isna(x)) if isinstance(x, list) else pd.isna(x)) or (len(x) == 1 and x[0] == '-1')).all():
+        next_parents = extracted_entities.merge(viztree[["id", "parent"]], left_on=f"parents_{num_iter}", right_on="id", how="inner").groupby(f"parents_{num_iter}").agg({"parent":list}).reset_index()
+        extracted_entities = extracted_entities.merge(next_parents, on=f"parents_{num_iter}", how="left")
+        extracted_entities = extracted_entities.explode(f"parent").rename(columns={"parent": f"parents_{num_iter+1}"})
+        num_iter += 1
+
     extracted_entities.to_csv("extracted_entities_with_parents.csv", index=False)
 
-    exploded_entities = extracted_entities.explode("all_parents")
-    explain_augmented = exploded_entities.merge(viztree, left_on="all_parents", right_on="id", how="inner")
-    extracted_keyword_per_doc = explain_augmented.groupby(["id", "title"]).agg({"explain": list})
-    extracted_keyword_per_doc.to_csv("extracted_keyword_per_doc.csv", index=False)
-    logger.info(f"Extracted {len(extracted_keyword_per_doc)} keywords per document")
-    logger.info(extracted_keyword_per_doc.head())
+    # flatten all parents
+    extracted_entities["parents"] = extracted_entities[[f"parents_{idx}" for idx in range(1, num_iter+1)]].apply(
+        lambda row: list(set(v for v in row if pd.notna(v) and v != "-1")), axis=1
+    )
+    extracted_entities.to_csv("extracted_entities_with_parents_2.csv", index=False)
+    extracted_entities = extracted_entities.groupby(["id", "title"]).agg({"parents": lambda x: list(set(chain.from_iterable(x)))}).reset_index()
+    extracted_entities = extracted_entities[["id", "title", "parents"]]
+
+    # get the explain of the parents
+    extracted_entities = extracted_entities.explode("parents")
+    extracted_entities = extracted_entities.merge(viztree[["id", "explain"]], left_on="parents", right_on="id", how="left", suffixes=("", "_viztree"))
+    extracted_entities = extracted_entities.drop_duplicates()
+    extracted_entities = extracted_entities.groupby(["id", "title"]).agg({"explain": list}).reset_index()
+    extracted_entities.to_csv("extracted_entities_with_explain.csv", index=False)
+    logger.info(f"Extracted {len(extracted_entities)} keywords per document")
+    logger.info(extracted_entities.head())
+
+    return 0.0
 
 @validate_call(config={"arbitrary_types_allowed": True})
 async def evaluate_graph(
