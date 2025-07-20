@@ -29,7 +29,7 @@ def evaluate_index(
     root_ctl: Path,
     response_type: str,
     dry_run: bool,
-    evaluate_files: list[str] = ["create_final_nodes.parquet", "create_final_entities.parquet", "create_final_communities.parquet", "create_final_community_reports.parquet"]
+    evaluate_files: list[str] = ["create_final_nodes.parquet", "create_final_entities.parquet", "create_final_communities.parquet", "create_final_community_reports.parquet", "create_final_viztree.parquet"]
 ):
     """Run the pipeline with the given config."""
     root = root_exp.resolve()
@@ -38,6 +38,8 @@ def evaluate_index(
     root = root_ctl.resolve()
     config_ctl = load_config(root, config_filepath)
 
+    exp_dict, ctl_dict = read_graph(config_exp, evaluate_files), read_graph(config_ctl, evaluate_files)
+
     if dry_run:
         logger.success("Dry run complete, exiting...")
         sys.exit(0)
@@ -45,33 +47,28 @@ def evaluate_index(
     # 1. Evaluating via keyword matching
     response, context_data = asyncio.run(
         api.evaluate_keyword(
-            config=(config_exp, config_ctl),
-            nodes=(exp_dict["create_final_nodes"], ctl_dict["create_final_nodes"]),
-            entities=(exp_dict["create_final_entities"], ctl_dict["create_final_entities"]),
-            communities=(exp_dict["create_final_communities"], ctl_dict["create_final_communities"]),
-            community_reports=(exp_dict["create_final_community_reports"], ctl_dict["create_final_community_reports"]),
-            response_type=response_type,
+            entities=exp_dict["create_final_entities"],
+            viztree=exp_dict["create_final_viztree"],
         )
     )
 
     logger.success(f"Evaluate Response: \n{response}")
 
     # 2. Evaluating via graph
-    exp_dict, ctl_dict = read_graph(config_exp, evaluate_files), read_graph(config_ctl, evaluate_files)
 
-    response, context_data = asyncio.run(
-        api.evaluate_graph(
-            config=(config_exp, config_ctl),
-            nodes=(exp_dict["create_final_nodes"], ctl_dict["create_final_nodes"]),
-            entities=(exp_dict["create_final_entities"], ctl_dict["create_final_entities"]),
-            communities=(exp_dict["create_final_communities"], ctl_dict["create_final_communities"]),
-            community_reports=(exp_dict["create_final_community_reports"], ctl_dict["create_final_community_reports"]),
-            response_type=response_type,
-        )
-    )
+    # response, context_data = asyncio.run(
+    #     api.evaluate_graph(
+    #         config=(config_exp, config_ctl),
+    #         nodes=(exp_dict["create_final_nodes"], ctl_dict["create_final_nodes"]),
+    #         entities=(exp_dict["create_final_entities"], ctl_dict["create_final_entities"]),
+    #         communities=(exp_dict["create_final_communities"], ctl_dict["create_final_communities"]),
+    #         community_reports=(exp_dict["create_final_community_reports"], ctl_dict["create_final_community_reports"]),
+    #         response_type=response_type,
+    #     )
+    # )
 
-    logger.success(f"Evaluate Response: \n{response}")
-    return response, context_data
+    # logger.success(f"Evaluate Response: \n{response}")
+    # return response, context_data
 
 
 def evaluate_query(
