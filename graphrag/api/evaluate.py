@@ -37,28 +37,42 @@ from graphrag.query.indexer_adapters import (
     read_indexer_entities,
     read_indexer_reports,
 )
+from itertools import chain
 
 if TYPE_CHECKING:
     from graphrag.query.structured_search.base import SearchResult
 
 logger = PrintProgressLogger("")
 
+def get_all_parents(node_id: str, parent_dict: dict[str, any]) -> list[str]:
+    parents = []
+    while node_id in parent_dict:
+        parent_nodes = parent_dict[node_id]
+        if len(parent_nodes) == 1 and parent_nodes[0] == '-1':
+            break
+        parents.append(parent_nodes)
+    return list(chain.from_iterable(parents))
+
 @validate_call(config={"arbitrary_types_allowed": True})
 async def evaluate_keyword(
-    config: GraphRagConfig,
-    nodes: pd.DataFrame,
     entities: pd.DataFrame,
-    communities: pd.DataFrame,
-    community_reports: pd.DataFrame,
     viztree: pd.DataFrame,
-    response_type: str,
 ) -> tuple[str | dict[str, Any] | list[dict[str, Any]], str | list[pd.DataFrame] | dict[str, pd.DataFrame]]:
     eval_paper_paths = glob(f"{PARSED_DIR}/*.json")
     eval_paper_titles = [decode_paper_title(Path(paper_path).stem).strip().upper() for paper_path in eval_paper_paths]
+    parent_dict = viztree.groupby("id").agg({"parent": list}).to_dict()["parent"]
 
-    extracted_entities = entities[entities["title"].isin(eval_paper_titles)]
+    extracted_entities = entities[entities["title"].isin(eval_paper_titles)][["id", "title"]]
+    extracted_entities.to_csv("extracted_entities.csv", index=False)
+    extracted_entities["all_parents"] = extracted_entities["id"].apply(get_all_parents, parent_dict=parent_dict)
+    extracted_entities.to_csv("extracted_entities_with_parents.csv", index=False)
 
-    pass
+    exploded_entities = extracted_entities.explode("all_parents")
+    explain_augmented = exploded_entities.merge(viztree, left_on="all_parents", right_on="id", how="inner")
+    extracted_keyword_per_doc = explain_augmented.groupby(["id", "title"]).agg({"explain": list})
+    extracted_keyword_per_doc.to_csv("extracted_keyword_per_doc.csv", index=False)
+    logger.info(f"Extracted {len(extracted_keyword_per_doc)} keywords per document")
+    logger.info(extracted_keyword_per_doc.head())
 
 @validate_call(config={"arbitrary_types_allowed": True})
 async def evaluate_graph(
