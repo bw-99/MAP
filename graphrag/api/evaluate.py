@@ -92,6 +92,8 @@ async def evaluate_keyword(
     logger.info(f"Extracted {len(extracted_entities)} keywords per document")
     logger.info(extracted_entities.head())
 
+    # TODO: nan으로 매핑되는 경우가 어떤 경운지 인지하고 대응해야 함
+
     return 0.0
 
 @validate_call(config={"arbitrary_types_allowed": True})
