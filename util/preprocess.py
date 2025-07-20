@@ -9,7 +9,8 @@ from pathlib import Path
 def create_corpus_from_json(data: dict) -> str:
     corpus_parts = []
     for key, value in data.items():
-        if isinstance(value, str) and value.strip():
+        keys_in_exclude = any(item in key.lower() for item in {"keyword", "reference"})
+        if isinstance(value, str) and value.strip() and not keys_in_exclude:
             corpus_parts.append(f"### {key}\n\n{value}")
     return "\n\n".join(corpus_parts)
 
