@@ -21,9 +21,10 @@ Backwards compatibility is not guaranteed at this time.
 from collections.abc import AsyncGenerator
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
-
+from graphrag.api.query import _get_embedding_store
 import pandas as pd
 from pydantic import validate_call
+from graphrag.index.config.embeddings import core_concept_embedding
 
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.logger.print_progress import PrintProgressLogger
@@ -55,9 +56,17 @@ def get_all_parents(node_id: str, parent_dict: dict[str, any]) -> list[str]:
 
 @validate_call(config={"arbitrary_types_allowed": True})
 async def evaluate_keyword(
+    config: GraphRagConfig,
     entities: pd.DataFrame,
     viztree: pd.DataFrame,
 ) -> float:
+
+    embedding_store = _get_embedding_store(
+        config_args=config.embeddings.vector_store,
+        embedding_name=core_concept_embedding,
+    )
+    embedding_df: pd.DataFrame = embedding_store.document_collection.to_pandas()
+
     eval_paper_paths = glob(f"{PARSED_DIR}/*.json")
     eval_paper_titles = [decode_paper_title(Path(paper_path).stem).strip().upper() for paper_path in eval_paper_paths]
 
@@ -73,8 +82,6 @@ async def evaluate_keyword(
         extracted_entities = extracted_entities.explode(f"parent").rename(columns={"parent": f"parents_{num_iter+1}"})
         num_iter += 1
 
-    extracted_entities.to_csv("extracted_entities_with_parents.csv", index=False)
-
     # flatten all parents
     extracted_entities["parents"] = extracted_entities[[f"parents_{idx}" for idx in range(1, num_iter+1)]].apply(
         lambda row: list(set(v for v in row if pd.notna(v) and v != "-1")), axis=1
@@ -85,14 +92,22 @@ async def evaluate_keyword(
 
     # get the explain of the parents
     extracted_entities = extracted_entities.explode("parents")
-    extracted_entities = extracted_entities.merge(viztree[["id", "explain"]], left_on="parents", right_on="id", how="left", suffixes=("", "_viztree"))
-    extracted_entities = extracted_entities.drop_duplicates()
-    extracted_entities = extracted_entities.groupby(["id", "title"]).agg({"explain": list}).reset_index()
-    extracted_entities.to_csv("extracted_entities_with_explain.csv", index=False)
+
+    # get the embedding of the parents
+    embedding_df["id"] = embedding_df["id"].astype(str)
+    embedding_df["vector"] = embedding_df["vector"].apply(lambda x: list(x))
+    extracted_entities["parents"] = extracted_entities["parents"].astype(str)
+    extracted_entities = extracted_entities.merge(embedding_df[["id", "vector", "text"]], left_on="parents", right_on="id", how="left", suffixes=("", "_embedding"))
+
+    # post process
+    extracted_entities = extracted_entities.drop_duplicates(subset=["id", "title"])
+    extracted_entities = extracted_entities.groupby(["id", "title"]).agg({"text": list, "vector": list}).reset_index()
+    extracted_entities.to_feather("extracted_entities_with_explain.ftr")
+
     logger.info(f"Extracted {len(extracted_entities)} keywords per document")
     logger.info(extracted_entities.head())
 
-    # TODO: nan으로 매핑되는 경우가 어떤 경운지 인지하고 대응해야 함
+    # TODO: 실제 keyword 가져오고, 임베딩 추출하기
 
     return 0.0
 

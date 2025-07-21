@@ -47,6 +47,7 @@ def evaluate_index(
     # 1. Evaluating via keyword matching
     response, context_data = asyncio.run(
         api.evaluate_keyword(
+            config=config_exp,
             entities=exp_dict["create_final_entities"],
             viztree=exp_dict["create_final_viztree"],
         )
