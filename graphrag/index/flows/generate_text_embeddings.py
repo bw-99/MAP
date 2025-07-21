@@ -96,7 +96,7 @@ async def generate_text_embeddings(
             "embed_column": "full_content",
         },
         core_concept_embedding: {
-            "data": final_core_concepts.loc[:, ["community", "core_concept"]]
+            "data": final_core_concepts.loc[:, ["id", "core_concept"]]
             if final_core_concepts is not None
             else None,
             "embed_column": "core_concept",
