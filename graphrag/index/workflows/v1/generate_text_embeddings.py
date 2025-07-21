@@ -34,6 +34,7 @@ input = {
     "text_units": "workflow:create_final_text_units",
     "entities": "workflow:create_final_entities",
     "community_reports": "workflow:create_final_community_reports",
+    "core_concepts": "workflow:extract_core_concept",
 }
 
 
@@ -49,6 +50,7 @@ def build_steps(
     * `workflow:create_final_text_units`
     * `workflow:create_final_entities`
     * `workflow:create_final_community_reports`
+    * `workflow:extract_core_concept`
     """
     text_embed = config.get("text_embed", {})
     embedded_fields = config.get("embedded_fields", {})
@@ -88,17 +90,19 @@ async def workflow(
     final_entities = cast(
         "pd.DataFrame", get_required_input_table(input, "entities").table
     )
-
     final_community_reports = cast(
         "pd.DataFrame", get_required_input_table(input, "community_reports").table
     )
-
+    final_core_concepts = cast(
+        "pd.DataFrame", get_required_input_table(input, "core_concepts").table
+    )
     await generate_text_embeddings(
         final_documents=source,
         final_relationships=final_relationships,
         final_text_units=final_text_units,
         final_entities=final_entities,
         final_community_reports=final_community_reports,
+        final_core_concepts=final_core_concepts,
         callbacks=callbacks,
         cache=cache,
         storage=storage,
