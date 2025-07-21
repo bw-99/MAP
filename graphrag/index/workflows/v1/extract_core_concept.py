@@ -76,6 +76,7 @@ async def workflow(
         async_mode=async_mode,
         num_threads=num_threads,
     )
+    output["id"] = output["community"]
 
     return create_verb_result(
         cast(
