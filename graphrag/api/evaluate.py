@@ -18,10 +18,8 @@ WARNING: This API is under development and may undergo changes in future release
 Backwards compatibility is not guaranteed at this time.
 """
 
-from collections.abc import AsyncGenerator
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
-from graphrag.api.query import _get_embedding_store
 import pandas as pd
 from pydantic import validate_call
 from graphrag.index.config.embeddings import core_concept_embedding
@@ -29,30 +27,38 @@ from graphrag.index.config.embeddings import core_concept_embedding
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.logger.print_progress import PrintProgressLogger
 from graphrag.evaluate.factory import get_evaluate_search_engine
-from util.process_paper.const import PARSED_DIR
-from glob import glob
-from util.fileio import decode_paper_title
+from graphrag.utils.graph import find_all_parents, get_embeddings, get_all_paper_titles
 
 from graphrag.query.indexer_adapters import (
     read_indexer_communities,
     read_indexer_entities,
     read_indexer_reports,
 )
-from itertools import chain
 
 if TYPE_CHECKING:
     from graphrag.query.structured_search.base import SearchResult
 
 logger = PrintProgressLogger("")
 
-def get_all_parents(node_id: str, parent_dict: dict[str, any]) -> list[str]:
-    parents = []
-    while node_id in parent_dict:
-        parent_nodes = parent_dict[node_id]
-        if len(parent_nodes) == 1 and parent_nodes[0] == '-1':
-            break
-        parents.append(parent_nodes)
-    return list(chain.from_iterable(parents))
+def _get_extracted_entities(entities: pd.DataFrame, eval_paper_titles: list[str], viztree: pd.DataFrame) -> pd.DataFrame:
+    ee = entities[entities["title"].isin(eval_paper_titles)][["id", "title"]]
+    ee = pd.merge(
+        ee,
+        find_all_parents(ee["id"].tolist(), viztree), on="id", how="left"
+    )
+    return ee.explode("parents")
+
+def _enrich_with_embedding(extracted_entities: pd.DataFrame, embedding_df: pd.DataFrame) -> pd.DataFrame:
+    extracted_entities["parents"] = extracted_entities["parents"].astype(str)
+    return extracted_entities.merge(
+        embedding_df[["id", "vector", "text"]],
+        left_on="parents", right_on="id", how="left",
+        suffixes=("", "_embedding")
+    )
+
+def _post_process_entities(extracted_entities: pd.DataFrame) -> pd.DataFrame:
+    deduped = extracted_entities.drop_duplicates(subset=["id", "title"])
+    return deduped.groupby(["id", "title"]).agg({"text": list, "vector": list}).reset_index()
 
 @validate_call(config={"arbitrary_types_allowed": True})
 async def evaluate_keyword(
@@ -60,55 +66,16 @@ async def evaluate_keyword(
     entities: pd.DataFrame,
     viztree: pd.DataFrame,
 ) -> float:
-
-    embedding_store = _get_embedding_store(
-        config_args=config.embeddings.vector_store,
-        embedding_name=core_concept_embedding,
-    )
-    embedding_df: pd.DataFrame = embedding_store.document_collection.to_pandas()
-
-    eval_paper_paths = glob(f"{PARSED_DIR}/*.json")
-    eval_paper_titles = [decode_paper_title(Path(paper_path).stem).strip().upper() for paper_path in eval_paper_paths]
-
-    # get the extracted entities from the eval papers
-    extracted_entities = entities[entities["title"].isin(eval_paper_titles)][["id", "title"]]
-
-    # get the parents of the extracted entities
-    num_iter = 0
-    extracted_entities[f"parents_{num_iter}"] = extracted_entities["id"]
-    while not extracted_entities[f"parents_{num_iter}"].apply(lambda x: (any(pd.isna(x)) if isinstance(x, list) else pd.isna(x)) or (len(x) == 1 and x[0] == '-1')).all():
-        next_parents = extracted_entities.merge(viztree[["id", "parent"]], left_on=f"parents_{num_iter}", right_on="id", how="inner").groupby(f"parents_{num_iter}").agg({"parent":list}).reset_index()
-        extracted_entities = extracted_entities.merge(next_parents, on=f"parents_{num_iter}", how="left")
-        extracted_entities = extracted_entities.explode(f"parent").rename(columns={"parent": f"parents_{num_iter+1}"})
-        num_iter += 1
-
-    # flatten all parents
-    extracted_entities["parents"] = extracted_entities[[f"parents_{idx}" for idx in range(1, num_iter+1)]].apply(
-        lambda row: list(set(v for v in row if pd.notna(v) and v != "-1")), axis=1
-    )
-    extracted_entities.to_csv("extracted_entities_with_parents_2.csv", index=False)
-    extracted_entities = extracted_entities.groupby(["id", "title"]).agg({"parents": lambda x: list(set(chain.from_iterable(x)))}).reset_index()
-    extracted_entities = extracted_entities[["id", "title", "parents"]]
-
-    # get the explain of the parents
-    extracted_entities = extracted_entities.explode("parents")
-
-    # get the embedding of the parents
-    embedding_df["id"] = embedding_df["id"].astype(str)
-    embedding_df["vector"] = embedding_df["vector"].apply(lambda x: list(x))
-    extracted_entities["parents"] = extracted_entities["parents"].astype(str)
-    extracted_entities = extracted_entities.merge(embedding_df[["id", "vector", "text"]], left_on="parents", right_on="id", how="left", suffixes=("", "_embedding"))
-
-    # post process
-    extracted_entities = extracted_entities.drop_duplicates(subset=["id", "title"])
-    extracted_entities = extracted_entities.groupby(["id", "title"]).agg({"text": list, "vector": list}).reset_index()
+    embedding_df = get_embeddings(config, core_concept_embedding)
+    eval_paper_titles = get_all_paper_titles()
+    extracted_entities = _get_extracted_entities(entities, eval_paper_titles, viztree)
+    extracted_entities = _enrich_with_embedding(extracted_entities, embedding_df)
+    extracted_entities = _post_process_entities(extracted_entities)
     extracted_entities.to_feather("extracted_entities_with_explain.ftr")
 
     logger.info(f"Extracted {len(extracted_entities)} keywords per document")
     logger.info(extracted_entities.head())
-
     # TODO: 실제 keyword 가져오고, 임베딩 추출하기
-
     return 0.0
 
 @validate_call(config={"arbitrary_types_allowed": True})
