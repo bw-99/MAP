@@ -13,6 +13,16 @@ from typing import Annotated
 import typer
 
 from graphrag.logger.types import LoggerType
+import logging
+
+logging.basicConfig(
+    level=logging.WARNING,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    force=True
+)
+
+logging.getLogger("graphrag.utils.timer").setLevel(logging.INFO)
+
 from graphrag.prompt_tune.defaults import (
     MAX_TOKEN_COUNT,
     MIN_CHUNK_SIZE,

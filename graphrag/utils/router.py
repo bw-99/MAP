@@ -1,6 +1,7 @@
 from enum import Enum
 from pathlib import Path
 import asyncio
+import logging
 
 from pydantic import BaseModel
 from datashaper import NoopVerbCallbacks
@@ -10,15 +11,15 @@ from graphrag.config.resolve_path import resolve_paths
 from graphrag.index.llm.load_llm import load_llm
 from graphrag.prompts.query.router import ROUTER_SYSTEM_PROMPT
 from graphrag.utils.timer import with_latency_logger
+log = logging.getLogger(__name__)
 
-
-class SearchType(str, Enum):
+class RouteDecision(str, Enum):
     LOCAL = "local"
     GLOBAL = "global"
 
 
 class RouteLLMOutput(BaseModel):
-    decision: SearchType
+    decision: RouteDecision
 
 
 @with_latency_logger("query_router_llm")
@@ -27,7 +28,7 @@ def route_query_with_llm(
     *,
     config_path: Path | None,
     root_dir: Path,
-) -> SearchType:
+) -> RouteDecision:
     # 1) Config load
     cfg = load_config(root_dir, config_path)
     resolve_paths(cfg)
@@ -61,5 +62,4 @@ def route_query_with_llm(
         raise RuntimeError(f"Fail to parse LLM output:\n{text}") from e
 
     decision = parsed.decision
-    print(f"[router] decision={decision.value}")
     return decision

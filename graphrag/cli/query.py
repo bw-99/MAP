@@ -20,9 +20,8 @@ from graphrag.utils.storage import load_table_from_storage
 from graphrag.utils.cli import _resolve_output_files
 from graphrag.utils.router import route_query_with_llm
 from graphrag.utils.timer import with_latency_logger
-from graphrag.utils.router import SearchType
+from graphrag.utils.router import RouteDecision
 logger = PrintProgressLogger("")
-
 
 def run_global_search(
     config_filepath: Path | None,
@@ -307,8 +306,8 @@ def run_auto_search(
         config_path=config_filepath,
         root_dir=root,
     )
-
-    if route is SearchType.LOCAL:
+    logger.success(f"[router] Decision: {route.value}")
+    if route is RouteDecision.LOCAL:
         search_fn = (
             api.local_search_streaming if streaming else api.local_search
         )
