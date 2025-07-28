@@ -74,5 +74,5 @@ class EquationInterpretor:
             self._on_error(e, traceback.format_exc(), None)
 
         return EquationInterpretorResult(
-            output=output.output ,
+            output=output.output if output is not None else text,
         )

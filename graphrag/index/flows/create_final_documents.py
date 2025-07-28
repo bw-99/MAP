@@ -4,6 +4,8 @@
 """All the steps to transform final documents."""
 import pandas as pd
 import json
+from util.process_paper.const import REFERENCE_KEY, PARSED_DIR
+from util.fileio import decode_paper_title
 
 def create_final_documents(
     doc_df: pd.DataFrame,
@@ -24,7 +26,11 @@ def create_final_token2doc(
 ) -> pd.DataFrame:
     doc_refs = [
     pd.DataFrame(
-            json.load(open(f"data/parsed/{fname}.json"))["references"]
+            json.load(open(f"{PARSED_DIR}/{fname}.json"))[REFERENCE_KEY]
+            + [{
+                "ref_id": "b0",
+                "title": decode_paper_title(fname).strip()
+            }]
         ).assign(doc_id=doc_id)
         .assign(ref_id=lambda x: x["ref_id"].str.upper())
         [["ref_id", "title", "doc_id"]] for fname, doc_id in zip(doc_df["title"], doc_df["human_readable_id"])

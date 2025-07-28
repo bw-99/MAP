@@ -12,3 +12,7 @@ onepiece_rag/*
 !onepiece_rag/prompts
 
 results/*
+data/pdf/*
+.cursor
+
+.DS_Store
