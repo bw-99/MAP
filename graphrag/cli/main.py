@@ -13,6 +13,16 @@ from typing import Annotated
 import typer
 
 from graphrag.logger.types import LoggerType
+import logging
+
+logging.basicConfig(
+    level=logging.WARNING,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    force=True
+)
+
+logging.getLogger("graphrag.utils.timer").setLevel(logging.INFO)
+
 from graphrag.prompt_tune.defaults import (
     MAX_TOKEN_COUNT,
     MIN_CHUNK_SIZE,
@@ -90,6 +100,7 @@ class SearchType(Enum):
     GLOBAL = "global"
     DRIFT = "drift"
     HYBRID = "hybrid"
+    AUTO   = "auto"
 
     def __str__(self):
         """Return the string representation of the enum value."""
@@ -437,7 +448,7 @@ def _query_cli(
     ] = False,
 ):
     """Query a knowledge graph index."""
-    from graphrag.cli.query import run_drift_search, run_global_search, run_local_search
+    from graphrag.cli.query import run_drift_search, run_global_search, run_local_search, run_auto_search
 
     match method:
         case SearchType.LOCAL:
@@ -470,23 +481,18 @@ def _query_cli(
                 streaming=False,  # Drift search does not support streaming (yet)
                 query=query,
             )
-        case SearchType.HYBRID:
-            try:
-                search_results = hybrid_search(query, top_k=3)
-                if search_results:
-                    typer.echo("\n Hybrid Search Results:")
-                    for result in search_results:
-                        typer.echo(f"- {result}")
-                    return search_results
-            except Exception as e:
-                typer.echo(f"\n Error occurred during hybrid search: {e}")
+        case SearchType.AUTO:
+            response, context = run_auto_search(
+                config_filepath=config,
+                data_dir=data,
+                root_dir=root,
+                community_level=community_level,
+                dynamic_community_selection=dynamic_community_selection,
+                response_type=response_type,
+                streaming=streaming,
+                query=query,
+            )
 
-            typer.echo(f"\n No results found for '{query}'. Running a web search...")
-            try:
-                search_online(query)
-            except Exception as e:
-                typer.echo(f"\n Error occurred during web search: {e}")
-            return
 
         case _:
             raise ValueError(INVALID_METHOD_ERROR)
