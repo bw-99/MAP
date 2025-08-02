@@ -155,7 +155,7 @@ include = ["*.py"]
 line-length = 120
 indent-width = 4
 target-version = "py310"
-src = ["remy", "tests"]
+src = ["graphrag", "util", "service"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "B", "C"]
