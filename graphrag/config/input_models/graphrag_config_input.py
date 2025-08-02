@@ -38,7 +38,10 @@ from graphrag.config.input_models.text_embedding_config_input import (
     TextEmbeddingConfigInput,
 )
 from graphrag.config.input_models.umap_config_input import UmapConfigInput
-
+from graphrag.config.input_models.sentence_reconstruction_config_input import SentenceReconstructionConfigInput
+from graphrag.config.input_models.core_concept_extraction_config_input import CoreConceptExtractionConfigInput
+from graphrag.config.input_models.equation_interpretation_config_input import EquationInterpretationConfigInput
+from graphrag.config.input_models.viztree_config_input import VizTreeConfigInput
 
 class GraphRagConfigInput(LLMConfigInput):
     """Base class for the Default-Configuration parameterization settings."""
@@ -52,6 +55,9 @@ class GraphRagConfigInput(LLMConfigInput):
     chunks: NotRequired[ChunkingConfigInput | None]
     snapshots: NotRequired[SnapshotsConfigInput | None]
     entity_extraction: NotRequired[EntityExtractionConfigInput | None]
+    sentence_reconstruction: NotRequired[SentenceReconstructionConfigInput | None]
+    equation_interpretation: NotRequired[EquationInterpretationConfigInput | None]
+    core_concept_extraction: NotRequired[CoreConceptExtractionConfigInput | None]
     summarize_descriptions: NotRequired[SummarizeDescriptionsConfigInput | None]
     community_reports: NotRequired[CommunityReportsConfigInput | None]
     claim_extraction: NotRequired[ClaimExtractionConfigInput | None]
@@ -61,3 +67,4 @@ class GraphRagConfigInput(LLMConfigInput):
     skip_workflows: NotRequired[list[str] | str | None]
     local_search: NotRequired[LocalSearchConfigInput | None]
     global_search: NotRequired[GlobalSearchConfigInput | None]
+    viztree: NotRequired[VizTreeConfigInput | None]

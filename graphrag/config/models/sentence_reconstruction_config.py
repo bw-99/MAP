@@ -10,7 +10,6 @@ from pydantic import Field
 import graphrag.config.defaults as defs
 from graphrag.config.models.llm_config import LLMConfig
 
-
 class SentenceReconstructionConfig(LLMConfig):
     """Configuration section for entity extraction."""
 
@@ -39,5 +38,6 @@ class SentenceReconstructionConfig(LLMConfig):
             .decode(encoding="utf-8")
             if self.prompt
             else None,
-            "enabled": self.enabled
+            "enabled": self.enabled,
+            "async_mode": self.async_mode,
         }

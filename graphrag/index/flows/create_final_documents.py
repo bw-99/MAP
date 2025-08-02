@@ -9,7 +9,7 @@ from util.fileio import decode_paper_title
 
 def create_final_documents(
     doc_df: pd.DataFrame,
-) -> pd.DataFrame:
+) -> tuple[pd.DataFrame, pd.DataFrame]:
     """All the steps to create final processed documents."""
 
     # Get title to doc_token mapping

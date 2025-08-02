@@ -28,6 +28,9 @@ class CoreConceptExtractionConfig(LLMConfig):
     strategy: dict | None = Field(
         description="The override strategy to use.", default=None
     )
+    enabled: bool = Field(
+        default=True, description="Whether to extract core concepts."
+    )
 
     def resolved_strategy(self, root_dir) -> dict:
         """Get the resolved community report extraction strategy."""
@@ -46,4 +49,6 @@ class CoreConceptExtractionConfig(LLMConfig):
             else None,
             "max_report_length": self.max_length,
             "max_input_length": self.max_input_length,
+            "enabled": self.enabled,
+            "async_mode": self.async_mode,
         }

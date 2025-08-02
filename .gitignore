@@ -1,6 +1,5 @@
 .env
 *.ipynb
-data_full
 __pycache__
 !.github
 example
@@ -16,3 +15,6 @@ data/pdf/*
 .cursor
 
 .DS_Store
+uv.lock
+.pytest_cache/
+*.csv

@@ -8,12 +8,9 @@ from typing_extensions import NotRequired
 from graphrag.config.input_models.llm_config_input import LLMConfigInput
 
 
-class EntityExtractionConfigInput(LLMConfigInput):
-    """Configuration section for entity extraction."""
+class EquationInterpretationConfigInput(LLMConfigInput):
+    """Configuration section for equation interpretation."""
 
     prompt: NotRequired[str | None]
-    entity_types: NotRequired[list[str] | str | None]
-    max_gleanings: NotRequired[int | str | None]
+    enabled: NotRequired[bool | None]
     strategy: NotRequired[dict | None]
-    encoding_model: NotRequired[str | None]
-    use_doc_id: NotRequired[bool | None]

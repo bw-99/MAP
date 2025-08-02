@@ -98,12 +98,12 @@ class GraphRagConfig(LLMConfig):
     )
     """The snapshots configuration to use."""
 
-    equation_interpretation: EquationInterpretationConfig = Field(
+    equation_interpretation: EquationInterpretationConfig | None = Field(
         description="The equation interpretation configuration to use.",
         default=EquationInterpretationConfig(),
     )
     """The equation interpretation configuration to use."""
-    sentence_reconstruction: SentenceReconstructionConfig = Field(
+    sentence_reconstruction: SentenceReconstructionConfig | None = Field(
         description="The sentence reconstruction configuration to use.",
         default=SentenceReconstructionConfig(),
     )
@@ -127,13 +127,13 @@ class GraphRagConfig(LLMConfig):
     )
     """The community reports configuration to use."""
 
-    core_concept_extraction: CoreConceptExtractionConfig = Field(
+    core_concept_extraction: CoreConceptExtractionConfig | None = Field(
         description="The core concept reports configuration to use.",
         default=CoreConceptExtractionConfig(),
     )
     """The viztree configuration to use."""
 
-    viztree: VizTreeConfig = Field(
+    viztree: VizTreeConfig | None = Field(
         description="The viztree configuration to use.",
         default=VizTreeConfig(),
     )

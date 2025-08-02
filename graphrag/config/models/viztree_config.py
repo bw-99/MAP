@@ -14,10 +14,14 @@ class VizTreeConfig(BaseModel):
     strategy: dict | None = Field(
         description="The viztree strategy override.", default=None
     )
+    enabled: bool | None = Field(
+        default=False, description="Whether to include concept in viztree."
+    )
 
     def resolved_strategy(self) -> dict:
         """Get the resolved viztree configuration."""
 
         return self.strategy or {
-            "include_concept": self.include_concept
+            "include_concept": self.include_concept,
+            "enabled": self.enabled
         }
