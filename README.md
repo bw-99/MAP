@@ -1,7 +1,10 @@
 ## GraphRAG Developments
 
 ### Dev dependency
-1. Install pre-commit on your dev environment (not docker, terminal you choose to use `git commit`) via `pip install pre-commit`
+1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
+2. Create venv via `uv venv .venv`
+3. Install dependencies via `uv pip install -e ".[dev, preprocess, server]"`
+4. Install pre-commit on your dev environment `pre-commit install`
 
 ### Tutorial
 0. 프로젝트 폴더에 example 폴더 생성
