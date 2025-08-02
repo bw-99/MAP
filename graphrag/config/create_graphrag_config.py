@@ -568,6 +568,7 @@ def create_graphrag_config(
                 )
 
         viztree_config = values.get("viztree") or {}
+        viztree_model = None
         if viztree_config:
             with (
                 reader.envvar_prefix(Section.viztree),
