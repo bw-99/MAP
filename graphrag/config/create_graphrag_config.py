@@ -469,36 +469,40 @@ def create_graphrag_config(
             )
 
         sentence_reconstruction_config = values.get("sentence_reconstruction") or {}
-        with (
-            reader.envvar_prefix(Section.sentence_reconstruction),
-            reader.use(sentence_reconstruction_config),
-        ):
-            sentence_reconstruction_model = SentenceReconstructionConfig(
-                llm=hydrate_llm_params(sentence_reconstruction_config, llm_model),
-                parallelization=hydrate_parallelization_params(
-                    sentence_reconstruction_config, llm_parallelization_model
-                ),
-                async_mode=hydrate_async_type(sentence_reconstruction_config, async_mode),
-                prompt=reader.str("prompt", Fragment.prompt_file),
-                enabled=reader.str("enabled", True),
-                strategy=sentence_reconstruction_config.get("strategy"),
-            )
+        sentence_reconstruction_model = None
+        if sentence_reconstruction_config:
+            with (
+                reader.envvar_prefix(Section.sentence_reconstruction),
+                reader.use(sentence_reconstruction_config),
+            ):
+                sentence_reconstruction_model = SentenceReconstructionConfig(
+                    llm=hydrate_llm_params(sentence_reconstruction_config, llm_model),
+                    parallelization=hydrate_parallelization_params(
+                        sentence_reconstruction_config, llm_parallelization_model
+                    ),
+                    async_mode=hydrate_async_type(sentence_reconstruction_config, async_mode),
+                    prompt=reader.str("prompt", Fragment.prompt_file),
+                    enabled=reader.str("enabled", True),
+                    strategy=sentence_reconstruction_config.get("strategy"),
+                )
 
         equation_interpretation_config = values.get("equation_interpretation") or {}
-        with (
-            reader.envvar_prefix(Section.equation_interpretation),
-            reader.use(equation_interpretation_config),
-        ):
-            equation_interpretation_model = EquationInterpretationConfig(
-                llm=hydrate_llm_params(equation_interpretation_config, llm_model),
-                parallelization=hydrate_parallelization_params(
-                    equation_interpretation_config, llm_parallelization_model
-                ),
-                async_mode=hydrate_async_type(equation_interpretation_config, async_mode),
-                prompt=reader.str("prompt", Fragment.prompt_file),
-                enabled=reader.str("enabled", default_value=True),
-                strategy=equation_interpretation_config.get("strategy"),
-            )
+        equation_interpretation_model = None
+        if equation_interpretation_config:
+            with (
+                reader.envvar_prefix(Section.equation_interpretation),
+                reader.use(equation_interpretation_config),
+            ):
+                equation_interpretation_model = EquationInterpretationConfig(
+                    llm=hydrate_llm_params(equation_interpretation_config, llm_model),
+                    parallelization=hydrate_parallelization_params(
+                        equation_interpretation_config, llm_parallelization_model
+                    ),
+                    async_mode=hydrate_async_type(equation_interpretation_config, async_mode),
+                    prompt=reader.str("prompt", Fragment.prompt_file),
+                    enabled=reader.str("enabled", default_value=True),
+                    strategy=equation_interpretation_config.get("strategy"),
+                )
 
         claim_extraction_config = values.get("claim_extraction") or {}
         with (
@@ -544,31 +548,34 @@ def create_graphrag_config(
             )
 
         core_concept_extraction_config = values.get("core_concept_extraction") or {}
-        with (
-            reader.envvar_prefix(Section.core_concept_extraction),
-            reader.use(core_concept_extraction_config),
-        ):
-            core_concept_extractions_model = CoreConceptExtractionConfig(
-                llm=hydrate_llm_params(core_concept_extraction_config, llm_model),
-                parallelization=hydrate_parallelization_params(
-                    core_concept_extraction_config, llm_parallelization_model
-                ),
-                async_mode=hydrate_async_type(core_concept_extraction_config, async_mode),
-                prompt=reader.str("prompt", Fragment.prompt_file),
-                max_length=reader.int(Fragment.max_length)
-                or defs.CORE_CONCEPT_MAX_LENGTH,
-                max_input_length=reader.int("max_input_length")
-                or defs.CORE_CONCEPT_MAX_INPUT_LENGTH,
-            )
+        core_concept_extractions_model = None
+        if core_concept_extraction_config:
+            with (
+                reader.envvar_prefix(Section.core_concept_extraction),
+                reader.use(core_concept_extraction_config),
+            ):
+                core_concept_extractions_model = CoreConceptExtractionConfig(
+                    llm=hydrate_llm_params(core_concept_extraction_config, llm_model),
+                    parallelization=hydrate_parallelization_params(
+                        core_concept_extraction_config, llm_parallelization_model
+                    ),
+                    async_mode=hydrate_async_type(core_concept_extraction_config, async_mode),
+                    prompt=reader.str("prompt", Fragment.prompt_file),
+                    max_length=reader.int(Fragment.max_length)
+                    or defs.CORE_CONCEPT_MAX_LENGTH,
+                    max_input_length=reader.int("max_input_length")
+                    or defs.CORE_CONCEPT_MAX_INPUT_LENGTH,
+                )
 
         viztree_config = values.get("viztree") or {}
-        with (
-            reader.envvar_prefix(Section.viztree),
-            reader.use(viztree_config),
-        ):
-            viztree_model = VizTreeConfig(
-                include_concept=viztree_config.get("include_concept", False)
-            )
+        if viztree_config:
+            with (
+                reader.envvar_prefix(Section.viztree),
+                reader.use(viztree_config),
+            ):
+                viztree_model = VizTreeConfig(
+                    include_concept=viztree_config.get("include_concept", False)
+                )
 
         summarize_description_config = values.get("summarize_descriptions") or {}
         with (
