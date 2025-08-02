@@ -565,6 +565,8 @@ def create_graphrag_config(
                     or defs.CORE_CONCEPT_MAX_LENGTH,
                     max_input_length=reader.int("max_input_length")
                     or defs.CORE_CONCEPT_MAX_INPUT_LENGTH,
+                    enabled=reader.str("enabled", default_value=True),
+                    strategy=core_concept_extraction_config.get("strategy"),
                 )
 
         viztree_config = values.get("viztree") or {}
@@ -575,7 +577,9 @@ def create_graphrag_config(
                 reader.use(viztree_config),
             ):
                 viztree_model = VizTreeConfig(
-                    include_concept=viztree_config.get("include_concept", False)
+                    include_concept=reader.str("include_concept", default_value=False),
+                    enabled=reader.str("enabled", default_value=True),
+                    strategy=viztree_config.get("strategy", None),
                 )
 
         summarize_description_config = values.get("summarize_descriptions") or {}

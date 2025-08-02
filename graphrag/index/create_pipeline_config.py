@@ -198,6 +198,8 @@ def _text_unit_workflows(
             "strategy": settings.equation_interpretation.resolved_strategy(
                 settings.root_dir
             ),
+            "async_mode": settings.equation_interpretation.async_mode,
+            **settings.equation_interpretation.parallelization.model_dump(),
         }
     if settings.sentence_reconstruction:
         piepline_config["sentence_reconstruction"] = {
@@ -205,6 +207,8 @@ def _text_unit_workflows(
             "strategy": settings.sentence_reconstruction.resolved_strategy(
                 settings.root_dir
             ),
+            "async_mode": settings.sentence_reconstruction.async_mode,
+            **settings.sentence_reconstruction.parallelization.model_dump(),
         }
 
     return [
@@ -333,7 +337,9 @@ def _community_workflows(
         pipeline_lst.append(PipelineWorkflowReference(
             name=create_final_viztree,
             config={
-                "include_concept": settings.viztree.include_concept
+                "include_concept": settings.viztree.include_concept,
+                "enabled": settings.viztree.enabled,
+                "strategy": settings.viztree.resolved_strategy(),
             }
         ))
     return pipeline_lst
