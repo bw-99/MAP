@@ -150,8 +150,6 @@ server = [
     "flask_socketio>=5.5.1"
 ]
 
-
-
 [tool.ruff]
 include = ["*.py"]
 line-length = 120
