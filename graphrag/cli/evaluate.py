@@ -29,7 +29,7 @@ def evaluate_index(
     root_ctl: Path,
     response_type: str,
     dry_run: bool,
-    evaluate_files: list[str] = ["create_final_nodes.parquet", "create_final_entities.parquet", "create_final_communities.parquet", "create_final_community_reports.parquet"]
+    evaluate_files: list[str] = ["create_final_nodes.parquet", "create_final_entities.parquet", "create_final_communities.parquet", "create_final_community_reports.parquet", "create_final_viztree.parquet"]
 ):
     """Run the pipeline with the given config."""
     root = root_exp.resolve()
@@ -44,19 +44,32 @@ def evaluate_index(
         logger.success("Dry run complete, exiting...")
         sys.exit(0)
 
+    # 1. Evaluating via keyword matching
     response, context_data = asyncio.run(
-        api.evaluate_graph(
-            config=(config_exp, config_ctl),
-            nodes=(exp_dict["create_final_nodes"], ctl_dict["create_final_nodes"]),
-            entities=(exp_dict["create_final_entities"], ctl_dict["create_final_entities"]),
-            communities=(exp_dict["create_final_communities"], ctl_dict["create_final_communities"]),
-            community_reports=(exp_dict["create_final_community_reports"], ctl_dict["create_final_community_reports"]),
-            response_type=response_type,
+        api.evaluate_keyword(
+            config=config_exp,
+            entities=exp_dict["create_final_entities"],
+            viztree=exp_dict["create_final_viztree"],
         )
     )
 
     logger.success(f"Evaluate Response: \n{response}")
-    return response, context_data
+
+    # 2. Evaluating via graph
+
+    # response, context_data = asyncio.run(
+    #     api.evaluate_graph(
+    #         config=(config_exp, config_ctl),
+    #         nodes=(exp_dict["create_final_nodes"], ctl_dict["create_final_nodes"]),
+    #         entities=(exp_dict["create_final_entities"], ctl_dict["create_final_entities"]),
+    #         communities=(exp_dict["create_final_communities"], ctl_dict["create_final_communities"]),
+    #         community_reports=(exp_dict["create_final_community_reports"], ctl_dict["create_final_community_reports"]),
+    #         response_type=response_type,
+    #     )
+    # )
+
+    # logger.success(f"Evaluate Response: \n{response}")
+    # return response, context_data
 
 
 def evaluate_query(

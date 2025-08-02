@@ -18,16 +18,16 @@ WARNING: This API is under development and may undergo changes in future release
 Backwards compatibility is not guaranteed at this time.
 """
 
-from collections.abc import AsyncGenerator
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
-
 import pandas as pd
 from pydantic import validate_call
+from graphrag.index.config.embeddings import core_concept_embedding
 
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.logger.print_progress import PrintProgressLogger
 from graphrag.evaluate.factory import get_evaluate_search_engine
+from graphrag.utils.graph import find_all_parents, get_embeddings, get_all_paper_titles
 
 from graphrag.query.indexer_adapters import (
     read_indexer_communities,
@@ -39,6 +39,44 @@ if TYPE_CHECKING:
     from graphrag.query.structured_search.base import SearchResult
 
 logger = PrintProgressLogger("")
+
+def _get_extracted_entities(entities: pd.DataFrame, eval_paper_titles: list[str], viztree: pd.DataFrame) -> pd.DataFrame:
+    ee = entities[entities["title"].isin(eval_paper_titles)][["id", "title"]]
+    ee = pd.merge(
+        ee,
+        find_all_parents(ee["id"].tolist(), viztree), on="id", how="left"
+    )
+    return ee.explode("parents")
+
+def _enrich_with_embedding(extracted_entities: pd.DataFrame, embedding_df: pd.DataFrame) -> pd.DataFrame:
+    extracted_entities["parents"] = extracted_entities["parents"].astype(str)
+    return extracted_entities.merge(
+        embedding_df[["id", "vector", "text"]],
+        left_on="parents", right_on="id", how="left",
+        suffixes=("", "_embedding")
+    )
+
+def _post_process_entities(extracted_entities: pd.DataFrame) -> pd.DataFrame:
+    deduped = extracted_entities.drop_duplicates(subset=["id", "title"])
+    return deduped.groupby(["id", "title"]).agg({"text": list, "vector": list}).reset_index()
+
+@validate_call(config={"arbitrary_types_allowed": True})
+async def evaluate_keyword(
+    config: GraphRagConfig,
+    entities: pd.DataFrame,
+    viztree: pd.DataFrame,
+) -> float:
+    embedding_df = get_embeddings(config, core_concept_embedding)
+    eval_paper_titles = get_all_paper_titles()
+    extracted_entities = _get_extracted_entities(entities, eval_paper_titles, viztree)
+    extracted_entities = _enrich_with_embedding(extracted_entities, embedding_df)
+    extracted_entities = _post_process_entities(extracted_entities)
+    extracted_entities.to_feather("extracted_entities_with_explain.ftr")
+
+    logger.info(f"Extracted {len(extracted_entities)} keywords per document")
+    logger.info(extracted_entities.head())
+    # TODO: 실제 keyword 가져오고, 임베딩 추출하기
+    return 0.0
 
 @validate_call(config={"arbitrary_types_allowed": True})
 async def evaluate_graph(
