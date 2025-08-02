@@ -4,6 +4,7 @@
 """CLI implementation of the query subcommand."""
 
 import asyncio
+import logging
 import sys
 from pathlib import Path
 
@@ -21,6 +22,9 @@ from graphrag.utils.cli import _resolve_output_files
 from graphrag.utils.router import route_query_with_llm
 from graphrag.utils.timer import with_latency_logger
 from graphrag.utils.router import RouteDecision
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
 logger = PrintProgressLogger("")
 
 def run_global_search(
@@ -306,7 +310,7 @@ def run_auto_search(
         config_path=config_filepath,
         root_dir=root,
     )
-    logger.success(f"[router] Decision: {route.value}")
+    logger.info(f"[router] Decision: {route.value}")
     if route is RouteDecision.LOCAL:
         search_fn = (
             api.local_search_streaming if streaming else api.local_search
@@ -323,7 +327,7 @@ def run_auto_search(
             response_type=response_type,
             query=query,
         )
-        
+
     else:  # GLOBAL
         search_fn = (
             api.global_search_streaming if streaming else api.global_search
