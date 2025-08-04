@@ -30,5 +30,5 @@ required_embeddings: set[str] = {
     entity_description_embedding,
     community_full_content_embedding,
     text_unit_text_embedding,
-    core_concept_embedding,
 }
+extended_embeddings: set[str] = required_embeddings | {core_concept_embedding}

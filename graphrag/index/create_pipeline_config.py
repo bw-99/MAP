@@ -28,6 +28,7 @@ from graphrag.index.config.cache import (
 from graphrag.index.config.embeddings import (
     all_embeddings,
     required_embeddings,
+    extended_embeddings,
 )
 from graphrag.index.config.input import (
     PipelineCSVInputConfig,
@@ -96,19 +97,14 @@ def create_pipeline_config(settings: GraphRagConfig, verbose=False) -> PipelineC
 
     skip_workflows = settings.skip_workflows
     embedded_fields = _get_embedded_fields(settings)
-    covariates_enabled = (
-        settings.claim_extraction.enabled
-        and create_final_covariates not in skip_workflows
-    )
+    covariates_enabled = settings.claim_extraction.enabled and create_final_covariates not in skip_workflows
 
     result = PipelineConfig(
         root_dir=settings.root_dir,
         input=_get_pipeline_input_config(settings),
         reporting=_get_reporting_config(settings),
         storage=_get_storage_config(settings, settings.storage),
-        update_index_storage=_get_storage_config(
-            settings, settings.update_index_storage
-        ),
+        update_index_storage=_get_storage_config(settings, settings.update_index_storage),
         cache=_get_cache_config(settings),
         workflows=[
             *_document_workflows(settings),
@@ -134,6 +130,8 @@ def _get_embedded_fields(settings: GraphRagConfig) -> set[str]:
             return required_embeddings
         case TextEmbeddingTarget.none:
             return set()
+        case TextEmbeddingTarget.extended:
+            return extended_embeddings
         case _:
             msg = f"Unknown embeddings target: {settings.embeddings.target}"
             raise ValueError(msg)
@@ -149,9 +147,7 @@ def _log_llm_settings(settings: GraphRagConfig) -> None:
     )
     log.info(
         "Using Embeddings Config %s",
-        json.dumps(
-            {**settings.embeddings.llm.model_dump(), "api_key": "*****"}, indent=4
-        ),
+        json.dumps({**settings.embeddings.llm.model_dump(), "api_key": "*****"}, indent=4),
     )
 
 
@@ -163,8 +159,7 @@ def _document_workflows(
             name=create_base_documents,
             config={
                 "document_attribute_columns": list(
-                    {*(settings.input.document_attribute_columns)}
-                    - builtin_document_attributes
+                    {*(settings.input.document_attribute_columns)} - builtin_document_attributes
                 ),
             },
         ),
@@ -172,7 +167,7 @@ def _document_workflows(
             name=create_final_documents,
             config={
                 "snapshot_token2doc": settings.snapshots.token2doc,
-            }
+            },
         ),
     ]
 
@@ -184,38 +179,27 @@ def _text_unit_workflows(
     piepline_config = {
         "snapshot_transient": settings.snapshots.transient,
         "chunk_by": settings.chunks.group_by_columns,
-        "text_chunk": {
-            "strategy": settings.chunks.resolved_strategy(
-                settings.encoding_model
-            )
-        },
+        "text_chunk": {"strategy": settings.chunks.resolved_strategy(settings.encoding_model)},
     }
 
     # configurable하게 추가할 수 있도록 함
     if settings.equation_interpretation:
         piepline_config["equation_interpretation"] = {
             "enabled": settings.equation_interpretation.enabled,
-            "strategy": settings.equation_interpretation.resolved_strategy(
-                settings.root_dir
-            ),
+            "strategy": settings.equation_interpretation.resolved_strategy(settings.root_dir),
             "async_mode": settings.equation_interpretation.async_mode,
             **settings.equation_interpretation.parallelization.model_dump(),
         }
     if settings.sentence_reconstruction:
         piepline_config["sentence_reconstruction"] = {
             "enabled": settings.sentence_reconstruction.enabled,
-            "strategy": settings.sentence_reconstruction.resolved_strategy(
-                settings.root_dir
-            ),
+            "strategy": settings.sentence_reconstruction.resolved_strategy(settings.root_dir),
             "async_mode": settings.sentence_reconstruction.async_mode,
             **settings.sentence_reconstruction.parallelization.model_dump(),
         }
 
     return [
-        PipelineWorkflowReference(
-            name=create_base_text_units,
-            config=piepline_config
-        ),
+        PipelineWorkflowReference(name=create_base_text_units, config=piepline_config),
         PipelineWorkflowReference(
             name=create_final_text_units,
             config={
@@ -238,9 +222,9 @@ def _get_embedding_settings(
     # settings.vector_store.<vector_name> contains the specific settings for this embedding
     #
     strategy = settings.resolved_strategy()  # get the default strategy
-    strategy.update({
-        "vector_store": {**(vector_store_params or {}), **vector_store_settings}
-    })  # update the default strategy with the vector store settings
+    strategy.update(
+        {"vector_store": {**(vector_store_params or {}), **vector_store_settings}}
+    )  # update the default strategy with the vector store settings
     # This ensures the vector store config is part of the strategy and not the global config
     return {
         "strategy": strategy,
@@ -274,9 +258,7 @@ def _graph_workflows(settings: GraphRagConfig) -> list[PipelineWorkflowReference
         PipelineWorkflowReference(
             name=compute_communities,
             config={
-                "cluster_graph": {
-                    "strategy": settings.cluster_graph.resolved_strategy()
-                },
+                "cluster_graph": {"strategy": settings.cluster_graph.resolved_strategy()},
                 "snapshot_transient": settings.snapshots.transient,
             },
         ),
@@ -299,9 +281,7 @@ def _graph_workflows(settings: GraphRagConfig) -> list[PipelineWorkflowReference
     ]
 
 
-def _community_workflows(
-    settings: GraphRagConfig, covariates_enabled: bool
-) -> list[PipelineWorkflowReference]:
+def _community_workflows(settings: GraphRagConfig, covariates_enabled: bool) -> list[PipelineWorkflowReference]:
     pipeline_lst = [
         PipelineWorkflowReference(name=create_final_communities),
         PipelineWorkflowReference(
@@ -311,37 +291,37 @@ def _community_workflows(
                 "create_community_reports": {
                     **settings.community_reports.parallelization.model_dump(),
                     "async_mode": settings.community_reports.async_mode,
-                    "strategy": settings.community_reports.resolved_strategy(
-                        settings.root_dir
-                    ),
-                }
+                    "strategy": settings.community_reports.resolved_strategy(settings.root_dir),
+                },
             },
         ),
     ]
 
     # configurable하게 추가할 수 있도록 함
     if settings.core_concept_extraction:
-        pipeline_lst.append(PipelineWorkflowReference(
-            name=extract_core_concept,
-            config={
-                "core_concept_extract": {
-                    **settings.core_concept_extraction.parallelization.model_dump(),
-                    "async_mode": settings.core_concept_extraction.async_mode,
-                    "strategy": settings.core_concept_extraction.resolved_strategy(
-                        settings.root_dir
-                    ),
-                }
-            },
-        ))
+        pipeline_lst.append(
+            PipelineWorkflowReference(
+                name=extract_core_concept,
+                config={
+                    "core_concept_extract": {
+                        **settings.core_concept_extraction.parallelization.model_dump(),
+                        "async_mode": settings.core_concept_extraction.async_mode,
+                        "strategy": settings.core_concept_extraction.resolved_strategy(settings.root_dir),
+                    }
+                },
+            )
+        )
     if settings.viztree:
-        pipeline_lst.append(PipelineWorkflowReference(
-            name=create_final_viztree,
-            config={
-                "include_concept": settings.viztree.include_concept,
-                "enabled": settings.viztree.enabled,
-                "strategy": settings.viztree.resolved_strategy(),
-            }
-        ))
+        pipeline_lst.append(
+            PipelineWorkflowReference(
+                name=create_final_viztree,
+                config={
+                    "include_concept": settings.viztree.include_concept,
+                    "enabled": settings.viztree.enabled,
+                    "strategy": settings.viztree.resolved_strategy(),
+                },
+            )
+        )
     return pipeline_lst
 
 
@@ -354,18 +334,14 @@ def _covariate_workflows(
             config={
                 "claim_extract": {
                     **settings.claim_extraction.parallelization.model_dump(),
-                    "strategy": settings.claim_extraction.resolved_strategy(
-                        settings.root_dir, settings.encoding_model
-                    ),
+                    "strategy": settings.claim_extraction.resolved_strategy(settings.root_dir, settings.encoding_model),
                 },
             },
         )
     ]
 
 
-def _embeddings_workflows(
-    settings: GraphRagConfig, embedded_fields: set[str]
-) -> list[PipelineWorkflowReference]:
+def _embeddings_workflows(settings: GraphRagConfig, embedded_fields: set[str]) -> list[PipelineWorkflowReference]:
     return [
         PipelineWorkflowReference(
             name=generate_text_embeddings,
@@ -444,7 +420,7 @@ def _get_reporting_config(
             return PipelineFileReportingConfig(base_dir=settings.reporting.base_dir)
 
 
-def _get_storage_config(
+def _get_storage_config(  # noqa: C901
     settings: GraphRagConfig,
     storage_settings: StorageConfig | None,
 ) -> PipelineStorageConfigTypes | None:
@@ -507,7 +483,7 @@ def _get_storage_config(
             return PipelineFileStorageConfig(base_dir=str(Path(root_dir) / base_dir))
 
 
-def _get_cache_config(
+def _get_cache_config(  # noqa: C901
     settings: GraphRagConfig,
 ) -> PipelineCacheConfigTypes:
     """Get the cache type from the settings."""
