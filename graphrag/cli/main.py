@@ -21,7 +21,6 @@ from graphrag.prompt_tune.defaults import (
     K,
 )
 from graphrag.prompt_tune.types import DocSelectionType
-from graphrag.query.query_handler import (hybrid_search, search_online)
 
 INVALID_METHOD_ERROR = "Invalid method"
 
@@ -72,9 +71,7 @@ def path_autocomplete(
         # Apply wildcard matching if required
         if match_wildcard:
             completions = filter(
-                lambda i: wildcard_match(i, match_wildcard)
-                if match_wildcard
-                else False,
+                lambda i: wildcard_match(i, match_wildcard) if match_wildcard else False,
                 completions,
             )
 
@@ -91,7 +88,7 @@ class SearchType(Enum):
     GLOBAL = "global"
     DRIFT = "drift"
     HYBRID = "hybrid"
-    AUTO   = "auto"
+    AUTO = "auto"
 
     def __str__(self):
         """Return the string representation of the enum value."""
@@ -101,9 +98,9 @@ class SearchType(Enum):
 class EvalType(Enum):
     """The type of evaluation to run."""
 
-    INDEX = "index"
+    KEYWORD_MATCHING = "keyword"
+    GRAPH_LLM = "graph"
     QUERY = "query"
-    BOTH = "both"
 
     def __str__(self):
         """Return the string representation of the enum value."""
@@ -119,9 +116,7 @@ def _initialize_cli(
             dir_okay=True,
             writable=True,
             resolve_path=True,
-            autocompletion=path_autocomplete(
-                file_okay=False, dir_okay=True, writable=True, match_wildcard="*"
-            ),
+            autocompletion=path_autocomplete(file_okay=False, dir_okay=True, writable=True, match_wildcard="*"),
         ),
     ],
 ):
@@ -135,9 +130,7 @@ def _initialize_cli(
 def _index_cli(
     config: Annotated[
         Path | None,
-        typer.Option(
-            help="The configuration to use.", exists=True, file_okay=True, readable=True
-        ),
+        typer.Option(help="The configuration to use.", exists=True, file_okay=True, readable=True),
     ] = None,
     root: Annotated[
         Path,
@@ -147,23 +140,13 @@ def _index_cli(
             dir_okay=True,
             writable=True,
             resolve_path=True,
-            autocompletion=path_autocomplete(
-                file_okay=False, dir_okay=True, writable=True, match_wildcard="*"
-            ),
+            autocompletion=path_autocomplete(file_okay=False, dir_okay=True, writable=True, match_wildcard="*"),
         ),
     ] = Path(),  # set default to current directory
-    verbose: Annotated[
-        bool, typer.Option(help="Run the indexing pipeline with verbose logging")
-    ] = False,
-    memprofile: Annotated[
-        bool, typer.Option(help="Run the indexing pipeline with memory profiling")
-    ] = False,
-    resume: Annotated[
-        str | None, typer.Option(help="Resume a given indexing run")
-    ] = None,
-    logger: Annotated[
-        LoggerType, typer.Option(help="The progress logger to use.")
-    ] = LoggerType.RICH,
+    verbose: Annotated[bool, typer.Option(help="Run the indexing pipeline with verbose logging")] = False,
+    memprofile: Annotated[bool, typer.Option(help="Run the indexing pipeline with memory profiling")] = False,
+    resume: Annotated[str | None, typer.Option(help="Resume a given indexing run")] = None,
+    logger: Annotated[LoggerType, typer.Option(help="The progress logger to use.")] = LoggerType.RICH,
     dry_run: Annotated[
         bool,
         typer.Option(
@@ -173,9 +156,7 @@ def _index_cli(
     cache: Annotated[bool, typer.Option(help="Use LLM cache.")] = True,
     skip_validation: Annotated[
         bool,
-        typer.Option(
-            help="Skip any preflight validation. Useful when running no LLM steps."
-        ),
+        typer.Option(help="Skip any preflight validation. Useful when running no LLM steps."),
     ] = False,
     output: Annotated[
         Path | None,
@@ -208,9 +189,7 @@ def _index_cli(
 def _update_cli(
     config: Annotated[
         Path | None,
-        typer.Option(
-            help="The configuration to use.", exists=True, file_okay=True, readable=True
-        ),
+        typer.Option(help="The configuration to use.", exists=True, file_okay=True, readable=True),
     ] = None,
     root: Annotated[
         Path,
@@ -222,21 +201,13 @@ def _update_cli(
             resolve_path=True,
         ),
     ] = Path(),  # set default to current directory
-    verbose: Annotated[
-        bool, typer.Option(help="Run the indexing pipeline with verbose logging")
-    ] = False,
-    memprofile: Annotated[
-        bool, typer.Option(help="Run the indexing pipeline with memory profiling")
-    ] = False,
-    logger: Annotated[
-        LoggerType, typer.Option(help="The progress logger to use.")
-    ] = LoggerType.RICH,
+    verbose: Annotated[bool, typer.Option(help="Run the indexing pipeline with verbose logging")] = False,
+    memprofile: Annotated[bool, typer.Option(help="Run the indexing pipeline with memory profiling")] = False,
+    logger: Annotated[LoggerType, typer.Option(help="The progress logger to use.")] = LoggerType.RICH,
     cache: Annotated[bool, typer.Option(help="Use LLM cache.")] = True,
     skip_validation: Annotated[
         bool,
-        typer.Option(
-            help="Skip any preflight validation. Useful when running no LLM steps."
-        ),
+        typer.Option(help="Skip any preflight validation. Useful when running no LLM steps."),
     ] = False,
     output: Annotated[
         Path | None,
@@ -277,9 +248,7 @@ def _prompt_tune_cli(
             dir_okay=True,
             writable=True,
             resolve_path=True,
-            autocompletion=path_autocomplete(
-                file_okay=False, dir_okay=True, writable=True, match_wildcard="*"
-            ),
+            autocompletion=path_autocomplete(file_okay=False, dir_okay=True, writable=True, match_wildcard="*"),
         ),
     ] = Path(),  # set default to current directory
     config: Annotated[
@@ -289,9 +258,7 @@ def _prompt_tune_cli(
             exists=True,
             file_okay=True,
             readable=True,
-            autocompletion=path_autocomplete(
-                file_okay=True, dir_okay=False, match_wildcard="*"
-            ),
+            autocompletion=path_autocomplete(file_okay=True, dir_okay=False, match_wildcard="*"),
         ),
     ] = None,
     domain: Annotated[
@@ -305,43 +272,27 @@ def _prompt_tune_cli(
     ] = DocSelectionType.RANDOM,
     n_subset_max: Annotated[
         int,
-        typer.Option(
-            help="The number of text chunks to embed when --selection-method=auto."
-        ),
+        typer.Option(help="The number of text chunks to embed when --selection-method=auto."),
     ] = N_SUBSET_MAX,
     k: Annotated[
         int,
-        typer.Option(
-            help="The maximum number of documents to select from each centroid when --selection-method=auto."
-        ),
+        typer.Option(help="The maximum number of documents to select from each centroid when --selection-method=auto."),
     ] = K,
     limit: Annotated[
         int,
-        typer.Option(
-            help="The number of documents to load when --selection-method={random,top}."
-        ),
+        typer.Option(help="The number of documents to load when --selection-method={random,top}."),
     ] = 15,
-    max_tokens: Annotated[
-        int, typer.Option(help="The max token count for prompt generation.")
-    ] = MAX_TOKEN_COUNT,
+    max_tokens: Annotated[int, typer.Option(help="The max token count for prompt generation.")] = MAX_TOKEN_COUNT,
     min_examples_required: Annotated[
         int,
-        typer.Option(
-            help="The minimum number of examples to generate/include in the entity extraction prompt."
-        ),
+        typer.Option(help="The minimum number of examples to generate/include in the entity extraction prompt."),
     ] = 2,
-    chunk_size: Annotated[
-        int, typer.Option(help="The max token count for prompt generation.")
-    ] = MIN_CHUNK_SIZE,
+    chunk_size: Annotated[int, typer.Option(help="The max token count for prompt generation.")] = MIN_CHUNK_SIZE,
     language: Annotated[
         str | None,
-        typer.Option(
-            help="The primary language used for inputs and outputs in graphrag prompts."
-        ),
+        typer.Option(help="The primary language used for inputs and outputs in graphrag prompts."),
     ] = None,
-    discover_entity_types: Annotated[
-        bool, typer.Option(help="Discover and extract unspecified entity types.")
-    ] = True,
+    discover_entity_types: Annotated[bool, typer.Option(help="Discover and extract unspecified entity types.")] = True,
     output: Annotated[
         Path,
         typer.Option(
@@ -376,6 +327,7 @@ def _prompt_tune_cli(
         )
     )
 
+
 @app.command("query")
 def _query_cli(
     method: Annotated[SearchType, typer.Option(help="The query algorithm to use.")],
@@ -387,9 +339,7 @@ def _query_cli(
             exists=True,
             file_okay=True,
             readable=True,
-            autocompletion=path_autocomplete(
-                file_okay=True, dir_okay=False, match_wildcard="*"
-            ),
+            autocompletion=path_autocomplete(file_okay=True, dir_okay=False, match_wildcard="*"),
         ),
     ] = None,
     data: Annotated[
@@ -400,9 +350,7 @@ def _query_cli(
             dir_okay=True,
             readable=True,
             resolve_path=True,
-            autocompletion=path_autocomplete(
-                file_okay=False, dir_okay=True, match_wildcard="*"
-            ),
+            autocompletion=path_autocomplete(file_okay=False, dir_okay=True, match_wildcard="*"),
         ),
     ] = None,
     root: Annotated[
@@ -413,9 +361,7 @@ def _query_cli(
             dir_okay=True,
             writable=True,
             resolve_path=True,
-            autocompletion=path_autocomplete(
-                file_okay=False, dir_okay=True, match_wildcard="*"
-            ),
+            autocompletion=path_autocomplete(file_okay=False, dir_okay=True, match_wildcard="*"),
         ),
     ] = Path(),  # set default to current directory
     community_level: Annotated[
@@ -434,9 +380,7 @@ def _query_cli(
             help="Free form text describing the response type and format, can be anything, e.g. Multiple Paragraphs, Single Paragraph, Single Sentence, List of 3-7 Points, Single Page, Multi-Page Report. Default: Multiple Paragraphs"
         ),
     ] = "Multiple Paragraphs",
-    streaming: Annotated[
-        bool, typer.Option(help="Print response in a streaming manner.")
-    ] = False,
+    streaming: Annotated[bool, typer.Option(help="Print response in a streaming manner.")] = False,
 ):
     """Query a knowledge graph index."""
     from graphrag.cli.query import run_drift_search, run_global_search, run_local_search, run_auto_search
@@ -484,11 +428,11 @@ def _query_cli(
                 query=query,
             )
 
-
         case _:
             raise ValueError(INVALID_METHOD_ERROR)
 
     return response, context
+
 
 @app.command("evaluate")
 def _evaluate_cli(
@@ -500,9 +444,7 @@ def _evaluate_cli(
             exists=True,
             file_okay=True,
             readable=True,
-            autocompletion=path_autocomplete(
-                file_okay=True, dir_okay=False, match_wildcard="*"
-            ),
+            autocompletion=path_autocomplete(file_okay=True, dir_okay=False, match_wildcard="*"),
         ),
     ] = None,
     root_exp: Annotated[
@@ -513,9 +455,7 @@ def _evaluate_cli(
             dir_okay=True,
             writable=True,
             resolve_path=True,
-            autocompletion=path_autocomplete(
-                file_okay=False, dir_okay=True, match_wildcard="*"
-            ),
+            autocompletion=path_autocomplete(file_okay=False, dir_okay=True, match_wildcard="*"),
         ),
     ] = Path(),  # set default to current directory
     root_ctl: Annotated[
@@ -526,9 +466,7 @@ def _evaluate_cli(
             dir_okay=True,
             writable=True,
             resolve_path=True,
-            autocompletion=path_autocomplete(
-                file_okay=False, dir_okay=True, match_wildcard="*"
-            ),
+            autocompletion=path_autocomplete(file_okay=False, dir_okay=True, match_wildcard="*"),
         ),
     ] = Path(),  # set default to current directory
     response_type: Annotated[
@@ -545,11 +483,17 @@ def _evaluate_cli(
     ] = False,
 ):
     """Evaluate a knowledge graph index."""
-    from graphrag.cli.evaluate import evaluate_index, evaluate_query
+    from graphrag.cli.evaluate import graph_llm_evaluation, keyword_matching_evaluation, evaluate_query
 
     match method:
-        case EvalType.INDEX:
-            evaluate_index(
+        case EvalType.KEYWORD_MATCHING:
+            keyword_matching_evaluation(
+                config_filepath=config,
+                root_exp=root_exp,
+                dry_run=dry_run,
+            )
+        case EvalType.GRAPH_LLM:
+            graph_llm_evaluation(
                 config_filepath=config,
                 root_exp=root_exp,
                 root_ctl=root_ctl,
@@ -557,20 +501,6 @@ def _evaluate_cli(
                 dry_run=dry_run,
             )
         case EvalType.QUERY:
-            evaluate_query(
-                config_filepath=config,
-                root_exp=root_exp,
-                response_type=response_type,
-                dry_run=dry_run,
-            )
-        case EvalType.BOTH:
-            evaluate_index(
-                config_filepath=config,
-                root_exp=root_exp,
-                root_ctl=root_ctl,
-                response_type=response_type,
-                dry_run=dry_run,
-            )
             evaluate_query(
                 config_filepath=config,
                 root_exp=root_exp,
