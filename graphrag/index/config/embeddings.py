@@ -12,6 +12,7 @@ community_summary_embedding = "community.summary"
 community_full_content_embedding = "community.full_content"
 text_unit_text_embedding = "text_unit.text"
 core_concept_embedding = "core_concept.text"
+keyword_embedding = "keyword.text"
 
 all_embeddings: set[str] = {
     entity_title_embedding,
@@ -22,11 +23,12 @@ all_embeddings: set[str] = {
     community_summary_embedding,
     community_full_content_embedding,
     text_unit_text_embedding,
-    core_concept_embedding
+    core_concept_embedding,
+    keyword_embedding,
 }
 required_embeddings: set[str] = {
     entity_description_embedding,
     community_full_content_embedding,
     text_unit_text_embedding,
-    core_concept_embedding
+    core_concept_embedding,
 }
