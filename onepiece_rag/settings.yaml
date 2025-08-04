@@ -33,7 +33,7 @@ embeddings:
     db_uri: output/lancedb
     container_name: default
     overwrite: true
-  target: required
+  target: extended
   llm:
     api_key: ${GRAPHRAG_API_KEY}
     type: openai_embedding # or azure_openai_embedding
