@@ -20,14 +20,17 @@ Backwards compatibility is not guaranteed at this time.
 
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
+import numpy as np
+from graphrag.index.operations.embed_text import embed_text
 import pandas as pd
 from pydantic import validate_call
-from graphrag.index.config.embeddings import core_concept_embedding
-
+from graphrag.index.config.embeddings import core_concept_embedding, keyword_embedding
+from datashaper import NoopVerbCallbacks
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.logger.print_progress import PrintProgressLogger
 from graphrag.evaluate.factory import get_evaluate_search_engine
 from graphrag.utils.graph import find_all_parents, get_embeddings, get_all_paper_titles
+from graphrag.index.create_pipeline_config import _get_embedding_settings
 
 from graphrag.query.indexer_adapters import (
     read_indexer_communities,
@@ -40,25 +43,30 @@ if TYPE_CHECKING:
 
 logger = PrintProgressLogger("")
 
-def _get_extracted_entities(entities: pd.DataFrame, eval_paper_titles: list[str], viztree: pd.DataFrame) -> pd.DataFrame:
+
+def _get_extracted_entities(
+    entities: pd.DataFrame, eval_paper_titles: pd.Series, viztree: pd.DataFrame
+) -> pd.DataFrame:
     ee = entities[entities["title"].isin(eval_paper_titles)][["id", "title"]]
-    ee = pd.merge(
-        ee,
-        find_all_parents(ee["id"].tolist(), viztree), on="id", how="left"
-    )
+    ee = pd.merge(ee, find_all_parents(ee["id"].tolist(), viztree), on="id", how="left")
     return ee.explode("parents")
+
 
 def _enrich_with_embedding(extracted_entities: pd.DataFrame, embedding_df: pd.DataFrame) -> pd.DataFrame:
     extracted_entities["parents"] = extracted_entities["parents"].astype(str)
     return extracted_entities.merge(
         embedding_df[["id", "vector", "text"]],
-        left_on="parents", right_on="id", how="left",
-        suffixes=("", "_embedding")
+        left_on="parents",
+        right_on="id",
+        how="left",
+        suffixes=("", "_embedding"),
     )
+
 
 def _post_process_entities(extracted_entities: pd.DataFrame) -> pd.DataFrame:
     deduped = extracted_entities.drop_duplicates(subset=["id", "title"])
     return deduped.groupby(["id", "title"]).agg({"text": list, "vector": list}).reset_index()
+
 
 @validate_call(config={"arbitrary_types_allowed": True})
 async def evaluate_keyword(
@@ -67,16 +75,38 @@ async def evaluate_keyword(
     viztree: pd.DataFrame,
 ) -> float:
     embedding_df = get_embeddings(config, core_concept_embedding)
-    eval_paper_titles = get_all_paper_titles()
-    extracted_entities = _get_extracted_entities(entities, eval_paper_titles, viztree)
+    all_paper_df = get_all_paper_titles()
+    all_paper_df["title_upper"] = all_paper_df["title"].apply(lambda x: x.strip().upper())
+
+    # 예측 키워드 임베딩 가져오기
+    extracted_entities = _get_extracted_entities(entities, all_paper_df["title_upper"], viztree)
     extracted_entities = _enrich_with_embedding(extracted_entities, embedding_df)
+    extracted_entities = extracted_entities.dropna(subset=["text"])
     extracted_entities = _post_process_entities(extracted_entities)
     extracted_entities.to_feather("extracted_entities_with_explain.ftr")
 
     logger.info(f"Extracted {len(extracted_entities)} keywords per document")
-    logger.info(extracted_entities.head())
-    # TODO: 실제 keyword 가져오고, 임베딩 추출하기
+
+    # 정답 키워드 임베딩 추출
+    eval_paper_df = all_paper_df[
+        all_paper_df["title_upper"].isin(extracted_entities["title"].apply(lambda x: x.strip().upper()))
+    ]
+    eval_paper_df["keywords"] = eval_paper_df["keyword"].apply(lambda x: " ".join(x))
+    eval_paper_df["id"] = np.arange(len(eval_paper_df))
+
+    eval_paper_df["embedding"] = await embed_text(
+        eval_paper_df.loc[:, ["id", "keywords"]],
+        callbacks=NoopVerbCallbacks(),
+        cache=None,
+        embed_column="keywords",
+        embedding_name=keyword_embedding,
+        strategy=_get_embedding_settings(config.embeddings)["strategy"],
+    )
+
+    # TODO: similarity score 계산하기
+
     return 0.0
+
 
 @validate_call(config={"arbitrary_types_allowed": True})
 async def evaluate_graph(
@@ -90,7 +120,6 @@ async def evaluate_graph(
     str | dict[str, Any] | list[dict[str, Any]],
     str | list[pd.DataFrame] | dict[str, pd.DataFrame],
 ]:
-
     """Evaluate two graphs.
 
     Parameters
@@ -127,15 +156,9 @@ async def evaluate_graph(
 
     # default setting is on the first config
     map_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.map_prompt)
-    reduce_prompt = _load_search_prompt(
-        config[0].root_dir, config[0].global_search.reduce_prompt
-    )
-    knowledge_prompt = _load_search_prompt(
-        config[0].root_dir, config[0].global_search.knowledge_prompt
-    )
-    evaluate_prompt = _load_search_prompt(
-        config[0].root_dir, config[0].global_search.evaluate_prompt
-    )
+    reduce_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.reduce_prompt)
+    knowledge_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.knowledge_prompt)
+    evaluate_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.evaluate_prompt)
 
     if True:
         # combine the two dataframes
@@ -160,6 +183,7 @@ async def evaluate_graph(
     response = result.response
     context_data = _reformat_context_data(result.context_data)  # type: ignore
     return response, context_data
+
 
 def _reformat_context_data(context_data: dict) -> dict:
     """
