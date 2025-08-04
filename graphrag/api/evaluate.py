@@ -31,6 +31,7 @@ from graphrag.logger.print_progress import PrintProgressLogger
 from graphrag.evaluate.factory import get_evaluate_search_engine
 from graphrag.utils.graph import find_all_parents, get_embeddings, get_all_paper_titles
 from graphrag.index.create_pipeline_config import _get_embedding_settings
+from graphrag.evaluate.metrics import metrics_recall, metrics_mrr, metrics_ndcg, metrics_map
 
 from graphrag.query.indexer_adapters import (
     read_indexer_communities,
@@ -52,45 +53,35 @@ def _get_extracted_entities(
     return ee.explode("parents")
 
 
-def _enrich_with_embedding(extracted_entities: pd.DataFrame, embedding_df: pd.DataFrame) -> pd.DataFrame:
+# 예측 키워드 임베딩 가져오기
+def _get_pred_embeddings(
+    entities: pd.DataFrame, all_paper_df: pd.DataFrame, viztree: pd.DataFrame, embedding_df: pd.DataFrame
+) -> pd.DataFrame:
+    extracted_entities = _get_extracted_entities(entities, all_paper_df["title_upper"], viztree)
     extracted_entities["parents"] = extracted_entities["parents"].astype(str)
-    return extracted_entities.merge(
+    extracted_entities = extracted_entities.merge(
         embedding_df[["id", "vector", "text"]],
         left_on="parents",
         right_on="id",
         how="left",
         suffixes=("", "_embedding"),
     )
-
-
-def _post_process_entities(extracted_entities: pd.DataFrame) -> pd.DataFrame:
-    deduped = extracted_entities.drop_duplicates(subset=["id", "title"])
-    return deduped.groupby(["id", "title"]).agg({"text": list, "vector": list}).reset_index()
-
-
-@validate_call(config={"arbitrary_types_allowed": True})
-async def evaluate_keyword(
-    config: GraphRagConfig,
-    entities: pd.DataFrame,
-    viztree: pd.DataFrame,
-) -> float:
-    embedding_df = get_embeddings(config, core_concept_embedding)
-    all_paper_df = get_all_paper_titles()
-    all_paper_df["title_upper"] = all_paper_df["title"].apply(lambda x: x.strip().upper())
-
-    # 예측 키워드 임베딩 가져오기
-    extracted_entities = _get_extracted_entities(entities, all_paper_df["title_upper"], viztree)
-    extracted_entities = _enrich_with_embedding(extracted_entities, embedding_df)
     extracted_entities = extracted_entities.dropna(subset=["text"])
-    extracted_entities = _post_process_entities(extracted_entities)
-    extracted_entities.to_feather("extracted_entities_with_explain.ftr")
-
+    extracted_entities = (
+        extracted_entities.drop_duplicates(subset=["id", "title"])
+        .groupby(["id", "title"])
+        .agg({"text": list, "vector": list})
+        .reset_index()
+    )
     logger.info(f"Extracted {len(extracted_entities)} keywords per document")
+    return extracted_entities
 
-    # 정답 키워드 임베딩 추출
-    eval_paper_df = all_paper_df[
-        all_paper_df["title_upper"].isin(extracted_entities["title"].apply(lambda x: x.strip().upper()))
-    ]
+
+# 정답 키워드 임베딩 추출
+async def _get_gt_embeddings(
+    extracted_entities: pd.DataFrame, all_paper_df: pd.DataFrame, config: GraphRagConfig
+) -> pd.DataFrame:
+    eval_paper_df = all_paper_df[all_paper_df["title_upper"].isin(extracted_entities["title"])]
     eval_paper_df["keywords"] = eval_paper_df["keyword"].apply(lambda x: " ".join(x))
     eval_paper_df["id"] = np.arange(len(eval_paper_df))
 
@@ -102,10 +93,63 @@ async def evaluate_keyword(
         embedding_name=keyword_embedding,
         strategy=_get_embedding_settings(config.embeddings)["strategy"],
     )
+    return eval_paper_df
 
-    # TODO: similarity score 계산하기
 
-    return 0.0
+@validate_call(config={"arbitrary_types_allowed": True})
+async def evaluate_keyword(
+    config: GraphRagConfig,
+    entities: pd.DataFrame,
+    viztree: pd.DataFrame,
+    k_lst: list[int] = [3, 5, 10],
+) -> pd.DataFrame:
+    embedding_df = get_embeddings(config, core_concept_embedding)
+    all_paper_df = get_all_paper_titles()
+    all_paper_df["title_upper"] = all_paper_df["title"].apply(lambda x: x.strip().upper())
+
+    extracted_entities = _get_pred_embeddings(entities, all_paper_df, viztree, embedding_df)
+    eval_paper_df = await _get_gt_embeddings(extracted_entities, all_paper_df, config)
+
+    if any(k > len(eval_paper_df) for k in k_lst):
+        logger.warning(f"k is greater than the number of GT keywords. Setting k to {len(eval_paper_df)}")
+        k_lst = [min(k, len(eval_paper_df)) for k in k_lst]
+
+    # similarity score 계산 & top-k index 추출
+    topk_idx_lst, gt_idx_lst = [], []
+    gt_embeddings = np.stack(eval_paper_df["embedding"])
+    for _, row in extracted_entities.iterrows():
+        pred_embeddings = np.array(row["vector"])
+        pred_norm = pred_embeddings / np.linalg.norm(pred_embeddings, axis=1, keepdims=True)
+        gt_norm = gt_embeddings / np.linalg.norm(gt_embeddings, axis=1, keepdims=True)
+        # 추출된 키워드 n개 중 GT 키워드와 가장 높은 k개만 뽑으면 된다.
+        # 그러니 여러 개의 예측 키워드 중 가장 높은 similarity를 사용한다.
+        sims = np.max(pred_norm @ gt_norm.T, axis=0)
+        topk_idx = np.argpartition(-sims, kth=max(k_lst) - 1, axis=0)[: max(k_lst)]
+        topk_idx_lst.append(topk_idx)
+        gt_idx_lst.append(eval_paper_df[eval_paper_df["title_upper"] == row["title"]]["id"].values[0])
+
+    topk_idx_lst = np.array(topk_idx_lst)
+    gt_idx_lst = np.array(gt_idx_lst)
+
+    # 각 k마다 retrieval 성능을 찍는다.
+    results = []
+    for k in k_lst:
+        recall = metrics_recall(topk_idx_lst[:, :k], gt_idx_lst)
+        mrr = metrics_mrr(topk_idx_lst[:, :k], gt_idx_lst)
+        ndcg = metrics_ndcg(topk_idx_lst[:, :k], gt_idx_lst)
+        map_ = metrics_map(topk_idx_lst[:, :k], gt_idx_lst)
+
+        results.append(
+            {
+                "K": k,
+                "Recall": recall,
+                "MRR": mrr,
+                "NDCG": ndcg,
+                "MAP": map_,
+            }
+        )
+
+    return pd.DataFrame(results)
 
 
 @validate_call(config={"arbitrary_types_allowed": True})
