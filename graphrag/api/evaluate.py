@@ -84,7 +84,7 @@ async def _get_gt_embeddings(
     eval_paper_df = all_paper_df[all_paper_df["title_upper"].isin(extracted_entities["title"])]
     eval_paper_df["keywords"] = eval_paper_df["keyword"].apply(lambda x: " ".join(x))
     eval_paper_df["id"] = np.arange(len(eval_paper_df))
-
+    eval_paper_df = eval_paper_df.replace("", pd.NA).dropna(subset=["keywords"])
     eval_paper_df["embedding"] = await embed_text(
         eval_paper_df.loc[:, ["id", "keywords"]],
         callbacks=NoopVerbCallbacks(),
@@ -109,6 +109,9 @@ async def evaluate_keyword(
 
     extracted_entities = _get_pred_embeddings(entities, all_paper_df, viztree, embedding_df)
     eval_paper_df = await _get_gt_embeddings(extracted_entities, all_paper_df, config)
+    extracted_entities = extracted_entities[extracted_entities["title"].isin(eval_paper_df["title_upper"])].reset_index(
+        drop=True
+    )
 
     if any(k > len(eval_paper_df) for k in k_lst):
         logger.warning(f"k is greater than the number of GT keywords. Setting k to {len(eval_paper_df)}")

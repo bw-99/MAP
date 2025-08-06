@@ -5,6 +5,14 @@ import tqdm
 import argparse
 from pathlib import Path
 
+from util.process_paper.const import KEYWORD_KEY
+
+
+def paper_availability(data: dict) -> bool:
+    if not data[KEYWORD_KEY].strip():
+        return False
+    return True
+
 
 def create_corpus_from_json(data: dict) -> str:
     corpus_parts = []
@@ -26,13 +34,19 @@ NUM_EXAMPLE = args.num_example
 
 os.makedirs(f"{ROOT}/input", exist_ok=True)
 json_flst = glob.glob("data/parsed/*.json")
-json_flst = json_flst[:NUM_EXAMPLE]
 
+sample_counts = 0
 for _, f_path in tqdm.tqdm(enumerate(json_flst), total=len(json_flst)):
+    if sample_counts >= NUM_EXAMPLE:
+        break
+
     data = json.load(open(f_path, "r", encoding="utf-8"))
-    corpus = create_corpus_from_json(data)
+    # 부적절한 논문은 제외한다.
+    if not paper_availability(data):
+        continue
 
     with open(f"{ROOT}/input/{Path(f_path).stem}.txt", "w", encoding="utf-8") as f:
-        f.write(corpus)
+        f.write(create_corpus_from_json(data))
+        sample_counts += 1
 
 print(f"Processed {len(glob.glob(f'{ROOT}/input/*.txt'))} files")
