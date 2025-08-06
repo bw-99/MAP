@@ -9,14 +9,14 @@ RUN apt-get update && apt-get install -y \
 
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
-ENV PATH="/root/.cargo/bin:${PATH}"
+ENV PATH="/root/.local/bin:${PATH}"
 
 WORKDIR /workspace
 COPY . /workspace
 
-RUN uv venv .venv && \
+RUN /root/.local/bin/uv venv .venv && \
     . .venv/bin/activate && \
-    uv pip install -e ".[dev, preprocess, server]" && \
+    /root/.local/bin/uv pip install -e ".[dev, preprocess, server]" && \
     .venv/bin/pre-commit install
 
 ENTRYPOINT [ "/bin/bash" ]
