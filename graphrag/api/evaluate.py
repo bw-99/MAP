@@ -68,7 +68,7 @@ def _get_pred_embeddings(
     )
     extracted_entities = extracted_entities.dropna(subset=["text"])
     extracted_entities = (
-        extracted_entities.drop_duplicates(subset=["id", "title"])
+        extracted_entities.drop_duplicates(subset=["id", "title", "text"])
         .groupby(["id", "title"])
         .agg({"text": list, "vector": list})
         .reset_index()
