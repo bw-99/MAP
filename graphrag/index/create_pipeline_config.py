@@ -181,40 +181,40 @@ def _text_unit_workflows(
     settings: GraphRagConfig,
     covariates_enabled: bool,
 ) -> list[PipelineWorkflowReference]:
+    piepline_config = {
+        "snapshot_transient": settings.snapshots.transient,
+        "chunk_by": settings.chunks.group_by_columns,
+        "text_chunk": {
+            "strategy": settings.chunks.resolved_strategy(
+                settings.encoding_model
+            )
+        },
+    }
+
+    # configurable하게 추가할 수 있도록 함
+    if settings.equation_interpretation:
+        piepline_config["equation_interpretation"] = {
+            "enabled": settings.equation_interpretation.enabled,
+            "strategy": settings.equation_interpretation.resolved_strategy(
+                settings.root_dir
+            ),
+            "async_mode": settings.equation_interpretation.async_mode,
+            **settings.equation_interpretation.parallelization.model_dump(),
+        }
+    if settings.sentence_reconstruction:
+        piepline_config["sentence_reconstruction"] = {
+            "enabled": settings.sentence_reconstruction.enabled,
+            "strategy": settings.sentence_reconstruction.resolved_strategy(
+                settings.root_dir
+            ),
+            "async_mode": settings.sentence_reconstruction.async_mode,
+            **settings.sentence_reconstruction.parallelization.model_dump(),
+        }
+
     return [
         PipelineWorkflowReference(
             name=create_base_text_units,
-            config={
-                "snapshot_transient": settings.snapshots.transient,
-                "chunk_by": settings.chunks.group_by_columns,
-                "text_chunk": {
-                    "strategy": settings.chunks.resolved_strategy(
-                        settings.encoding_model
-                    )
-                },
-
-                "equation_interpretation": {
-                    "enabled": settings.equation_interpretation.enabled,
-                    "strategy": settings.equation_interpretation.resolved_strategy(
-
-                        settings.root_dir
-                    ),
-                    "async_mode": settings.async_mode,
-                    **settings.equation_interpretation.parallelization.model_dump(),
-                },
-
-
-                "sentence_reconstruction": {
-                    "enabled": settings.sentence_reconstruction.enabled,
-                    "strategy": settings.sentence_reconstruction.resolved_strategy(
-                        settings.root_dir
-                    ),
-                    "async_mode": settings.async_mode,
-                    **settings.sentence_reconstruction.parallelization.model_dump(),
-                }
-
-
-            },
+            config=piepline_config
         ),
         PipelineWorkflowReference(
             name=create_final_text_units,
@@ -302,7 +302,7 @@ def _graph_workflows(settings: GraphRagConfig) -> list[PipelineWorkflowReference
 def _community_workflows(
     settings: GraphRagConfig, covariates_enabled: bool
 ) -> list[PipelineWorkflowReference]:
-    return [
+    pipeline_lst = [
         PipelineWorkflowReference(name=create_final_communities),
         PipelineWorkflowReference(
             name=create_final_community_reports,
@@ -317,7 +317,11 @@ def _community_workflows(
                 }
             },
         ),
-        PipelineWorkflowReference(
+    ]
+
+    # configurable하게 추가할 수 있도록 함
+    if settings.core_concept_extraction:
+        pipeline_lst.append(PipelineWorkflowReference(
             name=extract_core_concept,
             config={
                 "core_concept_extract": {
@@ -328,14 +332,17 @@ def _community_workflows(
                     ),
                 }
             },
-        ),
-        PipelineWorkflowReference(
+        ))
+    if settings.viztree:
+        pipeline_lst.append(PipelineWorkflowReference(
             name=create_final_viztree,
             config={
-                "include_concept": settings.viztree.include_concept
+                "include_concept": settings.viztree.include_concept,
+                "enabled": settings.viztree.enabled,
+                "strategy": settings.viztree.resolved_strategy(),
             }
-        ),
-    ]
+        ))
+    return pipeline_lst
 
 
 def _covariate_workflows(

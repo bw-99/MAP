@@ -39,5 +39,6 @@ class EquationInterpretationConfig(LLMConfig):
             .decode(encoding="utf-8")
             if self.prompt
             else None,
-            "enabled": self.enabled
+            "enabled": self.enabled,
+            "async_mode": self.async_mode,
         }

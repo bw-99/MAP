@@ -4,6 +4,7 @@
 """CLI implementation of the query subcommand."""
 
 import asyncio
+import logging
 import sys
 from pathlib import Path
 
@@ -11,17 +12,18 @@ import pandas as pd
 
 import graphrag.api as api
 from graphrag.config.load_config import load_config
-from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.config.resolve_path import resolve_paths
-from graphrag.index.create_pipeline_config import create_pipeline_config
 from graphrag.logger.print_progress import PrintProgressLogger
-from graphrag.storage.factory import StorageFactory
-from graphrag.utils.storage import load_table_from_storage
+
 from graphrag.utils.cli import _resolve_output_files
 from graphrag.utils.router import route_query_with_llm
 from graphrag.utils.timer import with_latency_logger
 from graphrag.utils.router import RouteDecision
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+
 logger = PrintProgressLogger("")
+
 
 def run_global_search(
     config_filepath: Path | None,
@@ -55,9 +57,7 @@ def run_global_search(
     final_nodes: pd.DataFrame = dataframe_dict["create_final_nodes"]
     final_entities: pd.DataFrame = dataframe_dict["create_final_entities"]
     final_communities: pd.DataFrame = dataframe_dict["create_final_communities"]
-    final_community_reports: pd.DataFrame = dataframe_dict[
-        "create_final_community_reports"
-    ]
+    final_community_reports: pd.DataFrame = dataframe_dict["create_final_community_reports"]
 
     # call the Query API
     if streaming:
@@ -140,9 +140,7 @@ def run_local_search(
         ],
     )
     final_nodes: pd.DataFrame = dataframe_dict["create_final_nodes"]
-    final_community_reports: pd.DataFrame = dataframe_dict[
-        "create_final_community_reports"
-    ]
+    final_community_reports: pd.DataFrame = dataframe_dict["create_final_community_reports"]
     final_text_units: pd.DataFrame = dataframe_dict["create_final_text_units"]
     final_relationships: pd.DataFrame = dataframe_dict["create_final_relationships"]
     final_entities: pd.DataFrame = dataframe_dict["create_final_entities"]
@@ -227,9 +225,7 @@ def run_drift_search(
         ],
     )
     final_nodes: pd.DataFrame = dataframe_dict["create_final_nodes"]
-    final_community_reports: pd.DataFrame = dataframe_dict[
-        "create_final_community_reports"
-    ]
+    final_community_reports: pd.DataFrame = dataframe_dict["create_final_community_reports"]
     final_text_units: pd.DataFrame = dataframe_dict["create_final_text_units"]
     final_relationships: pd.DataFrame = dataframe_dict["create_final_relationships"]
     final_entities: pd.DataFrame = dataframe_dict["create_final_entities"]
@@ -293,24 +289,22 @@ def run_auto_search(
         optional_list=["create_final_covariates.parquet"],
     )
 
-    nodes          = dataframe_dict["create_final_nodes"]
-    entities       = dataframe_dict["create_final_entities"]
-    communities    = dataframe_dict.get("create_final_communities")
-    comm_reports   = dataframe_dict["create_final_community_reports"]
-    text_units     = dataframe_dict.get("create_final_text_units")
-    relationships  = dataframe_dict.get("create_final_relationships")
-    covariates     = dataframe_dict.get("create_final_covariates")
+    nodes = dataframe_dict["create_final_nodes"]
+    entities = dataframe_dict["create_final_entities"]
+    communities = dataframe_dict.get("create_final_communities")
+    comm_reports = dataframe_dict["create_final_community_reports"]
+    text_units = dataframe_dict.get("create_final_text_units")
+    relationships = dataframe_dict.get("create_final_relationships")
+    covariates = dataframe_dict.get("create_final_covariates")
 
     route = route_query_with_llm(
         query=query,
         config_path=config_filepath,
         root_dir=root,
     )
-    logger.success(f"[router] Decision: {route.value}")
+    logger.info(f"[router] Decision: {route.value}")
     if route is RouteDecision.LOCAL:
-        search_fn = (
-            api.local_search_streaming if streaming else api.local_search
-        )
+        search_fn = api.local_search_streaming if streaming else api.local_search
         kwargs = dict(
             config=config,
             nodes=nodes,
@@ -323,11 +317,9 @@ def run_auto_search(
             response_type=response_type,
             query=query,
         )
-        
+
     else:  # GLOBAL
-        search_fn = (
-            api.global_search_streaming if streaming else api.global_search
-        )
+        search_fn = api.global_search_streaming if streaming else api.global_search
         kwargs = dict(
             config=config,
             nodes=nodes,
@@ -341,6 +333,7 @@ def run_auto_search(
         )
 
     if streaming:
+
         async def _stream():
             full, ctx, first = "", None, True
             async for chunk in search_fn(**kwargs):
@@ -348,9 +341,11 @@ def run_auto_search(
                     ctx, first = chunk, False
                 else:
                     full += chunk
-                    print(chunk, end=""); sys.stdout.flush()
+                    print(chunk, end="")
+                    sys.stdout.flush()
             print()
             return full, ctx
+
         return asyncio.run(_stream())
     else:
         response, ctx = asyncio.run(search_fn(**kwargs))

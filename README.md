@@ -1,20 +1,23 @@
 ## GraphRAG Developments
 
 ### Dev dependency
-1. Install pre-commit on your dev environment (not docker, terminal you choose to use `git commit`) via `pip install pre-commit`
+1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
+2. Create venv via `uv venv .venv`
+3. Activate venv via `source .venv/bin/activate`
+4. Install dependencies via `uv pip install -e ".[dev, preprocess, server]"`
+5. Install pre-commit on your dev environment `pre-commit install`
 
 ### Tutorial
 0. 프로젝트 폴더에 example 폴더 생성
-1. (플젝 초기화) `python -m graphrag init --root example`
-2. (환경설정 가져오기) onepiece_rag 폴더 안에 prompts, setting.yml을 example 안에 같은 파일/폴더 덮어씌우기
-3. (API key) example 폴더 아래에 .env 생성 & 개인적으로 전달받은 내용 작성
-4. (논문 데이터 준비하기) **data/parsed 아래에 데이터가 있을 경우 시행할 필요없다**
+1. (프로젝트 초기화) `python -m graphrag init --root example`
+2. (API key) example 폴더 아래에 .env 생성 & 개인적으로 전달받은 내용 작성
+3. (논문 데이터 준비하기) **data/parsed 아래에 데이터가 있을 경우 시행할 필요없다**
    1) (논문 가져오고 기본적인 파싱) `python -m util.process_paper --function parse_pdfs`
    2) (핵심 키워드 추출) `python -m util.process_paper --function parse_keywords`
    3) (레퍼런스 목록 추출) `python -m util.process_paper --function parse_references`
-5. (논문 데이터 최종 전처리) `python -m util.preprocess --root example --num_example 10`
-6. (인덱싱) `python3 -m graphrag index --root example`
-7. (결과) example/output/create_final_viztree 파일 pandas로 열기
+4. (논문 데이터 최종 전처리) `python -m util.preprocess --root example --num_example 10`
+5. (인덱싱) `python3 -m graphrag index --root example`
+6. (결과) example/output 경로에 있는 파일 확인하기
 
 ## How to Run (use deploy version)
 1. cd to workspace
