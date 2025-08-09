@@ -37,9 +37,7 @@ async def run_resonstruct_sentence(
 
     tick = progress_ticker(callbacks.progress, len(base_text_units))
     strategy_config = {**strategy}
-    runner = _load_strategy(
-        strategy.get("type", SentenceReconstructionStrategyType.plain_llm)
-    )
+    runner = _load_strategy(strategy.get("type", SentenceReconstructionStrategyType.plain_llm))
 
     async def run_generate(record):
         result = await runner(

@@ -18,17 +18,9 @@ def get_candidate_communities(
     use_community_summary: bool = False,
 ) -> pd.DataFrame:
     """Get all communities that are related to selected entities."""
-    selected_community_ids = [
-        entity.community_ids for entity in selected_entities if entity.community_ids
-    ]
-    selected_community_ids = [
-        item for sublist in selected_community_ids for item in sublist
-    ]
-    selected_reports = [
-        community
-        for community in community_reports
-        if community.id in selected_community_ids
-    ]
+    selected_community_ids = [entity.community_ids for entity in selected_entities if entity.community_ids]
+    selected_community_ids = [item for sublist in selected_community_ids for item in sublist]
+    selected_reports = [community for community in community_reports if community.id in selected_community_ids]
     return to_community_report_dataframe(
         reports=selected_reports,
         include_community_rank=include_community_rank,
@@ -60,15 +52,11 @@ def to_community_report_dataframe(
             report.short_id if report.short_id else "",
             report.title,
             *[
-                str(report.attributes.get(field, ""))
-                if report.attributes and report.attributes.get(field)
-                else ""
+                str(report.attributes.get(field, "")) if report.attributes and report.attributes.get(field) else ""
                 for field in attribute_cols
             ],
         ]
-        new_record.append(
-            report.summary if use_community_summary else report.full_content
-        )
+        new_record.append(report.summary if use_community_summary else report.full_content)
         if include_community_rank:
             new_record.append(str(report.rank))
         records.append(new_record)

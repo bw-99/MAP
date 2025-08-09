@@ -5,23 +5,15 @@
 
 from pydantic import BaseModel, Field
 
+
 class VizTreeConfig(BaseModel):
     """The viztree configuration to use."""
 
-    include_concept: bool | None = Field(
-        description="Whether the concept entity include to viztree", default=False
-    )
-    strategy: dict | None = Field(
-        description="The viztree strategy override.", default=None
-    )
-    enabled: bool | None = Field(
-        default=False, description="Whether to include concept in viztree."
-    )
+    include_concept: bool | None = Field(description="Whether the concept entity include to viztree", default=False)
+    strategy: dict | None = Field(description="The viztree strategy override.", default=None)
+    enabled: bool | None = Field(default=False, description="Whether to include concept in viztree.")
 
     def resolved_strategy(self) -> dict:
         """Get the resolved viztree configuration."""
 
-        return self.strategy or {
-            "include_concept": self.include_concept,
-            "enabled": self.enabled
-        }
+        return self.strategy or {"include_concept": self.include_concept, "enabled": self.enabled}

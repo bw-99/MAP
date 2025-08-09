@@ -67,9 +67,7 @@ class LocalQuestionGen(BaseQuestionGen):
         else:
             # construct current query and conversation history
             question_text = question_history[-1]
-            history = [
-                {"role": "user", "content": query} for query in question_history[:-1]
-            ]
+            history = [{"role": "user", "content": query} for query in question_history[:-1]]
             conversation_history = ConversationHistory.from_list(history)
 
         if context_data is None:
@@ -90,9 +88,7 @@ class LocalQuestionGen(BaseQuestionGen):
         log.info("GENERATE QUESTION: %s. LAST QUESTION: %s", start_time, question_text)
         system_prompt = ""
         try:
-            system_prompt = self.system_prompt.format(
-                context_data=context_data, question_count=question_count
-            )
+            system_prompt = self.system_prompt.format(context_data=context_data, question_count=question_count)
             question_messages = [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": question_text},
@@ -145,9 +141,7 @@ class LocalQuestionGen(BaseQuestionGen):
         else:
             # construct current query and conversation history
             question_text = question_history[-1]
-            history = [
-                {"role": "user", "content": query} for query in question_history[:-1]
-            ]
+            history = [{"role": "user", "content": query} for query in question_history[:-1]]
             conversation_history = ConversationHistory.from_list(history)
 
         if context_data is None:
@@ -165,14 +159,10 @@ class LocalQuestionGen(BaseQuestionGen):
             context_records = result.context_records
         else:
             context_records = {"context_data": context_data}
-        log.info(
-            "GENERATE QUESTION: %s. QUESTION HISTORY: %s", start_time, question_text
-        )
+        log.info("GENERATE QUESTION: %s. QUESTION HISTORY: %s", start_time, question_text)
         system_prompt = ""
         try:
-            system_prompt = self.system_prompt.format(
-                context_data=context_data, question_count=question_count
-            )
+            system_prompt = self.system_prompt.format(context_data=context_data, question_count=question_count)
             question_messages = [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": question_text},

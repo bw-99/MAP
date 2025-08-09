@@ -58,24 +58,26 @@ def _prep_report(
     context_columns = [schemas.TITLE, schemas.SUMMARY, schemas.FINDINGS]
     input = final_community_reports
     meta_contexts = []
-    for idx, row in progress_iterable(input.iterrows(), callbacks.progress, len(input)):
+    for _, row in progress_iterable(input.iterrows(), callbacks.progress, len(input)):
         contexts = []
         for label in context_columns:
-            contexts.append(
-                f"-----{label}-----\n{row[label]}"
-            )
+            contexts.append(f"-----{label}-----\n{row[label]}")
         meta_contexts.append("\n\n".join(contexts))
     input[schemas.REPORT_CONTEXT] = meta_contexts
     input[schemas.REPORT_CONTEXT_SIZE] = input.loc[:, schemas.REPORT_CONTEXT].map(num_tokens)
-    input[schemas.REPORT_CONTEXT_EXCEED_FLAG] =  (
-        input[schemas.REPORT_CONTEXT_SIZE] > max_tokens
-    )
+    input[schemas.REPORT_CONTEXT_EXCEED_FLAG] = input[schemas.REPORT_CONTEXT_SIZE] > max_tokens
 
-    input = input.loc[:, [schemas.NODE_COMMUNITY, schemas.REPORT_CONTEXT, schemas.REPORT_CONTEXT_SIZE, schemas.REPORT_CONTEXT_EXCEED_FLAG]]
+    input = input.loc[
+        :,
+        [
+            schemas.NODE_COMMUNITY,
+            schemas.REPORT_CONTEXT,
+            schemas.REPORT_CONTEXT_SIZE,
+            schemas.REPORT_CONTEXT_EXCEED_FLAG,
+        ],
+    ]
 
     # Filter valid and invalid contexts using boolean logic
-    valid_context_df = input.loc[
-        ~input.loc[:, schemas.REPORT_CONTEXT_EXCEED_FLAG]
-    ]
+    valid_context_df = input.loc[~input.loc[:, schemas.REPORT_CONTEXT_EXCEED_FLAG]]
 
     return valid_context_df

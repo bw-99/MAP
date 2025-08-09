@@ -14,6 +14,7 @@ from graphrag.cache.pipeline_cache import PipelineCache
 
 StrategyConfig = dict[str, Any]
 
+
 @dataclass
 class BaseTextUnit:
     """Document class definition."""

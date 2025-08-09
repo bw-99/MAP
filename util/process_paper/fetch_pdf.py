@@ -17,9 +17,9 @@ def _download_pdf(path: Path, url: str) -> None:
         logger.info(f"Failed download {url}: {e}")
 
 
-def fetch_pdfs(use_cache: bool=False) -> None:
+def fetch_pdfs(use_cache: bool = False) -> None:
     df_links = fetch_links(use_cache=True)
-    for _, row in tqdm.tqdm(df_links.dropna(subset=['PDF_Link']).iterrows(), total=len(df_links)):
+    for _, row in tqdm.tqdm(df_links.dropna(subset=["PDF_Link"]).iterrows(), total=len(df_links)):
         if use_cache and (PDF_DIR / f"{row['Hashed']}.pdf").exists():
             continue
-        _download_pdf(PDF_DIR / f"{row['Hashed']}.pdf", row['PDF_Link'])
+        _download_pdf(PDF_DIR / f"{row['Hashed']}.pdf", row["PDF_Link"])

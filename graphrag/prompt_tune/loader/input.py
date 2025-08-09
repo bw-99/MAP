@@ -60,9 +60,7 @@ async def load_docs_in_chunks(
     k: int = K,
 ) -> list[str]:
     """Load docs into chunks for generating prompts."""
-    llm_config = TypeAdapter(LLMParameters).validate_python(
-        config.embeddings.resolved_strategy()["llm"]
-    )
+    llm_config = TypeAdapter(LLMParameters).validate_python(config.embeddings.resolved_strategy()["llm"])
 
     dataset = await create_input(config.input, logger, root)
 
@@ -103,9 +101,7 @@ async def load_docs_in_chunks(
             cache=None,
         )
 
-        chunks_df, embeddings = await _embed_chunks(
-            chunks_df, embedding_llm, n_subset_max=n_subset_max
-        )
+        chunks_df, embeddings = await _embed_chunks(chunks_df, embedding_llm, n_subset_max=n_subset_max)
         chunks_df = _sample_chunks_from_embeddings(chunks_df, embeddings, k=k)
 
     # Convert the dataset to list form, so we have a list of documents

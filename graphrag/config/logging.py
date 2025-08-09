@@ -33,9 +33,7 @@ def enable_logging(log_filepath: str | Path, verbose: bool = False) -> None:
     )
 
 
-def enable_logging_with_config(
-    config: GraphRagConfig, verbose: bool = False
-) -> tuple[bool, str]:
+def enable_logging_with_config(config: GraphRagConfig, verbose: bool = False) -> tuple[bool, str]:
     """Enable logging to a file based on the config.
 
     Parameters

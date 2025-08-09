@@ -51,9 +51,7 @@ async def load(
                     path,
                 )
             else:
-                data["source"] = data.apply(
-                    lambda x: x[csv_config.source_column], axis=1
-                )
+                data["source"] = data.apply(lambda x: x[csv_config.source_column], axis=1)
         if csv_config.text_column is not None and "text" not in data.columns:
             if csv_config.text_column not in data.columns:
                 log.warning(
@@ -86,9 +84,7 @@ async def load(
                     path,
                 )
             else:
-                data["timestamp"] = pd.to_datetime(
-                    data[csv_config.timestamp_column], format=fmt
-                )
+                data["timestamp"] = pd.to_datetime(data[csv_config.timestamp_column], format=fmt)
 
             # TODO: Theres probably a less gross way to do this
             if "year" not in data.columns:
@@ -106,11 +102,7 @@ async def load(
 
         return data
 
-    file_pattern = (
-        re.compile(config.file_pattern)
-        if config.file_pattern is not None
-        else DEFAULT_FILE_PATTERN
-    )
+    file_pattern = re.compile(config.file_pattern) if config.file_pattern is not None else DEFAULT_FILE_PATTERN
     files = list(
         storage.find(
             file_pattern,

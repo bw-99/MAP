@@ -11,12 +11,8 @@ import graphrag.config.defaults as defs
 class ClusterGraphConfig(BaseModel):
     """Configuration section for clustering graphs."""
 
-    max_cluster_size: int = Field(
-        description="The maximum cluster size to use.", default=defs.MAX_CLUSTER_SIZE
-    )
-    strategy: dict | None = Field(
-        description="The cluster strategy to use.", default=None
-    )
+    max_cluster_size: int = Field(description="The maximum cluster size to use.", default=defs.MAX_CLUSTER_SIZE)
+    strategy: dict | None = Field(description="The cluster strategy to use.", default=None)
 
     def resolved_strategy(self) -> dict:
         """Get the resolved cluster strategy."""

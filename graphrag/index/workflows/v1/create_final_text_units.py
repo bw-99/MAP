@@ -65,12 +65,8 @@ async def workflow(
 ) -> VerbResult:
     """All the steps to transform the text units."""
     text_units = await runtime_storage.get("base_text_units")
-    final_entities = cast(
-        "pd.DataFrame", get_required_input_table(input, "entities").table
-    )
-    final_relationships = cast(
-        "pd.DataFrame", get_required_input_table(input, "relationships").table
-    )
+    final_entities = cast("pd.DataFrame", get_required_input_table(input, "entities").table)
+    final_relationships = cast("pd.DataFrame", get_required_input_table(input, "relationships").table)
     final_covariates = get_named_input_table(input, "covariates")
 
     if final_covariates:

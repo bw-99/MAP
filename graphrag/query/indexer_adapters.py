@@ -99,18 +99,13 @@ def read_indexer_reports(
         nodes_df = nodes_df.groupby(["title"]).agg({"community": "max"}).reset_index()
         filtered_community_df = nodes_df["community"].drop_duplicates()
 
-        reports_df = reports_df.merge(
-            filtered_community_df, on="community", how="inner"
-        )
+        reports_df = reports_df.merge(filtered_community_df, on="community", how="inner")
 
     if config and (
-        content_embedding_col not in reports_df.columns
-        or reports_df.loc[:, content_embedding_col].isna().any()
+        content_embedding_col not in reports_df.columns or reports_df.loc[:, content_embedding_col].isna().any()
     ):
         embedder = get_text_embedder(config)
-        reports_df = embed_community_reports(
-            reports_df, embedder, embedding_col=content_embedding_col
-        )
+        reports_df = embed_community_reports(reports_df, embedder, embedding_col=content_embedding_col)
 
     return read_community_reports(
         df=reports_df,
@@ -146,9 +141,7 @@ def read_indexer_entities(
     # group entities by id and degree and remove duplicated community IDs
     nodes_df = nodes_df.groupby(["id", "degree"]).agg({"community": set}).reset_index()
     nodes_df["community"] = nodes_df["community"].apply(lambda x: [str(i) for i in x])
-    final_df = nodes_df.merge(entities_df, on="id", how="inner").drop_duplicates(
-        subset=["id"]
-    )
+    final_df = nodes_df.merge(entities_df, on="id", how="inner").drop_duplicates(subset=["id"])
 
     # read entity dataframe to knowledge model objects
     return read_entities(
@@ -180,14 +173,10 @@ def read_indexer_communities(
     reports_df = final_community_reports
 
     # ensure communities matches community reports
-    missing_reports = communities_df[
-        ~communities_df.community.isin(reports_df.community.unique())
-    ].community.to_list()
+    missing_reports = communities_df[~communities_df.community.isin(reports_df.community.unique())].community.to_list()
     if len(missing_reports):
         log.warning("Missing reports for communities: %s", missing_reports)
-        communities_df = communities_df.loc[
-            communities_df.community.isin(reports_df.community.unique())
-        ]
+        communities_df = communities_df.loc[communities_df.community.isin(reports_df.community.unique())]
         nodes_df = nodes_df.loc[nodes_df.community.isin(reports_df.community.unique())]
 
     # reconstruct the community hierarchy
@@ -203,9 +192,7 @@ def read_indexer_communities(
             .rename(columns={"sub_community": "sub_community_ids"})
         )
         # add sub community IDs to community DataFrame
-        communities_df = communities_df.merge(
-            community_hierarchy, on="community", how="left"
-        )
+        communities_df = communities_df.merge(community_hierarchy, on="community", how="left")
         # replace NaN sub community IDs with empty list
         communities_df.sub_community_ids = communities_df.sub_community_ids.apply(
             lambda x: x if isinstance(x, list) else []
@@ -237,16 +224,12 @@ def embed_community_reports(
         raise ValueError(error_msg)
 
     if embedding_col not in reports_df.columns:
-        reports_df[embedding_col] = reports_df.loc[:, source_col].apply(
-            lambda x: embedder.embed(x)
-        )
+        reports_df[embedding_col] = reports_df.loc[:, source_col].apply(lambda x: embedder.embed(x))
 
     return reports_df
 
 
-def _filter_under_community_level(
-    df: pd.DataFrame, community_level: int
-) -> pd.DataFrame:
+def _filter_under_community_level(df: pd.DataFrame, community_level: int) -> pd.DataFrame:
     return cast(
         "pd.DataFrame",
         df[df.level <= community_level],

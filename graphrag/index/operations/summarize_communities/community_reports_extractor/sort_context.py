@@ -34,9 +34,7 @@ def sort_context(
         if sub_community_reports:
             report_df = pd.DataFrame(sub_community_reports)
             if not report_df.empty:
-                contexts.append(
-                    f"----Reports-----\n{report_df.to_csv(index=False, sep=',')}"
-                )
+                contexts.append(f"----Reports-----\n{report_df.to_csv(index=False, sep=',')}")
 
         for label, data in [
             ("Entities", entities),
@@ -46,9 +44,7 @@ def sort_context(
             if data:
                 data_df = pd.DataFrame(data)
                 if not data_df.empty:
-                    contexts.append(
-                        f"-----{label}-----\n{data_df.to_csv(index=False, sep=',')}"
-                    )
+                    contexts.append(f"-----{label}-----\n{data_df.to_csv(index=False, sep=',')}")
 
         return "\n\n".join(contexts)
 
@@ -109,17 +105,13 @@ def sort_context(
             sorted_edges.append(edge)
 
         # Generate new context string
-        new_context_string = _get_context_string(
-            sorted_nodes, sorted_edges, sorted_claims, sub_community_reports
-        )
+        new_context_string = _get_context_string(sorted_nodes, sorted_edges, sorted_claims, sub_community_reports)
         if max_tokens and num_tokens(new_context_string) > max_tokens:
             break
         context_string = new_context_string
 
     # Return the final context string
-    return context_string or _get_context_string(
-        sorted_nodes, sorted_edges, sorted_claims, sub_community_reports
-    )
+    return context_string or _get_context_string(sorted_nodes, sorted_edges, sorted_claims, sub_community_reports)
 
 
 def parallel_sort_context_batch(community_df, max_tokens, parallel=False):
@@ -144,11 +136,7 @@ def parallel_sort_context_batch(community_df, max_tokens, parallel=False):
         )
 
     # Calculate other columns
-    community_df[schemas.CONTEXT_SIZE] = community_df[schemas.CONTEXT_STRING].apply(
-        num_tokens
-    )
-    community_df[schemas.CONTEXT_EXCEED_FLAG] = (
-        community_df[schemas.CONTEXT_SIZE] > max_tokens
-    )
+    community_df[schemas.CONTEXT_SIZE] = community_df[schemas.CONTEXT_STRING].apply(num_tokens)
+    community_df[schemas.CONTEXT_EXCEED_FLAG] = community_df[schemas.CONTEXT_SIZE] > max_tokens
 
     return community_df

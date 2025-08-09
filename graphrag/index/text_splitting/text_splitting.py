@@ -165,9 +165,7 @@ class TextListSplitter(TextSplitter):
         self._type = splitter_type
         self._input_delimiter = input_delimiter
         self._output_delimiter = output_delimiter or "\n"
-        self._length_function = lambda x: num_tokens_from_string(
-            x, model=model_name, encoding_name=encoding_name
-        )
+        self._length_function = lambda x: num_tokens_from_string(x, model=model_name, encoding_name=encoding_name)
 
     def split_text(self, text: str | list[str]) -> Iterable[str]:
         """Split a string list into a list of strings for a given chunk size."""

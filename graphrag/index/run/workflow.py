@@ -55,9 +55,7 @@ async def _inject_workflow_data_dependencies(
         workflow.add_table(workflow_id, table)
 
 
-async def _export_workflow_output(
-    workflow: Workflow, exporter: ParquetExporter
-) -> pd.DataFrame:
+async def _export_workflow_output(workflow: Workflow, exporter: ParquetExporter) -> pd.DataFrame:
     """Export the output from each step of the workflow."""
     output = cast("pd.DataFrame", workflow.output())
     # only write final output that is not empty (i.e. has content)
@@ -121,9 +119,7 @@ async def _process_workflow(
     return PipelineRunResult(workflow_name, output, None)
 
 
-def _find_workflow_config(
-    config: PipelineConfig, workflow_name: str, step: str | None = None
-) -> dict:
+def _find_workflow_config(config: PipelineConfig, workflow_name: str, step: str | None = None) -> dict:
     """Find a workflow in the pipeline configuration.
 
     Parameters
@@ -141,13 +137,9 @@ def _find_workflow_config(
         The workflow configuration.
     """
     try:
-        workflow = next(
-            filter(lambda workflow: workflow.name == workflow_name, config.workflows)
-        )
+        workflow = next(filter(lambda workflow: workflow.name == workflow_name, config.workflows))
     except StopIteration as err:
-        error_message = (
-            f"Workflow {workflow_name} not found in the pipeline configuration."
-        )
+        error_message = f"Workflow {workflow_name} not found in the pipeline configuration."
         raise ValueError(error_message) from err
 
     if not workflow.config:

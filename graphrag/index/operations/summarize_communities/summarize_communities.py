@@ -54,9 +54,7 @@ async def summarize_communities(
             local_context_df=local_contexts,
             community_hierarchy_df=community_hierarchy,
             level=level,
-            max_tokens=strategy.get(
-                "max_input_tokens", defaults.COMMUNITY_REPORT_MAX_INPUT_LENGTH
-            ),
+            max_tokens=strategy.get("max_input_tokens", defaults.COMMUNITY_REPORT_MAX_INPUT_LENGTH),
         )
 
         async def run_generate(record):
@@ -94,9 +92,7 @@ async def _generate_report(
     community_context: str,
 ) -> CommunityReport | None:
     """Generate a report for a single community."""
-    return await runner(
-        community_id, community_context, community_level, callbacks, cache, strategy
-    )
+    return await runner(community_id, community_context, community_level, callbacks, cache, strategy)
 
 
 def load_strategy(

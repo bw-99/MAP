@@ -42,17 +42,16 @@ def _merge_and_resolve_nodes(
     )
 
     # Replace existing human_readable_id with the new one from merged_entities_df
-    delta_nodes["human_readable_id"] = delta_nodes.loc[
-        :, "human_readable_id_new"
-    ].combine_first(delta_nodes.loc[:, "human_readable_id"])
+    delta_nodes["human_readable_id"] = delta_nodes.loc[:, "human_readable_id_new"].combine_first(
+        delta_nodes.loc[:, "human_readable_id"]
+    )
 
     # Drop the auxiliary column from the merge
     delta_nodes.drop(columns=["human_readable_id_new"], inplace=True)
 
     # Increment only the non-NaN values in delta_nodes["community"]
     community_id_mapping = {
-        v: v + old_max_community_id + 1
-        for k, v in delta_nodes["community"].dropna().astype(int).items()
+        v: v + old_max_community_id + 1 for k, v in delta_nodes["community"].dropna().astype(int).items()
     }
     community_id_mapping.update({-1: -1})
 
@@ -67,9 +66,7 @@ def _merge_and_resolve_nodes(
         col: "first" for col in concat_nodes.columns if col not in ["level", "title"]
     }
 
-    merged_nodes = (
-        concat_nodes.groupby(["level", "title"]).agg(columns_to_agg).reset_index()
-    )
+    merged_nodes = concat_nodes.groupby(["level", "title"]).agg(columns_to_agg).reset_index()
 
     merged_nodes["community"] = merged_nodes["community"].astype(int)
     merged_nodes["human_readable_id"] = merged_nodes["human_readable_id"].astype(int)
@@ -126,28 +123,20 @@ def _update_and_merge_communities(
 
     # Look for community ids in community and replace them with the corresponding id in the mapping
     delta_communities["community"] = (
-        delta_communities["community"]
-        .astype(int)
-        .apply(lambda x: community_id_mapping.get(x, x))
+        delta_communities["community"].astype(int).apply(lambda x: community_id_mapping.get(x, x))
     )
 
     delta_communities["parent"] = (
-        delta_communities["parent"]
-        .astype(int)
-        .apply(lambda x: community_id_mapping.get(x, x))
+        delta_communities["parent"].astype(int).apply(lambda x: community_id_mapping.get(x, x))
     )
 
     old_communities["community"] = old_communities["community"].astype(int)
 
     # Merge the final communities
-    merged_communities = pd.concat(
-        [old_communities, delta_communities], ignore_index=True, copy=False
-    )
+    merged_communities = pd.concat([old_communities, delta_communities], ignore_index=True, copy=False)
 
     # Rename title
-    merged_communities["title"] = "Community " + merged_communities["community"].astype(
-        str
-    )
+    merged_communities["title"] = "Community " + merged_communities["community"].astype(str)
     # Re-assign the human_readable_id
     merged_communities["human_readable_id"] = merged_communities["community"]
 
@@ -204,15 +193,11 @@ def _update_and_merge_community_reports(
 
     # Look for community ids in community and replace them with the corresponding id in the mapping
     delta_community_reports["community"] = (
-        delta_community_reports["community"]
-        .astype(int)
-        .apply(lambda x: community_id_mapping.get(x, x))
+        delta_community_reports["community"].astype(int).apply(lambda x: community_id_mapping.get(x, x))
     )
 
     delta_community_reports["parent"] = (
-        delta_community_reports["parent"]
-        .astype(int)
-        .apply(lambda x: community_id_mapping.get(x, x))
+        delta_community_reports["parent"].astype(int).apply(lambda x: community_id_mapping.get(x, x))
     )
 
     old_community_reports["community"] = old_community_reports["community"].astype(int)
@@ -223,13 +208,9 @@ def _update_and_merge_community_reports(
     )
 
     # Maintain type compat with query
-    merged_community_reports["community"] = merged_community_reports[
-        "community"
-    ].astype(int)
+    merged_community_reports["community"] = merged_community_reports["community"].astype(int)
     # Re-assign the human_readable_id
-    merged_community_reports["human_readable_id"] = merged_community_reports[
-        "community"
-    ]
+    merged_community_reports["human_readable_id"] = merged_community_reports["community"]
 
     return merged_community_reports.loc[
         :,

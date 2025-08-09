@@ -8,7 +8,6 @@ from datashaper import VerbCallbacks
 from fnllm import ChatLLM
 from dataclasses import asdict
 
-import graphrag.config.defaults as defs
 from graphrag.cache.pipeline_cache import PipelineCache
 from graphrag.index.llm.load_llm import load_llm, read_llm_params
 from graphrag.index.operations.interpret_equation.equation_interpretor import EquationInterpretor
@@ -21,6 +20,7 @@ from graphrag.index.utils.rate_limiter import RateLimiter
 import logging
 
 log = logging.getLogger(__name__)
+
 
 async def run_plain_llm(
     tunit: BaseTextUnit,
@@ -45,15 +45,13 @@ async def run_interpret_equation(
     interpretor = EquationInterpretor(
         llm,
         interpretation_prompt=args.get("interpretation_prompt", None),
-        on_error=lambda e, stack, _data: callbacks.error(
-            "Equation Interpretation Error", e, stack
-        ),
+        on_error=lambda e, stack, _data: callbacks.error("Equation Interpretation Error", e, stack),
     )
     try:
         await rate_limiter.acquire()
-        interpreted_equation= await interpretor(tunit.text)
+        interpreted_equation = await interpretor(tunit.text)
         result = EquationInterpretationResult(**asdict(tunit))
-        result["text"]=interpreted_equation.output
+        result["text"] = interpreted_equation.output
         return result
     except Exception as e:
         log.exception("Error processing docs: %s", tunit.id)

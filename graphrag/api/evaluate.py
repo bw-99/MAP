@@ -18,7 +18,6 @@ WARNING: This API is under development and may undergo changes in future release
 Backwards compatibility is not guaranteed at this time.
 """
 
-from collections.abc import AsyncGenerator
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
@@ -40,6 +39,7 @@ if TYPE_CHECKING:
 
 logger = PrintProgressLogger("")
 
+
 @validate_call(config={"arbitrary_types_allowed": True})
 async def evaluate_graph(
     config: tuple[GraphRagConfig, GraphRagConfig],
@@ -52,7 +52,6 @@ async def evaluate_graph(
     str | dict[str, Any] | list[dict[str, Any]],
     str | list[pd.DataFrame] | dict[str, pd.DataFrame],
 ]:
-
     """Evaluate two graphs.
 
     Parameters
@@ -89,15 +88,9 @@ async def evaluate_graph(
 
     # default setting is on the first config
     map_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.map_prompt)
-    reduce_prompt = _load_search_prompt(
-        config[0].root_dir, config[0].global_search.reduce_prompt
-    )
-    knowledge_prompt = _load_search_prompt(
-        config[0].root_dir, config[0].global_search.knowledge_prompt
-    )
-    evaluate_prompt = _load_search_prompt(
-        config[0].root_dir, config[0].global_search.evaluate_prompt
-    )
+    reduce_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.reduce_prompt)
+    knowledge_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.knowledge_prompt)
+    evaluate_prompt = _load_search_prompt(config[0].root_dir, config[0].global_search.evaluate_prompt)
 
     if True:
         # combine the two dataframes
@@ -122,6 +115,7 @@ async def evaluate_graph(
     response = result.response
     context_data = _reformat_context_data(result.context_data)  # type: ignore
     return response, context_data
+
 
 def _reformat_context_data(context_data: dict) -> dict:
     """

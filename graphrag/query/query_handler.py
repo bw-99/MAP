@@ -1,10 +1,8 @@
 import asyncio
-import re
 import faiss
 import numpy as np
 import webbrowser
 import typer
-import json
 import pandas as pd
 from graphrag.index.operations.embed_text.embed_text import embed_text
 from graphrag.cache.memory_pipeline_cache import InMemoryCache
@@ -16,6 +14,7 @@ document_list = []
 
 callbacks = BaseLLMCallback()
 cache = InMemoryCache()
+
 
 def add_documents_to_index(documents: list):
     global document_list, index
@@ -31,14 +30,16 @@ def add_documents_to_index(documents: list):
             },
         }
 
-        embeddings = asyncio.run(embed_text(
-            input=data,
-            callbacks=callbacks,
-            cache=cache,
-            embed_column="text",
-            strategy=strategy,
-            embedding_name="text-embedding-3-small",
-        ))
+        embeddings = asyncio.run(
+            embed_text(
+                input=data,
+                callbacks=callbacks,
+                cache=cache,
+                embed_column="text",
+                strategy=strategy,
+                embedding_name="text-embedding-3-small",
+            )
+        )
 
         if not embeddings or len(embeddings) == 0:
             print("Warning: OpenAI API returned empty embeddings. Skipping FAISS indexing.")
@@ -61,7 +62,7 @@ def hybrid_search(query: str, top_k: int = 5) -> list:
                 "Transformers have revolutionized NLP.",
                 "GPT-4 is a powerful AI model based on transformers.",
                 "Diffusion models are advancing image generation.",
-                "Self-supervised learning improves data efficiency."
+                "Self-supervised learning improves data efficiency.",
             ]
 
             add_documents_to_index(default_documents)
@@ -82,14 +83,16 @@ def hybrid_search(query: str, top_k: int = 5) -> list:
             },
         }
 
-        query_embedding = asyncio.run(embed_text(
-            input=data,
-            callbacks=callbacks,
-            cache=cache,
-            embed_column="text",
-            strategy=strategy,
-            embedding_name="text-embedding-3-small",
-        ))
+        query_embedding = asyncio.run(
+            embed_text(
+                input=data,
+                callbacks=callbacks,
+                cache=cache,
+                embed_column="text",
+                strategy=strategy,
+                embedding_name="text-embedding-3-small",
+            )
+        )
 
         if query_embedding is None or len(query_embedding) == 0:
             typer.echo("Warning: OpenAI API returned empty query embedding. Skipping FAISS search.")

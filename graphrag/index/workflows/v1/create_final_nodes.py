@@ -62,9 +62,7 @@ def build_steps(
             "verb": workflow_name,
             "args": {
                 "layout_strategy": layout_strategy,
-                "embedding_strategy": embedding_strategy
-                if embed_graph_enabled
-                else None,
+                "embedding_strategy": embedding_strategy if embed_graph_enabled else None,
             },
             "input": {
                 "source": "workflow:extract_graph",

@@ -14,9 +14,7 @@ from graphrag.config.models.llm_config import LLMConfig
 class CoreConceptExtractionConfig(LLMConfig):
     """Configuration section for core concept reports."""
 
-    prompt: str | None = Field(
-        description="The core concept report extraction prompt to use.", default=None
-    )
+    prompt: str | None = Field(description="The core concept report extraction prompt to use.", default=None)
     max_length: int = Field(
         description="The core concept report maximum length in tokens.",
         default=defs.COMMUNITY_REPORT_MAX_LENGTH,
@@ -25,12 +23,8 @@ class CoreConceptExtractionConfig(LLMConfig):
         description="The maximum input length in tokens to use when generating reports.",
         default=defs.COMMUNITY_REPORT_MAX_INPUT_LENGTH,
     )
-    strategy: dict | None = Field(
-        description="The override strategy to use.", default=None
-    )
-    enabled: bool = Field(
-        default=True, description="Whether to extract core concepts."
-    )
+    strategy: dict | None = Field(description="The override strategy to use.", default=None)
+    enabled: bool = Field(default=True, description="Whether to extract core concepts.")
 
     def resolved_strategy(self, root_dir) -> dict:
         """Get the resolved community report extraction strategy."""
@@ -42,9 +36,7 @@ class CoreConceptExtractionConfig(LLMConfig):
             "type": CoreConceptExtractionStrategyType.graph_intelligence,
             "llm": self.llm.model_dump(),
             **self.parallelization.model_dump(),
-            "extraction_prompt": (Path(root_dir) / self.prompt)
-            .read_bytes()
-            .decode(encoding="utf-8")
+            "extraction_prompt": (Path(root_dir) / self.prompt).read_bytes().decode(encoding="utf-8")
             if self.prompt
             else None,
             "max_report_length": self.max_length,

@@ -84,9 +84,7 @@ class ChatOpenAI(BaseLLM, OpenAILLMImpl):
                         **kwargs,
                     )
         except RetryError as e:
-            self._reporter.error(
-                message="Error at generate()", details={self.__class__.__name__: str(e)}
-            )
+            self._reporter.error(message="Error at generate()", details={self.__class__.__name__: str(e)})
             return ""
         else:
             # TODO: why not just throw in this case?
@@ -243,11 +241,7 @@ class ChatOpenAI(BaseLLM, OpenAILLMImpl):
             if not chunk or not chunk.choices:
                 continue
 
-            delta = (
-                chunk.choices[0].delta.content
-                if chunk.choices[0].delta and chunk.choices[0].delta.content
-                else ""
-            )
+            delta = chunk.choices[0].delta.content if chunk.choices[0].delta and chunk.choices[0].delta.content else ""
 
             yield delta
 
@@ -316,11 +310,7 @@ class ChatOpenAI(BaseLLM, OpenAILLMImpl):
             if not chunk or not chunk.choices:
                 continue
 
-            delta = (
-                chunk.choices[0].delta.content
-                if chunk.choices[0].delta and chunk.choices[0].delta.content
-                else ""
-            )  # type: ignore
+            delta = chunk.choices[0].delta.content if chunk.choices[0].delta and chunk.choices[0].delta.content else ""  # type: ignore
 
             yield delta
 

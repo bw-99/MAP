@@ -159,9 +159,7 @@ async def generate_indexing_prompts(
     )
 
     logger.info("Generating community reporter role...")
-    community_reporter_role = await generate_community_reporter_role(
-        llm, domain=domain, persona=persona, docs=doc_list
-    )
+    community_reporter_role = await generate_community_reporter_role(llm, domain=domain, persona=persona, docs=doc_list)
 
     logger.info("Generating community summarization prompt...")
     community_summarization_prompt = create_community_summarization_prompt(

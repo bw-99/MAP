@@ -54,9 +54,7 @@ class DRIFTSearch(BaseSearch[DRIFTSearchContextBuilder]):
         self.context_builder = context_builder
         self.token_encoder = token_encoder
         self.query_state = query_state or QueryState()
-        self.primer = DRIFTPrimer(
-            config=self.config, chat_llm=llm, token_encoder=token_encoder
-        )
+        self.primer = DRIFTPrimer(config=self.config, chat_llm=llm, token_encoder=token_encoder)
         self.local_search = self.init_local_search()
 
     def init_local_search(self) -> LocalSearch:
@@ -96,9 +94,7 @@ class DRIFTSearch(BaseSearch[DRIFTSearchContextBuilder]):
             response_type="multiple paragraphs",
         )
 
-    def _process_primer_results(
-        self, query: str, search_results: SearchResult
-    ) -> DriftAction:
+    def _process_primer_results(self, query: str, search_results: SearchResult) -> DriftAction:
         """
         Process the results from the primer search to extract intermediate answers and follow-up queries.
 
@@ -116,17 +112,15 @@ class DRIFTSearch(BaseSearch[DRIFTSearchContextBuilder]):
         """
         response = search_results.response
         if isinstance(response, list) and isinstance(response[0], dict):
-            intermediate_answers = [
-                i["intermediate_answer"] for i in response if "intermediate_answer" in i
-            ]
+            intermediate_answers = [i["intermediate_answer"] for i in response if "intermediate_answer" in i]
 
             if not intermediate_answers:
                 error_msg = "No intermediate answers found in primer response. Ensure that the primer response includes intermediate answers."
                 raise RuntimeError(error_msg)
 
-            intermediate_answer = "\n\n".join([
-                i["intermediate_answer"] for i in response if "intermediate_answer" in i
-            ])
+            intermediate_answer = "\n\n".join(
+                [i["intermediate_answer"] for i in response if "intermediate_answer" in i]
+            )
 
             follow_ups = [fu for i in response for fu in i.get("follow_up_queries", [])]
 
@@ -159,10 +153,7 @@ class DRIFTSearch(BaseSearch[DRIFTSearchContextBuilder]):
         -------
         list[DriftAction]: The results from executing the search actions asynchronously.
         """
-        tasks = [
-            action.asearch(search_engine=search_engine, global_query=global_query)
-            for action in actions
-        ]
+        tasks = [action.asearch(search_engine=search_engine, global_query=global_query) for action in actions]
         return await tqdm_asyncio.gather(*tasks, leave=False)
 
     async def asearch(
@@ -202,9 +193,7 @@ class DRIFTSearch(BaseSearch[DRIFTSearchContextBuilder]):
             prompt_tokens["build_context"] = token_ct["prompt_tokens"]
             output_tokens["build_context"] = token_ct["prompt_tokens"]
 
-            primer_response = await self.primer.asearch(
-                query=query, top_k_reports=primer_context
-            )
+            primer_response = await self.primer.asearch(query=query, top_k_reports=primer_context)
             llm_calls["primer"] = primer_response.llm_calls
             prompt_tokens["primer"] = primer_response.prompt_tokens
             output_tokens["primer"] = primer_response.output_tokens
@@ -225,9 +214,7 @@ class DRIFTSearch(BaseSearch[DRIFTSearchContextBuilder]):
             actions = actions[: self.config.drift_k_followups]
             llm_call_offset += len(actions) - self.config.drift_k_followups
             # Process actions
-            results = await self.asearch_step(
-                global_query=query, search_engine=self.local_search, actions=actions
-            )
+            results = await self.asearch_step(global_query=query, search_engine=self.local_search, actions=actions)
 
             # Update query state
             for action in results:
@@ -244,9 +231,7 @@ class DRIFTSearch(BaseSearch[DRIFTSearchContextBuilder]):
         output_tokens["action"] = token_ct["output_tokens"]
 
         # Package up context data
-        response_state, context_data, context_text = self.query_state.serialize(
-            include_context=True
-        )
+        response_state, context_data, context_text = self.query_state.serialize(include_context=True)
 
         return SearchResult(
             response=response_state,

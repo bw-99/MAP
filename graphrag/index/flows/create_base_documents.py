@@ -32,9 +32,7 @@ def create_base_documents(
         copy=False,
     )
 
-    docs_with_text_units = joined.groupby("id", sort=False).agg(
-        text_unit_ids=("chunk_id", list)
-    )
+    docs_with_text_units = joined.groupby("id", sort=False).agg(text_unit_ids=("chunk_id", list))
 
     rejoined = docs_with_text_units.merge(
         documents,
@@ -49,14 +47,10 @@ def create_base_documents(
     # Convert attribute columns to strings and collapse them into a JSON object
     if document_attribute_columns:
         # Convert all specified columns to string at once
-        rejoined[document_attribute_columns] = rejoined[
-            document_attribute_columns
-        ].astype(str)
+        rejoined[document_attribute_columns] = rejoined[document_attribute_columns].astype(str)
 
         # Collapse the document_attribute_columns into a single JSON object column
-        rejoined["attributes"] = rejoined[document_attribute_columns].to_dict(
-            orient="records"
-        )
+        rejoined["attributes"] = rejoined[document_attribute_columns].to_dict(orient="records")
 
         # Drop the original attribute columns after collapsing them
         rejoined.drop(columns=document_attribute_columns, inplace=True)

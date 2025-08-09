@@ -26,9 +26,7 @@ class PipelineStorage(metaclass=ABCMeta):
         """Find files in the storage using a file pattern, as well as a custom filter function."""
 
     @abstractmethod
-    async def get(
-        self, key: str, as_bytes: bool | None = None, encoding: str | None = None
-    ) -> Any:
+    async def get(self, key: str, as_bytes: bool | None = None, encoding: str | None = None) -> Any:
         """Get the value for the given key.
 
         Args:

@@ -44,18 +44,12 @@ class GraphRagConfig(LLMConfig):
         """Get a string representation."""
         return self.model_dump_json(indent=4)
 
-    root_dir: str = Field(
-        description="The root directory for the configuration.", default="."
-    )
+    root_dir: str = Field(description="The root directory for the configuration.", default=".")
 
-    reporting: ReportingConfig = Field(
-        description="The reporting configuration.", default=ReportingConfig()
-    )
+    reporting: ReportingConfig = Field(description="The reporting configuration.", default=ReportingConfig())
     """The reporting configuration."""
 
-    storage: StorageConfig = Field(
-        description="The storage configuration.", default=StorageConfig()
-    )
+    storage: StorageConfig = Field(description="The storage configuration.", default=StorageConfig())
     """The storage configuration."""
 
     update_index_storage: StorageConfig | None = Field(
@@ -64,14 +58,10 @@ class GraphRagConfig(LLMConfig):
     )
     """The storage configuration for the updated index."""
 
-    cache: CacheConfig = Field(
-        description="The cache configuration.", default=CacheConfig()
-    )
+    cache: CacheConfig = Field(description="The cache configuration.", default=CacheConfig())
     """The cache configuration."""
 
-    input: InputConfig = Field(
-        description="The input configuration.", default=InputConfig()
-    )
+    input: InputConfig = Field(description="The input configuration.", default=InputConfig())
     """The input configuration."""
 
     embed_graph: EmbedGraphConfig = Field(
@@ -153,14 +143,10 @@ class GraphRagConfig(LLMConfig):
     )
     """The cluster graph configuration to use."""
 
-    umap: UmapConfig = Field(
-        description="The UMAP configuration to use.", default=UmapConfig()
-    )
+    umap: UmapConfig = Field(description="The UMAP configuration to use.", default=UmapConfig())
     """The UMAP configuration to use."""
 
-    local_search: LocalSearchConfig = Field(
-        description="The local search configuration.", default=LocalSearchConfig()
-    )
+    local_search: LocalSearchConfig = Field(description="The local search configuration.", default=LocalSearchConfig())
     """The local search configuration."""
 
     global_search: GlobalSearchConfig = Field(
@@ -168,17 +154,11 @@ class GraphRagConfig(LLMConfig):
     )
     """The global search configuration."""
 
-    drift_search: DRIFTSearchConfig = Field(
-        description="The drift search configuration.", default=DRIFTSearchConfig()
-    )
+    drift_search: DRIFTSearchConfig = Field(description="The drift search configuration.", default=DRIFTSearchConfig())
     """The drift search configuration."""
 
-    encoding_model: str = Field(
-        description="The encoding model to use.", default=defs.ENCODING_MODEL
-    )
+    encoding_model: str = Field(description="The encoding model to use.", default=defs.ENCODING_MODEL)
     """The encoding model to use."""
 
-    skip_workflows: list[str] = Field(
-        description="The workflows to skip, usually for testing reasons.", default=[]
-    )
+    skip_workflows: list[str] = Field(description="The workflows to skip, usually for testing reasons.", default=[])
     """The workflows to skip, usually for testing reasons."""

@@ -20,9 +20,7 @@ def get_entity_by_id(entities: dict[str, Entity], value: str) -> Entity | None:
     return entity
 
 
-def get_entity_by_key(
-    entities: Iterable[Entity], key: str, value: str | int
-) -> Entity | None:
+def get_entity_by_key(entities: Iterable[Entity], key: str, value: str | int) -> Entity | None:
     """Get entity by key."""
     if isinstance(value, str) and is_valid_uuid(value):
         value_no_dashes = value.replace("-", "")
@@ -42,15 +40,10 @@ def get_entity_by_name(entities: Iterable[Entity], entity_name: str) -> list[Ent
     return [entity for entity in entities if entity.title == entity_name]
 
 
-def get_entity_by_attribute(
-    entities: Iterable[Entity], attribute_name: str, attribute_value: Any
-) -> list[Entity]:
+def get_entity_by_attribute(entities: Iterable[Entity], attribute_name: str, attribute_value: Any) -> list[Entity]:
     """Get entities by attribute."""
     return [
-        entity
-        for entity in entities
-        if entity.attributes
-        and entity.attributes.get(attribute_name) == attribute_value
+        entity for entity in entities if entity.attributes and entity.attributes.get(attribute_name) == attribute_value
     ]
 
 
@@ -65,9 +58,7 @@ def to_entity_dataframe(
     header = ["id", "entity", "description"]
     if include_entity_rank:
         header.append(rank_description)
-    attribute_cols = (
-        list(entities[0].attributes.keys()) if entities[0].attributes else []
-    )
+    attribute_cols = list(entities[0].attributes.keys()) if entities[0].attributes else []
     attribute_cols = [col for col in attribute_cols if col not in header]
     header.extend(attribute_cols)
 
@@ -83,9 +74,7 @@ def to_entity_dataframe(
 
         for field in attribute_cols:
             field_value = (
-                str(entity.attributes.get(field))
-                if entity.attributes and entity.attributes.get(field)
-                else ""
+                str(entity.attributes.get(field)) if entity.attributes and entity.attributes.get(field) else ""
             )
             new_record.append(field_value)
         records.append(new_record)

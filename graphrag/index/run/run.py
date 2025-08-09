@@ -122,14 +122,10 @@ async def run_pipeline_with_config(
     )
     # TODO: remove the type ignore when the new config system guarantees the existence of an input config
     dataset = (
-        dataset
-        if dataset is not None
-        else await create_input(config.input, progress_logger, root_dir)  # type: ignore
+        dataset if dataset is not None else await create_input(config.input, progress_logger, root_dir)  # type: ignore
     )
 
-    post_process_steps = input_post_process_steps or _create_postprocess_steps(
-        config.input
-    )
+    post_process_steps = input_post_process_steps or _create_postprocess_steps(config.input)
     workflows = workflows or config.workflows
 
     if is_update_run and update_index_storage:
@@ -228,9 +224,7 @@ async def run_pipeline(
     context = create_run_context(storage=storage, cache=cache, stats=None)
     exporter = ParquetExporter(
         context.storage,
-        lambda e, s, d: cast("WorkflowCallbacks", callback_chain).on_error(
-            "Error exporting table", e, s, d
-        ),
+        lambda e, s, d: cast("WorkflowCallbacks", callback_chain).on_error("Error exporting table", e, s, d),
     )
 
     loaded_workflows = load_workflows(
@@ -241,9 +235,7 @@ async def run_pipeline(
     )
     workflows_to_run = loaded_workflows.workflows
     workflow_dependencies = loaded_workflows.dependencies
-    dataset = await _run_post_process_steps(
-        input_post_process_steps, dataset, context, callback_chain
-    )
+    dataset = await _run_post_process_steps(input_post_process_steps, dataset, context, callback_chain)
     # ensure the incoming data is valid
     _validate_dataset(dataset)
 
@@ -275,7 +267,5 @@ async def run_pipeline(
         await _dump_stats(context.stats, context.storage)
     except Exception as e:
         log.exception("error running workflow %s", last_workflow)
-        cast("WorkflowCallbacks", callback_chain).on_error(
-            "Error running pipeline!", e, traceback.format_exc()
-        )
+        cast("WorkflowCallbacks", callback_chain).on_error("Error running pipeline!", e, traceback.format_exc())
         yield PipelineRunResult(last_workflow, None, [e])

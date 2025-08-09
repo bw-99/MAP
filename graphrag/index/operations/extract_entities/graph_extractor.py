@@ -81,16 +81,10 @@ class GraphExtractor:
         self._doc_id_key = doc_id_key or "doc_id"
         self._tuple_delimiter_key = tuple_delimiter_key or "tuple_delimiter"
         self._record_delimiter_key = record_delimiter_key or "record_delimiter"
-        self._completion_delimiter_key = (
-            completion_delimiter_key or "completion_delimiter"
-        )
+        self._completion_delimiter_key = completion_delimiter_key or "completion_delimiter"
         self._entity_types_key = entity_types_key or "entity_types"
         self._extraction_prompt = prompt or GRAPH_EXTRACTION_PROMPT
-        self._max_gleanings = (
-            max_gleanings
-            if max_gleanings is not None
-            else defs.ENTITY_EXTRACTION_MAX_GLEANINGS
-        )
+        self._max_gleanings = max_gleanings if max_gleanings is not None else defs.ENTITY_EXTRACTION_MAX_GLEANINGS
         self._on_error = on_error or (lambda _e, _s, _d: None)
 
         # Construct the looping arguments
@@ -113,20 +107,14 @@ class GraphExtractor:
         # Wire defaults into the prompt variables
         prompt_variables = {
             **prompt_variables,
-            self._tuple_delimiter_key: prompt_variables.get(self._tuple_delimiter_key)
-            or DEFAULT_TUPLE_DELIMITER,
-            self._record_delimiter_key: prompt_variables.get(self._record_delimiter_key)
-            or DEFAULT_RECORD_DELIMITER,
-            self._completion_delimiter_key: prompt_variables.get(
-                self._completion_delimiter_key
-            )
+            self._tuple_delimiter_key: prompt_variables.get(self._tuple_delimiter_key) or DEFAULT_TUPLE_DELIMITER,
+            self._record_delimiter_key: prompt_variables.get(self._record_delimiter_key) or DEFAULT_RECORD_DELIMITER,
+            self._completion_delimiter_key: prompt_variables.get(self._completion_delimiter_key)
             or DEFAULT_COMPLETION_DELIMITER,
-            self._entity_types_key: ",".join(
-                prompt_variables[self._entity_types_key] or DEFAULT_ENTITY_TYPES
-            ),
+            self._entity_types_key: ",".join(prompt_variables[self._entity_types_key] or DEFAULT_ENTITY_TYPES),
         }
 
-        for doc_index, (text, doc_id) in enumerate(zip(texts, doc_ids)):
+        for doc_index, (text, doc_id) in enumerate(zip(texts, doc_ids, strict=False)):
             try:
                 # Invoke the entity extraction
                 result = await self._process_document(text, doc_id, prompt_variables)
@@ -154,9 +142,7 @@ class GraphExtractor:
             source_docs=source_doc_map,
         )
 
-    async def _process_document(
-        self, text: str, doc_id: str | None, prompt_variables: dict[str, str]
-    ) -> str:
+    async def _process_document(self, text: str, doc_id: str | None, prompt_variables: dict[str, str]) -> str:
         final_prompt_variables = {
             **prompt_variables,
             self._input_text_key: text,
@@ -225,23 +211,25 @@ class GraphExtractor:
                         node = graph.nodes[entity_name]
                         if self._join_descriptions:
                             node["description"] = "\n".join(
-                                list({
-                                    *_unpack_descriptions(node),
-                                    entity_description,
-                                })
+                                list(
+                                    {
+                                        *_unpack_descriptions(node),
+                                        entity_description,
+                                    }
+                                )
                             )
                         else:
                             if len(entity_description) > len(node["description"]):
                                 node["description"] = entity_description
                         node["source_id"] = ", ".join(
-                            list({
-                                *_unpack_source_ids(node),
-                                str(source_doc_id),
-                            })
+                            list(
+                                {
+                                    *_unpack_source_ids(node),
+                                    str(source_doc_id),
+                                }
+                            )
                         )
-                        node["type"] = (
-                            entity_type if entity_type != "" else node["type"]
-                        )
+                        node["type"] = entity_type if entity_type != "" else node["type"]
                     else:
                         graph.add_node(
                             entity_name,
@@ -250,10 +238,7 @@ class GraphExtractor:
                             source_id=str(source_doc_id),
                         )
 
-                if (
-                    record_attributes[0] == '"relationship"'
-                    and len(record_attributes) >= 5
-                ):
+                if record_attributes[0] == '"relationship"' and len(record_attributes) >= 5:
                     # add this record as edge
                     source = clean_str(record_attributes[1].upper())
                     target = clean_str(record_attributes[2].upper())
@@ -284,16 +269,20 @@ class GraphExtractor:
                             weight += edge_data["weight"]
                             if self._join_descriptions:
                                 edge_description = "\n".join(
-                                    list({
-                                        *_unpack_descriptions(edge_data),
-                                        edge_description,
-                                    })
+                                    list(
+                                        {
+                                            *_unpack_descriptions(edge_data),
+                                            edge_description,
+                                        }
+                                    )
                                 )
                             edge_source_id = ", ".join(
-                                list({
-                                    *_unpack_source_ids(edge_data),
-                                    str(source_doc_id),
-                                })
+                                list(
+                                    {
+                                        *_unpack_source_ids(edge_data),
+                                        str(source_doc_id),
+                                    }
+                                )
                             )
                     graph.add_edge(
                         source,

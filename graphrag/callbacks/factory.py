@@ -19,18 +19,14 @@ from graphrag.index.config.reporting import (
 )
 
 
-def create_pipeline_reporter(
-    config: PipelineReportingConfig | None, root_dir: str | None
-) -> WorkflowCallbacks:
+def create_pipeline_reporter(config: PipelineReportingConfig | None, root_dir: str | None) -> WorkflowCallbacks:
     """Create a logger for the given pipeline config."""
     config = config or PipelineFileReportingConfig(base_dir="logs")
 
     match config.type:
         case ReportingType.file:
             config = cast("PipelineFileReportingConfig", config)
-            return FileWorkflowCallbacks(
-                str(Path(root_dir or "") / (config.base_dir or ""))
-            )
+            return FileWorkflowCallbacks(str(Path(root_dir or "") / (config.base_dir or "")))
         case ReportingType.console:
             return ConsoleWorkflowCallbacks()
         case ReportingType.blob:

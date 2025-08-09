@@ -16,12 +16,8 @@ from datashaper.table_store.types import VerbResult, create_verb_result
 
 from graphrag.cache.pipeline_cache import PipelineCache
 from graphrag.index.config.workflow import PipelineWorkflowConfig, PipelineWorkflowStep
-from graphrag.index.flows.create_final_communities import (
-    create_final_communities,
-)
 from graphrag.index.flows.create_final_viztree import create_final_viztree
 from graphrag.index.utils.ds_util import get_required_input_table
-from graphrag.storage.pipeline_storage import PipelineStorage
 import pandas as pd
 
 workflow_name = "create_final_viztree"
@@ -51,9 +47,7 @@ def build_steps(
     return [
         {
             "verb": workflow_name,
-            "args": {
-                "include_concept": include_concept
-            },
+            "args": {"include_concept": include_concept},
             "input": input,
         },
     ]
@@ -89,7 +83,7 @@ async def workflow(
         callbacks=callbacks,
         cache=cache,
         async_mode=async_mode,
-        num_threads=num_threads
+        num_threads=num_threads,
     )
 
     print(output)

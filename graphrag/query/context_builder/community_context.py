@@ -16,9 +16,7 @@ from graphrag.query.llm.text_utils import num_tokens
 
 log = logging.getLogger(__name__)
 
-NO_COMMUNITY_RECORDS_WARNING: str = (
-    "Warning: No community records added when building community context."
-)
+NO_COMMUNITY_RECORDS_WARNING: str = "Warning: No community records added when building community context."
 
 
 def build_community_context(
@@ -61,16 +59,11 @@ def build_community_context(
             header.append(community_rank_name)
         return header
 
-    def _report_context_text(
-        report: CommunityReport, attributes: list[str]
-    ) -> tuple[str, list[str]]:
+    def _report_context_text(report: CommunityReport, attributes: list[str]) -> tuple[str, list[str]]:
         context: list[str] = [
             report.short_id if report.short_id else "",
             report.title,
-            *[
-                str(report.attributes.get(field, "")) if report.attributes else ""
-                for field in attributes
-            ],
+            *[str(report.attributes.get(field, "")) if report.attributes else "" for field in attributes],
         ]
         context.append(report.summary if use_community_summary else report.full_content)
         if include_community_rank:
@@ -82,10 +75,7 @@ def build_community_context(
         entities
         and len(community_reports) > 0
         and include_community_weight
-        and (
-            community_reports[0].attributes is None
-            or community_weight_name not in community_reports[0].attributes
-        )
+        and (community_reports[0].attributes is None or community_weight_name not in community_reports[0].attributes)
     )
     if compute_community_weights:
         log.info("Computing community weights...")
@@ -106,11 +96,7 @@ def build_community_context(
         random.shuffle(selected_reports)
 
     # "global" variables
-    attributes = (
-        list(community_reports[0].attributes.keys())
-        if community_reports[0].attributes
-        else []
-    )
+    attributes = list(community_reports[0].attributes.keys()) if community_reports[0].attributes else []
     header = _get_header(attributes)
     all_context_text: list[str] = []
     all_context_records: list[pd.DataFrame] = []
@@ -122,9 +108,7 @@ def build_community_context(
 
     def _init_batch() -> None:
         nonlocal batch_text, batch_tokens, batch_records
-        batch_text = (
-            f"-----{context_name}-----" + "\n" + column_delimiter.join(header) + "\n"
-        )
+        batch_text = f"-----{context_name}-----" + "\n" + column_delimiter.join(header) + "\n"
         batch_tokens = num_tokens(batch_text, token_encoder)
         batch_records = []
 
@@ -133,9 +117,7 @@ def build_community_context(
         record_df = _convert_report_context_to_df(
             context_records=batch_records,
             header=header,
-            weight_column=(
-                community_weight_name if entities and include_community_weight else None
-            ),
+            weight_column=(community_weight_name if entities and include_community_weight else None),
             rank_column=community_rank_name if include_community_rank else None,
         )
         if len(record_df) == 0:
@@ -180,9 +162,7 @@ def build_community_context(
         log.warning(NO_COMMUNITY_RECORDS_WARNING)
         return ([], {})
 
-    return all_context_text, {
-        context_name.lower(): pd.concat(all_context_records, ignore_index=True)
-    }
+    return all_context_text, {context_name.lower(): pd.concat(all_context_records, ignore_index=True)}
 
 
 def _compute_community_weights(
@@ -205,22 +185,14 @@ def _compute_community_weights(
     for report in community_reports:
         if not report.attributes:
             report.attributes = {}
-        report.attributes[weight_attribute] = len(
-            set(community_text_units.get(report.community_id, []))
-        )
+        report.attributes[weight_attribute] = len(set(community_text_units.get(report.community_id, [])))
     if normalize:
         # normalize by max weight
-        all_weights = [
-            report.attributes[weight_attribute]
-            for report in community_reports
-            if report.attributes
-        ]
+        all_weights = [report.attributes[weight_attribute] for report in community_reports if report.attributes]
         max_weight = max(all_weights)
         for report in community_reports:
             if report.attributes:
-                report.attributes[weight_attribute] = (
-                    report.attributes[weight_attribute] / max_weight
-                )
+                report.attributes[weight_attribute] = report.attributes[weight_attribute] / max_weight
     return community_reports
 
 

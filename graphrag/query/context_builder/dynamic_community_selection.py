@@ -58,11 +58,7 @@ class DynamicCommunitySelection:
         self.reports = {report.community_id: report for report in community_reports}
         # mapping from community to sub communities
         self.node2children = {
-            community.id: (
-                []
-                if community.sub_community_ids is None
-                else community.sub_community_ids
-            )
+            community.id: ([] if community.sub_community_ids is None else community.sub_community_ids)
             for community in communities
         }
         # mapping from community to parent community
@@ -103,23 +99,25 @@ class DynamicCommunitySelection:
         relevant_communities = set()
 
         while queue:
-            gather_results = await asyncio.gather(*[
-                rate_relevancy(
-                    query=query,
-                    description=(
-                        self.reports[community].summary
-                        if self.use_summary
-                        else self.reports[community].full_content
-                    ),
-                    llm=self.llm,
-                    token_encoder=self.token_encoder,
-                    rate_query=self.rate_query,
-                    num_repeats=self.num_repeats,
-                    semaphore=self.semaphore,
-                    **self.llm_kwargs,
-                )
-                for community in queue
-            ])
+            gather_results = await asyncio.gather(
+                *[
+                    rate_relevancy(
+                        query=query,
+                        description=(
+                            self.reports[community].summary
+                            if self.use_summary
+                            else self.reports[community].full_content
+                        ),
+                        llm=self.llm,
+                        token_encoder=self.token_encoder,
+                        rate_query=self.rate_query,
+                        num_repeats=self.num_repeats,
+                        semaphore=self.semaphore,
+                        **self.llm_kwargs,
+                    )
+                    for community in queue
+                ]
+            )
 
             communities_to_rate = []
             for community, result in zip(queue, gather_results, strict=True):
@@ -165,9 +163,7 @@ class DynamicCommunitySelection:
                 # append all communities at the next level to queue
                 queue = self.levels[str(level)]
 
-        community_reports = [
-            self.reports[community] for community in relevant_communities
-        ]
+        community_reports = [self.reports[community] for community in relevant_communities]
         end = time()
 
         log.info(

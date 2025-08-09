@@ -15,9 +15,7 @@ from graphrag.index.operations.chunk_text.typing import TextChunk
 from graphrag.index.text_splitting.text_splitting import Tokenizer
 
 
-def run_tokens(
-    input: list[str], args: dict[str, Any], tick: ProgressTicker
-) -> Iterable[TextChunk]:
+def run_tokens(input: list[str], args: dict[str, Any], tick: ProgressTicker) -> Iterable[TextChunk]:
     """Chunks text into chunks based on encoding tokens."""
     tokens_per_chunk = args.get("chunk_size", defs.CHUNK_SIZE)
     chunk_overlap = args.get("chunk_overlap", defs.CHUNK_OVERLAP)
@@ -46,9 +44,7 @@ def run_tokens(
 
 # Adapted from - https://github.com/langchain-ai/langchain/blob/77b359edf5df0d37ef0d539f678cf64f5557cb54/libs/langchain/langchain/text_splitter.py#L471
 # So we could have better control over the chunking process
-def _split_text_on_tokens(
-    texts: list[str], enc: Tokenizer, tick: ProgressTicker
-) -> list[TextChunk]:
+def _split_text_on_tokens(texts: list[str], enc: Tokenizer, tick: ProgressTicker) -> list[TextChunk]:
     """Split incoming text and return chunks."""
     result = []
     mapped_ids = []
@@ -58,9 +54,7 @@ def _split_text_on_tokens(
         tick(1)
         mapped_ids.append((source_doc_idx, encoded))
 
-    input_ids: list[tuple[int, int]] = [
-        (source_doc_idx, id) for source_doc_idx, ids in mapped_ids for id in ids
-    ]
+    input_ids: list[tuple[int, int]] = [(source_doc_idx, id) for source_doc_idx, ids in mapped_ids for id in ids]
 
     start_idx = 0
     cur_idx = min(start_idx + enc.tokens_per_chunk, len(input_ids))
@@ -82,9 +76,7 @@ def _split_text_on_tokens(
     return result
 
 
-def run_sentences(
-    input: list[str], _args: dict[str, Any], tick: ProgressTicker
-) -> Iterable[TextChunk]:
+def run_sentences(input: list[str], _args: dict[str, Any], tick: ProgressTicker) -> Iterable[TextChunk]:
     """Chunks text into multiple parts by sentence."""
     for doc_idx, text in enumerate(input):
         sentences = nltk.sent_tokenize(text)

@@ -4,7 +4,7 @@
 """The Indexing Engine community reports package root."""
 
 from graphrag.index.operations.reconstruct_sentence.sentence_reconstructor.sentence_reconstructor import (
-    SentenceReconstructor
+    SentenceReconstructor,
 )
 
 __all__ = [

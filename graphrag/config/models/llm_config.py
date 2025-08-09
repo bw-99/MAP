@@ -14,13 +14,9 @@ from graphrag.config.models.parallelization_parameters import ParallelizationPar
 class LLMConfig(BaseModel):
     """Base class for LLM-configured steps."""
 
-    llm: LLMParameters = Field(
-        description="The LLM configuration to use.", default=LLMParameters()
-    )
+    llm: LLMParameters = Field(description="The LLM configuration to use.", default=LLMParameters())
     parallelization: ParallelizationParameters = Field(
         description="The parallelization configuration to use.",
         default=ParallelizationParameters(),
     )
-    async_mode: AsyncType = Field(
-        description="The async mode to use.", default=defs.ASYNC_MODE
-    )
+    async_mode: AsyncType = Field(description="The async mode to use.", default=defs.ASYNC_MODE)

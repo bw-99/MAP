@@ -9,7 +9,6 @@ import pandas as pd
 from datashaper import (
     AsyncType,
     VerbCallbacks,
-    progress_iterable,
 )
 
 from graphrag.cache.pipeline_cache import PipelineCache

@@ -26,29 +26,19 @@ class PipelineConfig(BaseModel):
         """Get a string representation."""
         return str(self.model_dump_json(indent=4))
 
-    extends: list[str] | str | None = Field(
-        description="Extends another pipeline configuration", default=None
-    )
+    extends: list[str] | str | None = Field(description="Extends another pipeline configuration", default=None)
     """Extends another pipeline configuration"""
 
-    input: PipelineInputConfigTypes | None = Field(
-        default=None, discriminator="file_type"
-    )
+    input: PipelineInputConfigTypes | None = Field(default=None, discriminator="file_type")
     """The input configuration for the pipeline."""
 
-    reporting: PipelineReportingConfigTypes | None = Field(
-        default=None, discriminator="type"
-    )
+    reporting: PipelineReportingConfigTypes | None = Field(default=None, discriminator="type")
     """The reporting configuration for the pipeline."""
 
-    storage: PipelineStorageConfigTypes | None = Field(
-        default=None, discriminator="type"
-    )
+    storage: PipelineStorageConfigTypes | None = Field(default=None, discriminator="type")
     """The storage configuration for the pipeline."""
 
-    update_index_storage: PipelineStorageConfigTypes | None = Field(
-        default=None, discriminator="type"
-    )
+    update_index_storage: PipelineStorageConfigTypes | None = Field(default=None, discriminator="type")
     """The storage configuration for the updated index."""
 
     cache: PipelineCacheConfigTypes | None = Field(default=None, discriminator="type")

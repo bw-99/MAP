@@ -16,9 +16,7 @@ from graphrag.storage.pipeline_storage import PipelineStorage
 log = logging.getLogger(__name__)
 
 
-async def _save_profiler_stats(
-    storage: PipelineStorage, workflow_name: str, profile: MemoryProfile
-):
+async def _save_profiler_stats(storage: PipelineStorage, workflow_name: str, profile: MemoryProfile):
     """Save the profiler stats to the storage."""
     await storage.set(
         f"{workflow_name}_profiling.peak_stats.csv",
@@ -43,9 +41,7 @@ async def _save_profiler_stats(
 
 async def _dump_stats(stats: PipelineRunStats, storage: PipelineStorage) -> None:
     """Dump the stats to the storage."""
-    await storage.set(
-        "stats.json", json.dumps(asdict(stats), indent=4, ensure_ascii=False)
-    )
+    await storage.set("stats.json", json.dumps(asdict(stats), indent=4, ensure_ascii=False))
 
 
 async def _write_workflow_stats(
@@ -66,6 +62,4 @@ async def _write_workflow_stats(
     await _dump_stats(stats, storage)
 
     if workflow_result.memory_profile is not None:
-        await _save_profiler_stats(
-            storage, workflow.name, workflow_result.memory_profile
-        )
+        await _save_profiler_stats(storage, workflow.name, workflow_result.memory_profile)

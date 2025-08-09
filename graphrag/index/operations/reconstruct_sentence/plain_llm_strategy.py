@@ -8,7 +8,6 @@ from datashaper import VerbCallbacks
 from fnllm import ChatLLM
 from dataclasses import asdict
 
-import graphrag.config.defaults as defs
 from graphrag.cache.pipeline_cache import PipelineCache
 from graphrag.index.llm.load_llm import load_llm, read_llm_params
 from graphrag.index.operations.reconstruct_sentence.sentence_reconstructor import SentenceReconstructor
@@ -21,6 +20,7 @@ from graphrag.index.utils.rate_limiter import RateLimiter
 import logging
 
 log = logging.getLogger(__name__)
+
 
 async def run_plain_llm(
     tunit: BaseTextUnit,
@@ -45,16 +45,14 @@ async def run_reconstruct_sentence(
     reconstructor = SentenceReconstructor(
         llm,
         reconstruction_prompt=args.get("reconstruction_prompt", None),
-        on_error=lambda e, stack, _data: callbacks.error(
-            "Sentence Reconstruction Error", e, stack
-        ),
+        on_error=lambda e, stack, _data: callbacks.error("Sentence Reconstruction Error", e, stack),
     )
 
     try:
         await rate_limiter.acquire()
         reconstructed_sentence = await reconstructor(tunit.text)
         result = SentenceReconstructionResult(**asdict(tunit))
-        result["text"]=reconstructed_sentence.output
+        result["text"] = reconstructed_sentence.output
         return result
     except Exception as e:
         log.exception("Error processing docs: %s", tunit.id)

@@ -32,9 +32,7 @@ class VectorStoreFactory:
         cls.vector_store_types[vector_store_type] = vector_store
 
     @classmethod
-    def create_vector_store(
-        cls, vector_store_type: VectorStoreType | str, kwargs: dict
-    ) -> BaseVectorStore:
+    def create_vector_store(cls, vector_store_type: VectorStoreType | str, kwargs: dict) -> BaseVectorStore:
         """Create or get a vector store from the provided type."""
         match vector_store_type:
             case VectorStoreType.LanceDB:

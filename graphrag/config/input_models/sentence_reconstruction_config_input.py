@@ -6,7 +6,6 @@
 from typing_extensions import NotRequired
 
 from graphrag.config.input_models.llm_config_input import LLMConfigInput
-from datashaper import AsyncType
 
 
 class SentenceReconstructionConfigInput(LLMConfigInput):

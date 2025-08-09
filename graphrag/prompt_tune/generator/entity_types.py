@@ -37,18 +37,14 @@ async def generate_entity_types(
 
     docs_str = "\n".join(docs) if isinstance(docs, list) else docs
 
-    entity_types_prompt = (
-        ENTITY_TYPE_GENERATION_JSON_PROMPT
-        if json_mode
-        else ENTITY_TYPE_GENERATION_PROMPT
-    ).format(task=formatted_task, input_text=docs_str)
+    entity_types_prompt = (ENTITY_TYPE_GENERATION_JSON_PROMPT if json_mode else ENTITY_TYPE_GENERATION_PROMPT).format(
+        task=formatted_task, input_text=docs_str
+    )
 
     history = [{"role": "system", "content": persona}]
 
     if json_mode:
-        response = await llm(
-            entity_types_prompt, history=history, json_model=EntityTypesResponse
-        )
+        response = await llm(entity_types_prompt, history=history, json_model=EntityTypesResponse)
         model = response.parsed_json
         return model.entity_types if model else []
 

@@ -6,7 +6,6 @@
 import logging
 import traceback
 from dataclasses import dataclass
-from typing import Any
 
 from fnllm import ChatLLM
 from pydantic import BaseModel, Field
@@ -45,7 +44,7 @@ class EquationInterpretor:
         input_text_key: str | None = None,
         interpretation_prompt: str | None = None,
         on_error: ErrorHandlerFn | None = None,
-        max_token: int = None
+        max_token: int = None,
     ):
         """Init method definition."""
         self._llm = llm_invoker
@@ -58,9 +57,7 @@ class EquationInterpretor:
         """Call method definition."""
         output = None
         try:
-            prompt = self._interpretation_prompt.format(**{
-                self._input_text_key: text
-            })
+            prompt = self._interpretation_prompt.format(**{self._input_text_key: text})
             response = await self._llm(
                 prompt,
                 json=True,

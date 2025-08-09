@@ -15,9 +15,7 @@ def get_required_input_table(input: VerbInput, name: str) -> TableContainer:
     return cast("TableContainer", get_named_input_table(input, name, required=True))
 
 
-def get_named_input_table(
-    input: VerbInput, name: str, required: bool = False
-) -> TableContainer | None:
+def get_named_input_table(input: VerbInput, name: str, required: bool = False) -> TableContainer | None:
     """Get an input table from datashaper verb-inputs by name."""
     named_inputs = input.named
     if named_inputs is None:

@@ -26,9 +26,7 @@ class PipelineFileCacheConfig(PipelineCacheConfig[Literal[CacheType.file]]):
     type: Literal[CacheType.file] = CacheType.file
     """The type of cache."""
 
-    base_dir: str | None = Field(
-        description="The base directory for the cache.", default=None
-    )
+    base_dir: str | None = Field(description="The base directory for the cache.", default=None)
     """The base directory for the cache."""
 
 
@@ -52,22 +50,16 @@ class PipelineBlobCacheConfig(PipelineCacheConfig[Literal[CacheType.blob]]):
     type: Literal[CacheType.blob] = CacheType.blob
     """The type of cache."""
 
-    base_dir: str | None = Field(
-        description="The base directory for the cache.", default=None
-    )
+    base_dir: str | None = Field(description="The base directory for the cache.", default=None)
     """The base directory for the cache."""
 
-    connection_string: str | None = Field(
-        description="The blob cache connection string for the cache.", default=None
-    )
+    connection_string: str | None = Field(description="The blob cache connection string for the cache.", default=None)
     """The blob cache connection string for the cache."""
 
     container_name: str = Field(description="The container name for cache", default="")
     """The container name for cache"""
 
-    storage_account_blob_url: str | None = Field(
-        description="The storage account blob url for cache", default=None
-    )
+    storage_account_blob_url: str | None = Field(description="The storage account blob url for cache", default=None)
     """The storage account blob url for cache"""
 
 
@@ -77,22 +69,16 @@ class PipelineCosmosDBCacheConfig(PipelineCacheConfig[Literal[CacheType.cosmosdb
     type: Literal[CacheType.cosmosdb] = CacheType.cosmosdb
     """The type of cache."""
 
-    base_dir: str | None = Field(
-        description="The cosmosdb database name for the cache.", default=None
-    )
+    base_dir: str | None = Field(description="The cosmosdb database name for the cache.", default=None)
     """The cosmosdb database name for the cache."""
 
     container_name: str = Field(description="The container name for cache.", default="")
     """The container name for cache."""
 
-    connection_string: str | None = Field(
-        description="The cosmosdb primary key for the cache.", default=None
-    )
+    connection_string: str | None = Field(description="The cosmosdb primary key for the cache.", default=None)
     """The cosmosdb primary key for the cache."""
 
-    cosmosdb_account_url: str | None = Field(
-        description="The cosmosdb account url for cache", default=None
-    )
+    cosmosdb_account_url: str | None = Field(description="The cosmosdb account url for cache", default=None)
     """The cosmosdb account url for cache"""
 
 

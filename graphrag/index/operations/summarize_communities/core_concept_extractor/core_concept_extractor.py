@@ -23,9 +23,7 @@ class CoreConceptExtractionResponse(BaseModel):
     core_concept: str = Field(description="The core_concept of the community.")
     core_concept_explanation: str = Field(description="An explanation of the core_concept.")
 
-    extra_attributes: dict[str, Any] = Field(
-        default_factory=dict, description="Extra attributes."
-    )
+    extra_attributes: dict[str, Any] = Field(default_factory=dict, description="Extra attributes.")
 
 
 @dataclass
@@ -66,9 +64,7 @@ class CoreConceptExtractionExtractor:
         output = None
         try:
             input_text = inputs[self._input_text_key]
-            prompt = self._extraction_prompt.replace(
-                "{" + self._input_text_key + "}", input_text
-            )
+            prompt = self._extraction_prompt.replace("{" + self._input_text_key + "}", input_text)
             response = await self._llm(
                 prompt,
                 json=True,

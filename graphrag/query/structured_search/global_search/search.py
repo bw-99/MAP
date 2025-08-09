@@ -86,9 +86,7 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
         self.reduce_system_prompt = reduce_system_prompt or REDUCE_SYSTEM_PROMPT
         self.response_type = response_type
         self.allow_general_knowledge = allow_general_knowledge
-        self.general_knowledge_inclusion_prompt = (
-            general_knowledge_inclusion_prompt or GENERAL_KNOWLEDGE_INSTRUCTION
-        )
+        self.general_knowledge_inclusion_prompt = general_knowledge_inclusion_prompt or GENERAL_KNOWLEDGE_INSTRUCTION
         self.callbacks = callbacks
         self.max_data_tokens = max_data_tokens
 
@@ -116,12 +114,12 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
         if self.callbacks:
             for callback in self.callbacks:
                 callback.on_map_response_start(context_result.context_chunks)  # type: ignore
-        map_responses = await asyncio.gather(*[
-            self._map_response_single_batch(
-                context_data=data, query=query, **self.map_llm_params
-            )
-            for data in context_result.context_chunks
-        ])
+        map_responses = await asyncio.gather(
+            *[
+                self._map_response_single_batch(context_data=data, query=query, **self.map_llm_params)
+                for data in context_result.context_chunks
+            ]
+        )
         if self.callbacks:
             for callback in self.callbacks:
                 callback.on_map_response_end(map_responses)  # type: ignore
@@ -164,12 +162,12 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
             for callback in self.callbacks:
                 callback.on_map_response_start(context_result.context_chunks)  # type: ignore
 
-        map_responses = await asyncio.gather(*[
-            self._map_response_single_batch(
-                context_data=data, query=query, **self.map_llm_params
-            )
-            for data in context_result.context_chunks
-        ])
+        map_responses = await asyncio.gather(
+            *[
+                self._map_response_single_batch(context_data=data, query=query, **self.map_llm_params)
+                for data in context_result.context_chunks
+            ]
+        )
         if self.callbacks:
             for callback in self.callbacks:
                 callback.on_map_response_end(map_responses)
@@ -226,17 +224,13 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
                 {"role": "user", "content": query},
             ]
             async with self.semaphore:
-                search_response = await self.llm.agenerate(
-                    messages=search_messages, streaming=False, **llm_kwargs
-                )
+                search_response = await self.llm.agenerate(messages=search_messages, streaming=False, **llm_kwargs)
                 log.info("Map response: %s", search_response)
             try:
                 # parse search response json
                 processed_response = self.parse_search_response(search_response)
             except ValueError:
-                log.warning(
-                    "Warning: Error parsing search response json - skipping this batch"
-                )
+                log.warning("Warning: Error parsing search response json - skipping this batch")
                 processed_response = []
 
             return SearchResult(
@@ -312,11 +306,13 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
                         continue
                     if "answer" not in element or "score" not in element:
                         continue
-                    key_points.append({
-                        "analyst": index,
-                        "answer": element["answer"],
-                        "score": element["score"],
-                    })
+                    key_points.append(
+                        {
+                            "analyst": index,
+                            "answer": element["answer"],
+                            "score": element["score"],
+                        }
+                    )
 
             # filter response with score = 0 and rank responses by descending order of score
             filtered_key_points = [
@@ -350,27 +346,19 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
             total_tokens = 0
             for point in filtered_key_points:
                 formatted_response_data = []
-                formatted_response_data.append(
-                    f"----Analyst {point['analyst'] + 1}----"
-                )
+                formatted_response_data.append(f"----Analyst {point['analyst'] + 1}----")
                 formatted_response_data.append(
                     f"Importance Score: {point['score']}"  # type: ignore
                 )
                 formatted_response_data.append(point["answer"])  # type: ignore
                 formatted_response_text = "\n".join(formatted_response_data)
-                if (
-                    total_tokens
-                    + num_tokens(formatted_response_text, self.token_encoder)
-                    > self.max_data_tokens
-                ):
+                if total_tokens + num_tokens(formatted_response_text, self.token_encoder) > self.max_data_tokens:
                     break
                 data.append(formatted_response_text)
                 total_tokens += num_tokens(formatted_response_text, self.token_encoder)
             text_data = "\n\n".join(data)
 
-            search_prompt = self.reduce_system_prompt.format(
-                report_data=text_data, response_type=self.response_type
-            )
+            search_prompt = self.reduce_system_prompt.format(report_data=text_data, response_type=self.response_type)
             if self.allow_general_knowledge:
                 search_prompt += "\n" + self.general_knowledge_inclusion_prompt
             search_messages = [
@@ -421,11 +409,13 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
                     continue
                 if "answer" not in element or "score" not in element:
                     continue
-                key_points.append({
-                    "analyst": index,
-                    "answer": element["answer"],
-                    "score": element["score"],
-                })
+                key_points.append(
+                    {
+                        "analyst": index,
+                        "answer": element["answer"],
+                        "score": element["score"],
+                    }
+                )
 
         # filter response with score = 0 and rank responses by descending order of score
         filtered_key_points = [
@@ -457,18 +447,13 @@ class GlobalSearch(BaseSearch[GlobalContextBuilder]):
                 point["answer"],
             ]
             formatted_response_text = "\n".join(formatted_response_data)
-            if (
-                total_tokens + num_tokens(formatted_response_text, self.token_encoder)
-                > self.max_data_tokens
-            ):
+            if total_tokens + num_tokens(formatted_response_text, self.token_encoder) > self.max_data_tokens:
                 break
             data.append(formatted_response_text)
             total_tokens += num_tokens(formatted_response_text, self.token_encoder)
         text_data = "\n\n".join(data)
 
-        search_prompt = self.reduce_system_prompt.format(
-            report_data=text_data, response_type=self.response_type
-        )
+        search_prompt = self.reduce_system_prompt.format(report_data=text_data, response_type=self.response_type)
         if self.allow_general_knowledge:
             search_prompt += "\n" + self.general_knowledge_inclusion_prompt
         search_messages = [

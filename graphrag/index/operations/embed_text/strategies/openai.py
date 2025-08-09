@@ -119,10 +119,7 @@ def _create_text_batches(
 
     for text in texts:
         token_count = splitter.num_tokens(text)
-        if (
-            len(current_batch) >= max_batch_size
-            or current_batch_tokens + token_count > max_batch_tokens
-        ):
+        if len(current_batch) >= max_batch_size or current_batch_tokens + token_count > max_batch_tokens:
             result.append(current_batch)
             current_batch = []
             current_batch_tokens = 0
@@ -136,9 +133,7 @@ def _create_text_batches(
     return result
 
 
-def _prepare_embed_texts(
-    input: list[str], splitter: TokenTextSplitter
-) -> tuple[list[str], list[int]]:
+def _prepare_embed_texts(input: list[str], splitter: TokenTextSplitter) -> tuple[list[str], list[int]]:
     sizes: list[int] = []
     snippets: list[str] = []
 
@@ -155,9 +150,7 @@ def _prepare_embed_texts(
     return snippets, sizes
 
 
-def _reconstitute_embeddings(
-    raw_embeddings: list[list[float]], sizes: list[int]
-) -> list[list[float] | None]:
+def _reconstitute_embeddings(raw_embeddings: list[list[float]], sizes: list[int]) -> list[list[float] | None]:
     """Reconstitute the embeddings into the original input texts."""
     embeddings: list[list[float] | None] = []
     cursor = 0

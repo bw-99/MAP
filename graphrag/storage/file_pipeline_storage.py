@@ -74,9 +74,7 @@ class FilePipelineStorage(PipelineStorage):
             if progress is not None:
                 progress(_create_progress_status(num_loaded, num_filtered, num_total))
 
-    async def get(
-        self, key: str, as_bytes: bool | None = False, encoding: str | None = None
-    ) -> Any:
+    async def get(self, key: str, as_bytes: bool | None = False, encoding: str | None = None) -> Any:
         """Get method definition."""
         file_path = join_path(self._root_dir, key)
 
@@ -158,9 +156,7 @@ def create_file_storage(**kwargs: Any) -> PipelineStorage:
     return FilePipelineStorage(root_dir=base_dir)
 
 
-def _create_progress_status(
-    num_loaded: int, num_filtered: int, num_total: int
-) -> Progress:
+def _create_progress_status(num_loaded: int, num_filtered: int, num_total: int) -> Progress:
     return Progress(
         total_items=num_total,
         completed_items=num_loaded + num_filtered,

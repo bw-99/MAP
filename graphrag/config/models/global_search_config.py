@@ -11,18 +11,10 @@ import graphrag.config.defaults as defs
 class GlobalSearchConfig(BaseModel):
     """The default configuration section for Cache."""
 
-    map_prompt: str | None = Field(
-        description="The global search mapper prompt to use.", default=None
-    )
-    reduce_prompt: str | None = Field(
-        description="The global search reducer to use.", default=None
-    )
-    knowledge_prompt: str | None = Field(
-        description="The global search general prompt to use.", default=None
-    )
-    evaluate_prompt: str | None = Field(
-        description="The global search evaluation prompt to use.", default=None
-    )
+    map_prompt: str | None = Field(description="The global search mapper prompt to use.", default=None)
+    reduce_prompt: str | None = Field(description="The global search reducer to use.", default=None)
+    knowledge_prompt: str | None = Field(description="The global search general prompt to use.", default=None)
+    evaluate_prompt: str | None = Field(description="The global search evaluation prompt to use.", default=None)
     temperature: float | None = Field(
         description="The temperature to use for token generation.",
         default=defs.GLOBAL_SEARCH_LLM_TEMPERATURE,

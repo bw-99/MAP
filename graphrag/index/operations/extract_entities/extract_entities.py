@@ -104,9 +104,7 @@ async def extract_entities(
     if entity_types is None:
         entity_types = DEFAULT_ENTITY_TYPES
     strategy = strategy or {}
-    strategy_exec = _load_strategy(
-        strategy.get("type", ExtractEntityStrategyType.graph_intelligence)
-    )
+    strategy_exec = _load_strategy(strategy.get("type", ExtractEntityStrategyType.graph_intelligence))
     strategy_config = {**strategy}
 
     num_started = 0

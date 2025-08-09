@@ -46,15 +46,8 @@ def _apply_substitutions(config: PipelineConfig, run_id: str) -> PipelineConfig:
     """Apply the substitutions to the configuration."""
     substitutions = {"timestamp": run_id}
 
-    if (
-        isinstance(
-            config.storage, PipelineFileStorageConfig | PipelineBlobStorageConfig
-        )
-        and config.storage.base_dir
-    ):
-        config.storage.base_dir = Template(config.storage.base_dir).substitute(
-            substitutions
-        )
+    if isinstance(config.storage, PipelineFileStorageConfig | PipelineBlobStorageConfig) and config.storage.base_dir:
+        config.storage.base_dir = Template(config.storage.base_dir).substitute(substitutions)
     if (
         config.update_index_storage
         and isinstance(
@@ -63,26 +56,15 @@ def _apply_substitutions(config: PipelineConfig, run_id: str) -> PipelineConfig:
         )
         and config.update_index_storage.base_dir
     ):
-        config.update_index_storage.base_dir = Template(
-            config.update_index_storage.base_dir
-        ).substitute(substitutions)
-    if (
-        isinstance(config.cache, PipelineFileCacheConfig | PipelineBlobCacheConfig)
-        and config.cache.base_dir
-    ):
-        config.cache.base_dir = Template(config.cache.base_dir).substitute(
-            substitutions
-        )
+        config.update_index_storage.base_dir = Template(config.update_index_storage.base_dir).substitute(substitutions)
+    if isinstance(config.cache, PipelineFileCacheConfig | PipelineBlobCacheConfig) and config.cache.base_dir:
+        config.cache.base_dir = Template(config.cache.base_dir).substitute(substitutions)
 
     if (
-        isinstance(
-            config.reporting, PipelineFileReportingConfig | PipelineBlobReportingConfig
-        )
+        isinstance(config.reporting, PipelineFileReportingConfig | PipelineBlobReportingConfig)
         and config.reporting.base_dir
     ):
-        config.reporting.base_dir = Template(config.reporting.base_dir).substitute(
-            substitutions
-        )
+        config.reporting.base_dir = Template(config.reporting.base_dir).substitute(substitutions)
 
     return config
 

@@ -69,9 +69,7 @@ class RichProgressLogger(ProgressLogger):
             console = Console()
             group = Group(Spinner("dots", prefix), fit=True)
             tree = Tree(group)
-            live = Live(
-                tree, console=console, refresh_per_second=1, vertical_overflow="crop"
-            )
+            live = Live(tree, console=console, refresh_per_second=1, vertical_overflow="crop")
             live.start()
 
             self._console = console
@@ -83,9 +81,7 @@ class RichProgressLogger(ProgressLogger):
             self._console = parent.console
             self._group = parent.group
             progress_columns = [*Progress.get_default_columns(), TimeElapsedColumn()]
-            self._progressbar = Progress(
-                *progress_columns, console=self._console, transient=transient
-            )
+            self._progressbar = Progress(*progress_columns, console=self._console, transient=transient)
 
             tree = Tree(prefix)
             tree.add(self._progressbar)

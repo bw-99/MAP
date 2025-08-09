@@ -71,13 +71,9 @@ class LocalSearchMixedContext(LocalContextBuilder):
         if text_units is None:
             text_units = []
         self.entities = {entity.id: entity for entity in entities}
-        self.community_reports = {
-            community.community_id: community for community in community_reports
-        }
+        self.community_reports = {community.community_id: community for community in community_reports}
         self.text_units = {unit.id: unit for unit in text_units}
-        self.relationships = {
-            relationship.id: relationship for relationship in relationships
-        }
+        self.relationships = {relationship.id: relationship for relationship in relationships}
         self.covariates = covariates
         self.entity_text_embeddings = entity_text_embeddings
         self.text_embedder = text_embedder
@@ -123,17 +119,13 @@ class LocalSearchMixedContext(LocalContextBuilder):
         if exclude_entity_names is None:
             exclude_entity_names = []
         if community_prop + text_unit_prop > 1:
-            value_error = (
-                "The sum of community_prop and text_unit_prop should not exceed 1."
-            )
+            value_error = "The sum of community_prop and text_unit_prop should not exceed 1."
             raise ValueError(value_error)
 
         # map user query to entities
         # if there is conversation history, attached the previous user questions to the current query
         if conversation_history:
-            pre_user_questions = "\n".join(
-                conversation_history.get_user_turns(conversation_history_max_turns)
-            )
+            pre_user_questions = "\n".join(conversation_history.get_user_turns(conversation_history_max_turns))
             query = f"{query}\n{pre_user_questions}"
 
         selected_entities = map_query_to_entities(
@@ -167,9 +159,7 @@ class LocalSearchMixedContext(LocalContextBuilder):
             if conversation_history_context.strip() != "":
                 final_context.append(conversation_history_context)
                 final_context_data = conversation_history_context_data
-                max_tokens = max_tokens - num_tokens(
-                    conversation_history_context, self.token_encoder
-                )
+                max_tokens = max_tokens - num_tokens(conversation_history_context, self.token_encoder)
 
         # build community context
         community_tokens = max(int(max_tokens * community_prop), 0)
@@ -241,9 +231,7 @@ class LocalSearchMixedContext(LocalContextBuilder):
             # increase count of the community that this entity belongs to
             if entity.community_ids:
                 for community_id in entity.community_ids:
-                    community_matches[community_id] = (
-                        community_matches.get(community_id, 0) + 1
-                    )
+                    community_matches[community_id] = community_matches.get(community_id, 0) + 1
 
         # sort communities by number of matched entities and rank
         selected_communities = [
@@ -289,13 +277,8 @@ class LocalSearchMixedContext(LocalContextBuilder):
                 context_data[context_key] = candidate_context_data
                 context_data[context_key]["in_context"] = False
             else:
-                if (
-                    "id" in candidate_context_data.columns
-                    and "id" in context_data[context_key].columns
-                ):
-                    candidate_context_data["in_context"] = candidate_context_data[
-                        "id"
-                    ].isin(  # cspell:disable-line
+                if "id" in candidate_context_data.columns and "id" in context_data[context_key].columns:
+                    candidate_context_data["in_context"] = candidate_context_data["id"].isin(  # cspell:disable-line
                         context_data[context_key]["id"]
                     )
                     context_data[context_key] = candidate_context_data
@@ -323,17 +306,13 @@ class LocalSearchMixedContext(LocalContextBuilder):
         for index, entity in enumerate(selected_entities):
             # get matching relationships
             entity_relationships = [
-                rel
-                for rel in relationship_values
-                if rel.source == entity.title or rel.target == entity.title
+                rel for rel in relationship_values if rel.source == entity.title or rel.target == entity.title
             ]
 
             for text_id in entity.text_unit_ids or []:
                 if text_id not in text_unit_ids_set and text_id in self.text_units:
                     selected_unit = deepcopy(self.text_units[text_id])
-                    num_relationships = count_relationships(
-                        entity_relationships, selected_unit
-                    )
+                    num_relationships = count_relationships(entity_relationships, selected_unit)
                     text_unit_ids_set.add(text_id)
                     unit_info_list.append((selected_unit, index, num_relationships))
 
@@ -361,13 +340,10 @@ class LocalSearchMixedContext(LocalContextBuilder):
                 candidate_context_data["in_context"] = False
                 context_data[context_key] = candidate_context_data
             else:
-                if (
-                    "id" in candidate_context_data.columns
-                    and "id" in context_data[context_key].columns
-                ):
-                    candidate_context_data["in_context"] = candidate_context_data[
-                        "id"
-                    ].isin(context_data[context_key]["id"])
+                if "id" in candidate_context_data.columns and "id" in context_data[context_key].columns:
+                    candidate_context_data["in_context"] = candidate_context_data["id"].isin(
+                        context_data[context_key]["id"]
+                    )
                     context_data[context_key] = candidate_context_data
                 else:
                     context_data[context_key]["in_context"] = True
@@ -427,9 +403,7 @@ class LocalSearchMixedContext(LocalContextBuilder):
             )
             current_context.append(relationship_context)
             current_context_data["relationships"] = relationship_context_data
-            total_tokens = entity_tokens + num_tokens(
-                relationship_context, self.token_encoder
-            )
+            total_tokens = entity_tokens + num_tokens(relationship_context, self.token_encoder)
 
             # build covariate context
             for covariate in self.covariates:
@@ -477,9 +451,7 @@ class LocalSearchMixedContext(LocalContextBuilder):
                     in_context_df = final_context_data[key]
 
                     if "id" in in_context_df.columns and "id" in candidate_df.columns:
-                        candidate_df["in_context"] = candidate_df[
-                            "id"
-                        ].isin(  # cspell:disable-line
+                        candidate_df["in_context"] = candidate_df["id"].isin(  # cspell:disable-line
                             in_context_df["id"]
                         )
                         final_context_data[key] = candidate_df

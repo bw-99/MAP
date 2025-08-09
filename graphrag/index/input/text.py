@@ -29,9 +29,7 @@ async def load(
 ) -> pd.DataFrame:
     """Load text inputs from a directory."""
 
-    async def load_file(
-        path: str, group: dict | None = None, _encoding: str = "utf-8"
-    ) -> dict[str, Any]:
+    async def load_file(path: str, group: dict | None = None, _encoding: str = "utf-8") -> dict[str, Any]:
         if group is None:
             group = {}
         text = await storage.get(path, encoding="utf-8")

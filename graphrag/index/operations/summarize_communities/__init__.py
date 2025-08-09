@@ -16,7 +16,8 @@ from graphrag.index.operations.summarize_communities.extract_concepts import (
     extract_concepts,
 )
 from graphrag.index.operations.summarize_communities.typing import (
-    CreateCommunityReportsStrategyType, CoreConceptExtractionStrategyType
+    CreateCommunityReportsStrategyType,
+    CoreConceptExtractionStrategyType,
 )
 
 __all__ = [
@@ -25,5 +26,5 @@ __all__ = [
     "prepare_community_reports",
     "restore_community_hierarchy",
     "summarize_communities",
-    "extract_concepts"
+    "extract_concepts",
 ]

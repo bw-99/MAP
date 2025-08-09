@@ -75,9 +75,7 @@ class OpenAIEmbedding(BaseTextEmbedding, OpenAILLMImpl):
         For text longer than max_tokens, chunk texts into max_tokens, embed each chunk, then combine using weighted average.
         Please refer to: https://github.com/openai/openai-cookbook/blob/main/examples/Embedding_long_inputs.ipynb
         """
-        token_chunks = chunk_text(
-            text=text, token_encoder=self.token_encoder, max_tokens=self.max_tokens
-        )
+        token_chunks = chunk_text(text=text, token_encoder=self.token_encoder, max_tokens=self.max_tokens)
         chunk_embeddings = []
         chunk_lens = []
         for chunk in token_chunks:
@@ -103,14 +101,10 @@ class OpenAIEmbedding(BaseTextEmbedding, OpenAILLMImpl):
 
         For text longer than max_tokens, chunk texts into max_tokens, embed each chunk, then combine using weighted average.
         """
-        token_chunks = chunk_text(
-            text=text, token_encoder=self.token_encoder, max_tokens=self.max_tokens
-        )
+        token_chunks = chunk_text(text=text, token_encoder=self.token_encoder, max_tokens=self.max_tokens)
         chunk_embeddings = []
         chunk_lens = []
-        embedding_results = await asyncio.gather(*[
-            self._aembed_with_retry(chunk, **kwargs) for chunk in token_chunks
-        ])
+        embedding_results = await asyncio.gather(*[self._aembed_with_retry(chunk, **kwargs) for chunk in token_chunks])
         embedding_results = [result for result in embedding_results if result[0]]
         chunk_embeddings = [result[0] for result in embedding_results]
         chunk_lens = [result[1] for result in embedding_results]
@@ -118,9 +112,7 @@ class OpenAIEmbedding(BaseTextEmbedding, OpenAILLMImpl):
         chunk_embeddings = chunk_embeddings / np.linalg.norm(chunk_embeddings)
         return chunk_embeddings.tolist()
 
-    def _embed_with_retry(
-        self, text: str | tuple, **kwargs: Any
-    ) -> tuple[list[float], int]:
+    def _embed_with_retry(self, text: str | tuple, **kwargs: Any) -> tuple[list[float], int]:
         try:
             retryer = Retrying(
                 stop=stop_after_attempt(self.max_retries),
@@ -151,9 +143,7 @@ class OpenAIEmbedding(BaseTextEmbedding, OpenAILLMImpl):
             # TODO: why not just throw in this case?
             return ([], 0)
 
-    async def _aembed_with_retry(
-        self, text: str | tuple, **kwargs: Any
-    ) -> tuple[list[float], int]:
+    async def _aembed_with_retry(self, text: str | tuple, **kwargs: Any) -> tuple[list[float], int]:
         try:
             retryer = AsyncRetrying(
                 stop=stop_after_attempt(self.max_retries),

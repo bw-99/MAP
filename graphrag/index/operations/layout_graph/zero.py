@@ -56,9 +56,7 @@ def run(
         result = []
         for i in range(len(nodes)):
             cluster = node_clusters[i] if len(node_clusters) > 0 else 1
-            result.append(
-                NodePosition(x=0, y=0, label=nodes[i], size=0, cluster=str(cluster))
-            )
+            result.append(NodePosition(x=0, y=0, label=nodes[i], size=0, cluster=str(cluster)))
         return result
 
 

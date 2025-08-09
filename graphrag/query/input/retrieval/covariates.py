@@ -17,11 +17,7 @@ def get_candidate_covariates(
 ) -> list[Covariate]:
     """Get all covariates that are related to selected entities."""
     selected_entity_names = [entity.title for entity in selected_entities]
-    return [
-        covariate
-        for covariate in covariates
-        if covariate.subject_id in selected_entity_names
-    ]
+    return [covariate for covariate in covariates if covariate.subject_id in selected_entity_names]
 
 
 def to_covariate_dataframe(covariates: list[Covariate]) -> pd.DataFrame:
@@ -44,9 +40,7 @@ def to_covariate_dataframe(covariates: list[Covariate]) -> pd.DataFrame:
         ]
         for field in attribute_cols:
             field_value = (
-                str(covariate.attributes.get(field))
-                if covariate.attributes and covariate.attributes.get(field)
-                else ""
+                str(covariate.attributes.get(field)) if covariate.attributes and covariate.attributes.get(field) else ""
             )
             new_record.append(field_value)
         records.append(new_record)

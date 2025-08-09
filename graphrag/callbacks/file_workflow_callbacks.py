@@ -64,10 +64,7 @@ class FileWorkflowCallbacks(NoopWorkflowCallbacks):
     def on_log(self, message: str, details: dict | None = None):
         """Handle when a log message is produced."""
         self._out_stream.write(
-            json.dumps(
-                {"type": "log", "data": message, "details": details}, ensure_ascii=False
-            )
-            + "\n"
+            json.dumps({"type": "log", "data": message, "details": details}, ensure_ascii=False) + "\n"
         )
 
         message = f"{message} details={details}"

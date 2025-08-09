@@ -61,9 +61,7 @@ def map_query_to_entities(
             k=k * oversample_scaler,
         )
         for result in search_results:
-            if embedding_vectorstore_key == EntityVectorStoreKey.ID and isinstance(
-                result.document.id, str
-            ):
+            if embedding_vectorstore_key == EntityVectorStoreKey.ID and isinstance(result.document.id, str):
                 matched = get_entity_by_id(all_entities_dict, result.document.id)
             else:
                 matched = get_entity_by_key(
@@ -79,11 +77,7 @@ def map_query_to_entities(
 
     # filter out excluded entities
     if exclude_entity_names:
-        matched_entities = [
-            entity
-            for entity in matched_entities
-            if entity.title not in exclude_entity_names
-        ]
+        matched_entities = [entity for entity in matched_entities if entity.title not in exclude_entity_names]
 
     # add entities in the include_entity list
     included_entities = []
@@ -102,19 +96,11 @@ def find_nearest_neighbors_by_entity_rank(
     """Retrieve entities that have direct connections with the target entity, sorted by entity rank."""
     if exclude_entity_names is None:
         exclude_entity_names = []
-    entity_relationships = [
-        rel
-        for rel in all_relationships
-        if rel.source == entity_name or rel.target == entity_name
-    ]
+    entity_relationships = [rel for rel in all_relationships if rel.source == entity_name or rel.target == entity_name]
     source_entity_names = {rel.source for rel in entity_relationships}
     target_entity_names = {rel.target for rel in entity_relationships}
-    related_entity_names = (source_entity_names.union(target_entity_names)).difference(
-        set(exclude_entity_names)
-    )
-    top_relations = [
-        entity for entity in all_entities if entity.title in related_entity_names
-    ]
+    related_entity_names = (source_entity_names.union(target_entity_names)).difference(set(exclude_entity_names))
+    top_relations = [entity for entity in all_entities if entity.title in related_entity_names]
     top_relations.sort(key=lambda x: x.rank if x.rank else 0, reverse=True)
     if k:
         return top_relations[:k]

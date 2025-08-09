@@ -89,11 +89,7 @@ def load_workflows(
     # Backfill any missing workflows
     for name in list(workflow_graph.keys()):
         workflow = workflow_graph[name]
-        deps = [
-            d.replace("workflow:", "")
-            for d in workflow.workflow.dependencies
-            if d.startswith("workflow:")
-        ]
+        deps = [d.replace("workflow:", "") for d in workflow.workflow.dependencies if d.startswith("workflow:")]
         for dependency in deps:
             if dependency not in workflow_graph:
                 reference = {"name": dependency, **workflow.config}
@@ -110,10 +106,7 @@ def load_workflows(
 
     # Run workflows in order of dependencies
     def filter_wf_dependencies(name: str) -> list[str]:
-        externals = [
-            e.replace("workflow:", "")
-            for e in workflow_graph[name].workflow.dependencies
-        ]
+        externals = [e.replace("workflow:", "") for e in workflow_graph[name].workflow.dependencies]
         return [e for e in externals if e in workflow_graph]
 
     task_graph = {name: filter_wf_dependencies(name) for name in workflow_graph}

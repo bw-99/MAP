@@ -3,9 +3,7 @@
 
 """The Indexing Engine community reports package root."""
 
-from graphrag.index.operations.interpret_equation.equation_interpretor.equation_interpretor import (
-    EquationInterpretor
-)
+from graphrag.index.operations.interpret_equation.equation_interpretor.equation_interpretor import EquationInterpretor
 
 __all__ = [
     "EquationInterpretor",

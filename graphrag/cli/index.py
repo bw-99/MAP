@@ -143,9 +143,7 @@ def _run_index(
     run_id = resume or time.strftime("%Y%m%d-%H%M%S")
 
     config.storage.base_dir = str(output_dir) if output_dir else config.storage.base_dir
-    config.reporting.base_dir = (
-        str(output_dir) if output_dir else config.reporting.base_dir
-    )
+    config.reporting.base_dir = str(output_dir) if output_dir else config.reporting.base_dir
     resolve_paths(config, run_id)
 
     if not cache:
@@ -184,15 +182,11 @@ def _run_index(
             progress_logger=progress_logger,
         )
     )
-    encountered_errors = any(
-        output.errors and len(output.errors) > 0 for output in outputs
-    )
+    encountered_errors = any(output.errors and len(output.errors) > 0 for output in outputs)
 
     progress_logger.stop()
     if encountered_errors:
-        error(
-            "Errors occurred during the pipeline run, see logs for more details.", True
-        )
+        error("Errors occurred during the pipeline run, see logs for more details.", True)
     else:
         success("All workflows completed successfully.", True)
 

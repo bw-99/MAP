@@ -1,6 +1,5 @@
 import os
 import json
-import asyncio
 from dotenv import load_dotenv
 from openai import AsyncOpenAI
 
@@ -13,7 +12,6 @@ if not API_KEY:
 
 
 client = AsyncOpenAI(api_key=API_KEY)
-
 
 
 async def extract_and_explain_latex_with_llm(text: str) -> dict:
@@ -55,16 +53,17 @@ async def extract_and_explain_latex_with_llm(text: str) -> dict:
     **Do NOT provide any additional text outside this JSON format.**
     """
 
-
-
     try:
         response = await client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are an expert in LaTeX, mathematics, and scientific document analysis."},
-                {"role": "user", "content": prompt}
+                {
+                    "role": "system",
+                    "content": "You are an expert in LaTeX, mathematics, and scientific document analysis.",
+                },
+                {"role": "user", "content": prompt},
             ],
-            max_tokens=3000
+            max_tokens=3000,
         )
 
         result = response.choices[0].message.content
@@ -72,10 +71,8 @@ async def extract_and_explain_latex_with_llm(text: str) -> dict:
         if not result.strip():  # Handle empty response
             return {"equations": [], "explanations": {}, "error": "LLM returned an empty response."}
 
-
         # Ensure JSON formatting by removing extraneous text
         result = result.strip()
-
 
         if result.startswith("```json"):
             result = result.replace("```json", "").replace("```", "").strip()
@@ -84,11 +81,7 @@ async def extract_and_explain_latex_with_llm(text: str) -> dict:
             return json.loads(result)  # Convert to JSON
         except json.JSONDecodeError:
             print("⚠️ JSON parsing error. Trying alternative method...")
-            return {
-                "equations": [],
-                "explanations": {},
-                "error": "JSON parsing failed. Check LLM response formatting."
-            }
+            return {"equations": [], "explanations": {}, "error": "JSON parsing failed. Check LLM response formatting."}
 
     except Exception as e:
         return {"equations": [], "explanations": {}, "error": str(e)}

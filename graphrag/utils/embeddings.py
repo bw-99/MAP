@@ -6,9 +6,7 @@
 from graphrag.index.config.embeddings import all_embeddings
 
 
-def create_collection_name(
-    container_name: str, embedding_name: str, validate: bool = True
-) -> str:
+def create_collection_name(container_name: str, embedding_name: str, validate: bool = True) -> str:
     """
     Create a collection name for the embedding store.
 

@@ -22,9 +22,7 @@ class PipelineWorkflowReference(BaseModel):
     name: str | None = Field(description="Name of the workflow.", default=None)
     """Name of the workflow."""
 
-    steps: list[PipelineWorkflowStep] | None = Field(
-        description="The optional steps for the workflow.", default=None
-    )
+    steps: list[PipelineWorkflowStep] | None = Field(description="The optional steps for the workflow.", default=None)
     """The optional steps for the workflow."""
 
     config: PipelineWorkflowConfig | None = Field(

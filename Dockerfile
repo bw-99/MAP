@@ -2,21 +2,25 @@ FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PYTHONUNBUFFERED=1
+ENV PATH="/usr/local/bin:/root/.local/bin:/root/.cargo/bin:${PATH}"
 
 RUN apt-get update && apt-get install -y \
-    python3 python3-pip python3-venv curl git \
+    python3 python3-pip curl git build-essential ca-certificates \
+    && update-ca-certificates \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN curl -LsSf https://astral.sh/uv/install.sh | sh
-
-ENV PATH="/root/.local/bin:${PATH}"
+SHELL ["/bin/bash","-lc"]
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh \
+    && (command -v uv && uv --version)
 
 WORKDIR /workspace
+
+COPY pyproject.toml uv.lock* README.md /workspace/
+
+RUN uv pip install --system -e "/workspace[dev,preprocess,server]"
+
 COPY . /workspace
 
-RUN /root/.local/bin/uv venv .venv && \
-    . .venv/bin/activate && \
-    /root/.local/bin/uv pip install -e ".[dev, preprocess, server]" && \
-    .venv/bin/pre-commit install
+RUN uv pip install --system pytest pytest-cov
 
-ENTRYPOINT [ "/bin/bash" ]
+CMD ["bash"]
