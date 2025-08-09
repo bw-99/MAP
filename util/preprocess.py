@@ -1,11 +1,15 @@
 import glob
 import json
 import os
-import tqdm
 import argparse
 from pathlib import Path
 
 from util.process_paper.const import KEYWORD_KEY
+import logging
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+
+logger = logging.getLogger(__name__)
 
 
 def paper_availability(data: dict) -> bool:
@@ -36,7 +40,7 @@ os.makedirs(f"{ROOT}/input", exist_ok=True)
 json_flst = glob.glob("data/parsed/*.json")
 
 sample_counts = 0
-for _, f_path in tqdm.tqdm(enumerate(json_flst), total=len(json_flst)):
+for _, f_path in enumerate(json_flst):
     if sample_counts >= NUM_EXAMPLE:
         break
 
@@ -49,4 +53,4 @@ for _, f_path in tqdm.tqdm(enumerate(json_flst), total=len(json_flst)):
         f.write(create_corpus_from_json(data))
         sample_counts += 1
 
-print(f"Processed {len(glob.glob(f'{ROOT}/input/*.txt'))} files")
+logger.info(f"Processed {len(glob.glob(f'{ROOT}/input/*.txt'))} files")
