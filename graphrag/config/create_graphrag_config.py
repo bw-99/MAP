@@ -392,6 +392,7 @@ def create_graphrag_config(values: GraphRagConfigInput | None = None, root_dir: 
             encoding_model = reader.str(Fragment.encoding_model) or global_encoding_model
 
             entity_extraction_model = EntityExtractionConfig(
+                enabled=defs.ENTITY_EXTRACTION_ENABLED,
                 llm=hydrate_llm_params(entity_extraction_config, llm_model),
                 parallelization=hydrate_parallelization_params(entity_extraction_config, llm_parallelization_model),
                 async_mode=hydrate_async_type(entity_extraction_config, async_mode),

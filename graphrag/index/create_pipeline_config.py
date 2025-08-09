@@ -242,6 +242,7 @@ def _graph_workflows(settings: GraphRagConfig) -> list[PipelineWorkflowReference
                         settings.root_dir, settings.encoding_model
                     ),
                     "entity_types": settings.entity_extraction.entity_types,
+                    "enabled": settings.entity_extraction.enabled,
                 },
                 "summarize_descriptions": {
                     **settings.summarize_descriptions.parallelization.model_dump(),

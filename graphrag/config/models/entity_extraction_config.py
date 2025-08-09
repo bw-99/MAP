@@ -14,6 +14,7 @@ from graphrag.config.models.llm_config import LLMConfig
 class EntityExtractionConfig(LLMConfig):
     """Configuration section for entity extraction."""
 
+    enabled: bool = Field(description="Whether to enable entity extraction.", default=True)
     prompt: str | None = Field(description="The entity extraction prompt to use.", default=None)
     entity_types: list[str] = Field(
         description="The entity extraction entity types to use.",
