@@ -27,6 +27,7 @@ from graphrag.index.operations.snapshot_graphml import snapshot_graphml
 from graphrag.storage.pipeline_storage import PipelineStorage
 
 from graphrag.index.utils.ds_util import get_required_input_table
+from graphrag.config.enums import EdgeFuseStrategy
 
 workflow_name = "extract_graph"
 
@@ -115,6 +116,7 @@ async def workflow(
     extraction_num_threads_source_paper: int = 1,
     extraction_async_mode_source_paper: AsyncType = AsyncType.AsyncIO,
     entity_types_source_paper: list[str] | None = None,
+    edge_fuse_strategy: EdgeFuseStrategy = EdgeFuseStrategy.CONCAT,
     # summarize_descriptions
     summarization_strategy: dict[str, Any] | None = None,
     summarization_num_threads: int = 4,
@@ -158,26 +160,25 @@ async def workflow(
 
     if entity_extraction_enabled_source_paper:
         log.info("extract_source_paper_graph enabled")
-        # src_graph_entity_nodes, src_graph_relationship_edges = await extract_graph(
-        #     text_units,
-        #     token2doc_dict,
-        #     callbacks,
-        #     cache,
-        #     extraction_strategy=extraction_strategy_source_paper,
-        #     extraction_num_threads=extraction_num_threads_source_paper,
-        #     extraction_async_mode=extraction_async_mode_source_paper,
-        #     entity_types=entity_types_source_paper,
-        #     summarization_strategy=summarization_strategy,
-        #     summarization_num_threads=summarization_num_threads,
-        # )
+        src_graph_entity_nodes, src_graph_relationship_edges = await extract_graph(
+            text_units,
+            token2doc_dict,
+            callbacks,
+            cache,
+            extraction_strategy=extraction_strategy_source_paper,
+            extraction_num_threads=extraction_num_threads_source_paper,
+            extraction_async_mode=extraction_async_mode_source_paper,
+            entity_types=entity_types_source_paper,
+            summarization_strategy=summarization_strategy,
+            summarization_num_threads=summarization_num_threads,
+        )
 
         base_entity_nodes, base_relationship_edges = await fuse_graph(
             base_entity_nodes,
             base_relationship_edges,
-            pd.DataFrame(),
-            pd.DataFrame(),
-            # src_graph_entity_nodes,
-            # src_graph_relationship_edges,
+            src_graph_entity_nodes,
+            src_graph_relationship_edges,
+            edge_fuse_strategy,
         )
 
     await runtime_storage.set("base_entity_nodes", base_entity_nodes)
