@@ -404,6 +404,29 @@ def create_graphrag_config(values: GraphRagConfigInput | None = None, root_dir: 
                 use_doc_id=entity_extraction_config.get("use_doc_id", False),
             )
 
+        entity_extraction_source_paper_config = values.get("entity_extraction_source_paper") or {}
+        entity_extraction_source_paper_model = None
+        if entity_extraction_source_paper_config:
+            with (
+                reader.envvar_prefix(Section.entity_extraction_source_paper),
+                reader.use(entity_extraction_source_paper_config),
+            ):
+                # config 스키마는 entity_extraction과 동일하므로 EntityExtractionConfig을 그대로 사용한다.
+                entity_extraction_source_paper_model = EntityExtractionConfig(
+                    enabled=reader.bool(Fragment.enabled),
+                    llm=hydrate_llm_params(entity_extraction_source_paper_config, llm_model),
+                    parallelization=hydrate_parallelization_params(
+                        entity_extraction_source_paper_config, llm_parallelization_model
+                    ),
+                    async_mode=hydrate_async_type(entity_extraction_source_paper_config, async_mode),
+                    entity_types=reader.list("entity_types") or defs.ENTITY_EXTRACTION_ENTITY_TYPES,
+                    max_gleanings=max_gleanings,
+                    prompt=reader.str("prompt", Fragment.prompt_file),
+                    strategy=entity_extraction_source_paper_config.get("strategy"),
+                    encoding_model=encoding_model,
+                    use_doc_id=entity_extraction_source_paper_config.get("use_doc_id", False),
+                )
+
         sentence_reconstruction_config = values.get("sentence_reconstruction") or {}
         sentence_reconstruction_model = None
         if sentence_reconstruction_config:
@@ -613,6 +636,7 @@ def create_graphrag_config(values: GraphRagConfigInput | None = None, root_dir: 
         chunks=chunks_model,
         snapshots=snapshots_model,
         entity_extraction=entity_extraction_model,
+        entity_extraction_source_paper=entity_extraction_source_paper_model,
         equation_interpretation=equation_interpretation_model,
         sentence_reconstruction=sentence_reconstruction_model,
         claim_extraction=claim_extraction_model,
@@ -684,6 +708,7 @@ class Section(str, Enum):
     viztree = "VIZTREE"
     embedding = "EMBEDDING"
     entity_extraction = "ENTITY_EXTRACTION"
+    entity_extraction_source_paper = "ENTITY_EXTRACTION_SOURCE_PAPER"
     equation_interpretation = "EQUATION_INTERPRETATION"
     sentence_reconstruction = "SENTENCE_RECONSTRUCTION"
     graphrag = "GRAPHRAG"

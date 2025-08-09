@@ -102,7 +102,7 @@ entity_extraction:
   max_gleanings: 1
   use_doc_id: true
 
-entity_extract_source_paper:
+entity_extraction_source_paper:
   enabled: true
   entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
   prompt: "prompts/source_paper_focused_entity_extraction.txt"

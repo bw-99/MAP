@@ -244,6 +244,15 @@ def _graph_workflows(settings: GraphRagConfig) -> list[PipelineWorkflowReference
                     "entity_types": settings.entity_extraction.entity_types,
                     "enabled": settings.entity_extraction.enabled,
                 },
+                "entity_extract_source_paper": {
+                    **settings.entity_extraction_source_paper.parallelization.model_dump(),
+                    "async_mode": settings.entity_extraction_source_paper.async_mode,
+                    "strategy": settings.entity_extraction_source_paper.resolved_strategy(
+                        settings.root_dir, settings.encoding_model
+                    ),
+                    "entity_types": settings.entity_extraction_source_paper.entity_types,
+                    "enabled": settings.entity_extraction_source_paper.enabled,
+                },
                 "summarize_descriptions": {
                     **settings.summarize_descriptions.parallelization.model_dump(),
                     "async_mode": settings.summarize_descriptions.async_mode,
