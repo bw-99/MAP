@@ -162,8 +162,12 @@ async def workflow(
 
     if entity_extraction_enabled_source_paper:
         log.info("extract_source_paper_graph enabled")
+        # source paper와 그 관계만 추출하면 되므로, TOKEN_b0가 포함된 text_unit만 사용하면 된다.
+        text_units_include_source_paper = text_units[
+            text_units["text"].str.contains("TOKEN_b0", case=False, na=False)
+        ].reset_index(drop=True)
         src_graph_entity_nodes, src_graph_relationship_edges = await extract_graph(
-            text_units,
+            text_units_include_source_paper,
             token2doc_dict,
             callbacks,
             cache,
