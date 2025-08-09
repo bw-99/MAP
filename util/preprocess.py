@@ -9,7 +9,7 @@ from util.process_paper.const import KEYWORD_KEY
 
 
 def paper_availability(data: dict) -> bool:
-    if not data[KEYWORD_KEY].strip():
+    if not all(item.strip() for item in data[KEYWORD_KEY]):
         return False
     return True
 
