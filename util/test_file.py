@@ -1,13 +1,9 @@
 import pytest
 import pandas as pd
-from pathlib import Path
 import yaml
 import logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
 
@@ -22,6 +18,7 @@ def load_viztree(root_path, file_name="create_final_viztree.parquet"):
     logger.info("Unique types in Parquet file:", df["type"].unique())
     return df
 
+
 def load_entity_types(root_path):
     file_path = root_path / "settings.yaml"
     if not file_path.exists():
@@ -35,6 +32,7 @@ def load_entity_types(root_path):
 
     assert entity_types, "No entity types found in settings.yaml"
     return entity_types
+
 
 def test_parent_no_negative_one_for_entity_types(root_path):
     df = load_viztree(root_path)

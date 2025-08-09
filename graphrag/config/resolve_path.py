@@ -32,9 +32,7 @@ def _resolve_timestamp_path_with_value(path: str | Path, timestamp_value: str) -
     return Path(resolved_path)
 
 
-def _resolve_timestamp_path_with_dir(
-    path: str | Path, pattern: re.Pattern[str]
-) -> Path:
+def _resolve_timestamp_path_with_dir(path: str | Path, pattern: re.Pattern[str]) -> Path:
     """Resolve the timestamp in the path with the latest available timestamp directory value.
 
     Parameters
@@ -73,9 +71,7 @@ def _resolve_timestamp_path_with_dir(
         msg = f"Parent directory {parent_dir} does not exist or is not a directory."
         raise ValueError(msg)
 
-    timestamp_dirs = [
-        d for d in parent_dir.iterdir() if d.is_dir() and pattern.match(d.name)
-    ]
+    timestamp_dirs = [d for d in parent_dir.iterdir() if d.is_dir() and pattern.match(d.name)]
     timestamp_dirs.sort(key=lambda d: d.name, reverse=True)
     if len(timestamp_dirs) == 0:
         msg = f"No timestamp directories found in {parent_dir} that match {pattern.pattern}."
@@ -184,10 +180,7 @@ def resolve_paths(
             )
         )
 
-    if (
-        config.update_index_storage
-        and config.update_index_storage.type == StorageType.file
-    ):
+    if config.update_index_storage and config.update_index_storage.type == StorageType.file:
         config.update_index_storage.base_dir = str(
             resolve_path(
                 config.update_index_storage.base_dir,

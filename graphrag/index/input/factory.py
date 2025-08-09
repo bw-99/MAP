@@ -45,10 +45,7 @@ async def create_input(
             if config.container_name is None:
                 msg = "Container name required for blob storage"
                 raise ValueError(msg)
-            if (
-                config.connection_string is None
-                and config.storage_account_blob_url is None
-            ):
+            if config.connection_string is None and config.storage_account_blob_url is None:
                 msg = "Connection string or storage account blob url required for blob storage"
                 raise ValueError(msg)
             storage = BlobPipelineStorage(
@@ -59,19 +56,13 @@ async def create_input(
             )
         case InputType.file:
             log.info("using file storage for input")
-            storage = FilePipelineStorage(
-                root_dir=str(Path(root_dir) / (config.base_dir or ""))
-            )
+            storage = FilePipelineStorage(root_dir=str(Path(root_dir) / (config.base_dir or "")))
         case _:
             log.info("using file storage for input")
-            storage = FilePipelineStorage(
-                root_dir=str(Path(root_dir) / (config.base_dir or ""))
-            )
+            storage = FilePipelineStorage(root_dir=str(Path(root_dir) / (config.base_dir or "")))
 
     if config.file_type in loaders:
-        progress = progress_reporter.child(
-            f"Loading Input ({config.file_type})", transient=False
-        )
+        progress = progress_reporter.child(f"Loading Input ({config.file_type})", transient=False)
         loader = loaders[config.file_type]
         results = await loader(config, progress, storage)
         return cast("pd.DataFrame", results)

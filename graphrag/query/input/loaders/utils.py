@@ -34,9 +34,7 @@ def to_optional_str(data: pd.Series, column_name: str | None) -> str | None:
     raise ValueError(msg)
 
 
-def to_list(
-    data: pd.Series, column_name: str | None, item_type: type | None = None
-) -> list:
+def to_list(data: pd.Series, column_name: str | None, item_type: type | None = None) -> list:
     """Convert and validate a value to a list."""
     if column_name is None:
         msg = "Column name is None"
@@ -62,9 +60,7 @@ def to_list(
     raise ValueError(msg)
 
 
-def to_optional_list(
-    data: pd.Series, column_name: str | None, item_type: type | None = None
-) -> list | None:
+def to_optional_list(data: pd.Series, column_name: str | None, item_type: type | None = None) -> list | None:
     """Convert and validate a value to an optional list."""
     if column_name is None:
         return None
@@ -199,9 +195,7 @@ def to_dict(
         if value_type is not None:
             for v in value.values():
                 if not isinstance(v, value_type):
-                    msg = (
-                        f"dict value has item that is not {value_type}: {v} ({type(v)})"
-                    )
+                    msg = f"dict value has item that is not {value_type}: {v} ({type(v)})"
                     raise TypeError(msg)
         return value
 
@@ -236,9 +230,7 @@ def to_optional_dict(
         if value_type is not None:
             for v in value.values():
                 if not isinstance(v, value_type):
-                    msg = (
-                        f"dict value has item that is not {value_type}: {v} ({type(v)})"
-                    )
+                    msg = f"dict value has item that is not {value_type}: {v} ({type(v)})"
                     raise TypeError(msg)
 
         return value

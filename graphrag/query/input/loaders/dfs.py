@@ -45,17 +45,11 @@ def read_entities(
             type=to_optional_str(row, type_col),
             description=to_optional_str(row, description_col),
             name_embedding=to_optional_list(row, name_embedding_col, item_type=float),
-            description_embedding=to_optional_list(
-                row, description_embedding_col, item_type=float
-            ),
+            description_embedding=to_optional_list(row, description_embedding_col, item_type=float),
             community_ids=to_optional_list(row, community_col, item_type=str),
             text_unit_ids=to_optional_list(row, text_unit_ids_col),
             rank=to_optional_int(row, rank_col),
-            attributes=(
-                {col: row.get(col) for col in attributes_cols}
-                if attributes_cols
-                else None
-            ),
+            attributes=({col: row.get(col) for col in attributes_cols} if attributes_cols else None),
         )
         entities.append(entity)
     return entities
@@ -83,17 +77,11 @@ def read_relationships(
             source=to_str(row, source_col),
             target=to_str(row, target_col),
             description=to_optional_str(row, description_col),
-            description_embedding=to_optional_list(
-                row, description_embedding_col, item_type=float
-            ),
+            description_embedding=to_optional_list(row, description_embedding_col, item_type=float),
             weight=to_optional_float(row, weight_col),
             text_unit_ids=to_optional_list(row, text_unit_ids_col, item_type=str),
             rank=to_optional_int(row, rank_col),
-            attributes=(
-                {col: row.get(col) for col in attributes_cols}
-                if attributes_cols
-                else None
-            ),
+            attributes=({col: row.get(col) for col in attributes_cols} if attributes_cols else None),
         )
         relationships.append(rel)
     return relationships
@@ -115,15 +103,9 @@ def read_covariates(
             id=to_str(row, id_col),
             short_id=to_optional_str(row, short_id_col) if short_id_col else str(idx),
             subject_id=to_str(row, subject_col),
-            covariate_type=(
-                to_str(row, covariate_type_col) if covariate_type_col else "claim"
-            ),
+            covariate_type=(to_str(row, covariate_type_col) if covariate_type_col else "claim"),
             text_unit_ids=to_optional_list(row, text_unit_ids_col, item_type=str),
-            attributes=(
-                {col: row.get(col) for col in attributes_cols}
-                if attributes_cols
-                else None
-            ),
+            attributes=({col: row.get(col) for col in attributes_cols} if attributes_cols else None),
         )
         covariates.append(cov)
     return covariates
@@ -151,15 +133,9 @@ def read_communities(
             level=to_str(row, level_col),
             entity_ids=to_optional_list(row, entities_col, item_type=str),
             relationship_ids=to_optional_list(row, relationships_col, item_type=str),
-            covariate_ids=to_optional_dict(
-                row, covariates_col, key_type=str, value_type=str
-            ),
+            covariate_ids=to_optional_dict(row, covariates_col, key_type=str, value_type=str),
             sub_community_ids=to_optional_list(row, sub_communities_col),
-            attributes=(
-                {col: row.get(col) for col in attributes_cols}
-                if attributes_cols
-                else None
-            ),
+            attributes=({col: row.get(col) for col in attributes_cols} if attributes_cols else None),
         )
         communities.append(comm)
     return communities
@@ -188,14 +164,8 @@ def read_community_reports(
             summary=to_str(row, summary_col),
             full_content=to_str(row, content_col),
             rank=to_optional_float(row, rank_col),
-            full_content_embedding=to_optional_list(
-                row, content_embedding_col, item_type=float
-            ),
-            attributes=(
-                {col: row.get(col) for col in attributes_cols}
-                if attributes_cols
-                else None
-            ),
+            full_content_embedding=to_optional_list(row, content_embedding_col, item_type=float),
+            attributes=({col: row.get(col) for col in attributes_cols} if attributes_cols else None),
         )
         reports.append(report)
     return reports
@@ -221,16 +191,10 @@ def read_text_units(
             text=to_str(row, text_col),
             entity_ids=to_optional_list(row, entities_col, item_type=str),
             relationship_ids=to_optional_list(row, relationships_col, item_type=str),
-            covariate_ids=to_optional_dict(
-                row, covariates_col, key_type=str, value_type=str
-            ),
+            covariate_ids=to_optional_dict(row, covariates_col, key_type=str, value_type=str),
             n_tokens=to_optional_int(row, tokens_col),
             document_ids=to_optional_list(row, document_ids_col, item_type=str),
-            attributes=(
-                {col: row.get(col) for col in attributes_cols}
-                if attributes_cols
-                else None
-            ),
+            attributes=({col: row.get(col) for col in attributes_cols} if attributes_cols else None),
         )
         text_units.append(chunk)
     return text_units

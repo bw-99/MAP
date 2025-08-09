@@ -57,16 +57,12 @@ def run_layout(strategy: dict[str, Any], graph: nx.Graph) -> Communities:
     return results
 
 
-def run_leiden(
-    graph: nx.Graph, args: dict[str, Any]
-) -> tuple[dict[int, dict[int, list[str]]], dict[int, int]]:
+def run_leiden(graph: nx.Graph, args: dict[str, Any]) -> tuple[dict[int, dict[int, list[str]]], dict[int, int]]:
     """Run method definition."""
     max_cluster_size = args.get("max_cluster_size", 10)
     use_lcc = args.get("use_lcc", True)
     if args.get("verbose", False):
-        log.info(
-            "Running leiden with max_cluster_size=%s, lcc=%s", max_cluster_size, use_lcc
-        )
+        log.info("Running leiden with max_cluster_size=%s, lcc=%s", max_cluster_size, use_lcc)
 
     node_id_to_community_map, community_hierarchy_map = _compute_leiden_communities(
         graph=graph,
@@ -106,17 +102,13 @@ def _compute_leiden_communities(
     if use_lcc:
         graph = stable_largest_connected_component(graph)
 
-    community_mapping = hierarchical_leiden(
-        graph, max_cluster_size=max_cluster_size, random_seed=seed
-    )
+    community_mapping = hierarchical_leiden(graph, max_cluster_size=max_cluster_size, random_seed=seed)
     results: dict[int, dict[str, int]] = {}
     hierarchy: dict[int, int] = {}
     for partition in community_mapping:
         results[partition.level] = results.get(partition.level, {})
         results[partition.level][partition.node] = partition.cluster
 
-        hierarchy[partition.cluster] = (
-            partition.parent_cluster if partition.parent_cluster is not None else -1
-        )
+        hierarchy[partition.cluster] = partition.parent_cluster if partition.parent_cluster is not None else -1
 
     return results, hierarchy

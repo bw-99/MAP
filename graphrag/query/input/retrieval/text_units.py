@@ -16,9 +16,7 @@ def get_candidate_text_units(
     text_units: list[TextUnit],
 ) -> pd.DataFrame:
     """Get all text units that are associated to selected entities."""
-    selected_text_ids = [
-        entity.text_unit_ids for entity in selected_entities if entity.text_unit_ids
-    ]
+    selected_text_ids = [entity.text_unit_ids for entity in selected_entities if entity.text_unit_ids]
     selected_text_ids = [item for sublist in selected_text_ids for item in sublist]
     selected_text_units = [unit for unit in text_units if unit.id in selected_text_ids]
     return to_text_unit_dataframe(selected_text_units)
@@ -31,9 +29,7 @@ def to_text_unit_dataframe(text_units: list[TextUnit]) -> pd.DataFrame:
 
     # add header
     header = ["id", "text"]
-    attribute_cols = (
-        list(text_units[0].attributes.keys()) if text_units[0].attributes else []
-    )
+    attribute_cols = list(text_units[0].attributes.keys()) if text_units[0].attributes else []
     attribute_cols = [col for col in attribute_cols if col not in header]
     header.extend(attribute_cols)
 
@@ -43,9 +39,7 @@ def to_text_unit_dataframe(text_units: list[TextUnit]) -> pd.DataFrame:
             unit.short_id,
             unit.text,
             *[
-                str(unit.attributes.get(field, ""))
-                if unit.attributes and unit.attributes.get(field)
-                else ""
+                str(unit.attributes.get(field, "")) if unit.attributes and unit.attributes.get(field) else ""
                 for field in attribute_cols
             ],
         ]

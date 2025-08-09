@@ -26,15 +26,11 @@ class PipelineFileReportingConfig(PipelineReportingConfig[Literal[ReportingType.
     type: Literal[ReportingType.file] = ReportingType.file
     """The type of reporting."""
 
-    base_dir: str | None = Field(
-        description="The base directory for the reporting.", default=None
-    )
+    base_dir: str | None = Field(description="The base directory for the reporting.", default=None)
     """The base directory for the reporting."""
 
 
-class PipelineConsoleReportingConfig(
-    PipelineReportingConfig[Literal[ReportingType.console]]
-):
+class PipelineConsoleReportingConfig(PipelineReportingConfig[Literal[ReportingType.console]]):
     """Represent the console reporting configuration for the pipeline."""
 
     type: Literal[ReportingType.console] = ReportingType.console
@@ -53,24 +49,16 @@ class PipelineBlobReportingConfig(PipelineReportingConfig[Literal[ReportingType.
     )
     """The blob reporting connection string for the reporting."""
 
-    container_name: str = Field(
-        description="The container name for reporting", default=""
-    )
+    container_name: str = Field(description="The container name for reporting", default="")
     """The container name for reporting"""
 
-    storage_account_blob_url: str | None = Field(
-        description="The storage account blob url for reporting", default=None
-    )
+    storage_account_blob_url: str | None = Field(description="The storage account blob url for reporting", default=None)
     """The storage account blob url for reporting"""
 
-    base_dir: str | None = Field(
-        description="The base directory for the reporting.", default=None
-    )
+    base_dir: str | None = Field(description="The base directory for the reporting.", default=None)
     """The base directory for the reporting."""
 
 
 PipelineReportingConfigTypes = (
-    PipelineFileReportingConfig
-    | PipelineConsoleReportingConfig
-    | PipelineBlobReportingConfig
+    PipelineFileReportingConfig | PipelineConsoleReportingConfig | PipelineBlobReportingConfig
 )

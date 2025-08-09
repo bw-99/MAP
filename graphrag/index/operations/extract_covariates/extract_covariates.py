@@ -56,10 +56,7 @@ async def extract_covariates(
         result = await run_claim_extraction(
             text, entity_types, resolved_entities_map, callbacks, cache, strategy_config
         )
-        return [
-            create_row_from_claim_data(row, item, covariate_type)
-            for item in result.covariate_data
-        ]
+        return [create_row_from_claim_data(row, item, covariate_type) for item in result.covariate_data]
 
     results = await derive_from_rows(
         input,
@@ -99,9 +96,7 @@ async def run_claim_extraction(
         extraction_prompt=extraction_prompt,
         max_gleanings=max_gleanings,
         encoding_model=encoding_model,
-        on_error=lambda e, s, d: (
-            callbacks.error("Claim Extraction Error", e, s, d) if callbacks else None
-        ),
+        on_error=lambda e, s, d: (callbacks.error("Claim Extraction Error", e, s, d) if callbacks else None),
     )
 
     claim_description = strategy_config.get("claim_description")
@@ -111,15 +106,17 @@ async def run_claim_extraction(
 
     input = [input] if isinstance(input, str) else input
 
-    results = await extractor({
-        "input_text": input,
-        "entity_specs": entity_types,
-        "resolved_entities": resolved_entities_map,
-        "claim_description": claim_description,
-        "tuple_delimiter": tuple_delimiter,
-        "record_delimiter": record_delimiter,
-        "completion_delimiter": completion_delimiter,
-    })
+    results = await extractor(
+        {
+            "input_text": input,
+            "entity_specs": entity_types,
+            "resolved_entities": resolved_entities_map,
+            "claim_description": claim_description,
+            "tuple_delimiter": tuple_delimiter,
+            "record_delimiter": record_delimiter,
+            "completion_delimiter": completion_delimiter,
+        }
+    )
 
     claim_data = results.output
     return CovariateExtractionResult([create_covariate(item) for item in claim_data])

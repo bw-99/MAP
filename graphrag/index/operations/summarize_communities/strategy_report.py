@@ -54,9 +54,7 @@ async def _run_extractor(
         llm,
         extraction_prompt=args.get("extraction_prompt", None),
         max_report_length=args.get("max_report_length", None),
-        on_error=lambda e, stack, _data: callbacks.error(
-            "Community Report Extraction Error", e, stack
-        ),
+        on_error=lambda e, stack, _data: callbacks.error("Community Report Extraction Error", e, stack),
     )
 
     try:
@@ -75,10 +73,7 @@ async def _run_extractor(
             title=report.title,
             rank_explanation=report.rating_explanation,
             summary=report.summary,
-            findings=[
-                Finding(explanation=f.explanation, summary=f.summary)
-                for f in report.findings
-            ],
+            findings=[Finding(explanation=f.explanation, summary=f.summary) for f in report.findings],
             full_content_json=report.model_dump_json(indent=4),
         )
     except Exception as e:

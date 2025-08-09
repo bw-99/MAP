@@ -27,17 +27,10 @@ class LanceDBVectorStore(BaseVectorStore):
     def connect(self, **kwargs: Any) -> Any:
         """Connect to the vector storage."""
         self.db_connection = lancedb.connect(kwargs["db_uri"])
-        if (
-            self.collection_name
-            and self.collection_name in self.db_connection.table_names()
-        ):
-            self.document_collection = self.db_connection.open_table(
-                self.collection_name
-            )
+        if self.collection_name and self.collection_name in self.db_connection.table_names():
+            self.document_collection = self.db_connection.open_table(self.collection_name)
 
-    def load_documents(
-        self, documents: list[VectorStoreDocument], overwrite: bool = True
-    ) -> None:
+    def load_documents(self, documents: list[VectorStoreDocument], overwrite: bool = True) -> None:
         """Load documents into vector storage."""
         data = [
             {
@@ -53,12 +46,14 @@ class LanceDBVectorStore(BaseVectorStore):
         if len(data) == 0:
             data = None
 
-        schema = pa.schema([
-            pa.field("id", pa.string()),
-            pa.field("text", pa.string()),
-            pa.field("vector", pa.list_(pa.float64())),
-            pa.field("attributes", pa.string()),
-        ])
+        schema = pa.schema(
+            [
+                pa.field("id", pa.string()),
+                pa.field("text", pa.string()),
+                pa.field("vector", pa.list_(pa.float64())),
+                pa.field("attributes", pa.string()),
+            ]
+        )
         # NOTE: If modifying the next section of code, ensure that the schema remains the same.
         #       The pyarrow format of the 'vector' field may change if the order of operations is changed
         #       and will break vector search.
@@ -73,9 +68,7 @@ class LanceDBVectorStore(BaseVectorStore):
                 )
         else:
             # add data to existing table
-            self.document_collection = self.db_connection.open_table(
-                self.collection_name
-            )
+            self.document_collection = self.db_connection.open_table(self.collection_name)
             if data:
                 self.document_collection.add(data)
 
@@ -88,9 +81,7 @@ class LanceDBVectorStore(BaseVectorStore):
                 id_filter = ", ".join([f"'{id}'" for id in include_ids])
                 self.query_filter = f"id in ({id_filter})"
             else:
-                self.query_filter = (
-                    f"id in ({', '.join([str(id) for id in include_ids])})"
-                )
+                self.query_filter = f"id in ({', '.join([str(id) for id in include_ids])})"
         return self.query_filter
 
     def similarity_search_by_vector(
@@ -99,20 +90,14 @@ class LanceDBVectorStore(BaseVectorStore):
         """Perform a vector-based similarity search."""
         if self.query_filter:
             docs = (
-                self.document_collection.search(
-                    query=query_embedding, vector_column_name="vector"
-                )
+                self.document_collection.search(query=query_embedding, vector_column_name="vector")
                 .where(self.query_filter, prefilter=True)
                 .limit(k)
                 .to_list()
             )
         else:
             docs = (
-                self.document_collection.search(
-                    query=query_embedding, vector_column_name="vector"
-                )
-                .limit(k)
-                .to_list()
+                self.document_collection.search(query=query_embedding, vector_column_name="vector").limit(k).to_list()
             )
         return [
             VectorStoreSearchResult(
@@ -138,11 +123,7 @@ class LanceDBVectorStore(BaseVectorStore):
 
     def search_by_id(self, id: str) -> VectorStoreDocument:
         """Search for a document by id."""
-        doc = (
-            self.document_collection.search()
-            .where(f"id == '{id}'", prefilter=True)
-            .to_list()
-        )
+        doc = self.document_collection.search().where(f"id == '{id}'", prefilter=True).to_list()
         if doc:
             return VectorStoreDocument(
                 id=doc[0]["id"],

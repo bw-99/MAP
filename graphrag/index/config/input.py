@@ -38,14 +38,10 @@ class PipelineInputConfig(BaseModel, Generic[T]):
     )
     """The storage account blob url for the input files."""
 
-    container_name: str | None = Field(
-        description="The container name for input files.", default=None
-    )
+    container_name: str | None = Field(description="The container name for input files.", default=None)
     """The container name for the input files."""
 
-    base_dir: str | None = Field(
-        description="The base directory for the input files.", default=None
-    )
+    base_dir: str | None = Field(description="The base directory for the input files.", default=None)
     """The base directory for the input files."""
 
     file_pattern: str = Field(description="The regex file pattern for the input files.")
@@ -61,9 +57,7 @@ class PipelineInputConfig(BaseModel, Generic[T]):
     )
     """The post processing steps for the input."""
 
-    encoding: str | None = Field(
-        description="The encoding for the input files.", default=None
-    )
+    encoding: str | None = Field(description="The encoding for the input files.", default=None)
     """The encoding for the input files."""
 
 
@@ -72,9 +66,7 @@ class PipelineCSVInputConfig(PipelineInputConfig[Literal[InputFileType.csv]]):
 
     file_type: Literal[InputFileType.csv] = InputFileType.csv
 
-    source_column: str | None = Field(
-        description="The column to use as the source of the document.", default=None
-    )
+    source_column: str | None = Field(description="The column to use as the source of the document.", default=None)
     """The column to use as the source of the document."""
 
     timestamp_column: str | None = Field(
@@ -88,14 +80,10 @@ class PipelineCSVInputConfig(PipelineInputConfig[Literal[InputFileType.csv]]):
     )
     """The format of the timestamp column, so it can be parsed correctly."""
 
-    text_column: str | None = Field(
-        description="The column to use as the text of the document.", default=None
-    )
+    text_column: str | None = Field(description="The column to use as the text of the document.", default=None)
     """The column to use as the text of the document."""
 
-    title_column: str | None = Field(
-        description="The column to use as the title of the document.", default=None
-    )
+    title_column: str | None = Field(description="The column to use as the title of the document.", default=None)
     """The column to use as the title of the document."""
 
 

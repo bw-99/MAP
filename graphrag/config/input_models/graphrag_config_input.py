@@ -43,6 +43,7 @@ from graphrag.config.input_models.core_concept_extraction_config_input import Co
 from graphrag.config.input_models.equation_interpretation_config_input import EquationInterpretationConfigInput
 from graphrag.config.input_models.viztree_config_input import VizTreeConfigInput
 
+
 class GraphRagConfigInput(LLMConfigInput):
     """Base class for the Default-Configuration parameterization settings."""
 

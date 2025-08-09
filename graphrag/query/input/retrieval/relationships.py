@@ -21,8 +21,7 @@ def get_in_network_relationships(
     selected_relationships = [
         relationship
         for relationship in relationships
-        if relationship.source in selected_entity_names
-        and relationship.target in selected_entity_names
+        if relationship.source in selected_entity_names and relationship.target in selected_entity_names
     ]
     if len(selected_relationships) <= 1:
         return selected_relationships
@@ -41,14 +40,12 @@ def get_out_network_relationships(
     source_relationships = [
         relationship
         for relationship in relationships
-        if relationship.source in selected_entity_names
-        and relationship.target not in selected_entity_names
+        if relationship.source in selected_entity_names and relationship.target not in selected_entity_names
     ]
     target_relationships = [
         relationship
         for relationship in relationships
-        if relationship.target in selected_entity_names
-        and relationship.source not in selected_entity_names
+        if relationship.target in selected_entity_names and relationship.source not in selected_entity_names
     ]
     selected_relationships = source_relationships + target_relationships
     return sort_relationships_by_rank(selected_relationships, ranking_attribute)
@@ -63,14 +60,11 @@ def get_candidate_relationships(
     return [
         relationship
         for relationship in relationships
-        if relationship.source in selected_entity_names
-        or relationship.target in selected_entity_names
+        if relationship.source in selected_entity_names or relationship.target in selected_entity_names
     ]
 
 
-def get_entities_from_relationships(
-    relationships: list[Relationship], entities: list[Entity]
-) -> list[Entity]:
+def get_entities_from_relationships(relationships: list[Relationship], entities: list[Entity]) -> list[Entity]:
     """Get all entities that are associated with the selected relationships."""
     selected_entity_names = [relationship.source for relationship in relationships] + [
         relationship.target for relationship in relationships
@@ -87,9 +81,7 @@ def sort_relationships_by_rank(
         return relationships
 
     # sort by ranking attribute
-    attribute_names = (
-        list(relationships[0].attributes.keys()) if relationships[0].attributes else []
-    )
+    attribute_names = list(relationships[0].attributes.keys()) if relationships[0].attributes else []
     if ranking_attribute in attribute_names:
         relationships.sort(
             key=lambda x: int(x.attributes[ranking_attribute]) if x.attributes else 0,
@@ -112,9 +104,7 @@ def to_relationship_dataframe(
     header = ["id", "source", "target", "description"]
     if include_relationship_weight:
         header.append("weight")
-    attribute_cols = (
-        list(relationships[0].attributes.keys()) if relationships[0].attributes else []
-    )
+    attribute_cols = list(relationships[0].attributes.keys()) if relationships[0].attributes else []
     attribute_cols = [col for col in attribute_cols if col not in header]
     header.extend(attribute_cols)
 
@@ -129,11 +119,7 @@ def to_relationship_dataframe(
         if include_relationship_weight:
             new_record.append(str(rel.weight if rel.weight else ""))
         for field in attribute_cols:
-            field_value = (
-                str(rel.attributes.get(field))
-                if rel.attributes and rel.attributes.get(field)
-                else ""
-            )
+            field_value = str(rel.attributes.get(field)) if rel.attributes and rel.attributes.get(field) else ""
             new_record.append(field_value)
         records.append(new_record)
     return pd.DataFrame(records, columns=cast("Any", header))

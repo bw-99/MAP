@@ -54,9 +54,7 @@ CACHE_BASE_DIR = "cache"
 CHUNK_SIZE = 1200
 CHUNK_OVERLAP = 100
 CHUNK_GROUP_BY_COLUMNS = ["id"]
-CLAIM_DESCRIPTION = (
-    "Any claims or facts that could be relevant to information discovery."
-)
+CLAIM_DESCRIPTION = "Any claims or facts that could be relevant to information discovery."
 CLAIM_MAX_GLEANINGS = 1
 CLAIM_EXTRACTION_ENABLED = False
 MAX_CLUSTER_SIZE = 10

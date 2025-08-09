@@ -19,6 +19,4 @@ async def snapshot(
         if fmt == "parquet":
             await storage.set(f"{name}.parquet", input.to_parquet())
         elif fmt == "json":
-            await storage.set(
-                f"{name}.json", input.to_json(orient="records", lines=True)
-            )
+            await storage.set(f"{name}.json", input.to_json(orient="records", lines=True))

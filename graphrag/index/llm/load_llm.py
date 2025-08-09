@@ -67,9 +67,7 @@ class GraphRagLLMCache(LLMCache):
         """Retrieve a value from the cache."""
         return await self._cache.get(key)
 
-    async def set(
-        self, key: str, value: Any, metadata: dict[str, Any] | None = None
-    ) -> None:
+    async def set(self, key: str, value: Any, metadata: dict[str, Any] | None = None) -> None:
         """Write a value into the cache."""
         await self._cache.set(key, value, metadata)
 
@@ -151,9 +149,7 @@ def load_llm_embeddings(
         if chat_only and not loaders[llm_type]["chat"]:
             msg = f"LLM type {llm_type} does not support chat"
             raise ValueError(msg)
-        llm_instance = loaders[llm_type]["load"](
-            on_error, create_cache(cache, name), llm_config or {}
-        )
+        llm_instance = loaders[llm_type]["load"](on_error, create_cache(cache, name), llm_config or {})
         EmbeddingsLLMSingleton().set_llm(name, llm_instance)
         return llm_instance
 
@@ -200,9 +196,7 @@ def _load_openai_embeddings_llm(
 
 def _create_openai_config(config: LLMParameters, azure: bool) -> OpenAIConfig:
     encoding_model = config.encoding_model or defs.ENCODING_MODEL
-    json_strategy = (
-        JsonStrategy.VALID if config.model_supports_json else JsonStrategy.LOOSE
-    )
+    json_strategy = JsonStrategy.VALID if config.model_supports_json else JsonStrategy.LOOSE
     chat_parameters = OpenAIChatParameters(
         frequency_penalty=config.frequency_penalty,
         presence_penalty=config.presence_penalty,
@@ -253,21 +247,15 @@ def _create_openai_config(config: LLMParameters, azure: bool) -> OpenAIConfig:
     )
 
 
-def _load_azure_openai_chat_llm(
-    on_error: ErrorHandlerFn, cache: LLMCache, config: LLMParameters
-):
+def _load_azure_openai_chat_llm(on_error: ErrorHandlerFn, cache: LLMCache, config: LLMParameters):
     return _load_openai_chat_llm(on_error, cache, config, True)
 
 
-def _load_azure_openai_embeddings_llm(
-    on_error: ErrorHandlerFn, cache: LLMCache, config: LLMParameters
-):
+def _load_azure_openai_embeddings_llm(on_error: ErrorHandlerFn, cache: LLMCache, config: LLMParameters):
     return _load_openai_embeddings_llm(on_error, cache, config, True)
 
 
-def _load_static_response(
-    _on_error: ErrorHandlerFn, _cache: PipelineCache, config: LLMParameters
-) -> ChatLLM:
+def _load_static_response(_on_error: ErrorHandlerFn, _cache: PipelineCache, config: LLMParameters) -> ChatLLM:
     if config.responses is None:
         msg = "Static response LLM requires responses"
         raise ValueError(msg)

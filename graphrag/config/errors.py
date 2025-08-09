@@ -31,10 +31,6 @@ class AzureDeploymentNameMissingError(ValueError):
     def __init__(self, embedding: bool = False) -> None:
         """Init method definition."""
         api_type = "Embedding" if embedding else "Completion"
-        api_base = (
-            "GRAPHRAG_EMBEDDING_DEPLOYMENT_NAME"
-            if embedding
-            else "GRAPHRAG_LLM_DEPLOYMENT_NAME"
-        )
+        api_base = "GRAPHRAG_EMBEDDING_DEPLOYMENT_NAME" if embedding else "GRAPHRAG_LLM_DEPLOYMENT_NAME"
         msg = f"Deployment Name is required for {api_type} API. Please set either the OPENAI_DEPLOYMENT_NAME, GRAPHRAG_LLM_DEPLOYMENT_NAME or {api_base} environment variable."
         super().__init__(msg)

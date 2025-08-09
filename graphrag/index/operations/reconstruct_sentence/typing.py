@@ -14,6 +14,7 @@ from graphrag.cache.pipeline_cache import PipelineCache
 
 StrategyConfig = dict[str, Any]
 
+
 @dataclass
 class BaseTextUnit:
     """Document class definition."""
@@ -22,6 +23,7 @@ class BaseTextUnit:
     text: str
     document_ids: list[str]
     n_tokens: int
+
 
 class SentenceReconstructionResult(TypedDict):
     """Sentence reconstruction result class definition."""

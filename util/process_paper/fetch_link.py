@@ -29,40 +29,34 @@ def _fetch_arxiv_links(titles: list[str]) -> pd.DataFrame:
         url = ARXIV_SEARCH_TEMPLATE.format(quote_plus(title))
         logger.info(f"[ArXiv] Searching -> {url}")
         resp = requests.get(url, headers=HEADERS)
-        soup = BeautifulSoup(resp.text, 'html.parser')
-        item = soup.select_one('li.arxiv-result')
+        soup = BeautifulSoup(resp.text, "html.parser")
+        item = soup.select_one("li.arxiv-result")
         if not item:
             logger.warning(f"[ArXiv] No results found for title: {title}")
             continue
-        atitle = item.select_one('p.title')
-        at = atitle.text.strip() if atitle else ''
+        atitle = item.select_one("p.title")
+        at = atitle.text.strip() if atitle else ""
         if similarity(title, at) < 0.9:
             logger.warning(f"[ArXiv] Title mismatch: '{title}' vs '{at}'")
             continue
-        abs_el = item.select_one('span.abstract-full')
-        abstract = abs_el.text.strip() if abs_el else ''
+        abs_el = item.select_one("span.abstract-full")
+        abstract = abs_el.text.strip() if abs_el else ""
         doi, pdf_link = None, None
-        for a in item.select('a[href]'):
-            href = a['href']
+        for a in item.select("a[href]"):
+            href = a["href"]
             txt = a.text.strip().lower()
-            if 'doi.org' in href:
+            if "doi.org" in href:
                 doi = href
-            if txt == 'pdf':
+            if txt == "pdf":
                 pdf_link = href
         hashed = encode_paper_title(at)
-        records.append({
-            'Title': at,
-            'DOI': doi,
-            'PDF_Link': pdf_link,
-            'Abstract': abstract,
-            'Hashed': hashed
-        })
+        records.append({"Title": at, "DOI": doi, "PDF_Link": pdf_link, "Abstract": abstract, "Hashed": hashed})
         time.sleep(1)
     df_links = pd.DataFrame(records)
     df_links.to_csv(PDF_LINK_CSV, index=False)
 
 
-def fetch_links(use_cache: bool=False) -> pd.DataFrame:
+def fetch_links(use_cache: bool = False) -> pd.DataFrame:
     if PDF_LINK_CSV.exists() and use_cache:
         result = pd.read_csv(PDF_LINK_CSV)
         if not result.empty:
@@ -70,5 +64,5 @@ def fetch_links(use_cache: bool=False) -> pd.DataFrame:
             return result
 
     fetch_titles(use_cache=True)
-    titles = TITLE_LIST.read_text(encoding='utf-8').splitlines()
+    titles = TITLE_LIST.read_text(encoding="utf-8").splitlines()
     _fetch_arxiv_links(titles)

@@ -21,9 +21,7 @@ def compute_edge_combined_degree(
     def join_to_degree(df: pd.DataFrame, column: str) -> pd.DataFrame:
         degree_column = _degree_colname(column)
         result = df.merge(
-            node_degree_df.rename(
-                columns={node_name_column: column, node_degree_column: degree_column}
-            ),
+            node_degree_df.rename(columns={node_name_column: column, node_degree_column: degree_column}),
             on=column,
             how="left",
         )
@@ -33,8 +31,7 @@ def compute_edge_combined_degree(
     output_df = join_to_degree(edge_df, edge_source_column)
     output_df = join_to_degree(output_df, edge_target_column)
     output_df["combined_degree"] = (
-        output_df[_degree_colname(edge_source_column)]
-        + output_df[_degree_colname(edge_target_column)]
+        output_df[_degree_colname(edge_source_column)] + output_df[_degree_colname(edge_target_column)]
     )
     return cast("pd.Series", output_df["combined_degree"])
 

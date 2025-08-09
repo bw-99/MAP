@@ -101,12 +101,8 @@ async def global_search(
     )
     entities_ = read_indexer_entities(nodes, entities, community_level=community_level)
     map_prompt = _load_search_prompt(config.root_dir, config.global_search.map_prompt)
-    reduce_prompt = _load_search_prompt(
-        config.root_dir, config.global_search.reduce_prompt
-    )
-    knowledge_prompt = _load_search_prompt(
-        config.root_dir, config.global_search.knowledge_prompt
-    )
+    reduce_prompt = _load_search_prompt(config.root_dir, config.global_search.reduce_prompt)
+    knowledge_prompt = _load_search_prompt(config.root_dir, config.global_search.knowledge_prompt)
 
     search_engine = get_global_search_engine(
         config,
@@ -123,6 +119,7 @@ async def global_search(
     response = result.response
     context_data = _reformat_context_data(result.context_data)  # type: ignore
     return response, context_data
+
 
 @validate_call(config={"arbitrary_types_allowed": True})
 async def global_search_streaming(
@@ -169,12 +166,8 @@ async def global_search_streaming(
     )
     entities_ = read_indexer_entities(nodes, entities, community_level=community_level)
     map_prompt = _load_search_prompt(config.root_dir, config.global_search.map_prompt)
-    reduce_prompt = _load_search_prompt(
-        config.root_dir, config.global_search.reduce_prompt
-    )
-    knowledge_prompt = _load_search_prompt(
-        config.root_dir, config.global_search.knowledge_prompt
-    )
+    reduce_prompt = _load_search_prompt(config.root_dir, config.global_search.reduce_prompt)
+    knowledge_prompt = _load_search_prompt(config.root_dir, config.global_search.knowledge_prompt)
 
     search_engine = get_global_search_engine(
         config,
@@ -428,9 +421,7 @@ def _get_embedding_store(
 ) -> BaseVectorStore:
     """Get the embedding description store."""
     vector_store_type = config_args["type"]
-    collection_name = create_collection_name(
-        config_args.get("container_name", "default"), embedding_name
-    )
+    collection_name = create_collection_name(config_args.get("container_name", "default"), embedding_name)
     embedding_store = VectorStoreFactory().create_vector_store(
         vector_store_type=vector_store_type,
         kwargs={**config_args, "collection_name": collection_name},

@@ -120,14 +120,12 @@ def _prep_nodes(input: pd.DataFrame) -> pd.DataFrame:
     input = input.loc[input.loc[:, COMMUNITY_ID] != -1]
 
     # Fill missing values in NODE_DESCRIPTION
-    input.loc[:, NODE_DESCRIPTION] = input.loc[:, NODE_DESCRIPTION].fillna(
-        "No Description"
-    )
+    input.loc[:, NODE_DESCRIPTION] = input.loc[:, NODE_DESCRIPTION].fillna("No Description")
 
     # Create NODE_DETAILS column
-    input.loc[:, NODE_DETAILS] = input.loc[
-        :, [NODE_ID, NODE_NAME, NODE_DESCRIPTION, NODE_DEGREE]
-    ].to_dict(orient="records")
+    input.loc[:, NODE_DETAILS] = input.loc[:, [NODE_ID, NODE_NAME, NODE_DESCRIPTION, NODE_DEGREE]].to_dict(
+        orient="records"
+    )
 
     return input
 

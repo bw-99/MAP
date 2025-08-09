@@ -17,9 +17,7 @@ class ClaimExtractionConfig(LLMConfig):
     enabled: bool = Field(
         description="Whether claim extraction is enabled.",
     )
-    prompt: str | None = Field(
-        description="The claim extraction prompt to use.", default=None
-    )
+    prompt: str | None = Field(description="The claim extraction prompt to use.", default=None)
     description: str = Field(
         description="The claim description to use.",
         default=defs.CLAIM_DESCRIPTION,
@@ -28,21 +26,15 @@ class ClaimExtractionConfig(LLMConfig):
         description="The maximum number of entity gleanings to use.",
         default=defs.CLAIM_MAX_GLEANINGS,
     )
-    strategy: dict | None = Field(
-        description="The override strategy to use.", default=None
-    )
-    encoding_model: str | None = Field(
-        default=None, description="The encoding model to use."
-    )
+    strategy: dict | None = Field(description="The override strategy to use.", default=None)
+    encoding_model: str | None = Field(default=None, description="The encoding model to use.")
 
     def resolved_strategy(self, root_dir: str, encoding_model: str | None) -> dict:
         """Get the resolved claim extraction strategy."""
         return self.strategy or {
             "llm": self.llm.model_dump(),
             **self.parallelization.model_dump(),
-            "extraction_prompt": (Path(root_dir) / self.prompt)
-            .read_bytes()
-            .decode(encoding="utf-8")
+            "extraction_prompt": (Path(root_dir) / self.prompt).read_bytes().decode(encoding="utf-8")
             if self.prompt
             else None,
             "claim_description": self.description,

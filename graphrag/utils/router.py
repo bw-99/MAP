@@ -11,7 +11,9 @@ from graphrag.config.resolve_path import resolve_paths
 from graphrag.index.llm.load_llm import load_llm
 from graphrag.prompts.query.router import ROUTER_SYSTEM_PROMPT
 from graphrag.utils.timer import with_latency_logger
+
 log = logging.getLogger(__name__)
+
 
 class RouteDecision(str, Enum):
     LOCAL = "local"

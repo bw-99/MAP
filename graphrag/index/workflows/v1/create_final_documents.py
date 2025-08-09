@@ -6,7 +6,6 @@
 from typing import TYPE_CHECKING, cast
 
 from datashaper import (
-    DEFAULT_INPUT_NAME,
     Table,
     VerbInput,
     verb,
@@ -72,6 +71,6 @@ async def workflow(
     await runtime_storage.set("token2doc", token2doc)
 
     if snapshot_token2doc:
-        await snapshot(token2doc, name="token2doc", storage=storage,formats=["parquet"])
+        await snapshot(token2doc, name="token2doc", storage=storage, formats=["parquet"])
 
     return create_verb_result(cast("Table", output))

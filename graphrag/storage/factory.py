@@ -31,9 +31,7 @@ class StorageFactory:
         cls.storage_types[storage_type] = storage
 
     @classmethod
-    def create_storage(
-        cls, storage_type: StorageType | str, kwargs: dict
-    ) -> PipelineStorage:
+    def create_storage(cls, storage_type: StorageType | str, kwargs: dict) -> PipelineStorage:
         """Create or get a storage object from the provided type."""
         match storage_type:
             case StorageType.blob:

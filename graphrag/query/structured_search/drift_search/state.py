@@ -25,9 +25,7 @@ class QueryState:
         """Add an action to the graph with optional metadata."""
         self.graph.add_node(action, **(metadata or {}))
 
-    def relate_actions(
-        self, parent: DriftAction, child: DriftAction, weight: float = 1.0
-    ):
+    def relate_actions(self, parent: DriftAction, child: DriftAction, weight: float = 1.0):
         """Relate two actions in the graph."""
         self.graph.add_edge(parent, child, weight=weight)
 
@@ -45,9 +43,7 @@ class QueryState:
             if isinstance(follow_up, str):
                 follow_up = DriftAction(query=follow_up)
             elif not isinstance(follow_up, DriftAction):
-                log.warning(
-                    "Follow-up action is not a string, found type: %s", type(follow_up)
-                )
+                log.warning("Follow-up action is not a string, found type: %s", type(follow_up))
 
             self.add_action(follow_up)
             self.relate_actions(action, follow_up, weight)
@@ -56,9 +52,7 @@ class QueryState:
         """Find all unanswered actions in the graph."""
         return [node for node in self.graph.nodes if not node.is_complete]
 
-    def rank_incomplete_actions(
-        self, scorer: Callable[[DriftAction], float] | None = None
-    ) -> list[DriftAction]:
+    def rank_incomplete_actions(self, scorer: Callable[[DriftAction], float] | None = None) -> list[DriftAction]:
         """Rank all unanswered actions in the graph if scorer available."""
         unanswered = self.find_incomplete_actions()
         if scorer:
@@ -66,9 +60,7 @@ class QueryState:
                 node.compute_score(scorer)
             return sorted(
                 unanswered,
-                key=lambda node: (
-                    node.score if node.score is not None else float("-inf")
-                ),
+                key=lambda node: (node.score if node.score is not None else float("-inf")),
                 reverse=True,
             )
 
@@ -76,9 +68,7 @@ class QueryState:
         random.shuffle(unanswered)
         return list(unanswered)
 
-    def serialize(
-        self, include_context: bool = True
-    ) -> dict[str, Any] | tuple[dict[str, Any], dict[str, Any], str]:
+    def serialize(self, include_context: bool = True) -> dict[str, Any] | tuple[dict[str, Any], dict[str, Any], str]:
         """Serialize the graph to a dictionary, including nodes and edges."""
         # Create a mapping from nodes to unique IDs
         node_to_id = {node: idx for idx, node in enumerate(self.graph.nodes())}

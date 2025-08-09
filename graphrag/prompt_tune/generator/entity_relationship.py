@@ -34,25 +34,17 @@ async def generate_entity_relationship_examples(
     history = [{"content": persona, "role": "system"}]
 
     if entity_types:
-        entity_types_str = (
-            entity_types
-            if isinstance(entity_types, str)
-            else ", ".join(map(str, entity_types))
-        )
+        entity_types_str = entity_types if isinstance(entity_types, str) else ", ".join(map(str, entity_types))
 
         messages = [
             (
-                ENTITY_RELATIONSHIPS_GENERATION_JSON_PROMPT
-                if json_mode
-                else ENTITY_RELATIONSHIPS_GENERATION_PROMPT
+                ENTITY_RELATIONSHIPS_GENERATION_JSON_PROMPT if json_mode else ENTITY_RELATIONSHIPS_GENERATION_PROMPT
             ).format(entity_types=entity_types_str, input_text=doc, language=language)
             for doc in docs_list
         ]
     else:
         messages = [
-            UNTYPED_ENTITY_RELATIONSHIPS_GENERATION_PROMPT.format(
-                input_text=doc, language=language
-            )
+            UNTYPED_ENTITY_RELATIONSHIPS_GENERATION_PROMPT.format(input_text=doc, language=language)
             for doc in docs_list
         ]
 
@@ -62,7 +54,4 @@ async def generate_entity_relationship_examples(
 
     responses = await asyncio.gather(*tasks)
 
-    return [
-        json.dumps(response.json or "") if json_mode else str(response.output.content)
-        for response in responses
-    ]
+    return [json.dumps(response.json or "") if json_mode else str(response.output.content) for response in responses]

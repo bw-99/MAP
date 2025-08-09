@@ -12,6 +12,7 @@ from selenium import webdriver
 
 logger = logging.getLogger(__name__)
 
+
 def init_browser():
     opts = Options()
     opts.headless = False
@@ -21,20 +22,23 @@ def init_browser():
     driver.set_window_size(1920, 1080)
     return driver
 
+
 def simulate_mouse_continuous(stop_event: Event) -> None:
     import pyautogui
+
     while not stop_event.is_set():
         x = random.randint(300, 800)
         y = random.randint(200, 700)
         pyautogui.moveTo(x, y, duration=random.uniform(0.3, 0.6))
         time.sleep(random.uniform(1.0, 2.0))
 
+
 def _fetch_acm_titles(max_pages: int) -> list[str]:
     titles = []
 
-    with open(TITLE_LIST, "w", encoding='utf-8') as f:
+    with open(TITLE_LIST, "w", encoding="utf-8") as f:
         for page in range(max_pages):
-            ACM_QUERY['startPage'] = page
+            ACM_QUERY["startPage"] = page
             url = f"{ACM_SEARCH_URL}?{urlencode(ACM_QUERY, quote_via=quote_plus)}"
             logger.info(f"[ACM] Page {page} -> {url}")
 
@@ -42,25 +46,26 @@ def _fetch_acm_titles(max_pages: int) -> list[str]:
             driver.get(url)
             time.sleep(5)
 
-            soup = BeautifulSoup(driver.page_source, 'html.parser')
-            items = soup.select('li.search__item.issue-item-container')
+            soup = BeautifulSoup(driver.page_source, "html.parser")
+            items = soup.select("li.search__item.issue-item-container")
             driver.quit()
             if not items:
                 break
 
             for it in items:
-                tag = it.select_one('h3.issue-item__title a')
-                heading = it.select_one('div.issue-heading')
-                if tag and heading and 'proceeding' not in heading.text.lower():
-                    raw = tag.get_text(' ', strip=True)
-                    title = re.sub(r'\s+', ' ', raw)
+                tag = it.select_one("h3.issue-item__title a")
+                heading = it.select_one("div.issue-heading")
+                if tag and heading and "proceeding" not in heading.text.lower():
+                    raw = tag.get_text(" ", strip=True)
+                    title = re.sub(r"\s+", " ", raw)
                     logger.info(f"✔ {title}")
                     titles.append(title)
-                    f.write(title + '\n')
+                    f.write(title + "\n")
 
-def fetch_titles(use_cache: bool=False) -> list[str]:
+
+def fetch_titles(use_cache: bool = False) -> list[str]:
     if TITLE_LIST.exists() and use_cache:
-        result = TITLE_LIST.read_text(encoding='utf-8').splitlines()
+        result = TITLE_LIST.read_text(encoding="utf-8").splitlines()
         if result:
             logger.info(f"[ACM] Titles already fetched, loading from {TITLE_LIST}")
             return result

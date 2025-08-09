@@ -27,9 +27,7 @@ def create_base_text_units(
     """All the steps to transform base text_units."""
     sort = documents.sort_values(by=["id"], ascending=[True])
 
-    sort["text_with_ids"] = list(
-        zip(*[sort[col] for col in ["id", "text"]], strict=True)
-    )
+    sort["text_with_ids"] = list(zip(*[sort[col] for col in ["id", "text"]], strict=True))
 
     callbacks.progress(Progress(percent=0))
 
@@ -64,15 +62,12 @@ def create_base_text_units(
         inplace=True,
     )
     chunked["id"] = chunked.apply(lambda row: gen_sha512_hash(row, ["chunk"]), axis=1)
-    chunked[["document_ids", "chunk", "n_tokens"]] = pd.DataFrame(
-        chunked["chunk"].tolist(), index=chunked.index
-    )
+    chunked[["document_ids", "chunk", "n_tokens"]] = pd.DataFrame(chunked["chunk"].tolist(), index=chunked.index)
     # rename for downstream consumption
     chunked.rename(columns={"chunk": "text"}, inplace=True)
 
-
-
     return cast("pd.DataFrame", chunked[chunked["text"].notna()].reset_index(drop=True))
+
 
 # TODO: would be nice to inline this completely in the main method with pandas
 def _aggregate_df(
@@ -82,10 +77,7 @@ def _aggregate_df(
 ) -> pd.DataFrame:
     """Aggregate method definition."""
     aggregations_to_apply = _load_aggregations(aggregations)
-    df_aggregations = {
-        agg.column: _get_pandas_agg_operation(agg)
-        for agg in aggregations_to_apply.values()
-    }
+    df_aggregations = {agg.column: _get_pandas_agg_operation(agg) for agg in aggregations_to_apply.values()}
     if groupby is None:
         output_grouped = input.groupby(lambda _x: True)
     else:
@@ -121,8 +113,6 @@ def _load_aggregations(
     aggregations: list[dict[str, Any]],
 ) -> dict[str, Aggregation]:
     return {
-        aggregation["column"]: Aggregation(
-            aggregation["column"], aggregation["operation"], aggregation["to"]
-        )
+        aggregation["column"]: Aggregation(aggregation["column"], aggregation["operation"], aggregation["to"])
         for aggregation in aggregations
     }

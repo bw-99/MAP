@@ -70,18 +70,12 @@ def create_entity_extraction_prompt(
     for i, output in enumerate(examples):
         input = docs[i]
         example_formatted = (
-            EXAMPLE_EXTRACTION_TEMPLATE.format(
-                n=i + 1, input_text=input, entity_types=entity_types, output=output
-            )
+            EXAMPLE_EXTRACTION_TEMPLATE.format(n=i + 1, input_text=input, entity_types=entity_types, output=output)
             if entity_types
-            else UNTYPED_EXAMPLE_EXTRACTION_TEMPLATE.format(
-                n=i + 1, input_text=input, output=output
-            )
+            else UNTYPED_EXAMPLE_EXTRACTION_TEMPLATE.format(n=i + 1, input_text=input, output=output)
         )
 
-        example_tokens = num_tokens_from_string(
-            example_formatted, encoding_name=encoding_model
-        )
+        example_tokens = num_tokens_from_string(example_formatted, encoding_name=encoding_model)
 
         # Ensure at least three examples are included
         if i >= min_examples_required and example_tokens > tokens_left:
@@ -91,9 +85,7 @@ def create_entity_extraction_prompt(
         tokens_left -= example_tokens
 
     prompt = (
-        prompt.format(
-            entity_types=entity_types, examples=examples_prompt, language=language
-        )
+        prompt.format(entity_types=entity_types, examples=examples_prompt, language=language)
         if entity_types
         else prompt.format(examples=examples_prompt, language=language)
     )

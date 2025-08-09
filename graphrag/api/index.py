@@ -57,9 +57,7 @@ async def build_index(
         raise ValueError(msg)
 
     pipeline_config = create_pipeline_config(config)
-    pipeline_cache = (
-        NoopPipelineCache() if config.cache.type == CacheType.none is None else None
-    )
+    pipeline_cache = NoopPipelineCache() if config.cache.type == CacheType.none is None else None
     # create a pipeline reporter and add to any additional callbacks
     # TODO: remove the type ignore once the new config engine has been refactored
     callbacks = callbacks or []

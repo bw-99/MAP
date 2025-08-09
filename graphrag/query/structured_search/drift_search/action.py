@@ -34,9 +34,7 @@ class DriftAction:
         self.query = query
         self.answer: str | None = answer  # Corresponds to an 'intermediate_answer'
         self.score: float | None = None
-        self.follow_ups: list[DriftAction] = (
-            follow_ups if follow_ups is not None else []
-        )
+        self.follow_ups: list[DriftAction] = follow_ups if follow_ups is not None else []
         self.metadata: dict[str, Any] = {
             "llm_calls": 0,
             "prompt_tokens": 0,
@@ -68,9 +66,7 @@ class DriftAction:
             log.warning("Action already complete. Skipping search.")
             return self
 
-        search_result = await search_engine.asearch(
-            drift_query=global_query, query=self.query
-        )
+        search_result = await search_engine.asearch(drift_query=global_query, query=self.query)
 
         try:
             response = json.loads(search_result.response)
@@ -109,9 +105,7 @@ class DriftAction:
             scorer (Any): The scorer to compute the score.
         """
         score = scorer.compute_score(self.query, self.answer)
-        self.score = (
-            score if score is not None else float("-inf")
-        )  # Default to -inf for sorting
+        self.score = score if score is not None else float("-inf")  # Default to -inf for sorting
 
     def serialize(self, include_follow_ups: bool = True) -> dict[str, Any]:
         """
@@ -160,15 +154,11 @@ class DriftAction:
         action.score = data.get("score")
         action.metadata = data.get("metadata", {})
 
-        action.follow_ups = [
-            cls.deserialize(fu_data) for fu_data in data.get("follow_up_queries", [])
-        ]
+        action.follow_ups = [cls.deserialize(fu_data) for fu_data in data.get("follow_up_queries", [])]
         return action
 
     @classmethod
-    def from_primer_response(
-        cls, query: str, response: str | dict[str, Any] | list[dict[str, Any]]
-    ) -> "DriftAction":
+    def from_primer_response(cls, query: str, response: str | dict[str, Any] | list[dict[str, Any]]) -> "DriftAction":
         """
         Create a DriftAction from a DRIFTPrimer response.
 

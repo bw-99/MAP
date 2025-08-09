@@ -26,8 +26,6 @@ async def load_table_from_storage(name: str, storage: PipelineStorage) -> pd.Dat
         raise
 
 
-async def write_table_to_storage(
-    table: pd.DataFrame, name: str, storage: PipelineStorage
-) -> None:
+async def write_table_to_storage(table: pd.DataFrame, name: str, storage: PipelineStorage) -> None:
     """Write a table to storage."""
     await storage.set(name, table.to_parquet())

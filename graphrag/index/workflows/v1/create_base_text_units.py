@@ -2,6 +2,7 @@
 # Licensed under the MIT License
 
 """A module containing build_steps method definition."""
+
 import logging
 
 from typing import Any, cast
@@ -29,6 +30,7 @@ from graphrag.storage.pipeline_storage import PipelineStorage
 workflow_name = "create_base_text_units"
 
 log = logging.getLogger(__name__)
+
 
 def build_steps(
     config: PipelineWorkflowConfig,
@@ -69,7 +71,7 @@ def build_steps(
                 "reconstruction_enabled": reconstruction_enabled,
                 "reconstruction_strategy": reconstruction_strategy,
                 "reconstruction_async_mode": reconstruction_async_mode,
-                "reconstruction_num_threads": reconstruction_num_threads
+                "reconstruction_num_threads": reconstruction_num_threads,
             },
             "input": {"source": DEFAULT_INPUT_NAME},
         },
@@ -114,7 +116,8 @@ async def workflow(
             cache,
             interpretation_strategy,
             interpretation_async_mode,
-            interpretation_num_threads,)
+            interpretation_num_threads,
+        )
 
     if reconstruction_enabled:
         log.info("Sentence reconstruction is enabled")

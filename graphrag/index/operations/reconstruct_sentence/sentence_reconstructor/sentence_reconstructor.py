@@ -6,7 +6,6 @@
 import logging
 import traceback
 from dataclasses import dataclass
-from typing import Any
 
 from fnllm import ChatLLM
 from pydantic import BaseModel, Field
@@ -45,7 +44,7 @@ class SentenceReconstructor:
         input_text_key: str | None = None,
         reconstruction_prompt: str | None = None,
         on_error: ErrorHandlerFn | None = None,
-        max_token: int = None
+        max_token: int = None,
     ):
         """Init method definition."""
         self._llm = llm_invoker
@@ -58,9 +57,7 @@ class SentenceReconstructor:
         """Call method definition."""
         output = None
         try:
-            prompt = self._reconstruction_prompt.format(**{
-                self._input_text_key: text
-            })
+            prompt = self._reconstruction_prompt.format(**{self._input_text_key: text})
             response = await self._llm(
                 prompt,
                 json=True,
@@ -74,5 +71,5 @@ class SentenceReconstructor:
             self._on_error(e, traceback.format_exc(), None)
 
         return SentenceReconstructorResult(
-            output=output.output ,
+            output=output.output,
         )

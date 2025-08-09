@@ -77,9 +77,7 @@ async def prompt_tune(
         output_path.mkdir(parents=True, exist_ok=True)
         entity_extraction_prompt_path = output_path / ENTITY_EXTRACTION_FILENAME
         entity_summarization_prompt_path = output_path / ENTITY_SUMMARIZATION_FILENAME
-        community_summarization_prompt_path = (
-            output_path / COMMUNITY_SUMMARIZATION_FILENAME
-        )
+        community_summarization_prompt_path = output_path / COMMUNITY_SUMMARIZATION_FILENAME
         # Write files to output path
         with entity_extraction_prompt_path.open("wb") as file:
             file.write(prompts[0].encode(encoding="utf-8", errors="strict"))

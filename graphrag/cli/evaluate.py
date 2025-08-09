@@ -8,20 +8,14 @@ import asyncio
 import sys
 from pathlib import Path
 
-import pandas as pd
 
 import graphrag.api as api
 from graphrag.config.load_config import load_config
-from graphrag.config.models.graph_rag_config import GraphRagConfig
-from graphrag.config.resolve_path import resolve_paths
 from graphrag.evaluate.load_graph import read_graph
-from graphrag.index.create_pipeline_config import create_pipeline_config
 from graphrag.logger.print_progress import PrintProgressLogger
-from graphrag.storage.factory import StorageFactory
-from graphrag.utils.storage import load_table_from_storage
-from graphrag.utils.cli import _resolve_output_files
 
 logger = PrintProgressLogger("")
+
 
 def evaluate_index(
     config_filepath: Path | None,
@@ -29,7 +23,12 @@ def evaluate_index(
     root_ctl: Path,
     response_type: str,
     dry_run: bool,
-    evaluate_files: list[str] = ["create_final_nodes.parquet", "create_final_entities.parquet", "create_final_communities.parquet", "create_final_community_reports.parquet"]
+    evaluate_files: list[str] = [
+        "create_final_nodes.parquet",
+        "create_final_entities.parquet",
+        "create_final_communities.parquet",
+        "create_final_community_reports.parquet",
+    ],
 ):
     """Run the pipeline with the given config."""
     root = root_exp.resolve()
@@ -64,10 +63,15 @@ def evaluate_query(
     root_exp: Path,
     response_type: str,
     dry_run: bool,
-    evaluate_files: list[str] = ["create_final_nodes.parquet", "create_final_entities.parquet", "create_final_communities.parquet", "create_final_community_reports.parquet"]
+    evaluate_files: list[str] = [
+        "create_final_nodes.parquet",
+        "create_final_entities.parquet",
+        "create_final_communities.parquet",
+        "create_final_community_reports.parquet",
+    ],
 ):
     """Run the pipeline with the given config."""
-    root = root_exp.resolve()
-    config_exp = load_config(root, config_filepath)
+    # root = root_exp.resolve()
+    # config_exp = load_config(root, config_filepath)
 
-    assert False, "Not implemented yet"
+    raise NotImplementedError("Not implemented yet")

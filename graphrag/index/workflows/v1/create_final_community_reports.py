@@ -78,9 +78,7 @@ async def workflow(
     nodes = cast("pd.DataFrame", input.get_input())
     edges = cast("pd.DataFrame", get_required_input_table(input, "relationships").table)
     entities = cast("pd.DataFrame", get_required_input_table(input, "entities").table)
-    communities = cast(
-        "pd.DataFrame", get_required_input_table(input, "communities").table
-    )
+    communities = cast("pd.DataFrame", get_required_input_table(input, "communities").table)
 
     claims = get_named_input_table(input, "covariates")
     if claims:

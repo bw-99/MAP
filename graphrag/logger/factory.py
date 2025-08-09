@@ -23,9 +23,7 @@ class LoggerFactory:
         cls.logger_types[logger_type] = logger
 
     @classmethod
-    def create_logger(
-        cls, logger_type: LoggerType | str, kwargs: dict | None = None
-    ) -> ProgressLogger:
+    def create_logger(cls, logger_type: LoggerType | str, kwargs: dict | None = None) -> ProgressLogger:
         """Create a logger based on the provided type."""
         if kwargs is None:
             kwargs = {}

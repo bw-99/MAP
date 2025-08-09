@@ -105,16 +105,18 @@ def get_global_search_engine(
     if dynamic_community_selection:
         # TODO: Allow for another llm definition only for Global Search to leverage -mini models
 
-        dynamic_community_selection_kwargs.update({
-            "llm": get_llm(config),
-            "token_encoder": tiktoken.encoding_for_model(config.llm.model),
-            "keep_parent": gs_config.dynamic_search_keep_parent,
-            "num_repeats": gs_config.dynamic_search_num_repeats,
-            "use_summary": gs_config.dynamic_search_use_summary,
-            "concurrent_coroutines": gs_config.dynamic_search_concurrent_coroutines,
-            "threshold": gs_config.dynamic_search_threshold,
-            "max_level": gs_config.dynamic_search_max_level,
-        })
+        dynamic_community_selection_kwargs.update(
+            {
+                "llm": get_llm(config),
+                "token_encoder": tiktoken.encoding_for_model(config.llm.model),
+                "keep_parent": gs_config.dynamic_search_keep_parent,
+                "num_repeats": gs_config.dynamic_search_num_repeats,
+                "use_summary": gs_config.dynamic_search_use_summary,
+                "concurrent_coroutines": gs_config.dynamic_search_concurrent_coroutines,
+                "threshold": gs_config.dynamic_search_threshold,
+                "max_level": gs_config.dynamic_search_max_level,
+            }
+        )
 
     return GlobalSearch(
         llm=get_llm(config),
@@ -160,6 +162,7 @@ def get_global_search_engine(
         concurrent_coroutines=gs_config.concurrency,
         response_type=response_type,
     )
+
 
 def get_drift_search_engine(
     config: GraphRagConfig,

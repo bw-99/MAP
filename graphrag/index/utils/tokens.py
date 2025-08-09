@@ -11,9 +11,7 @@ DEFAULT_ENCODING_NAME = "cl100k_base"
 log = logging.getLogger(__name__)
 
 
-def num_tokens_from_string(
-    string: str, model: str | None = None, encoding_name: str | None = None
-) -> int:
+def num_tokens_from_string(string: str, model: str | None = None, encoding_name: str | None = None) -> int:
     """Return the number of tokens in a text string."""
     if model is not None:
         try:
@@ -27,9 +25,7 @@ def num_tokens_from_string(
     return len(encoding.encode(string))
 
 
-def string_from_tokens(
-    tokens: list[int], model: str | None = None, encoding_name: str | None = None
-) -> str:
+def string_from_tokens(tokens: list[int], model: str | None = None, encoding_name: str | None = None) -> str:
     """Return a text string from a list of tokens."""
     if model is not None:
         encoding = tiktoken.encoding_for_model(model)

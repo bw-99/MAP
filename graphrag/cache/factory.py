@@ -34,9 +34,7 @@ class CacheFactory:
         cls.cache_types[cache_type] = cache
 
     @classmethod
-    def create_cache(
-        cls, cache_type: CacheType | str | None, root_dir: str, kwargs: dict
-    ) -> PipelineCache:
+    def create_cache(cls, cache_type: CacheType | str | None, root_dir: str, kwargs: dict) -> PipelineCache:
         """Create or get a cache from the provided type."""
         if not cache_type:
             return NoopPipelineCache()
@@ -46,9 +44,7 @@ class CacheFactory:
             case CacheType.memory:
                 return InMemoryCache()
             case CacheType.file:
-                return JsonPipelineCache(
-                    FilePipelineStorage(root_dir=root_dir).child(kwargs["base_dir"])
-                )
+                return JsonPipelineCache(FilePipelineStorage(root_dir=root_dir).child(kwargs["base_dir"]))
             case CacheType.blob:
                 return JsonPipelineCache(BlobPipelineStorage(**kwargs))
             case CacheType.cosmosdb:

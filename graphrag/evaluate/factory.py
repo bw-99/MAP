@@ -15,6 +15,7 @@ from graphrag.query.structured_search.global_search.community_context import (
 )
 from graphrag.query.structured_search.global_search.search import GlobalSearch
 
+
 def get_evaluate_search_engine(
     config: GraphRagConfig,
     reports: list[CommunityReport],
@@ -32,20 +33,22 @@ def get_evaluate_search_engine(
 
     dynamic_community_selection_kwargs = {}
 
-    llm = get_llm(config) # call the llm just once
+    llm = get_llm(config)  # call the llm just once
     if dynamic_community_selection:
         # TODO: Allow for another llm definition only for Global Search to leverage -mini models
 
-        dynamic_community_selection_kwargs.update({
-            "llm": llm,
-            "token_encoder": tiktoken.encoding_for_model(config.llm.model),
-            "keep_parent": gs_config.dynamic_search_keep_parent,
-            "num_repeats": gs_config.dynamic_search_num_repeats,
-            "use_summary": gs_config.dynamic_search_use_summary,
-            "concurrent_coroutines": gs_config.dynamic_search_concurrent_coroutines,
-            "threshold": gs_config.dynamic_search_threshold,
-            "max_level": gs_config.dynamic_search_max_level,
-        })
+        dynamic_community_selection_kwargs.update(
+            {
+                "llm": llm,
+                "token_encoder": tiktoken.encoding_for_model(config.llm.model),
+                "keep_parent": gs_config.dynamic_search_keep_parent,
+                "num_repeats": gs_config.dynamic_search_num_repeats,
+                "use_summary": gs_config.dynamic_search_use_summary,
+                "concurrent_coroutines": gs_config.dynamic_search_concurrent_coroutines,
+                "threshold": gs_config.dynamic_search_threshold,
+                "max_level": gs_config.dynamic_search_max_level,
+            }
+        )
 
     return GlobalSearch(
         llm=llm,

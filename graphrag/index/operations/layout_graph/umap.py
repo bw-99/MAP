@@ -67,18 +67,12 @@ def run(
         result = []
         for i in range(len(nodes)):
             cluster = node_clusters[i] if len(node_clusters) > 0 else 1
-            result.append(
-                NodePosition(x=0, y=0, label=nodes[i], size=0, cluster=str(cluster))
-            )
+            result.append(NodePosition(x=0, y=0, label=nodes[i], size=0, cluster=str(cluster)))
         return result
 
 
 def _filter_raw_embeddings(embeddings: NodeEmbeddings) -> NodeEmbeddings:
-    return {
-        node_id: embedding
-        for node_id, embedding in embeddings.items()
-        if embedding is not None
-    }
+    return {node_id: embedding for node_id, embedding in embeddings.items() if embedding is not None}
 
 
 def compute_umap_positions(

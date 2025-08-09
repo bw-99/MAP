@@ -21,16 +21,9 @@ TMP_DIR.mkdir(exist_ok=True)
 
 # ==== Formatter ====
 ACM_SEARCH_URL = "https://dl.acm.org/action/doSearch"
-ACM_QUERY = {
-    "AllField": "ctr prediction",
-    "startPage": 0,
-    "pageSize": 50,
-    "AfterYear": 2023,
-    "BeforeYear": 2025
-}
+ACM_QUERY = {"AllField": "ctr prediction", "startPage": 0, "pageSize": 50, "AfterYear": 2023, "BeforeYear": 2025}
 ARXIV_SEARCH_TEMPLATE = (
-    "https://arxiv.org/search/?query={}&searchtype=title"
-    "&abstracts=show&order=-announced_date_first&size=50"
+    "https://arxiv.org/search/?query={}&searchtype=title" "&abstracts=show&order=-announced_date_first&size=50"
 )
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 REFERENCE_KEY = "references_parsed"

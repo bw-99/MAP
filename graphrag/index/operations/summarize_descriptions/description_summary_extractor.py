@@ -77,9 +77,7 @@ class SummarizeExtractor:
             description=result or "",
         )
 
-    async def _summarize_descriptions(
-        self, id: str | tuple[str, str], descriptions: list[str]
-    ) -> str:
+    async def _summarize_descriptions(self, id: str | tuple[str, str], descriptions: list[str]) -> str:
         """Summarize descriptions into a single description."""
         sorted_id = sorted(id) if isinstance(id, list) else id
 
@@ -92,9 +90,7 @@ class SummarizeExtractor:
             descriptions = sorted(descriptions)
 
         # Iterate over descriptions, adding all until the max input tokens is reached
-        usable_tokens = self._max_input_tokens - num_tokens_from_string(
-            self._summarization_prompt
-        )
+        usable_tokens = self._max_input_tokens - num_tokens_from_string(self._summarization_prompt)
         descriptions_collected = []
         result = ""
 
@@ -103,13 +99,9 @@ class SummarizeExtractor:
             descriptions_collected.append(description)
 
             # If buffer is full, or all descriptions have been added, summarize
-            if (usable_tokens < 0 and len(descriptions_collected) > 1) or (
-                i == len(descriptions) - 1
-            ):
+            if (usable_tokens < 0 and len(descriptions_collected) > 1) or (i == len(descriptions) - 1):
                 # Calculate result (final or partial)
-                result = await self._summarize_descriptions_with_llm(
-                    sorted_id, descriptions_collected
-                )
+                result = await self._summarize_descriptions_with_llm(sorted_id, descriptions_collected)
 
                 # If we go for another loop, reset values to new
                 if i != len(descriptions) - 1:
@@ -122,17 +114,15 @@ class SummarizeExtractor:
 
         return result
 
-    async def _summarize_descriptions_with_llm(
-        self, id: str | tuple[str, str] | list[str], descriptions: list[str]
-    ):
+    async def _summarize_descriptions_with_llm(self, id: str | tuple[str, str] | list[str], descriptions: list[str]):
         """Summarize descriptions using the LLM."""
         response = await self._llm(
-            self._summarization_prompt.format(**{
-                self._entity_name_key: json.dumps(id, ensure_ascii=False),
-                self._input_descriptions_key: json.dumps(
-                    sorted(descriptions), ensure_ascii=False
-                ),
-            }),
+            self._summarization_prompt.format(
+                **{
+                    self._entity_name_key: json.dumps(id, ensure_ascii=False),
+                    self._input_descriptions_key: json.dumps(sorted(descriptions), ensure_ascii=False),
+                }
+            ),
             name="summarize",
             model_parameters={"max_tokens": self._max_summary_length},
         )

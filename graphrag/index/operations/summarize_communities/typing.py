@@ -39,6 +39,7 @@ class CommunityReport(TypedDict):
     rank_explanation: str
     findings: list[Finding]
 
+
 class CoreConceptExtraction(TypedDict):
     """Core Concpet report class definition."""
 

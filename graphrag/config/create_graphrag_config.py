@@ -61,9 +61,7 @@ from graphrag.config.read_dotenv import read_dotenv
 InputModelValidator = TypeAdapter(GraphRagConfigInput)
 
 
-def create_graphrag_config(
-    values: GraphRagConfigInput | None = None, root_dir: str | None = None
-) -> GraphRagConfig:
+def create_graphrag_config(values: GraphRagConfigInput | None = None, root_dir: str | None = None) -> GraphRagConfig:
     """Load Configuration Parameters from a dictionary."""
     values = values or {}
     root_dir = root_dir or str(Path.cwd())
@@ -77,18 +75,14 @@ def create_graphrag_config(
         value = input.get(Fragment.async_mode)
         return AsyncType(value) if value else base
 
-    def hydrate_llm_params(
-        config: LLMConfigInput, base: LLMParameters
-    ) -> LLMParameters:
+    def hydrate_llm_params(config: LLMConfigInput, base: LLMParameters) -> LLMParameters:
         with reader.use(config.get("llm")):
             llm_type = reader.str(Fragment.type)
             llm_type = LLMType(llm_type) if llm_type else base.type
             api_key = reader.str(Fragment.api_key) or base.api_key
             api_base = reader.str(Fragment.api_base) or base.api_base
             audience = reader.str(Fragment.audience) or base.audience
-            deployment_name = (
-                reader.str(Fragment.deployment_name) or base.deployment_name
-            )
+            deployment_name = reader.str(Fragment.deployment_name) or base.deployment_name
             encoding_model = reader.str(Fragment.encoding_model) or base.encoding_model
 
             if api_key is None and not _is_azure(llm_type):
@@ -116,27 +110,19 @@ def create_graphrag_config(
                 temperature=reader.float(Fragment.temperature) or base.temperature,
                 top_p=reader.float(Fragment.top_p) or base.top_p,
                 n=reader.int(Fragment.n) or base.n,
-                model_supports_json=reader.bool(Fragment.model_supports_json)
-                or base.model_supports_json,
-                request_timeout=reader.float(Fragment.request_timeout)
-                or base.request_timeout,
+                model_supports_json=reader.bool(Fragment.model_supports_json) or base.model_supports_json,
+                request_timeout=reader.float(Fragment.request_timeout) or base.request_timeout,
                 audience=audience,
                 deployment_name=deployment_name,
-                tokens_per_minute=reader.int("tokens_per_minute", Fragment.tpm)
-                or base.tokens_per_minute,
-                requests_per_minute=reader.int("requests_per_minute", Fragment.rpm)
-                or base.requests_per_minute,
+                tokens_per_minute=reader.int("tokens_per_minute", Fragment.tpm) or base.tokens_per_minute,
+                requests_per_minute=reader.int("requests_per_minute", Fragment.rpm) or base.requests_per_minute,
                 max_retries=reader.int(Fragment.max_retries) or base.max_retries,
-                max_retry_wait=reader.float(Fragment.max_retry_wait)
-                or base.max_retry_wait,
+                max_retry_wait=reader.float(Fragment.max_retry_wait) or base.max_retry_wait,
                 sleep_on_rate_limit_recommendation=sleep_on_rate_limit,
-                concurrent_requests=reader.int(Fragment.concurrent_requests)
-                or base.concurrent_requests,
+                concurrent_requests=reader.int(Fragment.concurrent_requests) or base.concurrent_requests,
             )
 
-    def hydrate_embeddings_params(
-        config: LLMConfigInput, base: LLMParameters
-    ) -> LLMParameters:
+    def hydrate_embeddings_params(config: LLMConfigInput, base: LLMParameters) -> LLMParameters:
         with reader.use(config.get("llm")):
             api_type = reader.str(Fragment.type) or defs.EMBEDDING_TYPE
             api_type = LLMType(api_type) if api_type else defs.LLM_TYPE
@@ -148,9 +134,7 @@ def create_graphrag_config(
             # - LLM uses Azure OpenAI, while embeddings uses base OpenAI (this one is important)
             # - LLM uses Azure OpenAI, while embeddings uses third-party OpenAI-like API
             api_base = (
-                reader.str(Fragment.api_base) or base.api_base
-                if _is_azure(api_type)
-                else reader.str(Fragment.api_base)
+                reader.str(Fragment.api_base) or base.api_base if _is_azure(api_type) else reader.str(Fragment.api_base)
             )
             api_version = (
                 reader.str(Fragment.api_version) or base.api_version
@@ -184,20 +168,15 @@ def create_graphrag_config(
                 proxy=api_proxy,
                 model=reader.str(Fragment.model) or defs.EMBEDDING_MODEL,
                 encoding_model=encoding_model,
-                request_timeout=reader.float(Fragment.request_timeout)
-                or defs.LLM_REQUEST_TIMEOUT,
+                request_timeout=reader.float(Fragment.request_timeout) or defs.LLM_REQUEST_TIMEOUT,
                 audience=audience,
                 deployment_name=deployment_name,
-                tokens_per_minute=reader.int("tokens_per_minute", Fragment.tpm)
-                or defs.LLM_TOKENS_PER_MINUTE,
-                requests_per_minute=reader.int("requests_per_minute", Fragment.rpm)
-                or defs.LLM_REQUESTS_PER_MINUTE,
+                tokens_per_minute=reader.int("tokens_per_minute", Fragment.tpm) or defs.LLM_TOKENS_PER_MINUTE,
+                requests_per_minute=reader.int("requests_per_minute", Fragment.rpm) or defs.LLM_REQUESTS_PER_MINUTE,
                 max_retries=reader.int(Fragment.max_retries) or defs.LLM_MAX_RETRIES,
-                max_retry_wait=reader.float(Fragment.max_retry_wait)
-                or defs.LLM_MAX_RETRY_WAIT,
+                max_retry_wait=reader.float(Fragment.max_retry_wait) or defs.LLM_MAX_RETRY_WAIT,
                 sleep_on_rate_limit_recommendation=sleep_on_rate_limit,
-                concurrent_requests=reader.int(Fragment.concurrent_requests)
-                or defs.LLM_CONCURRENT_REQUESTS,
+                concurrent_requests=reader.int(Fragment.concurrent_requests) or defs.LLM_CONCURRENT_REQUESTS,
             )
 
     def hydrate_parallelization_params(
@@ -205,10 +184,8 @@ def create_graphrag_config(
     ) -> ParallelizationParameters:
         with reader.use(config.get("parallelization")):
             return ParallelizationParameters(
-                num_threads=reader.int("num_threads", Fragment.thread_count)
-                or base.num_threads,
-                stagger=reader.float("stagger", Fragment.thread_stagger)
-                or base.stagger,
+                num_threads=reader.int("num_threads", Fragment.thread_count) or base.num_threads,
+                stagger=reader.float("stagger", Fragment.thread_stagger) or base.stagger,
             )
 
     fallback_oai_key = env("OPENAI_API_KEY", env("AZURE_OPENAI_API_KEY", None))
@@ -225,26 +202,20 @@ def create_graphrag_config(
         fallback_oai_base = reader.str(Fragment.api_base) or fallback_oai_base
         fallback_oai_version = reader.str(Fragment.api_version) or fallback_oai_version
         fallback_oai_proxy = reader.str(Fragment.api_proxy)
-        global_encoding_model = (
-            reader.str(Fragment.encoding_model) or defs.ENCODING_MODEL
-        )
+        global_encoding_model = reader.str(Fragment.encoding_model) or defs.ENCODING_MODEL
 
         with reader.envvar_prefix(Section.llm):
             with reader.use(values.get("llm")):
                 llm_type = reader.str(Fragment.type)
                 llm_type = LLMType(llm_type) if llm_type else defs.LLM_TYPE
                 api_key = reader.str(Fragment.api_key) or fallback_oai_key
-                api_organization = (
-                    reader.str(Fragment.api_organization) or fallback_oai_org
-                )
+                api_organization = reader.str(Fragment.api_organization) or fallback_oai_org
                 api_base = reader.str(Fragment.api_base) or fallback_oai_base
                 api_version = reader.str(Fragment.api_version) or fallback_oai_version
                 api_proxy = reader.str(Fragment.api_proxy) or fallback_oai_proxy
                 audience = reader.str(Fragment.audience)
                 deployment_name = reader.str(Fragment.deployment_name)
-                encoding_model = (
-                    reader.str(Fragment.encoding_model) or global_encoding_model
-                )
+                encoding_model = reader.str(Fragment.encoding_model) or global_encoding_model
 
                 if api_key is None and not _is_azure(llm_type):
                     raise ApiKeyMissingError
@@ -268,33 +239,24 @@ def create_graphrag_config(
                     model=reader.str(Fragment.model) or defs.LLM_MODEL,
                     encoding_model=encoding_model,
                     max_tokens=reader.int(Fragment.max_tokens) or defs.LLM_MAX_TOKENS,
-                    temperature=reader.float(Fragment.temperature)
-                    or defs.LLM_TEMPERATURE,
+                    temperature=reader.float(Fragment.temperature) or defs.LLM_TEMPERATURE,
                     top_p=reader.float(Fragment.top_p) or defs.LLM_TOP_P,
                     n=reader.int(Fragment.n) or defs.LLM_N,
                     model_supports_json=reader.bool(Fragment.model_supports_json),
-                    request_timeout=reader.float(Fragment.request_timeout)
-                    or defs.LLM_REQUEST_TIMEOUT,
+                    request_timeout=reader.float(Fragment.request_timeout) or defs.LLM_REQUEST_TIMEOUT,
                     audience=audience,
                     deployment_name=deployment_name,
-                    tokens_per_minute=reader.int(Fragment.tpm)
-                    or defs.LLM_TOKENS_PER_MINUTE,
-                    requests_per_minute=reader.int(Fragment.rpm)
-                    or defs.LLM_REQUESTS_PER_MINUTE,
-                    max_retries=reader.int(Fragment.max_retries)
-                    or defs.LLM_MAX_RETRIES,
-                    max_retry_wait=reader.float(Fragment.max_retry_wait)
-                    or defs.LLM_MAX_RETRY_WAIT,
+                    tokens_per_minute=reader.int(Fragment.tpm) or defs.LLM_TOKENS_PER_MINUTE,
+                    requests_per_minute=reader.int(Fragment.rpm) or defs.LLM_REQUESTS_PER_MINUTE,
+                    max_retries=reader.int(Fragment.max_retries) or defs.LLM_MAX_RETRIES,
+                    max_retry_wait=reader.float(Fragment.max_retry_wait) or defs.LLM_MAX_RETRY_WAIT,
                     sleep_on_rate_limit_recommendation=sleep_on_rate_limit,
-                    concurrent_requests=reader.int(Fragment.concurrent_requests)
-                    or defs.LLM_CONCURRENT_REQUESTS,
+                    concurrent_requests=reader.int(Fragment.concurrent_requests) or defs.LLM_CONCURRENT_REQUESTS,
                 )
             with reader.use(values.get("parallelization")):
                 llm_parallelization_model = ParallelizationParameters(
-                    stagger=reader.float("stagger", Fragment.thread_stagger)
-                    or defs.PARALLELIZATION_STAGGER,
-                    num_threads=reader.int("num_threads", Fragment.thread_count)
-                    or defs.PARALLELIZATION_NUM_THREADS,
+                    stagger=reader.float("stagger", Fragment.thread_stagger) or defs.PARALLELIZATION_STAGGER,
+                    num_threads=reader.int("num_threads", Fragment.thread_count) or defs.PARALLELIZATION_NUM_THREADS,
                 )
         embeddings_config = values.get("embeddings") or {}
         with reader.envvar_prefix(Section.embedding), reader.use(embeddings_config):
@@ -308,14 +270,9 @@ def create_graphrag_config(
                 ),
                 vector_store=embeddings_config.get("vector_store", None),
                 async_mode=hydrate_async_type(embeddings_config, async_mode),  # type: ignore
-                target=(
-                    TextEmbeddingTarget(embeddings_target)
-                    if embeddings_target
-                    else defs.EMBEDDING_TARGET
-                ),
+                target=(TextEmbeddingTarget(embeddings_target) if embeddings_target else defs.EMBEDDING_TARGET),
                 batch_size=reader.int("batch_size") or defs.EMBEDDING_BATCH_SIZE,
-                batch_max_tokens=reader.int("batch_max_tokens")
-                or defs.EMBEDDING_BATCH_MAX_TOKENS,
+                batch_max_tokens=reader.int("batch_max_tokens") or defs.EMBEDDING_BATCH_MAX_TOKENS,
                 skip=reader.list("skip") or [],
             )
         with (
@@ -334,26 +291,18 @@ def create_graphrag_config(
             input_type = reader.str("type")
             file_type = reader.str(Fragment.file_type)
             input_model = InputConfig(
-                file_type=(
-                    InputFileType(file_type) if file_type else defs.INPUT_FILE_TYPE
-                ),
+                file_type=(InputFileType(file_type) if file_type else defs.INPUT_FILE_TYPE),
                 type=(InputType(input_type) if input_type else defs.INPUT_TYPE),
-                encoding=reader.str("file_encoding", Fragment.encoding)
-                or defs.INPUT_FILE_ENCODING,
+                encoding=reader.str("file_encoding", Fragment.encoding) or defs.INPUT_FILE_ENCODING,
                 base_dir=reader.str(Fragment.base_dir) or defs.INPUT_BASE_DIR,
                 file_pattern=reader.str("file_pattern")
-                or (
-                    defs.INPUT_TEXT_PATTERN
-                    if file_type == InputFileType.text
-                    else defs.INPUT_CSV_PATTERN
-                ),
+                or (defs.INPUT_TEXT_PATTERN if file_type == InputFileType.text else defs.INPUT_CSV_PATTERN),
                 source_column=reader.str("source_column"),
                 timestamp_column=reader.str("timestamp_column"),
                 timestamp_format=reader.str("timestamp_format"),
                 text_column=reader.str("text_column") or defs.INPUT_TEXT_COLUMN,
                 title_column=reader.str("title_column"),
-                document_attribute_columns=reader.list("document_attribute_columns")
-                or [],
+                document_attribute_columns=reader.list("document_attribute_columns") or [],
                 connection_string=reader.str(Fragment.conn_string),
                 storage_account_blob_url=reader.str(Fragment.storage_account_blob_url),
                 container_name=reader.str(Fragment.container_name),
@@ -400,12 +349,9 @@ def create_graphrag_config(
                 update_index_storage_model = StorageConfig(
                     type=StorageType(s_type) if s_type else defs.STORAGE_TYPE,
                     connection_string=reader.str(Fragment.conn_string),
-                    storage_account_blob_url=reader.str(
-                        Fragment.storage_account_blob_url
-                    ),
+                    storage_account_blob_url=reader.str(Fragment.storage_account_blob_url),
                     container_name=reader.str(Fragment.container_name),
-                    base_dir=reader.str(Fragment.base_dir)
-                    or defs.UPDATE_STORAGE_BASE_DIR,
+                    base_dir=reader.str(Fragment.base_dir) or defs.UPDATE_STORAGE_BASE_DIR,
                 )
             else:
                 update_index_storage_model = None
@@ -413,9 +359,7 @@ def create_graphrag_config(
             group_by_columns = reader.list("group_by_columns", "BY_COLUMNS")
             if group_by_columns is None:
                 group_by_columns = defs.CHUNK_GROUP_BY_COLUMNS
-            encoding_model = (
-                reader.str(Fragment.encoding_model) or global_encoding_model
-            )
+            encoding_model = reader.str(Fragment.encoding_model) or global_encoding_model
 
             chunks_model = ChunkingConfig(
                 size=reader.int("size") or defs.CHUNK_SIZE,
@@ -444,23 +388,14 @@ def create_graphrag_config(
             reader.use(entity_extraction_config),
         ):
             max_gleanings = reader.int(Fragment.max_gleanings)
-            max_gleanings = (
-                max_gleanings
-                if max_gleanings is not None
-                else defs.ENTITY_EXTRACTION_MAX_GLEANINGS
-            )
-            encoding_model = (
-                reader.str(Fragment.encoding_model) or global_encoding_model
-            )
+            max_gleanings = max_gleanings if max_gleanings is not None else defs.ENTITY_EXTRACTION_MAX_GLEANINGS
+            encoding_model = reader.str(Fragment.encoding_model) or global_encoding_model
 
             entity_extraction_model = EntityExtractionConfig(
                 llm=hydrate_llm_params(entity_extraction_config, llm_model),
-                parallelization=hydrate_parallelization_params(
-                    entity_extraction_config, llm_parallelization_model
-                ),
+                parallelization=hydrate_parallelization_params(entity_extraction_config, llm_parallelization_model),
                 async_mode=hydrate_async_type(entity_extraction_config, async_mode),
-                entity_types=reader.list("entity_types")
-                or defs.ENTITY_EXTRACTION_ENTITY_TYPES,
+                entity_types=reader.list("entity_types") or defs.ENTITY_EXTRACTION_ENTITY_TYPES,
                 max_gleanings=max_gleanings,
                 prompt=reader.str("prompt", Fragment.prompt_file),
                 strategy=entity_extraction_config.get("strategy"),
@@ -510,18 +445,12 @@ def create_graphrag_config(
             reader.use(claim_extraction_config),
         ):
             max_gleanings = reader.int(Fragment.max_gleanings)
-            max_gleanings = (
-                max_gleanings if max_gleanings is not None else defs.CLAIM_MAX_GLEANINGS
-            )
-            encoding_model = (
-                reader.str(Fragment.encoding_model) or global_encoding_model
-            )
+            max_gleanings = max_gleanings if max_gleanings is not None else defs.CLAIM_MAX_GLEANINGS
+            encoding_model = reader.str(Fragment.encoding_model) or global_encoding_model
             claim_extraction_model = ClaimExtractionConfig(
                 enabled=reader.bool(Fragment.enabled) or defs.CLAIM_EXTRACTION_ENABLED,
                 llm=hydrate_llm_params(claim_extraction_config, llm_model),
-                parallelization=hydrate_parallelization_params(
-                    claim_extraction_config, llm_parallelization_model
-                ),
+                parallelization=hydrate_parallelization_params(claim_extraction_config, llm_parallelization_model),
                 async_mode=hydrate_async_type(claim_extraction_config, async_mode),
                 description=reader.str("description") or defs.CLAIM_DESCRIPTION,
                 prompt=reader.str("prompt", Fragment.prompt_file),
@@ -536,15 +465,11 @@ def create_graphrag_config(
         ):
             community_reports_model = CommunityReportsConfig(
                 llm=hydrate_llm_params(community_report_config, llm_model),
-                parallelization=hydrate_parallelization_params(
-                    community_report_config, llm_parallelization_model
-                ),
+                parallelization=hydrate_parallelization_params(community_report_config, llm_parallelization_model),
                 async_mode=hydrate_async_type(community_report_config, async_mode),
                 prompt=reader.str("prompt", Fragment.prompt_file),
-                max_length=reader.int(Fragment.max_length)
-                or defs.COMMUNITY_REPORT_MAX_LENGTH,
-                max_input_length=reader.int("max_input_length")
-                or defs.COMMUNITY_REPORT_MAX_INPUT_LENGTH,
+                max_length=reader.int(Fragment.max_length) or defs.COMMUNITY_REPORT_MAX_LENGTH,
+                max_input_length=reader.int("max_input_length") or defs.COMMUNITY_REPORT_MAX_INPUT_LENGTH,
             )
 
         core_concept_extraction_config = values.get("core_concept_extraction") or {}
@@ -561,10 +486,8 @@ def create_graphrag_config(
                     ),
                     async_mode=hydrate_async_type(core_concept_extraction_config, async_mode),
                     prompt=reader.str("prompt", Fragment.prompt_file),
-                    max_length=reader.int(Fragment.max_length)
-                    or defs.CORE_CONCEPT_MAX_LENGTH,
-                    max_input_length=reader.int("max_input_length")
-                    or defs.CORE_CONCEPT_MAX_INPUT_LENGTH,
+                    max_length=reader.int(Fragment.max_length) or defs.CORE_CONCEPT_MAX_LENGTH,
+                    max_input_length=reader.int("max_input_length") or defs.CORE_CONCEPT_MAX_INPUT_LENGTH,
                     enabled=reader.str("enabled", default_value=True),
                     strategy=core_concept_extraction_config.get("strategy"),
                 )
@@ -589,13 +512,10 @@ def create_graphrag_config(
         ):
             summarize_descriptions_model = SummarizeDescriptionsConfig(
                 llm=hydrate_llm_params(summarize_description_config, llm_model),
-                parallelization=hydrate_parallelization_params(
-                    summarize_description_config, llm_parallelization_model
-                ),
+                parallelization=hydrate_parallelization_params(summarize_description_config, llm_parallelization_model),
                 async_mode=hydrate_async_type(summarize_description_config, async_mode),
                 prompt=reader.str("prompt", Fragment.prompt_file),
-                max_length=reader.int(Fragment.max_length)
-                or defs.SUMMARIZE_DESCRIPTIONS_MAX_LENGTH,
+                max_length=reader.int(Fragment.max_length) or defs.SUMMARIZE_DESCRIPTIONS_MAX_LENGTH,
             )
 
         with reader.use(values.get("cluster_graph")):
@@ -609,26 +529,17 @@ def create_graphrag_config(
         ):
             local_search_model = LocalSearchConfig(
                 prompt=reader.str("prompt") or None,
-                text_unit_prop=reader.float("text_unit_prop")
-                or defs.LOCAL_SEARCH_TEXT_UNIT_PROP,
-                community_prop=reader.float("community_prop")
-                or defs.LOCAL_SEARCH_COMMUNITY_PROP,
-                conversation_history_max_turns=reader.int(
-                    "conversation_history_max_turns"
-                )
+                text_unit_prop=reader.float("text_unit_prop") or defs.LOCAL_SEARCH_TEXT_UNIT_PROP,
+                community_prop=reader.float("community_prop") or defs.LOCAL_SEARCH_COMMUNITY_PROP,
+                conversation_history_max_turns=reader.int("conversation_history_max_turns")
                 or defs.LOCAL_SEARCH_CONVERSATION_HISTORY_MAX_TURNS,
-                top_k_entities=reader.int("top_k_entities")
-                or defs.LOCAL_SEARCH_TOP_K_MAPPED_ENTITIES,
-                top_k_relationships=reader.int("top_k_relationships")
-                or defs.LOCAL_SEARCH_TOP_K_RELATIONSHIPS,
-                temperature=reader.float("llm_temperature")
-                or defs.LOCAL_SEARCH_LLM_TEMPERATURE,
+                top_k_entities=reader.int("top_k_entities") or defs.LOCAL_SEARCH_TOP_K_MAPPED_ENTITIES,
+                top_k_relationships=reader.int("top_k_relationships") or defs.LOCAL_SEARCH_TOP_K_RELATIONSHIPS,
+                temperature=reader.float("llm_temperature") or defs.LOCAL_SEARCH_LLM_TEMPERATURE,
                 top_p=reader.float("llm_top_p") or defs.LOCAL_SEARCH_LLM_TOP_P,
                 n=reader.int("llm_n") or defs.LOCAL_SEARCH_LLM_N,
-                max_tokens=reader.int(Fragment.max_tokens)
-                or defs.LOCAL_SEARCH_MAX_TOKENS,
-                llm_max_tokens=reader.int("llm_max_tokens")
-                or defs.LOCAL_SEARCH_LLM_MAX_TOKENS,
+                max_tokens=reader.int(Fragment.max_tokens) or defs.LOCAL_SEARCH_MAX_TOKENS,
+                llm_max_tokens=reader.int("llm_max_tokens") or defs.LOCAL_SEARCH_LLM_MAX_TOKENS,
             )
 
         with (
@@ -640,18 +551,13 @@ def create_graphrag_config(
                 reduce_prompt=reader.str("reduce_prompt") or None,
                 knowledge_prompt=reader.str("knowledge_prompt") or None,
                 evaluate_prompt=reader.str("evaluate_prompt") or None,
-                temperature=reader.float("llm_temperature")
-                or defs.GLOBAL_SEARCH_LLM_TEMPERATURE,
+                temperature=reader.float("llm_temperature") or defs.GLOBAL_SEARCH_LLM_TEMPERATURE,
                 top_p=reader.float("llm_top_p") or defs.GLOBAL_SEARCH_LLM_TOP_P,
                 n=reader.int("llm_n") or defs.GLOBAL_SEARCH_LLM_N,
-                max_tokens=reader.int(Fragment.max_tokens)
-                or defs.GLOBAL_SEARCH_MAX_TOKENS,
-                data_max_tokens=reader.int("data_max_tokens")
-                or defs.GLOBAL_SEARCH_DATA_MAX_TOKENS,
-                map_max_tokens=reader.int("map_max_tokens")
-                or defs.GLOBAL_SEARCH_MAP_MAX_TOKENS,
-                reduce_max_tokens=reader.int("reduce_max_tokens")
-                or defs.GLOBAL_SEARCH_REDUCE_MAX_TOKENS,
+                max_tokens=reader.int(Fragment.max_tokens) or defs.GLOBAL_SEARCH_MAX_TOKENS,
+                data_max_tokens=reader.int("data_max_tokens") or defs.GLOBAL_SEARCH_DATA_MAX_TOKENS,
+                map_max_tokens=reader.int("map_max_tokens") or defs.GLOBAL_SEARCH_MAP_MAX_TOKENS,
+                reduce_max_tokens=reader.int("reduce_max_tokens") or defs.GLOBAL_SEARCH_REDUCE_MAX_TOKENS,
                 concurrency=reader.int("concurrency") or defs.GLOBAL_SEARCH_CONCURRENCY,
             )
 
@@ -661,45 +567,31 @@ def create_graphrag_config(
         ):
             drift_search_model = DRIFTSearchConfig(
                 prompt=reader.str("prompt") or None,
-                temperature=reader.float("llm_temperature")
-                or defs.DRIFT_SEARCH_LLM_TEMPERATURE,
+                temperature=reader.float("llm_temperature") or defs.DRIFT_SEARCH_LLM_TEMPERATURE,
                 top_p=reader.float("llm_top_p") or defs.DRIFT_SEARCH_LLM_TOP_P,
                 n=reader.int("llm_n") or defs.DRIFT_SEARCH_LLM_N,
-                max_tokens=reader.int(Fragment.max_tokens)
-                or defs.DRIFT_SEARCH_MAX_TOKENS,
-                data_max_tokens=reader.int("data_max_tokens")
-                or defs.DRIFT_SEARCH_DATA_MAX_TOKENS,
+                max_tokens=reader.int(Fragment.max_tokens) or defs.DRIFT_SEARCH_MAX_TOKENS,
+                data_max_tokens=reader.int("data_max_tokens") or defs.DRIFT_SEARCH_DATA_MAX_TOKENS,
                 concurrency=reader.int("concurrency") or defs.DRIFT_SEARCH_CONCURRENCY,
-                drift_k_followups=reader.int("drift_k_followups")
-                or defs.DRIFT_SEARCH_K_FOLLOW_UPS,
-                primer_folds=reader.int("primer_folds")
-                or defs.DRIFT_SEARCH_PRIMER_FOLDS,
-                primer_llm_max_tokens=reader.int("primer_llm_max_tokens")
-                or defs.DRIFT_SEARCH_PRIMER_MAX_TOKENS,
+                drift_k_followups=reader.int("drift_k_followups") or defs.DRIFT_SEARCH_K_FOLLOW_UPS,
+                primer_folds=reader.int("primer_folds") or defs.DRIFT_SEARCH_PRIMER_FOLDS,
+                primer_llm_max_tokens=reader.int("primer_llm_max_tokens") or defs.DRIFT_SEARCH_PRIMER_MAX_TOKENS,
                 n_depth=reader.int("n_depth") or defs.DRIFT_N_DEPTH,
                 local_search_text_unit_prop=reader.float("local_search_text_unit_prop")
                 or defs.DRIFT_LOCAL_SEARCH_TEXT_UNIT_PROP,
                 local_search_community_prop=reader.float("local_search_community_prop")
                 or defs.DRIFT_LOCAL_SEARCH_COMMUNITY_PROP,
-                local_search_top_k_mapped_entities=reader.int(
-                    "local_search_top_k_mapped_entities"
-                )
+                local_search_top_k_mapped_entities=reader.int("local_search_top_k_mapped_entities")
                 or defs.DRIFT_LOCAL_SEARCH_TOP_K_MAPPED_ENTITIES,
-                local_search_top_k_relationships=reader.int(
-                    "local_search_top_k_relationships"
-                )
+                local_search_top_k_relationships=reader.int("local_search_top_k_relationships")
                 or defs.DRIFT_LOCAL_SEARCH_TOP_K_RELATIONSHIPS,
                 local_search_max_data_tokens=reader.int("local_search_max_data_tokens")
                 or defs.DRIFT_LOCAL_SEARCH_MAX_TOKENS,
                 local_search_temperature=reader.float("local_search_temperature")
                 or defs.DRIFT_LOCAL_SEARCH_LLM_TEMPERATURE,
-                local_search_top_p=reader.float("local_search_top_p")
-                or defs.DRIFT_LOCAL_SEARCH_LLM_TOP_P,
-                local_search_n=reader.int("local_search_n")
-                or defs.DRIFT_LOCAL_SEARCH_LLM_N,
-                local_search_llm_max_gen_tokens=reader.int(
-                    "local_search_llm_max_gen_tokens"
-                )
+                local_search_top_p=reader.float("local_search_top_p") or defs.DRIFT_LOCAL_SEARCH_LLM_TOP_P,
+                local_search_n=reader.int("local_search_n") or defs.DRIFT_LOCAL_SEARCH_LLM_N,
+                local_search_llm_max_gen_tokens=reader.int("local_search_llm_max_gen_tokens")
                 or defs.DRIFT_LOCAL_SEARCH_LLM_MAX_TOKENS,
             )
 
@@ -809,9 +701,7 @@ class Section(str, Enum):
 
 
 def _is_azure(llm_type: LLMType | None) -> bool:
-    return (
-        llm_type == LLMType.AzureOpenAIChat or llm_type == LLMType.AzureOpenAIEmbedding
-    )
+    return llm_type == LLMType.AzureOpenAIChat or llm_type == LLMType.AzureOpenAIEmbedding
 
 
 def _make_env(root_dir: str) -> Env:

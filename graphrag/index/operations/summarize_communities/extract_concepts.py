@@ -14,13 +14,12 @@ from datashaper import (
     progress_ticker,
 )
 
-import graphrag.config.defaults as defaults
 import graphrag.index.operations.summarize_communities.schemas as schemas
 from graphrag.cache.pipeline_cache import PipelineCache
 from graphrag.index.operations.summarize_communities.typing import (
     CoreConceptExtractionStrategy,
     CoreConceptExtractionStrategyType,
-    CoreConceptExtraction
+    CoreConceptExtraction,
 )
 
 log = logging.getLogger(__name__)
@@ -72,9 +71,7 @@ async def _generate_report(
     report_context: str,
 ) -> CoreConceptExtraction | None:
     """Generate a report for a single community."""
-    return await runner(
-        community_id, report_context, callbacks, cache, strategy
-    )
+    return await runner(community_id, report_context, callbacks, cache, strategy)
 
 
 def load_strategy(

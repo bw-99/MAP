@@ -40,9 +40,7 @@ async def run(  # noqa RUF029 async is required for interface
                     connected_entities.append(name)
                     if name not in entity_map:
                         entity_map[name] = entity_type
-                        graph.add_node(
-                            name, type=entity_type, description=name, source_id=doc.id
-                        )
+                        graph.add_node(name, type=entity_type, description=name, source_id=doc.id)
 
         # connect the entities if they appear in the same document
         if len(connected_entities) > 1:
@@ -57,10 +55,7 @@ async def run(  # noqa RUF029 async is required for interface
                     )
 
     return EntityExtractionResult(
-        entities=[
-            {"type": entity_type, "title": name}
-            for name, entity_type in entity_map.items()
-        ],
+        entities=[{"type": entity_type, "title": name} for name, entity_type in entity_map.items()],
         relationships=[],
         graph=graph,
     )

@@ -79,19 +79,11 @@ async def workflow(
 ) -> VerbResult:
     """All the steps to generate embeddings."""
     source = cast("pd.DataFrame", input.get_input())
-    final_relationships = cast(
-        "pd.DataFrame", get_required_input_table(input, "relationships").table
-    )
-    final_text_units = cast(
-        "pd.DataFrame", get_required_input_table(input, "text_units").table
-    )
-    final_entities = cast(
-        "pd.DataFrame", get_required_input_table(input, "entities").table
-    )
+    final_relationships = cast("pd.DataFrame", get_required_input_table(input, "relationships").table)
+    final_text_units = cast("pd.DataFrame", get_required_input_table(input, "text_units").table)
+    final_entities = cast("pd.DataFrame", get_required_input_table(input, "entities").table)
 
-    final_community_reports = cast(
-        "pd.DataFrame", get_required_input_table(input, "community_reports").table
-    )
+    final_community_reports = cast("pd.DataFrame", get_required_input_table(input, "community_reports").table)
 
     await generate_text_embeddings(
         final_documents=source,

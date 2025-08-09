@@ -10,9 +10,7 @@ from graphrag.prompt_tune.prompt.community_report_rating import (
 )
 
 
-async def generate_community_report_rating(
-    llm: ChatLLM, domain: str, persona: str, docs: str | list[str]
-) -> str:
+async def generate_community_report_rating(llm: ChatLLM, domain: str, persona: str, docs: str | list[str]) -> str:
     """Generate an LLM persona to use for GraphRAG prompts.
 
     Parameters
@@ -27,9 +25,7 @@ async def generate_community_report_rating(
     - str: The generated rating description prompt response.
     """
     docs_str = " ".join(docs) if isinstance(docs, list) else docs
-    domain_prompt = GENERATE_REPORT_RATING_PROMPT.format(
-        domain=domain, persona=persona, input_text=docs_str
-    )
+    domain_prompt = GENERATE_REPORT_RATING_PROMPT.format(domain=domain, persona=persona, input_text=docs_str)
 
     response = await llm(domain_prompt)
 

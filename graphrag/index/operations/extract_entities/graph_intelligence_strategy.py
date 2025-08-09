@@ -62,18 +62,14 @@ async def run_extract_entities(
     use_doc_id = args.get("use_doc_id", False)
     # note: We're not using UnipartiteGraphChain.from_params
     # because we want to pass "timeout" to the llm_kwargs
-    text_splitter = _create_text_splitter(
-        prechunked, chunk_size, chunk_overlap, encoding_name
-    )
+    text_splitter = _create_text_splitter(prechunked, chunk_size, chunk_overlap, encoding_name)
 
     extractor = GraphExtractor(
         llm_invoker=llm,
         prompt=extraction_prompt,
         encoding_model=encoding_model,
         max_gleanings=max_gleanings,
-        on_error=lambda e, s, d: (
-            callbacks.error("Entity Extraction Error", e, s, d) if callbacks else None
-        ),
+        on_error=lambda e, s, d: (callbacks.error("Entity Extraction Error", e, s, d) if callbacks else None),
     )
     text_list = [doc.text.strip() for doc in docs]
     doc_id_list = [str(doc.human_readable_id) for doc in docs]
@@ -97,30 +93,20 @@ async def run_extract_entities(
     # Map the "source_id" back to the "id" field
     for _, node in graph.nodes(data=True):  # type: ignore
         if node is not None:
-            node["source_id"] = ",".join(
-                docs[int(id)].id for id in node["source_id"].split(",")
-            )
+            node["source_id"] = ",".join(docs[int(id)].id for id in node["source_id"].split(","))
 
     for _, _, edge in graph.edges(data=True):  # type: ignore
         if edge is not None:
-            edge["source_id"] = ",".join(
-                docs[int(id)].id for id in edge["source_id"].split(",")
-            )
+            edge["source_id"] = ",".join(docs[int(id)].id for id in edge["source_id"].split(","))
 
-    entities = [
-        ({"title": item[0], **(item[1] or {})})
-        for item in graph.nodes(data=True)
-        if item is not None
-    ]
+    entities = [({"title": item[0], **(item[1] or {})}) for item in graph.nodes(data=True) if item is not None]
 
     relationships = nx.to_pandas_edgelist(graph)
 
     return EntityExtractionResult(entities, relationships, graph)
 
 
-def _create_text_splitter(
-    prechunked: bool, chunk_size: int, chunk_overlap: int, encoding_name: str
-) -> TextSplitter:
+def _create_text_splitter(prechunked: bool, chunk_size: int, chunk_overlap: int, encoding_name: str) -> TextSplitter:
     """Create a text splitter for the extraction chain.
 
     Args:

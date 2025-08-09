@@ -12,9 +12,7 @@ class ChunkingConfig(BaseModel):
     """Configuration section for chunking."""
 
     size: int = Field(description="The chunk size to use.", default=defs.CHUNK_SIZE)
-    overlap: int = Field(
-        description="The chunk overlap to use.", default=defs.CHUNK_OVERLAP
-    )
+    overlap: int = Field(description="The chunk overlap to use.", default=defs.CHUNK_OVERLAP)
     group_by_columns: list[str] = Field(
         description="The chunk by columns to use.",
         default=defs.CHUNK_GROUP_BY_COLUMNS,
@@ -23,9 +21,7 @@ class ChunkingConfig(BaseModel):
         description="The chunk strategy to use, overriding the default tokenization strategy",
         default=None,
     )
-    encoding_model: str | None = Field(
-        default=None, description="The encoding model to use."
-    )
+    encoding_model: str | None = Field(default=None, description="The encoding model to use.")
 
     def resolved_strategy(self, encoding_model: str | None) -> dict:
         """Get the resolved chunking strategy."""

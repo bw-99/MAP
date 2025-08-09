@@ -25,7 +25,7 @@ from graphrag.index.operations.snapshot import snapshot
 from graphrag.index.operations.snapshot_graphml import snapshot_graphml
 from graphrag.storage.pipeline_storage import PipelineStorage
 
-from graphrag.index.utils.ds_util import get_named_input_table, get_required_input_table
+from graphrag.index.utils.ds_util import get_required_input_table
 
 workflow_name = "extract_graph"
 
@@ -111,7 +111,9 @@ async def workflow(
         text_units.explode("document_ids")
         .merge(doc_units[["id", "human_readable_id"]], left_on="document_ids", right_on="id")
         .rename(columns={"id_x": "id"})
-        .groupby("id").agg({"document_ids": list, "text": " ".join, "human_readable_id": "first", "n_tokens": "first"}).reset_index()
+        .groupby("id")
+        .agg({"document_ids": list, "text": " ".join, "human_readable_id": "first", "n_tokens": "first"})
+        .reset_index()
     )
     text_units = text_units[columns_to_use]
 

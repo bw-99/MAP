@@ -35,9 +35,7 @@ class MockChatLLM(ChatLLM):
         self.response_index += 1
 
         parsed_json = response if isinstance(response, BaseModel) else None
-        response = (
-            response.model_dump_json() if isinstance(response, BaseModel) else response
-        )
+        response = response.model_dump_json() if isinstance(response, BaseModel) else response
 
         return LLMOutput(
             output=ContentResponse(content=response),

@@ -26,9 +26,7 @@ async def run_graph_intelligence(
 ) -> SummarizedDescriptionResult:
     """Run the graph intelligence entity extraction strategy."""
     llm_config = read_llm_params(args.get("llm", {}))
-    llm = load_llm(
-        "summarize_descriptions", llm_config, callbacks=callbacks, cache=cache
-    )
+    llm = load_llm("summarize_descriptions", llm_config, callbacks=callbacks, cache=cache)
     return await run_summarize_descriptions(llm, id, descriptions, callbacks, args)
 
 
@@ -52,9 +50,7 @@ async def run_summarize_descriptions(
         entity_name_key=entity_name_key,
         input_descriptions_key=input_descriptions_key,
         on_error=lambda e, stack, details: (
-            callbacks.error("Entity Extraction Error", e, stack, details)
-            if callbacks
-            else None
+            callbacks.error("Entity Extraction Error", e, stack, details) if callbacks else None
         ),
         max_summary_length=args.get("max_summary_length", None),
         max_input_tokens=max_tokens,

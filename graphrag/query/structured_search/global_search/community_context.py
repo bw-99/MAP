@@ -40,9 +40,7 @@ class GlobalCommunityContext(GlobalContextBuilder):
         self.entities = entities
         self.token_encoder = token_encoder
         self.dynamic_community_selection = None
-        if dynamic_community_selection and isinstance(
-            dynamic_community_selection_kwargs, dict
-        ):
+        if dynamic_community_selection and isinstance(dynamic_community_selection_kwargs, dict):
             self.dynamic_community_selection = DynamicCommunitySelection(
                 community_reports=community_reports,
                 communities=communities,
@@ -120,11 +118,7 @@ class GlobalCommunityContext(GlobalContextBuilder):
         )
 
         # Prepare context_prefix based on whether conversation_history_context exists
-        context_prefix = (
-            f"{conversation_history_context}\n\n"
-            if conversation_history_context
-            else ""
-        )
+        context_prefix = f"{conversation_history_context}\n\n" if conversation_history_context else ""
 
         final_context = (
             [f"{context_prefix}{context}" for context in community_context]

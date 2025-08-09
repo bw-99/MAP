@@ -21,11 +21,7 @@ def restore_community_hierarchy(
 ) -> pd.DataFrame:
     """Restore the community hierarchy from the node data."""
     # Group by community and level, aggregate names as lists
-    community_df = (
-        input.groupby([community_column, level_column])[name_column]
-        .apply(set)
-        .reset_index()
-    )
+    community_df = input.groupby([community_column, level_column])[name_column].apply(set).reset_index()
 
     # Build dictionary with levels as integers
     community_levels = {
@@ -46,12 +42,14 @@ def restore_community_hierarchy(
         for curr_comm, curr_entities in current_communities.items():
             for next_comm, next_entities in next_communities.items():
                 if next_entities.issubset(curr_entities):
-                    community_hierarchy.append({
-                        community_column: curr_comm,
-                        schemas.COMMUNITY_LEVEL: current_level,
-                        schemas.SUB_COMMUNITY: next_comm,
-                        schemas.SUB_COMMUNITY_SIZE: len(next_entities),
-                    })
+                    community_hierarchy.append(
+                        {
+                            community_column: curr_comm,
+                            schemas.COMMUNITY_LEVEL: current_level,
+                            schemas.SUB_COMMUNITY: next_comm,
+                            schemas.SUB_COMMUNITY_SIZE: len(next_entities),
+                        }
+                    )
 
     return pd.DataFrame(
         community_hierarchy,

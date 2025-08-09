@@ -21,9 +21,7 @@ class MemoryPipelineStorage(FilePipelineStorage):
         super().__init__()
         self._storage = {}
 
-    async def get(
-        self, key: str, as_bytes: bool | None = None, encoding: str | None = None
-    ) -> Any:
+    async def get(self, key: str, as_bytes: bool | None = None, encoding: str | None = None) -> Any:
         """Get the value for the given key.
 
         Args:

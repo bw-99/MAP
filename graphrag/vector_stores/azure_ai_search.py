@@ -48,34 +48,26 @@ class AzureAISearch(BaseVectorStore):
         audience = kwargs.get("audience")
         self.vector_size = kwargs.get("vector_size", DEFAULT_VECTOR_SIZE)
 
-        self.vector_search_profile_name = kwargs.get(
-            "vector_search_profile_name", "vectorSearchProfile"
-        )
+        self.vector_search_profile_name = kwargs.get("vector_search_profile_name", "vectorSearchProfile")
 
         if url:
             audience_arg = {"audience": audience} if audience and not api_key else {}
             self.db_connection = SearchClient(
                 endpoint=url,
                 index_name=self.collection_name,
-                credential=(
-                    AzureKeyCredential(api_key) if api_key else DefaultAzureCredential()
-                ),
+                credential=(AzureKeyCredential(api_key) if api_key else DefaultAzureCredential()),
                 **audience_arg,
             )
             self.index_client = SearchIndexClient(
                 endpoint=url,
-                credential=(
-                    AzureKeyCredential(api_key) if api_key else DefaultAzureCredential()
-                ),
+                credential=(AzureKeyCredential(api_key) if api_key else DefaultAzureCredential()),
                 **audience_arg,
             )
         else:
             not_supported_error = "Azure AI Search expects `url`."
             raise ValueError(not_supported_error)
 
-    def load_documents(
-        self, documents: list[VectorStoreDocument], overwrite: bool = True
-    ) -> None:
+    def load_documents(self, documents: list[VectorStoreDocument], overwrite: bool = True) -> None:
         """Load documents into an Azure AI Search index."""
         if overwrite:
             if self.collection_name in self.index_client.list_index_names():
@@ -86,9 +78,7 @@ class AzureAISearch(BaseVectorStore):
                 algorithms=[
                     HnswAlgorithmConfiguration(
                         name="HnswAlg",
-                        parameters=HnswParameters(
-                            metric=VectorSearchAlgorithmMetric.COSINE
-                        ),
+                        parameters=HnswParameters(metric=VectorSearchAlgorithmMetric.COSINE),
                     )
                 ],
                 profiles=[
@@ -160,9 +150,7 @@ class AzureAISearch(BaseVectorStore):
         self, query_embedding: list[float], k: int = 10, **kwargs: Any
     ) -> list[VectorStoreSearchResult]:
         """Perform a vector-based similarity search."""
-        vectorized_query = VectorizedQuery(
-            vector=query_embedding, k_nearest_neighbors=k, fields="vector"
-        )
+        vectorized_query = VectorizedQuery(vector=query_embedding, k_nearest_neighbors=k, fields="vector")
 
         response = self.db_connection.search(
             vector_queries=[vectorized_query],
@@ -189,9 +177,7 @@ class AzureAISearch(BaseVectorStore):
         """Perform a text-based similarity search."""
         query_embedding = text_embedder(text)
         if query_embedding:
-            return self.similarity_search_by_vector(
-                query_embedding=query_embedding, k=k
-            )
+            return self.similarity_search_by_vector(query_embedding=query_embedding, k=k)
         return []
 
     def search_by_id(self, id: str) -> VectorStoreDocument:

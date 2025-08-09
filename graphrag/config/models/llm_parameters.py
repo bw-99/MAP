@@ -17,12 +17,8 @@ class LLMParameters(BaseModel):
         description="The API key to use for the LLM service.",
         default=None,
     )
-    type: LLMType = Field(
-        description="The type of LLM model to use.", default=defs.LLM_TYPE
-    )
-    encoding_model: str | None = Field(
-        description="The encoding model to use", default=defs.ENCODING_MODEL
-    )
+    type: LLMType = Field(description="The type of LLM model to use.", default=defs.LLM_TYPE)
+    encoding_model: str | None = Field(description="The encoding model to use", default=defs.ENCODING_MODEL)
     model: str = Field(description="The LLM model to use.", default=defs.LLM_MODEL)
     max_tokens: int | None = Field(
         description="The maximum number of tokens to generate.",
@@ -48,31 +44,17 @@ class LLMParameters(BaseModel):
         description="The presence penalty to use for token generation.",
         default=defs.LLM_PRESENCE_PENALTY,
     )
-    request_timeout: float = Field(
-        description="The request timeout to use.", default=defs.LLM_REQUEST_TIMEOUT
-    )
-    api_base: str | None = Field(
-        description="The base URL for the LLM API.", default=None
-    )
-    api_version: str | None = Field(
-        description="The version of the LLM API to use.", default=None
-    )
-    organization: str | None = Field(
-        description="The organization to use for the LLM service.", default=None
-    )
-    proxy: str | None = Field(
-        description="The proxy to use for the LLM service.", default=None
-    )
+    request_timeout: float = Field(description="The request timeout to use.", default=defs.LLM_REQUEST_TIMEOUT)
+    api_base: str | None = Field(description="The base URL for the LLM API.", default=None)
+    api_version: str | None = Field(description="The version of the LLM API to use.", default=None)
+    organization: str | None = Field(description="The organization to use for the LLM service.", default=None)
+    proxy: str | None = Field(description="The proxy to use for the LLM service.", default=None)
     audience: str | None = Field(
         description="Azure resource URI to use with managed identity for the llm connection.",
         default=None,
     )
-    deployment_name: str | None = Field(
-        description="The deployment name to use for the LLM service.", default=None
-    )
-    model_supports_json: bool | None = Field(
-        description="Whether the model supports JSON output mode.", default=None
-    )
+    deployment_name: str | None = Field(description="The deployment name to use for the LLM service.", default=None)
+    model_supports_json: bool | None = Field(description="Whether the model supports JSON output mode.", default=None)
     tokens_per_minute: int = Field(
         description="The number of tokens per minute to use for the LLM service.",
         default=defs.LLM_TOKENS_PER_MINUTE,
@@ -97,6 +79,4 @@ class LLMParameters(BaseModel):
         description="Whether to use concurrent requests for the LLM service.",
         default=defs.LLM_CONCURRENT_REQUESTS,
     )
-    responses: list[str | BaseModel] | None = Field(
-        default=None, description="Static responses to use in mock mode."
-    )
+    responses: list[str | BaseModel] | None = Field(default=None, description="Static responses to use in mock mode.")
