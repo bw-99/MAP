@@ -104,7 +104,7 @@ entity_extraction:
 
 entity_extraction_source_paper:
   # enabled, prompt를 제외한 모든 파라미터를 entity_extraction과 공유하도록 강제한다.
-  enabled: false
+  enabled: true
   prompt: "prompts/source_paper_focused_entity_extraction.txt"
 
 summarize_descriptions:
