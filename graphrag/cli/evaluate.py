@@ -23,6 +23,7 @@ def keyword_matching_evaluation(
     root_exp: Path,
     dry_run: bool,
     evaluate_files: list[str] = ["create_final_entities.parquet", "create_final_viztree.parquet"],
+    n_iter: int = 5,
 ) -> pd.DataFrame:
     """Run the pipeline with the given config."""
     root = root_exp.resolve()
@@ -35,16 +36,20 @@ def keyword_matching_evaluation(
         sys.exit(0)
 
     # 1. Evaluating via keyword matching
-    keyword_results = asyncio.run(
-        api.evaluate_keyword(
-            config=config_exp,
-            entities=exp_dict["create_final_entities"],
-            viztree=exp_dict["create_final_viztree"],
+    all_results = []
+    for _ in range(n_iter):
+        keyword_results = asyncio.run(
+            api.evaluate_keyword(
+                config=config_exp,
+                entities=exp_dict["create_final_entities"],
+                viztree=exp_dict["create_final_viztree"],
+            )
         )
-    )
-    keyword_results.to_csv("keyword_results.csv", index=False)
-    logger.info(f"Keyword Results: \n{keyword_results}")
-    return keyword_results
+        all_results.append(keyword_results)
+    mean_results = pd.concat(all_results).groupby("K", as_index=False).mean()
+    mean_results.to_csv("keyword_results.csv", index=False)
+    logger.info(f"Keyword Results: \n{mean_results}")
+    return mean_results
 
 
 def graph_llm_evaluation(

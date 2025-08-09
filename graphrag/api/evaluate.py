@@ -31,7 +31,7 @@ from graphrag.logger.print_progress import PrintProgressLogger
 from graphrag.evaluate.factory import get_evaluate_search_engine
 from graphrag.utils.graph import find_all_parents, get_embeddings, get_all_paper_titles
 from graphrag.index.create_pipeline_config import _get_embedding_settings
-from graphrag.evaluate.metrics import metrics_recall, metrics_mrr, metrics_ndcg, metrics_map
+from graphrag.evaluate.metrics import metrics_recall, metrics_mrr, metrics_ndcg
 
 from graphrag.query.indexer_adapters import (
     read_indexer_communities,
@@ -82,17 +82,19 @@ async def _get_gt_embeddings(
     extracted_entities: pd.DataFrame, all_paper_df: pd.DataFrame, config: GraphRagConfig
 ) -> pd.DataFrame:
     eval_paper_df = all_paper_df[all_paper_df["title_upper"].isin(extracted_entities["title"])]
-    eval_paper_df["keywords"] = eval_paper_df["keyword"].apply(lambda x: " ".join(x))
-    eval_paper_df["id"] = np.arange(len(eval_paper_df))
-    eval_paper_df = eval_paper_df.replace("", pd.NA).dropna(subset=["keywords"])
-    eval_paper_df["embedding"] = await embed_text(
-        eval_paper_df.loc[:, ["id", "keywords"]],
+    eval_paper_df = eval_paper_df.assign(id=np.arange(len(eval_paper_df)))
+    eval_paper_df = eval_paper_df.explode("keyword").sort_values(["id", "keyword"])
+    # eval_paper_df["keywords"] = eval_paper_df["keyword"].apply(lambda x: " ".join(x))
+    eval_paper_df = eval_paper_df.replace("", pd.NA).dropna(subset=["keyword"])
+    eval_paper_df.loc[:, "embedding"] = await embed_text(
+        eval_paper_df.loc[:, ["id", "keyword"]],
         callbacks=NoopVerbCallbacks(),
         cache=None,
-        embed_column="keywords",
+        embed_column="keyword",
         embedding_name=keyword_embedding,
         strategy=_get_embedding_settings(config.embeddings)["strategy"],
     )
+    eval_paper_df = eval_paper_df.groupby(["id", "title_upper"]).agg({"embedding": list, "keyword": list}).reset_index()
     return eval_paper_df
 
 
@@ -118,18 +120,31 @@ async def evaluate_keyword(
         k_lst = [min(k, len(eval_paper_df)) for k in k_lst]
 
     # similarity score 계산 & top-k index 추출
+    combined_df = (
+        eval_paper_df[["title_upper", "keyword", "embedding"]]
+        .merge(extracted_entities[["title", "text", "vector"]], left_on="title_upper", right_on="title", how="inner")
+        .reset_index(drop=True)
+    )
+
     topk_idx_lst, gt_idx_lst = [], []
-    gt_embeddings = np.stack(eval_paper_df["embedding"])
-    for _, row in extracted_entities.iterrows():
+    max_length = max(len(item) for item in combined_df["embedding"])
+    gt_embeddings = np.stack(
+        [item + [[1e-8] * len(item[0]) for _ in range(max_length - len(item))] for item in combined_df["embedding"]]
+    )
+    gt_norm = gt_embeddings / np.linalg.norm(gt_embeddings, axis=-1, keepdims=True)
+    pad_mask = np.stack([[False] * len(item) + [True] * (max_length - len(item)) for item in combined_df["embedding"]])
+    for gt_idx, row in combined_df.iterrows():
         pred_embeddings = np.array(row["vector"])
         pred_norm = pred_embeddings / np.linalg.norm(pred_embeddings, axis=1, keepdims=True)
-        gt_norm = gt_embeddings / np.linalg.norm(gt_embeddings, axis=1, keepdims=True)
-        # 추출된 키워드 n개 중 GT 키워드와 가장 높은 k개만 뽑으면 된다.
-        # 그러니 여러 개의 예측 키워드 중 가장 높은 similarity를 사용한다.
-        sims = np.max(pred_norm @ gt_norm.T, axis=0)
-        topk_idx = np.argpartition(-sims, kth=max(k_lst) - 1, axis=0)[: max(k_lst)]
+
+        sims = np.einsum("nd,mtd->mtn", pred_norm, gt_norm)
+        sims[pad_mask] = -1e4
+        sims_predkey_gtkey = sims.max(axis=2)
+        sims_gtkey_paper = sims_predkey_gtkey.max(axis=1)
+
+        topk_idx = np.argpartition(-sims_gtkey_paper, kth=max(k_lst) - 1, axis=0)[: max(k_lst)]
         topk_idx_lst.append(topk_idx)
-        gt_idx_lst.append(eval_paper_df[eval_paper_df["title_upper"] == row["title"]]["id"].values[0])
+        gt_idx_lst.append(gt_idx)
 
     topk_idx_lst = np.array(topk_idx_lst)
     gt_idx_lst = np.array(gt_idx_lst)
@@ -140,7 +155,6 @@ async def evaluate_keyword(
         recall = metrics_recall(topk_idx_lst[:, :k], gt_idx_lst)
         mrr = metrics_mrr(topk_idx_lst[:, :k], gt_idx_lst)
         ndcg = metrics_ndcg(topk_idx_lst[:, :k], gt_idx_lst)
-        map_ = metrics_map(topk_idx_lst[:, :k], gt_idx_lst)
 
         results.append(
             {
@@ -148,7 +162,6 @@ async def evaluate_keyword(
                 "Recall": recall,
                 "MRR": mrr,
                 "NDCG": ndcg,
-                "MAP": map_,
             }
         )
 
