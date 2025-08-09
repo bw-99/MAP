@@ -120,6 +120,7 @@ def create_graphrag_config(values: GraphRagConfigInput | None = None, root_dir: 
                 max_retry_wait=reader.float(Fragment.max_retry_wait) or base.max_retry_wait,
                 sleep_on_rate_limit_recommendation=sleep_on_rate_limit,
                 concurrent_requests=reader.int(Fragment.concurrent_requests) or base.concurrent_requests,
+                random_seed=reader.int("random_seed") or None,
             )
 
     def hydrate_embeddings_params(config: LLMConfigInput, base: LLMParameters) -> LLMParameters:
@@ -177,6 +178,7 @@ def create_graphrag_config(values: GraphRagConfigInput | None = None, root_dir: 
                 max_retry_wait=reader.float(Fragment.max_retry_wait) or defs.LLM_MAX_RETRY_WAIT,
                 sleep_on_rate_limit_recommendation=sleep_on_rate_limit,
                 concurrent_requests=reader.int(Fragment.concurrent_requests) or defs.LLM_CONCURRENT_REQUESTS,
+                random_seed=reader.int("random_seed") or None,
             )
 
     def hydrate_parallelization_params(
@@ -252,6 +254,7 @@ def create_graphrag_config(values: GraphRagConfigInput | None = None, root_dir: 
                     max_retry_wait=reader.float(Fragment.max_retry_wait) or defs.LLM_MAX_RETRY_WAIT,
                     sleep_on_rate_limit_recommendation=sleep_on_rate_limit,
                     concurrent_requests=reader.int(Fragment.concurrent_requests) or defs.LLM_CONCURRENT_REQUESTS,
+                    random_seed=reader.int("random_seed") or None,
                 )
             with reader.use(values.get("parallelization")):
                 llm_parallelization_model = ParallelizationParameters(
