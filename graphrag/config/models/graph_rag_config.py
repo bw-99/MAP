@@ -105,6 +105,12 @@ class GraphRagConfig(LLMConfig):
     )
     """The entity extraction configuration to use."""
 
+    entity_extraction_source_paper: EntityExtractionConfig | None = Field(
+        description="The entity extraction configuration to use for source paper.",
+        default=EntityExtractionConfig(enabled=False),
+    )
+    """The entity extraction configuration to use."""
+
     summarize_descriptions: SummarizeDescriptionsConfig = Field(
         description="The description summarization configuration to use.",
         default=SummarizeDescriptionsConfig(),

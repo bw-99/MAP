@@ -114,3 +114,16 @@ class LLMType(str, Enum):
     def __repr__(self):
         """Get a string representation."""
         return f'"{self.value}"'
+
+
+class EdgeFuseStrategy(str, Enum):
+    """The edge fuse strategy for the pipeline."""
+
+    CONCAT = "concat"
+    """The concat edge fuse strategy."""
+    MEAN_POOL = "mean_pool"
+    """The mean pool edge fuse strategy."""
+
+    def __repr__(self):
+        """Get a string representation."""
+        return f'"{self.value}"'

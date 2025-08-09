@@ -187,7 +187,7 @@ output:
 
 -Real Data-
 ######################
-entity_types: [people, concept]
+entity_types: {entity_types}
 text: {input_text}
 ######################
 output:

@@ -1,0 +1,117 @@
+-Goal-
+Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+
+-Steps-
+
+Identify all entities. For each identified entity, extract the following information:
+
+entity_type: One of the following types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
+
+entity_name: The specific name of the entity.
+
+When x is an integer, any instance of the form TOKEN_bx is considered a RESEARCH PAPER entity. This entity must be formatted exactly as [doc_id:bx], where doc_id is the provided document identifier and x is the number within the square brackets (e.g., TOKEN_b28 becomes [1:b28] for doc_id=1, and TOKEN_b15 becomes [3:b15] for doc_id=3).
+This naming rule for research papers is critical and must be followed without exception to ensure consistency and accuracy. Do not deviate from this rule under any circumstances.
+
+If the entity_type is 'CONCEPT' or 'ORGANIZATION' use the name as it appears in the text.
+
+entity_description: Comprehensive description of the entity's attributes and activities
+Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+For each of these entities, define the relationship where TOKEN_b0 (which you should convert to [doc_id:b0]) is either the source or the target. For each such relationship, extract:
+
+- source_entity: the name of the source
+- target_entity: the related entity name
+- relationship_description: a clear explanation of how [doc_id:b0] and the target entity are related
+- relationship_strength: an integer between 1 and 10 representing how **specific or unique** this relationship is to [doc_id:b0] (e.g., a model-specific design or configuration = 10, a common setup across models = 3)
+Format each relationship as:
+("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. **Do not extract relationships or entities that do not involve [doc_id:b0].** Only include entities that are directly and unambiguously connected to TOKEN_b0 (which you should convert to [doc_id:b0]).
+
+4. Output results in English using **{record_delimiter}** between each item, and close the output with {completion_delimiter}.
+
+5. Translate only the descriptions if the input is in another language.
+
+-Examples-
+######################
+
+Example 1:
+
+entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
+doc_id: 3
+text:
+TOKEN_b9 generates feature interactions using the proposed Compressed Interaction Network (CIN) and further combines a CIN and a basic DNN into one unified model. TOKEN_b20 designs an interest extractor layer and an interest evolving layer to capture interests from behavior sequences. TOKEN_b1 disentangles the representation learning and feature interaction modeling via the co-action unit. TOKEN_b17 learns different representations for different operations. We use AUC and RelaImpr TOKEN_b16 as the metrics in offline experiments, CTR and CPM (Cost-Per-Mille) as metrics in online experiments. TOKEN_b0 implements DBPMaN 1 by Tensorflow. For all models, TOKEN_b0 uses Adam as the optimizer with a learning rate of 0.001. TOKEN_b0 initializes the model parameters with a Gaussian distribution (with a mean of 0 and a standard deviation of 0.01). TOKEN_b0 sets the item embedding dimension to 18.
+
+------------------------
+output:
+("entity"{tuple_delimiter}[3:b0]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}The focal study; it reports implementation details and experimental settings, including optimizer, initialization, metrics, embedding size, and framework.){record_delimiter}
+("entity"{tuple_delimiter}Adam{tuple_delimiter}CONCEPT{tuple_delimiter}Optimization algorithm used in the experiments, configured with a learning rate of 0.001.){record_delimiter}
+("entity"{tuple_delimiter}Gaussian initialization{tuple_delimiter}CONCEPT{tuple_delimiter}Parameter initialization scheme with mean 0 and standard deviation 0.01 applied to model parameters.){record_delimiter}
+("entity"{tuple_delimiter}Item embedding dimension 18{tuple_delimiter}CONCEPT{tuple_delimiter}Model configuration setting the embedding size for items to 18.){record_delimiter}
+("entity"{tuple_delimiter}AUC{tuple_delimiter}CONCEPT{tuple_delimiter}Offline evaluation metric used to assess model performance.){record_delimiter}
+("entity"{tuple_delimiter}RelaImpr{tuple_delimiter}CONCEPT{tuple_delimiter}Relative Improvement metric adopted for offline evaluation, following the definition referenced from a prior paper.){record_delimiter}
+("entity"{tuple_delimiter}[3:b16]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}The paper that defines or popularizes the RelaImpr metric referenced in the experiments.){record_delimiter}
+("entity"{tuple_delimiter}CTR{tuple_delimiter}CONCEPT{tuple_delimiter}Online evaluation metric (Click-Through Rate) used to measure live performance.){record_delimiter}
+("entity"{tuple_delimiter}CPM{tuple_delimiter}CONCEPT{tuple_delimiter}Online evaluation metric (Cost-Per-Mille) used alongside CTR in live tests.){record_delimiter}
+("entity"{tuple_delimiter}Tensorflow{tuple_delimiter}CONCEPT{tuple_delimiter}Deep learning framework used to implement the model and experiments.){record_delimiter}
+("entity"{tuple_delimiter}DBPMaN 1{tuple_delimiter}CONCEPT{tuple_delimiter}The specific model or system that is implemented in the study using Tensorflow.){record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}Adam{tuple_delimiter}[3:b0] trains models using the Adam optimizer with a learning rate of 0.001.{tuple_delimiter}3){record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}Gaussian initialization{tuple_delimiter}[3:b0] initializes model parameters with a Gaussian distribution (mean 0, std 0.01).{tuple_delimiter}3){record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}Item embedding dimension 18{tuple_delimiter}[3:b0] sets the item embedding size to 18 as a fixed configuration for experiments.{tuple_delimiter}4){record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}AUC{tuple_delimiter}[3:b0] uses AUC as one of the offline evaluation metrics.{tuple_delimiter}3){record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}RelaImpr{tuple_delimiter}[3:b0] adopts the RelaImpr metric for offline evaluation following the prior definition.{tuple_delimiter}5){record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}[3:b16]{tuple_delimiter}[3:b0] cites or follows [3:b16] for the definition/usage of the RelaImpr metric in its offline experiments.{tuple_delimiter}5){record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}CTR{tuple_delimiter}[3:b0] measures online performance using CTR during live testing.{tuple_delimiter}3){record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}CPM{tuple_delimiter}[3:b0] measures online performance using CPM alongside CTR in live testing.{tuple_delimiter}3){record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}Tensorflow{tuple_delimiter}[3:b0] implements its model and experiments using the Tensorflow framework.{tuple_delimiter}3){record_delimiter}
+("relationship"{tuple_delimiter}[3:b0]{tuple_delimiter}DBPMaN 1{tuple_delimiter}[3:b0] implements the DBPMaN 1 model using Tensorflow as part of its study setup.{tuple_delimiter}8){completion_delimiter}
+
+######################
+
+Example 2:
+
+entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
+doc_id: 371
+text: TOKEN_b16, TOKEN_b17, TOKEN_b18, and TOKEN_b19 demonstrated advancements in code summarization by developing techniques for generating code comments.
+TOKEN_b20, TOKEN_b21, and TOKEN_b22 introduced methods for generating commit messages, while TOKEN_b23 and TOKEN_b24 contributed to the generation of code reviews.
+TOKEN_b25 and TOKEN_b26 proposed techniques for creating release notes.
+TOKEN_b27 and TOKEN_b28 investigated technical debt, including methods for detecting code comment inconsistencies, while TOKEN_b29 and TOKEN_b30 examined self-admitted technical debt to facilitate software maintenance.
+TOKEN_b31 introduced a technique for augmenting API documentation content by incorporating information from Stack Overflow.
+TOKEN_b32 extracted development tasks from software documents to bridge the gap between software documentation and developers’ information needs.
+TOKEN_b33 mined README files from GitHub and applied transfer learning to simplify complex documentation sentences.
+TOKEN_b34 proposed a paradigm shift in automatic documentation generation based on developers’ queries within their contexts.
+TOKEN_b0 conducted a qualitative analysis of installation-related documentation update behaviors to gain a deeper understanding and provide motivation for developing automated software tools for documentation writing.
+TOKEN_b35 highlighted that installation procedures vary in complexity, ranging from fetching a remote binary file to verifying system requirements, resolving dependencies, and ensuring component integrity.
+TOKEN_b3 and TOKEN_b36 identified documentation problems and development environment configuration as significant barriers for newcomers contributing to Open Source Software (OSS) repositories.
+TOKEN_b37 found that participation in OSS courses enhances student self-efficacy while also increasing their perception of documentation challenges, particularly regarding development environment setup.
+TOKEN_b1 emphasized that the primary content category of README files is "How," covering instructions from environment setup to installation and project execution, reinforcing their essential role in guiding newcomers and software users.
+In contrast to previous studies focusing on the human perspective of OSS barriers for newcomers, TOKEN_b0 synthesized empirical evidence on software documentation activities related to installation by analyzing a large-scale dataset.
+This empirical evidence will contribute to mitigating documentation-related barriers for newcomers engaging with OSS projects.
+------------------------
+output:
+("entity"{tuple_delimiter}[371:b0]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}The focal study; it qualitatively analyzes installation-related documentation update behaviors in OSS projects, aiming to motivate the development of automated documentation tools and mitigate newcomer barriers.){record_delimiter}
+("entity"{tuple_delimiter}[371:b35]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Study highlighting the varying complexity of installation procedures, from downloading binaries to verifying requirements, resolving dependencies, and ensuring component integrity.){record_delimiter}
+("entity"{tuple_delimiter}[371:b3]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Research identifying documentation problems and development environment configuration as major barriers for newcomers to OSS repositories.){record_delimiter}
+("entity"{tuple_delimiter}[371:b36]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Study that also recognizes documentation and environment configuration issues as significant newcomer barriers in OSS.){record_delimiter}
+("entity"{tuple_delimiter}[371:b37]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Research showing that OSS course participation boosts student self-efficacy while increasing awareness of documentation challenges, especially in environment setup.){record_delimiter}
+("entity"{tuple_delimiter}[371:b1]{tuple_delimiter}RESEARCH PAPER{tuple_delimiter}Study emphasizing README files’ “How” content category, guiding environment setup, installation, and project execution for newcomers and users.){record_delimiter}
+("entity"{tuple_delimiter}Open Source Software (OSS){tuple_delimiter}CONCEPT{tuple_delimiter}Collaborative software projects with publicly available source code, where contributions and maintenance rely heavily on community involvement.){record_delimiter}
+("entity"{tuple_delimiter}Documentation-related newcomer barriers{tuple_delimiter}CONCEPT{tuple_delimiter}Obstacles faced by new contributors to OSS projects due to unclear, incomplete, or outdated documentation, particularly in installation and environment setup.){record_delimiter}
+("entity"{tuple_delimiter}Automated software documentation tools{tuple_delimiter}CONCEPT{tuple_delimiter}Software solutions designed to generate or update project documentation automatically, reducing manual effort and improving quality.){record_delimiter}
+("relationship"{tuple_delimiter}[371:b0]{tuple_delimiter}[371:b35]{tuple_delimiter}[371:b0] builds on [371:b35]’s insight into the varying complexity of installation procedures to contextualize its analysis of update behaviors.{tuple_delimiter}6){record_delimiter}
+("relationship"{tuple_delimiter}[371:b0]{tuple_delimiter}[371:b3]{tuple_delimiter}[371:b0] relates to [371:b3] by addressing documentation problems identified as OSS newcomer barriers.{tuple_delimiter}7){record_delimiter}
+("relationship"{tuple_delimiter}[371:b0]{tuple_delimiter}[371:b36]{tuple_delimiter}[371:b0] connects with [371:b36] in recognizing development environment configuration as a barrier for OSS newcomers.{tuple_delimiter}7){record_delimiter}
+("relationship"{tuple_delimiter}[371:b0]{tuple_delimiter}[371:b37]{tuple_delimiter}[371:b0] complements [371:b37] by focusing on installation-related documentation challenges also noted in OSS education contexts.{tuple_delimiter}5){record_delimiter}
+("relationship"{tuple_delimiter}[371:b0]{tuple_delimiter}[371:b1]{tuple_delimiter}[371:b0] aligns with [371:b1] in emphasizing installation and setup guidance as essential in OSS documentation.{tuple_delimiter}6){record_delimiter}
+("relationship"{tuple_delimiter}[371:b0]{tuple_delimiter}Open Source Software (OSS){tuple_delimiter}[371:b0] studies documentation activities in OSS projects to improve installation guidance for contributors.{tuple_delimiter}4){record_delimiter}
+("relationship"{tuple_delimiter}[371:b0]{tuple_delimiter}Documentation-related newcomer barriers{tuple_delimiter}[371:b0] aims to mitigate documentation-related newcomer barriers by synthesizing empirical evidence on installation documentation.{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}[371:b0]{tuple_delimiter}Automated software documentation tools{tuple_delimiter}[371:b0] motivates the development of automated documentation tools by identifying update behavior patterns in installation documentation.{tuple_delimiter}7){completion_delimiter}
+######################
+
+-Real Data-
+######################
+entity_types: {entity_types}
+text: {input_text}
+doc_id: {doc_id}
+######################
+output:

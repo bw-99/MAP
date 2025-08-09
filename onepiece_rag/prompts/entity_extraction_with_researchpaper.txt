@@ -266,7 +266,7 @@ output:
 
 -Real Data-
 ######################
-entity_types: [RESEARCH PAPER, CONCEPT, ORGANIZATION]
+entity_types: {entity_types}
 text: {input_text}
 doc_id: {doc_id}
 ######################
