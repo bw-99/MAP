@@ -158,24 +158,26 @@ async def workflow(
 
     if entity_extraction_enabled_source_paper:
         log.info("extract_source_paper_graph enabled")
-        src_graph_entity_nodes, src_graph_relationship_edges = await extract_graph(
-            text_units,
-            token2doc_dict,
-            callbacks,
-            cache,
-            extraction_strategy=extraction_strategy_source_paper,
-            extraction_num_threads=extraction_num_threads_source_paper,
-            extraction_async_mode=extraction_async_mode_source_paper,
-            entity_types=entity_types_source_paper,
-            summarization_strategy=summarization_strategy,
-            summarization_num_threads=summarization_num_threads,
-        )
+        # src_graph_entity_nodes, src_graph_relationship_edges = await extract_graph(
+        #     text_units,
+        #     token2doc_dict,
+        #     callbacks,
+        #     cache,
+        #     extraction_strategy=extraction_strategy_source_paper,
+        #     extraction_num_threads=extraction_num_threads_source_paper,
+        #     extraction_async_mode=extraction_async_mode_source_paper,
+        #     entity_types=entity_types_source_paper,
+        #     summarization_strategy=summarization_strategy,
+        #     summarization_num_threads=summarization_num_threads,
+        # )
 
         base_entity_nodes, base_relationship_edges = await fuse_graph(
             base_entity_nodes,
             base_relationship_edges,
-            src_graph_entity_nodes,
-            src_graph_relationship_edges,
+            pd.DataFrame(),
+            pd.DataFrame(),
+            # src_graph_entity_nodes,
+            # src_graph_relationship_edges,
         )
 
     await runtime_storage.set("base_entity_nodes", base_entity_nodes)
