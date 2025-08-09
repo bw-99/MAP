@@ -69,9 +69,6 @@ def _mean_pool_edges(base_edges: pd.DataFrame, src_edges: pd.DataFrame) -> pd.Da
     inter_relationships["weight"] = inter_relationships.apply(
         lambda x: (x["weight_base"] + x["weight_src"]) / 2, axis=1
     )
-    inter_relationships.drop_duplicates(edge_merge_key)[["weight", "weight_base", "weight_src"]].to_csv(
-        "inter_relationships_weights.csv", index=False
-    )
     inter_relationships = inter_relationships.drop_duplicates(edge_merge_key)[edge_data_key].reset_index(drop=True)
 
     base_edges_only = (
