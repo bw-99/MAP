@@ -17,9 +17,9 @@ def metrics_mrr(topk_idx_lst: np.ndarray, gt_idx_lst: np.ndarray) -> float:
 
 
 def metrics_ndcg(topk_idx_lst: np.ndarray, gt_idx_lst: np.ndarray) -> float:
-    matches: np.ndarray = topk_idx_lst == gt_idx_lst[:, None]  # (N, K)
+    matches: np.ndarray = topk_idx_lst == gt_idx_lst[:, None]
     found = np.any(matches, axis=1)
-    ranks = np.argmax(matches, axis=1)  # 0-based
+    ranks = np.argmax(matches, axis=1)
 
     ndcg = np.zeros_like(ranks, dtype=np.float32)
     ndcg[found] = 1.0 / np.log2(ranks[found] + 2)
