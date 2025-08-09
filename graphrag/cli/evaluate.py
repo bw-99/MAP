@@ -90,8 +90,6 @@ def graph_llm_evaluation(
             response_type=response_type,
         )
     )
-    with open("graph_results.txt", "w") as f:
-        f.write(response)
     logger.info(f"Evaluate Response: \n{response}")
 
     return response
