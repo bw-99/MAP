@@ -56,6 +56,7 @@ def build_steps(
     extraction_strategy_source_paper = entity_extraction_config_source_paper.get("strategy")
     extraction_num_threads_source_paper = entity_extraction_config_source_paper.get("num_threads", 1)
     entity_types_source_paper = entity_extraction_config_source_paper.get("entity_types")
+    edge_fuse_strategy = entity_extraction_config_source_paper.get("edge_fuse_strategy", EdgeFuseStrategy.CONCAT)
 
     summarize_descriptions_config = config.get("summarize_descriptions", {})
     summarization_strategy = summarize_descriptions_config.get("strategy")
@@ -84,6 +85,7 @@ def build_steps(
                 "extraction_num_threads_source_paper": extraction_num_threads_source_paper,
                 "extraction_async_mode_source_paper": async_mode_source_paper,
                 "entity_types_source_paper": entity_types_source_paper,
+                "edge_fuse_strategy": edge_fuse_strategy,
                 # summarize_descriptions
                 "summarization_strategy": summarization_strategy,
                 "summarization_num_threads": summarization_num_threads,

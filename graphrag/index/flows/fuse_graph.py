@@ -105,6 +105,7 @@ async def fuse_graph(
     edge_fuse_strategy: EdgeFuseStrategy,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """All the steps to fuse the base entity graph with the source paper graph."""
+    log.info(f"edge_fuse_strategy: {edge_fuse_strategy}")
 
     final_nodes = _fuse_nodes(base_entity_nodes, src_graph_entity_nodes)
     fuse_func = _mean_pool_edges if edge_fuse_strategy == EdgeFuseStrategy.MEAN_POOL else _concat_edges

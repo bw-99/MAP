@@ -103,9 +103,10 @@ entity_extraction:
   use_doc_id: true
 
 entity_extraction_source_paper:
-  # enabled, prompt를 제외한 모든 파라미터를 entity_extraction과 공유하도록 강제한다.
+  # enabled, prompt, edge_fuse_strategy를 제외한 모든 파라미터를 entity_extraction과 공유하도록 강제한다.
   enabled: true
   prompt: "prompts/source_paper_focused_entity_extraction.txt"
+  edge_fuse_strategy: concat
 
 summarize_descriptions:
   prompt: "prompts/summarize_descriptions.txt"

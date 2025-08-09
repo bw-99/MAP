@@ -28,6 +28,7 @@ from graphrag.config.errors import (
     AzureApiBaseMissingError,
     AzureDeploymentNameMissingError,
 )
+from graphrag.config.enums import EdgeFuseStrategy
 from graphrag.config.input_models.graphrag_config_input import GraphRagConfigInput
 from graphrag.config.input_models.llm_config_input import LLMConfigInput
 from graphrag.config.models.cache_config import CacheConfig
@@ -412,11 +413,14 @@ def create_graphrag_config(values: GraphRagConfigInput | None = None, root_dir: 
                 reader.use(entity_extraction_source_paper_config),
             ):
                 # config 스키마는 entity_extraction과 동일하므로 EntityExtractionConfig을 그대로 사용한다.
-                # enabled와 prompt, strategy만 변경한다.
+                # enabled와 prompt, strategy, edge_fuse_strategy만 변경한다.
                 entity_extraction_source_paper_model = entity_extraction_model.model_copy()
                 entity_extraction_source_paper_model.enabled = reader.bool(Fragment.enabled)
                 entity_extraction_source_paper_model.prompt = reader.str("prompt", Fragment.prompt_file)
                 entity_extraction_source_paper_model.strategy = entity_extraction_source_paper_config.get("strategy")
+                entity_extraction_source_paper_model.edge_fuse_strategy = EdgeFuseStrategy(
+                    reader.str("edge_fuse_strategy", default_value=EdgeFuseStrategy.CONCAT.value)
+                )
 
         sentence_reconstruction_config = values.get("sentence_reconstruction") or {}
         sentence_reconstruction_model = None

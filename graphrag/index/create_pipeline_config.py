@@ -252,6 +252,7 @@ def _graph_workflows(settings: GraphRagConfig) -> list[PipelineWorkflowReference
                     ),
                     "entity_types": settings.entity_extraction_source_paper.entity_types,
                     "enabled": settings.entity_extraction_source_paper.enabled,
+                    "edge_fuse_strategy": settings.entity_extraction_source_paper.edge_fuse_strategy,
                 }
                 if settings.entity_extraction_source_paper
                 else {"enabled": False},
