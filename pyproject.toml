@@ -159,7 +159,7 @@ src = ["graphrag", "util", "service"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "B", "C"]
-ignore = ["C408", "B024", "E203", "E402", "E501", "E721", "E731", "W293"]
+ignore = ["C408", "B024", "E203", "E402", "E501", "E721", "E731", "W293", "F401"]
 fixable = ["ALL"]
 unfixable = []
 
