@@ -412,20 +412,11 @@ def create_graphrag_config(values: GraphRagConfigInput | None = None, root_dir: 
                 reader.use(entity_extraction_source_paper_config),
             ):
                 # config 스키마는 entity_extraction과 동일하므로 EntityExtractionConfig을 그대로 사용한다.
-                entity_extraction_source_paper_model = EntityExtractionConfig(
-                    enabled=reader.bool(Fragment.enabled),
-                    llm=hydrate_llm_params(entity_extraction_source_paper_config, llm_model),
-                    parallelization=hydrate_parallelization_params(
-                        entity_extraction_source_paper_config, llm_parallelization_model
-                    ),
-                    async_mode=hydrate_async_type(entity_extraction_source_paper_config, async_mode),
-                    entity_types=reader.list("entity_types") or defs.ENTITY_EXTRACTION_ENTITY_TYPES,
-                    max_gleanings=max_gleanings,
-                    prompt=reader.str("prompt", Fragment.prompt_file),
-                    strategy=entity_extraction_source_paper_config.get("strategy"),
-                    encoding_model=encoding_model,
-                    use_doc_id=entity_extraction_source_paper_config.get("use_doc_id", False),
-                )
+                # enabled와 prompt, strategy만 변경한다.
+                entity_extraction_source_paper_model = entity_extraction_model.model_copy()
+                entity_extraction_source_paper_model.enabled = reader.bool(Fragment.enabled)
+                entity_extraction_source_paper_model.prompt = reader.str("prompt", Fragment.prompt_file)
+                entity_extraction_source_paper_model.strategy = entity_extraction_source_paper_config.get("strategy")
 
         sentence_reconstruction_config = values.get("sentence_reconstruction") or {}
         sentence_reconstruction_model = None

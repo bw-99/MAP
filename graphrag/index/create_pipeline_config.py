@@ -252,7 +252,9 @@ def _graph_workflows(settings: GraphRagConfig) -> list[PipelineWorkflowReference
                     ),
                     "entity_types": settings.entity_extraction_source_paper.entity_types,
                     "enabled": settings.entity_extraction_source_paper.enabled,
-                },
+                }
+                if settings.entity_extraction_source_paper
+                else {"enabled": False},
                 "summarize_descriptions": {
                     **settings.summarize_descriptions.parallelization.model_dump(),
                     "async_mode": settings.summarize_descriptions.async_mode,
