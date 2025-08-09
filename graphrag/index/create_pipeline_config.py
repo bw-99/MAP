@@ -28,6 +28,7 @@ from graphrag.index.config.cache import (
 from graphrag.index.config.embeddings import (
     all_embeddings,
     required_embeddings,
+    extended_embeddings,
 )
 from graphrag.index.config.input import (
     PipelineCSVInputConfig,
@@ -129,6 +130,8 @@ def _get_embedded_fields(settings: GraphRagConfig) -> set[str]:
             return required_embeddings
         case TextEmbeddingTarget.none:
             return set()
+        case TextEmbeddingTarget.extended:
+            return extended_embeddings
         case _:
             msg = f"Unknown embeddings target: {settings.embeddings.target}"
             raise ValueError(msg)
@@ -417,7 +420,7 @@ def _get_reporting_config(
             return PipelineFileReportingConfig(base_dir=settings.reporting.base_dir)
 
 
-def _get_storage_config(
+def _get_storage_config(  # noqa: C901
     settings: GraphRagConfig,
     storage_settings: StorageConfig | None,
 ) -> PipelineStorageConfigTypes | None:
@@ -480,7 +483,7 @@ def _get_storage_config(
             return PipelineFileStorageConfig(base_dir=str(Path(root_dir) / base_dir))
 
 
-def _get_cache_config(
+def _get_cache_config(  # noqa: C901
     settings: GraphRagConfig,
 ) -> PipelineCacheConfigTypes:
     """Get the cache type from the settings."""

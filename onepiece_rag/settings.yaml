@@ -14,6 +14,7 @@ llm:
   tokens_per_minute: 2000000
   requests_per_minute: 5000
   model_supports_json: true # recommended if this is available for your model.
+  random_seed: 42
   # audience: "https://cognitiveservices.azure.com/.default"
   # api_base: https://<instance>.openai.azure.com
   # api_version: 2024-02-15-preview
@@ -33,7 +34,7 @@ embeddings:
     db_uri: output/lancedb
     container_name: default
     overwrite: true
-  target: required
+  target: extended
   llm:
     api_key: ${GRAPHRAG_API_KEY}
     type: openai_embedding # or azure_openai_embedding
@@ -41,12 +42,12 @@ embeddings:
     max_retries: 20
     tokens_per_minute: 1000000
     requests_per_minute: 5000
+    random_seed: 42
     # api_base: https://<instance>.openai.azure.com
     # api_version: 2024-02-15-preview
     # audience: "https://cognitiveservices.azure.com/.default"
     # organization: <organization_id>
     # deployment_name: <azure_model_deployment_name>
-
 ### Input settings ###
 
 input:
@@ -118,7 +119,7 @@ community_reports:
   max_input_length: 8000
 
 viztree:
-  include_concept: false
+  include_concept: true
 
 core_concept_extraction:
   prompt: "prompts/core_concept_extraction.txt"

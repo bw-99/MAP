@@ -20,13 +20,18 @@ Backwards compatibility is not guaranteed at this time.
 
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
-
+import numpy as np
+from graphrag.index.operations.embed_text import embed_text
 import pandas as pd
 from pydantic import validate_call
-
+from graphrag.index.config.embeddings import core_concept_embedding, keyword_embedding
+from datashaper import NoopVerbCallbacks
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.logger.print_progress import PrintProgressLogger
 from graphrag.evaluate.factory import get_evaluate_search_engine
+from graphrag.utils.graph import find_all_parents, get_embeddings, get_all_paper_titles
+from graphrag.index.create_pipeline_config import _get_embedding_settings
+from graphrag.evaluate.metrics import metrics_recall, metrics_mrr, metrics_ndcg
 
 from graphrag.query.indexer_adapters import (
     read_indexer_communities,
@@ -38,6 +43,129 @@ if TYPE_CHECKING:
     from graphrag.query.structured_search.base import SearchResult
 
 logger = PrintProgressLogger("")
+
+
+def _get_extracted_entities(
+    entities: pd.DataFrame, eval_paper_titles: pd.Series, viztree: pd.DataFrame
+) -> pd.DataFrame:
+    ee = entities[entities["title"].isin(eval_paper_titles)][["id", "title"]]
+    ee = pd.merge(ee, find_all_parents(ee["id"].tolist(), viztree), on="id", how="left")
+    return ee.explode("parents")
+
+
+# 예측 키워드 임베딩 가져오기
+def _get_pred_embeddings(
+    entities: pd.DataFrame, all_paper_df: pd.DataFrame, viztree: pd.DataFrame, embedding_df: pd.DataFrame
+) -> pd.DataFrame:
+    extracted_entities = _get_extracted_entities(entities, all_paper_df["title_upper"], viztree)
+    extracted_entities["parents"] = extracted_entities["parents"].astype(str)
+    extracted_entities = extracted_entities.merge(
+        embedding_df[["id", "vector", "text"]],
+        left_on="parents",
+        right_on="id",
+        how="left",
+        suffixes=("", "_embedding"),
+    )
+    extracted_entities = extracted_entities.dropna(subset=["text"])
+    extracted_entities = (
+        extracted_entities.drop_duplicates(subset=["id", "title", "text"])
+        .groupby(["id", "title"])
+        .agg({"text": list, "vector": list})
+        .reset_index()
+    )
+    logger.info(f"Extracted {len(extracted_entities)} keywords per document")
+    return extracted_entities
+
+
+# 정답 키워드 임베딩 추출
+async def _get_gt_embeddings(
+    extracted_entities: pd.DataFrame, all_paper_df: pd.DataFrame, config: GraphRagConfig
+) -> pd.DataFrame:
+    eval_paper_df = all_paper_df[all_paper_df["title_upper"].isin(extracted_entities["title"])]
+    eval_paper_df = eval_paper_df.assign(id=np.arange(len(eval_paper_df)))
+    eval_paper_df = eval_paper_df.explode("keyword").sort_values(["id", "keyword"])
+    # eval_paper_df["keywords"] = eval_paper_df["keyword"].apply(lambda x: " ".join(x))
+    eval_paper_df = eval_paper_df.replace("", pd.NA).dropna(subset=["keyword"])
+    eval_paper_df.loc[:, "embedding"] = await embed_text(
+        eval_paper_df.loc[:, ["id", "keyword"]],
+        callbacks=NoopVerbCallbacks(),
+        cache=None,
+        embed_column="keyword",
+        embedding_name=keyword_embedding,
+        strategy=_get_embedding_settings(config.embeddings)["strategy"],
+    )
+    eval_paper_df = eval_paper_df.groupby(["id", "title_upper"]).agg({"embedding": list, "keyword": list}).reset_index()
+    return eval_paper_df
+
+
+@validate_call(config={"arbitrary_types_allowed": True})
+async def evaluate_keyword(
+    config: GraphRagConfig,
+    entities: pd.DataFrame,
+    viztree: pd.DataFrame,
+    k_lst: list[int] = [3, 5, 10],
+) -> pd.DataFrame:
+    embedding_df = get_embeddings(config, core_concept_embedding)
+    all_paper_df = get_all_paper_titles()
+    all_paper_df["title_upper"] = all_paper_df["title"].apply(lambda x: x.strip().upper())
+
+    extracted_entities = _get_pred_embeddings(entities, all_paper_df, viztree, embedding_df)
+    eval_paper_df = await _get_gt_embeddings(extracted_entities, all_paper_df, config)
+    extracted_entities = extracted_entities[extracted_entities["title"].isin(eval_paper_df["title_upper"])].reset_index(
+        drop=True
+    )
+
+    if any(k > len(eval_paper_df) for k in k_lst):
+        logger.warning(f"k is greater than the number of GT keywords. Setting k to {len(eval_paper_df)}")
+        k_lst = [min(k, len(eval_paper_df)) for k in k_lst]
+
+    # similarity score 계산 & top-k index 추출
+    combined_df = (
+        eval_paper_df[["title_upper", "keyword", "embedding"]]
+        .merge(extracted_entities[["title", "text", "vector"]], left_on="title_upper", right_on="title", how="inner")
+        .reset_index(drop=True)
+    )
+
+    topk_idx_lst, gt_idx_lst = [], []
+    max_length = max(len(item) for item in combined_df["embedding"])
+    gt_embeddings = np.stack(
+        [item + [[1e-8] * len(item[0]) for _ in range(max_length - len(item))] for item in combined_df["embedding"]]
+    )
+    gt_norm = gt_embeddings / np.linalg.norm(gt_embeddings, axis=-1, keepdims=True)
+    pad_mask = np.stack([[False] * len(item) + [True] * (max_length - len(item)) for item in combined_df["embedding"]])
+    for gt_idx, row in combined_df.iterrows():
+        pred_embeddings = np.array(row["vector"])
+        pred_norm = pred_embeddings / np.linalg.norm(pred_embeddings, axis=1, keepdims=True)
+
+        sims = np.einsum("nd,mtd->mtn", pred_norm, gt_norm)
+        sims[pad_mask] = -1e4
+        sims_predkey_gtkey = sims.max(axis=2)
+        sims_gtkey_paper = sims_predkey_gtkey.max(axis=1)
+
+        topk_idx = np.argpartition(-sims_gtkey_paper, kth=max(k_lst) - 1, axis=0)[: max(k_lst)]
+        topk_idx_lst.append(topk_idx)
+        gt_idx_lst.append(gt_idx)
+
+    topk_idx_lst = np.array(topk_idx_lst)
+    gt_idx_lst = np.array(gt_idx_lst)
+
+    # 각 k마다 retrieval 성능을 찍는다.
+    results = []
+    for k in k_lst:
+        recall = metrics_recall(topk_idx_lst[:, :k], gt_idx_lst)
+        mrr = metrics_mrr(topk_idx_lst[:, :k], gt_idx_lst)
+        ndcg = metrics_ndcg(topk_idx_lst[:, :k], gt_idx_lst)
+
+        results.append(
+            {
+                "K": k,
+                "Recall": recall,
+                "MRR": mrr,
+                "NDCG": ndcg,
+            }
+        )
+
+    return pd.DataFrame(results)
 
 
 @validate_call(config={"arbitrary_types_allowed": True})

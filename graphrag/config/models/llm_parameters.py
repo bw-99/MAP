@@ -80,3 +80,7 @@ class LLMParameters(BaseModel):
         default=defs.LLM_CONCURRENT_REQUESTS,
     )
     responses: list[str | BaseModel] | None = Field(default=None, description="Static responses to use in mock mode.")
+    random_seed: int | None = Field(
+        description="The random seed to use for the LLM service.",
+        default=None,
+    )

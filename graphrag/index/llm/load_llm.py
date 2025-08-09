@@ -204,6 +204,7 @@ def _create_openai_config(config: LLMParameters, azure: bool) -> OpenAIConfig:
         max_tokens=config.max_tokens,
         n=config.n,
         temperature=config.temperature,
+        seed=config.random_seed,
     )
 
     if azure:

@@ -98,9 +98,9 @@ class SearchType(Enum):
 class EvalType(Enum):
     """The type of evaluation to run."""
 
-    INDEX = "index"
+    KEYWORD_MATCHING = "keyword"
+    GRAPH_LLM = "graph"
     QUERY = "query"
-    BOTH = "both"
 
     def __str__(self):
         """Return the string representation of the enum value."""
@@ -483,11 +483,17 @@ def _evaluate_cli(
     ] = False,
 ):
     """Evaluate a knowledge graph index."""
-    from graphrag.cli.evaluate import evaluate_index, evaluate_query
+    from graphrag.cli.evaluate import graph_llm_evaluation, keyword_matching_evaluation, evaluate_query
 
     match method:
-        case EvalType.INDEX:
-            evaluate_index(
+        case EvalType.KEYWORD_MATCHING:
+            keyword_matching_evaluation(
+                config_filepath=config,
+                root_exp=root_exp,
+                dry_run=dry_run,
+            )
+        case EvalType.GRAPH_LLM:
+            graph_llm_evaluation(
                 config_filepath=config,
                 root_exp=root_exp,
                 root_ctl=root_ctl,
@@ -495,20 +501,6 @@ def _evaluate_cli(
                 dry_run=dry_run,
             )
         case EvalType.QUERY:
-            evaluate_query(
-                config_filepath=config,
-                root_exp=root_exp,
-                response_type=response_type,
-                dry_run=dry_run,
-            )
-        case EvalType.BOTH:
-            evaluate_index(
-                config_filepath=config,
-                root_exp=root_exp,
-                root_ctl=root_ctl,
-                response_type=response_type,
-                dry_run=dry_run,
-            )
             evaluate_query(
                 config_filepath=config,
                 root_exp=root_exp,
