@@ -87,7 +87,7 @@ def _concat_edges(base_edges: pd.DataFrame, src_edges: pd.DataFrame) -> pd.DataF
     return final_edges
 
 
-async def fuse_graph(
+def fuse_graph(
     base_entity_nodes: pd.DataFrame,
     base_relationship_edges: pd.DataFrame,
     src_graph_entity_nodes: pd.DataFrame,

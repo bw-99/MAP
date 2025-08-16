@@ -179,7 +179,7 @@ async def workflow(
             summarization_num_threads=summarization_num_threads,
         )
 
-        base_entity_nodes, base_relationship_edges = await fuse_graph(
+        base_entity_nodes, base_relationship_edges = fuse_graph(
             base_entity_nodes,
             base_relationship_edges,
             src_graph_entity_nodes,
