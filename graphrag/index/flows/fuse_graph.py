@@ -3,22 +3,12 @@
 
 """All the steps to create the base entity graph."""
 
-from typing import Any
 from uuid import uuid4
 
 import numpy as np
 import pandas as pd
-from datashaper import (
-    AsyncType,
-    VerbCallbacks,
-)
 
-from graphrag.cache.pipeline_cache import PipelineCache
 from graphrag.config.enums import EdgeFuseStrategy
-from graphrag.index.operations.extract_entities import extract_entities
-from graphrag.index.operations.summarize_descriptions import (
-    summarize_descriptions,
-)
 import logging
 
 log = logging.getLogger(__name__)
