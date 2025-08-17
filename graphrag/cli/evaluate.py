@@ -8,6 +8,7 @@ import asyncio
 import sys
 from pathlib import Path
 
+import pandas as pd
 
 import graphrag.api as api
 from graphrag.config.load_config import load_config
@@ -17,7 +18,41 @@ from graphrag.logger.print_progress import PrintProgressLogger
 logger = PrintProgressLogger("")
 
 
-def evaluate_index(
+def keyword_matching_evaluation(
+    config_filepath: Path | None,
+    root_exp: Path,
+    dry_run: bool,
+    evaluate_files: list[str] = ["create_final_entities.parquet", "create_final_viztree.parquet"],
+    n_iter: int = 5,
+) -> pd.DataFrame:
+    """Run the pipeline with the given config."""
+    root = root_exp.resolve()
+    config_exp = load_config(root, config_filepath)
+
+    exp_dict = read_graph(config_exp, evaluate_files)
+
+    if dry_run:
+        logger.success("Dry run complete, exiting...")
+        sys.exit(0)
+
+    # 1. Evaluating via keyword matching
+    all_results = []
+    for _ in range(n_iter):
+        keyword_results = asyncio.run(
+            api.evaluate_keyword(
+                config=config_exp,
+                entities=exp_dict["create_final_entities"],
+                viztree=exp_dict["create_final_viztree"],
+            )
+        )
+        all_results.append(keyword_results)
+    mean_results = pd.concat(all_results).groupby("K", as_index=False).mean()
+    mean_results.to_csv("keyword_results.csv", index=False)
+    logger.info(f"Keyword Results: \n{mean_results}")
+    return mean_results
+
+
+def graph_llm_evaluation(
     config_filepath: Path | None,
     root_exp: Path,
     root_ctl: Path,
@@ -28,8 +63,9 @@ def evaluate_index(
         "create_final_entities.parquet",
         "create_final_communities.parquet",
         "create_final_community_reports.parquet",
+        "create_final_viztree.parquet",
     ],
-):
+) -> str:
     """Run the pipeline with the given config."""
     root = root_exp.resolve()
     config_exp = load_config(root, config_filepath)
@@ -43,7 +79,8 @@ def evaluate_index(
         logger.success("Dry run complete, exiting...")
         sys.exit(0)
 
-    response, context_data = asyncio.run(
+    # 1. Evaluating via graph
+    response, _ = asyncio.run(
         api.evaluate_graph(
             config=(config_exp, config_ctl),
             nodes=(exp_dict["create_final_nodes"], ctl_dict["create_final_nodes"]),
@@ -53,9 +90,9 @@ def evaluate_index(
             response_type=response_type,
         )
     )
+    logger.info(f"Evaluate Response: \n{response}")
 
-    logger.success(f"Evaluate Response: \n{response}")
-    return response, context_data
+    return response
 
 
 def evaluate_query(
@@ -69,6 +106,7 @@ def evaluate_query(
         "create_final_communities.parquet",
         "create_final_community_reports.parquet",
     ],
+
 ):
     """Run the pipeline with the given config."""
     # root = root_exp.resolve()

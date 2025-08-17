@@ -20,6 +20,7 @@ from graphrag.index.config.embeddings import (
     entity_title_embedding,
     relationship_description_embedding,
     text_unit_text_embedding,
+    core_concept_embedding,
 )
 from graphrag.index.operations.embed_text import embed_text
 from graphrag.index.operations.snapshot import snapshot
@@ -34,6 +35,7 @@ async def generate_text_embeddings(
     final_text_units: pd.DataFrame | None,
     final_entities: pd.DataFrame | None,
     final_community_reports: pd.DataFrame | None,
+    final_core_concepts: pd.DataFrame | None,
     callbacks: VerbCallbacks,
     cache: PipelineCache,
     storage: PipelineStorage,
@@ -80,6 +82,12 @@ async def generate_text_embeddings(
             if final_community_reports is not None
             else None,
             "embed_column": "full_content",
+        },
+        core_concept_embedding: {
+            "data": final_core_concepts.loc[:, ["id", "core_concept"]]
+            if final_core_concepts is not None
+            else None,
+            "embed_column": "core_concept",
         },
     }
 
