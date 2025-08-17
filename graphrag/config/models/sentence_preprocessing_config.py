@@ -1,0 +1,35 @@
+# Copyright (c) 2024 Microsoft Corporation.
+# Licensed under the MIT License
+
+"""Parameterization settings for the default configuration."""
+
+from pathlib import Path
+
+from pydantic import Field
+
+from graphrag.config.models.llm_config import LLMConfig
+
+
+class SentencePreprocessingConfig(LLMConfig):
+    """Configuration section for entity extraction."""
+
+    prompt: str | None = Field(description="The sentence preprocessing prompt to use.", default=None)
+    enabled: bool = Field(default=True, description="Whether to preprocess the sentences.")
+    strategy: dict | None = Field(description="Override the default entity extraction strategy", default=None)
+
+    def resolved_strategy(self, root_dir: str) -> dict:
+        """Get the resolved entity extraction strategy."""
+        from graphrag.index.operations.preprocessing import (
+            SentencePreprocessingStrategyType,
+        )
+
+        return self.strategy or {
+            "type": SentencePreprocessingStrategyType.plain_llm,
+            "llm": self.llm.model_dump(),
+            **self.parallelization.model_dump(),
+            "interpretation_prompt": (Path(root_dir) / self.prompt).read_bytes().decode(encoding="utf-8")
+            if self.prompt
+            else None,
+            "enabled": self.enabled,
+            "async_mode": self.async_mode,
+        }
