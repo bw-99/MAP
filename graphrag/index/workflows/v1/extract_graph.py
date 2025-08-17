@@ -4,6 +4,7 @@
 """A module containing build_steps method definition."""
 
 from typing import Any, cast
+import logging
 
 import pandas as pd
 from datashaper import (
@@ -17,17 +18,20 @@ from datashaper.table_store.types import VerbResult, create_verb_result
 
 from graphrag.cache.pipeline_cache import PipelineCache
 from graphrag.index.config.workflow import PipelineWorkflowConfig, PipelineWorkflowStep
-from graphrag.index.flows.extract_graph import (
-    extract_graph,
-)
+from graphrag.index.flows.extract_graph import extract_graph
+from graphrag.index.flows.fuse_graph import fuse_graph
 from graphrag.index.operations.create_graph import create_graph
 from graphrag.index.operations.snapshot import snapshot
 from graphrag.index.operations.snapshot_graphml import snapshot_graphml
+
 from graphrag.storage.pipeline_storage import PipelineStorage
 
 from graphrag.index.utils.ds_util import get_required_input_table
+from graphrag.config.enums import EdgeFuseStrategy
 
 workflow_name = "extract_graph"
+
+log = logging.getLogger(__name__)
 
 
 def build_steps(
@@ -46,6 +50,14 @@ def build_steps(
     extraction_num_threads = entity_extraction_config.get("num_threads", 4)
     entity_types = entity_extraction_config.get("entity_types")
 
+    entity_extraction_config_source_paper = config.get("entity_extract_source_paper", {})
+    entity_extraction_enabled_source_paper = entity_extraction_config_source_paper.get("enabled", False)
+    async_mode_source_paper = entity_extraction_config_source_paper.get("async_mode", AsyncType.AsyncIO)
+    extraction_strategy_source_paper = entity_extraction_config_source_paper.get("strategy")
+    extraction_num_threads_source_paper = entity_extraction_config_source_paper.get("num_threads", 1)
+    entity_types_source_paper = entity_extraction_config_source_paper.get("entity_types")
+    edge_fuse_strategy = entity_extraction_config_source_paper.get("edge_fuse_strategy", EdgeFuseStrategy.CONCAT)
+
     summarize_descriptions_config = config.get("summarize_descriptions", {})
     summarization_strategy = summarize_descriptions_config.get("strategy")
     summarization_num_threads = summarize_descriptions_config.get("num_threads", 4)
@@ -62,10 +74,19 @@ def build_steps(
         {
             "verb": workflow_name,
             "args": {
+                # extract_graph
                 "extraction_strategy": extraction_strategy,
                 "extraction_num_threads": extraction_num_threads,
                 "extraction_async_mode": async_mode,
                 "entity_types": entity_types,
+                # extract_source_paper_graph
+                "entity_extraction_enabled_source_paper": entity_extraction_enabled_source_paper,
+                "extraction_strategy_source_paper": extraction_strategy_source_paper,
+                "extraction_num_threads_source_paper": extraction_num_threads_source_paper,
+                "extraction_async_mode_source_paper": async_mode_source_paper,
+                "entity_types_source_paper": entity_types_source_paper,
+                "edge_fuse_strategy": edge_fuse_strategy,
+                # summarize_descriptions
                 "summarization_strategy": summarization_strategy,
                 "summarization_num_threads": summarization_num_threads,
                 "snapshot_graphml_enabled": snapshot_graphml,
@@ -86,10 +107,19 @@ async def workflow(
     cache: PipelineCache,
     storage: PipelineStorage,
     runtime_storage: PipelineStorage,
+    # extract_graph
     extraction_strategy: dict[str, Any] | None,
     extraction_num_threads: int = 4,
     extraction_async_mode: AsyncType = AsyncType.AsyncIO,
     entity_types: list[str] | None = None,
+    # extract_source_paper_graph
+    entity_extraction_enabled_source_paper: bool = False,
+    extraction_strategy_source_paper: dict[str, Any] | None = None,
+    extraction_num_threads_source_paper: int = 1,
+    extraction_async_mode_source_paper: AsyncType = AsyncType.AsyncIO,
+    entity_types_source_paper: list[str] | None = None,
+    edge_fuse_strategy: EdgeFuseStrategy = EdgeFuseStrategy.CONCAT,
+    # summarize_descriptions
     summarization_strategy: dict[str, Any] | None = None,
     summarization_num_threads: int = 4,
     snapshot_graphml_enabled: bool = False,
@@ -129,6 +159,33 @@ async def workflow(
         summarization_strategy=summarization_strategy,
         summarization_num_threads=summarization_num_threads,
     )
+
+    if entity_extraction_enabled_source_paper:
+        log.info("extract_source_paper_graph enabled")
+        # source paper와 그 관계만 추출하면 되므로, TOKEN_b0가 포함된 text_unit만 사용하면 된다.
+        text_units_include_source_paper = text_units[
+            text_units["text"].str.contains("TOKEN_b0", case=False, na=False)
+        ].reset_index(drop=True)
+        src_graph_entity_nodes, src_graph_relationship_edges = await extract_graph(
+            text_units_include_source_paper,
+            token2doc_dict,
+            callbacks,
+            cache,
+            extraction_strategy=extraction_strategy_source_paper,
+            extraction_num_threads=extraction_num_threads_source_paper,
+            extraction_async_mode=extraction_async_mode_source_paper,
+            entity_types=entity_types_source_paper,
+            summarization_strategy=summarization_strategy,
+            summarization_num_threads=summarization_num_threads,
+        )
+
+        base_entity_nodes, base_relationship_edges = fuse_graph(
+            base_entity_nodes,
+            base_relationship_edges,
+            src_graph_entity_nodes,
+            src_graph_relationship_edges,
+            edge_fuse_strategy,
+        )
 
     await runtime_storage.set("base_entity_nodes", base_entity_nodes)
     await runtime_storage.set("base_relationship_edges", base_relationship_edges)

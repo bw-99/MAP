@@ -9,11 +9,13 @@ from pydantic import Field
 
 import graphrag.config.defaults as defs
 from graphrag.config.models.llm_config import LLMConfig
+from graphrag.config.enums import EdgeFuseStrategy
 
 
 class EntityExtractionConfig(LLMConfig):
     """Configuration section for entity extraction."""
 
+    enabled: bool = Field(description="Whether to enable entity extraction.", default=True)
     prompt: str | None = Field(description="The entity extraction prompt to use.", default=None)
     entity_types: list[str] = Field(
         description="The entity extraction entity types to use.",
@@ -26,6 +28,7 @@ class EntityExtractionConfig(LLMConfig):
     strategy: dict | None = Field(description="Override the default entity extraction strategy", default=None)
     encoding_model: str | None = Field(default=None, description="The encoding model to use.")
     use_doc_id: bool = Field(default=False, description="Whether to use the document ID.")
+    edge_fuse_strategy: EdgeFuseStrategy | None = Field(default=None, description="The edge fuse strategy to use.")
 
     def resolved_strategy(self, root_dir: str, encoding_model: str | None) -> dict:
         """Get the resolved entity extraction strategy."""
