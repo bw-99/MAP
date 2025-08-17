@@ -351,3 +351,92 @@ def run_auto_search(
         response, ctx = asyncio.run(search_fn(**kwargs))
         logger.success(f"AUTO Search Response:\n{response}")
         return response, ctx
+
+def run_paper_search(
+    config_filepath: Path | None,
+    data_dir: Path | None,
+    root_dir: Path,
+    community_level: int,
+    response_type: str,
+    streaming: bool,
+    query: str,
+    seed_title: str,
+):
+    """Perform a paper-centric search (seed inferred from `query`, citations 1-hop)."""
+    root = root_dir.resolve()
+    config = load_config(root, config_filepath)
+    config.storage.base_dir = str(data_dir) if data_dir else config.storage.base_dir
+    resolve_paths(config)
+
+    dataframe_dict = _resolve_output_files(
+        config=config,
+        output_list=[
+            "create_final_nodes.parquet",
+            "create_final_community_reports.parquet",
+            "create_final_text_units.parquet",
+            "create_final_relationships.parquet",
+            "create_final_entities.parquet",
+            "create_final_documents.parquet",
+        ],
+        optional_list=["create_final_covariates.parquet"],
+    )
+    final_nodes: pd.DataFrame = dataframe_dict["create_final_nodes"]
+    final_community_reports: pd.DataFrame = dataframe_dict["create_final_community_reports"]
+    final_text_units: pd.DataFrame = dataframe_dict["create_final_text_units"]
+    final_relationships: pd.DataFrame = dataframe_dict["create_final_relationships"]
+    final_entities: pd.DataFrame = dataframe_dict["create_final_entities"]
+    final_covariates: pd.DataFrame | None = dataframe_dict["create_final_covariates"]
+    final_documents: pd.DataFrame = dataframe_dict["create_final_documents"]
+
+    if streaming:
+        async def run_streaming_search():
+            full_response = ""
+            context_data = None
+            get_context_data = True
+            async for stream_chunk in api.paper_search_streaming(
+                config=config,
+                nodes=final_nodes,
+                entities=final_entities,
+                community_reports=final_community_reports,
+                text_units=final_text_units,
+                relationships=final_relationships,
+                covariates=final_covariates,
+                community_level=community_level,
+                response_type=response_type,
+                query=query,
+                seed_title=seed_title,
+                doc_df=final_documents,
+            ):
+                if get_context_data:
+                    context_data = stream_chunk  
+                    get_context_data = False
+                else:
+                    full_response += stream_chunk
+                    print(stream_chunk, end="") 
+                    sys.stdout.flush()
+            print() 
+            return full_response, context_data
+
+        return asyncio.run(run_streaming_search())
+
+    response, context_data = asyncio.run(
+        api.paper_search(
+            config=config,
+            nodes=final_nodes,
+            entities=final_entities,
+            community_reports=final_community_reports,
+            text_units=final_text_units,
+            relationships=final_relationships,
+            covariates=final_covariates,
+            community_level=community_level,
+            response_type=response_type,
+            query=query,
+            seed_title=seed_title,
+            doc_df=final_documents,
+        )
+    )
+    try:
+        logger.success(f"Paper Search Response:\n{response}")
+    except Exception:
+        pass
+    return response, context_data

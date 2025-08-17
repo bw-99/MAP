@@ -19,11 +19,13 @@ Backwards compatibility is not guaranteed at this time.
 
 from collections.abc import AsyncGenerator
 from pathlib import Path
-from typing import TYPE_CHECKING, Any
+from typing import TYPE_CHECKING, Any, Set
+from util.fileio import decode_paper_title
 
 import pandas as pd
 from pydantic import validate_call
 
+from util.process_paper.const import PARSED_DIR
 from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.index.config.embeddings import (
     community_full_content_embedding,
@@ -43,6 +45,14 @@ from graphrag.query.indexer_adapters import (
     read_indexer_report_embeddings,
     read_indexer_reports,
     read_indexer_text_units,
+)
+from graphrag.query.structured_search.paper_search import (
+    _normalize_title,
+    _normalize_rels_to_hrid,
+    neighbors_1hop_cites,
+    _select_nodes_for_hrids,
+    filter_by_node_ids,
+    subset_reports
 )
 from graphrag.utils.cli import redact
 from graphrag.utils.embeddings import create_collection_name
@@ -413,6 +423,236 @@ async def drift_search(
             return response, context_data
         case list():
             return response, context_data
+     
+@validate_call(config={"arbitrary_types_allowed": True})
+async def paper_search(
+    config: "GraphRagConfig",
+    nodes: pd.DataFrame,
+    entities: pd.DataFrame,
+    community_reports: pd.DataFrame,
+    text_units: pd.DataFrame,
+    relationships: pd.DataFrame,
+    covariates: pd.DataFrame | None,
+    community_level: int,
+    response_type: str,
+    query: str,
+    *,
+    seed_title: str,  
+    doc_df: pd.DataFrame, 
+) -> tuple[
+    str | dict[str, Any] | list[dict[str, Any]],
+    str | list[pd.DataFrame] | dict[str, pd.DataFrame],
+]:
+    """Paper-centric search. If seed_title is provided, use it to select the seed paper; otherwise infer from query."""
+    vector_store_args = config.embeddings.vector_store
+    logger.info(f"Vector Store Args: {redact(vector_store_args)}")  
+    description_embedding_store = _get_embedding_store(  
+        config_args=vector_store_args,
+        embedding_name=entity_description_embedding,
+    )
+
+    # 시드 논문 선택: 전체 nodes에서 탐색
+    nodes_all = nodes.copy()
+    for req in ("title", "human_readable_id"):
+        if req not in nodes_all.columns:
+            raise ValueError(f"'{req}' column not found in nodes.")
+    nodes_all["__title_norm__"] = nodes_all["title"].astype(str).map(_normalize_title)
+
+    seed_key = (seed_title or query or "").strip()
+    if not seed_key:
+        raise ValueError("Either seed_title or query must be non-empty to select seed paper.")
+    seed_norm = _normalize_title(seed_key)
+
+    hit = nodes_all[nodes_all["__title_norm__"] == seed_norm]
+    if hit.empty:
+        hit = nodes_all[nodes_all["title"].astype(str).str.contains(seed_key, case=False, regex=False)]
+    if hit.empty:
+        hit = nodes_all[nodes_all["human_readable_id"].astype(str).str.contains(seed_key, case=False, regex=False)]
+    if hit.empty:
+        raise ValueError(f"Seed paper not found by title: {seed_title or query}")
+
+    seed_hrid = int(pd.to_numeric(hit["human_readable_id"].iloc[0], errors="raise"))
+    seed_label = str(hit["title"].iloc[0])
+
+    # doc_df 기반 원제목 복원
+    seed_original_title = None
+    drow = doc_df.loc[doc_df["human_readable_id"] == seed_hrid]
+    if not drow.empty:
+        try:
+            fname_b64 = str(drow["title"].iloc[0])
+            seed_original_title = decode_paper_title(fname_b64).strip()
+        except Exception:
+            pass
+
+    logger.info(
+        f"[PAPER] seed_hrid={seed_hrid}  "
+        f"seed_label={seed_label}  "
+        f"seed_original_title={seed_original_title or 'N/A'}"
+    )
+
+    # 관계 정규화: 전체 nodes로 HRID 매핑
+    rels = _normalize_rels_to_hrid(relationships, nodes_all, prefer_type="CITES")
+    logger.info(f"[PAPER] rels_norm={len(rels):,}")
+
+    hop = neighbors_1hop_cites(rels, seed_hrid, relation_type="CITES")
+    if not hop:
+        hop = neighbors_1hop_cites(rels, seed_hrid, relation_type=None)  
+    paper_hrids: Set[int] = hop.union({seed_hrid})
+
+    # 노드 서브셋: 원하는 level을 우선 적용, 없으면 임의 레벨
+    nodes_sub = _select_nodes_for_hrids(nodes_all, paper_hrids, community_level)
+
+    # 관계 서브셋
+    rels_sub = rels[
+        rels["source"].isin(paper_hrids)
+        & rels["target"].isin(paper_hrids)
+        & ((rels["type"] == "CITES") if ("type" in rels.columns) else True)
+    ].copy()
+
+    # 나머지 서브셋
+    entities_sub = filter_by_node_ids(entities, paper_hrids)
+    text_units_sub = filter_by_node_ids(text_units, paper_hrids)
+    reports_sub = subset_reports(community_reports, nodes_sub)
+    covariates_sub = read_indexer_covariates(covariates) if covariates is not None else []
+
+    # 검색 엔진 구성
+    prompt = _load_search_prompt(
+        config.root_dir,
+        getattr(getattr(config, "paper_search", None), "prompt", config.local_search.prompt),
+    )
+    entities_idx = read_indexer_entities(nodes_sub, entities_sub, community_level)
+    search_engine = get_local_search_engine(
+        config=config,
+        reports=read_indexer_reports(reports_sub, nodes_sub, community_level),
+        text_units=read_indexer_text_units(text_units_sub),
+        entities=entities_idx,
+        relationships=read_indexer_relationships(rels_sub),
+        covariates={"claims": covariates_sub},
+        description_embedding_store=description_embedding_store,  # type: ignore
+        response_type=response_type,
+        system_prompt=prompt,
+    )
+    try:
+        search_engine.context_builder.filter_by_entity_keys([e.id for e in entities_idx])  # type: ignore[attr-defined]
+    except Exception:
+        pass
+
+    # 검색 실행 + 로그
+    result: "SearchResult" = await search_engine.asearch(query=query)
+    response = result.response
+    context_data = _reformat_context_data(result.context_data)  # type: ignore
+
+    logger.info(f"[PAPER] hop_size={len(hop)}  hop_hrids={sorted(list(hop))[:20]}")
+
+    # 그래프 라벨
+    hop_labels = (
+        nodes_sub.loc[nodes_sub["human_readable_id"].isin(hop), "title"]
+        .drop_duplicates()
+        .tolist()[:10]
+    )
+
+
+    logger.info(f"[PAPER] hop_labels={hop_labels}")
+
+    return response, context_data
+
+@validate_call(config={"arbitrary_types_allowed": True})
+async def paper_search_streaming(
+    config: "GraphRagConfig",
+    nodes: pd.DataFrame,
+    entities: pd.DataFrame,
+    community_reports: pd.DataFrame,
+    text_units: pd.DataFrame,
+    relationships: pd.DataFrame,
+    covariates: pd.DataFrame | None,
+    community_level: int,
+    response_type: str,
+    query: str,
+    *,
+    seed_title: str,            
+    doc_df: pd.DataFrame,     
+) -> AsyncGenerator:
+    """Paper-centric search (streaming). First yield context, then response tokens (docs-only hop)."""
+
+    vector_store_args = config.embeddings.vector_store
+    logger.info(f"Vector Store Args: {redact(vector_store_args)}")
+    description_embedding_store = _get_embedding_store(
+        config_args=vector_store_args,
+        embedding_name=entity_description_embedding,
+    )
+
+    nodes_all = nodes.copy()
+    for req in ("title", "human_readable_id"):
+        if req not in nodes_all.columns:
+            raise ValueError(f"'{req}' column not found in nodes.")
+    nodes_all["__title_norm__"] = nodes_all["title"].astype(str).map(_normalize_title)
+
+    seed_key = (seed_title or "").strip()
+    if not seed_key:
+        raise ValueError("seed_title must be provided.")
+    seed_norm = _normalize_title(seed_key)
+
+    hit = nodes_all[nodes_all["__title_norm__"] == seed_norm]
+    if hit.empty:
+        hit = nodes_all[nodes_all["title"].astype(str).str.contains(seed_key, case=False, regex=False)]
+    if hit.empty:
+        hit = nodes_all[nodes_all["human_readable_id"].astype(str).str.contains(seed_key, case=False, regex=False)]
+    if hit.empty:
+        raise ValueError(f"Seed paper not found by title: {seed_title}")
+
+    seed_hrid = int(pd.to_numeric(hit["human_readable_id"].iloc[0], errors="raise"))
+
+    rels = _normalize_rels_to_hrid(relationships, nodes_all, prefer_type="CITES")
+    hop = neighbors_1hop_cites(rels, seed_hrid, relation_type="CITES")
+    if not hop:
+        hop = neighbors_1hop_cites(rels, seed_hrid, relation_type=None)
+
+    hop_series = pd.Series(list(hop), dtype="Int64")
+    doc_ids = pd.to_numeric(doc_df["human_readable_id"], errors="coerce").astype("Int64")
+    hop_doc_only = hop_series[hop_series.isin(doc_ids)].dropna().astype(int).tolist()
+
+    paper_hrids: Set[int] = set(hop_doc_only + [seed_hrid])
+
+    nodes_sub = _select_nodes_for_hrids(nodes_all, paper_hrids, community_level)
+    rels_sub = rels[
+        rels["source"].isin(paper_hrids)
+        & rels["target"].isin(paper_hrids)
+        & ((rels["type"] == "CITES") if ("type" in rels.columns) else True)
+    ].copy()
+    entities_sub = filter_by_node_ids(entities, paper_hrids)
+    text_units_sub = filter_by_node_ids(text_units, paper_hrids)
+    reports_sub = subset_reports(community_reports, nodes_sub)
+    covariates_sub = read_indexer_covariates(covariates) if covariates is not None else []
+
+    prompt = _load_search_prompt(
+        config.root_dir,
+        getattr(getattr(config, "paper_search", None), "prompt", config.local_search.prompt),
+    )
+    entities_idx = read_indexer_entities(nodes_sub, entities_sub, community_level)
+    search_engine = get_local_search_engine(
+        config=config,
+        reports=read_indexer_reports(reports_sub, nodes_sub, community_level),
+        text_units=read_indexer_text_units(text_units_sub),
+        entities=entities_idx,
+        relationships=read_indexer_relationships(rels_sub),
+        covariates={"claims": covariates_sub},
+        description_embedding_store=description_embedding_store,
+        response_type=response_type,
+        system_prompt=prompt,
+    )
+    try:
+        search_engine.context_builder.filter_by_entity_keys([e.id for e in entities_idx])
+    except Exception:
+        pass
+
+    search_result = search_engine.astream_search(query=query)
+    sent = False
+    async for chunk in search_result:
+        if not sent:
+            yield _reformat_context_data(chunk)
+            sent = True
+        else:
+            yield chunk
 
 
 def _get_embedding_store(
