@@ -187,6 +187,13 @@ def _text_unit_workflows(
             "async_mode": settings.equation_interpretation.async_mode,
             **settings.equation_interpretation.parallelization.model_dump(),
         }
+    if settings.sentence_preprocessing:
+        piepline_config["sentence_preprocessing"] = {
+            "enabled": settings.sentence_preprocessing.enabled,
+            "strategy": settings.sentence_preprocessing.resolved_strategy(settings.root_dir),
+            "async_mode": settings.sentence_preprocessing.async_mode,
+            **settings.sentence_preprocessing.parallelization.model_dump(),
+        }
     if settings.sentence_reconstruction:
         piepline_config["sentence_reconstruction"] = {
             "enabled": settings.sentence_reconstruction.enabled,

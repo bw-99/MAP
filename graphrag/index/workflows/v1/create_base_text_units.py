@@ -23,6 +23,7 @@ from graphrag.index.flows.create_base_text_units import (
     create_base_text_units,
 )
 from graphrag.index.flows.interpret_equation import interpret_equation
+from graphrag.index.flows.preprocessing import preprocessing
 from graphrag.index.flows.reconstruct_sentence import reconstruct_sentence
 from graphrag.index.operations.snapshot import snapshot
 from graphrag.storage.pipeline_storage import PipelineStorage
@@ -50,6 +51,11 @@ def build_steps(
     interpretation_strategy = equation_interpretation_config.get("strategy", {})
     interpretation_async_mode = equation_interpretation_config.get("async_mode")
     interpretation_num_threads = equation_interpretation_config.get("num_threads")
+    sentence_preprocessing_config = config.get("sentence_preprocessing", {})
+    preprocessing_enabled = sentence_preprocessing_config.get("enabled", False)
+    preprocessing_strategy = sentence_preprocessing_config.get("strategy", {})
+    preprocessing_async_mode = sentence_preprocessing_config.get("async_mode")
+    preprocessing_num_threads = sentence_preprocessing_config.get("num_threads")
 
     sentence_reconstruction_config = config.get("sentence_reconstruction", {})
     reconstruction_enabled = sentence_reconstruction_config.get("enabled", False)
@@ -68,6 +74,10 @@ def build_steps(
                 "interpretation_strategy": interpretation_strategy,
                 "interpretation_async_mode": interpretation_async_mode,
                 "interpretation_num_threads": interpretation_num_threads,
+                "preprocessing_enabled": preprocessing_enabled,
+                "preprocessing_strategy": preprocessing_strategy,
+                "preprocessing_async_mode": preprocessing_async_mode,
+                "preprocessing_num_threads": preprocessing_num_threads,
                 "reconstruction_enabled": reconstruction_enabled,
                 "reconstruction_strategy": reconstruction_strategy,
                 "reconstruction_async_mode": reconstruction_async_mode,
@@ -92,6 +102,10 @@ async def workflow(
     interpretation_strategy: dict[str, Any] | None = None,
     interpretation_async_mode: AsyncType = AsyncType.AsyncIO,
     interpretation_num_threads: int = 4,
+    preprocessing_enabled: bool = False,
+    preprocessing_strategy: dict[str, Any] | None = None,
+    preprocessing_async_mode: AsyncType = AsyncType.AsyncIO,
+    preprocessing_num_threads: int = 4,
     reconstruction_enabled: bool = False,
     reconstruction_strategy: dict[str, Any] | None = None,
     reconstruction_async_mode: AsyncType = AsyncType.AsyncIO,
@@ -117,6 +131,17 @@ async def workflow(
             interpretation_strategy,
             interpretation_async_mode,
             interpretation_num_threads,
+        )
+
+    if preprocessing_enabled:
+        log.info("Sentence Preprocessing is enabled")
+        output = await preprocessing(
+            output,
+            callbacks,
+            cache,
+            preprocessing_strategy,
+            preprocessing_async_mode,
+            preprocessing_num_threads,
         )
 
     if reconstruction_enabled:

@@ -43,6 +43,7 @@ from graphrag.config.models.graph_rag_config import GraphRagConfig
 from graphrag.config.models.input_config import InputConfig
 from graphrag.config.models.core_concet_extraction_config import CoreConceptExtractionConfig
 from graphrag.config.models.equation_interpretation_config import EquationInterpretationConfig
+from graphrag.config.models.sentence_preprocessing_config import SentencePreprocessingConfig
 from graphrag.config.models.sentence_reconstruction_config import SentenceReconstructionConfig
 from graphrag.config.models.viztree_config import VizTreeConfig
 from graphrag.config.models.llm_parameters import LLMParameters
@@ -439,6 +440,24 @@ def create_graphrag_config(values: GraphRagConfigInput | None = None, root_dir: 
                     strategy=equation_interpretation_config.get("strategy"),
                 )
 
+        sentence_preprocessing_config = values.get("sentence_preprocessing") or {}
+        sentence_preprocessing_model = None
+        if sentence_preprocessing_config:
+            with (
+                reader.envvar_prefix(Section.sentence_preprocessing),
+                reader.use(sentence_preprocessing_config),
+            ):
+                sentence_preprocessing_model = SentencePreprocessingConfig(
+                    llm=hydrate_llm_params(sentence_preprocessing_config, llm_model),
+                    parallelization=hydrate_parallelization_params(
+                        sentence_preprocessing_config, llm_parallelization_model
+                    ),
+                    async_mode=hydrate_async_type(sentence_preprocessing_config, async_mode),
+                    prompt=reader.str("prompt", Fragment.prompt_file),
+                    enabled=reader.str("enabled", default_value=True),
+                    strategy=sentence_preprocessing_config.get("strategy"),
+                )
+
         claim_extraction_config = values.get("claim_extraction") or {}
         with (
             reader.envvar_prefix(Section.claim_extraction),
@@ -613,6 +632,7 @@ def create_graphrag_config(values: GraphRagConfigInput | None = None, root_dir: 
         snapshots=snapshots_model,
         entity_extraction=entity_extraction_model,
         equation_interpretation=equation_interpretation_model,
+        sentence_preprocessing=sentence_preprocessing_model,
         sentence_reconstruction=sentence_reconstruction_model,
         claim_extraction=claim_extraction_model,
         community_reports=community_reports_model,
@@ -684,6 +704,7 @@ class Section(str, Enum):
     embedding = "EMBEDDING"
     entity_extraction = "ENTITY_EXTRACTION"
     equation_interpretation = "EQUATION_INTERPRETATION"
+    sentence_preprocessing = "SENTENCE_PREPROCESSING"
     sentence_reconstruction = "SENTENCE_RECONSTRUCTION"
     graphrag = "GRAPHRAG"
     input = "INPUT"
