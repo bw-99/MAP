@@ -15,6 +15,8 @@ from graphrag.api.query import (
     global_search_streaming,
     local_search,
     local_search_streaming,
+    paper_search,
+    paper_search_streaming,
 )
 from graphrag.api.evaluate import evaluate_graph, evaluate_keyword
 from graphrag.prompt_tune.types import DocSelectionType
@@ -27,6 +29,8 @@ __all__ = [  # noqa: RUF022
     "global_search_streaming",
     "local_search",
     "local_search_streaming",
+    "paper_search",
+    "paper_search_streaming",
     "drift_search",
     # prompt tuning API
     "DocSelectionType",

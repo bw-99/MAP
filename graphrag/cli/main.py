@@ -88,6 +88,7 @@ class SearchType(Enum):
     GLOBAL = "global"
     DRIFT = "drift"
     HYBRID = "hybrid"
+    PAPER = "paper"
     AUTO = "auto"
 
     def __str__(self):
@@ -332,6 +333,10 @@ def _prompt_tune_cli(
 def _query_cli(
     method: Annotated[SearchType, typer.Option(help="The query algorithm to use.")],
     query: Annotated[str, typer.Option(help="The query to execute.")],
+    seed_title: Annotated[
+        str | None,
+        typer.Option(help="Seed paper title (exact or partial) for paper_search.")
+    ] = None,
     config: Annotated[
         Path | None,
         typer.Option(
@@ -383,7 +388,7 @@ def _query_cli(
     streaming: Annotated[bool, typer.Option(help="Print response in a streaming manner.")] = False,
 ):
     """Query a knowledge graph index."""
-    from graphrag.cli.query import run_drift_search, run_global_search, run_local_search, run_auto_search
+    from graphrag.cli.query import run_drift_search, run_global_search, run_local_search, run_auto_search, run_paper_search
 
     match method:
         case SearchType.LOCAL:
@@ -415,6 +420,17 @@ def _query_cli(
                 community_level=community_level,
                 streaming=False,  # Drift search does not support streaming (yet)
                 query=query,
+            )
+        case SearchType.PAPER:
+            response, context = run_paper_search(
+                config_filepath=config,
+                data_dir=data,
+                root_dir=root,
+                community_level=community_level,
+                response_type=response_type,
+                streaming=streaming,
+                query=query,
+                seed_title=seed_title,
             )
         case SearchType.AUTO:
             response, context = run_auto_search(
