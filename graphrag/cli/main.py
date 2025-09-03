@@ -22,7 +22,7 @@ from graphrag.prompt_tune.defaults import (
 )
 from graphrag.prompt_tune.types import DocSelectionType
 
-INVALID_METHOD_ERROR = "Invalid method"
+from graphrag.cli.query import SearchType
 
 app = typer.Typer(
     help="GraphRAG: A graph-based retrieval-augmented generation (RAG) system.",
@@ -79,21 +79,6 @@ def path_autocomplete(
         return [i for i in completions if i.startswith(incomplete)]
 
     return completer
-
-
-class SearchType(Enum):
-    """The type of search to run."""
-
-    LOCAL = "local"
-    GLOBAL = "global"
-    DRIFT = "drift"
-    HYBRID = "hybrid"
-    AUTO = "auto"
-
-    def __str__(self):
-        """Return the string representation of the enum value."""
-        return self.value
-
 
 class EvalType(Enum):
     """The type of evaluation to run."""
@@ -381,58 +366,44 @@ def _query_cli(
         ),
     ] = "Multiple Paragraphs",
     streaming: Annotated[bool, typer.Option(help="Print response in a streaming manner.")] = False,
+    output: Annotated[
+            Path | None,
+            typer.Option("--output", "-o", help="Output path for saving json file"),
+        ] = None,
 ):
     """Query a knowledge graph index."""
-    from graphrag.cli.query import run_drift_search, run_global_search, run_local_search, run_auto_search
+    from graphrag.cli.query import query_cli
 
-    match method:
-        case SearchType.LOCAL:
-            response, context = run_local_search(
-                config_filepath=config,
-                data_dir=data,
-                root_dir=root,
-                community_level=community_level,
-                response_type=response_type,
-                streaming=streaming,
-                query=query,
-            )
-        case SearchType.GLOBAL:
-            response, context = run_global_search(
-                config_filepath=config,
-                data_dir=data,
-                root_dir=root,
-                community_level=community_level,
-                dynamic_community_selection=dynamic_community_selection,
-                response_type=response_type,
-                streaming=streaming,
-                query=query,
-            )
-        case SearchType.DRIFT:
-            response, context = run_drift_search(
-                config_filepath=config,
-                data_dir=data,
-                root_dir=root,
-                community_level=community_level,
-                streaming=False,  # Drift search does not support streaming (yet)
-                query=query,
-            )
-        case SearchType.AUTO:
-            response, context = run_auto_search(
-                config_filepath=config,
-                data_dir=data,
-                root_dir=root,
-                community_level=community_level,
-                dynamic_community_selection=dynamic_community_selection,
-                response_type=response_type,
-                streaming=streaming,
-                query=query,
-            )
+    result_data = query_cli(
+        query=query,
+        method=method,
+        config_filepath=config,
+        data_dir=data,
+        root_dir=root,
+        community_level=community_level,
+        response_type=response_type,
+        streaming=streaming,
+        dynamic_community_selection=dynamic_community_selection,
+    )
 
-        case _:
-            raise ValueError(INVALID_METHOD_ERROR)
+    if output:
+        import json
 
-    return response, context
+        typer.echo(f"Saving results to {output}...")
+        with open(output, "w", encoding="utf-8") as f:
+            output_data = {
+                "query": result_data["query"],
+                "response": result_data["response"],
+                "context_str": result_data["context"],
+            }
+            json.dump(output_data, f, ensure_ascii=False, indent=4)
+        typer.secho(f"Successfully saved results to {output}", fg=typer.colors.GREEN)
+    else:
+        if not streaming and result_data["response"]:
+            typer.echo("\n--- Response ---")
+            typer.echo(result_data["response"])
 
+    return result_data["response"], result_data["context"]
 
 @app.command("evaluate")
 def _evaluate_cli(
@@ -458,6 +429,10 @@ def _evaluate_cli(
             autocompletion=path_autocomplete(file_okay=False, dir_okay=True, match_wildcard="*"),
         ),
     ] = Path(),  # set default to current directory
+    query_result_file: Annotated[
+        Path | None,
+        typer.Option("--input", "-i", help="[Only for QUERY eval] The JSON file containing query results to evaluate."),
+    ] = None,
     root_ctl: Annotated[
         Path,
         typer.Option(
@@ -501,9 +476,30 @@ def _evaluate_cli(
                 dry_run=dry_run,
             )
         case EvalType.QUERY:
-            evaluate_query(
+            import json, asyncio
+
+            if not query_result_file:
+                typer.secho("Error: --input <file_path> is required for 'query' evaluation method.", fg=typer.colors.RED)
+                raise typer.Exit(code=1)
+            
+            typer.echo(f"Loading query results from {query_result_file} for evaluation...")
+            with open(query_result_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            query = data.get("query")
+            response = data.get("response")
+            context = data.get("context_str")
+
+            if not all([query, response, context]):
+                typer.secho("Error: The input JSON file must contain 'query', 'response', and 'context_str' keys.", fg=typer.colors.RED)
+                raise typer.Exit(code=1)
+            
+            evaluation = asyncio.run(evaluate_query(
+                user_input=query,
+                response=response,
+                context=context,
                 config_filepath=config,
-                root_exp=root_exp,
-                response_type=response_type,
-                dry_run=dry_run,
-            )
+                root=root_exp,
+            ))
+
+            typer.echo(f"\nEvaluation Result: {evaluation}")
