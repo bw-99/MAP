@@ -161,19 +161,6 @@ def select_relevant_report(context):
     sorted_reports = sorted(context['reports'], key=lambda x: (x['occurrence weight'], x['rank']), reverse=True)
     return sorted_reports[0] if sorted_reports else None
 
-def select_relevant_report(context):
-    """
-    Selects the most relevant report based on occurrence weight and rank.
-    
-    Args:
-        context (dict): The context dictionary containing reports.
-    
-    Returns:
-        dict: The most relevant report based on the context.
-    """
-    sorted_reports = sorted(context['reports'], key=lambda x: (x['occurrence weight'], x['rank']), reverse=True)
-    return sorted_reports[0] if sorted_reports else None
-
 async def evaluate_query(user_input, response, context, config_filepath: Path | None, root: Path):
     """
     Asynchronously evaluates the response based on the context and the most relevant report using ragas.metrics.
