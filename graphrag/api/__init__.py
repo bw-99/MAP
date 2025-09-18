@@ -16,7 +16,7 @@ from graphrag.api.query import (
     local_search,
     local_search_streaming,
 )
-from graphrag.api.evaluate import evaluate_graph, evaluate_keyword
+from graphrag.api.evaluate import evaluate_graph, evaluate_keyword, evaluate_topic_uniqueness
 from graphrag.prompt_tune.types import DocSelectionType
 
 __all__ = [  # noqa: RUF022
@@ -34,4 +34,5 @@ __all__ = [  # noqa: RUF022
     # evaluation API
     "evaluate_graph",
     "evaluate_keyword",
+    "evaluate_topic_uniqueness",
 ]

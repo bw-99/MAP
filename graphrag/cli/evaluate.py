@@ -8,6 +8,7 @@ import asyncio
 import sys
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 import graphrag.api as api
@@ -49,6 +50,33 @@ def keyword_matching_evaluation(
     mean_results = pd.concat(all_results).groupby("K", as_index=False).mean()
     mean_results.to_csv("keyword_results.csv", index=False)
     logger.info(f"Keyword Results: \n{mean_results}")
+    return mean_results
+
+
+def topic_uniqueness_evaluation(
+    config_filepath: Path | None,
+    root_exp: Path,
+    dry_run: bool,
+    n_iter: int = 5,
+) -> float:
+    """Run the pipeline with the given config."""
+    root = root_exp.resolve()
+    config_exp = load_config(root, config_filepath)
+
+    if dry_run:
+        logger.success("Dry run complete, exiting...")
+        sys.exit(0)
+
+    all_results = []
+    for _ in range(n_iter):
+        topic_uniqueness_results = asyncio.run(
+            api.evaluate_topic_uniqueness(
+                config=config_exp,
+            )
+        )
+        all_results.append(topic_uniqueness_results)
+    mean_results = np.mean(all_results)
+    logger.info(f"Topic Uniqueness Results: \n{mean_results}")
     return mean_results
 
 
@@ -106,7 +134,6 @@ def evaluate_query(
         "create_final_communities.parquet",
         "create_final_community_reports.parquet",
     ],
-
 ):
     """Run the pipeline with the given config."""
     # root = root_exp.resolve()

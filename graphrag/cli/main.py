@@ -101,6 +101,7 @@ class EvalType(Enum):
     KEYWORD_MATCHING = "keyword"
     GRAPH_LLM = "graph"
     QUERY = "query"
+    TOPIC_UNIQUENESS = "topic_uniqueness"
 
     def __str__(self):
         """Return the string representation of the enum value."""
@@ -483,11 +484,22 @@ def _evaluate_cli(
     ] = False,
 ):
     """Evaluate a knowledge graph index."""
-    from graphrag.cli.evaluate import graph_llm_evaluation, keyword_matching_evaluation, evaluate_query
+    from graphrag.cli.evaluate import (
+        graph_llm_evaluation,
+        keyword_matching_evaluation,
+        evaluate_query,
+        topic_uniqueness_evaluation,
+    )
 
     match method:
         case EvalType.KEYWORD_MATCHING:
             keyword_matching_evaluation(
+                config_filepath=config,
+                root_exp=root_exp,
+                dry_run=dry_run,
+            )
+        case EvalType.TOPIC_UNIQUENESS:
+            topic_uniqueness_evaluation(
                 config_filepath=config,
                 root_exp=root_exp,
                 dry_run=dry_run,
