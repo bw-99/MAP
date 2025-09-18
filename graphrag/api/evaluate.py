@@ -169,6 +169,19 @@ async def evaluate_keyword(
 
 
 @validate_call(config={"arbitrary_types_allowed": True})
+async def evaluate_topic_uniqueness(
+    config: GraphRagConfig,
+) -> float:
+    embedding_df = get_embeddings(config, core_concept_embedding)
+    embeddings = np.vstack(embedding_df["vector"].to_numpy())
+
+    _, S, __ = np.linalg.svd(np.linalg.norm(embeddings, axis=-1, keepdims=True))
+    AUSC = (S / S.sum()).mean()
+
+    return AUSC.item()
+
+
+@validate_call(config={"arbitrary_types_allowed": True})
 async def evaluate_graph(
     config: tuple[GraphRagConfig, GraphRagConfig],
     nodes: tuple[pd.DataFrame, pd.DataFrame],
