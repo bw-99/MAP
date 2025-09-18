@@ -175,8 +175,10 @@ async def evaluate_topic_uniqueness(
     embedding_df = get_embeddings(config, core_concept_embedding)
     embeddings = np.vstack(embedding_df["vector"].to_numpy())
 
-    _, S, __ = np.linalg.svd(np.linalg.norm(embeddings, axis=-1, keepdims=True))
-    AUSC = (S / S.sum()).mean()
+    _, S, __ = np.linalg.svd(embeddings / np.linalg.norm(embeddings, axis=-1, keepdims=True))
+    # normalize된 singular value의 합에서, 전체 topic 수로 나눠서 계산한다.
+    # 이는 인덱싱 방법에 따라 나오는 topic의 수가 달라질 수 있기 때문에 공정한 평가를 위함이다.
+    AUSC = (S / S.max()).sum() / embeddings.shape[0]
 
     return AUSC.item()
 

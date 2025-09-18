@@ -13,6 +13,7 @@ import pandas as pd
 
 import graphrag.api as api
 from graphrag.config.load_config import load_config
+from graphrag.config.resolve_path import resolve_paths
 from graphrag.evaluate.load_graph import read_graph
 from graphrag.logger.print_progress import PrintProgressLogger
 
@@ -29,6 +30,7 @@ def keyword_matching_evaluation(
     """Run the pipeline with the given config."""
     root = root_exp.resolve()
     config_exp = load_config(root, config_filepath)
+    resolve_paths(config_exp)
 
     exp_dict = read_graph(config_exp, evaluate_files)
 
@@ -62,6 +64,7 @@ def topic_uniqueness_evaluation(
     """Run the pipeline with the given config."""
     root = root_exp.resolve()
     config_exp = load_config(root, config_filepath)
+    resolve_paths(config_exp)
 
     if dry_run:
         logger.success("Dry run complete, exiting...")
