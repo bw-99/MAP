@@ -135,7 +135,7 @@ dev = [
     "mkdocs-exclude-search<1.0.0,>=0.6.6",
     "mkdocs-typer<1.0.0,>=0.0.3",
     "pre-commit>=4.1.0",
-    "ragas"
+    "ragas<1.0.0,>=0.2.15",
 ]
 
 preprocess = [

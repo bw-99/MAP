@@ -8,6 +8,7 @@ import os
 import sys
 import asyncio
 from pathlib import Path
+from enum import Enum
 
 import pandas as pd
 
@@ -16,7 +17,6 @@ from graphrag.config.load_config import load_config
 from graphrag.evaluate.load_graph import read_graph
 from graphrag.logger.print_progress import PrintProgressLogger
 
-from ragas import SingleTurnSample
 from ragas.llms import LangchainLLMWrapper
 from ragas.testset import TestsetGenerator
 from ragas.embeddings import LangchainEmbeddingsWrapper
@@ -24,15 +24,26 @@ from ragas.metrics import (
     LLMContextPrecisionWithoutReference,
     ResponseRelevancy,
     Faithfulness,
+    AnswerRelevancy,
+    ContextPrecision,
 )
 
-from langchain_openai import ChatOpenAI
-from langchain_openai import OpenAIEmbeddings
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
 
 logger = PrintProgressLogger("")
 
+class EvalType(Enum):
+    """The type of evaluation to run."""
 
+    KEYWORD_MATCHING = "keyword"
+    GRAPH_LLM = "graph"
+    QUERY = "query"
+
+    def __str__(self):
+        """Return the string representation of the enum value."""
+        return self.value
+    
 def keyword_matching_evaluation(
     config_filepath: Path | None,
     root_exp: Path,
@@ -148,9 +159,9 @@ def testset_gen(
 
     print("Save complete.")
 
-def select_relevant_report(context):
+def select_relevant_report(context, k=5) -> list[dict]:
     """
-    Selects the most relevant report based on occurrence weight and rank.
+    Selects the top k most relevant reports based on occurrence weight and rank.
     
     Args:
         context (dict): The context dictionary containing reports.
@@ -158,22 +169,36 @@ def select_relevant_report(context):
     Returns:
         dict: The most relevant report based on the context.
     """
-    sorted_reports = sorted(context['reports'], key=lambda x: (x['occurrence weight'], x['rank']), reverse=True)
-    return sorted_reports[0] if sorted_reports else None
+    sorted_reports = sorted(
+        context['reports'], 
+        key=lambda x: (x.get('occurrence weight', 0), x.get('rank', 0)), 
+        reverse=True
+    )
+    return sorted_reports[:k] if sorted_reports else []
 
-async def evaluate_query(user_input, response, context, config_filepath: Path | None, root: Path):
+async def evaluate_query(
+        user_input: str,
+        response: str,
+        retrieved_contexts: dict | None = None,
+        gt_answer: str | None = None,
+        gt_contexts: list[str] | None = None,
+        config_filepath: Path | None = None,
+        root: Path = Path.cwd(),
+) -> str:
     """
-    Asynchronously evaluates the response based on the context and the most relevant report using ragas.metrics.
-    
+    Asynchronously evaluates the response using ragas metrics.
+
     Args:
         user_input (str): The input question from the user.
-        response (str): The generated response.
-        context (dict): The context containing reports, claims, and other data.
-        config_filepath (Path | None): Path to the configuration file (for API key setup).
+        response (str): The generated response from the system.
+        retrieved_context_obj (dict): The raw context object containing reports found by the system.
+        gt_answer (str): The ground truth answer from the test set.
+        gt_contexts (list[str]): The ground truth contexts from the test set.
+        config_filepath (Path | None): Path to the configuration file.
         root (Path): Root directory for config loading.
-    
+
     Returns:
-        str: The evaluation of the response based on context using RAG metrics.
+        str: A formatted string of the evaluation results.
     """
 
     root = root.resolve()
@@ -185,35 +210,42 @@ async def evaluate_query(user_input, response, context, config_filepath: Path | 
     evaluator_embeddings = LangchainEmbeddingsWrapper(OpenAIEmbeddings(model=config.embeddings.llm.model))
 
     # Select the most relevant report for retrieval evaluation
-    relevant_report = select_relevant_report(context)
+    k = 5
+    top_reports = select_relevant_report(retrieved_contexts, k=k) if retrieved_contexts else []
 
-    # Simulate retrieval (fetching relevant context for the user input)
-    if relevant_report:
-        retrieved_context = relevant_report['content']
-    else:
-        retrieved_context = ""
+    retrieved_contexts_list = [report['content'] for report in top_reports]
 
-    input_ = SingleTurnSample(
-        user_input=user_input,
-        response=response,
-        retrieved_contexts=[retrieved_context], # TODO: more than one context
-        reference=None, # TODO: 정답 ref도 통합하여 다양한 Metric 사용하기
-    )
+    sample = { # fixed column names for ragas metrics
+        "user_input": user_input,
+        "response": response,
+        "retrieved_contexts": retrieved_contexts_list,
+        "answer": gt_answer,
+        "reference": [gt_contexts],
+    }
 
-    scorer_precision = LLMContextPrecisionWithoutReference(llm=evaluator_llm)
-    precision_score = await scorer_precision.single_turn_ascore(input_)
+    logger.info("Starting evaluation using individual ragas metrics...")
+    
+    faithfulness_metric = Faithfulness(llm=evaluator_llm)
+    answer_relevancy_metric = AnswerRelevancy(llm=evaluator_llm, embeddings=evaluator_embeddings)
+    context_precision_metric = ContextPrecision(llm=evaluator_llm)
+    context_precision_wo_ref_metric = LLMContextPrecisionWithoutReference(llm=evaluator_llm)
+    response_relevancy_metric = ResponseRelevancy(llm=evaluator_llm, embeddings=evaluator_embeddings)
 
-    scorer_relevancy = ResponseRelevancy(llm=evaluator_llm, embeddings=evaluator_embeddings)
-    relevancy_score = await scorer_relevancy.single_turn_ascore(input_)
+    faithfulness_score = await faithfulness_metric.ascore(sample)
+    answer_relevancy_score = await answer_relevancy_metric.ascore(sample)
+    context_precision_score = await context_precision_metric.ascore(sample)
+    context_precision_wo_ref_score = await context_precision_wo_ref_metric.ascore(sample)
+    response_relevancy_score = await response_relevancy_metric.ascore(sample)
 
-    scorer_faithfulness = Faithfulness(llm=evaluator_llm)
-    faithfulness_score = await scorer_faithfulness.single_turn_ascore(input_)
+    results = {
+        "faithfulness": faithfulness_score,
+        "answer_relevancy": answer_relevancy_score,
+        "context_precision": context_precision_score,
+        "LLMContextPrecisionWithoutReference": context_precision_wo_ref_score,
+        "ResponseRelevancy": response_relevancy_score,
+    }
+    
+    evaluation_lines = [f"{metric}: {score:.4f}" for metric, score in results.items()]
+    evaluation_output = "\n".join(evaluation_lines)
 
-    # Combine all the metrics into one evaluation result
-    evaluation = (
-        f"Context Precision (without reference): {precision_score}\n"
-        f"Response Relevancy: {relevancy_score}\n"
-        f"Faithfulness: {faithfulness_score}"
-    )
-
-    return evaluation
+    return evaluation_output

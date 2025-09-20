@@ -23,6 +23,7 @@ from graphrag.prompt_tune.defaults import (
 from graphrag.prompt_tune.types import DocSelectionType
 
 from graphrag.cli.query import SearchType
+from graphrag.cli.evaluate import EvalType
 
 app = typer.Typer(
     help="GraphRAG: A graph-based retrieval-augmented generation (RAG) system.",
@@ -79,18 +80,6 @@ def path_autocomplete(
         return [i for i in completions if i.startswith(incomplete)]
 
     return completer
-
-class EvalType(Enum):
-    """The type of evaluation to run."""
-
-    KEYWORD_MATCHING = "keyword"
-    GRAPH_LLM = "graph"
-    QUERY = "query"
-
-    def __str__(self):
-        """Return the string representation of the enum value."""
-        return self.value
-
 
 @app.command("init")
 def _initialize_cli(
@@ -429,10 +418,6 @@ def _evaluate_cli(
             autocompletion=path_autocomplete(file_okay=False, dir_okay=True, match_wildcard="*"),
         ),
     ] = Path(),  # set default to current directory
-    query_result_file: Annotated[
-        Path | None,
-        typer.Option("--input", "-i", help="[Only for QUERY eval] The JSON file containing query results to evaluate."),
-    ] = None,
     root_ctl: Annotated[
         Path,
         typer.Option(
@@ -444,6 +429,15 @@ def _evaluate_cli(
             autocompletion=path_autocomplete(file_okay=False, dir_okay=True, match_wildcard="*"),
         ),
     ] = Path(),  # set default to current directory
+    input_file: Annotated[
+        Path | None,
+        typer.Option(
+            "--input", "-i", help="[Only for QUERY eval] The JSON file containing query results to evaluate."),
+    ] = None,
+    test_set_file: Annotated[
+        Path | None,
+        typer.Option("--test-set", help="[Only for QUERY eval] The CSV file with the ground truth test set."),
+    ] = None,
     response_type: Annotated[
         str,
         typer.Option(
@@ -476,28 +470,51 @@ def _evaluate_cli(
                 dry_run=dry_run,
             )
         case EvalType.QUERY:
-            import json, asyncio
+            import json, asyncio, ast
+            import pandas as pd
 
-            if not query_result_file:
-                typer.secho("Error: --input <file_path> is required for 'query' evaluation method.", fg=typer.colors.RED)
-                raise typer.Exit(code=1)
+            # Escape hatch: if no test set or input file provided, use defaults from root_exp
+            root = root_exp.resolve()
+            if test_set_file is None:
+                test_set_file = root / "test" / "test_set.csv"
+                typer.secho(f"Warning: No test set file provided. Using default: {test_set_file}", fg=typer.colors.YELLOW)
+
+            if input_file is None:
+                input_file = root / "query_results.json"
+                typer.secho(f"Warning: No input file provided. Using default: {input_file}", fg=typer.colors.YELLOW)
             
-            typer.echo(f"Loading query results from {query_result_file} for evaluation...")
-            with open(query_result_file, "r", encoding="utf-8") as f:
-                data = json.load(f)
+            # Load the result from our system (the retrieved data)
+            typer.echo(f"Loading system response from {input_file}...")
+            with open(input_file, "r", encoding="utf-8") as f:
+                retrieved_data = json.load(f)
 
-            query = data.get("query")
-            response = data.get("response")
-            context = data.get("context_str")
+            query = retrieved_data.get("query")
+            response = retrieved_data.get("response")
+            retrieved_context_obj = retrieved_data.get("context") 
 
-            if not all([query, response, context]):
-                typer.secho("Error: The input JSON file must contain 'query', 'response', and 'context_str' keys.", fg=typer.colors.RED)
-                raise typer.Exit(code=1)
+            # Load the entire ground truth test set
+            typer.echo(f"Loading ground truth from {test_set_file}...")
+            test_df = pd.read_csv(test_set_file)
+
+            # Find the matching ground truth row for our query
+            ground_truth_row = test_df[test_df['user_input'] == query]
+            if ground_truth_row.empty:
+                # just warning and do not exit
+                typer.secho(f"Warning: Query '{query}' not found in the test set file.", fg=typer.colors.YELLOW)
+                ground_truth_row = pd.DataFrame([{"user_input": query, "reference_contexts": "[]", "reference": "", "synthesizer_name": ""}])
+
+            # safe conversion from string to list
+            ground_truth_answer = ground_truth_row.iloc[0]["reference"]
+            gt_contexts_str = ground_truth_row.iloc[0]["reference_contexts"]
+            ground_truth_contexts = ast.literal_eval(gt_contexts_str)
             
+            # Call the "worker" function with clean, prepared data
             evaluation = asyncio.run(evaluate_query(
                 user_input=query,
                 response=response,
-                context=context,
+                retrieved_contexts=retrieved_context_obj,
+                gt_answer=ground_truth_answer,
+                gt_contexts=ground_truth_contexts,
                 config_filepath=config,
                 root=root_exp,
             ))
