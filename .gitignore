@@ -18,3 +18,4 @@ data/pdf/*
 uv.lock
 .pytest_cache/
 *.csv
+my_query_result.json

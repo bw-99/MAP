@@ -2,7 +2,9 @@ from flask import render_template, request
 from flask import Blueprint, jsonify
 from flask_socketio import send
 from service.socketio_instance import socketio  # Import socketio from the new module
-from graphrag.cli.main import _query_cli, SearchType
+from graphrag.cli.main import _query_cli
+from graphrag.cli.query import SearchType
+
 from pathlib import Path
 
 # Blueprint 생성

@@ -7,6 +7,7 @@ import asyncio
 import logging
 import sys
 from pathlib import Path
+from enum import Enum
 
 import pandas as pd
 
@@ -22,8 +23,91 @@ from graphrag.utils.router import RouteDecision
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 
+INVALID_METHOD_ERROR = "Invalid method"
+
 logger = PrintProgressLogger("")
 
+class SearchType(Enum):
+    """The type of search to run."""
+
+    LOCAL = "local"
+    GLOBAL = "global"
+    DRIFT = "drift"
+    HYBRID = "hybrid"
+    AUTO = "auto"
+
+    def __str__(self):
+        """Return the string representation of the enum value."""
+        return self.value
+
+def query_cli(
+    query: str,
+    method: SearchType,
+    config_filepath: Path | None,
+    data_dir: Path | None,
+    root_dir: Path,
+    community_level: int,
+    response_type: str,
+    streaming: bool,
+    dynamic_community_selection: bool = False,
+) -> dict:
+    """
+    query cli for reusable function
+    """
+
+    response = None
+    context = None
+
+    match method:
+        case SearchType.LOCAL:
+            response, context = run_local_search(
+                config_filepath=config_filepath,
+                data_dir=data_dir,
+                root_dir=root_dir,
+                community_level=community_level,
+                response_type=response_type,
+                streaming=streaming,
+                query=query,
+            )
+        case SearchType.GLOBAL:
+            response, context = run_global_search(
+                config_filepath=config_filepath,
+                data_dir=data_dir,
+                root_dir=root_dir,
+                community_level=community_level,
+                dynamic_community_selection=dynamic_community_selection,
+                response_type=response_type,
+                streaming=streaming,
+                query=query,
+            )
+        case SearchType.DRIFT:
+            response, context = run_drift_search(
+                config_filepath=config_filepath,
+                data_dir=data_dir,
+                root_dir=root_dir,
+                community_level=community_level,
+                streaming=False,  # Drift search does not support streaming (yet)
+                query=query,
+            )
+        case SearchType.AUTO:
+            response, context = run_auto_search(
+                config_filepath=config_filepath,
+                data_dir=data_dir,
+                root_dir=root_dir,
+                community_level=community_level,
+                dynamic_community_selection=dynamic_community_selection,
+                response_type=response_type,
+                streaming=streaming,
+                query=query,
+            )
+        case _:
+            raise ValueError(INVALID_METHOD_ERROR)
+
+    return {
+        "query": query,
+        "response": response,
+        "context": context,
+    }
 
 def run_global_search(
     config_filepath: Path | None,

@@ -22,7 +22,8 @@ from graphrag.prompt_tune.defaults import (
 )
 from graphrag.prompt_tune.types import DocSelectionType
 
-INVALID_METHOD_ERROR = "Invalid method"
+from graphrag.cli.query import SearchType
+from graphrag.cli.evaluate import EvalType
 
 app = typer.Typer(
     help="GraphRAG: A graph-based retrieval-augmented generation (RAG) system.",
@@ -79,33 +80,6 @@ def path_autocomplete(
         return [i for i in completions if i.startswith(incomplete)]
 
     return completer
-
-
-class SearchType(Enum):
-    """The type of search to run."""
-
-    LOCAL = "local"
-    GLOBAL = "global"
-    DRIFT = "drift"
-    HYBRID = "hybrid"
-    AUTO = "auto"
-
-    def __str__(self):
-        """Return the string representation of the enum value."""
-        return self.value
-
-
-class EvalType(Enum):
-    """The type of evaluation to run."""
-
-    KEYWORD_MATCHING = "keyword"
-    GRAPH_LLM = "graph"
-    QUERY = "query"
-
-    def __str__(self):
-        """Return the string representation of the enum value."""
-        return self.value
-
 
 @app.command("init")
 def _initialize_cli(
@@ -381,58 +355,44 @@ def _query_cli(
         ),
     ] = "Multiple Paragraphs",
     streaming: Annotated[bool, typer.Option(help="Print response in a streaming manner.")] = False,
+    output: Annotated[
+            Path | None,
+            typer.Option("--output", "-o", help="Output path for saving json file"),
+        ] = None,
 ):
     """Query a knowledge graph index."""
-    from graphrag.cli.query import run_drift_search, run_global_search, run_local_search, run_auto_search
+    from graphrag.cli.query import query_cli
 
-    match method:
-        case SearchType.LOCAL:
-            response, context = run_local_search(
-                config_filepath=config,
-                data_dir=data,
-                root_dir=root,
-                community_level=community_level,
-                response_type=response_type,
-                streaming=streaming,
-                query=query,
-            )
-        case SearchType.GLOBAL:
-            response, context = run_global_search(
-                config_filepath=config,
-                data_dir=data,
-                root_dir=root,
-                community_level=community_level,
-                dynamic_community_selection=dynamic_community_selection,
-                response_type=response_type,
-                streaming=streaming,
-                query=query,
-            )
-        case SearchType.DRIFT:
-            response, context = run_drift_search(
-                config_filepath=config,
-                data_dir=data,
-                root_dir=root,
-                community_level=community_level,
-                streaming=False,  # Drift search does not support streaming (yet)
-                query=query,
-            )
-        case SearchType.AUTO:
-            response, context = run_auto_search(
-                config_filepath=config,
-                data_dir=data,
-                root_dir=root,
-                community_level=community_level,
-                dynamic_community_selection=dynamic_community_selection,
-                response_type=response_type,
-                streaming=streaming,
-                query=query,
-            )
+    result_data = query_cli(
+        query=query,
+        method=method,
+        config_filepath=config,
+        data_dir=data,
+        root_dir=root,
+        community_level=community_level,
+        response_type=response_type,
+        streaming=streaming,
+        dynamic_community_selection=dynamic_community_selection,
+    )
 
-        case _:
-            raise ValueError(INVALID_METHOD_ERROR)
+    if output:
+        import json
 
-    return response, context
+        typer.echo(f"Saving results to {output}...")
+        with open(output, "w", encoding="utf-8") as f:
+            output_data = {
+                "query": result_data["query"],
+                "response": result_data["response"],
+                "context_str": result_data["context"],
+            }
+            json.dump(output_data, f, ensure_ascii=False, indent=4)
+        typer.secho(f"Successfully saved results to {output}", fg=typer.colors.GREEN)
+    else:
+        if not streaming and result_data["response"]:
+            typer.echo("\n--- Response ---")
+            typer.echo(result_data["response"])
 
+    return result_data["response"], result_data["context"]
 
 @app.command("evaluate")
 def _evaluate_cli(
@@ -469,6 +429,15 @@ def _evaluate_cli(
             autocompletion=path_autocomplete(file_okay=False, dir_okay=True, match_wildcard="*"),
         ),
     ] = Path(),  # set default to current directory
+    input_file: Annotated[
+        Path | None,
+        typer.Option(
+            "--input", "-i", help="[Only for QUERY eval] The JSON file containing query results to evaluate."),
+    ] = None,
+    test_set_file: Annotated[
+        Path | None,
+        typer.Option("--test-set", help="[Only for QUERY eval] The CSV file with the ground truth test set."),
+    ] = None,
     response_type: Annotated[
         str,
         typer.Option(
@@ -501,9 +470,53 @@ def _evaluate_cli(
                 dry_run=dry_run,
             )
         case EvalType.QUERY:
-            evaluate_query(
+            import json, asyncio, ast
+            import pandas as pd
+
+            # Escape hatch: if no test set or input file provided, use defaults from root_exp
+            root = root_exp.resolve()
+            if test_set_file is None:
+                test_set_file = root / "test" / "test_set.csv"
+                typer.secho(f"Warning: No test set file provided. Using default: {test_set_file}", fg=typer.colors.YELLOW)
+
+            if input_file is None:
+                input_file = root / "query_results.json"
+                typer.secho(f"Warning: No input file provided. Using default: {input_file}", fg=typer.colors.YELLOW)
+            
+            # Load the result from our system (the retrieved data)
+            typer.echo(f"Loading system response from {input_file}...")
+            with open(input_file, "r", encoding="utf-8") as f:
+                retrieved_data = json.load(f)
+
+            query = retrieved_data.get("query")
+            response = retrieved_data.get("response")
+            retrieved_context_obj = retrieved_data.get("context") 
+
+            # Load the entire ground truth test set
+            typer.echo(f"Loading ground truth from {test_set_file}...")
+            test_df = pd.read_csv(test_set_file)
+
+            # Find the matching ground truth row for our query
+            ground_truth_row = test_df[test_df['user_input'] == query]
+            if ground_truth_row.empty:
+                # just warning and do not exit
+                typer.secho(f"Warning: Query '{query}' not found in the test set file.", fg=typer.colors.YELLOW)
+                ground_truth_row = pd.DataFrame([{"user_input": query, "reference_contexts": "[]", "reference": "", "synthesizer_name": ""}])
+
+            # safe conversion from string to list
+            ground_truth_answer = ground_truth_row.iloc[0]["reference"]
+            gt_contexts_str = ground_truth_row.iloc[0]["reference_contexts"]
+            ground_truth_contexts = ast.literal_eval(gt_contexts_str)
+            
+            # Call the "worker" function with clean, prepared data
+            evaluation = asyncio.run(evaluate_query(
+                user_input=query,
+                response=response,
+                retrieved_contexts=retrieved_context_obj,
+                gt_answer=ground_truth_answer,
+                gt_contexts=ground_truth_contexts,
                 config_filepath=config,
-                root_exp=root_exp,
-                response_type=response_type,
-                dry_run=dry_run,
-            )
+                root=root_exp,
+            ))
+
+            typer.echo(f"\nEvaluation Result: {evaluation}")
